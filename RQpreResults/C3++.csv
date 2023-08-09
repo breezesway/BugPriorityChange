@@ -1,0 +1,92 @@
+Key	ChangeSequence	Reason
+AMQ-7009	323232	2个人在那改来改去，但评论并未提到优先级，Bug报告者一直调高优先级，而另一个人一直调低优先级
+ARROW-15312	31312	3个人参与了优先级的修改
+AXIS2-935	21212	"2个开发人员无法确定优先级，因为它们无法重现这个Bug，且优先级似乎与版本有关。Blocker?。I dont think this a blocker for 1.1, so I am reducing the priority。Are u able to recreate this problem? Am not sure i agree with the priority if we can't recreate the problem。Not a blocker。"
+AXIS2-653	31312	2个人修改过优先级，与版本有关。Reducing the priority as 1. the discussion on this is yet to be finished2. not a blocker for the next release.
+AXIS2-3099	312124	3个人参与修改优先级，其中一人连续修改两次，他修改一次后八分钟又修改了一次，但这个人修改第一次时评论说这不是Blocker，因为无法再现该问题。Not a blocker as we are not able to reproduce the issue。
+CAMEL-14242	23234	4个人修改了优先级，可能是意见不一致，其中一个人发表了评论。We don't consider this critical。
+CAMEL-14010	2323232323	两个人在那改来改去，其中一个在评论中言辞激烈，说不能改优先级，另一个人没看见，后来看见后就没改了。
+CLOUDSTACK-8718	1214313	Bug报告者一个人在那改，优先级似乎随着他修复Bug的过程在变化，比如在处理这个Bug一段时间后发现Bug仍存在，就调高了优先级，后来有人将这个Bug链接（Duplicated）到另一个Bug，就调低了优先级。
+CLOUDSTACK-1775	13212	"2个人修改优先级，我感觉与Bug修复进度有关，其中有人发表评论提到优先级。This blocker/ critcal was created before July please review and resolve, we are approaching 4.2 code freeze in 7 days。"
+CLOUDSTACK-4199	23232	3个人修改优先级，评论中有人提到无法复现这个Bug，且有人也提到了优先级（这似乎也与Bug修复进度有关）。priority set to critical as this si failing even for Xen。
+CLOUDSTACK-1673	23212	"2个人修改优先级，评论中有人提出优先级的异议。When you mark bug as blocker, please make sure to mention why its blocker。"
+CB-587	234252	1个人修改优先级，评论中提到他们无法在移动设备上复现这个Bug，这可能是优先级变更的原因。
+CB-11640	34343	1个人修改优先级，可能他自己不确定优先级，也可能随着Bug修复进度更改优先级，也可能不知道原因。
+CB-7503	31313	"2个人轮流修改优先级，其中一人因为未使用过JIRA，且阻止了他的开发，所以调成Blocker，另一个人则认为这不会阻止一个版本。This will not block a release, you still have keydown and keyup。Ok, sorry, I never used Jira before. It blocked development for me, so I thought…。"
+CB-9651	23131	2个人修改优先级，不清楚原因，也可能是两个人未达成一致。
+CB-9615	32434	2个人修改优先级，不清楚原因，感觉是和Bug修复进度有关。
+FLINK-25442	34232	"3个人修改优先级，其中有一个是Flink Jira Bot，它这个Bug许久未更新（超过7天），于是下调了优先级。This issue was labeled ""stale-critical"" 7 days ago and has not received any updates so it is being deprioritized"
+FLINK-18934	3213132	3个人修改优先级，其中存在着两个改来改去，应该是未达成一致。Actually it is a blocker that we've not handled well so far。Why is this a blocker? It is not an infrastructure failure and its not a bug that is blocking us from releasing。
+FLINK-18574	32342	3个人修改了优先级，其中一个是Flink Jira Bot，它检测到许久未更新，于是下调了优先级。
+FLINK-21608	3434234	3个人修改了优先级，其中一个是Flink Jira Bot，它检测到许久未更新，于是下调了优先级。
+FLINK-15858	32121	"2个人轮流修改优先级,未达成一致。Hi Jeff Zhang, it seems that we need take more time to finish it. I set it critical to not block RC release.But IIRC, this issue means users unable to use kafka with hivecatalog together. Doesn't that mean a blocker issue ?This ticket means users unable to use kafka with hivecatalog together when involving timestamp field. I believe this should be a blocker issue for 1.10.Sorry, I underestimated its importance. Code looked good to me, we can add more it cases. I pulled Bowen Li and Kurt Young to review&merge."
+FLINK-17260	432132	4个人修改优先级，优先级应该是随着Bug的修复进度在变化。
+FLINK-21834	3434234	3个人修改了优先级，其中一个是Flink Jira Bot，它检测到许久未更新，于是下调了优先级。
+FLINK-23493	32121	2个人修改优先级，优先级应该是随着Bug的修复进度在变化。Personally I think this should not be a release blocker for 1.14. Do you think it makes sense to downgrade it to critical?。I'm fine with downgrading its priority to critical。
+FLINK-20908	34323	4个人修改优先级，优先级应该是随着Bug的修复进度在变化。
+FLINK-22068	34323	4个人修改优先级，优先级应该是随着Bug的修复进度在变化。
+FLINK-22889	31212	2个人修改优先级，优先级应该是随着Bug的修复进度在变化。
+FLINK-17800	32121212	"4个人修改优先级，优先级应该是随着Bug的修复进度在变化，与版本发布有关。I agree we should try to fix it before 1.11.0, but tend to not consider it as a release blocker due to the above reasons, and suggest to downgrade the severity to Critical。经过一些线下讨论后，降级为“关键”，但将尽最大努力做到这一点。抱歉来回更改优先级。"
+FLINK-20654	321212	2个人修改优先级，优先级应该是随着Bug的修复进度在变化。
+FLINK-17274	32323	2个人修改了优先级，其中一个是Flink Jira Bot，它检测到许久未更新，于是下调了优先级。
+FLINK-23525	312123	4个人修改了优先级，其中一个是Flink Jira Bot，它检测到许久未更新，于是下调了优先级。
+FLINK-3333	43212	"2个人修改优先级，优先级应该是随着Bug的修复进度在变化。I have raised the priority to Blocker, because it seems that there is no consensus about what should the contracts be regarding object reuse。I changed the importance of this issue from ""Blocker"" to ""Critical"". The documentation served on the Flink website is based on the release branch, not on the released source.This means that we can update the documentation also after 1.0.0 has been released by updating the docs in the ""release-1.0"" branch。"
+FLINK-18356	3234212	5个人修改了优先级，其中一个是Flink Jira Bot，它检测到许久未更新，于是下调了优先级。
+FLINK-21278	41234	3个人修改了优先级，其中一个是Flink Jira Bot，它检测到许久未更新，于是下调了优先级。
+FLINK-20427	23232	2个人修改了优先级，其中一个是Flink Jira Bot，它检测到许久未更新，于是下调了优先级。
+FLINK-22194	3234323	4个人修改了优先级，其中一个是Flink Jira Bot，它检测到许久未更新，于是下调了优先级。
+FLINK-22547	323424	4个人修改了优先级，其中一个是Flink Jira Bot，它检测到许久未更新，于是下调了优先级，但其只修改了一次，其他的就不知道原因了。
+FLINK-14701	12342	"1个人修改优先级，优先级的变更似乎与版本有关。This issue is not critical now since SharedSlotOversubscribedException is removed in FLINK-14314。it is still a critical issue (slot leak) for 1.9. It is not critical for 1.10 because some feature changes fixed it in a different way, however the issue still exists in 1.9。"
+FLINK-22367	23432	4个人修改了优先级，其中一个是Flink Jira Bot，它检测到许久未更新，于是下调了优先级，其他人的修改似乎与版本有关。
+FLINK-21214	32343	3个人修改了优先级，其中一个是Flink Jira Bot，它检测到许久未更新，于是下调了优先级。
+GUACAMOLE-703	31434	3个人修改了优先级，评论中未提到优先级，应该是随着Bug修复过程在改变。
+HADOOP-11505	31323	"3个人修改了优先级，其中2个人在几分钟之内来回修改，是否是意见未达成一致。This isn't a blocker, because the affected architectures can fall back on the non-native code for accomplishing the same things.Bulk update: moved all 3.3.0 non-blocker issues, please move back if it is a blocker."
+HADOOP-14364	31313	"2个人轮流修改优先级,未达成一致。I'm going to raise this to a blocker since the -alpha1 notes get wonky。I'm going to downgrade this in priority since it's not related specifically to the 3.0.0-alpha3 release。Change this to be a blocker, since it needs to go in before -beta1。"
+HADOOP-11790	34213	"3个人修改了优先级，评论中似乎未达成一致。Marking this as a blocker. This really needs to get fixed prior to 3.0.0-beta1。Why is this a blocker? We've had multiple releases since 2015 when this was filed, trying to understand why this is escalated now。I'm dropping this to a major for now。Bulk update: moved all 3.2.0 non-blocker issues, please move back if it is a blocker。"
+MAPREDUCE-63	31313	3个人修改了优先级，评论中提到无法复现Bug。
+MAPREDUCE-3353	32323	"3个人修改了优先级，评论中似乎未达成一致。Not sure why this jira is marked critical. This only impacts if a node goes bad during AM life span right? If so given 3 attempts by MR, how important this jira (Major?)."
+YARN-7011	151515	2个人轮流修改优先级，应该是未达成一致，或不清楚原因。Set back to blocker for 3.0 beta。
+HBASE-1621	32132	1个人修改优先级，优先级应该是随着Bug的修复进度在变化。Undoing this as blocker now we have a merge script that has been run a few times in production; having such script takes the heat off the need for this... but we still need it. Marking major。Making critical though we'll probably end up punting it。
+HBASE-8803	32323	"3个人修改了优先级，评论中提到了优先级，应该是随着Bug修复过程在改变，0.95是版本，所以和版本有关。Lowering priority, since it's not in 0.95.*, it seems。"
+HBASE-13452	32123	"4个人修改了优先级，评论中提到的是降低优先级以推到后续的版本中修复。Kicking out of 1.1.0, dropping to Critical. Do bring it back if a patch surfaces。Dropped to major and kicked to 1.4。"
+HUDI-3242	2121234	3个人修改了优先级，评论中未提到优先级，不清楚原因，也可能就是随着Bug修复进度在变化。
+HUDI-3066	243121	4个人修改了优先级，评论中未提到优先级，不清楚原因。
+IGNITE-967	32312	2个人修改了优先级，评论中未提到优先级，不清楚原因。
+IGNITE-10792	32432	1个人修改了优先级，没有评论所以不清楚原因。
+IGNITE-884	32323	1个人修改了优先级，评论中未提到优先级，不清楚原因。
+IMPALA-1904	313134	3个人修改了优先级，其中两个人改来改去，可能是未达成一致。
+IMPALA-2029	323123	"4个人修改了优先级，似乎组阻止了版本。This blocks using more recent versions of hadoop, which is needed given the age of hadoop 2.6。"
+IMPALA-1755	32121	"3个人修改了优先级，在评论中有提到，似乎是开发人员拿不准。I think it was marked as a blocker since it was a regression, but given that no one seemed to notice I would say downgrade the priority。Yeah, this perf regression is not a Blocker。"
+IMPALA-1751	31234	3个人修改了优先级，评论中有提到，是开发人员拿不准还是有异议呢。OK. But should we keep it as a blocker?。It doesn't seem like this should actually be critical. Feel free to change back if you disagree.
+IMPALA-2092	21343	4个人修改了优先级，评论未提到优先级，不清楚原因。
+IMPALA-2982	212134	2个人修改了优先级，感觉是Bug太复杂了，也就是说优先级随着Bug修复进度在改变。Bringing this back to Blocker level as the excessive logging is a major supportability issue。Reduced priority as the estimated impact is not low. The known undesired behavior is that in rare circumstances one core becomes 100% used even when no queries are running.。
+IMPALA-6227	212342	2个人修改了优先级，优先级应该是随着Bug的修复进度在变化。Downgraded to reflect the flaky it's not recurring as frequently. Keeping as critical since I still think it's somewhat flaky and need to invest time in stabilising it further。
+IMPALA-3040	1234321213	"7个人修改了优先级，在修复Bug的过程中找到了合适的优先级，后续修改和版本有关，因为在后面的版本不会回归。Removed broken-build because this is not really blocking the builds. It's a flaky test that doesn't repro easily. Downgrading。Downgrading to ""Critical"", since these are not regressions from 2.8.0。"
+IMPALA-3350	31343	"2个人分别来回改了两次，说明这两个人也不确定优先级。Should this be a blocker and have a ""crash"" label?。"
+IMPALA-10	32321	2个人来回改，说明未达成一致。
+IMPALA-2605	13213	3个人修改了优先级，评论中未提到优先级，不清楚原因。
+IMPALA-1780	32123	2个人修改了优先级，前一个人一直调高，后一个人一直调低，后一个人提出了异议。This is not a blocker.。
+IMPALA-7194	31212	"3个人修改了优先级，不可复现。Lowering priority to Critical, since this issue has been seen only once, and is not reproducible so far。Will bump back up to blocker at least until someone has had a chance to look at it。"
+IMPALA-2973	32131	"3个人修改了优先级，似乎和版本有关。not sure if this is reproducible or serious enough to go into 2.5.0。Really, there are two issues being tracked here:
+1) Time too high: this happens with code coverage, and not a blocker for the release.
+2) Time too low: this looks like something may have changed recently. Are all the failures after Jim's change to use MONOTONIC_COARSE？。"
+IMPALA-2710	32123	"2个人修改了优先级，未达成一致，先是一个人让解释为什么不是blocker，然后另一个人解释了。 can you please document why this is not considered a blocker.。This correctness issue is not tracked as a blocker as it's fairly old behavior (affects 2.0, related bug affects 1.3) and all three related issues were reported internally, not by users。"
+IMPALA-2260	21212	3个人在来回改，似乎是未达成一致，评论里没提到。
+IMPALA-1791	32323	2个人来回改，似乎是未达成一致，评论提到无法复现这个Bug。
+IMPALA-3794	43432	3个人在来回改，似乎是未达成一致，评论里没提到。
+IMPALA-976	31232	4个人修改了优先级，评论中未提到优先级，不清楚原因。
+IMPALA-3809	34123	3个人修改了优先级，评论中未提到优先级，不清楚原因。
+IMPALA-1652	32123	"3个人修改了优先级，有人提出异议。This will require a redesign and reimplementation of CHAR datatype; it is project, not a bug fix. It's not a blocker because, though less than useful, this is the currently defined semantics of CHAR. Definitely won't be done for 2.5。"
+IMPALA-3259	32323	两个人前后分别修改2次，分别都是先修改然后又调回原来的优先级，可能的原因是开发者也不知道选什么优先级。
+MESOS-9395	21234	2个人修改了优先级，评论中未提到优先级，不清楚原因。
+MESOS-8416	323421	4个人修改了优先级，评论中未提到优先级，不清楚原因。
+NETBEANS-6192	24313	"2个人修改了优先级，评论中未达成共识。While I realise this is frustrating for you, please don't change the bug priority.。"
+NIFI-8128	13243	2个人修改了优先级，评论中未提到优先级，不清楚原因。
+SOLR-8725	31313	2个人修改了优先级，两个人都是先改了一次，然后又改回去了，说明他们也不确定优先级。
+SPARK-21549	21213	2个人修改了优先级，其中前一个人来回修改，说明他也不确定优先级。
+SPARK-5426	14341	2个人修改了优先级，其中前一个人来回修改，说明他也不确定优先级。
+SPARK-14959	23231	3个人修改了优先级，其中前二个人来回修改，可能是未达成一致。
+SPARK-26836	42312	"3个人修改了优先级，有人评论，但仍不清楚原因。I am lowering the priority to Critical as it's at least not a regression and doesn't look blocking Spark 3.0; however, indeed we should treat correctness issues at least Critical+.。"
+SPARK-26512	13234	2个人来回修改，说明未达成一致。Please avoid to set a blocker which is reserved for committers.。
+SPARK-27282	31313	4个人修改优先级，未达成一致。Please do not use Blocker/Critical as they are reserved for committers. This bug has been already fixed I think: I am not able to reproduce on master。
+THRIFT-3218	12323	"2个人修改了优先级，后一个人来回反复修改，这个是他个人原因，不确定哪个优先级。Open for 3 years without any updates, lowering the priority.。"
