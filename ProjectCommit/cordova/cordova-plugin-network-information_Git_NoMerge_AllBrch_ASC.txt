@@ -1,0 +1,3085 @@
+Revision: 012af5b8c525308ac109d6a2b0c8e83e1290f7bb
+Author: hermwong <herm.wong@gmail.com>
+Date: 16/05/2013 06:14:00
+Message:
+added intial classes & files for network information plugin #MsgLength=60
+
+
+----
+Added: README.md|2 0
+Added: plugin.xml|30 0
+Added: src/android/NetworkManager.java|248 0
+Added: src/ios/CDVConnection.h|34 0
+Added: src/ios/CDVConnection.m|132 0
+Added: www/network.js|87 0
+
+Revision: 26f6c22049a3fb4f62470e0182ae03e03f93ca24
+Author: hermwong <herm.wong@gmail.com>
+Date: 16/05/2013 07:04:29
+Message:
+updated path to apache core package #MsgLength=36
+
+
+----
+Modified: src/android/NetworkManager.java|1 1
+
+Revision: cfa794b72297b766ced7d0b5eb97deb7f551b4a1
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/05/2013 02:26:05
+Message:
+added tests+docs+reachability #MsgLength=30
+
+
+----
+Added: docs/connection.md|97 0
+Added: docs/connection.type.md|143 0
+Modified: plugin.xml|13 5
+Modified: src/ios/CDVConnection.h|1 1
+Added: src/ios/CDVReachability.h|85 0
+Added: src/ios/CDVReachability.m|260 0
+Added: test/autotest/html/HtmlReporter.js|101 0
+Added: test/autotest/html/HtmlReporterHelpers.js|60 0
+Added: test/autotest/html/ReporterView.js|164 0
+Added: test/autotest/html/SpecView.js|79 0
+Added: test/autotest/html/SuiteView.js|22 0
+Added: test/autotest/html/TrivialReporter.js|192 0
+Added: test/autotest/index.html|59 0
+Added: test/autotest/jasmine.css|81 0
+Added: test/autotest/jasmine.js|2530 0
+Added: test/autotest/pages/.DS_Store|0 0
+Added: test/autotest/pages/network.html|71 0
+Added: test/autotest/test-runner.js|62 0
+Added: test/autotest/tests/.DS_Store|0 0
+Added: test/autotest/tests/network.tests.js|55 0
+Added: test/cordova-incl.js|70 0
+Added: test/index.html|65 0
+Added: test/main.js|163 0
+Added: test/master.css|164 0
+Added: test/network/index.html|85 0
+
+Revision: f9402f00615d4ff88c946d833af022b94e4963a6
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/05/2013 03:58:20
+Message:
+javascritp should clobber navigator.connection instead of navigator.network #MsgLength=76
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 53210d77ea98b2793f76020d96874f94ae9f7013
+Author: hermwong <herm.wong@gmail.com>
+Date: 12/06/2013 02:40:19
+Message:
+added Network State permission for Android #MsgLength=43
+
+
+----
+Modified: plugin.xml|5 0
+
+Revision: d305c77c12479176d63d3150528fbf5dfcd16766
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 14/06/2013 05:46:45
+Message:
+first pass at wp7 support #MsgLength=26
+
+
+----
+Modified: plugin.xml|12 0
+Added: src/wp7/NetworkStatus.cs|129 0
+
+Revision: 54627b93a943d57e84939724d4217114825264ea
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 15/06/2013 07:37:49
+Message:
+[CB-3731] added network capabilities for wp7 #MsgLength=45
+
+
+----
+Modified: plugin.xml|5 1
+
+Revision: 8f551d6e634b972ccbfa76644a325d11563863bb
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 18/06/2013 04:17:59
+Message:
+Fixed Network plugin: bad ref in plugin.xml. Added connection constants + additional global to attach to. networks JS now registers its own channel and attaches itself to deviceready as a requirement before firing deviceready. #MsgLength=227
+
+
+----
+Modified: plugin.xml|6 1
+Modified: src/android/NetworkManager.java|1 0
+Added: www/Connection.js|34 0
+Modified: www/network.js|3 1
+
+Revision: 27a1eef5ae325ae537d594dab911ce2acf5d70f1
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 18/06/2013 09:18:30
+Message:
+updated plugin.xml #MsgLength=19
+
+
+----
+Modified: plugin.xml|1 2
+
+Revision: f716a28b1c2b2eaa1e8696faa5864f2689d18028
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 25/06/2013 06:58:28
+Message:
+[CB-3730] first pass wp8 support #MsgLength=33
+
+
+----
+Modified: plugin.xml|16 1
+Added: src/wp8/NetworkStatus.cs|129 0
+
+Revision: f4d804c71c4f616f34d4e522a9eade0e937797de
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:56
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 4c73c90b4b5cf0d8c88695f9218b640c17d4593d
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 07:03:14
+Message:
+[CB-4123] remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|2 2
+Renamed: src/wp/NetworkStatus.cs [from src/wp8/NetworkStatus.cs]|0 0
+Deleted: src/wp7/NetworkStatus.cs|0 129
+
+Revision: 7abafdf62102cf91001dc1c6762f2d6a8cd7d77b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: src/android/NetworkManager.java|4 4
+
+Revision: b6b48e9d6ef8b45b61ec01021c4b80f0082ff05a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 11/07/2013 08:21:50
+Message:
+[CB-2686] Update Connection reachability to 'cellular' and remove deprecation notice. #MsgLength=86
+
+
+----
+Modified: src/ios/CDVConnection.m|1 8
+
+Revision: 43b45b9ee2f97face4afdef74fe38c922f97054c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:16:34
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Added: .gitignore|23 0
+
+Revision: c16ab8cfb3d9a3201de795b55c295ae971c5a363
+Author: lorinbeer <lorin@adobe.com>
+Date: 17/07/2013 05:11:58
+Message:
+[CB-3732] network plugin breakout for blackberry #MsgLength=49
+
+
+----
+Modified: plugin.xml|8 0
+Added: src/blackberry10/index.js|59 0
+
+Revision: 145a95c2fb63c44b61a3e9aa9d20d0abc1d8b5dd
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|3 0
+
+Revision: e45286df35487a4414756d8fb93597ea454cb1ff
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/07/2013 06:10:59
+Message:
+[CB-4363] Network Info plugin needs to specify SystemConfiguration.framework dependency in plugin.xml #MsgLength=102
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: c687a3de2e796ec0f5c45ef8c6a64b4148bca6fa
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 30/07/2013 09:11:18
+Message:
+[Windows8] Added support for Windows8 #MsgLength=38
+
+
+----
+Modified: plugin.xml|7 0
+Added: src/windows8/NetworkInfoProxy.js|87 0
+
+Revision: f761170acf36f9ccfe78a765d1c972e1dc1292d3
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:32:29
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 96b0c5d2f61f977916441447f7ed787fa670771f
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 31/07/2013 07:09:21
+Message:
+added firefoxos network apis #MsgLength=29
+
+
+----
+Modified: plugin.xml|9 0
+Added: src/firefoxos/network.js|29 0
+
+Revision: 2aec962575f830de49c103bce7122376e0fcb8cc
+Author: Anis Kadri <anis@apache.org>
+Date: 01/08/2013 01:37:53
+Message:
+fixing malformed plugin.xml #MsgLength=28
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: d6874ed7b1bd3c6034e53c6505ebf38d960d7c21
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 31/07/2013 08:01:07
+Message:
+[xml] correcting invalid xml, adding namespace #MsgLength=193
+
+
+----
+Modified: plugin.xml|2 1
+
+Revision: 46a22ddfd84581c5503e7087901c43cec39c1c36
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: 2489358286e11e6b8890d956e7448e29e0e5835b
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 4ea68167a45aa3c0dccdc318a2edf34557a791d9
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 05:48:06
+Message:
+updated readme, name tag and namespace #MsgLength=39
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|1 1
+
+Revision: 9b762951d4b4f396ff7f576326380d90b56d98a1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-network-information to its own Java package. #MsgLength=75
+
+
+----
+Modified: plugin.xml|2 2
+Modified: src/android/NetworkManager.java|1 1
+
+Revision: ddf9e6927e46133224605a0cddeaa052ffe773f2
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 06:21:14
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 2b7b208ee421d8fc767d7cb81a38df4a48060eb6
+Author: lorinbeer <lorin@adobe.com>
+Date: 21/08/2013 05:27:27
+Message:
+CB-4432 copyright notice change #MsgLength=32
+
+
+----
+Modified: src/blackberry10/index.js|16 11
+
+Revision: f1d670ac46a9c48ebd62419882f8329385b2783b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+[CB-4752] Updated version and changelog #MsgLength=40
+
+
+----
+Added: CHANGELOG.md|24 0
+Modified: plugin.xml|1 1
+
+Revision: a85c0a41ac61012cf25611dbc9d2221df514a03b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:22
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 061bccf669e514a25fb99f563b1d1dae8e5a9b97
+Author: lorinbeer <lorin@adobe.com>
+Date: 21/08/2013 05:27:27
+Message:
+CB-4432 copyright notice change #MsgLength=32
+
+
+----
+Modified: src/blackberry10/index.js|16 11
+
+
+
+Revision: cb86c07face655406c046f66b3b2c32d7a475b62
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: c7425809161ef27e050abf1c943f9dfde0c8eed0
+Author: hermwong <herm.wong@gmail.com>
+Date: 18/09/2013 06:39:55
+Message:
+added Network APIs for FirefoxOS #MsgLength=33
+
+
+----
+Modified: plugin.xml|8 4
+Renamed: src/firefoxos/NetworkProxy.js [from src/firefoxos/network.js]|35 4
+
+Revision: f2ce6b42662300b836921bc1acfc1571270011b0
+Author: hermwong <herm.wong@gmail.com>
+Date: 18/09/2013 06:40:35
+Message:
+removed duplicate comment line from plugin.xml #MsgLength=47
+
+
+----
+Modified: plugin.xml|0 1
+
+Revision: 0f8d4d58a3bfd06cd7ec8d04512a8af2941197f8
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:36:19
+Message:
+CB-4889 renaming org.apache.cordova.core.network-information to org.apache.cordova.network-information #MsgLength=103
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: c7f3689d7b3b838084555f49d01f3f0ba4ae0f8c
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 24/09/2013 16:59:03
+Message:
+[windows8] commandProxy was moved #MsgLength=34
+
+
+----
+Modified: src/windows8/NetworkInfoProxy.js|1 1
+
+
+Revision: fd27f9f8440544969b22d105b7658b025984660e
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:50:46
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a5136aa256338705c8d1339c84e2212d59238c95
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 08:54:54
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.2.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: plugin.xml|1 1
+
+Revision: 2078f57283b5f362547755f8299a7dd9a2a18cb7
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:15
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 51ba4adec1472e0b70813fd8ea68b314d03e1ad7
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/10/2013 04:59:42
+Message:
+CB-5128: add repo + issue tag to plugin.xml for network information plugin #MsgLength=75
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: f1a99e72fef0bdfd04d91cc5cc6b6bfd2adee657
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:07:03
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.2.4 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: ac65585efc08d6da3aee001561d3bdfbcbd13f8b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:16
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: bfe7ab777e5cee6c1fbc5497606d0a1c5bb7ef75
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 06:21:15
+Message:
+Added amazon-fireos platform. Change to use amazon-fireos as the platform if user agent string contains 'cordova-amazon-fireos' #MsgLength=128
+
+
+----
+Modified: plugin.xml|17 0
+Modified: test/cordova-incl.js|4 2
+
+Revision: 43245253e82c7195619062b4d6a33b15e82004ca
+Author: Maxim Ermilov <ermilov.maxim@gmail.com>
+Date: 22/09/2013 12:40:51
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|6 0
+Added: src/ubuntu/network_information.cpp|63 0
+Added: src/ubuntu/network_information.h|47 0
+
+Revision: 9bc7912d4e5e5eabd445c7fcb329620a8408acff
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 11/11/2013 21:59:04
+Message:
+[ubuntu] specify policy_group #MsgLength=30
+
+
+----
+Modified: plugin.xml|5 0
+
+
+Revision: 8a48f84fccad0db8df351be0904f139c9e305148
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:31
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.2.5 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: 28a32909fed9c10f99adce15652adc6853580aec
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:04
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: d71b83e20c8476b83dbaa618536efd056cc1744b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/connection.md|0 97
+Deleted: docs/connection.type.md|0 143
+
+Revision: 130ebd37533cf91bbe6ddb72c8d70f43e25a2c5c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 05:17:29
+Message:
+CB-5658 Add doc.index.md for netinfo plugin #MsgLength=44
+
+
+----
+Modified: README.md|21 4
+Added: doc/index.md|190 0
+
+Revision: 026a2d13339f2e38606b7aa96b170c8f7bd031ed
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:03
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: d9817d8b4bbb5531c7cc3fc71e53ffa4542ad2d2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.2.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: dc0b33a32742901639699b9edda8636c8d321e0d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 65e423cd7e28ca69c838db9638484dd2c1bcf45d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:53
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 59
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/network.html|0 71
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/.DS_Store|0 0
+Deleted: test/autotest/tests/network.tests.js|0 55
+Deleted: test/cordova-incl.js|0 72
+Deleted: test/index.html|0 65
+Deleted: test/main.js|0 163
+Deleted: test/master.css|0 164
+Deleted: test/network/index.html|0 85
+
+Revision: a78e4c5dc7a0d257718fb52d0aadbf425fcaf708
+Author: Salvatore Iovene <salvatore@iovene.com>
+Date: 28/11/2013 16:44:14
+Message:
+Initial implementation of Tizen plugin. #MsgLength=40
+
+
+----
+Modified: plugin.xml|17 11
+Added: src/tizen/NetworkProxy.js|71 0
+
+
+Revision: cd67d7a30f51efe7b2e3adb098ae65409d292d21
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:59
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.2.7 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 1
+Modified: plugin.xml|1 1
+
+Revision: 38a8f70fb0fbf5a2307712b07b9b4f4ed80665c5
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:30
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: d2cd2fbb638912a0362e15a313ab61ad29e4040e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+Revision: 37047348db396c3f1176d860436a03e400b7a659
+Author: Piotr Zalewa <zalun@ubuntu.(none)>
+Date: 16/03/2014 09:44:57
+Message:
+there was an error in the object definition #MsgLength=44
+
+
+----
+Modified: src/firefoxos/NetworkProxy.js|2 2
+
+
+Revision: 44005034004559bb798f402b4ef177f5f70167d8
+Author: Rodrigo Silveira <rodrigos@outlook.com>
+Date: 08/04/2014 02:32:28
+Message:
+Initial version of firefox os network information plugin #MsgLength=57
+
+
+----
+Modified: doc/index.md|6 0
+Modified: plugin.xml|0 5
+Modified: src/firefoxos/NetworkProxy.js|63 34
+
+
+Revision: 6831f06685076dbbded4e78b2b89a09ee885f8fe
+Author: Elad Katan <elad.katan@hp.com>
+Date: 24/03/2014 17:39:28
+Message:
+CB-6342 - iOS reports a cellular connection even when in Airplane mode #MsgLength=71
+
+
+----
+Modified: src/ios/CDVConnection.m|8 2
+
+Revision: 69815320d1ee6054db4e116fccc0fd0ca47d10b7
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2014 07:34:37
+Message:
+CB-6422 [windows8] use cordova/exec/proxy #MsgLength=42
+
+
+----
+Modified: src/windows8/NetworkInfoProxy.js|1 1
+
+Revision: 8ec26ab95ec38ea3be6586760c8458adcd3fe19e
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:20:06
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+
+Revision: b5e61fac0414b5ed02f4d39127968a770331467f
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 21:50:40
+Message:
+CB-6465: Add license headers to Tizen code #MsgLength=43
+
+
+----
+Modified: src/tizen/NetworkProxy.js|21 0
+
+Revision: a3e7f1a135db00b21fe8ec635ae9742f390e170e
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.2.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+
+Revision: e437369c57c012953a97303dfe4383a1e99167bc
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: e0d3ae00b755540d163f7845ca728349f1c0ae4d
+Author: Yann Lugrin <yann.lugrin@liquid-concept.ch>
+Date: 26/03/2014 17:59:25
+Message:
+CB-6350 - Fix networkStatusForFlags return value type to work with 64-bit iOS (closes #8) #MsgLength=144
+
+
+----
+Modified: src/ios/CDVReachability.m|1 1
+
+
+Revision: c0ef6c7aeb96cc801f22f43387bcacf9e75f047f
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:33:29
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: f27b34c2a90b4e620a30a6688ce94bb9f5dc083b
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:52:33
+Message:
+CB-6809 Add license to CONTRIBUTING.md #MsgLength=39
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: 1cec040b30084a02ce052278a13eda9c7d9d46d0
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 04/06/2014 05:08:16
+Message:
+Cached extra info to better detect changes. #MsgLength=44
+
+
+----
+Modified: src/android/NetworkManager.java|33 10
+
+Revision: fea5674007cc5157a42c6705f7e46befd1574121
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 03:43:41
+Message:
+updated notice file to include missing license #MsgLength=47
+
+
+----
+Modified: NOTICE|3 0
+
+Revision: be5875f9d9824bf41ddc8b9771a704f1e8719e9a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:43
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.2.9 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: plugin.xml|1 1
+
+Revision: f4ffab9c71c767d31c2e1157303ba98a40446a16
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a5e9631258691890f08d94bc784f96aa304c2868
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 10/06/2014 21:50:56
+Message:
+CB-6907: android: Don't crash on startup if no networks available #MsgLength=66
+
+
+----
+Modified: src/android/NetworkManager.java|2 1
+
+Revision: 07ff22accc1e0a22dbf97153a516ebef886aae41
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 25/06/2014 03:46:11
+Message:
+CB-7019 Updated version and RELEASENOTES.md for release 0.2.10 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: d718d0e7cf969495a9d22a10201187d866ef4ba1
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 25/06/2014 03:47:46
+Message:
+CB-7019 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 15049afcce19b59a3ba3e69f2510dbd9d42b3f5b
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:36:26
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-network-information #MsgLength=79
+
+
+----
+Added: doc/es/index.md|173 0
+
+Revision: 1d4d78820cc8dd89bb57a0964e61bc7298b62f24
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:15:08
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-network-information #MsgLength=79
+
+
+----
+Added: doc/fr/index.md|173 0
+
+Revision: d327384b56d263689da47108e55da1e239965812
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:49:56
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-network-information #MsgLength=79
+
+
+----
+Added: doc/ja/index.md|181 0
+
+Revision: a8fbf0e92dcf1692a91df51f090783fbd459a53a
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:22:33
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-network-information #MsgLength=79
+
+
+----
+Modified: doc/es/index.md|10 2
+Modified: doc/fr/index.md|6 0
+Added: doc/it/index.md|181 0
+Added: doc/ko/index.md|181 0
+Added: doc/pl/index.md|181 0
+Added: doc/zh/index.md|181 0
+
+Revision: 12fc7c39f43b768baf5dad6f9d99077fc2eb3745
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:36:58
+Message:
+documentation translation: cordova-plugin-network-information #MsgLength=62
+
+
+----
+Added: doc/de/index.md|181 0
+Modified: doc/ja/index.md|8 8
+
+Revision: c19fecc19be779df7f0bfb237bb3027f27e1c3c4
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 29/05/2014 01:15:33
+Message:
+CB-6773cordova-plugin-network-information documentation translation: cordova-plugin-network-information #MsgLength=104
+
+
+----
+Modified: doc/zh/index.md|36 36
+
+Revision: 6869d768a149c7b714f3b2904cbff6afc0f2c8af
+Author: guglie <gdguglie@gmail.com>
+Date: 27/06/2014 23:19:18
+Message:
+Fixed docs for online/offline event being backwards #MsgLength=91
+
+
+----
+Modified: doc/index.md|4 4
+
+Revision: d67870f7662e00f41f9b5d32c9b785abe29befbf
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:36:26
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-network-information #MsgLength=79
+
+
+----
+Added: doc/es/index.md|173 0
+
+Revision: 37ce7adc577890a411461af02c572ef86a2a0210
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:15:08
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-network-information #MsgLength=79
+
+
+----
+Added: doc/fr/index.md|173 0
+
+
+Revision: 996cd746f32fb83aa20a9882a633b0c73c8293bd
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:49:56
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-network-information #MsgLength=79
+
+
+----
+Added: doc/ja/index.md|181 0
+
+Revision: def55b89f95bab6d44e7b241e1ddd6c080da655c
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:22:33
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-network-information #MsgLength=79
+
+
+----
+Modified: doc/es/index.md|10 2
+Modified: doc/fr/index.md|6 0
+Added: doc/it/index.md|181 0
+Added: doc/ko/index.md|181 0
+Added: doc/pl/index.md|181 0
+Added: doc/zh/index.md|181 0
+
+Revision: 0e18a3a0506ca81821f797c9a99e7f72fe2f1801
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:36:58
+Message:
+documentation translation: cordova-plugin-network-information #MsgLength=62
+
+
+----
+Added: doc/de/index.md|181 0
+Modified: doc/ja/index.md|8 8
+
+
+Revision: 96da714b6d9a400d284414943d5be70fff1b2920
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 25/06/2014 03:46:11
+Message:
+CB-7019 Updated version and RELEASENOTES.md for release 0.2.10 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: 3eac5ff3e71f41ff9e44616981e05d7f2d4c357a
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 25/06/2014 03:47:46
+Message:
+CB-7019 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 5eafdd897ecd3754534e1f5981049959fa5ecdfa
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 29/05/2014 01:15:33
+Message:
+CB-6773cordova-plugin-network-information documentation translation: cordova-plugin-network-information #MsgLength=104
+
+
+----
+Modified: doc/zh/index.md|36 36
+
+
+Revision: b61bc6700bd2445ba251b9e84610c6fca8655c6d
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:28:15
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-network-information documentation translation: cordova-plugin-network-information #MsgLength=131
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Added: doc/ru/index.md|181 0
+Modified: doc/zh/index.md|36 36
+
+Revision: 53124855555dee893b929491310fa27ccebd8eb2
+Author: Willy Aguirre <marti1125@gmail.com>
+Date: 29/07/2014 19:39:05
+Message:
+update NetworkProxy.js #MsgLength=23
+
+
+----
+Modified: src/firefoxos/NetworkProxy.js|1 1
+
+Revision: 49d9e029b0237b425c12486e8e14a178b52376dc
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 02/08/2014 04:24:22
+Message:
+CB-7249cordova-plugin-network-information documentation translation: cordova-plugin-network-information #MsgLength=104
+
+
+----
+Modified: doc/pl/index.md|2 2
+
+Revision: 00b71a7cd92c6de183a0f91318a2cefcdc7ae653
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:24
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.2.11 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+
+Revision: 16ec715631f6c08c42fad384138d9ece57f80b15
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:29
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: c86adb7db8a3a136ce80392d7202d65d1cc256b2
+Author: Bas Bosman <github@nazgul.nu>
+Date: 18/07/2014 23:21:26
+Message:
+Fix naviagtor typo #MsgLength=19
+
+
+----
+Modified: www/network.js|1 1
+
+
+Revision: 263e3bf21e2f39baa1675e5d1f110de3384db197
+Author: javierbb31 <javier.becerra.ber@gmail.com>
+Date: 21/06/2014 05:59:32
+Message:
+Port network tests to plugin-test-framework #MsgLength=214
+
+
+----
+Modified: plugin.xml|3 0
+Added: test/tests.js|58 0
+
+
+Revision: fa1bcac78a4e22f0c01b78dcf87a5b64c2959938
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 17/07/2014 01:51:46
+Message:
+CB-6964 ported manual tests #MsgLength=76
+
+
+----
+Modified: test/tests.js|45 5
+
+Revision: aaa86d1555d0593659e25118888a2db1f88594c7
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 02/08/2014 01:42:27
+Message:
+Renamed test dir and added nested plugin.xml #MsgLength=45
+
+
+----
+Added: tests/plugin.xml|30 0
+Renamed: tests/tests.js [from test/tests.js]|0 0
+
+
+Revision: edaf8532e40fc9fe21560351df3563d05aa7a55f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/08/2014 09:31:56
+Message:
+remove reference to test assets, they are optional #MsgLength=51
+
+
+----
+Modified: plugin.xml|0 3
+
+Revision: aed63c8ffe06dcf620bbf73e1e3bd6ba1f4b38f5
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 29/07/2014 04:58:13
+Message:
+CB-6724 added documentation for manual tests #MsgLength=64
+
+
+----
+Modified: tests/tests.js|5 2
+
+Revision: a810b7db99699024893d9f8d00fc1d916a65952d
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 06/09/2014 01:02:07
+Message:
+Added support for the browser #MsgLength=30
+
+
+----
+Modified: doc/index.md|1 0
+Modified: plugin.xml|7 0
+Added: src/browser/NetworkProxy.js|53 0
+
+Revision: ec96704786cd8cbe2efbbb264d4032f7c237c2e8
+Author: Rodrigo Silveira <rodrigos@outlook.com>
+Date: 12/09/2014 04:40:19
+Message:
+Fix network information type exception on fxos 2 #MsgLength=49
+
+
+----
+Modified: src/firefoxos/NetworkProxy.js|11 3
+
+
+Revision: 93f8afab62be1d03330ae4e19cffd4a1e1c247c0
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 16/09/2014 05:27:02
+Message:
+CB-7471 cordova-plugin-network-information documentation translation: cordova-plugin-network-information #MsgLength=105
+
+
+----
+Modified: doc/de/index.md|1 0
+Modified: doc/es/index.md|1 0
+Modified: doc/fr/index.md|1 0
+Modified: doc/it/index.md|1 0
+Modified: doc/ja/index.md|1 0
+Modified: doc/ko/index.md|1 0
+Modified: doc/pl/index.md|1 0
+Modified: doc/ru/index.md|1 0
+Modified: doc/zh/index.md|3 2
+
+Revision: df7aac845dc7deddbdb76e89216776a802ee8b67
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:44
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.2.12 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d450664b67ed6a58cfc3baf05d29d04af2cb2e3a
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:02
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 3c9c2460be0a5c8e2913c06390a8d562ee0b211d
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:18
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: 37c0e3ff75f512b769b85a666f9a875e017de78d
+Author: Joe Bowser <bowserj@apache.org>
+Date: 23/09/2014 01:27:10
+Message:
+CB-7595: Android L changes the type from Mobile to Cellular, I'm pretty sure this isn't documented #MsgLength=99
+
+
+----
+Modified: src/android/NetworkManager.java|4 1
+
+Revision: 056c6dddafdb56b7895602ac6e8065aa7877d24c
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 07:10:13
+Message:
+ Updated version and RELEASENOTES.md for release 0.2.13 #MsgLength=56
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d180b11cee4617fe46e3f150b9438e54ffa21c94
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 08:09:47
+Message:
+ Incremented plugin version. #MsgLength=29
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 147bc870a81720c985107b1a229ea5721eef06c8
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:13:05
+Message:
+CB-7700 cordova-plugin-network-information documentation translation: cordova-plugin-network-information #MsgLength=105
+
+
+----
+Modified: doc/de/index.md|5 5
+Modified: doc/es/index.md|19 19
+Modified: doc/pl/index.md|9 9
+Modified: doc/ru/index.md|18 18
+
+
+Revision: 9dc1796c59e46d2111930879b8eeffdca3d2b6f3
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 11/10/2014 00:48:33
+Message:
+CB-7700 cordova-plugin-network-information documentation translation: cordova-plugin-network-information #MsgLength=105
+
+
+----
+Modified: doc/ru/index.md|25 25
+
+Revision: 165b4f01209e6cbdb83619c2b1fb1b860cc1dccc
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/11/2014 05:21:52
+Message:
+CB-7976 Android: Use webView's context rather than Activity's context for intent receiver #MsgLength=90
+
+
+----
+Modified: src/android/NetworkManager.java|5 14
+
+Revision: 17a38609fb85cc1713127598ef82824feb973949
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.2.14 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 928efea0d4b239f701dbf7890e7a4581bc99a291
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:50
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: fb608698e5c97e18da8bb1d6f73621bb3676ebfe
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 30/01/2015 19:57:10
+Message:
+CB-8384 Add Windows section to Network Information plugin #MsgLength=58
+
+
+----
+Modified: plugin.xml|8 1
+Renamed: src/windows/NetworkInfoProxy.js [from src/windows8/NetworkInfoProxy.js]|1 0
+
+Revision: c8281535160a547a367b7c820360e711c59d4cc9
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 30/01/2015 20:33:36
+Message:
+CB-8384 Add Windows platform quirks #MsgLength=36
+
+
+----
+Modified: doc/index.md|5 1
+
+Revision: d8a714757fae0ac615224a7a0daabaa88c8e2581
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 30/01/2015 20:37:16
+Message:
+CB-8384 Fixes the way we detect online status on Windows #MsgLength=57
+
+
+----
+Modified: src/windows/NetworkInfoProxy.js|4 2
+
+Revision: 9710603feb6a458314145bfc4c4814657b16346a
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 30/01/2015 21:10:59
+Message:
+CB-8384 Network status change support on Windows #MsgLength=49
+
+
+----
+Modified: src/windows/NetworkInfoProxy.js|52 54
+
+Revision: 81037e29cf3094c3f1235b7c21090afea3f723c3
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.2.15 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 98f63d28bc0567e225138dc9162e9f93c92d0451
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:03
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d4f35b044c2dc6069a582a516c8c8c8dcf295351
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 16:49:37
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|46 0
+
+Revision: 5cdb3838033124170e74ed483b400009862d4379
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:52:16
+Message:
+CB-8438 cordova-plugin-network-information documentation translation: cordova-plugin-network-information #MsgLength=105
+
+
+----
+Modified: doc/de/index.md|8 4
+Modified: doc/es/index.md|7 3
+Modified: doc/fr/index.md|14 10
+Modified: doc/it/index.md|6 2
+Modified: doc/ja/index.md|7 3
+Modified: doc/ko/index.md|6 2
+Modified: doc/pl/index.md|6 2
+Modified: doc/zh/index.md|7 3
+
+Revision: 9e57b0227f81a3032a19633d4f90dbcb07ddf508
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 08:47:11
+Message:
+CB-8573 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|14 0
+Modified: README.md|2 0
+
+Revision: 6ae87c9dc05e5feb6650f17b321fd9807841fc0d
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 13/03/2015 23:03:29
+Message:
+CB-8659: ios: 4.0.x Compatibility: Remove use of initWebView method #MsgLength=68
+
+
+----
+Modified: src/ios/CDVConnection.m|10 14
+
+Revision: daedbf68adb9d1285d2ae4fd051379c51545010c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:34:04
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|181 2
+Deleted: doc/index.md|0 201
+
+Revision: a8c550785367d258c3a1cddabf6a1a9ce9e329c6
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 04/02/2015 22:09:06
+Message:
+CB-8185 Use `navigator.onLine` as connection information source on browser platform #MsgLength=141
+
+
+----
+Modified: README.md|5 0
+Modified: plugin.xml|3 2
+Deleted: src/browser/NetworkProxy.js|0 53
+Added: www/browser/network.js|92 0
+Modified: www/network.js|3 1
+
+Revision: 8023cd46ddeb812987574227b62b9623cbbb8ba4
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:42:25
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 3
+
+Revision: 481bdd93b023f808c301943ac6c541e3633aeee4
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 27/03/2015 00:03:33
+Message:
+CB-8185 Fixes typo in `cordova.platformId` #MsgLength=43
+
+
+----
+Modified: www/network.js|1 1
+
+Revision: a330e797a59e218f89eb233c98f5ebbb8c6dbdcd
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:32
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: 86d0163696f269e08bb2e34b19668eb0ad1076b6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:06:01
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: 3ea83cb02bf726336700eb7cfce8e33393843d7b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 07:38:16
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 86f23c51d3a9ec83d4827ffecee3cd5c478f461e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 08:02:50
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 9ea70003d4f1d89c665894e75298f9bb3fc2f9c3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:38
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|14 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e19b69dba206734a2ba25385cd4c68b85e4c68cc
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:47
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f01d6a05eeee80cbb2d83f8983e607f65b4066f1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:31:11
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 30d51f8f320fe0421c9bacdc16a090a7b1232914
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 6942ccec946c5665abb3c678e87a041b16a56cd5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:22
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9ec0b4a2bd3b1b8d427dafcadd145d34d1028197
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 03/06/2015 00:00:22
+Message:
+fix npm md issue #MsgLength=17
+
+
+----
+Modified: README.md|17 17
+
+Revision: a8310e96352ce76d0ea24fb4ba9d5fb05ac6dac2
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:42:27
+Message:
+CB-9128 cordova-plugin-network-information documentation translation: cordova-plugin-network-information #MsgLength=105
+
+
+----
+Added: doc/de/README.md|190 0
+Added: doc/es/README.md|190 0
+Added: doc/fr/README.md|188 0
+Added: doc/it/README.md|190 0
+Added: doc/ja/README.md|190 0
+Added: doc/ko/README.md|190 0
+Added: doc/pl/README.md|190 0
+Added: doc/zh/README.md|190 0
+
+Revision: aea155f30200c4df2217ad6ca39627e4dd911d5c
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 17/06/2015 12:30:59
+Message:
+Adding .ratignore file. #MsgLength=24
+
+
+----
+Added: .ratignore|2 0
+
+Revision: 3d646e1f7dda44908761b7595a1dd275456c8a34
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:05
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.0.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d8bdb0e9530b38dc5974183a8dabb471040186d5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 9bd21e33419f8e1ac89aedebb11b5369a096ee4f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:36
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 0464a97742bd5727061f5e0680dfae9048e334fd
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 05:52:25
+Message:
+remove travis-ci integration #MsgLength=29
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 1
+
+Revision: c40e579c5aa4e77a4695040b44ce3aa427429a1e
+Author: Can Tecim <can.tecim@gmail.com>
+Date: 27/07/2015 02:11:52
+Message:
+Solved toLowerCase issue with Locale.US #MsgLength=39
+
+
+----
+Modified: src/android/NetworkManager.java|19 15
+
+Revision: a87effc43ed84ada1109e0e57a4e401d80b96c36
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 29/07/2015 02:17:10
+Message:
+This closes #16 #MsgLength=16
+
+
+----
+Modified: README.md|1 1
+
+Revision: 6550b937d0d437183984437deb452cbdd653ac18
+Author: Sid Ferreira <sid@ferreiraz.com.br>
+Date: 29/07/2015 03:55:07
+Message:
+Performance-related fix #MsgLength=75
+
+
+----
+Modified: src/android/NetworkManager.java|16 16
+
+Revision: cae65dd093d6c37965b913dddd8a282d8b94614f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 26/08/2015 06:23:44
+Message:
+CB-9542 Browser Proxy not defined correctly #MsgLength=44
+
+
+----
+Modified: plugin.xml|4 5
+Modified: www/browser/network.js|18 60
+
+Revision: 7caab2543ad6b8d167ac37bd83233c2103e4869a
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 26/08/2015 06:42:43
+Message:
+Moved browser proxy to src/., This closes #18, closes #22, closes #23, closes #26 #MsgLength=82
+
+
+----
+Modified: plugin.xml|1 1
+Renamed: src/browser/network.js [from www/browser/network.js]|0 0
+
+Revision: 82fed3f0b53ebbd76ae77e20310c4e8ee9fa36f2
+Author: VinuL <VinuLarge@gmail.com>
+Date: 27/08/2015 20:04:32
+Message:
+Update NetworkManager.java #MsgLength=296
+
+
+----
+Modified: src/android/NetworkManager.java|4 0
+
+
+Revision: a34791c6ec5d9c8073d1292a2d5d4fe9274ce67f
+Author: VinuL <VinuLarge@gmail.com>
+Date: 28/08/2015 15:51:20
+Message:
+Update NetworkManager.java #MsgLength=52
+
+
+----
+Modified: src/android/NetworkManager.java|1 2
+
+Revision: fd1055ebd8a9dd2f2bbba9d5941cd3725f6d62c8
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:29:31
+Message:
+add JIRA issue tracker link #MsgLength=28
+
+
+----
+Modified: README.md|3 1
+
+Revision: 5aac2609ceafcdcb0a746dd54bb21899a2f90a7a
+Author: Perry Stoll <perry@pstoll.com>
+Date: 05/10/2015 22:51:02
+Message:
+These notifications are objects so their address always evaluates to true. #MsgLength=75
+
+
+----
+Modified: src/ios/CDVConnection.m|1 1
+
+
+Revision: a31175e362347775e44bc49f92e62075fb31ce42
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: 2092eab18cdca7249129fe1c003f44b38ed54092
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:50
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: c71e00340cf75d1319cdfc8796d9a1d5390a1b88
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|72 72
+
+Revision: bbc2ffcb52019ce28eebddeb1d8e0f284a8b377d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:11
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: 552890074f54720c956e45cbc2085139bfc9f198
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:06
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f6d2782780a889cc730c25e7b183dc93158a6f5b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|41 41
+
+Revision: 3b1490cb7c5fcdcf54e35126236df94ad0b376c7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d018f7ead981eea61795f18a0f033ec952f0d421
+Author: Joe Bowser <bowserj@apache.org>
+Date: 18/12/2015 03:23:23
+Message:
+CB-10160: Fixed the case mismatch issue #MsgLength=40
+
+
+----
+Modified: src/android/NetworkManager.java|1 1
+
+Revision: 791d828fd4a66feb143cf1b71a99cbcb2c132294
+Author: edparsons <edwardparsons2@hotmail.com>
+Date: 28/12/2015 17:20:21
+Message:
+Adding CT radio information #MsgLength=27
+
+
+----
+Modified: src/ios/CDVConnection.m|27 0
+
+Revision: 3bf19c4c02ccd762eef069a0eae54d7abbe846a9
+Author: edparsons <edwardparsons2@hotmail.com>
+Date: 28/12/2015 18:18:01
+Message:
+Adding notification for CT radio information #MsgLength=44
+
+
+----
+Modified: src/ios/CDVConnection.m|26 24
+
+Revision: 6ddd34aa4a18e8d4d12af5bf57c9047fc47be49f
+Author: edparsons <edwardparsons2@hotmail.com>
+Date: 28/12/2015 18:19:00
+Message:
+Adding CoreTelephony to plugin.xml #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: 3968f2069dfc858244640215046b09649d8b2eb4
+Author: edparsons <edwardparsons2@hotmail.com>
+Date: 28/12/2015 18:19:45
+Message:
+Updating readme.md #MsgLength=18
+
+
+----
+Modified: README.md|1 1
+
+Revision: b0375e549b49000dd79582183e962ac79d6daac0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:35:06
+Message:
+CB-10368 Updated version and RELEASENOTES.md for release 1.2.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7ca10c7d151c6f50e25dc387e4876383f9f0edbf
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:58:32
+Message:
+CB-10368 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e95dc3b9abf2d63aa62c6c2c1fdea1dfe91225b8
+Author: t1st3 <contact@tiste.org>
+Date: 08/02/2016 17:32:48
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=259
+
+
+----
+Modified: package.json|1 1
+
+Revision: b6f537fe4c460fc5eb28837ac5314932f40d672a
+Author: daserge <v-seshak@microsoft.com>
+Date: 01/03/2016 15:11:09
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Modified: .gitignore|1 1
+Added: .jshintrc|17 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/blackberry10/index.js|2 0
+Modified: src/browser/network.js|0 2
+Modified: src/firefoxos/NetworkProxy.js|3 4
+Modified: src/tizen/NetworkProxy.js|2 1
+Modified: src/windows/NetworkInfoProxy.js|1 6
+Modified: tests/tests.js|3 0
+
+Revision: 079c10d412549c53c207e5b5cc010957c6b447c6
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 03/03/2016 08:40:06
+Message:
+CB-10763: Remove emoji in cordova-plugin-network-information #MsgLength=85
+
+
+----
+Modified: README.md|3 1
+
+Revision: 09b46b2c612a97d963e00ab4739b1370efe538a3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:27
+Message:
+ Updated version and RELEASENOTES.md for release 1.2.1 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 42c74cc4ff8eb78412bfac3438f21261c2422796
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:27
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c176313d5018414d52025afcb4249d6521595add
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:51
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: bc8923ffe19aad05f9d80d945bf880fe525cd118
+Author: Mikejo5001 <m.jones168@outlook.com>
+Date: 14/04/2016 06:42:11
+Message:
+Add code examples. This closes #40. #MsgLength=36
+
+
+----
+Modified: README.md|120 0
+
+Revision: 808a2a71d99f6f8efe832019a089d19119340871
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 19/05/2016 03:09:41
+Message:
+Readme: Add fenced code blocks with langauage hints #MsgLength=52
+
+
+----
+Modified: README.md|29 27
+
+Revision: 407eee2a24592b1f2e950ed2dd6fffb34a34104c
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:53:59
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: 83e870bf4e3a56e816c8ad5b15b2fa6831279b17
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 17:11:42
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|3 1
+
+Revision: da7e85ec92a200ffb60cdb25827d58dce3bef8f2
+Author: Rob Close <rob.close@sap.com>
+Date: 07/06/2016 03:13:13
+Message:
+CB-11384 android: Does not pass sonarqube scan #MsgLength=161
+
+
+----
+Modified: src/android/NetworkManager.java|9 3
+
+Revision: 3ded941ff31db832f0b1ffa97cacb65350ca34c5
+Author: allenconquest <allen.conquest@valexa.com>
+Date: 19/04/2016 22:40:05
+Message:
+fixed two potential memory leaks when doing Analyze on iOS 9 #MsgLength=61
+
+
+----
+Modified: src/ios/CDVReachability.m|6 0
+
+Revision: c9ac2d35f4cdc4eb96e4c5e4f649b8f9afcc9e21
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 30/06/2016 05:32:13
+Message:
+Cleanup pull requests. This closes #41. This closes #43 #MsgLength=56
+
+
+----
+
+Revision: 7a8971c2f908a49afe33559e78c586e8836efd39
+Author: dankito <dankito@outlook.com>
+Date: 28/06/2016 15:06:49
+Message:
+Detection of Ethernet Network Type on Android #MsgLength=227
+
+
+----
+Modified: src/android/NetworkManager.java|2 1
+
+
+Revision: eaea5fd2554f4d6c7eebe2139efb36e74c0a1c7e
+Author: NickyYo <nickmit87@gmail.com>
+Date: 05/07/2016 18:07:31
+Message:
+Update NetworkManager.java #MsgLength=38
+
+
+----
+Modified: src/android/NetworkManager.java|1 1
+
+Revision: 04a1f713caa4eeeeb3dd0cc3f7cba0ed498e54d0
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 07/07/2016 11:41:41
+Message:
+Merge branch 'master' of https://github.com/NickyYo/cordova-plugin-network-information #MsgLength=104
+
+
+----
+Modified: README.md|1 1
+
+Revision: d29f28f6c48e3d8458419d71d69c3a7f89c60354
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 04/08/2016 17:53:45
+Message:
+CB-11300: (android) Recognize "2G", "3G" and "4G" network connection subtype names #MsgLength=83
+
+
+----
+Modified: src/android/NetworkManager.java|12 6
+
+Revision: 379b35debb79d0515eebcdb2ac5702a32aebdf02
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 23/08/2016 03:36:58
+Message:
+CB-11734: Network Plugin uses Android Log class and not Cordova LOG class #MsgLength=74
+
+
+----
+Modified: src/android/NetworkManager.java|9 9
+
+Revision: a697d3a578e280983b518e3f72ac333fb86f2bbf
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 22:36:18
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=397
+
+
+----
+Modified: package.json|7 0
+
+Revision: 0e6889a09e0d435c248e40adef8054f3eaae8cf3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:55
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 1.3.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|16 3
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 75c38c4d694313fe1307e5371cf225bac158aece
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f4dc63cb763a1484d254fd86e7ee5243c473b6d3
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:31:36
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=101
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: c911ef883c4564b5f04eff04eb6a257eab8b4323
+Author: Nikita Matrosov <matrosov.nikita94@gmail.com>
+Date: 14/11/2016 22:05:21
+Message:
+CB-11230 CB-11505 iOS: Add compatibility with IPv6 #MsgLength=368
+
+
+----
+Modified: src/ios/CDVReachability.h|1 5
+Modified: src/ios/CDVReachability.m|6 36
+
+Revision: 0079edbaa5e24419ea383d918cbe960d3d4cae99
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:46
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 1.3.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|177 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: fc4cdeb1c75899a0556dd05ead6c372f4d8aa3ae
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:08
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4ab07501721529ef6d3fd796244a370549095163
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 18:41:36
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: ee0cb16e585bda6cfa5e382544b9ef4ef01080b0
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:57:16
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-network-information #MsgLength=69
+
+
+----
+Modified: RELEASENOTES.md|1 172
+
+Revision: f4f1abec3a0f5e5efd1ec8bc8312c97ad92deefa
+Author: Ken'ichi Fukushima <ken.fukushima@gmail.com>
+Date: 12/09/2016 17:28:49
+Message:
+CB-11838 ios: Unregister callback function at the right timing. #MsgLength=345
+
+
+----
+Modified: src/ios/CDVReachability.m|1 0
+
+Revision: 30e219aa959a6968f6404404c8ccf684a8c6e6a5
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:37:33
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: d8c1b0b503e349b61274dab39fae14241d40f14e
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 21:10:44
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=68
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|62 0
+
+Revision: a3194f20df02bf684c51e47c57de03225fa54412
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:27
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 1.3.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|110 171
+Modified: tests/plugin.xml|5 29
+
+Revision: 9374041557ea643c72b6bfb145859b2be73eeeaf
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:56:01
+Message:
+Set VERSION to 1.3.3-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|171 110
+Modified: tests/plugin.xml|29 5
+
+Revision: 4ae38aa1822394a1c42c61a56010187b3b0a85d7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 10:24:12
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: e288eadd208afc8b1d2c6b733fc003e61c815d76
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 21:22:10
+Message:
+CB-12622 Add Android 6.0 build badge to README #MsgLength=47
+
+
+----
+Modified: README.md|3 3
+
+Revision: 710b53d24b360597646da8d353e1031fbfe7b4b9
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:04:08
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 1.3.3 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: de6953cf05fb0e8723236693fd26f91ed4413f37
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:04:10
+Message:
+Set VERSION to 1.3.4-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f78e5c4c9db9eb423afa0c95c59daf77ae598cac
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 18:50:52
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: 1410ad7a52573ad100c90c0ecfaef5d7f7e826ae
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 27/06/2017 13:11:35
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Modified: .travis.yml|70 3
+
+Revision: 344448c315f7d092f3482ced09bc254126e60ca3
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:32:13
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: 0ebe79b5e62ecec00ffb4d57251b36b6873e2621
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 16:25:17
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: 3a24e0d4fba4866412364f295922ebb164d8514e
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:34:43
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: f9643daba0fd67ad8722498891a4efccdce1b26b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 28/07/2017 18:16:07
+Message:
+CB-13028 (CI) Browser builds on Travis and AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|3 2
+Modified: .travis.yml|16 0
+
+Revision: 78691e43e16d753603f41d646ca7e71b3212c282
+Author: Audrey So <audreyso@apache.org>
+Date: 13/06/2017 02:15:35
+Message:
+CB-12895 : added eslint and removed eslint #MsgLength=43
+
+
+----
+Added: .eslintrc.yml|10 0
+Deleted: .jshintrc|0 17
+Modified: package.json|9 3
+Modified: src/blackberry10/index.js|8 9
+Modified: src/browser/network.js|10 12
+Modified: src/firefoxos/NetworkProxy.js|56 56
+Modified: src/tizen/NetworkProxy.js|12 16
+Modified: src/windows/NetworkInfoProxy.js|19 20
+Modified: tests/tests.js|22 22
+Modified: www/Connection.js|8 8
+Modified: www/network.js|17 17
+
+Revision: 7f5d03e6993d9a55c5f69cc89d83312a132f9df9
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:06:54
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 2fd3c1cc438c47cb2024a3054aa7f0247e632346
+Author: Connor Pearson <cpearson@b2wsoftware.com>
+Date: 18/01/2017 23:21:46
+Message:
+CB-12751: (ios) Fix connection type when airplane mode is on #MsgLength=79
+
+
+----
+Modified: src/ios/CDVConnection.m|8 2
+
+Revision: fd02e70d28137794f0e9e5c706c9bc54c11656b0
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:59:18
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 0b4cc577765d42a86006f2bb5420bee9e011fc77
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 15:23:02
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: 0cdf5d199977b040e5e526ece5a28ca7d4118970
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:45
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 1.3.4 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8e484404e7990e10058c3eaecc3e3486b1e0d5e5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:40
+Message:
+Set VERSION to 1.3.5-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a15fc1cae50c7f16f9437a1d7e8a8022d25c1e95
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 13/12/2017 03:20:47
+Message:
+CB-13663 : Removed deprecated platforms #MsgLength=40
+
+
+----
+Modified: README.md|0 38
+Modified: package.json|1 17
+Modified: plugin.xml|1 87
+Deleted: src/blackberry10/index.js|0 65
+Deleted: src/firefoxos/NetworkProxy.js|0 96
+Deleted: src/tizen/NetworkProxy.js|0 89
+Deleted: src/ubuntu/network_information.cpp|0 63
+Deleted: src/ubuntu/network_information.h|0 47
+Deleted: src/wp/NetworkStatus.cs|0 129
+
+
+Revision: 2cfc366c2a77d4255230add96eafcb89434d54c4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:25:13
+Message:
+CB-13681 Updated version and RELEASENOTES.md for release 2.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: df64dcff1ea939107807dc7e45a6e512985bf4da
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:26:45
+Message:
+Set VERSION to 2.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 63a78bac8b3c0294f89f49b4ae591310a7da89f5
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 27/12/2017 23:50:05
+Message:
+CB-13708: Fix to allow 2.0.0 version install (#60) #MsgLength=52
+
+
+----
+Modified: package.json|1 1
+
+Revision: 417d0f245f09aa1b4336e607e18af7f9daed5afd
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:36
+Message:
+CB-13714 Updated version and RELEASENOTES.md for release 2.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|2 172
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 779685eeb6c2d43c63d143fe23897684882e7136
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:50
+Message:
+Set VERSION to 2.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 629a6ab53c37d079a656451fa4bb172492d72a5e
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 30/12/2017 13:55:02
+Message:
+Fix release notes (#61) #MsgLength=25
+
+
+----
+Modified: RELEASENOTES.md|173 0
+
+Revision: 5b0933d74b1d396d37bf26bc1090d177271cfa6b
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 11/01/2018 06:22:24
+Message:
+CB-13757: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: 2cde33a4145995f01de2702b620469395ccec771
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 01/10/2018 18:55:49
+Message:
+also accept terms for android sdk `android-27` #MsgLength=46
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 0796cf953358e900659eca8d347fd5386cc80183
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 04/10/2018 07:16:54
+Message:
+remove JIRA link #MsgLength=16
+
+
+----
+Modified: README.md|0 4
+
+Revision: 0cd2771b5e909401ce8871e1ee3e6b1ba488e612
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:40:14
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 5158556df0059dd3823eac3010806792e449bc54
+Author: Tim Brust <ratchet.player@gmx.de>
+Date: 04/03/2019 21:37:36
+Message:
+chore: drop Node.js v4 support (#87) #MsgLength=72
+
+
+----
+Modified: .appveyor.yml|11 4
+Modified: .travis.yml|62 75
+
+Revision: cafdd673d5c0afe217af3e3bf1a063d47096a4a1
+Author: PVPoyer <pieter.vanpoyer@portofantwerp.com>
+Date: 27/09/2018 04:08:58
+Message:
+Try to fix: https://github.com/apache/cordova-plugin-network-information/issues/64: in case of TYPE_NONE (android bug?) return TYPE_UNKNOWN if ConnectivityManager.EXTRA_NO_CONNECTIVITY from the intent return false. #MsgLength=215
+
+
+----
+Modified: src/android/NetworkManager.java|64 19
+
+Revision: 394452aad128530a9e8e9a96cdb22de2dc295bbe
+Author: PVPoyer <pieter.vanpoyer@portofantwerp.com>
+Date: 02/10/2018 03:14:21
+Message:
+more logging to trigger a new build. #MsgLength=37
+
+
+----
+Modified: src/android/NetworkManager.java|1 1
+
+Revision: 08698002ce3fc8bf80cde4876477893dc523f15e
+Author: PVPoyer <pieter.vanpoyer@portofantwerp.com>
+Date: 05/11/2018 20:48:50
+Message:
+Try to fix: https://github.com/apache/cordova-plugin-network-information/issues/64: working with the ConnectivityManager.NetworkCallback in case of Lollipop and above #MsgLength=167
+
+
+----
+Modified: src/android/NetworkManager.java|98 54
+
+Revision: acc02f2981d7fb5f75f28cfe93d038dbfd8a1aee
+Author: PVPoyer <pieter.vanpoyer@portofantwerp.com>
+Date: 05/11/2018 23:13:11
+Message:
+removed autolayout #MsgLength=19
+
+
+----
+Modified: src/android/NetworkManager.java|30 23
+
+Revision: 60ab69fe58fee52c8dae44e0cc00b2f4b6e239bd
+Author: PVPoyer <pieter.vanpoyer@portofantwerp.com>
+Date: 06/11/2018 17:34:50
+Message:
+Try to fix: https://github.com/apache/cordova-plugin-network-information/issues/64: working with the ConnectivityManager.NetworkCallback in case of Lollipop and above, but switching to unknown if type none in the onavailable callback. #MsgLength=235
+
+
+----
+Modified: src/android/NetworkManager.java|12 0
+
+Revision: 9a45d638ab27049daa7f0731587cc1e8a09fd09b
+Author: PVPoyer <pieter.vanpoyer@portofantwerp.com>
+Date: 07/11/2018 17:28:18
+Message:
+ The originally changes fixed the issue for Android 6+ devices, but broke anything below 6. API level/Android version check added. #MsgLength=131
+
+
+----
+Modified: src/android/NetworkManager.java|23 84
+
+
+Revision: 27b0e397bc899f420e6af9e7fefe444c36a3c67a
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2019 14:12:49
+Message:
+add android-28 #MsgLength=14
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 102f7575b262cff067b8c5148fd72662bc9204c6
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 18/06/2019 23:05:45
+Message:
+ci(travis): Update Travis CI configuration for new paramedic (#89) #MsgLength=231
+
+
+----
+Modified: .travis.yml|87 41
+
+Revision: f35341eb28e265c0eaad2bb953631b33716596db
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 18:30:15
+Message:
+build: add .gitattributes to force LF (instead of possible CRLF on Windows) #MsgLength=76
+
+
+----
+Added: .gitattributes|1 0
+
+Revision: d31e1355d0ee1325f0282ac7cac2d892c7ff15a5
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 18:30:33
+Message:
+build: add .npmignore to remove unneeded files from npm package #MsgLength=64
+
+
+----
+Added: .npmignore|16 0
+
+Revision: 24e50f810eeaaf2e41babb2e15fad7cff1186713
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 18:37:53
+Message:
+docs: remove outdated translations #MsgLength=35
+
+
+----
+Deleted: doc/de/README.md|0 190
+Deleted: doc/de/index.md|0 186
+Deleted: doc/es/README.md|0 190
+Deleted: doc/es/index.md|0 186
+Deleted: doc/fr/README.md|0 188
+Deleted: doc/fr/index.md|0 184
+Deleted: doc/it/README.md|0 190
+Deleted: doc/it/index.md|0 186
+Deleted: doc/ja/README.md|0 190
+Deleted: doc/ja/index.md|0 186
+Deleted: doc/ko/README.md|0 190
+Deleted: doc/ko/index.md|0 186
+Deleted: doc/pl/README.md|0 190
+Deleted: doc/pl/index.md|0 186
+Deleted: doc/ru/index.md|0 182
+Deleted: doc/zh/README.md|0 190
+Deleted: doc/zh/index.md|0 186
+
+Revision: 9ec1e21823a3f5ba45f44d81e44c2ef6bcf2b7d2
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 18:38:09
+Message:
+chore(release): fix repo and issue link #MsgLength=40
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|2 2
+
+Revision: 836fd15c19babc3a84b1032fcda66212ea8b7b1d
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 21:23:08
+Message:
+chore(release): release notes for 2.0.2 #MsgLength=40
+
+
+----
+Modified: RELEASENOTES.md|16 0
+
+Revision: 561b13f9171c2fbff9e70bbe37aac7e6eea92504
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 21:23:08
+Message:
+chore(release): 2.0.2 (version string) #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b8ee23d99c8c0f280184a799d53add6dba8870c0
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 21:25:08
+Message:
+chore(release): 2.0.3-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 67baf8955990b4c1b1e0d94b221b2f8eb8a5f84e
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 03/07/2019 16:28:16
+Message:
+ci(travis): upgrade to node 8 #MsgLength=29
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 97a4967a2e0f0324db4a6d789477ec5f761f2770
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/07/2019 00:24:15
+Message:
+ci(appveyor): remove node 6, add node 12 #MsgLength=40
+
+
+----
+Modified: .appveyor.yml|1 1
+
+Revision: 4913d8379f0dbfc57587acb1af3c0b2cc695c387
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 23:02:06
+Message:
+ci: updates Node.js versions (#104) #MsgLength=37
+
+
+----
+Modified: .appveyor.yml|1 4
+Modified: .travis.yml|11 10
+
+Revision: 6561b40761743200e3e3d41620b5e99147d66ff3
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 23:31:00
+Message:
+chore(npm): improve ignore list (#103) #MsgLength=40
+
+
+----
+Modified: .npmignore|2 15
+
+Revision: 88ecf0b427ebd4a79457e6afbc682d1d3ad1b981
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:31:00
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Modified: CONTRIBUTING.md|4 4
+
+Revision: 9f8527062776ead04982d7fab12875a66bf69855
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:41:45
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: ed8f15e91da83703217eb8bda7bc8cddad911929
+Author: Norman Breau <norman@normanbreau.com>
+Date: 08/06/2020 23:44:54
+Message:
+refactor(eslint): use cordova-eslint (#115) #MsgLength=45
+
+
+----
+Modified: .eslintrc.yml|23 9
+Modified: .travis.yml|1 1
+Modified: package.json|3 9
+Modified: src/windows/NetworkInfoProxy.js|0 1
+Modified: tests/tests.js|5 5
+
+Revision: 54ee9c514278e3a5bf2b700f7b65e294833c14ea
+Author: Norman Breau <norman@normanbreau.com>
+Date: 11/06/2020 02:39:30
+Message:
+chore: 3.0.0-dev (#118) #MsgLength=25
+
+
+----
+Modified: package.json|4 1
+Modified: plugin.xml|1 1
+
+Revision: a4e34167461acfddfe8c38b611d0615205b9032e
+Author: Norman Breau <norman@normanbreau.com>
+Date: 07/06/2020 01:21:45
+Message:
+docs: Removed iOS 7 quirk #MsgLength=26
+
+
+----
+Modified: README.md|0 5
+
+Revision: 845c2d061c64c7e33eadc1b1f44e975d29f70cc4
+Author: Norman Breau <norman@normanbreau.com>
+Date: 07/06/2020 01:47:11
+Message:
+docs: Removed apache issue tracker link #MsgLength=40
+
+
+----
+Modified: README.md|0 2
+
+Revision: 044ef36cd4a835cfcafdc570e9c769cbe630b93a
+Author: Norman Breau <norman@normanbreau.com>
+Date: 07/06/2020 23:27:43
+Message:
+docs: Note on background usage #MsgLength=31
+
+
+----
+Modified: README.md|8 0
+
+Revision: 4387da910d5d56b5f87e868c1379bfa4a5ac50fa
+Author: Norman Breau <norman@normanbreau.com>
+Date: 07/06/2020 23:47:30
+Message:
+docs: Replaced FileTransfer example with a XHR example #MsgLength=55
+
+
+----
+Modified: README.md|36 18
+
+Revision: ab7c85d2e7774d59705da224cefb03d6402c2c8d
+Author: Norman Breau <norman@normanbreau.com>
+Date: 11/06/2020 03:23:06
+Message:
+refactor: Removed all references of deprecated navigator.network (#117) #MsgLength=73
+
+
+----
+Modified: README.md|3 6
+Modified: plugin.xml|0 1
+Modified: src/android/NetworkManager.java|1 1
+Modified: tests/tests.js|0 6
+
+Revision: 310b38f42b26b26f493d89f4e83aad6b98568e54
+Author: Tim Brust <github@timbrust.de>
+Date: 14/06/2020 03:40:37
+Message:
+chore: bumps version to 3.0.0-dev in test files (#119) #MsgLength=56
+
+
+----
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5ccb92a5fcfdb3e3896e2afa0f0890746ec8c936
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 23:40:12
+Message:
+chore: adds package-lock file (#121) #MsgLength=38
+
+
+----
+Added: package-lock.json|1724 0
+
+Revision: d1c6fc64cde042a5083cb6fb79f2fdae7bdf9231
+Author: Tim Brust <tim.brust@sinnerschrader.com>
+Date: 02/07/2020 20:35:23
+Message:
+chore(npm): use short notation in package.json #MsgLength=47
+
+
+----
+Modified: package.json|2 7
+
+
+Revision: 3066e3cf88dc40249009ee81e691eaea665ceed5
+Author: Pieter Van Poyer <pieter.vanpoyer@portofantwerp.com>
+Date: 08/07/2020 21:14:41
+Message:
+Android - Fixes https://github.com/apache/cordova-plugin-network-information#110 (#114) #MsgLength=801
+
+
+----
+Modified: src/android/NetworkManager.java|34 71
+
+Revision: e5692180dc2d3b556df2b04b017662e6462d3d41
+Author: Tim Brust <github@timbrust.de>
+Date: 22/08/2020 20:32:54
+Message:
+ci(travis): updates Android API level (#123) #MsgLength=46
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: c5e6656bb6054801eb0e7c041cec2d799c824580
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/09/2020 18:34:19
+Message:
+ci(travis): update osx xcode image (#124) #MsgLength=136
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: eb6e88d0bb249d0fe51640a5867492e400dffc61
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/11/2020 16:16:28
+Message:
+ci: add node-14.x to workflow (#128) #MsgLength=38
+
+
+----
+Modified: .appveyor.yml|1 0
+Modified: .travis.yml|1 1
+
+Revision: 481c8a5c19498771adde14c98be92cf7001974d9
+Author: PVPoyer <pieter.vanpoyer@portofantwerp.com>
+Date: 03/06/2021 22:42:08
+Message:
+release 3.0.0 audit fix #MsgLength=24
+
+
+----
+Modified: package-lock.json|6 6
+
+
+Revision: 96ad38fba2fffa521a3fbdbabb3df8b8cb654b9c
+Author: PVPoyer <pieter.vanpoyer@portofantwerp.com>
+Date: 03/06/2021 23:48:27
+Message:
+Updated version and RELEASENOTES.md for release 3.0.0 (cordova-plugin-network-information20210603) #MsgLength=99
+
+
+----
+Modified: RELEASENOTES.md|23 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: fcec956c1fd055e3a586b81eb2137bd7cee6f620
+Author: PVPoyer <pieter.vanpoyer@portofantwerp.com>
+Date: 03/06/2021 23:51:17
+Message:
+Incremented plugin version. (cordova-plugin-network-information20210603) #MsgLength=73
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d4005b790b2259669b24b42bd5b40c9cb1384a0f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/09/2021 21:20:00
+Message:
+ci: add gh-actions workflows (#137) #MsgLength=37
+
+
+----
+Added: .github/workflows/android.yml|148 0
+Added: .github/workflows/chrome.yml|73 0
+Added: .github/workflows/ios.yml|88 0
+Added: .github/workflows/lint.yml|56 0
+
+Revision: e53014f8580e4f91cf52508603f832d097b3d5d9
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 23:07:48
+Message:
+ci: remove travis & appveyor (#138) #MsgLength=37
+
+
+----
+Deleted: .appveyor.yml|0 33
+Modified: .npmignore|0 1
+Deleted: .travis.yml|0 120
+Modified: README.md|0 4
+
+Revision: 17b96f53a650787850d5237d6e184823bd8072de
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:02:14
+Message:
+ci: add action-badge (#139) #MsgLength=29
+
+
+----
+Modified: README.md|2 0
+
+Revision: a18c3b7cededc772aedc053005adf563a1141ac2
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/10/2021 20:09:05
+Message:
+ci(ios): update workflow w/ iOS 15 (#141) #MsgLength=43
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: 2c29cf9d016965ca958c6299ebf8e593f0055bc7
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/07/2022 13:17:07
+Message:
+ci(android): update java requirement for cordova-android@11 (#148) #MsgLength=68
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: cd9d84bed8f6d2a692415f8bdfb1ceb77fafe570
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/07/2022 16:53:13
+Message:
+chore(npm): bump package-lock v2 w/ rebuild (#153) #MsgLength=52
+
+
+----
+Modified: package-lock.json|2939 486
+
+Revision: 6fe954d1ee2bf9eb421937d0dd04ffd95e24258c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/08/2022 23:41:27
+Message:
+ci: sync workflow with paramedic (#154) #MsgLength=41
+
+
+----
+Modified: .github/workflows/android.yml|12 22
+Modified: .github/workflows/ios.yml|4 13
+

@@ -1,0 +1,6734 @@
+Revision: 37cb0639a20a218dd02bfc95250394c467401657
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/04/2013 07:27:26
+Message:
+Initial Commit #MsgLength=15
+
+
+----
+Added: README.md|2 0
+Added: plugin.xml|17 0
+Added: src/android/InAppBrowser.java|710 0
+
+Revision: 43692d237c17d6bd030759fe8fd2dcf411d3f27a
+Author: Joe Bowser <bowserj@apache.org>
+Date: 12/04/2013 06:35:38
+Message:
+Keeping InAppBrowser up to date #MsgLength=32
+
+
+----
+Modified: src/android/InAppBrowser.java|131 26
+
+Revision: cc1497481177615cb6b9d7dced6b71844083acc4
+Author: hermwong <herm.wong@gmail.com>
+Date: 17/05/2013 04:57:19
+Message:
+added native iOS code #MsgLength=22
+
+
+----
+Added: src/ios/CDVInAppBrowser.h|82 0
+Added: src/ios/CDVInAppBrowser.m|705 0
+
+Revision: 6951b712f9864414b4063b5f28920392ac6822fd
+Author: hermwong <herm.wong@gmail.com>
+Date: 17/05/2013 04:57:48
+Message:
+updated to include config for iOS classes #MsgLength=42
+
+
+----
+Modified: plugin.xml|12 2
+
+Revision: 63b9760562ad982f4908e70636133d8b0e3f48f6
+Author: hermwong <herm.wong@gmail.com>
+Date: 17/05/2013 04:58:48
+Message:
+added InAppBrowser.js from Cordova-JS #MsgLength=38
+
+
+----
+Added: www/InAppBrowser.js|91 0
+
+Revision: 7d6dc4cc580af599f07bcaded423dd2440e886fa
+Author: hermwong <herm.wong@gmail.com>
+Date: 17/05/2013 05:30:46
+Message:
+updated iOS native code to latest versions #MsgLength=43
+
+
+----
+Modified: src/ios/CDVInAppBrowser.h|5 0
+Modified: src/ios/CDVInAppBrowser.m|131 27
+
+Revision: 3f9a4738e14d02ed884b2e17a041a4ee4ebc1e00
+Author: hermwong <herm.wong@gmail.com>
+Date: 17/05/2013 06:15:42
+Message:
+added js-module configuration #MsgLength=30
+
+
+----
+Modified: plugin.xml|4 0
+
+Revision: 4e9ad7d5e0e90da18ba3b330cde7dc3f84ae6f1f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/05/2013 05:04:50
+Message:
+updated plugin.xml and cordova references in ios files #MsgLength=55
+
+
+----
+Modified: plugin.xml|11 6
+Modified: src/android/InAppBrowser.java|0 2
+Modified: src/ios/CDVInAppBrowser.h|4 4
+Modified: src/ios/CDVInAppBrowser.m|3 3
+
+Revision: 4ddb0aa9b6c8684dc90862074bb5072f976ffa2e
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/05/2013 06:08:28
+Message:
+added docs + tests #MsgLength=19
+
+
+----
+Added: docs/inappbrowser.md|434 0
+Added: docs/window.open.md|95 0
+Added: test/.DS_Store|0 0
+Added: test/cordova-incl.js|70 0
+Added: test/inappbrowser/index.html|230 0
+Added: test/inappbrowser/inject.css|3 0
+Added: test/inappbrowser/inject.html|43 0
+Added: test/inappbrowser/inject.js|2 0
+Added: test/inappbrowser/local.html|51 0
+Added: test/inappbrowser/local.pdf|0 0
+Added: test/index.html|65 0
+Added: test/main.js|163 0
+Added: test/master.css|164 0
+
+Revision: 081311973fabfcebdb0cf85fbb51a7e57b4eb088
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/05/2013 06:54:41
+Message:
+updated plugin.xml #MsgLength=19
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: ab4b37145c2b28772ea42e51c07beb0e8f3c97d7
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/05/2013 07:11:20
+Message:
+added cordovawebvew reference #MsgLength=30
+
+
+----
+Modified: src/android/InAppBrowser.java|1 0
+
+Revision: 028fdf8b31a0489e2c1d8bbcf41b8a991357f131
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/05/2013 07:17:09
+Message:
+added import for Config.java #MsgLength=29
+
+
+----
+Modified: src/android/InAppBrowser.java|1 0
+
+Revision: 9f8af5f464d8b86f114d1475833236ff1e705c14
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 28/05/2013 06:23:50
+Message:
+First pass at wp7 support #MsgLength=26
+
+
+----
+Modified: plugin.xml|13 1
+Added: src/wp7/InAppBrowser.cs|268 0
+
+Revision: 8c0c36d5bfc1349e3b84726f5f190f7f31727458
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/06/2013 06:49:11
+Message:
+updated inappbrowser with latest native + js code #MsgLength=50
+
+
+----
+Modified: src/android/InAppBrowser.java|25 2
+Modified: src/ios/CDVInAppBrowser.h|2 0
+Modified: src/ios/CDVInAppBrowser.m|12 3
+Modified: www/InAppBrowser.js|3 0
+
+Revision: c6b944af1b30539fbd7979dcdc73d9d6da750703
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/06/2013 06:59:10
+Message:
+updated docs + tests #MsgLength=21
+
+
+----
+Modified: docs/inappbrowser.md|54 61
+Modified: docs/window.open.md|30 25
+Modified: test/inappbrowser/index.html|28 0
+Modified: test/inappbrowser/inject.css|18 0
+Modified: test/inappbrowser/inject.js|18 0
+
+Revision: 07840c164bd3bd3e5991ca90525ac39fd99cc747
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:56
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|2 3
+
+Revision: f26c35d6e35583b6d1790bf2ffd1f0268c0d2127
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 06:55:35
+Message:
+[CB-4121] remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|12 1
+Renamed: src/wp/InAppBrowser.cs [from src/wp7/InAppBrowser.cs]|23 14
+
+Revision: a9f129248fdd35abe36e389a2311ab8c96244def
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: src/android/InAppBrowser.java|4 4
+
+Revision: 5110dbd0d5a4d1bacbeb9cd3ae85e19bffa73fbd
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 11/07/2013 03:33:34
+Message:
+[ios][CB-4147] Fixing crash when calling open() on an already open window. #MsgLength=75
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|3 1
+
+Revision: ed332b1e92e14806ee598b7286f180bac8969c7d
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 12/07/2013 05:44:19
+Message:
+[CB-1605] Warning cleanup! Removed deprecated use. #MsgLength=50
+
+
+----
+Modified: src/android/InAppBrowser.java|2 8
+
+Revision: b4059a2c683c486f1fb48b182ceb9a48fbc59f6e
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/07/2013 08:28:39
+Message:
+[CB-3947] iTunes links do not open with inappbrowser #MsgLength=53
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|14 0
+
+Revision: 47d669a0794908affada7d53e1e71c8cca164ebb
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:16:34
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Added: .gitignore|23 0
+
+Revision: cad97d0187408d116ce12fbc2d1f919a6f49c3b1
+Author: lorinbeer <lorin@adobe.com>
+Date: 17/07/2013 05:44:20
+Message:
+[CB-3666] blackberry10 src directory added with documentation. No native implementation is required for inappbrowser functionality on BB10 #MsgLength=139
+
+
+----
+Added: src/blackberry10/README.md|3 0
+
+Revision: 3b762124979a5fd615247bcbaeea8d652d939990
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|3 0
+Modified: src/blackberry10/README.md|22 0
+
+Revision: dd7b20543f20660b4be71721e404e4ba7219aa7c
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/07/2013 08:08:18
+Message:
+[CB-4368] Explicit CoreGraphics.framework dependency should be specified for some core plugins #MsgLength=95
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: e41da57aa2b53845a595400d7548791d718b7216
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:32:22
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 57126a49457fcd3eb92c833cb7eebb75f24d1d64
+Author: lorinbeer <lorin@adobe.com>
+Date: 31/07/2013 07:15:00
+Message:
+[CB-4399] removed blackberry entry in plugin xml. Installation of plugin interferes with natively supported childbrowser functionality. To support additional inappbrowser features, see CB-4467. #MsgLength=194
+
+
+----
+Modified: plugin.xml|7 0
+
+Revision: b43b902e18b58ab32e4057813b7dfcc99cd874fb
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: 48a49679b9772f942daf16db46a3847b94350f24
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a13d215c4c7d0eb47e61e20bc699076ca5347312
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 05:43:39
+Message:
+updated Readme, namespace and name tag #MsgLength=39
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|2 1
+
+Revision: 9f934235967987c6a574c6d337a0292dfda9c82e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-inappbrowser to its own Java package. #MsgLength=68
+
+
+----
+Modified: plugin.xml|2 2
+Modified: src/android/InAppBrowser.java|1 1
+
+Revision: 3b38378c1488039f8faa13993726c8c3b863c71f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 06:09:39
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 629964d61cf9f6e57e96950791b0e7f6aa8bf340
+Author: kira <castlekiragarage@gmail.com>
+Date: 05/05/2013 05:21:43
+Message:
+add "clearallcache" and "clearsessioncache" option to InAppbrowser #MsgLength=67
+
+
+----
+Modified: src/android/InAppBrowser.java|25 5
+
+Revision: 0916db9bdb2fb3a699540faaa16b59e3feb97abf
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 09/08/2013 22:20:02
+Message:
+[CB-3616] Change option name to "clearcache" to match original proposal #MsgLength=72
+
+
+----
+Modified: src/android/InAppBrowser.java|1 1
+
+Revision: e5840eef45492db3ca1ef167133125a0cfc5a7bb
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 13/08/2013 04:51:54
+Message:
+[Windows8] add support for Windows 8 ( limited ) #MsgLength=49
+
+
+----
+Modified: plugin.xml|7 0
+Added: www/windows8/InAppBrowserProxy.js|117 0
+
+
+Revision: 8b52796a8959aa96ed986ef520e1f94df3650715
+Author: Joe Bowser <bowserj@apache.org>
+Date: 29/08/2013 05:20:01
+Message:
+CB-4586: Making loadUrl run on the UI thread for close dialog to stop the WebView error #MsgLength=88
+
+
+----
+Modified: src/android/InAppBrowser.java|11 1
+
+Revision: 44a11596410193f4041e1cc9aaf6478d4089591b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+Add empty CHANGELOG.md #MsgLength=23
+
+
+----
+Added: CHANGELOG.md|23 0
+
+Revision: d647f689dfd361c36ea3a3499db2d79ab33e6bab
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:22
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 0a3c5587e36305ecacfa2d9568444020a8b2c2a8
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 12/09/2013 00:44:09
+Message:
+[CB-4792] Added keepCallback to the show function. #MsgLength=50
+
+
+----
+Modified: src/android/InAppBrowser.java|3 1
+
+Revision: e5d3973a1344c297419bfc39344a6448a972b0d3
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: eef27f88915b44314c91d5ccb4bed234449f7b68
+Author: Joe Bowser <bowserj@apache.org>
+Date: 18/09/2013 06:51:54
+Message:
+CB-4864, CB-4865: Minor improvements to InAppBrowser #MsgLength=53
+
+
+----
+Modified: plugin.xml|1 0
+Modified: src/android/InAppBrowser.java|2 103
+Added: src/android/InAppChromeClient.java|119 0
+
+Revision: 12c485ede798c1c56caa52ca3c175185c8e45313
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:30:34
+Message:
+CB-4889 renaming org.apache.cordova.core.inappbrowser to org.apache.cordova.inappbrowser #MsgLength=89
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 08f66a7cab5f04b4afebf04c09d80a41895b4d53
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 22:48:51
+Message:
+CB-4889 renaming core references #MsgLength=33
+
+
+----
+Modified: www/windows8/InAppBrowserProxy.js|1 1
+
+Revision: 1ce5dca61a842ca228ca7924c76a88fe75f13011
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 24/09/2013 16:50:54
+Message:
+[windows8] commandProxy was moved #MsgLength=34
+
+
+----
+Modified: www/windows8/InAppBrowserProxy.js|2 10
+
+Revision: de4fd41f8efdcd05c05afe056c593e7df0fc7db5
+Author: Joe Bowser <bowserj@apache.org>
+Date: 25/09/2013 05:33:44
+Message:
+CB-4788: Modified the onJsPrompt to warn against Cordova calls #MsgLength=63
+
+
+----
+Modified: src/android/InAppChromeClient.java|22 13
+
+Revision: 67352079366c3b449a6250d26de2e1e9bf252960
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 24/09/2013 16:50:54
+Message:
+[windows8] commandProxy was moved #MsgLength=34
+
+
+----
+Modified: www/windows8/InAppBrowserProxy.js|2 10
+
+Revision: 2dcfafb60e2ba51678d6fdd4305e5d82bbfaa22f
+Author: Joe Bowser <bowserj@apache.org>
+Date: 25/09/2013 05:33:44
+Message:
+CB-4788: Modified the onJsPrompt to warn against Cordova calls #MsgLength=63
+
+
+----
+Modified: src/android/InAppChromeClient.java|22 13
+
+
+Revision: 8320137404965375a7130b2a946a6579206fc6c0
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:50:33
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a001cffc30cf94cb406128f7b68d143e2cd62114
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 08:48:12
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.2.2 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|12 1
+Modified: plugin.xml|1 1
+
+Revision: 12bc5d7d8bc12ab98875446b7c7b21ef44c11664
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 27/09/2013 01:53:33
+Message:
+[CB-4926] Fixes inappbrowser plugin loading for windows8 #MsgLength=57
+
+
+----
+Modified: www/windows8/InAppBrowserProxy.js|35 33
+
+Revision: 3d8b04f9825621ca5d58c69775befcaa09b90cc5
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:14
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 4d4d479b3c0467da69911b960bbf47ca6a80c897
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/10/2013 06:27:18
+Message:
+[CB-5010] Updated version and RELEASENOTES.md for release 0.2.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: ef5eddac9add2200e91a846cdea9e54d66b66074
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/10/2013 09:25:24
+Message:
+CB-5021 Make it safe to call close() multiple times #MsgLength=52
+
+
+----
+Modified: www/InAppBrowser.js|5 1
+
+Revision: 8cd786b6035d1da9b58ecafd6752df690058ca6b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/10/2013 20:07:46
+Message:
+CB-5021 Expose closeDialog() as a public function and make it safe to call multiple times. #MsgLength=91
+
+
+----
+Modified: src/android/InAppBrowser.java|8 4
+
+Revision: 8df4b7d03b3766cce03e26f996dfa3b54e417f04
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/10/2013 23:49:00
+Message:
+CB-3747 Fix back button having different dismiss logic from the close button. #MsgLength=159
+
+
+----
+Modified: src/android/InAppBrowser.java|40 31
+
+Revision: 8a6bc01814b6d7eb3f605ad47a45d33163153a66
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/10/2013 00:21:35
+Message:
+CB-4858 Convert relative URLs to absolute URLs in JS #MsgLength=53
+
+
+----
+Modified: plugin.xml|3 0
+Modified: www/InAppBrowser.js|7 5
+
+Revision: 5ef5171003e5e550e85cfa5c021fb1c7c77e83e3
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/10/2013 00:40:27
+Message:
+CB-4858 - Run IAB methods on the UI thread. #MsgLength=44
+
+
+----
+Modified: src/android/InAppBrowser.java|115 128
+
+Revision: a76a0a3920e81c56db7c070e002eb24e4a1a478a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/10/2013 06:27:18
+Message:
+[CB-5010] Updated version and RELEASENOTES.md for release 0.2.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: ce7a796cb0c5421db0490ae97d9ca99b96dd23e7
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/10/2013 07:06:19
+Message:
+[CB-5010] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: c7972b6cffcedae7a9bbbeb66875a5d2fb37ce29
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 16/10/2013 06:00:09
+Message:
+CB-4930 - iOS - InAppBrowser should take into account the status bar #MsgLength=69
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|37 2
+
+Revision: aa81c3267a5b1c337b09933ff5ceb06a93f9dbb7
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/10/2013 01:16:54
+Message:
+CB-4995 Fix crash when WebView is quickly opened then closed. #MsgLength=121
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|6 9
+
+Revision: b3348cff6c3f0e66a2bad573dbc1a47c986ada37
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/10/2013 04:40:00
+Message:
+CB-5128: added repo + issue tag to plugin.xml for inappbrowser plugin #MsgLength=70
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: e5868f8ecb0bd1f1a7a4fd868a437efab7dd020a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:03:26
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.2.4 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|13 1
+Modified: plugin.xml|1 1
+
+
+Revision: d49d6ec62f21029dcd6da23a9cb6b024ddf556de
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:15
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: e5101ba8e1a3e75723753f6b79a17e997ec1d698
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 07:38:34
+Message:
+Added amazon-fireos platform. Change to use amazon-fireos as the platform if user agent string contains 'cordova-amazon-fireos' #MsgLength=128
+
+
+----
+Modified: plugin.xml|13 0
+Added: src/amazon/InAppBrowser.java|769 0
+Added: src/amazon/InAppChromeClient.java|128 0
+Modified: test/cordova-incl.js|4 2
+
+Revision: 9768ec2ef0154aeba71a7de68b5e57feffc00836
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/12/2013 09:50:57
+Message:
+CB-3420 WP feature hidden=yes implemented #MsgLength=42
+
+
+----
+Modified: src/wp/InAppBrowser.cs|131 0
+
+Revision: a8f79e1fd6f86bfdda2eccc6a40835feda5b65ee
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 17/10/2013 01:13:03
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|9 1
+Added: src/ubuntu/InAppBrowser.qml|69 0
+Added: src/ubuntu/close.png|0 0
+Added: src/ubuntu/inappbrowser.cpp|106 0
+Added: src/ubuntu/inappbrowser.h|61 0
+
+
+
+Revision: e5862bf820b98bfebe8dfa737b6f6c89e3972172
+Author: Yangtb <yangtb@polyvi.com>
+Date: 11/09/2013 16:18:47
+Message:
+[CB-4724] fixed UriFormatException #MsgLength=89
+
+
+----
+Modified: src/wp/InAppBrowser.cs|4 4
+
+
+Revision: 65ee3d142fa04381c455bfab7514f326f083e553
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 03/12/2013 09:51:57
+Message:
+Remove merge conflict tag #MsgLength=26
+
+
+----
+Modified: plugin.xml|0 1
+
+
+Revision: 496ecc720f488d10fbdfec4459741c3318b3ce58
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:31
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.2.5 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|7 1
+Modified: plugin.xml|1 1
+
+Revision: ea239151d22db548efec3d508227910235c093d8
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:03
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f448ce88abae9a690f9242b88a7550b1a3530ffb
+Author: Fco. Javier Martín Carrasco <javray@gmail.com>
+Date: 02/10/2013 17:00:46
+Message:
+CB-5591 Change window.escape to encodeURIComponent #MsgLength=117
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|1 1
+
+Revision: 034b59931588e3bc5869ff7677e5307660b68feb
+Author: Tomáš Fejfar <tomas.fejfar@gmail.com>
+Date: 09/11/2013 00:32:32
+Message:
+CB-5593 iOS: Make InAppBrowser localizable #MsgLength=95
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|5 5
+
+Revision: e819041fd411d728c635a122f404ba6184fea640
+Author: Dick van den Brink <d_vandenbrink@live.com>
+Date: 12/11/2013 01:32:39
+Message:
+Apply CB-5193 to InAppBrowser #MsgLength=112
+
+
+----
+Modified: src/android/InAppChromeClient.java|1 14
+
+Revision: 20611efe67ae0ed78db21d4224069d54f00c6fda
+Author: Peter Somogyvari <peter.somogyvari@mippin.com>
+Date: 18/11/2013 23:00:25
+Message:
+CB-5595 Add toolbarposition=top option. #MsgLength=496
+
+
+----
+Modified: src/ios/CDVInAppBrowser.h|25 23
+Modified: src/ios/CDVInAppBrowser.m|54 32
+
+Revision: 4aeaf81e1eb3baf474270c2830dacc800792c487
+Author: Peter Somogyvari <peter.somogyvari@mippin.com>
+Date: 19/11/2013 01:14:19
+Message:
+CB-5595 Fixed the positioning and autoresizing for certain rotation scenarios. #MsgLength=430
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|13 4
+
+Revision: 25d152b578a4fcca0ff8cb38d375b09f4fcb9ae9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 13/12/2013 22:14:50
+Message:
+CB-5595 Rename "toolbarbarpostion" -> "toolbarposition" #MsgLength=56
+
+
+----
+Modified: src/ios/CDVInAppBrowser.h|1 1
+Modified: src/ios/CDVInAppBrowser.m|4 4
+
+Revision: f75b30857b18a86f229c9d4baaf2f16afd028c7b
+Author: ivan baktsheev <dot.and.thing@gmail.com>
+Date: 11/11/2013 03:58:18
+Message:
+CB-5594 Add disallowoverscroll option. #MsgLength=76
+
+
+----
+Modified: src/ios/CDVInAppBrowser.h|1 0
+Modified: src/ios/CDVInAppBrowser.m|13 0
+
+Revision: 97c6f2ba8a112189a20e73b3502ee81bc455e8f3
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/inappbrowser.md|0 427
+Deleted: docs/window.open.md|0 100
+
+Revision: aac2db29b56f599f6f380adf390bf62f9c2c3e22
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 04:31:18
+Message:
+CB-5658 Add doc.index.md for InAppBrowser plugin #MsgLength=49
+
+
+----
+Modified: README.md|21 4
+Added: doc/index.md|280 0
+
+Revision: 2bd006b71e446db17984c3da42fe37bb931fa08d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:02
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: 176890f30599fc72d33eeb1f5daa1fa5e6358325
+Author: gianluca <gianluca.ortelli@trifork.nl>
+Date: 03/10/2013 20:11:12
+Message:
+CB-5592 Android - Add MIME type to Intent when opening file:/// URLs #MsgLength=130
+
+
+----
+Modified: src/android/InAppBrowser.java|6 1
+
+Revision: 6163f17aeb901d9ff6b3df68666b2efedcd0162e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/12/2013 00:10:33
+Message:
+CB-5592 Add a comment explaining why we set MIME only for file: #MsgLength=64
+
+
+----
+Modified: src/android/InAppBrowser.java|2 0
+
+Revision: b0bdb1088b5eaa826fa652140747d18f828dd318
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.3.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: plugin.xml|1 1
+
+Revision: 21a1638ccf7ad17fe663d6c511ce8b4d906dad32
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 57d14da151739fc2cfef3fcd3fc94f8c92c9af68
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/01/2014 23:52:38
+Message:
+CB-5733 Fix IAB.close() not working if called before show() animation is done #MsgLength=171
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|34 24
+
+Revision: 3f9af4fd88ebcb7b29487d26768e3f392d5d9285
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/01/2014 23:52:44
+Message:
+Remove _alive from InAppBrowser.js since it didn't catch the case where the browser is closed by the user. #MsgLength=107
+
+
+----
+Modified: www/InAppBrowser.js|1 5
+
+Revision: 21fe13e809ed57dd715904e4fb41782efc64a3b5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:43
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/.DS_Store|0 0
+Deleted: test/cordova-incl.js|0 72
+Deleted: test/inappbrowser/index.html|0 258
+Deleted: test/inappbrowser/inject.css|0 21
+Deleted: test/inappbrowser/inject.html|0 43
+Deleted: test/inappbrowser/inject.js|0 20
+Deleted: test/inappbrowser/local.html|0 51
+Deleted: test/inappbrowser/local.pdf|0 0
+Deleted: test/index.html|0 65
+Deleted: test/main.js|0 163
+Deleted: test/master.css|0 164
+
+Revision: 255c5269c37430c3bddfbbf5f116f57c5c174507
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 14/01/2014 03:32:57
+Message:
+CB-5756: Android: Use WebView.evaluateJavascript for script injection on Android 4.4+ #MsgLength=86
+
+
+----
+Modified: src/android/InAppBrowser.java|7 2
+
+Revision: 9795b2e9dc540be98c6897a590e707083c570873
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 14/01/2014 04:09:38
+Message:
+CB-5756: Add missing import #MsgLength=28
+
+
+----
+Modified: src/android/InAppBrowser.java|1 0
+
+Revision: 2136cad49a0ed98eece13008e9846a0d15b675c2
+Author: Joe Bowser <bowserj@apache.org>
+Date: 04/12/2013 02:52:48
+Message:
+Adding drawables to the inAppBrowser.  This doesn't look quite right, but it's a HUGE improvement over the previous settings #MsgLength=125
+
+
+----
+Modified: plugin.xml|17 0
+Added: res/android/drawable-hdpi/ic_action_next_item.png|0 0
+Added: res/android/drawable-hdpi/ic_action_previous_item.png|0 0
+Added: res/android/drawable-hdpi/ic_action_remove.png|0 0
+Added: res/android/drawable-mdpi/ic_action_next_item.png|0 0
+Added: res/android/drawable-mdpi/ic_action_previous_item.png|0 0
+Added: res/android/drawable-mdpi/ic_action_remove.png|0 0
+Added: res/android/drawable-xhdpi/ic_action_next_item.png|0 0
+Added: res/android/drawable-xhdpi/ic_action_previous_item.png|0 0
+Added: res/android/drawable-xhdpi/ic_action_remove.png|0 0
+Added: res/android/drawable-xxhdpi/ic_action_next_item.png|0 0
+Added: res/android/drawable-xxhdpi/ic_action_previous_item.png|0 0
+Added: res/android/drawable-xxhdpi/ic_action_remove.png|0 0
+
+Revision: 43f8935541a3cbd85aa1d214e1fa511be90d8a07
+Author: Joe Bowser <bowserj@apache.org>
+Date: 15/01/2014 07:47:01
+Message:
+Adding the buttons #MsgLength=19
+
+
+----
+Modified: plugin.xml|16 16
+Modified: src/android/InAppBrowser.java|16 2
+Renamed: src/android/res/drawable-hdpi/ic_action_next_item.png [from res/android/drawable-hdpi/ic_action_next_item.png]|0 0
+Renamed: src/android/res/drawable-hdpi/ic_action_previous_item.png [from res/android/drawable-hdpi/ic_action_previous_item.png]|0 0
+Renamed: src/android/res/drawable-hdpi/ic_action_remove.png [from res/android/drawable-hdpi/ic_action_remove.png]|0 0
+Renamed: src/android/res/drawable-mdpi/ic_action_next_item.png [from res/android/drawable-mdpi/ic_action_next_item.png]|0 0
+Renamed: src/android/res/drawable-mdpi/ic_action_previous_item.png [from res/android/drawable-mdpi/ic_action_previous_item.png]|0 0
+Renamed: src/android/res/drawable-mdpi/ic_action_remove.png [from res/android/drawable-mdpi/ic_action_remove.png]|0 0
+Renamed: src/android/res/drawable-xhdpi/ic_action_next_item.png [from res/android/drawable-xhdpi/ic_action_next_item.png]|0 0
+Renamed: src/android/res/drawable-xhdpi/ic_action_previous_item.png [from res/android/drawable-xhdpi/ic_action_previous_item.png]|0 0
+Renamed: src/android/res/drawable-xhdpi/ic_action_remove.png [from res/android/drawable-xhdpi/ic_action_remove.png]|0 0
+Renamed: src/android/res/drawable-xxhdpi/ic_action_next_item.png [from res/android/drawable-xxhdpi/ic_action_next_item.png]|0 0
+Renamed: src/android/res/drawable-xxhdpi/ic_action_previous_item.png [from res/android/drawable-xxhdpi/ic_action_previous_item.png]|0 0
+Renamed: src/android/res/drawable-xxhdpi/ic_action_remove.png [from res/android/drawable-xxhdpi/ic_action_remove.png]|0 0
+
+Revision: bc554fdf954c9ff1c9eac5b5cc6d85f091fc9325
+Author: Joe Bowser <bowserj@apache.org>
+Date: 16/01/2014 06:28:03
+Message:
+Adding CC-A-2.5 Notice for Assets, modifying plugins to use resources #MsgLength=70
+
+
+----
+Added: NOTICE|1 0
+Modified: plugin.xml|14 14
+
+Revision: 9206d82df4996e169ea0967469c797ecfca9f5f1
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 17/10/2013 01:13:03
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|9 0
+
+Revision: 736c8ddec07314e5ff2fdafd7544e4b362c57af0
+Author: Joe Bowser <bowserj@apache.org>
+Date: 17/01/2014 03:34:47
+Message:
+WTF? ubuntu got automerged twice #MsgLength=33
+
+
+----
+Modified: plugin.xml|0 9
+
+Revision: 0ce0eed585309ee2a9933bd93a58a56f60bf7fc2
+Author: Joe Bowser <bowserj@apache.org>
+Date: 17/01/2014 05:55:53
+Message:
+Didn't test on ICS or lower, getDrawable isn't supported until Jellybean #MsgLength=73
+
+
+----
+Modified: src/android/InAppBrowser.java|26 11
+
+Revision: e807bc3dc0f684212e43610a18f61e837a685c38
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 14/01/2014 03:32:57
+Message:
+CB-5756: Android: Use WebView.evaluateJavascript for script injection on Android 4.4+ #MsgLength=86
+
+
+----
+Modified: src/android/InAppBrowser.java|7 2
+
+Revision: 985d94ee00d8c15b68b24c2b9c3b7c5c9b0999c3
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 20/01/2014 10:56:59
+Message:
+Add missing import for previous commit #MsgLength=39
+
+
+----
+Modified: src/android/InAppBrowser.java|1 0
+
+Revision: b62b9edde3a2656bb7016e64080428fecdb29d1e
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:59
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.3.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: plugin.xml|1 1
+
+Revision: dbf54d2d09cf7d47745ed48428a80b4f0554edef
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:36:16
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-inappbrowser #MsgLength=72
+
+
+----
+Added: doc/es/index.md|292 0
+
+Revision: 4a3c134be10a914c41e6064cc706ca6a346d6fc9
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:14:55
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-inappbrowser #MsgLength=72
+
+
+----
+Added: doc/fr/index.md|292 0
+
+Revision: 24e6a1feeb521b53a2f773b8ebff61bed1ecc6ce
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 27/01/2014 07:11:21
+Message:
+Removed some iOS6 Deprecations #MsgLength=31
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|3 3
+
+Revision: 4c07917c0acd8220870ed3686ec3956657d638c9
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:59
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.3.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: plugin.xml|1 1
+
+Revision: cd31b3a64dcfe3aa629a56539d5e162dad5251fc
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:30
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 39e64c988afb38a081fae7e3d71d18424a3cfbf4
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 14/02/2014 04:00:18
+Message:
+CB-6035 - Move js-module so it is not loaded on unsupported platforms #MsgLength=148
+
+
+----
+Modified: plugin.xml|23 13
+
+Revision: 26702cb0720c5c394b407c23570136c53171fa55
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 19/02/2014 13:26:19
+Message:
+Validate that callbackId is correctly formed #MsgLength=45
+
+
+----
+Modified: src/ios/CDVInAppBrowser.h|1 0
+Modified: src/ios/CDVInAppBrowser.m|19 1
+
+Revision: 77085aa5477fd91d89a8c92ffedddc04463ba0e2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 00:56:29
+Message:
+CB-6114 Updated version and RELEASENOTES.md for release 0.3.2 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+
+Revision: 4d3c7b17d27144aab650abd0f17981d5a2ca8a71
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:45:10
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Modified: NOTICE|5 1
+
+
+Revision: 942d17981ee40463605b1f9c233806e7be3f0518
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 01:29:15
+Message:
+CB-6114 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a5201cc1e3adc11d47f5feba873231f677431b9b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Modified: NOTICE|5 1
+
+
+Revision: 6f373f7ed9993b81f5b735e3ee347e516585a916
+Author: Oliver Moran <oliver.moran@gmail.com>
+Date: 01/03/2014 03:58:14
+Message:
+fix for CB-5534 #MsgLength=64
+
+
+----
+Modified: src/android/InAppBrowser.java|18 11
+Added: src/android/InAppBrowserDialog.java|54 0
+
+Revision: 497a23efc77cf0262497071cdc5c30fb94e01d99
+Author: Joe Bowser <bowserj@apache.org>
+Date: 01/03/2014 06:03:57
+Message:
+CB-5534: Updating the plugin.xml with the new Dialog class #MsgLength=59
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: d0dd10103c9e2ff7833e008188c26a6505ea6b96
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/03/2014 01:33:31
+Message:
+CB-6172 Fix inappbrowser install failure on case-sensitive filesystems. #MsgLength=72
+
+
+----
+Renamed: www/inappbrowser.js [from www/InAppBrowser.js]|0 0
+
+Revision: a5dedae6310f8c211596455cbd5f4214b0c8c508
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/03/2014 03:37:10
+Message:
+Updated version and RELEASENOTES.md for release 0.3.3 #MsgLength=54
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: e282cc9e387e405a9103b2afa2b1a7a2b6232833
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 12/03/2014 00:22:17
+Message:
+CB-6218 Update docs for BB10 #MsgLength=29
+
+
+----
+Modified: doc/index.md|0 6
+
+
+Revision: 5680f18bb4d28e6d6bc1a621e6588a010080c964
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/03/2014 03:38:13
+Message:
+Incremented plugin version on dev branch. #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 7dbad601f0321095bfe06bdd91b5576dfe55e433
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/03/2014 09:48:00
+Message:
+Tweak RELEASENOTES.md (missed a bug fix in last release) #MsgLength=57
+
+
+----
+Modified: RELEASENOTES.md|1 0
+
+Revision: aa9a5db9413ebaf3fec60e41b24591c64953b12a
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 12/03/2014 00:22:17
+Message:
+CB-6218 Update docs for BB10 #MsgLength=29
+
+
+----
+Modified: doc/index.md|0 6
+
+Revision: fceea502a3f7f3308247a4bb2841b60a5d902c12
+Author: James Jong <wjamesjong@gmail.com>
+Date: 13/03/2014 01:35:17
+Message:
+CB-6212 iOS: fix warnings compiled under arm64 64-bit #MsgLength=54
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|2 2
+
+Revision: 749d55c67688404399ad2902c50ebd6e4b584460
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 20/03/2014 13:26:01
+Message:
+CB-6253 Add Network Capability to WMAppManifest.xml #MsgLength=52
+
+
+----
+Modified: plugin.xml|8 0
+
+Revision: 9399ed39559d94c51567b226a8bf2cfb390de15c
+Author: Rocco Georgi <rocco@pavingways.com>
+Date: 23/03/2014 07:04:24
+Message:
+Doc update: event name and example param (closes #31) #MsgLength=54
+
+
+----
+Modified: doc/index.md|4 4
+
+Revision: 51879d8e2f2a9b9209022774ada265164abdc620
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 04/04/2014 18:16:01
+Message:
+CB-6396 [Firefox OS] Adding basic support #MsgLength=42
+
+
+----
+Modified: doc/index.md|11 0
+Modified: plugin.xml|9 0
+Added: src/firefoxos/InAppBrowserProxy.js|108 0
+
+
+Revision: 88f330abd804365170c20ef26fd705e4eb378d45
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 09/04/2014 21:16:52
+Message:
+refactoring fixed #MsgLength=18
+
+
+----
+Modified: src/firefoxos/InAppBrowserProxy.js|1 1
+
+
+Revision: 22c7a0e51e560b35e46e94dea667a5fb0ef5a270
+Author: mbradshawabs <mbradshaw@americanbible.org>
+Date: 02/04/2014 22:19:05
+Message:
+CB-6389 CB-3617: Add clearcache and clearsessioncache options to iOS (like Android) #MsgLength=84
+
+
+----
+Modified: src/ios/CDVInAppBrowser.h|2 0
+Modified: src/ios/CDVInAppBrowser.m|25 0
+
+Revision: 04de070dcd613db5a4d012b91831f730ca506e2b
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 08/04/2014 00:08:20
+Message:
+CB-3617: Document clearcache and clearsessioncache for ios #MsgLength=59
+
+
+----
+Modified: doc/index.md|2 0
+
+Revision: 25f306d11eb090805417a94e5feeb594e50959c0
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2014 07:29:32
+Message:
+CB-6422 [windows8] use cordova/exec/proxy #MsgLength=42
+
+
+----
+Modified: www/windows8/InAppBrowserProxy.js|1 1
+
+Revision: bddf86c3cefd9d787876d15e771beb499e43eb2f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/04/2014 03:26:47
+Message:
+CB-6402 [WP8] pass empty string instead of null for [optional] windowFeatures string #MsgLength=85
+
+
+----
+Modified: www/inappbrowser.js|2 0
+
+Revision: 2fc9f3da1fc683442a4c41811e826476d2ca9dd6
+Author: Nadya Atanasova <nadya.it@gmail.com>
+Date: 11/04/2014 22:57:45
+Message:
+Make InAppBrowser work with embedded files, using system behavior #MsgLength=392
+
+
+----
+Modified: src/wp/InAppBrowser.cs|75 31
+
+
+Revision: 34c29dc2ecf66dcde5fc96f1f85295d7332bde14
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 15/04/2014 08:01:35
+Message:
+await async calls, resolve warnings #MsgLength=36
+
+
+----
+Modified: src/wp/InAppBrowser.cs|2 2
+
+Revision: 1c32236353d8fc118a8449464ba7cd8f93a5eee2
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 15/04/2014 08:11:36
+Message:
+CB-3324 Add support for back-button inappbrowser [WP8] if there is no history -> InAppBrowser is closed #MsgLength=104
+
+
+----
+Modified: src/wp/InAppBrowser.cs|21 0
+
+Revision: 932f078e2dfd31a8208b9a3c0d53852289f94826
+Author: Robin North <github@robinnorth.co.uk>
+Date: 09/04/2014 23:48:00
+Message:
+CB-6360: Fix for crash on iOS < 6.0 (closes #37) #MsgLength=49
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|5 1
+
+Revision: c5061ec333fae8e214a867443bc53833bba0d3c6
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:19:05
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+Modified: src/amazon/InAppChromeClient.java|18 0
+Modified: src/android/InAppChromeClient.java|18 0
+Modified: src/blackberry10/README.md|18 0
+Modified: src/wp/InAppBrowser.cs|15 1
+
+Revision: 1c98bc5b3f1757e1ed6c7686aa055715f9bf9372
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.4.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|14 0
+Modified: plugin.xml|1 1
+
+Revision: 11f833b46d1318eee6b073d6ff2ec380fcb1ab89
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: b9f8fcd8a93f802dcf85f620f70a6dcd23b0f9c7
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 18/04/2014 07:32:34
+Message:
+CB-5649 - InAppBrowser overrides App's orientation #MsgLength=51
+
+
+----
+Modified: src/ios/CDVInAppBrowser.h|7 1
+Modified: src/ios/CDVInAppBrowser.m|35 1
+
+Revision: c25bc30d7d1715b0cb945051cdf1866c6436f61f
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 18/04/2014 07:52:21
+Message:
+CB-6360 - improvement: feature detection instead of iOS version detection #MsgLength=74
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|7 4
+
+Revision: 40778ba23985019da58708b80e6d0016c8e0c4c1
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 18/04/2014 08:02:59
+Message:
+Fixed use of iOS 6 deprecated methods #MsgLength=38
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|3 8
+
+Revision: ab7494faa059a8e90fb8f88c5c5ef40e8a154478
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 22/04/2014 06:28:03
+Message:
+CB-6482 InAppBrowser calls incorrect callback on WP8 #MsgLength=53
+
+
+----
+Modified: src/wp/InAppBrowser.cs|7 4
+
+
+Revision: 8f2ad211ad60a10d7234124ff3c815e6a3b70ff1
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 19/04/2014 01:47:20
+Message:
+CB-6474 InAppBrowser. Add data urls support to WP8 #MsgLength=51
+
+
+----
+Modified: src/wp/InAppBrowser.cs|28 3
+
+
+Revision: bdf4ade2bb1e5805ebd632f264fcdd09109cc5d1
+Author: Nadya Atanasova <nadya.it@gmail.com>
+Date: 26/03/2014 21:51:49
+Message:
+Add necessary capability so the plugin works on its own #MsgLength=56
+
+
+----
+Modified: plugin.xml|8 0
+
+
+
+Revision: abf757edffe32495d6bf1cccba3f6cd8d388f05f
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:30:38
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+
+Revision: 687ce6047018df1bede0e9273424e52b0493be73
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:49:43
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-inappbrowser #MsgLength=72
+
+
+----
+Added: doc/ja/index.md|299 0
+
+Revision: 1953356fd20dd2f5d05f85d59435b418c061b8a5
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:22:18
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-inappbrowser #MsgLength=72
+
+
+----
+Modified: doc/es/index.md|24 17
+Modified: doc/fr/index.md|32 25
+Added: doc/it/index.md|299 0
+Added: doc/ko/index.md|299 0
+Added: doc/pl/index.md|299 0
+Added: doc/zh/index.md|299 0
+
+Revision: 9fc6654b895ce02e01e9da11dcd76ad2c2c8645e
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:36:45
+Message:
+documentation translation: cordova-plugin-inappbrowser #MsgLength=55
+
+
+----
+Added: doc/de/index.md|299 0
+Modified: doc/ja/index.md|15 15
+
+Revision: 03e1715cfe54193c2261c655e6dd02e4d4284477
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:30:32
+Message:
+CB-6806 Add license #MsgLength=20
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: 8fea6be60a27498f09957b791072a74b0de5b945
+Author: Rodrigo Silveira <rodrigos@outlook.com>
+Date: 29/05/2014 03:36:59
+Message:
+Adding permission info #MsgLength=23
+
+
+----
+Modified: doc/index.md|0 11
+Modified: plugin.xml|3 0
+
+
+Revision: 282fdb7a400176c8b89fa85a5a7148f7d229b021
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 24/04/2014 22:51:06
+Message:
+not forcing the look of the inAppBrowserWrap and buttons #MsgLength=57
+
+
+----
+Modified: doc/index.md|19 0
+Modified: src/firefoxos/InAppBrowserProxy.js|1 4
+
+Revision: 7b24dcb3ddf86bb3dd4423ed7d0904aa786abe03
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 25/04/2014 02:14:41
+Message:
+back/forward buttons added, iframe has no border #MsgLength=49
+
+
+----
+Modified: src/firefoxos/InAppBrowserProxy.js|82 15
+
+Revision: a6cd0a16ba034cda28c93dafa01c45929bef8eb1
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 25/04/2014 03:01:09
+Message:
+console.log removed #MsgLength=20
+
+
+----
+Modified: src/firefoxos/InAppBrowserProxy.js|0 1
+
+Revision: 527046261134c15007a6c3268e0789d1edce5cbc
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 25/04/2014 03:03:33
+Message:
+doc updated #MsgLength=12
+
+
+----
+Modified: doc/index.md|22 6
+
+
+Revision: 846190a6f84a7f2ad01d36b3d1b78589aac1b8af
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 04/06/2014 21:24:21
+Message:
+default parameter added #MsgLength=24
+
+
+----
+Modified: src/firefoxos/InAppBrowserProxy.js|1 1
+
+Revision: df001e2765a512bc2b9c7e5d730f438556112067
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 05/06/2014 19:03:51
+Message:
+after code review #MsgLength=18
+
+
+----
+Modified: doc/index.md|1 2
+
+
+Revision: eb704f82124221af3dc436fe2decc47a81b58388
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/06/2014 02:22:41
+Message:
+Clean up whitespace (mainly due to no newline at eof warning) #MsgLength=62
+
+
+----
+Modified: src/ios/CDVInAppBrowser.h|2 1
+Modified: src/ios/CDVInAppBrowser.m|22 21
+
+Revision: 393524a3eae7faa8a56a0782fd2f5f1f786d07ab
+Author: Rodrigo Silveira <rodrigos@outlook.com>
+Date: 29/05/2014 03:36:59
+Message:
+CB-6127 Spanish and rench Translations added. Github close #23 #MsgLength=63
+
+
+----
+Added: doc/de/index.md|299 0
+Added: doc/es/index.md|299 0
+Added: doc/fr/index.md|299 0
+Added: doc/it/index.md|299 0
+Added: doc/ja/index.md|299 0
+Added: doc/ko/index.md|299 0
+Added: doc/pl/index.md|299 0
+Added: doc/zh/index.md|299 0
+
+
+Revision: 992306bbc58f3ba9dc0f4dbcde1b084db5ba8169
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:43
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.5.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|15 0
+Modified: plugin.xml|1 1
+
+Revision: c011fe2d9dd7b5b018cadb4d7a00a0f0f9428892
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 91b84579e8a85d2cf1b84420301c42c74c340473
+Author: bwin <winkler@kerosieben.de>
+Date: 27/05/2014 22:23:23
+Message:
+CB-6769 ios: Fix statusbar color reset wasn't working on iOS7+ #MsgLength=74
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|2 2
+
+
+Revision: f866e0ed9f08e2bd33acf05f518ffbde961d53c4
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:27:50
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-inappbrowser documentation translation: cordova-plugin-inappbrowser #MsgLength=117
+
+
+----
+Modified: doc/de/index.md|37 16
+Modified: doc/es/index.md|37 16
+Modified: doc/fr/index.md|37 16
+Modified: doc/it/index.md|37 16
+Modified: doc/ja/index.md|37 16
+Modified: doc/ko/index.md|37 16
+Added: doc/ru/index.md|320 0
+Modified: doc/zh/index.md|38 17
+
+Revision: 9fe291ce7ae47982a38e4e88c9a20c10b72bfdf5
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 12/07/2014 01:40:03
+Message:
+app needs to be privileged #MsgLength=27
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: cc2f8966bad6f396df34a1c5ffc0aae71580fdc7
+Author: Willy Aguirre <marti1125@gmail.com>
+Date: 29/07/2014 19:20:54
+Message:
+update InAppBrowserProxy.js #MsgLength=28
+
+
+----
+Modified: src/firefoxos/InAppBrowserProxy.js|1 1
+
+Revision: 8cb876c63a0016f17990329d3bd82fa18af72bc7
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 02/08/2014 04:24:03
+Message:
+CB-7249cordova-plugin-inappbrowser documentation translation: cordova-plugin-inappbrowser #MsgLength=90
+
+
+----
+Modified: doc/pl/index.md|37 16
+
+Revision: f620b6403599e3a073a5c88cb4479b8317bf98bb
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 27/07/2014 05:37:17
+Message:
+ubuntu: support qt 5.2 #MsgLength=23
+
+
+----
+Modified: src/ubuntu/inappbrowser.cpp|9 11
+
+
+Revision: c37b08e03817e766f0c7f8dc3d5c3c58ac7b1940
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:23
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.5.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+
+Revision: 79f73fbe623a00babf23b3bb2faf37ad2a3eac44
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:28
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 69ca780772b406ab02ec1bd1a8e4dca70052e926
+Author: Archana Naik <naika@lab126.com>
+Date: 15/08/2014 02:57:00
+Message:
+amazon-fireos related changes. #MsgLength=31
+
+
+----
+Modified: plugin.xml|17 0
+Modified: src/amazon/InAppBrowser.java|90 19
+
+Revision: 97e0eac60366fcf22055e7bd23f5bfffe76b7b87
+Author: Tracktl <tracktl@MacBook-Pro-de-Tracktl.local>
+Date: 05/08/2014 21:53:45
+Message:
+inappbrowser _blank target position is fixed #MsgLength=45
+
+
+----
+Modified: src/firefoxos/InAppBrowserProxy.js|2 1
+
+
+Revision: c2c94f315b956a6179d45013b30653b4689ad19d
+Author: Tracktl <tracktl@MacBook-Pro-de-Tracktl.local>
+Date: 05/08/2014 21:50:49
+Message:
+phonegap events supported for _blank target #MsgLength=44
+
+
+----
+Modified: src/firefoxos/InAppBrowserProxy.js|19 1
+
+
+Revision: 683937872dbe9bfb002ed032d5d2c9505fe63830
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 15/07/2014 03:21:41
+Message:
+CB-7133 port inappbrowser to plugin-test-framework #MsgLength=155
+
+
+----
+Added: tests/plugin.xml|31 0
+Added: tests/resources/inject.css|21 0
+Added: tests/resources/inject.html|43 0
+Added: tests/resources/inject.js|20 0
+Added: tests/resources/local.html|64 0
+Added: tests/resources/local.pdf|0 0
+Added: tests/resources/video.html|42 0
+Added: tests/tests.js|457 0
+
+Revision: 81161ebe668a14f87e1ef4b57f2d300a609b9a8b
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 28/08/2014 02:11:43
+Message:
+Add just a bit more logging #MsgLength=28
+
+
+----
+Modified: src/android/InAppBrowser.java|4 1
+
+Revision: 4f957919c76205e33569c11f0cd71555c9166ec8
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 28/08/2014 03:56:46
+Message:
+CB-7133 fix up the tests for Android #MsgLength=398
+
+
+----
+Modified: tests/plugin.xml|1 1
+Modified: tests/resources/inject.html|1 1
+Modified: tests/resources/local.html|4 1
+Modified: tests/tests.js|12 10
+
+Revision: 832ff5f2e9f0b6e46b9cf5c9d598429f0fd84ce3
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 28/08/2014 05:07:07
+Message:
+CB-7133 more fixup of tests on Android #MsgLength=208
+
+
+----
+Modified: tests/resources/inject.html|1 0
+Modified: tests/tests.js|6 6
+
+Revision: 5fc1beed0d3cbc4fbe34764d7a4614878240a2ec
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 28/08/2014 05:15:55
+Message:
+CB-7133 clarify that anchor1 doesn't exist #MsgLength=43
+
+
+----
+Modified: tests/tests.js|2 2
+
+Revision: faf37db5dac360f7107b0cc05b86636db3026001
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 30/08/2014 05:03:25
+Message:
+CB-7424 - Wrong docs: anchor tags are not supported by the InAppBrowser #MsgLength=72
+
+
+----
+Modified: doc/index.md|1 1
+
+Revision: ec8c4527b907d5b3a2a2a6d34cc18b5190849b4b
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 05/09/2014 10:31:14
+Message:
+CB-7249 cordova-plugin-inappbrowser documentation translation: cordova-plugin-inappbrowser #MsgLength=91
+
+
+----
+Modified: doc/de/index.md|6 6
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: f90e5714304235f739a4afabeea990ecb4869868
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 08/09/2014 18:43:19
+Message:
+CB-7490 Fixes InAppBrowser manual tests crash on windows platform #MsgLength=66
+
+
+----
+Modified: tests/tests.js|11 2
+
+Revision: df90a6acc4f9f1f3964ca1b26b59a9d9ab7f2026
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 16/09/2014 05:26:46
+Message:
+CB-7471 cordova-plugin-inappbrowser documentation translation: cordova-plugin-inappbrowser #MsgLength=91
+
+
+----
+Modified: doc/pl/index.md|1 1
+
+Revision: 8ce6b497fa803936784629187e9c66ebaddfbe1b
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:43
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.5.2 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|14 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f47f5449c2c1839345e7f57840173b3121cb8956
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:02
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 6e0ea336fc531b51fc82e04bca3130a1e339ec98
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:16
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: ef9ca5ad3ee121efb22f0dfceef6628805ff0c49
+Author: SomaticIT <contact@somatic.fr>
+Date: 18/10/2013 05:01:13
+Message:
+Append Windows 8.1 proxy using x-ms-webview #MsgLength=44
+
+
+----
+Added: src/windows81/InAppBrowserProxy.js|151 0
+
+Revision: 863386398e6e595f103d593ab72c91712fcc373a
+Author: SomaticIT <contact@somatic.fr>
+Date: 18/10/2013 05:02:59
+Message:
+Append Windows 8.1 platform configuration in plugin.xml #MsgLength=56
+
+
+----
+Modified: plugin.xml|8 1
+
+
+Revision: 225bde271b03b39ab6bb6bac807bfae1d960f721
+Author: SomaticIT <contact@somatic.fr>
+Date: 11/07/2014 23:06:39
+Message:
+Rename windows81 by windows8 in src directory #MsgLength=46
+
+
+----
+Renamed: src/windows/InAppBrowserProxy.js [from src/windows81/InAppBrowserProxy.js]|0 0
+
+Revision: ac9c64964e17e66075c8b9170a61916b5ac01acb
+Author: SomaticIT <contact@somatic.fr>
+Date: 12/07/2014 03:43:37
+Message:
+Update windows proxy to be both compatible with windows 8 and 8.1 #MsgLength=66
+
+
+----
+Modified: src/windows/InAppBrowserProxy.js|52 29
+
+Revision: ea6a4fc80a2bc5b1cc74964e921df8b367e5876f
+Author: SomaticIT <contact@somatic.fr>
+Date: 12/07/2014 03:48:21
+Message:
+Update doc to add Windows 8 #MsgLength=28
+
+
+----
+Modified: doc/index.md|10 0
+
+Revision: 6e38667320cda5f5c199a5d6a038a001be491bdd
+Author: SomaticIT <contact@somatic.fr>
+Date: 12/07/2014 03:48:31
+Message:
+Update french translation #MsgLength=26
+
+
+----
+Modified: doc/fr/index.md|12 2
+
+Revision: d828197de45f724ad41135c3ca8f0767a0990582
+Author: SomaticIT <contact@somatic.fr>
+Date: 12/07/2014 03:54:25
+Message:
+Clean plugin.xml #MsgLength=17
+
+
+----
+Modified: plugin.xml|4 5
+
+
+Revision: ac0bdee8e6f024be67df0331db9820b41d000054
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 19/09/2014 07:52:40
+Message:
+renamed InAppBrowser back to inappbrowser for case sensitive operating systems #MsgLength=79
+
+
+----
+Renamed: www/inappbrowser.js [from www/InAppBrowser.js]|0 0
+
+Revision: 4b3a838704ce44e879983087ddf23d326361bc98
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 19/09/2014 13:51:42
+Message:
+zIndex fixed #MsgLength=13
+
+
+----
+Modified: src/firefoxos/InAppBrowserProxy.js|1 0
+
+
+Revision: 32c0e41c431ac79ab18033c8b536c966b37e0db4
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 19/09/2014 14:33:53
+Message:
+Windows implementation fixes and improvements #MsgLength=46
+
+
+----
+Modified: src/windows/InAppBrowserProxy.js|49 65
+
+Revision: a0785deff8e68dc7a28f2ea493073355d0abcaf2
+Author: Prabhjot Singh <prabhjos@amazon.com>
+Date: 25/09/2014 04:28:14
+Message:
+Amazon Specific changes: Added logs and corrected indentation according to 81161ebe668a14f87e1ef4b57f2d300a609b9a8b #MsgLength=116
+
+
+----
+Modified: src/amazon/InAppBrowser.java|4 1
+
+Revision: 003f0fd3cd27d7fffdd41802d83f2a0ec465a806
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 07:10:13
+Message:
+ Updated version and RELEASENOTES.md for release 0.5.3 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|13 2
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 927e7a8e9814bc8f1b3244fa7418d32bfa2661a1
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 08:09:47
+Message:
+ Incremented plugin version. #MsgLength=29
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e9eb23468360eb9cd36a7b041fea8218b904b1f1
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 20/09/2014 03:31:22
+Message:
+CB-7471 cordova-plugin-inappbrowser documentation translation: cordova-plugin-inappbrowser #MsgLength=91
+
+
+----
+Modified: doc/de/index.md|10 0
+Modified: doc/es/index.md|11 1
+Modified: doc/fr/index.md|3 3
+Modified: doc/it/index.md|10 0
+Modified: doc/ja/index.md|10 0
+Modified: doc/ko/index.md|10 0
+Modified: doc/pl/index.md|10 0
+Modified: doc/ru/index.md|10 0
+Modified: doc/zh/index.md|10 0
+
+Revision: 0d79919aa5c9e49b70293a6d199e149640f4d5bf
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:12:35
+Message:
+CB-7700 cordova-plugin-inappbrowser documentation translation: cordova-plugin-inappbrowser #MsgLength=91
+
+
+----
+Modified: doc/de/index.md|6 6
+Modified: doc/es/index.md|56 56
+Modified: doc/pl/index.md|9 9
+Modified: doc/ru/index.md|15 15
+
+
+Revision: 8012ae709bb749eaad434c05cd7e2aeda8f3a425
+Author: Edna Morales <eymorale@us.ibm.com>
+Date: 07/10/2014 04:17:15
+Message:
+CB-7720 check if event is null since OK string from success callback was removed #MsgLength=100
+
+
+----
+Modified: www/inappbrowser.js|1 1
+
+Revision: 216ed8ae578b31e5f747303fa24d2e1f4090ba39
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 23/10/2014 01:07:20
+Message:
+CB-7850 clarify role of whitelist #MsgLength=34
+
+
+----
+Modified: doc/index.md|8 2
+
+Revision: 50a78baf22843b0df96ccb4ca83a45bd9ef3fc39
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 25/10/2014 05:45:09
+Message:
+CB-7712 remove references to closebuttoncaption #MsgLength=193
+
+
+----
+Modified: doc/index.md|0 1
+Modified: src/android/InAppBrowser.java|5 18
+
+Revision: 7a816d845427a8c069684c96a1697b7232c3391b
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 28/10/2014 00:23:10
+Message:
+CB-7876 change test target to avoid undesired redirects #MsgLength=418
+
+
+----
+Modified: tests/tests.js|23 23
+
+Revision: 2818011249928fb71d2b730237a20c9151ed2263
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:11:34
+Message:
+Dropping trailing whitespace #MsgLength=29
+
+
+----
+Modified: doc/index.md|1 1
+
+Revision: 70d74e5273ed4e34bd797c574a748c0e1691bd12
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:11:47
+Message:
+CB-7977 Mention deviceready in plugin docs #MsgLength=43
+
+
+----
+Modified: doc/index.md|9 0
+
+Revision: 1bf42c9e3b2e9608e9bffc998c3a0f574b051cf6
+Author: daserge <daserge@yandex.ru>
+Date: 15/10/2014 03:18:29
+Message:
+CB-7688 Alert is not supported in InAppBrowser on Windows platform #MsgLength=115
+
+
+----
+Modified: tests/tests.js|2 0
+
+Revision: d2eaa089f84480db44dc2809a92bf24794988afd
+Author: daserge <daserge@yandex.ru>
+Date: 15/10/2014 06:52:28
+Message:
+CB-7692 InAppBrowser local url opening bug in 8.1 #MsgLength=88
+
+
+----
+Modified: src/windows/InAppBrowserProxy.js|8 4
+
+Revision: 71b43d39a43cc25a9f5e08a8bbdbb447a10237e3
+Author: daserge <daserge@yandex.ru>
+Date: 15/10/2014 07:07:15
+Message:
+CB-7695 Fix InAppBrowser injectScriptFile for Windows 8.1 / Windows Phone 8.1 #MsgLength=163
+
+
+----
+Modified: src/windows/InAppBrowserProxy.js|16 7
+Modified: tests/tests.js|5 2
+
+Revision: 3f80b0b59c4ec45141fd66b2d723e427e2ca53ad
+Author: daserge <daserge@yandex.ru>
+Date: 15/10/2014 07:23:26
+Message:
+CB-7690 InAppBrowser loadstart/loadstop events issues #MsgLength=95
+
+
+----
+Modified: src/windows/InAppBrowserProxy.js|3 3
+Modified: tests/tests.js|12 9
+Modified: www/inappbrowser.js|7 1
+
+Revision: 3056997c78db2ac870b39aaa808249c305150ad6
+Author: daserge <daserge@yandex.ru>
+Date: 15/10/2014 07:48:23
+Message:
+CB-7697 Add locationBar support to InAppBrowser windows platform version #MsgLength=73
+
+
+----
+Modified: src/windows/InAppBrowserProxy.js|93 4
+
+Revision: e785533ab4753ce0a98ea5ddccbaa5f965e959be
+Author: daserge <daserge@yandex.ru>
+Date: 15/10/2014 07:54:41
+Message:
+CB-7784 Exit event is not fired after InAppBrowser closing #MsgLength=59
+
+
+----
+Modified: src/windows/InAppBrowserProxy.js|2 2
+
+Revision: 2c4bef1f9729ace12c9c42f985510df4600312d8
+Author: Ajitha <ajithas@amazon.com>
+Date: 30/10/2014 22:24:43
+Message:
+Amazon specific changes: Removed reference to closebuttoncaption according to https://git-wip-us.apache.org/repos/asf?p=cordova-plugin-inappbrowser.git;a=commit;h=50a78baf22843b0df96ccb4ca83a45bd9ef3fc39 #MsgLength=204
+
+
+----
+Modified: src/amazon/InAppBrowser.java|5 18
+
+Revision: b9653af69186a9519113b5d3a15e6f0000be0ef4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.5.4 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|14 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: abbbcc2461e863c94b5f61b017c572ba038c4b69
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:50
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 514469ab24f796ef332d8acbfae1504672809a56
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 30/10/2014 00:09:13
+Message:
+CB-7897: Update to work with whilelist plugins in Cordova 4.x #MsgLength=62
+
+
+----
+Modified: src/android/InAppBrowser.java|33 2
+
+Revision: 80e4831a7fa225b3be7cac41d90bad262d74da64
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 30/10/2014 00:09:13
+Message:
+CB-7897: Update to work with whilelist plugins in Cordova 4.x #MsgLength=62
+
+
+----
+Modified: src/android/InAppBrowser.java|33 2
+
+
+Revision: 88b71b3a579b0052dae1eff2a8e00d842c31991e
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 17/10/2014 05:45:03
+Message:
+ubuntu: port to oxide #MsgLength=22
+
+
+----
+Modified: src/ubuntu/InAppBrowser.qml|4 5
+Modified: src/ubuntu/inappbrowser.cpp|4 8
+Modified: src/ubuntu/inappbrowser.h|1 1
+
+Revision: e5d6d6f69aad5ebedb12af207986ace623daff75
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 18/10/2014 06:36:31
+Message:
+ubuntu: implement inject* functions #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 0
+Modified: src/ubuntu/InAppBrowser.qml|24 0
+Added: src/ubuntu/InAppBrowser_escapeScript.js|8 0
+Modified: src/ubuntu/inappbrowser.cpp|22 17
+
+Revision: bfff56aef43ff36b4551f04d1585b1512c506713
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/01/2015 00:46:22
+Message:
+CB-8270 Remove usage of `[arr JSONString]`, since it's been renamed to `cdv_JSONString` #MsgLength=190
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|2 2
+
+Revision: 19a2179d1d3e147b343f18f4d5ebca88637cebb2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 05:03:59
+Message:
+Add missing license header for src/ubuntu/InAppBrowser_escapeScript.js #MsgLength=71
+
+
+----
+Modified: src/ubuntu/InAppBrowser_escapeScript.js|21 0
+
+Revision: 90d41e87ce9b62f77766a859bc1552b7488ef82f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.6.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6604d54e122b262f1b7f7337e34faeac5ace2d96
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:02
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ad263a1b539660b00e4cd4d4c5ac7be38acf9351
+Author: Jason Chase <jasonpchase@gmail.com>
+Date: 13/02/2015 05:34:32
+Message:
+CB-8444 Don't clobber `window.open` - Add new symbol/clobber to access open function (`cordova.InAppBrowser.open`) - Change existing tests to use new symbol (i.e. don't rely on plugin clobber of `window.open`) - Add tests to use `window.open` via manual replace with new symbol - Update docs to deprecate plugin clobber of `window.open` #MsgLength=337
+
+
+----
+Modified: doc/index.md|31 14
+Modified: plugin.xml|9 0
+Modified: tests/tests.js|52 9
+
+Revision: 0293771e1416540a81e768fcd0bbb7b0bd6f2de3
+Author: Jason Chase <jasonpchase@gmail.com>
+Date: 18/02/2015 03:42:54
+Message:
+CB-8444 Add a clobber for `cordova.InAppBrowser.open` (close #80) #MsgLength=117
+
+
+----
+Modified: doc/index.md|4 0
+
+Revision: f8a80ce27dfd2d0c57b7b2a2a01832ea938b931f
+Author: Maxime Boucher-Allard <maxime.boucher-allard.1@ulaval.ca>
+Date: 16/09/2014 04:10:03
+Message:
+Keep external android pages in a single tab. (close #61) #MsgLength=57
+
+
+----
+Modified: src/android/InAppBrowser.java|2 0
+
+Revision: fb8574abde9e57db0daafa9d2f0fda0dbba315ab
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 16:35:29
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|48 0
+
+Revision: 4a4164c6f6a537ae71a3485262c17564a20f4048
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:51:38
+Message:
+CB-8438 cordova-plugin-inappbrowser documentation translation: cordova-plugin-inappbrowser #MsgLength=91
+
+
+----
+Modified: doc/de/index.md|67 40
+Modified: doc/es/index.md|45 18
+Modified: doc/fr/index.md|46 19
+Modified: doc/it/index.md|51 24
+Modified: doc/ja/index.md|46 19
+Modified: doc/ko/index.md|44 17
+Modified: doc/pl/index.md|45 18
+Modified: doc/zh/index.md|65 38
+
+Revision: f4879e9e50edceeb624f50f3e6f57c69a2454a86
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 09:21:08
+Message:
+CB-8570 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|13 0
+Modified: README.md|2 0
+
+Revision: 392a73c2cdcfc643622832cb6d2ac218f4da082a
+Author: Kris Erickson <ksoncan34@yahoo.ca>
+Date: 10/03/2014 02:33:24
+Message:
+Add a hardwareback option to allow for the hardware back button to go back. #MsgLength=76
+
+
+----
+Modified: src/android/InAppBrowser.java|23 1
+Modified: src/android/InAppBrowserDialog.java|5 1
+
+
+
+Revision: a45dbc80b404933fe798127cba5d3668a2dbcad1
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 04/03/2015 16:26:57
+Message:
+updated docs, set hardwareback default to true #MsgLength=47
+
+
+----
+Modified: doc/index.md|1 0
+Modified: src/android/InAppBrowser.java|1 1
+
+Revision: 720123718e924914176f3baf143d46d14fefa3ea
+Author: Jelle Kralt <jelle@jellekralt.nl>
+Date: 11/09/2014 16:46:47
+Message:
+Added option to disable/enable zoom controls #MsgLength=94
+
+
+----
+Modified: src/amazon/InAppBrowser.java|17 1
+Modified: src/android/InAppBrowser.java|17 1
+
+
+Revision: 00809a3c5184d08f1b7ce9fa05e8f19c19343c46
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 05/03/2015 09:49:49
+Message:
+Update docs for Android zoom=no option #MsgLength=39
+
+
+----
+Modified: doc/index.md|1 0
+
+Revision: 1774ceafae1de85994f716d8347a4ec4cfd9a039
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:30:44
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|337 2
+Deleted: doc/index.md|0 357
+
+Revision: 4c8f58d87c008a7743b8222205735fa9f6b76ad4
+Author: daserge <daserge@yandex.ru>
+Date: 16/12/2014 00:15:01
+Message:
+CB-7961 Add cordova-plugin-inappbrowser support for browser platform #MsgLength=140
+
+
+----
+Modified: README.md|19 0
+Modified: plugin.xml|10 0
+Added: src/browser/InAppBrowserProxy.js|221 0
+
+Revision: ed1227f61ac24c712558600002d11e2691754b65
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 14/03/2015 11:29:55
+Message:
+CB-8659 - Update InAppBrowser to support both cordova-ios 4.0.x and 3.x (closes #93) #MsgLength=85
+
+
+----
+Modified: src/ios/CDVInAppBrowser.h|12 1
+Modified: src/ios/CDVInAppBrowser.m|16 8
+
+Revision: 57f942670c84412b61bc05dd67c5b505edb4b67d
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 05/02/2015 22:14:41
+Message:
+CB-8432 Correct styles for browser wrapper to display it correctly on some pages #MsgLength=246
+
+
+----
+Modified: src/windows/InAppBrowserProxy.js|22 7
+
+Revision: 9901d62248e9309d2adc3736bc470e69790fe6a6
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:34:39
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 805d43d61d673d55bbc6c8373e76c1e6a27885fc
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:32
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: eb59809c348802658fa6ec82c3788d4e96a414c1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:06:01
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: 2c1ded2c430472b9269ebda88f47442d6517f93d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 07:31:51
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c85cab15b7db6f9cceb983d1657329642ecdf9f1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 07:34:36
+Message:
+CB-8683 updated wp and browser specific references of old id to new id #MsgLength=71
+
+
+----
+Modified: src/browser/InAppBrowserProxy.js|4 4
+Modified: src/wp/InAppBrowser.cs|3 3
+
+Revision: 16353c346670980ca993633624dd4f75ba17ca94
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 24/03/2015 23:11:28
+Message:
+CB-8661 Return executed script result on Windows #MsgLength=49
+
+
+----
+Modified: README.md|4 0
+Modified: src/windows/InAppBrowserProxy.js|8 2
+
+Revision: 461d9e9c4c14479af97e33f925388b1fc20eb838
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 25/03/2015 20:03:30
+Message:
+CB-8635 Improves UX on windows platform #MsgLength=120
+
+
+----
+Modified: README.md|5 0
+Modified: plugin.xml|1 0
+Modified: src/windows/InAppBrowserProxy.js|17 13
+Added: www/inappbrowser.css|42 0
+
+Revision: dfd099958152ea0f3c9e2f4af9a3a7ee5ff6e0bc
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 04/04/2015 03:34:06
+Message:
+CB-4930 - (prefix) InAppBrowser should take into account the status bar #MsgLength=72
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|14 0
+
+Revision: e2865db2eae80a2ab37e951856a39540f6534e16
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 01/04/2015 21:57:58
+Message:
+CB-7689 Adds insertCSS support for windows platform #MsgLength=52
+
+
+----
+Modified: README.md|1 0
+Modified: src/windows/InAppBrowserProxy.js|42 1
+
+Revision: ea7e7674f848db2217ed40d0ecdcfccc4248891e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 08:01:06
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: aacf70f8881577071617c90b31bf5864e197bd50
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:38
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|26 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 05fa172116e29bffdc5827f33d7ad9fc696e0c68
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:47
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f614dc319354b820c903139ca257fa1bf373c768
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:31:08
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7d1b584306ca8ae74ec41df590f2cd389c014cd3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: ba7cbe58d5812b51c3ece1e6b445248252c298f6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:22
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 77d0c999984268576d6876d7746e4851a53d7907
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 02/06/2015 23:56:15
+Message:
+fix npm md issue #MsgLength=17
+
+
+----
+Modified: README.md|17 17
+
+Revision: de9f3e35b449fcfc2873e2decea302c67a60c8b2
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:41:39
+Message:
+CB-9128 cordova-plugin-inappbrowser documentation translation: cordova-plugin-inappbrowser #MsgLength=91
+
+
+----
+Added: doc/de/README.md|388 0
+Added: doc/es/README.md|388 0
+Added: doc/fr/README.md|388 0
+Added: doc/it/README.md|388 0
+Added: doc/ja/README.md|388 0
+Added: doc/ko/README.md|388 0
+Added: doc/pl/README.md|388 0
+Added: doc/zh/README.md|388 0
+Added: src/blackberry10/doc/de/README.md|24 0
+Added: src/blackberry10/doc/es/README.md|24 0
+Added: src/blackberry10/doc/fr/README.md|24 0
+Added: src/blackberry10/doc/it/README.md|24 0
+Added: src/blackberry10/doc/ja/README.md|24 0
+Added: src/blackberry10/doc/ko/README.md|24 0
+Added: src/blackberry10/doc/pl/README.md|24 0
+Added: src/blackberry10/doc/zh/README.md|24 0
+
+Revision: 3413453d86eb7c34ffb5c05e77225dba4ef7a03c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:04
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.0.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 47e332fc9270027c84a67b77f7223f2527977fd1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: cb1c6b4d2427e6337f87a5b2488e336b2f253e5c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:36
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 74aa099b7e69ddc067a46c06e20d593ef5a0874a
+Author: Anton Antonov <anton.synd.antonov@gmail.com>
+Date: 19/06/2015 01:28:32
+Message:
+CB-9158 - InAppBrowser zoomControls are always set to true #MsgLength=59
+
+
+----
+Modified: src/android/InAppBrowser.java|31 40
+
+Revision: 5c7a9d95a8eea3b87b29eb4502b4b03d2e432ec8
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 08:52:53
+Message:
+remove travis-ci #MsgLength=17
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 2
+
+Revision: 368cbcbc416d49eef40f951dc4cf3f968f448fc2
+Author: daserge <daserge@yandex.ru>
+Date: 17/07/2015 02:35:59
+Message:
+CB-9378 Fix InAppBrowser not taking whole screen on Windows #MsgLength=60
+
+
+----
+Modified: www/inappbrowser.css|2 2
+
+Revision: c08e2391434a15c27a2a85afd59a402bb7128a92
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 15/09/2015 03:25:59
+Message:
+Close #114 #MsgLength=11
+
+
+----
+
+Revision: fee0d4e2d8063b66d195920668c0d3a6d339817b
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 07/10/2015 16:44:07
+Message:
+CB-9760 InAppBrowser: fallback to default window.open behavior on Ripple #MsgLength=73
+
+
+----
+Modified: www/inappbrowser.js|6 0
+
+Revision: 89c5ee54e7a7002f1cb903cd090b855ff50fb3ee
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: 32743e0eb905cb914d6cea30d5edbf37fd560b47
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:50
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: 1afd42aabbe51c949affb2d5f85e73858700b499
+Author: Paul Weber <paul@iwa-tech.com>
+Date: 15/10/2015 01:22:14
+Message:
+CB-9799 Fixed javaDoc errors.. This closes #119 #MsgLength=48
+
+
+----
+Modified: src/android/InAppBrowser.java|11 12
+
+Revision: 790771bb00825ede0d8859913a509d8f4172d02f
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:29:16
+Message:
+add JIRA issue tracker link #MsgLength=28
+
+
+----
+Modified: README.md|4 1
+
+Revision: e89f602633291d9c286fb87872d5e01b44f86649
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 17/11/2015 09:46:22
+Message:
+Close #113 #MsgLength=11
+
+
+----
+
+Revision: 2279aee4ff4e7c363392dc9de4af278f96c2dca7
+Author: David Weber <dave@veryflatcat.com>
+Date: 20/07/2015 19:09:58
+Message:
+Fix crash on browser window close (https://issues.apache.org/jira/browse/CB-9167) #MsgLength=82
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|5 0
+
+
+Revision: d9900ba783ee6aeeecb81f23153e5cffe9b8ced4
+Author: Mario Rosa <mario@dwaiter.com>
+Date: 05/12/2014 22:21:01
+Message:
+InAppBrowser, iOS: Setting setStatusBarStyle to -1 causes CGContextSaveGState. #MsgLength=152
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|3 1
+
+
+Revision: 6b99fb96f86484cf9d5b3d0c194a075adca75b42
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 17/11/2015 16:17:02
+Message:
+CB-10008 Fix InAppBrowser popup layout on Windows #MsgLength=50
+
+
+----
+Modified: www/inappbrowser.css|2 4
+
+Revision: 49757716f556c7c87713f2f81469ab394c887b12
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 17/11/2015 16:42:55
+Message:
+CB-9150 Fix InAppBrowser executeScript crash on Windows if no data returned #MsgLength=76
+
+
+----
+Modified: src/windows/InAppBrowserProxy.js|3 2
+
+Revision: 1bc51f9381ccade59dad29f7a41dd37ec2a62f32
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 18/11/2015 03:50:40
+Message:
+fix async self usage #MsgLength=21
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|13 7
+
+
+Revision: 11a2acfd7b8c07ece4b03815af7b6f9b0ead318e
+Author: aroberson <adam.roberson@ventyx.abb.com>
+Date: 10/04/2015 21:53:48
+Message:
+Fixed zIndex issue on Windows 8, 8.1 where InAppBrowser opens behind default app. #MsgLength=82
+
+
+----
+Modified: www/windows8/InAppBrowserProxy.js|1 0
+
+Revision: 8175122c038773f6119e6da590c69746517b4f68
+Author: aroberson <adam.roberson@ventyx.abb.com>
+Date: 14/04/2015 04:33:03
+Message:
+Invoke webview if using local file #MsgLength=35
+
+
+----
+Modified: www/windows8/InAppBrowserProxy.js|35 18
+
+
+Revision: 2c002f0f8d86f611c4a7a481944c6dbb46b57d84
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 18/11/2015 07:45:10
+Message:
+Close #85 #MsgLength=10
+
+
+----
+
+Revision: 620d92e5c0b6fc248c4567ac511a5f9027e3c6eb
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 18/11/2015 15:05:44
+Message:
+Close #91 #MsgLength=10
+
+
+----
+
+Revision: 6815a48408a2957f2d9d9f34267e00d54f07dc11
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|136 146
+
+Revision: 682703aa246694c9afbc4a46129113536b69a37b
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 19/11/2015 06:22:06
+Message:
+weak ref type was wrong #MsgLength=24
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|1 1
+
+Revision: e32b95ccf92c2894a5572d26fda6cb4f8b7f0a6a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 07:02:03
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: 5451427c988c9d219f177ca7749e2df513de6aec
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:05
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|15 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1cd9205eb58e7241b299d42620a576103b49eede
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|96 96
+
+Revision: bc9036d90a1f3f2220b5fc29b77cf2405e7fd781
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 20/11/2015 07:22:30
+Message:
+CB-10040 - Compile Error in InAppBrowser Plugin for iOS - No known instance method for selector 'URLIsWhitelisted:' #MsgLength=116
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|0 4
+
+Revision: 8142c73c84003a3c71088e9999677583d7e9510a
+Author: Sergey Grebnov <sergei.grebnov@gmail.com>
+Date: 19/11/2015 21:27:11
+Message:
+CB-7696 Document target=_self behavior for Windows #MsgLength=70
+
+
+----
+Modified: README.md|4 0
+
+Revision: 52cfd3216a05edff9f5f00f66050cf9312b6a548
+Author: Connor Pearson <cjp822@gmail.com>
+Date: 18/03/2015 01:11:49
+Message:
+CB-3750: Fixes spinner on iOS. This closes #89 #MsgLength=47
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|4 4
+
+Revision: 9b576f303b87f30b5054c47240c1e815415da374
+Author: Connor Pearson <cjp822@gmail.com>
+Date: 25/02/2015 02:48:14
+Message:
+CB-8534: Allow plugins to respond to onReceivedHttpAuthRequest. This closes #82 #MsgLength=80
+
+
+----
+Modified: src/android/InAppBrowser.java|36 0
+
+Revision: 542536f7908a776ec49becb0bf40969ee4a48a82
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 21/11/2015 02:53:36
+Message:
+CB-10040 - re-fix: backwards compatible with cordova-ios < 4.0 #MsgLength=63
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|9 2
+
+Revision: 290ea0ac9c832f8c0aa1b280f9d188dcd1680e72
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 65821f907d622528f80153ecd24630d483742a69
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 21/11/2015 00:15:55
+Message:
+CB-9445 Improves executeScript callbacks on iOS #MsgLength=120
+
+
+----
+Modified: src/ios/CDVInAppBrowser.h|0 1
+Modified: src/ios/CDVInAppBrowser.m|2 6
+
+Revision: ce285e8e0635173f3e5314a4a960db1180611fde
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 11/12/2015 08:00:13
+Message:
+CB-10187 Updated version and RELEASENOTES.md for release 1.1.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|10 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2fc265883017062031da415df12930dd0483ad6e
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 11/12/2015 08:01:03
+Message:
+CB-10187 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3a1fea5d8b1cebb852bc1b9a8b869642c9a7a318
+Author: robario <webmaster@robario.com>
+Date: 18/12/2015 16:32:24
+Message:
+Open a new window on the browser platform #MsgLength=96
+
+
+----
+Modified: src/browser/InAppBrowserProxy.js|3 1
+
+Revision: 9540f11fcc6983db3563b95ebb3e9c2a2be8ea35
+Author: robario <webmaster@robario.com>
+Date: 18/12/2015 17:13:01
+Message:
+Using modulemapper #MsgLength=18
+
+
+----
+Modified: src/browser/InAppBrowserProxy.js|2 1
+
+Revision: f326121590412532e8aee6d43e87825e86376153
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 17/12/2015 21:10:47
+Message:
+CB-10009 Improve InAppBrowser toolbar look and feel on Windows #MsgLength=82
+
+
+----
+Modified: src/windows/InAppBrowserProxy.js|25 35
+Modified: www/inappbrowser.css|74 0
+
+Revision: 518596a96ff42994a5e4c6771dc27c2ef7af3e6e
+Author: Martin Bektchiev <martin.bektchiev@telerik.com>
+Date: 27/10/2015 15:58:12
+Message:
+Fix lint warnings #MsgLength=36
+
+
+----
+Modified: src/android/InAppBrowser.java|6 6
+
+Revision: 212e0a34d86a9c970739f44503655aecf6492814
+Author: Joe Bowser <bowserj@apache.org>
+Date: 16/01/2016 05:31:46
+Message:
+CB-8180: Changing methods of interception in WebViewClient class #MsgLength=83
+
+
+----
+Modified: src/android/InAppBrowser.java|15 33
+
+Revision: c3ccb694d3d8a7ead22880ca6c91f29e887dfd0d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:35:05
+Message:
+CB-10368 Updated version and RELEASENOTES.md for release 1.2.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 15a57485c69723fe4dfffea4c0d3e33063824b73
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:58:32
+Message:
+CB-10368 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8da5e25eeee892590f3ddb781a4fde8e9f8ef512
+Author: Joe Bowser <bowserj@apache.org>
+Date: 23/01/2016 06:22:53
+Message:
+CB-10407: Re-adding onPageStarted to re-add LOAD_START, even though it's in the wrong place #MsgLength=92
+
+
+----
+Modified: src/android/InAppBrowser.java|39 0
+
+Revision: 2e0dc26eaa023e9d553a78c4acf25af751cc8021
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 26/01/2016 17:06:49
+Message:
+CB-10428 Fix syntax error when browserifying inAppBrowser plugin #MsgLength=84
+
+
+----
+Modified: www/inappbrowser.js|78 77
+
+Revision: 04c05a5e522b0e460cf93e9785bb19ff7af18f50
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 27/01/2016 17:35:44
+Message:
+CB-10441 Add auto tests for InAppBrowser plugin #MsgLength=67
+
+
+----
+Modified: tests/tests.js|104 0
+
+Revision: 4d9e4884dd485203804fcc53091c6567cc987fda
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 28/01/2016 17:35:53
+Message:
+CB-10456 InAppBrowser is not closed if I close it programmatically on Android #MsgLength=97
+
+
+----
+Modified: src/android/InAppBrowser.java|15 14
+
+Revision: 73ed40fe0753ac9870333784c216cdb821402989
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 28/01/2016 22:16:32
+Message:
+CB-6702 InAppBrowser hangs when opening more than one instance #MsgLength=82
+
+
+----
+Modified: src/android/InAppBrowser.java|7 0
+
+Revision: b024104a54e50cc404d156274012b7665c42f876
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 29/01/2016 00:08:27
+Message:
+CB-10451 InAppBrowser: loadstart event is not triggered on Windows CB-10452 InAppBrowser: 'exit' event is not triggered on Windows CB-10454 InAppBrowser: 'loaderror' event does not have code and message on Windows CB-10450 InAppBrowser: Unable to get property 'canGoBack' of undefined on Windows #MsgLength=315
+
+
+----
+Modified: src/windows/InAppBrowserProxy.js|197 174
+
+Revision: 163f7c5a8fc9435397f7fa88df235c06d3eafcf0
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 01/02/2016 20:17:55
+Message:
+Added missing plugin dependency for manual tests #MsgLength=49
+
+
+----
+Modified: tests/plugin.xml|2 0
+
+Revision: fa7c46a316fa4b773aa75742d9ceb10c40056e53
+Author: PC Dreams (Paulo Cristo) <cristo.paulo@gmail.com>
+Date: 05/01/2016 20:32:47
+Message:
+handle app store urls in system browser #MsgLength=40
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|8 1
+
+
+Revision: df94a6c157d7ecb233284e936c0b336d8f612e01
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 02/02/2016 19:25:27
+Message:
+CB-10505 Updated version and RELEASENOTES.md for release 1.2.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|12 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f04f37a6174c479852a58efdb09f527c6c96a666
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 02/02/2016 19:32:22
+Message:
+CB-10505 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: be1f6076c29c3b33bc2cfc968235d852aef095d2
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 04/02/2016 03:49:19
+Message:
+CB-7500 executeScript with callback kills/blurs inAppBrowser window on Android #MsgLength=98
+
+
+----
+Modified: src/android/InAppBrowser.java|1 1
+
+Revision: b51a4dc54e9c2098e1aea3af63b6bfa2453a318e
+Author: Sean Kelly <home@seank.com>
+Date: 31/12/2015 03:02:52
+Message:
+CB-7786 Support mediaPlaybackRequiresUserAction on Android #MsgLength=77
+
+
+----
+Modified: CONTRIBUTING.md|28 1
+Modified: README.md|3 2
+Modified: src/android/InAppBrowser.java|16 5
+Modified: tests/resources/video.html|3 0
+Modified: tests/tests.js|11 2
+
+Revision: 80c8e56fb08979582a1dd31788607f35be635a48
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 16/01/2016 18:45:17
+Message:
+CB-10305 Gray bar appears in the wrong place on iOS #MsgLength=70
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|18 1
+
+Revision: bb69b79ca3adc0444adc804c1c0cce60a90d7276
+Author: t1st3 <contact@tiste.org>
+Date: 08/02/2016 01:31:19
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=259
+
+
+----
+Modified: package.json|1 1
+
+Revision: 234cca4e5bda576ba0d2bdd92a4ab8fe68603215
+Author: Wolfram Kriesing <wolfram+github@kriesing.de>
+Date: 21/01/2016 04:55:03
+Message:
+CB-10395 InAppBrowser's WebView not storing cookies reliable on Android #MsgLength=91
+
+
+----
+Modified: src/android/InAppBrowser.java|8 0
+
+Revision: 4f3b4df7d16ab7f96e2379e93440b85a8ee9f94a
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 08/02/2016 17:55:47
+Message:
+CB-10538 cordova-plugin-inappbrowser timeout issue #MsgLength=264
+
+
+----
+Modified: tests/tests.js|2 2
+
+Revision: 98b63cc37e49466acc9b6b7f027c073fa5313e97
+Author: Connor Pearson <cjp822@gmail.com>
+Date: 14/03/2015 02:12:40
+Message:
+CB-3360: Set custom inappbrowser user agent for android #MsgLength=74
+
+
+----
+Modified: src/android/InAppBrowser.java|10 0
+
+Revision: 5cbd28edb04f7634043de7de53f51676f0911db4
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/02/2016 16:43:37
+Message:
+CB-10557 Updated version and RELEASENOTES.md for release 1.3.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2d836eea0f7907ce7dc9c7bdda8eb98fcfecdfe1
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/02/2016 17:44:03
+Message:
+CB-10557 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 555d55ac8a3a6b6800e7cdb088b2be26d42e8c44
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 14/02/2016 02:33:21
+Message:
+Fixes CB-10607 #MsgLength=135
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|1 1
+
+Revision: ea1253963bc5d8a0e7b0684c7ecb7e231444a140
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/02/2016 20:39:28
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Modified: .gitignore|1 0
+Added: .jshintrc|16 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/browser/InAppBrowserProxy.js|14 10
+Modified: src/firefoxos/InAppBrowserProxy.js|10 14
+Modified: src/ubuntu/InAppBrowser_escapeScript.js|3 0
+Modified: src/windows/InAppBrowserProxy.js|15 11
+Modified: tests/resources/inject.js|1 1
+Modified: tests/tests.js|9 6
+Modified: www/windows8/InAppBrowserProxy.js|0 5
+
+Revision: 0db344327cf1ad9bf755a5c96eaf0ddebc079719
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 02/03/2016 09:21:02
+Message:
+CB-10760: Fixing README for display on Cordova website #MsgLength=73
+
+
+----
+Modified: README.md|7 7
+
+Revision: 68054819d8d9186f5657e773cd6d5a7bdd00a184
+Author: Alexis Kofman <alexis.kofman@gmail.com>
+Date: 23/03/2016 18:26:48
+Message:
+CB-10937 fix stretched icons #MsgLength=48
+
+
+----
+Modified: src/android/InAppBrowser.java|25 31
+
+Revision: 21f4de0e2aa58e16af20aa4ee809c05153135925
+Author: Alexis Kofman <alexis.kofman@gmail.com>
+Date: 24/03/2016 15:06:20
+Message:
+CB-10944 : NoSuchMethodError in InAppBrowser plugin #MsgLength=70
+
+
+----
+Modified: src/android/InAppBrowser.java|1 1
+
+Revision: c6ff803113eb71c39bf41a774204efdebcce0377
+Author: Birge Clark <biclark@zendesk.com>
+Date: 20/01/2016 02:31:28
+Message:
+CB-7679 add fix for iOS upload. This closes #139 #MsgLength=49
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|6 0
+
+Revision: 56bb457c5e1c2707fccc2da80fcddcf1b2087c04
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:27
+Message:
+ Updated version and RELEASENOTES.md for release 1.4.0 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 37b3d249dafade107654051d5d2e86ca4c6c186a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:27
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: fc66109f93e999aaa964235c2211b9971dd1ad92
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:51
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: 4543dec138ecbaa8a2a44a505553e2084d309795
+Author: Norm Estabrook <normesta@microsoft.com>
+Date: 01/04/2016 06:00:59
+Message:
+CB-110003: Adding samples to Readme. #MsgLength=55
+
+
+----
+Modified: README.md|231 0
+
+Revision: 066ba4c286f4d63ee2cf3fda14f6ca1481fa4a0f
+Author: Richard Knoll <richard.b.knoll@gmail.com>
+Date: 15/03/2016 02:41:10
+Message:
+CB-10866: Adding engine requirements to package.json #MsgLength=71
+
+
+----
+Modified: package.json|6 5
+
+Revision: aef8b9947bcae551ec49c970820420e82087ab68
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:53:59
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: bcdc0b9da01862dacac554db5fd6836d6463c4cc
+Author: Rob Close <rob.close@sap.com>
+Date: 07/06/2016 02:13:21
+Message:
+CB-11381 android: Does not pass sonarqube scan #MsgLength=181
+
+
+----
+Modified: src/android/InAppBrowser.java|11 0
+
+Revision: 768f886c6a1e5f9caa263aac137be657dc03f54e
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 17:04:16
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|3 1
+
+Revision: 4ef6106259bb2cf983cdc83b30d11c806c8e0fec
+Author: Connor Pearson <cjp822@gmail.com>
+Date: 14/03/2015 01:52:30
+Message:
+CB-3360: Set custom inappbrowser user agent for ios #MsgLength=122
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|15 2
+
+Revision: 6bdd538096085eae1c9aeec820d1ee748be259ce
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 17/07/2016 19:13:57
+Message:
+CB-11012 added some clarifications about InAppBrowser object #MsgLength=80
+
+
+----
+Modified: README.md|2 2
+
+Revision: e9734667c6a4e917848dac594369e5c9dd3180b8
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 18/07/2016 02:26:30
+Message:
+CB-2063: (ios) Fixed presentation style #MsgLength=59
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|1 0
+
+Revision: 64928480e9a7bb5f65e810fe4bd406cdea44a11c
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 18/07/2016 02:48:50
+Message:
+Closing stale pull request: close #90 #MsgLength=38
+
+
+----
+
+Revision: f42226dddb1b05cdbbf094185dfcd2658ec7254b
+Author: jakub-g <jakub-g@users.noreply.github.com>
+Date: 18/05/2016 21:55:27
+Message:
+doc: do not use `with` in JS samples #MsgLength=257
+
+
+----
+Modified: README.md|6 12
+
+
+Revision: 2a3a0cecab0fd02e71c5a4ce867c627ec5c17b8a
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/07/2016 04:10:14
+Message:
+CB-5402 added extra content from wiki page #MsgLength=43
+
+
+----
+Modified: README.md|47 1
+
+Revision: 56dca03de77039096fba052881a6323793a5b906
+Author: Vasiliy Makarov <drmoriarty.0@gmail.com>
+Date: 27/06/2016 20:04:13
+Message:
+fix some calls which used api level 16 #MsgLength=58
+
+
+----
+Modified: src/android/InAppBrowser.java|18 6
+
+Revision: 83c5e749f028693f8dc7861ceef75e9de36c686f
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 22/07/2016 05:03:35
+Message:
+Closing stale pull request: close #152 #MsgLength=39
+
+
+----
+
+Revision: 3f63aaee583f85a8ed603fc15cc83127919f8320
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 28/07/2016 05:38:43
+Message:
+CB-11178 allow to open other apps on iOS 9 #MsgLength=62
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|2 5
+
+Revision: 2776b14db6e949c87850d3874ad94d45208c7011
+Author: daserge <v-seshak@microsoft.com>
+Date: 17/08/2016 01:10:15
+Message:
+CB-10467 Hardware back button, while InAppBrowser is opened, closes the app too in addition to closing InAppBrowser #MsgLength=116
+
+
+----
+Modified: README.md|1 0
+Modified: src/windows/InAppBrowserProxy.js|40 6
+Modified: tests/tests.js|21 2
+
+Revision: 698648f15d4c2297ebc478f4437f7d192e4810a6
+Author: daserge <v-seshak@microsoft.com>
+Date: 17/08/2016 02:22:32
+Message:
+CB-11013 IAB enabling background play of YouTube videos? #MsgLength=107
+
+
+----
+Modified: README.md|1 0
+Modified: src/android/InAppBrowser.java|26 0
+
+Revision: a77b289f0132e71f635cf692d816c47d42efe972
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/08/2016 22:43:48
+Message:
+CB-10973 inAppBrowser for Windows Platform: wrong height of webview with location=yes #MsgLength=86
+
+
+----
+Modified: src/windows/InAppBrowserProxy.js|1 0
+
+Revision: 22d466a0504e5ddf6452672a61f4e9d5bc9e00d7
+Author: Pavel Kohoutek <pavel.kohoutek@geovap.cz>
+Date: 23/05/2016 19:32:01
+Message:
+Size and position in browser platform #MsgLength=256
+
+
+----
+Modified: src/browser/InAppBrowserProxy.js|5 2
+
+Revision: 60d27b8d8db5c66e5879b9c228e10b2811525441
+Author: daserge <v-seshak@microsoft.com>
+Date: 22/08/2016 22:31:58
+Message:
+CB-10973 inAppBrowser for Browser Platform: wrong height of webview with location=yes #MsgLength=86
+
+
+----
+Modified: src/browser/InAppBrowserProxy.js|1 0
+
+Revision: 4a0442b95a3628103326d58eb74b8ae299dd9ff8
+Author: Norm Estabrook <normesta@microsoft.com>
+Date: 28/04/2016 05:31:18
+Message:
+Adding links to guide content and reference content at the top of the readme file Github: close #163 #MsgLength=101
+
+
+----
+Modified: README.md|5 1
+
+Revision: 57b50b1d652a8d8a6d7228eb3c7a0a95d7a4f298
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 23/08/2016 04:41:34
+Message:
+Plugin uses Android Log class and not Cordova LOG class #MsgLength=56
+
+
+----
+Modified: src/android/InAppBrowser.java|22 23
+Modified: src/android/InAppBrowserDialog.java|0 1
+
+Revision: cc2ec22695285d7516f0018a74b10a4eabadfc22
+Author: Gavin Pacini <GavinPacini@users.noreply.github.com>
+Date: 29/08/2016 23:20:12
+Message:
+Add intent scheme to be handled by OS #MsgLength=257
+
+
+----
+Modified: src/android/InAppBrowser.java|1 1
+
+Revision: d08a7309901b3e45b332d6be420beb053cfc98bb
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 30/08/2016 05:57:54
+Message:
+Closing invalid pull request: close #78 #MsgLength=40
+
+
+----
+
+Revision: ccfbe7b8cd849f41459a13e5ba8c91aafe7960ee
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 30/08/2016 06:00:36
+Message:
+Closing invalid pull request: close #28 #MsgLength=40
+
+
+----
+
+Revision: 032c8049378c4f3b43c07924864e6345c3584ee1
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 22:17:31
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=398
+
+
+----
+Modified: package.json|3 0
+
+Revision: 6c8106a70680c7df34d54a3e55062a349cce6c71
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:54
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 1.5.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|37 14
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c81a64a21c22e874bcbeea051d9955e6aa105235
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2df0e72c36f1fda35c04b3b06bd7beaafaae6ee9
+Author: Nikita Matrosov <nikita.matrosov@rp.ru>
+Date: 20/09/2016 15:23:37
+Message:
+CB-11694 Android: Set hadwareBackButton value according option in cordova.InAppBrowser.open #MsgLength=263
+
+
+----
+Modified: src/android/InAppBrowser.java|4 1
+Modified: tests/tests.js|18 1
+
+Revision: d4156fb19e2259eaaf2451d2d08df9f8b7527faf
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:21:33
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been signed and submitted to secretary@apache.org." #MsgLength=137
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: 32253b96a61b3ac68f2eec9ec2ee225f87b92793
+Author: pwlin <pwlin05@gmail.com>
+Date: 07/10/2016 00:39:10
+Message:
+CB-11955 Added Initial OSX platform support #MsgLength=321
+
+
+----
+Modified: README.md|8 1
+Modified: package.json|2 0
+Modified: plugin.xml|16 0
+Added: src/osx/CDVInAppBrowser.h|30 0
+Added: src/osx/CDVInAppBrowser.m|89 0
+Modified: tests/tests.js|5 0
+
+Revision: ab696f6ebd64b93ae46aac9816562ce194e32607
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 13/10/2016 18:29:23
+Message:
+CB-12010 (android) Catch FileUriExposedException #MsgLength=49
+
+
+----
+Modified: src/android/InAppBrowser.java|3 2
+
+Revision: df8bcaf7515569733704fe780402f9123a60d61d
+Author: ekidder3 <eric.kidder@gtri.gatech.edu>
+Date: 05/02/2015 20:20:57
+Message:
+CB-8467 #MsgLength=1097
+
+
+----
+Modified: README.md|23 1
+Modified: src/amazon/InAppBrowser.java|11 0
+Modified: src/android/InAppBrowser.java|11 0
+Modified: src/firefoxos/InAppBrowserProxy.js|4 0
+Modified: src/ios/CDVInAppBrowser.h|1 0
+Modified: src/ios/CDVInAppBrowser.m|48 0
+Modified: src/ubuntu/inappbrowser.cpp|4 0
+Modified: src/ubuntu/inappbrowser.h|1 0
+Modified: src/windows/InAppBrowserProxy.js|5 0
+Modified: src/wp/InAppBrowser.cs|15 0
+Modified: www/inappbrowser.js|4 1
+Modified: www/windows8/InAppBrowserProxy.js|6 0
+
+Revision: 20c21f39dffa1cff76ce6703e6ddb5e45f54dbd0
+Author: Frank Stingl <stingl.frank@inside-online.de>
+Date: 19/10/2016 17:36:20
+Message:
+removed duplicate hide method in ios source and add jasmine test cases #MsgLength=71
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|0 24
+Modified: tests/tests.js|10 1
+
+
+Revision: 2a71258b98880ec9a322782a6dd02b8476261d25
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 20/10/2016 06:24:50
+Message:
+Increment plugin minor version because of new hide feature #MsgLength=59
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f8747a700d7bb214b01a1864760403ee95d1bb98
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/10/2016 17:52:11
+Message:
+CB-10973 inAppBrowser for Windows Platform: wrong height of webview with location=yes #MsgLength=127
+
+
+----
+Modified: src/windows/InAppBrowserProxy.js|1 1
+
+Revision: 5cbbc8e26ee6f9231b319229eaf75d5e008d5e64
+Author: ipaterson <ipaterson@newstex.com>
+Date: 02/07/2015 02:10:18
+Message:
+CB-9274 Adds missing methods to InAppBrowser to allow compilation for Amazon FireOS. #MsgLength=104
+
+
+----
+Modified: src/amazon/InAppBrowser.java|23 1
+
+Revision: 1b4859c17520fc3637e0854c260539c7a7858c78
+Author: Philippe Morier <thorgal.hayne@outlook.com>
+Date: 28/10/2016 22:21:08
+Message:
+fix(close button): Set correct content description #MsgLength=70
+
+
+----
+Modified: src/android/InAppBrowser.java|1 1
+
+Revision: 8ab07277cd9bf8aa81de89fcc1d54dde503c28e9
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 25/11/2016 01:50:49
+Message:
+CB-12184 executeScript leads to a null pointer on exception on Android. #MsgLength=91
+
+
+----
+Modified: README.md|4 4
+Modified: src/android/InAppBrowser.java|25 21
+
+Revision: d73ec0b7966ae7db423bb92af70149fbc1c6a3c9
+Author: Sebastien Blanc <scm.blanc@gmail.com>
+Date: 22/09/2014 20:42:04
+Message:
+add option useWidthViewPort #MsgLength=46
+
+
+----
+Modified: src/android/InAppBrowser.java|7 1
+
+Revision: ca323ea952026470fb0b120886ac2284ae3ef749
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 02/12/2016 06:45:49
+Message:
+CB-7608 (android) document useWidthViewPort #MsgLength=63
+
+
+----
+Modified: README.md|1 0
+
+Revision: 009e662c82f4fa153f0d0ccc14995ddb3b495de5
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:45
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 1.6.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|337 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: cfbd3845a893df647ff39ec3c750804d775a0e57
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:07
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1c1d14a9fcd31156f738f7607be7b8b362fb9a7f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 18:37:00
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: fdf953c7040d0551c8cb9f93fa84df0930a0c101
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 06:05:56
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-inappbrowser #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|17 0
+
+Revision: 5cb9df188e9e182ef6a5366bdadcaa04c6f2f111
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 06:08:21
+Message:
+CB-12237 - Update version in package.json to correct 1.6.1-dev #MsgLength=63
+
+
+----
+Modified: package.json|1 1
+
+Revision: b6e575be32fc8a98b652c778c8edf9884cdc4bf9
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 15/12/2016 04:21:39
+Message:
+CB-12237 Updated version and RELEASENOTES.md for release 1.6.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d26ccd1f4dc8cea83b2c34019b8d94758d34dd52
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 15/12/2016 04:27:33
+Message:
+CB-12237 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d735649fcd9e8ebd9e3fc84e48b9315380dc2b2d
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 21/12/2016 07:39:25
+Message:
+CB-10799 (ios) fix toolbar is shown in incorrect position when in-call status bar #MsgLength=101
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|4 3
+
+Revision: f32917df314f08296c53a4de0255a424be773184
+Author: Manu Mtz.-Almeida <manu.valladolid@gmail.com>
+Date: 20/09/2016 04:51:08
+Message:
+CB-11136: (ios) Fix InAppBrowser when closing with WKWebView #MsgLength=80
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|10 3
+
+Revision: fa70a64af9494cd6d2ae840f5cca285ca26fecf0
+Author: 박관영 <jay8585@naver.com>
+Date: 03/01/2017 13:09:17
+Message:
+Add Support for input[type=file] File Chooser #MsgLength=46
+
+
+----
+Modified: src/android/InAppBrowser.java|92 1
+
+Revision: ad28a0ec68b49078821a61bb54e81f261bb6460e
+Author: 박관영 <jay8585@naver.com>
+Date: 03/01/2017 13:20:50
+Message:
+Add Support for input[type=file] File Chooser #MsgLength=46
+
+
+----
+Modified: src/android/InAppBrowser.java|44 38
+
+Revision: 680971316d727a3ab57a831a4bf34e43a90d43b9
+Author: 박관영 <jay8585@naver.com>
+Date: 03/01/2017 13:22:59
+Message:
+CB-9148 (android) Add Support for input[type=file] File Chooser #MsgLength=64
+
+
+----
+Modified: src/android/InAppBrowser.java|0 1
+
+Revision: 1c490922053b9b62c5b20b7f6e0e2866379040a7
+Author: 박관영 <jay8585@naver.com>
+Date: 03/01/2017 13:28:05
+Message:
+CB-9148 (android) Add Support for input[type=file] File Chooser #MsgLength=64
+
+
+----
+Modified: src/android/InAppBrowser.java|1 1
+
+Revision: 2a383a66c59018560ea39777f3b3b7dc17bd6913
+Author: 박관영 <jay8585@naver.com>
+Date: 03/01/2017 13:29:44
+Message:
+CB-9148 (android) Add Support for input[type=file] File Chooser #MsgLength=64
+
+
+----
+Modified: src/android/InAppBrowser.java|1 1
+
+Revision: 26f7ef3c671a442885ebe16d9e1c576613eaf390
+Author: 박관영 <jay8585@naver.com>
+Date: 03/01/2017 13:39:25
+Message:
+CB-9148 (android) Add Support for input[type=file] File Chooser #MsgLength=64
+
+
+----
+Modified: src/android/InAppBrowser.java|13 16
+
+Revision: c53be403e223aae6d591d1105a02cf31bb4d3ae4
+Author: 박관영 <jay8585@naver.com>
+Date: 03/01/2017 13:40:16
+Message:
+CB-9148 (android) Add Support for input[type=file] File Chooser #MsgLength=64
+
+
+----
+Modified: src/android/InAppBrowser.java|1 1
+
+Revision: fe686b3c1f18551b25dfa0ca5dac549b58fa3622
+Author: 박관영 <jay8585@naver.com>
+Date: 04/01/2017 18:42:52
+Message:
+CB-9148 (android) Add Support for input[type=file] File Chooser #MsgLength=82
+
+
+----
+Modified: src/android/InAppBrowser.java|11 20
+
+Revision: 6671608a3f828c0b1022c3ee8bd30d3029372c9c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:36:18
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 771bcb54cf5760ff8c50b6874584ab9ba33238dc
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 21:09:11
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=69
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|219 0
+
+Revision: 92ca973b3da3c79fd4bba1e1ca8a12c75a1b6260
+Author: daserge <v-seshak@microsoft.com>
+Date: 20/01/2017 20:12:09
+Message:
+CB-12353 Corrected merges usage in plugin.xml #MsgLength=46
+
+
+----
+Modified: plugin.xml|4 4
+
+Revision: d842693889057f5d3fe209f6f7a443015df28f22
+Author: daserge <v-seshak@microsoft.com>
+Date: 18/01/2017 22:42:55
+Message:
+CB-12364 [Windows] Inappbrowser inject file manual tests are not working #MsgLength=73
+
+
+----
+Modified: src/windows/InAppBrowserProxy.js|4 2
+Modified: tests/tests.js|4 0
+
+Revision: 783c23b6639d0d8b98d07153b10040a1e765cb7f
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 22/02/2017 03:24:11
+Message:
+Closing stale pull requests: closes #121 and closes #204 #MsgLength=57
+
+
+----
+
+Revision: c6ffd69e9ce4c5aeecf4d292c4062d4596534bd7
+Author: Reid Beels <mail@reidbeels.com>
+Date: 19/01/2017 08:33:27
+Message:
+CB-12366: (ios) Reduce tmpWindow level to prevent overlapping statusbar #MsgLength=91
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|1 1
+
+Revision: a74510ba005f53c31fbcb832ac4859fe4ff2ce8d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:27
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 1.7.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|10 0
+Modified: package.json|1 1
+Modified: plugin.xml|177 242
+Modified: tests/plugin.xml|7 32
+
+Revision: 0ddc31d3f40d3c0690e3cb7902edfb5727f03f19
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:56:00
+Message:
+Set VERSION to 1.7.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|242 177
+Modified: tests/plugin.xml|32 7
+
+Revision: 0f5de8524f8f83c52e10d32da1d45f102086b5dd
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/03/2017 08:42:02
+Message:
+CB-12519 updated incorrect version in RELEASENOTES.md #MsgLength=54
+
+
+----
+Modified: RELEASENOTES.md|1 1
+
+Revision: c9ff78abfda78d89df887369da22ba2cd5f29159
+Author: daserge <v-seshak@microsoft.com>
+Date: 28/02/2017 22:31:22
+Message:
+CB-11248 InAppBrowser no focus on input text fields #MsgLength=52
+
+
+----
+Modified: src/android/InAppBrowser.java|4 0
+
+Revision: b923e88b232fcde9293cbb9355f00c89cc93caff
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 10:21:11
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: bfb33988be6dae6708a254872da3bf4081eeeb7b
+Author: filmaj <maj.fil@gmail.com>
+Date: 26/04/2017 07:19:48
+Message:
+CB-12266: (browser platform) loadstop event.url is now a string instead of an object, aligning it with the other platforms. #MsgLength=124
+
+
+----
+Modified: src/browser/InAppBrowserProxy.js|3 3
+
+Revision: 531a508c0d20606e19f5a62124e080458757b986
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 21:07:45
+Message:
+CB-12622: Added Android 6.0 build badges to README #MsgLength=51
+
+
+----
+Modified: README.md|3 3
+
+Revision: ff6a765facd65fb9fced817d88eb6f193436dcda
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 03:51:08
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 1.7.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c630159c2201f566c881add1ed7f8445ef664011
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 03:51:10
+Message:
+Set VERSION to 1.7.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 711c60521279397c8ceb55a4dd036504b10a35ad
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 18:22:39
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: b6ed0bbaca9c3dfde83e0322e4efcf5d826f5791
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 20/01/2017 18:39:52
+Message:
+Add 'hide' method in typing definitions #MsgLength=40
+
+
+----
+Modified: types/index.d.ts|2 0
+
+Revision: 4f144d9e82bcead3a820fd3ec10ca022d9335951
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/06/2017 18:31:31
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Modified: .travis.yml|70 3
+
+Revision: 15685d7a218f99a6e88ee725fc4f3aef06a71161
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:31:52
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: aa82a5d6c8486ed52b92a35e78b2a0ab4509d0a2
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 15:54:24
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: ed139eeb3415be3be2953592b60e46781493a8da
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:34:27
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: 6e058624d693206ccbfeff5dd7845001c2954249
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 23/07/2017 23:29:57
+Message:
+CB-13035 fix Create issue Link #MsgLength=50
+
+
+----
+Modified: README.md|1 1
+
+Revision: 32d867f8e45c2b14580b64c48d8f963b6b1d594f
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 24/07/2017 00:03:06
+Message:
+CB-12586 (iOS) fix method hide doesn't work #MsgLength=63
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|1 1
+
+Revision: 72ac4d7eca06562193f89b42aa542f546ec22f16
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 27/07/2017 20:55:11
+Message:
+CB-13028 (CI) Browser builds on Travis and AppVeyor, Fixes tests on browser and browser implementation #MsgLength=103
+
+
+----
+Modified: .appveyor.yml|3 2
+Modified: .travis.yml|16 0
+Modified: README.md|6 6
+Modified: src/browser/InAppBrowserProxy.js|24 6
+Modified: tests/tests.js|15 4
+
+Revision: 7611645469aa4f9a4b0ebeb826317030cc2900a2
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 01/07/2017 08:41:04
+Message:
+CB-12975 (docs) Resort and reword cordova.InAppBrowser.open `options` lists #MsgLength=110
+
+
+----
+Modified: README.md|12 9
+
+Revision: 902427525f896ae80b11cc0061a9e2420a00662d
+Author: Audrey So <audreyso@apache.org>
+Date: 13/06/2017 01:34:08
+Message:
+CB-12895 : added eslint and removed jshint #MsgLength=43
+
+
+----
+Added: .eslintrc.yml|10 0
+Deleted: .jshintrc|0 16
+Modified: package.json|9 3
+Modified: src/browser/InAppBrowserProxy.js|76 79
+Modified: src/firefoxos/InAppBrowserProxy.js|21 22
+Modified: src/ubuntu/InAppBrowser_escapeScript.js|4 5
+Modified: src/windows/InAppBrowserProxy.js|95 96
+Added: tests/.eslintrc.yml|2 0
+Modified: tests/resources/inject.js|2 2
+Modified: tests/tests.js|73 77
+Modified: www/inappbrowser.js|23 23
+Modified: www/windows8/InAppBrowserProxy.js|36 40
+
+Revision: bfe87639180c4be0dd28e19f581f08ff2bfbe2a7
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:06:34
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 6ea100a9fe9baefa612ad85fdd620b356ccc5af7
+Author: Joe Bowser <bowserj@apache.org>
+Date: 22/09/2017 00:05:30
+Message:
+Close #62 #MsgLength=10
+
+
+----
+
+Revision: 171e7dfea7468e873810391dd08710d8594c1f19
+Author: Joe Bowser <bowserj@apache.org>
+Date: 22/09/2017 00:09:01
+Message:
+Close #73 #MsgLength=10
+
+
+----
+
+Revision: dbf3316df31db65cbafdbfe011c510f7b6841019
+Author: Joe Bowser <bowserj@apache.org>
+Date: 22/09/2017 00:10:08
+Message:
+Close #77 #MsgLength=10
+
+
+----
+
+Revision: 7ac56842aa0daaac5033a1531681f9de38fd561f
+Author: Joe Bowser <bowserj@apache.org>
+Date: 22/09/2017 00:19:22
+Message:
+Close #116 #MsgLength=11
+
+
+----
+
+Revision: 6eb9bbbf75d03f61f243a372cefe487abd66d11e
+Author: Joe Bowser <bowserj@apache.org>
+Date: 22/09/2017 00:26:57
+Message:
+Close #156 #MsgLength=11
+
+
+----
+
+Revision: 3882924c4a5294cb4f79a6a33b8de221f8bafba6
+Author: Joe Bowser <bowserj@apache.org>
+Date: 22/09/2017 00:32:57
+Message:
+Close #172 #MsgLength=11
+
+
+----
+
+Revision: ad4a0a3120d4922701709d9b137eb5c51fd48c80
+Author: Joe Bowser <bowserj@apache.org>
+Date: 22/09/2017 00:35:55
+Message:
+Close #221 #MsgLength=11
+
+
+----
+
+Revision: bf6945feb0c5ce733fe09df53142556b7f65bc56
+Author: Joe Bowser <bowserj@apache.org>
+Date: 22/09/2017 00:36:57
+Message:
+Close #201 #MsgLength=11
+
+
+----
+
+Revision: d78cfdc4d4449d5dfbf4ffbc89097172f371cad5
+Author: Joe Bowser <bowserj@apache.org>
+Date: 22/09/2017 00:39:38
+Message:
+Close #220 #MsgLength=11
+
+
+----
+
+Revision: aee699a0e564b864bac2cc14136fa9b5a42a6efe
+Author: Jez McKean <jezmck@users.noreply.github.com>
+Date: 21/09/2017 20:25:14
+Message:
+minor grammar fix #MsgLength=36
+
+
+----
+Modified: README.md|1 1
+
+Revision: e9878ddecdcd030cc226a0277f08398b6cf3e051
+Author: Joe Bowser <bowserj@apache.org>
+Date: 28/09/2017 00:49:06
+Message:
+Close #240 #MsgLength=11
+
+
+----
+
+Revision: dcc00fc3bd11e283303efb60ff5287cef18b3a9b
+Author: Kei Oikawa <oikawa@s-ovation.jp>
+Date: 03/05/2016 09:23:15
+Message:
+CB-13347: Enable thirdparty cookies on >=Android 5.0 device #MsgLength=60
+
+
+----
+Modified: src/android/InAppBrowser.java|5 0
+
+Revision: 50ac05ca4181d8d44b7a394945c3c9f05b401d1e
+Author: Joe Bowser <bowserj@apache.org>
+Date: 28/09/2017 00:59:08
+Message:
+Close #165 #MsgLength=11
+
+
+----
+
+Revision: 71201b10a687ee2d65abf50d25c959d2ff023447
+Author: Joe Bowser <bowserj@apache.org>
+Date: 28/09/2017 01:03:13
+Message:
+Updating travis to fix CI issues #MsgLength=33
+
+
+----
+Modified: .travis.yml|8 0
+
+Revision: 7fb19f6bdccf9c05379c4d5ba6b1c5731c07129a
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:59:05
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: cc2299e1c379bce5961fdca377d62bda8442f9cf
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 15:22:46
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: b9c577044c6f8e692429c35a1cb028f92c00c622
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:45
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 1.7.2 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 0f2f14a56386f07a66090d3432d533b77febfb5a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:39
+Message:
+Set VERSION to 1.7.3-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2c547a1a1ef934b36fe2a910f79313967de49209
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 13/12/2017 03:22:50
+Message:
+CB-13662: remove deprecated platforms #MsgLength=38
+
+
+----
+Modified: README.md|8 61
+Modified: package.json|5 15
+Modified: plugin.xml|1 118
+Deleted: src/amazon/InAppBrowser.java|0 879
+Deleted: src/amazon/InAppChromeClient.java|0 146
+Deleted: src/blackberry10/README.md|0 43
+Deleted: src/blackberry10/doc/de/README.md|0 24
+Deleted: src/blackberry10/doc/es/README.md|0 24
+Deleted: src/blackberry10/doc/fr/README.md|0 24
+Deleted: src/blackberry10/doc/it/README.md|0 24
+Deleted: src/blackberry10/doc/ja/README.md|0 24
+Deleted: src/blackberry10/doc/ko/README.md|0 24
+Deleted: src/blackberry10/doc/pl/README.md|0 24
+Deleted: src/blackberry10/doc/zh/README.md|0 24
+Deleted: src/firefoxos/InAppBrowserProxy.js|0 190
+Deleted: src/ubuntu/InAppBrowser.qml|0 92
+Deleted: src/ubuntu/InAppBrowser_escapeScript.js|0 31
+Deleted: src/ubuntu/close.png|0 0
+Deleted: src/ubuntu/inappbrowser.cpp|0 109
+Deleted: src/ubuntu/inappbrowser.h|0 62
+Deleted: src/wp/InAppBrowser.cs|0 530
+Deleted: www/windows8/InAppBrowserProxy.js|0 126
+
+
+Revision: d85991accbc998f39e52d0d08efa907d47f3eb85
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:25:13
+Message:
+CB-13681 Updated version and RELEASENOTES.md for release 2.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e428556e2574e9d3032ec5030eee3016abf5a90a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:26:44
+Message:
+Set VERSION to 2.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5f072a752d24a999cbd953e2a1ae365a8ca4215a
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 27/12/2017 01:22:29
+Message:
+CB-13699: Fix to allow 2.0.0 version install #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+
+Revision: 7c1ea3b5c21b06d676ce0d2588aa8a2909b6dcd6
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:36
+Message:
+CB-13714 Updated version and RELEASENOTES.md for release 2.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|2 654
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b9e0a808376d4be675cf7feb0bfa428e199b8729
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:50
+Message:
+Set VERSION to 2.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 260542d13ca6d1b51896bf905873f5b0b2921666
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 29/12/2017 03:38:45
+Message:
+Fix release notes #MsgLength=18
+
+
+----
+Modified: RELEASENOTES.md|655 0
+
+
+Revision: 8f66f075ddb2f1ba400b19d50017bb5f3379eb47
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 10/01/2018 03:28:45
+Message:
+CB-13746: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: 8711ee3f211bf84913ae86f81e5e0e548d1c8015
+Author: Landsbankinn <steinar.a.steinarsson@landsbankinn.is>
+Date: 05/10/2017 00:41:31
+Message:
+CB-13409: Lets user adjust color of toolbar, hide navigation buttons and set custom text on close button #MsgLength=105
+
+
+----
+Modified: src/android/InAppBrowser.java|85 47
+Modified: src/ios/CDVInAppBrowser.h|7 4
+Modified: src/ios/CDVInAppBrowser.m|35 7
+
+Revision: e691212c967fe866551c126e00f4cc7f09c6dfb9
+Author: Landsbankinn <steinar.a.steinarsson@landsbankinn.is>
+Date: 06/10/2017 21:05:01
+Message:
+CB-13409: Android works well now, all changes are now documented #MsgLength=65
+
+
+----
+Modified: README.md|12 2
+Modified: src/android/InAppBrowser.java|62 22
+Modified: src/ios/CDVInAppBrowser.h|1 1
+Modified: src/ios/CDVInAppBrowser.m|2 2
+
+Revision: 4af420c5920bd779efd9ab19613e132d51040e2b
+Author: Landsbankinn <steinar.a.steinarsson@landsbankinn.is>
+Date: 06/10/2017 23:35:28
+Message:
+CB-13409: change hidetoolbarnavigationbuttons to hidenavigationbuttons in iso #MsgLength=78
+
+
+----
+Modified: README.md|2 1
+Modified: src/ios/CDVInAppBrowser.h|1 1
+Modified: src/ios/CDVInAppBrowser.m|2 2
+
+Revision: 55b02285f93515c0f153b0f89366d978192dd900
+Author: Landsbankinn <steinar.a.steinarsson@landsbankinn.is>
+Date: 09/10/2017 21:50:12
+Message:
+CB-13409: ignore idea folder #MsgLength=29
+
+
+----
+Modified: .gitignore|2 2
+
+Revision: 6c2a8f4576e34ab29ffce102f12efb9c494ba386
+Author: Landsbankinn <steinar.a.steinarsson@landsbankinn.is>
+Date: 10/10/2017 00:09:08
+Message:
+CB-13409: restore gitignore to default #MsgLength=39
+
+
+----
+Modified: .gitignore|0 1
+
+Revision: ec2f12c8728f4ed39244bd6f3ae011e124e1ddce
+Author: Landsbankinn <steinar.a.steinarsson@landsbankinn.is>
+Date: 10/10/2017 00:10:22
+Message:
+CB-13409: restore gitignore to default #MsgLength=39
+
+
+----
+Modified: .gitignore|0 2
+
+Revision: ff230d429a3975c670f16e9e8cdf21c6ef874be8
+Author: Landsbankinn <steinar.a.steinarsson@landsbankinn.is>
+Date: 10/10/2017 00:10:58
+Message:
+CB-13409: restore gitignore to default #MsgLength=39
+
+
+----
+Modified: .gitignore|3 0
+
+Revision: d46f5d45d521eef5faffe0ed71718ddc7c8dfd50
+Author: Landsbankinn <steinar.a.steinarsson@landsbankinn.is>
+Date: 10/10/2017 00:11:40
+Message:
+CB-13409: restore gitignore to default #MsgLength=39
+
+
+----
+Modified: .gitignore|0 1
+
+
+
+Revision: b73ba93884dcaa88429aae6e4ea6d117effae7d2
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 18/01/2018 04:13:19
+Message:
+CB-13791: Add Android support for a footer close button #MsgLength=56
+
+
+----
+Modified: README.md|5 1
+Modified: src/android/InAppBrowser.java|106 72
+
+
+Revision: 7eb2e1ea0302ac601ae7abe9b6478c14ccfe6311
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 25/01/2018 06:38:34
+Message:
+CB-13826 Updated version and RELEASENOTES.md for release 2.0.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|12 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3f0528c38010be98f5a0248f2468d4e35fa5b482
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 26/01/2018 03:47:20
+Message:
+CB-13826 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a3fca87ee524d9fe5a0dbec24278f195c6836cac
+Author: Bentley O'Kane-Chase <bentleyo@gmail.com>
+Date: 22/02/2018 13:09:09
+Message:
+Fix navigation buttons on iOS #MsgLength=29
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|0 1
+
+Revision: 65a825a1934ef93d886225c9c56f98fcec50ef38
+Author: Bentley O'Kane-Chase <bentleyo@gmail.com>
+Date: 21/03/2018 19:50:25
+Message:
+Add customisation of the navigation buttons for iOS #MsgLength=52
+
+
+----
+Modified: README.md|1 0
+Modified: src/ios/CDVInAppBrowser.h|1 0
+Modified: src/ios/CDVInAppBrowser.m|6 0
+
+
+Revision: 44d9bb0f6a4deff139a1968479030664bf49eff2
+Author: stevepodell <steve@podell.com>
+Date: 04/04/2018 23:22:23
+Message:
+InAppBrowser.java: New method isURLWhileListed to check for whitelisting. Newtest in shouldOverrideUrlLoading, to allow whitelisted custom schemes like"mycoolapp://" #MsgLength=214
+
+
+----
+Modified: src/android/InAppBrowser.java|62 26
+Modified: www/inappbrowser.js|1 0
+
+Revision: a6c7b54998deb1a582c9550f4a4e78fc18e8c137
+Author: stevepodell <steve@podell.com>
+Date: 04/04/2018 23:42:00
+Message:
+InAppBrowser.java: New method isURLWhileListed to check for whitelisting. Newtest in shouldOverrideUrlLoading, to allow whitelisted custom schemes like"mycoolapp://" #MsgLength=214
+
+
+----
+Modified: src/android/InAppBrowser.java|1 1
+
+Revision: 2d69afcd7c30e6ac86ef0d5519af3d12ca3a6252
+Author: stevepodell <steve@podell.com>
+Date: 05/04/2018 06:57:13
+Message:
+InAppBrowser.java: New method isURLWhileListed to check for whitelisting. Newtest in shouldOverrideUrlLoading, to allow whitelisted custom schemes like"mycoolapp://" #MsgLength=214
+
+
+----
+Modified: src/android/InAppBrowser.java|45 57
+
+Revision: 019ec3963f6b9884a5dd61e1b7565d83e0adfdba
+Author: stevepodell <steve@podell.com>
+Date: 06/04/2018 01:14:54
+Message:
+InAppBrowser.java: New method isURLWhileListed to check for whitelisting of "AllowedSchemes" in a new preference configuration item. There is a new check in shouldOverrideUrlLoading, to allow whitelisted custom schemes like "mycoolapp://" #MsgLength=287
+
+
+----
+Modified: src/android/InAppBrowser.java|1 1
+
+Revision: 4c4bee528edcd98a9f8fdad677a9a9938a7c992d
+Author: stevepodell <steve@podell.com>
+Date: 06/04/2018 01:31:00
+Message:
+InAppBrowser.java: New method isURLWhileListed to check for whitelisting of "AllowedSchemes" in a new preference configuration item. There is a new check in shouldOverrideUrlLoading, to allow whitelisted custom schemes like "mycoolapp://" #MsgLength=287
+
+
+----
+Modified: src/android/InAppBrowser.java|2 2
+
+Revision: 27500c2990249f23c90dbb066ce6312e440e28f5
+Author: stevepodell <steve@podell.com>
+Date: 06/04/2018 02:54:32
+Message:
+In file AppBrowser.java: New code within shouldOverrideUrlLoading() to check for whitelisting custom schemes via a new "AllowedSchemes" preference configuration item.  Allows custom schemes like "mycoolapp://" or "wevotetwitterscheme://" #MsgLength=298
+
+
+----
+Modified: src/android/InAppBrowser.java|1 1
+
+Revision: 42df2977240fe3cc716c882eaefff9e2048f0705
+Author: stevepodell <steve@podell.com>
+Date: 06/04/2018 03:45:02
+Message:
+In file AppBrowser.java: New code within shouldOverrideUrlLoading() to check for whitelisting custom schemes via a new "AllowedSchemes" preference configuration item.  Allows custom schemes like "mycoolapp://" or "wevotetwitterscheme://" #MsgLength=298
+
+
+----
+Modified: src/android/InAppBrowser.java|1 1
+Modified: www/inappbrowser.js|2 2
+
+
+Revision: 695e1b0f02d4d8a3ac454cffecb2a0100774abcd
+Author: Niklas Merz <NiklasMerz@gmx.net>
+Date: 14/12/2017 05:17:45
+Message:
+CB-13659 (iOS) Add hidespinner option #MsgLength=87
+
+
+----
+Modified: README.md|3 2
+Modified: src/ios/CDVInAppBrowser.h|3 3
+Modified: src/ios/CDVInAppBrowser.m|5 2
+
+
+Revision: 200f7c19235e1956458f3df58dcce07fe93ece66
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:06:22
+Message:
+CB-14030 Updated version and RELEASENOTES.md for release 3.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 220cb39f93c468922d788ed02694729594e7e8fa
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:16:16
+Message:
+Set VERSION to 3.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4a5608a7a0d40345d7eaa93eaded1c2de18de4c8
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 13/04/2018 17:26:53
+Message:
+Update cordovaDependencies to allow plugin install #MsgLength=51
+
+
+----
+Modified: package.json|1 1
+
+
+Revision: 757022d85a65900354fbc5cb355db3651e054a05
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/04/2018 03:24:16
+Message:
+CB-14030 Updated version and RELEASENOTES.md for release 3.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5581957078c58893450b8252ab23d6a73ef53425
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/04/2018 03:28:14
+Message:
+CB-14030 Set VERSION to 3.0.1-dev (via coho) #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 57eda786e072bd54385319fc932cc6b95f363aa5
+Author: Wojciech Trocki <wtrocki@redhat.com>
+Date: 27/04/2018 07:07:57
+Message:
+CB-14048: (android) allowedSchemes check empty string fix #MsgLength=58
+
+
+----
+Modified: src/android/InAppBrowser.java|4 2
+
+
+Revision: f57ede9be2a824d699c0fa5d6156441e0e0b901b
+Author: Tim Brust <tim.brust@sinnerschrader.com>
+Date: 03/05/2018 02:16:44
+Message:
+CB-14061: (android) comply with RFC 3986 for custom URL scheme handling #MsgLength=72
+
+
+----
+Modified: src/android/InAppBrowser.java|1 1
+
+
+Revision: dac06aa3f3ad825cbcd326c0aaf0f36ebddd0cdd
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 02/07/2018 00:09:47
+Message:
+CB-12922 (ios): fix In-app browser does not cede control #MsgLength=57
+
+
+----
+Modified: src/ios/CDVInAppBrowser.h|1 0
+Modified: src/ios/CDVInAppBrowser.m|13 5
+
+
+Revision: eb245ecaf7362f7e2c8b29f4aa4f4442bd2cecc4
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 01/08/2018 04:54:01
+Message:
+.travis.yml add blank lines #MsgLength=28
+
+
+----
+Modified: .travis.yml|6 0
+
+Revision: e75fe14c4ba01403c85c8f6a600d879af06c681f
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 01/08/2018 06:03:47
+Message:
+.appveyor.yml add npm i & add eslint to test #MsgLength=92
+
+
+----
+Modified: .appveyor.yml|2 0
+
+Revision: a464ea6875142744a310d418a9d8d92f5d4097b4
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 01/08/2018 07:02:30
+Message:
+.travis.yml quick fixes #MsgLength=99
+
+
+----
+Modified: .travis.yml|39 29
+
+Revision: 81f1437b6da838031611ad8cb05294929c49bf57
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 01/08/2018 07:05:28
+Message:
+README.md add AppVeyor CI & Travis CI details #MsgLength=46
+
+
+----
+Modified: README.md|5 0
+
+Revision: 07d9a9939b4a10bd6c323565fc356628942db8ba
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 01/08/2018 07:18:29
+Message:
+Skip Android 6.0 on Travis CI (for now) #MsgLength=40
+
+
+----
+Modified: .travis.yml|10 11
+Modified: README.md|1 1
+
+
+Revision: dc5329d15757cca1c327e87a309fddbb58e554ed
+Author: Malte Norström <malte.norstroem@gmail.com>
+Date: 21/08/2018 16:28:56
+Message:
+CB-12875: (iOS) Pushes the inappbrowser window to a higher ui level than the existing apps window. (#284) #MsgLength=107
+
+
+----
+Modified: .gitignore|1 0
+Modified: src/ios/CDVInAppBrowser.m|2 1
+
+Revision: cf58b04097ad53151f4c456d0fef27dd5cecd966
+Author: Dan Polivy <dan@cellartracker.com>
+Date: 23/08/2018 05:43:06
+Message:
+CB-14234: Don't call handleOpenURL for system URLs (#278) #MsgLength=649
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|3 2
+
+Revision: a0783378fc901a84294dc66908a91f78014d3fb6
+Author: Dan Polivy <dan@cellartracker.com>
+Date: 21/09/2018 04:43:52
+Message:
+[CB-10795] Exclude current app from external intent list (#154) #MsgLength=1017
+
+
+----
+Modified: src/android/InAppBrowser.java|47 1
+
+Revision: dc7fa34bbe08cf521ac01f603dace16a17091bff
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 03/09/2018 20:12:15
+Message:
+CB-7179 (iOS): Add support to optionally use WKWebView for iOS #MsgLength=63
+
+
+----
+Modified: .travis.yml|2 2
+Modified: README.md|8 6
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|21 1
+Modified: src/ios/CDVInAppBrowser.h|3 87
+Modified: src/ios/CDVInAppBrowser.m|49 1078
+Added: src/ios/CDVInAppBrowserNavigationController.h|27 0
+Added: src/ios/CDVInAppBrowserNavigationController.m|85 0
+Added: src/ios/CDVInAppBrowserOptions.h|51 0
+Added: src/ios/CDVInAppBrowserOptions.m|91 0
+Added: src/ios/CDVUIInAppBrowser.h|86 0
+Added: src/ios/CDVUIInAppBrowser.m|1029 0
+Added: src/ios/CDVWKInAppBrowser.h|76 0
+Added: src/ios/CDVWKInAppBrowser.m|1181 0
+Added: src/ios/CDVWKInAppBrowserUIDelegate.h|32 0
+Added: src/ios/CDVWKInAppBrowserUIDelegate.m|127 0
+Modified: tests/plugin.xml|6 0
+Modified: tests/tests.js|156 106
+
+Revision: 8165232a5acb1498d3a3b9f7bf8b8695052eee0b
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 03/10/2018 22:55:12
+Message:
+experimental commit #MsgLength=19
+
+
+----
+Modified: README.md|2 2
+
+Revision: 52e3534ca72566429e5f1e852bb92028c1fa24db
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 03/10/2018 23:34:12
+Message:
+update test configuration to xcode8.3 #MsgLength=37
+
+
+----
+Modified: .travis.yml|5 6
+
+Revision: f8ad52894b3c732e448eb97a0881c674696a5f79
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 01/10/2018 18:36:35
+Message:
+also accept terms for android sdk `android-27` #MsgLength=46
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 0ed0bf543b00070f8c308c15a89744fa828e0bd5
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 01/10/2018 18:46:54
+Message:
+reenable testing on all platforms #MsgLength=55
+
+
+----
+Modified: .travis.yml|39 48
+
+Revision: a0c267fe36be9a97c974f73b9d2160eca54b9828
+Author: Tim Brust <ratchet.player@gmx.de>
+Date: 02/10/2018 17:49:11
+Message:
+CB-12941: update typings (#267) #MsgLength=759
+
+
+----
+Modified: types/index.d.ts|25 143
+
+
+Revision: 86cc778c4ae70e61d21b4f97ef840b67d5fe12b4
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 06/10/2018 04:23:56
+Message:
+Fix tests so they auto-start when run via cordova-paramedic #MsgLength=60
+
+
+----
+Modified: tests/tests.js|107 118
+
+Revision: 27e6c67909d5fc6e03020648bf48ef9b3c4a95f5
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 03/09/2018 20:12:15
+Message:
+CB-7179 (iOS): Add support to optionally use WKWebView for iOS #MsgLength=63
+
+
+----
+Modified: .travis.yml|2 2
+Modified: README.md|8 6
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|21 1
+Modified: src/ios/CDVInAppBrowser.h|3 87
+Modified: src/ios/CDVInAppBrowser.m|49 1078
+Added: src/ios/CDVInAppBrowserNavigationController.h|27 0
+Added: src/ios/CDVInAppBrowserNavigationController.m|85 0
+Added: src/ios/CDVInAppBrowserOptions.h|51 0
+Added: src/ios/CDVInAppBrowserOptions.m|91 0
+Added: src/ios/CDVUIInAppBrowser.h|86 0
+Added: src/ios/CDVUIInAppBrowser.m|1029 0
+Added: src/ios/CDVWKInAppBrowser.h|76 0
+Added: src/ios/CDVWKInAppBrowser.m|1164 0
+Added: src/ios/CDVWKInAppBrowserUIDelegate.h|32 0
+Added: src/ios/CDVWKInAppBrowserUIDelegate.m|127 0
+Modified: tests/plugin.xml|6 0
+Modified: tests/tests.js|156 106
+
+Revision: b48e02fcd5298c56f000e716f5492f7dc7ab73f1
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 30/09/2018 15:03:16
+Message:
+fix iOS 10 build #MsgLength=17
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|18 1
+
+
+
+Revision: 7f5fa2a28f2af8c208f1cc9d59eefb40337d9558
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 09/10/2018 17:51:06
+Message:
+Add plugin to fix reporting of cordova-paramedic results when using WKWebView plugin. See https://github.com/apache/cordova-paramedic/issues/52 #MsgLength=144
+
+
+----
+Modified: tests/plugin.xml|1 0
+
+Revision: 228703a63b088cbb635aa58f8a1015a9d5d818ab
+Author: wvengen <willem@thequestionmark.org>
+Date: 14/07/2018 04:14:01
+Message:
+CB-14188: add beforeload event, catching navigation before it happens #MsgLength=70
+
+
+----
+Modified: README.md|20 1
+Modified: src/android/InAppBrowser.java|50 8
+Modified: src/ios/CDVInAppBrowser.h|7 1
+Modified: src/ios/CDVInAppBrowser.m|46 3
+Modified: www/inappbrowser.js|10 1
+
+
+Revision: d9cafcdb142b0cdb9fd14f410cbef840445440b9
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 04/10/2018 07:16:19
+Message:
+remove JIRA link #MsgLength=16
+
+
+----
+Modified: README.md|0 4
+
+
+Revision: 82482158c5fff33a082ec8524384d605f0b17f13
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 09/10/2018 18:57:40
+Message:
+Comment out iOS 9 target for Travis tests since it's not supported by the WKWebView implementation #MsgLength=99
+
+
+----
+Modified: .travis.yml|6 5
+
+Revision: c41f5b51317e0070b3b163f5ccde52bc20ab0651
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 09/10/2018 18:31:26
+Message:
+Fix merge error #MsgLength=16
+
+
+----
+Modified: src/ios/CDVUIInAppBrowser.m|1 0
+
+Revision: 61014dd877e6c6edf1e2eb9b2068101af50f4e32
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 09/10/2018 18:48:15
+Message:
+Fix indentation of tests.js for eslint #MsgLength=39
+
+
+----
+Modified: tests/tests.js|82 82
+
+
+
+Revision: c24bb4696536212898f2f6bd175143f8b92a6346
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 30/10/2018 04:43:37
+Message:
+This lets the default window layering do it's thing. Fixes #334. Fixes #314. #MsgLength=77
+
+
+----
+Modified: src/ios/CDVUIInAppBrowser.m|0 2
+
+
+Revision: 3eadde65ab0bcd17cc2cd0231b1d8a3f68bbd5b8
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 07/11/2018 02:53:54
+Message:
+remove unwanted information in README table (#308) #MsgLength=95
+
+
+----
+Modified: README.md|0 5
+
+Revision: 978b14759824a024b85e6f7a10c97418a11eab34
+Author: Jonathan Li <jonathan_li2000@yahoo.ca>
+Date: 20/11/2018 01:28:25
+Message:
+Fix iOS CDVWKInAppBrowser evaluateJavascript method randomly gets blocked on ios 12 (#341) #MsgLength=729
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|2 15
+
+Revision: 3b82c160d953d421adab81480eae06f4f936ce56
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 21/11/2018 00:12:29
+Message:
+Fix crashes when using WKWebView implementation on iOS 9. (#337) #MsgLength=89
+
+
+----
+Modified: README.md|3 3
+Modified: src/ios/CDVWKInAppBrowser.m|11 5
+
+Revision: 0fd43ae64438a00bc0289aa2f7373bbff0c469fa
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 22/11/2018 02:04:04
+Message:
+Fixes loadAfterBeforeload on iOS. Resolves #349. (#350) #MsgLength=1255
+
+
+----
+Modified: src/ios/CDVInAppBrowser.h|1 0
+Modified: src/ios/CDVInAppBrowser.m|9 0
+Modified: src/ios/CDVWKInAppBrowser.h|4 0
+Modified: src/ios/CDVWKInAppBrowser.m|54 10
+
+Revision: c54d10052a42d5e68c76b53991c287a19cdce12c
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 14/12/2018 00:21:45
+Message:
+(iOS & Android) Add postMessage API support (#362) #MsgLength=1173
+
+
+----
+Modified: README.md|22 2
+Modified: src/android/InAppBrowser.java|23 0
+Modified: src/ios/CDVUIInAppBrowser.m|27 3
+Modified: src/ios/CDVWKInAppBrowser.m|28 14
+Modified: tests/tests.js|27 0
+Modified: types/index.d.ts|1 1
+Modified: www/inappbrowser.js|2 1
+
+Revision: 632a395b3d9d8d29b3262c843ef5967e976856fa
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 21/12/2018 03:31:14
+Message:
+GH-359: Fix beforeload to work with POST requests (#367) #MsgLength=3959
+
+
+----
+Modified: README.md|3 3
+Modified: src/android/InAppBrowser.java|118 19
+Modified: src/ios/CDVInAppBrowserOptions.h|1 1
+Modified: src/ios/CDVInAppBrowserOptions.m|1 0
+Modified: src/ios/CDVUIInAppBrowser.h|1 1
+Modified: src/ios/CDVUIInAppBrowser.m|36 8
+Modified: src/ios/CDVWKInAppBrowser.h|1 1
+Modified: src/ios/CDVWKInAppBrowser.m|38 9
+
+Revision: 6db2f2d324e5f43316108bb20c0cb2960702dd3d
+Author: Tim Brust <ratchet.player@gmx.de>
+Date: 30/01/2019 05:54:54
+Message:
+fix(typescript): remove unused replace parameter (#410) #MsgLength=73
+
+
+----
+Modified: types/index.d.ts|1 1
+
+Revision: 9f4b72982abf50ddc54a34bd3748b6a3aad3be57
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 11/02/2019 01:06:35
+Message:
+GH-417: Handle non-default target attribute values (e.g. target=on links in WKWebView implementation on iOS (#418) #MsgLength=116
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|8 1
+
+Revision: ae329bc4c2e618cb961039c89631181a3140fb84
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:39:42
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 388e3f6ae74b7c59fee43e360427ab73325f9a77
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 12/02/2019 07:14:18
+Message:
+(iOS) Fix iframes in iOS/WKWebView which were broken by #418. Fixes #424. (#425) #MsgLength=82
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|3 3
+
+Revision: 92243cdcc29c31d03deb3928c721e6abd60c5536
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 23/02/2019 01:27:30
+Message:
+Add headline to window.open documentation (#406) #MsgLength=50
+
+
+----
+Modified: README.md|2 0
+
+Revision: 686108484e6a7c1a316d7c6bc869c209c46d27e3
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 01/03/2019 06:52:01
+Message:
+Prevent malformed callbackId from reaching app cordova view #MsgLength=60
+
+
+----
+Modified: src/android/InAppChromeClient.java|8 3
+
+
+Revision: ba3a44049178dd5ec89c81f7d264ccdc97b5dd6e
+Author: transoceanic <andreyoffice@gmail.com>
+Date: 22/11/2018 21:45:34
+Message:
+Added to support android devices with right to left direction languages (issue #352) #MsgLength=84
+
+
+----
+Modified: src/android/InAppBrowser.java|17 10
+
+
+Revision: 2f74d677b762357356280772e175fe28ddd22cce
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/03/2019 09:56:34
+Message:
+Revert "Add support for right to left direction languages" #MsgLength=59
+
+
+----
+Modified: src/android/InAppBrowser.java|10 17
+
+
+Revision: f3d7f72c9e3a71b91e01b6cfa99e092ac1ee4415
+Author: Landsbankinn <steinar.a.steinarsson@landsbankinn.is>
+Date: 05/10/2017 00:41:31
+Message:
+Lets user adjust color of toolbar, hide navigation buttons and set custom text on close button #MsgLength=95
+
+
+----
+Modified: src/android/InAppBrowser.java|85 47
+Modified: src/ios/CDVInAppBrowser.h|7 4
+Modified: src/ios/CDVInAppBrowser.m|35 7
+
+Revision: d940b596b634b1a300bc594bb91a798c697bd5ba
+Author: Landsbankinn <steinar.a.steinarsson@landsbankinn.is>
+Date: 06/10/2017 21:05:01
+Message:
+Android works well now, all changes are now documented #MsgLength=55
+
+
+----
+Modified: README.md|12 2
+Modified: src/android/InAppBrowser.java|62 22
+Modified: src/ios/CDVInAppBrowser.h|1 1
+Modified: src/ios/CDVInAppBrowser.m|2 2
+
+Revision: 0c6189e1a2214a5d504e21c076087e156f467282
+Author: Landsbankinn <steinar.a.steinarsson@landsbankinn.is>
+Date: 06/10/2017 23:35:28
+Message:
+change hidetoolbarnavigationbuttons to hidenavigationbuttons in iso #MsgLength=68
+
+
+----
+Modified: README.md|2 1
+Modified: src/ios/CDVInAppBrowser.h|1 1
+Modified: src/ios/CDVInAppBrowser.m|2 2
+
+Revision: 05e37a1ff146a7c74d805a8a39e3aafe67018cef
+Author: Landsbankinn <steinar.a.steinarsson@landsbankinn.is>
+Date: 09/10/2017 21:50:12
+Message:
+ignore idea folder #MsgLength=19
+
+
+----
+Modified: .gitignore|2 2
+
+
+Revision: cbe3a428f47eca9d0760ac6919b892708505ff4b
+Author: Landsbankinn <steinar.a.steinarsson@landsbankinn.is>
+Date: 13/03/2018 19:39:22
+Message:
+CB-13969 cordova-inappbrowser:iOS&Android now includes a extra, optional parameter to swap position of navigationbuttons and close/done button #MsgLength=143
+
+
+----
+Modified: src/android/InAppBrowser.java|20 5
+Modified: src/ios/CDVInAppBrowser.h|2 1
+Modified: src/ios/CDVInAppBrowser.m|15 6
+
+Revision: b06ad8ed9706a9abc98dc0751cbdb1050b6d62d2
+Author: Landsbankinn <steinar.a.steinarsson@landsbankinn.is>
+Date: 13/03/2018 19:48:15
+Message:
+CB-13696 fixing for PR #MsgLength=23
+
+
+----
+Modified: .gitignore|8 1
+Modified: README.md|2 1
+Modified: src/android/InAppBrowser.java|2 0
+
+Revision: ec6af56fbd0e2d85f932914da576871da507b4c6
+Author: Fiffi <fiffinn@gmail.com>
+Date: 24/04/2018 00:07:17
+Message:
+remove statusbar when inAppBrowser is open in andriod #MsgLength=54
+
+
+----
+Modified: src/android/InAppBrowser.java|1 0
+Modified: www/inappbrowser.css|52 52
+
+
+Revision: 4adf4c7230bb6d2498cd1eb0220d50b93a809339
+Author: Steinar Ágúst <steinar.a.steinarsson@landsbankinn.is>
+Date: 28/02/2019 20:28:58
+Message:
+CB-13969 updating README.MD to better explain lefttoright parameter option, reverting unneccesary indent changes on inappbrowser.css #MsgLength=133
+
+
+----
+Modified: README.md|1 1
+Modified: www/inappbrowser.css|166 53
+
+Revision: e2adf1b285c9b17a1d25daa9d9f0928b2f8d352b
+Author: Steinar Ágúst <steinar.a.steinarsson@landsbankinn.is>
+Date: 28/02/2019 20:32:59
+Message:
+CB-13969 fixing inappbrowser.css #MsgLength=33
+
+
+----
+Modified: www/inappbrowser.css|0 113
+
+Revision: c7931faa7e7a3f4dbe8def504609f5421b5130ff
+Author: Steinar Ágúst <steinar.a.steinarsson@landsbankinn.is>
+Date: 28/02/2019 20:36:28
+Message:
+CB-13969 adding newline at end of inappbrowser.cs #MsgLength=50
+
+
+----
+Modified: www/inappbrowser.css|1 1
+
+Revision: 5ead1e6a7e6e3394f03371fcffdd819a8d8126ec
+Author: steinaragustli <Steinar.A.Steinarsson@landsbankinn.is>
+Date: 28/02/2019 20:50:02
+Message:
+CB-13969 trying to remove inappbrowser.css from pr #MsgLength=50
+
+
+----
+Modified: www/inappbrowser.css|1 0
+
+Revision: fc0c560bff847a213a29d7fb80f4da3ef4919503
+Author: steinaragustli <Steinar.A.Steinarsson@landsbankinn.is>
+Date: 28/02/2019 20:50:53
+Message:
+CB-13969 trying to remove inappbrowser from pr #MsgLength=46
+
+
+----
+Modified: www/inappbrowser.css|0 1
+
+Revision: 2bcec4021391da13fbd1f6360468b887b86411d1
+Author: Steinar Á. Steinarsson <Steinar.A.Steinarsson@landsbankinn.is>
+Date: 28/02/2019 21:02:04
+Message:
+CB-13969 trying to fix some wierd issue for PR #MsgLength=47
+
+
+----
+Modified: www/inappbrowser.css|2 1
+
+Revision: df84ddabd2295d47ea39c7d96c8c0c1cc569dcf9
+Author: Steinar Á. Steinarsson <Steinar.A.Steinarsson@landsbankinn.is>
+Date: 28/02/2019 21:04:21
+Message:
+CB-13969 trying to fix some wierd issue for PR #MsgLength=47
+
+
+----
+Modified: www/inappbrowser.css|1 2
+
+Revision: 5359f6cf18eadc9fcdd913fe8922afefe43ecdf9
+Author: Steinar Ágúst <steinar.a.steinarsson@landsbankinn.is>
+Date: 28/02/2019 22:05:05
+Message:
+CB-13969 reverting to older version of inappbrowser.css to leave it out of PR #MsgLength=78
+
+
+----
+Modified: www/inappbrowser.css|53 53
+
+Revision: 3c0a42e2aedd19a06115e58ac56c3f3ea4a61dc5
+Author: steinaragustli <Steinar.A.Steinarsson@landsbankinn.is>
+Date: 28/02/2019 22:11:04
+Message:
+CB-13969 fix inappbrowser.css to be unmodified #MsgLength=46
+
+
+----
+Modified: www/inappbrowser.css|52 52
+
+Revision: 9c7c2f31d8eb60f1a5141dbdd8aa83feb64e6e76
+Author: Steinar Ágúst <steinar.a.steinarsson@landsbankinn.is>
+Date: 28/02/2019 22:39:26
+Message:
+CB-13969 functionality extended to WKWebView #MsgLength=45
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.h|1 1
+Modified: src/ios/CDVWKInAppBrowser.m|12 5
+
+Revision: f8616553824243114901fe2a2b812a82485b78cd
+Author: Steinar Ágúst <steinar.a.steinarsson@landsbankinn.is>
+Date: 28/02/2019 23:17:24
+Message:
+CB-13969 fixing README to be correct for lefttoright option #MsgLength=60
+
+
+----
+Modified: README.md|2 1
+
+
+Revision: a890e606eb5e072e6df21a6119e1b6d697811978
+Author: cvanem <chris@greenlinkservices.com>
+Date: 26/12/2018 06:01:43
+Message:
+Example documentation - Fix callBack function name #MsgLength=50
+
+
+----
+Modified: README.md|2 2
+
+
+Revision: 5f1afbdf05f7e882af4540292b2cfbb6f3755198
+Author: KNaito <knaito@asial.co.jp>
+Date: 06/03/2019 10:47:21
+Message:
+Fix test spec.5 to close inappbrowser after loadstop event #MsgLength=59
+
+
+----
+Modified: tests/tests.js|4 2
+
+
+Revision: a162bd90764e7b3c6a5f8b2f394e7ff71ba166d5
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/04/2019 01:49:41
+Message:
+Fix failing CI tests (#460) #MsgLength=132
+
+
+----
+Modified: .travis.yml|52 69
+
+Revision: 94fec84d5c81e64b89b4c216d02938d58ba61dbc
+Author: Ralph Gutkowski <goodkowski@gmail.com>
+Date: 13/06/2019 03:03:23
+Message:
+Fix beforeload for Android <= 7 (#427) #MsgLength=119
+
+
+----
+Modified: src/android/InAppBrowser.java|12 4
+
+Revision: cc5ee007c6946c177e2bf6a9bde8dd82adf76e50
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/06/2019 21:18:42
+Message:
+docs: remove outdated translations #MsgLength=35
+
+
+----
+Deleted: doc/de/README.md|0 388
+Deleted: doc/de/index.md|0 357
+Deleted: doc/es/README.md|0 388
+Deleted: doc/es/index.md|0 357
+Deleted: doc/fr/README.md|0 388
+Deleted: doc/fr/index.md|0 357
+Deleted: doc/it/README.md|0 388
+Deleted: doc/it/index.md|0 357
+Deleted: doc/ja/README.md|0 388
+Deleted: doc/ja/index.md|0 357
+Deleted: doc/ko/README.md|0 388
+Deleted: doc/ko/index.md|0 357
+Deleted: doc/pl/README.md|0 388
+Deleted: doc/pl/index.md|0 357
+Deleted: doc/ru/index.md|0 330
+Deleted: doc/zh/README.md|0 388
+Deleted: doc/zh/index.md|0 357
+
+Revision: c2bb6c14095edf60f114c77ad77f5602b2cbdd5f
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/06/2019 21:19:13
+Message:
+ci(travis): Update Travis CI configuration for new paramedic (#478) #MsgLength=213
+
+
+----
+Modified: .travis.yml|61 28
+
+Revision: 5741d4af6d3158593017cc09a624eb0100429332
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 28/06/2019 03:15:22
+Message:
+build: add `.gitattributes` to force LF (instead of possible CRLF on Windows) #MsgLength=78
+
+
+----
+Added: .gitattributes|26 0
+
+Revision: f3b695fde521b66c1481f706b82f0bca5ef0e832
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 28/06/2019 03:15:40
+Message:
+build: add `.npmignore` to remove unneeded files from npm package #MsgLength=66
+
+
+----
+Added: .npmignore|16 0
+
+Revision: e9dad636d238b6acd2f2ba94b5de9249048dbd4d
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 28/06/2019 03:21:56
+Message:
+chore: fix repo and issue urls and license in package.json and plugin.xml #MsgLength=74
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|4 5
+Modified: tests/package.json|1 1
+
+Revision: b84203970f6526c48aabb157119bd834e0e93cec
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 28/06/2019 05:20:54
+Message:
+chore(release): release notes for 3.1.0 #MsgLength=40
+
+
+----
+Modified: RELEASENOTES.md|40 2
+
+Revision: df623882c2404144123879b350d0f59f5694dbbe
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 28/06/2019 05:20:54
+Message:
+chore(release): 3.1.0 (version string) #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 84dfb09edda24c33d3a96f7b117531da8bf180c4
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 28/06/2019 05:31:13
+Message:
+chore(release): 3.1.1-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2b59941514b4a27db169ea5fafbfe1e92cb13d73
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 02/07/2019 02:26:57
+Message:
+ci(travis): upgrade to node8 #MsgLength=28
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 8810c6a8a0300eef154246c1007acfc862238e57
+Author: Niklas Merz <nmerz@gedys-intraware.de>
+Date: 06/09/2019 14:29:55
+Message:
+(ios) Fix inappbrowser not opening on iOS 13 by using reusable window #MsgLength=83
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.h|2 0
+Modified: src/ios/CDVWKInAppBrowser.m|8 7
+
+Revision: 8805f5d46aeda0195b0883f5cc5f0c4c59eca813
+Author: Niklas Merz <nmerz@gedys-intraware.de>
+Date: 06/09/2019 19:53:36
+Message:
+Finish revert and correct Xcode warnings #MsgLength=41
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|6 6
+
+Revision: 82d496ae5cdbbc7f46ce20c77d6ad7bcbe2fb207
+Author: Niklas Merz <nmerz@gedys-intraware.de>
+Date: 20/09/2019 19:43:57
+Message:
+Use tmpWindow and hide on close #MsgLength=32
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|10 4
+
+Revision: 81bec095266ffccecbb052408445259c00f27344
+Author: Niklas Merz <nmerz@gedys-intraware.de>
+Date: 06/09/2019 20:14:51
+Message:
+(ios) Fix iOS 13 show not working #MsgLength=137
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.h|0 2
+Modified: src/ios/CDVWKInAppBrowser.m|4 20
+
+
+Revision: 79b1bb61a06ad64615a604e1c567ef2362ec7a17
+Author: Niklas Merz <nmerz@gedys-intraware.de>
+Date: 23/09/2019 16:29:31
+Message:
+Move window hiding to 'browserExit' #MsgLength=110
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|4 4
+
+Revision: 855394628e60f27eb813157918e26f1cf3f54b9c
+Author: Niklas Merz <nmerz@gedys-intraware.de>
+Date: 24/09/2019 22:28:07
+Message:
+Fix unresponsive main window after hide #MsgLength=40
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|4 0
+
+
+Revision: e3db974080abed8ca022a1ed4bfcda3e265ef246
+Author: Niklas Merz <nmerz@gedys-intraware.de>
+Date: 16/01/2019 21:18:35
+Message:
+(ios) Move createIframeBridge to injectDeferredObject #MsgLength=126
+
+
+----
+Modified: src/ios/CDVUIInAppBrowser.m|1 1
+
+
+Revision: 1e16c50b1a95f14e404a78bafaf4b3abd49d5d54
+Author: mosababubakr <47486787+mosababubakr@users.noreply.github.com>
+Date: 03/11/2019 22:56:59
+Message:
+Update missing closed brace to the insert.CSS #MsgLength=45
+
+
+----
+Modified: README.md|1 1
+
+
+Revision: 9a15737577bb28abf403f1f24f0e99103a1ca25a
+Author: mosababubakr <47486787+mosababubakr@users.noreply.github.com>
+Date: 04/11/2019 23:23:44
+Message:
+Update missing closed brace to the insert.CSS (#568) #MsgLength=54
+
+
+----
+Modified: README.md|1 1
+
+Revision: 416b05c1e5a771068a1ffa304fccef7ef9465ff3
+Author: Lorenzo B <1482350+flexaddicted@users.noreply.github.com>
+Date: 30/12/2019 17:47:37
+Message:
+Replace "beforeload" with BEFORELOAD (#524) #MsgLength=68
+
+
+----
+Modified: src/android/InAppBrowser.java|16 18
+
+Revision: 785fc4c83d70d02a28a0b511432783df3755d87a
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 03/01/2020 04:27:59
+Message:
+chore(release): 3.2.0-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 82bbe29986e7a1ea102739a183838cf9d52879ae
+Author: Maik Hummel <maik@neohelden.com>
+Date: 28/11/2019 00:25:59
+Message:
+(ios) add compile-time decision for disabling UIWebView (#584) #MsgLength=63
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|84 46
+Modified: src/ios/CDVUIInAppBrowser.h|4 0
+Modified: src/ios/CDVUIInAppBrowser.m|3 1
+
+Revision: 0411a287b8ec54c42d17fa09f27d2c67b2432685
+Author: Alex Yaz <chancefolle@gmail.com>
+Date: 26/03/2019 22:46:49
+Message:
+(android) defensive code to prevent NULL reference exceptions for async #MsgLength=124
+
+
+----
+Modified: src/android/InAppBrowser.java|12 4
+
+Revision: d4338bd64ac599dfec4aeec6d02c3ccccd3ecaec
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 03/01/2020 02:53:36
+Message:
+(android) improve defensive code for NULL check #MsgLength=48
+
+
+----
+Modified: src/android/InAppBrowser.java|7 9
+
+
+Revision: 6aca3f7fb48247e2f065d02c9f473adcc99175e3
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 04/01/2020 16:24:36
+Message:
+chore(release): 3.2.0 (version string) #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2cd868e99fc80f5f7e878368ce693866e12254f3
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 04/01/2020 16:43:11
+Message:
+chore(release): release notes for 3.2.0 #MsgLength=40
+
+
+----
+Modified: RELEASENOTES.md|9 0
+
+Revision: 81aa8ba5a9b553083e457b88a03fe81a12f09a07
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 06/01/2020 14:20:07
+Message:
+(ios) fix regression in injectScriptFile #MsgLength=73
+
+
+----
+Modified: src/ios/CDVInAppBrowser.m|3 3
+
+Revision: 09ad59f7ef177007c5ed603147cff335d7cfaafa
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 06/01/2020 14:23:15
+Message:
+chore(release): 3.2.1-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6c55e6172c80386cb0150e7cbc48317ed8c32e5b
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 05/03/2020 22:51:31
+Message:
+breaking(ios): remove UIWebView (#635) #MsgLength=40
+
+
+----
+Modified: README.md|4 7
+Modified: plugin.xml|0 13
+Deleted: src/ios/CDVInAppBrowser.h|0 36
+Deleted: src/ios/CDVInAppBrowser.m|0 172
+Modified: src/ios/CDVInAppBrowserOptions.h|0 3
+Modified: src/ios/CDVInAppBrowserOptions.m|0 3
+Deleted: src/ios/CDVUIInAppBrowser.h|0 95
+Deleted: src/ios/CDVUIInAppBrowser.m|0 1131
+Modified: src/ios/CDVWKInAppBrowser.h|2 4
+Modified: src/ios/CDVWKInAppBrowser.m|21 62
+Modified: tests/tests.js|1 26
+
+Revision: e658c8c20112de9322c464151a0b6f138850b39e
+Author: Slayterik <59745613+Slayterik@users.noreply.github.com>
+Date: 20/03/2020 22:07:48
+Message:
+Android GH-470 InAppBrowser: java.lang.IllegalArgumentException (#616) #MsgLength=292
+
+
+----
+Modified: src/android/InAppBrowser.java|3 3
+
+Revision: e78ffe7fc29902f1fee4ef1b0a6e836c2b9efa44
+Author: PDLMobileApps <46578502+PDLMobileApps@users.noreply.github.com>
+Date: 24/03/2020 21:24:14
+Message:
+(android) Added option to turn on/off fullscreen mode in Android (#634) #MsgLength=340
+
+
+----
+Modified: README.md|1 0
+Modified: src/android/InAppBrowser.java|9 1
+
+Revision: 0e5f05c938606615347543dbffff0e6cb47de87f
+Author: Mosab A <47486787+mosabab@users.noreply.github.com>
+Date: 26/03/2020 01:18:41
+Message:
+[android] Correcting the documentation regarding lefttoright opt… (#648) #MsgLength=74
+
+
+----
+Modified: README.md|1 1
+
+Revision: 290841dea6a2942827cff2bb512118e3908cdd8e
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 26/03/2020 02:08:04
+Message:
+fix(android): Reset lefttoright if not set (#442) #MsgLength=66
+
+
+----
+Modified: src/android/InAppBrowser.java|2 3
+
+Revision: 4129f11e2422274bfdab9d26235caef5e085df2b
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 02:24:22
+Message:
+chore(npm): improve ignore list (#658) #MsgLength=40
+
+
+----
+Modified: .npmignore|2 15
+
+Revision: 7a856bec6092f173fef5ddc564149e8eb913dc9c
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 02:24:32
+Message:
+ci: updates Node.js versions (#659) #MsgLength=37
+
+
+----
+Modified: .appveyor.yml|9 6
+Modified: .travis.yml|13 12
+
+Revision: 11ba4c4e7e4f503b7d589339b9b9d6060970ac66
+Author: Jim Wright <j--w@users.noreply.github.com>
+Date: 30/03/2020 18:47:30
+Message:
+[GH-652] add check for openInSystem postNotification (#654) #MsgLength=111
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|4 2
+
+Revision: c01f037c8ac46a0ebfbed983cce525d4988a67ad
+Author: Kamil Burek <kb@kamilb.info>
+Date: 03/04/2020 20:08:32
+Message:
+Fix incorrect TypeScript typings (#515) #MsgLength=115
+
+
+----
+Modified: types/index.d.ts|8 1
+
+Revision: 396c085ba3deab353519c4f6c0426ab3e716301e
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 06/04/2020 21:21:22
+Message:
+chore: remove deprecated orientation methods (#666) #MsgLength=53
+
+
+----
+Modified: src/ios/CDVInAppBrowserNavigationController.m|1 11
+Modified: src/ios/CDVWKInAppBrowser.m|1 11
+
+Revision: df4615dea41602390dafb308d2eab95d5873836b
+Author: Tim Brust <github@timbrust.de>
+Date: 07/04/2020 21:20:36
+Message:
+docs: replaces outdated transition and presentation style links (#662) #MsgLength=72
+
+
+----
+Modified: README.md|2 2
+
+Revision: 4227fe8211c28d8095af1892897b4fd0c4754dcb
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:29:50
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Modified: CONTRIBUTING.md|2 29
+
+Revision: 548f19ca90924cd6ba67534acd5e8864deadbf09
+Author: Tim Brust <github@timbrust.de>
+Date: 14/04/2020 20:56:53
+Message:
+chore: bump version to 4.0.0-dev (#670) #MsgLength=41
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 074d4d03eaccb9210f21f600aed837b2049016d8
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 14/04/2020 21:25:54
+Message:
+(all platforms): remove "window.open" overwrite (#600) #MsgLength=67
+
+
+----
+Modified: README.md|4 16
+Modified: plugin.xml|0 5
+
+Revision: 9b6b2295095c52b37e2824b0b0c5e17d68d5f752
+Author: csware <email@cs-ware.de>
+Date: 15/04/2020 01:22:08
+Message:
+Allow App using inappbrowser to be hosted in a cross-origin ifra… (#669) #MsgLength=123
+
+
+----
+Modified: www/inappbrowser.js|0 6
+
+Revision: cbe345689b379e26055eafd9fa42724cb236ac5d
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:41:11
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: 2793e16ab433a413580e2a3a5ccbc40eda46c3b6
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 27/04/2020 23:54:02
+Message:
+fix(ios): prevent statusbar rotation after closing InAppBrowser (#672) #MsgLength=72
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|3 1
+
+Revision: 8aaae5b3f718f9c5e3b0644fadbe1c2b86555b89
+Author: Nicolas HENRY <icewil@gmail.com>
+Date: 08/05/2020 20:02:39
+Message:
+GH-292 android: SSL errors handling in Android (#293) #MsgLength=55
+
+
+----
+Modified: src/android/InAppBrowser.java|42 0
+
+Revision: dcfe692ccd821210a668a3fe0356237c503264ed
+Author: Dani Palou <dani@moodle.com>
+Date: 17/05/2020 06:24:36
+Message:
+fix(ios): Allow loading local html files (#693) #MsgLength=49
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|6 2
+
+Revision: 2706f3460d8f5e5a05d629711d24d7556b923ce0
+Author: PDLMobileApps <46578502+PDLMobileApps@users.noreply.github.com>
+Date: 04/06/2020 22:32:07
+Message:
+(ios) Remove fake status bar with hardcoded height to fix issues in iOS devices with a notch (#656) #MsgLength=408
+
+
+----
+Modified: src/ios/CDVInAppBrowserNavigationController.m|0 12
+Modified: src/ios/CDVWKInAppBrowser.m|43 18
+
+Revision: 04ce7897241ab9dfa9fb4731a96a7f5b220571fd
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 04/06/2020 22:48:03
+Message:
+chore: update install engines (#685) #MsgLength=38
+
+
+----
+Modified: package.json|4 0
+Modified: plugin.xml|1 0
+
+Revision: 090345248cb99f09c8fb9562787333e5dd334c9d
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 05/06/2020 21:23:10
+Message:
+(ios): fix regression in 2706f34 (#715) #MsgLength=83
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|0 9
+
+Revision: d2b512ed048ce9345e61901b29ba7dd4271a73bf
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 10/06/2020 00:54:58
+Message:
+Updated version and RELEASENOTES.md for release 4.0.0 (cordova-plugin-inappbrowser-4.0.0) #MsgLength=90
+
+
+----
+Modified: RELEASENOTES.md|24 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d5fba787d4ffc9cb2fd555d392f5be51e93a25c3
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 10/06/2020 00:57:10
+Message:
+Incremented plugin version. (cordova-plugin-inappbrowser-4.0.0) #MsgLength=64
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: bdbb1df44c57c9427149b40294f082abe1f466ce
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 22/06/2020 17:44:39
+Message:
+fix(ios): exit event not fired on swipe down (#737) #MsgLength=53
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.h|1 1
+Modified: src/ios/CDVWKInAppBrowser.m|6 1
+
+Revision: 7c2810e885e6269fdafb84d754786016ce2d1f82
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 23:41:21
+Message:
+refactor(eslint): use cordova-eslint /w fix (#747) #MsgLength=52
+
+
+----
+Modified: .eslintrc.yml|22 9
+Modified: package.json|3 9
+Modified: src/browser/InAppBrowserProxy.js|14 16
+Modified: src/windows/InAppBrowserProxy.js|48 26
+Modified: tests/resources/inject.js|2 1
+Modified: tests/tests.js|523 244
+Modified: www/inappbrowser.js|9 9
+
+Revision: 2fb0a368edb76dc3dcee047e352528ed0e90c489
+Author: Tim Brust <github@timbrust.de>
+Date: 03/07/2020 21:31:23
+Message:
+chore(npm): use short notation in package.json (#746) #MsgLength=55
+
+
+----
+Modified: package.json|2 7
+
+Revision: ab8fb4417ca87a2342b08a3112ff53a0a608a77b
+Author: Tim Brust <github@timbrust.de>
+Date: 04/07/2020 02:50:02
+Message:
+chore: adds package-lock file (#748) #MsgLength=38
+
+
+----
+Added: package-lock.json|1724 0
+
+Revision: 6d60e4c6eb0b905a93d4bb343355d50f3b7003d8
+Author: lazydan <dan@lazydan.com>
+Date: 20/06/2020 00:56:52
+Message:
+(ios): Fix incorrect view height from the second open time #MsgLength=59
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|1 0
+
+
+Revision: b7ea751ba9a493a4475541260327ea5c294d809a
+Author: Tim Brust <github@timbrust.de>
+Date: 22/08/2020 20:33:50
+Message:
+ci(travis): updates Android API level (#767) #MsgLength=46
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 2a28e09a70bed3a5b7e4728ccbc30f73670c5651
+Author: Moses Berra <moses.r.berra@gmail.com>
+Date: 19/08/2020 01:40:13
+Message:
+ios: added InAppBrowserStatusBarStyle preference (#728) #MsgLength=56
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|127 122
+
+Revision: deb8fbe7766c6742598fcbb62c51dff02f9ccfee
+Author: Moses Berra <moses.r.berra@gmail.com>
+Date: 19/08/2020 01:45:52
+Message:
+undo whitespace changes due to editor preferrences #MsgLength=51
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|121 121
+
+Revision: edd7250c83ab2f03bc40c4bdcc5d57eb8dd5ab6f
+Author: Moses Berra <moses.r.berra@gmail.com>
+Date: 19/08/2020 02:22:48
+Message:
+add documentation for InAppBrowserStatusBarStyle preference #MsgLength=60
+
+
+----
+Modified: README.md|8 0
+
+
+Revision: 2a1c0c0591ba53129fc0d65ac8f81f83ebff847f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/09/2020 18:34:47
+Message:
+ci(travis): update osx xcode image (#768) #MsgLength=136
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 46c080f59a011747ba1b70f462b27fee26957247
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 20/09/2020 07:48:32
+Message:
+(ios): allow to set "preferredContentMode" (#688) #MsgLength=244
+
+
+----
+Modified: README.md|10 0
+Modified: src/ios/CDVWKInAppBrowser.m|9 0
+
+Revision: 1020b8f642c76ae3dd9903e01841672adba5e540
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 21/10/2020 22:17:14
+Message:
+fix(android): allow compilation in old cordova-android versions (#803) #MsgLength=72
+
+
+----
+Modified: src/android/InAppBrowser.java|10 14
+
+Revision: 2e6d63751f0894d685d277d3283bdf4076d4c020
+Author: wrightsonm <mark@voltnet.co.uk>
+Date: 17/11/2020 22:37:32
+Message:
+Updated typings (#817) #MsgLength=122
+
+
+----
+Modified: types/index.d.ts|6 7
+
+Revision: e1d0777ea08c95678e6aab82a38c91dc3a8a22bb
+Author: Carl Poole <mail@carlpoole.com>
+Date: 18/11/2020 00:32:05
+Message:
+fix(android): Add mitigation strategy for CVE-2020-6506 (#792) #MsgLength=64
+
+
+----
+Modified: src/android/InAppBrowser.java|3 0
+Modified: src/android/InAppChromeClient.java|45 0
+
+Revision: af8d268ce4701f775a6b4c47b437c638e5baa75c
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 18/11/2020 01:57:37
+Message:
+chore(npm): fix npm audit issues automatically (#819) #MsgLength=55
+
+
+----
+Modified: package-lock.json|3 3
+
+Revision: 8a29d884c39232ff81fa78e850ae45d3a4e685d7
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 18/11/2020 02:08:59
+Message:
+Updated version and RELEASENOTES.md for release 4.1.0 #MsgLength=54
+
+
+----
+Modified: RELEASENOTES.md|16 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 02909a7f162da296430dddfa71de195882b43f17
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 18/11/2020 02:22:20
+Message:
+Incremented plugin version. (cordova-plugin-inappbrowser-4.1.0) #MsgLength=64
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 85acc2a12a0707ef4198eabe9e4cd8314426d60d
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 23/11/2020 17:21:18
+Message:
+ci(ios): remove wkwebview plugin (#717) #MsgLength=142
+
+
+----
+Modified: tests/plugin.xml|0 7
+
+Revision: 11b1347812bad238284d9ed0229ed4aa159a74b8
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 24/11/2020 22:49:09
+Message:
+breaking(android): replace magic numbers with android.os.Build constants (#821) #MsgLength=81
+
+
+----
+Modified: src/android/InAppBrowser.java|14 10
+
+Revision: 8bdbd18d1619e25cf8bdedadf6448ef40b21ea7c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/11/2020 18:50:04
+Message:
+ci: add node-14.x to workflow (#826) #MsgLength=38
+
+
+----
+Modified: .appveyor.yml|1 0
+Modified: .travis.yml|1 1
+
+Revision: de31942e6cee32021e7e89aa0d081fd8e2bc9cbb
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 08/01/2021 02:21:57
+Message:
+(ios): rename CDVWKProcessPoolFactory (#825) #MsgLength=245
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|7 3
+
+Revision: 80720a08504314e0e3c6c3e102eae4cfb9107fe8
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 21/01/2021 00:30:10
+Message:
+chore: bump version to 5.0.0-dev (#822) #MsgLength=41
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b496e03169b45f4207e66a0c6dab77c52d939a73
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 21/01/2021 00:43:28
+Message:
+breaking: cleanup code for old android versions (#824) #MsgLength=56
+
+
+----
+Modified: src/android/InAppBrowser.java|26 115
+Modified: src/android/InAppChromeClient.java|0 1
+
+Revision: 07862603eb619451914a7f79dad9d72226de48c1
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 09/02/2021 15:24:17
+Message:
+chore: bump engines requirements (#823) #MsgLength=108
+
+
+----
+Modified: package.json|5 0
+Modified: plugin.xml|3 2
+
+Revision: 6b920849ccd381758210297f9b1eca8659be249c
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 09/02/2021 15:24:56
+Message:
+feat(ios): add InAppBrowserStatusBarStyle 'darkcontent' configuration option (#828) #MsgLength=135
+
+
+----
+Modified: README.md|1 1
+Modified: src/ios/CDVWKInAppBrowser.m|6 0
+
+Revision: 10f2ad72a070c4fea91d6be5a732b3634aaafd5e
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 11/02/2021 00:56:58
+Message:
+Updated version and RELEASENOTES.md for release 5.0.0 (cordova-plugin-inappbrowser-5.0.0) #MsgLength=90
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3b6757fc4407aa5cd9d5cbda3ff2f8174ecdae1a
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 11/02/2021 01:11:21
+Message:
+Incremented plugin version. (cordova-plugin-inappbrowser-5.0.0) #MsgLength=64
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2fef3046fcdbba301de637e200edba46d6f54052
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 11/06/2021 20:25:43
+Message:
+fix(ios): make system open tel, sms, mailto and geo links (#881) #MsgLength=66
+
+
+----
+Modified: src/ios/CDVWKInAppBrowser.m|3 2
+
+Revision: 9bc8f7629e486571a62865feaa91016e6631c832
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 23/06/2021 18:09:27
+Message:
+fix(android): add space between default useragent and custom AppendUserAgent (#861) #MsgLength=405
+
+
+----
+Modified: src/android/InAppBrowser.java|1 1
+
+Revision: 89c5a6a21bd7b61d5f9bfc467251e01fa0fdf2e3
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/09/2021 21:19:15
+Message:
+ci: add gh-actions workflows (#903) #MsgLength=37
+
+
+----
+Added: .github/workflows/android.yml|148 0
+Added: .github/workflows/chrome.yml|73 0
+Added: .github/workflows/ios.yml|88 0
+Added: .github/workflows/lint.yml|56 0
+
+Revision: 2043109c1690d5e571b06bc30ff220b982f7c17e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 23:07:33
+Message:
+ci: remove travis & appveyor (#906) #MsgLength=37
+
+
+----
+Deleted: .appveyor.yml|0 34
+Modified: .npmignore|0 1
+Deleted: .travis.yml|0 118
+Modified: README.md|0 3
+
+Revision: 0f468c73933025bbdd36a41ba818a61d43422288
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:03:30
+Message:
+ci: add action-badge (#907) #MsgLength=29
+
+
+----
+Modified: README.md|2 0
+
+Revision: 1718efa13874966999288c6cacc557201e3b3fe3
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/10/2021 20:13:18
+Message:
+ci(ios): update workflow w/ iOS 15 (#912) #MsgLength=43
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: dfcffb48126769a45fa1be229557ba95e48c8248
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/07/2022 20:17:49
+Message:
+fix(android): increase toolbar to 48dp (#946) #MsgLength=150
+
+
+----
+Modified: src/android/InAppBrowser.java|4 2
+
+Revision: bd02f453833c6ed9cd2b8d27212966a23fa0af13
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/07/2022 15:44:21
+Message:
+ci(android): update java requirement for cordova-android@11 (#957) #MsgLength=68
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: a877f62d62dda990ee845e644bf82e1f6d55fe21
+Author: エリス <erisu@users.noreply.github.com>
+Date: 10/08/2022 15:49:34
+Message:
+dep(npm): bump package-lock v2 w/ rebuild (#964) #MsgLength=50
+
+
+----
+Modified: package-lock.json|2951 489
+
+Revision: 405468cb2d9a1fc9ba191ef8ea80cdd7015f7553
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/08/2022 23:41:39
+Message:
+ci: sync workflow with paramedic (#971) #MsgLength=41
+
+
+----
+Modified: .github/workflows/android.yml|12 22
+Modified: .github/workflows/ios.yml|4 13
+
+Revision: 8ee1d3882163ee1dedb86fb3d0d1f8b7e16c3e42
+Author: DAnn2012 <dannunziata@hotmail.it>
+Date: 26/09/2022 05:04:14
+Message:
+fix(docs): missing xml indicator in code block (#977) #MsgLength=55
+
+
+----
+Modified: README.md|1 1
+

@@ -1,0 +1,2826 @@
+Revision: ab758464db1f6bf8d98c688c83cd8368bedd49cc
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/03/2013 05:36:40
+Message:
+Initial commit #MsgLength=15
+
+
+----
+Added: README.md|2 0
+
+Revision: 8866337a30a833fb2d6c91e0b10cbbac7a1e41f0
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/03/2013 07:22:21
+Message:
+updated device motion plugin #MsgLength=29
+
+
+----
+Added: plugin.xml|17 0
+Added: src/android/AccelListener.java|286 0
+
+Revision: 1c50b32790e397dfcc0bdbcc1765baeda542c9e9
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 23/04/2013 08:19:48
+Message:
+updated id attribute #MsgLength=21
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 9054be4f4977382996828e51c90e10be52fe1ee2
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 24/04/2013 07:07:40
+Message:
+added tests folder #MsgLength=19
+
+
+----
+Added: test/accelerometer/index.html|159 0
+Added: test/autotest/html/HtmlReporter.js|101 0
+Added: test/autotest/html/HtmlReporterHelpers.js|60 0
+Added: test/autotest/html/ReporterView.js|164 0
+Added: test/autotest/html/SpecView.js|79 0
+Added: test/autotest/html/SuiteView.js|22 0
+Added: test/autotest/html/TrivialReporter.js|192 0
+Added: test/autotest/index.html|59 0
+Added: test/autotest/jasmine.css|81 0
+Added: test/autotest/jasmine.js|2530 0
+Added: test/autotest/pages/.DS_Store|0 0
+Added: test/autotest/pages/accelerometer.html|70 0
+Added: test/autotest/test-runner.js|62 0
+Added: test/autotest/tests/accelerometer.tests.js|214 0
+Added: test/cordova.js|71 0
+Added: test/index.html|65 0
+Added: test/main.js|163 0
+Added: test/master.css|164 0
+
+Revision: 2e8eff8d482c1f3eb9b5a6a76f32e56aab0a28fa
+Author: hermwong <herm.wong@gmail.com>
+Date: 24/04/2013 07:28:56
+Message:
+added iOS accelerometer code #MsgLength=29
+
+
+----
+Modified: plugin.xml|19 3
+Added: src/ios/CDVAccelerometer.h|39 0
+Added: src/ios/CDVAccelerometer.m|128 0
+
+
+Revision: 17ebec747500d10e117c944c9d6eb4c217cc131f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/04/2013 06:22:55
+Message:
+updated plugin.xml to work with updated plugman #MsgLength=48
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 938c1ea0ef317f28781d13891ebf68abfe2eb0b1
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/04/2013 06:26:57
+Message:
+updated ios directories in plugin.xml #MsgLength=38
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: b680776343aa3f637b7ee2a35fde099a51560f22
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/04/2013 07:04:09
+Message:
+updated plugin.xml errors #MsgLength=26
+
+
+----
+Modified: plugin.xml|5 5
+
+Revision: 42157112030ada67dfee6a1794539f5e76364a7f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/04/2013 07:30:19
+Message:
+updated CDVPlugin reference for iOS #MsgLength=36
+
+
+----
+Modified: src/ios/CDVAccelerometer.h|1 1
+
+Revision: 774b1fce771fbd182c4358f7884851687205423f
+Author: hermwong <herm.wong@gmail.com>
+Date: 25/04/2013 08:03:01
+Message:
+stub in accelerometer js functions #MsgLength=35
+
+
+----
+Added: src/device-motion.js|38 0
+
+Revision: b5bd4694bb651b336b6ea36b9fd5c1513c26fa35
+Author: hermwong <herm.wong@gmail.com>
+Date: 25/04/2013 08:05:16
+Message:
+fixed indentation plugin.xml #MsgLength=29
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: f2a92e900cf63c9c1b1e4980233510ff6d41eeeb
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/04/2013 08:15:25
+Message:
+moved device-motion.js #MsgLength=23
+
+
+----
+Renamed: www/device-motion.js [from src/device-motion.js]|0 0
+
+Revision: d25d74dde9321620446e0d47760ce360f8ff113f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/04/2013 08:34:00
+Message:
+added docs #MsgLength=11
+
+
+----
+Added: docs/acceleration/acceleration.md|109 0
+Added: docs/accelerometer.clearWatch.md|114 0
+Added: docs/accelerometer.getCurrentAcceleration.md|110 0
+Added: docs/accelerometer.md|90 0
+Added: docs/accelerometer.watchAcceleration.md|138 0
+Added: docs/parameters/accelerometerError.md|27 0
+Added: docs/parameters/accelerometerOptions.md|28 0
+Added: docs/parameters/accelerometerSuccess.md|42 0
+
+Revision: d0c8408b250237ceb9e783adfa4588668a3e38da
+Author: hermwong <herm.wong@gmail.com>
+Date: 26/04/2013 07:14:15
+Message:
+added <js-module> config to plugin.xml #MsgLength=39
+
+
+----
+Modified: plugin.xml|4 0
+
+Revision: d8d7e5d3f4da39cc1af649b0b70cd5cb18395dcf
+Author: hermwong <herm.wong@gmail.com>
+Date: 01/05/2013 05:28:44
+Message:
+removed redundant code #MsgLength=23
+
+
+----
+Deleted: www/device-motion.js|0 38
+
+Revision: 57ebfb7a305e8c3cb26c0c9eaf32b7d509695be6
+Author: hermwong <herm.wong@gmail.com>
+Date: 01/05/2013 05:29:45
+Message:
+added Acceleration & accelerometer code from Cordova-JS, updated plugin.xml to reflect changes #MsgLength=95
+
+
+----
+Modified: plugin.xml|8 3
+Added: www/Acceleration.js|29 0
+Added: www/accelerometer.js|170 0
+
+Revision: 2fb2ebbad365d833892620b846e8306e2b941e4d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 01/05/2013 05:54:33
+Message:
+updated tests to use dev for version #MsgLength=37
+
+
+----
+Modified: test/cordova.js|1 1
+
+Revision: 3171d388f5cf60ca19d1d3bc5a5fb07db0d89902
+Author: hermwong <herm.wong@gmail.com>
+Date: 14/05/2013 04:27:46
+Message:
+update require path to Acceleration class #MsgLength=42
+
+
+----
+Modified: www/accelerometer.js|1 1
+
+Revision: 0948827b44ecf3e3d7a26babf00dec40af2bf427
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/05/2013 04:53:22
+Message:
+updated plugin.xml to use feature #MsgLength=34
+
+
+----
+Modified: plugin.xml|14 10
+
+Revision: 679def9251915c091924e72651fb35f0353b1379
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/05/2013 05:15:14
+Message:
+attempt two at updating plugin.xml #MsgLength=35
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 2bd7061b67319dff513fb74b4d0253fd5ff757ab
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/05/2013 07:51:35
+Message:
+updated requirejs reference #MsgLength=28
+
+
+----
+Modified: www/accelerometer.js|1 1
+
+Revision: 45df38579f5d407343b1b64ae5ce9ea81a580d94
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/05/2013 08:36:23
+Message:
+testing #MsgLength=8
+
+
+----
+Modified: www/accelerometer.js|1 1
+
+Revision: d33583f645b070e96851b5eb89cea048652b7d52
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/05/2013 09:18:32
+Message:
+should be working #MsgLength=18
+
+
+----
+Modified: www/accelerometer.js|0 1
+
+Revision: afaa07f22d17e67d4e84ce03035c12256cd660ae
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 17/05/2013 04:39:04
+Message:
+updated tests #MsgLength=14
+
+
+----
+Modified: test/accelerometer/index.html|1 1
+Modified: test/autotest/html/SpecView.js|1 1
+Modified: test/autotest/index.html|1 1
+Modified: test/autotest/pages/accelerometer.html|1 1
+Renamed: test/cordova-incl.js [from test/cordova.js]|5 6
+Modified: test/index.html|2 2
+
+Revision: edd3006625181aa58a4146c68d6422daaf2cf204
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 18/05/2013 06:01:29
+Message:
+first pass at wp7 support #MsgLength=26
+
+
+----
+Modified: README.md|3 1
+Modified: plugin.xml|21 11
+Added: src/wp7/Accelerometer.cs|196 0
+
+Revision: 1a708c54badf2e2512d4c16fcc936143fe6e045a
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 18/05/2013 07:38:43
+Message:
+plugin.xml update for config.xml support in windows phone #MsgLength=58
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 11a78ece5d5c954f2b520b25c023bcdd642291ab
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 15/06/2013 05:01:00
+Message:
+[CB-3658] added sensor capability for wp7 #MsgLength=42
+
+
+----
+Modified: plugin.xml|5 0
+
+Revision: 58e6c7af9396f692fe3870d20b1f6b521aa23e0c
+Author: lorinbeer <lorin@adobe.com>
+Date: 22/06/2013 03:56:46
+Message:
+[CB-3651] plugin breakout blackberry 10 device motion initial commit #MsgLength=69
+
+
+----
+Modified: plugin.xml|8 0
+Added: src/blackberry10/index.js|45 0
+
+Revision: cc80c98802062610fc2c3328203bb812ff371bb0
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 25/06/2013 05:39:10
+Message:
+[CB-3657] first pass wp8 support #MsgLength=33
+
+
+----
+Modified: plugin.xml|16 1
+Added: src/wp8/Accelerometer.cs|196 0
+
+Revision: 4b2cc3ffd6d244b29a1e144d14035b36068c6748
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:55
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|2 3
+
+Revision: 65b5d574a90e1ab5ddcb2a3f1462f0e9b59ce072
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 07:46:10
+Message:
+Fix require paths that were broken by plugin id changes #MsgLength=56
+
+
+----
+Modified: docs/parameters/accelerometerError.md|1 1
+Modified: docs/parameters/accelerometerOptions.md|1 1
+Modified: docs/parameters/accelerometerSuccess.md|1 1
+Modified: www/accelerometer.js|1 1
+
+Revision: 3f85d7bd602c6843fdf0bcbf9743c117b5d65c30
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 06:04:40
+Message:
+[CB-4114] remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|2 2
+Renamed: src/wp/Accelerometer.cs [from src/wp7/Accelerometer.cs]|0 0
+Deleted: src/wp8/Accelerometer.cs|0 196
+
+Revision: afee2b4cb066ba5c148e594363f599f4532f391b
+Author: David Kemp <drkemp@chromium.org>
+Date: 05/07/2013 22:13:32
+Message:
+CB-4081 Android Accelerometer- unregister for timeout #MsgLength=54
+
+
+----
+Modified: src/android/AccelListener.java|16 7
+
+Revision: 651dcb63112f87f9de33c28afd87ecb2b7c6489e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 02:54:18
+Message:
+[CB-4131] Use relative require paths in accelerometer plugin #MsgLength=61
+
+
+----
+Modified: www/accelerometer.js|1 1
+
+Revision: c4117f1ea875d94bf8797ae83aa1222cf796a6dd
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: src/android/AccelListener.java|4 4
+
+Revision: 6147ac1ced89ca7d3811e448568350b1f84ab43d
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:14:14
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Added: .gitignore|23 0
+
+Revision: 43e653378bb3bc98ffd39c1b8d0e2a0a3d412c6c
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|3 0
+
+Revision: b085506b7e7b8a6596249102d9658d81eab96d69
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:32:06
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 464115f68901850b92d8896108d79ca551572c2e
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 31/07/2013 08:36:39
+Message:
+[Windows8][CB-4438] added windows 8 support #MsgLength=44
+
+
+----
+Modified: plugin.xml|7 0
+Added: src/windows8/AccelerometerProxy.js|70 0
+
+Revision: 29d4d2991671ac08f3031e8faeafefb071173511
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: e35182ab4ebce5eec53c0509c86a69f9f420d397
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 6ba67f5d4236a828544806ad366f76fe6a51855e
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 02:42:32
+Message:
+updated nametag and readme #MsgLength=27
+
+
+----
+Modified: README.md|1 1
+
+Revision: 38bf4327badade6b7c52d758a83e13cc849c2882
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 03:03:46
+Message:
+updated namespace #MsgLength=18
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 05de2b81f5076b69fee5c637b76abcbee38f00d9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-device-motion to its own Java package. #MsgLength=69
+
+
+----
+Modified: plugin.xml|2 2
+Modified: src/android/AccelListener.java|1 1
+
+Revision: 7d6563cca0382ae906b016fe7545109089eba968
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 05:38:58
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 81b8f96e3045a234b20f662172f9e42573fff74d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+Add empty CHANGELOG.md #MsgLength=23
+
+
+----
+Added: CHANGELOG.md|23 0
+
+Revision: 03ee063efc91fb2bffdf25e278cc58e01e82e067
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:21
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 4bebacb1f3e22d6ac71fe40d7d612241db81408f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: 1680eb708d3de494688658937df0b5c9c2a7bdf6
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:16:53
+Message:
+CB-4889 renaming org.apache.cordova.core.device-motion to org.apache.cordova.device-motion #MsgLength=91
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 0787b957c3e8d1716fdc302275def4a686da9708
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 21:45:39
+Message:
+CB-4889 renaming core inside windows8 #MsgLength=38
+
+
+----
+Modified: src/windows8/AccelerometerProxy.js|2 2
+
+Revision: 655d05df82f65fb89833742276885b66432dce57
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 21:57:53
+Message:
+CB-4889 #MsgLength=8
+
+
+----
+Modified: src/windows8/AccelerometerProxy.js|1 1
+
+Revision: 06d7b3b790d0433e62c2d270a689f7b5966d02d6
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 24/09/2013 16:32:11
+Message:
+[windows8] commandProxy was moved #MsgLength=34
+
+
+----
+Modified: src/windows8/AccelerometerProxy.js|1 1
+
+
+Revision: d9a8d14363ca1efa8e041a9f5ad810871b75ee08
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:50:06
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: d660d02c080e702e41b6273f62cd88611538221c
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 08:16:58
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.2.2 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|8 1
+Modified: plugin.xml|1 1
+
+Revision: 3312a408a9b2bb80608c95e434aea272bfe111be
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:13
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: ea3040634aa2d86925c29a41f172eb96a1145fd4
+Author: James Jong <wjamesjong@gmail.com>
+Date: 02/10/2013 23:34:30
+Message:
+[CB-4825] use CoreMotion framework for accelerometer #MsgLength=53
+
+
+----
+Modified: src/ios/CDVAccelerometer.h|1 1
+Modified: src/ios/CDVAccelerometer.m|27 25
+
+Revision: b2e17a784a6d69a89410e661f3f9d76f0fcb4bc5
+Author: James Jong <wjamesjong@gmail.com>
+Date: 03/10/2013 04:21:49
+Message:
+[CB-4825] avoid retain cycle in update block #MsgLength=45
+
+
+----
+Modified: src/ios/CDVAccelerometer.m|2 1
+
+Revision: 90932591e862f04aa4b4f57885db31592562c081
+Author: James Jong <wjamesjong@gmail.com>
+Date: 10/10/2013 04:31:54
+Message:
+[CB-4825] Add CoreMotion.framework to plugin.xml #MsgLength=49
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: e6bb4a844e4a2267dfb8f18a25211893656fa8b6
+Author: James Jong <wjamesjong@gmail.com>
+Date: 13/10/2013 01:21:14
+Message:
+CB-5012 ensure result is returned #MsgLength=34
+
+
+----
+Modified: src/ios/CDVAccelerometer.m|10 3
+
+Revision: 3576342c560010877cf6433e0aeeda76e8486e4f
+Author: hermwong <herm.wong@gmail.com>
+Date: 22/10/2013 07:00:48
+Message:
+CB-5128: added repo + issue tag to plugin.xml for device motion #MsgLength=64
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: 6d3a17bca3e02c8130fdd2a8c83c57cf1da4c12f
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 20/09/2013 17:09:30
+Message:
+fxos added, not working #MsgLength=24
+
+
+----
+Modified: plugin.xml|13 0
+Added: src/firefoxos/accelerometer.js|44 0
+
+Revision: 3dad522215752b086ed106f82d4f6792750e82fe
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 20/09/2013 18:22:47
+Message:
+accelerometer registers, but is not responding #MsgLength=47
+
+
+----
+Modified: src/firefoxos/accelerometer.js|9 35
+
+Revision: 53a2e8225e8a36e86860af048b78fbd630111057
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 28/09/2013 18:02:43
+Message:
+fixed callbacks #MsgLength=16
+
+
+----
+Modified: src/firefoxos/accelerometer.js|3 3
+
+Revision: fcc626a8ae049e7fe3a9322cafde6477da92204e
+Author: James Long <longster@gmail.com>
+Date: 18/10/2013 12:15:26
+Message:
+update firefoxos integration #MsgLength=29
+
+
+----
+Modified: src/firefoxos/accelerometer.js|2 3
+
+Revision: 015e3f9b134849f29af08aca54cb1adf701bda41
+Author: James Long <longster@gmail.com>
+Date: 22/10/2013 05:47:05
+Message:
+fix acceleromter for firefox os #MsgLength=32
+
+
+----
+Modified: src/firefoxos/accelerometer.js|9 9
+
+
+Revision: 470c7c61e0a2474f457961da4f90a12f246cd068
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 24/10/2013 19:40:41
+Message:
+adding timestamp to the response #MsgLength=33
+
+
+----
+Modified: src/firefoxos/accelerometer.js|1 1
+
+Revision: 4d202c1f0d911c4f05469724db82eb03911f2415
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 24/10/2013 20:31:10
+Message:
+properly stop watching... #MsgLength=26
+
+
+----
+Modified: src/firefoxos/accelerometer.js|7 6
+
+Revision: 2043d2e3fecf06acfedd9096eebafa96d2162f3f
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 25/10/2013 00:23:44
+Message:
+fixed the scope #MsgLength=16
+
+
+----
+Modified: src/firefoxos/accelerometer.js|6 6
+
+
+Revision: 8a245a57cf90b2fb8c650103826b33d9b46b9b81
+Author: James Long <longster@gmail.com>
+Date: 25/10/2013 07:15:29
+Message:
+tweak scoping #MsgLength=14
+
+
+----
+Modified: src/firefoxos/accelerometer.js|10 7
+
+
+Revision: f5388985664569a0d6ba696fdca4ddcaad25bd3d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 02:34:35
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.2.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|17 0
+Modified: plugin.xml|1 1
+
+Revision: e94c414e0e1e7ddb4fd601a26a2124b7605aeaff
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:14
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: e1e2c307d988cb214a04033e64b153ca886ecc6f
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 02:15:49
+Message:
+1. Added amazon-fireos platform. 2. Change to use amazon-fireos as the platform if the user agent string contains 'cordova-amazon-fireos' #MsgLength=138
+
+
+----
+Modified: plugin.xml|13 0
+Modified: test/cordova-incl.js|4 2
+
+Revision: 057813b85e65dd3cabcd270f2b63a306997009be
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 13/11/2013 21:13:38
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|7 1
+Added: src/ubuntu/accelerometer.cpp|58 0
+Added: src/ubuntu/accelerometer.h|55 0
+
+
+Revision: b33f6b2983e931895702381eab7f535808c19fed
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:30
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.2.4 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: e3494f09ee43551f87dbf225ca50e9b84c556f69
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:03
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: fc325b9c034a37f7a225a9ac6bfe137a3fdcfead
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/acceleration/acceleration.md|0 109
+Deleted: docs/accelerometer.clearWatch.md|0 114
+Deleted: docs/accelerometer.getCurrentAcceleration.md|0 110
+Deleted: docs/accelerometer.md|0 90
+Deleted: docs/accelerometer.watchAcceleration.md|0 138
+Deleted: docs/parameters/accelerometerError.md|0 27
+Deleted: docs/parameters/accelerometerOptions.md|0 28
+Deleted: docs/parameters/accelerometerSuccess.md|0 42
+
+Revision: 2a104980c74eaffb37d00002d83bfe8fff09c09e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 02:48:50
+Message:
+CB-5658 Add doc.index.md for Device Motion plugin #MsgLength=50
+
+
+----
+Modified: README.md|20 5
+Added: doc/index.md|156 0
+
+Revision: 75d586f0ca857314355917bb0d43e0be02c579c8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:02
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: bff09d290c8998370647744f6c346bc6586bf6f9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.2.5 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: d3cbfe5fe345b358452069964f3fd69c2e6a975c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 85a22b937c0b090f3eeeadfe3898efe0d1fecfbe
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:16
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/accelerometer/index.html|0 159
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 59
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/accelerometer.html|0 70
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/accelerometer.tests.js|0 214
+Deleted: test/cordova-incl.js|0 72
+Deleted: test/index.html|0 65
+Deleted: test/main.js|0 163
+Deleted: test/master.css|0 164
+
+Revision: bcd7daab09f06cba264654942b333f36e6dcad00
+Author: Salvatore Iovene <salvatore@iovene.com>
+Date: 05/12/2013 20:04:19
+Message:
+Add Tizen plugin. #MsgLength=18
+
+
+----
+Modified: plugin.xml|7 1
+Added: src/tizen/AccelerometerProxy.js|30 0
+
+
+Revision: 91d3c0058980248160c8e77c5a3d033402f5ce14
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:58
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.2.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 1
+Modified: plugin.xml|1 1
+
+Revision: f8220e62a0b1cf9d97938f08062759ff769fa2f9
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:35:46
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-device-motion #MsgLength=73
+
+
+----
+Added: doc/es/index.md|145 0
+
+Revision: 033239ca1fcb8f64e73a749eb7c0d71bcfc9a636
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:14:31
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-device-motion #MsgLength=73
+
+
+----
+Added: doc/fr/index.md|145 0
+
+Revision: f1e842fa9e3ae8ade9c2dc15eb07dd1c7ce32c4f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2014 07:06:22
+Message:
+CB-6422 [windows8] use cordova/exec/proxy #MsgLength=42
+
+
+----
+Modified: src/windows8/AccelerometerProxy.js|1 1
+
+Revision: a8bb402ed89218ac1eec118363639235d62a2582
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:30
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 714c6d115a4ccf168be6b92fc537933de778826b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+
+Revision: 4cef40cd6797e444781cce54dc872d9d6bc4a081
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:16:41
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+Modified: src/firefoxos/accelerometer.js|20 0
+
+Revision: baf3f40889a2d00ce0dec7fa98e0d9b2b170ed68
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 21:49:45
+Message:
+CB-6465: Add license headers to Tizen code #MsgLength=43
+
+
+----
+Modified: src/tizen/AccelerometerProxy.js|21 0
+
+Revision: 2b6ca58b6142673ea6d6da0d95d4a11c948f9a58
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.2.7 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+
+Revision: 68a0467472fca44d590fe08b1fee4a1bfd0065e9
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: cc9fad44ddcc34f9355746ee1fdc94acc7c41b56
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 14/01/2014 19:12:43
+Message:
+FFOS added to supported platforms #MsgLength=34
+
+
+----
+Modified: doc/index.md|1 0
+
+Revision: 3fd4807cd94310ac3ad4e19ef384c3dfd4c1bf6b
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:22:58
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+
+Revision: f8feedf473b22a7b124b72c91d10ddbd7b4da1f5
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:49:21
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-device-motion #MsgLength=73
+
+
+----
+Added: doc/ja/index.md|146 0
+
+Revision: d656e01810d0f9d9713e5cc3e81cffb3c5f6a4d1
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:21:49
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-device-motion #MsgLength=73
+
+
+----
+Modified: doc/es/index.md|1 0
+Modified: doc/fr/index.md|1 0
+Added: doc/it/index.md|146 0
+Added: doc/ko/index.md|146 0
+Added: doc/pl/index.md|146 0
+Added: doc/zh/index.md|146 0
+
+Revision: 1f515ea51c833c411fa186289909d8a679be2ca7
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:36:15
+Message:
+documentation translation: cordova-plugin-device-motion #MsgLength=56
+
+
+----
+Added: doc/de/index.md|146 0
+Modified: doc/ja/index.md|7 7
+
+Revision: 0b30af4d9cf92d1eb220334b6f0862fd7d9dbeb5
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:24:11
+Message:
+CB-6798 Add license #MsgLength=20
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: 576fe6ea4e6028f2abb88201e929d4af69049a02
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 03/05/2014 00:57:49
+Message:
+ubuntu: don't destroy callback after use #MsgLength=41
+
+
+----
+Modified: src/ubuntu/accelerometer.cpp|1 1
+
+Revision: 2da22a6872b5475d8a8f41c5b4f419fc208e7c6a
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:35:46
+Message:
+CB-6127 Spanish and French Translations added. Github close #10. Github close #12. Github close #11 #MsgLength=100
+
+
+----
+Added: doc/de/index.md|146 0
+Added: doc/es/index.md|146 0
+Added: doc/fr/index.md|146 0
+Added: doc/it/index.md|146 0
+Added: doc/ja/index.md|146 0
+Added: doc/ko/index.md|146 0
+Added: doc/pl/index.md|146 0
+Added: doc/zh/index.md|146 0
+
+Revision: a3f3b074560b2b6a4ead3cda62e42105e557e664
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 14/01/2014 19:12:43
+Message:
+FFOS added to supported platforms #MsgLength=34
+
+
+----
+Modified: doc/index.md|1 0
+
+
+Revision: 51d58d6d29043bb13b1fb4fad3bedca658d4cfab
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:42
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.2.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+
+Revision: f42d9a6bf7cb2b49c8bbad92b3fc8d23f40454f3
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+
+
+Revision: 8c85ec83ea1faaaa1e48733cd31674de24c73e65
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:26:54
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-device-motion documentation translation: cordova-plugin-device-motion #MsgLength=119
+
+
+----
+Added: doc/ru/index.md|146 0
+
+Revision: 64b68c18fa3a8ff1787e470e601cb4a5e14e9ed8
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 11/10/2013 01:51:35
+Message:
+Feature Branch: First attempt at new-style-tests #MsgLength=49
+
+
+----
+Modified: plugin.xml|3 0
+Deleted: test/accelerometer/index.html|0 159
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 59
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/accelerometer.html|0 70
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/accelerometer.tests.js|0 214
+Deleted: test/cordova-incl.js|0 70
+Deleted: test/index.html|0 65
+Deleted: test/main.js|0 163
+Deleted: test/master.css|0 164
+Added: test/tests.js|156 0
+
+Revision: 4607cba87529e231e3268627e87cbcb065bd2ea9
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 29/10/2013 23:04:55
+Message:
+update #MsgLength=7
+
+
+----
+Modified: test/tests.js|1 1
+
+Revision: 7e632fca55ecea64e0154367ce0239224199c6cc
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 25/04/2014 03:54:22
+Message:
+register tests using new style #MsgLength=31
+
+
+----
+Modified: test/tests.js|3 3
+
+Revision: 25de11937baa370f2b669f0bc5fe703b2bf61e32
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 06/05/2014 00:02:51
+Message:
+Changing cdvtest format to use module exports #MsgLength=46
+
+
+----
+Modified: test/tests.js|2 4
+
+
+Revision: 7880ada99b453799d5083b6ad3dc87b094a498fb
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 18/07/2014 03:46:14
+Message:
+CB-7160 added manual tests #MsgLength=27
+
+
+----
+Modified: test/tests.js|134 1
+
+Revision: c16c6e426bcf8359b721ea3360ab8c9a0eb94119
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 18/07/2014 03:47:20
+Message:
+Removed js-module for tests from plugin.xml #MsgLength=44
+
+
+----
+Modified: plugin.xml|0 3
+
+
+Revision: 183e8712782eea400faaa495366d4de3ade0a2a5
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 25/07/2014 01:28:30
+Message:
+added documentation for manual tests #MsgLength=37
+
+
+----
+Modified: test/tests.js|11 4
+
+Revision: 8872a9f2d819e6a7d932abcee4ed412b69acbc73
+Author: Willy Aguirre <marti1125@gmail.com>
+Date: 29/07/2014 11:51:01
+Message:
+update accelerometer.js #MsgLength=24
+
+
+----
+Modified: src/firefoxos/accelerometer.js|1 1
+
+Revision: 85db0d938a26f2032d1a086cc5a5f1448d2b2281
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 18/07/2014 03:46:14
+Message:
+CB-7160 added manual tests #MsgLength=27
+
+
+----
+Modified: test/tests.js|134 1
+
+Revision: 0defcb791edb335f47a89e80c21e36f093e0fd4d
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 18/07/2014 03:47:20
+Message:
+Removed js-module for tests from plugin.xml #MsgLength=44
+
+
+----
+Modified: plugin.xml|0 3
+
+Revision: 5c22f0d47da00f085c6c4a64148f8036b4df4ca6
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 31/07/2014 04:17:10
+Message:
+CB-7160 move to tests dir, add nested plugin.xml #MsgLength=72
+
+
+----
+Added: tests/plugin.xml|29 0
+Renamed: tests/tests.js [from test/tests.js]|144 144
+
+
+Revision: 0427d12d5fe7069a3731e3b4201c4623911d3ec8
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 02/08/2014 04:23:20
+Message:
+CB-7249cordova-plugin-device-motion documentation translation: cordova-plugin-device-motion #MsgLength=92
+
+
+----
+Modified: doc/pl/index.md|21 21
+
+Revision: 52c3348b18f486c857d381513f19448426ff269d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:21
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.2.9 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+
+Revision: 42e0fe9bebaceac68907171a48489f657e446da2
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:26
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+
+
+Revision: ad94eecd30a89c6746ce100a09040aad344a89ec
+Author: Lorin Beer <lorin.beer@gmail.com>
+Date: 15/08/2014 04:20:52
+Message:
+[CB-7313] minor tweak to documentation of watchAcceleration function parameters #MsgLength=255
+
+
+----
+Modified: doc/index.md|2 2
+
+
+Revision: da255c5ca78c1f970bccf2b5176a374d33a8a0af
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 19/08/2014 09:09:23
+Message:
+This closes #16 #MsgLength=16
+
+
+----
+Modified: RELEASENOTES.md|1 0
+
+Revision: 965b134c6616d40b1f16b915dda7b09236d4a9e5
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 19/08/2014 22:50:58
+Message:
+CB-7249cordova-plugin-device-motion documentation translation: cordova-plugin-device-motion #MsgLength=92
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: 7dca3b5dbda031fd4f1699f0192ce29db6a0bff8
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 30/08/2014 07:39:53
+Message:
+Added support for the browser #MsgLength=30
+
+
+----
+Modified: plugin.xml|11 0
+Added: src/browser/AccelerometerProxy.js|45 0
+Added: src/browser/accelerometer.js|175 0
+
+Revision: 3ba491b3e7ebb4d50f888d8ec06ea22070bc17df
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 05/09/2014 05:38:05
+Message:
+Updated doc for browser #MsgLength=24
+
+
+----
+Modified: doc/index.md|5 0
+
+Revision: a65e1953b0f1f3da9e87d3fdf9b14c89899811d5
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 16/09/2014 05:25:39
+Message:
+CB-7471 cordova-plugin-device-motion documentation translation: cordova-plugin-device-motion #MsgLength=93
+
+
+----
+Modified: doc/de/index.md|7 2
+Modified: doc/es/index.md|7 2
+Modified: doc/fr/index.md|8 3
+Modified: doc/it/index.md|5 0
+Modified: doc/ja/index.md|5 0
+Modified: doc/ko/index.md|5 0
+Modified: doc/pl/index.md|12 7
+Modified: doc/ru/index.md|10 5
+Modified: doc/zh/index.md|12 7
+
+Revision: 213aea947f46b24067d5aeda4c04ba3d8524289f
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:40
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.2.10 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|17 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3083f2c3acb7ef5753a467279809980fbb1b9349
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:01
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a205b15d77bb2841a65e5b3237267ee49ba42baf
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:14
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: 59efd9eca52968dd02c7b5fc6a5d62eb99e967dc
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:11:06
+Message:
+CB-7700 cordova-plugin-device-motion documentation translation: cordova-plugin-device-motion #MsgLength=93
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|14 14
+Modified: doc/pl/index.md|7 7
+Modified: doc/ru/index.md|6 6
+
+Revision: 2eab1bb8b9d887fc024e79d5a6668051f692f56a
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:09:28
+Message:
+CB-7977 Mention deviceready in plugin docs #MsgLength=43
+
+
+----
+Modified: doc/index.md|9 0
+
+Revision: 2fe2227a8eede0f6771780e83029f1499c8873af
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 27/11/2014 01:54:20
+Message:
+Renamed windows8 -> windows #MsgLength=28
+
+
+----
+Modified: doc/index.md|2 2
+Modified: plugin.xml|8 1
+Renamed: src/windows/AccelerometerProxy.js [from src/windows8/AccelerometerProxy.js]|0 0
+
+Revision: 596258c8878491f4457f4bf36d058abdbe514462
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 27/11/2014 01:56:58
+Message:
+CB-8083 Fix accelerometer callback on Windows #MsgLength=46
+
+
+----
+Modified: src/windows/AccelerometerProxy.js|2 2
+
+Revision: 110b27671f454fcc28f7f642d55874ab0a7fe4a1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.2.11 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1ca1328edf6071e2ec74500ca0decb65d528ffee
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:50
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 67f508de7816bb94b3fa7edbee752050005dd051
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 04/12/2014 01:59:25
+Message:
+CB-8083 Adds test to make sure success callback is called each time #MsgLength=68
+
+
+----
+Modified: tests/tests.js|14 1
+
+Revision: 213cd4b76519428484b78cb4292e0070c23d776d
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 28/11/2014 00:14:12
+Message:
+CB-8096 Pended auto tests if accelerometer doesn't exist on the device #MsgLength=71
+
+
+----
+Modified: tests/tests.js|34 0
+
+Revision: d85890573b5c6389046d885b01a15bb107e24d41
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 11/02/2015 22:33:20
+Message:
+CB-8096 Pended recently added spec.12 if accelerometer doesn't exist on the device #MsgLength=83
+
+
+----
+Modified: tests/tests.js|4 0
+
+Revision: 3d8b837ce9d58e01d5c06e0129ca78c9bf62ac45
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 16:14:13
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|46 0
+
+Revision: 04bf4698130b6d0119344ba906065f70e1818b3f
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:48:42
+Message:
+CB-8438 cordova-plugin-device-motion documentation translation: cordova-plugin-device-motion #MsgLength=93
+
+
+----
+Modified: doc/de/index.md|18 8
+Modified: doc/es/index.md|26 38
+Modified: doc/fr/index.md|24 36
+Modified: doc/it/index.md|19 9
+Modified: doc/ja/index.md|18 8
+Modified: doc/ko/index.md|18 8
+Modified: doc/pl/index.md|19 9
+Modified: doc/zh/index.md|18 8
+
+Revision: 7677729d4fed3bca70db14daabd17a5c610596a3
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 07:07:19
+Message:
+CB-8562 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|14 0
+Modified: README.md|2 0
+
+Revision: a943b4c1f160e78d67ae49b5e192597b093d3f7a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:11:59
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|151 2
+Deleted: doc/index.md|0 171
+
+Revision: 49a436cd9a42fee0ace5046c90c482e19ad8be7b
+Author: daserge <daserge@yandex.ru>
+Date: 15/01/2015 18:00:32
+Message:
+CB-8312 Multiply accelerometer values by -g on Windows #MsgLength=55
+
+
+----
+Modified: src/windows/AccelerometerProxy.js|3 2
+
+Revision: 052cda27f181660caf39bed1ce948997889b4991
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:30:50
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 3
+
+Revision: 65a001a37084c8d2a7708ecaa69b253cdf936034
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:30
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: f5fd7d7603d4f23454d7266481d375c17bd5143f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:05:59
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: a60ba1b914fda3ba729852f56e3303a5892a6597
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:54:05
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 96b8f515b390aef3f6be1b773c39dffe58fe0a88
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 05:11:06
+Message:
+CB-8683 updated windows and tizen specific references of old id to new id #MsgLength=74
+
+
+----
+Modified: src/tizen/AccelerometerProxy.js|1 1
+Modified: src/windows/AccelerometerProxy.js|1 1
+
+Revision: dd80ba732477abcbd489ab6e733206d69c2c1561
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 07:55:38
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 119e630458b6e72ca441c9d2da3cb2abcc4d79d5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:38
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|16 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 007d3f5131fbf29f4ab23c93f36ed01b6ed2c333
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:47
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4a0b04ecefec6b4de5436c441e7cebc77db0fe7e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:31:01
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7a7b94e9a9afc5624d80e353efe017f3f78bf4f8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: e841f6b705a78f8369c9e359e51a203ea7885c2c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:21
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3950ab7b6b3f8fb74896ec3ee0d77e52773a38c6
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 23/04/2015 16:32:31
+Message:
+CB-8876 Rewrote wp8 impementation to be more stable #MsgLength=52
+
+
+----
+Modified: src/wp/Accelerometer.cs|83 100
+Modified: www/accelerometer.js|23 11
+
+Revision: dddf7e921f22150be5bcc8f565821cc3542e81f6
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 27/04/2015 21:22:37
+Message:
+CB-8876 Introduced a small timeout between tests #MsgLength=49
+
+
+----
+Modified: tests/tests.js|8 0
+
+Revision: 6f8e92ee3b71c6489563d3fd2ab2e4da5636bf85
+Author: Rob Paveza <Rob.Paveza@microsoft.com>
+Date: 29/04/2015 03:25:54
+Message:
+CB-8926: The tests module tries to access an undefined global 'Accelerometer' on fail callbacks.  This results in another JS error, "ReferenceError: 'Accelerometer' is undefined."  This change passes through the error message instead of attempting to index into it. #MsgLength=266
+
+
+----
+Modified: tests/tests.js|2 2
+
+Revision: 7d52b8457d5fd53100d2ef6e60fa2129956f8e0b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/05/2015 08:07:39
+Message:
+CB-8959 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b1ff476ec3a0ff6bb42d29502e4d34b50c93325e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/05/2015 08:37:22
+Message:
+CB-8959 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 03d9c9529a0077da29945c663a38b2cf95f5fc65
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 15/05/2015 19:29:45
+Message:
+CB-8842 Return cached values on Android if there is no updates from sensor #MsgLength=93
+
+
+----
+Modified: src/android/AccelListener.java|21 10
+
+Revision: 1fc07d39b967327dd0881d3a9e19eb7fe1872bea
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 02/06/2015 23:45:38
+Message:
+fix npm md issue #MsgLength=17
+
+
+----
+Modified: README.md|16 16
+
+Revision: d0607c0c30eb3b816cce556c26cba0c1c024353a
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:39:49
+Message:
+CB-9128 cordova-plugin-device-motion documentation translation: cordova-plugin-device-motion #MsgLength=93
+
+
+----
+Added: doc/de/README.md|163 0
+Added: doc/es/README.md|159 0
+Added: doc/fr/README.md|141 0
+Added: doc/it/README.md|163 0
+Added: doc/ja/README.md|163 0
+Added: doc/ko/README.md|163 0
+Added: doc/pl/README.md|163 0
+Added: doc/zh/README.md|163 0
+
+Revision: 9f6764ede5494c1b245fa25971212d1c8f6e2600
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:02
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.1.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 28394c4607abd4acce0f0511845d0532efea48ba
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 40b9153d2de7462a32c9f7c7802988903c7084c6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:35
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e62e3fe891041b707c9aa39f0e430de64dd662cc
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 06:01:33
+Message:
+remove travis-ci integration #MsgLength=29
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 2
+
+Revision: b0f8e436efd7d0db586bc2165733ebe5467b8498
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 14/07/2015 05:05:37
+Message:
+CB-9339 Increase the default sensor accuracy #MsgLength=45
+
+
+----
+Modified: src/android/AccelListener.java|1 1
+
+Revision: 8f1ad44eec7ca768257faae92b1b447bf9b02dbb
+Author: Tim Barham <tim.barham@microsoft.com>
+Date: 29/07/2015 08:19:43
+Message:
+CB-9426 Fix exception when using device motion plugin on browser platform. #MsgLength=850
+
+
+----
+Modified: plugin.xml|0 4
+Deleted: src/browser/accelerometer.js|0 175
+Modified: www/accelerometer.js|17 0
+
+Revision: f14a164abcbe58f5ac7809bb11fe208592787ce7
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: 742612271a7263c2cf1d4b216fc9575975869b4e
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:49
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: f9c6c81f6495fe0fe477a91fe90956029d1dfd47
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:26:52
+Message:
+add JIRA issue tracker link #MsgLength=28
+
+
+----
+Modified: README.md|2 1
+
+
+Revision: 675e17c7482a6dbbadfe1073447c963dff97b58b
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 24/10/2015 08:50:47
+Message:
+Added android quirk as written by @notsure13 This closes #23 #MsgLength=61
+
+
+----
+Modified: README.md|5 0
+
+Revision: 7083aededf361c4ca0a36556b32e5e452a89b700
+Author: Max Deepfield <maxdeepfield@absolutefreakout.com>
+Date: 18/08/2015 01:23:40
+Message:
+Update README.md #MsgLength=46
+
+
+----
+Modified: README.md|4 4
+
+
+Revision: e3530746c66f65c6533da9c7f8e4d72a914d8f38
+Author: John Kalberer <jlkalberer@gmail.com>
+Date: 03/02/2015 13:45:59
+Message:
+Returning an OK PluginResult.Status when starting #MsgLength=189
+
+
+----
+Modified: src/wp/Accelerometer.cs|1 1
+
+
+Revision: ae7d473cc1885da972e2b6b13515784a64dc2524
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 24/10/2015 09:02:01
+Message:
+Close #22 #MsgLength=10
+
+
+----
+
+Revision: 6b417a1cbbcc77ce2fa9b0bb5e100df133fabcf6
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 29/10/2015 00:39:23
+Message:
+revert wp8 commit: 90ef274 #MsgLength=27
+
+
+----
+Modified: src/wp/Accelerometer.cs|0 5
+
+Revision: 6b636a7d92b4b869b027f8377ebbd9b6dacf9a4d
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 30/10/2015 08:56:40
+Message:
+Return error when accelerometer not available, skip/pending tests when accel not available, use getters for properties #MsgLength=119
+
+
+----
+Modified: src/ios/CDVAccelerometer.m|16 5
+Modified: tests/tests.js|9 1
+
+Revision: 1f4689cffbcae05e1983af34a7f257fe9039fc65
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/10/2015 02:46:10
+Message:
+access all accel properties via getters #MsgLength=40
+
+
+----
+Modified: src/ios/CDVAccelerometer.m|8 8
+
+Revision: 680d9f52dcffe0ee46c52b65d04c8e26435847cf
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/10/2015 02:48:22
+Message:
+This closes #37 #MsgLength=16
+
+
+----
+
+Revision: c68f1417c3bd14bb339a1370ca0fd1dc2eb36541
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|79 81
+
+Revision: 2b6a3a96c6690e845fff134832ba367fa7cbfc0d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:10
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: 991a28c8accdb57cc3e7066c141a8321fbb2c79c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:05
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 1.2.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e0ca89434729061a90a95fce78a99ef18d8269a6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|50 50
+
+Revision: adcea51e0a489322d10322f83c29164029a2592a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 194bf54972fd979d18253e69b9444f17980744b1
+Author: t1st3 <contact@tiste.org>
+Date: 07/02/2016 16:31:08
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=259
+
+
+----
+Modified: package.json|1 1
+
+Revision: aa717efa95958c26af07099d358590d7b0e19239
+Author: daserge <v-seshak@microsoft.com>
+Date: 26/02/2016 19:01:01
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Modified: .gitignore|1 1
+Added: .jshintrc|17 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/blackberry10/index.js|2 0
+Modified: src/tizen/AccelerometerProxy.js|1 3
+Modified: src/windows/AccelerometerProxy.js|7 5
+Modified: tests/tests.js|25 22
+Modified: www/accelerometer.js|6 2
+
+Revision: 57d2e17af35a18f0dbf721678d56d4c8b3340ab0
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 02/03/2016 09:04:57
+Message:
+Minor changes to readme #MsgLength=24
+
+
+----
+Modified: README.md|2 2
+
+Revision: 6e6cb6ad38dcac97c3777be58b2bdb31504c88fb
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:26
+Message:
+ Updated version and RELEASENOTES.md for release 1.2.1 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 59a7f5e223a766c4c2387f7142f63435dd114c4c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:27
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d7e97335b12883ef7f741c110961b70fca61fc4b
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 22/03/2016 23:10:28
+Message:
+Update README.md #MsgLength=61
+
+
+----
+Modified: README.md|1 1
+
+
+Revision: ab56547d368a9dbeccf088fffb1fdebbd65b3abd
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:50
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: 7a6259db32c7d3cbfc9f78d193bba07fdcffc78a
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 06/05/2016 02:11:05
+Message:
+CB-11188: cordova-plugin-device-motion-tests are failing in CI #MsgLength=81
+
+
+----
+Modified: tests/tests.js|7 3
+
+Revision: 8aff422efe502f43d7aae5529d848891938a79c1
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:53:59
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: 57dfb5f9012c59a8f7f00ffb1c621073196b6a3b
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 16:47:40
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|3 1
+
+Revision: 293dcb9220ac379a9e4cd7776d02969367df6dca
+Author: daserge <v-seshak@microsoft.com>
+Date: 06/07/2016 16:17:17
+Message:
+CB-11531 Restart Accelerometer on CyanogenMod 13 #MsgLength=125
+
+
+----
+Modified: src/android/AccelListener.java|3 0
+
+Revision: fe7b2139966740af7852ca403dbdb9c724059f72
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 07/07/2016 16:08:42
+Message:
+CB-11482 Fix unreliable tests on Android #MsgLength=59
+
+
+----
+Modified: src/android/AccelListener.java|6 4
+Modified: tests/tests.js|14 10
+
+Revision: 76b13194e00ad6ff99215db1d0cc3b7d2806ca57
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 21:34:34
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=397
+
+
+----
+Modified: package.json|7 0
+
+Revision: bf41b516cb85c44b69fba658c4abca423c7c6469
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:54
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 1.2.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|10 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c1e96f64ca7cc87204a47c77a4e6ec0e8184dc79
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ac2e468627026f6e7f33e6a6c94a9cf95044c690
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:35:00
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=101
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: 5e0e28f4f2ad594bf484382f6afede268729286d
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:44
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 1.2.3 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|163 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: fe5e6a419e41642b3605182e06be789a5a2a8188
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:07
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4e383a7fee90663afa55de578821f3e4d28fa58c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 18:11:37
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: 7acf7ced3278f323a93c30065688efff9a65bf4e
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:44:20
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-device-motion #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|1 159
+
+Revision: ecee70968520c1426950d02e27fecc4b5a75ba9e
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:28:54
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 78b0ec866fe99cae03c049fc9dccb4cf58b70111
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 20:54:13
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=68
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|77 0
+
+Revision: a6c516ccb53b688a74300c9172ef7d06a03fb5c8
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/01/2017 00:21:55
+Message:
+CB-12353 Corrected merges usage in plugin.xml #MsgLength=46
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 46c49025c40e6424dee3d6e7264bbbe26faf6ea9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:26
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 1.2.4 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|100 162
+Modified: tests/plugin.xml|5 28
+
+Revision: 83a04432795e1e6599122ffd7037ff46d0a356ea
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:55:59
+Message:
+Set VERSION to 1.2.5-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|162 100
+Modified: tests/plugin.xml|28 5
+
+Revision: 577a4eb2016aa06da505d98276d762e0b90ddf5c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 03/04/2017 21:37:02
+Message:
+CB-10559: (android) Relaxed a time stamp condition to fix flaky tests #MsgLength=70
+
+
+----
+Modified: tests/tests.js|2 2
+
+Revision: d65c8bcde6d9b0d675f7f4edb2041a195f246537
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 10:11:56
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: af5ffe0c59fc79079badb4b02e5c498319495ec2
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 20:24:27
+Message:
+CB-12622: Added Android 6.0 build badge to README #MsgLength=50
+
+
+----
+Modified: README.md|3 3
+
+Revision: 04ce0ea5836400cfaf8298ea3323385591c66c74
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 02:59:06
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 1.2.5 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7e045e8c5df9d9c2a9bb3dfe98d0f1fa87fe18ef
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 03:08:18
+Message:
+Set VERSION to 1.2.6-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 557dd49c3b26b16447dc7c953bd2dcbed39b8fb0
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 03:29:42
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: e4fe3b5cc687a7efcb0f4e8d94daf3480dcba60f
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 18:32:08
+Message:
+CB-12847: fixed `bugs` entry in package.json. #MsgLength=46
+
+
+----
+Modified: package.json|1 1
+
+Revision: 4beac4e977fbb1941eabd00abe5eb9f895494030
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 23/06/2017 19:37:57
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Modified: .travis.yml|70 3
+
+Revision: e016549de5f8c1a450e71fb8f5bcaf5f2e9be8ad
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:30:56
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: 878dd72decc497b902d07f4e16887ee5af2dcb55
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 14:52:01
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: ba06a9df0ba633e71a79d7437d4be6c7b0922c31
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:33:49
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: 756d0db28bb1fba7320e934758c4f67e5081fc51
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/07/2017 16:34:25
+Message:
+CB-13028 (CI) Browser builds on Travis and AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|3 2
+Modified: .travis.yml|16 0
+
+Revision: c9642ff2a1a02a079a264e9ec4fe83ce2a126e77
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/07/2017 18:06:40
+Message:
+CB-13115 (browser) Fixed getCurrentAcceleration() on Firefox, Safari and Edge #MsgLength=78
+
+
+----
+Modified: www/accelerometer.js|8 0
+
+Revision: c3d572e978535a7f88155e0d2f92144ab4038498
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 10/06/2017 04:22:53
+Message:
+CB-12726: Device Motion - SUNSET #MsgLength=51
+
+
+----
+Modified: README.md|2 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: c33630fd42795d8ddf87b7dcba7ab234424d4f16
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/09/2017 12:36:12
+Message:
+fixed merge conflict #MsgLength=21
+
+
+----
+Modified: README.md|8 1
+
+Revision: fa4e78bdefe3d030b47b572bd19ba0ad090db77c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/09/2017 13:02:04
+Message:
+CB-13068: added info tag for deprecation #MsgLength=41
+
+
+----
+Modified: plugin.xml|5 0
+
+Revision: 9b17d8b9909ed33e00c4b90c9208cde721f4934c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/09/2017 04:30:44
+Message:
+CB-13294 Updated version and RELEASENOTES.md for release 1.2.6 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e46316240f5674760b6a6374e6b01f0d4c0abec9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/09/2017 04:31:03
+Message:
+Set VERSION to 1.2.7-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1236b957af8c55ca2d23997070613ee2ccf0bbd4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/09/2017 04:56:59
+Message:
+CB-13294: Updated version to 2.0.0 for deprecation #MsgLength=51
+
+
+----
+Modified: RELEASENOTES.md|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: ac3312cc3a285ba7037b9b084f7341bb166c2102
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/09/2017 04:59:06
+Message:
+Set VERSION to 2.0.1-dev #MsgLength=25
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: f953f1e58dc19d75e39910e4e4e80c9f389f2204
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:05:17
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 3a751893088e43ee3c7e45289509b6c70a9c74ce
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 20/10/2017 06:41:12
+Message:
+Updated README #MsgLength=33
+
+
+----
+Modified: README.md|2 158
+
+Revision: e15131a62492b6ac2024606db7e0a2d2a3a8ff1e
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 20/10/2017 07:23:15
+Message:
+Closes #51 #MsgLength=11
+
+
+----
+
+Revision: 9f5ab50a24f42ea38f47af9e1a670d6a9d11e685
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:58:35
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 4de23d50ec7c1a21ba410c56669ac87490b0d285
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 15:22:29
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: ec1a0341ac53d0b809e45d6d6161883f1213889f
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 26/03/2018 05:41:07
+Message:
+CB-14001: Fix cordovaDependencies to allow plugin install #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+
+Revision: f4180071ea3a6da7987c2da013c2bcd315bc6a1e
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 27/03/2018 05:19:29
+Message:
+CB-13763: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: 7aa654f673b9d82f62bef213af62d7dca63bcb24
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/04/2018 03:37:11
+Message:
+CB-14030 Updated version and RELEASENOTES.md for release 2.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8d12d7cab8cbe9bffdcdaad3720dbe4da2e36e8a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/04/2018 03:42:31
+Message:
+Set VERSION to 2.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: aa939cd2715d059c10fa338cb760127d0cead0ae
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:38:47
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: bbe756d97cdb3bb6b49d2974f4f668100a3015de
+Author: Tim Brust <github@timbrust.de>
+Date: 27/08/2020 18:03:06
+Message:
+docs: undeprecate plugin (#70) #MsgLength=84
+
+
+----
+Modified: README.md|160 2
+
+Revision: 8f921f1b4ca11721d50dcf4be7869f794f0184b5
+Author: Tim Brust <github@timbrust.de>
+Date: 28/08/2020 19:11:57
+Message:
+chore: bump version to 3.0.0-dev (#74) #MsgLength=40
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 43d4ec320dfbe8a73c53ec0cbc7ec3406c105af1
+Author: Tim Brust <github@timbrust.de>
+Date: 28/08/2020 19:12:40
+Message:
+docs: remove outdated translations (#71) #MsgLength=42
+
+
+----
+Deleted: doc/de/README.md|0 163
+Deleted: doc/de/index.md|0 161
+Deleted: doc/es/README.md|0 159
+Deleted: doc/es/index.md|0 139
+Deleted: doc/fr/README.md|0 141
+Deleted: doc/fr/index.md|0 139
+Deleted: doc/it/README.md|0 163
+Deleted: doc/it/index.md|0 161
+Deleted: doc/ja/README.md|0 163
+Deleted: doc/ja/index.md|0 161
+Deleted: doc/ko/README.md|0 163
+Deleted: doc/ko/index.md|0 161
+Deleted: doc/pl/README.md|0 163
+Deleted: doc/pl/index.md|0 161
+Deleted: doc/ru/index.md|0 151
+Deleted: doc/zh/README.md|0 163
+Deleted: doc/zh/index.md|0 161
+
+Revision: aa69f4bd2f18fc08ad16449d78e9c19de7342c65
+Author: Tim Brust <github@timbrust.de>
+Date: 28/08/2020 19:14:10
+Message:
+fix!: remove deprecated platforms (#73) #MsgLength=41
+
+
+----
+Modified: README.md|0 5
+Modified: package.json|0 16
+Modified: plugin.xml|0 86
+Deleted: src/blackberry10/index.js|0 47
+Deleted: src/firefoxos/accelerometer.js|0 41
+Deleted: src/tizen/AccelerometerProxy.js|0 49
+Deleted: src/ubuntu/accelerometer.cpp|0 58
+Deleted: src/ubuntu/accelerometer.h|0 55
+Deleted: src/wp/Accelerometer.cs|0 179
+Modified: tests/tests.js|1 1
+
+Revision: cb299258203b9f85c1951107fce3dd1fbf138079
+Author: Tim Brust <github@timbrust.de>
+Date: 28/08/2020 19:15:16
+Message:
+chore: package cleanup (#72) #MsgLength=30
+
+
+----
+Modified: package.json|3 8
+Modified: plugin.xml|3 8
+
+Revision: 272e95b7830f1dd6473a5f57359c4f645e7477a9
+Author: Tim Brust <github@timbrust.de>
+Date: 09/09/2020 00:21:34
+Message:
+refactor(eslint): use cordova-eslint /w fix (#76) #MsgLength=51
+
+
+----
+Added: .eslintrc.yml|23 0
+Deleted: .jshintrc|0 17
+Modified: package.json|3 3
+Modified: src/browser/AccelerometerProxy.js|13 10
+Modified: src/windows/AccelerometerProxy.js|26 25
+Modified: tests/tests.js|260 241
+Modified: www/Acceleration.js|3 3
+Modified: www/accelerometer.js|56 39
+
+Revision: 6f81f84f77391b0a498c563c7fa252b21d802f69
+Author: Tim Brust <github@timbrust.de>
+Date: 09/09/2020 00:22:51
+Message:
+chore: adds package-lock file  (#75) #MsgLength=118
+
+
+----
+Added: package-lock.json|1724 0
+
+Revision: 33cb96ef8a1652ce69214d4bf591f9437ad986d9
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:11:30
+Message:
+ci: add github actions workflow (#78) #MsgLength=39
+
+
+----
+Added: .github/workflows/android.yml|148 0
+Added: .github/workflows/chrome.yml|73 0
+Added: .github/workflows/ios.yml|88 0
+Added: .github/workflows/lint.yml|56 0
+Modified: README.md|2 0
+
+Revision: 158ff087c940667e69b71137071399b478047569
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 01:00:27
+Message:
+ci: remove old ci service (#79) #MsgLength=33
+
+
+----
+Deleted: .appveyor.yml|0 28
+Deleted: .travis.yml|0 86
+Modified: README.md|0 4
+
+Revision: 61348e069ba9416bd5c1ae5556518075a7547885
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/10/2021 21:13:14
+Message:
+ci(ios): update workflow w/ iOS 15 (#80) #MsgLength=42
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: 9d738f9abdba315f58e07e7935b29736b121eddd
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/07/2022 13:41:02
+Message:
+ci(android): update java requirement for cordova-android@11 (#82) #MsgLength=67
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: c0061d49de80e651e72bee2f088b964287298d65
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/07/2022 16:51:57
+Message:
+chore(npm): bump package-lock v2 w/ rebuild (#88) #MsgLength=51
+
+
+----
+Modified: package-lock.json|2925 475
+
+Revision: 814a2da6b644485349fb68a9b020d16fd5b30eee
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/08/2022 23:41:57
+Message:
+ci: sync workflow with paramedic (#89) #MsgLength=40
+
+
+----
+Modified: .github/workflows/android.yml|12 22
+Modified: .github/workflows/ios.yml|4 13
+

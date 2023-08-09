@@ -1,0 +1,3301 @@
+Revision: 29c374dad3e8efe7b46527e3b35e6f86395d4c0c
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/04/2013 02:33:50
+Message:
+Initial Commit #MsgLength=15
+
+
+----
+Added: README.md|2 0
+Added: plugin.xml|17 0
+Added: src/android/Device.java|201 0
+
+Revision: cee788f7839e406f569714071da23d82ffdb6048
+Author: Joe Bowser <bowserj@apache.org>
+Date: 12/04/2013 06:35:04
+Message:
+Keeping Device up to date #MsgLength=26
+
+
+----
+Modified: src/android/Device.java|0 1
+
+Revision: bb3df246cc69a7cac64afb324bc263a002dba7bb
+Author: Tim Kim <timk@adobe.com>
+Date: 05/06/2013 07:44:17
+Message:
+Fixed up src path #MsgLength=18
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 818d16db9a894920457a6763a2dc3b9f24450854
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 14/06/2013 02:21:45
+Message:
+first pass at wp7 support #MsgLength=26
+
+
+----
+Modified: plugin.xml|13 1
+Added: src/wp7/Device.cs|135 0
+
+Revision: 7f9b900e3d3510e5bfff354fb74e826177b86ebb
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 14/06/2013 06:53:17
+Message:
+changed plugin id to org.apache.cordova.core.device #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 4b20b222ee3d279660980cea4f6900f2ffd4578a
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 15/06/2013 04:58:19
+Message:
+[CB-3713] added device capability for wp7 #MsgLength=42
+
+
+----
+Modified: plugin.xml|4 0
+
+Revision: 2447caa4defe85385089fb1d96f073ef9b1c4b47
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 18/06/2013 06:38:48
+Message:
+added android to plugin #MsgLength=24
+
+
+----
+Added: docs/device.cordova.md|80 0
+Added: docs/device.md|104 0
+Added: docs/device.model.md|106 0
+Added: docs/device.name.md|108 0
+Added: docs/device.platform.md|99 0
+Added: docs/device.uuid.md|115 0
+Added: docs/device.version.md|86 0
+Modified: plugin.xml|20 3
+Modified: src/android/Device.java|2 3
+Added: test/autotest/html/HtmlReporter.js|101 0
+Added: test/autotest/html/HtmlReporterHelpers.js|60 0
+Added: test/autotest/html/ReporterView.js|164 0
+Added: test/autotest/html/SpecView.js|79 0
+Added: test/autotest/html/SuiteView.js|22 0
+Added: test/autotest/html/TrivialReporter.js|192 0
+Added: test/autotest/index.html|59 0
+Added: test/autotest/jasmine.css|81 0
+Added: test/autotest/jasmine.js|2530 0
+Added: test/autotest/pages/.DS_Store|0 0
+Added: test/autotest/pages/device.html|71 0
+Added: test/autotest/test-runner.js|62 0
+Added: test/autotest/tests/.DS_Store|0 0
+Added: test/autotest/tests/device.tests.js|50 0
+Added: test/cordova-incl.js|85 0
+Added: test/index.html|64 0
+Added: test/main.js|162 0
+Added: test/master.css|164 0
+Added: www/android/device.js|60 0
+Added: www/device.js|76 0
+
+Revision: 5428c7ba414bf65db83a293f53d408ada94786f0
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 18/06/2013 07:04:28
+Message:
+updated imports for device.java #MsgLength=32
+
+
+----
+Modified: plugin.xml|3 3
+Modified: src/android/Device.java|1 0
+
+Revision: 4c4514a892ecc036c2b2a57e26cd09c902707ce9
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 18/06/2013 07:20:24
+Message:
+Added ios device files #MsgLength=23
+
+
+----
+Modified: plugin.xml|6 0
+Added: src/ios/CDVDevice.h|30 0
+Added: src/ios/CDVDevice.m|89 0
+
+Revision: fdf724801d5c2cade1ae8fa97841d8bd3387e3ba
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 18/06/2013 08:47:40
+Message:
+updated ios references #MsgLength=23
+
+
+----
+Modified: src/ios/CDVDevice.h|1 1
+Modified: src/ios/CDVDevice.m|2 1
+
+Revision: 24745d51b79a5dbaad870ca6a3b1d6f9495a72b5
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 18/06/2013 08:01:38
+Message:
+[CB-3710] Fixed device plugin on android. removed android-specific JS (no need). Fixed malformed version attrib at the top. #MsgLength=124
+
+
+----
+Modified: plugin.xml|1 7
+Deleted: www/android/device.js|0 60
+Modified: www/device.js|1 3
+
+
+Revision: 7cc7976fe0729973d7e96dc6547b4aee28bc6b8e
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 25/06/2013 05:34:52
+Message:
+[CB-3714] first pass wp7 support #MsgLength=33
+
+
+----
+Modified: plugin.xml|17 2
+Added: src/wp8/Device.cs|135 0
+
+Revision: 7a62f76d53c977d260fd64468fa26c6d6ec09d7b
+Author: lorinbeer <lorin@adobe.com>
+Date: 25/06/2013 07:35:55
+Message:
+[CB-3712] blackberry10 device plugin breakout initial commit #MsgLength=61
+
+
+----
+Modified: plugin.xml|8 0
+Added: src/blackberry10/index.js|63 0
+
+Revision: 8949f0f7e10bd1dfb0df3c618875504e57a7ddc6
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:55
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 756b084b68e7f451e2bbdea610179e90a07e07a7
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 06:02:24
+Message:
+[CB-3113\ remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|2 2
+Renamed: src/wp/Device.cs [from src/wp8/Device.cs]|0 0
+Deleted: src/wp7/Device.cs|0 135
+
+Revision: 50d4d062683702a0bc87fd7b6f6736895f69fa4b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: src/android/Device.java|4 4
+
+Revision: a89a7c7b61bb44996d61e654bd857b199484db9b
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:13:17
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Added: .gitignore|23 0
+
+Revision: 7b95a40c3ae39f3654240bfb81c522a64630efba
+Author: Jeffrey Heifetz <jheifetz@blackberry.com>
+Date: 17/07/2013 04:36:10
+Message:
+[BlackBerry10] Adding necessary native permissions #MsgLength=51
+
+
+----
+Modified: plugin.xml|8 1
+
+Revision: 42c0eefd1d8981363a44b719e7daea81149197db
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|3 0
+
+Revision: 3c5832d2cca354bb1309eef738a848e2d4b87e3e
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 19/07/2013 17:03:55
+Message:
+[wp] updated Device.cs version to 3.0.0 #MsgLength=40
+
+
+----
+Modified: src/wp/Device.cs|1 1
+
+Revision: 61fa9c6f83b283555487873032939ebbadb69f07
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 27/07/2013 03:00:22
+Message:
+added basic Device support for Windows8 #MsgLength=40
+
+
+----
+Modified: plugin.xml|7 0
+Added: src/windows8/DeviceProxy.js|54 0
+
+Revision: bb2128e484fb7ade9a828e337ed4411f99432b12
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 30/07/2013 08:27:44
+Message:
+[Windows8] Windows8 is now supported #MsgLength=37
+
+
+----
+Modified: plugin.xml|1 1
+Modified: src/windows8/DeviceProxy.js|1 5
+
+
+Revision: 7ebba4c5c2254bed365ef55b338199774fefb29f
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:32:04
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 2a3b03c5b08eb0527e02c1ec51dcfb880cf35c61
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: 01b02b648e47c54f20ec908bfbd91f48abfe2c54
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: ae3bb2eb409a679275b3148ac34709da0e462499
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 06:19:04
+Message:
+[plugin.xml] adding android namespace #MsgLength=38
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: a01821b6e55fb1b31887ca2c4dd258c4ef2f5e50
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 08/08/2013 04:24:54
+Message:
+[plugin.xml] adding rim namespace #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: 89d7189faec29a272e4903c13f2e33d72c87aa3f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 02:39:45
+Message:
+updated readme, namespace and name tag #MsgLength=39
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|4 4
+
+Revision: 1437895f4b5ecc4c51cc29f62fae976dfcf866b6
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 03:05:10
+Message:
+updated namespace #MsgLength=18
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 2d0c783beea770d36d5df86d5e3e45039cd16876
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-device to its own Java package. #MsgLength=62
+
+
+----
+Modified: plugin.xml|2 2
+Modified: src/android/Device.java|1 1
+
+Revision: f26dafe82952f8012fcf85e6ba1924ec098e13b6
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 15/08/2013 06:18:15
+Message:
+reverted name element to be user readable #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 88a8d590b17c978b3462694c3e0f2fff2873b064
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 05:38:03
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 5480138683e7d5f691086c2121b8bc240248be12
+Author: lorinbeer <lorin@adobe.com>
+Date: 21/08/2013 05:24:54
+Message:
+[CB-4432] copyright notice change #MsgLength=34
+
+
+----
+Modified: src/blackberry10/index.js|18 11
+
+Revision: 951cd4ce3017c93f4e64c4d7ed7533f353a24203
+Author: lorinbeer <lorin@adobe.com>
+Date: 21/08/2013 05:25:27
+Message:
+removed extraneous print statement #MsgLength=35
+
+
+----
+Modified: src/blackberry10/index.js|0 1
+
+Revision: 4ed3ebf1230331d71a9a30090beba0d237118a9c
+Author: lorinbeer <lorin@adobe.com>
+Date: 21/08/2013 05:24:54
+Message:
+[CB-4432] copyright notice change #MsgLength=34
+
+
+----
+Modified: src/blackberry10/index.js|18 11
+
+Revision: de12a716c9cd15af45ec3b61ba0f0138829660b2
+Author: lorinbeer <lorin@adobe.com>
+Date: 21/08/2013 05:25:27
+Message:
+removed extraneous print statement #MsgLength=35
+
+
+----
+Modified: src/blackberry10/index.js|0 1
+
+Revision: 731905d2e4c52474a5243b7ecd32fa4546ab4884
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+[CB-4752] Updated version and changelog #MsgLength=40
+
+
+----
+Added: CHANGELOG.md|25 0
+Modified: plugin.xml|1 1
+
+
+Revision: dcf1877f2254cd390694ac9ab91ba7fabd159b3a
+Author: Kristoffer Flores <kflores@blackberry.com>
+Date: 21/09/2013 01:41:04
+Message:
+[BlackBerry10] removed uneeded permission tags in plugin.xml #MsgLength=61
+
+
+----
+Modified: plugin.xml|0 4
+
+Revision: bf6dd8c241edaaa9dd56a4bdc36f57a541a0b8a2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:21
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 30ba3ce8e0ea2ed48e65fc607d838e54a012d926
+Author: James Long <longster@gmail.com>
+Date: 12/09/2013 04:36:31
+Message:
+add firefoxos support #MsgLength=22
+
+
+----
+Modified: plugin.xml|13 0
+Added: src/firefoxos/device.js|16 0
+
+Revision: c631a12590f68b7c59f17ae29fb7aee7df89b5ab
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/09/2013 08:39:22
+Message:
+updated to use commandProxy for ffos #MsgLength=37
+
+
+----
+Modified: plugin.xml|2 2
+Added: src/firefoxos/DeviceProxy.js|39 0
+Deleted: src/firefoxos/device.js|0 16
+
+Revision: dd2ec7837d53da972d04a06befbac70321a190f6
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: 400b4688a5fa64b3f0e96b433e4cc81280c5bbcd
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:14:22
+Message:
+CB-4889 renaming org.apache.cordova.core.device to org.apache.cordova.device #MsgLength=77
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 4f53b371a3c7b07f532411b60bb3e3495174fdd1
+Author: Kristoffer Flores <kflores@blackberry.com>
+Date: 21/09/2013 01:41:04
+Message:
+[BlackBerry10] removed uneeded permission tags in plugin.xml #MsgLength=61
+
+
+----
+Modified: plugin.xml|0 4
+
+Revision: 4d8693ccf2360affda4786682255380b4cc1b4b6
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 24/09/2013 16:30:41
+Message:
+[windows8] commandProxy has moved #MsgLength=34
+
+
+----
+Modified: src/windows8/DeviceProxy.js|1 1
+
+
+Revision: 427451bf48e9bd81daaa8b44edbfdc437c6210b7
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:50:02
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 0a89f0949b0af72810efe6a19daec18ed7741889
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 08:13:28
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.2.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|10 0
+Modified: plugin.xml|1 1
+
+
+Revision: 5af976d4b28660bb7ad753ecaee5abd609970d20
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:13
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 633c4478dea8c9777b392ca78acfc467681f923c
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 17/10/2013 03:52:30
+Message:
+CB-5085 device.cordova returning wrong value #MsgLength=45
+
+
+----
+Modified: test/autotest/tests/device.tests.js|14 0
+Modified: test/index.html|3 1
+Modified: test/main.js|1 0
+Modified: www/device.js|5 2
+
+Revision: 23c58714d2dcddac6f83c7bdd13cd23d2e057dd5
+Author: hermwong <herm.wong@gmail.com>
+Date: 22/10/2013 07:17:33
+Message:
+CB-5128: added repo + issue tag in plugin.xml for device plugin #MsgLength=64
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: 223d456b654888ea1f00e31224464eb9a4717120
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 02:32:43
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.2.4 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|6 1
+Modified: plugin.xml|1 1
+
+
+Revision: c68d756143e2039d11f6a427cb168f93f2d3acdd
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:14
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 71c0a89e0606b4d3f37e8d83b0b4408d2e900f7e
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 02:08:46
+Message:
+1. Added amazon-fireos platform. 2. Change to use cordova-amazon-fireos as the platform if user agent contains 'cordova-amazon-fireos' #MsgLength=135
+
+
+----
+Modified: plugin.xml|11 0
+Modified: test/cordova-incl.js|2 1
+
+Revision: 7256fdd59e1a290ce12e7ba09928246df45d81ce
+Author: Archana Naik <naika@lab126.com>
+Date: 16/11/2013 06:18:14
+Message:
+Modify Device.platform logic to use amazon-fireos as the platform for Amazon Devices #MsgLength=85
+
+
+----
+Modified: src/android/Device.java|28 6
+
+Revision: 458816bbda1ec7d1e69c166b602f134941c5f51c
+Author: Maxim Ermilov <ermilov.maxim@gmail.com>
+Date: 21/09/2013 21:49:18
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|9 0
+Added: src/ubuntu/device.cpp|64 0
+Added: src/ubuntu/device.h|47 0
+Added: src/ubuntu/device.js|34 0
+
+Revision: d63ee7941e01b6cfc053342b15bad1d014381c7c
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 23/11/2013 00:17:10
+Message:
+[ubuntu] use cordova/exec/proxy #MsgLength=32
+
+
+----
+Modified: src/ubuntu/device.js|1 1
+
+
+Revision: d488d49ec44ad570571f4eda340367d3bbfe84a4
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 08/11/2013 06:32:08
+Message:
+CB-5316 Spell Cordova as a brand unless it's a command or script #MsgLength=65
+
+
+----
+Modified: test/autotest/tests/device.tests.js|1 1
+
+
+Revision: a4be9f8e31100563472d6748748c348b2e0e0f94
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:30
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.2.5 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+
+Revision: 495f94ae2f3f03f536ecf7830ebcfeeb4c66c5f0
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:03
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 695272e6da9c168decdb6dd9f7a9383b65ad058c
+Author: Joe Bowser <bowserj@apache.org>
+Date: 10/12/2013 06:05:34
+Message:
+CB-5504: Moving Telephony Logic out of Device #MsgLength=46
+
+
+----
+Modified: src/android/Device.java|0 40
+
+Revision: fdf421929a31375624a849972f5d50f77a094b23
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/device.cordova.md|0 80
+Deleted: docs/device.md|0 104
+Deleted: docs/device.model.md|0 106
+Deleted: docs/device.name.md|0 108
+Deleted: docs/device.platform.md|0 99
+Deleted: docs/device.uuid.md|0 115
+Deleted: docs/device.version.md|0 86
+
+Revision: 15b5b3152b97092e32b95f2ce17d58823b2f57ac
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 01:07:20
+Message:
+CB-5658 Add doc.index.md for Device plugin #MsgLength=43
+
+
+----
+Modified: README.md|21 4
+Added: doc/index.md|211 0
+
+Revision: a10a2b26f9fb951c513552bb08d87614d9994d87
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:02
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: 109525257b68663897a877910d6629a7b81a629f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.2.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: 7a4d8d0d76359a5824b8b0669a00dc2e38f01388
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 6b40b60f7f7aa3c8ed955fbed8add8498b9cb062
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/01/2014 04:25:09
+Message:
+CB-5737 Fix exception on close caused by left over telephony code from CB-5504 #MsgLength=79
+
+
+----
+Modified: src/android/Device.java|0 15
+
+Revision: b7aa352c21a4f8b46b7390632aeb6052a8e92e29
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/01/2014 04:32:53
+Message:
+ Updated version and RELEASENOTES.md for release 0.2.7 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: 14b2ea997d29454b1d1e5f49a86c7c8bc5fd56a2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/01/2014 04:33:36
+Message:
+ Incremented plugin version on dev branch. #MsgLength=43
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f3f02fe23fba56e1ee0dc2d405ebed9bceea114f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:13
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 59
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/device.html|0 71
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/.DS_Store|0 0
+Deleted: test/autotest/tests/device.tests.js|0 64
+Deleted: test/cordova-incl.js|0 86
+Deleted: test/index.html|0 66
+Deleted: test/main.js|0 163
+Deleted: test/master.css|0 164
+
+Revision: 4bf5dee049edb8208e75ee7e050fcb1168a31245
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 14/01/2014 22:02:19
+Message:
+supported platforms updated #MsgLength=28
+
+
+----
+Modified: doc/index.md|2 0
+
+Revision: d84d38cf983daede4fb2f75d64bb4a6dec66669e
+Author: Gabriel Schulhof <gabriel.schulhof@intel.com>
+Date: 19/11/2013 17:10:28
+Message:
+plugin.xml: Adding platform tizen. #MsgLength=35
+
+
+----
+Modified: plugin.xml|9 2
+
+Revision: 7371251a0cb8f09d3401973ff06f0a119d4d4293
+Author: Gabriel Schulhof <gabriel.schulhof@intel.com>
+Date: 19/11/2013 17:10:46
+Message:
+src/tizen: Adding DeviceProxy. #MsgLength=31
+
+
+----
+Added: src/tizen/DeviceProxy.js|39 0
+
+
+Revision: d7b0855ef8eaa6731485a8e529b3607a3c65e7f2
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:58
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.2.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: d3973aa64c0058160c6ceba36a3a9b42a0a14394
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:35:42
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-device #MsgLength=66
+
+
+----
+Added: doc/es/index.md|195 0
+
+Revision: 44912c015043851c364132a84a64c5454dfc1c57
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:14:28
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-device #MsgLength=66
+
+
+----
+Added: doc/fr/index.md|213 0
+
+Revision: 9a2ae7d2ee5549a159e8cd3d3def31d144b8b32b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:30
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 216210594c52d923fa32ca26b8edc418fd679dbb
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+Revision: 90f115618a58ad942c5c97ae5534b6563cf38212
+Author: martincgg <martin.c.glez.glez@gmail.com>
+Date: 04/03/2014 02:28:01
+Message:
+CB-5105 Removed dead code for device.version #MsgLength=492
+
+
+----
+Modified: src/android/Device.java|0 11
+Modified: src/blackberry10/index.js|1 2
+Modified: src/windows8/DeviceProxy.js|1 1
+Modified: src/wp/Device.cs|1 13
+
+Revision: 6bebb48968464ca07bf2218d83e73ffe20c4d078
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2014 07:04:47
+Message:
+CB-6422 [windows8] use cordova/exec/proxy #MsgLength=42
+
+
+----
+Modified: src/windows8/DeviceProxy.js|1 1
+
+Revision: 4304d365a8393811ba03f027ded2496cc5f908ca
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:16:03
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+
+Revision: 4ae85e854d8d2741ac3cc44a6ac127d863ec73c4
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.2.9 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+
+Revision: db2c4f6cdd10f69287da068635bd40992532d4ea
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a9944dca5c58ba78e0014b60d5b4d59ad8ce0448
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:24:45
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+
+Revision: 9fb0503976574dbe5091bc61d0e083fb8152d7c8
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:49:18
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-device #MsgLength=66
+
+
+----
+Added: doc/ja/index.md|190 0
+
+Revision: 539e8be2f50c0d18012a9fee384204cfd3b340cd
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:21:44
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-device #MsgLength=66
+
+
+----
+Added: doc/it/index.md|190 0
+Added: doc/ko/index.md|190 0
+Added: doc/pl/index.md|190 0
+Added: doc/zh/index.md|190 0
+
+Revision: 855acb633e13154998844c0bad67fd07c05a484f
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:36:08
+Message:
+documentation translation: cordova-plugin-device #MsgLength=49
+
+
+----
+Added: doc/de/index.md|190 0
+Modified: doc/ja/index.md|3 3
+
+Revision: 72bfd9c15476e9e33ea4c032f4406f19ed7e09a6
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:54:47
+Message:
+CB-6800 Add license #MsgLength=20
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: 357848b242f9649553ce1bf78d891ca242fddc25
+Author: Jason Weathersby <jweathersby@mozilla.com>
+Date: 24/04/2014 05:19:06
+Message:
+added firefoxos version #MsgLength=24
+
+
+----
+Modified: src/firefoxos/DeviceProxy.js|29 6
+
+Revision: fd160e0987435985285569f582305b4e46613a65
+Author: Jason Weathersby <jweathersby@mozilla.com>
+Date: 24/04/2014 23:13:20
+Message:
+added firefoxos version - conversion #MsgLength=37
+
+
+----
+Modified: src/firefoxos/DeviceProxy.js|22 4
+
+Revision: 3146b57323ac23ed39bbca52b45e0c4f818ff254
+Author: Rodrigo Silveira <rodrigos@outlook.com>
+Date: 04/06/2014 12:24:44
+Message:
+Changing 1.5 to 2.0 #MsgLength=20
+
+
+----
+Modified: src/firefoxos/DeviceProxy.js|2 2
+
+
+Revision: b4de7db7117262b976dc59dea80717eecb324085
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:35:42
+Message:
+CB-6127 Spanish and French Translations added. Github close #12 #MsgLength=64
+
+
+----
+Added: doc/de/index.md|190 0
+Added: doc/es/index.md|195 0
+Added: doc/fr/index.md|213 0
+Added: doc/it/index.md|190 0
+Added: doc/ja/index.md|190 0
+Added: doc/ko/index.md|190 0
+Added: doc/pl/index.md|190 0
+Added: doc/zh/index.md|190 0
+
+Revision: 159d55eb1dd412657bf4116477a625b0ab16a499
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:42
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.2.10 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: plugin.xml|1 1
+
+Revision: 64751b49014d6a435883373cfeb32ff5bb122bc8
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 878a314a84a7280e5c155bbebea13dd97f47e514
+Author: Eion Robb <eion@robbmob.com>
+Date: 01/05/2014 08:22:01
+Message:
+Use Windows system calls to get better info #MsgLength=314
+
+
+----
+Modified: src/windows8/DeviceProxy.js|42 10
+
+
+
+Revision: 4abfe6ec96770674844d75f2fc6514ee2af5c429
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:26:46
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-device documentation translation: cordova-plugin-device #MsgLength=105
+
+
+----
+Modified: doc/es/index.md|8 1
+Added: doc/ru/index.md|214 0
+
+Revision: f62e825e677a47effa3369589e391b2a6ae7dd02
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 19/07/2014 01:57:44
+Message:
+CB-7168 Moving Device autotests to plugin (aka new-style tests) #MsgLength=64
+
+
+----
+Added: tests/plugin.xml|31 0
+Added: tests/tests.js|72 0
+
+Revision: 77786380aea0b9fb832a4781393950edc19fe293
+Author: Willy Aguirre <marti1125@gmail.com>
+Date: 29/07/2014 09:58:42
+Message:
+update DeviceProxy.js #MsgLength=22
+
+
+----
+Modified: src/firefoxos/DeviceProxy.js|1 1
+
+Revision: efd903fe88c0fa6e81dc057d2305211b46f69e2b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:21
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.2.11 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: 264ab9471ad8ff73b4ec9c8139343219b443bd24
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:26
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: ae3f2ed888519b9657e91a2caafbaf490f9c2bc0
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 05/08/2014 20:31:03
+Message:
+CB-7262 Adds support for universal windows apps. #MsgLength=49
+
+
+----
+Modified: plugin.xml|7 0
+Added: src/windows/DeviceProxy.js|80 0
+
+Revision: 6ce0fdfe4d94871644a8e3d1862defac69d1062a
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 22/08/2014 04:48:27
+Message:
+Added plugin support for the browser #MsgLength=37
+
+
+----
+Modified: doc/index.md|10 0
+Modified: plugin.xml|13 0
+Added: src/browser/DeviceProxy.js|78 0
+
+Revision: c64aac01458bdbd7ef26464e8fc3653185076080
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 25/07/2014 03:09:29
+Message:
+added status box and documentation to manual tests #MsgLength=51
+
+
+----
+Modified: tests/tests.js|25 3
+
+Revision: 77dcdf2591a76ed802acbbab35b55531f58b5b57
+Author: Rodrigo Silveira <rodrigos@outlook.com>
+Date: 12/08/2014 07:26:14
+Message:
+[fxos] Fix cordova version #MsgLength=27
+
+
+----
+Modified: src/firefoxos/DeviceProxy.js|1 2
+
+Revision: f94f1d4e86d546f81c95ac478123e15c140f46c9
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 25/07/2014 03:09:29
+Message:
+added status box and documentation to manual tests #MsgLength=51
+
+
+----
+Modified: tests/tests.js|25 3
+
+
+Revision: 7add8625d6421453f36a96fb949b918cb23a43fe
+Author: Rodrigo Silveira <rodrigos@outlook.com>
+Date: 12/08/2014 07:26:14
+Message:
+[fxos] Fix cordova version #MsgLength=27
+
+
+----
+Modified: src/firefoxos/DeviceProxy.js|1 2
+
+
+
+Revision: b4d7f27df6786ba289ff601eaa5b3e5df6af98c1
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 16/09/2014 01:44:51
+Message:
+CB-7552 - device.name docs have not been removed #MsgLength=49
+
+
+----
+Modified: doc/index.md|0 5
+
+Revision: bd83be0d824686de1daa6da894bf8b064b699fdc
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 16/09/2014 05:25:23
+Message:
+CB-7471 cordova-plugin-device documentation translation: cordova-plugin-device #MsgLength=79
+
+
+----
+Modified: doc/de/index.md|25 9
+Modified: doc/es/index.md|21 8
+Modified: doc/fr/index.md|28 23
+Modified: doc/it/index.md|23 7
+Modified: doc/ja/index.md|24 8
+Modified: doc/ko/index.md|23 7
+Modified: doc/pl/index.md|24 8
+Modified: doc/ru/index.md|26 21
+Modified: doc/zh/index.md|33 17
+
+Revision: c6e23d8a61793c263443794d66d40723b4d04377
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:40
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.2.12 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|10 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ac7f6a563193622a05dd0bb46e2f6814564d0836
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:01
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 29e09a93bcec1f27c726e54c8558cbc6ce3366f3
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:13
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: 56677ed8a65e1575fe5376e2bf2db9fa5ec5ecda
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:10:55
+Message:
+CB-7700 cordova-plugin-device documentation translation: cordova-plugin-device #MsgLength=79
+
+
+----
+Modified: doc/de/index.md|7 7
+Modified: doc/es/index.md|26 21
+Modified: doc/pl/index.md|10 10
+Modified: doc/ru/index.md|9 9
+
+Revision: 974ef81cbb4135c4a66d4d3b078aee864cefede6
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 21/10/2014 08:41:37
+Message:
+CB-5892 - Remove deprecated window.Settings #MsgLength=44
+
+
+----
+Modified: src/ios/CDVDevice.m|0 14
+
+Revision: bf923a027903fd25ce3c84b751976cef6503935c
+Author: Dave Lane <dclane@gmail.com>
+Date: 18/11/2014 11:50:53
+Message:
+Changing device.platform to always report the platform as "browser". #MsgLength=434
+
+
+----
+Modified: src/browser/DeviceProxy.js|1 1
+
+Revision: a0e4edceb1ef43f2e3c8410820c92845379f6703
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.2.13 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: cf6c8de87af770d1cbb7f2ae6103baab393846d4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:50
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3f1e1c96b775653b6a594be1b39d34b8df45772b
+Author: James Messinger <james.messinger@ventyx.abb.com>
+Date: 12/12/2014 04:26:37
+Message:
+- Fixed a bug that caused an "cannot call method of undefined" error if the browser's user agent wasn't recognized - Added support for Internet Explorer user agent strings - NOTE: IE 11's user agent string does not include "MSIE", so "Trident" is searched for instead #MsgLength=268
+
+
+----
+Modified: src/browser/DeviceProxy.js|5 1
+
+Revision: c801048a53aacfc111b8a06ddabc9c6d3e2198f5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/01/2015 02:35:32
+Message:
+CB-8351 Use a local copy of uniqueAppInstanceIdentifier rather than CordovaLib's version #MsgLength=89
+
+
+----
+Modified: src/ios/CDVDevice.m|23 1
+
+Revision: c5c08ee4747bc94bf70836b0b9868cf3ecd0a46a
+Author: Oliver Salzburg <oliver.salzburg@gmail.com>
+Date: 25/11/2014 00:00:31
+Message:
+Support for Windows Phone 8 ANID2 ANID is only supported up to Windows Phone 7.5 #MsgLength=81
+
+
+----
+Modified: src/wp/Device.cs|19 16
+
+
+Revision: c1388533fc0f15dd24b828c3cf1b7005fc7afd33
+Author: Bas van Beek <bas@tobin.nl>
+Date: 08/08/2014 03:15:03
+Message:
+added device.manufacturer property for Android, iOS (Apple duh), Blackberry (RIM duh) #MsgLength=86
+
+
+----
+Modified: src/android/Device.java|5 0
+Modified: src/blackberry10/index.js|1 0
+Modified: src/ios/CDVDevice.m|1 0
+Modified: www/device.js|2 0
+
+
+Revision: ddb586e30f0e43f0e765a006998b7b9109c63901
+Author: Bas van Beek <basvanbeek@users.noreply.github.com>
+Date: 15/01/2015 21:03:51
+Message:
+update of manufacturer name #MsgLength=97
+
+
+----
+Modified: src/blackberry10/index.js|1 1
+
+
+Revision: d505dfa49c407b6fe034bc67e0587c4ed31d6c61
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 05/02/2015 03:00:18
+Message:
+[CB-7285][WP8] add manufacturer info #MsgLength=37
+
+
+----
+Modified: src/wp/Device.cs|11 2
+
+Revision: 734e01f5a6762b37d576d4189b0aa5ef4a5b92f1
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 05/02/2015 03:03:17
+Message:
+[CB-7285] Add test for manufacturer property #MsgLength=45
+
+
+----
+Modified: tests/tests.js|6 1
+
+Revision: 1a13ee0665647b8f492a4a6acbb2946c1fc73f6a
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 05/02/2015 07:35:39
+Message:
+[CB7285][Windows] add manufacturer property for windows, and cleanup #MsgLength=69
+
+
+----
+Modified: src/windows/DeviceProxy.js|52 24
+
+Revision: d7089db280bb16c3d2f3b23fcd36b192ebe708c6
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 05/02/2015 09:44:45
+Message:
+Fixes a syntax error introduced in 1a13ee0 #MsgLength=43
+
+
+----
+Modified: src/windows/DeviceProxy.js|3 3
+
+Revision: e12991a02529b236d481bc97588da27da24584ea
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.3.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4330db87b94e13adee074cfdcd41488df1060a95
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:02
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c06246df9a806ea44bfc80fea780958c7a922e0d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 15:54:33
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|45 0
+
+Revision: 5f220bd655c6e7baa1f0d9cc4f6198514da30040
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/01/2015 08:49:37
+Message:
+Add cross-plugin ios paramedic test running for TravisCI #MsgLength=57
+
+
+----
+Added: .travis.yml|18 0
+
+Revision: 966fb5314836f035051bc5bb482e6cba64788158
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/01/2015 09:27:56
+Message:
+update plugin path #MsgLength=19
+
+
+----
+Modified: .travis.yml|2 3
+
+Revision: 62a2171714e4acba581d55b5b9c362702a389aec
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 26/02/2015 05:21:52
+Message:
+add travis badge #MsgLength=17
+
+
+----
+Modified: README.md|2 0
+
+
+Revision: 700ba9c5f81aec126bed02e8223a025dff43e6bd
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 07/03/2015 05:14:20
+Message:
+remove defunct windows8 version #MsgLength=32
+
+
+----
+Modified: plugin.xml|0 7
+Deleted: src/windows8/DeviceProxy.js|0 82
+
+Revision: 80ea8c238a237d66bc578a8565a594b403f426b9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:04:02
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|198 2
+Deleted: doc/index.md|0 218
+
+Revision: d714e025ee3448e7403cfdeffd7d1238431f7f01
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:29:30
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 6
+
+Revision: 0b12c532c91ab3ba8791e43b6fef771be937167d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:31
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: f7e34ccb144f96f58a6261fb5ebe8cf1947873a8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:06:00
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: b58b5edd401359845b6b0539c0d0cccb996e5719
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:51:10
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 960e6008a7cae692c31ad6424401dc749e4929ed
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 07:54:37
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 1885efdd6d6d3261e59c0fa99196456c67d0d5b0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:38
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|12 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5f94c195230ae6d0ad3efca80c11f986a72abf29
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:46
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 40792fd7f23dc6d26dda26040942a425f1f5109e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:31:00
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a159702f796b729978d6885ca55f7e4841a090b5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: ad5f1e7bfd05ef98c01df549a0fa98036a5625db
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:21
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 03abb0722fcc40766f9fc47f9d977be9952ffaf7
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 02/06/2015 23:18:00
+Message:
+Attempts to corrent npm markdown issue #MsgLength=39
+
+
+----
+Modified: README.md|17 17
+
+Revision: e3a79e563ca381a12dc5da6dcbde6fa32ecdb115
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:39:39
+Message:
+CB-9128 cordova-plugin-device documentation translation: cordova-plugin-device #MsgLength=79
+
+
+----
+Added: doc/de/README.md|203 0
+Added: doc/es/README.md|216 0
+Added: doc/fr/README.md|215 0
+Added: doc/it/README.md|203 0
+Added: doc/ja/README.md|203 0
+Added: doc/ko/README.md|203 0
+Added: doc/pl/README.md|214 0
+Added: doc/zh/README.md|203 0
+
+Revision: 38c20e71b9cbbc74d11ad08c643390d8eddeb69c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:02
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.0.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b3da8484ec56039775c392412264462687997bbc
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 1bb4aa11ae638af47d3efe8d6cac53f9a9b5cab1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:35
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3ed9bee552267f683326e394fce48095e5f90fec
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 08:41:29
+Message:
+remove travis-ci #MsgLength=17
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 2
+
+Revision: f28cb50cdc7d65a8f0c9cb74e4fdc53ac4516a37
+Author: Jordan <jordanclist@gmail.com>
+Date: 17/07/2015 08:33:41
+Message:
+Changed UUID to use [UIDevice identifierForVendor] #MsgLength=282
+
+
+----
+Modified: src/ios/CDVDevice.m|2 18
+
+Revision: 810c3c9fe06003cd916ffe5b668cd9286c506f31
+Author: Jordan <jordanclist@gmail.com>
+Date: 17/07/2015 08:34:42
+Message:
+Remove line incorrectly committed #MsgLength=33
+
+
+----
+Modified: src/ios/CDVDevice.m|0 1
+
+Revision: 6416f60528a2ee1418c50c0791e8373bed40f39f
+Author: Jordan <jordanclist@gmail.com>
+Date: 18/07/2015 15:55:58
+Message:
+Check user defaults first to maintain backwards compatibility #MsgLength=61
+
+
+----
+Modified: src/ios/CDVDevice.m|20 8
+
+Revision: 3c125c813573be6ddfc5344b45c151a4371dc9fc
+Author: Jordan Clist <jordan@fergusapp.com>
+Date: 18/07/2015 15:59:33
+Message:
+Revert "Check user defaults first to maintain backwards compatibility" #MsgLength=134
+
+
+----
+Modified: src/ios/CDVDevice.m|8 20
+
+Revision: 1f1c0e655e965f0143cca288faeb64f0a5d34f8f
+Author: Jordan Clist <jordan@fergusapp.com>
+Date: 18/07/2015 16:00:30
+Message:
+Check user defaults first to maintain backwards compatibility #MsgLength=62
+
+
+----
+Modified: src/ios/CDVDevice.m|13 1
+
+Revision: 03a4768d05eb868c3d7334830fb0878d7cb2a5a7
+Author: Jordan <jordanclist@gmail.com>
+Date: 18/07/2015 16:08:37
+Message:
+Updated README to reflect new behaviour and quirks on iOS #MsgLength=57
+
+
+----
+Modified: README.md|4 8
+
+Revision: b90dbbaf8b02dc1ed8cc5c659b6f36847e1293e4
+Author: Jordan <jordanclist@gmail.com>
+Date: 18/07/2015 16:41:56
+Message:
+Updated documentation to mention backwards compatibility #MsgLength=56
+
+
+----
+Modified: README.md|1 1
+
+Revision: 08bf01d66c6c296ac46db0f24a42af6389942b22
+Author: Andrey Kurdyumov <kant2002@gmail.com>
+Date: 05/08/2015 13:58:35
+Message:
+Fixed typo #MsgLength=11
+
+
+----
+Modified: README.md|1 1
+
+Revision: 50abd1a7c39ca628d7c63689aa9f93f04ca7ddaf
+Author: Andy Chen <chenyulong1@gmail.com>
+Date: 10/04/2015 14:55:25
+Message:
+add isSimulator for iOS & Android device #MsgLength=41
+
+
+----
+Modified: README.md|10 0
+Modified: src/android/Device.java|9 3
+Modified: src/ios/CDVDevice.m|7 1
+Modified: www/device.js|3 1
+
+
+Revision: 2aebeae3d1a15dd110fc6f92a4bd2526c7ed9a4c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 23/10/2015 02:17:20
+Message:
+create test to verify existence and type of new property 'isVirtual' #MsgLength=69
+
+
+----
+Modified: tests/tests.js|6 0
+
+Revision: 60787409adbcf3b94794060a265fc5e0e7f0bf47
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 23/10/2015 02:29:13
+Message:
+update code to use 'isVirtual' #MsgLength=31
+
+
+----
+Modified: src/android/Device.java|2 2
+Modified: src/ios/CDVDevice.m|2 2
+Modified: www/device.js|3 3
+
+Revision: 853d23799259fdfefe520dad1f44d0812e9ecc20
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 23/10/2015 02:30:27
+Message:
+update to use TARGET_OS_SIMULATOR as TARGET_IPHONE_SIMULATOR is deprecated. #MsgLength=76
+
+
+----
+Modified: src/ios/CDVDevice.m|1 1
+
+Revision: 2fc875cb0577f90f03554b56fc6609c669efb63e
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 23/10/2015 02:56:30
+Message:
+WP8 implementation #MsgLength=19
+
+
+----
+Modified: src/wp/Device.cs|11 3
+
+Revision: 7f9827d2f0fccbf5cb5228cc12e5abe9afdb52a2
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 23/10/2015 06:12:28
+Message:
+Cleanup wp8 code #MsgLength=17
+
+
+----
+Modified: src/wp/Device.cs|24 80
+
+Revision: 38b01b83fb6fc57c1eccd51284c855e8b8cb8231
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 23/10/2015 06:29:04
+Message:
+updated docs #MsgLength=13
+
+
+----
+Modified: README.md|4 2
+
+Revision: 0d82bc984174c34a4e2ff5dc08020c21d7bc27a1
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:26:48
+Message:
+add JIRA issue tracker link #MsgLength=28
+
+
+----
+Modified: README.md|4 2
+
+
+Revision: 1b6f59fd2b684fe1c62176f36d8b9b6409325937
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 23/10/2015 07:08:45
+Message:
+fix merge conflict, for reals #MsgLength=30
+
+
+----
+Modified: README.md|1 3
+
+Revision: ad50a1d606dc1e6aafd4b9adb9cd83fe263cf3e7
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: 78763b31a5e334a2b41077a954f2e415f6d95fea
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:50
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: ffc819d5661f5aed98c0b08a5e524fc2d5087320
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/10/2015 23:37:21
+Message:
+CB-9865 Better simulator detection for iOS #MsgLength=43
+
+
+----
+Modified: src/ios/CDVDevice.m|7 1
+
+Revision: 09a215b0ac2684ca9f9c314cca745e70992cd0ad
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 27/10/2015 06:52:46
+Message:
+Cleanup PRs. This closes #27. This closes #17. #MsgLength=47
+
+
+----
+
+Revision: e26f544368ed26c5f425e8bef07fffa3998d470f
+Author: Gabriel Dumitrescu <gdumitrescu@users.noreply.github.com>
+Date: 09/09/2014 07:57:26
+Message:
+Added basic Android support for hardware serial number #MsgLength=55
+
+
+----
+Modified: README.md|10 0
+Modified: src/android/Device.java|9 2
+Modified: tests/tests.js|6 0
+Modified: www/device.js|2 0
+
+
+Revision: 36dbfa982423d28ab069676e41417f32d8b60482
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 27/10/2015 23:16:04
+Message:
+CB-9847 Fixed merge error of 408c3a20be976ca5b814c9f161c31d4edf1c00fc #MsgLength=70
+
+
+----
+Modified: tests/tests.js|1 0
+
+Revision: 05787ac65b71988b360c367521c82897f006fe40
+Author: Philipp Kursawe <phil.kursawe@gmail.com>
+Date: 27/10/2015 19:34:24
+Message:
+Add `isVirtual` for Windows 8.x (Phone) platforms #MsgLength=421
+
+
+----
+Modified: README.md|2 0
+Modified: src/windows/DeviceProxy.js|26 38
+
+Revision: d695f7dfef2689d1caa5f4796a0aea1339b3e2ee
+Author: Philipp Kursawe <phil.kursawe@gmail.com>
+Date: 27/10/2015 19:34:44
+Message:
+fix whitespace tab to spaces #MsgLength=29
+
+
+----
+Modified: www/device.js|1 1
+
+
+Revision: b7bbd2895209fb3dd7ff0c48befadecf1b5fed4d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|73 73
+
+Revision: bcbe2519bf6cab8405b48bff87808cc43ea323d8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:10
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: ba646ef1f93197e0926379e86cb73522811dc238
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:05
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|16 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: aa6a1d3be6614cee6a9b51b3e74af980d4d93c93
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|34 34
+
+Revision: 715ee7e07762339fbea91069c93f96c6106790b3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e009fbaf4fb12a69a0132b6127f86fed9b42b5cd
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 07/12/2015 22:47:09
+Message:
+CB-9923 Update `device.platform` documentation for browser platform #MsgLength=68
+
+
+----
+Modified: README.md|1 2
+
+Revision: dfc8211dd26ab6171e8e9724e31589f99e819213
+Author: Tobias Bocanegra <tripod@adobe.com>
+Date: 22/12/2015 08:06:13
+Message:
+CB-10238 Move device-plugin out from cordovalib to the plugin repository #MsgLength=73
+
+
+----
+Modified: README.md|19 1
+Modified: package.json|4 2
+Modified: plugin.xml|13 0
+Added: src/osx/CDVDevice.h|30 0
+Added: src/osx/CDVDevice.m|106 0
+
+Revision: 64956bb66097bc187a0bade49329630b440ed647
+Author: Tobias Bocanegra <tripod@adobe.com>
+Date: 22/12/2015 08:30:39
+Message:
+CB-10238 Move device-plugin out from cordovalib to the plugin repository #MsgLength=73
+
+
+----
+Modified: src/osx/CDVDevice.h|2 4
+Modified: src/osx/CDVDevice.m|52 45
+
+Revision: 86de36afcbe4dc42794367e3243dffa2044c7709
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 05/01/2016 06:17:28
+Message:
+fix typo #MsgLength=9
+
+
+----
+Modified: README.md|1 1
+
+Revision: a1a025f5909f29d484f6b7996f29594761189310
+Author: Ritzlgrmft <markus.wagner02@web.de>
+Date: 01/12/2015 20:47:21
+Message:
+Property manufacturer documented #MsgLength=33
+
+
+----
+Modified: README.md|23 0
+
+
+Revision: d42fb80ca10defbedc433c53ab2288efbff17087
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:35:05
+Message:
+CB-10368 Updated version and RELEASENOTES.md for release 1.1.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6bd130b5e3fda62d3cd8fbe5e9b8ce6d0a095a8e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:58:32
+Message:
+CB-10368 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 774a937f0f7338224aa385cce3db2404fc7daee0
+Author: EddyVerbruggen <eddyverbruggen@gmail.com>
+Date: 28/01/2016 07:03:41
+Message:
+Refactored deviceInfo on iOS for better readability. #MsgLength=53
+
+
+----
+Modified: src/ios/CDVDevice.m|10 11
+
+Revision: 52f0b41d841238659d7c7f32d60d9231718b27ac
+Author: t1st3 <contact@tiste.org>
+Date: 02/02/2016 17:37:27
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=193
+
+
+----
+Modified: package.json|1 1
+
+Revision: 7d35ac850642d2f2113e13a601b86875896e74ea
+Author: daserge <v-seshak@microsoft.com>
+Date: 17/02/2016 19:41:14
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=142
+
+
+----
+Modified: .gitignore|1 1
+Added: .jshintrc|15 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/blackberry10/index.js|2 0
+Modified: src/browser/DeviceProxy.js|1 1
+Modified: src/firefoxos/DeviceProxy.js|0 2
+Modified: src/tizen/DeviceProxy.js|0 1
+Modified: src/ubuntu/device.js|1 2
+Modified: src/windows/DeviceProxy.js|3 1
+Modified: tests/tests.js|13 11
+
+Revision: 42433c8175f2341612bde8b94e524b4d0d349ac9
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 02/03/2016 08:54:21
+Message:
+Minor changes to readme #MsgLength=24
+
+
+----
+Modified: README.md|10 10
+
+Revision: c0987ae0a3245a6613f0b28b1a00f337b8b59c1a
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 02/03/2016 08:56:58
+Message:
+Updating the comment to exclude URL #MsgLength=36
+
+
+----
+Modified: README.md|1 1
+
+Revision: b31206dd6566548337a63c26b87f4c03fcaacbad
+Author: Thomas Allen <thomas@agilelaw.com>
+Date: 17/02/2016 04:12:24
+Message:
+CB-10631 ios: Fix for device.uuid in iOS 5.1.1 #MsgLength=160
+
+
+----
+Modified: src/ios/CDVDevice.m|6 1
+
+
+Revision: 5ec060eab4ce41f75be1e04a799da9c305d18081
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2016 14:37:20
+Message:
+Use passed device, follow create policy forf CFUUIDCreate #MsgLength=58
+
+
+----
+Modified: src/ios/CDVDevice.m|4 2
+
+Revision: 32a9a99617c019bd05b940d201284d5f07c8ad0d
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2016 14:39:31
+Message:
+Close #49 #MsgLength=10
+
+
+----
+
+Revision: c18039bf27929ccf1bf3e2c3d21e2a62c2397215
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:26
+Message:
+ Updated version and RELEASENOTES.md for release 1.1.2 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4ea2ce58ec64d9bf0af86aa20ef8a5ad4b09bad6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:27
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e077870a28476dc4844f2347df031903b3f9e76c
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:50
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: e87058377bc58958c1499d51590f4d306e27039b
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 19/05/2016 03:17:49
+Message:
+Readme: Add fenced code blocks with langauage hints #MsgLength=52
+
+
+----
+Modified: README.md|80 61
+
+Revision: 6806bd7e433f91c10a48a9b6a0f6f43be6f7c223
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:53:59
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: 5298c1f524877602e65e7f71b522b7c95e7a6c8e
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 16:51:49
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|7 5
+
+Revision: a59ffa1cf01afc5bf51d8e0ad71d0895997fbee1
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 21:29:57
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=397
+
+
+----
+Modified: package.json|7 0
+
+Revision: b90d1ddf9bc72a1c019d42d2f069f1c22ffafb98
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:54
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 1.1.3 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|11 4
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 18ec36623861c0eeaeb0d0fbd73cb5c77b8f143c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7dbb4b4997e27c400bd827f3458a2e7dbb16be97
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:35:38
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=101
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: a736ae44b1e17be545f586f33bd98194b6401e34
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:44
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 1.1.4 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|185 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e1ab9f4c2eeea06ed59b10b86ac242264c45ac71
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:07
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 10b7ab62fd4071ee6deec1185631e97b7a6bcbd4
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 18:07:42
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: 3b93a47c00a75765247b2ab80f43bbf00ae33e25
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:43:39
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-device #MsgLength=56
+
+
+----
+Modified: RELEASENOTES.md|1 181
+Modified: plugin.xml|2 0
+
+Revision: 99474e0e5860215059952a63e84b726ca4e88278
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:28:33
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: cf56c90f4f0b3488ce66519edfc055bd93ee967d
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 20:52:51
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=68
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|36 0
+
+Revision: 48e0e7f321e88bdfc6b42659ae396e5d4be40992
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/01/2017 00:21:10
+Message:
+CB-12353 Corrected merges usage in plugin.xml #MsgLength=46
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 64d9e956139dbbabcc0420ee18d0e12df6bc3210
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:26
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 1.1.5 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|113 174
+Modified: tests/plugin.xml|5 30
+
+Revision: a4e19e91b8739fd82e165265a8c7ad513f57c3ec
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:56:00
+Message:
+Set VERSION to 1.1.6-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|174 113
+Modified: tests/plugin.xml|30 5
+
+Revision: 4472603a42859084f1a151ebc3676421d33547a7
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 28/02/2017 16:09:13
+Message:
+CB-12105 (browser) Properly detect Edge #MsgLength=40
+
+
+----
+Modified: src/browser/DeviceProxy.js|3 1
+
+
+Revision: 736c7b9dfdfa25a924ffc3d1e409450633a8c00f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 09:19:44
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: 004b5a27a4b52a7da1b45031b05385591ad64361
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 20:19:52
+Message:
+CB-12622: Added Android 6.0 build badge to README #MsgLength=50
+
+
+----
+Modified: README.md|3 3
+
+Revision: eeb48e8ad8c1cac2f7650f3a2d59f10da970a6c3
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 03:25:59
+Message:
+CB-12376 Updated version and RELEASENOTES.md for release 1.1.6 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 43a1aa647b78682fd1f44a8f358d2200010f5684
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 03:26:07
+Message:
+Set VERSION to 1.1.7-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e89ae891f11d1ff01d86df0a17de3072af3fabff
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 03:27:11
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: 59e0a86e77eadc0d68e789d8bdd551ff358ad8ef
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 18:31:45
+Message:
+CB-12847: fixed `bugs` entry in package.json. #MsgLength=46
+
+
+----
+Modified: package.json|1 1
+
+Revision: 2d845036befa5152ab9b87011c0970cc95833e69
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 23/06/2017 19:12:13
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Modified: .travis.yml|71 3
+
+Revision: 412938d446b228e87f577c3b09449aa7d7eee3ab
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 29/06/2017 20:02:47
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: 233a8b3cfb2578b22faaf338635a5a226c3c3715
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 06/07/2017 19:23:14
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: 24b6a33ec59fb0fdd318caaad49daea15a8a20a5
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:33:45
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: f32cfc288b3669893f4fb239cc98cbf1552ef151
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/07/2017 15:11:34
+Message:
+CB-13028 (CI) Browser builds on Travis and AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|3 2
+Modified: .travis.yml|16 0
+
+Revision: a886200d3f9a56a4de21090effca050c94613a2b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/07/2017 15:49:05
+Message:
+CB-13113 (browser) device.isVirtual is always false #MsgLength=52
+
+
+----
+Modified: README.md|3 2
+Modified: src/browser/DeviceProxy.js|2 1
+
+Revision: 965f65d9ddb0973d9a757599fbf92f1d64b30f33
+Author: filmaj <maj.fil@gmail.com>
+Date: 26/07/2017 23:09:54
+Message:
+Closes #66 #MsgLength=11
+
+
+----
+
+Revision: 3dfbb7826fff868179dcc5e028992eedf9cb7121
+Author: Audrey So <audreyso@apache.org>
+Date: 10/06/2017 06:27:27
+Message:
+CB-12895 : setup eslint and removed jshint #MsgLength=43
+
+
+----
+Added: .eslintrc.yml|10 0
+Deleted: .jshintrc|0 15
+Modified: package.json|9 3
+Modified: src/blackberry10/index.js|19 19
+Modified: src/browser/DeviceProxy.js|6 7
+Modified: src/firefoxos/DeviceProxy.js|9 9
+Modified: src/tizen/DeviceProxy.js|2 2
+Modified: src/ubuntu/device.js|9 5
+Modified: src/windows/DeviceProxy.js|27 29
+Modified: tests/tests.js|66 66
+Modified: www/device.js|14 14
+
+Revision: aab47930b969ea74ace1d2637ae2527d316b4e8f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:05:12
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 650975ba9c755b4e72a6ff6a114d070e93a19df6
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:58:30
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: a9f76be8c753dc7025b035a329bd6f5b3b25d67b
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 15:22:26
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: cfd0e2e513592057ea3d39af5255e8336bdba295
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 19:59:58
+Message:
+Closing invalid PR: this closes #71 #MsgLength=36
+
+
+----
+
+Revision: 6d2011ba0212578defd2a94964390bd406f869ad
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:44
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 1.1.7 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 71c419b5d41add4bcab4d77f713b125407e637bf
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:39
+Message:
+Set VERSION to 1.1.8-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ac14d1c7de258d5c5a5c89517e35bc696495d9e9
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 13/12/2017 03:52:28
+Message:
+CB-13670: Remove deprecated platforms #MsgLength=38
+
+
+----
+Modified: README.md|0 45
+Modified: package.json|1 17
+Modified: plugin.xml|1 82
+Deleted: src/blackberry10/index.js|0 71
+Deleted: src/firefoxos/DeviceProxy.js|0 77
+Deleted: src/tizen/DeviceProxy.js|0 38
+Deleted: src/ubuntu/device.cpp|0 64
+Deleted: src/ubuntu/device.h|0 47
+Deleted: src/ubuntu/device.js|0 37
+Deleted: src/wp/Device.cs|0 87
+
+
+Revision: 753f956da45c0e2ae362f2a854d1e2bad99182d1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:25:12
+Message:
+CB-13681 Updated version and RELEASENOTES.md for release 2.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b0c2fa3df6bd0b6f4414b5787be51400de901999
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:26:44
+Message:
+Set VERSION to 2.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 12e5c78857f4d3d59bc9e28bfc8b41df49219b75
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 27/12/2017 07:06:41
+Message:
+CB-13702: Fix to allow 2.0.0 version install #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+
+Revision: ad0821d64d19b45af1f0ac5e012e3fed81689dc7
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:36
+Message:
+CB-13714 Updated version and RELEASENOTES.md for release 2.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|2 174
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 38bf0667b90f3082e8c4a7fd84fa743eb4bb64d2
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:49
+Message:
+Set VERSION to 2.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ce97acba34b28f7b04e73510236e19fd47994b40
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 30/12/2017 13:59:07
+Message:
+Fix release notes (#75) #MsgLength=25
+
+
+----
+Modified: RELEASENOTES.md|175 0
+
+Revision: 4c2d3a97d05521ec51bcaa396887648de4be9d61
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 10/01/2018 07:15:38
+Message:
+CB-13752: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: 34260f62da5bfecbb28ca69d1578777b0656c009
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 26/03/2018 05:31:11
+Message:
+CB-13893: (ios) delete libz.tbd from device plugin #MsgLength=51
+
+
+----
+Modified: plugin.xml|0 2
+
+
+Revision: e83c1afd848ac05505b9b8fa11cb5061230c4463
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:06:21
+Message:
+CB-14030 Updated version and RELEASENOTES.md for release 2.0.2 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ee3cb6d16a67432a6e958bbb785b8aa696728a3b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:16:15
+Message:
+Set VERSION to 2.0.3-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d65cdf62e368c8c59258616bd949b8a2d82bcf54
+Author: Daniel Toplak <d.toplak@cadenas.de>
+Date: 23/05/2018 13:07:09
+Message:
+CB-14106 - device.model is different on simulator and on real device (#80) #MsgLength=76
+
+
+----
+Modified: src/ios/CDVDevice.m|4 1
+
+Revision: f870c9b0ae1ef162d4294302b3a03255c14039fd
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 01/10/2018 18:52:15
+Message:
+also accept terms for android sdk `android-27` #MsgLength=46
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 2d12d550ad978ebde1f84d50ed2dc8d4bd58d0df
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 04/10/2018 07:15:10
+Message:
+remove JIRA link #MsgLength=16
+
+
+----
+Modified: README.md|0 3
+
+Revision: e21328611787db6dc0668a7b2e620cbcaf413a19
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:38:38
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 52a06551c5d288b224979ffc79c126afde0aa644
+Author: Tim Brust <github@timbrust.de>
+Date: 19/02/2019 07:45:41
+Message:
+feat: update typings #MsgLength=102
+
+
+----
+Modified: types/index.d.ts|9 10
+
+
+Revision: db0ad32f2a84db7cb4dd31887417fff0a59eac2f
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 17/05/2019 05:09:31
+Message:
+Update Travis CI configuration for new paramedic (#97) #MsgLength=147
+
+
+----
+Modified: .travis.yml|104 77
+
+Revision: 594fa61bd741a57905afd8405e9797278c43e84e
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 25/05/2019 06:38:41
+Message:
+ci(travis): Remove android 4.4 that SauceLabs removed #MsgLength=53
+
+
+----
+Modified: .travis.yml|0 2
+
+Revision: db4e1f1288f86f9f8e9b27e6443135d6ce3271f4
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 08/06/2019 03:27:11
+Message:
+docs: remove outdated translations #MsgLength=35
+
+
+----
+Deleted: doc/de/README.md|0 203
+Deleted: doc/de/index.md|0 206
+Deleted: doc/es/README.md|0 216
+Deleted: doc/es/index.md|0 220
+Deleted: doc/fr/README.md|0 215
+Deleted: doc/fr/index.md|0 218
+Deleted: doc/it/README.md|0 203
+Deleted: doc/it/index.md|0 206
+Deleted: doc/ja/README.md|0 203
+Deleted: doc/ja/index.md|0 206
+Deleted: doc/ko/README.md|0 203
+Deleted: doc/ko/index.md|0 206
+Deleted: doc/pl/README.md|0 214
+Deleted: doc/pl/index.md|0 206
+Deleted: doc/ru/index.md|0 219
+Deleted: doc/zh/README.md|0 203
+Deleted: doc/zh/index.md|0 206
+
+Revision: 8dbe703230a71d2c5d71427b66781558e7e8bed0
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 08/06/2019 03:27:34
+Message:
+build: add .npmignore to remove unneeded files from npm package #MsgLength=64
+
+
+----
+Added: .npmignore|16 0
+
+Revision: 02ae40504529d0f70c8f0b15e1ab21ccac981f77
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 08/06/2019 03:28:20
+Message:
+build: add .gitattributes to force LF (instead of possible CRLF on Windows) #MsgLength=76
+
+
+----
+Added: .gitattributes|1 0
+
+Revision: dc7b39be5b52c5886b6cef2be2aa4242ecff533e
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 15/06/2019 00:47:21
+Message:
+chore(release): 2.0.3 (version string + release notes) #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|13 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8b50802903fb4dfd27dc17735f7c83168f489401
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 15/06/2019 06:53:01
+Message:
+chore(release): 2.0.4-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9c047481ffa66b4809aa7f0426539e98c55c1832
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 18/06/2019 21:44:47
+Message:
+ci(travis): Add Android 9.0 #MsgLength=27
+
+
+----
+Modified: .travis.yml|6 0
+
+Revision: f4b6f48a212284857ccef22edc16c31919468e8e
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 02/07/2019 03:13:28
+Message:
+ci(travis): upgrade to node8 #MsgLength=28
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: c9b60b452d03be699885438fbfa4204e443a5691
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 03/07/2019 20:47:25
+Message:
+fix(types): remove version number #MsgLength=33
+
+
+----
+Modified: types/index.d.ts|2 2
+
+Revision: 7c0c1424bbb8b9b0e019fad7589175c69e1d0f62
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 14/10/2019 04:45:46
+Message:
+Log error to console, not to dialog box (#109) #MsgLength=140
+
+
+----
+Modified: www/device.js|1 2
+
+Revision: 705af6ff7b8c32fa756a73241a5bf387f931e023
+Author: Tim Brust <github@timbrust.de>
+Date: 26/03/2020 16:49:06
+Message:
+chore: replaces bugs URL (#119) #MsgLength=33
+
+
+----
+Modified: package.json|1 1
+
+Revision: d85e146bc066ff3fbab14ffcee1d385b6f56f2ac
+Author: Tim Brust <github@timbrust.de>
+Date: 26/03/2020 22:35:44
+Message:
+chore(npm): improve ignore list (#121) #MsgLength=40
+
+
+----
+Modified: .npmignore|2 15
+
+Revision: 171f53c8673fd966922c5f0aeabbb8d4e06ed488
+Author: Tim Brust <github@timbrust.de>
+Date: 26/03/2020 22:45:36
+Message:
+ci: updates Node.js versions (#120) #MsgLength=37
+
+
+----
+Modified: .appveyor.yml|5 5
+Modified: .travis.yml|14 13
+
+Revision: 719038d67f3eb672b5587673f7d0101bedbaa147
+Author: Tim Brust <github@timbrust.de>
+Date: 27/03/2020 00:11:36
+Message:
+refactor(eslint): use cordova-eslint (#122) #MsgLength=45
+
+
+----
+Modified: .eslintrc.yml|22 9
+Added: package-lock.json|1705 0
+Modified: package.json|3 9
+Modified: src/browser/DeviceProxy.js|5 5
+Modified: src/windows/DeviceProxy.js|22 24
+Modified: tests/tests.js|19 18
+Modified: www/device.js|22 19
+
+Revision: a3dc4bf010848eec94139cc0a037bb2866cf8a3d
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 18:46:58
+Message:
+ci(appveyor): adds x64 build (#123) #MsgLength=80
+
+
+----
+Modified: .appveyor.yml|4 0
+
+Revision: aefa6b2739b5b3a83dd4e1d605cd0d9f8d3d6650
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:27:58
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Modified: CONTRIBUTING.md|4 4
+
+Revision: 846373abbab299ff8f19dd42568d3209b42136be
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:40:02
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: 9c66fa1b8defce5cacd5c0c6fb18be99e5ce3d00
+Author: Tim Brust <github@timbrust.de>
+Date: 22/08/2020 20:33:31
+Message:
+ci(travis): updates Android API level (#127) #MsgLength=46
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 64ee3cb010cac5a28a5025d739cc3b9ad8f7774b
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/09/2020 18:35:34
+Message:
+ci(travis): update osx xcode image (#128) #MsgLength=136
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 4c18d1f2b70606b9311ed20c234b560b49107b28
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 03/10/2020 03:43:19
+Message:
+chore: clean up package.json (#132) #MsgLength=139
+
+
+----
+Modified: package.json|2 7
+
+Revision: 2fc1d3cac0ed37a37de6a6aa18e7955342037a1d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/11/2020 16:13:20
+Message:
+ci: add node-14.x to workflow (#136) #MsgLength=38
+
+
+----
+Modified: .appveyor.yml|1 0
+Modified: .travis.yml|1 1
+
+Revision: c1b76be3e81a4c96cbbdfa0bc4338510a8a4a2e5
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/09/2021 21:17:47
+Message:
+ci: add gh-actions workflows (#141) #MsgLength=37
+
+
+----
+Added: .github/workflows/android.yml|148 0
+Added: .github/workflows/chrome.yml|73 0
+Added: .github/workflows/ios.yml|88 0
+Added: .github/workflows/lint.yml|56 0
+
+Revision: dbe1616395df4b54d2a7d37fba658f916c395b28
+Author: Shashank Agrawal <shashank@wizpanda.com>
+Date: 24/09/2021 01:55:38
+Message:
+docs: Update information about device.uuid for Android (#138) #MsgLength=210
+
+
+----
+Modified: README.md|16 1
+
+Revision: fb876b0ce0af88e934e7a0c47b4c2cdd5db32a7d
+Author: Norman Breau <norman@normanbreau.com>
+Date: 24/09/2021 22:07:34
+Message:
+doc: Noted android quirks on serial property (#143) #MsgLength=230
+
+
+----
+Modified: README.md|3 0
+
+Revision: 17c3d8fabec4e34394eb2dcaaa6b30662647312c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 23:07:13
+Message:
+ci: remove travis & appveyor (#144) #MsgLength=37
+
+
+----
+Deleted: .appveyor.yml|0 33
+Modified: .npmignore|0 1
+Deleted: .travis.yml|0 119
+Modified: README.md|0 4
+
+Revision: 22c85fb84509e4450e158f5eaaf823e73be048d8
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:16:48
+Message:
+ci: add action-badge (#145) #MsgLength=29
+
+
+----
+Modified: README.md|2 0
+
+Revision: db1ee07e234ee6e5efe305b4592e04dedaa21c81
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/10/2021 20:08:45
+Message:
+ci(ios): update workflow w/ iOS 15 (#146) #MsgLength=43
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: 62277d5e1ed1990c03578f7a0741eb4f61844d50
+Author: エリス <erisu@users.noreply.github.com>
+Date: 31/03/2022 07:55:13
+Message:
+chore: bump plugin to 2.1.0-dev (#153) #MsgLength=40
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f6cf8a6b98ce39fe53a0771d0fd58cd7837cba40
+Author: エリス <erisu@users.noreply.github.com>
+Date: 31/03/2022 11:32:32
+Message:
+feat(electron): add support (#135) #MsgLength=302
+
+
+----
+Added: .eslintignore|1 0
+Modified: .gitignore|1 7
+Modified: .npmignore|2 0
+Modified: package.json|4 1
+Modified: plugin.xml|9 0
+Added: src/electron/index.js|42 0
+Added: src/electron/package.json|20 0
+
+Revision: 3b48f30c6055e5ecbb46930ab6619cee3993d6ce
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 31/03/2022 14:01:44
+Message:
+fix(osx): rename classes to fix plugin (#152) #MsgLength=47
+
+
+----
+Modified: plugin.xml|1 1
+Modified: src/osx/CDVDevice.h|1 1
+Modified: src/osx/CDVDevice.m|1 1
+
+Revision: 5b3d2cb8896fde8ca3ed94047a16d47fb405779a
+Author: Bas Bosman <github@nazgul.nu>
+Date: 01/04/2022 09:50:04
+Message:
+chore(electron): fix package.json typo (#154) #MsgLength=47
+
+
+----
+Modified: src/electron/package.json|1 1
+
+Revision: 1e582ab9465784d972bc049424ad05e3a6b6b37d
+Author: Tim Brust <github@timbrust.de>
+Date: 01/04/2022 10:32:07
+Message:
+docs: various README enhancments (#124) #MsgLength=264
+
+
+----
+Modified: README.md|26 35
+
+Revision: 45a131697033bd8dafa8e39c20076f4fc78e3040
+Author: エリス <erisu@users.noreply.github.com>
+Date: 01/04/2022 20:14:59
+Message:
+doc(README): update device.cordova info (#156) #MsgLength=48
+
+
+----
+Modified: README.md|11 1
+
+Revision: d217d6ae10ce599c67304010e1c253f12b19594b
+Author: エリス <erisu@users.noreply.github.com>
+Date: 01/04/2022 21:36:59
+Message:
+feat(android): getInfo response to include sdkVersion (#157) #MsgLength=311
+
+
+----
+Modified: README.md|5 0
+Modified: src/android/Device.java|2 3
+Modified: www/device.js|6 0
+
+Revision: 3a30f9b93bbee7abda99db6df0dd3e7ee2eb6a52
+Author: エリス <erisu@users.noreply.github.com>
+Date: 01/04/2022 21:40:32
+Message:
+doc(ios): add device.model quirks (#158) #MsgLength=42
+
+
+----
+Modified: README.md|10 0
+
+Revision: dd2186cb40eeb4414e455fee8bfc542afb376a72
+Author: エリス <erisu@users.noreply.github.com>
+Date: 05/04/2022 13:43:12
+Message:
+chore: rebuild package-lock v2 (#166) #MsgLength=39
+
+
+----
+Modified: package-lock.json|2824 483
+
+Revision: 6b09b888d4d2cc2f715d44355cba151d091d762f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 07/04/2022 16:55:14
+Message:
+feat(ios): detect if app is running on a macOS desktop with Apple Silicon (#167) #MsgLength=385
+
+
+----
+Modified: README.md|13 0
+Modified: src/ios/CDVDevice.m|18 3
+Modified: src/osx/CDVDevice.m|14 1
+Modified: www/device.js|5 0
+
+Revision: ee2b768a2b927e6b3897cc9e4bc49b1590b93440
+Author: Erisu <erisu@apache.org>
+Date: 08/04/2022 08:19:04
+Message:
+Updated version and RELEASENOTES.md for release 2.1.0 (device-v2.1.0) #MsgLength=70
+
+
+----
+Modified: RELEASENOTES.md|27 0
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a0c12d7f778f6417eca1ba239ee849c835c281e5
+Author: Erisu <erisu@apache.org>
+Date: 11/04/2022 10:00:39
+Message:
+Increment package version to 2.1.1-dev #MsgLength=39
+
+
+----
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 901bd8ad3663d2eea2c9d62f6cb73b0918576bf7
+Author: Philip Peitsch <philip.peitsch@gmail.com>
+Date: 08/07/2022 16:42:40
+Message:
+doc(android): clarify documentation and types for sdkVersion field (#174) #MsgLength=75
+
+
+----
+Modified: README.md|1 5
+Modified: types/index.d.ts|2 0
+
+Revision: 7d55d888ae30032d82b73acbf2e66a8ed443bdd4
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/07/2022 13:41:09
+Message:
+ci(android): update java requirement for cordova-android@11 (#175) #MsgLength=68
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: 0cce7b4ce0a5730f6a2ddafcc28044c1e58f66e9
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/07/2022 16:51:30
+Message:
+chore(npm): rebuild package-lock (#177) #MsgLength=41
+
+
+----
+Modified: package-lock.json|349 220
+
+Revision: c568f7ef0244d04866294b65842d7cdb990b0018
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/08/2022 23:42:03
+Message:
+ci: sync workflow with paramedic (#180) #MsgLength=41
+
+
+----
+Modified: .github/workflows/android.yml|12 22
+Modified: .github/workflows/ios.yml|4 13
+

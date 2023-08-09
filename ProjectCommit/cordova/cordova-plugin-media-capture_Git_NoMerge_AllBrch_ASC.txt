@@ -1,0 +1,3626 @@
+Revision: 746eb2754e318a3493335b2c75d827fc649e8729
+Author: Joe Bowser <bowserj@apache.org>
+Date: 04/04/2013 05:14:18
+Message:
+Initial Commit #MsgLength=15
+
+
+----
+Added: plugin.xml|17 0
+Added: src/android/Capture.java|448 0
+
+Revision: 1a7a1fa68b8f0b6609f37f825ca91137fd94c89a
+Author: Joe Bowser <bowserj@apache.org>
+Date: 14/05/2013 02:43:28
+Message:
+Updating MediaCapture based on changes in master, read pre-3.0 commit history for author info #MsgLength=94
+
+
+----
+Modified: src/android/Capture.java|9 4
+
+Revision: 9b337a16c0dec50e91261eda337de213b08a7c16
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/05/2013 05:36:35
+Message:
+initial commit, added README file #MsgLength=34
+
+
+----
+Added: README.md|2 0
+
+Revision: 95562e020ce14b14893b9cc3c9d2394b2e1fc784
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/05/2013 05:37:36
+Message:
+added native iOS files #MsgLength=23
+
+
+----
+Added: src/ios/CDVAvailability.h|88 0
+Added: src/ios/CDVCapture.h|118 0
+Added: src/ios/CDVCapture.m|845 0
+Added: src/ios/CDVFile.h|106 0
+Added: src/ios/CDVJSON.h|30 0
+
+Revision: 90a7b8de3a358e1fd26b149e6139627f8005368d
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/05/2013 05:39:38
+Message:
+added JS files from Cordova-JS #MsgLength=31
+
+
+----
+Added: www/CaptureAudioOptions.js|32 0
+Added: www/CaptureError.js|40 0
+Added: www/CaptureImageOptions.js|30 0
+Added: www/CaptureVideoOptions.js|32 0
+Added: www/ConfigurationData.js|36 0
+Added: www/MediaFile.js|55 0
+Added: www/MediaFileData.js|39 0
+Added: www/capture.js|93 0
+
+Revision: 41691a326c0b9e1d600774d6a1f4dfcc195294e5
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/05/2013 05:39:57
+Message:
+initial config added #MsgLength=21
+
+
+----
+Modified: plugin.xml|45 2
+
+Revision: 717476f7aa39f881a5234fc1b55f13a06ac82838
+Author: hermwong <herm.wong@gmail.com>
+Date: 12/06/2013 03:17:29
+Message:
+added Android permissions for recording audion/video & writing to the file system #MsgLength=82
+
+
+----
+Modified: plugin.xml|6 0
+
+Revision: 92344d8157448dc95a8be420210f6d3cae2f0baf
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 11/06/2013 06:48:02
+Message:
+first pass at wp7 support #MsgLength=26
+
+
+----
+Modified: plugin.xml|17 0
+Added: src/wp7/Capture.cs|736 0
+Added: src/wp7/UI/AudioCaptureTask.cs|107 0
+Added: src/wp7/UI/AudioRecorder.xaml|66 0
+Added: src/wp7/UI/AudioRecorder.xaml.cs|306 0
+Added: src/wp7/UI/VideoCaptureTask.cs|105 0
+Added: src/wp7/UI/VideoRecorder.xaml|52 0
+Added: src/wp7/UI/VideoRecorder.xaml.cs|405 0
+
+
+Revision: 6d3edfc6de7ea43bcfcf2049dbd3f9d93fa9504e
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 15/06/2013 07:04:22
+Message:
+[CB-3703] added capabilities for wp7 #MsgLength=37
+
+
+----
+Modified: plugin.xml|5 0
+Modified: src/wp7/UI/AudioRecorder.xaml.cs|27 3
+
+Revision: 0243aad65f4e40a8a2f1f4fa6fba3049dec29b28
+Author: Tim Kim <timk@adobe.com>
+Date: 20/06/2013 07:09:23
+Message:
+[CB-3700] - Fixed plugin.xml, js references, and java files #MsgLength=60
+
+
+----
+Modified: plugin.xml|8 4
+Modified: src/android/Capture.java|6 12
+Modified: www/MediaFile.js|2 2
+Modified: www/capture.js|1 1
+
+Revision: 1e0d15d6cfb48e576785efec8b0803e6a4696a02
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/06/2013 13:13:53
+Message:
+removed core files #MsgLength=19
+
+
+----
+Modified: plugin.xml|1 2
+Deleted: src/ios/CDVAvailability.h|0 88
+Deleted: src/ios/CDVFile.h|0 106
+Deleted: src/ios/CDVJSON.h|0 30
+
+Revision: 8ee164ed131704c374f4b98e96163127f88d5c4f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 22/06/2013 05:53:31
+Message:
+added docs + tests #MsgLength=19
+
+
+----
+Added: docs/MediaError/mediaError.md|45 0
+Added: docs/Parameters/mediaError.md|33 0
+Added: docs/capture/CaptureCB.md|47 0
+Added: docs/capture/CaptureError.md|37 0
+Added: docs/capture/CaptureErrorCB.md|44 0
+Added: docs/capture/ConfigurationData.md|63 0
+Added: docs/capture/MediaFile.getFormatData.md|64 0
+Added: docs/capture/MediaFile.md|37 0
+Added: docs/capture/MediaFileData.md|65 0
+Added: docs/capture/capture.md|133 0
+Added: docs/capture/captureAudio.md|152 0
+Added: docs/capture/captureAudioOptions.md|52 0
+Added: docs/capture/captureImage.md|168 0
+Added: docs/capture/captureImageOptions.md|41 0
+Added: docs/capture/captureVideo.md|171 0
+Added: docs/capture/captureVideoOptions.md|49 0
+Added: docs/media.getCurrentPosition.md|176 0
+Added: docs/media.getDuration.md|167 0
+Added: docs/media.md|145 0
+Added: docs/media.pause.md|167 0
+Added: docs/media.play.md|200 0
+Added: docs/media.release.md|159 0
+Added: docs/media.seekTo.md|161 0
+Added: docs/media.setVolume.md|178 0
+Added: docs/media.startRecord.md|155 0
+Added: docs/media.stop.md|172 0
+Added: docs/media.stopRecord.md|142 0
+Added: test/autotest/html/HtmlReporter.js|101 0
+Added: test/autotest/html/HtmlReporterHelpers.js|60 0
+Added: test/autotest/html/ReporterView.js|164 0
+Added: test/autotest/html/SpecView.js|79 0
+Added: test/autotest/html/SuiteView.js|22 0
+Added: test/autotest/html/TrivialReporter.js|192 0
+Added: test/autotest/index.html|60 0
+Added: test/autotest/jasmine.css|81 0
+Added: test/autotest/jasmine.js|2530 0
+Added: test/autotest/pages/capture.html|71 0
+Added: test/autotest/test-runner.js|62 0
+Added: test/autotest/tests/.DS_Store|0 0
+Added: test/autotest/tests/capture.tests.js|113 0
+Added: test/cordova-incl.js|85 0
+Added: test/index.html|64 0
+Added: test/main.js|162 0
+Added: test/master.css|164 0
+
+Revision: ce5b9edc501da65894c435bfba1c1ecb99425474
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 22/06/2013 09:08:36
+Message:
+updated for ios #MsgLength=16
+
+
+----
+Modified: plugin.xml|0 3
+Modified: src/ios/CDVCapture.h|1 1
+Modified: src/ios/CDVCapture.m|2 2
+
+Revision: 8983aa45524e541be29b1ee929021cf0f8c76513
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 25/06/2013 06:54:01
+Message:
+[CB-3704] first pass wp8 support #MsgLength=33
+
+
+----
+Modified: plugin.xml|24 0
+Added: src/wp8/Capture.cs|736 0
+Added: src/wp8/UI/AudioCaptureTask.cs|107 0
+Added: src/wp8/UI/AudioRecorder.xaml|66 0
+Added: src/wp8/UI/AudioRecorder.xaml.cs|330 0
+Added: src/wp8/UI/VideoCaptureTask.cs|105 0
+Added: src/wp8/UI/VideoRecorder.xaml|52 0
+Added: src/wp8/UI/VideoRecorder.xaml.cs|405 0
+
+Revision: cf675e631a5994aba9c8a8a07868fd58d6494190
+Author: Don Coleman <dcoleman@chariotsolutions.com>
+Date: 26/06/2013 01:16:52
+Message:
+[CB-3999] re-enable video duration #MsgLength=35
+
+
+----
+Modified: src/ios/CDVCapture.m|4 4
+
+Revision: fb38b38639430edc8ae0df2593f73c87d5a92072
+Author: Don Coleman <don@apache.org>
+Date: 26/06/2013 02:59:35
+Message:
+[CB-3998] video duration is an int #MsgLength=35
+
+
+----
+Modified: src/android/Capture.java|5 5
+
+Revision: b258f27941bb2eadfe6c9715125393c07f2ccf07
+Author: Don Coleman <don@apache.org>
+Date: 26/06/2013 03:01:19
+Message:
+[CB-3999] remove note about duration not being supported on ios #MsgLength=64
+
+
+----
+Modified: docs/capture/captureVideoOptions.md|0 2
+
+Revision: a9151bc6e03751514d9bc29597908e16f49ea5fe
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 26/06/2013 06:30:15
+Message:
+Added .gitignore #MsgLength=17
+
+
+----
+Added: .gitignore|1 0
+
+Revision: 49ed92e2b4cc0e3f0d8e6f0017f10bddad7a1c01
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 26/06/2013 06:31:06
+Message:
+[CB-3701] Breakout Media Capture Plugin for iOS (re-fix) #MsgLength=57
+
+
+----
+Modified: plugin.xml|1 0
+Added: src/ios/CDVCapture.bundle/controls_bg.png|0 0
+Added: src/ios/CDVCapture.bundle/controls_bg@2x.png|0 0
+Added: src/ios/CDVCapture.bundle/controls_bg@2x~ipad.png|0 0
+Added: src/ios/CDVCapture.bundle/controls_bg~ipad.png|0 0
+Added: src/ios/CDVCapture.bundle/microphone-568h@2x~iphone.png|0 0
+Added: src/ios/CDVCapture.bundle/microphone.png|0 0
+Added: src/ios/CDVCapture.bundle/microphone@2x.png|0 0
+Added: src/ios/CDVCapture.bundle/microphone@2x~ipad.png|0 0
+Added: src/ios/CDVCapture.bundle/microphone~ipad.png|0 0
+Added: src/ios/CDVCapture.bundle/record_button.png|0 0
+Added: src/ios/CDVCapture.bundle/record_button@2x.png|0 0
+Added: src/ios/CDVCapture.bundle/record_button@2x~ipad.png|0 0
+Added: src/ios/CDVCapture.bundle/record_button~ipad.png|0 0
+Added: src/ios/CDVCapture.bundle/recording_bg.png|0 0
+Added: src/ios/CDVCapture.bundle/recording_bg@2x.png|0 0
+Added: src/ios/CDVCapture.bundle/recording_bg@2x~ipad.png|0 0
+Added: src/ios/CDVCapture.bundle/recording_bg~ipad.png|0 0
+Added: src/ios/CDVCapture.bundle/stop_button.png|0 0
+Added: src/ios/CDVCapture.bundle/stop_button@2x.png|0 0
+Added: src/ios/CDVCapture.bundle/stop_button@2x~ipad.png|0 0
+Added: src/ios/CDVCapture.bundle/stop_button~ipad.png|0 0
+Modified: src/ios/CDVCapture.m|7 7
+
+Revision: 743a97f0863fd8e5ddc649e108d3126fc734f653
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:56
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|3 4
+
+Revision: 1ad3a3cc22324e3755ad08291df7553bcb0682e2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 07:46:10
+Message:
+Fix require paths that were broken by plugin id changes #MsgLength=56
+
+
+----
+Modified: docs/capture/CaptureError.md|1 1
+Modified: docs/capture/MediaFile.getFormatData.md|1 1
+Modified: docs/capture/MediaFileData.md|1 1
+Modified: docs/media.setVolume.md|1 1
+Modified: src/wp7/Capture.cs|1 1
+Modified: src/wp7/UI/AudioRecorder.xaml.cs|1 1
+Modified: src/wp7/UI/VideoRecorder.xaml.cs|1 1
+Modified: src/wp8/Capture.cs|1 1
+Modified: src/wp8/UI/AudioRecorder.xaml.cs|1 1
+Modified: src/wp8/UI/VideoRecorder.xaml.cs|1 1
+Modified: www/MediaFile.js|2 2
+Modified: www/capture.js|1 1
+
+Revision: f81ff332e620821806c3b6a419e7f3f362e86b0c
+Author: bennmapes <benn.mapes@gmail.com>
+Date: 03/07/2013 06:33:44
+Message:
+fixed capabilities for wp8 #MsgLength=27
+
+
+----
+Modified: plugin.xml|5 2
+
+Revision: baf48933c64637c053fe1acec601a2edf13588b6
+Author: bennmapes <benn.mapes@gmail.com>
+Date: 04/07/2013 01:07:23
+Message:
+another capabilities fix for wp8 #MsgLength=33
+
+
+----
+Modified: plugin.xml|0 1
+
+Revision: aef150793ce860b07c013592f92ea6a8e7d8af87
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 07:00:37
+Message:
+[CB-4122] remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|14 14
+Renamed: src/wp/Capture.cs [from src/wp7/Capture.cs]|0 0
+Renamed: src/wp/UI/AudioCaptureTask.cs [from src/wp7/UI/AudioCaptureTask.cs]|0 0
+Renamed: src/wp/UI/AudioRecorder.xaml [from src/wp7/UI/AudioRecorder.xaml]|0 0
+Renamed: src/wp/UI/AudioRecorder.xaml.cs [from src/wp7/UI/AudioRecorder.xaml.cs]|0 0
+Renamed: src/wp/UI/VideoCaptureTask.cs [from src/wp7/UI/VideoCaptureTask.cs]|0 0
+Renamed: src/wp/UI/VideoRecorder.xaml [from src/wp7/UI/VideoRecorder.xaml]|0 0
+Renamed: src/wp/UI/VideoRecorder.xaml.cs [from src/wp7/UI/VideoRecorder.xaml.cs]|0 0
+Deleted: src/wp8/Capture.cs|0 736
+Deleted: src/wp8/UI/AudioCaptureTask.cs|0 107
+Deleted: src/wp8/UI/AudioRecorder.xaml|0 66
+Deleted: src/wp8/UI/AudioRecorder.xaml.cs|0 330
+Deleted: src/wp8/UI/VideoCaptureTask.cs|0 105
+Deleted: src/wp8/UI/VideoRecorder.xaml|0 52
+Deleted: src/wp8/UI/VideoRecorder.xaml.cs|0 405
+
+Revision: d3be3b502ffab818281fb0c055e2697d2501abca
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 02:55:06
+Message:
+[CB-4131] Use relative require paths in media-capture plugin. #MsgLength=62
+
+
+----
+Modified: www/MediaFile.js|1 1
+Modified: www/capture.js|1 1
+
+Revision: c53bf19a5c1a53518b5697d09aaecec0fb7d795d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: src/android/Capture.java|4 4
+
+Revision: 4328d48fe409c45e46461fb06ae9ff9714c90e06
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:16:34
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Modified: .gitignore|23 1
+
+Revision: 9f1f6a7e6bffe33f1253fd759ac431311b4b0854
+Author: lorinbeer <lorin@adobe.com>
+Date: 17/07/2013 07:36:01
+Message:
+[CB-3702] media capture plugin breakout initial commit #MsgLength=55
+
+
+----
+Modified: plugin.xml|8 0
+Added: src/blackberry10/index.js|94 0
+
+Revision: 84b440d628ee95cd407f2d7bb3aa24951a200b1d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|3 0
+
+Revision: 8ea467ba66afc4909dfdfa206aa4b0444eb68ae3
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/07/2013 08:08:51
+Message:
+[CB-4368] Explicit CoreGraphics.framework dependency should be specified for some core plugins #MsgLength=95
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: ba76f1121b34376fe11c58bb30ebe8ab8481281a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/07/2013 08:15:15
+Message:
+[CB-4366] Explicit MobileCoreServices.framework dependency should be specified for some core plugins #MsgLength=101
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: 55d31b85f76528fc42c8883745cd469c406fd33f
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:32:26
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|4 0
+
+Revision: c747de2bb9e17b59e3a04cf54829c316df927b46
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 31/07/2013 09:07:45
+Message:
+[Windows8][CB-4447] Added Windows8 support #MsgLength=43
+
+
+----
+Modified: plugin.xml|15 0
+Added: src/windows8/CaptureProxy.js|161 0
+Added: src/windows8/MediaFile.js|65 0
+
+Revision: 5ffbcd0784aea34a0f0388aaa4b5e6e50c353079
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 01/08/2013 00:42:36
+Message:
+[CB-4392] Remove bad subdirectory reference from plugin.xml #MsgLength=60
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: b2318e91f154e62e25ba30ed5de9ce8626baf163
+Author: Joe Bowser <bowserj@apache.org>
+Date: 01/08/2013 05:23:23
+Message:
+CB-4471: Mitigating Android 4.3 errors where it's not passing the data for video.  Strange behaviour introduced with 4.3 #MsgLength=121
+
+
+----
+Modified: src/android/Capture.java|14 7
+
+Revision: d55182c87f946f6875cea6c6c7f16ef864e9d94b
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: c522b44e86d69d3fac5e42664bfa3c5f7cccb1c1
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 718f916b3ee4f5299d14aec73ef47d3c4a2b4ff3
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 06:15:34
+Message:
+[plugin.xml] adding android namespace #MsgLength=38
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: 2dcea847ed6676876c73d67d9af0036ce181a0f4
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 05:46:53
+Message:
+updated readme, namespace and name tag #MsgLength=39
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|1 2
+
+Revision: ef2cf1048eb8e45f3e19c72de031a72cec55c131
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-media-capture to its own Java package. #MsgLength=69
+
+
+----
+Modified: plugin.xml|2 2
+Modified: src/android/Capture.java|1 1
+
+Revision: 18c7feb04b0ae30d272ded0ce328a2acbc2e695d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 06:16:46
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 9a8cc8f0cc39b5bcdf155377f5931d39c12e135f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+Add empty CHANGELOG.md #MsgLength=23
+
+
+----
+Added: CHANGELOG.md|23 0
+
+Revision: 43a0982529d3a251c41c9ccce6a9dd86d61cabb4
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 17/09/2013 06:30:26
+Message:
+[CB-4848] Fix Xcode 5 semantic issues for Media Capture plugin #MsgLength=63
+
+
+----
+Modified: src/ios/CDVCapture.m|7 4
+
+Revision: a99ab1b4f79df49b5bea34d52f68f4e6009f54ed
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 17/09/2013 06:59:43
+Message:
+[CB-4847] iOS 7 microphone access requires user permission - if denied, CDVCapture, CDVSound does not handle it properly #MsgLength=121
+
+
+----
+Modified: src/ios/CDVCapture.m|38 16
+
+Revision: 545da9e81ab013d6fecba8f382f8106f9b9a1ea7
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 17/09/2013 08:24:11
+Message:
+Revert "[CB-4847] iOS 7 microphone access requires user permission - if denied, CDVCapture, CDVSound does not handle it properly" #MsgLength=193
+
+
+----
+Modified: src/ios/CDVCapture.m|16 38
+
+Revision: 0774b947105b25c0b2295cb5bd02bb1a40c7b5e1
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 17/09/2013 08:24:18
+Message:
+Revert "[CB-4848] Fix Xcode 5 semantic issues for Media Capture plugin" #MsgLength=135
+
+
+----
+Modified: src/ios/CDVCapture.m|4 7
+
+Revision: f6451d7b9fd303c46a352b15224ddafc8f00918d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:22
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 84027b269d2b0270b12a9d25a7e87598ac716b0d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/09/2013 03:02:45
+Message:
+[CB-4763] Use own version of FileHelper. #MsgLength=41
+
+
+----
+Modified: plugin.xml|1 0
+Modified: src/android/Capture.java|8 8
+Added: src/android/FileHelper.java|60 0
+
+Revision: cac34ea509ea161c8ce40b56883d88e28fdad86e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/09/2013 04:01:28
+Message:
+[CB-4764] Remove reference to DirectoryManager from Capture.java #MsgLength=65
+
+
+----
+Modified: src/android/Capture.java|21 3
+
+Revision: d93852dd8f309abdfc7ad4e6d1f6556bd7a21166
+Author: Tim Kim <timk@adobe.com>
+Date: 12/09/2013 05:41:03
+Message:
+[CB-4488] - added manual capture test #MsgLength=38
+
+
+----
+Added: test/capture/index.html|150 0
+Modified: test/index.html|1 0
+
+Revision: 81ad45820696c8b370dffe12d4348763a9dc9e96
+Author: James Jong <wjamesjong@gmail.com>
+Date: 17/09/2013 03:57:47
+Message:
+[CB-4826] Fix XCode 5 capture plugin warnings #MsgLength=70
+
+
+----
+Modified: src/ios/CDVCapture.m|9 3
+
+Revision: 1dcba489e2cc8fcc5505977de6c025348d362238
+Author: James Jong <wjamesjong@gmail.com>
+Date: 17/09/2013 05:00:01
+Message:
+[CB-4826] Fix warning using UITextAlignmentCenter #MsgLength=99
+
+
+----
+Modified: src/ios/CDVCapture.m|5 0
+
+Revision: f87cec112972607fa68a6831e65f500ff182d74d
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 17/09/2013 06:59:43
+Message:
+[CB-4847] iOS 7 microphone access requires user permission - if denied, CDVCapture, CDVSound does not handle it properly #MsgLength=121
+
+
+----
+Modified: src/ios/CDVCapture.m|38 16
+
+Revision: 0e8d6c5d970ff0caa10af69728fea3d48100c818
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: 5a7ae360b8e8490285aef321b73e09e65b6b5c1e
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:34:17
+Message:
+CB-4889 renaming org.apache.cordova.core.media-capture to org.apache.cordova.media-capture and updating dependency #MsgLength=115
+
+
+----
+Modified: plugin.xml|3 3
+
+Revision: 967cb228d37d56e5da48d968840330b4bddcef6a
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:10:19
+Message:
+CB-4889 #MsgLength=8
+
+
+----
+Modified: src/windows8/CaptureProxy.js|7 7
+Modified: src/windows8/MediaFile.js|2 2
+Modified: www/MediaFile.js|1 1
+
+Revision: ef3c529568df13a8636603ebe49becb2fe9fb77c
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 24/09/2013 16:56:51
+Message:
+[windows8] commandProxy was moved #MsgLength=34
+
+
+----
+Modified: src/windows8/CaptureProxy.js|1 1
+
+Revision: f9ec191a365a639af660ed8bc548818613927c54
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 24/09/2013 16:56:51
+Message:
+[windows8] commandProxy was moved #MsgLength=34
+
+
+----
+Modified: src/windows8/CaptureProxy.js|1 1
+
+
+Revision: f605eac08148fc0fc60941f2df3d6251e1bdb221
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:50:42
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: feaf9f35a1570d62ba00ec1811f1e7b7f7169a48
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 08:50:56
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.2.2 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|14 1
+Modified: plugin.xml|1 1
+
+
+Revision: 2481087e20cd3ab16796a55371048ab02b8947cb
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:15
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 2595d08cc1059393d90fc6625a57fdf8e380232c
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 09/10/2013 02:45:04
+Message:
+CB-4720: fixed incorrect feature tag in plugin.xml for wp #MsgLength=58
+
+
+----
+Modified: plugin.xml|4 4
+
+Revision: 1eae635b7c1139754fc8dbddf24cc35a31effc30
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/10/2013 06:31:36
+Message:
+[CB-5010] Updated version and RELEASENOTES.md for release 0.2.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+
+Revision: 8414c7303ee361aa40459c6a0963d286b37e95c5
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/10/2013 07:06:39
+Message:
+[CB-5010] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: d7ab62ffc93a41c1efedcabef6caf3a8491d7757
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/10/2013 04:47:55
+Message:
+CB-5128: added repo + issue tag to plugin.xml for media capture plugin #MsgLength=71
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: 2ebeb2bb503692a889d602dfe41e4ec47000045a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 25/10/2013 06:38:10
+Message:
+CB-5199 - ios - Media Capture - UI issues under iOS 7 #MsgLength=54
+
+
+----
+Modified: src/ios/CDVCapture.m|21 0
+
+Revision: 09db3605b0e97b25a2ba885bf3bf8d5db8b53b5b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:05:56
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.2.4 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+
+Revision: 6b1a781ee8dbbea408f0316319d5f1733947d225
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:16
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 237d55f64ba68e4c70bb33750b4a7f3fdbfeda3e
+Author: Joe Bowser <bowserj@apache.org>
+Date: 05/11/2013 05:34:31
+Message:
+CB-5275: CaptureImage and CaptureVideo have runnables and CaptureVideo works on 4.2.  Still doesn't work for 4.3 #MsgLength=113
+
+
+----
+Modified: src/android/Capture.java|79 61
+
+Revision: 1b42035b88bc3554f9ee466f8f6e951c44f3e0c4
+Author: lmnbeyond <lmnbeyond@gmail.com>
+Date: 08/11/2013 14:36:11
+Message:
+CB-5291 - ios - Media Capture Audio - status bar issues under iOS 7 #MsgLength=196
+
+
+----
+Modified: src/ios/CDVCapture.m|24 0
+
+Revision: 0b37dac4e54dfd6057cbabf681fe4b0ce247c536
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 06:15:24
+Message:
+Added amazon-fireos platform. Change to use amazon-fireos as a platform if user agent string contains 'cordova-amazon-fireos' #MsgLength=126
+
+
+----
+Modified: plugin.xml|18 0
+Modified: test/cordova-incl.js|2 1
+
+
+Revision: 291b25f5cce3493812d0fcd3742f7ec6dad57c79
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 18/11/2013 19:08:23
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|17 1
+Added: src/ubuntu/back.png|0 0
+Added: src/ubuntu/capture.cpp|167 0
+Added: src/ubuntu/capture.h|84 0
+Added: src/ubuntu/microphone.png|0 0
+Added: src/ubuntu/record_off.png|0 0
+Added: src/ubuntu/record_on.png|0 0
+Added: src/ubuntu/shoot.png|0 0
+Added: src/ubuntu/toolbar-left.png|0 0
+Added: src/ubuntu/toolbar-middle.png|0 0
+Added: src/ubuntu/toolbar-right.png|0 0
+
+
+Revision: 79a22d50a1953998d214e1eade8345f9c33f6565
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:31
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.2.5 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|7 1
+Modified: plugin.xml|1 1
+
+Revision: 09d74febdf0da60968ab31d643b0793ee45c8b6a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:03
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 7184efe7a00b13ca4b10938932a2092009818103
+Author: Jeff Sawatzky <jeff.sawatzky@scribblelive.com>
+Date: 10/12/2013 02:59:45
+Message:
+CB-5517 Fix the audio capture IO exception by putting it in a runnable #MsgLength=135
+
+
+----
+Modified: src/android/Capture.java|23 14
+
+Revision: 6e29860429b3206723a575a08e25c6724a014a6a
+Author: sgrebnov <sergei.grebnov@gmail.com>
+Date: 04/12/2013 21:02:45
+Message:
+CB-5569 Windows8. MediaFile constructor does not exist #MsgLength=55
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 8af169f6df3f165a47674a87acb55474c4a51c62
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/MediaError/mediaError.md|0 45
+Deleted: docs/Parameters/mediaError.md|0 33
+Deleted: docs/capture/CaptureCB.md|0 47
+Deleted: docs/capture/CaptureError.md|0 37
+Deleted: docs/capture/CaptureErrorCB.md|0 44
+Deleted: docs/capture/ConfigurationData.md|0 63
+Deleted: docs/capture/MediaFile.getFormatData.md|0 64
+Deleted: docs/capture/MediaFile.md|0 37
+Deleted: docs/capture/MediaFileData.md|0 65
+Deleted: docs/capture/capture.md|0 133
+Deleted: docs/capture/captureAudio.md|0 152
+Deleted: docs/capture/captureAudioOptions.md|0 52
+Deleted: docs/capture/captureImage.md|0 168
+Deleted: docs/capture/captureImageOptions.md|0 41
+Deleted: docs/capture/captureVideo.md|0 171
+Deleted: docs/capture/captureVideoOptions.md|0 47
+Deleted: docs/media.getCurrentPosition.md|0 176
+Deleted: docs/media.getDuration.md|0 167
+Deleted: docs/media.md|0 145
+Deleted: docs/media.pause.md|0 167
+Deleted: docs/media.play.md|0 200
+Deleted: docs/media.release.md|0 159
+Deleted: docs/media.seekTo.md|0 161
+Deleted: docs/media.setVolume.md|0 178
+Deleted: docs/media.startRecord.md|0 155
+Deleted: docs/media.stop.md|0 172
+Deleted: docs/media.stopRecord.md|0 142
+
+Revision: 276d36c430f4c0f1d3e3f5c7e833048fb34dcef2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 05:04:43
+Message:
+CB-5658 Add doc.index.md for Media Capture plugin #MsgLength=50
+
+
+----
+Modified: README.md|21 4
+Added: doc/index.md|597 0
+
+Revision: 2829f1b901111a74871b3ca83d0efba0a7b926cc
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:03
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: 1015694514aa1f47c21c0b5cf34d09a80373731b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.2.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: ccc74963af320c43602d8088ad9a2497bf941d3f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 89a36b15e408e6ecfc524fe7440e53542962a2e1
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 07/01/2014 23:57:53
+Message:
+CB-5685 [BlackBerry10] Add access_shared permission #MsgLength=52
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 66cfd638f5976835b06eee6ae626079209937233
+Author: Yangtb <yangtb@polyvi.com>
+Date: 11/09/2013 14:25:18
+Message:
+fixed  cordova cli add capture plugin not work wp #MsgLength=155
+
+
+----
+Modified: plugin.xml|4 4
+Modified: src/wp/UI/AudioCaptureTask.cs|1 1
+Modified: src/wp/UI/VideoCaptureTask.cs|1 1
+
+Revision: 0186fe890e61de365be7d748c2891977279485b9
+Author: Yangtb <yangtb@polyvi.com>
+Date: 11/09/2013 17:32:49
+Message:
+fixed cordova cli add capture plugin not work wp #MsgLength=154
+
+
+----
+Modified: src/wp/UI/AudioCaptureTask.cs|1 1
+Modified: src/wp/UI/VideoCaptureTask.cs|1 1
+
+
+Revision: 3ad7a3fb06f52cb3b5acdf43559a515ea9b148c5
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2014 07:32:33
+Message:
+CB-6422 [windows8] use cordova/exec/proxy #MsgLength=42
+
+
+----
+Modified: src/windows8/CaptureProxy.js|1 1
+
+Revision: 04398c9c0d459f85b7ebdfba32afbf651028319a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:52
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 60
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/capture.html|0 71
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/.DS_Store|0 0
+Deleted: test/autotest/tests/capture.tests.js|0 113
+Deleted: test/capture/index.html|0 150
+Deleted: test/cordova-incl.js|0 86
+Deleted: test/index.html|0 65
+Deleted: test/main.js|0 162
+Deleted: test/master.css|0 164
+
+Revision: 193aeb38db4ee28b625623e2c009e643e70ae59a
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 20/01/2014 22:47:37
+Message:
+[ubuntu] add missing file #MsgLength=26
+
+
+----
+Added: src/ubuntu/MediaCaptureWidget.qml|207 0
+
+Revision: 65cfc08ef34d939119061519328c4fb8f9490e72
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 21/01/2014 19:34:20
+Message:
+[ubuntu] request audio/camera/microphone permission #MsgLength=52
+
+
+----
+Modified: plugin.xml|7 0
+
+Revision: 3acc0b6624b0435a56d9038356d33204a51f8fac
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:59
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.2.7 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: 32d9b1c2159e122abe0a5b2c58f3221061c06d09
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:30
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 0c7941fb61c486e1ffd13e70ec114860e4527603
+Author: mbillau <mike.billau@gmail.com>
+Date: 31/01/2014 02:50:24
+Message:
+CB-5202 fix from lubogospod #MsgLength=28
+
+
+----
+Modified: src/android/Capture.java|13 3
+
+Revision: e187bd943da82f25d79c913f2bb6916b21113d99
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 00:56:29
+Message:
+CB-6114 Updated version and RELEASENOTES.md for release 0.2.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: 0ac37c5fea70167b76ceb1836c7fe548f8262c2e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 01:29:15
+Message:
+CB-6114 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 34cd79d41f371c2d5116ed33396084b89c4fec09
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+Revision: d1c40f2fb0c1ee2e0146aa175c05dd361860e0ff
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 00:56:29
+Message:
+CB-6114 Updated version and RELEASENOTES.md for release 0.2.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: 0cc5aee09822179b1dcda3a9a84152377deaa785
+Author: Yangtb <yangtb@polyvi.com>
+Date: 11/09/2013 17:32:49
+Message:
+fixed cordova cli add capture plugin not work wp #MsgLength=154
+
+
+----
+Modified: src/wp/UI/AudioCaptureTask.cs|1 1
+Modified: src/wp/UI/VideoCaptureTask.cs|1 1
+
+Revision: ce08a69ba98771de1a6295ab2ae4ddc126701d54
+Author: Yangtb <yangtb@polyvi.com>
+Date: 11/09/2013 14:25:18
+Message:
+fixed  cordova cli add capture plugin not work wp #MsgLength=155
+
+
+----
+Modified: plugin.xml|4 4
+Modified: src/wp/UI/AudioCaptureTask.cs|1 1
+Modified: src/wp/UI/VideoCaptureTask.cs|1 1
+
+
+
+
+Revision: f516d31b79d232745f5311aec3294127badee1cb
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:45:10
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+
+Revision: bf360f0eca5c0c04af620d02c6d4ebbd78b14f49
+Author: Ryan Willoughby <ryan.willoughby@nitobi.com>
+Date: 07/03/2014 05:52:34
+Message:
+Add rim xml namespaces declaration #MsgLength=35
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: 007630da4866d867321008c6b8e1ebf57f05f259
+Author: James Jong <wjamesjong@gmail.com>
+Date: 13/03/2014 01:12:50
+Message:
+CB-6212 iOS: fix warnings compiled under arm64 64-bit #MsgLength=54
+
+
+----
+Modified: src/ios/CDVCapture.m|1 1
+
+Revision: bd6af454227a9c791acfdb70ea592a54c888ef98
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 12/03/2014 23:45:23
+Message:
+CB-6016 [BlackBerry10] Add audio capture capability #MsgLength=52
+
+
+----
+Modified: doc/index.md|1 5
+Modified: src/blackberry10/index.js|23 1
+
+Revision: db9fa24cf8ba165aabae0460a9cbeb1dd1d67e62
+Author: James Jong <wjamesjong@gmail.com>
+Date: 28/03/2014 22:24:24
+Message:
+CB-6212 iOS: fix warnings compiled under arm64 64-bit #MsgLength=77
+
+
+----
+Modified: src/ios/CDVCapture.m|1 1
+
+Revision: 94e82396151226003ef404a3b879a7ad9e006ef7
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 03/04/2014 04:22:27
+Message:
+CB-6385: Specify file plugin dependency version #MsgLength=48
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: bb9fb051223aa8cb52c5f6eed5b07d8722d162fb
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 16/04/2014 03:25:20
+Message:
+CB-6152: Make mediafile compatible with file plugin #MsgLength=52
+
+
+----
+Modified: src/android/Capture.java|10 8
+Modified: src/ios/CDVCapture.m|13 0
+Modified: www/MediaFile.js|2 2
+Modified: www/capture.js|3 0
+
+Revision: 2e755c9ff7e3ead929f85e9f000b75e505369513
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:19:35
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+
+Revision: ae84ed3f31964bb5f5e7a7a53447c6d132be4edf
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.3.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|10 0
+Modified: plugin.xml|1 1
+
+Revision: e08c8a975fde768868e0937ec4d2d4f22c128faf
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: e19b1244047bdb106c008aea7717e249ceea04c3
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:31:57
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: 4f205ca4474ff013741295f63ff9b246dcb47505
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 16/05/2014 22:49:17
+Message:
+CB-6706: Relax dependency on file plugin #MsgLength=41
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a6ad875e8b114874ceedf11493ea526f5df63ff2
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:53:50
+Message:
+CB-6808 Add license #MsgLength=20
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: d99eb73fe0d4214b0fd52e7fbeb9cf224e017fdf
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 03/06/2014 15:42:59
+Message:
+Fixes captureTasks UI URIs #MsgLength=27
+
+
+----
+Modified: src/wp/UI/AudioCaptureTask.cs|1 1
+Modified: src/wp/UI/VideoCaptureTask.cs|1 1
+
+Revision: be274d7855df4db6b641532c5bfae40332ef7256
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/06/2014 02:22:41
+Message:
+Remove deprecated symbols for iOS < 6 #MsgLength=38
+
+
+----
+Modified: src/ios/CDVCapture.m|6 36
+
+Revision: 039dfe60524f72b866c2a869f22a5726de06fc01
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:36:23
+Message:
+Added translations to documentation. Github close #14 #MsgLength=54
+
+
+----
+Added: doc/de/index.md|541 0
+Added: doc/es/index.md|541 0
+Added: doc/fr/index.md|538 0
+Added: doc/it/index.md|538 0
+Added: doc/ja/index.md|538 0
+Added: doc/ko/index.md|538 0
+Added: doc/pl/index.md|541 0
+Added: doc/zh/index.md|538 0
+
+Revision: 70cd9a0ee3efbb3f894faf59001b54056790c33b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:43
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.3.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: plugin.xml|1 1
+
+Revision: 36b12f247ab09e20f8e6a3b18909f9dd1274959d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 1bef8d02dddbf4effeb501459b1de86e61b06c75
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 07/06/2014 02:28:13
+Message:
+CB-6890: Fix pluginManager access for 4.0.x branch #MsgLength=51
+
+
+----
+Modified: src/android/Capture.java|22 1
+
+Revision: 19f625a793988d976996a3afbf4edc7e78a2bdc9
+Author: Samir Silva <ssrico14@gmail.com>
+Date: 01/07/2014 02:57:31
+Message:
+[CB-6959] Port capture tests to plugin-test-framework #MsgLength=225
+
+
+----
+Added: test/tests.js|114 0
+
+Revision: 20cb02ce853c67cef00a712f95ffe665f317b706
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:36:23
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-media-capture #MsgLength=73
+
+
+----
+Added: doc/es/index.md|544 0
+
+Revision: a84d3c65be426f6479be4c23fc0a8f046576d59b
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:15:03
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-media-capture #MsgLength=73
+
+
+----
+Added: doc/fr/index.md|541 0
+
+
+
+
+Revision: a65173b9126046290988776abfe949a43f761ab3
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:49:51
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-media-capture #MsgLength=73
+
+
+----
+Added: doc/ja/index.md|538 0
+
+Revision: f5fe2d1b21917e617c4df78a95a5e483e78db072
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:22:28
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-media-capture #MsgLength=73
+
+
+----
+Modified: doc/es/index.md|1 4
+Modified: doc/fr/index.md|45 48
+Added: doc/it/index.md|538 0
+Added: doc/ko/index.md|538 0
+Added: doc/pl/index.md|541 0
+Added: doc/zh/index.md|538 0
+
+Revision: aca6ebd6c560494041df2e4d7be85dbf6bf2fc38
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:36:54
+Message:
+documentation translation: cordova-plugin-media-capture #MsgLength=56
+
+
+----
+Added: doc/de/index.md|541 0
+Modified: doc/ja/index.md|45 45
+
+
+Revision: de6fb48138a8283618b907a94a86ef4e9c370a56
+Author: Martin Bektchiev <martin.bektchiev@telerik.com>
+Date: 26/06/2014 15:11:29
+Message:
+CB-6978 captureImage() function fails in Android #MsgLength=49
+
+
+----
+Modified: src/android/Capture.java|13 1
+
+
+Revision: a6810a95a0e95e12c186ff72693851984eafe871
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:28:08
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-media-capture documentation translation: cordova-plugin-media-capture #MsgLength=119
+
+
+----
+Added: doc/ru/index.md|541 0
+
+
+Revision: 0312957883b4baf8287365484becd80ba6fb4bfd
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 19/07/2014 03:15:18
+Message:
+CB-6959 Added manual tests #MsgLength=27
+
+
+----
+Modified: test/tests.js|151 13
+
+Revision: 321e585cb225294e7457131b7c88486b6894935a
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 29/07/2014 04:27:56
+Message:
+added documentation for manual tests #MsgLength=37
+
+
+----
+Modified: test/tests.js|12 5
+
+Revision: 2407918f5db4e30844679ec197746850434b2c44
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 27/07/2014 00:17:56
+Message:
+ubuntu: support qt 5.2 #MsgLength=23
+
+
+----
+Modified: src/ubuntu/MediaCaptureWidget.qml|1 2
+Modified: src/ubuntu/capture.cpp|7 11
+Modified: src/ubuntu/capture.h|1 1
+
+Revision: 139e2806939469a4f890c1465e7036c60c11659e
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 27/07/2014 04:50:14
+Message:
+ubuntu: fix compler warnings #MsgLength=29
+
+
+----
+Modified: src/ubuntu/capture.cpp|3 5
+Modified: src/ubuntu/capture.h|3 3
+
+
+Revision: 373d1616681bf98402a1f6a9b58905c95e19c6b9
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:24
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.3.2 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+
+Revision: 4c8b67ebf0c7a9508e9d3ba43de57c6cc76f978a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:28
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 11ad97cd4ddbe6a202128477e6af2efd64d81c42
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 01/08/2014 03:31:51
+Message:
+Renamed test dir, added nested plugin.xml #MsgLength=42
+
+
+----
+Added: tests/plugin.xml|31 0
+Renamed: tests/tests.js [from test/tests.js]|0 0
+
+
+
+Revision: 5888a627f7c12f17573b2fa9907dc2ce76e44a7a
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:43
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.3.3 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b5685dcb03042dd6c63106274c1aa763f8ac5169
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:02
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: fa6ce5673716eed0a144b477664608dd0377f7e0
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:17
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: 3539bc20db30fc710a3f76b0c732b1fd50df0e56
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 01/09/2014 15:00:33
+Message:
+CB-7429 Adds media capture support for windows #MsgLength=176
+
+
+----
+Modified: src/windows8/CaptureProxy.js|337 40
+
+Revision: 5dce4c14b68a29632bc19875820ad55acef5a327
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 01/09/2014 15:27:46
+Message:
+CB-7429 Move windows8 and windows Proxies into one file #MsgLength=97
+
+
+----
+Modified: plugin.xml|34 3
+Renamed: src/windows/CaptureProxy.js [from src/windows8/CaptureProxy.js]|0 0
+Renamed: src/windows/MediaFile.js [from src/windows8/MediaFile.js]|0 0
+
+Revision: 8f05569dfed1bafa380b93567830f7cfc36678ed
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 12/09/2014 18:47:09
+Message:
+CB-7429 Fixes image capture manual tests on windows #MsgLength=52
+
+
+----
+Modified: tests/tests.js|4 0
+
+
+Revision: 82e748c605da140ecca8c5680a4b04de0cb0354b
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 03/09/2014 18:37:06
+Message:
+CB-7453 Adds fallback to m4a audio format when mp3 recording fails. #MsgLength=68
+
+
+----
+Modified: src/windows/CaptureProxy.js|50 24
+
+Revision: 852a053993667c63e62948e2826717abf5952665
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 07:10:13
+Message:
+ Updated version and RELEASENOTES.md for release 0.3.4 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: cb1c2944b240f41fa05c092a4fa64e793ddb6963
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 08:09:47
+Message:
+ Incremented plugin version. #MsgLength=29
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 83775703e1840ab39d6450e3f664710670180f62
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:12:54
+Message:
+CB-7700 cordova-plugin-media-capture documentation translation: cordova-plugin-media-capture #MsgLength=93
+
+
+----
+Modified: doc/de/index.md|4 4
+Modified: doc/es/index.md|5 5
+Modified: doc/pl/index.md|21 21
+Modified: doc/ru/index.md|32 32
+
+
+Revision: f7d70e2e8f8354743286011f70dcd79a3292a82e
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 21/10/2014 07:55:04
+Message:
+CB-7597 - Localizable.strings for Media Capture are in the default template, it should be in the plugin #MsgLength=104
+
+
+----
+Added: src/ios/CDVCapture.bundle/de.lproj/Localizable.strings|28 0
+Added: src/ios/CDVCapture.bundle/en.lproj/Localizable.strings|27 0
+Added: src/ios/CDVCapture.bundle/es.lproj/Localizable.strings|27 0
+Added: src/ios/CDVCapture.bundle/se.lproj/Localizable.strings|28 0
+Modified: src/ios/CDVCapture.m|13 3
+
+Revision: 9f8d409aa074c6cedc8a746ba45e8e85b58445ed
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.3.5 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 13ee8aacd4a3e9be190738a8e8f281622718b63f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:50
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ce8c6f5e054748cdb4632f75b4d44c136ef89190
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:13:05
+Message:
+CB-7977 Mention deviceready in plugin docs #MsgLength=43
+
+
+----
+Modified: doc/index.md|9 0
+
+Revision: 734e59852ea63904a33efe5af62dfdf176970c8a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/01/2015 22:49:20
+Message:
+CB-8351 Use argumentForIndex rather than NSArray extension #MsgLength=59
+
+
+----
+Modified: src/ios/CDVCapture.m|6 6
+
+Revision: 0f187eb4335de45004a9036fe2650152d1e376d4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/01/2015 00:34:54
+Message:
+CB-8351 ios: Stop using (newly) deprecated CDVJSON.h #MsgLength=53
+
+
+----
+Modified: src/ios/CDVCapture.m|5 2
+
+Revision: 3374bf41d40283afc8ac90885b87a26fbc3dae41
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/01/2015 00:35:03
+Message:
+ios: Use inline copies of deprecated CDV_IsIpad and CDV_IsIphone5 #MsgLength=66
+
+
+----
+Modified: src/ios/CDVCapture.m|3 2
+
+Revision: cc779375e36fcafd1fdc4405e21d5eddab6cda03
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.3.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e5a871cf5d9ad45c50c51cd31dacc7b33da728b1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:02
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e4544ea697c33e16df0ac1e8346300fe656ced23
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 16:47:08
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|40 0
+
+Revision: 4f7714c61e384b9e5ab94c2338f753405309467b
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:52:07
+Message:
+CB-8438 cordova-plugin-media-capture documentation translation: cordova-plugin-media-capture #MsgLength=93
+
+
+----
+Modified: doc/de/index.md|22 12
+Modified: doc/es/index.md|46 89
+Modified: doc/fr/index.md|68 93
+Modified: doc/it/index.md|25 12
+Modified: doc/ja/index.md|30 17
+Modified: doc/ko/index.md|28 15
+Modified: doc/pl/index.md|23 13
+Modified: doc/zh/index.md|78 65
+
+Revision: 0a90b123cef59e98c457c465939f50e549a15f84
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 09:33:12
+Message:
+CB-8571 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|13 0
+Modified: README.md|3 0
+
+Revision: f4b9e8ac2005711b66fa6b8cc44337dd0f0af1b1
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 13/03/2015 23:02:58
+Message:
+CB-8659: ios: 4.0.x Compatibility: Remove use of initWebView method #MsgLength=68
+
+
+----
+Modified: src/ios/CDVCapture.m|2 6
+
+Revision: f489e29d852dc48c0e3337d63f8628277b55623b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:32:58
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|581 2
+Deleted: doc/index.md|0 602
+
+Revision: 90d46a06938d1538534ad48d69248bf923c1c322
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 02/02/2015 23:44:38
+Message:
+CB-7963 Adds support for browser platform #MsgLength=42
+
+
+----
+Modified: README.md|11 0
+Modified: plugin.xml|8 0
+Added: src/browser/CaptureProxy.js|225 0
+Modified: tests/tests.js|1 1
+
+Revision: f49582a47e6704aa797388223461883735475407
+Author: Murat Sutunc <muratsu@microsoft.com>
+Date: 17/03/2015 08:09:08
+Message:
+CB-8687 consolidate manifest targets #MsgLength=37
+
+
+----
+Modified: plugin.xml|2 12
+
+Revision: d7f26bcf4ace0bba38c03cdeea6a9dd2315ab2a9
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 19/03/2015 23:22:00
+Message:
+docs: added Windows to supported platforms #MsgLength=43
+
+
+----
+Modified: README.md|5 0
+
+Revision: eef5be951fdc4b191828805a675aa6ec63024e50
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:41:02
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: e8a9a660dfe96ef985094d6663c9913f6764ad7f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:32
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: 63f668343b5eb5f667648367c5df4b4f527cdda0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:06:01
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: ced5d5e14a30f8fd352dcf18692b6546ce920b85
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 10:56:46
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: src/browser/CaptureProxy.js|3 3
+Modified: src/windows/CaptureProxy.js|6 6
+Modified: src/windows/MediaFile.js|2 2
+Modified: src/wp/UI/AudioCaptureTask.cs|1 1
+Modified: src/wp/UI/VideoCaptureTask.cs|1 1
+Modified: tests/plugin.xml|1 1
+Modified: www/MediaFile.js|1 1
+
+Revision: fd3aceb2fbc3b604a6bf688e1f04cfe9199e0e7c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 14:29:46
+Message:
+CB-8747 updated dependency, added peer dependency #MsgLength=50
+
+
+----
+Modified: package.json|3 0
+Modified: plugin.xml|1 1
+
+Revision: 3557f76b7324061f6b88367a9de00b6594f26520
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 08:02:20
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 5292da0ae82be539477e72085393ee3748d4bcd8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 08:08:08
+Message:
+CB-8746 bumped version of file dependency #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 5ba940bc8b240c52b7040c010d749541ece3a12e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:38
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|17 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9e202ea0dda54dda6385cace16e19629bb6b7a2b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:47
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c2e8d4b2617682f1e9ba4993615afc63fb6b3017
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:31:10
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: cd3a5862529463f732450b8f001d50e3176f374e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: f5514cabe19648a4c952bf05c09e088510895165
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:22
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f4a6cfa9d6a880a875f72b8d83e2c11bf5afdc4c
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 02/06/2015 23:59:25
+Message:
+fix npm md issue #MsgLength=17
+
+
+----
+Modified: README.md|17 17
+
+Revision: d135c3eed78e9ffb222dab2b08447b1afc85c973
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:42:18
+Message:
+CB-9128 cordova-plugin-media-capture documentation translation: cordova-plugin-media-capture #MsgLength=93
+
+
+----
+Added: doc/de/README.md|564 0
+Added: doc/es/README.md|562 0
+Added: doc/fr/README.md|526 0
+Added: doc/it/README.md|564 0
+Added: doc/ja/README.md|564 0
+Added: doc/ko/README.md|564 0
+Added: doc/pl/README.md|564 0
+Added: doc/zh/README.md|564 0
+
+Revision: 2eb87babad75b695632210f4c1c548b4e750525e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:04
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.0.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9af90d8540fa7b2e44c72de86a3ea427ff9eb291
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: a6011757b9dd9ca109eeb72ba8a06d5e5032d6aa
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:36
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2c5617c746dac5d0f330175773d0d55fb4f43bdf
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 05:24:26
+Message:
+Remove TravisCI integration #MsgLength=28
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 2
+
+Revision: f8740045fe9337c1fd3df9adcf7df950b400860f
+Author: Paris Goudas <decimal@darkstar.gr>
+Date: 20/05/2015 23:53:30
+Message:
+Add CaptureVideoOption for quality #MsgLength=35
+
+
+----
+Modified: src/android/Capture.java|12 9
+Modified: www/CaptureVideoOptions.js|2 0
+
+
+Revision: 3e73fce870a8f1525152cb2cc2f6f3869522d40f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/08/2015 04:48:52
+Message:
+Document the quality property in Android quirks #MsgLength=48
+
+
+----
+Modified: README.md|13 2
+
+Revision: 4c85fa5f1a09d2c7e6c97edba3e13a7d8f3107f5
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 02/09/2015 06:59:15
+Message:
+CB-9249 Fix iOS warnings in Media Capture plugin #MsgLength=49
+
+
+----
+Modified: src/ios/CDVCapture.m|34 18
+
+Revision: 73e87aa86444af2fb3866b2aaaca2a1ab2bf1007
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 03/09/2015 04:11:00
+Message:
+CB-9249 Fix iOS warnings in Media Capture plugin Part 2 #MsgLength=56
+
+
+----
+Modified: src/ios/CDVCapture.m|1 1
+
+Revision: 06fd8313574648738f695c5a9892b1eae6b52bb6
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: c0ebfcb0511714f1cb07cae53ecf99229a0b34b1
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:50
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: 7e8906beab24e876704c97d51bf300ade97eed54
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|87 87
+
+Revision: ee18db4ce228a62b5a582bf28c86f54cc4fdae67
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:11
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: b19201cf8ad01f75d0bd38fa36aa242115157b36
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:05
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e1bc40b83fbd100e343a3d36445ed86c1fb42071
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|62 62
+
+Revision: d19ce1a3fe5302a92a66c9d7d4e4c68f5c759534
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 20/11/2015 08:22:30
+Message:
+CB-8863 Fix block usage of self #MsgLength=32
+
+
+----
+Modified: src/ios/CDVCapture.m|15 13
+
+Revision: b195ade0426549a9d10dfc5537faeecb40c3e5ff
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a0f2ce2a6f90317f796de37e3b4b1aa02d15f75a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 10:27:33
+Message:
+CB-10100 updated file dependency to not grab new majors #MsgLength=56
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 1ede87258bd4586d9cb2a012c10f00c7d3d57e58
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:35:05
+Message:
+CB-10368 Updated version and RELEASENOTES.md for release 1.2.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|2 2
+Modified: tests/plugin.xml|1 1
+
+Revision: bd7a8a409209ec6a82c412b9443c1d49ad1e3353
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:58:32
+Message:
+CB-10368 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3d5a73e5b725421968ebd1a51a87b7f4b19eef4a
+Author: t1st3 <contact@tiste.org>
+Date: 08/02/2016 17:32:05
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=259
+
+
+----
+Modified: package.json|1 1
+
+Revision: 395be1120171b686d5dbed9e32b32c9e70087a10
+Author: Jonathan Herr <jon.herr@hotmail.com>
+Date: 25/02/2016 03:24:17
+Message:
+CB-10690 windows: fix crash when user cancels/closes photo app #MsgLength=63
+
+
+----
+Modified: src/windows/CaptureProxy.js|22 14
+
+Revision: e91281e6c87703f03ce630a64f9bc9b3b45d080b
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:29:27
+Message:
+add JIRA issue tracker link #MsgLength=28
+
+
+----
+Modified: README.md|4 2
+
+
+Revision: 73928dc2de37cc12df05dec340246518ce696e78
+Author: daserge <v-seshak@microsoft.com>
+Date: 01/03/2016 00:14:01
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=88
+
+
+----
+Modified: .gitignore|1 1
+Added: .jshintrc|18 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/blackberry10/index.js|5 5
+Modified: src/browser/CaptureProxy.js|16 7
+Modified: src/windows/CaptureProxy.js|18 19
+Modified: tests/plugin.xml|2 0
+Modified: tests/tests.js|4 1
+
+Revision: 0867898701c9f547dddd8448bfc0f46d6ae14008
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 02/03/2016 09:26:53
+Message:
+CB-10720: Fixing README for display on Cordova website #MsgLength=72
+
+
+----
+Modified: README.md|58 58
+
+Revision: 7646d75bcac0ec745f3c02dec0cea8cfe819463e
+Author: Richard Knoll <richard.b.knoll@gmail.com>
+Date: 22/03/2016 06:21:30
+Message:
+CB-10670, CB-10994 android: Marshmallow permissions #MsgLength=295
+
+
+----
+Modified: README.md|2 0
+Modified: plugin.xml|14 12
+Modified: src/android/Capture.java|241 183
+Added: src/android/PendingRequests.java|132 0
+Added: src/android/PermissionHelper.java|138 0
+Modified: www/CaptureError.js|2 0
+
+Revision: 470a3f48d46c2c7bb23b703c41ecf23c4bc59176
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 06/04/2016 00:10:58
+Message:
+Replace PermissionHelper.java with cordova-plugin-compat #MsgLength=57
+
+
+----
+Modified: plugin.xml|1 1
+Modified: src/android/Capture.java|1 0
+Deleted: src/android/PermissionHelper.java|0 138
+
+Revision: a6ab97dff5b43da182a0e475bbe719003eaabb4a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:27
+Message:
+ Updated version and RELEASENOTES.md for release 1.3.0 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 17589f9f6e378488897e8564044bce219e52b292
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:27
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 231dd4a40b65442c1746d58076eb442718522f56
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:51
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: 2df337cb11ac7d33a17723e04bbc8edfc3769f29
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 28/04/2016 07:23:05
+Message:
+CB-11165 removed peer dependency #MsgLength=33
+
+
+----
+Modified: package.json|0 3
+
+Revision: b2e29fc88c548d5aadb7c49784e3498ae7d7213c
+Author: Richard Knoll <richard.b.knoll@gmail.com>
+Date: 27/04/2016 02:54:43
+Message:
+CB-10554: Implementing plugin save/restore API for Android #MsgLength=236
+
+
+----
+Modified: README.md|38 0
+Modified: plugin.xml|8 0
+Modified: src/android/Capture.java|9 0
+Modified: src/android/PendingRequests.java|96 0
+Added: www/android/init.js|44 0
+Modified: www/capture.js|4 16
+Added: www/helpers.js|44 0
+
+Revision: fc49084eabaaf9d40a29978f86fe79880a45daf3
+Author: Andrew Zellman <zellman@adobe.com>
+Date: 06/05/2016 07:47:52
+Message:
+CB-11212 iOS: Explicitly set the bundle for images #MsgLength=158
+
+
+----
+Modified: src/ios/CDVCapture.m|6 5
+
+Revision: bae9cdbab96c4b46f434ed936950b66212effbda
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:53:59
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: 2d74abe4af8fe5be92cfab07187e5f3701070e13
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 09/06/2016 06:49:55
+Message:
+CB-11396 - Audio Media Capture Crashes if app stores file on external storage #MsgLength=78
+
+
+----
+Modified: plugin.xml|1 0
+Modified: src/android/Capture.java|6 2
+
+Revision: 53d428d20534b2370c2ca2fb2e0399ac9fecdf16
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 17:05:31
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|4 2
+
+Revision: f108e236df1644dfd9d076d861d4f9578653325c
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 23/08/2016 04:48:50
+Message:
+Plugin uses Android Log class and not Cordova LOG class #MsgLength=56
+
+
+----
+Modified: src/android/Capture.java|2 3
+
+Revision: cba6b7ef7351b0fd17e9dd9151117483dd0303b1
+Author: Julio Cesar Sanchez Hernandez <jcesarmobile@gmail.com>
+Date: 08/09/2016 02:25:55
+Message:
+CB-11821 (ios) Add mandatory iOS 10 privacy description #MsgLength=74
+
+
+----
+Modified: README.md|21 0
+Modified: plugin.xml|11 0
+
+Revision: a98c11d55ca5f0fa68a583a57db7a1949796cc4a
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 21:20:05
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=397
+
+
+----
+Modified: package.json|7 0
+
+Revision: 5a685a6d519b7be658bd92e11fa08631d05adc8f
+Author: Alexey Zagarin <zagarin@gmail.com>
+Date: 09/09/2016 03:21:44
+Message:
+Add mandatory iOS 10 privacy description for microphone #MsgLength=74
+
+
+----
+Modified: README.md|3 1
+Modified: plugin.xml|5 0
+
+Revision: c5b9cacf9dde8fe367b1ed512b965cd166bba566
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:54
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 1.4.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|19 6
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 14810a2c547f79363ecd2cf7ac0bcb59380bc125
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 21bb35e46682978228e827614e078f33e1a2d9be
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:32:03
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=101
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: 108c2eff02700c90103e63c09e8144d965aff03f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 11/10/2016 23:04:32
+Message:
+CB-11995 (android) Do not pass a file URI to the camera #MsgLength=56
+
+
+----
+Modified: src/android/Capture.java|18 56
+
+Revision: cd7d40d5dc80755fb6798b839383cdae73bd01ab
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 11/10/2016 23:53:39
+Message:
+CB-11996 Added a new manual test to capture multiple images #MsgLength=60
+
+
+----
+Modified: tests/tests.js|41 1
+
+Revision: ab8b63308c1df274b7c98f816ee7f41fcec98313
+Author: TanaseButcaru <contact@butcaru.com>
+Date: 01/02/2016 06:42:07
+Message:
+CB-10488 Fix for MediaFile.getFormatData #MsgLength=41
+
+
+----
+Modified: www/MediaFile.js|1 1
+
+Revision: 26f9ad109552f86f0052a1ca325a03bb07db3d16
+Author: TanaseButcaru <contact@butcaru.com>
+Date: 04/02/2016 05:49:06
+Message:
+CB-10489 Fix for MediaFile.getFormatData / audio recording support #MsgLength=84
+
+
+----
+Modified: src/android/Capture.java|4 2
+
+Revision: 7e28e9cb1d60e54ecb1e29e61d38329d9c0e62f0
+Author: Nikita Matrosov <matrosov.nikita94@gmail.com>
+Date: 26/10/2016 19:39:10
+Message:
+CB-10701 CB-7117 android: Add manual test to check getting metadata #MsgLength=68
+
+
+----
+Modified: tests/tests.js|18 0
+
+Revision: b09b24d71b53937db0351f0e041be18751699a20
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:46
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 1.4.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|192 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 31086f113f389f1334e94096d23c7ce9dbbb1509
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:08
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 24ffdb2886b7225b9dd00637ca9d1eb055451ae0
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 18:40:15
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: 95542b174a1fc683553727a5030415b162800021
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:56:26
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-media-capture #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|1 183
+
+Revision: 01561c746377563634e80a6efa5a7297d7a39906
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:37:11
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 925b3a0a9b651d8213bbb8f24bf96fbb598316a2
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 21:10:13
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=68
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|167 0
+
+Revision: 5f271e67c41c26552628b931c194fa2976fde3b1
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/01/2017 00:27:26
+Message:
+CB-12353 Corrected merges usage in plugin.xml #MsgLength=46
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 4af2ea89ebf5498e6f4fde81941c15f430369b80
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:27
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 1.4.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|9 3
+Modified: package.json|1 1
+Modified: plugin.xml|183 260
+Modified: tests/plugin.xml|6 32
+
+Revision: 6f4e5dcaafcf49208e899279a5f4134b63e164c0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:56:01
+Message:
+Set VERSION to 1.4.3-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|260 183
+Modified: tests/plugin.xml|32 6
+
+Revision: 20bb4945e7aed684fdb9643164ec733a919b22bd
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 10:23:15
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: 0c9895ed35d024538316af5175f893eed3603c7c
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/04/2017 08:33:25
+Message:
+Close #73 #MsgLength=10
+
+
+----
+
+Revision: bfc1e0631885c836186aca2fe36f6f126c2c127b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 21:12:58
+Message:
+CB-12622 Added Android 6.0 build badges to README #MsgLength=50
+
+
+----
+Modified: README.md|3 3
+
+Revision: b78a4b20ef2938ba21a26c47ca33064586e05896
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:02:56
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 1.4.3 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: bb4f78030875db5ed3afedbc13d38b49e6974a8b
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:03:00
+Message:
+Set VERSION to 1.4.4-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f38f507a968748d4f652559506344464d03fdf86
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 18:47:38
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: d19be5be1fa5dfbc30fbd997f5e780a056616138
+Author: Sergii Stotskyi <sergii.stotskyi@concreteplatform.com>
+Date: 05/06/2017 18:02:29
+Message:
+CB-12882: (ios): adds support for permissions checks for captureVideo and captureImage methods #MsgLength=95
+
+
+----
+Modified: package.json|3 0
+Modified: src/ios/CDVCapture.h|1 0
+Modified: src/ios/CDVCapture.m|53 9
+Modified: tests/tests.js|35 1
+
+Revision: e00d01bca0849115b18aa69b053fac953ce05f8e
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/06/2017 20:19:39
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Modified: .travis.yml|70 3
+
+Revision: db157cbe63da7f383e212f1fa7373e950342bd91
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:32:08
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: 976e22316db074853e8001c2197ae228cc2c9693
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 16:22:41
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: 0a5a880c6bcf6ec07899b6d1ef3a39497a1b1f0c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:34:38
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: efcce568bd38d60cbdc518a3d03f4180607e3b51
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 28/07/2017 17:56:02
+Message:
+CB-13028 (CI) Browser builds on Travis and AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|3 2
+Modified: .travis.yml|17 1
+
+Revision: 1694228a2cd01bdea8b15fb0d6b6f8d4dbcb091f
+Author: Audrey So <audreyso@apache.org>
+Date: 13/06/2017 02:03:09
+Message:
+CB-12895 : added eslint and removed jshint #MsgLength=43
+
+
+----
+Added: .eslintrc.yml|10 0
+Deleted: .jshintrc|0 18
+Modified: package.json|9 3
+Modified: src/blackberry10/index.js|49 49
+Modified: src/browser/CaptureProxy.js|18 19
+Modified: src/windows/CaptureProxy.js|70 73
+Modified: src/windows/MediaFile.js|5 5
+Modified: tests/tests.js|62 62
+Modified: www/CaptureAudioOptions.js|1 1
+Modified: www/CaptureError.js|2 2
+Modified: www/CaptureImageOptions.js|1 1
+Modified: www/CaptureVideoOptions.js|1 1
+Modified: www/ConfigurationData.js|1 1
+Modified: www/MediaFile.js|8 8
+Modified: www/MediaFileData.js|1 1
+Modified: www/android/init.js|8 8
+Modified: www/capture.js|12 14
+Modified: www/helpers.js|2 2
+
+Revision: 405bfcd0d4dcc3558531a3806f08c55b276a008c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:06:49
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: ab6535f8767b77c61e9a76b9e95dbff6447cf90f
+Author: Kelvin Dart <kelvin.dart@crimsontide.co.uk>
+Date: 18/10/2017 23:53:25
+Message:
+CB-13294 Remove cordova-plugin-compat #MsgLength=56
+
+
+----
+Modified: package.json|2 2
+Modified: plugin.xml|5 2
+
+Revision: 205eb42bbe9b5822f498195bfed2e36d59040f0d
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:59:13
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: af54359e4ad53bf1b13251f1f8425253196cad68
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 15:22:58
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: 0634acbb66652d150b20f2f6cb835cf7af9eccba
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 14/10/2017 23:33:52
+Message:
+CB-13266 (ios): Remove ios usage descriptions #MsgLength=64
+
+
+----
+Modified: README.md|21 13
+Modified: plugin.xml|0 15
+
+Revision: 10cb0d0258151d849628dfa368b1828386d5cd84
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 01/11/2017 18:06:29
+Message:
+CB-13520 (all): Add 'protective' entry to cordovaDependencies #MsgLength=62
+
+
+----
+Modified: package.json|3 0
+
+
+Revision: 50894d4200108c946719c73ab3352507af094e12
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:45
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 2.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2432ae413b6fff5607f801df0c2be1be68ea976c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:40
+Message:
+Set VERSION to 2.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ea934aa267dc069b022b17981dfa934ba599e890
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 08:00:58
+Message:
+CB-13542 updated file plugin dependency #MsgLength=40
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|2 2
+
+Revision: 65871bf782c221eb4143e3cd62c7fde418eef821
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 08:19:40
+Message:
+Set VERSION to 2.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 191643651b3211553d40d212df897af7330bcf7a
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 13/12/2017 05:10:32
+Message:
+CB-13669 : Remove deprecated plugins #MsgLength=37
+
+
+----
+Modified: README.md|0 80
+Modified: package.json|3 14
+Modified: plugin.xml|1 119
+Deleted: src/blackberry10/index.js|0 116
+Deleted: src/ubuntu/MediaCaptureWidget.qml|0 206
+Deleted: src/ubuntu/back.png|0 0
+Deleted: src/ubuntu/capture.cpp|0 161
+Deleted: src/ubuntu/capture.h|0 84
+Deleted: src/ubuntu/microphone.png|0 0
+Deleted: src/ubuntu/record_off.png|0 0
+Deleted: src/ubuntu/record_on.png|0 0
+Deleted: src/ubuntu/shoot.png|0 0
+Deleted: src/ubuntu/toolbar-left.png|0 0
+Deleted: src/ubuntu/toolbar-middle.png|0 0
+Deleted: src/ubuntu/toolbar-right.png|0 0
+Deleted: src/wp/Capture.cs|0 736
+Deleted: src/wp/UI/AudioCaptureTask.cs|0 107
+Deleted: src/wp/UI/AudioRecorder.xaml|0 66
+Deleted: src/wp/UI/AudioRecorder.xaml.cs|0 330
+Deleted: src/wp/UI/VideoCaptureTask.cs|0 105
+Deleted: src/wp/UI/VideoRecorder.xaml|0 52
+Deleted: src/wp/UI/VideoRecorder.xaml.cs|0 405
+
+
+Revision: 52cfcf1052f5b0016bf9d8e87800afb3cdb3bf81
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:25:13
+Message:
+CB-13681 Updated version and RELEASENOTES.md for release 3.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 40070788982ed7ba7996930d2853fe036d697399
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:26:44
+Message:
+Set VERSION to 3.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d5a8aa66d396b754076818a3922e144553fda662
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 19/12/2017 02:44:26
+Message:
+Bump cordova-plugin-file dependency to 6.0.0 #MsgLength=45
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: e0c06ebd863722a9f4c5ebd844e313d9a46115f9
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 27/12/2017 23:51:55
+Message:
+CB-13707: Fix to allow 3.0.0 version install (#88) #MsgLength=52
+
+
+----
+Modified: package.json|1 1
+
+Revision: e94dd74aea3a53206d01bcdc3b9d5cce1c346ef8
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:36
+Message:
+CB-13714 Updated version and RELEASENOTES.md for release 3.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 196
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d7e76486f31cddf7ea48d1ac5fbfedf3ae73407e
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:50
+Message:
+Set VERSION to 3.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: de11c166f19619409dee790ddfc3ce4b08333115
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 30/12/2017 13:56:00
+Message:
+Fix release notes (#89) #MsgLength=25
+
+
+----
+Modified: RELEASENOTES.md|197 0
+
+Revision: 17122699793401aad37d8d6020192c7495cbc4fc
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 10/01/2018 07:25:01
+Message:
+CB-13755: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: ec680de70b96fc476c94c6fb51b3e7979f7a883b
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 23/01/2018 19:26:41
+Message:
+CB-13820 fix "report issue" link #MsgLength=32
+
+
+----
+Modified: README.md|1 1
+
+Revision: a07323b94faf46ca6f9aae08213aaac614218b34
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 08/04/2018 20:06:25
+Message:
+CB-13866(ios): fix Camera opens in portrait orientation on iphones #MsgLength=67
+
+
+----
+Modified: src/ios/CDVCapture.m|2 2
+
+
+Revision: 288a47eee12b8cff7c3512d87b5aa2023daa46d5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:06:22
+Message:
+CB-14030 Updated version and RELEASENOTES.md for release 3.0.2 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f3fa6e89b513172b1ff275e4a6367c6a14dd2793
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:16:16
+Message:
+Set VERSION to 3.0.3-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: eff0128709e5bd5bb5575b5a757bad996fe8054d
+Author: Larry Bahr <larrybahr@users.noreply.github.com>
+Date: 21/08/2018 00:29:10
+Message:
+Add CaptureError.CAPTURE_PERMISSION_DENIED to type declaration file #MsgLength=137
+
+
+----
+Modified: types/index.d.ts|1 0
+
+Revision: 5fb49175c108363f061f462faf3280cc1fb434a0
+Author: Larry Bahr <larrybahr@users.noreply.github.com>
+Date: 21/08/2018 01:29:40
+Message:
+tab to space fix #MsgLength=17
+
+
+----
+Modified: types/index.d.ts|1 1
+
+
+Revision: 3755f9f7374cb6434ddbf67e8c5e800671b939f5
+Author: Marco Celotti <m.celotti@gmail.com>
+Date: 22/09/2018 07:21:09
+Message:
+CB-14260: (android) captureImage permission denial on android 8.1 (#95) #MsgLength=142
+
+
+----
+Modified: src/android/Capture.java|3 3
+
+Revision: f69ba2a67417e51555eb5926851592ecf1b84601
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 22/09/2018 08:07:06
+Message:
+GH-102 Catch ActivityNotFoundException (#104) #MsgLength=47
+
+
+----
+Modified: src/android/Capture.java|8 2
+
+Revision: 59966ac7677af80be433ed2d9479cad1779fc25c
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 01/10/2018 18:55:32
+Message:
+also accept terms for android sdk `android-27` #MsgLength=46
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: c3928c87b27f3823ae4646f04b22dc9fbfa46138
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 04/10/2018 07:16:37
+Message:
+remove JIRA link #MsgLength=16
+
+
+----
+Modified: README.md|0 2
+
+Revision: e5a982edaca261e1222fb5387a99da285f868454
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:40:04
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: f59af25c365de8f89b474a7397632f631e1846d8
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 02:43:53
+Message:
+ci(travis): Update Travis CI configuration for new paramedic (#134) #MsgLength=145
+
+
+----
+Modified: .travis.yml|109 76
+
+Revision: e68722e0bf6746c6e2aa112458615f88a93d0b5f
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 23:43:48
+Message:
+build: add `.gitattributes` to force LF (instead of possible CRLF on Windows) #MsgLength=78
+
+
+----
+Added: .gitattributes|26 0
+
+Revision: d33bf798a2d8fd4759abbb32410b88c7fc81e63d
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 29/06/2019 05:41:46
+Message:
+fix: change CRLF line breaks to LF #MsgLength=35
+
+
+----
+Modified: src/android/PendingRequests.java|228 228
+Modified: www/android/init.js|44 44
+Modified: www/helpers.js|43 43
+
+Revision: 8b12b4d606b3b2688380431c3193f1946738139b
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 23:44:03
+Message:
+build: add `.npmignore` to remove unneeded files from npm package #MsgLength=66
+
+
+----
+Added: .npmignore|16 0
+
+Revision: 765053d77ad380b3d84f81599b03a6af926d4597
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 23:44:15
+Message:
+docs: remove outdated translations #MsgLength=35
+
+
+----
+Deleted: doc/de/README.md|0 564
+Deleted: doc/de/index.md|0 551
+Deleted: doc/es/README.md|0 562
+Deleted: doc/es/index.md|0 498
+Deleted: doc/fr/README.md|0 526
+Deleted: doc/fr/index.md|0 513
+Deleted: doc/it/README.md|0 564
+Deleted: doc/it/index.md|0 551
+Deleted: doc/ja/README.md|0 564
+Deleted: doc/ja/index.md|0 551
+Deleted: doc/ko/README.md|0 564
+Deleted: doc/ko/index.md|0 551
+Deleted: doc/pl/README.md|0 564
+Deleted: doc/pl/index.md|0 551
+Deleted: doc/ru/index.md|0 541
+Deleted: doc/zh/README.md|0 564
+Deleted: doc/zh/index.md|0 551
+
+Revision: 9a6730a967bbe2e66c56fd2b1af1ac303d429e9a
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 23:49:23
+Message:
+chore(release): release notes for 3.0.3 #MsgLength=40
+
+
+----
+Modified: RELEASENOTES.md|13 0
+
+Revision: 626c386657c2ad26e13d7833c7205921aa6d2278
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 23:49:23
+Message:
+chore(release): 3.0.3 (version string) #MsgLength=39
+
+
+----
+Modified: package.json|2 2
+Modified: plugin.xml|3 4
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e56988aefe5d71cf572f126489cc032841c7eed0
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/06/2019 00:03:35
+Message:
+chore(release): 3.0.4-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e1fb5813cf831eed757a04aac428956e6cb05692
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 03/07/2019 16:27:44
+Message:
+ci(travis): upgrade to node 8 #MsgLength=29
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 0209965e504b8e2ac6603026bba94c8760d93242
+Author: Christian Schuhmann <christian8246q@gmail.com>
+Date: 24/01/2020 09:18:47
+Message:
+Small javadoc fix (#161) #MsgLength=26
+
+
+----
+Modified: src/android/Capture.java|1 1
+
+Revision: 0dd48312d28e63faf7dbb64caba03a32d3ec55c1
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 23:01:35
+Message:
+chore(npm): improve ignore list (#164) #MsgLength=40
+
+
+----
+Modified: .npmignore|2 15
+
+Revision: 49cc98609c4e37b47db39154fa4a0c59e31baa96
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 23:01:46
+Message:
+ci: updates Node.js versions (#165) #MsgLength=37
+
+
+----
+Modified: .appveyor.yml|9 5
+Modified: .travis.yml|12 11
+
+Revision: db6a4ca0a7b400b88319e7d6f7120f3d387b24b8
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:30:34
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Modified: CONTRIBUTING.md|4 4
+
+Revision: 25720a3b37b9d6f812c35d4fe415c8d1574ea4b3
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:41:30
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: e055918a7e30bfb1d6baa74e51b5ea2fc6a33f1d
+Author: Tim Brust <github@timbrust.de>
+Date: 06/07/2020 15:17:26
+Message:
+chore(npm): use short notation in package.json (#178) #MsgLength=55
+
+
+----
+Modified: package.json|2 7
+
+Revision: fdb6c204a6579d967f408d10741f80ab654bd0b4
+Author: Tim Brust <github@timbrust.de>
+Date: 06/07/2020 16:26:24
+Message:
+refactor(eslint): use cordova-eslint /w fix (#179) #MsgLength=52
+
+
+----
+Modified: .eslintrc.yml|22 9
+Modified: package.json|3 9
+Modified: src/browser/CaptureProxy.js|70 56
+Modified: src/windows/CaptureProxy.js|298 169
+Modified: src/windows/MediaFile.js|19 8
+Modified: tests/tests.js|102 61
+Modified: www/CaptureAudioOptions.js|1 1
+Modified: www/CaptureError.js|1 1
+Modified: www/CaptureImageOptions.js|1 1
+Modified: www/CaptureVideoOptions.js|1 1
+Modified: www/ConfigurationData.js|1 1
+Modified: www/MediaFile.js|1 1
+Modified: www/MediaFileData.js|1 1
+Modified: www/android/init.js|1 1
+Modified: www/capture.js|1 1
+Modified: www/helpers.js|1 1
+
+Revision: 31885fe852c9a5041558486bad5e1be36bfde9fb
+Author: Tim Brust <github@timbrust.de>
+Date: 06/07/2020 16:27:18
+Message:
+chore: adds package-lock file (#180) #MsgLength=38
+
+
+----
+Added: package-lock.json|1724 0
+
+Revision: 2856cb9ae9041d16c99f5c6edd0f6329a52b4566
+Author: Tim Brust <github@timbrust.de>
+Date: 22/08/2020 20:33:00
+Message:
+ci(travis): updates Android API level (#188) #MsgLength=46
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 09bc0b1ef5c7e0138279e67bd06ecf3089de1d2d
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 26/08/2020 06:46:15
+Message:
+breaking(ios): remove code warnings (#177) #MsgLength=44
+
+
+----
+Modified: src/ios/CDVCapture.m|23 67
+
+Revision: 2a02aa3c8a80dc94c850bdad64a3e391f292d4a1
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/09/2020 18:34:27
+Message:
+ci(travis): update osx xcode image (#189) #MsgLength=136
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: a73dee942a9ec2ceeccde6285d6884103b6eceb7
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 03/10/2020 03:43:22
+Message:
+chore: clean up package.json (#193) #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+
+Revision: dcbe4e4af44d60b09349380f36637d9cacfcd3c0
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/11/2020 16:15:48
+Message:
+ci: add node-14.x to workflow (#203) #MsgLength=38
+
+
+----
+Modified: .appveyor.yml|1 0
+Modified: .travis.yml|1 1
+
+Revision: 0e2d9f61f9a9b8016d324750cfd577b506c7fcf1
+Author: Alexis THOMAS <ath0mas@users.noreply.github.com>
+Date: 17/02/2021 21:49:20
+Message:
+fix(android): remove unknown permission android.permission.RECORD_VIDEO (#200) #MsgLength=80
+
+
+----
+Modified: plugin.xml|0 1
+
+Revision: 28923cbaa8817d9f06b6a32927f0b9b1e94aa7f3
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/09/2021 21:19:44
+Message:
+ci: add gh-actions workflows (#228) #MsgLength=37
+
+
+----
+Added: .github/workflows/android.yml|148 0
+Added: .github/workflows/chrome.yml|73 0
+Added: .github/workflows/ios.yml|88 0
+Added: .github/workflows/lint.yml|56 0
+
+Revision: 7214e1d3dc9f053d35481fb9ae2d2341f0946cfc
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 23:07:45
+Message:
+ci: remove travis & appveyor (#229) #MsgLength=37
+
+
+----
+Deleted: .appveyor.yml|0 33
+Modified: .npmignore|0 1
+Deleted: .travis.yml|0 120
+Modified: README.md|0 4
+
+Revision: 5c07f4eaab6428916ad4d04d3d760ab3c7f23d0b
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:05:43
+Message:
+ci: add action-badge (#230) #MsgLength=29
+
+
+----
+Modified: README.md|2 0
+
+Revision: 005d0eae418f848e6ab4a80799d7734e4eb75a86
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/10/2021 20:09:00
+Message:
+ci(ios): update workflow w/ iOS 15 (#231) #MsgLength=43
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: e647b3ab6cd92c5cbd1b6daa2c2abbd7fe9ac4c1
+Author: Philipp Beck <dertieran@gmail.com>
+Date: 06/11/2021 06:25:26
+Message:
+fix(android): Unify and fix permission check (#192) #MsgLength=53
+
+
+----
+Modified: src/android/Capture.java|60 45
+
+Revision: 497754f13d13f9af4c325ee4de11adb9011a239a
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/04/2022 11:42:19
+Message:
+chore: bump version to 4.0.0-dev (#240) #MsgLength=41
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8bca6d5b5ab4351d06e0398b3013062db0e2f1a1
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/04/2022 11:59:36
+Message:
+chore: rebuilt package-lock w/ v2 (#246) #MsgLength=42
+
+
+----
+Modified: package-lock.json|4071 1698
+
+Revision: da665d57d4105fc8d120ab470fbb9c2e6b765b32
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/04/2022 12:26:00
+Message:
+chore: bump cordovaDependencies next next major cordova requirement (#247) #MsgLength=76
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: c2d06adeefacc20440ad104c8935f1d77afafb18
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/04/2022 16:01:43
+Message:
+test: remove cordova-plugin-media dependency (#248) #MsgLength=53
+
+
+----
+Modified: tests/plugin.xml|0 2
+
+Revision: 975e1106eee709abda6bc14e4ac3cef1f8dcb417
+Author: Alexis THOMAS <ath0mas@users.noreply.github.com>
+Date: 25/04/2022 22:41:42
+Message:
+dep!: bump cordova-plugin-file@^7.0.0 (#238) #MsgLength=348
+
+
+----
+Modified: package-lock.json|3 0
+Modified: package.json|3 0
+Modified: plugin.xml|2 2
+
+Revision: 65099a34a987dd2a86dc8bc5b2b764387a76b305
+Author: Erisu <erisu@apache.org>
+Date: 25/05/2022 14:02:27
+Message:
+Updated version and RELEASENOTES.md for release 4.0.0 (media-capture-v4.0.0) #MsgLength=77
+
+
+----
+Modified: RELEASENOTES.md|28 1
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d6eefd66fcbe2cfa1207814a5fd9cab082261e56
+Author: Erisu <erisu@apache.org>
+Date: 30/05/2022 12:31:40
+Message:
+release(post): bump version to 4.0.1-dev #MsgLength=41
+
+
+----
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 346d2fe26b027cb8c6bbdc4ecc30552a017d5a23
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/07/2022 13:17:14
+Message:
+ci(android): update java requirement for cordova-android@11 (#251) #MsgLength=68
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: 7aa7846041aca78bd38ac4206736ba8de67d1b74
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/07/2022 17:27:12
+Message:
+chore(npm): rebuilt package-lock (#252) #MsgLength=41
+
+
+----
+Modified: package-lock.json|257 174
+
+Revision: 6d10359bf2caa3a81f80fdf36ead0a2f74ec7032
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/08/2022 23:41:33
+Message:
+ci: sync workflow with paramedic (#254) #MsgLength=41
+
+
+----
+Modified: .github/workflows/android.yml|12 22
+Modified: .github/workflows/ios.yml|4 13
+

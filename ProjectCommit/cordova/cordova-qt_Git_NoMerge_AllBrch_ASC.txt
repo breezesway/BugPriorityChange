@@ -1,0 +1,2125 @@
+Revision: ab24abcd7ebf878f1da8f688e14649d4ba0fcb73
+Author: Dave Johnson <davejohnson@Dave-Johnsons-MacBook-Pro.local>
+Date: 09/12/2010 06:41:58
+Message:
+Readme and license #MsgLength=19
+
+
+----
+Added: LICENSE|65 0
+Added: README.md|3 0
+
+Revision: 014ffc84525c64a41bcbad10bdc459f1fdeb07fc
+Author: Dave Johnson <davejohnson@Dave-Johnsons-MacBook-Pro.local>
+Date: 15/12/2010 08:17:16
+Message:
+It's Qt not QT #MsgLength=15
+
+
+----
+Modified: LICENSE|1 2
+Modified: README.md|2 2
+
+Revision: 9fd88b760b03d4d6d74da59ecce480dd14cc0616
+Author: igordsm <igordsm@gmail.com>
+Date: 16/12/2010 20:12:08
+Message:
+First commit of the working code for phonegap_qt. Right now only the accelerometer, network and notification modules are working. #MsgLength=130
+
+
+----
+Added: src/accelerometer.cpp|20 0
+Added: src/accelerometer.h|24 0
+Added: src/deviceinfo.cpp|22 0
+Added: src/deviceinfo.h|21 0
+Added: src/main.cpp|15 0
+Added: src/mobileextensions.cpp|35 0
+Added: src/mobileextensions.h|35 0
+Added: src/phonegap_qt.pro|38 0
+Added: src/vibra/vibra.pri|7 0
+Added: src/vibra/xqvibra.cpp|165 0
+Added: src/vibra/xqvibra.h|59 0
+Added: src/vibra/xqvibra_p.cpp|131 0
+Added: src/vibra/xqvibra_p.h|39 0
+Added: src/webkitwindow.cpp|32 0
+Added: src/webkitwindow.h|28 0
+Added: src/webkitwindow.ui|48 0
+Added: www/basic.css|119 0
+Added: www/basic.js|33 0
+Added: www/index.html|17 0
+Added: www/phonegap.js|92 0
+
+Revision: ca87d34eaf0475c35e402afff4e340982e545a5b
+Author: igordsm <igordsm@gmail.com>
+Date: 16/12/2010 20:14:19
+Message:
+Updated the README.md #MsgLength=22
+
+
+----
+Modified: README.md|11 0
+
+Revision: 187e844cbfbf780f5d55d1c3d8f9fab5253177d0
+Author: igordsm <igordsm@gmail.com>
+Date: 18/12/2010 04:02:22
+Message:
+Fix a bug where subdirectories of www were not copied to the .sis #MsgLength=66
+
+
+----
+Modified: src/phonegap_qt.pro|38 38
+
+Revision: fac2fbafaab3b3ef5f9c1b9d6c7a952aeeca4a6d
+Author: igordsm <igordsm@gmail.com>
+Date: 18/12/2010 05:02:00
+Message:
+Setp 1 of the modification to separate folders for the phonegap project layout. #MsgLength=80
+
+
+----
+Renamed: js/phonegap.js [from www/phonegap.js]|0 0
+Modified: src/phonegap_qt.pro|2 1
+
+Revision: e315f9607b6d3ccbd2f4528f8567fbda102261ab
+Author: igordsm <igordsm@gmail.com>
+Date: 18/12/2010 22:58:03
+Message:
+Enables localStorage #MsgLength=171
+
+
+----
+Modified: src/webkitwindow.cpp|33 32
+
+Revision: 8696ead60dbec324a289fd64d37f1a119e455e60
+Author: igordsm <igordsm@gmail.com>
+Date: 22/12/2010 06:54:44
+Message:
+Change dir structure to be more like other projects #MsgLength=116
+
+
+----
+Renamed: framework/accelerometer.cpp [from src/accelerometer.cpp]|0 0
+Renamed: framework/accelerometer.h [from src/accelerometer.h]|0 0
+Renamed: framework/deviceinfo.cpp [from src/deviceinfo.cpp]|0 0
+Renamed: framework/deviceinfo.h [from src/deviceinfo.h]|0 0
+Renamed: framework/main.cpp [from src/main.cpp]|0 0
+Renamed: framework/mobileextensions.cpp [from src/mobileextensions.cpp]|0 0
+Renamed: framework/mobileextensions.h [from src/mobileextensions.h]|0 0
+Renamed: framework/phonegap_qt.pro [from src/phonegap_qt.pro]|2 2
+Renamed: framework/vibra/vibra.pri [from src/vibra/vibra.pri]|0 0
+Renamed: framework/vibra/xqvibra.cpp [from src/vibra/xqvibra.cpp]|0 0
+Renamed: framework/vibra/xqvibra.h [from src/vibra/xqvibra.h]|0 0
+Renamed: framework/vibra/xqvibra_p.cpp [from src/vibra/xqvibra_p.cpp]|0 0
+Renamed: framework/vibra/xqvibra_p.h [from src/vibra/xqvibra_p.h]|0 0
+Renamed: framework/webkitwindow.cpp [from src/webkitwindow.cpp]|1 1
+Renamed: framework/webkitwindow.h [from src/webkitwindow.h]|0 0
+Renamed: framework/webkitwindow.ui [from src/webkitwindow.ui]|0 0
+Renamed: template/basic.css [from www/basic.css]|0 0
+Renamed: template/basic.js [from www/basic.js]|0 0
+Renamed: template/index.html [from www/index.html]|0 0
+
+Revision: de7ad7e00aaf9172563608b01de57463aa700937
+Author: igordsm <igordsm@gmail.com>
+Date: 22/12/2010 09:30:56
+Message:
+Final adjustments on directory changes #MsgLength=102
+
+
+----
+Modified: framework/phonegap_qt.pro|1 1
+Modified: framework/webkitwindow.cpp|3 1
+
+Revision: 58db024558b888aa2de5d5ab0bcf9efff429bb69
+Author: unknown <arendjr@.(none)>
+Date: 23/12/2010 19:17:42
+Message:
+Integrate both PhoneGap branches. #MsgLength=34
+
+
+----
+Added: framework/cookiejar.cpp|52 0
+Added: framework/cookiejar.h|20 0
+Added: framework/extensions.cpp|41 0
+Added: framework/extensions.h|23 0
+Added: framework/extensions/accelerometer.cpp|32 0
+Added: framework/extensions/accelerometer.h|30 0
+Added: framework/extensions/camera.cpp|191 0
+Added: framework/extensions/camera.h|128 0
+Added: framework/extensions/camerafileobserver.cpp|86 0
+Added: framework/extensions/camerafileobserver.h|63 0
+Added: framework/extensions/debugconsole.cpp|13 0
+Added: framework/extensions/debugconsole.h|17 0
+Added: framework/extensions/deviceinfo.cpp|42 0
+Added: framework/extensions/deviceinfo.h|32 0
+Added: framework/extensions/geolocation.cpp|75 0
+Added: framework/extensions/geolocation.h|45 0
+Added: framework/extensions/hash.cpp|27 0
+Added: framework/extensions/hash.h|17 0
+Added: framework/extensions/memorywatcher.cpp|85 0
+Added: framework/extensions/memorywatcher.h|87 0
+Added: framework/extensions/notification.cpp|27 0
+Added: framework/extensions/notification.h|21 0
+Added: framework/mainwindow.cpp|35 0
+Added: framework/mainwindow.h|16 0
+Added: framework/networkaccessmanager.cpp|32 0
+Added: framework/networkaccessmanager.h|17 0
+Added: framework/webpage.cpp|29 0
+Added: framework/webpage.h|21 0
+
+Revision: 19ff23a4acbf6049993cd7bf99ba524f082f165f
+Author: Arend van Beelen jr <arendjr@gmail.com>
+Date: 23/12/2010 19:22:06
+Message:
+Integrate both PhoneGap branches. #MsgLength=34
+
+
+----
+Modified: README.md|15 4
+Deleted: framework/accelerometer.cpp|0 20
+Deleted: framework/accelerometer.h|0 24
+Deleted: framework/deviceinfo.cpp|0 22
+Deleted: framework/deviceinfo.h|0 21
+Modified: framework/main.cpp|30 11
+Deleted: framework/mobileextensions.cpp|0 35
+Deleted: framework/mobileextensions.h|0 35
+Modified: framework/phonegap_qt.pro|41 16
+Deleted: framework/webkitwindow.cpp|0 35
+Deleted: framework/webkitwindow.h|0 28
+Deleted: framework/webkitwindow.ui|0 48
+Modified: js/phonegap.js|35 36
+
+Revision: bb1dff9a9b204420a6b9a7b27cc83b3a2fed74f1
+Author: Arend van Beelen jr <arendjr@gmail.com>
+Date: 23/12/2010 22:44:31
+Message:
+Integrate JS for Camera and Geolocation. #MsgLength=41
+
+
+----
+Modified: js/phonegap.js|192 4
+
+Revision: 4f2258154251645d694823aed71827586a4c3a3e
+Author: Arend van Beelen jr <arendjr@gmail.com>
+Date: 04/01/2011 18:57:01
+Message:
+Add Geolocation to exported APIs. #MsgLength=34
+
+
+----
+Modified: framework/extensions.cpp|2 0
+
+Revision: 564598a28df6c3b39ec0035e8a42ad268bf0e00c
+Author: Arend van Beelen jr <arendjr@gmail.com>
+Date: 05/01/2011 00:11:15
+Message:
+Add Utility.exit function. #MsgLength=27
+
+
+----
+Modified: framework/extensions.cpp|2 0
+Added: framework/extensions/utility.cpp|13 0
+Added: framework/extensions/utility.h|17 0
+Modified: framework/phonegap_qt.pro|4 2
+Modified: js/phonegap.js|10 0
+
+Revision: e7789c2c08fba12aca6793bd7d696a14d9d5a0d0
+Author: Viras- <viras@users.sourceforge.net>
+Date: 16/09/2011 16:56:19
+Message:
+Restructured the project #MsgLength=25
+
+
+----
+Renamed: cookiejar.cpp [from framework/cookiejar.cpp]|0 0
+Renamed: cookiejar.h [from framework/cookiejar.h]|0 0
+Renamed: extensions.cpp [from framework/extensions.cpp]|0 0
+Renamed: extensions.h [from framework/extensions.h]|0 0
+Renamed: extensions/accelerometer.cpp [from framework/extensions/accelerometer.cpp]|0 0
+Renamed: extensions/accelerometer.h [from framework/extensions/accelerometer.h]|0 0
+Renamed: extensions/camera.cpp [from framework/extensions/camera.cpp]|0 0
+Renamed: extensions/camera.h [from framework/extensions/camera.h]|0 0
+Renamed: extensions/camerafileobserver.cpp [from framework/extensions/camerafileobserver.cpp]|0 0
+Renamed: extensions/camerafileobserver.h [from framework/extensions/camerafileobserver.h]|0 0
+Renamed: extensions/debugconsole.cpp [from framework/extensions/debugconsole.cpp]|0 0
+Renamed: extensions/debugconsole.h [from framework/extensions/debugconsole.h]|0 0
+Renamed: extensions/deviceinfo.cpp [from framework/extensions/deviceinfo.cpp]|0 0
+Renamed: extensions/deviceinfo.h [from framework/extensions/deviceinfo.h]|0 0
+Renamed: extensions/geolocation.cpp [from framework/extensions/geolocation.cpp]|0 0
+Renamed: extensions/geolocation.h [from framework/extensions/geolocation.h]|0 0
+Renamed: extensions/hash.cpp [from framework/extensions/hash.cpp]|0 0
+Renamed: extensions/hash.h [from framework/extensions/hash.h]|0 0
+Renamed: extensions/memorywatcher.cpp [from framework/extensions/memorywatcher.cpp]|0 0
+Renamed: extensions/memorywatcher.h [from framework/extensions/memorywatcher.h]|0 0
+Renamed: extensions/notification.cpp [from framework/extensions/notification.cpp]|0 0
+Renamed: extensions/notification.h [from framework/extensions/notification.h]|0 0
+Renamed: extensions/utility.cpp [from framework/extensions/utility.cpp]|0 0
+Renamed: extensions/utility.h [from framework/extensions/utility.h]|0 0
+Renamed: main.cpp [from framework/main.cpp]|0 0
+Renamed: mainwindow.cpp [from framework/mainwindow.cpp]|0 0
+Renamed: mainwindow.h [from framework/mainwindow.h]|0 0
+Renamed: networkaccessmanager.cpp [from framework/networkaccessmanager.cpp]|0 0
+Renamed: networkaccessmanager.h [from framework/networkaccessmanager.h]|0 0
+Renamed: phonegap_qt.pro [from framework/phonegap_qt.pro]|74 66
+Added: phonegap_qt.pro.user|924 0
+Renamed: vibra/vibra.pri [from framework/vibra/vibra.pri]|0 0
+Renamed: vibra/xqvibra.cpp [from framework/vibra/xqvibra.cpp]|0 0
+Renamed: vibra/xqvibra.h [from framework/vibra/xqvibra.h]|0 0
+Renamed: vibra/xqvibra_p.cpp [from framework/vibra/xqvibra_p.cpp]|0 0
+Renamed: vibra/xqvibra_p.h [from framework/vibra/xqvibra_p.h]|0 0
+Renamed: webpage.cpp [from framework/webpage.cpp]|0 0
+Renamed: webpage.h [from framework/webpage.h]|0 0
+Renamed: www/basic.css [from template/basic.css]|0 0
+Renamed: www/basic.js [from template/basic.js]|0 0
+Renamed: www/index.html [from template/index.html]|0 0
+Renamed: www/js/phonegap.js [from js/phonegap.js]|0 0
+
+Revision: 7ed9c643edef87e3633e90f58bd60057e829288b
+Author: Viras- <viras@users.sourceforge.net>
+Date: 16/09/2011 17:08:59
+Message:
+- #MsgLength=2
+
+
+----
+Modified: mainwindow.cpp|2 1
+Modified: phonegap_qt.pro|7 1
+Modified: www/index.html|18 13
+Modified: www/js/phonegap.js|1 1
+
+Revision: d48580c45b7bc213c58aa3cf20f687fd52681b2d
+Author: Viras- <viras@users.sourceforge.net>
+Date: 23/09/2011 00:42:22
+Message:
+- Added basic plugin structure / framework - Plugins are loaded from an XML file - File API added - Added sample / test code for File-API #MsgLength=138
+
+
+----
+Modified: extensions.cpp|52 7
+Modified: extensions.h|1 0
+Modified: mainwindow.cpp|1 0
+Added: pgplugin.cpp|23 0
+Added: pgplugin.h|23 0
+Modified: phonegap_qt.pro|27 3
+Modified: phonegap_qt.pro.user|8 8
+Added: plugins/fileapi.cpp|399 0
+Added: plugins/fileapi.h|35 0
+Modified: www/basic.js|76 0
+Modified: www/index.html|4 0
+Added: www/js/file.js|504 0
+Modified: www/js/phonegap.js|113 7
+Added: xml/plugins.xml|25 0
+
+Revision: 790600b35ae849ff17106e3cdccd2e8b99e64ec8
+Author: Viras- <viras@users.sourceforge.net>
+Date: 24/09/2011 20:10:42
+Message:
+- Removed outdated xvibra project reference - Added notification class based on new plugin architecture - Re-implemented javascript code for notification class - Further cleanup of the project #MsgLength=193
+
+
+----
+Added: .gitignore|2 0
+Modified: README.md|4 0
+Modified: extensions.cpp|4 10
+Modified: extensions.h|0 2
+Deleted: extensions/notification.cpp|0 27
+Modified: phonegap_qt.pro|20 6
+Deleted: phonegap_qt.pro.user|0 924
+Added: plugins/notification.cpp|30 0
+Renamed: plugins/notification.h [from extensions/notification.h]|9 11
+Deleted: vibra/vibra.pri|0 7
+Deleted: vibra/xqvibra.cpp|0 165
+Deleted: vibra/xqvibra.h|0 59
+Deleted: vibra/xqvibra_p.cpp|0 131
+Deleted: vibra/xqvibra_p.h|0 39
+Modified: www/basic.js|1 0
+Modified: www/index.html|1 0
+Added: www/js/notification.js|44 0
+Modified: www/js/phonegap.js|0 23
+Modified: xml/plugins.xml|2 1
+
+Revision: 335988b681f1ae71bda902617afe27a1da7336aa
+Author: Viras- <viras@users.sourceforge.net>
+Date: 25/09/2011 01:37:35
+Message:
+Added base JS from Android #MsgLength=27
+
+
+----
+Modified: www/js/phonegap.js|609 286
+Added: www/js/phonegap.old.js|372 0
+
+Revision: 87b0883887dfb835886d6386b7be4e0d0e387992
+Author: Viras- <viras@users.sourceforge.net>
+Date: 28/09/2011 00:10:07
+Message:
+- Added Geolocation implementation based on plugin structure - Added platform independent base phonegap code - Platform specific implementation of PhoneGap.exec added - Cleaned up JS code - Added tests for several JS functions #MsgLength=227
+
+
+----
+Modified: .gitignore|5 1
+Modified: extensions.cpp|15 4
+Deleted: extensions/geolocation.cpp|0 75
+Deleted: extensions/geolocation.h|0 45
+Modified: mainwindow.cpp|1 0
+Modified: phonegap_qt.pro|37 7
+Modified: plugins/fileapi.cpp|7 0
+Modified: plugins/fileapi.h|7 0
+Added: plugins/geolocation.cpp|63 0
+Added: plugins/geolocation.h|41 0
+Modified: www/basic.js|25 0
+Modified: www/index.html|13 1
+Added: www/js/geolocation.js|200 0
+Modified: www/js/notification.js|1 1
+Modified: www/js/phonegap.js|121 638
+Added: www/js/phonegap.new.js|695 0
+Modified: www/js/phonegap.old.js|2 197
+Added: www/js/phonegap.qt.js|52 0
+Modified: xml/plugins.xml|3 1
+
+Revision: 5c45d1dd08cdece29639ae9d0d96d76cf1d21197
+Author: Viras- <viras@users.sourceforge.net>
+Date: 29/09/2011 18:14:01
+Message:
+Device Plugin added #MsgLength=20
+
+
+----
+Modified: extensions.cpp|2 1
+Deleted: extensions/deviceinfo.cpp|0 42
+Deleted: extensions/deviceinfo.h|0 32
+Modified: mainwindow.cpp|3 3
+Modified: phonegap_qt.pro|13 9
+Added: plugins/device.cpp|30 0
+Added: plugins/device.h|18 0
+Modified: www/index.html|2 0
+Added: www/js/device.js|27 0
+Modified: xml/plugins.xml|1 1
+
+Revision: 40ed976faa350b173c85e3163660dc1a5a1d96bb
+Author: Viras- <viras@users.sourceforge.net>
+Date: 03/10/2011 16:33:41
+Message:
+Repo cleanup #MsgLength=13
+
+
+----
+Modified: .gitignore|1 6
+Modified: LICENSE|64 64
+Modified: README.md|21 29
+Deleted: cookiejar.cpp|0 52
+Deleted: cookiejar.h|0 20
+Added: deployment.pri|125 0
+Deleted: extensions.cpp|0 96
+Deleted: extensions.h|0 22
+Deleted: extensions/accelerometer.cpp|0 32
+Deleted: extensions/accelerometer.h|0 30
+Deleted: extensions/camera.cpp|0 191
+Deleted: extensions/camera.h|0 128
+Deleted: extensions/camerafileobserver.cpp|0 86
+Deleted: extensions/camerafileobserver.h|0 63
+Deleted: extensions/debugconsole.cpp|0 13
+Deleted: extensions/debugconsole.h|0 17
+Deleted: extensions/hash.cpp|0 27
+Deleted: extensions/hash.h|0 17
+Deleted: extensions/memorywatcher.cpp|0 85
+Deleted: extensions/memorywatcher.h|0 87
+Deleted: extensions/utility.cpp|0 13
+Deleted: extensions/utility.h|0 17
+Modified: main.cpp|6 26
+Modified: mainwindow.cpp|68 28
+Modified: mainwindow.h|31 5
+Added: mainwindow.ui|43 0
+Deleted: networkaccessmanager.cpp|0 32
+Deleted: networkaccessmanager.h|0 17
+Deleted: phonegap_qt.pro|0 152
+Added: phonegapqt.desktop|11 0
+Added: phonegapqt.pro|85 0
+Added: phonegapqt.svg|93 0
+Added: phonegapqt64.png|0 0
+Added: phonegapqt80.png|0 0
+Added: phonegapqt_harmattan.desktop|11 0
+Renamed: src/pgplugin.cpp [from pgplugin.cpp]|19 3
+Renamed: src/pgplugin.h [from pgplugin.h]|6 1
+Added: src/phonegap.cpp|94 0
+Added: src/phonegap.h|34 0
+Added: src/pluginregistry.cpp|23 0
+Added: src/pluginregistry.h|25 0
+Added: src/plugins/console.cpp|22 0
+Added: src/plugins/console.h|23 0
+Renamed: src/plugins/device.cpp [from plugins/device.cpp]|21 4
+Renamed: src/plugins/device.h [from plugins/device.h]|5 2
+Renamed: src/plugins/fileapi.cpp [from plugins/fileapi.cpp]|12 3
+Renamed: src/plugins/fileapi.h [from plugins/fileapi.h]|4 1
+Renamed: src/plugins/geolocation.cpp [from plugins/geolocation.cpp]|15 4
+Renamed: src/plugins/geolocation.h [from plugins/geolocation.h]|5 1
+Renamed: src/plugins/notification.cpp [from plugins/notification.cpp]|16 3
+Renamed: src/plugins/notification.h [from plugins/notification.h]|4 1
+Deleted: webpage.cpp|0 29
+Deleted: webpage.h|0 21
+Added: www/js/console.js|18 0
+Modified: www/js/device.js|1 1
+Modified: xml/plugins.xml|1 10
+
+Revision: 2be5d1662f8b36d2641554965cb6dfe9d4828fd2
+Author: Viras- <viras@users.sourceforge.net>
+Date: 03/10/2011 16:36:11
+Message:
+Deleted all files #MsgLength=18
+
+
+----
+Deleted: LICENSE|0 64
+Deleted: README.md|0 21
+Deleted: deployment.pri|0 125
+Deleted: main.cpp|0 14
+Deleted: mainwindow.cpp|0 78
+Deleted: mainwindow.h|0 42
+Deleted: mainwindow.ui|0 43
+Deleted: phonegapqt.desktop|0 11
+Deleted: phonegapqt.pro|0 85
+Deleted: phonegapqt.svg|0 93
+Deleted: phonegapqt64.png|0 0
+Deleted: phonegapqt80.png|0 0
+Deleted: phonegapqt_harmattan.desktop|0 11
+Deleted: src/pgplugin.cpp|0 39
+Deleted: src/pgplugin.h|0 28
+Deleted: src/phonegap.cpp|0 94
+Deleted: src/phonegap.h|0 34
+Deleted: src/pluginregistry.cpp|0 23
+Deleted: src/pluginregistry.h|0 25
+Deleted: src/plugins/console.cpp|0 22
+Deleted: src/plugins/console.h|0 23
+Deleted: src/plugins/device.cpp|0 47
+Deleted: src/plugins/device.h|0 21
+Deleted: src/plugins/fileapi.cpp|0 415
+Deleted: src/plugins/fileapi.h|0 45
+Deleted: src/plugins/geolocation.cpp|0 74
+Deleted: src/plugins/geolocation.h|0 45
+Deleted: src/plugins/notification.cpp|0 43
+Deleted: src/plugins/notification.h|0 22
+Deleted: www/basic.css|0 119
+Deleted: www/basic.js|0 135
+Deleted: www/index.html|0 41
+Deleted: www/js/console.js|0 18
+Deleted: www/js/device.js|0 27
+Deleted: www/js/file.js|0 504
+Deleted: www/js/geolocation.js|0 200
+Deleted: www/js/notification.js|0 44
+Deleted: www/js/phonegap.js|0 178
+Deleted: www/js/phonegap.new.js|0 695
+Deleted: www/js/phonegap.old.js|0 177
+Deleted: www/js/phonegap.qt.js|0 52
+Deleted: xml/plugins.xml|0 19
+
+Revision: 1f7eb274c194b6233dc174079e0dd53e73a93696
+Author: Viras- <viras@users.sourceforge.net>
+Date: 03/10/2011 16:36:57
+Message:
+New project base #MsgLength=17
+
+
+----
+Modified: .gitignore|2 1
+Added: LICENSE|64 0
+Added: README.md|21 0
+Added: deployment.pri|125 0
+Added: main.cpp|14 0
+Added: mainwindow.cpp|78 0
+Added: mainwindow.h|42 0
+Added: mainwindow.ui|43 0
+Added: phonegapqt.desktop|11 0
+Added: phonegapqt.pro|85 0
+Added: phonegapqt.svg|93 0
+Added: phonegapqt64.png|0 0
+Added: phonegapqt80.png|0 0
+Added: phonegapqt_harmattan.desktop|11 0
+Added: src/pgplugin.cpp|39 0
+Added: src/pgplugin.h|28 0
+Added: src/phonegap.cpp|94 0
+Added: src/phonegap.h|34 0
+Added: src/pluginregistry.cpp|23 0
+Added: src/pluginregistry.h|25 0
+Added: src/plugins/console.cpp|22 0
+Added: src/plugins/console.h|23 0
+Added: src/plugins/device.cpp|47 0
+Added: src/plugins/device.h|21 0
+Added: src/plugins/fileapi.cpp|415 0
+Added: src/plugins/fileapi.h|45 0
+Added: src/plugins/geolocation.cpp|74 0
+Added: src/plugins/geolocation.h|45 0
+Added: src/plugins/notification.cpp|43 0
+Added: src/plugins/notification.h|22 0
+Added: www/basic.css|119 0
+Added: www/basic.js|135 0
+Added: www/index.html|41 0
+Added: www/js/console.js|18 0
+Added: www/js/device.js|27 0
+Added: www/js/file.js|504 0
+Added: www/js/geolocation.js|200 0
+Added: www/js/notification.js|44 0
+Added: www/js/phonegap.js|178 0
+Added: www/js/phonegap.new.js|695 0
+Added: www/js/phonegap.old.js|177 0
+Added: www/js/phonegap.qt.js|52 0
+Added: xml/plugins.xml|19 0
+
+Revision: 9730a4dbc6aaec5a9651c2aa0f292ed1923e0578
+Author: Viras- <viras@users.sourceforge.net>
+Date: 03/10/2011 17:29:43
+Message:
+Removed old project #MsgLength=20
+
+
+----
+Deleted: LICENSE|0 64
+Deleted: README.md|0 21
+Deleted: deployment.pri|0 125
+Deleted: main.cpp|0 14
+Deleted: mainwindow.cpp|0 78
+Deleted: mainwindow.h|0 42
+Deleted: mainwindow.ui|0 43
+Deleted: phonegapqt.desktop|0 11
+Deleted: phonegapqt.pro|0 85
+Deleted: phonegapqt.svg|0 93
+Deleted: phonegapqt64.png|0 0
+Deleted: phonegapqt80.png|0 0
+Deleted: phonegapqt_harmattan.desktop|0 11
+Deleted: src/pgplugin.cpp|0 39
+Deleted: src/pgplugin.h|0 28
+Deleted: src/phonegap.cpp|0 94
+Deleted: src/phonegap.h|0 34
+Deleted: src/pluginregistry.cpp|0 23
+Deleted: src/pluginregistry.h|0 25
+Deleted: src/plugins/console.cpp|0 22
+Deleted: src/plugins/console.h|0 23
+Deleted: src/plugins/device.cpp|0 47
+Deleted: src/plugins/device.h|0 21
+Deleted: src/plugins/fileapi.cpp|0 415
+Deleted: src/plugins/fileapi.h|0 45
+Deleted: src/plugins/geolocation.cpp|0 74
+Deleted: src/plugins/geolocation.h|0 45
+Deleted: src/plugins/notification.cpp|0 43
+Deleted: src/plugins/notification.h|0 22
+Deleted: www/basic.css|0 119
+Deleted: www/basic.js|0 135
+Deleted: www/index.html|0 41
+Deleted: www/js/console.js|0 18
+Deleted: www/js/device.js|0 27
+Deleted: www/js/file.js|0 504
+Deleted: www/js/geolocation.js|0 200
+Deleted: www/js/notification.js|0 44
+Deleted: www/js/phonegap.js|0 178
+Deleted: www/js/phonegap.new.js|0 695
+Deleted: www/js/phonegap.old.js|0 177
+Deleted: www/js/phonegap.qt.js|0 52
+Deleted: xml/plugins.xml|0 19
+
+Revision: 1d23b3b7e69fbd9159ca0804f2724369a8baa174
+Author: Viras- <viras@users.sourceforge.net>
+Date: 03/10/2011 17:31:24
+Message:
+Added new project base code #MsgLength=28
+
+
+----
+Added: LICENSE|64 0
+Added: README.md|21 0
+Added: deployment.pri|125 0
+Added: main.cpp|14 0
+Added: mainwindow.cpp|78 0
+Added: mainwindow.h|42 0
+Added: mainwindow.ui|43 0
+Added: phonegapqt.desktop|11 0
+Added: phonegapqt.pro|85 0
+Added: phonegapqt.svg|93 0
+Added: phonegapqt64.png|0 0
+Added: phonegapqt80.png|0 0
+Added: phonegapqt_harmattan.desktop|11 0
+Added: src/pgplugin.cpp|39 0
+Added: src/pgplugin.h|28 0
+Added: src/phonegap.cpp|94 0
+Added: src/phonegap.h|34 0
+Added: src/pluginregistry.cpp|23 0
+Added: src/pluginregistry.h|25 0
+Added: src/plugins/console.cpp|22 0
+Added: src/plugins/console.h|23 0
+Added: src/plugins/device.cpp|47 0
+Added: src/plugins/device.h|21 0
+Added: src/plugins/fileapi.cpp|415 0
+Added: src/plugins/fileapi.h|45 0
+Added: src/plugins/geolocation.cpp|74 0
+Added: src/plugins/geolocation.h|45 0
+Added: src/plugins/notification.cpp|43 0
+Added: src/plugins/notification.h|22 0
+Added: www/basic.css|119 0
+Added: www/basic.js|135 0
+Added: www/index.html|41 0
+Added: www/js/console.js|18 0
+Added: www/js/device.js|27 0
+Added: www/js/file.js|504 0
+Added: www/js/geolocation.js|200 0
+Added: www/js/notification.js|44 0
+Added: www/js/phonegap.js|178 0
+Added: www/js/phonegap.new.js|695 0
+Added: www/js/phonegap.old.js|177 0
+Added: www/js/phonegap.qt.js|52 0
+Added: xml/plugins.xml|19 0
+
+Revision: 2f88ba77b25753912800c583bf8ec6b7ec85944c
+Author: Viras- <viras@users.sourceforge.net>
+Date: 03/10/2011 17:47:11
+Message:
+Added copyright statements #MsgLength=27
+
+
+----
+Modified: LICENSE|2 0
+Modified: main.cpp|8 0
+Modified: mainwindow.cpp|1 0
+Modified: mainwindow.h|1 0
+Modified: phonegapqt.pro|2 0
+Modified: src/pgplugin.cpp|8 0
+Modified: src/pgplugin.h|8 0
+Modified: src/phonegap.cpp|1 0
+Modified: src/phonegap.h|1 0
+Modified: src/pluginregistry.cpp|8 0
+Modified: src/pluginregistry.h|8 0
+Modified: src/plugins/console.cpp|8 0
+Modified: src/plugins/console.h|8 0
+Modified: src/plugins/device.cpp|8 0
+Modified: src/plugins/device.h|8 0
+Modified: src/plugins/fileapi.cpp|1 0
+Modified: src/plugins/fileapi.h|1 0
+Modified: src/plugins/geolocation.cpp|1 0
+Modified: src/plugins/geolocation.h|1 0
+Modified: src/plugins/notification.cpp|8 0
+Modified: src/plugins/notification.h|8 0
+Deleted: www/basic.css|0 119
+Modified: www/index.html|0 1
+Modified: www/js/console.js|1 1
+Modified: www/js/device.js|1 0
+Modified: www/js/file.js|1 0
+Modified: www/js/geolocation.js|1 0
+Modified: www/js/notification.js|1 0
+Modified: www/js/phonegap.js|1 0
+Deleted: www/js/phonegap.new.js|0 695
+Modified: www/js/phonegap.qt.js|1 0
+Renamed: www/phonegap.old.js [from www/js/phonegap.old.js]|0 0
+
+Revision: 0889204576c60bffcb3357ab80cd0458ebd1ae49
+Author: Viras- <viras@users.sourceforge.net>
+Date: 03/10/2011 18:01:39
+Message:
+Updated icons for phonegap #MsgLength=27
+
+
+----
+Modified: phonegapqt.svg|269 85
+Modified: phonegapqt64.png|0 0
+Modified: phonegapqt80.png|0 0
+
+Revision: ca96175187b2f6ffb0b8a4dcb4e517ee0d8bee8b
+Author: Viras- <viras@users.sourceforge.net>
+Date: 09/11/2011 15:56:30
+Message:
+- Updated license header - Added console debugging #MsgLength=51
+
+
+----
+Modified: main.cpp|12 4
+Modified: mainwindow.cpp|12 4
+Modified: mainwindow.h|12 4
+Modified: phonegapqt.pro|7 2
+Modified: src/pgplugin.cpp|12 4
+Modified: src/pgplugin.h|12 4
+Added: src/pgwebpage.cpp|28 0
+Added: src/pgwebpage.h|37 0
+Modified: src/phonegap.cpp|17 7
+Modified: src/phonegap.h|12 4
+Modified: src/pluginregistry.cpp|12 4
+Modified: src/pluginregistry.h|12 4
+Modified: src/plugins/console.cpp|12 4
+Modified: src/plugins/console.h|12 4
+Modified: src/plugins/device.cpp|12 4
+Modified: src/plugins/device.h|12 4
+Modified: src/plugins/fileapi.cpp|12 4
+Modified: src/plugins/fileapi.h|12 4
+Modified: src/plugins/geolocation.cpp|12 4
+Modified: src/plugins/geolocation.h|12 4
+Modified: src/plugins/notification.cpp|12 4
+Modified: src/plugins/notification.h|12 4
+Modified: www/basic.js|0 17
+Modified: www/index.html|0 5
+Modified: www/js/console.js|12 4
+Modified: www/js/device.js|12 4
+Modified: www/js/file.js|12 4
+Modified: www/js/geolocation.js|12 4
+Modified: www/js/notification.js|12 4
+Modified: www/js/phonegap.js|12 4
+Modified: www/js/phonegap.qt.js|12 4
+Deleted: www/phonegap.old.js|0 177
+
+Revision: d1d66cdd924db42f491f3c9016a070163e92a4ce
+Author: Viras- <viras@users.sourceforge.net>
+Date: 09/11/2011 15:59:57
+Message:
+Changed to apache-2.0 license #MsgLength=30
+
+
+----
+Modified: LICENSE|202 66
+
+Revision: 7e8afc6f250f11bd0a5f97fedba3442696acc362
+Author: Viras- <viras@users.sourceforge.net>
+Date: 09/11/2011 16:02:30
+Message:
+Updated readme to callback naming #MsgLength=34
+
+
+----
+Modified: README.md|4 3
+
+Revision: 554fb91061a8e9f1a1cec3ba6d9626c3396a217d
+Author: Viras- <viras@users.sourceforge.net>
+Date: 09/11/2011 16:03:19
+Message:
+Updated license statement #MsgLength=26
+
+
+----
+Modified: README.md|4 0
+
+Revision: 54ec15e9e9e413b19652930fec441f52a0fd2db1
+Author: Viras- <viras@users.sourceforge.net>
+Date: 09/11/2011 16:19:32
+Message:
+Project rename to callback-qt #MsgLength=30
+
+
+----
+Modified: .gitignore|1 1
+Renamed: callbackqt.desktop [from phonegapqt.desktop]|3 3
+Renamed: callbackqt.pro [from phonegapqt.pro]|28 4
+Renamed: callbackqt.svg [from phonegapqt.svg]|0 0
+Renamed: callbackqt64.png [from phonegapqt64.png]|0 0
+Renamed: callbackqt80.png [from phonegapqt80.png]|0 0
+Renamed: callbackqt_harmattan.desktop [from phonegapqt_harmattan.desktop]|3 3
+
+Revision: f31f6ffb704a4d50ecc2af6265448ec5dc755b9c
+Author: Viras- <viras@users.sourceforge.net>
+Date: 21/12/2011 16:25:41
+Message:
+Added support for connection API of phonegap #MsgLength=45
+
+
+----
+Modified: README.md|1 0
+Modified: callbackqt.pro|6 2
+Modified: src/phonegap.h|1 1
+Added: src/plugins/connection.cpp|107 0
+Added: src/plugins/connection.h|54 0
+Modified: www/index.html|1 0
+Added: www/js/connection.js|53 0
+Modified: xml/plugins.xml|1 0
+
+
+Revision: 3b96e41f9c6341e4e5e9f9ed63850c7cf606115a
+Author: Viras- <viras@users.sourceforge.net>
+Date: 13/02/2012 18:55:53
+Message:
+Rename of project to cordova-qt #MsgLength=32
+
+
+----
+Modified: README.md|2 2
+Added: cordovaqt.desktop|11 0
+Added: cordovaqt.pro|120 0
+Added: cordovaqt.pro.user|265 0
+Added: cordovaqt.svg|277 0
+Added: cordovaqt64.png|0 0
+Added: cordovaqt80.png|0 0
+Added: cordovaqt_harmattan.desktop|11 0
+Modified: mainwindow.cpp|1 1
+Modified: mainwindow.h|2 2
+Renamed: src/cordova.cpp [from src/phonegap.cpp]|6 6
+Renamed: src/cordova.h [from src/phonegap.h]|6 6
+Renamed: src/cplugin.cpp [from src/pgplugin.cpp]|5 5
+Renamed: src/cplugin.h [from src/pgplugin.h]|5 5
+Renamed: src/cwebpage.cpp [from src/pgwebpage.cpp]|3 3
+Renamed: src/cwebpage.h [from src/pgwebpage.h]|5 5
+Modified: src/pluginregistry.cpp|3 3
+Modified: src/pluginregistry.h|4 4
+Modified: src/plugins/connection.cpp|1 1
+Modified: src/plugins/connection.h|2 2
+Modified: src/plugins/console.cpp|1 1
+Modified: src/plugins/console.h|2 2
+Modified: src/plugins/device.cpp|1 1
+Modified: src/plugins/device.h|2 2
+Modified: src/plugins/fileapi.cpp|1 1
+Modified: src/plugins/fileapi.h|2 2
+Modified: src/plugins/geolocation.cpp|1 1
+Modified: src/plugins/geolocation.h|2 2
+Modified: src/plugins/notification.cpp|1 1
+Modified: src/plugins/notification.h|2 2
+Modified: www/index.html|3 3
+Added: www/js/cordova.js|187 0
+Added: www/js/cordova.qt.js|61 0
+
+Revision: e0821a9cf1494d8d8dceb534e99a67c7cca3c000
+Author: Viras- <viras@users.sourceforge.net>
+Date: 13/02/2012 18:56:19
+Message:
+Rename of project to cordova-qt #MsgLength=32
+
+
+----
+Deleted: callbackqt.desktop|0 11
+Deleted: callbackqt.pro|0 120
+Deleted: callbackqt.svg|0 277
+Deleted: callbackqt64.png|0 0
+Deleted: callbackqt80.png|0 0
+Deleted: callbackqt_harmattan.desktop|0 11
+Deleted: www/js/phonegap.js|0 187
+Deleted: www/js/phonegap.qt.js|0 61
+
+
+Revision: 44a567ef9c3798027172e7ff044d13bd6283a8c9
+Author: Viras- <viras@users.sourceforge.net>
+Date: 13/02/2012 19:16:16
+Message:
+Fixing geolocation caching bug #MsgLength=31
+
+
+----
+Modified: .gitignore|1 2
+Deleted: cordovaqt.pro.user|0 265
+Modified: www/index.html|4 3
+Modified: www/js/geolocation.js|1 1
+
+
+Revision: 433c3d29e15fba2525e05502907d03b0bc40dcb6
+Author: Jeff Tranter <jtranter@ics.com>
+Date: 15/02/2012 02:54:21
+Message:
+Patches to get code to compile with Qt5. Still backwards compatible with Qt 4. #MsgLength=79
+
+
+----
+Modified: cordovaqt.pro|8 62
+Modified: main.cpp|1 1
+Modified: mainwindow.cpp|14 1
+Modified: mainwindow.h|1 1
+Modified: src/plugins/connection.cpp|53 0
+Modified: src/plugins/connection.h|16 0
+Modified: src/plugins/device.cpp|18 2
+Modified: src/plugins/geolocation.h|2 0
+Modified: src/plugins/notification.cpp|2 0
+
+
+Revision: 31fe6f4caae5fa346e16b47c53167144ac122db4
+Author: Longwei Su <longwei.su@gmail.com>
+Date: 16/02/2012 03:05:15
+Message:
+adding compass support for qt4 & 5 #MsgLength=35
+
+
+----
+Modified: cordovaqt.pro|11 2
+Added: qtc_packaging/debian_harmattan/README|6 0
+Added: qtc_packaging/debian_harmattan/changelog|5 0
+Added: qtc_packaging/debian_harmattan/compat|1 0
+Added: qtc_packaging/debian_harmattan/control|15 0
+Added: qtc_packaging/debian_harmattan/copyright|40 0
+Added: qtc_packaging/debian_harmattan/manifest.aegis|70 0
+Added: qtc_packaging/debian_harmattan/rules|91 0
+Added: src/plugins/compass.cpp|57 0
+Added: src/plugins/compass.h|51 0
+Modified: www/basic.js|10 0
+Modified: www/index.html|4 0
+Added: www/js/compass.js|133 0
+Modified: xml/plugins.xml|1 0
+
+Revision: fb8de81baec776167a6809d8cf5cd4927697be6d
+Author: Longwei Su <longwei.su@gmail.com>
+Date: 16/02/2012 03:15:27
+Message:
+ignore harmattan deploy folder qtc_packaging #MsgLength=45
+
+
+----
+Modified: .gitignore|1 0
+Deleted: qtc_packaging/debian_harmattan/README|0 6
+Deleted: qtc_packaging/debian_harmattan/changelog|0 5
+Deleted: qtc_packaging/debian_harmattan/compat|0 1
+Deleted: qtc_packaging/debian_harmattan/control|0 15
+Deleted: qtc_packaging/debian_harmattan/copyright|0 40
+Deleted: qtc_packaging/debian_harmattan/manifest.aegis|0 70
+Deleted: qtc_packaging/debian_harmattan/rules|0 91
+
+
+Revision: d6b912cec05d4bf9f770c21eb04bb45056ef9a9f
+Author: Denis Kormalev <dkormalev@ics.com>
+Date: 16/02/2012 19:05:02
+Message:
+Qt5 quick webview usage added #MsgLength=30
+
+
+----
+Modified: cordovaqt.pro|27 27
+Modified: main.cpp|17 1
+Modified: mainwindow.cpp|35 1
+Modified: mainwindow.h|5 1
+Added: qml/cordova_wrapper.js|29 0
+Added: qml/main.qml|39 0
+Modified: src/cordova.cpp|30 25
+Modified: src/cordova.h|21 3
+Modified: src/cplugin.cpp|2 10
+Modified: src/cplugin.h|0 4
+Modified: src/plugins/compass.h|3 0
+Modified: src/plugins/geolocation.cpp|1 1
+Added: www/index_qt5.html|36 0
+Added: www/js/cordova.qt5.js|57 0
+
+Revision: 343a2c77e8ebfee2d2dc2b34b5e166cd5151a6a9
+Author: Denis Kormalev <dkormalev@ics.com>
+Date: 16/02/2012 19:09:37
+Message:
+Small fixes #MsgLength=12
+
+
+----
+Modified: cordovaqt.pro|1 1
+Modified: mainwindow.h|1 1
+Modified: qml/main.qml|2 2
+
+
+Revision: 069265f01ff6ac6e2ce90184c4f377f96414e0ab
+Author: Denis Kormalev <dkormalev@ics.com>
+Date: 16/02/2012 19:36:08
+Message:
+More on renaming from phonegap to cordova #MsgLength=42
+
+
+----
+Modified: mainwindow.cpp|1 1
+Modified: mainwindow.ui|1 1
+Modified: src/cordova.cpp|2 2
+Modified: src/cplugin.cpp|2 2
+Modified: src/plugins/compass.cpp|1 1
+Modified: src/plugins/connection.cpp|1 1
+Modified: src/plugins/console.cpp|1 1
+Modified: src/plugins/device.cpp|4 4
+Modified: src/plugins/fileapi.cpp|1 1
+Modified: src/plugins/geolocation.cpp|1 1
+Modified: src/plugins/notification.cpp|1 1
+Modified: www/index.html|1 1
+Modified: www/index_qt5.html|1 1
+Modified: www/js/compass.js|3 3
+Modified: www/js/connection.js|3 3
+Modified: www/js/console.js|2 2
+Modified: www/js/cordova.js|54 54
+Modified: www/js/cordova.qt.js|15 15
+Modified: www/js/cordova.qt5.js|7 7
+Modified: www/js/device.js|5 5
+Modified: www/js/file.js|19 19
+Modified: www/js/geolocation.js|3 3
+Modified: www/js/notification.js|3 3
+Modified: xml/plugins.xml|17 17
+
+
+Revision: 938fe5c415ced73afbcf7758a112a9a6766bc86a
+Author: Denis Kormalev <dkormalev@ics.com>
+Date: 18/02/2012 00:01:39
+Message:
+Qt4 version moved to qml webview. Harmattan support added #MsgLength=58
+
+
+----
+Modified: cordovaqt.pro|12 7
+Modified: main.cpp|16 7
+Deleted: mainwindow.cpp|0 134
+Deleted: mainwindow.h|0 55
+Deleted: mainwindow.ui|0 43
+Modified: qml/cordova_wrapper.js|13 0
+Modified: qml/main.qml|20 20
+Added: qml/main_harmattan.qml|53 0
+Added: qml/main_qt5.qml|39 0
+Modified: src/cordova.cpp|14 2
+Modified: src/cordova.h|1 0
+Modified: www/basic.js|5 5
+Modified: www/index.html|1 1
+Modified: www/js/cordova.qt.js|1 12
+Modified: www/js/file.js|1 1
+
+
+Revision: b5ec34ac009251fef5a90a626a8f84aebc4c0583
+Author: Denis Kormalev <dkormalev@ics.com>
+Date: 20/02/2012 17:59:41
+Message:
+Small visual fixes for harmattan #MsgLength=33
+
+
+----
+Modified: main.cpp|2 1
+Modified: qml/main_harmattan.qml|4 3
+
+Revision: 16852a95de10d53e7fccdd5312bad705a71dd58b
+Author: Denis Kormalev <dkormalev@ics.com>
+Date: 20/02/2012 19:28:04
+Message:
+Application made boostable under harmattan. Running from harmattan launcher bug fixed #MsgLength=86
+
+
+----
+Modified: cordovaqt.pro|1 1
+Modified: cordovaqt_harmattan.desktop|2 2
+Modified: main.cpp|28 11
+
+
+Revision: c2ba52c27282a160d9eb4eb253ada2a66cc2b26a
+Author: Jeff Tranter <jtranter@ics.com>
+Date: 18/02/2012 00:26:17
+Message:
+Add support for Accelerometer. Submitted on behalf of Alejandro Narancio. #MsgLength=74
+
+
+----
+Modified: cordovaqt.pro|2 0
+Added: src/plugins/accelerometer.cpp|58 0
+Added: src/plugins/accelerometer.h|56 0
+Modified: www/basic.js|13 1
+Modified: www/index.html|6 5
+Modified: xml/plugins.xml|1 0
+
+
+Revision: aac85d285fad44ec024b1fa7d36abc89c9a3ccd9
+Author: Jeff Tranter <jtranter@ics.com>
+Date: 22/02/2012 06:06:04
+Message:
+Merge recent pull requests. #MsgLength=28
+
+
+----
+Modified: cordovaqt.pro|2 0
+Modified: main.cpp|2 0
+Modified: src/cordova.cpp|11 2
+Modified: src/cordova.h|4 0
+Added: src/plugins/events.cpp|155 0
+Added: src/plugins/events.h|59 0
+Modified: www/basic.js|65 3
+Modified: www/index.html|2 0
+Added: www/js/accelerometer.js|102 0
+Modified: www/js/cordova.js|74 9
+Modified: xml/plugins.xml|1 0
+
+Revision: a305dd9f6e6d86df710e9f5b2a6d7954c0dde3c3
+Author: Denis Kormalev <dkormalev@ics.com>
+Date: 22/02/2012 23:00:13
+Message:
+Various fixes for harmattan. Scrolling added to qml files #MsgLength=58
+
+
+----
+Modified: qml/main.qml|40 26
+Modified: qml/main_harmattan.qml|39 26
+Modified: src/plugins/notification.cpp|17 4
+Modified: src/plugins/notification.h|3 0
+Modified: www/basic.js|13 9
+Modified: www/index.html|8 3
+Modified: www/index_qt5.html|24 11
+
+
+Revision: a182ef81a33aa87aa34db0db18b9dc25d26b0d45
+Author: Wolfgang Koller <wkoller@virasnotebook.at.home>
+Date: 24/02/2012 16:13:25
+Message:
+Fixing CB-277 (fullscreen display) on Simulator as well as on Symbian OS #MsgLength=73
+
+
+----
+Modified: main.cpp|4 0
+
+
+Revision: 0e9ba638cd0d6892a33230b92bc310dadd33b2b1
+Author: Denis Kormalev <dkormalev@ics.com>
+Date: 24/02/2012 21:51:37
+Message:
+Initial version working at Harmattan@Qt5 #MsgLength=41
+
+
+----
+Modified: cordovaqt.pro|38 30
+Modified: main.cpp|25 6
+Modified: qml/main_harmattan.qml|1 1
+Added: qml/main_harmattan_qt5.qml|64 0
+Modified: src/cordova.cpp|1 1
+Modified: src/cplugin.h|0 1
+Deleted: src/cwebpage.cpp|0 28
+Deleted: src/cwebpage.h|0 37
+Modified: src/plugins/device.cpp|1 0
+Modified: src/plugins/fileapi.h|1 0
+Modified: src/plugins/geolocation.h|1 0
+Modified: www/js/connection.js|1 1
+
+
+Revision: 435a3311ee0e9252096a2257b2fb21597b068c54
+Author: Jeff Tranter <jtranter@ics.com>
+Date: 24/02/2012 22:42:47
+Message:
+Make button text consistent. #MsgLength=29
+
+
+----
+Modified: www/index.html|6 6
+Modified: www/index_qt5.html|6 6
+
+Revision: c0360555ef2af93be89c8ce391c1ea7c38cb9fe3
+Author: Jeff Tranter <jtranter@ics.com>
+Date: 25/02/2012 01:41:54
+Message:
+Fix compile warnings about unused variables. #MsgLength=45
+
+
+----
+Modified: src/plugins/accelerometer.cpp|3 1
+Modified: src/plugins/connection.cpp|11 0
+
+Revision: 0d7dfab0231b1bab397188f17db9248e468754eb
+Author: Jeff Tranter <tranter@apache.org>
+Date: 12/03/2012 20:40:52
+Message:
+Don't need Qt webkit component when building for Qt 5 since we are only using the QML interface. #MsgLength=97
+
+
+----
+Modified: cordovaqt.pro|2 3
+
+Revision: 58fbc9850ce3539dfe729dd6668e5af8cd7b0a3f
+Author: Jeff Tranter <tranter@apache.org>
+Date: 12/03/2012 20:56:22
+Message:
+Small grammar and formatting improvements to README.md file. #MsgLength=61
+
+
+----
+Modified: README.md|14 10
+
+Revision: 060d55e221e7a2cde80a9cc1246b79af816ed0d5
+Author: cip <cip@gmx.at>
+Date: 25/02/2012 00:41:51
+Message:
+Fix compile for Symbian #MsgLength=63
+
+
+----
+Modified: src/plugins/accelerometer.h|1 1
+Modified: src/plugins/compass.cpp|1 1
+Modified: src/plugins/compass.h|1 1
+
+Revision: 4d041b664dc376e7097a9259314b24fded74e576
+Author: cip <cip@gmx.at>
+Date: 11/03/2012 05:52:31
+Message:
+Workaround for symbian regarding HTMl5 localStorage/client side database #MsgLength=297
+
+
+----
+Modified: main.cpp|6 0
+
+Revision: 7ba449ce96fcfc7c7db0490b17732c397bff1c3b
+Author: Longwei Su <longwei.su@gmail.com>
+Date: 14/03/2012 22:41:23
+Message:
+Notification rework for Harmattan #MsgLength=34
+
+
+----
+Modified: cordovaqt.pro|2 2
+Modified: qml/main.qml|1 0
+Modified: qml/main_harmattan.qml|63 8
+Modified: src/plugins/compass.cpp|0 1
+Modified: src/plugins/notification.cpp|6 5
+Modified: www/basic.js|3 3
+Modified: www/js/notification.js|14 18
+
+Revision: 962bacac65dfe33d656cf972b33bd02906c138b6
+Author: Jeff Tranter <tranter@apache.org>
+Date: 16/03/2012 21:12:13
+Message:
+Update README.md to reflect current implementation status. #MsgLength=59
+
+
+----
+Modified: README.md|16 7
+
+Revision: 7b6e0562704d7536eca39361aa25ca65a7a9ec9f
+Author: Jeff Tranter <tranter@apache.org>
+Date: 16/03/2012 21:14:10
+Message:
+Fix some typos in README.md file. #MsgLength=34
+
+
+----
+Modified: README.md|3 3
+
+Revision: ee8ea6e467c38ca46c98c2204fd85d47d59b1722
+Author: Denis Kormalev <dkormalev@ics.com>
+Date: 16/03/2012 23:21:53
+Message:
+Quick fix for current webkit2 master #MsgLength=37
+
+
+----
+Modified: qml/main_qt5.qml|9 5
+
+Revision: f773df7bcebdf04bce7506ca1d842b93c5dbd1d7
+Author: Denis Kormalev <dkormalev@ics.com>
+Date: 01/03/2012 18:46:56
+Message:
+Initial version of contacts support. Search is working #MsgLength=55
+
+
+----
+Modified: cordovaqt.pro|7 4
+Added: src/plugins/contacts.cpp|273 0
+Added: src/plugins/contacts.h|57 0
+Modified: www/basic.js|10 0
+Modified: www/index.html|1 0
+Modified: www/index_qt5.html|1 0
+Added: www/js/contacts.js|237 0
+Modified: xml/plugins.xml|1 0
+
+Revision: b8243aa8a4c1fcf569a30a2701c1f61c6ce9b4a8
+Author: Denis Kormalev <dkormalev@ics.com>
+Date: 01/03/2012 20:28:06
+Message:
+Remove contact method added (not tested yet) #MsgLength=45
+
+
+----
+Modified: src/plugins/contacts.cpp|13 0
+Modified: src/plugins/contacts.h|4 4
+Modified: www/js/contacts.js|15 2
+
+Revision: d39b3484c3a333d42400a90f74cb8396522f7c92
+Author: Denis Kormalev <dkormalev@ics.com>
+Date: 05/03/2012 22:52:13
+Message:
+Save and remove support added for contacts #MsgLength=43
+
+
+----
+Modified: src/plugins/contacts.cpp|188 27
+Modified: src/plugins/contacts.h|1 1
+Modified: www/basic.js|52 8
+Modified: www/js/contacts.js|16 20
+
+Revision: abb593a7b2ff971c15b47e6f8319c53f0b7316a9
+Author: Denis Kormalev <dkormalev@ics.com>
+Date: 06/03/2012 20:06:26
+Message:
+Qt5 support. Test page updated #MsgLength=31
+
+
+----
+Modified: src/plugins/contacts.cpp|29 1
+Modified: www/basic.js|37 22
+Modified: www/index.html|9 0
+Modified: www/index_qt5.html|9 0
+Modified: www/js/contacts.js|2 2
+
+Revision: 92b178b63ec4d82b839032f829b3ac5fbca326a0
+Author: Denis Kormalev <dkormalev@ics.com>
+Date: 19/03/2012 19:55:57
+Message:
+Fixes for qt5 in notifications and main.cpp #MsgLength=44
+
+
+----
+Modified: .gitignore|1 1
+Modified: cordovaqt.pro|1 0
+Modified: main.cpp|4 2
+Modified: src/plugins/notification.cpp|6 1
+
+Revision: ed91ba005c9e523f72239e9d3cb05d0c5c5de0b1
+Author: Denis Kormalev <dkormalev@ics.com>
+Date: 19/03/2012 19:56:31
+Message:
+Fixes for qt5 pre release alpha version in contacts module #MsgLength=59
+
+
+----
+Modified: src/plugins/contacts.cpp|206 18
+Modified: src/plugins/contacts.h|16 1
+
+Revision: a15da9d2f0d99476a32018101ac191fd86b0500c
+Author: Jeff Tranter <tranter@apache.org>
+Date: 17/03/2012 03:31:43
+Message:
+Minor updates to README.md file. #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+
+Revision: fee4e826de80b3707d76c6c6ca3667a065c1076e
+Author: Longwei Su <longwei.su@gmail.com>
+Date: 31/03/2012 04:11:57
+Message:
+Merge Camera support patches for Symbian and Harmattan, Fixed Symbian build issues #MsgLength=83
+
+
+----
+Added: src/plugins/camera.cpp|258 0
+Added: src/plugins/camera.h|74 0
+Added: src/plugins/cameraresolution.h|22 0
+Added: www/js/camera.js|52 0
+
+Revision: e8670eac8d3dd897a393923f5fef34d77769880c
+Author: Longwei Su <longwei.su@gmail.com>
+Date: 31/03/2012 04:16:59
+Message:
+added camera symbian support in pro #MsgLength=36
+
+
+----
+Deleted: cordovaqt.desktop|0 11
+Modified: cordovaqt.pro|9 4
+Deleted: cordovaqt_harmattan.desktop|0 11
+Modified: src/plugins/notification.cpp|5 5
+Modified: www/basic.js|17 0
+Modified: www/index.html|4 0
+Modified: xml/plugins.xml|1 0
+
+Revision: d572a5bbf20fe18d5ea32236a1dec7111b4db049
+Author: longwei <lsu@ics.com>
+Date: 03/04/2012 06:40:34
+Message:
+added back *.desktop configure #MsgLength=31
+
+
+----
+Added: cordovaqt.desktop|11 0
+Added: cordovaqt_harmattan.desktop|11 0
+
+Revision: ebcf6a8f26fa6651792d57ce705c85dbf5216ce4
+Author: Longwei Su <lsu@ics.com>
+Date: 09/04/2012 22:06:41
+Message:
+initial media support, fixed contact module run-time crashed on symbian #MsgLength=72
+
+
+----
+Modified: cordovaqt.pro|5 3
+Modified: src/plugins/contacts.cpp|5 1
+Added: src/plugins/media.cpp|138 0
+Added: src/plugins/media.h|72 0
+Added: src/plugins/notification.cpp~|80 0
+Modified: www/basic.js|58 0
+Modified: www/index.html|10 0
+Modified: xml/plugins.xml|1 0
+
+Revision: d4facfb6f049e1a470780ed56968d6cfa838052c
+Author: Longwei Su <lsu@ics.com>
+Date: 09/04/2012 22:07:32
+Message:
+remove temp file #MsgLength=17
+
+
+----
+Deleted: src/plugins/notification.cpp~|0 80
+
+Revision: 95bcfc6798027d6a6918be3d9deb82612acf1ca7
+Author: Longwei Su <lsu@ics.com>
+Date: 24/04/2012 07:40:06
+Message:
+initial fixes for cordova-mobile-spec: contact, camera, acceleration. Note: getImage from Library is not functional as media not support. FIXME 1,acceleration clear(still watching); 2.modified cordova-mobile-spec outname from name.formatted to displayName. #MsgLength=257
+
+
+----
+Modified: src/plugins/contacts.cpp|2 0
+Modified: www/js/compass.js|2 2
+Modified: www/js/contacts.js|9 2
+
+Revision: b6c00928f08cc9fefb77d8b2efc96f22168cb0e4
+Author: Longwei Su <lsu@ics.com>
+Date: 27/04/2012 21:43:13
+Message:
+minor updates for mobile-spec test cases #MsgLength=41
+
+
+----
+Modified: qml/main_qt5.qml|1 1
+Modified: src/plugins/media.h|4 4
+Modified: www/index.html|86 70
+Deleted: www/index_qt5.html|0 59
+Modified: www/js/contacts.js|2 1
+Added: www/phonegap-1.3.0.js|15 0
+Modified: xml/plugins.xml|1 1
+
+Revision: 40790e6e7bd5ba4bb7884b22f220d7272810b00b
+Author: Longwei Su <lsu@ics.com>
+Date: 28/04/2012 01:45:28
+Message:
+rename reference js according to mobile-spec repo #MsgLength=50
+
+
+----
+Modified: cordovaqt.pro|4 4
+Renamed: www/cordova-1.7.0.js [from www/phonegap-1.3.0.js]|0 0
+Modified: www/index.html|86 47
+
+Revision: c83981a664bc9be833bdf2f1030af7fae7b32fcb
+Author: Longwei Su <lsu@ics.com>
+Date: 01/05/2012 02:07:03
+Message:
+fix for simulator in window #MsgLength=28
+
+
+----
+Modified: src/cordova.cpp|2 1
+Modified: www/index.html|72 128
+Added: www/index_qt5.html|59 0
+
+Revision: 036d217d19ca0eeecfa5aea798b5c43e4d5b90a4
+Author: Longwei Su <lsu@ics.com>
+Date: 01/05/2012 05:44:58
+Message:
+Merge main.qml main_harmattan.qml to main_qt.qml; fixes compass undefine issue #MsgLength=79
+
+
+----
+Modified: cordovaqt.pro|3 2
+Modified: main.cpp|2 2
+Modified: qml/main.qml|1 0
+Renamed: qml/main_qt4.qml [from qml/main_harmattan.qml]|0 1
+Modified: www/basic.js|6 3
+
+Revision: 1a1c3091ed302ed9c8b891cd6213d3829d3541b0
+Author: Longwei Su <longwei@apache.org>
+Date: 04/05/2012 20:35:42
+Message:
+fixes for page navigation #MsgLength=26
+
+
+----
+Modified: main.cpp|2 2
+Modified: qml/main_qt4.qml|8 1
+Added: www/LICENSE|208 0
+Added: www/README.md|18 0
+Added: www/accelerometer/index.html|138 0
+Added: www/audio/index.html|291 0
+Added: www/autotest/html/HtmlReporter.js|101 0
+Added: www/autotest/html/HtmlReporterHelpers.js|60 0
+Added: www/autotest/html/ReporterView.js|164 0
+Added: www/autotest/html/SpecView.js|79 0
+Added: www/autotest/html/SuiteView.js|22 0
+Added: www/autotest/html/TrivialReporter.js|192 0
+Added: www/autotest/index.html|34 0
+Added: www/autotest/jasmine.css|81 0
+Added: www/autotest/jasmine.js|2530 0
+Added: www/autotest/pages/accelerometer.html|48 0
+Added: www/autotest/pages/all.html|83 0
+Added: www/autotest/pages/battery.html|44 0
+Added: www/autotest/pages/camera.html|49 0
+Added: www/autotest/pages/capture.html|49 0
+Added: www/autotest/pages/compass.html|49 0
+Added: www/autotest/pages/contacts.html|49 0
+Added: www/autotest/pages/device.html|49 0
+Added: www/autotest/pages/file.html|68 0
+Added: www/autotest/pages/filetransfer.html|68 0
+Added: www/autotest/pages/geolocation.html|49 0
+Added: www/autotest/pages/media.html|49 0
+Added: www/autotest/pages/network.html|49 0
+Added: www/autotest/pages/notification.html|49 0
+Added: www/autotest/pages/platform.html|49 0
+Added: www/autotest/pages/storage.html|49 0
+Added: www/autotest/test-runner.js|9 0
+Added: www/autotest/tests/accelerometer.tests.js|58 0
+Added: www/autotest/tests/battery.tests.js|5 0
+Added: www/autotest/tests/camera.tests.js|47 0
+Added: www/autotest/tests/capture.tests.js|95 0
+Added: www/autotest/tests/compass.tests.js|76 0
+Added: www/autotest/tests/contacts.tests.js|451 0
+Added: www/autotest/tests/device.tests.js|34 0
+Added: www/autotest/tests/file.tests.js|3424 0
+Added: www/autotest/tests/filetransfer.tests.js|44 0
+Added: www/autotest/tests/geolocation.tests.js|100 0
+Added: www/autotest/tests/media.tests.js|144 0
+Added: www/autotest/tests/network.tests.js|25 0
+Added: www/autotest/tests/notification.tests.js|20 0
+Added: www/autotest/tests/platform.tests.js|35 0
+Added: www/autotest/tests/storage.tests.js|161 0
+Added: www/battery/index.html|96 0
+Added: www/camera/index.html|96 0
+Added: www/compass/index.html|131 0
+Added: www/contacts/index.html|112 0
+Modified: www/cordova-1.7.0.js|20 0
+Added: www/cordova.js|13 0
+Added: www/events/index.html|88 0
+Modified: www/index.html|36 70
+Modified: www/js/contacts.js|10 10
+Modified: www/js/cordova.js|4 4
+Modified: www/js/cordova.qt5.js|3 3
+Modified: www/js/geolocation.js|5 5
+Added: www/location/index.html|123 0
+Added: www/main.js|140 0
+Added: www/master.css|112 0
+Added: www/misc/index.html|59 0
+Added: www/misc/page2.html|25 0
+Added: www/network/index.html|59 0
+Added: www/notification/index.html|81 0
+Added: www/sql/index.html|132 0
+Added: www/storage/index.html|50 0
+
+Revision: 2537e4545db8be4cc20ca190434205e101a18f7a
+Author: Jeff Tranter <jtranter@ics.com>
+Date: 04/05/2012 22:50:29
+Message:
+Fix for compile warnings when building for non-Harmattan and non-Symbian (e.g. desktop simulator). #MsgLength=99
+
+
+----
+Modified: src/plugins/camera.cpp|1 1
+
+Revision: 7cba0d79a14316de6e260b5ad63ba49a5132814d
+Author: Longwei Su <lsu@ics.com>
+Date: 04/05/2012 23:19:31
+Message:
+remove mobile-spec related code #MsgLength=32
+
+
+----
+Deleted: www/LICENSE|0 208
+Deleted: www/README.md|0 18
+Deleted: www/accelerometer/index.html|0 138
+Deleted: www/audio/index.html|0 291
+Deleted: www/autotest/html/HtmlReporter.js|0 101
+Deleted: www/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: www/autotest/html/ReporterView.js|0 164
+Deleted: www/autotest/html/SpecView.js|0 79
+Deleted: www/autotest/html/SuiteView.js|0 22
+Deleted: www/autotest/html/TrivialReporter.js|0 192
+Deleted: www/autotest/index.html|0 34
+Deleted: www/autotest/jasmine.css|0 81
+Deleted: www/autotest/jasmine.js|0 2530
+Deleted: www/autotest/pages/accelerometer.html|0 48
+Deleted: www/autotest/pages/all.html|0 83
+Deleted: www/autotest/pages/battery.html|0 44
+Deleted: www/autotest/pages/camera.html|0 49
+Deleted: www/autotest/pages/capture.html|0 49
+Deleted: www/autotest/pages/compass.html|0 49
+Deleted: www/autotest/pages/contacts.html|0 49
+Deleted: www/autotest/pages/device.html|0 49
+Deleted: www/autotest/pages/file.html|0 68
+Deleted: www/autotest/pages/filetransfer.html|0 68
+Deleted: www/autotest/pages/geolocation.html|0 49
+Deleted: www/autotest/pages/media.html|0 49
+Deleted: www/autotest/pages/network.html|0 49
+Deleted: www/autotest/pages/notification.html|0 49
+Deleted: www/autotest/pages/platform.html|0 49
+Deleted: www/autotest/pages/storage.html|0 49
+Deleted: www/autotest/test-runner.js|0 9
+Deleted: www/autotest/tests/accelerometer.tests.js|0 58
+Deleted: www/autotest/tests/battery.tests.js|0 5
+Deleted: www/autotest/tests/camera.tests.js|0 47
+Deleted: www/autotest/tests/capture.tests.js|0 95
+Deleted: www/autotest/tests/compass.tests.js|0 76
+Deleted: www/autotest/tests/contacts.tests.js|0 451
+Deleted: www/autotest/tests/device.tests.js|0 34
+Deleted: www/autotest/tests/file.tests.js|0 3424
+Deleted: www/autotest/tests/filetransfer.tests.js|0 44
+Deleted: www/autotest/tests/geolocation.tests.js|0 100
+Deleted: www/autotest/tests/media.tests.js|0 144
+Deleted: www/autotest/tests/network.tests.js|0 25
+Deleted: www/autotest/tests/notification.tests.js|0 20
+Deleted: www/autotest/tests/platform.tests.js|0 35
+Deleted: www/autotest/tests/storage.tests.js|0 161
+Deleted: www/battery/index.html|0 96
+Deleted: www/camera/index.html|0 96
+Deleted: www/compass/index.html|0 131
+Deleted: www/contacts/index.html|0 112
+Deleted: www/cordova.js|0 13
+Deleted: www/events/index.html|0 88
+Modified: www/index.html|70 36
+Deleted: www/location/index.html|0 123
+Deleted: www/main.js|0 140
+Deleted: www/master.css|0 112
+Deleted: www/misc/index.html|0 59
+Deleted: www/misc/page2.html|0 25
+Deleted: www/network/index.html|0 59
+Deleted: www/notification/index.html|0 81
+Deleted: www/sql/index.html|0 132
+Deleted: www/storage/index.html|0 50
+
+Revision: 26591fbdcf6adb4867c4b9f1671dccdccf1d4b43
+Author: Longwei Su <lsu@ics.com>
+Date: 05/05/2012 00:22:45
+Message:
+fixes for autotest #MsgLength=19
+
+
+----
+Modified: www/cordova-1.7.0.js|17 1
+
+Revision: f9b731600112fab28ca7c74e0a7e756e1cb36c9c
+Author: Longwei Su <lsu@ics.com>
+Date: 05/05/2012 02:14:44
+Message:
+quick fixes for autotests/requestTooLargeFile segFault. #MsgLength=56
+
+
+----
+Modified: src/plugins/fileapi.cpp|26 21
+
+Revision: 4552ef48305e77d9fc18351c4ea96cd3089891d8
+Author: Longwei Su <longwei@apache.org>
+Date: 05/05/2012 03:31:32
+Message:
+disable debug script #MsgLength=21
+
+
+----
+Modified: www/cordova-1.7.0.js|1 1
+
+Revision: 882712dfaee8df49526bbe616821a26d4d5940ff
+Author: Longwei Su <lsu@ics.com>
+Date: 08/05/2012 06:06:00
+Message:
+minor fixes to contacts and compass #MsgLength=36
+
+
+----
+Modified: qml/main_qt4.qml|1 1
+Modified: src/plugins/compass.cpp|5 1
+Modified: src/plugins/compass.h|1 0
+Modified: www/cordova-1.7.0.js|19 0
+Modified: www/index.html|35 70
+Modified: www/js/compass.js|30 28
+Modified: www/js/contacts.js|1 1
+
+Revision: 3ad4f1c5f900d5fa2c86f0183ea76ab01216e737
+Author: Longwei Su <longwei@apache.org>
+Date: 08/05/2012 23:06:52
+Message:
+network all pass, minor fixes for file api #MsgLength=43
+
+
+----
+Modified: src/plugins/fileapi.cpp|29 24
+Modified: www/js/connection.js|7 7
+
+Revision: 0006871a4e62d89b0946950726f73ac6518647dc
+Author: Longwei Su <longwei@apache.org>
+Date: 09/05/2012 14:46:04
+Message:
+camera , accelerater , compass all passed; fixes for contact:find #MsgLength=66
+
+
+----
+Modified: src/plugins/contacts.cpp|4 1
+Modified: src/plugins/fileapi.cpp|2 7
+Modified: www/js/accelerometer.js|16 12
+Modified: www/js/camera.js|10 1
+Modified: www/js/compass.js|68 70
+Modified: www/js/contacts.js|37 21
+
+Revision: 8032000f62277027e46480a89e12b972b505fe41
+Author: Longwei Su <longwei@apache.org>
+Date: 09/05/2012 16:50:41
+Message:
+fixes for filename #MsgLength=19
+
+
+----
+Modified: src/plugins/fileapi.cpp|26 25
+
+Revision: 14b3d436becfc304d55c83d1a3102422de2f177c
+Author: Longwei Su <longwei@apache.org>
+Date: 14/05/2012 09:17:11
+Message:
+fixes for File API(fullpath and relative path), 99 failings to go #MsgLength=66
+
+
+----
+Modified: src/plugins/fileapi.cpp|40 17
+Modified: src/plugins/fileapi.h|13 5
+Modified: www/js/device.js|5 0
+Modified: www/js/file.js|8 6
+
+Revision: 6c81771911472c3d990982fc96add5205a84f5ad
+Author: Longwei Su <lsu@ics.com>
+Date: 14/05/2012 23:59:03
+Message:
+fixes for resolveURI #MsgLength=21
+
+
+----
+Modified: src/plugins/fileapi.cpp|37 41
+Modified: src/plugins/fileapi.h|1 1
+Modified: www/js/file.js|2 1
+
+Revision: 25dfdbd78351506ac721838f770a03ec9ff13da2
+Author: Longwei Su <lsu@ics.com>
+Date: 15/05/2012 02:33:27
+Message:
+added /doc as the persistent file system starting point. some other Minor on file API. #MsgLength=87
+
+
+----
+Modified: cordovaqt.pro|2 1
+Modified: src/plugins/fileapi.cpp|55 18
+Modified: www/js/file.js|251 235
+
+Revision: a7e4ce0e8498641f142cf6b02a55f029794dbb60
+Author: Longwei Su <lsu@ics.com>
+Date: 15/05/2012 03:03:06
+Message:
+fixes for file api, mismatch errors #MsgLength=36
+
+
+----
+Modified: src/plugins/fileapi.cpp|44 26
+
+Revision: f5a64726529b97a859826055cd11fc786acc3c92
+Author: Longwei Su <lsu@ics.com>
+Date: 15/05/2012 05:01:47
+Message:
+fixes for File api: file and file entry, 81 #MsgLength=44
+
+
+----
+Modified: src/plugins/fileapi.cpp|28 23
+Modified: www/js/file.js|31 16
+
+Revision: 857070180cfbc108cc753c8826d74871c2d011df
+Author: Longwei Su <longwei@apache.org>
+Date: 15/05/2012 13:37:00
+Message:
+fixes for corner test input #MsgLength=28
+
+
+----
+Modified: src/plugins/fileapi.cpp|36 28
+Modified: www/js/file.js|5 0
+
+Revision: 53a69651b0ccc63c77df3815c71777a8e29174f8
+Author: Longwei Su <longwei@apache.org>
+Date: 15/05/2012 23:05:32
+Message:
+addes build-in map for mimetype lookup #MsgLength=39
+
+
+----
+Modified: src/plugins/fileapi.cpp|21 2
+Modified: src/plugins/fileapi.h|4 0
+
+Revision: 12500e5d8ae536a2d2d4a3f43a3439909b9c7c45
+Author: Longwei Su <longwei@apache.org>
+Date: 15/05/2012 23:34:00
+Message:
+fixes for readAsText #MsgLength=21
+
+
+----
+Modified: src/plugins/fileapi.cpp|24 3
+Modified: src/plugins/fileapi.h|1 0
+Modified: www/js/file.js|1 1
+
+Revision: a1627a02847b8f9084b7c9651aa5326c6bf8cead
+Author: Longwei Su <longwei@apache.org>
+Date: 16/05/2012 03:48:24
+Message:
+added permanent directory and added back original text.html #MsgLength=60
+
+
+----
+Added: doc/README|1 0
+Modified: www/index.html|70 35
+
+Revision: 98c6ab857571ff66e835fa1b3dfc2bdfa330967a
+Author: Longwei Su <longwei@apache.org>
+Date: 18/05/2012 14:09:34
+Message:
+added move copy for file and directory, //TODO, have the right callback #MsgLength=72
+
+
+----
+Modified: src/plugins/fileapi.cpp|79 24
+Modified: src/plugins/fileapi.h|6 9
+Modified: www/js/file.js|28 6
+
+Revision: 5361a61394fa729d0ee2939ddff2fdb6ba470c86
+Author: Longwei Su <lsu@ics.com>
+Date: 24/05/2012 06:33:31
+Message:
+fixed for moveTo and copyTo, file: 5 to go. TODO. note: For Simulator, create /home/longwei/MyDocs dir #MsgLength=103
+
+
+----
+Deleted: doc/README|0 1
+Modified: src/plugins/fileapi.cpp|118 44
+Modified: src/plugins/fileapi.h|6 4
+Modified: www/js/file.js|4 4
+
+Revision: 03d83eb48896794971827dd31232fa4b8f106404
+Author: Longwei Su <lsu@ics.com>
+Date: 26/05/2012 01:22:14
+Message:
+fixes, moveTo dir using helper function copyFolder instead of copyDir #MsgLength=70
+
+
+----
+Modified: cordovaqt.pro|6 6
+Modified: main.cpp|1 1
+Modified: src/plugins/fileapi.cpp|30 17
+Modified: src/plugins/fileapi.h|1 1
+
+Revision: 1a17e94303859a08d41526185000f6679a000bc1
+Author: Longwei Su <lsu@ics.com>
+Date: 26/05/2012 01:26:33
+Message:
+fixes for moveTo empty folder #MsgLength=30
+
+
+----
+Modified: src/plugins/fileapi.cpp|3 0
+
+Revision: a356ac5613bc4b66dbd47d70f6aec59f8a3b5576
+Author: Longwei Su <lsu@ics.com>
+Date: 26/05/2012 03:11:04
+Message:
+ToDo: file::write, if creating file. js should pass the path in and FileApi::write should able to create it #MsgLength=108
+
+
+----
+Modified: src/plugins/fileapi.cpp|15 16
+
+Revision: 6ab1d8efbe32d6c0b463fc72d679f7d723acdc6e
+Author: Longwei Su <lsu@ics.com>
+Date: 31/05/2012 23:06:18
+Message:
+fixes for file write #MsgLength=21
+
+
+----
+Modified: src/plugins/fileapi.cpp|5 1
+Modified: www/js/file.js|10 5
+
+Revision: 570de8bc08e5080d791b00e7c62bd522f9b7eae7
+Author: Longwei Su <lsu@ics.com>
+Date: 01/06/2012 01:58:04
+Message:
+minor fixes for seek #MsgLength=21
+
+
+----
+Modified: src/plugins/fileapi.cpp|8 0
+Modified: www/js/file.js|1 1
+
+Revision: f393957b02dbf086cfe907ac406075e85ca2044a
+Author: Longwei Su <lsu@ics.com>
+Date: 13/06/2012 06:07:03
+Message:
+wizard tempalte for qt4, clone repo in ..QtSDK/QtCreator/share/qtcreator/tempaltes/wizards #MsgLength=91
+
+
+----
+Added: wizard.xml|105 0
+
+Revision: 2389edc3ea2f4669c701d6071ed83235d6fcb70f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/08/2012 08:10:55
+Message:
+added VERSION file #MsgLength=19
+
+
+----
+Added: VERSION|1 0
+
+Revision: 5b635f8a8abcda3e9f6ff43f6ee831709c66ae62
+Author: Michael Brooks <michael@michaelbrooks.ca>
+Date: 31/08/2012 06:29:30
+Message:
+[#1311] Update PhoneGap references to Apache Cordova. #MsgLength=54
+
+
+----
+Modified: README.md|40 40
+Modified: src/plugins/notification.cpp|2 2
+Modified: www/js/accelerometer.js|1 1
+Modified: www/js/compass.js|1 1
+Modified: www/js/notification.js|1 1
+
+Revision: 5a3ba6810ad5a3502368a1cb8509167918176e61
+Author: anis <anis@apache.org>
+Date: 04/09/2012 12:00:05
+Message:
+updating cordova version #MsgLength=25
+
+
+----
+Modified: VERSION|1 1
+Modified: src/plugins/device.cpp|1 1
+
+Revision: 0cb62ba58759af4b6dabfadd63ae8e74846b37ee
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 12/09/2012 09:08:05
+Message:
+updating VERSION file #MsgLength=22
+
+
+----
+Modified: VERSION|1 1
+
+Revision: ed508de32fce99085808f49f21e36db2f678c35d
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 10/10/2012 05:34:49
+Message:
+adding apache header license #MsgLength=29
+
+
+----
+Modified: cordovaqt.svg|22 1
+Modified: qml/cordova_wrapper.js|21 0
+Modified: src/plugins/camera.cpp|21 0
+Modified: src/plugins/camera.h|21 0
+Modified: src/plugins/cameraresolution.h|21 0
+Modified: src/plugins/contacts.cpp|21 0
+Modified: src/plugins/contacts.h|21 0
+Modified: src/plugins/events.cpp|21 0
+Modified: src/plugins/events.h|21 0
+Modified: wizard.xml|21 0
+Modified: www/basic.js|21 0
+Modified: www/cordova-1.7.0.js|21 0
+Modified: www/index.html|21 0
+Modified: www/index_qt5.html|21 0
+Modified: www/js/camera.js|21 0
+Modified: www/js/contacts.js|21 0
+Modified: xml/plugins.xml|21 0
+
+Revision: 1362016f1a119a8ba354b389bba689e05973a163
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 16/10/2012 08:00:52
+Message:
+bumping version number #MsgLength=23
+
+
+----
+Modified: VERSION|1 1
+Modified: src/plugins/device.cpp|1 1
+
+Revision: 81cc12399165ea4ad915636d233f6f2735142db4
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 25/10/2012 03:57:05
+Message:
+updating VERSION #MsgLength=17
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 41f94032208723e35f4b6b907ffa145fa8820c7a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 01/11/2012 06:32:40
+Message:
+updated version to 2.2.0 #MsgLength=25
+
+
+----
+Modified: VERSION|1 1
+
+
+Revision: dbe90c5bc4554a1eb4da38f3dd9e143ebcccd7a5
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/12/2012 06:57:36
+Message:
+updating VERSION #MsgLength=17
+
+
+----
+Modified: VERSION|1 1
+
+Revision: b34e260c79cbe68e9eadd9e4838418510e51642a
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 03/01/2013 14:20:23
+Message:
+updating VERSION file #MsgLength=22
+
+
+----
+Modified: VERSION|1 1
+
+Revision: d6477ead49edcc6796980ac6e85929b7177abc6c
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 22/01/2013 06:27:32
+Message:
+updating version #MsgLength=17
+
+
+----
+Modified: VERSION|1 1
+Modified: src/plugins/device.cpp|1 1
+
+Revision: eb874aaa6b250bd7bbcf270475ab52c1c3193434
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 05/02/2013 06:01:30
+Message:
+updating VERSION #MsgLength=17
+
+
+----
+Modified: VERSION|1 1
+
+Revision: ca7c54c47359e70bdad72b8899278eaa06efe764
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 20/02/2013 15:20:33
+Message:
+Updating Qt JS, VERSION to 2.5.0rc1 #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+Modified: src/plugins/device.cpp|1 1
+
+Revision: 9ceaa157584c1b64946b350167cd46b40aa6d3a9
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:42:17
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: cfdd764ecc62e2dfeb2147d4dfd0e86e38529ff7
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 31/05/2014 00:12:13
+Message:
+CB-6818 Add license for CONTRIBUTING.md #MsgLength=40
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: a485ec95bfb3f80395881c85f053897ab0adaf25
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/10/2016 13:32:31
+Message:
+Add github pull request template #MsgLength=33
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|22 0
+
+Revision: 2f85383b709d62e2e134771ff12fdc31bd9bea2a
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 17/04/2019 01:16:07
+Message:
+deprecation notice #MsgLength=18
+
+
+----
+Modified: README.md|10 0
+

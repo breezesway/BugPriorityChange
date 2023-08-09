@@ -1,0 +1,7210 @@
+Revision: a0bff7b154a1ee45a32d43b2e87705c737a1681c
+Author: Joe Bowser <bowserj@apache.org>
+Date: 02/04/2013 06:35:43
+Message:
+Initial Commit #MsgLength=15
+
+
+----
+Added: README.md|2 0
+Added: plugin.xml|17 0
+Added: src/android/CameraLauncher.java|796 0
+
+Revision: aaef443dc696bd9f4d18454789b6d4b65fa5aa8d
+Author: Joe Bowser <bowserj@apache.org>
+Date: 18/04/2013 05:22:56
+Message:
+Updating Plugin from curent source #MsgLength=35
+
+
+----
+Modified: src/android/CameraLauncher.java|38 25
+
+Revision: 5455bbeb37e6d1adea9821d3f16a2e634e53ea81
+Author: Joe Bowser <bowserj@apache.org>
+Date: 14/05/2013 02:42:53
+Message:
+Updating CameraLauncher based on changes in master, read pre-3.0 commit history for author info #MsgLength=96
+
+
+----
+Modified: src/android/CameraLauncher.java|39 22
+
+Revision: fc2c9bd0827b0d9beb348bdddc1a8509f3262cea
+Author: hermwong <herm.wong@gmail.com>
+Date: 22/05/2013 03:10:15
+Message:
+add iOS classes to plugin #MsgLength=26
+
+
+----
+Added: src/ios/CDVCamera.h|102 0
+Added: src/ios/CDVCamera.m|729 0
+Added: src/ios/CDVExif.h|43 0
+Added: src/ios/CDVJpegHeaderWriter.h|62 0
+Added: src/ios/CDVJpegHeaderWriter.m|547 0
+
+Revision: 33c2270b6e936613ce31e5ff98459961046d1b7d
+Author: hermwong <herm.wong@gmail.com>
+Date: 22/05/2013 03:11:20
+Message:
+add Camera related JS files from Cordova-JS #MsgLength=44
+
+
+----
+Added: www/Camera.js|73 0
+Added: www/CameraConstants.js|53 0
+Added: www/CameraPopoverHandle.js|33 0
+Added: www/CameraPopoverOptions.js|37 0
+
+Revision: c26377ae98e5dd807ad76fcbf73684b93af112af
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/05/2013 04:47:10
+Message:
+updated to include iOS config & js source files config #MsgLength=55
+
+
+----
+Modified: plugin.xml|29 2
+
+Revision: c55281bd6a4f920eb17e37e5580075e1f1bce83b
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/05/2013 05:06:19
+Message:
+updated config reference to Android CameraLauncher class #MsgLength=57
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: c6174ce211145b494755b2127d4db5ad4c3efae0
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/05/2013 05:13:38
+Message:
+updated the android paths #MsgLength=26
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 0b6342e56c0038bad3929e85093aec22dc0350e8
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 24/05/2013 05:51:18
+Message:
+updated plugin.xml, native src files #MsgLength=37
+
+
+----
+Modified: plugin.xml|21 10
+Modified: src/ios/CDVCamera.h|1 1
+Modified: src/ios/CDVCamera.m|3 3
+Modified: www/Camera.js|2 2
+Modified: www/CameraPopoverOptions.js|1 1
+Added: www/ios/CameraPopoverHandle.js|34 0
+
+Revision: acf67ccd52e046e03a81528de8f4e9f1147faf64
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 24/05/2013 06:23:28
+Message:
+added tests + docs #MsgLength=19
+
+
+----
+Added: docs/camera.cleanup.md|50 0
+Added: docs/camera.getPicture.md|220 0
+Added: docs/camera.md|97 0
+Added: docs/parameter/CameraPopoverHandle.md|68 0
+Added: docs/parameter/CameraPopoverOptions.md|71 0
+Added: docs/parameter/cameraError.md|32 0
+Added: docs/parameter/cameraOptions.md|136 0
+Added: docs/parameter/cameraSuccess.md|42 0
+Added: test/autotest/html/HtmlReporter.js|101 0
+Added: test/autotest/html/HtmlReporterHelpers.js|60 0
+Added: test/autotest/html/ReporterView.js|164 0
+Added: test/autotest/html/SpecView.js|79 0
+Added: test/autotest/html/SuiteView.js|22 0
+Added: test/autotest/html/TrivialReporter.js|192 0
+Added: test/autotest/index.html|59 0
+Added: test/autotest/jasmine.css|81 0
+Added: test/autotest/jasmine.js|2530 0
+Added: test/autotest/pages/.DS_Store|0 0
+Added: test/autotest/pages/camera.html|71 0
+Added: test/autotest/test-runner.js|62 0
+Added: test/autotest/tests/.DS_Store|0 0
+Added: test/autotest/tests/camera.tests.js|70 0
+Added: test/camera/index.html|392 0
+Added: test/cordova-incl.js|70 0
+Added: test/index.html|65 0
+Added: test/main.js|163 0
+Added: test/master.css|164 0
+
+Revision: 713d9e7d96b832a12fdfc485d361460af08cdeb5
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 24/05/2013 06:40:45
+Message:
+fixed missing > #MsgLength=16
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f8948fb0bc2f89a8e41ae3c2f3c05474523dce06
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 24/05/2013 07:00:39
+Message:
+fixed another mistake #MsgLength=22
+
+
+----
+Modified: src/ios/CDVCamera.m|1 1
+
+Revision: 1f58ce6c087f6a70530eab630888f00cde48c2d9
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 24/05/2013 10:22:57
+Message:
+updated #MsgLength=8
+
+
+----
+Modified: plugin.xml|9 8
+
+Revision: 04cfa1a9493e719aa5621ad3ace2fb3bfd9fc367
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 24/05/2013 10:24:43
+Message:
+updating for testing purpose #MsgLength=29
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 69525b9b98a8f94ee99431d9cda519e306ecfa1e
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 08/06/2013 02:37:25
+Message:
+first pass at wp7 support #MsgLength=26
+
+
+----
+Modified: plugin.xml|11 0
+Added: src/wp7/Camera.cs|490 0
+
+Revision: 509991b50fdf81bd65ae81fcd0beb44d4fa97d0a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/06/2013 05:43:56
+Message:
+updated CamaeraLauncher.java #MsgLength=29
+
+
+----
+Modified: plugin.xml|9 12
+Modified: src/android/CameraLauncher.java|25 41
+
+Revision: 1e02cf281a293b6e09aa29c8e4f925704af92960
+Author: Joe Bowser <bowserj@apache.org>
+Date: 13/06/2013 05:38:40
+Message:
+Removing commons-codec dependency, this should be ready to go #MsgLength=62
+
+
+----
+Modified: src/android/CameraLauncher.java|24 43
+
+
+
+Revision: 2b02141fc0bc4e563da4e3693b8de9caa2243922
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/06/2013 08:09:04
+Message:
+fixed require error #MsgLength=20
+
+
+----
+Modified: www/Camera.js|1 1
+
+Revision: 1eb52eb5edb8e48378393262bfabe02bef9bd889
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/06/2013 08:27:49
+Message:
+updated popover reference on test page #MsgLength=39
+
+
+----
+Modified: test/camera/index.html|1 1
+
+Revision: abffce698303759ea66712cb977a555502a25e58
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/06/2013 08:43:45
+Message:
+modified plugin.xml #MsgLength=20
+
+
+----
+Modified: plugin.xml|3 5
+
+Revision: ac4e93c86ebbfff9c12471e81ac3779b8f5f74d2
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/06/2013 08:48:38
+Message:
+updated test file #MsgLength=18
+
+
+----
+Modified: test/camera/index.html|4 2
+
+Revision: a23de523708057b4332e3865f7f338ee0af404d5
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 15/06/2013 04:48:23
+Message:
+added camera capability for wp7 #MsgLength=32
+
+
+----
+Modified: plugin.xml|4 0
+
+Revision: a9b79ebb445999530f06684aa34170d890b12d9a
+Author: James Jong <wjamesjong@gmail.com>
+Date: 18/06/2013 05:48:15
+Message:
+[CB-3757] camera.getPicture from photolib fails on iOS #MsgLength=119
+
+
+----
+Modified: src/ios/CDVCamera.m|2 1
+
+Revision: 4db9a6c8137276fd9dce8050a308d1697328141b
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 18/06/2013 06:47:34
+Message:
+[CB-3654] added extern storage permissions so camera works. fixed issue with test page. #MsgLength=88
+
+
+----
+Modified: plugin.xml|3 0
+Modified: test/camera/index.html|1 1
+
+Revision: f02ae7697e5533c181088beee8f2d0feaf67e57b
+Author: lorinbeer <lorin@adobe.com>
+Date: 22/06/2013 05:16:01
+Message:
+[CB-3652] camera plugin breakout blackberry10 initial commit #MsgLength=61
+
+
+----
+Modified: plugin.xml|8 0
+Added: src/blackberry10/index.js|124 0
+
+Revision: 380630624ddee5ea6155564e7414ca45a24fed48
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 25/06/2013 05:11:43
+Message:
+[CB-3656] first pass wp8 support #MsgLength=33
+
+
+----
+Modified: plugin.xml|15 0
+Added: src/wp8/Camera.cs|490 0
+
+Revision: c8c201b4cec64aca6486ac255cb9aeb83a340fef
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 05:50:18
+Message:
+[CB-4110] remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|2 2
+Renamed: src/wp/Camera.cs [from src/wp7/Camera.cs]|0 0
+Deleted: src/wp8/Camera.cs|0 490
+
+Revision: a025cdd4e6837cea55bc4a8956e5144bbc50326f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:55
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|2 3
+
+Revision: ff587d400e704fab28931f9e82db39863ef9c63f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 07:46:10
+Message:
+Fix require paths that were broken by plugin id changes #MsgLength=56
+
+
+----
+Modified: docs/parameter/cameraError.md|1 1
+Modified: docs/parameter/cameraSuccess.md|1 1
+Modified: test/camera/index.html|1 1
+Modified: www/Camera.js|2 2
+Modified: www/CameraPopoverOptions.js|1 1
+
+Revision: ea7bddac52a78f1bea6f5030e7e58f6048fc2237
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 08:24:53
+Message:
+Fix CameraPopoverHandle module defined multiple times on iOS #MsgLength=61
+
+
+----
+Modified: plugin.xml|13 3
+
+
+Revision: 311f3f6c567969b286bc7d34954da13df8d39390
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 02:38:37
+Message:
+Add symbol paths for CameraPopoverOptions and CameraPopoverHandle #MsgLength=66
+
+
+----
+Modified: plugin.xml|12 5
+
+Revision: ba9b568c5d4c05e75dcf340f2c231fa8565ac42f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 02:39:05
+Message:
+[CB-4131] Use relative require paths in camera files. #MsgLength=54
+
+
+----
+Modified: www/Camera.js|2 2
+Modified: www/CameraPopoverOptions.js|1 1
+
+Revision: 1b27bf0035763815ae1772ff2b801b7b58363fa8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: src/android/CameraLauncher.java|4 4
+
+Revision: 648a53647d0f695a9ea5df4b15e9c11b5c11a414
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 12/07/2013 05:48:12
+Message:
+[CB-1605] Warning cleanup! Removed unused import. #MsgLength=49
+
+
+----
+Modified: src/android/CameraLauncher.java|0 1
+
+Revision: 6fc27e72607ebe6bac6548493ea2c4b7cc79ef02
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:02:42
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Added: .gitignore|23 0
+
+Revision: 9b8f446f518bf76f4406646a39294720e893544f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|3 0
+
+Revision: 1c84c87ca3749e365aa0f1b837108847996566d5
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 20/07/2013 01:39:56
+Message:
+[wp] capabilities fix, access to mediaLib for saving photos #MsgLength=60
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: 6f6617c902c2519ba3c1005075cd35f25bd0ee5c
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/07/2013 05:51:24
+Message:
+[CB-4361] Camera plugin needs to specify ImageIO.framework dependency in plugin.xml #MsgLength=84
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: 230ef687e7a6e5e0bf404cac3cc163a097efcb11
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/07/2013 08:04:26
+Message:
+[CB-4365] Explicit CoreLocation.framework dependency should be specified for some core plugins #MsgLength=95
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: dad346be71ee37297b162279974a72a12e0823c2
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/07/2013 08:07:32
+Message:
+[CB-4368] Explicit CoreGraphics.framework dependency should be specified for some core plugins #MsgLength=95
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: 18fcce8c3214d62a4eb9dc02bc9b37311b2627da
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/07/2013 08:11:39
+Message:
+[CB-4367] Explicit AssetsLibrary.framework dependency should be specified for some core plugins #MsgLength=96
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: 5d747c739ddd41b731f77fb531481a709ea497cd
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/07/2013 08:14:59
+Message:
+[CB-4366] Explicit MobileCoreServices.framework dependency should be specified for some core plugins #MsgLength=101
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: fe35a3ce65e74e694c6389162547dc43887170a8
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 30/07/2013 10:04:44
+Message:
+[Windows8] added support for Windows8 #MsgLength=38
+
+
+----
+Modified: plugin.xml|18 0
+Added: src/windows8/CameraProxy.js|341 0
+
+Revision: c1935df8df36439a8bdf80de7f2ef784210487a2
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:31:58
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 033999b9349644c90b086d2453f57ba407a4b08d
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: 16f141ab453128e4875bb25aa55f385c111370b0
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 73f9af5b84022bdc017814eaceeb38fb913ba775
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 06:34:27
+Message:
+[plugin.xml] adding android namespace #MsgLength=38
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: 5f98661e0d90a26494b1bb7d82d9ce117facc9dd
+Author: James Jong <wjamesjong@gmail.com>
+Date: 09/08/2013 03:01:59
+Message:
+[CB-3453] Save original picture to photo library #MsgLength=323
+
+
+----
+Modified: src/ios/CDVCamera.m|9 3
+
+Revision: b702aaf440c9c8ee0bd361e5dda5c7cc0a4a4476
+Author: James Jong <wjamesjong@gmail.com>
+Date: 09/08/2013 22:09:42
+Message:
+[CB-3482] Allow image metadata to be saved to album on iOS #MsgLength=121
+
+
+----
+Modified: src/ios/CDVCamera.m|2 1
+
+Revision: 767e064c01d224b4159dcb292017c8db521afc67
+Author: James Jong <wjamesjong@gmail.com>
+Date: 09/08/2013 03:01:59
+Message:
+[CB-3453] Save original picture to photo library #MsgLength=323
+
+
+----
+Modified: src/ios/CDVCamera.m|9 3
+
+Revision: 3b0538c3b1621ce00c53afa9646ef15c527b0147
+Author: James Jong <wjamesjong@gmail.com>
+Date: 09/08/2013 22:09:42
+Message:
+[CB-3482] Allow image metadata to be saved to album on iOS #MsgLength=121
+
+
+----
+Modified: src/ios/CDVCamera.m|2 1
+
+
+Revision: 10df8b665215fff2f956d1863a49b7033f62024e
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 16/08/2013 06:01:14
+Message:
+cleanup whitespace #MsgLength=19
+
+
+----
+Modified: plugin.xml|12 8
+
+Revision: f44bdf747858342922d3175adc61915705a17cb7
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 01:54:20
+Message:
+updated namespace, name tag and readme #MsgLength=39
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|5 6
+
+Revision: 6846cb04e3a78ff3bddf169d1be85e088fb74cb7
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-camera to its own Java package. #MsgLength=62
+
+
+----
+Modified: plugin.xml|2 2
+Modified: src/android/CameraLauncher.java|1 1
+
+Revision: 342401ef187924d1a633c5a9f07047ffe81169dd
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 15/08/2013 06:21:03
+Message:
+reverted name element to be human readable #MsgLength=43
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 34101109ab0c6ce6c275969114640ccc72a714fb
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 05:26:21
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: df3141fef47dd21ed9c9d1ae805b9ea765809c1b
+Author: lorinbeer <lorin@adobe.com>
+Date: 21/08/2013 04:55:43
+Message:
+[CB-4432] copyright notice change #MsgLength=34
+
+
+----
+Modified: src/blackberry10/index.js|16 11
+
+Revision: 382e9421e7f6ba9e21c1fe3e7c49d01eef2ecc7d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 30/08/2013 02:08:49
+Message:
+[CB-4656] Don't add line-breaks to base64-encoded images. #MsgLength=58
+
+
+----
+Modified: src/android/CameraLauncher.java|1 1
+
+Revision: 1f22a17f27e6eb11723e6aec09711dd28abbe63f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+[CB-4752] Updated version and changelog #MsgLength=40
+
+
+----
+Added: CHANGELOG.md|25 0
+Modified: plugin.xml|1 1
+
+Revision: a0406b0b1e8b2c6cd59d149db5a1b737787069a5
+Author: lorinbeer <lorin@adobe.com>
+Date: 21/08/2013 04:55:43
+Message:
+[CB-4432] copyright notice change #MsgLength=34
+
+
+----
+Modified: src/blackberry10/index.js|16 11
+
+Revision: fa52e35c420a17952283cfb8d8c2d194eed8f70e
+Author: Joe Bowser <bowserj@apache.org>
+Date: 22/08/2013 06:39:43
+Message:
+No longer causes a stack trace, but it doesn't cause the error to be called. #MsgLength=77
+
+
+----
+Modified: src/android/CameraLauncher.java|16 5
+
+
+Revision: 809a23ffaec3b508489bda4cad26d777c42b5119
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:03:08
+Message:
+CB-4889 renaming org.apache.cordova.core.camera to org.apache.cordova.camera #MsgLength=77
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 118ca18d5a7d77dfe37c5c9a85350a7890448de9
+Author: Joe Bowser <bowserj@apache.org>
+Date: 22/08/2013 06:39:43
+Message:
+No longer causes a stack trace, but it doesn't cause the error to be called. #MsgLength=77
+
+
+----
+Modified: src/android/CameraLauncher.java|16 5
+
+Revision: f33e00083a853594c5ea0154ae339b87eb677454
+Author: Joe Bowser <bowserj@apache.org>
+Date: 05/09/2013 02:33:35
+Message:
+CB-4633: We really should close cursors.  It's just the right thing to do. #MsgLength=75
+
+
+----
+Modified: src/android/CameraLauncher.java|1 0
+
+
+Revision: 8c77ddb86424e128e463b690e2dd10974a8a852e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:21
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 44517ea93f705152cd91bbafdb849a53a7d6804d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/09/2013 03:10:40
+Message:
+[CB-4763] Use a copy of FileHelper.java within camera-plugin. #MsgLength=62
+
+
+----
+Modified: plugin.xml|1 0
+Modified: src/android/CameraLauncher.java|0 1
+Added: src/android/FileHelper.java|162 0
+
+Revision: df028dd2571ab8fd1032a20b0f55ca2b32e8c0b9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/09/2013 04:03:36
+Message:
+[CB-4764] Remove reference to DirectoryManager from CameraLauncher #MsgLength=67
+
+
+----
+Modified: src/android/CameraLauncher.java|23 23
+
+Revision: bc32c501daea502009bac4f83e06531846534f6c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/09/2013 04:14:48
+Message:
+[CB-4765] Move ExifHelper.java into Camera Plugin #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 0
+Modified: src/android/CameraLauncher.java|0 1
+Added: src/android/ExifHelper.java|185 0
+
+Revision: 224e7cfb2006a5d7ef8e7083b6913715312b23f4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/09/2013 04:21:30
+Message:
+Fix compiler warnings #MsgLength=22
+
+
+----
+Modified: src/android/FileHelper.java|0 4
+
+Revision: 9bcf725e393e76502253f01b28399c1fa6bd6b5c
+Author: James Jong <wjamesjong@gmail.com>
+Date: 17/09/2013 03:13:35
+Message:
+[CB-4823] Fix XCode 5 camera plugin warnings #MsgLength=45
+
+
+----
+Modified: src/ios/CDVCamera.m|3 1
+
+Revision: 8077d302fefea25b77d853eaf388cddddea7a12b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: 3a3bbb1cc9bfe4d04a560bf86bead1fd01a2904f
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 19/09/2013 07:22:13
+Message:
+added Camera API for FirefoxOS #MsgLength=31
+
+
+----
+Modified: plugin.xml|12 0
+Added: src/firefoxos/CameraProxy.js|52 0
+
+
+Revision: f5a521f5eaa505ce9322bc066187da3f55f0a384
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 24/09/2013 16:26:11
+Message:
+[Windows8] commandProxy has moved #MsgLength=34
+
+
+----
+Modified: src/windows8/CameraProxy.js|1 1
+
+Revision: 363d139653149e1b515d77b9eba323eaceb40cc0
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 24/09/2013 16:26:11
+Message:
+[Windows8] commandProxy has moved #MsgLength=34
+
+
+----
+Modified: src/windows8/CameraProxy.js|1 1
+
+
+Revision: 6a1a558e811a355ad9a6ecd50cfe799274c6419e
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 21:34:11
+Message:
+CB-4889 renaming core inside cameraProxy #MsgLength=41
+
+
+----
+Modified: src/windows8/CameraProxy.js|3 3
+
+Revision: 200d6833f90c24e02da5726698f9a1b8fc0240e0
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 21:39:02
+Message:
+CB-4889 forgot index.html #MsgLength=26
+
+
+----
+Modified: test/camera/index.html|1 1
+
+Revision: c42bfe881f8c7d3c25abd080d04b6b25cf70a9cd
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:49:48
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: fed4f2280d786cabb24641eb6ce686acf98d0a94
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 07:55:49
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.2.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|18 0
+Modified: plugin.xml|1 1
+
+Revision: a600de41ebca66e018455655a58b8e7de0f4b212
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:12
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: eab4822ae984e2f7b22fc81c8649e6075d8e6718
+Author: hermwong <herm.wong@gmail.com>
+Date: 09/10/2013 01:49:02
+Message:
+[CB-4919] updated plugin.xml for FxOS #MsgLength=38
+
+
+----
+Modified: plugin.xml|4 1
+
+Revision: 4e6cf5cc2e4739fac53111cee62f0217491b1539
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 16/10/2013 01:29:54
+Message:
+CB-4958 - iOS - Camera plugin should not show the status bar #MsgLength=61
+
+
+----
+Modified: src/ios/CDVCamera.m|17 0
+
+Revision: 703f6c68d830d41f9de56c4da57dfbc9aef03556
+Author: hermwong <herm.wong@gmail.com>
+Date: 22/10/2013 06:33:45
+Message:
+CB-5128: added repo + issue tag to plugin.xml for camera plugin #MsgLength=64
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: e0176cc61e008d56e649c15e8f13da19347e069d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 01:58:16
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.2.4 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+
+Revision: 7c35f56a0d1b7421526b1068fe75429773052ccf
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:13
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 4590f2597c70cd9ef73852510a8e4d0c800d6e16
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 01:43:26
+Message:
+Added amazon-fireos platform. #MsgLength=30
+
+
+----
+Modified: plugin.xml|21 0
+
+Revision: d8a3d2ff3a5d8670d5c46521be6617a6db23997f
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 01:48:04
+Message:
+1. User Agent detection now detects AmazonWebView. 2. Change to use amazon-fireos as the platform if user agent string contains 'cordova-amazon-fireos' #MsgLength=152
+
+
+----
+Modified: test/cordova-incl.js|4 2
+
+Revision: b44ea1c69fc295dc5064651f717b0fbd23a6ab10
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 26/10/2013 10:17:04
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|16 0
+Added: src/ubuntu/CaptureWidget.qml|119 0
+Added: src/ubuntu/back.png|0 0
+Added: src/ubuntu/camera.cpp|143 0
+Added: src/ubuntu/camera.h|76 0
+Added: src/ubuntu/shoot.png|0 0
+Added: src/ubuntu/toolbar-left.png|0 0
+Added: src/ubuntu/toolbar-middle.png|0 0
+Added: src/ubuntu/toolbar-right.png|0 0
+
+Revision: 885c6a745987e17538b545fdfa6fe1ddcb620f94
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 11/11/2013 21:59:22
+Message:
+[ubuntu] specify policy_group #MsgLength=30
+
+
+----
+Modified: plugin.xml|5 0
+
+
+Revision: e8e420895eb45bf0b5d5094060429c164ef38364
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 21/09/2013 01:59:05
+Message:
+getPicture via web activities #MsgLength=30
+
+
+----
+Modified: plugin.xml|12 0
+Added: src/firefoxos/camera.js|32 0
+Modified: www/Camera.js|5 3
+
+Revision: 3424ddb39c25d28ccb976a817b7af9d371381447
+Author: James Long <longster@gmail.com>
+Date: 30/10/2013 03:40:18
+Message:
+fix camera for firefox os #MsgLength=26
+
+
+----
+Modified: src/firefoxos/CameraProxy.js|24 25
+
+Revision: 0d94289921be32786f849174fbb3a4739207274a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:30
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.2.5 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|9 1
+Modified: plugin.xml|1 1
+
+Revision: 34e85810c8de811959e00e57dfd9e721ff522ea7
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:03
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 6f4fef8479d690b9037baa05ab4269f9279e1d80
+Author: Kevin Woram <kworam@spluhdap.com>
+Date: 03/10/2013 05:58:41
+Message:
+CB-5599 Android: Catch and ignore OutOfMemoryError in getRotatedBitmap() #MsgLength=372
+
+
+----
+Modified: src/android/CameraLauncher.java|14 2
+
+Revision: ccd59e66ba4b28e76dc6fce6eae56fb42fc4aed8
+Author: Jeffrey Heifetz <jheifetz@blackberry.com>
+Date: 19/07/2013 00:44:10
+Message:
+[BlackBerry10] Adding platform level permissions #MsgLength=49
+
+
+----
+Modified: plugin.xml|3 1
+
+Revision: 2437c40fe7b20f2a8ef0a927de256575656cd750
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/12/2013 09:35:18
+Message:
+CB-2442 CB-2419 Use Windows.Storage.ApplicationData.current.localFolder, instead of writing to app package. #MsgLength=108
+
+
+----
+Modified: src/windows8/CameraProxy.js|73 60
+
+Revision: 7574e663156583ebca47350a6682730dc791cbf1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/camera.cleanup.md|0 50
+Deleted: docs/camera.getPicture.md|0 220
+Deleted: docs/camera.md|0 97
+Deleted: docs/parameter/CameraPopoverHandle.md|0 68
+Deleted: docs/parameter/CameraPopoverOptions.md|0 71
+Deleted: docs/parameter/cameraError.md|0 32
+Deleted: docs/parameter/cameraOptions.md|0 136
+Deleted: docs/parameter/cameraSuccess.md|0 42
+
+Revision: bf105f9832cbb2a78ff06df4e94d61ca8fc08c8e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 00:31:45
+Message:
+CB-5658 Add doc.index.md for Camera plugin #MsgLength=43
+
+
+----
+Modified: README.md|21 4
+Added: doc/index.md|414 0
+
+Revision: ff03f474da84f25c72219ef99b61059837da8f73
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:02
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: e0f6d3387687784b375ea051f88ae7fa7cf21d47
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.2.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+
+Revision: 99dff479622f7a6ab1f469063287830898898960
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/01/2014 10:38:01
+Message:
+Documented quirk for CB-5335 + CB-5206 for WP7+8 #MsgLength=49
+
+
+----
+Modified: doc/index.md|2 0
+
+Revision: 2d3997b2e7c79611d02aa1857b284def306ed29d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 39a5889c3b6e9bc91bddd386fe37423c8b8f7c8e
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 07/01/2014 23:55:20
+Message:
+[BlackBerry10] Add permission to access_shared #MsgLength=47
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f9fa6ccedbf34fc75d6352fc0356617ca84d5577
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:06
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 59
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/camera.html|0 71
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/.DS_Store|0 0
+Deleted: test/autotest/tests/camera.tests.js|0 70
+Deleted: test/camera/index.html|0 394
+Deleted: test/cordova-incl.js|0 72
+Deleted: test/index.html|0 65
+Deleted: test/main.js|0 163
+Deleted: test/master.css|0 164
+
+Revision: 76eb49da95edd112d9eef8494615fd9d4e753e11
+Author: James Long <longster@gmail.com>
+Date: 10/01/2014 04:59:55
+Message:
+reference the correct firefoxos implementation #MsgLength=47
+
+
+----
+Modified: plugin.xml|1 1
+Deleted: src/firefoxos/camera.js|0 32
+
+Revision: 9b0d17ec850b8cb4af4888065774c36890bea72c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/01/2014 10:38:01
+Message:
+Documented quirk for CB-5335 + CB-5206 for WP7+8 #MsgLength=49
+
+
+----
+Modified: doc/index.md|2 0
+
+Revision: 464c37eb50467a7aed91e51aac371c8aed298811
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 21/09/2013 01:59:05
+Message:
+getPicture via web activities #MsgLength=30
+
+
+----
+Modified: plugin.xml|2 2
+Added: src/firefoxos/camera.js|32 0
+
+Revision: fc0678f9707350c40b488b4827f7e0944779be94
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 14/01/2014 21:25:02
+Message:
+CB-4919 firefox os quirks added and supported platforms list is updated #MsgLength=72
+
+
+----
+Modified: doc/index.md|25 0
+
+Revision: ba278d249556369a58f2a5d3c1deb7e4e9d384a0
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 15/01/2014 00:08:50
+Message:
+typo #MsgLength=5
+
+
+----
+Modified: doc/index.md|1 1
+
+Revision: 706a2efe20e94cfafecfef53bc56d30ff837b6b8
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 15/01/2014 05:33:46
+Message:
+remove 2nd FFOS platform config in plugin.xml #MsgLength=46
+
+
+----
+Modified: plugin.xml|2 16
+
+Revision: 77f4683ca815aa52f2db5c2430b88ee963d459d9
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 15/01/2014 05:49:34
+Message:
+reapply new version of FFOS config in plugin.xml #MsgLength=49
+
+
+----
+Modified: plugin.xml|3 3
+
+Revision: ab1281fb250f2fdee05c1fe69395f56db9a77433
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 16/01/2014 02:23:37
+Message:
+remove unrequired FFOS file #MsgLength=28
+
+
+----
+Deleted: src/firefoxos/camera.js|0 32
+
+Revision: 0fbddb8364d2b1eb6e8afe5f1ee987da8483d402
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:58
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.2.7 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+
+
+Revision: 92dd3eeee37511db4399bbf08fa55b8ad795d057
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:35:34
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-camera #MsgLength=66
+
+
+----
+Added: doc/es/index.md|381 0
+
+Revision: 80205f41e357ee84bb4a495f34e8f963f8b2d5f7
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:14:21
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-camera #MsgLength=66
+
+
+----
+Added: doc/fr/index.md|404 0
+
+Revision: ab5c957434314f8a9300628e792dbe0f4ebaee13
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:29
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 61ba9cca4b8d630c259658187ab7137e5cf952d8
+Author: Clément Vollet <clement@joshfire.com>
+Date: 28/01/2014 19:07:23
+Message:
+Refactor onActivityResult #MsgLength=26
+
+
+----
+Modified: src/android/CameraLauncher.java|217 192
+
+Revision: 4ae4414856762e9250f5579c7052315d62733032
+Author: Clément Vollet <clement@joshfire.com>
+Date: 28/01/2014 19:11:57
+Message:
+CB-1826 Catch OOM on gallery image resize #MsgLength=42
+
+
+----
+Modified: src/android/CameraLauncher.java|27 21
+
+Revision: f3a704b59dbe43af6c54912e05d2e2bfb1a4ebd8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 25/02/2014 03:30:28
+Message:
+CB-1826 Android: Guard against content provider not supplying orientation #MsgLength=74
+
+
+----
+Modified: src/android/CameraLauncher.java|11 7
+
+Revision: f1fb8d210e4e90b44693c8a727625b32bf5d845b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 00:56:29
+Message:
+CB-6114 Updated version and RELEASENOTES.md for release 0.2.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+
+Revision: 552b806347f720db3966f391e6d496298ee34a5d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:44:29
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+
+Revision: 19a44608b84966df1cf1a32df46a157e44bfffc0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 00:56:29
+Message:
+CB-6114 Updated version and RELEASENOTES.md for release 0.2.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: 3be1802c9e5474b9e36d4dbc66ccb42648ff2a43
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 01:29:15
+Message:
+CB-6114 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 61a963d6fb6e4540253af1f2219db6556824af3c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+
+Revision: 5393a28191e8f53fb073f05c40a6133f68685274
+Author: Ryan Willoughby <ryan.willoughby@nitobi.com>
+Date: 07/03/2014 05:50:49
+Message:
+Add rim xml namespaces declaration #MsgLength=35
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: c9bab1f94c89e53c0ad8dbc77e1027eaa89527f1
+Author: James Jong <wjamesjong@gmail.com>
+Date: 13/03/2014 21:51:47
+Message:
+CB-6212 iOS: fix warnings compiled under arm64 64-bit #MsgLength=54
+
+
+----
+Modified: src/ios/CDVCamera.m|6 6
+Modified: src/ios/CDVJpegHeaderWriter.m|6 6
+
+Revision: 6fb63fede54e4f5defe45d3bf8a6945fbd8ff352
+Author: Long Nguyen <olragon@gmail.com>
+Date: 13/03/2014 16:29:38
+Message:
+Fix typo error in docs #MsgLength=68
+
+
+----
+Modified: doc/index.md|1 1
+
+Revision: 91d6e10b29e492d8d72a2d5c759ebf7b876ecc3b
+Author: James Jong <wjamesjong@gmail.com>
+Date: 13/03/2014 22:16:30
+Message:
+CB-6212 iOS: fix warnings compiled under arm64 64-bit #MsgLength=82
+
+
+----
+Modified: src/ios/CDVCamera.m|1 1
+
+Revision: e7a3d70fe969f75b795ca216dd9173f8df1635ee
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/04/2014 06:00:12
+Message:
+Fix camera issues, cropping, memory leaks CB-4027, CB-5102, CB-2737, CB-2387 #MsgLength=77
+
+
+----
+Modified: src/wp/Camera.cs|145 83
+
+Revision: f6e8548381db0e7e4b7d6e095c6718313a001edf
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/04/2014 07:32:21
+Message:
+combining callbacks, removing lots of dupe code #MsgLength=48
+
+
+----
+Modified: src/wp/Camera.cs|94 5
+
+Revision: ae2acd9ab237df976bd90c3da2fcf0498b027935
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/04/2014 09:13:57
+Message:
+cleanup, finalize implementations/consolidations #MsgLength=49
+
+
+----
+Modified: src/wp/Camera.cs|58 194
+
+Revision: fe6dc72a755930a82ccf810e71d57fb10eac1b5b
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2014 03:03:22
+Message:
+Remove rotation test value #MsgLength=27
+
+
+----
+Modified: src/wp/Camera.cs|1 1
+
+Revision: 4c2c567fd874a861d4707b1a5c2e268fb56f4d76
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2014 03:19:44
+Message:
+WP8 When only targetWidth or targetHeight is provided, use it as the only bound #MsgLength=80
+
+
+----
+Modified: src/wp/Camera.cs|10 0
+
+Revision: 85a986f589e8dfaf3bb5ed4b24f4ea2e7c457826
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2014 06:53:51
+Message:
+CB-6422 [windows8] use cordova/exec/proxy #MsgLength=42
+
+
+----
+Modified: src/windows8/CameraProxy.js|1 1
+
+Revision: f2a41e4b5e5de71ac62803bf371ad2bcd7e901f3
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:15:25
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+
+Revision: b76b5ae670bdff4dd4c716e889ab12e049f9c733
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.2.9 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: plugin.xml|1 1
+
+Revision: d6af2098c1c4d97e0ae52a74b4d3938a73a3818d
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: c7d88e8b34f51919dbc2d1e2ed9ff1abcc58737d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/04/2014 12:49:29
+Message:
+CB-6546 android: Add support for allowEdit Camera option #MsgLength=76
+
+
+----
+Modified: src/android/CameraLauncher.java|121 23
+
+Revision: d899d7a4b814c7a0bcbadba42f9d93ff2f26fab4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/04/2014 12:51:09
+Message:
+CB-6546 android: Fix a couple bugs with allowEdit pull request #MsgLength=180
+
+
+----
+Modified: src/android/CameraLauncher.java|133 111
+
+Revision: e8596fbc8e58eba0f3272cc20828664d9b051472
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:20:09
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: 0c9de56da59cc06d1e8680afbc6c96437c9b41cd
+Author: RemeR <miguel@xmartlabs.com>
+Date: 29/04/2014 23:30:50
+Message:
+CB-6576 - Returns a specific error message when app has no access to library. #MsgLength=132
+
+
+----
+Modified: src/ios/CDVCamera.m|8 1
+
+
+Revision: 30a75e3fa7d139ce9961b84066293770746d2549
+Author: mbillau <mike.billau@gmail.com>
+Date: 08/05/2014 21:00:37
+Message:
+Removed invalid note from CB-5398 #MsgLength=34
+
+
+----
+Modified: doc/index.md|0 7
+
+Revision: 9e0d9439714b54540685f7daa23f713ca17d28f6
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 02/05/2014 14:51:32
+Message:
+CB-6612 camera.getPicture now always returns encoded JPEG image #MsgLength=64
+
+
+----
+Modified: src/wp/Camera.cs|18 17
+
+
+Revision: 87a5030771b031962a2d3db14337ee3f38438a13
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 02/05/2014 16:46:15
+Message:
+CB-6613 Use WinJS functionality to get base64-encoded content of image instead of File plugin functionality #MsgLength=108
+
+
+----
+Modified: src/windows8/CameraProxy.js|19 40
+
+
+Revision: 199732845e9ba2db063180fc269e3ecc964b1cfb
+Author: Shashwat <shashwat2691@gmail.com>
+Date: 13/05/2014 18:55:57
+Message:
+Little fix in code formatting #MsgLength=49
+
+
+----
+Modified: doc/index.md|1 1
+
+
+Revision: 8760c99b315344daeac7f4676d8a4b8ead5c5347
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:49:11
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-camera #MsgLength=66
+
+
+----
+Added: doc/ja/index.md|379 0
+
+Revision: d5405ba2e060a0c79d5a38a7f930dfa335da6bc8
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:21:31
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-camera #MsgLength=66
+
+
+----
+Modified: doc/es/index.md|8 13
+Modified: doc/fr/index.md|19 24
+Added: doc/it/index.md|374 0
+Added: doc/ko/index.md|374 0
+Added: doc/pl/index.md|410 0
+Added: doc/zh/index.md|374 0
+
+Revision: 8719cb73427d53bc919c2632378d7b0e87829b26
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:35:58
+Message:
+documentation translation: cordova-plugin-camera #MsgLength=49
+
+
+----
+Added: doc/de/index.md|374 0
+Modified: doc/ja/index.md|25 30
+
+Revision: 6e93ebbf90d404a91976d91b05963958ebcc50b3
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:21:48
+Message:
+CB-6795 Add license #MsgLength=20
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: 8ff4d3f16e733715c2985e4539282cc14f491b03
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 03/05/2014 01:08:27
+Message:
+ubuntu: use application directory for images #MsgLength=45
+
+
+----
+Modified: src/ubuntu/CaptureWidget.qml|1 2
+Modified: src/ubuntu/camera.cpp|6 9
+Modified: src/ubuntu/camera.h|10 0
+
+Revision: 61325f46200ca9d68c05805ac04f260700c48e7e
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:35:34
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-camera #MsgLength=66
+
+
+----
+Added: doc/es/index.md|381 0
+
+Revision: 68453f2492a829cdaefc857546a1a827e831515a
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:14:21
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-camera #MsgLength=66
+
+
+----
+Added: doc/fr/index.md|404 0
+
+Revision: 9de98fcc0d0c7c25aa1950a21b96c14c6da66c7a
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:49:11
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-camera #MsgLength=66
+
+
+----
+Added: doc/ja/index.md|379 0
+
+Revision: 5af2653f1841bfe0fe301c83f048ddcd84900862
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:21:31
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-camera #MsgLength=66
+
+
+----
+Modified: doc/es/index.md|8 13
+Modified: doc/fr/index.md|19 24
+Added: doc/it/index.md|374 0
+Added: doc/ko/index.md|374 0
+Added: doc/pl/index.md|410 0
+Added: doc/zh/index.md|374 0
+
+Revision: 4c901d56be1d82f3cc38f30dc18606b6d53a32f5
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:35:58
+Message:
+documentation translation: cordova-plugin-camera #MsgLength=49
+
+
+----
+Added: doc/de/index.md|374 0
+Modified: doc/ja/index.md|25 30
+
+Revision: 7b60a0b6d1ffc5171e49b5b9eaa4070149f1ab1a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/06/2014 02:22:41
+Message:
+Remove deprecated symbols for iOS < 6 #MsgLength=38
+
+
+----
+Modified: src/ios/CDVCamera.m|3 18
+
+Revision: 4bdb990b773c20e2735739b877ac09f1ce6f98e0
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 05/06/2014 04:34:17
+Message:
+CB-5895 documented saveToPhotoAlbum quirk on WP8 #MsgLength=49
+
+
+----
+Modified: doc/index.md|3 0
+
+Revision: d00464e9d30253c59cbfb849c19160d6c52dcc0c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 05/06/2014 04:34:17
+Message:
+CB-2083 documented saveToPhotoAlbum quirk on WP8 #MsgLength=49
+
+
+----
+Modified: doc/index.md|3 0
+
+
+Revision: 4fa934e06f018a0928510e3c9a395d24feadcffa
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:42
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.3.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|20 0
+Modified: plugin.xml|1 1
+
+Revision: 1cf38cd7751db576e03de85b0a3eeed000ac34f1
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:49
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: ffd46c4ef503bee65cfc9ad5e0ca8ff2d3fa3114
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 11/06/2014 16:49:58
+Message:
+Use WinJS functionality to resize image instead of File plugin functionality #MsgLength=77
+
+
+----
+Modified: src/windows8/CameraProxy.js|28 52
+
+
+Revision: 06ecc91fd1430bf3261990315e7e6361a6bc5cad
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 16/06/2014 14:51:45
+Message:
+Removes File plugin dependency from windows8 code. #MsgLength=51
+
+
+----
+Modified: plugin.xml|0 1
+Modified: src/windows8/CameraProxy.js|7 24
+
+
+Revision: c1683000d2c56ecd83cb450f040b4e0fb64b6a37
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 21/06/2014 01:34:24
+Message:
+Docs updated with some default values #MsgLength=49
+
+
+----
+Modified: doc/index.md|5 5
+
+Revision: fa93b534d189366d7bf787653c8bc67451cc77a4
+Author: Eirik Hoem <eirikhm@gmail.com>
+Date: 13/02/2014 18:35:59
+Message:
+Remove iOS doc reference to non-existing navigator.fileMgr API #MsgLength=74
+
+
+----
+Modified: doc/index.md|1 1
+
+
+Revision: 5b8324e98477b3066a00a1e8ecf4ac9fe0fbc714
+Author: Manu Garcia Urreta <mgurreta@mac.com>
+Date: 29/03/2014 07:05:04
+Message:
+Prevent NPE on processResiultFromGallery when intent comes null #MsgLength=75
+
+
+----
+Modified: src/android/CameraLauncher.java|1 1
+
+Revision: 1650dce693cccca785ecf03a6b5e4124ba4e8355
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/06/2014 01:49:56
+Message:
+ios: Delete postImage (dead code) #MsgLength=34
+
+
+----
+Modified: src/ios/CDVCamera.h|0 1
+Modified: src/ios/CDVCamera.m|0 42
+
+Revision: 543c4198d8bd5f4d8ecd02a778d4b9009062cd80
+Author: Dominik Pesch <d.pesch@11com7.de>
+Date: 05/06/2014 04:16:32
+Message:
+CB-6875 android: Handle exception when SDCard is not mounted #MsgLength=72
+
+
+----
+Modified: src/android/CameraLauncher.java|9 4
+
+Revision: f20703de20fbc30f80b6c6f859d6cfb86a6dffdb
+Author: kieferhagin <kieferhagin@gmail.com>
+Date: 01/04/2014 00:04:17
+Message:
+Tweak docs to not use []'s for optional arg since that's JS array notation #MsgLength=86
+
+
+----
+Modified: doc/index.md|1 1
+
+Revision: e4ab155fd097381151357b64e69a1e6f40b076a5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/07/2014 01:21:52
+Message:
+CB-7071 android: Fix callback firing before CROP intent is sent when allowEdit=true #MsgLength=84
+
+
+----
+Modified: src/android/CameraLauncher.java|7 7
+
+
+Revision: 98749a611bd06f5049c804f6915e32ecb7f587f7
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:26:23
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-camera documentation translation: cordova-plugin-camera #MsgLength=105
+
+
+----
+Modified: doc/de/index.md|11 7
+Modified: doc/es/index.md|54 16
+Modified: doc/fr/index.md|11 7
+Modified: doc/it/index.md|11 7
+Modified: doc/ja/index.md|11 7
+Modified: doc/ko/index.md|11 7
+Added: doc/ru/index.md|398 0
+Modified: doc/zh/index.md|13 8
+
+Revision: f8d5ef643e3d766db780f1b65648e7c46f8bb4d5
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 08/07/2014 21:33:38
+Message:
+[BlackBerry10] Doc correction - sourceType is supported #MsgLength=56
+
+
+----
+Modified: doc/index.md|0 2
+
+Revision: 9a26e97ac8fc181bf4ee12a6aadec9428c383cf2
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 10/07/2014 02:42:25
+Message:
+CB-7110cordova-plugin-camera documentation translation: cordova-plugin-camera #MsgLength=78
+
+
+----
+Modified: doc/de/index.md|0 2
+Modified: doc/es/index.md|0 2
+Modified: doc/fr/index.md|4 6
+Modified: doc/it/index.md|0 2
+Modified: doc/ja/index.md|0 2
+Modified: doc/ko/index.md|0 2
+Modified: doc/ru/index.md|3 5
+Modified: doc/zh/index.md|0 2
+
+Revision: e8cbb106ae242aa4d2541c6daea52496153959c1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/07/2014 11:01:10
+Message:
+CB-7187 ios: Add explicit dependency on CoreLocation.framework #MsgLength=63
+
+
+----
+Modified: plugin.xml|7 6
+
+Revision: c696f6e0b3f9d4461d86cb6481c56cca57676f88
+Author: Willy Aguirre <marti1125@gmail.com>
+Date: 29/07/2014 09:42:43
+Message:
+update CameraProxy.js #MsgLength=22
+
+
+----
+Modified: src/firefoxos/CameraProxy.js|1 1
+
+Revision: 0d63ac27ca6911d34a3eef76e393d64e898d8b47
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 02/08/2014 04:22:53
+Message:
+CB-7249cordova-plugin-camera documentation translation: cordova-plugin-camera #MsgLength=78
+
+
+----
+Modified: doc/fr/index.md|1 1
+Modified: doc/pl/index.md|14 12
+Modified: doc/ru/index.md|3 3
+
+Revision: 823eb5d27a5f77d081e55cbed40952b04d8504ed
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:20
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.3.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|14 0
+Modified: plugin.xml|1 1
+
+Revision: 6366aeba472beaf3770c06f347fcb47845274d9a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:26
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 7305c64db09c4c277bbe83a3b1341f6b70a938ec
+Author: javierbb31 <javier.becerra.ber@gmail.com>
+Date: 01/07/2014 04:37:18
+Message:
+CB-6958. Port camera tests to plugin-test-framework #MsgLength=190
+
+
+----
+Added: test/tests.js|73 0
+
+
+Revision: 10e0efc5039284b778599c31cfc54adfd9e0615a
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 17/07/2014 03:49:50
+Message:
+CB-6958 added manual tests #MsgLength=27
+
+
+----
+Modified: test/tests.js|383 8
+
+Revision: dbaa458b7f0c1abce1a6e9cc100e03dc8b13cf28
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 01/08/2014 00:45:05
+Message:
+Renamed test dir, added nested plugin.xml #MsgLength=42
+
+
+----
+Added: tests/plugin.xml|31 0
+Renamed: tests/tests.js [from test/tests.js]|0 0
+
+
+Revision: 42bf5d29838e38591eac66e8c05c66eae2ac79ec
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/08/2014 14:13:15
+Message:
+CB-7180 - Update Camera plugin to support generic plugin webView UIView (which can be either a UIWebView or WKWebView) #MsgLength=119
+
+
+----
+Modified: src/ios/CDVCamera.h|1 1
+
+Revision: d53a7770d9b064f3fa5140a5aa58707a9853e5d6
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 09/08/2014 03:54:42
+Message:
+CB-7286 [BlackBerry10] Use getUserMedia if camera card is unavailable #MsgLength=70
+
+
+----
+Modified: plugin.xml|3 1
+Modified: src/blackberry10/index.js|97 2
+Added: www/blackberry10/assets/camera.html|82 0
+Added: www/blackberry10/assets/camera.js|46 0
+
+Revision: b2403c607652d2db21d778b39102e57652f813a8
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 30/08/2014 06:14:41
+Message:
+Added support for the browser #MsgLength=30
+
+
+----
+Modified: plugin.xml|13 0
+Added: src/browser/CameraProxy.js|104 0
+
+Revision: a423e57c8a42d96684af807d023d592b1c8c64ce
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 05/09/2014 05:51:24
+Message:
+Updated docs for browser #MsgLength=25
+
+
+----
+Modified: doc/index.md|5 0
+
+Revision: 5b84c38a434a2832832100997728310c7440f86c
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 31/07/2014 01:54:58
+Message:
+add documentation for manual tests #MsgLength=35
+
+
+----
+Modified: tests/tests.js|40 11
+
+Revision: e9a834955c8242b63dc8a84cdb0431fb5eda6b6f
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 26/08/2014 03:28:44
+Message:
+CB-6958 Get the correct default for "quality" in the test #MsgLength=58
+
+
+----
+Modified: tests/tests.js|1 1
+
+Revision: f3cfadb19e7312c85934d9d241e0ed4cc0c3b13c
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 27/08/2014 21:15:47
+Message:
+CB-7378 Adds support for windows platform #MsgLength=42
+
+
+----
+Modified: src/windows8/CameraProxy.js|245 96
+
+Revision: 6dcfa9cf9bc4ce3646e1fc117874e3d243d94069
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 27/08/2014 21:18:22
+Message:
+CB-7378 Use single Proxy for both windows8 and windows. #MsgLength=56
+
+
+----
+Modified: plugin.xml|25 1
+Renamed: src/windows/CameraProxy.js [from src/windows8/CameraProxy.js]|0 0
+
+Revision: 5c1394058c558ae6e52016cefbdf2d19731432f9
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 30/08/2014 05:20:41
+Message:
+CB-7433 Fixes manual tests failure on windows #MsgLength=46
+
+
+----
+Modified: tests/tests.js|10 1
+
+Revision: fa30a5676028f1240dfd979067fd5110814d055d
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 04/09/2014 07:48:42
+Message:
+CB-7461 - Geolocation fails in Camera plugin in iOS 8 #MsgLength=54
+
+
+----
+Modified: plugin.xml|5 0
+Modified: src/ios/CDVCamera.m|3 0
+
+Revision: ae228200464023cf7fada8d483a3ed647bc864cc
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 04/09/2014 08:40:20
+Message:
+CB-4003 - Add config option to not use location information in Camera plugin (and default to not use it) #MsgLength=105
+
+
+----
+Modified: doc/index.md|8 1
+Modified: plugin.xml|1 0
+Modified: src/ios/CDVCamera.h|1 0
+Modified: src/ios/CDVCamera.m|23 13
+
+Revision: e851960910f3fa8f9ea6b0a0efd9d931d0fceca2
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 05/09/2014 10:30:08
+Message:
+CB-7249 cordova-plugin-camera documentation translation: cordova-plugin-camera #MsgLength=79
+
+
+----
+Modified: doc/de/index.md|37 9
+Modified: doc/es/index.md|11 4
+Modified: doc/fr/index.md|41 30
+Modified: doc/it/index.md|37 9
+Modified: doc/ja/index.md|37 9
+Modified: doc/ko/index.md|37 9
+Modified: doc/ru/index.md|71 55
+Modified: doc/zh/index.md|56 28
+
+
+Revision: f2eebeed0a06fa1a86402d9dc3798a877b3e7fcd
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 31/07/2014 01:54:58
+Message:
+add documentation for manual tests #MsgLength=35
+
+
+----
+Modified: test/tests.js|40 11
+
+
+Revision: e316e32808d7dbe95fa4858e67cac2d68bc025e7
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 26/08/2014 03:28:44
+Message:
+CB-6958 Get the correct default for "quality" in the test #MsgLength=58
+
+
+----
+Modified: tests/tests.js|1 1
+
+Revision: c8c3bf0782e5dd4403c501362efdfad2c9e3e9fe
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 30/08/2014 05:20:41
+Message:
+CB-7433 Fixes manual tests failure on windows #MsgLength=46
+
+
+----
+Modified: tests/tests.js|10 1
+
+Revision: 938543c203ce3d9ae35b9d03c50aca2fe598c41d
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 27/08/2014 21:15:47
+Message:
+CB-7378 Adds support for windows platform #MsgLength=42
+
+
+----
+Modified: src/windows8/CameraProxy.js|245 96
+
+Revision: f3bc296da86c9799a43d28cb0a77cf12014088b8
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 27/08/2014 21:18:22
+Message:
+CB-7378 Use single Proxy for both windows8 and windows. #MsgLength=56
+
+
+----
+Modified: plugin.xml|25 1
+Renamed: src/windows/CameraProxy.js [from src/windows8/CameraProxy.js]|0 0
+
+
+Revision: 599ab31090afe2eff80bd5d16f1190550a494491
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 04/09/2014 07:48:42
+Message:
+CB-7461 - Geolocation fails in Camera plugin in iOS 8 #MsgLength=54
+
+
+----
+Modified: plugin.xml|5 0
+Modified: src/ios/CDVCamera.m|3 0
+
+Revision: 481ff2772780bc3dc1a343d9718b82592150d8c2
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 04/09/2014 08:40:20
+Message:
+CB-4003 - Add config option to not use location information in Camera plugin (and default to not use it) #MsgLength=105
+
+
+----
+Modified: doc/index.md|8 1
+Modified: plugin.xml|1 0
+Modified: src/ios/CDVCamera.h|1 0
+Modified: src/ios/CDVCamera.m|23 13
+
+Revision: af566264eff60d9c6f107776e11eeb6004003c0c
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 05/09/2014 10:30:08
+Message:
+CB-7249 cordova-plugin-camera documentation translation: cordova-plugin-camera #MsgLength=79
+
+
+----
+Modified: doc/de/index.md|37 9
+Modified: doc/es/index.md|11 4
+Modified: doc/fr/index.md|41 30
+Modified: doc/it/index.md|37 9
+Modified: doc/ja/index.md|37 9
+Modified: doc/ko/index.md|37 9
+Modified: doc/ru/index.md|71 55
+Modified: doc/zh/index.md|56 28
+
+
+Revision: d84b875c449d68937520a1b352e09f6d39044fbf
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 10/09/2014 22:53:09
+Message:
+CB-7433 Adds missing window reference to prevent manual tests failure on Android and iOS #MsgLength=89
+
+
+----
+Modified: tests/tests.js|1 1
+
+Revision: 986bf6fd3c4669d5839a4885560ff7caa84d919a
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 11/09/2014 06:38:09
+Message:
+Fixed minor bugs with the browser #MsgLength=34
+
+
+----
+Modified: src/browser/CameraProxy.js|7 9
+
+Revision: 05da230c2a76c3f698d7efd6b84900bcc939edd1
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 11/09/2014 17:55:53
+Message:
+CB-7413 Resolve 'ms-appdata' URIs with File plugin #MsgLength=81
+
+
+----
+Modified: tests/tests.js|2 2
+
+Revision: fcfe6421479344d3766f09aca06e088ea9c7a826
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 16/09/2014 05:24:53
+Message:
+CB-7471 cordova-plugin-camera documentation translation: cordova-plugin-camera #MsgLength=79
+
+
+----
+Modified: doc/de/index.md|5 0
+Modified: doc/es/index.md|5 0
+Modified: doc/fr/index.md|5 0
+Modified: doc/it/index.md|5 0
+Modified: doc/ja/index.md|5 0
+Modified: doc/ko/index.md|5 0
+Modified: doc/pl/index.md|41 29
+Modified: doc/ru/index.md|5 0
+Modified: doc/zh/index.md|22 17
+
+Revision: 45da410662bfdaa391dbd722ffd118acd479f474
+Author: Edna Morales <eymorale@us.ibm.com>
+Date: 04/09/2014 23:04:33
+Message:
+CB-7423 do cleanup after copyImage manual test #MsgLength=101
+
+
+----
+Modified: tests/tests.js|18 0
+
+Revision: 43cb385f0e29efa4437d970281cecf92f472cbac
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 16/09/2014 06:31:04
+Message:
+CB-7557 - Camera plugin tests is missing a File dependency #MsgLength=59
+
+
+----
+Modified: tests/plugin.xml|2 0
+
+Revision: 513bfde49e4226133c976d53834e11b040950d3e
+Author: Wang Jinggang <kinfkong@126.com>
+Date: 05/06/2014 15:56:45
+Message:
+CB-7558 - hasPendingOperation flag in Camera plugin's takePicture should be reversed to fix memory errors #MsgLength=160
+
+
+----
+Modified: src/ios/CDVCamera.m|2 2
+
+Revision: 3581c595d7d67b011aaf33b5b09e702c119d6b79
+Author: ktsour <ktsour@gmail.com>
+Date: 16/09/2014 00:00:45
+Message:
+CB-7551 - [Camera][iOS 8] Scaled images show a white line #MsgLength=112
+
+
+----
+Modified: src/ios/CDVCamera.m|4 0
+
+Revision: af18483d6970b32a22f016292d3d2cb921eedb00
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:39
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.3.2 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|33 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9adc39ca2cc220ab6b0ed3c77ce8c672a15ddef4
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:01
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 860fedece4387cd28b5cd6dd73bfd332a04837e3
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:13
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: 7413c1bcb2916ad0ff77833679ae346563044d74
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 19/09/2014 17:16:20
+Message:
+CB-7600 Adds informative message to error callback in manual test. #MsgLength=67
+
+
+----
+Modified: tests/tests.js|1 1
+
+Revision: 021743f20e03004523d2f56c12230eda3e2db26d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 07:10:12
+Message:
+ Updated version and RELEASENOTES.md for release 0.3.3 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: dbe33a44ffa677fffe9976fa521473523bb09e7b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 08:09:46
+Message:
+ Incremented plugin version. #MsgLength=29
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 53e42fc97bb95e806de75c24684f6819cb29b831
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:10:17
+Message:
+CB-7700 cordova-plugin-camera documentation translation: cordova-plugin-camera #MsgLength=79
+
+
+----
+Modified: doc/de/index.md|3 3
+Modified: doc/es/index.md|19 19
+Modified: doc/pl/index.md|68 68
+Modified: doc/ru/index.md|75 75
+
+
+Revision: 03fade661e4048706651177770aaa272168957ed
+Author: yoshifp <todd.wiggins3@tafensw.net.au>
+Date: 28/08/2014 13:15:37
+Message:
+Add orientation support for PNG to Android (closes #45) #MsgLength=56
+
+
+----
+Modified: src/android/CameraLauncher.java|4 0
+
+Revision: 8b8db828f6661ebe8cf44f488140774b9ddd7eb0
+Author: Brian Bolton <brian.bolton@laser2mail.com>
+Date: 23/08/2014 03:48:13
+Message:
+Pass uri to crop instead of pulling the low resolution image out of the intent return (close #43) #MsgLength=98
+
+
+----
+Modified: src/android/CameraLauncher.java|7 30
+
+Revision: 0d389857cf6b03ddb8e3c7f8a2311cc00e9f3910
+Author: Kris Selden <kris.selden@gmail.com>
+Date: 10/10/2014 07:20:52
+Message:
+Fix memory leak of image data in imagePickerControllerReturnImageResult #MsgLength=239
+
+
+----
+Modified: src/ios/CDVCamera.m|1 1
+
+Revision: fb4cff9cc047b9ceb5d42db7027bdbbc9d03053b
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:01:19
+Message:
+CB-7979 Each plugin doc should have a ## Installation section #MsgLength=62
+
+
+----
+Modified: doc/index.md|2 1
+
+Revision: 032531ae77cb00bd77b547ed2708c4eff123deb4
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:02:58
+Message:
+CB-7977 Mention deviceready in plugin docs #MsgLength=43
+
+
+----
+Modified: doc/index.md|8 1
+
+Revision: 2045e0a6440391948236d80624ab69e009442159
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:01
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.3.4 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3ab650bdc906dfdcfc398add0055115d7a1a6c5b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:49
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 35c653d24d3961655b3dcbb4c032942736754a92
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 06/11/2014 04:19:42
+Message:
+CB-7937 - Re-factor iOS Camera plugin so that it is testable (closes #52) #MsgLength=128
+
+
+----
+Modified: plugin.xml|2 0
+Modified: src/ios/CDVCamera.h|28 14
+Modified: src/ios/CDVCamera.m|364 447
+Added: src/ios/UIImage+CropScaleOrientation.h|28 0
+Added: src/ios/UIImage+CropScaleOrientation.m|170 0
+
+Revision: 482f2ac2ccf0a428aa0800e5238b7b52d73178c7
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 17/12/2014 05:45:01
+Message:
+CB-7938 - Added XCTest unit tests project, with stubs (adapted from SplashScreen unit test setup) (closes #60) #MsgLength=111
+
+
+----
+Modified: src/ios/UIImage+CropScaleOrientation.h|1 0
+Modified: src/ios/UIImage+CropScaleOrientation.m|7 2
+Added: tests/ios/.gitignore|1 0
+Added: tests/ios/CDVCameraTest.xcworkspace/contents.xcworkspacedata|7 0
+Added: tests/ios/CDVCameraTest.xcworkspace/xcshareddata/CDVCameraTest.xccheckout|41 0
+Added: tests/ios/CDVCameraTest.xcworkspace/xcshareddata/xcschemes/CordovaLib.xcscheme|77 0
+Added: tests/ios/CDVCameraTest/CDVCameraLibTests/CameraTest.m|498 0
+Added: tests/ios/CDVCameraTest/CDVCameraLibTests/Info.plist|24 0
+Added: tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/project.pbxproj|561 0
+Added: tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/project.xcworkspace/contents.xcworkspacedata|7 0
+Added: tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/project.xcworkspace/xcshareddata/CDVCameraTest.xccheckout|41 0
+Added: tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/xcshareddata/xcschemes/CDVCameraLib.xcscheme|77 0
+Added: tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/xcshareddata/xcschemes/CDVCameraLibTests.xcscheme|96 0
+Added: tests/ios/README.md|21 0
+Added: tests/ios/package.json|13 0
+
+Revision: 376bec2b96699c32ef6d646e1c5aec954d12d3c9
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2014 08:42:02
+Message:
+CB-8032 - Camera Plugin - Add nativeURL external method support for CDVFileSystem->makeEntryForPath:isDirectory: (closes #57) #MsgLength=126
+
+
+----
+Modified: src/ios/CDVCamera.m|23 3
+
+Revision: 4f056f0a73ff36bb34b172b0ba8bba16a4b06953
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/01/2015 22:49:20
+Message:
+CB-8351 Use argumentForIndex rather than NSArray extension #MsgLength=59
+
+
+----
+Modified: src/ios/CDVCamera.m|13 13
+
+Revision: 2a0735d5510e561a043d4c3ed4d4c2b0f6e1c5f8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/01/2015 23:19:46
+Message:
+CB-8351 Unbreak build from previous commit #MsgLength=43
+
+
+----
+Modified: src/ios/CDVCamera.h|1 1
+Modified: src/ios/CDVCamera.m|2 2
+
+Revision: 2ead6335c92deb117cc3ef84d0a15db296de8dc5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/01/2015 23:47:04
+Message:
+CB-8351 ios: Stop using now-deprecated integerValueForKey: class extension #MsgLength=75
+
+
+----
+Modified: src/ios/CDVCamera.m|17 5
+
+Revision: 80b00483846ce30c9b895b106a69767a102fc0f1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/01/2015 23:56:19
+Message:
+CB-8351 ios: Stop using now-deprecated [NSData base64EncodedString] #MsgLength=68
+
+
+----
+Modified: src/ios/CDVCamera.m|10 2
+
+Revision: 799ed580d3ca53fc3ab671f17858c3e0d4fd6893
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.3.5 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 97514fb01e1701c2941c4221f5a6effc60c7ae9a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:02
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 57aa707c6a2105a1f02a1de02f5afd32910a65ca
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 15:02:44
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|43 0
+
+Revision: b780331389b87b665d0fe8816f483213bb863182
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:47:23
+Message:
+CB-8438 cordova-plugin-camera documentation translation: cordova-plugin-camera #MsgLength=79
+
+
+----
+Modified: doc/de/index.md|44 19
+Modified: doc/es/index.md|43 76
+Modified: doc/fr/index.md|42 68
+Modified: doc/it/index.md|45 20
+Modified: doc/ja/index.md|46 21
+Modified: doc/ko/index.md|39 14
+Modified: doc/pl/index.md|35 25
+Modified: doc/zh/index.md|46 21
+
+Revision: 2c597a389b03a926a357205cc7d07538bc4b04e2
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 03:47:04
+Message:
+CB-8559 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|13 0
+Modified: README.md|2 0
+
+Revision: bca73e6ee95c005dea59f6f05ff0b3f50917de33
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 04/03/2015 05:11:01
+Message:
+CB-8599 fix threading issue with cameraPicker (fixes #72) #MsgLength=112
+
+
+----
+Modified: src/ios/CDVCamera.m|5 3
+
+Revision: d7e708db092dee3140adbb906322de6f1ed6ec03
+Author: VILIC VANE <i@vilic.info>
+Date: 29/01/2015 01:31:21
+Message:
+add try ... catch for getting image orientation #MsgLength=271
+
+
+----
+Modified: src/wp/Camera.cs|20 14
+
+
+Revision: 929733b8913311f2cfd504937268a8a1d22f4f9a
+Author: Serge Huijben <thehuijb@gmail.com>
+Date: 05/03/2015 09:33:21
+Message:
+CB-8235 android: Fix crash when selecting images from DropBox with spaces in path (close #65) #MsgLength=94
+
+
+----
+Modified: src/android/FileHelper.java|102 29
+
+Revision: 2a93a489565d8f7da947a94fb0d563ac7011a79c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/03/2015 08:34:36
+Message:
+Fix localize key for Videos. This closes #58 #MsgLength=45
+
+
+----
+Modified: src/ios/CDVCamera.m|1 1
+
+Revision: b698e10386345ffbbd4aa286ee418379742762b3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 11/03/2015 08:01:00
+Message:
+added missing apache header #MsgLength=28
+
+
+----
+Modified: tests/ios/README.md|19 0
+
+Revision: 00cd249dd7ffce9645f339f0cfaf383b7976bac8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 11/03/2015 08:12:32
+Message:
+CB-8646 Updated version and RELEASENOTES.md for release 0.3.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7b2f453c2558785df8b81846fa9a33962527764b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 11/03/2015 08:16:07
+Message:
+CB-8646 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9e4174caff5d04213f031dcd4ea1c3654438801b
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 13/03/2015 22:46:17
+Message:
+CB-8659: ios: 4.0.x Compatibility: Remove use of deprecated headers #MsgLength=68
+
+
+----
+Modified: src/ios/CDVCamera.m|0 2
+
+Revision: 081aec5602f7a1cf7b7823bb80c9b0976987aca8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 09:52:47
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|434 2
+Deleted: doc/index.md|0 455
+
+Revision: 8062a006c05d08863ac6c2b157e82d18dd6329d2
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 19/03/2015 22:47:46
+Message:
+docs: added 'Windows' to supported platforms #MsgLength=116
+
+
+----
+Modified: README.md|1 0
+
+Revision: 7209d38fa22f6c3a0dcac603477c8c7b831f5639
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:16:57
+Message:
+Fix cordova-paramedic path change, build with TRAVIS_BUILD_DIR, use npm to install paramedic #MsgLength=93
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 04ed502d9210c02d1ae3b5d0eadd6cfa8c41d7a9
+Author: Gene Connolly <connolly.gene@gmail.com>
+Date: 31/03/2015 02:13:50
+Message:
+CB-8351 Fix custom implementation of integerValueForKey (close #79) #MsgLength=203
+
+
+----
+Modified: src/ios/CDVCamera.m|1 1
+
+Revision: ccbbdccc4cd207e26b6e6843eae147f9eba7f113
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:30
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: 563f0038fd95f6b135bf49dab66834611b120f67
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:05:59
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: f1ae0e9ccf99c210396f0001f49d3fcd2fe3de00
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:39:18
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ac4af88f551406fa7b38a1343a3fc423a9ae9233
+Author: Joe Bowser <bowserj@apache.org>
+Date: 01/04/2015 01:51:14
+Message:
+CB-8740: Partial fix for Save Image to Gallery error found in MobileSpec #MsgLength=73
+
+
+----
+Modified: src/android/CameraLauncher.java|48 11
+
+Revision: 23dbb8889adb060e1334058925b2a2bf4ceeb5d5
+Author: Joe Bowser <bowserj@apache.org>
+Date: 01/04/2015 06:25:23
+Message:
+CB-8740: Removing FileHelper call that was failing on Samsung Galaxy S3, now that we have a real path, we only need to update the MediaStore, not pull from it in this case #MsgLength=172
+
+
+----
+Modified: src/android/CameraLauncher.java|1 5
+
+Revision: 9fe5b430aadb75052d8949567d537199ff3df0fc
+Author: Joe Bowser <bowserj@apache.org>
+Date: 02/04/2015 02:03:48
+Message:
+CB-8782: Fixed the flow so that we save the cropped image and use it, not the original non-cropped.  Crop only supports G+ Photos Crop, other crops may not work, depending on the OEM #MsgLength=183
+
+
+----
+Modified: src/android/CameraLauncher.java|71 40
+
+Revision: d52b936bd8a0f17dbeaf50bfdf7f24769b0b422e
+Author: Joe Bowser <bowserj@apache.org>
+Date: 02/04/2015 02:22:56
+Message:
+CB-8782: Updated the docs to talk about the allowEdit quirks, it's not 100% working, but better than it was #MsgLength=108
+
+
+----
+Modified: README.md|2 1
+
+Revision: ee4ac0d7b28fc638ad2a5abc2158dbc2997bf744
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 02:40:15
+Message:
+CB-8683 updated blackberry specific references of org.apache.cordova.camera to cordova-plugin-camera #MsgLength=101
+
+
+----
+Modified: src/blackberry10/index.js|1 1
+Modified: www/blackberry10/assets/camera.js|3 3
+
+Revision: d1dfc1e8ee9ac5bcaa329396eb003e4bcc432ddb
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 14:01:47
+Message:
+CB-8747 updated dependency, added peer dependency #MsgLength=50
+
+
+----
+Modified: package.json|3 0
+Modified: tests/plugin.xml|1 1
+
+Revision: b8a700215af0f5b217c91c6d5380da716d09dabd
+Author: Murat Sutunc <muratsu@microsoft.com>
+Date: 17/02/2015 07:32:10
+Message:
+CB-8706 remove unnecessary capabilities from xml #MsgLength=49
+
+
+----
+Modified: plugin.xml|1 10
+
+Revision: 5ef04e552c1b1ca3914fe56c83cc6956c11a81b8
+Author: Murat Sutunc <muratsu@microsoft.com>
+Date: 18/02/2015 07:09:33
+Message:
+CB-8706 use filePicker if saveToPhotoAlbum is true #MsgLength=51
+
+
+----
+Modified: src/windows/CameraProxy.js|79 11
+
+Revision: 29c9ea387d24c2a4d5558a3af8f9de219c98bb9f
+Author: Murat Sutunc <muratsu@microsoft.com>
+Date: 18/03/2015 08:16:38
+Message:
+CB-8707 refactoring windows code to improve readability #MsgLength=56
+
+
+----
+Modified: src/windows/CameraProxy.js|413 412
+
+Revision: 9e11ab4dfb03222b3da57632c6ae9fb6fee9f826
+Author: Murat Sutunc <muratsu@microsoft.com>
+Date: 04/04/2015 02:08:00
+Message:
+CR fixes #MsgLength=9
+
+
+----
+Modified: src/windows/CameraProxy.js|162 158
+
+
+Revision: 302aacb214deae3f30d58a40f76cc53edb5a7be7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 07:51:58
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: bc7c4278ef689be6aba0bdcf7f7934847245ff41
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 08:06:28
+Message:
+CB-8746 bumped version of file dependency #MsgLength=42
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: 629dbcb712a6e2f0c59db7b8fba685576bbf56e7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 08:08:52
+Message:
+CB-8746 bumped version of file dependency in package.json too #MsgLength=62
+
+
+----
+Modified: package.json|1 1
+
+Revision: af36e74d05a143fd464afb6acc626f8b8cb08245
+Author: Connor Pearson <cjp822@gmail.com>
+Date: 01/04/2015 22:34:17
+Message:
+CB-8780 - Display popover using main thread. Fixes popover slowness (closes #81) #MsgLength=81
+
+
+----
+Modified: src/ios/CDVCamera.m|18 18
+
+Revision: d0fe66e1d5593183972d7c85ea8d1d29dfee14f3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:37
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|22 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c2e4d1f36d8f04399fb62591193ecb710e7e35b8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:46
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b7af490a3e5dc2c70b47617ef73a6637eb1a4d6b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:30:57
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d10bf50c619a8b632e6a82198631b754e5da5c5f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: b67e4a09eda5b9d396d9d7fe88d009126c6c8ca8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:21
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: fb8ce21711def54779fc4f52643f5621b3f9fff6
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 17/04/2015 03:44:29
+Message:
+CB-8405 Use z-index instead of z-order #MsgLength=39
+
+
+----
+Modified: src/windows/CameraProxy.js|2 2
+
+Revision: 0dabe944162a23469759a4153b17164ce8d0da96
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 16/04/2015 08:20:30
+Message:
+CB-8054 Support taking pictures from file for WP8 #MsgLength=76
+
+
+----
+Modified: src/windows/CameraProxy.js|88 14
+
+
+Revision: 1e8c8368444e58e54134b0717d618d0ff54f9c20
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 17/04/2015 08:27:55
+Message:
+CB-8404 Rotate camera feed with device orientation #MsgLength=63
+
+
+----
+Modified: src/windows/CameraProxy.js|49 14
+
+Revision: 8f07f562a205d5bbebf734594ebc2a9d0bee1ff8
+Author: Murat Sutunc <muratsu@microsoft.com>
+Date: 23/04/2015 05:23:47
+Message:
+CB-8404 typo fix cameraproxy.js #MsgLength=92
+
+
+----
+Modified: src/windows/CameraProxy.js|1 1
+
+Revision: c2e0db2b869762fd09b3977c5cc0af5a8ee4e79b
+Author: Joe Bowser <bowserj@apache.org>
+Date: 25/04/2015 05:24:32
+Message:
+CB-8909: Remove unused import from File #MsgLength=40
+
+
+----
+Modified: src/android/CameraLauncher.java|0 1
+
+Revision: b0ee9dd90514a8e714e817f1f93d0834bf314d2a
+Author: Alan Kinzie <alan.kinzie@sap.com>
+Date: 08/01/2015 02:59:22
+Message:
+CB-8253 Fix potential unreleased resources #MsgLength=534
+
+
+----
+Modified: src/android/CameraLauncher.java|68 12
+
+Revision: 69c687e0cfd78ba39dd36157d3e84addbb2a8e32
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 07/05/2015 01:49:05
+Message:
+CB-8943 fix PickAndContinue issue on Win10Phone #MsgLength=48
+
+
+----
+Modified: src/windows/CameraProxy.js|92 130
+
+Revision: 19feee9cb049db1af31ba0db32037201638f76fe
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/05/2015 08:07:39
+Message:
+CB-8959 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 0436928275ded71f0529268400d440af78076886
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/05/2015 08:37:22
+Message:
+CB-8959 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b8b53c62546573f87b518fed93488eab3c317c20
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/05/2015 07:04:19
+Message:
+add missing license header #MsgLength=27
+
+
+----
+Modified: tests/ios/CDVCameraTest/CDVCameraLibTests/Info.plist|20 0
+
+Revision: 9f9e5ef4a9c5cf2a829e220ee627e7efc8110cd6
+Author: Dan Polivy <dan@cellartracker.com>
+Date: 01/10/2014 05:28:24
+Message:
+CB-7667 iOS8: Handle case where camera is not authorized (closes #49) #MsgLength=394
+
+
+----
+Modified: plugin.xml|1 0
+Modified: src/ios/CDVCamera.m|43 1
+
+Revision: 706a3aa73ed20e748fad3d95006ede002c08ed4a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/05/2015 08:39:40
+Message:
+CB-8601 - iOS camera unit tests broken #MsgLength=39
+
+
+----
+Modified: tests/ios/CDVCameraTest/CDVCameraLibTests/CameraTest.m|15 5
+
+Revision: a830b3e08b610388c51aba38db41424e72db3d8b
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 12/05/2015 08:09:43
+Message:
+CB-8879 fix stripe issue with correct aspect ratio #MsgLength=51
+
+
+----
+Modified: src/windows/CameraProxy.js|97 21
+
+Revision: 33ffb17c9780db93e44bc9daaa284d4809940a95
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 19/05/2015 08:32:14
+Message:
+Patch for CB-8498, this closes #64 #MsgLength=35
+
+
+----
+Modified: src/windows/CameraProxy.js|8 1
+
+Revision: 15f66bf5cd446fa4636a7132976140a7e5295712
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 19/05/2015 12:38:34
+Message:
+major refactor : readability #MsgLength=29
+
+
+----
+Modified: src/windows/CameraProxy.js|105 66
+
+Revision: 888a9661fb6504d0b97f38e2a673b07104386a74
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/05/2015 07:17:57
+Message:
+Fixed some nit white-space issues, aliased a little more #MsgLength=57
+
+
+----
+Modified: src/windows/CameraProxy.js|10 8
+
+Revision: b3430e6f80a20d8f271dd14625dc641ee18e855d
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/05/2015 07:31:50
+Message:
+one more alias #MsgLength=15
+
+
+----
+Modified: src/windows/CameraProxy.js|6 5
+
+Revision: a6cc9271a05348cdef36abe1767af728e4b912a2
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 15/05/2015 01:35:53
+Message:
+CB-8883 fix picture rotation issue #MsgLength=35
+
+
+----
+Modified: src/windows/CameraProxy.js|94 46
+
+Revision: 88ee99011c90af2b9cfa147099ed76485c175c55
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 02/06/2015 23:42:32
+Message:
+attempt to fix npm markdown issue #MsgLength=34
+
+
+----
+Modified: README.md|16 16
+
+Revision: 0d37267eb4837b4f8e33d426060a814c7b33ed21
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 07/05/2015 13:37:59
+Message:
+Update docs. This closes #100 #MsgLength=30
+
+
+----
+Modified: README.md|73 84
+Added: doc/img/android-fail.png|0 0
+Added: doc/img/android-success.png|0 0
+Added: doc/img/blackberry-fail.png|0 0
+Added: doc/img/blackberry-success.png|0 0
+Added: doc/img/browser-fail.png|0 0
+Added: doc/img/browser-success.png|0 0
+Added: doc/img/firefox-fail.png|0 0
+Added: doc/img/firefox-success.png|0 0
+Added: doc/img/fireos-fail.png|0 0
+Added: doc/img/fireos-success.png|0 0
+Added: doc/img/ios-fail.png|0 0
+Added: doc/img/ios-success.png|0 0
+Added: doc/img/ubuntu-fail.png|0 0
+Added: doc/img/ubuntu-success.png|0 0
+Added: doc/img/windows-fail.png|0 0
+Added: doc/img/windows-success.png|0 0
+Added: doc/img/wp8-fail.png|0 0
+Added: doc/img/wp8-success.png|0 0
+
+Revision: b6a8a24b88e5893c77bac9fc95ceb055fa2c35f5
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:38:52
+Message:
+CB-9128 cordova-plugin-camera documentation translation: cordova-plugin-camera #MsgLength=79
+
+
+----
+Added: doc/de/README.md|421 0
+Added: doc/es/README.md|411 0
+Added: doc/fr/README.md|378 0
+Added: doc/it/README.md|421 0
+Added: doc/ja/README.md|421 0
+Added: doc/ko/README.md|421 0
+Added: doc/pl/README.md|421 0
+Added: doc/zh/README.md|421 0
+Added: tests/ios/doc/de/README.md|39 0
+Added: tests/ios/doc/es/README.md|39 0
+Added: tests/ios/doc/fr/README.md|39 0
+Added: tests/ios/doc/it/README.md|39 0
+Added: tests/ios/doc/ja/README.md|39 0
+Added: tests/ios/doc/ko/README.md|39 0
+Added: tests/ios/doc/pl/README.md|39 0
+Added: tests/ios/doc/zh/README.md|39 0
+
+Revision: 92c039e4651b31d3566aaa877683fd36e95dae17
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 16/06/2015 07:51:08
+Message:
+Closing stale pull request: close #66 #MsgLength=38
+
+
+----
+
+Revision: 647dac284b691d0ed10ee4d6d9a6f6dbd694d8fd
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 16/06/2015 07:52:32
+Message:
+Closing stale pull request: close #84 #MsgLength=38
+
+
+----
+
+Revision: e8d52ef256121f5445c3d491e296a6979761f4f7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:01
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.2.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|16 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 437cf3d93a2c0c841d38c6c80472b2ba118f372a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 11498404fce82e710cfc40777d8213bf307082ac
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:34
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 363dd025845bf290190b754b1d6fa3c11fd08438
+Author: vladimir <vladimir@elitebook>
+Date: 18/06/2015 05:14:58
+Message:
+Fix returning native url on windows. #MsgLength=37
+
+
+----
+Modified: src/windows/CameraProxy.js|6 1
+
+
+Revision: b683315be674b177c63072cb5645a75f42d2b226
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 25/06/2015 21:09:59
+Message:
+CB-9247 - Fixes compilation errors with cordova-ios 4.x #MsgLength=56
+
+
+----
+Modified: src/ios/CDVCamera.m|14 4
+Modified: tests/ios/CDVCameraTest/CDVCameraLibTests/CameraTest.m|3 3
+
+Revision: 63110ea54c16d1e0958f0986b3d5a43b254df13a
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 25/06/2015 21:20:25
+Message:
+CB-9247 - Added macro to conditionally add NSData+Base64.h #MsgLength=59
+
+
+----
+Modified: src/ios/CDVCamera.m|4 0
+
+Revision: 1e607ddcc856fd69208d1fb7e6202ab241adfa80
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 25/06/2015 21:22:24
+Message:
+CB-9247 - typo #MsgLength=15
+
+
+----
+Modified: src/ios/CDVCamera.m|1 1
+
+Revision: 899802a202837118efc37718fbdc9b3bcad30c75
+Author: Joe Bowser <bowserj@apache.org>
+Date: 08/07/2015 05:27:35
+Message:
+CB-9259: Forgot to add another check on which URI we're using when fixing this thing the first time #MsgLength=100
+
+
+----
+Modified: src/android/CameraLauncher.java|8 2
+
+Revision: 11eaaa8b9f1779dc2bd389459d6444433fbef9a4
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 08:36:10
+Message:
+remove travis-ci integration #MsgLength=29
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 2
+
+Revision: 8ebaaa62bda2f6a67c906ff10dba2c3e461f246d
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 10/07/2015 06:19:19
+Message:
+Closing stale pull request: close #77 #MsgLength=38
+
+
+----
+
+Revision: 0264e561627dcada60da24fad9895f592b65f019
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 10/07/2015 06:22:02
+Message:
+Closing stale pull request: close #73 #MsgLength=38
+
+
+----
+
+Revision: c50757c2451654e4c1b81cf5bad2b54eb198beb5
+Author: Gillardo <darren.gillard81@gmail.com>
+Date: 09/07/2015 19:27:32
+Message:
+CB-9349 Focus control and nice UI #MsgLength=84
+
+
+----
+Modified: src/windows/CameraProxy.js|65 37
+
+Revision: 9dfd37cd668ce114f73054caa881b95c7db4cb02
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 14/07/2015 07:02:12
+Message:
+Closing stale pull request: close #106 #MsgLength=39
+
+
+----
+
+Revision: eeb588058016315e79d94caaf0dfba38c05d3040
+Author: Andrey Kurdyumov <kant2002@gmail.com>
+Date: 27/07/2015 17:53:13
+Message:
+CB-5661 Remove outdated iOS quirks about memory #MsgLength=48
+
+
+----
+Modified: README.md|0 2
+
+Revision: 110b3b33886ba2fff9827f69a08660d660a22e77
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 28/07/2015 02:39:38
+Message:
+CB-9413 Close RandomAccessStream once copied #MsgLength=45
+
+
+----
+Modified: src/windows/CameraProxy.js|2 2
+
+Revision: 813d143667c1fc1fe4a7ce2b2de8a9504861dce0
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 28/07/2015 03:15:25
+Message:
+CB-9151 Trigger captureAction only once #MsgLength=40
+
+
+----
+Modified: src/windows/CameraProxy.js|54 20
+
+Revision: ee5cfe89a594ba8a86ca36fe67e7a040cc3d5e17
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 04/08/2015 03:57:58
+Message:
+CB-9443 Pick correct maxResolution This closes #111, closes #56 #MsgLength=64
+
+
+----
+Modified: src/windows/CameraProxy.js|13 10
+
+Revision: cad9ab0419ec3c90f0c052483177952d364a353d
+Author: Jakub Navrátil <navrc.kuba@gmail.com>
+Date: 28/08/2015 05:32:50
+Message:
+CB-9591 Retaining aspect ratio when resizing #MsgLength=45
+
+
+----
+Modified: src/windows/CameraProxy.js|7 4
+
+Revision: dca8bd1943449b201f73f860d45b28ab84676074
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 08/09/2015 19:44:11
+Message:
+CB-9623 Fixes various issues when encodingType set to png #MsgLength=58
+
+
+----
+Modified: src/android/CameraLauncher.java|64 51
+
+Revision: 454a6f518c444188cca4c2e351db6641db5f5cc2
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 08/09/2015 20:25:20
+Message:
+CB-9622 Windows Phone 8 Camera Option destinationType:NATIVE_URI is a NO-OP #MsgLength=199
+
+
+----
+Modified: src/wp/Camera.cs|17 5
+
+Revision: f20dfae7357702744cc0523955edebcd5b6cb0f0
+Author: daserge <v-seshak@microsoft.com>
+Date: 05/10/2015 18:48:19
+Message:
+CB-9745 Camera plugin docs should be generated from the source #MsgLength=717
+
+
+----
+Modified: .gitignore|1 9
+Modified: README.md|417 439
+Added: jsdoc2md/TEMPLATE.md|185 0
+Modified: package.json|10 1
+Modified: www/Camera.js|115 6
+Modified: www/CameraConstants.js|47 12
+Modified: www/CameraPopoverHandle.js|1 0
+Modified: www/CameraPopoverOptions.js|18 3
+Modified: www/ios/CameraPopoverHandle.js|26 0
+
+Revision: 837d6721f256620db91052b46c267b75db892ddb
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 10/09/2015 00:31:28
+Message:
+CB-9633 iOS Taking a Picture With Option destinationType:NATIVE_URI Doesn't Show Image #MsgLength=105
+
+
+----
+Modified: README.md|276 187
+Modified: jsdoc2md/TEMPLATE.md|2 0
+Modified: src/ios/CDVCamera.m|30 12
+
+Revision: b8a68af63ffb86712941a74884ebd0e32c9a8178
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 15/07/2015 02:53:40
+Message:
+CB-6190 - iOS camera plugin ignores quality parameter #MsgLength=318
+
+
+----
+Modified: src/ios/CDVCamera.m|1 1
+
+Revision: a030c52f7f0d3c71cfd42a56b03b349cf5840eef
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 05/08/2015 03:04:17
+Message:
+change 'case' to else-if. This closes #113 #MsgLength=43
+
+
+----
+Modified: src/windows/CameraProxy.js|13 20
+
+Revision: dbe3e3d2ca26943feafaaf16413a0543ef4d8709
+Author: Nelson Antunes <nelson.antunes@gmail.com>
+Date: 28/05/2015 18:29:21
+Message:
+Try to use realpath filename instead of default modified.jpg #MsgLength=61
+
+
+----
+Modified: src/android/CameraLauncher.java|10 5
+
+Revision: 933b35b0d2546b978a2aa0473f2b17f7d06eb2ab
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 19/10/2015 18:07:17
+Message:
+Closes stale pull requests. Close #91, close #82, close #59, close #20 #MsgLength=71
+
+
+----
+
+Revision: 8024c5de49888442992f8841740697ae151e1125
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/09/2015 06:33:36
+Message:
+CB-9583: Permissions for Marshmallow #MsgLength=37
+
+
+----
+Modified: src/android/CameraLauncher.java|77 10
+
+Revision: cbe17eec213c810695f257a93799a2fb88111def
+Author: Joe Bowser <bowserj@apache.org>
+Date: 04/09/2015 00:08:47
+Message:
+Fix permission handling #MsgLength=24
+
+
+----
+Modified: src/android/CameraLauncher.java|1 0
+
+Revision: 2714060b09c4d2765cf924d22f80a74d2502530f
+Author: Joe Bowser <bowserj@apache.org>
+Date: 25/09/2015 06:07:57
+Message:
+Add engine tag for Cordova-Android 5.0.x #MsgLength=41
+
+
+----
+Modified: plugin.xml|4 0
+
+Revision: 44475d9df98f7e004a529f1e0d8851bf786788a7
+Author: Joe Bowser <bowserj@apache.org>
+Date: 02/10/2015 07:19:06
+Message:
+Using the CordovaResourceApi to fine paths of files in the background thread.  If the file doesn't exist, return the content URI We also do a refactor to bring this in line.  This code got bike-shedded a bit. #MsgLength=209
+
+
+----
+Modified: src/android/CameraLauncher.java|30 24
+
+Revision: d0ad2f5065ee42d591b7346b5e640f599455586e
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: 3a8880d0c3a45181539e7453f6a9ebf5def2b8eb
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:49
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: 5ff225d8dfc6b7868c8e2ce38e58c6bfad860402
+Author: Richard Knoll <richard.b.knoll@gmail.com>
+Date: 30/10/2015 05:35:58
+Message:
+CB-7668 android: Adding a sterner warning for allowedit on Android #MsgLength=67
+
+
+----
+Modified: README.md|1 2
+Modified: jsdoc2md/TEMPLATE.md|1 2
+
+Revision: 9b444c39ba398cbe2a59892ea980dd264d08eefd
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 03/11/2015 07:07:54
+Message:
+CB-9910 android: Add permission request for some gallery requests #MsgLength=66
+
+
+----
+Modified: src/android/CameraLauncher.java|31 16
+
+Revision: f5217bf02b9018f94ea7c3694a1172fd9a5b97ac
+Author: daserge <v-seshak@microsoft.com>
+Date: 03/11/2015 18:39:53
+Message:
+CB-9942 Normalize line endings in Camera plugin docs #MsgLength=112
+
+
+----
+Added: .gitattributes|94 0
+Modified: README.md|61 61
+
+Revision: 88592575feb330f90a3196e552cca33f2ea0fdca
+Author: Joe Bowser <bowserj@apache.org>
+Date: 10/11/2015 06:27:48
+Message:
+CB-9446 related: Removing CordovaResource library code in favour of the code we're supposed to be deprecating because that at least works. #MsgLength=139
+
+
+----
+Modified: src/android/CameraLauncher.java|1 14
+
+Revision: 2bb134bf6bc627a2da07064057b502b06b076703
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 11/11/2015 03:50:42
+Message:
+CB-9169 android: Fixed filetype for uncompressed images and added quirk #MsgLength=72
+
+
+----
+Modified: README.md|3 1
+Modified: jsdoc2md/TEMPLATE.md|3 1
+Modified: src/android/CameraLauncher.java|7 0
+
+Revision: 036cdfdeb825d41e3dbdd60a0b04c349aa8a6523
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 12/11/2015 05:40:33
+Message:
+CB-5479 android: changed saveToPhotoAlbum to save uncompressed images #MsgLength=70
+
+
+----
+Modified: src/android/CameraLauncher.java|40 21
+
+Revision: 7f3a0a5483322a76e9121bda18f36ec84566aeab
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 18/11/2015 08:37:45
+Message:
+CB-8863 correct block usage for async calls #MsgLength=44
+
+
+----
+Modified: src/ios/CDVCamera.m|6 4
+
+Revision: 63ac782b323fe63da16f38de1999e0ba87c2e975
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 18/11/2015 08:56:35
+Message:
+remove unneeded weakness #MsgLength=25
+
+
+----
+Modified: src/ios/CDVCamera.m|1 3
+
+Revision: 847add6870bc56648526df740c6a46400cd750f1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|151 156
+
+Revision: 1cf4feee6032113e345d90428403cd68448c8654
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:10
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: ee9884e97b785807268ce4d086f671f2dea9a2b2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:05
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 2.0.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|30 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b3376e23897bb9d42b751582d81d6695bff12ba3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|133 133
+
+Revision: ef5484a2aa72e63c2ad95d5533db6f25ed53e5c7
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 19/11/2015 03:34:45
+Message:
+CB-8940 Setting z-index values to maximum for UI buttons. This closes #140. #MsgLength=76
+
+
+----
+Modified: src/windows/CameraProxy.js|7 4
+
+Revision: e1911a3c78592a23358caa0c4fc9429456942702
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e8fa1695c44c6c414859728cdd62606729595a02
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 23/12/2015 09:54:07
+Message:
+CB-10241 - App Crash cause by Camera Plugin ios 7 #MsgLength=50
+
+
+----
+Modified: src/ios/CDVCamera.m|9 1
+
+Revision: e2193631d552bc8ad97cb0ce69413bc85dc6c821
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 05/12/2015 03:34:28
+Message:
+CB-9189 android: Implementing save/restore API to handle Activity destruction #MsgLength=78
+
+
+----
+Modified: README.md|6 1
+Modified: jsdoc2md/TEMPLATE.md|6 1
+Modified: src/android/CameraLauncher.java|55 1
+
+Revision: 1d32ea46f0ebcbf5cbc3d8a255170bf7186533c8
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 05/01/2016 07:22:35
+Message:
+CB-10319 android: Adding reflective helper methods for permission requests #MsgLength=75
+
+
+----
+Modified: plugin.xml|7 10
+Modified: src/android/CameraLauncher.java|4 10
+Added: src/android/PermissionHelper.java|138 0
+
+Revision: eb009471ab54605df6f8ffd44beb9c11926eeaa6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 07:09:14
+Message:
+added .ratignore #MsgLength=17
+
+
+----
+Added: .ratignore|1 0
+
+Revision: 0f32b78c82405e7505d10a079efbf9a063f43759
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:35:05
+Message:
+CB-10368 Updated version and RELEASENOTES.md for release 2.1.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6f7ce333ccb3e226144988bf978220ff845886ba
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:58:32
+Message:
+CB-10368 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9a9081b0d4f1a49c7bf6fee6f0b1c273dfeedf76
+Author: PerfectionCSGO <perfectioncsgo@gmail.com>
+Date: 28/12/2015 22:24:24
+Message:
+Camera tapping fix #MsgLength=19
+
+
+----
+Modified: src/windows/CameraProxy.js|8 3
+
+Revision: 06fcbf05a25a55316445d5b9ded58c8853a7d784
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 22/01/2016 06:11:59
+Message:
+Adding comments #MsgLength=16
+
+
+----
+Modified: src/windows/CameraProxy.js|2 1
+
+Revision: e48a7e5c5cffe8d9bab6eeff33feeb2747930ace
+Author: Tim Barham <tbarham@microsoft.com>
+Date: 02/02/2016 14:25:00
+Message:
+CB-10502 Fix camera plugin exception in Chrome when click capture. #MsgLength=283
+
+
+----
+Modified: src/browser/CameraProxy.js|13 6
+
+Revision: 5b3845326216343bf25abbca90585a595dad3b6e
+Author: Laurent Deketelaere <laurent@geturl.net>
+Date: 02/02/2016 14:49:37
+Message:
+CB-10113 Browser - Layer camera UI on top of all! #MsgLength=199
+
+
+----
+Modified: src/browser/CameraProxy.js|11 4
+
+Revision: 76ad059c9c1749a04ba5b61a3d34996e328c6463
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 05/02/2016 04:14:16
+Message:
+CB-10541: Changing default maxResoltion to be highestAvailable for CameraCaptureUI #MsgLength=83
+
+
+----
+Modified: src/windows/CameraProxy.js|4 1
+
+Revision: 654286d373878cef3fd28cbeeffb30ee3ee68962
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 06/02/2016 07:03:19
+Message:
+CB-10539: Commenting out the verySmallQvga maxResolution option #MsgLength=64
+
+
+----
+Modified: src/windows/CameraProxy.js|3 2
+
+Revision: df734a522c4dd2d27ed5c964ee0773a6f18f5bee
+Author: t1st3 <contact@tiste.org>
+Date: 06/02/2016 18:16:08
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=259
+
+
+----
+Modified: package.json|1 1
+
+Revision: 77653183dd96ce6b9c9c01ed716568458c08ec43
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 10/02/2016 08:17:17
+Message:
+CB-10576: MobileSpec can't get results for Windows-Store 8.1 Builds #MsgLength=97
+
+
+----
+Modified: src/windows/CameraProxy.js|3 2
+
+Revision: a060fb36f38b5dcf9daab64bbbfcda0b1646a817
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 04/02/2016 23:55:57
+Message:
+CB-10397 Added Appium tests #MsgLength=28
+
+
+----
+Added: appium-tests/android/android.spec.js|451 0
+Added: appium-tests/helpers/cameraHelper.js|65 0
+Added: appium-tests/helpers/wdHelper.js|45 0
+Added: appium-tests/ios/ios.spec.js|256 0
+Modified: tests/tests.js|5 3
+
+Revision: 61b77951e11cfdae8eaf5e6b2f8392b4822239f5
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 16/02/2016 21:28:43
+Message:
+CB-10619 Appium tests: Properly switch to webview #MsgLength=50
+
+
+----
+Modified: appium-tests/android/android.spec.js|81 19
+Modified: appium-tests/helpers/wdHelper.js|4 1
+
+Revision: 019346d18839d966c04fa41093c6f64de3a8e3e0
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 22/02/2016 04:00:14
+Message:
+Fix for CB-10625 #MsgLength=124
+
+
+----
+Modified: src/android/FileHelper.java|12 5
+
+Revision: 16636d18f286f8cad1ec788b9a53ec73f3bddb97
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 22/02/2016 06:41:29
+Message:
+Added a lot of more cases to get the real path #MsgLength=113
+
+
+----
+Modified: src/android/FileHelper.java|126 24
+
+Revision: f792aaacc3e844f3e973c124f0ec4a76bbbd1c47
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 18/02/2016 10:24:30
+Message:
+CB-10552 Replacing images in README.md. #MsgLength=40
+
+
+----
+Modified: README.md|26 20
+Modified: www/Camera.js|25 18
+Modified: www/ios/CameraPopoverHandle.js|4 4
+
+Revision: c1948fc0d40c30c78ff0a3c22d117f9305d5ea3e
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 22/02/2016 23:37:41
+Message:
+CB-10639 Appium tests: Added some timeouts, Taking a screenshot on failure, Retry taking a picture up to 3 times, Try to restart the Appium session if it's lost #MsgLength=161
+
+
+----
+Modified: appium-tests/android/android.spec.js|110 64
+Modified: appium-tests/helpers/cameraHelper.js|1 1
+Added: appium-tests/helpers/screenshotHelper.js|37 0
+Modified: appium-tests/helpers/wdHelper.js|3 4
+Modified: appium-tests/ios/ios.spec.js|25 13
+
+Revision: b16c5234d5846d5235c2824ece2082255c4f1ce6
+Author: daserge <v-seshak@microsoft.com>
+Date: 18/02/2016 20:18:09
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Added: .jshintrc|16 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: jsdoc2md/TEMPLATE.md|2 0
+Modified: package.json|5 2
+Modified: src/blackberry10/index.js|6 3
+Modified: src/browser/CameraProxy.js|0 2
+Modified: src/firefoxos/CameraProxy.js|3 1
+Modified: src/windows/CameraProxy.js|23 23
+Modified: tests/tests.js|27 24
+Modified: www/CameraPopoverHandle.js|0 2
+
+Revision: 20dcaf2cb3966dcd140385052fc3aa14605af97e
+Author: Miguel Revetria <miguel@xmartlabs.com>
+Date: 04/12/2015 21:22:16
+Message:
+CB-10128: [iOS] Fixed how checks access authorization to camera & library. This closes #146 #MsgLength=92
+
+
+----
+Modified: src/ios/CDVCamera.m|6 3
+
+Revision: 5f7f4f3e55fab0a8ed97c268665a4e3ac982f695
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 27/02/2016 05:51:34
+Message:
+Adding focus handler to make sure filepicker gets launched when app is active #MsgLength=78
+
+
+----
+Modified: src/windows/CameraProxy.js|17 6
+
+Revision: 2cd2528d1ca6fc4f75f5dda17a6da00169917b69
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 01/03/2016 02:30:40
+Message:
+Adding missing semi colon #MsgLength=26
+
+
+----
+Modified: src/windows/CameraProxy.js|1 1
+
+Revision: d51e23ad7b655171124ec43dcc559aff2796b60b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 01/03/2016 23:27:08
+Message:
+CB-10750 Appium tests: fail fast if session is irrecoverable #MsgLength=61
+
+
+----
+Modified: appium-tests/android/android.spec.js|29 16
+Modified: appium-tests/helpers/wdHelper.js|1 1
+
+Revision: 56b9469313893ffcabc50feeb293febea43b87b2
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 02/03/2016 22:39:59
+Message:
+Appium tests: adjust swipe distance on Android #MsgLength=47
+
+
+----
+Modified: appium-tests/android/android.spec.js|1 1
+
+Revision: 9c906b2ab7e7bee031abd85be13910a2a67754ca
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 03/03/2016 06:15:01
+Message:
+CB-10414: Adding focus handler to resume video when user comes back on leaving the app while preview was running #MsgLength=113
+
+
+----
+Modified: src/windows/CameraProxy.js|13 0
+
+Revision: 68a11509394689309edebd6230ee8f4a0545c746
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 02/03/2016 09:09:03
+Message:
+CB-10720 Fixed spelling, capitalization, and other small issues. #MsgLength=65
+
+
+----
+Modified: README.md|13 9
+Modified: jsdoc2md/TEMPLATE.md|11 7
+Modified: www/Camera.js|2 2
+Modified: www/CameraPopoverHandle.js|1 1
+Modified: www/blackberry10/assets/camera.js|1 1
+
+Revision: c20e031d429ae1d7bb68057872a99d4c62c2016c
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 09/03/2016 11:21:47
+Message:
+added apache license header to appium files #MsgLength=44
+
+
+----
+Modified: appium-tests/android/android.spec.js|20 0
+Modified: appium-tests/helpers/cameraHelper.js|21 0
+Modified: appium-tests/helpers/screenshotHelper.js|21 0
+Modified: appium-tests/helpers/wdHelper.js|21 0
+Modified: appium-tests/ios/ios.spec.js|20 0
+
+Revision: a19c75253a3deb317c670f2737755d7e05cc635f
+Author: Richard Knoll <richard.b.knoll@gmail.com>
+Date: 10/03/2016 04:09:09
+Message:
+CB-10825 android: Always request READ permission for gallery source #MsgLength=86
+
+
+----
+Modified: src/android/CameraLauncher.java|2 10
+
+Revision: 37dd471d0eba3ca6ee703b0ee2fa614c0d319607
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 10/03/2016 03:33:27
+Message:
+CB-10820 Updated version and RELEASENOTES.md for release 2.1.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|26 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c5f5a46e3ea84ad6c5313ae79a40950183bd4924
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 10/03/2016 11:34:17
+Message:
+CB-10820 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1348d2e138a513bf4792dfb815c02ae51d08db86
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/03/2016 18:27:34
+Message:
+Appium tests: tweaking some timeouts and default screenshot path #MsgLength=65
+
+
+----
+Modified: appium-tests/android/android.spec.js|1 1
+Modified: appium-tests/helpers/screenshotHelper.js|2 2
+Modified: appium-tests/ios/ios.spec.js|1 1
+
+Revision: fac7a53383b9e10b3fa7c23cf3cd89844c970c6e
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 11/03/2016 02:49:49
+Message:
+clean RELEASENOTES for bold font #MsgLength=33
+
+
+----
+Modified: RELEASENOTES.md|11 11
+
+Revision: 76c129c95e4f75b796ae114e178a9d0a1ad802ae
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 11/03/2016 23:19:27
+Message:
+CB-10460 getRealPath return null in some cases #MsgLength=119
+
+
+----
+Modified: src/android/FileHelper.java|7 28
+
+Revision: 826aca3524be7ffd98587b7eed297101dbc17903
+Author: Richard Knoll <richard.b.knoll@gmail.com>
+Date: 11/03/2016 03:55:31
+Message:
+CB-10756: Adding sterner warnings about DATA_URL #MsgLength=67
+
+
+----
+Modified: README.md|29 29
+Modified: jsdoc2md/TEMPLATE.md|16 10
+Modified: www/CameraConstants.js|1 1
+
+Revision: c12206ebc8ec337613e0751970536d692de6f572
+Author: ochakov <evgeny@ochakov.com>
+Date: 02/12/2015 05:10:43
+Message:
+CB-10120 android: Fix missing CAMERA permission for Android M #MsgLength=417
+
+
+----
+Modified: src/android/CameraLauncher.java|39 4
+
+Revision: 0cd962466d2641fcd05155690e23432db02cc79a
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 25/02/2016 06:51:52
+Message:
+CB-10120 android: Fixing use of constants and PermissionHelper #MsgLength=81
+
+
+----
+Modified: src/android/CameraLauncher.java|31 33
+
+Revision: fb871d40e2076c11a34a224479dbd2ff3c27358b
+Author: daserge <v-seshak@microsoft.com>
+Date: 21/03/2016 17:54:07
+Message:
+CB-10865 Run ios native tests on Travis #MsgLength=220
+
+
+----
+Modified: .travis.yml|5 1
+Modified: tests/ios/CDVCameraTest/CDVCameraLibTests/CameraTest.m|10 7
+Modified: tests/ios/package.json|3 3
+Modified: tests/tests.js|2 1
+
+Revision: 624ddd5ced709659d2ddea5519bafc28f87ee8ed
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 24/03/2016 06:25:27
+Message:
+Making focus handler work only for windows 10 phone #MsgLength=52
+
+
+----
+Modified: src/windows/CameraProxy.js|22 6
+
+Revision: a9c18710f23e86f5b7f8918dfab7c87a85064870
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 06/04/2016 00:17:18
+Message:
+Replace PermissionHelper.java with cordova-plugin-compat #MsgLength=57
+
+
+----
+Modified: plugin.xml|2 1
+Modified: src/android/CameraLauncher.java|1 0
+Deleted: src/android/PermissionHelper.java|0 138
+
+Revision: 82c9f4524a4720242d7572e479c533b498be0751
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 13/04/2016 17:42:51
+Message:
+CB-11073 Appium tests stability improvements #MsgLength=45
+
+
+----
+Modified: appium-tests/android/android.spec.js|162 343
+Modified: appium-tests/helpers/cameraHelper.js|19 0
+Deleted: appium-tests/helpers/screenshotHelper.js|0 58
+Deleted: appium-tests/helpers/wdHelper.js|0 68
+Modified: appium-tests/ios/ios.spec.js|105 129
+
+Revision: def399fe51bcad825d35c475336b28fe8b2f2bfb
+Author: Omar Mefire <omefire@gmail.com>
+Date: 13/04/2016 08:46:42
+Message:
+CB-10873 Avoid crash due to usage of uninitialized variable when writing geolocation data to image destination #MsgLength=111
+
+
+----
+Modified: src/ios/CDVCamera.m|1 2
+
+Revision: 4202fff7ac361b72f6e37d375ff65b0c207a6d0d
+Author: Omar Mefire <omefire@gmail.com>
+Date: 14/04/2016 03:14:46
+Message:
+CB-10873 - Avoid crash due to usage of uninitialized variable when writing geolocation data to image destination - Properly handle 'CameraUsesGeolocation' option by properly setting geolocation data in EXIF header in all cases #MsgLength=254
+
+
+----
+Modified: src/ios/CDVCamera.m|16 15
+
+Revision: d124e03cb9f00821f64c90849380ef8b40b7c8c8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:26
+Message:
+ Updated version and RELEASENOTES.md for release 2.2.0 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: daf5fa48dd961482a00957557d0bc80a1abaec8b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:27
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6d058fe9e7987e4b495e656cd4e9b347f82c26fa
+Author: Mikejo5001 <m.jones168@outlook.com>
+Date: 09/04/2016 06:38:19
+Message:
+CB-11003: Added Sample section to the Camera plugin README #MsgLength=77
+
+
+----
+Modified: README.md|199 0
+Modified: jsdoc2md/TEMPLATE.md|199 0
+
+Revision: 0ba547cd3c03dae16904a2dde2027432772d9546
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 21/04/2016 19:16:47
+Message:
+CB-11128 Appum tests: Fixed some of the flaky failures #MsgLength=55
+
+
+----
+Modified: appium-tests/android/android.spec.js|27 18
+Modified: appium-tests/ios/ios.spec.js|2 2
+
+Revision: bfaef0ff252279cd795b478c79c7c08b2c2fddbd
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:40
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|22 12
+Modified: jsdoc2md/TEMPLATE.md|4 0
+
+Revision: 68e18a97d15835049fbfcb7b4767edb67d4c9fb3
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 25/04/2016 22:37:48
+Message:
+CB-11147 Appium tests: generate descriptive spec names #MsgLength=55
+
+
+----
+Modified: appium-tests/android/android.spec.js|6 11
+Modified: appium-tests/helpers/cameraHelper.js|35 27
+Modified: appium-tests/ios/ios.spec.js|7 15
+
+Revision: d4a55f20ec1164f521f487110318e0fa431644d8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 28/04/2016 07:22:18
+Message:
+CB-11165 removed peer dependency #MsgLength=33
+
+
+----
+Modified: README.md|15 0
+Modified: package.json|0 3
+
+Revision: f2b4eeded069d791aec0670b369bab8fb3bfd0eb
+Author: swbradshaw <swbradshaw@gmail.com>
+Date: 28/04/2016 10:27:37
+Message:
+CB-4078: Fix for orientation/scaling on Android 4.4+ devices #MsgLength=382
+
+
+----
+Modified: src/android/CameraLauncher.java|248 217
+
+Revision: 832d6e3beac70c88de8de415e74c42ac967ee61c
+Author: swbradshaw <swbradshaw@gmail.com>
+Date: 13/05/2016 01:19:35
+Message:
+Adding missing function #MsgLength=24
+
+
+----
+Modified: src/android/CameraLauncher.java|11 0
+
+Revision: e3a431cbeb26c6d59f8183147d0086ff36cda525
+Author: swbradshaw <swbradshaw@gmail.com>
+Date: 13/05/2016 09:25:36
+Message:
+Reverted indenting done by Android Studio #MsgLength=42
+
+
+----
+Modified: src/android/CameraLauncher.java|47 46
+
+Revision: 57b177f3fb84d752aeef964117bb4aa148df474d
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 27/04/2016 23:02:48
+Message:
+CB-11162 Appium tests: retry spec on failure #MsgLength=45
+
+
+----
+Modified: appium-tests/android/android.spec.js|149 114
+
+Revision: af98d57417514cc1f3ecd89d0c1f4e4319b139cb
+Author: Keith M <keithm@aoeex.com>
+Date: 08/05/2016 07:51:58
+Message:
+CB-11227 browser: Fix incorrect mime type #MsgLength=61
+
+
+----
+Modified: src/browser/CameraProxy.js|1 1
+
+Revision: 2a7469e065e9c1e48493689a584d8ceb420467e8
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 10/05/2016 08:00:51
+Message:
+Stale PRs: closes #149, closes #148, closes #155, closes #107, closes #71, closes #55, closes #14 #MsgLength=98
+
+
+----
+
+Revision: 7551778e13ff96d1d712b7e7d2caa87ad079ca71
+Author: Keith M <keithm@aoeex.com>
+Date: 08/05/2016 02:36:33
+Message:
+CB-10139 browser: Respect target width and height #MsgLength=69
+
+
+----
+Modified: src/browser/CameraProxy.js|12 5
+
+Revision: 39bff2f41dd38e64d4f90dc14c7a9b67c847065f
+Author: Keith M <keithm@aoeex.com>
+Date: 08/05/2016 08:49:30
+Message:
+CB-11228 browser: Add classes for styling purposes #MsgLength=70
+
+
+----
+Modified: src/browser/CameraProxy.js|2 0
+
+Revision: cf35b1bb2a880398fc201d184af28a37ac3651b5
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 11/05/2016 02:35:48
+Message:
+Add pull request template. This closes #213 #MsgLength=44
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|15 0
+
+Revision: 2eef09686173cb0ea6f62b29953b702769f88858
+Author: Richard Knoll <richard.b.knoll@gmail.com>
+Date: 14/05/2016 03:14:03
+Message:
+Moving message in PR template to a comment #MsgLength=43
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|11 3
+
+Revision: 0115458ce8c0ab3476ddf5f2bf4ba3d5452965cb
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 17/05/2016 01:43:01
+Message:
+Set android quality default value to 50 on the java code #MsgLength=272
+
+
+----
+Modified: src/android/CameraLauncher.java|1 1
+
+Revision: cc840b6cef649c5cdd523a467e656d93355bd326
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 17/05/2016 03:48:57
+Message:
+Closing stale PRs. Close #147 #MsgLength=30
+
+
+----
+
+Revision: 3586ea58a20e9a8558fd3472e7e791e909304a15
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 17/05/2016 03:51:33
+Message:
+Closing stale PRs. Close #167 #MsgLength=30
+
+
+----
+
+Revision: a831e15a917eb8666be91e23869e7fb0263e5782
+Author: Mikejo5001 <m.jones168@outlook.com>
+Date: 27/04/2016 04:30:38
+Message:
+fixed some bad formatting that hid HTML tags and added link to sample #MsgLength=89
+
+
+----
+Modified: README.md|2 17
+Modified: jsdoc2md/TEMPLATE.md|2 2
+
+Revision: f283502545aac4c90522e85760c108f16a4930ad
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 18/05/2016 02:38:59
+Message:
+Closing stale PRs. This closes #85, closes #93 #MsgLength=47
+
+
+----
+
+Revision: d7ca7edf8826f9d8e2bfbeb36eff9eaeeb2e9adb
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 18/05/2016 05:10:36
+Message:
+Closing stale PRs. This closes #114, closes #104 #MsgLength=49
+
+
+----
+
+Revision: 278b5277027ba62d621cbc2dea10079abb2ef0c9
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/05/2016 16:48:29
+Message:
+CB-11183 Appium tests: Added image verification #MsgLength=48
+
+
+----
+Modified: appium-tests/android/android.spec.js|129 54
+Modified: appium-tests/helpers/cameraHelper.js|185 5
+Modified: appium-tests/ios/ios.spec.js|158 22
+
+Revision: dcc81bfbe16244cb460d3c5da79fe6ec22795ce7
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 11/05/2016 22:51:43
+Message:
+CB-11232 Appium tests: fixed element tapping on iOS 9 #MsgLength=54
+
+
+----
+Modified: appium-tests/ios/ios.spec.js|2 11
+
+Revision: a05f169984aff9b1db1ddf4f04618b78c2b81664
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/05/2016 23:08:07
+Message:
+CB-11296: Appium: Better element clicking and session error handling #MsgLength=69
+
+
+----
+Modified: appium-tests/android/android.spec.js|51 4
+Modified: appium-tests/helpers/cameraHelper.js|8 4
+Modified: appium-tests/ios/ios.spec.js|40 6
+
+Revision: 8a7326969f8a62ce387a7eef2983b6b154ca2e4e
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 16:14:03
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|18 1
+Modified: jsdoc2md/TEMPLATE.md|3 1
+
+Revision: acff98058f3230bf64f0cc7bef974ff10d63a77c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 28/06/2016 21:20:24
+Message:
+CB-11498 [Android] Appium tests should not fail when there is no camera #MsgLength=72
+
+
+----
+Modified: appium-tests/android/android.spec.js|62 11
+
+Revision: b69571724035f41642f3ee612c5b66e1f0c4386c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 11/07/2016 21:16:52
+Message:
+CB-11553 Pend failing Appium tests on Sauce Labs for the time being #MsgLength=68
+
+
+----
+Modified: appium-tests/android/android.spec.js|11 0
+
+Revision: 7129fb2c12910f2f5505686d97635c4037b4223f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 12/07/2016 17:28:58
+Message:
+CB-11553 Pend failing Appium tests on Sauce Labs for the time being (reverted from commit b69571724035f41642f3ee612c5b66e1f0c4386c) #MsgLength=132
+
+
+----
+Modified: appium-tests/android/android.spec.js|0 11
+
+Revision: 2027d696062cd50972ba4dd0a26cd5b01ad2f413
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 26/07/2016 16:15:26
+Message:
+CB-11447 Resolve iOS tests failures due to iOS quirks #MsgLength=209
+
+
+----
+Modified: README.md|13 3
+Modified: appium-tests/helpers/cameraHelper.js|11 2
+Modified: appium-tests/ios/ios.spec.js|12 12
+Modified: jsdoc2md/TEMPLATE.md|2 0
+Modified: www/Camera.js|0 3
+Modified: www/CameraConstants.js|13 0
+
+Revision: fed798e6c7f56e23bff994ab2c11d316c8257a78
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 26/07/2016 20:17:44
+Message:
+CB-11447 Respect output format when retrieving images from gallery #MsgLength=67
+
+
+----
+Modified: src/android/CameraLauncher.java|29 10
+
+Revision: 4e439d85c326fef1c0fbcc3d7001c78325351ad6
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 01/08/2016 00:06:39
+Message:
+CB-9070. (ios) Fixed CameraPopoverHandle documentation #MsgLength=74
+
+
+----
+Modified: README.md|17 7
+
+Revision: 3f8c53f7f35970f9ceb9fa5eee18febfd6febb9a
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 31/07/2016 23:13:57
+Message:
+CB-11410: (ios) fix cameraPopoverHandle.setPosition #MsgLength=71
+
+
+----
+Modified: src/ios/CDVCamera.m|6 2
+
+Revision: 7e8fe0bae98beb088bb0c6c8bf622af197dfdd23
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 01/08/2016 06:23:01
+Message:
+CB-10067: (ios) clarifications on PictureSourceType #MsgLength=71
+
+
+----
+Modified: README.md|2 2
+
+Revision: c13e9f327b1f2a8d3cc96c3ae20c403dea2b0c97
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 01/08/2016 02:15:49
+Message:
+CB-11376: (ios): fix CameraUsesGeolocation error #MsgLength=120
+
+
+----
+Modified: src/ios/CDVCamera.m|5 3
+
+Revision: 5807458a1d5d58bb84f0b060bc069b4b50d2215b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 02/08/2016 18:05:01
+Message:
+CB-11656 (Android) Appium tests: Fixed side menu opening on certain resolutions #MsgLength=80
+
+
+----
+Modified: appium-tests/android/android.spec.js|7 5
+
+Revision: fee72c7c0439037d1d7ee44603271c528eda769c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 02/08/2016 23:11:19
+Message:
+CB-11656 (Android) Appium tests: Fixed side menu opening on some more resolutions #MsgLength=82
+
+
+----
+Modified: appium-tests/android/android.spec.js|2 1
+
+Revision: e588907ac732e58e1a319da3d4e5635ecd8e8414
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 13/08/2016 21:58:33
+Message:
+CB-11631 Appium tests: A fix for a flaky "selection cancelled" failure #MsgLength=71
+
+
+----
+Modified: appium-tests/android/android.spec.js|3 1
+Modified: appium-tests/helpers/cameraHelper.js|0 1
+
+Revision: 0accbf560baeb2116f434f554a917cb427183b99
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 16/08/2016 19:03:09
+Message:
+CB-11695 Increased session creation timeout for Appium tests #MsgLength=61
+
+
+----
+Modified: appium-tests/android/android.spec.js|1 1
+Modified: appium-tests/ios/ios.spec.js|1 1
+
+Revision: 92d67d990dde1d5a0286241f89f09d8bc555c168
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 16/08/2016 19:29:26
+Message:
+Closing invalid PR #MsgLength=37
+
+
+----
+
+Revision: 62d1b01e811753db006a3c75e599a5496b6205fc
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 17/08/2016 00:19:22
+Message:
+CB-11709 Tests should use resolveLocalFileSystemURL() instead of deprecated resolveFileSystemURI() #MsgLength=99
+
+
+----
+Modified: appium-tests/helpers/cameraHelper.js|3 3
+Modified: tests/tests.js|6 6
+
+Revision: 9f159d757a505af663c5764dd4d44558d15d261d
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 17/08/2016 22:35:23
+Message:
+CB-11631 Appium tests: A working fix for a flaky "selection canceled" failure #MsgLength=78
+
+
+----
+Modified: appium-tests/android/android.spec.js|12 1
+
+Revision: 6e19147b09c2341896ee48bd9117e7b57beec9cb
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 23/08/2016 03:52:52
+Message:
+Plugin uses Android Log class and not Cordova LOG class #MsgLength=56
+
+
+----
+Modified: src/android/CameraLauncher.java|8 9
+
+Revision: 7813ad9befd00b419f0caf3a6d0c0d9af87a4be5
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 23/08/2016 21:14:11
+Message:
+CB-9070 Update CameraPopoverHandle docs to reflect README update #MsgLength=65
+
+
+----
+Modified: README.md|4 16
+Modified: www/Camera.js|1 4
+Modified: www/ios/CameraPopoverHandle.js|8 2
+
+Revision: 1beeafb6e8b2296d7748d545128686bf8296bbb7
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 23/08/2016 21:14:59
+Message:
+CB-10067 Update PictureSourceType JSDoc to reflect README update #MsgLength=65
+
+
+----
+Modified: README.md|2 2
+Modified: www/CameraConstants.js|2 2
+
+Revision: b89645c7498d6002d1f6cdf2bdf3a93f56310165
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 23/08/2016 21:15:38
+Message:
+CB-11295 Add WP8.1 quirk when choosing image from photoalbum #MsgLength=61
+
+
+----
+Modified: README.md|10 0
+Modified: jsdoc2md/TEMPLATE.md|10 0
+
+Revision: c98607c613602a0ae2d0f1004af27732227244ee
+Author: Tyler Pham <tyler@disruptiveart.com>
+Date: 22/08/2016 05:50:35
+Message:
+CB-11714: (windows) added more explicit content-type when converting to target data on canvas #MsgLength=113
+
+
+----
+Modified: src/windows/CameraProxy.js|7 3
+
+Revision: a3af38ad5b3d826216f2538bd9aad5d217df4a12
+Author: mhartington <mikehartington@gmail.com>
+Date: 12/08/2016 03:22:39
+Message:
+CB-11661: (ios) Add mandatory iOS 10 privacy description #MsgLength=57
+
+
+----
+Modified: README.md|32 22
+Modified: plugin.xml|5 0
+
+Revision: fa58e83fca7517d120aedddb5e23ae9b9bcc7888
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 26/08/2016 07:20:16
+Message:
+close #229 #MsgLength=11
+
+
+----
+Modified: README.md|22 32
+
+
+Revision: f8682b91626ce7355dd3a1645b097e6af3b47829
+Author: swbradshaw <swbradshaw@gmail.com>
+Date: 29/08/2016 12:10:31
+Message:
+Removed unneeded file #MsgLength=41
+
+
+----
+Deleted: src/android/CameraLauncherMaster.java|0 1307
+
+Revision: 2f89666db72fd4063b008956ed67069c60539e6e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 31/08/2016 02:51:59
+Message:
+Revert "close #229" #MsgLength=83
+
+
+----
+Modified: README.md|32 22
+
+Revision: 9fe94479e257c68e56a62cbd948382c12d947abf
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 01/09/2016 21:08:20
+Message:
+CB-11661: (ios) Add mandatory iOS 10 privacy description #MsgLength=153
+
+
+----
+Modified: README.md|35 32
+Modified: jsdoc2md/TEMPLATE.md|13 0
+
+Revision: 9b566d3f0b066b01b8f74db296cf0dbf62b7e358
+Author: Jacques de Villiers <jacquesdev@gmail.com>
+Date: 05/09/2016 16:38:16
+Message:
+CB-11661: (ios) Add mandatory iOS 10 privacy description #MsgLength=116
+
+
+----
+Modified: README.md|11 2
+Modified: jsdoc2md/TEMPLATE.md|10 2
+Modified: plugin.xml|5 0
+
+Revision: 48d4213b2d22f8ad9f42aecbd1c3d73d7ccd65f5
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 21:17:38
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=398
+
+
+----
+Modified: package.json|7 0
+
+Revision: cc1076d3cb82a5185cebadccfafc075d85bdf681
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:52
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 2.3.0 #MsgLength=63
+
+
+----
+Modified: README.md|4 5
+Modified: RELEASENOTES.md|51 11
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 06d609cfa4871b4a2811f5a8f7f0a822733209b9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:02
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9db952e1616e552061a262b758d8cc2368db111e
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 24/09/2016 06:47:37
+Message:
+Closing invalid pull request: close #98 #MsgLength=40
+
+
+----
+
+Revision: 9ec8aea073cfede1ff99fd2aa25f4201b90870e9
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:25:22
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=102
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: 3d26986bfd5b7894ee16c6785f7996ef8c4b5c4f
+Author: Joe Bowser <bowserj@apache.org>
+Date: 28/07/2016 05:06:07
+Message:
+CB-11625: Working on fix to API 24 no longer allowing File URIs to be passed across intents #MsgLength=92
+
+
+----
+Modified: plugin.xml|15 2
+Modified: src/android/CameraLauncher.java|111 86
+
+Revision: 744d72a33bfb13b6c75e48385a9cec3435cbdd41
+Author: Joe Bowser <bowserj@apache.org>
+Date: 30/07/2016 00:07:03
+Message:
+Partially modified plugin.xml #MsgLength=30
+
+
+----
+Modified: plugin.xml|3 3
+
+Revision: b62fdf50f7bd18ed5c4cb9ae72fb92908529fbfb
+Author: Joe Bowser <bowserj@apache.org>
+Date: 30/07/2016 04:33:51
+Message:
+Adding provider_paths.xml so this works #MsgLength=40
+
+
+----
+Modified: plugin.xml|1 0
+Added: src/android/xml/provider_paths.xml|4 0
+
+Revision: 00e0a7dc469133faf92b46f0d72112d4d873844e
+Author: Joe Bowser <bowserj@apache.org>
+Date: 04/08/2016 05:43:11
+Message:
+CB-11625: Managed to get Content Providers to work with a weird mix of Content Providers and non-Content Providers #MsgLength=115
+
+
+----
+Modified: src/android/CameraLauncher.java|39 32
+
+Revision: f010394af8921052d565c4baf3ed40bd1170f9de
+Author: Joe Bowser <bowserj@apache.org>
+Date: 05/08/2016 02:16:29
+Message:
+WTF.  Directory, not file.  Not sure why I did that #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 3ed3d887ca7336534cfeb7d2146731f4e81a1203
+Author: Joe Bowser <bowserj@apache.org>
+Date: 05/08/2016 02:35:39
+Message:
+BuildConfig from test project crept in source code thanks to Android Studio, removing #MsgLength=86
+
+
+----
+Modified: src/android/CameraLauncher.java|0 1
+
+
+Revision: 61064ae3ed6c520e6de6646566b83772854d0fea
+Author: Joe Bowser <bowserj@apache.org>
+Date: 22/10/2016 06:12:34
+Message:
+CB-11625 (Android) : Make this work with previous versions of Cordova via cordova-plugin-compat #MsgLength=96
+
+
+----
+Modified: src/android/CameraLauncher.java|3 2
+
+Revision: 84f96c10676af0fd7c472b076d038ba94fe1b73f
+Author: Joe Bowser <bowserj@apache.org>
+Date: 28/10/2016 04:37:03
+Message:
+CB-11625: Files Provider does not work with Android 4.4.4 or lower, and I have no idea why.  Working around with CordovaUri #MsgLength=124
+
+
+----
+Modified: src/android/CameraLauncher.java|13 11
+Added: src/android/CordovaUri.java|85 0
+
+Revision: d9eb83bcb9a82b435adea38b873f937d4f07a1e5
+Author: Joe Bowser <bowserj@apache.org>
+Date: 28/10/2016 04:38:46
+Message:
+CB-11625: Forgot to add CordovaUri.java to plugin.xml #MsgLength=54
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: ee192d94b4b47a8e316caed769888ec4d4835dd6
+Author: Joe Bowser <bowserj@apache.org>
+Date: 08/11/2016 07:49:52
+Message:
+Bumping the CI #MsgLength=15
+
+
+----
+
+
+Revision: 3a90bb7d55f6df08119bb5c4c9c64b1aa11e705a
+Author: Joe Bowser <bowserj@apache.org>
+Date: 08/11/2016 08:11:45
+Message:
+Close #241 #MsgLength=11
+
+
+----
+
+Revision: 2f003d2b49788cffdca4b63ae20b1f83fefddce8
+Author: Joe Bowser <bowserj@apache.org>
+Date: 08/11/2016 08:19:00
+Message:
+Close #228.  We don't require these permissions on Camera, since we use intents. #MsgLength=81
+
+
+----
+
+Revision: 2d2352f695d170cb9cb401c7a8e5895f6092544b
+Author: Joe Bowser <bowserj@apache.org>
+Date: 08/11/2016 08:21:17
+Message:
+Close #201.  Running out of memory shouldn't be graceful. #MsgLength=58
+
+
+----
+
+Revision: 2d47a262717e767a16331e62ece3991cce4b5301
+Author: Joe Bowser <bowserj@apache.org>
+Date: 08/11/2016 08:23:16
+Message:
+Close #199.  We save photos to a shared Pictures directory, similar to the behaviour of the Twitter application #MsgLength=112
+
+
+----
+
+Revision: 485a11e0f49de3a9aef940a4a058c8660c15d06e
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 08/11/2016 10:40:38
+Message:
+Updating compat dependency to 1.1.0 or better #MsgLength=46
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 8b3410bcc6d19f83ac9f26e8b2a5c78a38c4457f
+Author: Joe Bowser <bowserj@apache.org>
+Date: 10/11/2016 02:05:33
+Message:
+Close #124: I can crop fine with Photos.  We should not have adopted Crop, since it makes no sense on Android. #MsgLength=111
+
+
+----
+
+Revision: cc48945f37866640ba8c536944cc3bf766aba71a
+Author: Chris Rae <clr@chrisrae.com>
+Date: 27/10/2016 06:20:06
+Message:
+Added NSPhotoLibraryUsageDescription parameter to example install command Fixing some usages of NSPhotoLibraryUsageDescriptionentry #MsgLength=151
+
+
+----
+Modified: jsdoc2md/TEMPLATE.md|5 5
+
+Revision: c9e6a9a38ab947fca73d6180a6ed21a154418a44
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 14/11/2016 15:01:22
+Message:
+CB-12086 Regenerate README.md from template #MsgLength=44
+
+
+----
+Modified: README.md|5 5
+
+Revision: 8b83171ee2762dbcad7b85dfa8dfead7d0650398
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:19:39
+Message:
+Fix missing license headers. #MsgLength=29
+
+
+----
+Modified: src/android/CordovaUri.java|19 0
+Modified: src/android/xml/provider_paths.xml|17 0
+
+Revision: 9eba35e2f6d5c69d0594b41ac4a49cc2cfc7c3b3
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:43
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 2.3.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|424 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ee5537694a22699bff4ec9dcf4c10ca6c5fba197
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:06
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 42fc8e0bcde790334ff73f646878c90792d48024
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 16:57:25
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: a364e79482ae4aa279b079aad4411075770554e4
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:41:08
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-camera #MsgLength=56
+
+
+----
+Modified: RELEASENOTES.md|1 410
+
+Revision: 05594c46468576da846b31b03e624d72f7c9c476
+Author: filmaj <maj.fil@gmail.com>
+Date: 17/12/2016 06:33:59
+Message:
+CB-12312: [Appium] [Android] A few changes to the tests: - updated comments on how to run the tests. extra comments around functionality at certain points in the automation. - stub of a resolution checker on test startup - still need to figure out acceptable values. - moved session shutdown to an afterAll clause. - changed resolution determiner from using webview-based values to using the native windows dimensions - this helps as the webview values may be scaled down intentionally by manufacturers (via changing devicePixelRatio). furthermore, since the screen dimension automation is used purely for native UI automation, better to use the dimensions reported by the native context rather than the web context. - when finding elements by XPath, use multiple calls to avoid a Windows emulator + Android bug. Made this pattern consistent in the entire test. #MsgLength=867
+
+
+----
+Modified: appium-tests/android/android.spec.js|71 27
+
+Revision: 81f94336068cf31f0526cea20d262632bfc8a2fa
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:27:26
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: d6bd9ae3b3772463c764550a158e400bd3d73c96
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 20:50:44
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=69
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|174 0
+
+Revision: 0ad5bdd9ff625975ac364c92bffd6999d6884aa7
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/01/2017 00:18:27
+Message:
+CB-12353 Corrected merges usage in plugin.xml #MsgLength=46
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: d29c767f07a238eccdf74062d45578712d8d0e34
+Author: Sergey Zolotarev <sryze@yandex.com>
+Date: 27/01/2017 03:41:56
+Message:
+CB-12368: Fix permission check on Android #MsgLength=208
+
+
+----
+Modified: src/android/CameraLauncher.java|1 1
+
+Revision: 5ebda25164c207f8f31d8102abd8d8acfb4e84b2
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 31/01/2017 08:12:01
+Message:
+Closing invalid pull request: close #247 #MsgLength=41
+
+
+----
+Modified: README.md|2 2
+
+Revision: 415412cfefc22270efa0d88b7e0a3269e8bcfcee
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 31/01/2017 08:15:37
+Message:
+Closing merged pull request: close #251 #MsgLength=40
+
+
+----
+
+Revision: c27725ce666f6cd821920047cb6fc02690cd93a0
+Author: Joe Bowser <bowserj@apache.org>
+Date: 01/02/2017 07:34:39
+Message:
+Close #243 #MsgLength=11
+
+
+----
+
+Revision: bba8283d98819273cab079007fb9e62c0d0e0dac
+Author: Joe Bowser <bowserj@apache.org>
+Date: 01/02/2017 07:29:56
+Message:
+CB-12005: Changing the getOrientation method to return the defined enumerated EXIF instead of orientation in degrees for Consistency #MsgLength=151
+
+
+----
+Modified: src/android/CameraLauncher.java|3 0
+
+Revision: 5ca4d8b082c86195e76d17cbb650655a633153c6
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/02/2017 04:34:57
+Message:
+Close #248 #MsgLength=11
+
+
+----
+
+Revision: c06480f4e3c1341cea1638716859e44872cb6b27
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/02/2017 04:37:01
+Message:
+Close #239 #MsgLength=11
+
+
+----
+
+Revision: aa8a5945ddf10a04a2f845d14ed7b064e1962f66
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/02/2017 04:38:10
+Message:
+Close #220 #MsgLength=11
+
+
+----
+
+Revision: 899f6d805969d6f5a56e0cc694eed1dd2c593ad3
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/02/2017 04:40:21
+Message:
+Close #192 #MsgLength=11
+
+
+----
+
+Revision: ab7e02f0b8c0a5edf98e235ad628f17253722c64
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/02/2017 04:42:27
+Message:
+Close #158 #MsgLength=11
+
+
+----
+
+Revision: f2ca5ed79f53184a688339ffad27ed134a1ac628
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/02/2017 04:43:42
+Message:
+Close #143 #MsgLength=11
+
+
+----
+
+Revision: 86e546f8680630c90ff984055489e9639b1062f0
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/02/2017 04:45:57
+Message:
+Close #169 #MsgLength=11
+
+
+----
+
+Revision: dfbca19a7a1bcaaa3f5defe507144961eeef6c11
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/02/2017 04:48:05
+Message:
+Close #170 #MsgLength=11
+
+
+----
+
+Revision: 7f616d16f175fd33514e8dda14ea9ebe79533340
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 13/02/2017 22:46:00
+Message:
+CB-12469 (ios) Appium tests can now run on iOS 10 #MsgLength=50
+
+
+----
+Modified: appium-tests/ios/ios.spec.js|145 73
+
+Revision: 4fc25154f31204cb526dbd505c965fea1fd8b0b8
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 23/02/2017 22:32:23
+Message:
+CB-12501 (Android) Appium tests don't use XPath selectors anymore #MsgLength=66
+
+
+----
+Modified: appium-tests/android/android.spec.js|25 80
+
+Revision: e4ff41c07c8cf817d17bce6fcbe60fd507428bc0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:23
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 2.4.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|12 0
+Modified: package.json|1 1
+Modified: plugin.xml|196 281
+Modified: tests/plugin.xml|6 32
+
+Revision: 926fbf0e8ccce6f70c34520e507dc9c08dd15f6f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:55:56
+Message:
+Set VERSION to 2.4.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|281 196
+Modified: tests/plugin.xml|32 6
+
+Revision: d0b381aad86ac94042b4cb33fde1b9e9e813e8e1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/03/2017 08:06:15
+Message:
+CB-12519 updated incorrect version in RELEASENOTES #MsgLength=51
+
+
+----
+Modified: RELEASENOTES.md|1 1
+
+Revision: 180f7b5510a7055e11ae7c13c7ea54c4d95f7ebb
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/03/2017 22:52:15
+Message:
+CB-12618: (android) Appium tests: Handle native cling #MsgLength=54
+
+
+----
+Modified: appium-tests/android/android.spec.js|9 0
+
+Revision: 9badea4c9509d8d40f17530fb84ea49f223fc925
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 20/04/2017 14:01:54
+Message:
+CB-12622: (android) Appium tests: Bust Android 6 and 7 permission dialogs #MsgLength=74
+
+
+----
+Modified: appium-tests/android/android.spec.js|36 1
+Modified: appium-tests/helpers/cameraHelper.js|3 0
+
+Revision: 2286bb3bb2d32dcff0c98099eabd78ea3bf0137a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 09:15:33
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: 3c48ea9c9c452c6fa0326f666622656ebfa4d161
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/04/2017 07:30:53
+Message:
+Close #258 #MsgLength=11
+
+
+----
+
+Revision: eb98015e8a73c7bc866e77c421db7b81b11a1fcf
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/04/2017 07:40:08
+Message:
+Close #256 #MsgLength=11
+
+
+----
+
+Revision: a33c35152e806811350a1e1aff35a6e5e0a27249
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 12/04/2017 21:54:39
+Message:
+CB-12650: Fix manual test for uploading image #MsgLength=46
+
+
+----
+Modified: tests/plugin.xml|1 1
+Modified: tests/tests.js|1 1
+
+Revision: 9615620843e57bd78339d66c57ec8fce51a7fb93
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 19:29:16
+Message:
+CB-12622: Updated build badges in README #MsgLength=41
+
+
+----
+Modified: README.md|3 3
+
+Revision: ba9a803b69fa08121177485f29dda8652117dc2c
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 01:26:08
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 2.4.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1422b0a4f2ec27c70ba64df49d9f6aa7307080c8
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 01:27:41
+Message:
+Set VERSION to 2.4.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ef617cc94306f5fdf97b281952b7a71a8dbac153
+Author: filmaj <maj.fil@gmail.com>
+Date: 11/05/2017 00:15:40
+Message:
+Close #265 #MsgLength=11
+
+
+----
+
+Revision: 26d13b024593b88bdf40a78b818511c3ac551759
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 03:11:53
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: 51e5c02dcb7c60e45e611b85b03e36a49b3400f2
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 18:35:40
+Message:
+CB-12847: fixed `bugs` entry in package.json. #MsgLength=46
+
+
+----
+Modified: package.json|1 1
+
+Revision: 1b218cd8a0e155dff2ee03a04a45a84977cb2fdc
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 02/06/2017 20:02:01
+Message:
+CB-12764: (android) Adapt Appium tests for Android 7 #MsgLength=53
+
+
+----
+Modified: appium-tests/android/android.spec.js|116 54
+Modified: appium-tests/helpers/cameraHelper.js|5 1
+Modified: appium-tests/ios/ios.spec.js|1 1
+
+Revision: c3d7e55ad428bd154fa6bf5b2222cd38ee53b152
+Author: Sergii Stotskyi <sergii.stotskyi@concreteplatform.com>
+Date: 21/04/2017 19:08:37
+Message:
+CB-12682: (ios, android): changes cancel error message to be consistent for ios android #MsgLength=88
+
+
+----
+Modified: src/android/CameraLauncher.java|4 4
+Modified: src/ios/CDVCamera.m|57 57
+
+Revision: 160ed2d03fd087fbb4893e343ddb3413ec8af410
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 14/06/2017 16:52:14
+Message:
+CB-12912 - Incorrect 'Report Bugs' link in README #MsgLength=69
+
+
+----
+Modified: README.md|1 1
+
+Revision: 7155b636d5e29dde003199a4d653247b798bcd6b
+Author: Jacques de Villiers <jacquesdev@gmail.com>
+Date: 19/06/2017 21:37:15
+Message:
+Incorrect "JIRA issue tracker" link in Readme #MsgLength=46
+
+
+----
+Modified: README.md|1 1
+
+Revision: cba99940a7f505c9524b7bd126592eb53423664b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 22/06/2017 18:58:28
+Message:
+CB-12935: (android, ios) Run paramedic tests on Travis #MsgLength=55
+
+
+----
+Modified: .travis.yml|79 6
+
+Revision: 77539558e6caeac016108ecb58e10a94c0131845
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:30:25
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: f667ba6179262eea40114892928ed775e2708592
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 03/07/2017 22:03:22
+Message:
+CB-12982: (Android, iOS) Appium tests: try to create a session harder #MsgLength=70
+
+
+----
+Modified: appium-tests/android/android.spec.js|11 2
+Modified: appium-tests/ios/ios.spec.js|18 3
+
+Revision: 3b8f64e330df7f1b9d5088fd1a3f7f3e6193c83c
+Author: José Luis Ballesteros del Val <joseluis.ballesterosdelval@gmail.com>
+Date: 28/06/2017 22:38:45
+Message:
+CB-12964: (android) Fix of bug when Pictures folder did not exist. #MsgLength=309
+
+
+----
+Modified: src/android/CameraLauncher.java|1 0
+
+Revision: 5b3a99a6dbd821f5699c42afe2e38f235aaaa93f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 06/07/2017 13:29:15
+Message:
+CB-12990 (iOS) Optimized Appium tests #MsgLength=38
+
+
+----
+Modified: appium-tests/ios/ios.spec.js|12 12
+
+Revision: e69240f251f30d9341fef1ca950b074f14bd4f57
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 06/07/2017 18:58:47
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: f1b0ccec567dee09cfdb70d3e4a5ac641ab0fd9a
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:02:24
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: 5574490bc3c9ebe907a94ee06b94ea9b46d5fdae
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 17:07:38
+Message:
+CB-13002: (Android, iOS) Fix occasional Appium tests failures #MsgLength=62
+
+
+----
+Modified: appium-tests/android/android.spec.js|10 0
+Modified: appium-tests/ios/ios.spec.js|10 0
+
+Revision: 55d419a36eb25cb453f025bec249272c33baad70
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 25/07/2017 19:50:55
+Message:
+CB-13028 (CI) Browser builds on Travis and AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|3 2
+Modified: .travis.yml|16 0
+
+Revision: 80342b0dddfa8e9ec81f84bd352685fa4ab4c07d
+Author: Audrey So <audreyso@apache.org>
+Date: 10/06/2017 05:51:30
+Message:
+CB-12985 : setup eslint and removed jshint #MsgLength=43
+
+
+----
+Added: .eslintrc.yml|10 0
+Deleted: .jshintrc|0 16
+Modified: package.json|10 4
+Modified: src/blackberry10/index.js|25 25
+Modified: src/browser/CameraProxy.js|10 10
+Modified: src/firefoxos/CameraProxy.js|7 7
+Modified: src/windows/CameraProxy.js|130 142
+Modified: www/Camera.js|11 11
+Modified: www/CameraConstants.js|75 75
+Modified: www/CameraPopoverHandle.js|2 2
+Modified: www/CameraPopoverOptions.js|1 1
+Modified: www/blackberry10/assets/camera.js|3 3
+Modified: www/ios/CameraPopoverHandle.js|3 3
+
+Revision: 16c4325fef80327bceccedb491e29064da79b556
+Author: Audrey So <audreyso@apache.org>
+Date: 15/07/2017 05:19:05
+Message:
+CB-12895 : updated src files to use eslint format #MsgLength=50
+
+
+----
+Modified: appium-tests/android/android.spec.js|0 2
+Modified: appium-tests/helpers/cameraHelper.js|0 1
+Modified: appium-tests/ios/ios.spec.js|0 2
+Modified: package.json|1 1
+Modified: src/blackberry10/index.js|91 91
+Modified: src/browser/CameraProxy.js|3 3
+Modified: src/windows/CameraProxy.js|60 63
+Modified: tests/tests.js|70 68
+
+Revision: b2107e0818b398484b0ddbc6371c123df0920025
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 13:58:14
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 2acda2d2f92b996b0a7412f09c611f68dc5f9760
+Author: Kelvin Dart <kelvin.dart@crimsontide.co.uk>
+Date: 18/10/2017 23:37:29
+Message:
+CB-13294 Remove cordova-plugin-compat #MsgLength=57
+
+
+----
+Modified: README.md|5 5
+Modified: package.json|2 2
+Modified: plugin.xml|4 2
+
+Revision: 3e24b15934169c2c2dd2b359d846ce44d1a46273
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 15/10/2017 06:22:19
+Message:
+CB-13446: Sync template with previous doc changes #MsgLength=69
+
+
+----
+Modified: README.md|5 5
+Modified: jsdoc2md/TEMPLATE.md|4 4
+
+Revision: fb213b2b380eaa3778661096b28b86355b01e0db
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:58:12
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: a6706aef5f5c98f5d0b1229c150af4bdf7a00708
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 15:11:26
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: 9f480b10cb8cdb3ae576c4470a2224c78e6c7b67
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 15/10/2017 05:34:12
+Message:
+CB-13264 (iOS): Remove ios usage descriptions #MsgLength=65
+
+
+----
+Modified: README.md|21 11
+Modified: jsdoc2md/TEMPLATE.md|21 11
+Modified: plugin.xml|0 14
+
+Revision: 51d665a7a1cfcab1a0e1a4803a53369f665e6c99
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 21/10/2017 23:00:13
+Message:
+CB-13332 (iOS): document NSPhotoLibraryAddUsageDescription #MsgLength=78
+
+
+----
+Modified: README.md|10 3
+Modified: jsdoc2md/TEMPLATE.md|10 3
+
+Revision: 8f033f53dbcfa39c75300b3fe857d9b0284e9f26
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 01/11/2017 18:00:21
+Message:
+CB-13515 (all): Add 'protective' entry to cordovaDependencies #MsgLength=62
+
+
+----
+Modified: package.json|3 0
+
+
+Revision: 97d2014d62112438dbb8c404db2aa4e30fe0d721
+Author: José Expósito <jose.exposito@armourcomms.com>
+Date: 10/10/2017 23:11:10
+Message:
+Adds macOS support #MsgLength=19
+
+
+----
+Modified: README.md|5 5
+Added: package-lock.json|2683 0
+Modified: package.json|4 2
+Modified: plugin.xml|18 1
+Added: src/osx/CDVCamera.h|81 0
+Added: src/osx/CDVCamera.m|258 0
+
+
+Revision: d456eeb7112c4a5603e9103c4de726b478c3577c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:41
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 3.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: README.md|5 5
+Modified: RELEASENOTES.md|20 0
+Deleted: package-lock.json|0 2683
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1f863581568b72b31d2cb9c584536c746920a8ad
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:37
+Message:
+Set VERSION to 3.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7fad5d5786822c3b5d2781a47599b51adf1e040b
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 13/12/2017 03:09:29
+Message:
+CB-13661: Remove deprecated platforms #MsgLength=38
+
+
+----
+Modified: README.md|1 91
+Modified: package.json|1 15
+Modified: plugin.xml|1 129
+Deleted: src/blackberry10/index.js|0 227
+Deleted: src/firefoxos/CameraProxy.js|0 53
+Deleted: src/ubuntu/CaptureWidget.qml|0 118
+Deleted: src/ubuntu/back.png|0 0
+Deleted: src/ubuntu/camera.cpp|0 140
+Deleted: src/ubuntu/camera.h|0 86
+Deleted: src/ubuntu/shoot.png|0 0
+Deleted: src/ubuntu/toolbar-left.png|0 0
+Deleted: src/ubuntu/toolbar-middle.png|0 0
+Deleted: src/ubuntu/toolbar-right.png|0 0
+Deleted: src/wp/Camera.cs|0 534
+Deleted: www/blackberry10/assets/camera.html|0 82
+Deleted: www/blackberry10/assets/camera.js|0 46
+
+
+Revision: 4ae0de1c5e4b84ad61632c2b74663a1ac3967f97
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:25:06
+Message:
+CB-13681 Updated version and RELEASENOTES.md for release 4.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: README.md|91 1
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 82f1c83a7687ebd251387e5af292275f1250d6d0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:26:41
+Message:
+Set VERSION to 4.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 96b7f55ec2451d5e6a7910b060b3e1e8831ff436
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 27/12/2017 07:00:45
+Message:
+CB-13701Fix to allow 4.0.0 version install #MsgLength=43
+
+
+----
+Modified: package.json|1 1
+
+
+Revision: fb02f48745a2133f18254900cb467c16978089e0
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:36
+Message:
+CB-13714 Updated version and RELEASENOTES.md for release 4.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|2 389
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b00cf97a044c2d9ba34bf2f999e33c7837898647
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:49
+Message:
+Set VERSION to 4.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 67718544a80acb061fade30d8e663156369d0edb
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 30/12/2017 13:59:38
+Message:
+Fix release notes (#304) #MsgLength=26
+
+
+----
+Modified: RELEASENOTES.md|390 0
+
+Revision: c46fe3b31d0476c09459de3f8887f967381f34e3
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 10/01/2018 03:32:55
+Message:
+CB-13747: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: 36ea63a60f98a8a93e5277f054fea16a2b676e6a
+Author: rpanadero <rpanadero@okode.com>
+Date: 15/01/2018 20:05:10
+Message:
+CB-13781: (android) Fixed permissions request on Android 8 to save a photo into the photo album #MsgLength=96
+
+
+----
+Modified: src/android/CameraLauncher.java|5 3
+
+
+Revision: 4b276ee5349528758d32737a54eeb67a1891fef7
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 25/01/2018 06:38:34
+Message:
+CB-13826 Updated version and RELEASENOTES.md for release 4.0.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ad8788a5e6acc9984029baf0f937fb73d999bc39
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 26/01/2018 03:47:20
+Message:
+CB-13826 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: bf935dfbd2c2a991f6632424243a26858584821b
+Author: Alpesh Patel <alpesh.harsoda@gmail.com>
+Date: 08/02/2018 20:12:16
+Message:
+CB-13415 (android) Importing corrupt images using the Camera plugin c… (#309) #MsgLength=166
+
+
+----
+Modified: src/android/CameraLauncher.java|6 1
+
+Revision: e25aed97c5122bbd4d72fb5986b2e413293c7b27
+Author: Tsuruda <ferretdayo@hotmail.co.jp>
+Date: 12/02/2018 01:22:34
+Message:
+modified init value (#264) #MsgLength=28
+
+
+----
+Modified: README.md|1 1
+Modified: www/Camera.js|1 1
+
+Revision: 7c90555bd4bfbbdfe23f357f130eb1bbb7e4fce6
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 11/02/2018 20:08:40
+Message:
+CB-13854(ios): fix Camera opens in portrait orientation on iphones #MsgLength=67
+
+
+----
+Modified: src/ios/CDVCamera.m|1 0
+
+Revision: e36482c7ba1e5dec07f68a246f3ecde8743d7cd6
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 12/02/2018 17:36:58
+Message:
+Fix a mistake in the examples of usage descriptions (#313) #MsgLength=60
+
+
+----
+Modified: README.md|2 2
+Modified: jsdoc2md/TEMPLATE.md|2 2
+
+Revision: cfefa53272d48c0067bd4a71345f1d6b328ff96f
+Author: Connor Pearson <cpearson@b2wsoftware.com>
+Date: 30/06/2017 21:59:27
+Message:
+CB-12593: (android) Fix potential FileProvider conflicts #MsgLength=57
+
+
+----
+Modified: plugin.xml|4 3
+Added: src/android/FileProvider.java|21 0
+Renamed: src/android/xml/camera_provider_paths.xml [from src/android/xml/provider_paths.xml]|0 0
+
+
+Revision: 9d05a1e58fc869d3f58102724bfe377f56a4067c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:06:17
+Message:
+CB-14030 Updated version and RELEASENOTES.md for release 4.0.3 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 37e12e85fbb2d733b02bda766133826f358f4488
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:16:12
+Message:
+Set VERSION to 4.0.4-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6ce1443622946c6a1964fd1067efd9b47f414b1a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 09:04:49
+Message:
+fixed issue with version, 4.0.3 #MsgLength=32
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d9d80e40c1c44edb0661058dc588c9ea59ff185c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 09:06:58
+Message:
+Set VERSION to 4.0.4-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5ec121bf981374973833061ab466ce41573ab6e7
+Author: Hazem Saleh <hazems@apache.org>
+Date: 23/04/2018 02:33:52
+Message:
+CB-14047: (android) CameraLauncher: Replacing Repeated String literals with final variables (#319) #MsgLength=100
+
+
+----
+Modified: src/android/CameraLauncher.java|18 12
+
+Revision: e334656933efee3d60bbd4654aa334538f263f78
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 19/05/2018 13:59:48
+Message:
+CB-14017 (android): Make com.android.support:support-v4 version configurable (#318) #MsgLength=85
+
+
+----
+Modified: plugin.xml|2 1
+
+Revision: ead7d5e6c28c3574d56c0c35bb53ea16c72ff4ad
+Author: Nicco Kunzmann <niccokunzmann@rambler.ru>
+Date: 19/05/2018 18:04:58
+Message:
+replace warning emoji with warning unicode (#317) #MsgLength=219
+
+
+----
+Modified: README.md|2 2
+
+Revision: 36343a8e076a877a5ad076df774845c779761d09
+Author: Andrew Decker <ajdecker1022@gmail.com>
+Date: 24/05/2018 13:42:39
+Message:
+Update CameraProxy.js (#284) #MsgLength=195
+
+
+----
+Modified: src/browser/CameraProxy.js|1 1
+
+Revision: 5163d3846558c70753af0d232bec762f337f2c66
+Author: Matthew Vander Vliet <vandervl@gmail.com>
+Date: 25/05/2018 12:44:23
+Message:
+CB-13384: (browser) Added deprecation of video.src compatibility (#288) #MsgLength=229
+
+
+----
+Modified: src/browser/CameraProxy.js|5 2
+
+Revision: 6899c5ece944418191c45ff093ed3806548e3544
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 11/06/2018 05:14:08
+Message:
+Update engines to use variables (#323) #MsgLength=40
+
+
+----
+Modified: package.json|4 0
+Modified: plugin.xml|1 0
+
+Revision: 5c23b65af9b11fa3a17bd44513418113dea9b8ed
+Author: bvmensvoort <y97mf54n9j@snkmail.com>
+Date: 06/07/2018 06:16:25
+Message:
+CB-14097: (android) Fix crash when selecting some files with getPicture (#322) #MsgLength=474
+
+
+----
+Modified: src/android/FileHelper.java|15 4
+
+Revision: 403682b9d45c60c5f2d14d8ee552bda3d8b453a7
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 19/08/2018 04:57:23
+Message:
+remove outdated docs translations that haven't been touched for 3 years #MsgLength=72
+
+
+----
+Deleted: doc/de/README.md|0 421
+Deleted: doc/de/index.md|0 434
+Deleted: doc/es/README.md|0 411
+Deleted: doc/es/index.md|0 391
+Deleted: doc/fr/README.md|0 378
+Deleted: doc/fr/index.md|0 391
+Deleted: doc/img/android-fail.png|0 0
+Deleted: doc/img/android-success.png|0 0
+Deleted: doc/img/blackberry-fail.png|0 0
+Deleted: doc/img/blackberry-success.png|0 0
+Deleted: doc/img/browser-fail.png|0 0
+Deleted: doc/img/browser-success.png|0 0
+Deleted: doc/img/firefox-fail.png|0 0
+Deleted: doc/img/firefox-success.png|0 0
+Deleted: doc/img/fireos-fail.png|0 0
+Deleted: doc/img/fireos-success.png|0 0
+Deleted: doc/img/ios-fail.png|0 0
+Deleted: doc/img/ios-success.png|0 0
+Deleted: doc/img/ubuntu-fail.png|0 0
+Deleted: doc/img/ubuntu-success.png|0 0
+Deleted: doc/img/windows-fail.png|0 0
+Deleted: doc/img/windows-success.png|0 0
+Deleted: doc/img/wp8-fail.png|0 0
+Deleted: doc/img/wp8-success.png|0 0
+Deleted: doc/it/README.md|0 421
+Deleted: doc/it/index.md|0 434
+Deleted: doc/ja/README.md|0 421
+Deleted: doc/ja/index.md|0 434
+Deleted: doc/ko/README.md|0 421
+Deleted: doc/ko/index.md|0 434
+Deleted: doc/pl/README.md|0 421
+Deleted: doc/pl/index.md|0 434
+Deleted: doc/ru/index.md|0 417
+Deleted: doc/zh/README.md|0 421
+Deleted: doc/zh/index.md|0 435
+
+Revision: a346212e90b810109d7160c93f87fa4870b649ae
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 01/10/2018 18:36:47
+Message:
+also accept terms for android sdk `android-27` #MsgLength=46
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: a201722f6d9e94dcd071154287416f53b7423089
+Author: Tyler Pham <tyler@disruptiveart.com>
+Date: 02/12/2016 03:12:01
+Message:
+CB-11714: (windows) added extra check for content-type in savePhoto() without options.targetWidth/Height #MsgLength=105
+
+
+----
+Modified: src/windows/CameraProxy.js|10 3
+
+Revision: dca4b9c82b4392dcf2e89fa5aa5fab1043bd9732
+Author: Tyler Pham <tyler@disruptiveart.com>
+Date: 17/09/2018 07:19:13
+Message:
+simplify picture.copyAsync #MsgLength=27
+
+
+----
+Modified: src/windows/CameraProxy.js|3 3
+
+Revision: eb57b02ba85429450d35a32ec13f86b88645a511
+Author: Tyler Pham <tyler@disruptiveart.com>
+Date: 17/09/2018 07:22:16
+Message:
+CB-11714: reuse picture.name instead of pictureName #MsgLength=52
+
+
+----
+Modified: src/windows/CameraProxy.js|2 4
+
+Revision: c1b9772dca33fd796865ddf75f8ec611430cc09a
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 04/10/2018 02:54:06
+Message:
+replace double quotes with single quotes #MsgLength=40
+
+
+----
+Modified: src/windows/CameraProxy.js|1 1
+
+
+Revision: bcb26fbbd2f61ea5e77e0bc306fcf5c5f0f66151
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 04/10/2018 07:15:01
+Message:
+remove JIRA link #MsgLength=16
+
+
+----
+Modified: README.md|1 3
+
+Revision: 7ee91a927d96904bb5abdee696f6c2e03b71acca
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 24/10/2018 19:26:07
+Message:
+Bump minor version to 4.1.0-dev (#357) #MsgLength=40
+
+
+----
+Modified: README.md|4 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c0d78ad6445fef526d8f355cb4204c2cc2227fa1
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 30/10/2018 23:44:58
+Message:
+Revert "Bump minor version to 4.1.0-dev (#357)" (#363) #MsgLength=117
+
+
+----
+Modified: README.md|2 4
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 07e85742aa751fb7147da11c4912eb69463da7b8
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 01/11/2018 23:13:52
+Message:
+Remove automatic README generation (#365) #MsgLength=43
+
+
+----
+Modified: README.md|0 9
+Deleted: jsdoc2md/TEMPLATE.md|0 460
+Modified: package.json|1 6
+
+Revision: eed44330a45daefea4897eafe913838b0f8cfa67
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 14/11/2018 06:02:58
+Message:
+Bump minor version (#370) #MsgLength=27
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a5a3d8815297b2dc6b686a127dd6da9c396ff8f3
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 21/11/2018 06:40:08
+Message:
+clarify android quirk of cameraDirection #MsgLength=40
+
+
+----
+Modified: README.md|1 1
+
+Revision: 86b0bf2534a8d22e582437b30f57a0fad870471d
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 24/11/2018 01:44:46
+Message:
+CB-13837: fix TypeScript Definition for CameraPopoverOptions (#379) #MsgLength=69
+
+
+----
+Modified: types/index.d.ts|4 0
+
+Revision: bfbe4a1e52c3d07c09f78db5dff7df75f31c6cd3
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 24/11/2018 03:18:31
+Message:
+fix quirk #MsgLength=9
+
+
+----
+Modified: README.md|2 2
+
+Revision: cd72047dfc60175fe6ddf158b1094a8ca09871b8
+Author: Ams <yoamerish@hotmail.com>
+Date: 25/11/2018 20:59:51
+Message:
+CB-13865: (IOS-Ipad) Making popover Window Size configurable using popoverOptions - imagePicker (#314) #MsgLength=104
+
+
+----
+Modified: README.md|4 2
+Modified: src/ios/CDVCamera.m|13 0
+Modified: tests/ios/CDVCameraTest/CDVCameraLibTests/CameraTest.m|2 2
+Modified: tests/ios/package.json|1 1
+Modified: tests/tests.js|1 1
+Modified: types/index.d.ts|2 0
+Modified: www/CameraPopoverOptions.js|5 1
+Modified: www/ios/CameraPopoverHandle.js|2 2
+
+Revision: ce77aab010bdbedb43ba84dd831ea7352c09402c
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 04/12/2018 19:21:39
+Message:
+CB-13813: (iOS) Remove old iOS code (#381) #MsgLength=44
+
+
+----
+Modified: src/ios/CDVCamera.m|56 68
+
+Revision: 60e779559e5dff492f6539552efba647fd766f73
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 09/12/2018 19:39:06
+Message:
+Android: return DATA_URL for ALLMEDIA if it's an image (#382) #MsgLength=63
+
+
+----
+Modified: src/android/CameraLauncher.java|6 12
+
+Revision: 7ddb3dfbbe42053f398f62687ba20de3a5040445
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 10/12/2018 07:52:39
+Message:
+Remove deprecated platforms from docs (#394) #MsgLength=46
+
+
+----
+Modified: README.md|1 83
+
+Revision: 24c8b6c43dd986c3197017823b750d1368c9ff9b
+Author: pz <easywasdev@users.noreply.github.com>
+Date: 16/12/2018 19:20:01
+Message:
+GH-376 (ios) fixes UIImagePickerController cancel handling for iOS11+ (#377) #MsgLength=78
+
+
+----
+Modified: src/ios/CDVCamera.m|1 1
+
+Revision: b261d3174f1ae973f53991022d41ec10fcf09251
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:38:15
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 81b878da5968e27aaf03317753fafd278a3b834e
+Author: Álvaro Herrero <alvaroherrero83@gmail.com>
+Date: 21/02/2019 23:51:54
+Message:
+GH-329: (android) Fixes issue: Exif data lost on many cases (#331) #MsgLength=165
+
+
+----
+Modified: src/android/CameraLauncher.java|1 0
+
+Revision: a13665d530f24a667a17d2a3bc61296fc316d3d2
+Author: Hazem Saleh <hazems@apache.org>
+Date: 02/03/2019 03:00:39
+Message:
+AAR-232: (android) Enhancement: Camera plugin code cleanup (#425) #MsgLength=67
+
+
+----
+Modified: src/android/CameraLauncher.java|49 55
+
+Revision: fae190ead2a114dfe63b7045e75c36eb4b34ea00
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 08/04/2019 22:14:38
+Message:
+Update CI Environment Setup for Node.js 6 (#438) #MsgLength=50
+
+
+----
+Modified: .appveyor.yml|5 5
+Modified: .travis.yml|43 68
+
+Revision: 295e928784e2a9785982fbf15b05215a317774df
+Author: Hazem Saleh <hazems@apache.org>
+Date: 06/05/2019 01:16:20
+Message:
+(Android) Fix NullPointerException error on some Android phones (#429) #MsgLength=72
+
+
+----
+Modified: src/android/CameraLauncher.java|10 10
+
+Revision: cffd0ac825419ac33e67d57a5abbb1608c1a58a9
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/06/2019 19:25:28
+Message:
+ci(travis): Update Travis CI configuration for new paramedic (#455) #MsgLength=296
+
+
+----
+Modified: .travis.yml|90 45
+
+Revision: 19d8e2f6ff230c1de51f247cec30b71134971507
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/06/2019 19:30:25
+Message:
+fix: temporarily remove Appium tests (#468) #MsgLength=45
+
+
+----
+Deleted: appium-tests/android/android.spec.js|0 751
+Deleted: appium-tests/helpers/cameraHelper.js|0 311
+Deleted: appium-tests/ios/ios.spec.js|0 512
+
+Revision: cad8bd14425ab72ff132a16050c9b3d6bd3cc363
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 28/06/2019 00:45:52
+Message:
+chore: fix repo and issue urls and license in package.json and plugin.xml #MsgLength=74
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|2 5
+Modified: tests/package.json|2 2
+
+Revision: 5dc952724f9b19754ec4cb6cff71b345d0acb3ac
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 28/06/2019 00:46:13
+Message:
+build: remove `.ratignore` file that is not needed any more #MsgLength=60
+
+
+----
+Deleted: .ratignore|0 1
+
+Revision: 06dc38f9aba1a8b21e44f4dc703b1e149c02743f
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 28/06/2019 00:46:33
+Message:
+docs: remove outdated test docs translations #MsgLength=45
+
+
+----
+Deleted: tests/ios/doc/de/README.md|0 39
+Deleted: tests/ios/doc/es/README.md|0 39
+Deleted: tests/ios/doc/fr/README.md|0 39
+Deleted: tests/ios/doc/it/README.md|0 39
+Deleted: tests/ios/doc/ja/README.md|0 39
+Deleted: tests/ios/doc/ko/README.md|0 39
+Deleted: tests/ios/doc/pl/README.md|0 39
+Deleted: tests/ios/doc/zh/README.md|0 39
+
+Revision: 5b4d9ba5c74701f4e09a0a0f3b1df5145834bd03
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 28/06/2019 03:01:58
+Message:
+chore(release): release notes for 4.1.0 #MsgLength=40
+
+
+----
+Modified: RELEASENOTES.md|34 0
+
+Revision: ae3531acfa5ff6060788364880c13c02068e8711
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 28/06/2019 03:01:58
+Message:
+chore(release): 4.1.0 (version string) #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: db4b4b947d53be1fc0ae929e793270392c7fc8aa
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 28/06/2019 03:02:49
+Message:
+chore(release): 4.1.1-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a9436b1a185b37269366ec3e2c5f337fb14cba61
+Author: klodha <klodha@users.noreply.github.com>
+Date: 16/09/2019 17:40:54
+Message:
+ImagePicker returning same image (#306) #MsgLength=185
+
+
+----
+Modified: src/ios/CDVCamera.m|5 4
+
+Revision: c887c229f0bcd72a2462cc28d0f3f0e480c89f7e
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 19/10/2019 23:07:21
+Message:
+docs(README): remove orphan windows phone 7 note (#512) #MsgLength=57
+
+
+----
+Modified: README.md|0 5
+
+Revision: 6feaa95559f384468286ab28070030887bac1c5d
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 20/10/2019 07:05:19
+Message:
+docs(README): remove confusing comment (#513) #MsgLength=47
+
+
+----
+Modified: README.md|1 1
+
+Revision: 6f25420ce703c966734557c923ebf0353f1ff338
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 20:10:44
+Message:
+chore(npm): adds ignore list (#575) #MsgLength=37
+
+
+----
+Added: .npmignore|3 0
+
+Revision: f33ade83e4f49269c0dbf39139e2ee51600458d5
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 20:11:08
+Message:
+ci: updates Node.js versions (#576) #MsgLength=37
+
+
+----
+Modified: .appveyor.yml|8 4
+Modified: .travis.yml|14 13
+
+Revision: f4067e22d90ab7665fcebcb7aa5031a81d26505b
+Author: exxbrain <exxbrain@mail.ru>
+Date: 09/04/2020 21:54:26
+Message:
+Fix UI API called on a background thread (#550, #530, #447) (#551) #MsgLength=121
+
+
+----
+Modified: src/ios/CDVCamera.m|17 17
+
+Revision: 7611960ef276417c76e63b01bccdb1a5039c85e3
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:27:10
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Modified: CONTRIBUTING.md|4 4
+
+Revision: bfa38fed2c9141d614ebbbe5786f3904f7a90202
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 15/04/2020 17:41:21
+Message:
+fix(ios): return copy of video when picking from gallery on iOS 13 (#580) #MsgLength=75
+
+
+----
+Modified: src/ios/CDVCamera.m|13 0
+
+Revision: 06ac9b3dc9aec3e63df72059d023057e11649076
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:39:50
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: 6900fbaefa76e310be3c1c13856b100ac20deca6
+Author: Matthew Harris <rtpharry@hotmail.com>
+Date: 25/09/2019 23:04:31
+Message:
+docs(readme): app renamed to Google Photos #MsgLength=42
+
+
+----
+Modified: README.md|1 1
+
+
+Revision: df1441420376696994d77f0856ab3dfbed5f0bbe
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 29/04/2020 04:57:00
+Message:
+Cache images in device storage, devices have enough space now. #MsgLength=63
+
+
+----
+Modified: src/android/CameraLauncher.java|1 11
+
+
+Revision: adf15799d9e1a90b2aa9f9b84136a8d1a082dd43
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 07/05/2020 15:45:53
+Message:
+Updated version and RELEASENOTES.md for release  (Camera-4.2.0) #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|13 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ba4f77468ff83377607aab775ebdb3faaff6a8f9
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 07/05/2020 16:34:03
+Message:
+chore(release): 4.2.0-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d89c25cd8283b2d9503120459245d7d9a637c89f
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 26/06/2020 00:23:01
+Message:
+fix(ios): tempFilePath called twice if using CameraUsesGeolocation (#612) #MsgLength=75
+
+
+----
+Modified: src/ios/CDVCamera.m|2 6
+
+Revision: 8766956abb0d939237312cb6b452a41beb0a62ba
+Author: エリス <erisu@users.noreply.github.com>
+Date: 14/07/2020 16:55:04
+Message:
+breaking: bump version 5.0.0-dev (#627) #MsgLength=41
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 358522c0b526933105b1d27771798c91624e1994
+Author: エリス <erisu@users.noreply.github.com>
+Date: 14/07/2020 16:55:23
+Message:
+ci: fix additional tests (#626) #MsgLength=33
+
+
+----
+Modified: .travis.yml|2 1
+
+Revision: 973bbbbac79db3e3b6829316de6830a7463a3db1
+Author: エリス <erisu@users.noreply.github.com>
+Date: 14/07/2020 18:15:29
+Message:
+feat: migrate to @cordova/eslint-config@3.x (#629) #MsgLength=52
+
+
+----
+Modified: .eslintrc.yml|22 9
+Modified: package.json|3 9
+Modified: src/browser/CameraProxy.js|1 1
+Modified: src/windows/CameraProxy.js|1 4
+Modified: tests/tests.js|4 4
+Modified: www/ios/CameraPopoverHandle.js|1 1
+
+Revision: efb633969e9ed9be72fc2f5a1bd483cee9d48a89
+Author: エリス <erisu@users.noreply.github.com>
+Date: 14/07/2020 18:15:57
+Message:
+chore(package): use short notation (#631) #MsgLength=43
+
+
+----
+Modified: package.json|2 7
+
+Revision: 2bf5b9347ec83a071666b1367118d297c513a3a8
+Author: エリス <erisu@users.noreply.github.com>
+Date: 14/07/2020 18:26:24
+Message:
+chore: add package-lock.json (#630) #MsgLength=37
+
+
+----
+Added: package-lock.json|1724 0
+
+Revision: fd155d9705b7de4b14737b27d942d9ecd4ef2eac
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 14/07/2020 22:26:09
+Message:
+breaking(android): stop using CordovaUri helper class (#617) #MsgLength=62
+
+
+----
+Modified: plugin.xml|0 1
+Modified: src/android/CameraLauncher.java|22 35
+Deleted: src/android/CordovaUri.java|0 104
+Modified: src/android/FileHelper.java|3 14
+Modified: src/android/xml/camera_provider_paths.xml|1 1
+
+Revision: eb7fc333eee88446f4f74aff87f0a10ab36e295f
+Author: Loïc Le Malliaud <31664639+LoicEvenium@users.noreply.github.com>
+Date: 16/07/2020 19:08:40
+Message:
+fix(android): use provider prefix to avoid conflicts other plugin providers (#510) #MsgLength=141
+
+
+----
+Modified: plugin.xml|4 4
+Modified: src/android/CameraLauncher.java|2 2
+
+Revision: e2ecd7fe9158702905df7f93c91cef4b597be78d
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 23/07/2020 18:11:55
+Message:
+fix(android): return error if file url is null (#632) #MsgLength=55
+
+
+----
+Modified: src/android/CameraLauncher.java|59 52
+
+Revision: 3f42591363a332e141650efa9d59a4ba70d67cd3
+Author: エリス <erisu@users.noreply.github.com>
+Date: 23/07/2020 19:16:36
+Message:
+chore: remove deprecated file transfer plugin (#634) #MsgLength=54
+
+
+----
+Modified: tests/plugin.xml|0 2
+Modified: tests/tests.js|1 25
+
+Revision: 45496213b3e751b4d5087e970dba4275ebe03746
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/07/2020 19:25:48
+Message:
+breaking: bump project requirements (#628) #MsgLength=44
+
+
+----
+Modified: .travis.yml|2 2
+Modified: package.json|5 0
+Modified: plugin.xml|3 2
+
+Revision: 0333d001c7c2df5418c2a344e275d3b43d99f2d8
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 07/08/2020 20:38:05
+Message:
+breaking: remove NATIVE_URI DestinationType (#637) #MsgLength=52
+
+
+----
+Modified: README.md|2 13
+Modified: package-lock.json|1 1
+Modified: src/android/CameraLauncher.java|3 4
+Modified: src/ios/CDVCamera.h|1 2
+Modified: src/ios/CDVCamera.m|16 51
+Modified: src/osx/CDVCamera.h|1 2
+Modified: src/osx/CDVCamera.m|1 1
+Modified: src/windows/CameraProxy.js|5 13
+Modified: tests/tests.js|5 7
+Modified: types/index.d.ts|0 3
+Modified: www/CameraConstants.js|2 11
+
+Revision: 0111e9344845aab926799656ac48ce6cdb645119
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/09/2020 18:35:43
+Message:
+ci(travis): update osx xcode image (#648) #MsgLength=136
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 4584f15d9f3ad89fd2e37ffa472b69491b84b10a
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 14/09/2020 11:19:36
+Message:
+Updated version and RELEASENOTES.md for release 5.0.0 (camera-20200914) #MsgLength=72
+
+
+----
+Modified: RELEASENOTES.md|16 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e2e04ba3d8433de13a489e73de814023c15aa2b2
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 18/09/2020 11:06:07
+Message:
+Increment package version to 5.0.1-dev #MsgLength=39
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5ae56cf8f07bcdfa090d928e7af3c8637521afce
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 24/09/2020 23:00:05
+Message:
+chore: Update RELEASENOTES (#664) #MsgLength=35
+
+
+----
+Modified: RELEASENOTES.md|9 11
+
+Revision: 140e8861e30164da0861fec548d0aa2413197e12
+Author: Norman Breau <norman@normanbreau.com>
+Date: 01/10/2020 09:07:19
+Message:
+fix(android): Declare CAMERA permission #MsgLength=40
+
+
+----
+Modified: plugin.xml|1 0
+
+
+Revision: 64d8c5108a90166df7e8780686b2e64168d14eaa
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 07/10/2020 21:48:47
+Message:
+chore: Fix JIRA links in RELEASENOTES.md (#672) #MsgLength=49
+
+
+----
+Modified: RELEASENOTES.md|8 8
+
+Revision: 43d6591d9ebeaf1962cc3853df242b9378a6c22a
+Author: Norman Breau <norman@normanbreau.com>
+Date: 15/10/2020 08:51:20
+Message:
+Revert "fix(android): Declare CAMERA permission" (#677) #MsgLength=118
+
+
+----
+Modified: plugin.xml|0 1
+
+Revision: ebe0517a243b7a710d225569ce7a228c346c77f7
+Author: Pieter Van Poyer <pieter.vanpoyer@portofantwerp.com>
+Date: 17/10/2020 10:48:22
+Message:
+Bugfix issue 341 save to photo gallery - Fixes #341, fixes #577 (#669) #MsgLength=842
+
+
+----
+Modified: plugin.xml|1 0
+Modified: src/android/CameraLauncher.java|83 88
+Added: src/android/GalleryPathVO.java|25 0
+
+Revision: 2d1ee66a2b6459540967d578cc534dc893546e12
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 29/10/2020 01:47:10
+Message:
+fix(ios): correctly append exif on iOS 14 (#685) #MsgLength=50
+
+
+----
+Modified: src/ios/CDVCamera.m|3 1
+
+Revision: 8975171d7a80776660094baf9c78b698ec85c3db
+Author: エリス <erisu@users.noreply.github.com>
+Date: 04/11/2020 09:12:19
+Message:
+chore(android): add missing apache license header (#686) #MsgLength=58
+
+
+----
+Modified: src/android/GalleryPathVO.java|18 0
+
+Revision: 0d13b71d337f74d5094973c4ebde9bf9b866cf48
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 04/11/2020 09:24:25
+Message:
+Updated version and RELEASENOTES.md for release 5.0.1 (camera-20201104) #MsgLength=72
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: db2ffedecc23993e2393a6226a63bd05998f0f01
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 09/11/2020 17:15:06
+Message:
+Increment package version to 5.0.2-dev #MsgLength=39
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b43c78b41997294d08fc8c17a3b286a5eba5fa6d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/11/2020 16:12:32
+Message:
+ci: add node-14.x to workflow (#691) #MsgLength=38
+
+
+----
+Modified: .appveyor.yml|1 0
+Modified: .travis.yml|1 1
+
+
+Revision: f70468920041134730b207e3ac9ca2597d6dbbe4
+Author: Pieter Van Poyer <pieter.vanpoyer@portofantwerp.com>
+Date: 03/02/2021 02:43:26
+Message:
+Bugfix issue 665 (#700) #MsgLength=282
+
+
+----
+Modified: src/android/CameraLauncher.java|9 0
+
+
+Revision: 66d3f032709029e24c1411991b7fd43c72f18bb5
+Author: PVPoyer <pieter.vanpoyer@portofantwerp.com>
+Date: 12/05/2021 03:39:28
+Message:
+plugin release preparation - audit fix #MsgLength=39
+
+
+----
+Modified: package-lock.json|6 6
+
+
+Revision: e419a745460a06627bb35b8e2054fa486b80b401
+Author: PVPoyer <pieter.vanpoyer@portofantwerp.com>
+Date: 12/05/2021 04:12:25
+Message:
+Updated version and RELEASENOTES.md for release 5.0.2 (cordova-plugin-camera20210511) #MsgLength=86
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7bc311fba9afb7e8001b185cddfcf3f65e6568fa
+Author: PVPoyer <pieter.vanpoyer@portofantwerp.com>
+Date: 12/05/2021 04:45:53
+Message:
+Incremented plugin version. (cordova-plugin-camera20210511) #MsgLength=60
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d356030070d903a929b7fb2adae7b9b53ab3dc7a
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 28/06/2021 17:16:24
+Message:
+chore(asf): Update GitHub repo metadata (#729) #MsgLength=48
+
+
+----
+Modified: .asf.yaml|24 0
+
+Revision: 1e20a9bd07724624ba0f748624af2c82ab28845c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/07/2021 13:30:17
+Message:
+chore: set the 5.x versions locked to cordova-android <10.0.0 (#747) #MsgLength=70
+
+
+----
+Modified: package.json|5 0
+Modified: plugin.xml|1 1
+
+Revision: e81e02b21f94e0164aae62f49b2f41f66031fdd8
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/07/2021 13:31:19
+Message:
+fix: incorrect version in package-lock (#748) #MsgLength=47
+
+
+----
+Modified: package-lock.json|1 1
+
+Revision: 0f6435ec73199e5d10a074bc8d34ad3962a28347
+Author: エリス <erisu@users.noreply.github.com>
+Date: 04/08/2021 12:06:29
+Message:
+chore: rebuilt package-lock.json (#754) #MsgLength=41
+
+
+----
+Modified: package-lock.json|379 266
+
+Revision: d523142cf25e5e155aa4416164ea352c168da41b
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 04/08/2021 12:16:27
+Message:
+Updated version and RELEASENOTES.md for release 5.0.3 (camera-v5.0.3) #MsgLength=70
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5587bec3204f03af4cb7a263b9bd6cd4a3fd5522
+Author: Niklas Merz <nmerz@gedys-intraware.de>
+Date: 09/08/2021 16:53:00
+Message:
+Bump 5.0.4-dev #MsgLength=15
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|2 2
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4ee90a84f311d7c14de4cf33f66827f3accce01d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 09/08/2021 19:52:50
+Message:
+feat: bump plugin version for next major (#749) #MsgLength=103
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 59cf76d1da30cf296ce513d4dba5dd5b65a1424e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 09/08/2021 19:56:15
+Message:
+feat: bump cordova-android requirements for 10.x (#750) #MsgLength=57
+
+
+----
+Modified: package.json|5 0
+Modified: plugin.xml|1 1
+
+Revision: abfbbd35d570f8bf60c3bcaa5a930cb74fdb5eac
+Author: エリス <erisu@users.noreply.github.com>
+Date: 09/08/2021 19:57:12
+Message:
+fix(android): supports sdk-30 package visibility (#684) #MsgLength=57
+
+
+----
+Modified: plugin.xml|18 0
+
+Revision: 75bf80726190a98002216bb271ffce45cd48ecb5
+Author: Pieter Van Poyer <pieter.vanpoyer@portofantwerp.com>
+Date: 09/08/2021 21:36:58
+Message:
+Bugfix issue 711 heic format (#731) #MsgLength=81
+
+
+----
+Modified: src/android/CameraLauncher.java|56 49
+Modified: src/android/FileHelper.java|2 18
+
+Revision: 0227cdcf14629bd26d0b498f47686929a52a45a5
+Author: エリス <erisu@users.noreply.github.com>
+Date: 09/08/2021 22:09:29
+Message:
+feat(android)!: support AndroidX (#751) #MsgLength=158
+
+
+----
+Modified: plugin.xml|3 4
+Modified: src/android/CameraLauncher.java|1 1
+Modified: src/android/FileProvider.java|1 1
+
+Revision: c56a255fe87723f4d8d44ec4e9388fbebf9105ef
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 11/08/2021 15:03:34
+Message:
+ci(gh-action): added workflow to run tests (#745) #MsgLength=96
+
+
+----
+Added: .github/workflows/ci.yml|57 0
+
+Revision: 3112e5fb1558729d0bb4524752e3435876cee05a
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 11/08/2021 15:04:14
+Message:
+chore: add release notify action (#654) #MsgLength=86
+
+
+----
+Added: .github/workflows/release-notify.yml|13 0
+
+Revision: c7971d9f63476e779e0e62f8722c601bf79f5bbb
+Author: Francis <monier.francis@hotmail.fr>
+Date: 11/08/2021 15:34:20
+Message:
+fix(android): file path correction if Uri authority is FileProvider (#585) #MsgLength=243
+
+
+----
+Modified: src/android/FileHelper.java|32 4
+
+Revision: e9db20e381e0e60baa14664543271d094f79e91c
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 11/08/2021 15:56:42
+Message:
+fix(android): return exception message (where it exists)  (#687) #MsgLength=173
+
+
+----
+Modified: src/android/CameraLauncher.java|3 3
+
+Revision: 869f02da1af8f31121bb5d30eee27cfdaad1e3dc
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 19/08/2021 16:14:44
+Message:
+Updated version and RELEASENOTES.md for release 6.0.0 (camera-v6.0.0) #MsgLength=70
+
+
+----
+Modified: RELEASENOTES.md|20 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5b8263732a505ee509193d9d07705967ceb336ab
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 23/08/2021 13:25:23
+Message:
+Increment package version to 6.0.1-dev #MsgLength=39
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 0fba37cac3d2053d4c5f8acbb2cf0c5dbd0903be
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/09/2021 21:17:11
+Message:
+ci: add gh-actions workflows (#762) #MsgLength=37
+
+
+----
+Added: .github/workflows/android.yml|148 0
+Added: .github/workflows/chrome.yml|73 0
+Added: .github/workflows/ios.yml|88 0
+Added: .github/workflows/lint.yml|56 0
+
+Revision: 204234b1b93f02f23834e74c996a2cdf5c69eb5b
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 23:07:07
+Message:
+ci: remove travis & appveyor (#764) #MsgLength=37
+
+
+----
+Deleted: .appveyor.yml|0 33
+Modified: .npmignore|0 1
+Deleted: .travis.yml|0 118
+Modified: README.md|0 4
+
+Revision: 879712028ad66227f0bbfe43016b842629b38569
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:04:05
+Message:
+ci: add action-badge (#765) #MsgLength=29
+
+
+----
+Modified: README.md|2 0
+
+Revision: ed216ce7148b97ad23316f0530cd9abc2d8d6562
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 15:02:04
+Message:
+ci: remove old ci workflow (#766) #MsgLength=35
+
+
+----
+Deleted: .github/workflows/ci.yml|0 57
+
+Revision: bf12b39d185da0478250c0b7e1b217ee1d760d31
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/10/2021 20:13:02
+Message:
+ci(ios): update workflow w/ iOS 15 (#770) #MsgLength=43
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: 53223c3df2389e154484107abaad6f9b9fa1683f
+Author: Marcus Abrahamsson <marcus.abrahamsson13@gmail.com>
+Date: 18/03/2022 08:08:13
+Message:
+fix(android): update queries in plugin.xml (#780) #MsgLength=180
+
+
+----
+Modified: plugin.xml|14 16
+
+Revision: 4608f8ef8027a5c7130a3479c2d37a5e391c70e8
+Author: Scott Murphy <scott@alwaysvip.com>
+Date: 22/03/2022 15:23:56
+Message:
+fix(ios): preserving EXIF data (#712) #MsgLength=39
+
+
+----
+Modified: src/ios/CDVCamera.m|177 21
+
+Revision: 3e548770b782d0b0bbeefe213405ce5f925267bc
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/07/2022 12:30:47
+Message:
+ci(android): update java requirement for cordova-android@11 (#798) #MsgLength=68
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: a18fda7ddfb880fbb214a2976d2564dc9056d29e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 10/08/2022 15:49:43
+Message:
+dep(npm): bump package-lock v2 w/ rebuild (#800) #MsgLength=50
+
+
+----
+Modified: package-lock.json|2772 413
+
+Revision: d0d46c151cf98494e3c92b79dc117ffd3893f993
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 25/09/2022 11:03:51
+Message:
+docs(README): Document ANDROIDX_CORE_VERSION variable (#808) #MsgLength=62
+
+
+----
+Modified: README.md|8 4
+

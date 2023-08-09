@@ -1,0 +1,4492 @@
+Revision: 1603d34fb02ad64d16dd65bcd82b40c0734766d7
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/05/2013 05:08:42
+Message:
+added Cordova-JS api files #MsgLength=27
+
+
+----
+Added: www/Media.js|195 0
+Added: www/MediaError.js|55 0
+
+Revision: 0698245ff0b537d9a501abd5120a24a41490fd1c
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/05/2013 05:09:08
+Message:
+added native Android source file #MsgLength=33
+
+
+----
+Added: src/android/AudioHandler.java|362 0
+
+Revision: f7293aaf912010e7fef9497395982f026f75287c
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/05/2013 05:09:29
+Message:
+added native iOS files #MsgLength=23
+
+
+----
+Added: src/ios/CDVSound.h|116 0
+Added: src/ios/CDVSound.m|702 0
+
+Revision: f1b49633b18e7366fb65bea2b4b167331a130eff
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/05/2013 05:09:50
+Message:
+added README file #MsgLength=18
+
+
+----
+Added: README.md|2 0
+
+Revision: 79bbaa4d5e3139b46010b8342f349e7bb989ab69
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/05/2013 05:10:11
+Message:
+added initial config file #MsgLength=26
+
+
+----
+Added: plugin.xml|38 0
+
+Revision: 0066f372778a6f9d8312282e9230d39538738510
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 11/06/2013 02:11:57
+Message:
+First pass at wp7 support #MsgLength=26
+
+
+----
+Modified: plugin.xml|13 0
+Added: src/wp7/AudioFormatsHelper.cs|89 0
+Added: src/wp7/AudioPlayer.cs|620 0
+Added: src/wp7/Media.cs|532 0
+
+Revision: 42498cf2d9476b6845fc28b110fc345461c3c0e9
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 11/06/2013 06:41:07
+Message:
+[wp7] moved AudioFormatsHelper to core, used in capture plugin as well #MsgLength=71
+
+
+----
+Modified: plugin.xml|0 1
+Deleted: src/wp7/AudioFormatsHelper.cs|0 89
+
+Revision: 5d23b41cd1ac65ad010c9c9eb6512252042d6372
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 15/06/2013 07:00:49
+Message:
+[CB-3706] added mediaLib capability for wp7 #MsgLength=44
+
+
+----
+Modified: plugin.xml|4 0
+
+Revision: ecdfc2c55f12d8b450fcbdda315ff82ccbf9a16e
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 15/06/2013 07:19:43
+Message:
+update wp7 AudioPlayer.cs #MsgLength=26
+
+
+----
+Modified: src/wp7/AudioPlayer.cs|34 7
+
+Revision: 6f09b4f5bcf66ed78e6a364bade32ec6fa71822d
+Author: Tim Kim <timk@adobe.com>
+Date: 18/06/2013 04:16:05
+Message:
+Fixing plugin.xml for android #MsgLength=30
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 2f0a74b6b5deea9d91fea902eab3b7f412948565
+Author: Tim Kim <timk@adobe.com>
+Date: 18/06/2013 08:10:56
+Message:
+Fixed up plugin.xml for android again #MsgLength=38
+
+
+----
+Modified: plugin.xml|8 2
+
+Revision: 27ccee1b8afad4a330f09fcaa56273ef6e407e00
+Author: Tim Kim <timk@adobe.com>
+Date: 18/06/2013 08:11:19
+Message:
+Fixed a few references #MsgLength=23
+
+
+----
+Modified: src/android/AudioHandler.java|6 10
+
+Revision: a6be9efd168dc34cb8592441d847f05251241b94
+Author: Tim Kim <timk@adobe.com>
+Date: 18/06/2013 08:11:31
+Message:
+Needed to include this file #MsgLength=28
+
+
+----
+Added: src/android/AudioPlayer.java|553 0
+
+Revision: c3ebb3e4f883bdc13ee94ce1f27cf4845e222955
+Author: Tim Kim <timk@adobe.com>
+Date: 19/06/2013 08:31:05
+Message:
+[CB-3709] - fixed plugin.xml and references to Media #MsgLength=53
+
+
+----
+Modified: plugin.xml|4 1
+Modified: src/android/AudioPlayer.java|16 15
+
+Revision: 562fef94a0553c85e58fdb23f2a840a8b2fa742b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/06/2013 12:29:27
+Message:
+updated ios media files #MsgLength=24
+
+
+----
+Modified: src/ios/CDVSound.h|1 1
+Modified: src/ios/CDVSound.m|23 23
+
+Revision: a2b572fb57a2e168903c6687d389b995c22a4b4a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/06/2013 12:36:19
+Message:
+fixed references #MsgLength=17
+
+
+----
+Modified: src/ios/CDVSound.m|2 2
+
+Revision: db962e6d3faa0e474535343a020a38a2dfecbbcc
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 22/06/2013 05:52:15
+Message:
+added docs + test #MsgLength=18
+
+
+----
+Added: docs/.DS_Store|0 0
+Added: docs/MediaError/mediaError.md|45 0
+Added: docs/Parameters/mediaError.md|33 0
+Added: docs/media.getCurrentPosition.md|176 0
+Added: docs/media.getDuration.md|167 0
+Added: docs/media.md|145 0
+Added: docs/media.pause.md|167 0
+Added: docs/media.play.md|200 0
+Added: docs/media.release.md|159 0
+Added: docs/media.seekTo.md|161 0
+Added: docs/media.setVolume.md|178 0
+Added: docs/media.startRecord.md|155 0
+Added: docs/media.stop.md|172 0
+Added: docs/media.stopRecord.md|142 0
+Added: test/autotest/html/HtmlReporter.js|101 0
+Added: test/autotest/html/HtmlReporterHelpers.js|60 0
+Added: test/autotest/html/ReporterView.js|164 0
+Added: test/autotest/html/SpecView.js|79 0
+Added: test/autotest/html/SuiteView.js|22 0
+Added: test/autotest/html/TrivialReporter.js|192 0
+Added: test/autotest/index.html|60 0
+Added: test/autotest/jasmine.css|81 0
+Added: test/autotest/jasmine.js|2530 0
+Added: test/autotest/pages/.DS_Store|0 0
+Added: test/autotest/pages/media.html|71 0
+Added: test/autotest/test-runner.js|62 0
+Added: test/autotest/tests/.DS_Store|0 0
+Added: test/autotest/tests/media.tests.js|174 0
+Added: test/cordova-incl.js|85 0
+Added: test/index.html|64 0
+Added: test/main.js|162 0
+Added: test/master.css|164 0
+
+Revision: ee7cd414377f05a434a4919f3276713917da2c0a
+Author: lorinbeer <lorin@adobe.com>
+Date: 22/06/2013 04:45:22
+Message:
+[CB-3641] blackberry10 media plugin breakout intial commit #MsgLength=59
+
+
+----
+Modified: plugin.xml|8 0
+Added: src/blackberry10/index.js|232 0
+
+
+Revision: 99485538e59a0518a5648db579effad6ff2dda78
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 25/06/2013 06:50:10
+Message:
+[CB-3705] first pass wp8 support #MsgLength=33
+
+
+----
+Modified: plugin.xml|20 2
+Added: src/wp8/AudioPlayer.cs|647 0
+Added: src/wp8/Media.cs|547 0
+
+Revision: e8b0715698a507439dd4901d7e4b99d2e4a35918
+Author: bennmapes <benn.mapes@gmail.com>
+Date: 03/07/2013 06:32:26
+Message:
+fixed capabilities for wp8 #MsgLength=27
+
+
+----
+Modified: plugin.xml|4 2
+
+Revision: f8b2f95e5de1d7f98066f27332bf8a623f7a264d
+Author: bennmapes <benn.mapes@gmail.com>
+Date: 04/07/2013 01:05:33
+Message:
+another capabilities fix for wp8 #MsgLength=33
+
+
+----
+Modified: plugin.xml|0 1
+
+Revision: 155284bbadb8654689ac352e69e030fb026d5bf2
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 07:28:19
+Message:
+[CB-4127] remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|4 4
+Renamed: src/wp/AudioPlayer.cs [from src/wp7/AudioPlayer.cs]|0 0
+Renamed: src/wp/Media.cs [from src/wp8/Media.cs]|0 0
+Deleted: src/wp7/Media.cs|0 532
+Deleted: src/wp8/AudioPlayer.cs|0 647
+
+Revision: 1db360bea3ff98cd369f7c816472a4bf8be9aaeb
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: docs/media.setVolume.md|1 1
+Modified: src/android/AudioHandler.java|3 3
+
+Revision: b08dc7fcbda2f82572d36689f2a2ca3f56c7f4d8
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 12/07/2013 05:43:12
+Message:
+[CB-1605] Warning cleanup! Closed an input stream. #MsgLength=50
+
+
+----
+Modified: src/android/AudioPlayer.java|1 0
+
+Revision: 304782e27dc05d1d7f479ba9581004352d6a7cd7
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:16:34
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Added: .gitignore|23 0
+
+Revision: 9538b8c10d01fac785b3764985e7d836046802fb
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|3 0
+
+Revision: 788e00f750c4945e6ca5cc6bee7a0adec8ac4c18
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:32:24
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: ffac9763164854241805a87a6607fd1eefac958c
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 31/07/2013 08:46:01
+Message:
+[Windows8][CB-4448] Added windows 8 support #MsgLength=44
+
+
+----
+Modified: plugin.xml|7 0
+Added: src/windows8/MediaProxy.js|183 0
+
+Revision: a210997365aa4b48e040233c9ff49c53a70fca79
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 02/08/2013 03:12:20
+Message:
+[wp][CB-3783] All api calls maintain the callbackID to prevent issues with overlapping calls. #MsgLength=94
+
+
+----
+Modified: src/wp/Media.cs|115 72
+
+Revision: 944a2af4eca5e26e8231e2b7ca9258bf46d2c3ae
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: 8608fe901020ba52526e32e18fca0bb0c6d0596e
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 79d16b406a6a360243fb2c56cf066b5c33144914
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 05:45:17
+Message:
+updated readme, name tag and namespace #MsgLength=39
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|1 1
+
+Revision: 1048b1474a29063c218ed5bbe9c9a62f7d80504f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-media to its own Java package. #MsgLength=61
+
+
+----
+Modified: plugin.xml|3 3
+Modified: src/android/AudioHandler.java|1 1
+Modified: src/android/AudioPlayer.java|1 1
+
+Revision: b471803ab452f91f69e595cce51a855262987ced
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 06:14:57
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 0ab00b480a26951e32f836b1c06b1a5ed68e7a69
+Author: lorinbeer <lorin@adobe.com>
+Date: 21/08/2013 05:28:55
+Message:
+CB-4432 copyright notice change #MsgLength=32
+
+
+----
+Modified: src/blackberry10/index.js|16 11
+
+Revision: 0857d984a8d91560eb74166aa17f072fc89eada0
+Author: lorinbeer <lorin@adobe.com>
+Date: 21/08/2013 05:28:55
+Message:
+CB-4432 copyright notice change #MsgLength=32
+
+
+----
+Modified: src/blackberry10/index.js|16 11
+
+Revision: 4818f9c8f2f328624b0be6141b6c619fd9129361
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+[CB-4752] Updated version and changelog #MsgLength=40
+
+
+----
+Added: CHANGELOG.md|25 0
+Modified: plugin.xml|1 1
+
+
+Revision: 0259d766615724531a961058b591bc5903fc6c68
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 17/09/2013 07:43:50
+Message:
+[CB-4847] iOS 7 microphone access requires user permission - if denied, CDVCapture, CDVSound does not handle it properly #MsgLength=121
+
+
+----
+Modified: src/ios/CDVSound.m|72 45
+
+Revision: 29d8c381255c92d2b8b8d70e292b018ff0e3c3f5
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 17/09/2013 08:22:25
+Message:
+Revert "[CB-4847] iOS 7 microphone access requires user permission - if denied, CDVCapture, CDVSound does not handle it properly" #MsgLength=193
+
+
+----
+Modified: src/ios/CDVSound.m|45 72
+
+Revision: 041ed0b7e4f619daf3436f333cb1dfe93e75b251
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:22
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 7d62099d7b26f18cb9ba1ec4843bb4032092af33
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/09/2013 03:06:11
+Message:
+[CB-4763] Remove reference to cordova-android's FileHelper. #MsgLength=60
+
+
+----
+Modified: plugin.xml|1 0
+Modified: src/android/AudioHandler.java|0 1
+Added: src/android/FileHelper.java|38 0
+
+Revision: 653c2fbc9291f84558e2e734c8f5de24b6ac4d58
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/09/2013 03:19:56
+Message:
+Rename plugin id from AudioHandler -> media #MsgLength=44
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 0c42600b9654f307e822c77ef1f041589f8632d7
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/09/2013 04:22:49
+Message:
+Fix compiler/lint warnings #MsgLength=27
+
+
+----
+Modified: src/android/AudioPlayer.java|4 4
+
+Revision: 49c1e7dac1e93500086d2fe03189859d25e62e85
+Author: David Kemp <drkemp@chromium.org>
+Date: 13/09/2013 07:59:08
+Message:
+[CB-4799] Fix incorrect JS references within native code on Android & iOS #MsgLength=74
+
+
+----
+Modified: src/android/AudioPlayer.java|15 15
+Modified: src/ios/CDVSound.m|21 21
+
+Revision: b67238db0fc720e9266d20f61642d46ea278f747
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: 742069aec9d360a1a3f816f9958c5d85fa093864
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 18/09/2013 03:44:20
+Message:
+[CB-4847] iOS 7 microphone access requires user permission - if denied, CDVCapture, CDVSound does not handle it properly #MsgLength=121
+
+
+----
+Modified: src/ios/CDVSound.m|69 45
+
+Revision: bbe3353859bd4a0da59a9937e00a76f00b60c8c4
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:32:18
+Message:
+CB-4889 renaming org.apache.cordova.core.media to org.apache.cordova.media #MsgLength=75
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: e88e3e43d2382f3c5a325f65d89e023cf9ff7c38
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 22:58:58
+Message:
+CB-4889 renaming references #MsgLength=28
+
+
+----
+Modified: src/android/AudioPlayer.java|15 15
+Modified: src/ios/CDVSound.m|22 22
+Modified: src/windows8/MediaProxy.js|3 3
+
+Revision: 5cbe86a9dfa2e2e69f8d24ca2c767985b0d6d1cf
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 24/09/2013 16:54:43
+Message:
+[windows8] commandProxy was moved #MsgLength=34
+
+
+----
+Modified: src/windows8/MediaProxy.js|1 1
+
+
+Revision: 57d15831db2593fcd492e11bffbd6ee21c57ebd6
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:50:37
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 9fdbb3eacfbdc05821b83ddcc12afcbf0244d565
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 08:49:55
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.2.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|13 1
+Modified: plugin.xml|1 1
+
+
+Revision: 59d5c8bb827efd5fed87bbedd20058e6ff67986d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:14
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: e5f0bb0ac5ed716fd0b1c0eeb6feea8e7018a564
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 27/09/2013 03:04:49
+Message:
+[CB-4928] plugin-media doesn't load on windows8 #MsgLength=48
+
+
+----
+Modified: src/windows8/MediaProxy.js|2 2
+
+
+Revision: e04381e1bee103ebfcaf879a3786e1929487c9d3
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/10/2013 06:29:23
+Message:
+[CB-5010] Updated version and RELEASENOTES.md for release 0.2.4 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+
+Revision: 4bf648a0bd96ff9aed81f191894dbb52ee73093f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/10/2013 07:06:28
+Message:
+[CB-5010] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: d592158d8f4c8234a96ef64974b7de1d0ef892ac
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/10/2013 04:41:49
+Message:
+CB-5128: add repo + issue tag to plugin.xml for media plugin #MsgLength=61
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: 7c9653431f92e5a90a676ea9e1bdd06e2790350a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:04:51
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.2.5 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|5 1
+Modified: plugin.xml|1 1
+
+
+Revision: 5784fdaa8eaa7fb1ae23f7fb05c1673bd48deb02
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:16
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 814881ac57dc8b31fffa60b34a9d2792e5e83ec3
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 06:09:57
+Message:
+Added amazon-fireos platform. Change to use amazon-fireos as a platform if the user agent string contains 'cordova-amazon-fireos' #MsgLength=130
+
+
+----
+Modified: plugin.xml|20 0
+Modified: test/cordova-incl.js|2 1
+
+Revision: 93f35de79d92461bb4ee1d290b0a380f02e594eb
+Author: Maxim Ermilov <ermilov.maxim@gmail.com>
+Date: 02/10/2013 18:28:26
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|6 0
+Added: src/ubuntu/media.cpp|128 0
+Added: src/ubuntu/media.h|267 0
+
+Revision: a05deffb5a3e1d6c895466794b86435ab981eebc
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 11/11/2013 22:00:43
+Message:
+[ubuntu] specify policy_group #MsgLength=30
+
+
+----
+Modified: plugin.xml|6 0
+
+
+Revision: e0fe72831859c472a09e2610ebb0087cc42075f9
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:31
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.2.6 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+
+Revision: bbc6ea88fa31c25d7a3fdf0a27d097a65b63ffa7
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:03
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f894347f85cd09219c52083bb54552c7ebe676f5
+Author: Joe Bowser <bowserj@apache.org>
+Date: 17/12/2013 00:21:04
+Message:
+Adding READ_PHONE_STATE to the plugin permissions #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: e06ec8a758d842519a3f37312dcce737507f466f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/.DS_Store|0 0
+Deleted: docs/MediaError/mediaError.md|0 45
+Deleted: docs/Parameters/mediaError.md|0 33
+Deleted: docs/media.getCurrentPosition.md|0 176
+Deleted: docs/media.getDuration.md|0 167
+Deleted: docs/media.md|0 145
+Deleted: docs/media.pause.md|0 167
+Deleted: docs/media.play.md|0 200
+Deleted: docs/media.release.md|0 159
+Deleted: docs/media.seekTo.md|0 161
+Deleted: docs/media.setVolume.md|0 178
+Deleted: docs/media.startRecord.md|0 155
+Deleted: docs/media.stop.md|0 172
+Deleted: docs/media.stopRecord.md|0 142
+
+Revision: 6dcf413131caba3673d13078df148e1b89ab6b09
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 04:54:15
+Message:
+CB-5658 Add doc.index.md for Media plugin #MsgLength=42
+
+
+----
+Modified: README.md|21 4
+Added: doc/index.md|492 0
+
+Revision: 6988542d5d173df2a1e816fc2197bdfab125ffaf
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:02
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: 933b3a02bc79fb028ee72901d59beaa32ef73726
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.2.7 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: 0d7cc5f0520a8fabed0d07d16723e3d1159d32b9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 65890edf26a0887a5819ae2314b4293fdbfd7f3e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:47
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 60
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/media.html|0 71
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/.DS_Store|0 0
+Deleted: test/autotest/tests/media.tests.js|0 174
+Deleted: test/cordova-incl.js|0 86
+Deleted: test/index.html|0 64
+Deleted: test/main.js|0 162
+Deleted: test/master.css|0 164
+
+Revision: a8cd8f9925c82ebb90b9a75474d1259a79608963
+Author: Michael Hanselmann <public@hansmi.ch>
+Date: 15/01/2014 02:10:03
+Message:
+[CB-4755] Fix crash in Media.setVolume on iOS #MsgLength=597
+
+
+----
+Modified: src/ios/CDVSound.m|8 9
+
+Revision: 94e2a27f3d1f752dbdd682cb099fd435baa3e71e
+Author: Salvatore Iovene <salvatore@iovene.com>
+Date: 02/12/2013 16:56:48
+Message:
+Add preliminary support for Tizen. #MsgLength=35
+
+
+----
+Modified: plugin.xml|7 2
+Added: src/tizen/MediaProxy.js|202 0
+
+
+Revision: 2634912296c1213e47cd79203807b2c41daa1c0e
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:59
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.2.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: 18cdc257fd74e62242235b9dbfd81c46eb2b4cec
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:36:20
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-media #MsgLength=65
+
+
+----
+Added: doc/es/index.md|488 0
+
+Revision: ba498cba081122efc76616eff51687fb79bb9d4e
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:14:59
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-media #MsgLength=65
+
+
+----
+Added: doc/fr/index.md|488 0
+
+Revision: abbfdf3f2fa7017d2a51954be33817403a1652ae
+Author: Mark Bradshaw <mbradshaw@americanbible.org>
+Date: 29/01/2014 01:34:49
+Message:
+CB-5748 Make sure that Media.onStatus is called when recording is started. #MsgLength=75
+
+
+----
+Modified: src/ios/CDVSound.m|2 0
+
+Revision: c1c038c8149a1a0df7cf44aa98483cfa08d7f490
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:59
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.2.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: 63801287ca03a7d54f41341e4b4ea19a2ec1a9bf
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:30
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f96f2ac8cadfecf390a736fb94fe146b9bb0d4d8
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 22/02/2014 00:11:36
+Message:
+CB-6051: Update media plugin to work with new cdvfile:// urls #MsgLength=62
+
+
+----
+Modified: src/android/AudioHandler.java|7 2
+Modified: src/ios/CDVSound.m|17 1
+
+Revision: b365d09ec3f3c61f0922f3ba1d8c12ccf4300dab
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 22/02/2014 02:18:23
+Message:
+CB-6051: Android: Allow media plugin to handle invalid file locations #MsgLength=70
+
+
+----
+Modified: src/android/AudioHandler.java|18 4
+
+Revision: a92826de247b5c78096006c4a1abdc171f180f9c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 00:56:29
+Message:
+CB-6114 Updated version and RELEASENOTES.md for release 0.2.9 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+
+Revision: ea7b96bcca0c9d9b76aecd87be3e0a794bf3fdbc
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:45:10
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+
+Revision: 115307a5babf1ce7626d3220ec264d1f92d6bb26
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 01:29:15
+Message:
+CB-6114 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 25fb4922fb72365a02538a223c43d31814b533d1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+
+Revision: e504d6696cf5727e5df42b43fa0933ecf10f527a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/03/2014 04:13:41
+Message:
+CB-6225 - Media plugin does not specify a dependency on File plugin 1.0.1 #MsgLength=74
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: 29fa80ba5dfa27f5be4e254442d72037cf3ff71e
+Author: James Jong <wjamesjong@gmail.com>
+Date: 13/03/2014 01:41:36
+Message:
+CB-6212 iOS: fix warnings compiled under arm64 64-bit #MsgLength=54
+
+
+----
+Modified: src/ios/CDVSound.m|1 1
+
+Revision: c4aea36a1ce1befbecc35df873e24497874f4d45
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2014 07:31:27
+Message:
+CB-6422 [windows8] use cordova/exec/proxy #MsgLength=42
+
+
+----
+Modified: src/windows8/MediaProxy.js|1 1
+
+Revision: 1dec789fe20cda9e38e7595aee741d22af881bf1
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:19:21
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+
+Revision: 8ff445000b377ab0f08425a05f491438a5038fca
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 21:50:30
+Message:
+CB-6465: Add license headers to Tizen code #MsgLength=43
+
+
+----
+Modified: src/tizen/MediaProxy.js|21 0
+
+Revision: 19dd42984eb5232888c213182cdd2bede4a10bd7
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.2.10 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: plugin.xml|1 1
+
+Revision: 34887529db268f3436db27bb6be27eee90fddc9d
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 6d6ac196edc5e8f56b2b1025a4bdba9c901e5dee
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:32:44
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+
+Revision: 008591b75a5f0da0cd8105220af41e32b385c39e
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 21/04/2014 16:07:06
+Message:
+CB-6477: Add musicLibrary and microphone capabilities to windows 8 platform #MsgLength=76
+
+
+----
+Modified: plugin.xml|5 0
+
+
+Revision: 9c30fc20c1de8885518b6cc666ec27d3f66b79dc
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 21/04/2014 16:23:15
+Message:
+CB-6478: Fix exception when try to record audio file on windows 8 #MsgLength=66
+
+
+----
+Modified: src/windows8/MediaProxy.js|21 21
+
+
+Revision: d73911675f229d46ed05d3597ba236053e9b74b8
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 16/05/2014 22:49:39
+Message:
+CB-6706: Relax dependency on file plugin #MsgLength=41
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 10f5438146963e8c94eddf69cf626567b80ab06a
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:49:47
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-media #MsgLength=65
+
+
+----
+Added: doc/ja/index.md|488 0
+
+Revision: 400df60aa0659749bc4407e458e6d9421568b7d1
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:22:23
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-media #MsgLength=65
+
+
+----
+Added: doc/it/index.md|488 0
+Added: doc/ko/index.md|488 0
+Added: doc/pl/index.md|488 0
+Added: doc/zh/index.md|488 0
+
+Revision: 2fb46e23ba05501edc7cdea380f065ece2087cb7
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:36:50
+Message:
+documentation translation: cordova-plugin-media #MsgLength=48
+
+
+----
+Added: doc/de/index.md|488 0
+Modified: doc/ja/index.md|4 4
+
+Revision: eb31b31082beea6e4e18d0e01e362f4f54d3743c
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:32:53
+Message:
+CB-6807 Add license #MsgLength=20
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: f9be27984aa79b4c2cc1ff1b1e7af2419ee3f77d
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:36:20
+Message:
+CB-6127 Spanish and French Translations added. Github close #13 #MsgLength=64
+
+
+----
+Added: doc/de/index.md|488 0
+Added: doc/es/index.md|488 0
+Added: doc/fr/index.md|488 0
+Added: doc/it/index.md|488 0
+Added: doc/ja/index.md|488 0
+Added: doc/ko/index.md|488 0
+Added: doc/pl/index.md|488 0
+Added: doc/zh/index.md|488 0
+
+Revision: ee68987d3bba208540495ced4e0d3b586ebb5b51
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:43
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.2.11 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: plugin.xml|1 1
+
+Revision: 142f72b15f4a150b0f0167eb51ee0ecc610403ac
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 1b0405c43d0d6056a24ace80bcbceef8a4123f98
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 25/06/2014 21:48:36
+Message:
+code #s for MediaError #MsgLength=22
+
+
+----
+Modified: doc/index.md|4 4
+
+Revision: 40a60e0c7cb893db6e43ea564dac5363de875b7a
+Author: eworx <dev@eworx.gr>
+Date: 30/05/2014 21:57:55
+Message:
+ios: Make it easier to play media and record audio simultaneously #MsgLength=77
+
+
+----
+Modified: src/ios/CDVSound.m|4 1
+
+
+Revision: ca3ff60a7363e019379b0ef9b87942cf3d233ab2
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:27:59
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-media documentation translation: cordova-plugin-media #MsgLength=103
+
+
+----
+Modified: doc/de/index.md|4 4
+Modified: doc/es/index.md|4 4
+Modified: doc/fr/index.md|4 4
+Modified: doc/it/index.md|4 4
+Modified: doc/ja/index.md|4 4
+Modified: doc/ko/index.md|4 4
+Added: doc/ru/index.md|488 0
+Modified: doc/zh/index.md|4 4
+
+Revision: fda53f588b7e2ccefabaabc691abdec5f660ee53
+Author: javierbb31 <javier.becerra.ber@gmail.com>
+Date: 19/07/2014 03:34:08
+Message:
+CB-6963. Port media tests to plugin-test-framework #MsgLength=189
+
+
+----
+Modified: plugin.xml|3 0
+Added: test/tests.js|192 0
+
+Revision: 3317891cc7e2071a6e0ab81f223e2a9210ebb66f
+Author: Martin Gonzalez <martin.c.glez.glez@gmail.com>
+Date: 19/07/2014 05:51:58
+Message:
+CB-6963 Port Media manual & automated tests #MsgLength=1527
+
+
+----
+Modified: plugin.xml|0 3
+Modified: test/tests.js|638 66
+
+Revision: 25083fd4c51541015fe072a09724ceb780fd02c4
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 29/07/2014 03:49:49
+Message:
+added documentation for manual tests #MsgLength=37
+
+
+----
+Modified: test/tests.js|53 0
+
+Revision: bca398946dbab0f61c7c5dbd2c3be014d685d2d6
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 02/08/2014 04:24:10
+Message:
+CB-7249cordova-plugin-media documentation translation: cordova-plugin-media #MsgLength=76
+
+
+----
+Modified: doc/pl/index.md|4 4
+
+Revision: 52ca8690db6e5a566aa63151d92785d07245fa9b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:23
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.2.12 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: 96b343931e9a2dab677a79ff14a75b7d12481474
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:28
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 658d86b1b3c8f1d9a38e5b7dc5057875e5d203de
+Author: Martin Gonzalez <martin.c.glez.glez@gmail.com>
+Date: 01/08/2014 14:06:10
+Message:
+CB-6963 renamed folder to tests + added nested plugin.xml #MsgLength=58
+
+
+----
+Added: tests/plugin.xml|30 0
+Renamed: tests/tests.js [from test/tests.js]|0 0
+
+
+
+Revision: b2e92f93964f76bbec667dfdfe15caec435932b6
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:43
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.2.13 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1624c8aabe414d5ca975be02189f7036322c1e86
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:02
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 3b7c923dc425d544079125577f73257dd4fb8e81
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:17
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: 4ba6b139eb846b91ebd022409cc6b87acb913463
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 12/09/2014 19:10:59
+Message:
+CB-7531 Fixes play() failure after release() call #MsgLength=50
+
+
+----
+Modified: src/windows8/MediaProxy.js|8 1
+
+
+Revision: bd6aa6d92c0dedf35704af1bd3d9f1885d13b073
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 15/09/2014 18:11:27
+Message:
+CB-7547 Fixes audio recording on windows platform #MsgLength=50
+
+
+----
+Modified: doc/index.md|6 0
+Modified: src/windows8/MediaProxy.js|25 4
+Modified: tests/tests.js|20 3
+
+
+Revision: 33acd6fd0c4130fe6ea77b9438f99f31792a7b81
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 03/09/2014 18:53:18
+Message:
+CB-7454 Adds support for m4a audio format for Windows #MsgLength=54
+
+
+----
+Modified: src/windows8/MediaProxy.js|1 1
+
+
+Revision: 2660e925ab3a4926999333751819fdac017698f7
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 25/09/2014 14:36:02
+Message:
+CB-7638 Get audio duration properly on windows #MsgLength=47
+
+
+----
+Modified: src/windows8/MediaProxy.js|11 5
+
+Revision: bf42b0852cbee6c15eb168beba0253ddcdd9c50c
+Author: jarivas <joseantonio.rivasfernandez@gmail.com>
+Date: 29/09/2014 19:28:21
+Message:
+make possible plays wav file #MsgLength=28
+
+
+----
+Modified: src/windows8/MediaProxy.js|1 1
+
+Revision: 318c9cdc7c65a9691520aa788e45e00c22cc5911
+Author: Prabhjot Singh <prabhjos@amazon.com>
+Date: 25/09/2014 05:02:32
+Message:
+Amazon Specific changes: Added READ_PHONE_STATE permission same as done in Android #MsgLength=83
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: 35ab3af53910b32a9b84c410a72cf35d812d8a2b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 07:10:13
+Message:
+ Updated version and RELEASENOTES.md for release 0.2.14 #MsgLength=56
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 11beb0b896916eab19cedd4adab9ec0c99b14c14
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 08:09:47
+Message:
+ Incremented plugin version. #MsgLength=29
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: badb8b4edda89ac6cdeaa6dfbc7778398067aa77
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 20/09/2014 03:31:33
+Message:
+CB-7471 cordova-plugin-media documentation translation: cordova-plugin-media #MsgLength=77
+
+
+----
+Modified: doc/de/index.md|10 4
+Modified: doc/es/index.md|10 4
+Modified: doc/fr/index.md|12 6
+Modified: doc/it/index.md|10 4
+Modified: doc/ja/index.md|10 4
+Modified: doc/ko/index.md|10 4
+Modified: doc/pl/index.md|10 4
+Modified: doc/ru/index.md|10 4
+Modified: doc/zh/index.md|18 12
+
+Revision: d9dc810e6e77dfa2aab939307dd5aecb270b6318
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:12:45
+Message:
+CB-7700 cordova-plugin-media documentation translation: cordova-plugin-media #MsgLength=77
+
+
+----
+Modified: doc/de/index.md|11 11
+Modified: doc/es/index.md|33 33
+Modified: doc/pl/index.md|7 7
+Modified: doc/ru/index.md|19 19
+
+
+Revision: 5f652f4b49ea38986d6798053f0f0c02bba13d1e
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 05/11/2014 22:57:23
+Message:
+CB-7945 Made media.spec.15 and media.spec.16 auto tests green #MsgLength=62
+
+
+----
+Modified: tests/tests.js|5 3
+
+Revision: 52b547f90b4ba627615d3d95f36d8abc33f012b6
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:12:22
+Message:
+CB-7977 Mention deviceready in plugin docs #MsgLength=43
+
+
+----
+Modified: doc/index.md|9 0
+
+Revision: 27d24bbda74675f2302e5ce160661f3e59d022f4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/11/2014 23:31:29
+Message:
+CB-6153 android: Make volume buttons control music stream while any audio players are created #MsgLength=94
+
+
+----
+Modified: src/android/AudioHandler.java|35 30
+
+Revision: 54adcf1e3e349cb867eda5b9bcd039d2ce739c5a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/11/2014 00:03:16
+Message:
+CB-6153 android: Add docs for volume control behaviour, and fix controls not being reset on page navigation #MsgLength=108
+
+
+----
+Modified: doc/index.md|1 0
+Modified: src/android/AudioHandler.java|3 0
+
+Revision: b8088cd6c8d18c40829d466be72754e0310c7d7e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.2.15 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e752d54e4d5d1e23a9fb5968a36b18ec1a6be315
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:50
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ab6563aa2bc5b988fc0c3ff7f7c401c987a0d184
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2014 06:14:15
+Message:
+CB-8152 - Remove deprecated methods in Media plugin (deprecated since 2.5) #MsgLength=75
+
+
+----
+Modified: src/ios/CDVSound.h|0 3
+Modified: src/ios/CDVSound.m|0 46
+
+Revision: 4fb7b37a4e825868cae808caa807f8afbde194de
+Author: Jason Chase <jasonpchase@gmail.com>
+Date: 09/01/2015 04:04:51
+Message:
+CB-8252 Fire audio events from native via message channel (close #41) - Add startup logic to initialize a message channel for native -> Javascript - Applies only to android and amazon-fireos (as this reuses the android native code) - Change audio status events to send via plugin message channel, instead using eval() (i.e. webView.sendJavascript()) #MsgLength=350
+
+
+----
+Modified: src/android/AudioHandler.java|26 0
+Modified: src/android/AudioPlayer.java|48 16
+Modified: www/Media.js|21 0
+
+Revision: 60c2ce40c38082035356a3b202df3ec2258f70e5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/01/2015 22:49:20
+Message:
+CB-8351 Use argumentForIndex rather than NSArray extension #MsgLength=59
+
+
+----
+Modified: src/ios/CDVSound.m|16 16
+
+Revision: 590ef9a4d2c38364d430515482ca5e3f62636bf1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/01/2015 00:34:01
+Message:
+CB-8351 ios: Stop using (newly) deprecated CDVJSON.h #MsgLength=53
+
+
+----
+Modified: src/ios/CDVSound.m|6 3
+
+Revision: 10df21dea8640f71473383a27e65fccaa3c3fbc1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.2.16 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7a8314c3e61748b75410afa6dcd7c78b7e8df1e0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:02
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 52bccd048806e0943d644d3a5bb347520666b51f
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 05/02/2015 02:27:32
+Message:
+CB-8425 Media plugin .ctr: make src param required as per spec #MsgLength=63
+
+
+----
+Modified: tests/tests.js|10 10
+Modified: www/Media.js|1 1
+
+Revision: bae9b8cf42e90ced5d6b2f263732bcd72a2b0285
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 05/02/2015 02:38:08
+Message:
+CB-8426 Add Windows platform section to Media plugin #MsgLength=53
+
+
+----
+Modified: doc/index.md|4 4
+Modified: plugin.xml|13 1
+Renamed: src/windows/MediaProxy.js [from src/windows8/MediaProxy.js]|19 6
+
+Revision: fb45b2a01bedee3eb0262e722d330258c70b9a1b
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 04/02/2015 17:03:56
+Message:
+CB-8428 Fix multiple `done()` calls in media plugin test on devices where audio is not configured #MsgLength=116
+
+
+----
+Modified: tests/tests.js|17 10
+
+Revision: bcf17ef98597fb55e856852ba91fc5e210f8a1f3
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 11/02/2015 23:34:45
+Message:
+CB-8428 Fix tests on Windows if no audio playback hardware is available #MsgLength=72
+
+
+----
+Modified: src/windows/MediaProxy.js|6 2
+Modified: tests/tests.js|14 0
+
+Revision: f49b7403624c86585fe455c6cc10b9b617be0a5f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 16:41:53
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|41 0
+
+Revision: 7f98bfeebdd13dc6797ea701264ef5f6c4686603
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:51:51
+Message:
+CB-8438 cordova-plugin-media documentation translation: cordova-plugin-media #MsgLength=77
+
+
+----
+Modified: doc/de/index.md|23 12
+Modified: doc/es/index.md|69 163
+Modified: doc/fr/index.md|83 177
+Modified: doc/it/index.md|20 9
+Modified: doc/ja/index.md|19 8
+Modified: doc/ko/index.md|19 8
+Modified: doc/pl/index.md|20 9
+Modified: doc/zh/index.md|33 22
+
+Revision: 7c0a51009b1f1a39af0182c65ab10a1b8dd85fdf
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 09:02:44
+Message:
+CB-8572 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|13 0
+Modified: README.md|2 0
+
+Revision: f6c3d1f7f68b1c269c4d84bfd92c3e0aecf91ce6
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 13/03/2015 23:02:27
+Message:
+CB-8659: ios: 4.0.x Compatibility: Remove use of deprecated headers #MsgLength=68
+
+
+----
+Modified: src/ios/CDVSound.m|0 1
+
+Revision: 478ac90d5d6978fc0ea0cc89d5b0e17eae5cd403
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:32:02
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|488 2
+Deleted: doc/index.md|0 508
+
+Revision: a8b6f9e41f1359f97e5a67b4c8d5cb7c71a7fab6
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 27/01/2015 18:15:42
+Message:
+CB-7962 Adds browser platform support #MsgLength=38
+
+
+----
+Modified: README.md|2 0
+Modified: plugin.xml|8 0
+Added: www/browser/Media.js|259 0
+
+Revision: fd9b6fcb9c1d63109d3fe97dd52556420979cd55
+Author: Murat Sutunc <muratsu@microsoft.com>
+Date: 17/03/2015 07:59:57
+Message:
+CB-8686 - remove musicLibrary capability #MsgLength=41
+
+
+----
+Modified: plugin.xml|0 2
+
+Revision: 38f8e7156c2a2ace29c56c669b31e28deecd588b
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:39:50
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 42b10a224a1cd4f22ce461a8a6bf6fe9dafb56f1
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 31/03/2015 16:09:38
+Message:
+CB-8541 Adds information about available recording formats on Windows #MsgLength=70
+
+
+----
+Modified: README.md|2 0
+
+Revision: 6f873859c5589de48bf79b2937f1e996436f4dd4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:32
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: 85a5234e0a6d1cc706664cfe93a8855bf512d764
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:06:01
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: 6a0aa7c90106af00f944c7d61edbc6657dd5cb4e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 10:25:22
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: src/android/AudioPlayer.java|1 1
+Modified: src/ios/CDVSound.m|22 22
+Modified: src/tizen/MediaProxy.js|2 2
+Modified: src/windows/MediaProxy.js|2 2
+Modified: tests/plugin.xml|1 1
+
+Revision: a8c1b715e910ffd04ccb7393401525ef95434a5f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 14:23:02
+Message:
+CB-8747 updated dependency, added peer dependency #MsgLength=50
+
+
+----
+Modified: package.json|3 0
+Modified: plugin.xml|1 1
+
+Revision: 452cb3f8a4b929486a54e43cad4ea188739855db
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 14:28:25
+Message:
+CB-8747 added missing comma #MsgLength=28
+
+
+----
+Modified: package.json|1 1
+
+Revision: 700dbe04b0cdb7befc9d6d67aa9b4613f130995d
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 07/04/2015 16:24:33
+Message:
+CB-8779 Fixed media status reporting on wp8 #MsgLength=44
+
+
+----
+Modified: src/wp/AudioPlayer.cs|17 19
+Modified: src/wp/Media.cs|88 0
+Modified: www/Media.js|1 1
+
+Revision: bc5a2e72df23777b5cabfe7b2f6a4138ed3c98ae
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 08:01:37
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 9e89a5ef5de46efe5dceec77fdeddd23a2446dde
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 08:07:36
+Message:
+CB-8746 bumped version of file dependency #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 5d12df9c34a8e18e6e6736040dbd33841d06496e
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 14/04/2015 00:00:37
+Message:
+CB-8793 Fixed tests to pass on wp8 and windows #MsgLength=47
+
+
+----
+Modified: src/wp/AudioPlayer.cs|4 1
+Modified: tests/tests.js|93 86
+
+Revision: 4e1932828a19f32d44841000c0c46c89436dd955
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:38
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|24 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ca449e3b842d56a516cc6be443f37775ad0afb3b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:47
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2f225222612c396200f52a1a879e34c957d689d4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:31:09
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 12271f86339a6cde3fd8cbae93836240cdbf5c37
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: f04737ba42811086e5c4361e25be06bf6c0db3fb
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:22
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7d1fde0417369666247b3283d4243afad32e27cb
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 27/04/2015 17:36:22
+Message:
+CB-8793 Increased playback timeout in tests #MsgLength=44
+
+
+----
+Modified: tests/tests.js|1 1
+
+Revision: a4953675ac3faa6b7fa224ed18280efb216e2906
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 22/04/2015 17:50:19
+Message:
+CB-8888 Makes media status reporting on windows more precise #MsgLength=61
+
+
+----
+Modified: src/windows/MediaProxy.js|34 25
+
+Revision: 7a793cd45807cd6adadf535f344206485b06d1af
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 27/05/2015 23:21:52
+Message:
+CB-9079 Increased timeout for playback tests #MsgLength=63
+
+
+----
+Modified: tests/tests.js|2 1
+
+Revision: db7434e1469155268869ef8e7370d22922f7deae
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 02/06/2015 23:58:08
+Message:
+fix npm md issue #MsgLength=17
+
+
+----
+Modified: README.md|17 17
+
+Revision: 07136807f078a432c9dbe9057b11ff51741192c1
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:41:49
+Message:
+CB-9128 cordova-plugin-media documentation translation: cordova-plugin-media #MsgLength=77
+
+
+----
+Added: doc/de/README.md|509 0
+Added: doc/es/README.md|509 0
+Added: doc/fr/README.md|404 0
+Added: doc/it/README.md|509 0
+Added: doc/ja/README.md|509 0
+Added: doc/ko/README.md|509 0
+Added: doc/pl/README.md|509 0
+Added: doc/zh/README.md|509 0
+
+Revision: b110faab2a10b0804c3fb1e513075f2b3a828d60
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:04
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.0.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b3056343fc426a89e16fdd0101c969da4778bd1f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 950557ad84362b22af0407957f077121efebb3b0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:36
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 96b0a8485ce015b5fc09650fe47ae63e8965d50c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 07/07/2015 07:11:25
+Message:
+remove spontaneous integration tests #MsgLength=37
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 1
+
+Revision: c41a40dd05516ebe2f514dacd31c1f6090ada815
+Author: Alex Oshchepkov <alex.oschepkov@gmail.com>
+Date: 03/01/2015 07:54:25
+Message:
+Add Media.prototype.setRate method (only for iOS) #MsgLength=50
+
+
+----
+Modified: src/ios/CDVSound.h|3 0
+Modified: src/ios/CDVSound.m|29 0
+Modified: www/Media.js|8 0
+
+Revision: d9240dce05703982f9a49c0bbcbfbf7af46c6778
+Author: Alex Oshchepkov <alex.oschepkov@gmail.com>
+Date: 07/01/2015 04:32:31
+Message:
+Add iOS platform check in Media.prototype.setRate #MsgLength=50
+
+
+----
+Modified: www/Media.js|5 1
+
+Revision: 36e541971f1ee3ae6105d5616b2e85e56a6676ae
+Author: Alex Oshchepkov <alex.oschepkov@gmail.com>
+Date: 16/01/2015 08:05:03
+Message:
+Add iOS platform check in Media.prototype.setRate fix #MsgLength=54
+
+
+----
+Modified: www/Media.js|6 6
+
+Revision: b003c5bca9b5db0d9a38daaf6a52a9d891ac115b
+Author: Alex Oshchepkov <alex.oschepkov@gmail.com>
+Date: 23/01/2015 11:33:40
+Message:
+Added iOS platform media.setRate auto test #MsgLength=43
+
+
+----
+Modified: tests/tests.js|39 0
+
+Revision: 8c5159727700a6185c39a6c54b75a8cfc7f16a0f
+Author: Alex Oshchepkov <alex.oschepkov@gmail.com>
+Date: 23/01/2015 11:57:37
+Message:
+Added media.setRate auto test fix #MsgLength=34
+
+
+----
+Modified: tests/tests.js|2 0
+
+Revision: 062221e90883db49da05ad75f322ccea33433468
+Author: Alex Oshchepkov <alex.oschepkov@gmail.com>
+Date: 07/02/2015 03:49:33
+Message:
+Fix for @synthesize rate mistype #MsgLength=33
+
+
+----
+Modified: src/ios/CDVSound.m|1 2
+
+
+Revision: 66d0f27f741baa1be7a192354994cddc0d28d17a
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 11/07/2015 03:18:44
+Message:
+rate is enabled, otherwise media has to be stopped and started to change rate. Fixed error getting command args #MsgLength=112
+
+
+----
+Modified: src/ios/CDVSound.m|3 3
+
+Revision: 9175d5d322d6e603a4c8531a197d3f0d67fa50d0
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 11/07/2015 03:19:37
+Message:
+resolved conflicts, added manual test button to change audio playback rate. #MsgLength=76
+
+
+----
+Modified: tests/tests.js|26 28
+
+Revision: 5f8738c5267be70562df9714e6f3971790b37d19
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/07/2015 03:31:16
+Message:
+fix failing test with empty media src string #MsgLength=45
+
+
+----
+Modified: tests/tests.js|1 1
+
+Revision: 8cf9a96d9bbceb1141b7638347a2ee6bc685a4b6
+Author: daserge <daserge@yandex.ru>
+Date: 06/07/2015 23:52:08
+Message:
+CB-9238 Media plugin cannot record audio on windows #MsgLength=457
+
+
+----
+Modified: src/windows/MediaProxy.js|169 33
+Modified: tests/tests.js|4 1
+
+Revision: b992df38da74d7abc67bde3615edce034003c98f
+Author: daserge <daserge@yandex.ru>
+Date: 03/08/2015 23:28:06
+Message:
+CB-9237 Add cdvfile:// support to media plugin on windows platform #MsgLength=115
+
+
+----
+Modified: README.md|5 0
+Modified: src/windows/MediaProxy.js|23 0
+
+Revision: f977aa7c56a7cb50190dfbb393f09e3314b9f509
+Author: uareurapid <cristo.paulo@gmail.com>
+Date: 28/05/2015 06:21:24
+Message:
+fix record and play NullPointerException #MsgLength=41
+
+
+----
+Modified: src/android/AudioPlayer.java|18 4
+
+
+
+
+Revision: b4f1254c66a9c15c0a6a0254f7af0127000c08f4
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 03/09/2015 18:32:10
+Message:
+CB-9605 Fixes issue with playback resume after pause on WP8 #MsgLength=60
+
+
+----
+Modified: src/wp/AudioPlayer.cs|1 1
+Modified: tests/tests.js|38 0
+
+
+Revision: 9e137ccb4e60570cec09d405e5777f064354339e
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 03/09/2015 18:30:19
+Message:
+CB-9606 Fixes arguments parsing in `seekAudio` #MsgLength=47
+
+
+----
+Modified: src/wp/Media.cs|2 2
+Modified: tests/tests.js|28 0
+
+Revision: 4321b3f075c5864d349561c02c8e68e08714f438
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 04/09/2015 05:27:40
+Message:
+Cleanup pull requests. Close #23, Close #40, Close #55 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|1 0
+
+Revision: b1704a992a2a0861ed9d89fe56f10147841c48f0
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/09/2015 23:46:07
+Message:
+CB-9619 Fixed tests waiting for precise position #MsgLength=49
+
+
+----
+Modified: tests/tests.js|2 2
+
+Revision: 8e71a8053b138f076c6f67349ce23d0f09ad660d
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: bba9a7e3038a253f04c2aed07cbb312dc000ef02
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:50
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: ec1e9ba6422c6e596e710e220102b85ccf5546fb
+Author: Joe Bowser <bowserj@apache.org>
+Date: 25/09/2015 02:17:39
+Message:
+Adding engine tag #MsgLength=18
+
+
+----
+Modified: plugin.xml|4 1
+
+Revision: c4547c94c5850c619b0936551ec1180f4465a95b
+Author: Joe Bowser <bowserj@apache.org>
+Date: 25/09/2015 06:46:24
+Message:
+Adding the media permissions code #MsgLength=34
+
+
+----
+Modified: src/android/AudioHandler.java|86 2
+
+Revision: 8dd328d719df93e57c46727f4fe6cd753de2045c
+Author: Joe Bowser <bowserj@apache.org>
+Date: 01/10/2015 03:44:40
+Message:
+Refactored after feedback #MsgLength=26
+
+
+----
+Modified: src/android/AudioHandler.java|11 29
+
+Revision: 1d1aae0c2cc7d0013df9e56d88d072fce77f7d59
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|94 96
+
+Revision: 2c2bb6b34087db7fbe98bb9ef43891dbff5887aa
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:10
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: ef2e7c62e28bdb5acde5e8e8ca5b7e92feec648a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:05
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 2.0.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|14 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 229ba599b7d8eab1f4669075a398a6344c484bc2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|75 75
+
+Revision: 8c74615113e9fc6c224b27445aee48659bcfc9ce
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 20/11/2015 07:23:30
+Message:
+Fix block usage of self #MsgLength=24
+
+
+----
+Modified: src/ios/CDVSound.m|18 15
+
+Revision: 1a9367d0611d747cfa5286f4eac54e0a9de5a17c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8074d73f46457b35c33745a9f13c92697635345c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 10:24:45
+Message:
+CB-10100 updated file dependency to not grab new majors #MsgLength=56
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 8ae0841d0a6a13b38752693845f7e510512824eb
+Author: ghenry22 <ghenry22@gmail.com>
+Date: 28/10/2015 11:28:52
+Message:
+fix CB-9884 & CB-9885 #MsgLength=167
+
+
+----
+Modified: src/windows/MediaProxy.js|6 2
+
+Revision: e24e240b5da2cb145f4919b8d30caeb2ca448dbd
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:29:21
+Message:
+add JIRA issue tracker link #MsgLength=28
+
+
+----
+Modified: README.md|3 1
+
+Revision: 7a401d9660c7e4644d526d23563886835b138866
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 02/12/2015 04:45:44
+Message:
+Merged: Close #68, Close #74. #62 addresses the following : Closes #18, Closes #12. #MsgLength=84
+
+
+----
+
+Revision: f21a2815fba843cb7a8f414f35208424b892e232
+Author: John C. Bland II <johncblandii@gmail.com>
+Date: 05/08/2015 12:55:27
+Message:
+CB-9452: Treat RTSP streams as remote URLs #MsgLength=43
+
+
+----
+Modified: src/android/AudioPlayer.java|1 1
+
+Revision: e543c12184444f50f704e26a2c798f2de02b47ff
+Author: Glen Baker <iepathos@gmail.com>
+Date: 23/10/2015 12:14:40
+Message:
+Fixed example referencing non-existent variable #MsgLength=136
+
+
+----
+Modified: README.md|1 1
+
+Revision: 855a57d97da66c990f3c62d1495158b9adf28dc1
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 02/12/2015 08:35:35
+Message:
+Merged. Close #68. Close #74. #MsgLength=30
+
+
+----
+
+Revision: 5f7b40e8fd6a848ababaf33a0913e83c0c231007
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 02/12/2015 08:36:57
+Message:
+Merged. Close #63. Close #73. #MsgLength=30
+
+
+----
+
+Revision: 871bf29a4a77675ecfa43bf573ac6ba13bbb9d6d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:35:05
+Message:
+CB-10368 Updated version and RELEASENOTES.md for release 2.1.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d901a71b6f96903cd811540a0796d3fdfb90c00f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:58:32
+Message:
+CB-10368 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 00ddb9372bf4c9b96ccea0dbd285499df1809277
+Author: ghenry22 <ghenry22@gmail.com>
+Date: 29/07/2015 15:14:59
+Message:
+Streaming & Background threading on play #MsgLength=293
+
+
+----
+Modified: src/ios/CDVSound.m|116 30
+
+Revision: db918c1e51fd26766350fec5b88632d958caa495
+Author: ghenry22 <ghenry22@gmail.com>
+Date: 29/07/2015 15:26:10
+Message:
+updates to CDVSound.h for AVPlayer #MsgLength=35
+
+
+----
+Modified: src/ios/CDVSound.h|4 3
+
+Revision: 31d53623b4b0cb8b5f7cd738334ac2098a864db3
+Author: ghenry22 <ghenry22@gmail.com>
+Date: 13/10/2015 08:40:27
+Message:
+fix getDuration() returns 0 #MsgLength=28
+
+
+----
+Modified: src/ios/CDVSound.m|3 3
+
+Revision: 6f3727c63d753cfdff15962c5f2132bac4bc47ac
+Author: ghenry22 <ghenry22@gmail.com>
+Date: 13/10/2015 08:59:57
+Message:
+Implement stop() for avplayer for compliance #MsgLength=177
+
+
+----
+Modified: src/ios/CDVSound.m|11 1
+
+Revision: 4e76ca026510cee6d297487c47bbbbee7881b37d
+Author: ghenry22 <ghenry22@gmail.com>
+Date: 13/10/2015 09:06:37
+Message:
+increment version #MsgLength=18
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 45afc8a4f82fe781a088f9268856b59afcc61886
+Author: ghenry22 <ghenry22@gmail.com>
+Date: 13/10/2015 09:16:29
+Message:
+completion handler for stop(); #MsgLength=60
+
+
+----
+Modified: src/ios/CDVSound.m|3 2
+
+
+Revision: 4dcdb829276b231566109c023a272994aa6b514e
+Author: Gaven Henry <ghenry22@gmail.com>
+Date: 21/01/2016 14:20:14
+Message:
+add rate support to avPlayer implementation on ios #MsgLength=51
+
+
+----
+Modified: src/ios/CDVSound.m|10 2
+
+Revision: e7f9f0482eb9304fe58599b6307d06c363dcff36
+Author: Gaven Henry <ghenry22@gmail.com>
+Date: 21/01/2016 15:32:48
+Message:
+rate fix #MsgLength=9
+
+
+----
+Modified: src/ios/CDVSound.m|5 3
+
+Revision: 6835e6aab5de98f35fe933554546e4b3e9b0a17c
+Author: Gaven Henry <ghenry22@gmail.com>
+Date: 21/01/2016 15:48:03
+Message:
+Revert "rate fix" #MsgLength=81
+
+
+----
+Modified: src/ios/CDVSound.m|3 5
+
+Revision: 90f462302ef987ed7cc7b377da49425273c3a70c
+Author: Gaven Henry <ghenry22@gmail.com>
+Date: 21/01/2016 16:49:14
+Message:
+rate control working #MsgLength=157
+
+
+----
+Modified: src/ios/CDVSound.m|5 0
+
+
+Revision: 5612109b925fb4432ff7ab387daa114bd239979c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 30/01/2016 07:47:48
+Message:
+Fixed incorrectly written test #MsgLength=31
+
+
+----
+Modified: tests/tests.js|7 4
+
+Revision: f0a82b18958fd5291239854ac56ff2c3ff0873d1
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 06/02/2016 01:57:08
+Message:
+CB-10455 android: Adding permission helper to remove cordova-android 5.0.0 constraint #MsgLength=86
+
+
+----
+Modified: plugin.xml|10 12
+Modified: src/android/AudioHandler.java|5 5
+Added: src/android/PermissionHelper.java|138 0
+
+Revision: 412a39db5611c41c4ad8956c33afc52776dd5b54
+Author: t1st3 <contact@tiste.org>
+Date: 08/02/2016 01:32:30
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=259
+
+
+----
+Modified: package.json|1 1
+
+Revision: 597e998d1ebe75bfefa933a56d42006f1a309a8c
+Author: Jeffrey Chang <jeffrey@stiteq.com>
+Date: 29/01/2016 21:13:59
+Message:
+CB-10476 - fix problem where callbacks were not invoked on android due to messageChannel being overridden by callbackContext in every execut() call. This closes #78 #MsgLength=165
+
+
+----
+Modified: src/android/AudioHandler.java|0 1
+
+Revision: e9df2cbfb3c456e0b95c6e66df569699b7e5f9ff
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/02/2016 16:43:37
+Message:
+CB-10557 Updated version and RELEASENOTES.md for release 2.2.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7bb5a37a6931abb30c88c26a541c619357d0c12a
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/02/2016 17:44:03
+Message:
+CB-10557 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 50d9440d8f34578cdccb33927efcb3d12fe39f3a
+Author: Omar Mefire <omefire@gmail.com>
+Date: 10/02/2016 07:30:45
+Message:
+CB-10535: Fix CI crash caused by media plugin: 1- [iOS] Only perform 'seek' operation if both avPlayer and avPlayerItem are ready, send error to client code if they aren't ready. 2- Deplay Media File Playing by a few seconds so that 'seek' operation happens only after enough buffering has been done. #MsgLength=323
+
+
+----
+Modified: src/ios/CDVSound.m|23 14
+Modified: tests/tests.js|18 8
+
+Revision: 3fe3a300969720919499d9ad0882eaec00f7ba20
+Author: daserge <v-seshak@microsoft.com>
+Date: 29/02/2016 23:18:57
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Modified: .gitignore|1 1
+Added: .jshintrc|17 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/blackberry10/index.js|2 0
+Modified: src/tizen/MediaProxy.js|3 2
+Modified: src/windows/MediaProxy.js|11 7
+Modified: tests/tests.js|11 9
+Modified: www/Media.js|17 10
+Modified: www/browser/Media.js|49 41
+
+Revision: cca41620d4e1370a1c81f60cf3172916f6772b2f
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 01/03/2016 06:56:05
+Message:
+CB-10720: Fixing README for display on Cordova website #MsgLength=72
+
+
+----
+Modified: README.md|2 6
+
+Revision: 65aa29a6dba9af9f293761a055a22c6b72b7a37d
+Author: Omar Mefire <omefire@gmail.com>
+Date: 17/03/2016 05:33:45
+Message:
+Dummy commit, to initiate a CI run on ci.cordova.io #MsgLength=52
+
+
+----
+Modified: www/Media.js|1 0
+
+Revision: 9b2e3ae65913ab6f6d7fe2fead5d6ff0b38e105d
+Author: Omar Mefire <omefire@gmail.com>
+Date: 17/03/2016 12:51:29
+Message:
+Dummy commit, to initiate a CI run on ci.cordova.io #MsgLength=52
+
+
+----
+Modified: www/Media.js|0 1
+
+Revision: 46c9542dec736f93d5f547c7dfdce1a8123d7c06
+Author: Omar Mefire <omefire@gmail.com>
+Date: 24/03/2016 01:35:12
+Message:
+Dummy commit to trigger build on ci.cordova.io #MsgLength=47
+
+
+----
+Modified: www/Media.js|1 1
+
+Revision: e5b663ac951b2d8cb2e5e470d2c7072aa56cf779
+Author: Gaelen Hadlett <gaelenh@gmail.com>
+Date: 03/03/2016 09:26:32
+Message:
+iOS audio should handle naked local file sources #MsgLength=299
+
+
+----
+Modified: src/ios/CDVSound.m|3 3
+
+Revision: 3706b757679d1470cb7a02a09c92e6faf52687b9
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/03/2016 05:54:20
+Message:
+CB-9487: Support getting amplitude for recording #MsgLength=49
+
+
+----
+Modified: README.md|43 0
+Modified: src/android/AudioHandler.java|16 1
+Modified: src/android/AudioPlayer.java|22 3
+Modified: src/ios/CDVSound.h|2 1
+Modified: src/ios/CDVSound.m|51 12
+Modified: tests/tests.js|19 12
+Modified: www/Media.js|9 1
+
+Revision: 914d6edc08133ca9546818e9366b497b610ccbaf
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 26/03/2016 06:05:03
+Message:
+CB-10783: Modify expected position to be in a proper range.This closes #89 #MsgLength=75
+
+
+----
+Modified: tests/tests.js|3 2
+
+Revision: cc4a6d3c2b79502559842dd9f79662eaa1dd8215
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 06/04/2016 00:08:53
+Message:
+Replace PermissionHelper.java with cordova-plugin-compat #MsgLength=57
+
+
+----
+Modified: plugin.xml|1 1
+Modified: src/android/AudioHandler.java|1 0
+Deleted: src/android/PermissionHelper.java|0 138
+
+Revision: eb110283ec4fa2b9d9f77e38c21a06bbf5a14cf9
+Author: Fabrice Lebas <fabrice.lebas@gmail.com>
+Date: 24/03/2016 20:28:20
+Message:
+Request audio focus when playing; Pause audio when audio focus is lost; resume playing when audio focus is granted again. #MsgLength=139
+
+
+----
+Modified: src/android/AudioHandler.java|55 2
+
+Revision: 79f623264eae0e6813a2147533dd389eda14f455
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:27
+Message:
+ Updated version and RELEASENOTES.md for release 2.3.0 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|10 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ad46618c6c7a7e4bdc6d2a3dfde97f63680eb337
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:27
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4dc8ead863cec9137a4ded910ffef93da9ee250a
+Author: Omar Mefire <omefire@gmail.com>
+Date: 22/04/2016 10:49:21
+Message:
+Dummy commit to trigger CI run #MsgLength=31
+
+
+----
+Modified: package.json|1 1
+
+Revision: 16729db8276d071ed98987c7c5d7c15405e7101a
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:51
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: e4e30ae9e98df22486c3f99060a5939ad9514c2c
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 07/04/2016 00:21:43
+Message:
+CB-9487: Don't update position when getting amplitude #MsgLength=54
+
+
+----
+Modified: src/ios/CDVSound.m|0 3
+
+Revision: b1ef73d157e6ee56ee235471cc11dca7bcd8af2a
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 07/04/2016 00:07:36
+Message:
+CB-10776: Add the ability to pause and resume an audio recording (iOS) #MsgLength=71
+
+
+----
+Modified: README.md|86 0
+Modified: src/ios/CDVSound.h|2 0
+Modified: src/ios/CDVSound.m|41 0
+Modified: tests/tests.js|21 7
+Modified: www/Media.js|14 0
+
+Revision: a3e639bf995a74ea3ee84d7deb7009cc777791a6
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 08/04/2016 09:40:50
+Message:
+CB-10776: Add the ability to pause and resume an audio recording (Android) #MsgLength=75
+
+
+----
+Modified: src/android/AudioHandler.java|22 4
+Modified: src/android/AudioPlayer.java|99 18
+
+Revision: 0f924769f6908e80641a79562bebbc98891598f9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 28/04/2016 07:18:09
+Message:
+CB-11165 removed peer dependency #MsgLength=33
+
+
+----
+Modified: package.json|0 3
+
+Revision: 3708e1f2db73ec2158804d7c4659f75b6b1e1365
+Author: Omar Mefire <omefire@gmail.com>
+Date: 04/05/2016 00:59:57
+Message:
+Dummy commit to trigger CI run #MsgLength=31
+
+
+----
+Modified: package.json|1 1
+
+Revision: 1cbc49604cc734092bdccc69a311d08157fd43d0
+Author: Omar Mefire <omefire@gmail.com>
+Date: 04/05/2016 02:27:58
+Message:
+Dummy commit to trigger CI run #MsgLength=31
+
+
+----
+Modified: package.json|1 1
+
+Revision: c8505a6a5139fd60ffc2a7a77c7c5557826fa5c7
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 19/05/2016 03:08:06
+Message:
+Readme: Add fenced code blocks with langauage hints #MsgLength=52
+
+
+----
+Modified: README.md|276 255
+
+Revision: 1425fec9b209c3a1e455ea3436b9ce7300f49d77
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:53:59
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: e8d41da684e25f880978ed3485198d4dd2613e96
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 08/06/2016 08:56:37
+Message:
+CB-11313: Can't start media streaming on Android 6.0 #MsgLength=53
+
+
+----
+Modified: src/android/AudioPlayer.java|3 1
+
+Revision: e58211271c1b6b451c29e4c585d965870ceb8d48
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 08/06/2016 09:41:29
+Message:
+CB-11313: Can't start media streaming on Android 6.0 (test case) #MsgLength=65
+
+
+----
+Modified: tests/tests.js|28 0
+
+Revision: f8cae719c38b762288d5ee9e8895fd15b14e6cf0
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 17:07:28
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|3 1
+
+Revision: f206e96d50d5bddc88b1e8775f3e5960fa78182f
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 21/06/2016 07:16:50
+Message:
+CB-11458 - media.spec.25 'should be able to play an audio stream' fails on iOS platform #MsgLength=88
+
+
+----
+Modified: src/ios/CDVSound.m|4 0
+
+Revision: 804aa6a2deb7a34c649230834b04b2b4b232b401
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 21/06/2016 16:42:03
+Message:
+CB-11430 Skip audio playback tests on Saucelabs #MsgLength=153
+
+
+----
+Modified: tests/tests.js|11 3
+
+Revision: 6877c78d6c8dc8f4475623d1cd32232e0b63d259
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 22/06/2016 19:08:02
+Message:
+CB-11429 Update test stream URL #MsgLength=32
+
+
+----
+Modified: tests/tests.js|2 1
+
+Revision: cd185eaa4f020abbc6dbcd8dcc3ce63c54a6b868
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 17/06/2016 21:53:29
+Message:
+CB-11430 Report duration NaN value to JS properly #MsgLength=68
+
+
+----
+Modified: src/ios/CDVSound.m|8 7
+
+Revision: 17fc9f3dd66970f32f9f474ac00de93b5b060aa1
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 22/06/2016 22:35:49
+Message:
+Update spec.24 expectations to be more descriptive #MsgLength=51
+
+
+----
+Modified: tests/tests.js|2 1
+
+Revision: ae8b3567d2400ad6398ff11df2dc600585919e60
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 12/08/2016 23:37:23
+Message:
+CB-11655 (Android) Enabled asynchronous error handling #MsgLength=55
+
+
+----
+Modified: src/android/AudioPlayer.java|8 5
+
+Revision: 0bcd5e3027b8792dc3b29ada50536e505d57fe2b
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 23/08/2016 04:46:31
+Message:
+Plugin uses Android Log class and not Cordova LOG class #MsgLength=56
+
+
+----
+Modified: src/android/AudioHandler.java|2 2
+Modified: src/android/AudioPlayer.java|22 21
+
+Revision: 4d7aabb74a39bdfad0969915377e73106803cdf8
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 24/08/2016 17:29:51
+Message:
+CB-11086 (Android) Fixed a crash when setVolume() is called on unitialized audio This closes #93 #MsgLength=97
+
+
+----
+Modified: src/android/AudioPlayer.java|6 1
+Modified: tests/tests.js|33 8
+
+Revision: 2491782b544230046f090ae7bc964d9f208a7c69
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 24/08/2016 23:34:19
+Message:
+CB-11754 (Android) Fixed the build error #MsgLength=41
+
+
+----
+Modified: src/android/AudioPlayer.java|1 1
+
+Revision: 948fe35979e9985cc0df3039eb51fae108a8605f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 22/08/2016 21:43:20
+Message:
+CB-10849 (ios) Fixed a crash when playing soundfiles consecutively #MsgLength=67
+
+
+----
+Modified: src/ios/CDVSound.m|13 8
+
+Revision: 910d3c798f77c63165be508125ec313e4104b541
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 25/08/2016 19:21:41
+Message:
+CB-11380 (ios) Fixed an unexpected error callback when initializing Media with file that doesn't exist #MsgLength=103
+
+
+----
+Modified: src/ios/CDVSound.m|5 5
+Modified: tests/tests.js|12 19
+
+Revision: 42b279b911c4b20689290f55ecb849905d3f1673
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/08/2016 22:06:07
+Message:
+CB-11380 (ios) Updated modified method signature in the .h file #MsgLength=64
+
+
+----
+Modified: src/ios/CDVSound.h|1 1
+
+Revision: bbb78431256c84a76939040fd7ae76f970887617
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 27/08/2016 02:31:29
+Message:
+Closing invalid pull request: close #104 #MsgLength=41
+
+
+----
+
+Revision: 0405a2ee2bfc7520e121e50483b2b5310e5e66bd
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 27/08/2016 02:41:51
+Message:
+CB-11380 (ios) Overloaded audioFileForResource method instead of modifying its signature #MsgLength=89
+
+
+----
+Modified: src/ios/CDVSound.h|1 0
+Modified: src/ios/CDVSound.m|8 2
+
+Revision: 22f99bcc8f7ab98d3115fb06f7deb0abfab8d84c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/08/2016 17:48:50
+Message:
+CB-11757 (ios) Error out if trying to stop playback while in a wrong state #MsgLength=75
+
+
+----
+Modified: src/ios/CDVSound.h|1 0
+Modified: src/ios/CDVSound.m|4 1
+Modified: tests/tests.js|56 8
+
+Revision: 1dc6ecfbb4473401bdafd2ae4271da9a0b45ad7e
+Author: sanjeewa894 <sanjeewaapp@gmail.com>
+Date: 24/08/2016 01:44:29
+Message:
+CB-11085 Fix error output using println to LOG.e #MsgLength=67
+
+
+----
+Modified: src/android/AudioHandler.java|9 3
+
+Revision: 52f52b453e76812b2fb3a2114aa571f988b3829f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/09/2016 02:35:17
+Message:
+CB-11793 fixed android build issue with last commit #MsgLength=52
+
+
+----
+Modified: src/android/AudioHandler.java|3 3
+
+Revision: 62d896a4853acfa36ac9caf5be7a8512fd13fd70
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 22:33:54
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=398
+
+
+----
+Modified: package.json|8 1
+
+Revision: 978c038603dd6ebfbb139e9bf0fd3218c549ca68
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:54
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 2.4.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|35 8
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 0a5a72df42ddd91c50f2a36d0c58408c3b43a9fd
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4e36c0dc324ed63a786cdc7ecef5f545b9a6357a
+Author: Nikita Matrosov <nikita.matrosov@rp.ru>
+Date: 12/08/2016 17:43:10
+Message:
+CB-11529 ios: Make available setting volume for player on ios device #MsgLength=88
+
+
+----
+Modified: src/ios/CDVSound.m|9 0
+Modified: tests/tests.js|31 1
+
+Revision: 6f28f9438891efb6e228bc54e2d45e8a17d641bb
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:23:00
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=102
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: f0a0bb8f3c5bd05370dcc383a2a618d234148984
+Author: Julio Cesar Sanchez Hernandez <jcesarmobile@gmail.com>
+Date: 30/10/2016 05:38:54
+Message:
+CB-12034 (ios) Add mandatory iOS 10 privacy description #MsgLength=75
+
+
+----
+Modified: README.md|11 3
+Modified: plugin.xml|30 26
+
+Revision: f0a6d4512002176adae1a7cc4d58b6d6a0b06722
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:46
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 2.4.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|251 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f4d8a0ba61d9f3f0ef1b43c73a12df6bc27b71d9
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:08
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a17f916cc4c03755dcbaa0db2fa6d5e05569b12f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 18:39:56
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: c17c0f5f70563b6d487b8c339f0585402db7d551
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:55:18
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-media #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|1 245
+
+Revision: 3357a6347c681cdcafcfaa795b75fd8356a720d7
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:36:54
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: bc16dfd7cfbe4c62d06966167d006874468671bc
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 21:09:39
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=69
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|84 0
+
+Revision: 3045bca2d2a804df48b833dcd16f24f440d4430e
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/01/2017 00:26:47
+Message:
+CB-12353 Corrected merges usage in plugin.xml #MsgLength=46
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: cd2f95b3f3050588e941e191813e28222e720361
+Author: ghenry22 <ghenry22@gmail.com>
+Date: 07/09/2016 09:37:59
+Message:
+CB-1187: (iOS) Fix unused recording settings #MsgLength=64
+
+
+----
+Modified: src/ios/CDVSound.m|1 1
+
+Revision: 822b514649fae900dfdc28248b18e81642967906
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 01/02/2017 13:12:46
+Message:
+CB-12411: Stoping a Paused Recording throws illegal state exception #MsgLength=68
+
+
+----
+Modified: src/android/AudioPlayer.java|1 0
+
+Revision: fcf8bc591c742b89bb50deb4fd8245cad1bc388e
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 10/02/2017 06:49:10
+Message:
+CB-12434 (Android) fix Stoping a Paused Recording throws exception #MsgLength=86
+
+
+----
+Modified: src/android/AudioPlayer.java|3 1
+
+Revision: 55d457bf61bd10de07075b5c21701e0029705064
+Author: corinne krych <corinnekrych@gmail.com>
+Date: 15/02/2017 01:06:21
+Message:
+CB-12422: (iOS) Fix readme issue on background needed plist modification #MsgLength=92
+
+
+----
+Modified: README.md|5 2
+
+Revision: c6c59cc0a6ae44671fe69766c04e44ba18606239
+Author: happy2discover <happy2discover@users.noreply.github.com>
+Date: 05/01/2017 13:37:04
+Message:
+Make the output file of Android an acc file. #MsgLength=203
+
+
+----
+Modified: src/android/AudioPlayer.java|2 2
+
+Revision: 07767a5a7c8085666168fb2bbc5bfc4865e577dc
+Author: happy2discover <happy2discover@users.noreply.github.com>
+Date: 16/01/2017 17:55:31
+Message:
+Add engine tag for checking "cordova-android" #MsgLength=108
+
+
+----
+Modified: plugin.xml|4 0
+
+Revision: beba3dc4ff40a329e403d7f594da2145945f5119
+Author: happy2discover <happy2discover@users.noreply.github.com>
+Date: 16/01/2017 18:02:44
+Message:
+Update for format of Android #MsgLength=104
+
+
+----
+Modified: README.md|1 1
+
+Revision: 112ef96203c9280ceda0788d066c76bb42e5cda7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/02/2017 07:01:10
+Message:
+major version bump, added cordovaDependencies requirement for cordova-android>=6.1.0 #MsgLength=85
+
+
+----
+Modified: package.json|5 2
+Modified: plugin.xml|1 1
+
+Revision: cc4d641b9f24643f07263b24a88621367102a188
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 22/02/2017 19:21:44
+Message:
+CB-12493 (Tests) Fixed spec.21 flakyness #MsgLength=41
+
+
+----
+Modified: tests/tests.js|2 1
+
+Revision: 88a69305eb7f2e7c03481f951a1d349f2a8b4ad0
+Author: Frank Koenigstein <frank.koenigstein@dff-solutions.de>
+Date: 17/11/2016 16:26:31
+Message:
+fix(android): java.lang.NullPointerException on resumeAllGainedFocus #MsgLength=88
+
+
+----
+Modified: .gitignore|5 2
+Modified: src/android/AudioHandler.java|1 1
+Modified: src/android/AudioPlayer.java|8 1
+
+Revision: 41c208005430c17bcecde60fea6966da5d8e4132
+Author: Tommi Ketola <tommi@keto.la>
+Date: 21/02/2017 18:33:21
+Message:
+(android) Fix NullPointerException in AudioPlayer.readyPlayer #MsgLength=81
+
+
+----
+Modified: src/android/AudioPlayer.java|1 1
+
+Revision: a66cf93e9d15e45207fc52b60969f9d872e106c8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:27
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 3.0.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|16 0
+Modified: package.json|1 1
+Modified: plugin.xml|131 192
+Modified: tests/plugin.xml|5 29
+
+Revision: 8c2de08152a7a8fb896bbb0a782abec730241bcb
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:56:00
+Message:
+Set VERSION to 3.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|192 131
+Modified: tests/plugin.xml|29 5
+
+Revision: 0e92567cc4b2cedf0777c7a14a7012ab13c5fc33
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 10:22:00
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: e2104d0d148c103b04da87aad61238c791bcb7f8
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/04/2017 09:01:45
+Message:
+Close #136 #MsgLength=11
+
+
+----
+
+Revision: 42d0e68c2acde5075f8e0572db5e42b84ca69d27
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/04/2017 09:03:10
+Message:
+Close #135 #MsgLength=11
+
+
+----
+
+Revision: 6905c56db7b43510526f163e6c86acea3aad5304
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/04/2017 09:05:28
+Message:
+Close #133 #MsgLength=11
+
+
+----
+
+Revision: 3353eac01b4a47ba14526011e66a31be8e57115c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 21:10:40
+Message:
+CB-12622 Added Android 6.0 build badges to README #MsgLength=50
+
+
+----
+Modified: README.md|3 3
+
+Revision: b61d97cd718f989f4b16fa3ee52c5c0095538008
+Author: Leo Schubert <ls@4js.com>
+Date: 11/03/2017 17:49:28
+Message:
+CB-12542: (ios) Fix wav file recording, add m4a extension. make IOS status handling compatible with Android/Windows #MsgLength=354
+
+
+----
+Modified: README.md|1 1
+Modified: src/ios/CDVSound.h|3 1
+Modified: src/ios/CDVSound.m|93 92
+
+Revision: 2a1ee432c56e068421dc2101b78b8e0a68e751ab
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:01:42
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 3.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: aba49b5cc542679feb5eaea9ba286c226dd825c7
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:01:51
+Message:
+Set VERSION to 3.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: bd282b3e3be528f01e1a790537d4061d0d3d5da5
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 18:43:33
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: b05c66c51f29cd31fda0f2ca58a04ea47da9af7c
+Author: Guilherme Dellagustin <dellagutin@gmail.com>
+Date: 08/06/2017 04:02:52
+Message:
+Fixed link to issue tracker #MsgLength=28
+
+
+----
+Modified: README.md|1 1
+
+Revision: a3eaa6746786329dae7ab95f722773873a4e55b3
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/04/2017 20:37:26
+Message:
+CB-12671 iOS: Fix auto-test with stopping media that is in starting state #MsgLength=74
+
+
+----
+Modified: tests/tests.js|1 1
+
+Revision: bd4d637f81360bec6cf60331ad7df1dd0bebf14d
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/06/2017 19:27:55
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Modified: .travis.yml|70 3
+
+Revision: 78e43e7559e38183598c295cfcfdfe37b5bc48ea
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/06/2017 19:56:14
+Message:
+Close #145 #MsgLength=11
+
+
+----
+
+Revision: 4286c7b29ba2bc5c197105e02dead198f8b19ca9
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:32:01
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: 0489db99d2585da8a9ef3969648513c3047a787c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 15:59:33
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: 3ea7d579993a7a22b7c16352eab4f2a52dcd8186
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 16:20:30
+Message:
+CB-12991: (CI) Fix the wrong CI badges #MsgLength=39
+
+
+----
+Modified: README.md|1 1
+
+Revision: 5416e06d14504aa3587b6b1d597940118663f2c8
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:34:32
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: 02ff105d1399c090fca87ddc63665e29b9e2a2b4
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 28/07/2017 15:09:43
+Message:
+CB-13028 (CI) Browser builds on Travis and AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|3 2
+Modified: .travis.yml|16 0
+Modified: tests/tests.js|5 3
+Modified: www/browser/Media.js|29 3
+
+Revision: cf49d7ef02a399dddc5811b9799c1481de62b2b9
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:06:41
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 73dc42ab54897a42c9a44e07ce9ba00138002b8a
+Author: Kelvin Dart <kelvin.dart@crimsontide.co.uk>
+Date: 18/10/2017 23:52:44
+Message:
+CB-13294 Remove cordova-plugin-compat #MsgLength=57
+
+
+----
+Modified: package.json|4 4
+Modified: plugin.xml|2 3
+
+Revision: 94388096c8b96a6562e00d2db039bc240988b095
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:59:09
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 2d67c048fcfe79aed446c310409c42da5da08321
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 15:22:53
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: ba1fa6cd2cd53c1764585bd93c3cbe7d10b837d8
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 01/11/2017 18:09:26
+Message:
+CB-13517  (all): Add 'protective' entry to cordovaDependencies #MsgLength=63
+
+
+----
+Modified: package.json|3 0
+
+
+Revision: adb23639c265f5de11daef7749573a0256c9b7d9
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 12/09/2017 06:24:43
+Message:
+CB-13265 Remove ios usage description from media plugin #MsgLength=56
+
+
+----
+Modified: README.md|10 4
+Modified: plugin.xml|0 4
+
+
+Revision: 9fba05ba0434364beb6b22a38405e3bccaf9efc3
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 04/11/2017 17:11:23
+Message:
+CB-12264 (README): fix media.getCurrentAmplitude definition #MsgLength=60
+
+
+----
+Modified: README.md|2 2
+
+
+Revision: 3f845c7ae26525c060bd2e9631db7915ea4cc3e1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:45
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 4.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: dd357b5d098e6de2b35c9f1444e56b764393fae9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:39
+Message:
+Set VERSION to 4.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ad484202f53f7d138fbefdaa5340903645eddf13
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 08:01:29
+Message:
+CB-13542 updated file plugin dependency #MsgLength=40
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|2 2
+
+Revision: e1dc5397e5518d0ba9b807fc4732ff84021f3284
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 08:17:01
+Message:
+Set VERSION to 4.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: f299d0aa33b9e4848cc9cb9ad4f38de291386902
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 14/12/2017 03:36:24
+Message:
+CB-13678: Remove deprecated platforms #MsgLength=38
+
+
+----
+Modified: README.md|0 22
+Modified: package.json|5 17
+Modified: plugin.xml|1 95
+Deleted: src/blackberry10/index.js|0 239
+Deleted: src/tizen/MediaProxy.js|0 224
+Deleted: src/ubuntu/media.cpp|0 128
+Deleted: src/ubuntu/media.h|0 267
+Deleted: src/wp/AudioPlayer.cs|0 648
+Deleted: src/wp/Media.cs|0 678
+
+
+Revision: 4a7b55cceb3b0b65f5cd5c399a858a9254a1e9e1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:25:13
+Message:
+CB-13681 Updated version and RELEASENOTES.md for release 5.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 23b02fb25e17608956db418d834c576533c526b4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:26:44
+Message:
+Set VERSION to 5.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7753d61bab92652f83bfe9fd5fc31dd180f6e632
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 19/12/2017 02:43:39
+Message:
+Bump cordova-plugin-file dependency to 6.0.0 #MsgLength=45
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 470f5ff678e3161c40273400e44fcf6528e2c0c8
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 27/12/2017 23:53:05
+Message:
+CB-13706: Fix to allow 5.0.0 version install (#160) #MsgLength=53
+
+
+----
+Modified: package.json|1 1
+
+Revision: e974e63dbc449edca885dc07472cb069ef8ffd3c
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:36
+Message:
+CB-13714 Updated version and RELEASENOTES.md for release 5.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 248
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7c9c0c15c26d7526829cd40e4c7a5d2a2201d913
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:50
+Message:
+Set VERSION to 5.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4b89d803274b0e9660c7ca06050c77fc55a6ebde
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 30/12/2017 13:57:03
+Message:
+Fix release notes (#161) #MsgLength=26
+
+
+----
+Modified: RELEASENOTES.md|249 0
+
+Revision: a7e376adb78dad85b6c5d15058c5317ad7d2bf72
+Author: Adriano D.G <me@adrianodigiovanni.com>
+Date: 09/01/2018 05:14:23
+Message:
+CB-7684 (#143) #MsgLength=605
+
+
+----
+Modified: plugin.xml|4 0
+Modified: src/ios/CDVSound.m|44 14
+
+Revision: ad25d1059c44ce2229c40dabf6b7136f89356952
+Author: Romedius Weiss <romedius.weiss@gmail.com>
+Date: 04/11/2016 21:17:04
+Message:
+Fix for CB-11513 #MsgLength=64
+
+
+----
+Modified: src/ios/CDVSound.m|20 2
+
+
+Revision: 33c50b05d3327fe73025fb7b265c0d80715ba9e4
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 10/01/2018 21:39:41
+Message:
+CB-13751: Add build-tools-26.0.2 to travis (#163) #MsgLength=51
+
+
+----
+Modified: .travis.yml|4 0
+
+Revision: f90bac5f32f1f73084d9a8cfee8554ffdc03f47f
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 25/01/2018 06:38:34
+Message:
+CB-13826 Updated version and RELEASENOTES.md for release 5.0.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 067bad99a5e1c709db11e71fd9697226dab1856e
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 26/01/2018 03:47:20
+Message:
+CB-13826 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 524c337306ee98b580ed62214b031771fdf0b23e
+Author: Kenichi Naito <fine14r3@gmail.com>
+Date: 22/06/2018 11:12:03
+Message:
+CB-14091: fix tests code for stream url and remove browser (#166) #MsgLength=277
+
+
+----
+Modified: .travis.yml|7 7
+Modified: tests/tests.js|8 6
+
+Revision: 86660dd7cb76c8c4c7dd5a73c091bb8eda2a08ba
+Author: Kenichi Naito <fine14r3@gmail.com>
+Date: 22/06/2018 17:54:45
+Message:
+CB-12849: checking mediaState in destroy method, and moving file by stream when renameTo failing (#168) #MsgLength=105
+
+
+----
+Modified: src/android/AudioPlayer.java|40 2
+
+Revision: 43d57ca34d02178bae6487da58207e268362fb44
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/07/2018 13:56:02
+Message:
+CB-13445 (iOS) Streaming media can take up to 8-10 seconds to start (#169) #MsgLength=413
+
+
+----
+Modified: .travis.yml|2 2
+Modified: src/ios/CDVSound.m|5 1
+
+Revision: 5f189024b48c525f8560e8420c3fc0e745729d5b
+Author: Guilherme Dellagustin <dellagustin@users.noreply.github.com>
+Date: 19/08/2018 00:00:06
+Message:
+(iOS) document setRate method (#142) #MsgLength=72
+
+
+----
+Modified: README.md|30 0
+
+Revision: 7094582e72c6ae8fc6aa0382de67f05a75c65989
+Author: Danny Willems <contact@danny-willems.be>
+Date: 19/08/2018 00:26:50
+Message:
+add types for callback in constructor (#90) #MsgLength=45
+
+
+----
+Modified: README.md|2 2
+
+Revision: a006da37a692668006347b10cb0b3a1298380bc4
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 19/08/2018 00:55:51
+Message:
+remove outdated docs that haven't been updated for 3 years #MsgLength=59
+
+
+----
+Deleted: doc/de/README.md|0 509
+Deleted: doc/de/index.md|0 505
+Deleted: doc/es/README.md|0 509
+Deleted: doc/es/index.md|0 400
+Deleted: doc/fr/README.md|0 404
+Deleted: doc/fr/index.md|0 400
+Deleted: doc/it/README.md|0 509
+Deleted: doc/it/index.md|0 505
+Deleted: doc/ja/README.md|0 509
+Deleted: doc/ja/index.md|0 505
+Deleted: doc/ko/README.md|0 509
+Deleted: doc/ko/index.md|0 505
+Deleted: doc/pl/README.md|0 509
+Deleted: doc/pl/index.md|0 505
+Deleted: doc/ru/index.md|0 494
+Deleted: doc/zh/README.md|0 509
+Deleted: doc/zh/index.md|0 505
+
+Revision: 74772c3baf14297dc1e7b9fa93e249c108a1e3a5
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 01/10/2018 18:36:40
+Message:
+also accept terms for android sdk `android-27` #MsgLength=46
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 2acd3c24824ca1343ea232912d68a0f6f3d35552
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 04/10/2018 07:16:27
+Message:
+remove JIRA link #MsgLength=16
+
+
+----
+Modified: README.md|0 3
+
+Revision: b1c135342619f773fee3e8693a46992a133efd56
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:39:56
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: b0ed6bdd1cd82f84df89f3d3f9e906be0416e8de
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/06/2019 21:08:20
+Message:
+ci(travis): Update Travis CI configuration for new paramedic (#227) #MsgLength=170
+
+
+----
+Modified: .travis.yml|102 75
+
+Revision: aa1586d0a56205d73c83074265548a32acf4c6df
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 19:44:49
+Message:
+build: add `.npmignore` to remove unneeded files from npm package #MsgLength=66
+
+
+----
+Added: .npmignore|16 0
+
+Revision: 5244c4a6ccec46b8eb3a1b1e5cdeb83918902171
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 19:45:03
+Message:
+build: add `.gitattributes` to force LF (instead of possible CRLF on Windows) #MsgLength=78
+
+
+----
+Added: .gitattributes|1 0
+
+Revision: 784ac7bf7d70160a51f76aae2d9ae3e4d1778c56
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 20:19:06
+Message:
+chore: fix repo and issue urls and license in package.json and plugin.xml #MsgLength=74
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|4 4
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|0 1
+
+Revision: b4aec7d4d2c8df58f8e4fbb2c51ac86a69895c30
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 23:28:48
+Message:
+chore(release): release notes for 5.0.3 #MsgLength=40
+
+
+----
+Modified: RELEASENOTES.md|17 0
+
+Revision: a3641b5411305afed857eb0ac543a6d4b84c1ed8
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 23:28:48
+Message:
+chore(release): 5.0.3 (version string) #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 68c3735c78b0c9d76acbf917a8663e44dce894bc
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 23:38:49
+Message:
+chore(release): 5.0.4-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9885d45ac19513ac31288d5618b7abcb43574095
+Author: dakotaJang <dev@dakotajang.com>
+Date: 29/06/2019 19:30:54
+Message:
+fix(types): Add type definition for getCurrentAmplitude (#241) #MsgLength=354
+
+
+----
+Modified: types/index.d.ts|9 1
+
+Revision: acffc0c7b16856e888c932628750fc8b29f1db3d
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 02/07/2019 02:50:31
+Message:
+ci(travis): upgrade to node8 #MsgLength=28
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: a977b9b7d0206f6c7ac7883c876387eeb65631d0
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 23:04:09
+Message:
+chore(npm): improve ignore list (#275) #MsgLength=40
+
+
+----
+Modified: .npmignore|2 15
+
+Revision: 94503df1c573b43d83bca015476025a29908d5f2
+Author: Tim Brust <github@timbrust.de>
+Date: 29/03/2020 04:18:37
+Message:
+ci: updates Node.js versions (#274) #MsgLength=37
+
+
+----
+Modified: .appveyor.yml|9 5
+Modified: .travis.yml|11 11
+
+Revision: 347597090f0fd0002a54d7a5e3f39d5378ad8311
+Author: Nate Dudenhoeffer <1122519+AgDude@users.noreply.github.com>
+Date: 04/04/2020 01:54:51
+Message:
+Fix #248 delete javascript reference to released media (#249) #MsgLength=130
+
+
+----
+Modified: www/Media.js|4 1
+
+Revision: 0483bc04bb69d3ea28bf3c3f983cd2bb8a90e6c2
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:30:15
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Modified: CONTRIBUTING.md|4 4
+
+Revision: cd2cdacb39a1d98d64113c4790124e2dd024b472
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:41:19
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: a13a360dc8fca06b97841105b5526e5bbc5bffee
+Author: Tim Brust <github@timbrust.de>
+Date: 05/07/2020 17:07:08
+Message:
+chore(npm): use short notation in package.json (#282) #MsgLength=55
+
+
+----
+Modified: package.json|2 7
+
+Revision: bab90f4d95f38db6bfbecccfaf2cde3b027f1309
+Author: Tim Brust <github@timbrust.de>
+Date: 06/07/2020 16:26:53
+Message:
+refactor(eslint): use cordova-eslint /w fix (#283) #MsgLength=52
+
+
+----
+Added: .eslintrc.yml|23 0
+Deleted: .jshintrc|0 17
+Modified: package.json|3 3
+Modified: src/windows/MediaProxy.js|84 60
+Modified: tests/tests.js|771 601
+Modified: www/Media.js|112 83
+Modified: www/MediaError.js|11 12
+Modified: www/browser/Media.js|65 63
+
+Revision: fcf02ec9e38851ffd1a6dfac00bf6f2cab9ec149
+Author: Tim Brust <github@timbrust.de>
+Date: 06/07/2020 16:27:39
+Message:
+chore: adds package-lock file (#284) #MsgLength=38
+
+
+----
+Added: package-lock.json|1738 0
+
+Revision: b372d7a2d97ac8cba5fc8d70951881bf65708e91
+Author: Tim Brust <github@timbrust.de>
+Date: 22/08/2020 20:33:23
+Message:
+ci(travis): updates Android API level (#291) #MsgLength=46
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: a10c6d025fe7b663032db09463293a10738c7575
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/09/2020 18:34:35
+Message:
+ci(travis): update osx xcode image (#292) #MsgLength=136
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: eb99c859ee8f5743c36a4355f4a71d43ce146444
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/11/2020 16:15:15
+Message:
+ci: add node-14.x to workflow (#298) #MsgLength=38
+
+
+----
+Modified: .appveyor.yml|1 0
+Modified: .travis.yml|1 1
+
+Revision: ef2983c9166acbe5a135570009159ba37fac1d51
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/09/2021 21:19:30
+Message:
+ci: add gh-actions workflows (#311) #MsgLength=99
+
+
+----
+Added: .github/workflows/android.yml|148 0
+Added: .github/workflows/chrome.yml|73 0
+Added: .github/workflows/ios.yml|88 0
+Added: .github/workflows/lint.yml|56 0
+Modified: tests/tests.js|2 2
+
+Revision: e2b18584c8f8eb892f7805ad401586b89cd58d2f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 23:07:41
+Message:
+ci: remove travis & appveyor (#312) #MsgLength=37
+
+
+----
+Deleted: .appveyor.yml|0 33
+Modified: .npmignore|0 1
+Deleted: .travis.yml|0 113
+Modified: README.md|0 4
+
+Revision: e29fcc6355d8a07413feea46fcc78f05b78ce52f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:09:40
+Message:
+ci: add action-badge (#313) #MsgLength=29
+
+
+----
+Modified: README.md|2 0
+
+Revision: 70a78a225e41a96e6489604ddfb3756604076b55
+Author: エリス <erisu@users.noreply.github.com>
+Date: 06/10/2021 21:13:29
+Message:
+test(browser): disable test cases w/ play() due to Chrome's Autoplay Policy (#318) #MsgLength=84
+
+
+----
+Modified: tests/tests.js|45 3
+
+Revision: 458765b9562ab4f63868cb71f58693fbb82ed230
+Author: エリス <erisu@users.noreply.github.com>
+Date: 20/10/2021 12:27:08
+Message:
+ci(ios): update workflow w/ iOS 15 (#320) #MsgLength=43
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: 4093f7e14fe65f94ffbef072ed188a0205e78a59
+Author: エリス <erisu@users.noreply.github.com>
+Date: 22/10/2021 10:50:26
+Message:
+fix(android): get external files directory for Android 10+ (#317) #MsgLength=329
+
+
+----
+Modified: src/android/AudioHandler.java|3 0
+Modified: src/android/AudioPlayer.java|22 14
+
+Revision: 4380d020e4685754ab50d11c25b97916a84303e5
+Author: エリス <erisu@users.noreply.github.com>
+Date: 21/01/2022 19:34:05
+Message:
+dep: bump @cordova/eslint-config@4.0.0 w/ fix & package-lock rebuild (#329) #MsgLength=77
+
+
+----
+Modified: .eslintrc.yml|4 0
+Modified: package-lock.json|2822 910
+Modified: package.json|1 1
+
+Revision: fcc8db26967b3bc810d85c6a5961e955f303da25
+Author: Erisu <erisu@apache.org>
+Date: 21/01/2022 19:41:21
+Message:
+Updated version and RELEASENOTES.md for release 5.0.4 (media-v5.0.4) #MsgLength=69
+
+
+----
+Modified: RELEASENOTES.md|26 3
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7f1a0f6cf7b53d0530e58d8dfc6cf27d75b348ba
+Author: Erisu <erisu@apache.org>
+Date: 25/01/2022 11:11:50
+Message:
+Increment package version to 5.0.5-dev #MsgLength=39
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2e49e6f04ae0363aeceb0b5c4df33431b0e1daa9
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/04/2022 11:41:49
+Message:
+chore: bump version to 6.0.0-dev (#335) #MsgLength=41
+
+
+----
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f054a028e4e41de6df4934fb0b0ecbaf31c771ee
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/04/2022 11:59:24
+Message:
+chore: rebuilt package-lock (#336) #MsgLength=36
+
+
+----
+Modified: package-lock.json|201 149
+
+Revision: 8bc7da15444b6e3a830109b1ef2d80c374ef8d2d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/04/2022 12:26:07
+Message:
+chore: bump cordovaDependencies next next major cordova requirement (#337) #MsgLength=76
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 641975725c4d680467635e7b6372ff43c39a6db3
+Author: Alexis THOMAS <ath0mas@users.noreply.github.com>
+Date: 25/04/2022 21:35:23
+Message:
+dep!: bump cordova-plugin-file@^7.0.0 (#334) #MsgLength=348
+
+
+----
+Modified: package-lock.json|3 0
+Modified: package.json|3 0
+Modified: plugin.xml|2 2
+
+Revision: 9c3c3ff1389886e31f2718797547d14074f4580d
+Author: Kaylee <58711054+klaw-PLS@users.noreply.github.com>
+Date: 25/04/2022 21:36:49
+Message:
+fix(android): issue #325 (#328) #MsgLength=178
+
+
+----
+Modified: src/android/AudioPlayer.java|1 1
+
+Revision: 6a2c3e70373f97703bba58784fd56c8b100ba88f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 26/04/2022 11:01:35
+Message:
+fix: missing parenthesis from #328 (#338) #MsgLength=43
+
+
+----
+Modified: src/android/AudioPlayer.java|1 1
+
+Revision: e4de635ac80cc081ea36c5289b4877e04ebb951c
+Author: Tim Brust <github@timbrust.de>
+Date: 26/04/2022 11:56:51
+Message:
+fix: remove deprecated platform code snippets (#285) #MsgLength=54
+
+
+----
+Modified: tests/tests.js|9 45
+Modified: www/Media.js|1 1
+
+Revision: baf2d783717ecc5b45b8cafb1bf999b0ef95a227
+Author: Adriano D.G <me@adrianodigiovanni.com>
+Date: 27/04/2022 23:48:04
+Message:
+fix(android): remove READ_PHONE_STATE permission (#232) #MsgLength=208
+
+
+----
+Modified: plugin.xml|0 1
+
+Revision: 177a56ba67f3b6f7f0019a70b525099fce8d2eb3
+Author: Buddy Reno <thebudman84@gmail.com>
+Date: 28/04/2022 09:46:42
+Message:
+feat: add durationUpdate callback (#197) #MsgLength=321
+
+
+----
+Modified: README.md|6 0
+Modified: www/Media.js|10 2
+
+Revision: 230f6c8380fc4286540c30b2bb0a5af1a2a8a05f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 29/04/2022 21:34:20
+Message:
+fix(ios): set rate with current playback rate (#340) #MsgLength=108
+
+
+----
+Modified: src/ios/CDVSound.m|6 1
+
+Revision: 37d715cfb3f061c5f4c88f7161d9430f9f3f710b
+Author: エリス <erisu@users.noreply.github.com>
+Date: 29/04/2022 21:34:44
+Message:
+feat(android): add setRate (#341) #MsgLength=421
+
+
+----
+Modified: README.md|1 0
+Modified: src/android/AudioHandler.java|21 0
+Modified: src/android/AudioPlayer.java|33 0
+Modified: tests/tests.js|60 52
+Modified: www/Media.js|1 1
+
+Revision: 512d3c430fe0b1984408fab036d6effde1610630
+Author: Buddy Reno <thebudman84@gmail.com>
+Date: 24/05/2022 00:45:36
+Message:
+feat(ios): Add error call for stalled_playback (#195) #MsgLength=109
+
+
+----
+Modified: src/ios/CDVSound.m|4 0
+
+Revision: e8ca2244d04b5f9463b9c01ba1a47bce3eace0bb
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/05/2022 21:37:19
+Message:
+feat(android): drop WRITE_EXTERNAL_STORAGE permission (#344) #MsgLength=62
+
+
+----
+Modified: plugin.xml|0 1
+
+Revision: 80c87f39948608bdccda96bb8e0a44f3007565f9
+Author: Erisu <erisu@apache.org>
+Date: 25/05/2022 13:17:14
+Message:
+Updated version and RELEASENOTES.md for release 6.0.0 (media-v6.0.0) #MsgLength=69
+
+
+----
+Modified: RELEASENOTES.md|15 0
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: dbb7e134040c734b0ff500086dae09d56b5675ce
+Author: Erisu <erisu@apache.org>
+Date: 30/05/2022 12:43:57
+Message:
+release(post): bump version to 6.0.1-dev #MsgLength=41
+
+
+----
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 06b7b2381cfdd4bbe84c8beb5cf9794a29f07116
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/07/2022 13:17:21
+Message:
+ci(android): update java requirement for cordova-android@11 (#349) #MsgLength=68
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: 31785c72fc64ab4cfc4891d52c74680ee561fa50
+Author: knaito-asial <81949829+knaito-asial@users.noreply.github.com>
+Date: 30/08/2022 13:33:38
+Message:
+(iOS): support file scheme in iOS (#352) #MsgLength=42
+
+
+----
+Modified: src/ios/CDVSound.m|7 0
+
+Revision: 2eb48fdff546eb5b4a7a108098c75da440adac9d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 30/08/2022 13:33:56
+Message:
+ci: sync workflow with paramedic (#351) #MsgLength=41
+
+
+----
+Modified: .github/workflows/android.yml|12 22
+Modified: .github/workflows/ios.yml|4 13
+
+Revision: d25fa09447310901a06d69829b488cb2c2236682
+Author: エリス <erisu@users.noreply.github.com>
+Date: 30/08/2022 13:34:14
+Message:
+dep(npm): bump package-lock v2 w/ rebuild (#350) #MsgLength=50
+
+
+----
+Modified: package-lock.json|249 166
+
+Revision: a6f23cc26e3e56cd4ade699557dd04d5ffff3daa
+Author: エリス <erisu@users.noreply.github.com>
+Date: 30/08/2022 17:30:45
+Message:
+prevent error on getPosition (#353) #MsgLength=227
+
+
+----
+Modified: src/ios/CDVSound.m|4 0
+
+Revision: cececcc883a9fa52a3280008302ee8edfbc37977
+Author: エリス <erisu@users.noreply.github.com>
+Date: 31/08/2022 17:25:16
+Message:
+test(spec.timeout): try to improve against timeout failures (#356) #MsgLength=278
+
+
+----
+Modified: tests/tests.js|24 7
+
+Revision: 410086b3cdde4e09a17606626a6e10e95d56db1c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 31/08/2022 18:06:17
+Message:
+test(spec.22): pause media before calling getCurrentPosition (#355) #MsgLength=69
+
+
+----
+Modified: tests/tests.js|1 0
+
+Revision: 422c9a949cee54185a1d1c603edf06d165ec456c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 31/08/2022 18:11:57
+Message:
+fix(ios): Reset default audio session category when release (CB-13243) (#354) #MsgLength=123
+
+
+----
+Modified: src/ios/CDVSound.m|1 0
+
+Revision: 081fa5ed2fe9492b1b8a02272796901c64658894
+Author: エリス <erisu@users.noreply.github.com>
+Date: 02/09/2022 21:39:40
+Message:
+feat(android): add 'message' field to media error CB-11641 (#357) #MsgLength=409
+
+
+----
+Modified: src/android/AudioPlayer.java|37 28
+Modified: tests/tests.js|17 0
+
+Revision: 7d2cb6a1bbe1bd28abea8f90468421f3696a6e73
+Author: エリス <erisu@users.noreply.github.com>
+Date: 06/09/2022 11:26:27
+Message:
+chore: bump version to 6.1.0-dev (#359) #MsgLength=41
+
+
+----
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 27193e33f022465463b679454672b0ed56102d4a
+Author: エリス <erisu@users.noreply.github.com>
+Date: 06/09/2022 12:07:44
+Message:
+chore(npm): rebuild package-lock (#360) #MsgLength=41
+
+
+----
+Modified: package-lock.json|55 168
+
+Revision: 963031a928846f18773696c8e65af0f6f1ec92ac
+Author: Erisu <erisu@apache.org>
+Date: 06/09/2022 14:42:08
+Message:
+Updated version and RELEASENOTES.md for release 6.1.0 (media-v6.1.0) #MsgLength=69
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a8bbc02a06cbf01328738ee3e76cac7e32efa042
+Author: Erisu <erisu@apache.org>
+Date: 09/09/2022 19:27:35
+Message:
+release(post): bump version to 6.1.1-dev #MsgLength=41
+
+
+----
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+

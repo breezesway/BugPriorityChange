@@ -1,0 +1,324 @@
+Revision: 1a8635b2128aeed3f4483ea405aa51b9e025960d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/03/2015 22:32:09
+Message:
+Moved from cordova-plugins repo #MsgLength=32
+
+
+----
+Added: CONTRIBUTING.md|16 0
+Added: LICENSE|202 0
+Added: NOTICE|5 0
+Added: README.md|11 0
+Added: RELEASENOTES.md|23 0
+Added: package.json|34 0
+Added: plugin.xml|53 0
+Added: src/android/LegacyWhitelistPlugin.java|83 0
+Added: src/ios/CDVLegacyWhitelistPlugin.h|32 0
+Added: src/ios/CDVLegacyWhitelistPlugin.m|106 0
+
+Revision: a1ceb661234314f4dd54d5c4674575805fe8df02
+Author: Edna Morales <edna592@gmail.com>
+Date: 12/03/2015 23:00:28
+Message:
+CB-8660 remove extra commas from package.json #MsgLength=46
+
+
+----
+Modified: package.json|2 2
+
+Revision: 6a3d2cb3567435d639e62c2c0992c26bb9468a18
+Author: Jason Chase <chasej@chromium.org>
+Date: 21/03/2015 00:09:01
+Message:
+Fix XMl parsing broken by superclass refactor (XmlResourceParser->XmlPullParser) #MsgLength=81
+
+
+----
+Modified: src/android/LegacyWhitelistPlugin.java|4 2
+
+Revision: 9424e3fcdf71221b282698f44ac778bb62673195
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 26/03/2015 03:43:23
+Message:
+CB-8739 added missing license headers #MsgLength=38
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+Modified: README.md|19 0
+
+Revision: b4e1b3726aa743fe31b22842dfd73560741b4f0b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 26/03/2015 04:10:29
+Message:
+ CB-8739 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: b11d456689962c06fdfcd238749caaf6927f13ef
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 26/03/2015 04:14:17
+Message:
+CB-8739 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: e55d121a4f28d0783816941f5730694a63f3f80c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 26/03/2015 22:39:57
+Message:
+Fix compile error introduces by 6a3d2cb3567 #MsgLength=44
+
+
+----
+Modified: src/android/LegacyWhitelistPlugin.java|4 5
+
+Revision: cb66dfe1ce7728ebf8204b2f1610b21d87fff267
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 27/03/2015 07:34:42
+Message:
+Revert "CB-8739 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 9003be1a6862bcd3558ba786706b63eb7e3aa61a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 27/03/2015 07:43:25
+Message:
+Revert "Revert "CB-8739 Incremented plugin version."" #MsgLength=117
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 24aff744148dbf5a983acadef58f34536f4b54ec
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 03/06/2015 00:06:09
+Message:
+fix npm md issue #MsgLength=17
+
+
+----
+Modified: README.md|17 17
+
+Revision: d063a7ce3d26070878050de1cfdb1f178d7b7785
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:43:06
+Message:
+CB-9128 cordova-plugin-legacy-whitelist documentation translation: cordova-plugin-legacy-whitelist #MsgLength=99
+
+
+----
+Added: doc/de/README.md|28 0
+Added: doc/es/README.md|28 0
+Added: doc/fr/README.md|28 0
+Added: doc/it/README.md|28 0
+Added: doc/ja/README.md|28 0
+Added: doc/ko/README.md|28 0
+Added: doc/pl/README.md|28 0
+Added: doc/zh/README.md|28 0
+
+Revision: 3de35d44c1ba70523eba739b57c72023656f378b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:04
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: d5af95b3ab19d329096fd0f8eeac8574a6dac623
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 088268bb11e67f9ade027e3e45d67f1f7ff6cfb6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:36
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: a76cf36c67627354d1549c93e22761bb324b7c5f
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: 15f08cd67463fee6f5ae01c04fdd2819811ce965
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:50
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: 6fde8fe50b74d47be77bee91c7f4e8805aeffa8d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|5 5
+
+Revision: 8e157885067dab6afa90558ad6a1585eb92625fe
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:10
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: d428efa3a55bd9b1fec850b04bc83831e9e49c28
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:05
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 1.1.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 84f4e1242bc539d50aa9e86127e3f6d5541fc138
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|7 7
+
+Revision: 833aeeb44a957ad2dc9f2326108b51fb13b43ab4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 12f13f89afd47adfdc0113b6feb607d9db3a8bd8
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:51
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: 2ef3a500cbc29adc9b4faeb24b05f5965bb8e4e8
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:54:00
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: 03b87869f2dc1d91518beb064b6421a1ee903447
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:38:00
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=100
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: 7c561bdff14453c7fe277693a72ef29ba77302e7
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:46
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 1.1.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 232da927dfa8972ba49c877831946c6a81449f3d
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:07
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 4620372c9853ecd5f291dc7fa006816274139f20
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:54:28
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-legacy-whitelist #MsgLength=66
+
+
+----
+Modified: RELEASENOTES.md|1 0
+
+Revision: 122d4b9c39ebe268c122d92688f1e5d68b465c6a
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 21/11/2017 08:23:01
+Message:
+Deprecation notice #MsgLength=19
+
+
+----
+Modified: README.md|5 1
+
+Revision: b72a1f6267dc2ac6c0a88d739a86d085fcb3156a
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:39:49
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+

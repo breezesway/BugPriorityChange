@@ -1,0 +1,2430 @@
+Revision: f50cc931fb8a8051abf4b504a5e7ff8cbf4b560c
+Author: Anis Kadri <anis@apache.org>
+Date: 22/10/2013 07:23:49
+Message:
+first commit #MsgLength=13
+
+
+----
+Added: app.js|169 0
+Added: attachments/font/fonts/icomoon.dev.svg|18 0
+Added: attachments/font/fonts/icomoon.eot|0 0
+Added: attachments/font/fonts/icomoon.svg|18 0
+Added: attachments/font/fonts/icomoon.ttf|0 0
+Added: attachments/font/fonts/icomoon.woff|0 0
+Added: attachments/font/lte-ie7.js|28 0
+Added: attachments/font/style.css|42 0
+Added: attachments/highcharts/adapters/mootools-adapter.js|11 0
+Added: attachments/highcharts/adapters/mootools-adapter.src.js|214 0
+Added: attachments/highcharts/adapters/prototype-adapter.js|14 0
+Added: attachments/highcharts/adapters/prototype-adapter.src.js|254 0
+Added: attachments/highcharts/highcharts.js|160 0
+Added: attachments/highcharts/highcharts.src.js|10580 0
+Added: attachments/highcharts/modules/exporting.js|21 0
+Added: attachments/highcharts/modules/exporting.src.js|671 0
+Added: attachments/highcharts/themes/dark-blue.js|170 0
+Added: attachments/highcharts/themes/dark-green.js|170 0
+Added: attachments/highcharts/themes/gray.js|164 0
+Added: attachments/highcharts/themes/grid.js|97 0
+Added: attachments/images/favicon.ico|0 0
+Added: attachments/images/grid.png|0 0
+Added: attachments/index.html|50 0
+Added: attachments/install.html|20 0
+Added: attachments/jquery-1.4.4.min.js|167 0
+Added: attachments/layout.css|387 0
+Added: attachments/layout.less|461 0
+Added: attachments/more.html|3 0
+Added: attachments/publish.html|0 0
+Added: attachments/sammy/plugins/sammy.cache.js|115 0
+Added: attachments/sammy/plugins/sammy.data_location_proxy.js|78 0
+Added: attachments/sammy/plugins/sammy.ejs.js|700 0
+Added: attachments/sammy/plugins/sammy.form.js|274 0
+Added: attachments/sammy/plugins/sammy.haml.js|553 0
+Added: attachments/sammy/plugins/sammy.json.js|362 0
+Added: attachments/sammy/plugins/sammy.meld.js|140 0
+Added: attachments/sammy/plugins/sammy.mustache.js|444 0
+Added: attachments/sammy/plugins/sammy.nested_params.js|118 0
+Added: attachments/sammy/plugins/sammy.path_location_proxy.js|29 0
+Added: attachments/sammy/plugins/sammy.pure.js|756 0
+Added: attachments/sammy/plugins/sammy.storage.js|577 0
+Added: attachments/sammy/plugins/sammy.template.js|117 0
+Added: attachments/sammy/plugins/sammy.title.js|59 0
+Added: attachments/sammy/sammy.js|1704 0
+Added: attachments/site.js|955 0
+
+Revision: f3194f689012e1b5bc02f8d5ea0c32a3a61ff580
+Author: Anis Kadri <anis@apache.org>
+Date: 22/10/2013 07:33:10
+Message:
+adding stats page #MsgLength=18
+
+
+----
+Added: attachments/stats.html|86 0
+
+Revision: 697102ef72b8e66b481e14442bbae6390f285941
+Author: Anis Kadri <anis@apache.org>
+Date: 07/11/2013 06:27:40
+Message:
+updating push script and stats page #MsgLength=36
+
+
+----
+Modified: attachments/more.html|2 1
+Modified: attachments/site.js|10 0
+Modified: attachments/stats.html|41 30
+Added: package.json|16 0
+Added: push.sh|31 0
+
+Revision: 5b22daee170ab98d951e33dc0bcf59534fc7fa97
+Author: Anis Kadri <anis@apache.org>
+Date: 16/11/2013 05:27:38
+Message:
+fixing stats on firefox #MsgLength=24
+
+
+----
+Modified: attachments/index.html|2 1
+Modified: attachments/stats.html|1 61
+Added: attachments/stats.js|66 0
+Modified: push.sh|1 1
+
+Revision: e4c4e755f30e109b4f6efa6cc845a6a1ad5bebac
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/01/2014 09:11:10
+Message:
+added a basic readme #MsgLength=21
+
+
+----
+Added: README.md|66 0
+
+Revision: 82b65c4ec7d5dc0217b595e02a333a5fabe3d682
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 15/01/2014 09:12:25
+Message:
+working on showPackage.html #MsgLength=28
+
+
+----
+Modified: attachments/layout.css|6 1
+Modified: attachments/layout.less|8 2
+Added: attachments/showPackage.html|2 0
+Added: attachments/showPackage.js|25 0
+Modified: attachments/site.js|18 6
+Added: design/home.png|0 0
+Added: design/pluginsDetails.png|0 0
+Added: design/searchResults.png|0 0
+
+Revision: e93025ac1cebed600ddd5577d96f0ba958d93f06
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 16/01/2014 07:24:37
+Message:
+removed sammy, using angular now #MsgLength=33
+
+
+----
+Modified: README.md|81 66
+Renamed: attachments/css/layout.css [from attachments/layout.css]|2 2
+Renamed: attachments/css/layout.less [from attachments/layout.less]|2 2
+Modified: attachments/index.html|19 24
+Deleted: attachments/jquery-1.4.4.min.js|0 167
+Added: attachments/js/app.js|15 0
+Added: attachments/js/controllers.js|2 0
+Added: attachments/js/controllers/home.js|2 0
+Added: attachments/js/lib/angular-route.min.js|14 0
+Added: attachments/js/lib/angular.min.js|202 0
+Renamed: attachments/js/showPackage.js [from attachments/showPackage.js]|0 0
+Renamed: attachments/js/site.js [from attachments/site.js]|0 0
+Renamed: attachments/js/stats.js [from attachments/stats.js]|0 0
+Added: attachments/partials/views/home.html|1 0
+Renamed: attachments/partials/views/install.html [from attachments/install.html]|0 0
+Renamed: attachments/partials/views/more.html [from attachments/more.html]|0 0
+Renamed: attachments/partials/views/publish.html [from attachments/publish.html]|0 0
+Renamed: attachments/partials/views/showPackage.html [from attachments/showPackage.html]|0 0
+Renamed: attachments/partials/views/stats.html [from attachments/stats.html]|0 0
+Deleted: attachments/sammy/plugins/sammy.cache.js|0 115
+Deleted: attachments/sammy/plugins/sammy.data_location_proxy.js|0 78
+Deleted: attachments/sammy/plugins/sammy.ejs.js|0 700
+Deleted: attachments/sammy/plugins/sammy.form.js|0 274
+Deleted: attachments/sammy/plugins/sammy.haml.js|0 553
+Deleted: attachments/sammy/plugins/sammy.json.js|0 362
+Deleted: attachments/sammy/plugins/sammy.meld.js|0 140
+Deleted: attachments/sammy/plugins/sammy.mustache.js|0 444
+Deleted: attachments/sammy/plugins/sammy.nested_params.js|0 118
+Deleted: attachments/sammy/plugins/sammy.path_location_proxy.js|0 29
+Deleted: attachments/sammy/plugins/sammy.pure.js|0 756
+Deleted: attachments/sammy/plugins/sammy.storage.js|0 577
+Deleted: attachments/sammy/plugins/sammy.template.js|0 117
+Deleted: attachments/sammy/plugins/sammy.title.js|0 59
+Deleted: attachments/sammy/sammy.js|0 1704
+
+Revision: 2349710a4b297750fe3d2ba5bddb0ae4674b2518
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 16/01/2014 09:06:11
+Message:
+CB-5130: added example to packageDetails for doing API call to couch #MsgLength=69
+
+
+----
+Modified: attachments/index.html|1 0
+Modified: attachments/js/app.js|4 3
+Added: attachments/js/controllers/packageDetails.js|15 0
+Added: attachments/partials/views/packageDetails.html|1 0
+
+Revision: 521248e077eacb01f15e8ee8240ff847b92553fc
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 16/01/2014 10:39:05
+Message:
+CB-5130: work on plugin details page #MsgLength=37
+
+
+----
+Modified: attachments/js/app.js|1 1
+Modified: attachments/js/controllers/packageDetails.js|19 0
+Modified: attachments/partials/views/packageDetails.html|8 1
+
+Revision: ad2baf82b0f1771ae761a7e31a5d9f921a8c7bd3
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 17/01/2014 08:54:14
+Message:
+CB-5130: added viewAll #MsgLength=23
+
+
+----
+Modified: attachments/index.html|4 3
+Modified: attachments/js/app.js|1 0
+Modified: attachments/js/controllers/home.js|20 1
+Modified: attachments/js/controllers/packageDetails.js|0 1
+Added: attachments/js/controllers/viewAll.js|23 0
+Modified: attachments/partials/views/home.html|9 1
+Added: attachments/partials/views/viewAll.html|13 0
+
+Revision: b6a4623865872f944c8e206033ba167da0a6474d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 18/01/2014 06:31:00
+Message:
+CB-5130: added more functionallity to viewAll #MsgLength=46
+
+
+----
+Modified: attachments/css/layout.css|6 0
+Modified: attachments/css/layout.less|6 0
+Modified: attachments/js/controllers/viewAll.js|1 0
+Modified: attachments/partials/views/viewAll.html|17 5
+
+Revision: fb372074868085cfdaa1139bae423b628a4138fc
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/01/2014 02:48:52
+Message:
+CB-5130: starting work on header #MsgLength=33
+
+
+----
+Modified: attachments/css/layout.css|4 3
+Modified: attachments/css/layout.less|3 2
+Modified: attachments/index.html|2 2
+
+Revision: bf45bbb6ade017bfd098a36e2efa8a64103d6e1d
+Author: Josh Bavari <josh@raisemore.com>
+Date: 19/01/2014 08:40:00
+Message:
+Added in topcoat and topcoat min. Including images and fonts as well. #MsgLength=70
+
+
+----
+Added: attachments/css/grid.css|108 0
+Added: attachments/css/grid.min.css|1 0
+Added: attachments/css/topcoat-desktop-dark.css|3509 0
+Added: attachments/css/topcoat-desktop-dark.min.css|1 0
+Added: attachments/css/topcoat-desktop-light.css|3509 0
+Added: attachments/css/topcoat-desktop-light.min.css|1 0
+Added: attachments/css/topcoat-mobile-dark.css|3759 0
+Added: attachments/css/topcoat-mobile-dark.min.css|1 0
+Added: attachments/css/topcoat-mobile-light.css|3759 0
+Added: attachments/css/topcoat-mobile-light.min.css|1 0
+Added: attachments/font/LICENSE.txt|93 0
+Added: attachments/font/SourceCodePro-Black.otf|0 0
+Added: attachments/font/SourceCodePro-Bold.otf|0 0
+Added: attachments/font/SourceCodePro-ExtraLight.otf|0 0
+Added: attachments/font/SourceCodePro-Light.otf|0 0
+Added: attachments/font/SourceCodePro-Regular.otf|0 0
+Added: attachments/font/SourceCodePro-Semibold.otf|0 0
+Added: attachments/font/SourceSansPro-Black.otf|0 0
+Added: attachments/font/SourceSansPro-BlackIt.otf|0 0
+Added: attachments/font/SourceSansPro-Bold.otf|0 0
+Added: attachments/font/SourceSansPro-BoldIt.otf|0 0
+Added: attachments/font/SourceSansPro-ExtraLight.otf|0 0
+Added: attachments/font/SourceSansPro-ExtraLightIt.otf|0 0
+Added: attachments/font/SourceSansPro-It.otf|0 0
+Added: attachments/font/SourceSansPro-Light.otf|0 0
+Added: attachments/font/SourceSansPro-LightIt.otf|0 0
+Added: attachments/font/SourceSansPro-Regular.otf|0 0
+Added: attachments/font/SourceSansPro-Semibold.otf|0 0
+Added: attachments/font/SourceSansPro-SemiboldIt.otf|0 0
+Added: attachments/images/.DS_Store|0 0
+Added: attachments/images/avatar.png|0 0
+Added: attachments/images/bg_dark.png|0 0
+Added: attachments/images/breadcrumb.png|0 0
+Added: attachments/images/checkbox_checked.png|0 0
+Added: attachments/images/checkbox_checked_dark.png|0 0
+Added: attachments/images/checkbox_unchecked.png|0 0
+Added: attachments/images/checkbox_unchecked_dark.png|0 0
+Added: attachments/images/checkmark_bw.svg|15 0
+Added: attachments/images/dark-combo-box-bg.png|0 0
+Added: attachments/images/dark-combo-box-bg2x.png|0 0
+Added: attachments/images/dark-grips.png|0 0
+Added: attachments/images/dark-sprites2x.png|0 0
+Added: attachments/images/dialog-zone-bg.png|0 0
+Added: attachments/images/drop-down-triangle-dark.png|0 0
+Added: attachments/images/drop-down-triangle.png|0 0
+Added: attachments/images/hamburger_bw.svg|1912 0
+Added: attachments/images/hamburger_dark.svg|1935 0
+Added: attachments/images/hamburger_light.svg|1936 0
+Added: attachments/images/light-combo-box-bg.png|0 0
+Added: attachments/images/light-combo-box-bg2x.png|0 0
+Added: attachments/images/light-grips.png|0 0
+Added: attachments/images/light-sprites2x.png|0 0
+Added: attachments/images/pop-up-triangle-dark.png|0 0
+Added: attachments/images/pop-up-triangle.png|0 0
+Added: attachments/images/search-bg.png|0 0
+Added: attachments/images/search-bg2x.png|0 0
+Added: attachments/images/search.svg|11 0
+Added: attachments/images/search_bw.svg|16 0
+Added: attachments/images/search_dark.svg|16 0
+Added: attachments/images/search_light.svg|11 0
+Added: attachments/images/spinner.png|0 0
+Added: attachments/images/spinner2x.png|0 0
+Modified: attachments/index.html|2 0
+
+Revision: 3a2f28ee8b112102cd3be2e1d85f4508c479a05a
+Author: Josh Bavari <josh@raisemore.com>
+Date: 19/01/2014 13:44:17
+Message:
+Added grunt and some other packages needed for tasks like watch, process, less, and jshinting. Adding in jshintrc file for jshint rules. Updated a lot of the LESS sheets to have a top level include - styles.less - that contains @imports for all the other LESS sheets. Layout.less has now become a more @import styled sheet to pull in header, individual pages, and footer #MsgLength=371
+
+
+----
+Added: .jshintrc|24 0
+Added: Gruntfile.js|46 0
+Added: attachments/css/header.less|81 0
+Modified: attachments/css/layout.css|3 1
+Modified: attachments/css/layout.less|4 100
+Added: attachments/css/media.less|39 0
+Added: attachments/css/mixins.less|13 0
+Added: attachments/css/styles.css|3931 0
+Added: attachments/css/styles.less|13 0
+Added: attachments/css/typography.less|18 0
+Added: attachments/css/variables.less|6 0
+Modified: attachments/index.html|71 44
+Modified: attachments/js/app.js|3 3
+Added: attachments/js/lib/livereload.js|1055 0
+Modified: attachments/partials/views/home.html|2 1
+Modified: package.json|18 13
+
+Revision: 555a145eef28c2e399798b5f074ffe2b618773d7
+Author: Josh Bavari <josh@raisemore.com>
+Date: 19/01/2014 13:47:05
+Message:
+Had to get rid of the annoying .DS_Store #MsgLength=41
+
+
+----
+Added: .gitignore|1 0
+
+Revision: b75f84680814865e27b0ee8e19c6a197fd279cef
+Author: Josh Bavari <josh@raisemore.com>
+Date: 19/01/2014 14:04:35
+Message:
+Cleaning up some more styles #MsgLength=29
+
+
+----
+Added: attachments/css/footer.less|5 0
+Modified: attachments/css/layout.less|0 9
+Modified: attachments/css/styles.css|73 73
+Modified: attachments/css/styles.less|2 0
+
+Revision: 92690354f7e07d53f64ec2e7591199128cacb05d
+Author: Josh Bavari <josh@raisemore.com>
+Date: 19/01/2014 15:05:59
+Message:
+Added in README changes to help understanding with Grunt and LESS changes. Added grunt fix for watch #MsgLength=101
+
+
+----
+Modified: Gruntfile.js|1 1
+Modified: README.md|22 1
+
+Revision: 4e7adf9325f27b77a59dcaf641014a17cde4a18d
+Author: Josh Bavari <josh@raisemore.com>
+Date: 19/01/2014 15:06:33
+Message:
+Added in LESS statements to import the pages. Began breaking pages out to separate LESS sheets. #MsgLength=96
+
+
+----
+Added: attachments/css/pages/home.less|12 0
+Added: attachments/css/pages/packageDetails.less|1 0
+Added: attachments/css/pages/viewAll.less|1 0
+Modified: attachments/css/styles.css|12 0
+Modified: attachments/css/styles.less|5 1
+Modified: attachments/index.html|1 2
+Modified: attachments/js/controllers/home.js|1 1
+Modified: attachments/partials/views/home.html|51 8
+
+Revision: 7f92c3988f090985a4495369643d1e580c37786f
+Author: Josh Bavari <josh@raisemore.com>
+Date: 19/01/2014 17:21:19
+Message:
+Updated more styles. Updated image reference for the dummy search box at the top. Added in some dummy data to be used on the home page. The dummy data comes in two forms - one is on the home controller, the other is a plugins.json file i do a request to so i dont interfere too much with Steves previous lookup method. Added in links for plugin registry issue tracker, cordova plugin docs, apache cordova homepage url #MsgLength=418
+
+
+----
+Modified: attachments/css/footer.less|1 1
+Modified: attachments/css/header.less|4 0
+Modified: attachments/css/layout.less|12 5
+Modified: attachments/css/pages/home.less|28 2
+Modified: attachments/css/styles.css|161 365
+Modified: attachments/css/styles.less|1 1
+Modified: attachments/css/topcoat-desktop-light.css|1 1
+Modified: attachments/css/topcoat-mobile-light.css|1 1
+Modified: attachments/css/variables.less|2 0
+Modified: attachments/index.html|22 13
+Modified: attachments/js/controllers/home.js|41 2
+Modified: attachments/partials/views/home.html|54 19
+Added: attachments/plugins.json|102 0
+
+Revision: 9e1ca3c92ea119d08eeef7ac7481aecd1fd7e7be
+Author: Josh Bavari <josh@raisemore.com>
+Date: 19/01/2014 17:58:30
+Message:
+Added some basic functionality to get a search function working - it aligns the path for the search view to be used both the search controller on the layout as well as on the search page. Created service to keep the two plugin search names in sync #MsgLength=248
+
+
+----
+Modified: attachments/index.html|6 2
+Modified: attachments/js/app.js|2 1
+Added: attachments/js/controllers/search.js|9 0
+Added: attachments/js/directives/ng-enter.js|13 0
+Added: attachments/js/services/search-service.js|8 0
+Added: attachments/partials/views/search.html|1 0
+
+Revision: 0cfa54862e0f57673f07219b79ce841156baf8e1
+Author: Josh Bavari <josh@raisemore.com>
+Date: 19/01/2014 18:22:21
+Message:
+Added some dummy data to the search controller - allows the search page to render the plugin results. Basic functionality is there #MsgLength=131
+
+
+----
+Modified: attachments/js/controllers/search.js|10 0
+Modified: attachments/partials/views/search.html|43 1
+
+Revision: 5439f1a8266e889f3f5d2807d596946b1627b884
+Author: Josh Bavari <josh@raisemore.com>
+Date: 19/01/2014 18:29:14
+Message:
+Added ng pluralize on the search results to show plugin(s) with results text #MsgLength=77
+
+
+----
+Modified: attachments/partials/views/search.html|5 1
+
+Revision: d18809a36611edda0fe2a393a74d095c07356a39
+Author: Josh Bavari <josh@raisemore.com>
+Date: 20/01/2014 14:31:47
+Message:
+Updated styles for the home page via home.less. Upaded some variables for bg colors/border colors. Added in more changes to styles by including pages. Updated minor search styles, surely to be changed later #MsgLength=207
+
+
+----
+Modified: attachments/css/layout.less|16 0
+Modified: attachments/css/pages/home.less|78 2
+Added: attachments/css/pages/search.less|1 0
+Modified: attachments/css/styles.css|82 2
+Modified: attachments/css/styles.less|2 1
+Modified: attachments/css/variables.less|5 1
+Added: attachments/images/contribute.png|0 0
+Added: attachments/images/utilize.png|0 0
+
+Revision: 03845769376437b698b4c424c9a4191c6fed094b
+Author: Josh Bavari <josh@raisemore.com>
+Date: 20/01/2014 14:33:41
+Message:
+More updates to views for home page and search, as well as over all layout. Added in SVG's used for the pluggy robot henceforce called pluggy #MsgLength=142
+
+
+----
+Added: attachments/images/pluggy.svg|13240 0
+Added: attachments/images/pluggy2.svg|20189 0
+Modified: attachments/index.html|6 6
+Modified: attachments/partials/views/home.html|27 17
+Modified: attachments/partials/views/search.html|6 1
+
+Revision: 9cc4495371317aa948335d5b6def336910e2147b
+Author: Josh Bavari <josh@raisemore.com>
+Date: 21/01/2014 00:12:02
+Message:
+Added in some more styling fixes. Added in CSS 3 mixins from Chris Coyier's blog. Added in fixes for home page to have the utilize/contrib boxes and the plugins listed underneath #MsgLength=179
+
+
+----
+Added: attachments/css/css_3_mixins.less|139 0
+Modified: attachments/css/mixins.less|1 1
+Modified: attachments/css/pages/home.less|16 6
+Modified: attachments/css/styles.css|40 8
+Modified: attachments/css/styles.less|1 0
+Modified: attachments/index.html|2 2
+Modified: attachments/partials/views/home.html|34 8
+
+
+Revision: 0e6564036f3d1ae5d18ed185a95f36e451545af9
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/01/2014 08:30:10
+Message:
+CB-5784: added marked and sanitize to display readme #MsgLength=53
+
+
+----
+Modified: attachments/index.html|2 0
+Modified: attachments/js/app.js|2 2
+Modified: attachments/js/controllers/packageDetails.js|4 2
+Added: attachments/js/lib/angular-sanitize.min.js|14 0
+Added: attachments/js/lib/marked.js|1227 0
+Deleted: attachments/js/showPackage.js|0 25
+Modified: attachments/partials/views/packageDetails.html|10 4
+Deleted: attachments/partials/views/showPackage.html|0 2
+Modified: push.sh|1 1
+
+Revision: a534c3eb4e6a63a886ae4f99c97da86a62a8e748
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 23/01/2014 09:48:00
+Message:
+CB-5881: got multiple version switching to work #MsgLength=48
+
+
+----
+Modified: attachments/js/controllers/packageDetails.js|26 4
+Modified: attachments/partials/views/packageDetails.html|21 2
+
+Revision: 40e075c25e7e92847e305619fb5633b90d80f5b1
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 28/01/2014 08:42:32
+Message:
+CB-5911: ripped out topcoat grid, started adding flexbox #MsgLength=57
+
+
+----
+Added: attachments/css/flexboxgrid.min.css|1 0
+Deleted: attachments/css/grid.css|0 108
+Deleted: attachments/css/grid.min.css|0 1
+Modified: attachments/css/styles.css|715 1625
+Modified: attachments/css/styles.less|3 3
+Modified: attachments/index.html|14 21
+Modified: attachments/partials/views/home.html|39 41
+
+Revision: 6be1989a2ba6a64ceb03fa5a7b0e5c1c8dd40a8b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/02/2014 06:25:46
+Message:
+working on making mobile first design #MsgLength=38
+
+
+----
+Modified: app.js|1 1
+Modified: attachments/css/header.less|5 8
+Modified: attachments/css/layout.less|20 0
+Modified: attachments/css/pages/home.less|1 1
+Modified: attachments/css/styles.css|22 7
+Modified: attachments/index.html|3 2
+Modified: attachments/js/controllers/home.js|2 2
+Modified: attachments/partials/views/home.html|9 7
+Modified: push.sh|1 1
+
+Revision: abb68e0490d882f0d0eae753b0c30f064466c705
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/02/2014 09:00:31
+Message:
+CB-5911: continued work on integrating flexbox #MsgLength=47
+
+
+----
+Modified: attachments/css/layout.less|1 1
+Modified: attachments/css/pages/home.less|1 0
+Modified: attachments/css/styles.css|2 1
+Modified: attachments/partials/views/home.html|5 9
+
+Revision: 93fa7222ae9b075c599097b5dee3f8beeebb8de1
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/02/2014 11:54:47
+Message:
+CB-5911: cleaning up homepage for mobile and desktop #MsgLength=53
+
+
+----
+Modified: attachments/css/footer.less|2 2
+Modified: attachments/css/pages/home.less|3 3
+Modified: attachments/css/styles.css|6 3
+Modified: attachments/partials/views/home.html|11 11
+
+Revision: 7e49a43af18425561c460d41962315bd688b3346
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/02/2014 07:01:46
+Message:
+working on formatting #MsgLength=22
+
+
+----
+Modified: attachments/index.html|1 1
+Modified: attachments/partials/views/home.html|10 10
+
+Revision: 6100848c1055723fcbe91f4bec6e8c7c592bb7f3
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 15/02/2014 01:44:56
+Message:
+CB-5910: added initial implementaiton of search #MsgLength=48
+
+
+----
+Modified: attachments/js/app.js|1 1
+Modified: attachments/js/controllers/search.js|26 4
+Modified: attachments/partials/views/search.html|31 20
+
+Revision: fe736677f0ecf044275ab2ea544de6859fab1309
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 22/02/2014 09:45:04
+Message:
+CB-5837: added downloads factory to use among controllers #MsgLength=58
+
+
+----
+Modified: attachments/index.html|3 1
+Modified: attachments/js/app.js|1 1
+Modified: attachments/js/controllers/home.js|1 1
+Modified: attachments/js/controllers/viewAll.js|2 1
+Added: attachments/js/services.js|33 0
+Modified: attachments/partials/views/viewAll.html|1 1
+
+Revision: 9e0b80f370adee13e39761439fb96840afe927f9
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/02/2014 09:00:46
+Message:
+CB-5130: fixed header + footer styling #MsgLength=39
+
+
+----
+Modified: attachments/css/footer.less|10 0
+Modified: attachments/css/layout.less|0 5
+Modified: attachments/css/styles.css|8 5
+Modified: attachments/index.html|21 23
+Modified: attachments/partials/views/home.html|1 1
+
+Revision: 51ac037ac454767224708d1ca72616edddaecccf
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 28/02/2014 06:47:36
+Message:
+CB-5837: updated download service to use promises #MsgLength=50
+
+
+----
+Modified: attachments/css/pages/home.less|0 2
+Modified: attachments/css/styles.css|0 2
+Modified: attachments/js/controllers/home.js|3 13
+Modified: attachments/js/services.js|34 28
+Modified: attachments/partials/views/home.html|26 23
+
+Revision: abd53c53695e9acb202c4c7e78722f8ec05d9476
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 28/02/2014 08:22:37
+Message:
+CB-5130: added prettyDate function as a service #MsgLength=48
+
+
+----
+Modified: attachments/js/controllers/home.js|9 13
+Modified: attachments/js/services.js|33 1
+Modified: attachments/partials/views/home.html|7 8
+
+Revision: bd8a648a5e5839bead3d8503bc2cd78e30323f82
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/03/2014 16:26:54
+Message:
+CB-5910 added topbar directive which includes search #MsgLength=53
+
+
+----
+Added: NOTICE|7 0
+Added: attachments/.gitignore|1 0
+Modified: attachments/css/footer.less|1 0
+Modified: attachments/css/pages/home.less|0 8
+Added: attachments/css/pages/topbar.less|31 0
+Modified: attachments/css/styles.css|28 7
+Modified: attachments/css/styles.less|1 0
+Deleted: attachments/images/.DS_Store|0 0
+Renamed: attachments/img/avatar.png [from attachments/images/avatar.png]|0 0
+Renamed: attachments/img/bg_dark.png [from attachments/images/bg_dark.png]|0 0
+Renamed: attachments/img/breadcrumb.png [from attachments/images/breadcrumb.png]|0 0
+Renamed: attachments/img/checkbox_checked.png [from attachments/images/checkbox_checked.png]|0 0
+Renamed: attachments/img/checkbox_checked_dark.png [from attachments/images/checkbox_checked_dark.png]|0 0
+Renamed: attachments/img/checkbox_unchecked.png [from attachments/images/checkbox_unchecked.png]|0 0
+Renamed: attachments/img/checkbox_unchecked_dark.png [from attachments/images/checkbox_unchecked_dark.png]|0 0
+Renamed: attachments/img/checkmark_bw.svg [from attachments/images/checkmark_bw.svg]|0 0
+Renamed: attachments/img/contribute.png [from attachments/images/contribute.png]|0 0
+Renamed: attachments/img/dark-combo-box-bg.png [from attachments/images/dark-combo-box-bg.png]|0 0
+Renamed: attachments/img/dark-combo-box-bg2x.png [from attachments/images/dark-combo-box-bg2x.png]|0 0
+Renamed: attachments/img/dark-grips.png [from attachments/images/dark-grips.png]|0 0
+Renamed: attachments/img/dark-sprites2x.png [from attachments/images/dark-sprites2x.png]|0 0
+Renamed: attachments/img/dialog-zone-bg.png [from attachments/images/dialog-zone-bg.png]|0 0
+Renamed: attachments/img/drop-down-triangle-dark.png [from attachments/images/drop-down-triangle-dark.png]|0 0
+Renamed: attachments/img/drop-down-triangle.png [from attachments/images/drop-down-triangle.png]|0 0
+Renamed: attachments/img/favicon.ico [from attachments/images/favicon.ico]|0 0
+Renamed: attachments/img/grid.png [from attachments/images/grid.png]|0 0
+Renamed: attachments/img/hamburger_bw.svg [from attachments/images/hamburger_bw.svg]|0 0
+Renamed: attachments/img/hamburger_dark.svg [from attachments/images/hamburger_dark.svg]|0 0
+Renamed: attachments/img/hamburger_light.svg [from attachments/images/hamburger_light.svg]|0 0
+Renamed: attachments/img/light-combo-box-bg.png [from attachments/images/light-combo-box-bg.png]|0 0
+Renamed: attachments/img/light-combo-box-bg2x.png [from attachments/images/light-combo-box-bg2x.png]|0 0
+Renamed: attachments/img/light-grips.png [from attachments/images/light-grips.png]|0 0
+Renamed: attachments/img/light-sprites2x.png [from attachments/images/light-sprites2x.png]|0 0
+Renamed: attachments/img/pluggy.svg [from attachments/images/pluggy.svg]|0 0
+Renamed: attachments/img/pluggy2.svg [from attachments/images/pluggy2.svg]|0 0
+Renamed: attachments/img/pop-up-triangle-dark.png [from attachments/images/pop-up-triangle-dark.png]|0 0
+Renamed: attachments/img/pop-up-triangle.png [from attachments/images/pop-up-triangle.png]|0 0
+Renamed: attachments/img/search-bg.png [from attachments/images/search-bg.png]|0 0
+Renamed: attachments/img/search-bg2x.png [from attachments/images/search-bg2x.png]|0 0
+Renamed: attachments/img/search.svg [from attachments/images/search.svg]|0 0
+Renamed: attachments/img/search_bw.svg [from attachments/images/search_bw.svg]|0 0
+Renamed: attachments/img/search_dark.svg [from attachments/images/search_dark.svg]|0 0
+Renamed: attachments/img/search_light.svg [from attachments/images/search_light.svg]|0 0
+Renamed: attachments/img/spinner.png [from attachments/images/spinner.png]|0 0
+Renamed: attachments/img/spinner2x.png [from attachments/images/spinner2x.png]|0 0
+Renamed: attachments/img/utilize.png [from attachments/images/utilize.png]|0 0
+Modified: attachments/index.html|1 0
+Modified: attachments/js/controllers/home.js|1 20
+Modified: attachments/js/controllers/search.js|7 10
+Added: attachments/js/directives/topbar.js|33 0
+Added: attachments/partials/directives/topbar.html|16 0
+Modified: attachments/partials/views/home.html|1 6
+
+Revision: 1c510b0e88b9a60896868115a7f8d8d18b3b5fc4
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 08/03/2014 04:12:58
+Message:
+CB-5130: added /downloads redirect #MsgLength=35
+
+
+----
+Modified: app.js|1 0
+
+Revision: 074012f83c437737fbd94e7d5b30aea2bed25cd1
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 13/03/2014 08:54:21
+Message:
+CB-5130: search is working, added styles to other pages #MsgLength=56
+
+
+----
+Modified: attachments/css/pages/packageDetails.less|11 1
+Added: attachments/css/pages/pluginlist.less|9 0
+Modified: attachments/css/pages/search.less|11 0
+Modified: attachments/css/pages/topbar.less|1 1
+Modified: attachments/css/pages/viewAll.less|4 1
+Modified: attachments/css/styles.css|29 1
+Modified: attachments/css/styles.less|1 0
+Modified: attachments/index.html|2 1
+Modified: attachments/js/controllers/home.js|1 1
+Modified: attachments/js/controllers/search.js|1 36
+Added: attachments/js/directives/pluginlist.js|13 0
+Modified: attachments/js/directives/topbar.js|41 5
+Modified: attachments/js/services.js|1 1
+Added: attachments/partials/directives/pluginlist.html|25 0
+Modified: attachments/partials/directives/topbar.html|2 2
+Modified: attachments/partials/views/packageDetails.html|42 26
+Modified: attachments/partials/views/search.html|16 60
+Modified: attachments/partials/views/viewAll.html|3 24
+
+Revision: 3243029e88b49d2df7e95f23b2dc6c508853a58d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/03/2014 07:33:23
+Message:
+Cleaning up the repo #MsgLength=21
+
+
+----
+Modified: README.md|67 81
+Renamed: attachments/css/directives/pluginlist.less [from attachments/css/pages/pluginlist.less]|0 0
+Renamed: attachments/css/directives/topbar.less [from attachments/css/pages/topbar.less]|0 0
+Modified: attachments/css/styles.less|2 2
+Deleted: attachments/css/topcoat-mobile-dark.css|0 3759
+Deleted: attachments/css/topcoat-mobile-dark.min.css|0 1
+Deleted: attachments/css/topcoat-mobile-light.css|0 3759
+Deleted: attachments/css/topcoat-mobile-light.min.css|0 1
+Modified: attachments/index.html|0 5
+Modified: attachments/js/app.js|3 4
+Modified: attachments/js/controllers/viewAll.js|4 7
+Modified: attachments/js/services.js|0 7
+Deleted: attachments/js/services/search-service.js|0 8
+Deleted: attachments/js/site.js|0 977
+Deleted: attachments/js/stats.js|0 66
+
+Revision: 2a454651fc9022ee61c88a3d24794c08a970edc8
+Author: Josh Bavari <josh@raisemore.com>
+Date: 17/03/2014 12:33:11
+Message:
+CB-6281 - fixing the header font to Lato, correcting the 'Apache Cordova' and 'Plugins Registry' correctly, as well as removing extra spacing on plugin results and view all pages. #MsgLength=180
+
+
+----
+Modified: attachments/css/header.less|4 2
+Modified: attachments/css/layout.less|1 1
+Modified: attachments/css/styles.css|4 3
+
+Revision: 70a373b5baa2aba500281423a83c2c01a6ae5bcb
+Author: Josh Bavari <josh@raisemore.com>
+Date: 17/03/2014 12:34:48
+Message:
+CB-6281 - correcting the plugin details, having controller now pull in extra fields for keywords, platforms, and maintainers. As well as fixing some column styles on viewall, plugindetails, index.html #MsgLength=201
+
+
+----
+Modified: attachments/index.html|2 1
+Modified: attachments/js/controllers/packageDetails.js|9 0
+Modified: attachments/partials/directives/pluginlist.html|1 1
+Modified: attachments/partials/views/home.html|1 1
+Modified: attachments/partials/views/packageDetails.html|68 32
+Modified: attachments/partials/views/search.html|15 13
+Modified: attachments/partials/views/viewAll.html|7 3
+
+Revision: 9a30fbf530fc53d56a30b76b0f3695839f14ef01
+Author: Josh Bavari <josh@raisemore.com>
+Date: 19/03/2014 23:39:40
+Message:
+Updated some styles. Not complete. Need to commit for derek to look at #MsgLength=71
+
+
+----
+Modified: attachments/css/directives/topbar.less|1 0
+Modified: attachments/css/footer.less|8 1
+Modified: attachments/css/header.less|0 1
+Modified: attachments/css/layout.less|2 1
+Modified: attachments/css/pages/packageDetails.less|8 2
+Modified: attachments/css/styles.css|18 6
+Modified: attachments/css/styles.less|2 1
+
+Revision: 82c331467da6882fc237edf565af3f5f2aa68a53
+Author: Josh Bavari <josh@raisemore.com>
+Date: 19/03/2014 23:40:30
+Message:
+Fixed markup on partials - improved layout for plugin details' #MsgLength=63
+
+
+----
+Modified: attachments/partials/directives/topbar.html|1 1
+Modified: attachments/partials/views/home.html|8 7
+Modified: attachments/partials/views/packageDetails.html|19 5
+
+Revision: 204aaa0730135877500b7d0d3046c72ca7079e16
+Author: Josh Bavari <josh@raisemore.com>
+Date: 19/03/2014 23:40:56
+Message:
+Adding in the custom font icons, styles for them, and index.html including them #MsgLength=80
+
+
+----
+Added: attachments/css/animation.css|85 0
+Added: attachments/css/fontello-codes.css|9 0
+Added: attachments/css/fontello-embedded.css|62 0
+Added: attachments/css/fontello-ie7-codes.css|9 0
+Added: attachments/css/fontello-ie7.css|20 0
+Added: attachments/css/fontello.css|60 0
+Added: attachments/font/entypo.eot|0 0
+Added: attachments/font/entypo.svg|13 0
+Added: attachments/font/entypo.ttf|0 0
+Added: attachments/font/entypo.woff|0 0
+Added: attachments/font/fontello.eot|0 0
+Added: attachments/font/fontello.svg|19 0
+Added: attachments/font/fontello.ttf|0 0
+Added: attachments/font/fontello.woff|0 0
+Modified: attachments/index.html|2 1
+
+Revision: e9519c9fff8a8964819e7695b66598f5c74aa314
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 17/03/2014 03:46:13
+Message:
+updated readme and grunt scripts #MsgLength=33
+
+
+----
+Modified: .gitignore|2 1
+Modified: Gruntfile.js|74 11
+Modified: README.md|95 58
+Modified: attachments/css/layout.less|1 1
+Modified: attachments/css/pages/home.less|1 1
+Modified: attachments/css/styles.css|2 2
+Modified: attachments/js/directives/topbar.js|1 1
+Modified: attachments/partials/views/home.html|2 2
+Added: config.json|12 0
+Modified: package.json|5 3
+
+Revision: db86c5ed5ddcbbabda0eaf6221becb53d7081b5d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 17/03/2014 03:47:36
+Message:
+updated branch reference in readme #MsgLength=35
+
+
+----
+Modified: README.md|1 1
+
+Revision: 4052a586e4d1472ccefed7342357bde2723bd050
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 17/03/2014 03:53:25
+Message:
+updated readme to be nicer #MsgLength=27
+
+
+----
+Modified: README.md|13 10
+
+Revision: 1924652d1975c5b5f669da1d9e19bdda9da1c1ea
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 17/03/2014 09:32:41
+Message:
+more revisions to the readme #MsgLength=29
+
+
+----
+Modified: README.md|12 10
+
+Revision: 1893e83f4954d61efecdbbbb486fd6ae99de3e52
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 17/03/2014 09:36:59
+Message:
+added License file #MsgLength=19
+
+
+----
+Added: LICENSE|202 0
+
+Revision: 00569d570ffbacdaec95c13d0c448661ec381c20
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 18/03/2014 15:04:05
+Message:
+minor dependency updates #MsgLength=25
+
+
+----
+Modified: Gruntfile.js|0 1
+Modified: README.md|1 1
+Modified: package.json|1 2
+
+Revision: b247c09bc8c2fb1ec8932fe424eb2502e69be391
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 18/03/2014 15:10:03
+Message:
+added grunt-cli to the README #MsgLength=30
+
+
+----
+Modified: README.md|3 1
+
+
+Revision: fd1748634ea84a25ced0a6451a9d1c4db2e8597e
+Author: Josh Bavari <josh@raisemore.com>
+Date: 20/03/2014 02:12:45
+Message:
+Added a small waiting message while the _allDocs call is loading the plugins from couchdb #MsgLength=90
+
+
+----
+Modified: attachments/js/controllers/viewAll.js|7 4
+Modified: attachments/partials/views/viewAll.html|7 1
+
+Revision: 537ee2229da3d59bf6d93080ac27e86b2ffd2096
+Author: Josh Bavari <josh@raisemore.com>
+Date: 20/03/2014 03:50:08
+Message:
+Updating styles to view all page #MsgLength=33
+
+
+----
+Modified: attachments/css/pages/viewAll.less|4 0
+Modified: attachments/css/styles.css|3 0
+Modified: attachments/partials/views/viewAll.html|1 1
+
+Revision: 2cba18ad83757af8190e40f4b25c0f667d279917
+Author: Derek Grape <zombiewebslinger@gmail.com>
+Date: 20/03/2014 03:47:49
+Message:
+Changes for style and design #MsgLength=29
+
+
+----
+Modified: attachments/css/directives/pluginlist.less|19 4
+Modified: attachments/css/footer.less|1 2
+Modified: attachments/css/pages/search.less|3 3
+Modified: attachments/css/styles.css|21 9
+Modified: attachments/index.html|3 3
+Modified: attachments/partials/directives/pluginlist.html|6 6
+Modified: attachments/partials/directives/topbar.html|4 4
+Modified: attachments/partials/views/home.html|18 35
+
+
+
+Revision: 183982346df5f4bc8144f64fdeb5fc198d1bb5d3
+Author: Josh Bavari <josh@raisemore.com>
+Date: 20/03/2014 15:11:33
+Message:
+Added new icons / fonts with fontello again. Had to add plus/minus circles for filtering #MsgLength=89
+
+
+----
+Modified: attachments/css/fontello-codes.css|2 0
+Modified: attachments/css/fontello-embedded.css|8 6
+Modified: attachments/css/fontello-ie7-codes.css|2 0
+Modified: attachments/css/fontello-ie7.css|2 0
+Modified: attachments/css/fontello.css|8 6
+Modified: attachments/css/pages/search.less|18 0
+Modified: attachments/css/styles.css|14 0
+Modified: attachments/font/fontello.eot|0 0
+Modified: attachments/font/fontello.svg|2 0
+Modified: attachments/font/fontello.ttf|0 0
+Modified: attachments/font/fontello.woff|0 0
+
+Revision: 2d6f7aaa8b69f42ce736915aebcfbc66100f4638
+Author: Josh Bavari <josh@raisemore.com>
+Date: 20/03/2014 15:12:53
+Message:
+Adding in the searching and filtering functionality. Added back in search service to keep the search query for the back to search results functionality on the plugin details page. #MsgLength=180
+
+
+----
+Modified: attachments/index.html|1 0
+Modified: attachments/js/controllers/packageDetails.js|5 1
+Modified: attachments/js/controllers/search.js|67 1
+Modified: attachments/js/directives/topbar.js|4 3
+Added: attachments/js/filters/platformFilter.js|50 0
+Modified: attachments/js/services.js|8 0
+Modified: attachments/partials/directives/pluginlist.html|2 1
+Modified: attachments/partials/views/search.html|43 5
+
+Revision: f384dff2556cba63a4f91e0d812e50bbbc30ad01
+Author: Josh Bavari <josh@raisemore.com>
+Date: 20/03/2014 15:27:56
+Message:
+Added in filtering for ubuntu platforms. Also added new icons for firefox, ios, android, blackberry, windows phone for filtering and eventually showing in the grid #MsgLength=164
+
+
+----
+Modified: attachments/css/fontello-codes.css|7 2
+Modified: attachments/css/fontello-embedded.css|13 8
+Modified: attachments/css/fontello-ie7-codes.css|7 2
+Modified: attachments/css/fontello-ie7.css|7 2
+Modified: attachments/css/fontello.css|13 8
+Modified: attachments/font/fontello.eot|0 0
+Modified: attachments/font/fontello.svg|7 2
+Modified: attachments/font/fontello.ttf|0 0
+Modified: attachments/font/fontello.woff|0 0
+Modified: attachments/js/controllers/search.js|1 0
+Modified: attachments/partials/views/search.html|28 9
+
+Revision: 5471573049b145d76b95adb64b2b22f17d90c988
+Author: Josh Bavari <josh@raisemore.com>
+Date: 21/03/2014 15:02:59
+Message:
+Added different icon for windows phone 7, 8, and windows 8. No ubuntu phone logo yet. #MsgLength=86
+
+
+----
+Modified: attachments/css/fontello-codes.css|3 1
+Modified: attachments/css/fontello-embedded.css|9 7
+Modified: attachments/css/fontello-ie7-codes.css|3 1
+Modified: attachments/css/fontello-ie7.css|3 1
+Modified: attachments/css/fontello.css|9 7
+Modified: attachments/font/fontello.eot|0 0
+Modified: attachments/font/fontello.svg|3 1
+Modified: attachments/font/fontello.ttf|0 0
+Modified: attachments/font/fontello.woff|0 0
+
+Revision: b18c66b84cd143e9e8f427d3482c99bdb97d09c3
+Author: Josh Bavari <josh@raisemore.com>
+Date: 21/03/2014 15:03:17
+Message:
+Changing class names for windows phone 7, 8, windows 8 #MsgLength=55
+
+
+----
+Modified: attachments/partials/views/search.html|3 3
+
+Revision: 8ecff1cd302bdd54e01cbef4b59d81cd4d3e03fd
+Author: Josh Bavari <josh@raisemore.com>
+Date: 23/03/2014 15:39:04
+Message:
+After looking at other apache sites, sticking with helvitica font. Removed Lato. Also fixed search back button on the package deatils page #MsgLength=139
+
+
+----
+Modified: attachments/index.html|0 1
+Modified: attachments/js/controllers/packageDetails.js|6 1
+
+Revision: 9722c6adf6b2bc2b9f93fabdecd4e0f8eefc100e
+Author: Josh Bavari <josh@raisemore.com>
+Date: 26/03/2014 03:02:30
+Message:
+Added in the new view to only give us search results we actually care about. #MsgLength=77
+
+
+----
+Modified: app.js|20 0
+
+Revision: 64ab3228421fdd63afe0760d486484413eaebe95
+Author: Josh Bavari <josh@raisemore.com>
+Date: 26/03/2014 03:03:08
+Message:
+Going back to last page instead of going to homepage #MsgLength=53
+
+
+----
+Modified: attachments/js/controllers/packageDetails.js|1 1
+
+Revision: a2f4387dc7ab80b94048c38f55ac053aff5166ee
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 27/03/2014 05:27:13
+Message:
+CB-6355: Fixed download list on homepage #MsgLength=41
+
+
+----
+Modified: README.md|1 1
+Modified: attachments/partials/views/home.html|1 1
+
+Revision: c5ea3bd6bcffa3261bea0deb5b783830caba69d8
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 27/03/2014 06:08:45
+Message:
+CB-6282: added documentation links to homepage #MsgLength=47
+
+
+----
+Modified: attachments/partials/views/home.html|2 2
+
+Revision: 5b5a9103feef92f0d890b5eaffc5585660d185ac
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 27/03/2014 08:39:15
+Message:
+CB-6353: fixed up mobile styling #MsgLength=33
+
+
+----
+Modified: attachments/css/header.less|7 1
+Modified: attachments/css/pages/home.less|2 0
+Modified: attachments/css/styles.css|8 1
+Modified: attachments/index.html|1 1
+Modified: attachments/partials/directives/topbar.html|2 2
+Modified: attachments/partials/views/home.html|5 5
+
+Revision: 7b377c32dadc29d0ec1f0c9f76c3668e9335a15a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 27/03/2014 08:45:19
+Message:
+removed debug code #MsgLength=19
+
+
+----
+Modified: attachments/partials/directives/pluginlist.html|0 1
+
+Revision: 0f2b629a5e818bc6f322d792d722f46e906dc1e4
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 03/04/2014 06:49:44
+Message:
+updated some styles #MsgLength=20
+
+
+----
+Modified: Gruntfile.js|1 0
+Modified: attachments/partials/views/viewAll.html|2 2
+
+Revision: 0b2fbdffb878380c1dd8c775cd405c7755c495fd
+Author: Josh Bavari <josh@raisemore.com>
+Date: 30/03/2014 22:06:10
+Message:
+Removed the $ from the cordova add plugin command. #MsgLength=51
+
+
+----
+Modified: attachments/partials/views/packageDetails.html|1 1
+
+Revision: 100a9dfc65441911b40e09c2f2ed1d8e85ad85a6
+Author: Josh Bavari <josh@raisemore.com>
+Date: 30/03/2014 22:09:29
+Message:
+Fixed the Grunt watch configuration - watching the css files to call LESS and then reload server was infinitely looping. Less would be compiled and change css, which then made reload happen. However, changing less caused a reload, so there was two reloads for each. This is now fixed #MsgLength=284
+
+
+----
+Modified: Gruntfile.js|7 3
+
+Revision: 06efc8f0c790f06add697810a8e10949c8f66fa9
+Author: Josh Bavari <josh@raisemore.com>
+Date: 30/03/2014 22:25:04
+Message:
+Removed the icons from the filters. Updated styles #MsgLength=51
+
+
+----
+Modified: attachments/partials/views/search.html|9 9
+
+Revision: 3f4aea87135411c9a0163bb0a5a33ae63d72c35a
+Author: Josh Bavari <josh@raisemore.com>
+Date: 31/03/2014 01:19:24
+Message:
+More fixes for grunt file and reloading. Had double reloads again. This fixes that. Also including dropdown stylesheet for styling dropdowns #MsgLength=141
+
+
+----
+Modified: Gruntfile.js|3 3
+Added: attachments/css/controls/dropdowns.less|50 0
+
+Revision: 6cc51774fad16ba0e48a124c363a3ec08aad57b8
+Author: Josh Bavari <josh@raisemore.com>
+Date: 31/03/2014 01:19:53
+Message:
+Taking out the old dropdown styling. #MsgLength=37
+
+
+----
+Modified: attachments/css/pages/packageDetails.less|73 1
+
+Revision: 3736ad6fe26de09d5d760e7477a7abd197efd1b9
+Author: Josh Bavari <josh@raisemore.com>
+Date: 31/03/2014 01:20:16
+Message:
+Fixes for search page filter - added more padding to make it stand out more #MsgLength=76
+
+
+----
+Modified: attachments/css/pages/search.less|4 0
+
+Revision: ced602083b8840c6f3228901a23c3c7147a099f1
+Author: Josh Bavari <josh@raisemore.com>
+Date: 31/03/2014 01:20:40
+Message:
+Including the correct filters this time #MsgLength=40
+
+
+----
+Modified: attachments/js/controllers/search.js|2 2
+
+Revision: 346cd100d74b7512b9c234856b361821fc455f48
+Author: Josh Bavari <josh@raisemore.com>
+Date: 31/03/2014 01:21:38
+Message:
+Fixes for platform details page and style.css included #MsgLength=55
+
+
+----
+Modified: attachments/css/styles.css|68 1
+Modified: attachments/css/styles.less|3 0
+Modified: attachments/partials/views/packageDetails.html|9 5
+
+Revision: 10fd1acf5aa7d3fd3835f0b4cd9fa030b60b5837
+Author: Josh Bavari <josh@raisemore.com>
+Date: 31/03/2014 02:55:36
+Message:
+Added in up and down arrows from fontello. They are open font and licensed for all to use #MsgLength=90
+
+
+----
+Modified: attachments/css/fontello-codes.css|6 7
+Modified: attachments/css/fontello-embedded.css|12 13
+Modified: attachments/css/fontello-ie7-codes.css|6 7
+Modified: attachments/css/fontello-ie7.css|6 7
+Modified: attachments/css/fontello.css|12 13
+Modified: attachments/font/fontello.eot|0 0
+Modified: attachments/font/fontello.svg|6 7
+Modified: attachments/font/fontello.ttf|0 0
+Modified: attachments/font/fontello.woff|0 0
+
+Revision: 27c89cf9c894870d9954bfc6ac92f5bbff2d938a
+Author: Josh Bavari <josh@raisemore.com>
+Date: 31/03/2014 02:56:14
+Message:
+Adding basic sorting on the search results ng-repeat directive via orderBy #MsgLength=75
+
+
+----
+Modified: attachments/js/controllers/search.js|8 0
+Modified: attachments/partials/directives/pluginlist.html|6 3
+
+Revision: f30cb60904df92259857c45283a9c12a5a26fbfc
+Author: Josh Bavari <josh@raisemore.com>
+Date: 31/03/2014 07:49:43
+Message:
+Corrected some styles for the drop down for versions. Added the side panel on packagedetails for the downloads and version number stuff. #MsgLength=137
+
+
+----
+Modified: attachments/css/controls/dropdowns.less|3 3
+Modified: attachments/css/pages/packageDetails.less|13 58
+Modified: attachments/css/styles.css|16 6
+Modified: attachments/css/variables.less|2 1
+Modified: attachments/index.html|1 1
+Modified: attachments/partials/views/packageDetails.html|123 66
+
+Revision: 715b59265cb61ca5f1eb53cedc1c3e3452e86afd
+Author: Josh Bavari <josh@raisemore.com>
+Date: 31/03/2014 08:05:58
+Message:
+Added in actual stats on package details page. I still dont have downloads working, so I couldnt pull that in. Added moment time library to process time since last updated. #MsgLength=173
+
+
+----
+Modified: attachments/index.html|1 0
+Modified: attachments/js/controllers/packageDetails.js|6 3
+Added: attachments/js/lib/moment.min.js|6 0
+Modified: attachments/partials/views/packageDetails.html|6 6
+
+
+Revision: a16844868bc594feb7fa541d96df80068e373e78
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 03/04/2014 07:54:50
+Message:
+updated reference to font/style.css #MsgLength=36
+
+
+----
+Modified: attachments/index.html|1 1
+
+Revision: 91558d2dc24daa4f2b510ee427a1e54479b4c9cd
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 03/04/2014 08:14:47
+Message:
+CB-6281: added proper download counts #MsgLength=38
+
+
+----
+Modified: attachments/js/controllers/packageDetails.js|6 1
+Modified: attachments/partials/views/packageDetails.html|1 1
+
+Revision: 093514a3d29d079b22e2155ae9fcae4ffd8d7a22
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/04/2014 07:23:55
+Message:
+updated readme with insecure rewrites rule error #MsgLength=49
+
+
+----
+Modified: README.md|2 0
+
+Revision: f7c951939081a8078d791814a03cce693ee278dc
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/04/2014 08:20:48
+Message:
+updated secure rewrites issue #MsgLength=30
+
+
+----
+Modified: README.md|1 1
+
+Revision: 8e8956ed9be67fd292b6e817067e2a7cf2104693
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 08/04/2014 05:11:39
+Message:
+updated readme to use master branch #MsgLength=36
+
+
+----
+Modified: README.md|1 1
+
+Revision: b839e62d4d16d4d66ff5951721ec28816f0f5d22
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 09/04/2014 05:05:43
+Message:
+CB-6285: added png version of pluggy #MsgLength=37
+
+
+----
+Added: attachments/img/pluggy.png|0 0
+Modified: attachments/js/controllers/search.js|3 2
+Modified: attachments/js/directives/pluginlist.js|12 0
+Modified: attachments/partials/directives/pluginlist.html|1 1
+
+Revision: 3ceaf008bdfc78b55ac2ba5795bd7a2607858e5b
+Author: Josh Bavari <josh@raisemore.com>
+Date: 31/03/2014 08:29:54
+Message:
+Fixed the hiding for engines on packagedetails page. Removed font/styles.css for being unused. #MsgLength=95
+
+
+----
+Modified: attachments/index.html|0 1
+Modified: attachments/partials/views/packageDetails.html|2 2
+
+Revision: 216c566fc160f8d64e0dc2bd7b41a8153b007cc6
+Author: Josh Bavari <josh@raisemore.com>
+Date: 09/04/2014 04:39:10
+Message:
+Removing the min.map files for the angular.min.js files #MsgLength=56
+
+
+----
+Modified: attachments/js/lib/angular-route.min.js|1 2
+Modified: attachments/js/lib/angular-sanitize.min.js|1 2
+Modified: attachments/js/lib/angular.min.js|1 2
+
+
+
+Revision: 762b2bf2d9c7665b0bde09dbff1c63fdaaad96e7
+Author: Josh Bavari <josh@raisemore.com>
+Date: 09/04/2014 05:21:34
+Message:
+Getting rid of the SVG image for the PNG version #MsgLength=49
+
+
+----
+Modified: attachments/css/layout.less|1 1
+Modified: attachments/css/styles.css|1 1
+
+Revision: 00f87882d3781f02d8b1175084f01c6926e0f7dd
+Author: Josh Bavari <josh@raisemore.com>
+Date: 09/04/2014 05:22:11
+Message:
+Removing livereload #MsgLength=20
+
+
+----
+Modified: attachments/index.html|0 2
+
+Revision: 552c64ee3b8d1c587cdfbf14b641dd6475f15146
+Author: Josh Bavari <josh@raisemore.com>
+Date: 09/04/2014 05:27:56
+Message:
+Added the search bar on the package details page #MsgLength=49
+
+
+----
+Modified: attachments/partials/views/packageDetails.html|2 0
+
+Revision: 518e10e214c134a83d673d3c73f7ea73318a80de
+Author: Josh Bavari <josh@raisemore.com>
+Date: 09/04/2014 05:43:00
+Message:
+Adding in grunt preprocess to remove the livereload script when its going to production #MsgLength=88
+
+
+----
+Modified: Gruntfile.js|14 0
+Modified: attachments/index.html|4 0
+Modified: package.json|2 1
+
+Revision: 8691cd965c63e38dbb8ec646eeef65581d3502ef
+Author: Josh Bavari <josh@raisemore.com>
+Date: 09/04/2014 06:13:08
+Message:
+Adding in preprocess directives to remove the livereload script on pushing out to prod #MsgLength=87
+
+
+----
+Modified: .gitignore|1 0
+Modified: Gruntfile.js|18 3
+Modified: attachments/index.html|2 2
+Modified: package.json|2 1
+
+Revision: 55da27cb20628c470fa3ed78b1a095e6a256b8a4
+Author: Josh Bavari <josh@raisemore.com>
+Date: 09/04/2014 06:13:48
+Message:
+Fixing the pre command #MsgLength=23
+
+
+----
+Modified: Gruntfile.js|1 1
+
+Revision: 6ee901970d2978ddc18c0ea61bc7128ae57ad17d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 16/04/2014 08:30:44
+Message:
+CB-6283: fixed download sorting #MsgLength=32
+
+
+----
+Modified: attachments/js/controllers/packageDetails.js|2 1
+Modified: attachments/js/controllers/viewAll.js|7 4
+Modified: attachments/js/directives/pluginlist.js|0 2
+Modified: attachments/js/directives/topbar.js|9 1
+Modified: attachments/partials/directives/pluginlist.html|3 3
+
+Revision: cf9fcdd7bcf1144894a8b15f940300da881eeb9b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 17/04/2014 06:56:40
+Message:
+removed englishdoc #MsgLength=19
+
+
+----
+Modified: attachments/js/controllers/packageDetails.js|1 1
+
+Revision: 34007dc62e19068838b37b2d2721b24ac9228e26
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 17/04/2014 14:40:07
+Message:
+CB-6285: fixed search, switched to searcher view #MsgLength=49
+
+
+----
+Modified: app.js|57 35
+Modified: attachments/js/controllers/home.js|0 2
+Modified: attachments/js/controllers/viewAll.js|3 1
+Modified: attachments/partials/directives/pluginlist.html|2 2
+
+Revision: e3226163850b8a5c753d97f6cbbe390bc48eddf1
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 17/04/2014 15:24:23
+Message:
+CB-6285: fixed async issue with downloads #MsgLength=42
+
+
+----
+Modified: app.js|0 4
+Modified: attachments/js/controllers/viewAll.js|10 8
+Modified: attachments/js/directives/topbar.js|12 7
+Modified: attachments/partials/views/packageDetails.html|1 1
+
+Revision: 00caf0456c47b9cd598c5f89a5eb03edd05e53f9
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 18/04/2014 08:24:47
+Message:
+CB-6470: fixed filter to work with new objs returned by searcher view #MsgLength=70
+
+
+----
+Modified: attachments/js/filters/platformFilter.js|5 7
+
+Revision: 2f9a843451ccb2c04073c0c2f115c9161ffdc0c6
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 22/04/2014 07:52:51
+Message:
+CB-6471: updated package details last updated to use same code as homepage #MsgLength=75
+
+
+----
+Modified: attachments/index.html|0 1
+Modified: attachments/js/controllers/packageDetails.js|4 4
+Deleted: attachments/js/lib/moment.min.js|0 6
+
+Revision: a16faf2a4f1bebead31111849c3a465b07056ee8
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 23/04/2014 08:38:19
+Message:
+CB-6280: uses doc/index.md instead of readme when available; CB-6471: switched to using moment.js for last updated #MsgLength=115
+
+
+----
+Modified: attachments/index.html|1 0
+Modified: attachments/js/controllers/home.js|2 2
+Modified: attachments/js/controllers/packageDetails.js|8 7
+Added: attachments/js/lib/moment.min.js|6 0
+Modified: attachments/js/services.js|0 30
+Modified: attachments/partials/views/packageDetails.html|7 1
+
+Revision: 685e9a559ac70da0df6da59fe035e58c64731d6c
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 23/04/2014 08:46:44
+Message:
+updated gruntfile to properly remove livereload on server load #MsgLength=63
+
+
+----
+Modified: Gruntfile.js|4 4
+Modified: attachments/js/controllers/packageDetails.js|1 2
+
+Revision: feeab2cc60b211f3d8e7cf167e31853b964f5372
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:42:54
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: 9f2be7dc23932d8ba8b865a05da638470e72533b
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 31/05/2014 00:13:37
+Message:
+CB-6818 Add license to CONTRIBUTING.md #MsgLength=39
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: d38ada65ccdf1e8e5c3f3c6219b225634f178801
+Author: Josh Bavari <josh@raisemore.com>
+Date: 29/05/2014 14:16:12
+Message:
+CB-6847 set default redirect to home when page doesn't exist #MsgLength=61
+
+
+----
+Modified: attachments/js/app.js|2 2
+
+Revision: ca174d51992502b86e2935baad7f56fd490707d1
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/06/2014 08:21:13
+Message:
+close #4 #MsgLength=9
+
+
+----
+Modified: README.md|1 1
+
+Revision: 4a27d4f9a51a97b2fcec559b344cfdf04da3e55d
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 07/10/2014 03:28:25
+Message:
+Support Browser platform as a filter #MsgLength=37
+
+
+----
+Modified: attachments/js/controllers/search.js|4 0
+Modified: attachments/partials/views/search.html|7 0
+
+Revision: 261263c02ed7fcec4eb1611f99d15ab7f5381f15
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 10/10/2014 02:54:01
+Message:
+updates url as you type #MsgLength=24
+
+
+----
+Modified: attachments/js/directives/topbar.js|7 0
+
+Revision: 7e6048bea72f4271168e0dadf5a4ffa92974374c
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 10/10/2014 02:54:58
+Message:
+remove a damn console msg #MsgLength=26
+
+
+----
+Modified: attachments/js/directives/topbar.js|0 1
+
+Revision: 87b33e7f54485e6ab3c7ed7eac9058e818975fd6
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 06/11/2014 04:04:06
+Message:
+Add filter by platform to add plugin view #MsgLength=42
+
+
+----
+Modified: attachments/js/controllers/viewAll.js|60 0
+Modified: attachments/partials/views/viewAll.html|72 0
+
+Revision: c07bb6620f0ed875486b591e41a7259b957019fa
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 11/11/2014 06:02:28
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|1 3
+
+Revision: b4ab059ff7b84069e2afd292b5dbbcb181412cde
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/11/2014 06:53:55
+Message:
+removed search on keypress #MsgLength=27
+
+
+----
+Modified: attachments/index.html|1 0
+Modified: attachments/js/directives/topbar.js|2 6
+Modified: attachments/partials/directives/topbar.html|1 1
+
+Revision: 5f0a0f33d17744949e3ad37d4409401b266858ba
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 16/12/2014 06:07:28
+Message:
+CB-8169 Spelling: readme #MsgLength=25
+
+
+----
+Modified: attachments/partials/views/packageDetails.html|1 1
+
+Revision: 80e3e59a128d0db6e1428e120668e8478e7186d2
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 16/12/2014 06:26:39
+Message:
+CB-8167 Brand: BlackBerry #MsgLength=26
+
+
+----
+Modified: attachments/js/controllers/search.js|2 2
+Modified: attachments/js/controllers/viewAll.js|2 2
+Modified: attachments/partials/views/search.html|2 2
+Modified: attachments/partials/views/viewAll.html|2 2
+Modified: attachments/plugins.json|2 2
+
+Revision: 534846c127e6e4ca0509357158c9bb511675e6f9
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 17/12/2014 02:43:07
+Message:
+CB-8175 Expose Fire OS #MsgLength=23
+
+
+----
+Modified: attachments/js/controllers/search.js|1 1
+Modified: attachments/js/controllers/viewAll.js|1 1
+Modified: attachments/partials/views/search.html|7 0
+Modified: attachments/partials/views/viewAll.html|7 0
+
+Revision: 6a1faf743af9e8a4b5a0a23e66399a0f72576c17
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 22/05/2015 04:50:09
+Message:
+CB-9026 Adding banner of shifting registry to npm #MsgLength=50
+
+
+----
+Modified: attachments/index.html|6 0
+
+Revision: 39c791d0e89eef75d36c72b46250057a159c0b39
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 23/05/2015 13:09:04
+Message:
+updated grunt-connect-proxy #MsgLength=28
+
+
+----
+Modified: package.json|1 1
+
+Revision: 6669015a8917d204ff8b334bd788f9795a1ca337
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 10/06/2015 02:23:12
+Message:
+CB-9146 Initial commit for npm-search #MsgLength=38
+
+
+----
+Added: npm-search/.gitignore|10 0
+Added: npm-search/Gulpfile.js|54 0
+Added: npm-search/assets/css/base.css|148 0
+Added: npm-search/assets/css/flexboxgrid.css|1026 0
+Added: npm-search/assets/img/grid.png|0 0
+Added: npm-search/assets/img/pluggy.png|0 0
+Added: npm-search/assets/js/app.js|238 0
+Added: npm-search/assets/js/official-plugins.json|26 0
+Added: npm-search/index.html|14 0
+Added: npm-search/package.json|39 0
+
+Revision: 1d7f7c03a071ccbb81bb816194c9bfa524609b5d
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 12/06/2015 06:21:07
+Message:
+CB-9152,9153,9154 Minor refactor and small fixes #MsgLength=49
+
+
+----
+Modified: npm-search/Gulpfile.js|6 16
+Modified: npm-search/assets/css/base.css|5 6
+Modified: npm-search/assets/js/app.js|48 25
+Modified: npm-search/package.json|0 2
+
+Revision: dfbf52c409bba0a652f9436e3c83d15d618b16ee
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 12/06/2015 08:38:44
+Message:
+CB-9165 Adding download count for plugin list #MsgLength=46
+
+
+----
+Modified: npm-search/assets/js/app.js|26 0
+
+Revision: d9349eea71195b4e74bc5dba11c636f234c94d23
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 17/06/2015 07:31:21
+Message:
+CB-9194 Created faq page and added header #MsgLength=42
+
+
+----
+Modified: npm-search/assets/css/base.css|238 8
+Added: npm-search/assets/img/shadow.png|0 0
+Added: npm-search/assets/img/sprite.png|0 0
+Added: npm-search/faq.html|61 0
+Modified: npm-search/index.html|17 0
+
+Revision: c73a032dc050bb6cf79dc434437e5f93e195f350
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 17/06/2015 07:31:21
+Message:
+correctly merge CB-9194 #MsgLength=35
+
+
+----
+Added: npm-search/developers.html|74 0
+Modified: npm-search/faq.html|8 11
+Modified: npm-search/index.html|2 0
+
+Revision: d549819e527f2d9fd16b45c7372ed5a040f08df9
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 17/06/2015 07:40:31
+Message:
+CB-9195 Sorting platforms and adding more option. This closes #14 #MsgLength=66
+
+
+----
+Modified: npm-search/assets/js/app.js|37 14
+Modified: npm-search/faq.html|0 3
+
+Revision: a89be5920d75c6b0e4edda065e47e280d65f9186
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 18/06/2015 05:09:51
+Message:
+CB-9204 Adding mouseover to more button #MsgLength=40
+
+
+----
+Modified: npm-search/assets/css/base.css|4 0
+Modified: npm-search/assets/js/app.js|1 1
+
+Revision: 037c7f87bed89f00ee265820673c54bff2bd62e0
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 18/06/2015 06:22:03
+Message:
+CB-9206 add search icon to search box #MsgLength=38
+
+
+----
+Modified: npm-search/assets/css/base.css|4 1
+Added: npm-search/assets/img/search.png|0 0
+
+Revision: 14fe2277e94ab4c82c8720ce98ac0474aa498fd4
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 20/06/2015 01:47:27
+Message:
+CB-9219 Added filters to search, support for multiple words, localize download count and other css changes #MsgLength=107
+
+
+----
+Modified: npm-search/assets/css/base.css|128 107
+Modified: npm-search/assets/js/app.js|137 36
+Modified: npm-search/package.json|1 0
+
+Revision: 786d638cce37188865aa0f226ff9d0020d13a17a
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 20/06/2015 09:51:01
+Message:
+Refactor code #MsgLength=14
+
+
+----
+Modified: npm-search/assets/js/app.js|67 56
+
+Revision: 4ac9bf68cac096f574b9275c9ad2eb276581df6f
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 23/06/2015 02:08:33
+Message:
+CB-9229 Add basic SEO and Google analytics to plugin search. This closes #21 #MsgLength=77
+
+
+----
+Modified: npm-search/Gulpfile.js|2 1
+Modified: npm-search/assets/css/base.css|0 5
+Added: npm-search/assets/img/android-chrome-144x144.png|0 0
+Added: npm-search/assets/img/android-chrome-192x192.png|0 0
+Added: npm-search/assets/img/android-chrome-36x36.png|0 0
+Added: npm-search/assets/img/android-chrome-48x48.png|0 0
+Added: npm-search/assets/img/android-chrome-72x72.png|0 0
+Added: npm-search/assets/img/android-chrome-96x96.png|0 0
+Added: npm-search/assets/img/apple-touch-icon-114x114.png|0 0
+Added: npm-search/assets/img/apple-touch-icon-120x120.png|0 0
+Added: npm-search/assets/img/apple-touch-icon-144x144.png|0 0
+Added: npm-search/assets/img/apple-touch-icon-152x152.png|0 0
+Added: npm-search/assets/img/apple-touch-icon-180x180.png|0 0
+Added: npm-search/assets/img/apple-touch-icon-57x57.png|0 0
+Added: npm-search/assets/img/apple-touch-icon-60x60.png|0 0
+Added: npm-search/assets/img/apple-touch-icon-72x72.png|0 0
+Added: npm-search/assets/img/apple-touch-icon-76x76.png|0 0
+Added: npm-search/assets/img/apple-touch-icon-precomposed.png|0 0
+Added: npm-search/assets/img/apple-touch-icon.png|0 0
+Added: npm-search/assets/img/browserconfig.xml|12 0
+Added: npm-search/assets/img/favicon-16x16.png|0 0
+Added: npm-search/assets/img/favicon-32x32.png|0 0
+Added: npm-search/assets/img/favicon-96x96.png|0 0
+Added: npm-search/assets/img/favicon.ico|0 0
+Added: npm-search/assets/img/manifest.json|41 0
+Added: npm-search/assets/img/mstile-144x144.png|0 0
+Added: npm-search/assets/img/mstile-150x150.png|0 0
+Added: npm-search/assets/img/mstile-310x150.png|0 0
+Added: npm-search/assets/img/mstile-310x310.png|0 0
+Added: npm-search/assets/img/mstile-70x70.png|0 0
+Modified: npm-search/assets/js/app.js|2 2
+Modified: npm-search/index.html|29 0
+
+Revision: b95626a896c99e9d791bd536d187b48146459745
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 23/06/2015 05:32:02
+Message:
+CB-9231 Add blacklisting feature. This closes #22 #MsgLength=50
+
+
+----
+Modified: npm-search/assets/js/app.js|13 0
+Added: npm-search/assets/js/blacklisted-plugins.json|7 0
+
+Revision: bf6e0597e0b89523a9a5d8c1b368dd9a0eede996
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 26/06/2015 05:28:53
+Message:
+Add support for uglify #MsgLength=23
+
+
+----
+Modified: npm-search/Gulpfile.js|6 2
+Modified: npm-search/package.json|4 1
+
+Revision: 63c85a1037c36b0aeac30047f813e5c66dd9a532
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 27/06/2015 01:22:09
+Message:
+Fix syntax error with if else in JSX. Fix the URL references for favicons #MsgLength=74
+
+
+----
+Modified: npm-search/assets/js/app.js|4 1
+Modified: npm-search/index.html|19 19
+
+Revision: 19f3374773e3b5be1c9b3827e424a0e276e8f72b
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 26/06/2015 06:19:22
+Message:
+Adding routing on search queries and auto url updations #MsgLength=56
+
+
+----
+Modified: npm-search/assets/css/base.css|5 0
+Modified: npm-search/assets/js/app.js|52 18
+
+Revision: 9df7907cd38f6b88a091a2377ef5c9e5e649da2d
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 26/06/2015 08:11:21
+Message:
+Adding trim to avoid extra space #MsgLength=33
+
+
+----
+Modified: npm-search/assets/js/app.js|1 1
+
+Revision: 9b71bb8226cf4784bfdc4fd0ebde7903162fab21
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 27/06/2015 05:40:19
+Message:
+Addressing comments. This closes #23 #MsgLength=37
+
+
+----
+Modified: npm-search/assets/css/base.css|2 7
+Modified: npm-search/assets/js/app.js|9 8
+
+Revision: f2d8ccb5c3107657bfa34b01dfa5a62a1a2b0627
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 08/07/2015 01:09:04
+Message:
+minor css changes #MsgLength=18
+
+
+----
+Modified: npm-search/assets/css/base.css|119 113
+
+Revision: dbcb1eb277cc0fc19743deb372f86fee50cabcae
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 08/07/2015 02:52:53
+Message:
+fix card css issues #MsgLength=20
+
+
+----
+Modified: npm-search/assets/css/base.css|23 1
+Modified: npm-search/assets/js/app.js|41 41
+
+Revision: 2d141c227cd2499a6fee545d3e69c73dfaa93277
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 08/07/2015 05:05:51
+Message:
+added README for npm-search #MsgLength=28
+
+
+----
+Added: npm-search/README.md|16 0
+
+Revision: d538ce866687fd29042a53360338f42de7350f0b
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 18/06/2015 08:07:34
+Message:
+CB-9209 add link from old page to new. This closes #17 #MsgLength=55
+
+
+----
+Modified: attachments/css/layout.less|10 0
+Modified: attachments/index.html|2 3
+
+Revision: 7d501c7a3ae7d921deecd7f63c8e5fe027a10038
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 15/07/2015 02:58:20
+Message:
+deployed new npm search #MsgLength=24
+
+
+----
+Modified: attachments/css/styles.css|8 0
+Modified: attachments/index.html|1 1
+Added: attachments/npm/assets/css/base.css|428 0
+Added: attachments/npm/assets/css/flexboxgrid.css|1026 0
+Added: attachments/npm/assets/img/android-chrome-144x144.png|0 0
+Added: attachments/npm/assets/img/android-chrome-192x192.png|0 0
+Added: attachments/npm/assets/img/android-chrome-36x36.png|0 0
+Added: attachments/npm/assets/img/android-chrome-48x48.png|0 0
+Added: attachments/npm/assets/img/android-chrome-72x72.png|0 0
+Added: attachments/npm/assets/img/android-chrome-96x96.png|0 0
+Added: attachments/npm/assets/img/apple-touch-icon-114x114.png|0 0
+Added: attachments/npm/assets/img/apple-touch-icon-120x120.png|0 0
+Added: attachments/npm/assets/img/apple-touch-icon-144x144.png|0 0
+Added: attachments/npm/assets/img/apple-touch-icon-152x152.png|0 0
+Added: attachments/npm/assets/img/apple-touch-icon-180x180.png|0 0
+Added: attachments/npm/assets/img/apple-touch-icon-57x57.png|0 0
+Added: attachments/npm/assets/img/apple-touch-icon-60x60.png|0 0
+Added: attachments/npm/assets/img/apple-touch-icon-72x72.png|0 0
+Added: attachments/npm/assets/img/apple-touch-icon-76x76.png|0 0
+Added: attachments/npm/assets/img/apple-touch-icon-precomposed.png|0 0
+Added: attachments/npm/assets/img/apple-touch-icon.png|0 0
+Added: attachments/npm/assets/img/browserconfig.xml|12 0
+Added: attachments/npm/assets/img/favicon-16x16.png|0 0
+Added: attachments/npm/assets/img/favicon-32x32.png|0 0
+Added: attachments/npm/assets/img/favicon-96x96.png|0 0
+Added: attachments/npm/assets/img/favicon.ico|0 0
+Added: attachments/npm/assets/img/grid.png|0 0
+Added: attachments/npm/assets/img/manifest.json|41 0
+Added: attachments/npm/assets/img/mstile-144x144.png|0 0
+Added: attachments/npm/assets/img/mstile-150x150.png|0 0
+Added: attachments/npm/assets/img/mstile-310x150.png|0 0
+Added: attachments/npm/assets/img/mstile-310x310.png|0 0
+Added: attachments/npm/assets/img/mstile-70x70.png|0 0
+Added: attachments/npm/assets/img/pluggy.png|0 0
+Added: attachments/npm/assets/img/search.png|0 0
+Added: attachments/npm/assets/img/shadow.png|0 0
+Added: attachments/npm/assets/img/sprite.png|0 0
+Added: attachments/npm/assets/js/app.js|473 0
+Added: attachments/npm/assets/js/blacklisted-plugins.json|7 0
+Added: attachments/npm/assets/js/official-plugins.json|26 0
+Added: attachments/npm/build/app.js|9 0
+Added: attachments/npm/build/img/android-chrome-144x144.png|0 0
+Added: attachments/npm/build/img/android-chrome-192x192.png|0 0
+Added: attachments/npm/build/img/android-chrome-36x36.png|0 0
+Added: attachments/npm/build/img/android-chrome-48x48.png|0 0
+Added: attachments/npm/build/img/android-chrome-72x72.png|0 0
+Added: attachments/npm/build/img/android-chrome-96x96.png|0 0
+Added: attachments/npm/build/img/apple-touch-icon-114x114.png|0 0
+Added: attachments/npm/build/img/apple-touch-icon-120x120.png|0 0
+Added: attachments/npm/build/img/apple-touch-icon-144x144.png|0 0
+Added: attachments/npm/build/img/apple-touch-icon-152x152.png|0 0
+Added: attachments/npm/build/img/apple-touch-icon-180x180.png|0 0
+Added: attachments/npm/build/img/apple-touch-icon-57x57.png|0 0
+Added: attachments/npm/build/img/apple-touch-icon-60x60.png|0 0
+Added: attachments/npm/build/img/apple-touch-icon-72x72.png|0 0
+Added: attachments/npm/build/img/apple-touch-icon-76x76.png|0 0
+Added: attachments/npm/build/img/apple-touch-icon-precomposed.png|0 0
+Added: attachments/npm/build/img/apple-touch-icon.png|0 0
+Added: attachments/npm/build/img/favicon-16x16.png|0 0
+Added: attachments/npm/build/img/favicon-32x32.png|0 0
+Added: attachments/npm/build/img/favicon-96x96.png|0 0
+Added: attachments/npm/build/img/grid.png|0 0
+Added: attachments/npm/build/img/mstile-144x144.png|0 0
+Added: attachments/npm/build/img/mstile-150x150.png|0 0
+Added: attachments/npm/build/img/mstile-310x150.png|0 0
+Added: attachments/npm/build/img/mstile-310x310.png|0 0
+Added: attachments/npm/build/img/mstile-70x70.png|0 0
+Added: attachments/npm/build/img/pluggy.png|0 0
+Added: attachments/npm/build/img/search.png|0 0
+Added: attachments/npm/build/img/shadow.png|0 0
+Added: attachments/npm/build/img/sprite.png|0 0
+Added: attachments/npm/build/styles.css|1455 0
+Added: attachments/npm/developers.html|74 0
+Added: attachments/npm/faq.html|55 0
+Added: attachments/npm/index.html|62 0
+
+Revision: fb9484694d1dc59039d1cd491cbc5f70424c6392
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 16/07/2015 00:59:34
+Message:
+Improve the gulp workflow to include support for browser-sync and use envify to create React production build. #MsgLength=111
+
+
+----
+Modified: npm-search/Gulpfile.js|22 4
+Modified: npm-search/README.md|12 5
+Modified: npm-search/package.json|3 1
+
+Revision: f4cc553aca18380fa71ad589b6343ec8d1b25848
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 16/07/2015 04:59:02
+Message:
+move config.json to config.sample.json #MsgLength=39
+
+
+----
+Modified: .gitignore|2 1
+Renamed: config.sample.json [from config.json]|0 0
+
+Revision: 954749236d07be4a341ceb263c74778eecc42904
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 16/07/2015 02:05:26
+Message:
+Changing batch sizes for XHR to improve perf #MsgLength=45
+
+
+----
+Modified: npm-search/assets/js/app.js|8 3
+
+Revision: b36228a8bdb050f0bd524834bead7a1ce52d9b2b
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 16/07/2015 02:34:05
+Message:
+Make plugin data model immutable and improve perf by implementing shouldComponentUpdate callback. Make helper functions static.. This closes #26 #MsgLength=145
+
+
+----
+Modified: npm-search/assets/js/app.js|86 71
+
+Revision: a809ee569ee12859be78ec35b15693bca84d5da0
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 16/07/2015 05:56:04
+Message:
+deploy first perf update #MsgLength=25
+
+
+----
+Modified: attachments/npm/assets/js/app.js|94 74
+Modified: attachments/npm/build/app.js|5 8
+
+Revision: 676d5b79600d4fc0e989b1f42f573be0c3cf9d5f
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 16/07/2015 08:32:34
+Message:
+Extend grunt, add more structure, fix bugs #MsgLength=43
+
+
+----
+Modified: Gruntfile.js|19 0
+Modified: README.md|3 0
+Deleted: attachments/npm/build/app.js|0 6
+Renamed: attachments/npm/css/styles.css [from attachments/npm/build/styles.css]|6 6
+Modified: attachments/npm/developers.html|1 1
+Modified: attachments/npm/faq.html|1 1
+Renamed: attachments/npm/img/android-chrome-144x144.png [from attachments/npm/build/img/android-chrome-144x144.png]|0 0
+Renamed: attachments/npm/img/android-chrome-192x192.png [from attachments/npm/build/img/android-chrome-192x192.png]|0 0
+Renamed: attachments/npm/img/android-chrome-36x36.png [from attachments/npm/build/img/android-chrome-36x36.png]|0 0
+Renamed: attachments/npm/img/android-chrome-48x48.png [from attachments/npm/build/img/android-chrome-48x48.png]|0 0
+Renamed: attachments/npm/img/android-chrome-72x72.png [from attachments/npm/build/img/android-chrome-72x72.png]|0 0
+Renamed: attachments/npm/img/android-chrome-96x96.png [from attachments/npm/build/img/android-chrome-96x96.png]|0 0
+Renamed: attachments/npm/img/apple-touch-icon-114x114.png [from attachments/npm/build/img/apple-touch-icon-114x114.png]|0 0
+Renamed: attachments/npm/img/apple-touch-icon-120x120.png [from attachments/npm/build/img/apple-touch-icon-120x120.png]|0 0
+Renamed: attachments/npm/img/apple-touch-icon-144x144.png [from attachments/npm/build/img/apple-touch-icon-144x144.png]|0 0
+Renamed: attachments/npm/img/apple-touch-icon-152x152.png [from attachments/npm/build/img/apple-touch-icon-152x152.png]|0 0
+Renamed: attachments/npm/img/apple-touch-icon-180x180.png [from attachments/npm/build/img/apple-touch-icon-180x180.png]|0 0
+Renamed: attachments/npm/img/apple-touch-icon-57x57.png [from attachments/npm/build/img/apple-touch-icon-57x57.png]|0 0
+Renamed: attachments/npm/img/apple-touch-icon-60x60.png [from attachments/npm/build/img/apple-touch-icon-60x60.png]|0 0
+Renamed: attachments/npm/img/apple-touch-icon-72x72.png [from attachments/npm/build/img/apple-touch-icon-72x72.png]|0 0
+Renamed: attachments/npm/img/apple-touch-icon-76x76.png [from attachments/npm/build/img/apple-touch-icon-76x76.png]|0 0
+Renamed: attachments/npm/img/apple-touch-icon-precomposed.png [from attachments/npm/build/img/apple-touch-icon-precomposed.png]|0 0
+Renamed: attachments/npm/img/apple-touch-icon.png [from attachments/npm/build/img/apple-touch-icon.png]|0 0
+Renamed: attachments/npm/img/favicon-16x16.png [from attachments/npm/build/img/favicon-16x16.png]|0 0
+Renamed: attachments/npm/img/favicon-32x32.png [from attachments/npm/build/img/favicon-32x32.png]|0 0
+Renamed: attachments/npm/img/favicon-96x96.png [from attachments/npm/build/img/favicon-96x96.png]|0 0
+Renamed: attachments/npm/img/grid.png [from attachments/npm/build/img/grid.png]|0 0
+Renamed: attachments/npm/img/mstile-144x144.png [from attachments/npm/build/img/mstile-144x144.png]|0 0
+Renamed: attachments/npm/img/mstile-150x150.png [from attachments/npm/build/img/mstile-150x150.png]|0 0
+Renamed: attachments/npm/img/mstile-310x150.png [from attachments/npm/build/img/mstile-310x150.png]|0 0
+Renamed: attachments/npm/img/mstile-310x310.png [from attachments/npm/build/img/mstile-310x310.png]|0 0
+Renamed: attachments/npm/img/mstile-70x70.png [from attachments/npm/build/img/mstile-70x70.png]|0 0
+Renamed: attachments/npm/img/pluggy.png [from attachments/npm/build/img/pluggy.png]|0 0
+Renamed: attachments/npm/img/search.png [from attachments/npm/assets/img/search.png]|0 0
+Renamed: attachments/npm/img/shadow.png [from attachments/npm/build/img/shadow.png]|0 0
+Renamed: attachments/npm/img/sprite.png [from attachments/npm/build/img/sprite.png]|0 0
+Modified: attachments/npm/index.html|19 19
+Added: attachments/npm/js/app.js|6 0
+Modified: npm-search/.gitignore|1 1
+Modified: npm-search/Gulpfile.js|30 20
+Deleted: npm-search/assets/css/base.css|0 428
+Deleted: npm-search/assets/css/flexboxgrid.css|0 1026
+Deleted: npm-search/assets/img/android-chrome-144x144.png|0 0
+Deleted: npm-search/assets/img/android-chrome-192x192.png|0 0
+Deleted: npm-search/assets/img/android-chrome-36x36.png|0 0
+Deleted: npm-search/assets/img/android-chrome-48x48.png|0 0
+Deleted: npm-search/assets/img/android-chrome-72x72.png|0 0
+Deleted: npm-search/assets/img/android-chrome-96x96.png|0 0
+Deleted: npm-search/assets/img/apple-touch-icon-114x114.png|0 0
+Deleted: npm-search/assets/img/apple-touch-icon-120x120.png|0 0
+Deleted: npm-search/assets/img/apple-touch-icon-144x144.png|0 0
+Deleted: npm-search/assets/img/apple-touch-icon-152x152.png|0 0
+Deleted: npm-search/assets/img/apple-touch-icon-180x180.png|0 0
+Deleted: npm-search/assets/img/apple-touch-icon-57x57.png|0 0
+Deleted: npm-search/assets/img/apple-touch-icon-60x60.png|0 0
+Deleted: npm-search/assets/img/apple-touch-icon-72x72.png|0 0
+Deleted: npm-search/assets/img/apple-touch-icon-76x76.png|0 0
+Deleted: npm-search/assets/img/apple-touch-icon-precomposed.png|0 0
+Deleted: npm-search/assets/img/apple-touch-icon.png|0 0
+Deleted: npm-search/assets/img/browserconfig.xml|0 12
+Deleted: npm-search/assets/img/favicon-16x16.png|0 0
+Deleted: npm-search/assets/img/favicon-32x32.png|0 0
+Deleted: npm-search/assets/img/favicon-96x96.png|0 0
+Deleted: npm-search/assets/img/favicon.ico|0 0
+Deleted: npm-search/assets/img/grid.png|0 0
+Deleted: npm-search/assets/img/manifest.json|0 41
+Deleted: npm-search/assets/img/mstile-144x144.png|0 0
+Deleted: npm-search/assets/img/mstile-150x150.png|0 0
+Deleted: npm-search/assets/img/mstile-310x150.png|0 0
+Deleted: npm-search/assets/img/mstile-310x310.png|0 0
+Deleted: npm-search/assets/img/mstile-70x70.png|0 0
+Deleted: npm-search/assets/img/pluggy.png|0 0
+Deleted: npm-search/assets/img/search.png|0 0
+Deleted: npm-search/assets/img/shadow.png|0 0
+Deleted: npm-search/assets/img/sprite.png|0 0
+Deleted: npm-search/assets/js/app.js|0 493
+Deleted: npm-search/assets/js/blacklisted-plugins.json|0 7
+Deleted: npm-search/assets/js/official-plugins.json|0 26
+Added: npm-search/build/.gitkeep|0 0
+Renamed: npm-search/src/css/base.css [from attachments/npm/assets/css/base.css]|6 6
+Renamed: npm-search/src/css/flexboxgrid.css [from attachments/npm/assets/css/flexboxgrid.css]|0 0
+Renamed: npm-search/src/developers.html [from npm-search/developers.html]|1 1
+Renamed: npm-search/src/etc/browserconfig.xml [from attachments/npm/assets/img/browserconfig.xml]|4 4
+Renamed: npm-search/src/etc/favicon.ico [from attachments/npm/assets/img/favicon.ico]|0 0
+Renamed: npm-search/src/etc/manifest.json [from attachments/npm/assets/img/manifest.json]|7 7
+Renamed: npm-search/src/faq.html [from npm-search/faq.html]|1 1
+Renamed: npm-search/src/img/android-chrome-144x144.png [from attachments/npm/assets/img/android-chrome-144x144.png]|0 0
+Renamed: npm-search/src/img/android-chrome-192x192.png [from attachments/npm/assets/img/android-chrome-192x192.png]|0 0
+Renamed: npm-search/src/img/android-chrome-36x36.png [from attachments/npm/assets/img/android-chrome-36x36.png]|0 0
+Renamed: npm-search/src/img/android-chrome-48x48.png [from attachments/npm/assets/img/android-chrome-48x48.png]|0 0
+Renamed: npm-search/src/img/android-chrome-72x72.png [from attachments/npm/assets/img/android-chrome-72x72.png]|0 0
+Renamed: npm-search/src/img/android-chrome-96x96.png [from attachments/npm/assets/img/android-chrome-96x96.png]|0 0
+Renamed: npm-search/src/img/apple-touch-icon-114x114.png [from attachments/npm/assets/img/apple-touch-icon-114x114.png]|0 0
+Renamed: npm-search/src/img/apple-touch-icon-120x120.png [from attachments/npm/assets/img/apple-touch-icon-120x120.png]|0 0
+Renamed: npm-search/src/img/apple-touch-icon-144x144.png [from attachments/npm/assets/img/apple-touch-icon-144x144.png]|0 0
+Renamed: npm-search/src/img/apple-touch-icon-152x152.png [from attachments/npm/assets/img/apple-touch-icon-152x152.png]|0 0
+Renamed: npm-search/src/img/apple-touch-icon-180x180.png [from attachments/npm/assets/img/apple-touch-icon-180x180.png]|0 0
+Renamed: npm-search/src/img/apple-touch-icon-57x57.png [from attachments/npm/assets/img/apple-touch-icon-57x57.png]|0 0
+Renamed: npm-search/src/img/apple-touch-icon-60x60.png [from attachments/npm/assets/img/apple-touch-icon-60x60.png]|0 0
+Renamed: npm-search/src/img/apple-touch-icon-72x72.png [from attachments/npm/assets/img/apple-touch-icon-72x72.png]|0 0
+Renamed: npm-search/src/img/apple-touch-icon-76x76.png [from attachments/npm/assets/img/apple-touch-icon-76x76.png]|0 0
+Renamed: npm-search/src/img/apple-touch-icon-precomposed.png [from attachments/npm/assets/img/apple-touch-icon-precomposed.png]|0 0
+Renamed: npm-search/src/img/apple-touch-icon.png [from attachments/npm/assets/img/apple-touch-icon.png]|0 0
+Renamed: npm-search/src/img/favicon-16x16.png [from attachments/npm/assets/img/favicon-16x16.png]|0 0
+Renamed: npm-search/src/img/favicon-32x32.png [from attachments/npm/assets/img/favicon-32x32.png]|0 0
+Renamed: npm-search/src/img/favicon-96x96.png [from attachments/npm/assets/img/favicon-96x96.png]|0 0
+Renamed: npm-search/src/img/grid.png [from attachments/npm/assets/img/grid.png]|0 0
+Renamed: npm-search/src/img/mstile-144x144.png [from attachments/npm/assets/img/mstile-144x144.png]|0 0
+Renamed: npm-search/src/img/mstile-150x150.png [from attachments/npm/assets/img/mstile-150x150.png]|0 0
+Renamed: npm-search/src/img/mstile-310x150.png [from attachments/npm/assets/img/mstile-310x150.png]|0 0
+Renamed: npm-search/src/img/mstile-310x310.png [from attachments/npm/assets/img/mstile-310x310.png]|0 0
+Renamed: npm-search/src/img/mstile-70x70.png [from attachments/npm/assets/img/mstile-70x70.png]|0 0
+Renamed: npm-search/src/img/pluggy.png [from attachments/npm/assets/img/pluggy.png]|0 0
+Renamed: npm-search/src/img/search.png [from attachments/npm/build/img/search.png]|0 0
+Renamed: npm-search/src/img/shadow.png [from attachments/npm/assets/img/shadow.png]|0 0
+Renamed: npm-search/src/img/sprite.png [from attachments/npm/assets/img/sprite.png]|0 0
+Renamed: npm-search/src/index.html [from npm-search/index.html]|19 19
+Renamed: npm-search/src/js/app.js [from attachments/npm/assets/js/app.js]|0 0
+Renamed: npm-search/src/js/blacklisted-plugins.json [from attachments/npm/assets/js/blacklisted-plugins.json]|0 0
+Renamed: npm-search/src/js/official-plugins.json [from attachments/npm/assets/js/official-plugins.json]|0 0
+Modified: package.json|7 6
+
+Revision: aefa1cc71c125cb12d8938cfd532a60593b1f21f
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 17/07/2015 14:04:03
+Message:
+Use gulp-serve instead of browser-sync #MsgLength=39
+
+
+----
+Modified: npm-search/Gulpfile.js|3 16
+Modified: npm-search/package.json|6 6
+
+Revision: 84471f18d16f96163dd987f15c3e99a7ab9cc78c
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 18/07/2015 06:55:05
+Message:
+Adding delete-this to blacklisted plugins. This closes #28 #MsgLength=59
+
+
+----
+Modified: npm-search/src/js/blacklisted-plugins.json|2 1
+
+Revision: b0262448039b006149fd1dd293c9ab09bf392d72
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 17/07/2015 15:00:05
+Message:
+Refactor modules, faster search. This closes #29 #MsgLength=49
+
+
+----
+Modified: npm-search/Gulpfile.js|1 1
+Modified: npm-search/package.json|1 0
+Modified: npm-search/src/js/app.js|21 287
+Added: npm-search/src/js/platformbutton.jsx|15 0
+Added: npm-search/src/js/plugin.jsx|55 0
+Added: npm-search/src/js/pluginlist.jsx|105 0
+Added: npm-search/src/js/searchbar.jsx|59 0
+Added: npm-search/src/js/supportedplatforms.jsx|83 0
+
+Revision: 3640a6bba2e412f13e74f9715ce3972711faff1e
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 22/07/2015 05:18:55
+Message:
+fix rel path issues #MsgLength=20
+
+
+----
+Modified: attachments/npm/developers.html|1 1
+Added: attachments/npm/etc/browserconfig.xml|12 0
+Added: attachments/npm/etc/favicon.ico|0 0
+Added: attachments/npm/etc/manifest.json|41 0
+Modified: attachments/npm/faq.html|1 1
+Modified: attachments/npm/index.html|19 19
+Modified: attachments/npm/js/app.js|7 5
+Modified: npm-search/src/developers.html|1 1
+Modified: npm-search/src/etc/browserconfig.xml|4 4
+Modified: npm-search/src/etc/manifest.json|6 6
+Modified: npm-search/src/faq.html|1 1
+Modified: npm-search/src/index.html|19 19
+
+Revision: b1b8c3370a9b958212b6424ee8eaf52b024c4176
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 22/07/2015 05:23:01
+Message:
+add GA to old plugin page #MsgLength=26
+
+
+----
+Modified: attachments/index.html|9 0
+
+Revision: fa95d114a6abe1f9bddcc2ced917358fae7b4604
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 24/07/2015 15:09:05
+Message:
+Change developers to authors #MsgLength=29
+
+
+----
+Modified: npm-search/src/developers.html|1 1
+
+Revision: 0b78eda2b6eb46eb55531a89a3ae5475c9d7b728
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 24/07/2015 15:04:40
+Message:
+fix all css issues. This closes #30 #MsgLength=36
+
+
+----
+Modified: attachments/npm/css/styles.css|602 1141
+Modified: attachments/npm/developers.html|2 1
+Modified: attachments/npm/faq.html|1 0
+Modified: attachments/npm/index.html|1 0
+Modified: attachments/npm/js/app.js|2 2
+Modified: npm-search/Gulpfile.js|1 1
+Modified: npm-search/src/css/base.css|176 115
+Deleted: npm-search/src/css/flexboxgrid.css|0 1026
+Added: npm-search/src/css/normalize.css|427 0
+Modified: npm-search/src/developers.html|1 0
+Modified: npm-search/src/faq.html|1 0
+Modified: npm-search/src/index.html|1 0
+Modified: npm-search/src/js/app.js|8 16
+Modified: npm-search/src/js/plugin.jsx|4 8
+Modified: npm-search/src/js/pluginlist.jsx|1 1
+Modified: npm-search/src/js/searchbar.jsx|12 12
+
+Revision: 48600a0539a7922b243a389ccdaad283a8936647
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 05/08/2015 05:42:02
+Message:
+Add GA to search results #MsgLength=25
+
+
+----
+Modified: attachments/npm/js/app.js|1 1
+Modified: npm-search/src/js/pluginlist.jsx|3 2
+
+Revision: a820ef4ed94e3c2aa2557ac8df1698a2c7e8a75e
+Author: Murat Sutunc <sutunc@gmail.com>
+Date: 07/08/2015 08:05:14
+Message:
+Perf improvements and other updates #MsgLength=36
+
+
+----
+Renamed: attachments/npm/authors.html [from npm-search/src/developers.html]|11 2
+Modified: attachments/npm/css/styles.css|1 1
+Modified: attachments/npm/faq.html|11 2
+Added: attachments/npm/img/loading.gif|0 0
+Modified: attachments/npm/index.html|2 2
+Modified: attachments/npm/js/app.js|7 6
+Added: npm-search/src/authors.html|84 0
+Modified: npm-search/src/css/base.css|1 1
+Modified: npm-search/src/faq.html|11 2
+Added: npm-search/src/img/loading.gif|0 0
+Modified: npm-search/src/index.html|2 2
+Modified: npm-search/src/js/app.js|107 14
+Added: npm-search/src/js/empty-plugin.jsx|18 0
+Modified: npm-search/src/js/plugin.jsx|7 1
+Modified: npm-search/src/js/pluginlist.jsx|58 92
+
+Revision: 1977f429f18f4d995774f7406f15d94559c93c50
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 26/09/2015 02:41:37
+Message:
+fixed readme error #MsgLength=19
+
+
+----
+Modified: README.md|1 1
+
+Revision: a02f6282ddab2a360f798210d8c8d5126856efcb
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 06:16:53
+Message:
+CB-9800 Fixing contribute link. #MsgLength=32
+
+
+----
+Modified: CONTRIBUTING.md|1 1
+
+Revision: 3b920449ffc6bbc0fb3bde42b149c2c10d238871
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/10/2016 13:31:14
+Message:
+Add github pull request template #MsgLength=33
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|22 0
+
+Revision: 137e3fea6e84b37234d6d1b4f59237dcb6b0df2e
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 29/06/2017 06:14:21
+Message:
+Add deprecation warning #MsgLength=24
+
+
+----
+Modified: README.md|10 4
+
+Revision: 4bb5a526b9018d5894cbbb515e5f038549367323
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 17/04/2019 01:19:20
+Message:
+deprecation #MsgLength=11
+
+
+----
+Modified: README.md|9 0
+

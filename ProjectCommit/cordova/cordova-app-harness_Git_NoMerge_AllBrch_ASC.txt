@@ -1,0 +1,3754 @@
+Revision: 3be86004cbfc6f4f41751b55b97cee654e97d32a
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 06/04/2013 23:21:16
+Message:
+Initial commit #MsgLength=15
+
+
+----
+Added: README.md|2 0
+
+Revision: 88f33fb045a05e1f203a9b11ee06b81ef9d30f3b
+Author: shravanrn <shravanrn@google.com>
+Date: 05/04/2013 23:07:43
+Message:
+Initial commit #MsgLength=15
+
+
+----
+Added: README.md|4 0
+
+Revision: b6f7eafda50433a0a6968326e7eb85013fb1336d
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 06/04/2013 06:31:37
+Message:
+Initial template using cordova and angularJS #MsgLength=45
+
+
+----
+Added: .gitignore|1 0
+Added: .jshintignore|1 0
+Added: .jshintrc|31 0
+Added: checkjs|3 0
+Added: index.html|15 0
+Added: js/AddCtrl.js|48 0
+Added: js/AppConstants.js|3 0
+Added: js/ListCtrl.js|34 0
+Added: js/ResourcesLoader.js|197 0
+Added: js/app.js|11 0
+Added: js/libs/angular.min.js|173 0
+Added: js/libs/cordova.js|6786 0
+Added: views/add.html|16 0
+Added: views/list.html|11 0
+
+
+Revision: 22d2d337ff641eff38965d54e9ab50228fb656a9
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 12/04/2013 04:37:50
+Message:
+Navigation to launch app and return. Added Q lib. Fixed angularJS usage. App is now a single page app. #MsgLength=103
+
+
+----
+Modified: .jshintrc|2 2
+Modified: README.md|5 0
+Added: contextMenu.html|47 0
+Modified: index.html|4 2
+Modified: js/AddCtrl.js|13 37
+Modified: js/AppConstants.js|10 3
+Added: js/AppsService.js|104 0
+Added: js/ContextMenu.js|38 0
+Modified: js/ListCtrl.js|23 15
+Modified: js/ResourcesLoader.js|177 133
+Deleted: js/libs/cordova.js|0 6786
+Added: js/libs/q.min.js|19 0
+Modified: views/add.html|1 1
+Modified: views/list.html|1 0
+
+
+Revision: 022ebbbee850421dc7d0dc81937f1ad45e3bc38c
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 17/04/2013 08:01:17
+Message:
+Android Redirect plugin to reroute cordova.js and menu requests. Put all the web code in a www directory. #MsgLength=106
+
+
+----
+Modified: checkjs|1 1
+Added: plugins/CordovaAppHarnessRedirect/plugin.xml|25 0
+Added: plugins/CordovaAppHarnessRedirect/src/android/CordovaAppHarnessRedirect.java|49 0
+Renamed: www/contextMenu.html [from contextMenu.html]|0 0
+Renamed: www/index.html [from index.html]|0 0
+Renamed: www/js/AddCtrl.js [from js/AddCtrl.js]|0 0
+Renamed: www/js/AppConstants.js [from js/AppConstants.js]|0 0
+Renamed: www/js/AppsService.js [from js/AppsService.js]|0 0
+Renamed: www/js/ContextMenu.js [from js/ContextMenu.js]|0 0
+Renamed: www/js/ListCtrl.js [from js/ListCtrl.js]|0 0
+Renamed: www/js/ResourcesLoader.js [from js/ResourcesLoader.js]|0 0
+Renamed: www/js/app.js [from js/app.js]|0 0
+Renamed: www/js/libs/angular.min.js [from js/libs/angular.min.js]|0 0
+Renamed: www/js/libs/q.min.js [from js/libs/q.min.js]|0 0
+Renamed: www/views/add.html [from views/add.html]|0 0
+Renamed: www/views/list.html [from views/list.html]|0 0
+
+
+Revision: f011d008a7c604bc33d10509e08fdd2cb61d42a7
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 17/04/2013 10:26:59
+Message:
+Updated read me #MsgLength=16
+
+
+----
+Modified: README.md|59 3
+
+Revision: 827d987004c70f8c0f8dd049ee56ebc138fccfb9
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 19/04/2013 03:43:17
+Message:
+Added a cli hook to modify cordova.js #MsgLength=37
+
+
+----
+Modified: README.md|5 24
+Added: hooks/after_prepare/cordovajsmenu.js|60 0
+
+
+Revision: a4c6c39c88d065e78cae4090e7dfd2fe455a09ee
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 20/04/2013 10:08:41
+Message:
+iOS support for launching an app and returning to menu + misc fixes. - CordovaAppHarnessRedirect plugin for iOS - Fixes to ensure errors don't break promise chain #MsgLength=163
+
+
+----
+Modified: .jshintignore|1 1
+Modified: .jshintrc|1 1
+Modified: README.md|1 3
+Modified: hooks/after_prepare/cordovajsmenu.js|2 2
+Modified: plugins/CordovaAppHarnessRedirect/plugin.xml|8 3
+Modified: plugins/CordovaAppHarnessRedirect/src/android/CordovaAppHarnessRedirect.java|22 2
+Added: plugins/CordovaAppHarnessRedirect/src/ios/CordovaAppHarnessRedirect.h|26 0
+Added: plugins/CordovaAppHarnessRedirect/src/ios/CordovaAppHarnessRedirect.m|135 0
+Modified: www/contextMenu.html|1 1
+Modified: www/js/AppsService.js|16 19
+Modified: www/js/ContextMenu.js|1 1
+Modified: www/js/ListCtrl.js|2 2
+Modified: www/js/ResourcesLoader.js|121 84
+
+
+Revision: 2d2c05f8647b3908737c10343bf67f6ebbe2a220
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 25/04/2013 02:55:37
+Message:
+Uninstall an app Ability to uninstall an app Bug fix to clear target directory before installing #MsgLength=97
+
+
+----
+Modified: www/js/AppsService.js|30 1
+Modified: www/js/ListCtrl.js|12 5
+Modified: www/js/ResourcesLoader.js|46 10
+
+
+Revision: 818a264a797a372a7e75ccc14ad9193e74e50004
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 24/04/2013 07:33:06
+Message:
+Support the start page from config.xml Added a script to package the www directory as well as the platform specific "config.xml"s Add code to go through the config.xml file to figure out the start page before launching an app #MsgLength=226
+
+
+----
+Modified: .jshintrc|1 1
+Modified: README.md|4 1
+Modified: checkjs|22 0
+Modified: www/js/AppsService.js|35 6
+Added: zipapp|69 0
+
+
+Revision: af2861cb76134e7a7fc26341149ad22c94a8eb5d
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 24/04/2013 02:46:09
+Message:
+Added ability to restart the test app Updated the Redirect plugin to handle cdv-app-harness paths #MsgLength=98
+
+
+----
+Modified: hooks/after_prepare/cordovajsmenu.js|2 2
+Modified: plugins/CordovaAppHarnessRedirect/plugin.xml|5 1
+Modified: plugins/CordovaAppHarnessRedirect/src/android/CordovaAppHarnessRedirect.java|39 21
+Modified: plugins/CordovaAppHarnessRedirect/src/ios/CordovaAppHarnessRedirect.h|0 2
+Modified: plugins/CordovaAppHarnessRedirect/src/ios/CordovaAppHarnessRedirect.m|79 53
+Modified: www/contextMenu.html|2 2
+Modified: www/js/AppConstants.js|2 0
+Modified: www/js/AppsService.js|24 6
+Modified: www/js/ContextMenu.js|1 1
+Modified: www/js/ListCtrl.js|18 2
+
+Revision: 911968cdd2fd2639f043707dd517fcf19c4f4011
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 26/04/2013 03:09:02
+Message:
+Support extension handlers for urls #MsgLength=36
+
+
+----
+Renamed: packapp [from zipapp]|4 4
+Modified: www/index.html|1 0
+Modified: www/js/AddCtrl.js|2 2
+Modified: www/js/AppsService.js|33 26
+Added: www/js/CdvhPackageHandler.js|30 0
+Modified: www/views/add.html|2 2
+
+Revision: ee3be7c895021ae2afe19eef039cb3cff4115510
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 26/04/2013 08:14:22
+Message:
+Copy cordova.js instead of rerouting #MsgLength=36
+
+
+----
+Modified: plugins/CordovaAppHarnessRedirect/plugin.xml|0 1
+Modified: plugins/CordovaAppHarnessRedirect/src/android/CordovaAppHarnessRedirect.java|1 10
+Modified: plugins/CordovaAppHarnessRedirect/src/ios/CordovaAppHarnessRedirect.m|1 13
+Modified: www/js/AppsService.js|4 2
+Modified: www/js/CdvhPackageHandler.js|16 21
+Modified: www/js/ResourcesLoader.js|39 0
+
+Revision: bc673ba67d785f65b07e8ccd5c01111e0e5b2d8e
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 27/04/2013 02:33:49
+Message:
+Bug fixes. Include cordova_plugins. Fixed ResourceLoader.ensureDir. #MsgLength=68
+
+
+----
+Modified: plugins/CordovaAppHarnessRedirect/src/ios/CordovaAppHarnessRedirect.m|12 11
+Added: www/cdvh_files/www/cordova_plugins.json|1 0
+Modified: www/js/AppsService.js|4 4
+Modified: www/js/CdvhPackageHandler.js|19 10
+Modified: www/js/ResourcesLoader.js|43 20
+
+
+Revision: 8dc5e1be351c8bc9d5044eeabaaa0b446c2460e8
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 27/04/2013 03:17:43
+Message:
+Small UI fixes #MsgLength=14
+
+
+----
+Modified: www/contextMenu.html|5 2
+Modified: www/js/ListCtrl.js|1 0
+Modified: www/views/add.html|2 0
+
+Revision: ee4b5cd8d13d68a01901a0239dce8eb02e58794e
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 27/04/2013 06:56:02
+Message:
+Added ability to update an app. #MsgLength=32
+
+
+----
+Modified: www/contextMenu.html|1 1
+Modified: www/js/AppsService.js|40 26
+Modified: www/js/ListCtrl.js|33 12
+Modified: www/views/list.html|1 1
+
+
+Revision: 2fc6545e5fe59902513793d622600d2026a9020e
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 01/05/2013 03:37:57
+Message:
+Switched to the app-bundle uri's and updated readme. #MsgLength=52
+
+
+----
+Modified: README.md|6 8
+Modified: hooks/after_prepare/cordovajsmenu.js|2 2
+Deleted: plugins/CordovaAppHarnessRedirect/plugin.xml|0 33
+Deleted: plugins/CordovaAppHarnessRedirect/src/android/CordovaAppHarnessRedirect.java|0 78
+Deleted: plugins/CordovaAppHarnessRedirect/src/ios/CordovaAppHarnessRedirect.h|0 24
+Deleted: plugins/CordovaAppHarnessRedirect/src/ios/CordovaAppHarnessRedirect.m|0 150
+Modified: www/contextMenu.html|3 3
+Modified: www/js/ContextMenu.js|1 1
+
+
+Revision: 835dbff122a97ece28a03d80804416375f9da00f
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 01/05/2013 10:06:30
+Message:
+Use the new AppBundle uri without redirect or direct specified. #MsgLength=63
+
+
+----
+Modified: hooks/after_prepare/cordovajsmenu.js|4 4
+Modified: www/contextMenu.html|3 3
+Modified: www/js/AppsService.js|4 0
+Modified: www/js/CdvhPackageHandler.js|2 2
+Modified: www/js/ContextMenu.js|1 1
+
+
+Revision: f456ae48ff16ab813da04b938d1bdea236505fc9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/05/2013 00:39:17
+Message:
+Add a .reviewboardrc file to make using post-review easier. #MsgLength=60
+
+
+----
+Added: .reviewboardrc|8 0
+
+Revision: 33e263f56f6020fa7b626b00e216256896b45b7b
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 02/05/2013 04:10:53
+Message:
+Support for custom downloaders. Eg: Customized versions of the App Harness can use Guids to download apps etc. #MsgLength=111
+
+
+----
+Modified: www/index.html|1 0
+Modified: www/js/AddCtrl.js|4 4
+Modified: www/js/AppsService.js|50 13
+Added: www/js/KnownExtensionDownloader.js|43 0
+Modified: www/js/ResourcesLoader.js|1 1
+Modified: www/views/add.html|5 6
+
+
+Revision: 7d0e71748fefffaf5c50e7b3ea3b1d270bc87268
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 02/05/2013 10:11:28
+Message:
+Firebug integration. #MsgLength=21
+
+
+----
+Modified: www/contextMenu.html|3 0
+Modified: www/js/ContextMenu.js|47 0
+
+
+Revision: 7531ee5d1554aad104a33b387c8e681ed60310f5
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 03/05/2013 02:26:47
+Message:
+Display date and time of app installation #MsgLength=42
+
+
+----
+Modified: www/js/AppsService.js|10 5
+Modified: www/js/ListCtrl.js|9 2
+Modified: www/views/list.html|5 5
+
+
+Revision: eba56cc50572388572ac019edc4afb6d152c31be
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 03/05/2013 05:31:51
+Message:
+Package platform www folders so platforms specific files are picked up. #MsgLength=72
+
+
+----
+Modified: README.md|1 2
+Deleted: hooks/after_prepare/cordovajsmenu.js|0 60
+Modified: packapp|39 24
+Modified: www/js/AppsService.js|16 9
+Modified: www/js/CdvhPackageHandler.js|30 4
+Modified: www/js/ContextMenu.js|0 1
+Modified: www/js/ResourcesLoader.js|49 21
+
+
+Revision: 771f02b25dea717fbfb2009cc5c2ec9012a52478
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 08/05/2013 07:02:01
+Message:
+New filenames.Url aliases.(New AppBundle plugin needed).Desc cont below Android has a bug where the web view will not throw intercept events if you are navigating to a location that matches a filename in your bundle. Thus in order to support url aliasing, we need to ensure there is no collision of the running app's(the app running in the harness) filenames and the app harness file names. Added pre launch hooks that so we can attach things to do before launching an app. Url Aliasing - support for using bundle directories Eg:"file:///android_asset/www/index.html" in your app. #MsgLength=581
+
+
+----
+Modified: .jshintignore|1 1
+Modified: checkjs|1 1
+Modified: packapp|1 1
+Renamed: www/cdvah_contextMenu.html [from www/contextMenu.html]|3 3
+Added: www/cdvah_index.html|20 0
+Renamed: www/cdvah_js/AddCtrl.js [from www/js/AddCtrl.js]|0 0
+Added: www/cdvah_js/AppBundleAlias.js|36 0
+Renamed: www/cdvah_js/AppConstants.js [from www/js/AppConstants.js]|0 0
+Renamed: www/cdvah_js/AppsService.js [from www/js/AppsService.js]|35 12
+Renamed: www/cdvah_js/CdvhPackageHandler.js [from www/js/CdvhPackageHandler.js]|1 1
+Renamed: www/cdvah_js/ContextMenu.js [from www/js/ContextMenu.js]|1 2
+Renamed: www/cdvah_js/KnownExtensionDownloader.js [from www/js/KnownExtensionDownloader.js]|0 0
+Renamed: www/cdvah_js/ListCtrl.js [from www/js/ListCtrl.js]|50 27
+Renamed: www/cdvah_js/ResourcesLoader.js [from www/js/ResourcesLoader.js]|1 1
+Renamed: www/cdvah_js/app.js [from www/js/app.js]|2 2
+Renamed: www/cdvah_js/libs/angular.min.js [from www/js/libs/angular.min.js]|0 0
+Renamed: www/cdvah_js/libs/q.min.js [from www/js/libs/q.min.js]|0 0
+Renamed: www/cdvah_views/add.html [from www/views/add.html]|0 0
+Renamed: www/cdvah_views/list.html [from www/views/list.html]|1 1
+Deleted: www/index.html|0 19
+
+Revision: dd4d65551b4524fc06c6076e312b4963fa9f89a7
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 08/05/2013 22:56:13
+Message:
+Absolute url check bug fix #MsgLength=26
+
+
+----
+Modified: www/cdvah_js/AppsService.js|1 1
+
+
+Revision: 636794a83fe4e89e592ca61bd927295d0feb23c4
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 09/05/2013 05:52:15
+Message:
+Add apps hosted by cordova serve. (Context menu not injected into app) #MsgLength=71
+
+
+----
+Modified: www/cdvah_js/AddCtrl.js|18 10
+Modified: www/cdvah_js/AppsService.js|103 48
+Modified: www/cdvah_js/ListCtrl.js|1 1
+Modified: www/cdvah_js/ResourcesLoader.js|64 33
+Modified: www/cdvah_views/add.html|9 3
+
+Revision: 94edf0c11d8c6b05d803e5dabc8ad2969ee932b9
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 11/05/2013 03:50:52
+Message:
+Menu for apps from serve. Menu now in iframe.Priority for startup hooks. Cleaned up AngularJS usage. #MsgLength=100
+
+
+----
+Modified: www/cdvah_contextMenu.html|45 42
+Modified: www/cdvah_index.html|2 0
+Modified: www/cdvah_js/AddCtrl.js|22 13
+Modified: www/cdvah_js/AppBundleAlias.js|27 5
+Modified: www/cdvah_js/AppsService.js|68 44
+Modified: www/cdvah_js/CdvhPackageHandler.js|2 10
+Modified: www/cdvah_js/ContextMenu.js|62 48
+Added: www/cdvah_js/ContextMenuInjectScript.js|13 0
+Modified: www/cdvah_js/ResourcesLoader.js|1 3
+Added: www/cdvah_js/ServeCordovaJSHandler.js|25 0
+Modified: www/cdvah_views/add.html|6 6
+
+Revision: 830dc5d9d1883f9c1e712ef259c434d288bd9fde
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 12/05/2013 13:11:04
+Message:
+Bugfixes. Extension extraction, Uri encoding during app download. Unzip. #MsgLength=73
+
+
+----
+Modified: www/cdvah_js/AddCtrl.js|6 8
+Modified: www/cdvah_js/AppsService.js|5 5
+Modified: www/cdvah_js/ContextMenu.js|23 16
+Modified: www/cdvah_js/ResourcesLoader.js|27 22
+
+
+Revision: aee835bf06db3d3785a07cf0a89d07326c1bc44d
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 13/05/2013 02:08:38
+Message:
+Weinre support. #MsgLength=57
+
+
+----
+Modified: www/cdvah_contextMenu.html|52 15
+Modified: www/cdvah_js/AppsService.js|1 1
+Modified: www/cdvah_js/CdvhPackageHandler.js|2 2
+Modified: www/cdvah_js/ContextMenu.js|15 0
+Modified: www/cdvah_js/ContextMenuInjectScript.js|10 1
+Modified: www/cdvah_js/ServeCordovaJSHandler.js|1 1
+
+Revision: 633074b6234e3fe8c001651c98486c763ad0bba9
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 17/05/2013 01:56:19
+Message:
+Small UI & code fixes.Test cordova serve apps' config.xml during install #MsgLength=73
+
+
+----
+Modified: README.md|45 7
+Modified: www/cdvah_js/AddCtrl.js|10 7
+Modified: www/cdvah_js/AppBundleAlias.js|0 1
+Modified: www/cdvah_js/AppsService.js|21 1
+Modified: www/cdvah_js/ListCtrl.js|3 3
+Modified: www/cdvah_js/ResourcesLoader.js|1 1
+Modified: www/cdvah_views/add.html|2 2
+Modified: www/cdvah_views/list.html|1 1
+
+Revision: 6492417bdaa8b1eaa8fc44097c45e9f2c2897308
+Author: Braden Shepherdson <braden@google.com>
+Date: 17/05/2013 03:20:54
+Message:
+Some Markdown formatting cleanup. #MsgLength=34
+
+
+----
+Modified: README.md|23 20
+
+Revision: 4d4e0b46caec4db39cb2d3113c208657939029f6
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 27/04/2013 02:39:15
+Message:
+Support installation of crx files #MsgLength=62
+
+
+----
+Modified: www/cdvah_index.html|1 0
+Added: www/cdvah_js/CrxPackageHandler.js|54 0
+Added: www/crx_files/config.android.xml|47 0
+Added: www/crx_files/config.ios.xml|51 0
+Added: www/crx_files/www/chromeapp.html|15 0
+Added: www/crx_files/www/chromeappstyles.css|14 0
+Added: www/crx_files/www/chromebgpage.html|11 0
+Added: www/crx_files/www/cordova_plugins.json|1 0
+Added: www/crx_files/www/plugins/chrome.common/events.js|53 0
+Added: www/crx_files/www/plugins/chrome.fileSystem/fileSystem.js|142 0
+Added: www/crx_files/www/plugins/chrome.i18n/i18n.js|185 0
+Added: www/crx_files/www/plugins/chrome.identity/identity.js|161 0
+Added: www/crx_files/www/plugins/chrome.socket/socket.js|216 0
+Added: www/crx_files/www/plugins/chrome.storage/storage.js|202 0
+Added: www/crx_files/www/plugins/chrome/api/app/runtime.js|7 0
+Added: www/crx_files/www/plugins/chrome/api/app/window.js|156 0
+Added: www/crx_files/www/plugins/chrome/api/bootstrap.js|13 0
+Added: www/crx_files/www/plugins/chrome/api/helpers/stubs.js|11 0
+Added: www/crx_files/www/plugins/chrome/api/mobile.js|58 0
+Added: www/crx_files/www/plugins/chrome/api/runtime.js|58 0
+
+Revision: 9f0d462b4b1fd9137765fe8d85e076146daf4abc
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 12/05/2013 13:12:14
+Message:
+Support chrome webstore links. Updated to support new app dir structure. #MsgLength=73
+
+
+----
+Modified: www/cdvah_index.html|1 0
+Added: www/cdvah_js/CrxDownloader.js|31 0
+Modified: www/cdvah_js/CrxPackageHandler.js|34 26
+
+Revision: 110539309608b3b09cd0cd7e0fdc1a3cada5a68a
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 17/05/2013 02:14:09
+Message:
+Readme update. Conflicts: README.md #MsgLength=37
+
+
+----
+Modified: README.md|24 2
+
+Revision: 6d9f5c9af590e228a989ed4457e4dd0f45e9ea98
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 18/05/2013 00:27:05
+Message:
+Revert "Support chrome webstore links. Updated to support new app dir structure." #MsgLength=145
+
+
+----
+Modified: www/cdvah_index.html|0 1
+Deleted: www/cdvah_js/CrxDownloader.js|0 31
+Modified: www/cdvah_js/CrxPackageHandler.js|26 34
+
+Revision: 09b1b9e3c61d4dd385e21739e4446917f0a24f6e
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 18/05/2013 00:27:35
+Message:
+Revert "Support installation of crx files" #MsgLength=106
+
+
+----
+Modified: www/cdvah_index.html|0 1
+Deleted: www/cdvah_js/CrxPackageHandler.js|0 54
+Deleted: www/crx_files/config.android.xml|0 47
+Deleted: www/crx_files/config.ios.xml|0 51
+Deleted: www/crx_files/www/chromeapp.html|0 15
+Deleted: www/crx_files/www/chromeappstyles.css|0 14
+Deleted: www/crx_files/www/chromebgpage.html|0 11
+Deleted: www/crx_files/www/cordova_plugins.json|0 1
+Deleted: www/crx_files/www/plugins/chrome.common/events.js|0 53
+Deleted: www/crx_files/www/plugins/chrome.fileSystem/fileSystem.js|0 142
+Deleted: www/crx_files/www/plugins/chrome.i18n/i18n.js|0 185
+Deleted: www/crx_files/www/plugins/chrome.identity/identity.js|0 161
+Deleted: www/crx_files/www/plugins/chrome.socket/socket.js|0 216
+Deleted: www/crx_files/www/plugins/chrome.storage/storage.js|0 202
+Deleted: www/crx_files/www/plugins/chrome/api/app/runtime.js|0 7
+Deleted: www/crx_files/www/plugins/chrome/api/app/window.js|0 156
+Deleted: www/crx_files/www/plugins/chrome/api/bootstrap.js|0 13
+Deleted: www/crx_files/www/plugins/chrome/api/helpers/stubs.js|0 11
+Deleted: www/crx_files/www/plugins/chrome/api/mobile.js|0 58
+Deleted: www/crx_files/www/plugins/chrome/api/runtime.js|0 58
+
+Revision: 7d48f4a97a301b4754c1896e39e2009423b6eecd
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 17/05/2013 10:58:23
+Message:
+Readme update. String to Regex conversion bugfix. #MsgLength=49
+
+
+----
+Modified: README.md|9 4
+Modified: www/cdvah_js/AppBundleAlias.js|24 11
+
+
+
+Revision: d045574baae9631f747e5a412d28ce7615c74d8a
+Author: Shravan Narayan <shravanrn@google.com>
+Date: 27/04/2013 02:39:15
+Message:
+Support installation of crx files #MsgLength=34
+
+
+----
+Added: www/crx_files/config.android.xml|47 0
+Added: www/crx_files/config.ios.xml|51 0
+Added: www/crx_files/www/chromeapp.html|15 0
+Added: www/crx_files/www/chromeappstyles.css|14 0
+Added: www/crx_files/www/chromebgpage.html|11 0
+Added: www/crx_files/www/cordova_plugins.json|1 0
+Added: www/crx_files/www/plugins/chrome.common/events.js|53 0
+Added: www/crx_files/www/plugins/chrome.fileSystem/fileSystem.js|142 0
+Added: www/crx_files/www/plugins/chrome.i18n/i18n.js|185 0
+Added: www/crx_files/www/plugins/chrome.identity/identity.js|161 0
+Added: www/crx_files/www/plugins/chrome.socket/socket.js|216 0
+Added: www/crx_files/www/plugins/chrome.storage/storage.js|202 0
+Added: www/crx_files/www/plugins/chrome/api/app/runtime.js|7 0
+Added: www/crx_files/www/plugins/chrome/api/app/window.js|156 0
+Added: www/crx_files/www/plugins/chrome/api/bootstrap.js|13 0
+Added: www/crx_files/www/plugins/chrome/api/helpers/stubs.js|11 0
+Added: www/crx_files/www/plugins/chrome/api/mobile.js|58 0
+Added: www/crx_files/www/plugins/chrome/api/runtime.js|58 0
+Added: www/js/CrxPackageHandler.js|54 0
+
+Revision: a7a877b2b49ffc9d8710ed9dc39d39bbba40af98
+Author: Braden Shepherdson <braden@google.com>
+Date: 17/05/2013 03:20:54
+Message:
+Some Markdown formatting cleanup. (cherry picked from commit 6492417bdaa8b1eaa8fc44097c45e9f2c2897308) #MsgLength=103
+
+
+----
+Modified: README.md|5 11
+
+Revision: e80bb1dcb813eb04f0f4177a7ecdd634fdfc84d4
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 14/06/2013 21:55:42
+Message:
+Remove redundant and unused duplicate file, and improve Chrome loading #MsgLength=225
+
+
+----
+Added: www/cdvah_js/CrxPackageHandler.js|69 0
+Deleted: www/js/CrxPackageHandler.js|0 54
+
+Revision: ee57b46c34d4d6b518b4c9a15cb6778e2ee78629
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 14/06/2013 21:57:12
+Message:
+Delete old copies of Chrome files from www/crx_files. #MsgLength=106
+
+
+----
+Deleted: www/crx_files/www/chromeapp.html|0 15
+Deleted: www/crx_files/www/chromeappstyles.css|0 14
+Deleted: www/crx_files/www/chromebgpage.html|0 11
+Deleted: www/crx_files/www/cordova_plugins.json|0 1
+Deleted: www/crx_files/www/plugins/chrome.common/events.js|0 53
+Deleted: www/crx_files/www/plugins/chrome.fileSystem/fileSystem.js|0 142
+Deleted: www/crx_files/www/plugins/chrome.i18n/i18n.js|0 185
+Deleted: www/crx_files/www/plugins/chrome.identity/identity.js|0 161
+Deleted: www/crx_files/www/plugins/chrome.socket/socket.js|0 216
+Deleted: www/crx_files/www/plugins/chrome.storage/storage.js|0 202
+Deleted: www/crx_files/www/plugins/chrome/api/app/runtime.js|0 7
+Deleted: www/crx_files/www/plugins/chrome/api/app/window.js|0 156
+Deleted: www/crx_files/www/plugins/chrome/api/bootstrap.js|0 13
+Deleted: www/crx_files/www/plugins/chrome/api/helpers/stubs.js|0 11
+Deleted: www/crx_files/www/plugins/chrome/api/mobile.js|0 58
+Deleted: www/crx_files/www/plugins/chrome/api/runtime.js|0 58
+
+Revision: 34c9a89a6a7cb348e94474bb15ec3a2a0e628e82
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 14/06/2013 22:06:31
+Message:
+Update config.<platform>.xml files with modern format #MsgLength=54
+
+
+----
+Modified: www/crx_files/config.android.xml|92 33
+Modified: www/crx_files/config.ios.xml|87 27
+
+Revision: 9b881f490e8bf2f256bcf98e13435291f1e6fad4
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 18/06/2013 01:41:25
+Message:
+Don't load the context menu until deviceready fires #MsgLength=52
+
+
+----
+Modified: www/cdvah_js/ContextMenu.js|10 6
+Modified: www/cdvah_js/ContextMenuInjectScript.js|9 7
+
+Revision: d871da2aca9297d6545b10e576e119d66f72a550
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 20/06/2013 04:02:16
+Message:
+Restyle to use Topcoat, popup notifications, and better UX. #MsgLength=60
+
+
+----
+Modified: www/cdvah_index.html|14 2
+Modified: www/cdvah_js/AddCtrl.js|10 8
+Modified: www/cdvah_js/ListCtrl.js|13 9
+Added: www/cdvah_js/Notify.js|40 0
+Modified: www/cdvah_js/app.js|1 1
+Modified: www/cdvah_views/add.html|8 7
+Modified: www/cdvah_views/list.html|16 11
+Added: www/css/style.css|30 0
+Added: www/css/topcoat-mobile-light.min.css|1 0
+Added: www/font/LICENSE.txt|93 0
+Added: www/font/SourceSansPro-Light.otf|0 0
+Added: www/font/SourceSansPro-Regular.otf|0 0
+Added: www/font/SourceSansPro-Semibold.otf|0 0
+
+Revision: 8c5698e3a12aebe329219d07457061bfbe7832d2
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 20/06/2013 04:02:49
+Message:
+Updating the README to reflect the modern state of the AppHarness. #MsgLength=67
+
+
+----
+Modified: README.md|52 52
+
+Revision: f8f936997ff29fd10175370871bc452149ddfae1
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 26/06/2013 02:57:03
+Message:
+Add BarcodeScanner support (optional dependency) #MsgLength=49
+
+
+----
+Modified: README.md|2 1
+Modified: www/cdvah_js/AddCtrl.js|27 1
+Modified: www/cdvah_views/add.html|1 0
+
+Revision: decc32d89b7f04a7f91b0d8509bc69626d9e7a94
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 26/06/2013 06:41:00
+Message:
+Fix missing crx file support #MsgLength=29
+
+
+----
+Modified: www/cdvah_index.html|1 0
+
+Revision: 715ffaed7a6f2fac3b65ade811782ee2ae0273c4
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 15/08/2013 04:56:33
+Message:
+Bringing AppHarness up to Cordova 3.x #MsgLength=38
+
+
+----
+Modified: www/cdvah_js/CdvhPackageHandler.js|3 3
+Modified: www/cdvah_js/ContextMenuInjectScript.js|1 1
+Modified: www/cdvah_js/CrxPackageHandler.js|4 9
+
+Revision: a49a7a9dae714d79a2b92427958d3376dfb03a3f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 03:40:47
+Message:
+Simplify build instructions. #MsgLength=29
+
+
+----
+Modified: README.md|2 21
+Added: www/config.xml|23 0
+
+Revision: c46221fc016e919e62efae38d5fd92435ac66fad
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/10/2013 03:01:13
+Message:
+Add a script to create the project. #MsgLength=36
+
+
+----
+Added: createproject.sh|54 0
+
+Revision: 9ae368eec38fd838321432b8d07cda3692f3ec0a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/10/2013 03:57:07
+Message:
+Refactored such that download works from cordova serve #MsgLength=55
+
+
+----
+Modified: createproject.sh|5 1
+Modified: www/cdvah_index.html|1 5
+Modified: www/cdvah_js/AddCtrl.js|16 37
+Deleted: www/cdvah_js/AppConstants.js|0 12
+Modified: www/cdvah_js/AppsService.js|95 251
+Modified: www/cdvah_js/KnownExtensionDownloader.js|2 23
+Modified: www/cdvah_js/ListCtrl.js|14 16
+Modified: www/cdvah_js/Notify.js|0 4
+Modified: www/cdvah_js/ResourcesLoader.js|43 155
+Modified: www/cdvah_js/ServeCordovaJSHandler.js|78 0
+Modified: www/cdvah_js/app.js|16 0
+Modified: www/cdvah_views/add.html|19 20
+Modified: www/cdvah_views/list.html|6 6
+Modified: www/config.xml|1 0
+
+Revision: 41e2b4d6e27059fa94513862abf2e23c53a858f0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/10/2013 10:55:51
+Message:
+Import AppBundle from https://github.com/MobileChromeApps/AppBundle #MsgLength=101
+
+
+----
+Added: AppBundle/README.md|74 0
+Added: AppBundle/appBundle.js|23 0
+Added: AppBundle/plugin.xml|39 0
+Added: AppBundle/src/android/AppBundle.java|214 0
+Added: AppBundle/src/ios/AppBundle.h|80 0
+Added: AppBundle/src/ios/AppBundle.m|293 0
+
+Revision: 8ed807cac13ae07ce3545ce5b04781986b0f859e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/10/2013 10:52:51
+Message:
+Code clean-up of AppBundle's JS & Obj-C #MsgLength=40
+
+
+----
+Modified: AppBundle/README.md|2 6
+Modified: AppBundle/appBundle.js|22 10
+Modified: AppBundle/plugin.xml|26 8
+Modified: AppBundle/src/android/AppBundle.java|1 1
+Deleted: AppBundle/src/ios/AppBundle.h|0 80
+Modified: AppBundle/src/ios/AppBundle.m|82 133
+
+Revision: d172011de59aae1f7ff8605e476c7489997e0b60
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/10/2013 10:58:50
+Message:
+Have launch working on iOS without Menu #MsgLength=40
+
+
+----
+Modified: AppBundle/appBundle.js|8 0
+Modified: AppBundle/src/ios/AppBundle.m|110 104
+Modified: createproject.sh|1 1
+Modified: www/cdvah_js/AppBundleAlias.js|35 54
+Modified: www/cdvah_js/AppsService.js|13 47
+Modified: www/cdvah_js/ListCtrl.js|2 21
+Modified: www/cdvah_js/ServeCordovaJSHandler.js|29 21
+
+Revision: c3939e03de491e3ae70d729982df09bc100be516
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/10/2013 03:30:11
+Message:
+Updated Angular, Renamed InstallHandler -> Installer. Made a base class. #MsgLength=73
+
+
+----
+Modified: AppBundle/src/ios/AppBundle.m|2 4
+Modified: www/cdvah_index.html|5 2
+Modified: www/cdvah_js/AppsService.js|38 93
+Modified: www/cdvah_js/ContextMenuInjectScript.js|0 1
+Added: www/cdvah_js/Installer.js|98 0
+Deleted: www/cdvah_js/KnownExtensionDownloader.js|0 22
+Modified: www/cdvah_js/ListCtrl.js|6 6
+Renamed: www/cdvah_js/ServeInstaller.js [from www/cdvah_js/ServeCordovaJSHandler.js]|12 36
+Modified: www/cdvah_js/app.js|1 2
+Added: www/cdvah_js/libs/angular-route.js|860 0
+Added: www/cdvah_js/libs/angular.js|19141 0
+Deleted: www/cdvah_js/libs/angular.min.js|0 173
+
+Revision: 029d36bb0d6ea137512038ad97e027fc28a83f4e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/10/2013 05:12:49
+Message:
+Convert from Q -> $q #MsgLength=21
+
+
+----
+Modified: www/cdvah_js/AddCtrl.js|1 2
+Modified: www/cdvah_js/AppBundleAlias.js|5 5
+Modified: www/cdvah_js/AppsService.js|7 11
+Modified: www/cdvah_js/CdvhPackageHandler.js|2 2
+Modified: www/cdvah_js/CrxPackageHandler.js|2 2
+Modified: www/cdvah_js/Installer.js|6 8
+Modified: www/cdvah_js/ResourcesLoader.js|50 55
+Modified: www/cdvah_js/app.js|0 2
+Deleted: www/cdvah_js/libs/q.min.js|0 19
+
+Revision: 9946d32243e4f8fbf2d47a05c35f6e0396e5e4de
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/10/2013 03:48:13
+Message:
+Many tweaks. Moved dirs. #MsgLength=25
+
+
+----
+Modified: AppBundle/src/ios/AppBundle.m|25 33
+Renamed: www/cdvah/crx_files/config.android.xml [from www/crx_files/config.android.xml]|0 1
+Renamed: www/cdvah/crx_files/config.ios.xml [from www/crx_files/config.ios.xml]|0 0
+Renamed: www/cdvah/css/style.css [from www/css/style.css]|0 0
+Renamed: www/cdvah/css/topcoat-mobile-light.min.css [from www/css/topcoat-mobile-light.min.css]|0 0
+Renamed: www/cdvah/font/LICENSE.txt [from www/font/LICENSE.txt]|0 0
+Renamed: www/cdvah/font/SourceSansPro-Light.otf [from www/font/SourceSansPro-Light.otf]|0 0
+Renamed: www/cdvah/font/SourceSansPro-Regular.otf [from www/font/SourceSansPro-Regular.otf]|0 0
+Renamed: www/cdvah/font/SourceSansPro-Semibold.otf [from www/font/SourceSansPro-Semibold.otf]|0 0
+Renamed: www/cdvah/index.html [from www/cdvah_index.html]|13 15
+Renamed: www/cdvah/js/AddCtrl.js [from www/cdvah_js/AddCtrl.js]|16 8
+Renamed: www/cdvah/js/AppBundleAlias.js [from www/cdvah_js/AppBundleAlias.js]|0 0
+Renamed: www/cdvah/js/AppsService.js [from www/cdvah_js/AppsService.js]|0 0
+Renamed: www/cdvah/js/CdvhPackageHandler.js [from www/cdvah_js/CdvhPackageHandler.js]|0 0
+Renamed: www/cdvah/js/ContextMenuInjectScript.js [from www/cdvah_js/ContextMenuInjectScript.js]|1 1
+Renamed: www/cdvah/js/CrxPackageHandler.js [from www/cdvah_js/CrxPackageHandler.js]|0 0
+Renamed: www/cdvah/js/Installer.js [from www/cdvah_js/Installer.js]|32 19
+Renamed: www/cdvah/js/ListCtrl.js [from www/cdvah_js/ListCtrl.js]|7 10
+Renamed: www/cdvah/js/Notify.js [from www/cdvah_js/Notify.js]|2 4
+Renamed: www/cdvah/js/ResourcesLoader.js [from www/cdvah_js/ResourcesLoader.js]|0 0
+Renamed: www/cdvah/js/ServeInstaller.js [from www/cdvah_js/ServeInstaller.js]|48 24
+Renamed: www/cdvah/js/app.js [from www/cdvah_js/app.js]|2 2
+Renamed: www/cdvah/js/libs/angular-route.js [from www/cdvah_js/libs/angular-route.js]|0 0
+Renamed: www/cdvah/js/libs/angular.js [from www/cdvah_js/libs/angular.js]|0 0
+Renamed: www/cdvah/views/add.html [from www/cdvah_views/add.html]|14 8
+Renamed: www/cdvah/views/list.html [from www/cdvah_views/list.html]|4 2
+Renamed: www/cdvahcm/ContextMenu.js [from www/cdvah_js/ContextMenu.js]|4 4
+Renamed: www/cdvahcm/contextMenu.html [from www/cdvah_contextMenu.html]|0 0
+Deleted: www/cdvh_files/www/cordova_plugins.json|0 1
+Modified: www/config.xml|1 1
+
+Revision: 0ae80c8bef0971ebe4728e63187e430d507f9276
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/10/2013 10:27:37
+Message:
+Updated README.md for AppBundle plugin #MsgLength=39
+
+
+----
+Modified: AppBundle/README.md|10 37
+
+Revision: 951d8ee2d45469d7b41f11722c0f785a6d7ceaa0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/10/2013 02:35:11
+Message:
+Fix app harness menu items restart and update. #MsgLength=47
+
+
+----
+Modified: www/cdvah/js/AppsService.js|2 10
+Modified: www/cdvah/js/ContextMenuInjectScript.js|11 9
+Modified: www/cdvah/js/Installer.js|4 3
+Modified: www/cdvah/js/ListCtrl.js|26 32
+Modified: www/cdvahcm/ContextMenu.js|12 19
+
+Revision: e7190bcd06199f32360429d98b4d5728bb7047e8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/10/2013 03:15:17
+Message:
+Rename AppBundle -> UrlRemap #MsgLength=29
+
+
+----
+Renamed: UrlRemap/README.md [from AppBundle/README.md]|1 1
+Renamed: UrlRemap/plugin.xml [from AppBundle/plugin.xml]|10 15
+Renamed: UrlRemap/src/android/UrlRemap.java [from AppBundle/src/android/AppBundle.java]|4 53
+Renamed: UrlRemap/src/ios/UrlRemap.m [from AppBundle/src/ios/AppBundle.m]|11 11
+Renamed: UrlRemap/urlremap.js [from AppBundle/appBundle.js]|5 5
+Modified: createproject.sh|1 1
+Modified: www/cdvah/index.html|1 1
+Modified: www/cdvah/js/Installer.js|9 9
+Renamed: www/cdvah/js/UrlRemap.js [from www/cdvah/js/AppBundleAlias.js]|5 5
+
+Revision: f93ad5918998b8c59ac288706035bdc89790b71a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/10/2013 03:15:28
+Message:
+Update README to match current state of the app & list TODOs #MsgLength=61
+
+
+----
+Modified: README.md|42 69
+
+Revision: 06150bc4e9a56a8a433e975c37e04ea1c9eef0ad
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/10/2013 09:42:34
+Message:
+Fix Gruntfile.js created by createproject.sh. #MsgLength=46
+
+
+----
+Modified: createproject.sh|7 6
+
+Revision: 5ab66f572d071e0ddcc67284202ad3aa9e7ab908
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/10/2013 09:43:29
+Message:
+Android implementation of UrlRemap. #MsgLength=36
+
+
+----
+Modified: UrlRemap/src/android/UrlRemap.java|64 100
+
+Revision: 9144a1570dffca1cc25c9a8c90bdbaf94dcba648
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 25/10/2013 02:50:39
+Message:
+Tweak createproject.sh to accept the platform list from the command line #MsgLength=73
+
+
+----
+Modified: createproject.sh|11 9
+
+Revision: e28f7935cf11857f7418a1f0b8b9c091fc901758
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 25/10/2013 02:50:46
+Message:
+Update README.md to mention createproject.sh script and updated plugin list #MsgLength=76
+
+
+----
+Modified: README.md|25 9
+
+Revision: dc6a82c234059edea57f6e66b5f9436032c2dca8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/11/2013 00:38:57
+Message:
+When updating an app, only download changed files. #MsgLength=123
+
+
+----
+Modified: www/cdvah/js/Installer.js|1 1
+Modified: www/cdvah/js/ServeInstaller.js|63 7
+
+Revision: 7981a02eadb7f515df34356b241e0d92b1539669
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 12/11/2013 05:08:01
+Message:
+Fixing README formatting. #MsgLength=26
+
+
+----
+Modified: README.md|9 8
+
+Revision: 21a2121ec61a1b19392a5549bcc031342729a59a
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 16/11/2013 04:16:14
+Message:
+README update #MsgLength=14
+
+
+----
+Modified: README.md|1 0
+
+Revision: cd3ae668f07bcfcdcc36061c7f315ce754305af0
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 16/11/2013 04:23:40
+Message:
+Support loading the plugins used by each child app. #MsgLength=52
+
+
+----
+Modified: www/cdvah/js/AppsService.js|11 11
+Modified: www/cdvah/js/Installer.js|21 0
+Modified: www/cdvah/js/ServeInstaller.js|3 3
+Modified: www/cdvah/js/app.js|1 0
+Modified: www/cdvah/views/list.html|1 0
+
+Revision: cc307cc67cd757068c1d063f262dcc11f0ece4c3
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 16/11/2013 04:39:43
+Message:
+Making all JS files pass jshint. #MsgLength=33
+
+
+----
+Modified: .jshintrc|3 3
+Modified: www/cdvah/js/AddCtrl.js|3 3
+Modified: www/cdvah/js/AppsService.js|6 4
+Modified: www/cdvah/js/CdvhPackageHandler.js|11 11
+Modified: www/cdvah/js/ContextMenuInjectScript.js|8 7
+Modified: www/cdvah/js/CrxPackageHandler.js|17 17
+Modified: www/cdvah/js/Installer.js|8 8
+Modified: www/cdvah/js/ListCtrl.js|13 13
+Modified: www/cdvah/js/Notify.js|3 3
+Modified: www/cdvah/js/ResourcesLoader.js|25 25
+Modified: www/cdvah/js/ServeInstaller.js|2 2
+Modified: www/cdvah/js/UrlRemap.js|5 4
+Modified: www/cdvah/js/app.js|11 11
+Modified: www/cdvah/views/add.html|2 2
+
+Revision: 062ce6a0e564cbd0169d09ae2dd65b3aa04f1efc
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 26/11/2013 06:55:24
+Message:
+Fix launching of Chrome apps. #MsgLength=30
+
+
+----
+Modified: UrlRemap/src/ios/UrlRemap.m|6 6
+Modified: www/cdvah/js/Installer.js|10 2
+
+Revision: 33d8fe23dc2cd55beecdf58783e607916c8f490e
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 28/11/2013 06:53:44
+Message:
+Installing and launching from CRX files, all working! #MsgLength=54
+
+
+----
+Modified: www/cdvah/crx_files/config.android.xml|1 1
+Modified: www/cdvah/crx_files/config.ios.xml|0 1
+Modified: www/cdvah/index.html|1 0
+Added: www/cdvah/js/CrxInstaller.js|55 0
+Deleted: www/cdvah/js/CrxPackageHandler.js|0 64
+Modified: www/cdvah/js/Installer.js|16 3
+Modified: www/cdvah/js/ResourcesLoader.js|1 1
+Modified: www/cdvah/views/add.html|4 3
+
+Revision: 3188903afdae02cdbfce884051a1183122ab3e13
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 03/12/2013 02:49:57
+Message:
+Creating the new PluginMetadata service. #MsgLength=41
+
+
+----
+Modified: www/cdvah/js/AppsService.js|1 1
+Added: www/cdvah/js/PluginMetadata.js|53 0
+Modified: www/cdvah/js/app.js|1 1
+
+Revision: 82f00ef0705587e52de9a276bb14f526616be799
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 03/12/2013 03:42:18
+Message:
+Plugins now loading and saving correctly. #MsgLength=42
+
+
+----
+Modified: www/cdvah/index.html|1 0
+Modified: www/cdvah/js/AppsService.js|3 3
+Modified: www/cdvah/js/Installer.js|2 2
+Modified: www/cdvah/js/PluginMetadata.js|9 1
+Modified: www/cdvah/views/list.html|1 0
+
+Revision: 9c3b3ee1888bfc91abae151b3181752f23edf8f0
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 04/12/2013 03:48:12
+Message:
+Updating Angular to 1.2.3 release #MsgLength=34
+
+
+----
+Modified: www/cdvah/js/libs/angular-route.js|164 133
+Modified: www/cdvah/js/libs/angular.js|2586 1445
+
+Revision: a33443bd58cb7945cacd560e6725b660d67e82d9
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 04/12/2013 03:52:51
+Message:
+Add Details view, and show plugin info on list view. #MsgLength=53
+
+
+----
+Modified: www/cdvah/index.html|1 0
+Added: www/cdvah/js/DetailsCtrl.js|16 0
+Modified: www/cdvah/js/ListCtrl.js|10 3
+Modified: www/cdvah/js/app.js|4 0
+Added: www/cdvah/views/details.html|38 0
+Modified: www/cdvah/views/list.html|6 6
+
+Revision: a2b626865818aaa224f3ce7648e52e8fa491256e
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 04/12/2013 06:16:41
+Message:
+Add "edit" functionality. Allows changing the app name and url. #MsgLength=64
+
+
+----
+Modified: www/cdvah/js/AddCtrl.js|68 17
+Modified: www/cdvah/js/AppsService.js|10 0
+Modified: www/cdvah/js/CrxInstaller.js|2 5
+Modified: www/cdvah/js/ListCtrl.js|5 0
+Modified: www/cdvah/js/ServeInstaller.js|3 8
+Modified: www/cdvah/js/app.js|14 0
+Modified: www/cdvah/views/add.html|6 2
+Modified: www/cdvah/views/list.html|1 0
+
+Revision: 27fbb2ed580098e7920bb76b5e1265883cc4dffb
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 13/12/2013 02:17:18
+Message:
+Fixing a few small bugs in ServeInstaller #MsgLength=42
+
+
+----
+Modified: www/cdvah/js/ServeInstaller.js|3 1
+
+Revision: aeff680d1f3098d9eadca4bd8e2d09543c40b8eb
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 07/01/2014 04:29:22
+Message:
+Cleaning up JSHints on ServeInstaller #MsgLength=38
+
+
+----
+Modified: www/cdvah/js/ServeInstaller.js|17 18
+
+Revision: 9f0189a5141a102824ad80c74e160bd4f7952229
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 21/01/2014 22:59:45
+Message:
+Making Serve and CRX downloading work more robustly. #MsgLength=53
+
+
+----
+Modified: www/cdvah/js/AppsService.js|3 2
+Modified: www/cdvah/js/CrxInstaller.js|1 1
+Modified: www/cdvah/js/ServeInstaller.js|2 1
+
+Revision: 1245da14cf1bbbd44e8334a5d026de6ff265a86e
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 21/01/2014 23:00:24
+Message:
+Stop the context menu from injecting multiple times. #MsgLength=227
+
+
+----
+Modified: www/cdvah/js/ContextMenuInjectScript.js|1 0
+
+Revision: 6f99f08d8a2f8fa3aa2067a68c35bdfb53410952
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 21/01/2014 23:02:49
+Message:
+Update AppHarness to modern MCA, which expects to be loaded with file:// #MsgLength=157
+
+
+----
+Modified: www/cdvah/crx_files/config.android.xml|1 1
+Modified: www/cdvah/crx_files/config.ios.xml|1 1
+Modified: www/cdvah/js/Installer.js|5 7
+
+Revision: 7d6243284e9db5f449596fa4efada22bebf3611e
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 24/01/2014 04:11:38
+Message:
+Update file handling code to modern File plugin (post Ian's refactoring) #MsgLength=73
+
+
+----
+Modified: www/cdvah/js/ResourcesLoader.js|6 2
+
+Revision: 018bdd19b8c15988b45543f4a6d5d46735935b0b
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 17/01/2014 02:34:21
+Message:
+Add support for Push plugin. #MsgLength=29
+
+
+----
+Modified: www/cdvah/js/Installer.js|1 0
+Modified: www/cdvah/js/ListCtrl.js|60 1
+Modified: www/cdvah/views/list.html|6 0
+
+Revision: 5156ee43ab4fc8c8b00d48cc2710dd9ef6600366
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 25/01/2014 04:10:08
+Message:
+Only run push-related code when the plugin exists. #MsgLength=51
+
+
+----
+Modified: www/cdvah/js/ListCtrl.js|55 53
+
+Revision: 5dc827a0d52f0c1d143d469c98af98985e022a11
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 29/01/2014 00:20:48
+Message:
+Always use package.crx always as the download target for CRX mode. #MsgLength=268
+
+
+----
+Modified: www/cdvah/js/CrxInstaller.js|3 2
+
+Revision: dfb369ef5ebb3b5cc6b58d32e843d66d69da8c0a
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 29/01/2014 00:45:18
+Message:
+Cleaning up error messages for bad zip files #MsgLength=45
+
+
+----
+Modified: www/cdvah/js/CrxInstaller.js|1 2
+Modified: www/cdvah/js/ResourcesLoader.js|1 1
+
+Revision: f43a024f364a57a968309d11692c5b825283b0f1
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 05/02/2014 03:04:56
+Message:
+Support CRX pushes. #MsgLength=20
+
+
+----
+Modified: www/cdvah/js/ListCtrl.js|1 1
+
+Revision: 0d4275a26c1d9c7428cd27035feeac6d13f461c3
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:30
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+Revision: a1603440ac2add47248d2ebcd27540e3d9d1aa3c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/03/2014 23:38:54
+Message:
+Move config.xml out of www/ and enhance createproject.sh #MsgLength=57
+
+
+----
+Renamed: config.xml [from www/config.xml]|0 0
+Modified: createproject.sh|48 27
+
+Revision: c313bafe3cf063cf0f32318363050f4cce43afae
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/03/2014 23:54:03
+Message:
+Use updated symbol path for file-system-roots plugin #MsgLength=53
+
+
+----
+Modified: www/cdvah/js/app.js|1 1
+
+Revision: 33e9d0d99db01a7ea702374215cf2a4c8c25b354
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/03/2014 00:02:03
+Message:
+Fix up existence check for window.appharness. #MsgLength=46
+
+
+----
+Modified: www/cdvah/js/ListCtrl.js|1 1
+
+Revision: 3e22a6ffc156e7ebfb3c5896bb568cf4264992d3
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/03/2014 11:39:37
+Message:
+Fix up checkjs script. #MsgLength=23
+
+
+----
+Modified: checkjs|6 1
+
+Revision: 8950c4364a25cea04b4bfb9330fb696943d94834
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/03/2014 03:57:42
+Message:
+UrlRemap: Add allowFurtherRemapping flag to aliases to (dis)allow chaining. #MsgLength=114
+
+
+----
+Modified: UrlRemap/src/android/UrlRemap.java|9 3
+Modified: UrlRemap/src/ios/UrlRemap.m|222 70
+Modified: UrlRemap/urlremap.js|3 3
+
+Revision: 80c953abd34e5536b9834455f263c5fb46471279
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/03/2014 04:57:21
+Message:
+checkjs->checkjs.sh and allow executing from other CWDs. #MsgLength=57
+
+
+----
+Renamed: checkjs.sh [from checkjs]|1 0
+
+Revision: 63e0c3977d00e17affec3e4ae14015223ac2c9a3
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/03/2014 04:59:15
+Message:
+Fix some jshint warnings. #MsgLength=26
+
+
+----
+Modified: www/cdvahcm/ContextMenu.js|30 28
+
+Revision: 6667ea07800ce3a0161d0422bcdc7ec5213cb3ae
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/03/2014 05:00:39
+Message:
+Make crx and serve "Add" view use the same textboxes. #MsgLength=124
+
+
+----
+Modified: www/cdvah/views/add.html|26 24
+
+Revision: ac4a90611260c72edf49a6f5786aa2fbbfc9c2e6
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/03/2014 10:42:24
+Message:
+ios: More UrlRemap tweaks so that it handles more scenarios #MsgLength=217
+
+
+----
+Modified: UrlRemap/src/ios/UrlRemap.m|85 119
+
+Revision: 343b9d0b4021eba94e6c29b91c67c0b4484200c8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/03/2014 10:49:16
+Message:
+Fix addApp returning a promise in the middle of the promise chain (hid error messages) #MsgLength=87
+
+
+----
+Modified: www/cdvah/js/AddCtrl.js|13 14
+
+Revision: be0b7a9bd0419f1ae698f352eaf753735bc82f96
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/03/2014 10:55:00
+Message:
+Fix ServeInstaller NPE by having installPath accessed as a property always #MsgLength=75
+
+
+----
+Modified: www/cdvah/js/CrxInstaller.js|2 1
+Modified: www/cdvah/js/Installer.js|2 2
+Modified: www/cdvah/js/ServeInstaller.js|5 4
+
+Revision: 584de8e026cf5345c743509bdce172558f18f92d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/03/2014 10:57:20
+Message:
+Fix "updating" message being cleared only on success. #MsgLength=54
+
+
+----
+Modified: www/cdvah/js/Installer.js|2 1
+
+Revision: b471b8b536ef141c0c1bdae4cf01f189ac2ea52e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/03/2014 10:59:32
+Message:
+Use URLs everywhere instead of paths. Removes need for "root" filesystem #MsgLength=275
+
+
+----
+Modified: www/cdvah/js/AddCtrl.js|2 2
+Modified: www/cdvah/js/AppsService.js|2 2
+Modified: www/cdvah/js/CdvhPackageHandler.js|1 16
+Modified: www/cdvah/js/ContextMenuInjectScript.js|3 1
+Modified: www/cdvah/js/CrxInstaller.js|4 10
+Modified: www/cdvah/js/Installer.js|27 35
+Modified: www/cdvah/js/ListCtrl.js|1 1
+Modified: www/cdvah/js/ResourcesLoader.js|78 230
+Modified: www/cdvah/js/ServeInstaller.js|12 13
+Modified: www/cdvah/js/UrlRemap.js|2 2
+Modified: www/cdvah/js/app.js|12 14
+
+Revision: 6f961db4e2bce0d086d770a79f644bcdfa34346b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/03/2014 11:33:17
+Message:
+UrlRemap: Use a nicer name for the "ignore-me" request header. #MsgLength=63
+
+
+----
+Modified: UrlRemap/src/ios/UrlRemap.m|3 2
+
+Revision: 15058020b9d891c0041276a1c05db57a90e358a7
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/03/2014 07:29:06
+Message:
+Show IP address for harness-push. #MsgLength=34
+
+
+----
+Modified: www/cdvah/js/ListCtrl.js|5 0
+Modified: www/cdvah/views/list.html|1 1
+
+Revision: fc9931d4053d04996f68db21755c9fbc5fd54d3a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/03/2014 05:23:03
+Message:
+Add env variable for setting name and ID in createproject.sh #MsgLength=61
+
+
+----
+Modified: config.xml|2 2
+Modified: createproject.sh|8 1
+
+Revision: feaebe87a8bbb4610bfb3613be4185e6208392ea
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/03/2014 05:24:53
+Message:
+Clear cache before launching an app. #MsgLength=37
+
+
+----
+Added: CacheClear/README.md|5 0
+Added: CacheClear/cacheclear.js|24 0
+Added: CacheClear/plugin.xml|52 0
+Added: CacheClear/src/android/CacheClear.java|37 0
+Added: CacheClear/src/ios/CacheClear.m|32 0
+Modified: createproject.sh|1 0
+Modified: www/cdvah/js/Installer.js|4 1
+
+Revision: afdd006f37dec2e4fe480e51508bebde04578df6
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/03/2014 05:25:22
+Message:
+Auto-listen when harness-push plugin exists (instead of pushing a button) #MsgLength=74
+
+
+----
+Modified: www/cdvah/js/ListCtrl.js|62 65
+Modified: www/cdvah/views/list.html|2 3
+
+Revision: 0c9986adf833bdbffeaaac7baffa954430e4d964
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/03/2014 12:33:52
+Message:
+Fix UrlRemap not always setting no-cache headers. #MsgLength=50
+
+
+----
+Modified: UrlRemap/src/ios/UrlRemap.m|2 3
+
+Revision: df643e14e6bafaad5d4b5ac57267d3ce302c9c02
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/03/2014 14:15:05
+Message:
+Fix package name of CacheClear/plugin.xml #MsgLength=42
+
+
+----
+Modified: CacheClear/plugin.xml|1 1
+
+Revision: 33e3109315d23a927e069a9edab6824bf50da52f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/03/2014 14:15:22
+Message:
+Don't reset plugins in UrlRemap.java #MsgLength=37
+
+
+----
+Modified: UrlRemap/src/android/UrlRemap.java|1 1
+
+Revision: 5d298ae5d68ef74891a9e1bbcc82f4b62b618724
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/03/2014 14:15:50
+Message:
+Fix JS exception caused by ng promises not having a "done" method #MsgLength=66
+
+
+----
+Modified: www/cdvah/js/ListCtrl.js|1 1
+
+Revision: 936a83a8d3edf03a8e39009ccc9c115b0dca2a9d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/03/2014 14:52:11
+Message:
+Make resetMappings() public for use by harness-push #MsgLength=52
+
+
+----
+Modified: UrlRemap/src/android/UrlRemap.java|1 1
+
+Revision: cb1e6a01b2bb15d83836abe4173c6bfca92f027e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/03/2014 14:52:31
+Message:
+Remove unneccessary replace() in CrxInstaller.js #MsgLength=49
+
+
+----
+Modified: www/cdvah/js/CrxInstaller.js|1 1
+
+Revision: 7a6975241576d11b9e4adf5ef05908e1aba19aba
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/04/2014 02:45:08
+Message:
+Update README.md to reflect current project status #MsgLength=51
+
+
+----
+Modified: README.md|9 15
+
+Revision: 2fc95e3201e13c91f7cf601ccc79afc4d1069dd5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/04/2014 02:45:44
+Message:
+Remove file-system-roots plugin as a dependency (it's a part of file now) #MsgLength=74
+
+
+----
+Modified: createproject.sh|0 1
+
+Revision: fae458db1444d1e48c5e3ac31cfb47a6502edff4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/04/2014 21:07:56
+Message:
+Revert "Remove file-system-roots plugin as a dependency (it's a part of file now)" #MsgLength=181
+
+
+----
+Modified: createproject.sh|1 0
+
+Revision: 12e3a7e4e87e88c6569fb82deb98afda0b71840b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 30/04/2014 11:06:15
+Message:
+Fix ResourcesLoader broken with latest version of file plugin #MsgLength=135
+
+
+----
+Modified: www/cdvah/js/ResourcesLoader.js|16 11
+
+Revision: ba6a40533e37ac038b059aed89762a8459da5b9b
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 20:46:17
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: 9398000243cc3149edf2ef9766aaf56caaa1be03
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/05/2014 23:14:53
+Message:
+Make createproject.sh PLUGIN_SEARCH_PATH additive #MsgLength=50
+
+
+----
+Modified: createproject.sh|1 1
+
+Revision: 6904274765a3b807cae2cf84ed9bb132fbf80533
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/05/2014 23:16:45
+Message:
+Move console.log into Notify.js. Make it stringify [Object] #MsgLength=60
+
+
+----
+Modified: www/cdvah/js/AddCtrl.js|8 14
+Modified: www/cdvah/js/ListCtrl.js|7 18
+Modified: www/cdvah/js/Notify.js|8 0
+
+Revision: 18f4ce7afd0692cd286c3cf402ca4e009188dfb4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/05/2014 23:17:21
+Message:
+Write per-app cordova_plugins.js to contain only required plugins #MsgLength=117
+
+
+----
+Modified: www/cdvah/js/CrxInstaller.js|76 0
+Modified: www/cdvah/js/Installer.js|13 26
+Modified: www/cdvah/js/PluginMetadata.js|59 6
+Modified: www/cdvah/js/ResourcesLoader.js|12 0
+Modified: www/cdvah/js/ServeInstaller.js|46 29
+
+Revision: 6eabf1b4975491e57d729ce87269adb1e4a3a9b3
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/05/2014 03:30:34
+Message:
+Make createproject.sh be able to set the app's version #MsgLength=55
+
+
+----
+Modified: config.xml|1 1
+Modified: createproject.sh|3 0
+
+Revision: 4a070b18c71a24c455a75b03c2d2e915a56c9ef2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/05/2014 03:51:54
+Message:
+Add ngrok to list of URL templates #MsgLength=35
+
+
+----
+Modified: www/cdvah/views/add.html|1 0
+
+Revision: 43d90221486601a9a0f147e3288a300d6277fb9c
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 03/05/2014 03:42:36
+Message:
+Fix the naming of pushed apps. No more duplicate entries. #MsgLength=58
+
+
+----
+Modified: www/cdvah/js/AppsService.js|2 2
+Modified: www/cdvah/js/CrxInstaller.js|2 4
+Modified: www/cdvah/js/ListCtrl.js|1 1
+Modified: www/cdvah/js/ServeInstaller.js|2 2
+
+Revision: 748924fcd56a149e1ebaedeeba7b90c904b39067
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/05/2014 10:24:13
+Message:
+Even more z-order for context menu #MsgLength=35
+
+
+----
+Modified: www/cdvahcm/ContextMenu.js|1 1
+
+Revision: 419236aa8e73bc624769f81632d1c49d04573d4b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/05/2014 22:56:49
+Message:
+Fix jshint errors #MsgLength=18
+
+
+----
+Modified: www/cdvah/js/AppsService.js|2 2
+Modified: www/cdvah/js/CrxInstaller.js|2 2
+Modified: www/cdvah/js/ServeInstaller.js|2 2
+
+Revision: a1112161a14282d88a94b52cdffae9d48f06c7ca
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/05/2014 01:26:26
+Message:
+Fix Android updates not working due to typo in CacheClear plugin #MsgLength=65
+
+
+----
+Modified: CacheClear/cacheclear.js|2 2
+Modified: CacheClear/src/android/CacheClear.java|7 3
+Modified: CacheClear/src/ios/CacheClear.m|3 1
+Modified: www/cdvah/index.html|1 0
+Added: www/cdvah/js/CacheClear.js|14 0
+Modified: www/cdvah/js/Installer.js|5 4
+
+Revision: 161eb779f95963bd64347597171b8e9ba61621b7
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/05/2014 03:38:56
+Message:
+Remove debug console.log() stmts #MsgLength=33
+
+
+----
+Modified: www/cdvah/js/ListCtrl.js|0 2
+
+Revision: 886f865d57d1d0a3c4454fcee3732a996e2a7589
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/05/2014 02:45:50
+Message:
+Delete stale .cdvh code #MsgLength=24
+
+
+----
+Deleted: packapp|0 84
+Deleted: www/cdvah/js/CdvhPackageHandler.js|0 37
+
+Revision: c5c99f7c03c5bfe07538baae2fd84ddb345824f0
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 24/01/2014 03:03:46
+Message:
+Initial import of the makeharness script. #MsgLength=42
+
+
+----
+Added: makeharness.sh|30 0
+
+Revision: 77e816dbaea99919948539a80426849aa1b41eaf
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 24/01/2014 03:14:20
+Message:
+Add README and LICENSE files. #MsgLength=30
+
+
+----
+Added: LICENSE.md|27 0
+Added: README.md|28 0
+
+Revision: a6ea6c725c5b9c6b9e56de3a868d5536e44ec8e9
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 24/01/2014 03:16:22
+Message:
+Update wording of README. #MsgLength=26
+
+
+----
+Modified: README.md|3 3
+
+Revision: f52837c25d9be010b4085960e0eaf4aab6e25bab
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 29/01/2014 01:20:00
+Message:
+Adding BarcodeScanner plugin. #MsgLength=30
+
+
+----
+Modified: makeharness.sh|1 0
+
+Revision: 50f811b15040444f21f8fb788240102b0c107678
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 05/02/2014 03:12:44
+Message:
+Add a necessary manual step to README.md #MsgLength=40
+
+
+----
+Modified: README.md|3 0
+
+Revision: 03331f6695e6707c4409d37b244c09566bae3464
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/03/2014 01:32:02
+Message:
+Enhancements to makeharness.sh and add .gitignore #MsgLength=50
+
+
+----
+Added: .gitignore|2 0
+Modified: makeharness.sh|54 28
+
+Revision: 4815ff63e6de2be31a33a883c8a82013616e1ce6
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/03/2014 22:51:52
+Message:
+Update README.md now that there are fewer manual steps. #MsgLength=56
+
+
+----
+Modified: README.md|9 15
+
+Revision: 39a5db8f78a316ba494ab83843e4fb057448004f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/03/2014 02:12:03
+Message:
+Tweak README.md example #MsgLength=24
+
+
+----
+Modified: README.md|1 1
+
+Revision: 6677de1cd08b0cbbbbd00385f3e463a5e8b4ffaf
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 09/01/2014 02:15:30
+Message:
+Initial import. Partially completed Push.java #MsgLength=114
+
+
+----
+Added: plugin.xml|29 0
+Added: src/android/Push.java|157 0
+
+Revision: f6d6d341cf49c10c7df09f787254de42fe3ac201
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 09/01/2014 06:18:59
+Message:
+Working HTTP server version #MsgLength=28
+
+
+----
+Added: js/push.js|18 0
+Modified: plugin.xml|2 1
+Modified: src/android/Push.java|47 86
+Added: src/android/nanohttpd/LICENSE.md|12 0
+Added: src/android/nanohttpd/NanoHTTPD.java|1405 0
+
+Revision: 074ca493f1ff9f6c086d9b517ac694b2c4d87f5b
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 15/01/2014 02:54:17
+Message:
+Fixes to Push code. Now navigating from Javascript. #MsgLength=52
+
+
+----
+Modified: src/android/Push.java|25 1
+
+Revision: eb25f71ccacb6abf81a4854d1f432dd9ef8c83fa
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 24/01/2014 22:57:55
+Message:
+Working /push. Add /exec and /menu. #MsgLength=284
+
+
+----
+Modified: src/android/Push.java|55 30
+
+Revision: 44e359762103ea315d0ecaa16a251dd0d02874aa
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 24/01/2014 23:12:29
+Message:
+Adding LICENSE and README. #MsgLength=27
+
+
+----
+Added: LICENSE.md|49 0
+Added: README.md|36 0
+
+Revision: 06bf5d3a0f68e3281a39ae983515567fb1e695e1
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 24/01/2014 23:13:56
+Message:
+Markdownify the LICENSE more fully. #MsgLength=36
+
+
+----
+Modified: LICENSE.md|5 1
+
+Revision: fd52e9c1c52225d27d5f48ecaf93a0042c122c91
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 28/01/2014 00:13:51
+Message:
+Now with push support for crx files #MsgLength=36
+
+
+----
+Modified: README.md|10 4
+Modified: src/android/Push.java|50 11
+
+
+Revision: 9e8f9f8921de248d033bb1c7c35d6f5d6cc54f46
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/03/2014 05:05:50
+Message:
+Don't inject harness-push JS on iOS #MsgLength=36
+
+
+----
+Modified: harness-push/plugin.xml|4 4
+
+Revision: 7454e2fcd8f4ee4ff933a16516a343a4bb208e9a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/03/2014 07:26:53
+Message:
+Add getListenAddress() to harness-push #MsgLength=39
+
+
+----
+Modified: harness-push/js/push.js|12 0
+Modified: harness-push/plugin.xml|2 0
+
+Revision: cdd39e246894371a7a45b802dd238c6cf225a11d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/03/2014 07:28:11
+Message:
+Use webView.loadUrlIntoView() for reload instead of window.location #MsgLength=68
+
+
+----
+Modified: harness-push/src/android/Push.java|1 14
+
+Revision: 6dad07d61ec7b1ad22e0ab827e49d1faf54d8200
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/03/2014 05:20:16
+Message:
+Add manual step of changing title to README.md #MsgLength=47
+
+
+----
+Modified: README.md|8 4
+
+Revision: 0f092d2f4283846b0ca9f53b8b8602f705ab2406
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/03/2014 05:20:35
+Message:
+Add "adb forward" instructions to harness-push/README.md #MsgLength=57
+
+
+----
+Modified: harness-push/README.md|11 1
+
+Revision: 1d6b5fbd6d89bbfa84be3f5494e5a3f8b5176906
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/03/2014 05:21:37
+Message:
+Set App Name and ID in makeharness.sh #MsgLength=38
+
+
+----
+Modified: makeharness.sh|2 0
+
+Revision: 905d837c70fd08483cb0b1a1308e71fd6b9fc587
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/03/2014 14:53:14
+Message:
+Fix updating while in an app - reset mappings upon push received #MsgLength=65
+
+
+----
+Modified: harness-push/src/android/Push.java|3 0
+
+Revision: c04e2fa7787fee969baa4ef3efa59e6f8024a45c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/03/2014 15:02:27
+Message:
+Update release steps in README.md #MsgLength=34
+
+
+----
+Modified: README.md|10 2
+
+Revision: 7f0622a9ff3301328674b190402a233d87c0e27e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/03/2014 04:35:22
+Message:
+Add debug keystore to repo #MsgLength=27
+
+
+----
+Added: CCAHarness-debug.keystore|0 0
+
+Revision: 10c8de1416d884cae749a5aaf5fc1608f869b7a4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/03/2014 04:51:37
+Message:
+Check in debug keystore. Add build script that uses it. #MsgLength=56
+
+
+----
+Modified: README.md|16 8
+Added: buildharness.sh|44 0
+Renamed: createproject.sh [from makeharness.sh]|2 2
+
+Revision: 66c5109bd0a6040c92a4e952d266ffa74c44d315
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/03/2014 05:00:33
+Message:
+Tweak tagging instructions #MsgLength=27
+
+
+----
+Modified: README.md|3 2
+Modified: buildharness.sh|7 7
+
+Revision: 219bb78861e1705b76b0ad80f5e99b73f46055a0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/03/2014 07:06:38
+Message:
+Fix app ID back to ChromeADT (changed mistakenly) #MsgLength=50
+
+
+----
+Modified: createproject.sh|1 1
+
+Revision: e71bb1b20c22bc5bb2a5ee4ab3d981fa93866f39
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/05/2014 23:13:47
+Message:
+Tweak createproject.sh: more plugins, better error handling #MsgLength=60
+
+
+----
+Modified: buildharness.sh|11 8
+Modified: createproject.sh|17 5
+
+Revision: 1b91a06e43ced67f8bbb6b52f153887b53ab8b3c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/05/2014 03:31:10
+Message:
+Set app version in createproject.sh #MsgLength=36
+
+
+----
+Modified: createproject.sh|1 0
+
+
+Revision: 06105fb95f7fe80bb4e84b4d9d095ec073680ad2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/05/2014 03:05:23
+Message:
+Step 2 of harness-push merge #MsgLength=29
+
+
+----
+Renamed: HarnessPush/LICENSE.md [from harness-pull-merge/harness-push/LICENSE.md]|0 0
+Renamed: HarnessPush/README.md [from harness-pull-merge/harness-push/README.md]|1 7
+Renamed: HarnessPush/js/push.js [from harness-pull-merge/harness-push/js/push.js]|0 0
+Renamed: HarnessPush/plugin.xml [from harness-pull-merge/harness-push/plugin.xml]|0 0
+Renamed: HarnessPush/src/android/Push.java [from harness-pull-merge/harness-push/src/android/Push.java]|0 0
+Renamed: HarnessPush/src/android/nanohttpd/LICENSE.md [from harness-pull-merge/harness-push/src/android/nanohttpd/LICENSE.md]|0 0
+Renamed: HarnessPush/src/android/nanohttpd/NanoHTTPD.java [from harness-pull-merge/harness-push/src/android/nanohttpd/NanoHTTPD.java]|0 0
+Added: LICENSE|202 0
+Modified: NOTICE|11 2
+Modified: createproject.sh|1 0
+Deleted: harness-pull-merge/.gitignore|0 1
+Deleted: harness-pull-merge/CCAHarness-debug.keystore|0 0
+Deleted: harness-pull-merge/LICENSE.md|0 27
+Deleted: harness-pull-merge/README.md|0 46
+Deleted: harness-pull-merge/buildharness.sh|0 47
+Deleted: harness-pull-merge/createproject.sh|0 66
+
+Revision: 97472e49033411aa91c5f86e7fafa3ad6a395734
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/05/2014 03:26:51
+Message:
+Fix PLUGIN_SEARCH_PATH logic when no extra path is set #MsgLength=55
+
+
+----
+Modified: createproject.sh|5 1
+
+Revision: c7616fe28518e6965482d3193fc18cf5d87335ac
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/05/2014 03:37:20
+Message:
+Don't add cordova-plugins/ to createproject.sh if it doesn't exist #MsgLength=67
+
+
+----
+Modified: createproject.sh|7 7
+
+Revision: c29e06c340c619064c169ae97aaf8cd17ea4147d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/05/2014 04:17:39
+Message:
+Delete CRX logic (moving to downstream chrome-app-harness.git) #MsgLength=63
+
+
+----
+Modified: HarnessPush/README.md|0 10
+Modified: HarnessPush/src/android/Push.java|3 41
+Deleted: www/cdvah/crx_files/config.android.xml|0 105
+Deleted: www/cdvah/crx_files/config.ios.xml|0 110
+Modified: www/cdvah/index.html|0 1
+Deleted: www/cdvah/js/CrxInstaller.js|0 121
+Modified: www/cdvah/views/add.html|0 1
+
+Revision: 55c4c86570f65f18d4b5266320d686326e459467
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/05/2014 04:47:17
+Message:
+Fix serve installer not waiting for update to complete #MsgLength=55
+
+
+----
+Modified: www/cdvah/js/ServeInstaller.js|21 23
+
+Revision: 448d508217c70dc14545a170b2057e41843d5f3a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/05/2014 00:56:40
+Message:
+Refactor to use different webviews for the app vs menus #MsgLength=56
+
+
+----
+Added: AppHarnessUI/AppHarnessUI.java|273 0
+Added: AppHarnessUI/AppHarnessUI.m|175 0
+Added: AppHarnessUI/README.md|4 0
+Added: AppHarnessUI/appharnessui.js|44 0
+Added: AppHarnessUI/plugin.xml|52 0
+Modified: HarnessPush/js/push.js|0 4
+Modified: HarnessPush/src/android/Push.java|27 37
+Modified: UrlRemap/plugin.xml|2 0
+Modified: UrlRemap/src/android/UrlRemap.java|3 3
+Modified: UrlRemap/src/ios/UrlRemap.m|1 0
+Modified: config.xml|1 1
+Modified: createproject.sh|1 0
+Renamed: www/cdvah/harnessmenu.html [from www/cdvah/index.html]|1 1
+Added: www/cdvah/js/AppHarnessUI.js|31 0
+Modified: www/cdvah/js/AppsService.js|34 3
+Deleted: www/cdvah/js/ContextMenuInjectScript.js|0 29
+Modified: www/cdvah/js/Installer.js|6 5
+Modified: www/cdvah/js/ListCtrl.js|14 36
+Deleted: www/cdvahcm/ContextMenu.js|0 118
+Modified: www/cdvahcm/contextMenu.html|11 39
+
+Revision: 04e2fe81659ee05e547743d727d757a4e61800f3
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/05/2014 04:52:54
+Message:
+Allow obj['prop'] in jshintrc #MsgLength=30
+
+
+----
+Modified: .jshintrc|1 0
+
+Revision: 44e3d14a4729a1bd30092bec2f40138bd7d7a182
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/05/2014 04:54:21
+Message:
+Add an AppHarnessUi.execJs() command #MsgLength=37
+
+
+----
+Modified: AppHarnessUI/AppHarnessUI.java|23 0
+Modified: AppHarnessUI/AppHarnessUI.m|11 0
+Modified: AppHarnessUI/appharnessui.js|4 0
+Modified: www/cdvah/js/AppHarnessUI.js|5 0
+
+Revision: 5319e5dea8a7b9244c5170fa81b597f190960a6a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/05/2014 04:55:58
+Message:
+Fix iOS being broken due to UrlRemap being set to load on start-up #MsgLength=67
+
+
+----
+Modified: UrlRemap/plugin.xml|1 1
+
+Revision: 47e5c721541a69723d8944b316d1f365ef2aa313
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/05/2014 23:32:06
+Message:
+Add createFileWriter and createTmpFileUrl to ResourcesLoader #MsgLength=61
+
+
+----
+Modified: www/cdvah/js/ResourcesLoader.js|32 21
+Modified: www/cdvah/js/app.js|6 2
+
+Revision: b826b671ca51dcd746004fc375f6ba3364149a47
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/05/2014 23:41:36
+Message:
+Re-write server in JS via chrome.socket. #MsgLength=41
+
+
+----
+Deleted: HarnessPush/LICENSE.md|0 53
+Deleted: HarnessPush/README.md|0 36
+Deleted: HarnessPush/js/push.js|0 26
+Deleted: HarnessPush/plugin.xml|0 32
+Deleted: HarnessPush/src/android/Push.java|0 148
+Deleted: HarnessPush/src/android/nanohttpd/LICENSE.md|0 12
+Deleted: HarnessPush/src/android/nanohttpd/NanoHTTPD.java|0 1405
+Modified: NOTICE|0 8
+Modified: README.md|38 0
+Modified: createproject.sh|2 1
+Modified: www/cdvah/harnessmenu.html|2 0
+Modified: www/cdvah/js/AppsService.js|60 37
+Added: www/cdvah/js/HarnessServer.js|159 0
+Added: www/cdvah/js/HttpServer.js|327 0
+Modified: www/cdvah/js/ListCtrl.js|16 62
+Modified: www/cdvah/js/ServeInstaller.js|2 2
+Modified: www/cdvah/views/list.html|1 2
+
+Revision: e310de3c8fc0497faa308cc04887163104f24261
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/05/2014 01:36:49
+Message:
+Add missing license headers #MsgLength=28
+
+
+----
+Modified: checkjs.sh|16 16
+Modified: createproject.sh|16 0
+Modified: www/cdvah/css/style.css|18 0
+Modified: www/cdvah/harnessmenu.html|18 0
+Modified: www/cdvah/js/AddCtrl.js|18 0
+Modified: www/cdvah/js/AppHarnessUI.js|18 0
+Modified: www/cdvah/js/AppsService.js|18 0
+Modified: www/cdvah/js/CacheClear.js|18 0
+Modified: www/cdvah/js/DetailsCtrl.js|18 0
+Modified: www/cdvah/js/HarnessServer.js|18 0
+Modified: www/cdvah/js/HttpServer.js|18 0
+Modified: www/cdvah/js/Installer.js|18 0
+Modified: www/cdvah/js/ListCtrl.js|18 0
+Modified: www/cdvah/js/Notify.js|18 0
+Modified: www/cdvah/js/PluginMetadata.js|18 0
+Modified: www/cdvah/js/ResourcesLoader.js|18 0
+Modified: www/cdvah/js/ServeInstaller.js|18 0
+Modified: www/cdvah/js/UrlRemap.js|18 0
+Modified: www/cdvah/js/app.js|18 0
+Modified: www/cdvah/views/add.html|18 0
+Modified: www/cdvah/views/details.html|18 0
+Modified: www/cdvah/views/list.html|18 0
+Modified: www/cdvahcm/contextMenu.html|18 0
+
+Revision: f02bf4ebd81a0a1a6a51d49c01a22b7daa76ae2d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/05/2014 01:51:04
+Message:
+Make PLUGIN_SEARCH_PATH in createproject.sh more robust #MsgLength=56
+
+
+----
+Modified: createproject.sh|11 3
+
+Revision: 469a471c52effe0c4f8547ab557c051adf9d6eef
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/05/2014 01:54:21
+Message:
+Remove out-of-date info from README.md #MsgLength=39
+
+
+----
+Modified: README.md|6 38
+
+Revision: 1fc7bf4a59d7c78f1fd85e46a4f6fbc1cc74c980
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/05/2014 02:19:22
+Message:
+Make /menu command show in-app menu, not main menu. #MsgLength=85
+
+
+----
+Modified: README.md|5 1
+Modified: www/cdvah/js/AppHarnessUI.js|2 2
+Modified: www/cdvah/js/AppsService.js|1 1
+Modified: www/cdvah/js/HarnessServer.js|1 1
+
+Revision: de9b2855ed01de82ea9b973486bda8eb73422179
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/05/2014 04:06:32
+Message:
+Delete Add / Edit screens (Allow add/update from server only). #MsgLength=63
+
+
+----
+Modified: www/cdvah/css/style.css|9 0
+Modified: www/cdvah/harnessmenu.html|0 1
+Deleted: www/cdvah/js/AddCtrl.js|0 118
+Modified: www/cdvah/js/HarnessServer.js|1 1
+Modified: www/cdvah/js/ListCtrl.js|0 15
+Modified: www/cdvah/js/app.js|0 8
+Deleted: www/cdvah/views/add.html|0 55
+Modified: www/cdvah/views/details.html|3 5
+Modified: www/cdvah/views/list.html|11 12
+Modified: www/cdvahcm/contextMenu.html|0 3
+
+Revision: f20521425493e9cf09628a1f4d4e8987f32e10bc
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/05/2014 09:29:27
+Message:
+Stop setting a UrlRemap reset URL (not used anymore) #MsgLength=53
+
+
+----
+Modified: www/cdvah/js/Installer.js|0 2
+
+Revision: 074d388a54ba6942fdbd5b8e9315d52cd8eca7bb
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/05/2014 02:42:13
+Message:
+Make ResourcesLoader be able to delete files (as well as directories) #MsgLength=70
+
+
+----
+Modified: www/cdvah/js/ResourcesLoader.js|11 5
+
+Revision: da594dffbab000b2864f306cd3f9f15e7ef8644c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/05/2014 03:50:26
+Message:
+Big refactor to support pushing of apps via HTTP. #MsgLength=196
+
+
+----
+Modified: README.md|39 9
+Modified: www/cdvah/harnessmenu.html|1 1
+Modified: www/cdvah/js/AppsService.js|60 59
+Added: www/cdvah/js/DirectoryManager.js|100 0
+Modified: www/cdvah/js/HarnessServer.js|152 67
+Modified: www/cdvah/js/HttpServer.js|270 133
+Modified: www/cdvah/js/Installer.js|95 73
+Modified: www/cdvah/js/PluginMetadata.js|1 1
+Modified: www/cdvah/js/ResourcesLoader.js|2 2
+Deleted: www/cdvah/js/ServeInstaller.js|0 197
+Modified: www/cdvah/js/app.js|1 1
+
+Revision: 42f7e571745d7a56b962fa0fc19c05e71934201b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/05/2014 03:51:58
+Message:
+Add harness-push command-line tool for pushing apps. #MsgLength=53
+
+
+----
+Modified: .gitignore|2 1
+Added: harness-push/harness-push.js|346 0
+Added: harness-push/package.json|32 0
+
+Revision: a2aaedace80234e4fcfa0b96b18fe6bc90b688d2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/05/2014 08:39:42
+Message:
+Fix jshint warning. #MsgLength=20
+
+
+----
+Modified: www/cdvah/js/HttpServer.js|1 1
+
+Revision: d58c684e97ceab7b5ec35f541b6fe8833bfbdfb7
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/05/2014 08:58:10
+Message:
+Move curl examples out of README in favour of harness-push. #MsgLength=60
+
+
+----
+Modified: README.md|1 65
+Added: harness-push/README.md|19 0
+Modified: www/cdvah/js/HarnessServer.js|31 0
+
+Revision: 4a366039f8a1ac343ace5eb5bdaabf5880d08ab2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/05/2014 22:29:05
+Message:
+Add pushing via zip file logic. #MsgLength=32
+
+
+----
+Modified: harness-push/harness-push.js|298 223
+Modified: harness-push/package.json|4 3
+Modified: www/cdvah/js/HarnessServer.js|71 31
+
+Revision: 3a815ad33c2f61e997b531656243dc6ac62faa2f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/05/2014 01:18:22
+Message:
+Fix corner-case in harness-push & add missing usage examples #MsgLength=61
+
+
+----
+Modified: harness-push/harness-push.js|5 4
+
+Revision: a2ae35550037eba9d6096580e369062bee99c5be
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/05/2014 01:19:25
+Message:
+Split Installer into Installer + CordovaInstaller. #MsgLength=51
+
+
+----
+Modified: www/cdvah/harnessmenu.html|1 0
+Modified: www/cdvah/js/AppsService.js|4 2
+Added: www/cdvah/js/CordovaInstaller.js|75 0
+Modified: www/cdvah/js/DirectoryManager.js|7 0
+Modified: www/cdvah/js/HarnessServer.js|1 14
+Modified: www/cdvah/js/Installer.js|38 55
+
+Revision: 73ca9ca3157785a3910325db6812b16a39cca4df
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/05/2014 21:48:28
+Message:
+Add note about deploy to iOS via tcprelay.py #MsgLength=45
+
+
+----
+Modified: harness-push/README.md|4 1
+Modified: harness-push/harness-push.js|4 1
+
+Revision: 79b69286cbc8e56b22f54e8b9cd90192fc531cc9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/05/2014 02:02:11
+Message:
+Delete /prepupdate action, add concept of manifest etag #MsgLength=56
+
+
+----
+Deleted: .jshintignore|0 1
+Modified: www/cdvah/js/AppsService.js|5 1
+Modified: www/cdvah/js/CordovaInstaller.js|2 5
+Modified: www/cdvah/js/DirectoryManager.js|50 30
+Modified: www/cdvah/js/HarnessServer.js|71 46
+Modified: www/cdvah/js/HttpServer.js|21 10
+Modified: www/cdvah/js/Installer.js|3 3
+Modified: www/cdvah/js/ListCtrl.js|3 2
+Modified: www/cdvah/js/app.js|2 0
+
+Revision: e82ef5c0f58cd1c1621d200154192cff8e310c8c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/05/2014 02:04:25
+Message:
+Split harness-push into harness-push + harness-client. #MsgLength=118
+
+
+----
+Modified: harness-push/README.md|2 2
+Modified: harness-push/harness-push.js|13 334
+Added: harness-push/node_modules/cordova-harness-client/README.md|5 0
+Added: harness-push/node_modules/cordova-harness-client/harnessclient.js|196 0
+Added: harness-push/node_modules/cordova-harness-client/package.json|26 0
+Added: harness-push/node_modules/cordova-harness-client/pushsession.js|271 0
+Modified: harness-push/package.json|3 11
+
+Revision: e18f4bfed84b701b54bd43f084c864598d0a26fa
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/05/2014 02:05:44
+Message:
+Enable jshint for node modules as well #MsgLength=39
+
+
+----
+Modified: .gitignore|3 1
+Modified: .jshintrc|2 1
+Modified: checkjs.sh|4 1
+
+Revision: d9527a7b0b9d45c5ea61af9356cd0ecd80f37979
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/05/2014 02:37:23
+Message:
+Don't set default target in harness-push.js (it is set in harnessclient.js) #MsgLength=76
+
+
+----
+Modified: harness-push/harness-push.js|0 3
+
+Revision: 67c97c16e04a159a290bf46fecf909ea0c37f32c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/05/2014 03:13:51
+Message:
+Add missing dependency on nopt from harness-push #MsgLength=49
+
+
+----
+Modified: harness-push/package.json|2 1
+
+Revision: a7be0aff1277d89059a582600cf342df599b8499
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/05/2014 03:15:01
+Message:
+Fix typo in package.json of client dependency #MsgLength=46
+
+
+----
+Modified: harness-push/package.json|1 1
+
+Revision: f086ba8dea2bec86e47b4abc6c1b44c37e11126a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/05/2014 04:07:32
+Message:
+Use a keep-alive agent that doens't hold the process open #MsgLength=58
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/harnessclient.js|6 2
+Modified: harness-push/node_modules/cordova-harness-client/package.json|1 1
+
+Revision: 6548126a03fd3fa7641390a974127aff6b2926d2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/05/2014 04:07:46
+Message:
+Tweak a console.log() #MsgLength=22
+
+
+----
+Modified: www/cdvah/js/HttpServer.js|1 1
+
+Revision: 68e7118ab32d4029e5981090d0056195e43d5888
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/05/2014 03:00:28
+Message:
+harness-push: Print response body of non 200 responses #MsgLength=55
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/harnessclient.js|4 5
+
+Revision: de2743ec8306b43e292127ad77eef73d8c89d221
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/05/2014 03:00:54
+Message:
+harness-push: Allow pushes without config.xml #MsgLength=46
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/pushsession.js|14 9
+
+Revision: 10e6be0ad35bf5d37d4bc30a666076fec3009718
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/05/2014 09:10:08
+Message:
+Explicitly check that startPage exists before attempting to launch #MsgLength=67
+
+
+----
+Modified: www/cdvah/js/AppsService.js|7 1
+
+Revision: a8c23d6325e82f4d4a4793fbe43bad546b07e35f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/05/2014 09:10:21
+Message:
+Delete explicit toNativeURL() since file: is now the default #MsgLength=61
+
+
+----
+Modified: www/cdvah/js/DirectoryManager.js|1 0
+Modified: www/cdvah/js/Installer.js|26 27
+Modified: www/cdvah/js/ResourcesLoader.js|0 4
+
+Revision: 56e494c2ade8b231d04c62059fc3da148bf1aece
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/05/2014 09:56:11
+Message:
+Remove use of file-system-roots plugin (functionality now built into file plugin) #MsgLength=82
+
+
+----
+Modified: createproject.sh|0 1
+Modified: www/cdvah/js/app.js|4 10
+
+Revision: 5a76c40225ae99ee8235611457831ee61e991a73
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/05/2014 22:04:28
+Message:
+Update README.md to remove serve references #MsgLength=44
+
+
+----
+Modified: README.md|8 15
+
+Revision: 4baa54905d68bdc08e1cf33436c7e783c98ddb46
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 28/05/2014 02:45:17
+Message:
+Made a couple of small bug fixes. #MsgLength=140
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/pushsession.js|6 1
+
+Revision: 0ae1895a38d9efdad2cf0bf27b57c1324e47ede1
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 28/05/2014 04:07:46
+Message:
+Added unzip percentages. #MsgLength=24
+
+
+----
+Modified: www/cdvah/js/HarnessServer.js|2 0
+Modified: www/cdvah/js/ResourcesLoader.js|6 1
+
+Revision: 7bcfa09d78e558d84e8d4505fc61b3e6bee6d0ed
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/05/2014 11:07:54
+Message:
+Update HarnessServer curl examples in the comments #MsgLength=51
+
+
+----
+Modified: www/cdvah/js/HarnessServer.js|5 5
+
+Revision: 54781c3e87063512d0767a46fa6ec32f4140a8a8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/05/2014 05:05:36
+Message:
+Delete dead code & add "all" bucket to PluginMetadata results #MsgLength=62
+
+
+----
+Modified: www/cdvah/js/PluginMetadata.js|8 10
+Modified: www/cdvah/js/app.js|0 10
+
+Revision: 5eaa8cbe741c4f0fb2a5873bc3d34153973b97ad
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/05/2014 05:07:35
+Message:
+Set app title & version in app.js instead of ListCtrl #MsgLength=54
+
+
+----
+Modified: www/cdvah/harnessmenu.html|1 1
+Modified: www/cdvah/js/ListCtrl.js|1 3
+Modified: www/cdvah/js/app.js|6 0
+
+Revision: 098cc0a26f0c1945607bc3fed78d0b2e3ac8bac7
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/05/2014 08:51:49
+Message:
+Small tweak to promises style in AppsService #MsgLength=45
+
+
+----
+Modified: www/cdvah/js/AppsService.js|3 3
+
+Revision: e780338523e4f711e49cb29f8739cd5bff3bb41d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/05/2014 10:21:56
+Message:
+Add ng-cloak to make start-up not flicker the html template #MsgLength=60
+
+
+----
+Modified: www/cdvah/harnessmenu.html|1 1
+
+Revision: 91d27cf7bf28a0d97377f974389bb0c971e69857
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/05/2014 10:22:22
+Message:
+Add iconURL to Installer (to be shown in the UI in a future commit) #MsgLength=68
+
+
+----
+Modified: www/cdvah/js/Installer.js|7 1
+
+Revision: ba3cb0edfb2c722643f63ad0db116c0fdaffedfe
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/05/2014 10:22:44
+Message:
+Show total plugin count in plugin message #MsgLength=42
+
+
+----
+Modified: www/cdvah/views/list.html|2 1
+
+Revision: daff4a57594253357822c21adfd46aa2d201b68b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/05/2014 22:54:36
+Message:
+Delete pinch to show overlay gesture. #MsgLength=38
+
+
+----
+Modified: AppHarnessUI/AppHarnessUI.java|1 24
+Modified: AppHarnessUI/AppHarnessUI.m|1 13
+
+Revision: 425a9e2bff0a81349ea58328919d74b81098fc40
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 30/05/2014 01:49:19
+Message:
+Don't use UrlRemap on iOS (buggy with multiple webviews) #MsgLength=57
+
+
+----
+Modified: www/cdvah/js/Installer.js|33 23
+Modified: www/cdvah/js/ResourcesLoader.js|12 0
+
+Revision: f21635e6d09f893d69e775a463b796a788469e63
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 30/05/2014 01:50:44
+Message:
+Rework Overlay menu to be another view within the main webview. #MsgLength=117
+
+
+----
+Modified: AppHarnessUI/AppHarnessUI.java|23 53
+Modified: AppHarnessUI/appharnessui.js|3 7
+Modified: www/cdvah/css/style.css|5 0
+Modified: www/cdvah/harnessmenu.html|1 0
+Modified: www/cdvah/js/AppHarnessUI.js|2 7
+Modified: www/cdvah/js/AppsService.js|4 19
+Added: www/cdvah/js/InAppMenuCtrl.js|70 0
+Modified: www/cdvah/js/app.js|4 0
+Added: www/cdvah/views/inappmenu.html|24 0
+Deleted: www/cdvahcm/contextMenu.html|0 80
+
+Revision: c03d3fb5283bfb9855f254133cf2afcaf0709b2b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 30/05/2014 03:07:13
+Message:
+Remove some dead code left from last commit #MsgLength=44
+
+
+----
+Modified: www/cdvah/js/InAppMenuCtrl.js|0 7
+
+Revision: be702a672654c0019502174a0dcfd40e11dd3745
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 30/05/2014 03:48:44
+Message:
+Forgot to commit iOS changes for overlay change #MsgLength=48
+
+
+----
+Modified: AppHarnessUI/AppHarnessUI.m|20 49
+
+Revision: c95b39a89b0912420fb78c042e939202fc33e899
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 30/05/2014 03:54:38
+Message:
+Quit the active app if it's deleted via HarnessServer #MsgLength=54
+
+
+----
+Modified: www/cdvah/js/AppsService.js|15 7
+
+Revision: 3c31ce488ccf75dccb39751276a495a82559ee94
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 30/05/2014 22:24:40
+Message:
+Fix HarnessServer menu command #MsgLength=31
+
+
+----
+Modified: www/cdvah/js/AppHarnessUI.js|10 1
+Modified: www/cdvah/js/HarnessServer.js|1 1
+Modified: www/cdvah/js/InAppMenuCtrl.js|7 9
+
+Revision: f1a8fab759e20d937d88ffb64c346d2cbfbf7b16
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 31/05/2014 04:18:26
+Message:
+Make view shrink to reveal in-app-menu #MsgLength=39
+
+
+----
+Modified: AppHarnessUI/AppHarnessUI.java|43 12
+Modified: AppHarnessUI/AppHarnessUI.m|41 9
+Modified: www/cdvah/js/InAppMenuCtrl.js|2 0
+
+Revision: a40bfa31035abf9f9bc4939e76f42ce8f5686d8e
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 31/05/2014 00:03:45
+Message:
+CB-6818 Add license to CONTRIBUTING.md #MsgLength=39
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+
+Revision: 6f99cb1807c946b708d73e15d5b56b1a74cde692
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/06/2014 04:28:25
+Message:
+Use moment.js for last updated time #MsgLength=36
+
+
+----
+Modified: LICENSE|67 1
+Modified: www/cdvah/harnessmenu.html|2 0
+Modified: www/cdvah/js/HarnessServer.js|1 0
+Modified: www/cdvah/js/app.js|1 1
+Added: www/cdvah/js/libs/angular-moment.js|335 0
+Added: www/cdvah/js/libs/moment.min.js|6 0
+Modified: www/cdvah/views/inappmenu.html|0 1
+Modified: www/cdvah/views/list.html|1 1
+
+Revision: 522332834ec67cf7c219ae160ec7b41f7e247a85
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/06/2014 04:37:14
+Message:
+Add NOTICE for topcoat. #MsgLength=24
+
+
+----
+Modified: NOTICE|194 0
+
+Revision: fd435c858c11145c95f02dc33db91572faf24510
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/06/2014 01:32:29
+Message:
+Add --allplugins to createproject.sh to add in more plugins #MsgLength=60
+
+
+----
+Modified: createproject.sh|26 2
+
+Revision: 5385919a6763581f18cb82635d631deabadddc14
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 04/06/2014 05:16:55
+Message:
+Added dynamic ip updating. #MsgLength=90
+
+
+----
+Modified: www/cdvah/js/HarnessServer.js|2 2
+Modified: www/cdvah/js/ListCtrl.js|10 4
+
+Revision: e1722eb98e499130049c6df0cb1d7c5224853aec
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/06/2014 01:52:10
+Message:
+Small fix to UriRemap to remove double forward slash for plugin assets #MsgLength=71
+
+
+----
+Modified: www/cdvah/js/Installer.js|1 2
+
+Revision: fbf4f181787805d1028f022c49536dce7d87f1d5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/06/2014 04:30:58
+Message:
+Move config.xml into template-overrides/ #MsgLength=41
+
+
+----
+Modified: createproject.sh|1 1
+Renamed: template-overrides/config.xml [from config.xml]|0 0
+
+Revision: 11f61169c1b21e44485c4834e27bb2a4c7fab7ec
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/06/2014 04:20:02
+Message:
+Fix deleteapp?all=1 returning a 500 due to forgetting to return promise #MsgLength=72
+
+
+----
+Modified: www/cdvah/js/AppsService.js|1 1
+
+Revision: f6fd67fe863717f29a77a2f6b8716048b16f4604
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/06/2014 04:20:42
+Message:
+Add HttpServer.ResponseException for easier 500 responses #MsgLength=58
+
+
+----
+Modified: www/cdvah/js/HarnessServer.js|7 3
+Modified: www/cdvah/js/HttpServer.js|10 1
+
+Revision: 2ed499c942d65b98453ce71886951f99c1195d9a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/06/2014 02:27:27
+Message:
+Fix curl example in comments for /zippush #MsgLength=42
+
+
+----
+Modified: www/cdvah/js/HarnessServer.js|2 1
+
+Revision: 5c820244d5f2065f372f2a6306806ac4727c3934
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/06/2014 10:43:39
+Message:
+createproject.sh: Use coho & cca to find plugins locally #MsgLength=57
+
+
+----
+Modified: createproject.sh|25 4
+
+Revision: e1994aa578984f0fcced4bb4bef8ee7992aa426a
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 17/06/2014 02:24:26
+Message:
+Replacing CacheClear with inline cache clear (simpler called on slave webview) #MsgLength=79
+
+
+----
+Modified: AppHarnessUI/AppHarnessUI.java|2 0
+Deleted: CacheClear/README.md|0 5
+Deleted: CacheClear/cacheclear.js|0 24
+Deleted: CacheClear/plugin.xml|0 52
+Deleted: CacheClear/src/android/CacheClear.java|0 41
+Deleted: CacheClear/src/ios/CacheClear.m|0 34
+Modified: createproject.sh|0 1
+Modified: www/cdvah/harnessmenu.html|0 1
+Deleted: www/cdvah/js/CacheClear.js|0 32
+Modified: www/cdvah/js/Installer.js|2 3
+
+Revision: 7a508c3bbb525680f7eda359a16d63a45c559d74
+Author: David Kemp <drkemp@chromium.org>
+Date: 17/06/2014 20:08:55
+Message:
+[CB6947] move app directory by default. use parameter movetype='file' to do merge #MsgLength=82
+
+
+----
+Modified: www/cdvah/js/DirectoryManager.js|21 0
+Modified: www/cdvah/js/HarnessServer.js|30 9
+
+Revision: eafb3494809a87f21b4fe5d24dfd046a4e796477
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/06/2014 03:29:53
+Message:
+Bump HarnessServer protocol version, update comments, make bulkMove a bit safer #MsgLength=80
+
+
+----
+Modified: www/cdvah/js/DirectoryManager.js|15 18
+Modified: www/cdvah/js/HarnessServer.js|24 12
+
+Revision: a924bb0feee01e13532ceb43410f5e90f702e8f1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/06/2014 03:30:41
+Message:
+Make pushsession.js properly update its cached assetManifest #MsgLength=61
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/pushsession.js|71 44
+
+Revision: 7e9f136c3d98106e0cab55a46600a33175be34fd
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/06/2014 04:03:40
+Message:
+Fix ConcurrentModificationException in UrlRemap #MsgLength=48
+
+
+----
+Modified: UrlRemap/src/android/UrlRemap.java|60 50
+
+Revision: 32145b8115c7b035077f46e5586a321cf450dd79
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/06/2014 04:22:29
+Message:
+Fix NPE in AppHarnessUI when events are sent and no one is listening #MsgLength=69
+
+
+----
+Modified: AppHarnessUI/AppHarnessUI.java|5 3
+
+Revision: 736c8d1dee8d28aa009984fb8e1c0a04829fefa6
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/06/2014 04:47:29
+Message:
+Add org.apache.cordova.media to --allplugins (mistakenly omitted) #MsgLength=66
+
+
+----
+Modified: createproject.sh|1 0
+
+Revision: c8fdd7ca19699a0c7852f989d65a334fd0082ab2
+Author: David Kemp <drkemp@chromium.org>
+Date: 19/06/2014 04:33:46
+Message:
+CB-6975 Improve the speed of the zip function #MsgLength=46
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/pushsession.js|2 2
+
+Revision: 5047e0ead2fb048953c203e87f35981108b9e99d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/06/2014 09:44:36
+Message:
+Fix zippush causing files to be base64 encoded (typo in prev commit) #MsgLength=69
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/pushsession.js|3 1
+
+Revision: 7a1b5ed549a2a10e99780307757be69c3458ab52
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/06/2014 09:41:55
+Message:
+Fix error on start-up from missing network-information plugin #MsgLength=62
+
+
+----
+Modified: createproject.sh|1 1
+
+Revision: 56f2bb71c90468bac61cf92febe417f799b7db1e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/06/2014 09:43:34
+Message:
+Make .gitignore use root-relative paths #MsgLength=40
+
+
+----
+Modified: .gitignore|3 3
+
+Revision: 48ac896cc37c9a4055a24f2288b04ab7e5012251
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/06/2014 09:40:22
+Message:
+Delete notification bubble #MsgLength=27
+
+
+----
+Modified: www/cdvah/css/style.css|0 27
+Modified: www/cdvah/harnessmenu.html|0 4
+Modified: www/cdvah/js/AppsService.js|1 1
+Modified: www/cdvah/js/HarnessServer.js|2 2
+Modified: www/cdvah/js/ListCtrl.js|4 4
+Deleted: www/cdvah/js/Notify.js|0 60
+
+Revision: 4eedf4d1ddcad774fa6514148ba3ef982d13123d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/06/2014 01:18:15
+Message:
+Switch to using cordova-android 4.0.x branch #MsgLength=45
+
+
+----
+Modified: AppHarnessUI/AppHarnessUI.java|7 10
+Modified: createproject.sh|7 1
+
+Revision: 6362305fa726ea65bf3288539371a43965e33eb5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/06/2014 00:37:48
+Message:
+Fix cordova_plugins.js not being used on Android & restrict plugins on native side to only those that should be loaded. #MsgLength=120
+
+
+----
+Modified: AppHarnessUI/AppHarnessUI.java|12 2
+Modified: AppHarnessUI/appharnessui.js|2 2
+Modified: createproject.sh|3 0
+Added: template-overrides/after-hook.js|79 0
+Modified: www/cdvah/harnessmenu.html|2 0
+Modified: www/cdvah/js/AppHarnessUI.js|21 3
+Modified: www/cdvah/js/AppsService.js|8 3
+Modified: www/cdvah/js/Installer.js|1 0
+
+Revision: eed438dbea1565bf112087ea0c36b5d6be6b1e6e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/06/2014 01:37:48
+Message:
+Renaming cordova_plugins.js caused a race condition. Fix it by editing cordova.js #MsgLength=82
+
+
+----
+Modified: template-overrides/after-hook.js|3 0
+Modified: www/cdvah/harnessmenu.html|0 1
+
+Revision: 56c5edaaf76649ebbd9b29274e5739b940289fa1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/06/2014 01:47:40
+Message:
+Explicitly do a prepare at the end of createproject.sh to make launching in IDE easier #MsgLength=87
+
+
+----
+Modified: createproject.sh|2 0
+
+Revision: da50af87ca238ced26b10cdc3173abd7b6e8d1e2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/06/2014 02:06:23
+Message:
+Fix launched apps using renamed cordova_plugins.js file (ugh) #MsgLength=62
+
+
+----
+Modified: template-overrides/after-hook.js|1 1
+Modified: www/cdvah/harnessmenu.html|1 0
+
+Revision: a7d4a4446b8c02cb137a214dea721c7806a035f1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 25/06/2014 00:45:16
+Message:
+Add plugin dependency info to prepare hook #MsgLength=116
+
+
+----
+Modified: template-overrides/after-hook.js|20 7
+Modified: www/cdvah/harnessmenu.html|1 1
+Added: www/cdvah/js/CrxInstaller.js|164 0
+
+Revision: 3f7bd69cc1f9005a1d20e2c00a6587e25867e8d1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 25/06/2014 02:16:28
+Message:
+First attempt at hooking back button up to exit app. #MsgLength=208
+
+
+----
+Modified: AppHarnessUI/AppHarnessUI.java|23 1
+Modified: createproject.sh|11 0
+Added: template-overrides/Activity.java|29 0
+Modified: www/cdvah/js/InAppMenuCtrl.js|2 0
+
+Revision: 958aae1999a88bacc226c737255dd7fc28d410f6
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 25/06/2014 02:38:19
+Message:
+Delete accidentally added CrxInstaller.js #MsgLength=42
+
+
+----
+Deleted: www/cdvah/js/CrxInstaller.js|0 164
+
+Revision: 99412342c9409e9231df9c86981283b4836e6c0e
+Author: David Kemp <drkemp@chromium.org>
+Date: 24/06/2014 07:00:20
+Message:
+Adding support for app quit in harness-push #MsgLength=44
+
+
+----
+Modified: harness-push/harness-push.js|3 0
+Modified: harness-push/node_modules/cordova-harness-client/harnessclient.js|4 0
+Modified: www/cdvah/js/HarnessServer.js|8 0
+
+Revision: d238bed9879f16564bb820a4d0104a428f1a6b6e
+Author: David Kemp <drkemp@chromium.org>
+Date: 24/06/2014 20:40:13
+Message:
+Force app quit before push #MsgLength=27
+
+
+----
+Modified: harness-push/harness-push.js|1 1
+
+Revision: 7cf88fe2cbe049d4aece3a0e6212b7ff40e4674b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 25/06/2014 21:51:01
+Message:
+Fix up promise chaining for harness-push quit command #MsgLength=54
+
+
+----
+Modified: harness-push/harness-push.js|6 3
+
+Revision: f30b3bc6d67067ad1eb9cf1e5c70231565c4c2f8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/07/2014 10:27:57
+Message:
+Make work with the latest changes to android-4.0.x #MsgLength=51
+
+
+----
+Renamed: AppHarnessUI/android/AppHarnessUI.java [from AppHarnessUI/AppHarnessUI.java]|42 118
+Added: AppHarnessUI/android/CordovaAppHarness.java|65 0
+Added: AppHarnessUI/android/CustomAndroidWebView.java|90 0
+Added: AppHarnessUI/android/CustomCordovaWebView.java|26 0
+Added: AppHarnessUI/android/TwoFingerDoubleTapGestureDetector.java|68 0
+Modified: AppHarnessUI/plugin.xml|4 1
+Modified: template-overrides/Activity.java|2 2
+
+Revision: ed0c8310b6f2fa1ac70c47a19fcc9f25e36c4efb
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/07/2014 10:28:48
+Message:
+Fix wrong path in createproject.sh (failed every time) #MsgLength=55
+
+
+----
+Modified: createproject.sh|1 1
+
+Revision: a7ece15583f005240ccf40039008662c7c04187e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/07/2014 04:36:42
+Message:
+Fix exception on second launch and stop using plugin whitelist #MsgLength=63
+
+
+----
+Modified: AppHarnessUI/android/AppHarnessUI.java|10 4
+Modified: AppHarnessUI/android/CustomAndroidWebView.java|1 2
+Modified: AppHarnessUI/android/TwoFingerDoubleTapGestureDetector.java|1 1
+
+Revision: f07fccfee6f31c06040fbe7e778b56e53c133636
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 12/07/2014 00:27:00
+Message:
+Add ArrayBuffer.slice polyfill to unbreak Android pre-KK #MsgLength=57
+
+
+----
+Modified: www/cdvah/harnessmenu.html|1 0
+Added: www/cdvah/js/libs/slice.js|42 0
+
+Revision: 3b3236a31f615950df183050d3231ea3b2b84f88
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 26/07/2014 09:51:36
+Message:
+Make createproject.sh work even when no dependencies are set up ahead of time #MsgLength=131
+
+
+----
+Modified: createproject.sh|45 59
+Modified: harness-push/harness-push.js|15 2
+Added: package.json|18 0
+
+Revision: 5fea836efe26b445bf57e2d380f760436f63339a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 26/07/2014 10:02:46
+Message:
+createproject.sh: include ios by default when host=Darwin #MsgLength=58
+
+
+----
+Modified: createproject.sh|6 5
+
+Revision: 1ddda0fcdce7a5e7fc8b344e8b0a25258df8e21f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/09/2014 22:45:26
+Message:
+Update AppHarnessUI.java to include getExternalWhitelist() #MsgLength=59
+
+
+----
+Modified: AppHarnessUI/android/AppHarnessUI.java|1 1
+
+Revision: 5b77a1cb4b2540cbc4c1af10b4284eaad58c8a0f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 26/09/2014 04:02:31
+Message:
+Add filesystem location <preferences> to config.xml #MsgLength=52
+
+
+----
+Modified: template-overrides/config.xml|4 0
+
+Revision: 33fcb5299d951b5f547be79a2d85f1272c34a9d0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/09/2014 04:03:27
+Message:
+Make ResourcesLoader functions not depend on "this" #MsgLength=52
+
+
+----
+Modified: www/cdvah/js/ResourcesLoader.js|4 3
+
+Revision: b0ec60698743ba8c1f9a8db22e3be7cf71b0a23d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/09/2014 03:52:30
+Message:
+Make UrlRemap not apply to the main webview #MsgLength=44
+
+
+----
+Modified: UrlRemap/src/android/UrlRemap.java|18 0
+
+Revision: 4c0ac66f83a1eb5be9ce5c54b5f871b0273077a2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/09/2014 04:19:12
+Message:
+Delete manifest.json if it causes an exception #MsgLength=47
+
+
+----
+Modified: www/cdvah/js/DirectoryManager.js|11 4
+
+Revision: 6ce27408c50bea9eb123fb883ebcb593f8aa0444
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 01/10/2014 03:01:06
+Message:
+Prevented launching an app that hasn't changed. #MsgLength=264
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/pushsession.js|8 4
+
+Revision: 55cf7bdcc248c699ef956302e036a5395eb15f6c
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 01/10/2014 03:50:25
+Message:
+Added comments explaining launch handling. #MsgLength=43
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/pushsession.js|6 2
+
+Revision: 9f5a4276489dd01a82c9b53cce7be83ac5e9d36a
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 03/10/2014 03:04:14
+Message:
+Fixed missing declaration. #MsgLength=27
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/pushsession.js|1 1
+
+Revision: c7bb0ef1cdbb2ca63eb239458c60491beb4dead4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/10/2014 00:56:08
+Message:
+Change config.xml-derived properties in installer into getters #MsgLength=63
+
+
+----
+Modified: www/cdvah/js/Installer.js|77 25
+Modified: www/cdvah/views/inappmenu.html|1 1
+Modified: www/cdvah/views/list.html|2 1
+
+Revision: bc764cb59a40390fdd610e3b778c1413946ea16a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/10/2014 01:00:17
+Message:
+Add a /getfile endpoing to HarnessServer + Fixes for pipeFileToResponse. #MsgLength=73
+
+
+----
+Modified: www/cdvah/js/HarnessServer.js|44 1
+Modified: www/cdvah/js/ResourcesLoader.js|46 2
+
+Revision: da46492fc073c16858f42d1bbe6625f6c7b646a5
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 07/10/2014 03:26:33
+Message:
+Added a reload function. #MsgLength=25
+
+
+----
+Modified: AppHarnessUI/AppHarnessUI.m|8 0
+Modified: AppHarnessUI/android/AppHarnessUI.java|21 0
+Modified: AppHarnessUI/appharnessui.js|4 0
+Modified: www/cdvah/js/AppHarnessUI.js|5 0
+
+Revision: 7c884d15369dd33897db72ef94f80c75ffd55a63
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 07/10/2014 03:34:11
+Message:
+Stopped destroying the webview on every launch. #MsgLength=260
+
+
+----
+Modified: www/cdvah/js/AppsService.js|22 2
+
+Revision: 634b3c4e3775577bdf9b9b183076701f976aa554
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 07/10/2014 04:50:32
+Message:
+Updated webview reload to take arguments. #MsgLength=157
+
+
+----
+Modified: AppHarnessUI/AppHarnessUI.m|6 2
+Modified: AppHarnessUI/android/AppHarnessUI.java|23 14
+Modified: AppHarnessUI/appharnessui.js|6 3
+Modified: www/cdvah/js/AppHarnessUI.js|3 2
+Modified: www/cdvah/js/AppsService.js|5 4
+
+Revision: d9b8c499e918f8aa62e454ba2b9802664308af65
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 09/10/2014 23:39:30
+Message:
+Removed unnecessary checks. #MsgLength=162
+
+
+----
+Modified: AppHarnessUI/appharnessui.js|0 3
+
+Revision: bbefd2aeb60b19e18f65f5caff3032d21a98b996
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/10/2014 03:47:03
+Message:
+Fix createproject.sh to work with hard-coded activity.java filename #MsgLength=68
+
+
+----
+Modified: createproject.sh|3 0
+
+Revision: 7f7279a1278c0fc35ff7119487f3566b930cff2b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/10/2014 03:47:30
+Message:
+Fix /deletefiles not working when deleting more than ~10 files. #MsgLength=119
+
+
+----
+Modified: www/cdvah/js/HttpServer.js|14 7
+
+Revision: dc55639a0d1c0454097024c6f94ef18ef173101b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/10/2014 21:25:11
+Message:
+Enable cordova-android's App plugin (e.g. navigator.app.exitApp()) #MsgLength=114
+
+
+----
+Modified: AppHarnessUI/android/AppHarnessUI.java|3 0
+
+Revision: 54cd7bbaa1d575bd05057565794fb8ae9d27c495
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 25/10/2014 09:24:02
+Message:
+Fix android launch now that UrlRemapper doesn't apply to main webview #MsgLength=70
+
+
+----
+Modified: www/cdvah/js/AppsService.js|2 7
+
+Revision: fa15deb069f38a4dc22af72d729e9d9f587a95ec
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/10/2014 03:10:36
+Message:
+Add gulpfile to run jshint #MsgLength=27
+
+
+----
+Added: gulpfile.js|33 0
+Modified: package.json|3 1
+
+Revision: 1b600f9d197ba1a61c7086b4976fd30774a53b76
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/10/2014 03:12:14
+Message:
+Convert from chrome.socket -> chrome.sockets.tcp #MsgLength=49
+
+
+----
+Modified: createproject.sh|3 1
+Modified: www/cdvah/js/HarnessServer.js|3 1
+Modified: www/cdvah/js/HttpServer.js|89 45
+
+Revision: 64b68d70e558cdd9aed4476d22f1e180c05c0538
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/11/2014 00:40:27
+Message:
+Increase harness-push timeout from 30 seconds -> 3000 seconds #MsgLength=62
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/harnessclient.js|1 1
+
+Revision: e867c3d31e61b98d088170d97b6e8f8c8fe3c3b5
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 01/11/2014 01:32:09
+Message:
+Provided a connection to the appropriate port. #MsgLength=166
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/harnessclient.js|147 73
+Modified: harness-push/node_modules/cordova-harness-client/package.json|1 0
+
+Revision: 3b91a0cc65e760829f55b2c46fa0ae7d9d30aa5f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 31/12/2014 13:34:46
+Message:
+Allow installer.getPluginMetadata() to return a value instead of a promise #MsgLength=75
+
+
+----
+Modified: www/cdvah/js/AppsService.js|1 1
+
+Revision: a2260d12f65b0432b9426b9df7efc4472ad612d6
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 05/11/2014 04:09:51
+Message:
+Improved error handling. #MsgLength=25
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/harnessclient.js|4 1
+
+Revision: 60211b80bc0978d1d9483964e8bb1557447dac38
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/11/2014 03:54:08
+Message:
+Enhancements to new adbkit integration. #MsgLength=325
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/harnessclient.js|86 58
+
+Revision: 8da05bf6f7af113b512aaf85eb051dfb090b6463
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/11/2014 01:09:42
+Message:
+Fix typo from prev adbkit commit (delete createSocket vs delete createConnection) #MsgLength=82
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/harnessclient.js|2 3
+
+Revision: eb79102cf562c8f94546319a5f990b541504af2c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/11/2014 04:44:50
+Message:
+Fix jslint error in harnessclient #MsgLength=34
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/harnessclient.js|1 1
+
+Revision: 1f58b1c27dfc04551078d88371e333762ab1072e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/11/2014 04:07:20
+Message:
+Make gulpfile use windows-compatible paths #MsgLength=43
+
+
+----
+Modified: gulpfile.js|24 3
+
+Revision: e1a60693aaf6d9f6c1e55a8c6747e7d9827471e9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 13/11/2014 20:19:46
+Message:
+Fix appharness.reload() not calling success callback on iOS #MsgLength=107
+
+
+----
+Modified: AppHarnessUI/AppHarnessUI.m|2 0
+
+Revision: d3e0898244cf8f6a8805028e677cff9162d1df5a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/11/2014 04:33:23
+Message:
+Use chrome.sockets.tcp.update({uri:}) to more efficiently pipe request payloads to files #MsgLength=220
+
+
+----
+Modified: www/cdvah/js/HarnessServer.js|4 25
+Modified: www/cdvah/js/HttpServer.js|124 23
+
+Revision: 1d3f2789268eb786227be9790b8b1137c9518493
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/11/2014 04:50:41
+Message:
+Fix "Unable to bind to port" message when wifi is disabled. #MsgLength=158
+
+
+----
+Modified: www/cdvah/js/ListCtrl.js|2 1
+
+Revision: ba347fd860aed8a615780286dd215bbcab7c1fa0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/11/2014 07:05:10
+Message:
+Add debug logging to HttpServer.js (disabled by default) #MsgLength=57
+
+
+----
+Modified: www/cdvah/js/HttpServer.js|28 6
+
+Revision: 939fd660988fb4969bc7766bb3ddcabb82a14c69
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 26/11/2014 04:59:01
+Message:
+Update HttpServer to use chrome.sockets.tcp.pipeToFile. #MsgLength=56
+
+
+----
+Modified: www/cdvah/js/HttpServer.js|38 22
+
+Revision: a35f398dce4077303c0ea0a543619e5633518792
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 31/12/2014 13:54:55
+Message:
+Fix typo in error message (chrome-app-developer-tool-client -> harness-client) #MsgLength=79
+
+
+----
+Modified: harness-push/harness-push.js|1 1
+
+Revision: 7654d54f2b084dc31fe2e24121a288342ca2ea10
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2015 03:49:22
+Message:
+Add /node_modules to .gitignore #MsgLength=32
+
+
+----
+Modified: .gitignore|1 0
+
+Revision: 6fb0c3a1f73b4bd38d7a59866fba16d054544732
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2015 10:33:45
+Message:
+Delete .reviewboardrc #MsgLength=22
+
+
+----
+Deleted: .reviewboardrc|0 8
+
+Revision: 101b9ffdf3122a703077225f9cf288397a7d43fa
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/03/2015 04:17:54
+Message:
+Make harnessclient compatible with node 0.12 as well as 0.10 #MsgLength=61
+
+
+----
+Modified: harness-push/node_modules/cordova-harness-client/harnessclient.js|4 1
+Modified: harness-push/node_modules/cordova-harness-client/package.json|2 1
+
+Revision: 675a3d31df9af18ef396516d3826eb9f9d31d0a4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 13/03/2015 22:58:00
+Message:
+Update Android code to work with latest 4.0.x #MsgLength=46
+
+
+----
+Modified: AppHarnessUI/android/AppHarnessUI.java|66 44
+Modified: AppHarnessUI/android/CustomAndroidWebView.java|41 32
+Modified: AppHarnessUI/android/CustomCordovaWebView.java|1 3
+Modified: template-overrides/config.xml|3 1
+Modified: www/cdvah/js/AppHarnessUI.js|1 1
+
+Revision: ccf90b06e56a4967c149a40f1d272680c408156b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 13/03/2015 22:58:38
+Message:
+createproject.sh: Add whitelist plugin and --link platforms / plugins #MsgLength=70
+
+
+----
+Modified: createproject.sh|4 1
+Modified: www/cdvah/harnessmenu.html|3 0
+
+Revision: 141def8bf6b72f36c9c0e1aea3c6e004505ac69f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 13/03/2015 23:05:28
+Message:
+Disable remapper in order to pick up custom CSP tags for Chrome Apps #MsgLength=151
+
+
+----
+Modified: www/cdvah/js/Installer.js|1 3
+
+Revision: ab7d4b1729123bdca7450249c984511be5c7d5b9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/03/2015 22:22:20
+Message:
+Add cordova-plugin-file assets build hook #MsgLength=85
+
+
+----
+Modified: createproject.sh|5 1
+
+Revision: c183c956889bbb0073861d35367d002c8867a447
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/03/2015 22:22:55
+Message:
+Hook up the whitelist plugin for loaded apps #MsgLength=45
+
+
+----
+Modified: AppHarnessUI/android/AppHarnessUI.java|33 38
+Modified: AppHarnessUI/android/CustomAndroidWebView.java|6 0
+Modified: AppHarnessUI/android/CustomCordovaWebView.java|3 0
+Modified: AppHarnessUI/appharnessui.js|4 4
+Modified: www/cdvah/js/AppHarnessUI.js|4 4
+Modified: www/cdvah/js/AppsService.js|13 3
+
+Revision: 55066a3e858433d79eb3a6cc5ab452a26c097053
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/03/2015 03:17:44
+Message:
+Tweak harness-push/README.md to say port forwarding no longer required #MsgLength=71
+
+
+----
+Modified: harness-push/README.md|1 3
+
+Revision: e724e18bb99e66f36d6ddb013783aeab4a13538b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 30/04/2015 04:28:48
+Message:
+Fix AppHarnessUI.java to work with latest cordova-android changes & to forward lifecycle events (minus onActivityResult) #MsgLength=121
+
+
+----
+Modified: AppHarnessUI/android/AppHarnessUI.java|57 1
+
+Revision: f5676e8715245de311212df86a22b8fc81e25ae1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 30/04/2015 04:29:21
+Message:
+Use npm-named plugins rather than CPR plugins #MsgLength=46
+
+
+----
+Modified: createproject.sh|28 28
+
+Revision: 3a496a0cf3541a9809445c6f5c4db83bc68394da
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 13/05/2015 10:42:05
+Message:
+Fix up mistakes from cherry-picks #MsgLength=34
+
+
+----
+Modified: createproject.sh|3 4
+Modified: package.json|0 1
+Modified: www/cdvah/harnessmenu.html|0 1
+Modified: www/cdvah/js/AppsService.js|2 0
+
+Revision: 042d942cca61a4d299f2d2a0e8f1f75ad3ace264
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/10/2016 13:31:46
+Message:
+Add github pull request template #MsgLength=33
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|22 0
+
+Revision: 7b51f5fe4d726f2e247a94963ee926f74521d739
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/09/2018 16:51:58
+Message:
+Updated License with a Valid SPDX License (#3) #MsgLength=48
+
+
+----
+Modified: package.json|1 1
+
+Revision: 3b3c7d3359dda6ff57eda374fd19e6c2b0f3d46f
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 17/04/2019 01:18:53
+Message:
+deprecation #MsgLength=11
+
+
+----
+Modified: README.md|10 0
+

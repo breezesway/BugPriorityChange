@@ -1,0 +1,4379 @@
+Revision: 29be4536857d842760fedcf3df48a2b18848bcf2
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/11/2013 06:38:24
+Message:
+init commit #MsgLength=12
+
+
+----
+Added: nothing.txt|0 0
+
+Revision: b3b7c0b9dbaa6017e7e78c59d06300360454f90b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/11/2013 07:43:27
+Message:
+added fireos code from https://github.com/archananaik/cordova-amazon-fireos sans history #MsgLength=89
+
+
+----
+Added: LICENSE|202 0
+Added: NOTICE|17 0
+Added: README.md|86 0
+Added: RELEASENOTES.md|52 0
+Added: VERSION|1 0
+Added: bin/check_reqs|27 0
+Added: bin/check_reqs.bat|26 0
+Added: bin/create|36 0
+Added: bin/create.bat|26 0
+Added: bin/lib/check_reqs.js|78 0
+Added: bin/lib/create.js|195 0
+Added: bin/node_modules/.bin/shjs|1 0
+Added: bin/node_modules/shelljs/.documentup.json|6 0
+Added: bin/node_modules/shelljs/.npmignore|1 0
+Added: bin/node_modules/shelljs/.travis.yml|5 0
+Added: bin/node_modules/shelljs/LICENSE|26 0
+Added: bin/node_modules/shelljs/README.md|513 0
+Added: bin/node_modules/shelljs/bin/shjs|51 0
+Added: bin/node_modules/shelljs/global.js|3 0
+Added: bin/node_modules/shelljs/jshint.json|4 0
+Added: bin/node_modules/shelljs/make.js|48 0
+Added: bin/node_modules/shelljs/package.json|48 0
+Added: bin/node_modules/shelljs/scripts/docs.js|15 0
+Added: bin/node_modules/shelljs/scripts/run-tests.js|50 0
+Added: bin/node_modules/shelljs/shell.js|1901 0
+Added: bin/package.json|32 0
+Added: bin/templates/cordova/build|35 0
+Added: bin/templates/cordova/build.bat|26 0
+Added: bin/templates/cordova/clean|34 0
+Added: bin/templates/cordova/clean.bat|26 0
+Added: bin/templates/cordova/lib/appinfo.js|41 0
+Added: bin/templates/cordova/lib/build.js|89 0
+Added: bin/templates/cordova/lib/clean.js|43 0
+Added: bin/templates/cordova/lib/device.js|95 0
+Added: bin/templates/cordova/lib/emulator.js|337 0
+Added: bin/templates/cordova/lib/install-device|38 0
+Added: bin/templates/cordova/lib/install-device.bat|26 0
+Added: bin/templates/cordova/lib/install-emulator|38 0
+Added: bin/templates/cordova/lib/install-emulator.bat|26 0
+Added: bin/templates/cordova/lib/list-devices|28 0
+Added: bin/templates/cordova/lib/list-devices.bat|26 0
+Added: bin/templates/cordova/lib/list-emulator-images|29 0
+Added: bin/templates/cordova/lib/list-emulator-images.bat|26 0
+Added: bin/templates/cordova/lib/list-started-emulators|29 0
+Added: bin/templates/cordova/lib/list-started-emulators.bat|26 0
+Added: bin/templates/cordova/lib/log.js|43 0
+Added: bin/templates/cordova/lib/run.js|123 0
+Added: bin/templates/cordova/lib/start-emulator|38 0
+Added: bin/templates/cordova/lib/start-emulator.bat|26 0
+Added: bin/templates/cordova/log|33 0
+Added: bin/templates/cordova/log.bat|26 0
+Added: bin/templates/cordova/run|35 0
+Added: bin/templates/cordova/run.bat|26 0
+Added: bin/templates/cordova/version|25 0
+Added: bin/templates/cordova/version.bat|26 0
+Added: bin/templates/project/Activity.java|37 0
+Added: bin/templates/project/AndroidManifest.xml|78 0
+Added: bin/templates/project/assets/www/css/index.css|115 0
+Added: bin/templates/project/assets/www/img/cordova.png|0 0
+Added: bin/templates/project/assets/www/img/logo.png|0 0
+Added: bin/templates/project/assets/www/index.html|42 0
+Added: bin/templates/project/assets/www/js/index.js|49 0
+Added: bin/templates/project/assets/www/main.js|165 0
+Added: bin/templates/project/assets/www/master.css|116 0
+Added: bin/templates/project/res/drawable-hdpi/icon.png|0 0
+Added: bin/templates/project/res/drawable-ldpi/icon.png|0 0
+Added: bin/templates/project/res/drawable-mdpi/icon.png|0 0
+Added: bin/templates/project/res/drawable-xhdpi/icon.png|0 0
+Added: bin/templates/project/res/drawable/icon.png|0 0
+Added: bin/templates/project/res/values/strings.xml|4 0
+Added: bin/update|33 0
+Added: bin/update.bat|26 0
+Added: framework/.classpath|8 0
+Added: framework/.project|33 0
+Added: framework/AndroidManifest.xml|59 0
+Added: framework/ant.properties|34 0
+Added: framework/assets/www/cordova.js|1715 0
+Added: framework/assets/www/index.html|27 0
+Added: framework/build.xml|161 0
+Added: framework/default.properties|14 0
+Added: framework/project.properties|16 0
+Added: framework/res/drawable-hdpi/icon.png|0 0
+Added: framework/res/drawable-ldpi/icon.png|0 0
+Added: framework/res/drawable-mdpi/icon.png|0 0
+Added: framework/res/drawable/splash.png|0 0
+Added: framework/res/layout/main.xml|29 0
+Added: framework/res/values/strings.xml|28 0
+Added: framework/res/xml/config.xml|50 0
+Added: framework/src/com/squareup/okhttp/Address.java|111 0
+Added: framework/src/com/squareup/okhttp/Connection.java|291 0
+Added: framework/src/com/squareup/okhttp/ConnectionPool.java|273 0
+Added: framework/src/com/squareup/okhttp/HttpResponseCache.java|693 0
+Added: framework/src/com/squareup/okhttp/OkHttpClient.java|216 0
+Added: framework/src/com/squareup/okhttp/OkResponseCache.java|38 0
+Added: framework/src/com/squareup/okhttp/ResponseSource.java|37 0
+Added: framework/src/com/squareup/okhttp/Route.java|91 0
+Added: framework/src/com/squareup/okhttp/TunnelRequest.java|75 0
+Added: framework/src/com/squareup/okhttp/internal/AbstractOutputStream.java|45 0
+Added: framework/src/com/squareup/okhttp/internal/Base64.java|164 0
+Added: framework/src/com/squareup/okhttp/internal/DiskLruCache.java|926 0
+Added: framework/src/com/squareup/okhttp/internal/Dns.java|33 0
+Added: framework/src/com/squareup/okhttp/internal/FaultRecoveringOutputStream.java|163 0
+Added: framework/src/com/squareup/okhttp/internal/NamedRunnable.java|40 0
+Added: framework/src/com/squareup/okhttp/internal/Platform.java|389 0
+Added: framework/src/com/squareup/okhttp/internal/StrictLineReader.java|208 0
+Added: framework/src/com/squareup/okhttp/internal/Util.java|327 0
+Added: framework/src/com/squareup/okhttp/internal/http/AbstractHttpInputStream.java|107 0
+Added: framework/src/com/squareup/okhttp/internal/http/AbstractHttpOutputStream.java|40 0
+Added: framework/src/com/squareup/okhttp/internal/http/HeaderParser.java|112 0
+Added: framework/src/com/squareup/okhttp/internal/http/HttpAuthenticator.java|175 0
+Added: framework/src/com/squareup/okhttp/internal/http/HttpDate.java|82 0
+Added: framework/src/com/squareup/okhttp/internal/http/HttpEngine.java|664 0
+Added: framework/src/com/squareup/okhttp/internal/http/HttpResponseCache.java|608 0
+Added: framework/src/com/squareup/okhttp/internal/http/HttpTransport.java|485 0
+Added: framework/src/com/squareup/okhttp/internal/http/HttpURLConnectionImpl.java|556 0
+Added: framework/src/com/squareup/okhttp/internal/http/HttpsURLConnectionImpl.java|461 0
+Added: framework/src/com/squareup/okhttp/internal/http/OkResponseCache.java|55 0
+Added: framework/src/com/squareup/okhttp/internal/http/OkResponseCacheAdapter.java|53 0
+Added: framework/src/com/squareup/okhttp/internal/http/RawHeaders.java|424 0
+Added: framework/src/com/squareup/okhttp/internal/http/RequestHeaders.java|290 0
+Added: framework/src/com/squareup/okhttp/internal/http/ResponseHeaders.java|497 0
+Added: framework/src/com/squareup/okhttp/internal/http/RetryableOutputStream.java|75 0
+Added: framework/src/com/squareup/okhttp/internal/http/RouteSelector.java|275 0
+Added: framework/src/com/squareup/okhttp/internal/http/SpdyTransport.java|96 0
+Added: framework/src/com/squareup/okhttp/internal/http/Transport.java|64 0
+Added: framework/src/com/squareup/okhttp/internal/http/UnknownLengthHttpInputStream.java|63 0
+Added: framework/src/com/squareup/okhttp/internal/spdy/IncomingStreamHandler.java|36 0
+Added: framework/src/com/squareup/okhttp/internal/spdy/Ping.java|71 0
+Added: framework/src/com/squareup/okhttp/internal/spdy/Settings.java|174 0
+Added: framework/src/com/squareup/okhttp/internal/spdy/SpdyConnection.java|579 0
+Added: framework/src/com/squareup/okhttp/internal/spdy/SpdyReader.java|326 0
+Added: framework/src/com/squareup/okhttp/internal/spdy/SpdyStream.java|733 0
+Added: framework/src/com/squareup/okhttp/internal/spdy/SpdyWriter.java|176 0
+Added: framework/src/org/apache/cordova/App.java|225 0
+Added: framework/src/org/apache/cordova/AuthenticationToken.java|69 0
+Added: framework/src/org/apache/cordova/CallbackContext.java|144 0
+Added: framework/src/org/apache/cordova/Config.java|230 0
+Added: framework/src/org/apache/cordova/CordovaActivity.java|1251 0
+Added: framework/src/org/apache/cordova/CordovaArgs.java|113 0
+Added: framework/src/org/apache/cordova/CordovaChromeClient.java|434 0
+Added: framework/src/org/apache/cordova/CordovaInterface.java|80 0
+Added: framework/src/org/apache/cordova/CordovaPlugin.java|182 0
+Added: framework/src/org/apache/cordova/CordovaResourceApi.java|416 0
+Added: framework/src/org/apache/cordova/CordovaWebView.java|1074 0
+Added: framework/src/org/apache/cordova/CordovaWebViewClient.java|462 0
+Added: framework/src/org/apache/cordova/DirectoryManager.java|162 0
+Added: framework/src/org/apache/cordova/DroidGap.java|26 0
+Added: framework/src/org/apache/cordova/ExifHelper.java|186 0
+Added: framework/src/org/apache/cordova/ExposedJsApi.java|76 0
+Added: framework/src/org/apache/cordova/FileHelper.java|163 0
+Added: framework/src/org/apache/cordova/IceCreamCordovaWebViewClient.java|96 0
+Added: framework/src/org/apache/cordova/JSONUtils.java|43 0
+Added: framework/src/org/apache/cordova/LOG.java|234 0
+Added: framework/src/org/apache/cordova/LinearLayoutSoftKeyboardDetect.java|168 0
+Added: framework/src/org/apache/cordova/NativeToJsMessageQueue.java|495 0
+Added: framework/src/org/apache/cordova/PluginEntry.java|132 0
+Added: framework/src/org/apache/cordova/PluginManager.java|436 0
+Added: framework/src/org/apache/cordova/PluginResult.java|179 0
+Added: framework/src/org/apache/cordova/Whitelist.java|170 0
+Added: framework/test/org/apache/cordova/PreferenceNodeTest.java|53 0
+Added: framework/test/org/apache/cordova/PreferenceSetTest.java|73 0
+Deleted: nothing.txt|0 0
+Added: test/.classpath|8 0
+Added: test/.project|33 0
+Added: test/AndroidManifest.xml|303 0
+Added: test/README.md|50 0
+Added: test/ant.properties|17 0
+Added: test/assets/www/backbuttonmultipage/index.html|41 0
+Added: test/assets/www/backbuttonmultipage/sample2.html|41 0
+Added: test/assets/www/backbuttonmultipage/sample3.html|43 0
+Added: test/assets/www/background/index.html|117 0
+Added: test/assets/www/background/index2.html|116 0
+Added: test/assets/www/backgroundcolor/index.html|41 0
+Added: test/assets/www/basicauth/index.html|42 0
+Added: test/assets/www/cordova.android.js|6878 0
+Added: test/assets/www/cordova.js|2115 0
+Added: test/assets/www/fullscreen/index.html|42 0
+Added: test/assets/www/htmlnotfound/error.html|19 0
+Added: test/assets/www/iframe/index.html|51 0
+Added: test/assets/www/iframe/index2.html|42 0
+Added: test/assets/www/index.html|68 0
+Added: test/assets/www/jqmtabbackbutton/index.html|67 0
+Added: test/assets/www/jqmtabbackbutton/tab1.html|47 0
+Added: test/assets/www/jqmtabbackbutton/tab2.html|48 0
+Added: test/assets/www/jqmtabbackbutton/tab3.html|48 0
+Added: test/assets/www/lifecycle/index.html|126 0
+Added: test/assets/www/lifecycle/index2.html|122 0
+Added: test/assets/www/main.js|169 0
+Added: test/assets/www/master.css|136 0
+Added: test/assets/www/menus/index.html|47 0
+Added: test/assets/www/splashscreen/index.html|40 0
+Added: test/assets/www/userwebview/index.html|67 0
+Added: test/assets/www/whitelist/index.html|47 0
+Added: test/assets/www/whitelist/index2.html|41 0
+Added: test/assets/www/xhr/index.html|66 0
+Added: test/build.xml|103 0
+Added: test/proguard.cfg|40 0
+Added: test/project.properties|12 0
+Added: test/res/drawable-hdpi/ic_launcher.png|0 0
+Added: test/res/drawable-ldpi/ic_launcher.png|0 0
+Added: test/res/drawable-mdpi/ic_launcher.png|0 0
+Added: test/res/drawable/icon.png|0 0
+Added: test/res/drawable/sandy.jpg|0 0
+Added: test/res/layout/main.xml|31 0
+Added: test/res/values/strings.xml|4 0
+Added: test/res/xml/config.xml|52 0
+Added: test/src/org/apache/cordova/test/ActivityPlugin.java|85 0
+Added: test/src/org/apache/cordova/test/AmazonWebViewOnUiThread.java|173 0
+Added: test/src/org/apache/cordova/test/BackButtonMultiPageTest.java|170 0
+Added: test/src/org/apache/cordova/test/CordovaActivityTest.java|96 0
+Added: test/src/org/apache/cordova/test/CordovaResourceApiTest.java|281 0
+Added: test/src/org/apache/cordova/test/CordovaTest.java|115 0
+Added: test/src/org/apache/cordova/test/ErrorUrlTest.java|79 0
+Added: test/src/org/apache/cordova/test/FixWebView.java|44 0
+Added: test/src/org/apache/cordova/test/GapClientTest.java|68 0
+Added: test/src/org/apache/cordova/test/HtmlNotFoundTest.java|76 0
+Added: test/src/org/apache/cordova/test/IFrameTest.java|94 0
+Added: test/src/org/apache/cordova/test/LifecycleTest.java|34 0
+Added: test/src/org/apache/cordova/test/MenuTest.java|32 0
+Added: test/src/org/apache/cordova/test/PluginManagerTest.java|70 0
+Added: test/src/org/apache/cordova/test/SplashscreenTest.java|49 0
+Added: test/src/org/apache/cordova/test/UserWebViewTest.java|76 0
+Added: test/src/org/apache/cordova/test/XhrTest.java|34 0
+Added: test/src/org/apache/cordova/test/actions/CordovaActivity.java|33 0
+Added: test/src/org/apache/cordova/test/actions/CordovaDriverAction.java|87 0
+Added: test/src/org/apache/cordova/test/actions/CordovaWebViewTestActivity.java|112 0
+Added: test/src/org/apache/cordova/test/actions/backbuttonmultipage.java|31 0
+Added: test/src/org/apache/cordova/test/actions/background.java|33 0
+Added: test/src/org/apache/cordova/test/actions/backgroundcolor.java|40 0
+Added: test/src/org/apache/cordova/test/actions/basicauth.java|44 0
+Added: test/src/org/apache/cordova/test/actions/errorurl.java|33 0
+Added: test/src/org/apache/cordova/test/actions/fullscreen.java|39 0
+Added: test/src/org/apache/cordova/test/actions/htmlnotfound.java|31 0
+Added: test/src/org/apache/cordova/test/actions/iframe.java|30 0
+Added: test/src/org/apache/cordova/test/actions/lifecycle.java|30 0
+Added: test/src/org/apache/cordova/test/actions/loading.java|31 0
+Added: test/src/org/apache/cordova/test/actions/menus.java|80 0
+Added: test/src/org/apache/cordova/test/actions/splashscreen.java|37 0
+Added: test/src/org/apache/cordova/test/actions/tests.java|32 0
+Added: test/src/org/apache/cordova/test/actions/timeout.java|34 0
+Added: test/src/org/apache/cordova/test/actions/userwebview.java|76 0
+Added: test/src/org/apache/cordova/test/actions/whitelist.java|51 0
+Added: test/src/org/apache/cordova/test/actions/xhr.java|30 0
+Added: test/src/org/apache/cordova/test/util/PollingCheck.java|72 0
+Added: test/src/org/apache/cordova/test/util/Purity.java|171 0
+
+Revision: 962ae21600d4cae1d3e4309adf116a18b0fff036
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/12/2013 05:08:00
+Message:
+Set VERSION to 3.4.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+
+Revision: a0107d6f0b3d7bc919c1e9b9b33fd97d0f09bc8f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/12/2013 05:08:03
+Message:
+Update JS snapshot to version 3.4.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: framework/assets/www/cordova.js|42 12
+
+Revision: 037ab7511f94e69cd4c4a601777577ad44688977
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 12/12/2013 06:52:41
+Message:
+Update JS snapshot to version 3.4.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: framework/assets/www/cordova.js|2 2
+
+Revision: bb90f435fee2b064b1bf286a9fafa036097eb8cd
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/10/2013 00:17:31
+Message:
+Remove cordova.xml fallback from Config.java (it was removed from PluginManager for 3.0) #MsgLength=89
+
+
+----
+Modified: framework/src/org/apache/cordova/Config.java|1 5
+
+Revision: 22352af7249a702636af496577ed53550228b273
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 27/09/2013 23:48:55
+Message:
+Refactoring Android project-level and platform scripts to use Q.js #MsgLength=284
+
+
+----
+Modified: bin/check_reqs|4 3
+Modified: bin/create|4 1
+Modified: bin/lib/check_reqs.js|37 24
+Modified: bin/lib/create.js|76 75
+Added: bin/node_modules/q/CONTRIBUTING.md|40 0
+Added: bin/node_modules/q/LICENSE|19 0
+Added: bin/node_modules/q/README.md|813 0
+Added: bin/node_modules/q/benchmark/compare-with-callbacks.js|71 0
+Added: bin/node_modules/q/benchmark/scenarios.js|36 0
+Added: bin/node_modules/q/package.json|93 0
+Added: bin/node_modules/q/q.js|1937 0
+Added: bin/node_modules/q/queue.js|35 0
+Modified: bin/package.json|4 3
+Modified: bin/templates/cordova/build|7 5
+Modified: bin/templates/cordova/clean|7 5
+Modified: bin/templates/cordova/lib/build.js|11 13
+Modified: bin/templates/cordova/lib/clean.js|4 9
+Modified: bin/templates/cordova/lib/device.js|38 47
+Modified: bin/templates/cordova/lib/emulator.js|170 177
+Added: bin/templates/cordova/lib/exec.js|43 0
+Modified: bin/templates/cordova/lib/install-device|9 5
+Modified: bin/templates/cordova/lib/install-emulator|7 7
+Modified: bin/templates/cordova/lib/list-devices|9 4
+Modified: bin/templates/cordova/lib/list-emulator-images|8 5
+Modified: bin/templates/cordova/lib/list-started-emulators|8 5
+Modified: bin/templates/cordova/lib/log.js|22 8
+Modified: bin/templates/cordova/lib/run.js|68 52
+Modified: bin/templates/cordova/lib/start-emulator|8 7
+Modified: bin/templates/cordova/log|7 4
+Modified: bin/templates/cordova/run|7 5
+Modified: bin/update|4 1
+
+Revision: 1347a407abbcb0b1c6242ffa71eeba8a4231a723
+Author: Tim Kim <timk@adobe.com>
+Date: 24/09/2013 05:01:03
+Message:
+- added android version scripts #MsgLength=32
+
+
+----
+Added: bin/android_sdk_version|25 0
+Added: bin/android_sdk_version.bat|26 0
+Added: bin/lib/android_sdk_version.js|53 0
+
+Revision: 0567f9dc8780a3c7c0986444c958fd3c7d946900
+Author: Tim Kim <timk@adobe.com>
+Date: 18/10/2013 04:36:44
+Message:
+CB-4872 - make sure to copy over version scripts to project #MsgLength=60
+
+
+----
+Modified: bin/lib/create.js|2 1
+
+Revision: c16b3ec538daf0d909d5034a331ec521c7340ade
+Author: Tim Kim <timk@adobe.com>
+Date: 19/10/2013 06:56:42
+Message:
+CB-4872 - moved version script to promise model #MsgLength=48
+
+
+----
+Modified: bin/android_sdk_version|5 1
+Modified: bin/lib/android_sdk_version.js|21 9
+
+Revision: 4a252caa68cc4a8218465c17b294b61d597e5763
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 24/10/2013 03:22:36
+Message:
+Updating shelljs to 0.2.6. Copy now preserves mode bits. #MsgLength=57
+
+
+----
+Renamed: bin/node_modules/shelljs/.jshintrc [from bin/node_modules/shelljs/jshint.json]|4 1
+Modified: bin/node_modules/shelljs/.npmignore|2 1
+Modified: bin/node_modules/shelljs/.travis.yml|3 3
+Modified: bin/node_modules/shelljs/README.md|65 26
+Modified: bin/node_modules/shelljs/make.js|9 10
+Modified: bin/node_modules/shelljs/package.json|8 8
+Renamed: bin/node_modules/shelljs/scripts/generate-docs.js [from bin/node_modules/shelljs/scripts/docs.js]|6 0
+Modified: bin/node_modules/shelljs/scripts/run-tests.js|1 1
+Modified: bin/node_modules/shelljs/shell.js|70 1818
+Added: bin/node_modules/shelljs/src/cat.js|43 0
+Added: bin/node_modules/shelljs/src/cd.js|19 0
+Added: bin/node_modules/shelljs/src/chmod.js|208 0
+Added: bin/node_modules/shelljs/src/common.js|189 0
+Added: bin/node_modules/shelljs/src/cp.js|200 0
+Added: bin/node_modules/shelljs/src/dirs.js|191 0
+Added: bin/node_modules/shelljs/src/echo.js|20 0
+Added: bin/node_modules/shelljs/src/error.js|10 0
+Added: bin/node_modules/shelljs/src/exec.js|181 0
+Added: bin/node_modules/shelljs/src/find.js|51 0
+Added: bin/node_modules/shelljs/src/grep.js|52 0
+Added: bin/node_modules/shelljs/src/ls.js|126 0
+Added: bin/node_modules/shelljs/src/mkdir.js|68 0
+Added: bin/node_modules/shelljs/src/mv.js|80 0
+Added: bin/node_modules/shelljs/src/popd.js|1 0
+Added: bin/node_modules/shelljs/src/pushd.js|1 0
+Added: bin/node_modules/shelljs/src/pwd.js|11 0
+Added: bin/node_modules/shelljs/src/rm.js|145 0
+Added: bin/node_modules/shelljs/src/sed.js|43 0
+Added: bin/node_modules/shelljs/src/tempdir.js|56 0
+Added: bin/node_modules/shelljs/src/test.js|85 0
+Added: bin/node_modules/shelljs/src/to.js|29 0
+Added: bin/node_modules/shelljs/src/toEnd.js|29 0
+Added: bin/node_modules/shelljs/src/which.js|79 0
+Modified: bin/package.json|1 1
+
+Revision: 73d88241d73bb3d2e29f9d139205988c65ed6641
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/10/2013 10:01:50
+Message:
+CB-5191 Deprecate <url-filter> #MsgLength=31
+
+
+----
+Modified: framework/src/org/apache/cordova/PluginManager.java|27 10
+
+Revision: a4e2ccad3cf3769f68c98ec1247024a11acf0138
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/10/2013 23:08:02
+Message:
+CB-5193 Fix Android WebSQL sometime throwing SECURITY_ERR. #MsgLength=411
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaChromeClient.java|3 18
+
+Revision: e9fbb52a9c3020f9dc57466c4b587a6d979b3433
+Author: Joe Bowser <bowserj@apache.org>
+Date: 02/11/2013 02:11:09
+Message:
+Set VERSION to 2.10.0-dev (via coho) #MsgLength=37
+
+
+----
+Modified: VERSION|1 1
+Modified: bin/templates/cordova/version|1 1
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|1 1
+
+Revision: ac059f0393bd80c5ae456f5b29767189cb20899e
+Author: Joe Bowser <bowserj@apache.org>
+Date: 02/11/2013 02:11:13
+Message:
+Update JS snapshot to version 2.10.0-dev (via coho) #MsgLength=52
+
+
+----
+Modified: framework/assets/www/cordova.js|3 3
+
+Revision: 0b9f84f8c0bc400e16d9bba47d7a3ac025967695
+Author: Joe Bowser <bowserj@apache.org>
+Date: 02/11/2013 06:29:08
+Message:
+Fixing the VERSION file, it got auto-incremented by coho by accident #MsgLength=69
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 1b92750d4b3db969d0deb17f3de446cecea795b0
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 06/11/2013 03:43:01
+Message:
+CB-5284 Fixing the version from coho #MsgLength=106
+
+
+----
+Modified: bin/templates/cordova/version|1 1
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|1 1
+
+Revision: 207594754b5e97f6a9885f0731bffe8f7f9f00ac
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 06/11/2013 23:37:59
+Message:
+Fix paths with spaces while launching on emulator and device #MsgLength=61
+
+
+----
+Modified: bin/templates/cordova/lib/device.js|1 1
+Modified: bin/templates/cordova/lib/emulator.js|1 1
+
+Revision: 04ef9aa6663b5b8e081ce7c6310372d6a4949af0
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 07/11/2013 05:26:47
+Message:
+CB-5301 add missing license headers #MsgLength=36
+
+
+----
+Modified: test/proguard.cfg|17 0
+Modified: test/res/values/strings.xml|18 0
+
+Revision: 6c0fb152c0f9e143c7191efa4998d866c7bfdfdc
+Author: Joe Bowser <bowserj@apache.org>
+Date: 05/11/2013 01:50:39
+Message:
+Set VERSION to 3.3.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+Modified: bin/templates/cordova/version|1 1
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|1 3
+
+Revision: f768066d343a98b55eab5f0703a01592fd3b7ef9
+Author: Joe Bowser <bowserj@apache.org>
+Date: 07/11/2013 07:04:47
+Message:
+CB-5302: Massive movement to get tests working again #MsgLength=53
+
+
+----
+Modified: test/.classpath|1 0
+Modified: test/AndroidManifest.xml|20 20
+Added: test/assets/www/cordova_plugins.js|11 0
+Modified: test/assets/www/index.html|17 17
+Added: test/assets/www/plugins/org.apache.cordova.device/www/device.js|78 0
+Added: test/cordova/android_sdk_version|29 0
+Added: test/cordova/build|37 0
+Added: test/cordova/build.bat|26 0
+Added: test/cordova/check_reqs|28 0
+Added: test/cordova/clean|36 0
+Added: test/cordova/clean.bat|26 0
+Added: test/cordova/lib/android_sdk_version.js|65 0
+Added: test/cordova/lib/appinfo.js|41 0
+Added: test/cordova/lib/build.js|87 0
+Added: test/cordova/lib/check_reqs.js|94 0
+Added: test/cordova/lib/clean.js|38 0
+Added: test/cordova/lib/device.js|86 0
+Added: test/cordova/lib/emulator.js|330 0
+Added: test/cordova/lib/exec.js|43 0
+Added: test/cordova/lib/install-device|42 0
+Added: test/cordova/lib/install-device.bat|26 0
+Added: test/cordova/lib/install-emulator|38 0
+Added: test/cordova/lib/install-emulator.bat|26 0
+Added: test/cordova/lib/list-devices|33 0
+Added: test/cordova/lib/list-devices.bat|26 0
+Added: test/cordova/lib/list-emulator-images|32 0
+Added: test/cordova/lib/list-emulator-images.bat|26 0
+Added: test/cordova/lib/list-started-emulators|32 0
+Added: test/cordova/lib/list-started-emulators.bat|26 0
+Added: test/cordova/lib/log.js|57 0
+Added: test/cordova/lib/run.js|139 0
+Added: test/cordova/lib/start-emulator|39 0
+Added: test/cordova/lib/start-emulator.bat|26 0
+Added: test/cordova/log|36 0
+Added: test/cordova/log.bat|26 0
+Added: test/cordova/node_modules/.bin/shjs|1 0
+Added: test/cordova/node_modules/q/CONTRIBUTING.md|40 0
+Added: test/cordova/node_modules/q/LICENSE|19 0
+Added: test/cordova/node_modules/q/README.md|813 0
+Added: test/cordova/node_modules/q/benchmark/compare-with-callbacks.js|71 0
+Added: test/cordova/node_modules/q/benchmark/scenarios.js|36 0
+Added: test/cordova/node_modules/q/package.json|93 0
+Added: test/cordova/node_modules/q/q.js|1937 0
+Added: test/cordova/node_modules/q/queue.js|35 0
+Added: test/cordova/node_modules/shelljs/.documentup.json|6 0
+Added: test/cordova/node_modules/shelljs/.jshintrc|7 0
+Added: test/cordova/node_modules/shelljs/.npmignore|2 0
+Added: test/cordova/node_modules/shelljs/.travis.yml|5 0
+Added: test/cordova/node_modules/shelljs/LICENSE|26 0
+Added: test/cordova/node_modules/shelljs/README.md|552 0
+Added: test/cordova/node_modules/shelljs/bin/shjs|51 0
+Added: test/cordova/node_modules/shelljs/global.js|3 0
+Added: test/cordova/node_modules/shelljs/make.js|47 0
+Added: test/cordova/node_modules/shelljs/package.json|48 0
+Added: test/cordova/node_modules/shelljs/scripts/generate-docs.js|21 0
+Added: test/cordova/node_modules/shelljs/scripts/run-tests.js|50 0
+Added: test/cordova/node_modules/shelljs/shell.js|153 0
+Added: test/cordova/node_modules/shelljs/src/cat.js|43 0
+Added: test/cordova/node_modules/shelljs/src/cd.js|19 0
+Added: test/cordova/node_modules/shelljs/src/chmod.js|208 0
+Added: test/cordova/node_modules/shelljs/src/common.js|189 0
+Added: test/cordova/node_modules/shelljs/src/cp.js|200 0
+Added: test/cordova/node_modules/shelljs/src/dirs.js|191 0
+Added: test/cordova/node_modules/shelljs/src/echo.js|20 0
+Added: test/cordova/node_modules/shelljs/src/error.js|10 0
+Added: test/cordova/node_modules/shelljs/src/exec.js|181 0
+Added: test/cordova/node_modules/shelljs/src/find.js|51 0
+Added: test/cordova/node_modules/shelljs/src/grep.js|52 0
+Added: test/cordova/node_modules/shelljs/src/ls.js|126 0
+Added: test/cordova/node_modules/shelljs/src/mkdir.js|68 0
+Added: test/cordova/node_modules/shelljs/src/mv.js|80 0
+Added: test/cordova/node_modules/shelljs/src/popd.js|1 0
+Added: test/cordova/node_modules/shelljs/src/pushd.js|1 0
+Added: test/cordova/node_modules/shelljs/src/pwd.js|11 0
+Added: test/cordova/node_modules/shelljs/src/rm.js|145 0
+Added: test/cordova/node_modules/shelljs/src/sed.js|43 0
+Added: test/cordova/node_modules/shelljs/src/tempdir.js|56 0
+Added: test/cordova/node_modules/shelljs/src/test.js|85 0
+Added: test/cordova/node_modules/shelljs/src/to.js|29 0
+Added: test/cordova/node_modules/shelljs/src/toEnd.js|29 0
+Added: test/cordova/node_modules/shelljs/src/which.js|79 0
+Added: test/cordova/plugins/android.json|1 0
+Added: test/cordova/plugins/org.apache.cordova.device/.fetch.json|1 0
+Added: test/cordova/plugins/org.apache.cordova.device/LICENSE|202 0
+Added: test/cordova/plugins/org.apache.cordova.device/README.md|5 0
+Added: test/cordova/plugins/org.apache.cordova.device/RELEASENOTES.md|40 0
+Added: test/cordova/plugins/org.apache.cordova.device/docs/device.cordova.md|80 0
+Added: test/cordova/plugins/org.apache.cordova.device/docs/device.md|104 0
+Added: test/cordova/plugins/org.apache.cordova.device/docs/device.model.md|106 0
+Added: test/cordova/plugins/org.apache.cordova.device/docs/device.name.md|108 0
+Added: test/cordova/plugins/org.apache.cordova.device/docs/device.platform.md|99 0
+Added: test/cordova/plugins/org.apache.cordova.device/docs/device.uuid.md|115 0
+Added: test/cordova/plugins/org.apache.cordova.device/docs/device.version.md|86 0
+Added: test/cordova/plugins/org.apache.cordova.device/plugin.xml|103 0
+Added: test/cordova/plugins/org.apache.cordova.device/src/android/Device.java|200 0
+Added: test/cordova/plugins/org.apache.cordova.device/src/blackberry10/index.js|69 0
+Added: test/cordova/plugins/org.apache.cordova.device/src/firefoxos/DeviceProxy.js|39 0
+Added: test/cordova/plugins/org.apache.cordova.device/src/ios/CDVDevice.h|30 0
+Added: test/cordova/plugins/org.apache.cordova.device/src/ios/CDVDevice.m|90 0
+Added: test/cordova/plugins/org.apache.cordova.device/src/windows8/DeviceProxy.js|50 0
+Added: test/cordova/plugins/org.apache.cordova.device/src/wp/Device.cs|135 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/autotest/html/HtmlReporter.js|101 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/autotest/html/HtmlReporterHelpers.js|60 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/autotest/html/ReporterView.js|164 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/autotest/html/SpecView.js|79 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/autotest/html/SuiteView.js|22 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/autotest/html/TrivialReporter.js|192 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/autotest/index.html|59 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/autotest/jasmine.css|81 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/autotest/jasmine.js|2530 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/autotest/pages/device.html|71 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/autotest/test-runner.js|62 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/autotest/tests/device.tests.js|64 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/cordova-incl.js|85 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/index.html|66 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/main.js|163 0
+Added: test/cordova/plugins/org.apache.cordova.device/test/master.css|164 0
+Added: test/cordova/plugins/org.apache.cordova.device/www/device.js|77 0
+Added: test/cordova/run|37 0
+Added: test/cordova/run.bat|26 0
+Added: test/cordova/version|25 0
+Added: test/cordova/version.bat|26 0
+Modified: test/res/xml/config.xml|9 37
+Added: test/src/org/apache/cordova/device/Device.java|200 0
+Renamed: test/src/org/apache/cordova/test/CordovaActivity.java [from test/src/org/apache/cordova/test/actions/CordovaActivity.java]|1 1
+Renamed: test/src/org/apache/cordova/test/CordovaDriverAction.java [from test/src/org/apache/cordova/test/actions/CordovaDriverAction.java]|1 1
+Renamed: test/src/org/apache/cordova/test/CordovaWebViewTestActivity.java [from test/src/org/apache/cordova/test/actions/CordovaWebViewTestActivity.java]|1 1
+Renamed: test/src/org/apache/cordova/test/backbuttonmultipage.java [from test/src/org/apache/cordova/test/actions/backbuttonmultipage.java]|3 3
+Renamed: test/src/org/apache/cordova/test/background.java [from test/src/org/apache/cordova/test/actions/background.java]|1 1
+Renamed: test/src/org/apache/cordova/test/backgroundcolor.java [from test/src/org/apache/cordova/test/actions/backgroundcolor.java]|1 1
+Renamed: test/src/org/apache/cordova/test/basicauth.java [from test/src/org/apache/cordova/test/actions/basicauth.java]|1 1
+Renamed: test/src/org/apache/cordova/test/errorurl.java [from test/src/org/apache/cordova/test/actions/errorurl.java]|2 2
+Renamed: test/src/org/apache/cordova/test/fullscreen.java [from test/src/org/apache/cordova/test/actions/fullscreen.java]|1 1
+Renamed: test/src/org/apache/cordova/test/htmlnotfound.java [from test/src/org/apache/cordova/test/actions/htmlnotfound.java]|1 1
+Renamed: test/src/org/apache/cordova/test/iframe.java [from test/src/org/apache/cordova/test/actions/iframe.java]|1 1
+Renamed: test/src/org/apache/cordova/test/junit/BackButtonMultiPageTest.java [from test/src/org/apache/cordova/test/BackButtonMultiPageTest.java]|2 2
+Renamed: test/src/org/apache/cordova/test/junit/CordovaActivityTest.java [from test/src/org/apache/cordova/test/CordovaActivityTest.java]|3 3
+Renamed: test/src/org/apache/cordova/test/junit/CordovaResourceApiTest.java [from test/src/org/apache/cordova/test/CordovaResourceApiTest.java]|3 2
+Renamed: test/src/org/apache/cordova/test/junit/CordovaTest.java [from test/src/org/apache/cordova/test/CordovaTest.java]|3 2
+Renamed: test/src/org/apache/cordova/test/junit/ErrorUrlTest.java [from test/src/org/apache/cordova/test/ErrorUrlTest.java]|3 3
+Renamed: test/src/org/apache/cordova/test/junit/FixWebView.java [from test/src/org/apache/cordova/test/FixWebView.java]|1 1
+Renamed: test/src/org/apache/cordova/test/junit/GapClientTest.java [from test/src/org/apache/cordova/test/GapClientTest.java]|2 2
+Renamed: test/src/org/apache/cordova/test/junit/HtmlNotFoundTest.java [from test/src/org/apache/cordova/test/HtmlNotFoundTest.java]|2 2
+Renamed: test/src/org/apache/cordova/test/junit/IFrameTest.java [from test/src/org/apache/cordova/test/IFrameTest.java]|2 2
+Renamed: test/src/org/apache/cordova/test/junit/LifecycleTest.java [from test/src/org/apache/cordova/test/LifecycleTest.java]|2 2
+Renamed: test/src/org/apache/cordova/test/junit/MenuTest.java [from test/src/org/apache/cordova/test/MenuTest.java]|2 2
+Renamed: test/src/org/apache/cordova/test/junit/PluginManagerTest.java [from test/src/org/apache/cordova/test/PluginManagerTest.java]|2 2
+Renamed: test/src/org/apache/cordova/test/junit/SplashscreenTest.java [from test/src/org/apache/cordova/test/SplashscreenTest.java]|2 2
+Renamed: test/src/org/apache/cordova/test/junit/UserWebViewTest.java [from test/src/org/apache/cordova/test/UserWebViewTest.java]|2 2
+Renamed: test/src/org/apache/cordova/test/junit/XhrTest.java [from test/src/org/apache/cordova/test/XhrTest.java]|2 2
+Renamed: test/src/org/apache/cordova/test/lifecycle.java [from test/src/org/apache/cordova/test/actions/lifecycle.java]|1 1
+Renamed: test/src/org/apache/cordova/test/loading.java [from test/src/org/apache/cordova/test/actions/loading.java]|1 1
+Renamed: test/src/org/apache/cordova/test/menus.java [from test/src/org/apache/cordova/test/actions/menus.java]|1 1
+Renamed: test/src/org/apache/cordova/test/splashscreen.java [from test/src/org/apache/cordova/test/actions/splashscreen.java]|1 1
+Renamed: test/src/org/apache/cordova/test/tests.java [from test/src/org/apache/cordova/test/actions/tests.java]|1 1
+Renamed: test/src/org/apache/cordova/test/timeout.java [from test/src/org/apache/cordova/test/actions/timeout.java]|1 1
+Renamed: test/src/org/apache/cordova/test/userwebview.java [from test/src/org/apache/cordova/test/actions/userwebview.java]|1 1
+Renamed: test/src/org/apache/cordova/test/whitelist.java [from test/src/org/apache/cordova/test/actions/whitelist.java]|1 1
+Renamed: test/src/org/apache/cordova/test/xhr.java [from test/src/org/apache/cordova/test/actions/xhr.java]|1 1
+
+Revision: aeae418dd418446253195fe99a1a075aad5de50c
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 12/11/2013 08:32:34
+Message:
+CB-5349: fixed regression in update script #MsgLength=43
+
+
+----
+Modified: bin/lib/create.js|1 1
+
+Revision: 8f293733a660e861e20260d0770e5f56dbfad195
+Author: Joe Bowser <bowserj@apache.org>
+Date: 13/11/2013 05:59:17
+Message:
+This should use plugman to install plugins. Adding path depenencies for plugins is wrong, and shouldn't be done #MsgLength=112
+
+
+----
+Modified: test/build.xml|8 1
+
+Revision: d0df1d408c710a4bc867b40b6a57cdd45820eb7b
+Author: Joe Bowser <bowserj@apache.org>
+Date: 13/11/2013 06:24:30
+Message:
+Removing the plugins directory after the plugins were incorrectly removed #MsgLength=74
+
+
+----
+Deleted: test/cordova/plugins/android.json|0 1
+Deleted: test/cordova/plugins/org.apache.cordova.device/.fetch.json|0 1
+Deleted: test/cordova/plugins/org.apache.cordova.device/LICENSE|0 202
+Deleted: test/cordova/plugins/org.apache.cordova.device/README.md|0 5
+Deleted: test/cordova/plugins/org.apache.cordova.device/RELEASENOTES.md|0 40
+Deleted: test/cordova/plugins/org.apache.cordova.device/docs/device.cordova.md|0 80
+Deleted: test/cordova/plugins/org.apache.cordova.device/docs/device.md|0 104
+Deleted: test/cordova/plugins/org.apache.cordova.device/docs/device.model.md|0 106
+Deleted: test/cordova/plugins/org.apache.cordova.device/docs/device.name.md|0 108
+Deleted: test/cordova/plugins/org.apache.cordova.device/docs/device.platform.md|0 99
+Deleted: test/cordova/plugins/org.apache.cordova.device/docs/device.uuid.md|0 115
+Deleted: test/cordova/plugins/org.apache.cordova.device/docs/device.version.md|0 86
+Deleted: test/cordova/plugins/org.apache.cordova.device/plugin.xml|0 103
+Deleted: test/cordova/plugins/org.apache.cordova.device/src/blackberry10/index.js|0 69
+Deleted: test/cordova/plugins/org.apache.cordova.device/src/firefoxos/DeviceProxy.js|0 39
+Deleted: test/cordova/plugins/org.apache.cordova.device/src/ios/CDVDevice.h|0 30
+Deleted: test/cordova/plugins/org.apache.cordova.device/src/ios/CDVDevice.m|0 90
+Deleted: test/cordova/plugins/org.apache.cordova.device/src/windows8/DeviceProxy.js|0 50
+Deleted: test/cordova/plugins/org.apache.cordova.device/src/wp/Device.cs|0 135
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/autotest/html/ReporterView.js|0 164
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/autotest/html/SpecView.js|0 79
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/autotest/html/SuiteView.js|0 22
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/autotest/index.html|0 59
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/autotest/jasmine.css|0 81
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/autotest/jasmine.js|0 2530
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/autotest/pages/device.html|0 71
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/autotest/test-runner.js|0 62
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/autotest/tests/device.tests.js|0 64
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/cordova-incl.js|0 85
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/index.html|0 66
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/main.js|0 163
+Deleted: test/cordova/plugins/org.apache.cordova.device/test/master.css|0 164
+
+Revision: 60d0541b91a8dcfa1e4883914b20c0d8998a9ed7
+Author: Joe Bowser <bowserj@apache.org>
+Date: 13/11/2013 06:25:37
+Message:
+Removing device plugin #MsgLength=23
+
+
+----
+Deleted: test/src/org/apache/cordova/device/Device.java|0 200
+
+Revision: 39253394994f452f4bf8fc83ee95b9697d2f0d89
+Author: Joe Bowser <bowserj@apache.org>
+Date: 13/11/2013 06:27:09
+Message:
+Fixing plugins configuration, Device shouldn't be checked in here #MsgLength=66
+
+
+----
+Modified: test/assets/www/cordova_plugins.js|1 9
+Deleted: test/assets/www/plugins/org.apache.cordova.device/www/device.js|0 78
+Modified: test/res/xml/config.xml|1 5
+
+Revision: 748fd98c8063f025a4a620f61925b31134d33400
+Author: Joe Bowser <bowserj@apache.org>
+Date: 13/11/2013 06:34:14
+Message:
+Updating instructions to indicate that the device plugin is required to be installed via plugman #MsgLength=97
+
+
+----
+Modified: test/README.md|1 0
+
+Revision: 07e922f1a9cdd704f2bb512e06569c62d5da77b3
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 14/11/2013 03:43:43
+Message:
+CB-5346: remove dependency on device plugin #MsgLength=221
+
+
+----
+Modified: test/README.md|0 1
+Modified: test/assets/www/backbuttonmultipage/index.html|2 3
+Modified: test/assets/www/backbuttonmultipage/sample2.html|2 3
+Modified: test/assets/www/backbuttonmultipage/sample3.html|2 3
+Modified: test/assets/www/background/index.html|20 34
+Modified: test/assets/www/background/index2.html|20 34
+Modified: test/assets/www/backgroundcolor/index.html|3 5
+Modified: test/assets/www/basicauth/index.html|3 5
+Modified: test/assets/www/fullscreen/index.html|3 5
+Modified: test/assets/www/iframe/index.html|3 5
+Modified: test/assets/www/iframe/index2.html|3 5
+Modified: test/assets/www/index.html|2 5
+Modified: test/assets/www/lifecycle/index.html|4 18
+Modified: test/assets/www/lifecycle/index2.html|5 0
+Modified: test/assets/www/main.js|2 11
+Modified: test/assets/www/menus/index.html|3 5
+Modified: test/assets/www/splashscreen/index.html|19 21
+Modified: test/assets/www/userwebview/index.html|19 21
+Modified: test/assets/www/whitelist/index.html|19 21
+Modified: test/assets/www/whitelist/index2.html|19 21
+Modified: test/assets/www/xhr/index.html|19 21
+
+Revision: 20ee58f094e057aa31d15110a97ce90cc3c40404
+Author: Joe Bowser <bowserj@apache.org>
+Date: 21/11/2013 01:35:23
+Message:
+CB-5255: Checking in the Google Check, TODO: Add Amazon FireOS check #MsgLength=69
+
+
+----
+Modified: bin/lib/check_reqs.js|4 2
+
+Revision: eb0aa970c07b59c608a299c54d4d8f04a7063e06
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 23/11/2013 06:37:20
+Message:
+Add javadoc comments to source classes #MsgLength=39
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaChromeClient.java|8 0
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|10 1
+Modified: framework/src/org/apache/cordova/CordovaWebViewClient.java|9 0
+
+Revision: 228a9009fceae3c951f0a804a132329cfcd6eb81
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 27/11/2013 01:05:23
+Message:
+CB-5471: add deprecation javadoc/annotation #MsgLength=44
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|16 0
+Modified: framework/src/org/apache/cordova/DroidGap.java|10 2
+
+Revision: 648c5d6d2adb048c4983da64efd0d68dc3d5968e
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 27/11/2013 01:56:23
+Message:
+CB-5490: add javadoc target to ant script #MsgLength=273
+
+
+----
+Added: .gitignore|39 0
+Modified: framework/build.xml|32 1
+Modified: framework/src/org/apache/cordova/Config.java|1 1
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|24 14
+Modified: framework/src/org/apache/cordova/CordovaInterface.java|1 1
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|4 4
+Modified: framework/src/org/apache/cordova/LOG.java|1 1
+Modified: framework/src/org/apache/cordova/PluginEntry.java|1 1
+Modified: framework/src/org/apache/cordova/PluginManager.java|1 1
+Modified: framework/src/org/apache/cordova/Whitelist.java|1 1
+
+Revision: a4029b23f4bc9714830458201ed174427cc870b8
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 30/11/2013 03:39:09
+Message:
+Moving the console.log out of run() method #MsgLength=197
+
+
+----
+Modified: bin/check_reqs|8 5
+Modified: bin/lib/check_reqs.js|1 1
+
+Revision: ea0ae1d4044af0fa4716b51d5d564ae0b964c15e
+Author: Joe Bowser <bowserj@apache.org>
+Date: 19/11/2013 03:08:43
+Message:
+Updated CordovaWebView to experiment with onScrollChanged messages #MsgLength=67
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|9 0
+
+Revision: b8322423f19d7acd3a08c452249229cdf9f404fe
+Author: Joe Bowser <bowserj@apache.org>
+Date: 28/11/2013 03:51:22
+Message:
+CB-5445: Adding onScrollChanged and the ScrollEvent object. (Forgot to add the WebView) #MsgLength=88
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|2 0
+
+Revision: a14901dd3e97217e699eb8d0bd3438018b4567dd
+Author: Joe Bowser <bowserj@apache.org>
+Date: 30/11/2013 05:43:24
+Message:
+Updating tests to KitKat, and making the tests more thread-safe #MsgLength=64
+
+
+----
+Modified: test/AndroidManifest.xml|1 1
+Modified: test/res/xml/config.xml|3 0
+Added: test/src/org/apache/cordova/pluginApi/pluginStub.java|39 0
+Modified: test/src/org/apache/cordova/test/junit/BackButtonMultiPageTest.java|229 118
+Modified: test/src/org/apache/cordova/test/junit/CordovaActivityTest.java|14 5
+Modified: test/src/org/apache/cordova/test/junit/ErrorUrlTest.java|39 37
+Modified: test/src/org/apache/cordova/test/junit/HtmlNotFoundTest.java|11 7
+Modified: test/src/org/apache/cordova/test/junit/IFrameTest.java|47 13
+Added: test/src/org/apache/cordova/test/junit/MessageTest.java|55 0
+
+Revision: bbac7970bd0c7ab7c5a403cb684b7f27d9eae34f
+Author: Joe Bowser <bowserj@apache.org>
+Date: 30/11/2013 06:25:39
+Message:
+Updating the README #MsgLength=20
+
+
+----
+Modified: test/README.md|4 1
+
+Revision: 8b67088c9f3c0128c8044e92a744a12baf358423
+Author: Joe Bowser <bowserj@apache.org>
+Date: 30/11/2013 07:54:07
+Message:
+CB-5487: Remote Debugging is on when your Android app is debuggable. #MsgLength=69
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|26 1
+
+Revision: d291bff6fd1a2ca7ab7fbc6132520fbc3f4dfe57
+Author: ignisvulpis <axel@nennker.de>
+Date: 04/12/2013 06:46:06
+Message:
+prevent ClassNotFound exception for emtpy class name #MsgLength=101
+
+
+----
+Modified: framework/src/org/apache/cordova/PluginEntry.java|1 1
+
+Revision: 6976296aba915b6ca897b8fcb6b5cfba9369ad2d
+Author: Joe Bowser <bowserj@apache.org>
+Date: 04/12/2013 07:44:23
+Message:
+Update JS snapshot to version 3.4.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: framework/assets/www/cordova.js|2 2
+
+Revision: f25327bdbe8a9a73b13c3cac85a3cbadd813a997
+Author: Joe Bowser <bowserj@apache.org>
+Date: 04/12/2013 07:52:25
+Message:
+Forgot Apache Headers on MessageTest #MsgLength=37
+
+
+----
+Modified: test/src/org/apache/cordova/test/junit/MessageTest.java|18 0
+
+Revision: dbea6320c5b62bce42e23f46fb0271daed9ce867
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 31/10/2013 09:06:58
+Message:
+Spelling fixes #MsgLength=15
+
+
+----
+Modified: RELEASENOTES.md|1 1
+Modified: bin/templates/cordova/lib/build.js|1 1
+Modified: bin/templates/cordova/lib/emulator.js|3 3
+Modified: bin/templates/cordova/lib/log.js|1 1
+Modified: bin/templates/cordova/lib/run.js|2 2
+Modified: bin/templates/project/assets/www/js/index.js|1 1
+Modified: framework/src/org/apache/cordova/App.java|2 2
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|3 3
+
+Revision: 6fee8d897356147e6295b6ea911c75e09c2b2f7d
+Author: charles bourasseau <charles.bourasseau@gmail.com>
+Date: 28/11/2013 18:17:38
+Message:
+Add missing semicolon #MsgLength=22
+
+
+----
+Modified: bin/templates/project/Activity.java|1 1
+
+Revision: 91729b302fef43668de8f72193093a27fdf2bd7a
+Author: Håkon Nilsen <hnilsen@gmail.com>
+Date: 05/12/2013 04:06:15
+Message:
+CB-5481 Fix for Cordova trying to get config.xml from the wrong namespace #MsgLength=74
+
+
+----
+Modified: framework/src/org/apache/cordova/Config.java|8 3
+Modified: framework/src/org/apache/cordova/PluginManager.java|10 4
+
+Revision: 474fb531b57dde5820832fe74d3b408488fa2613
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 06/12/2013 03:06:23
+Message:
+CB-5047: Adding a defaults.xml template #MsgLength=318
+
+
+----
+Added: bin/templates/cordova/defaults.xml|31 0
+
+Revision: eec8045f83735acae19834797aa2a8e41b9f8280
+Author: Joe Bowser <bowserj@apache.org>
+Date: 10/12/2013 06:03:22
+Message:
+CB-5504: Moving code to the App plugin inside Cordova, the place where the grey area beween plugin and platform exists #MsgLength=119
+
+
+----
+Modified: framework/src/org/apache/cordova/App.java|62 0
+
+Revision: 156ae3d4cb8a990799f3dfcaa2b2f30cffaa03ec
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 07/12/2013 01:27:03
+Message:
+CB-5489: clean up docs for deprecated methods #MsgLength=260
+
+
+----
+Modified: framework/src/org/apache/cordova/Config.java|1 1
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|9 51
+
+Revision: 9e1609dd4b250761c28418ef776bcd515902b7a8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/12/2013 02:47:33
+Message:
+Backfill 3.2.0 release notes #MsgLength=29
+
+
+----
+Modified: RELEASENOTES.md|13 0
+
+Revision: 86c591b2b964756ef428daadc4bb4f6c53210b9e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/12/2013 02:58:26
+Message:
+Add RELEASENOTES for 3.3.0 release #MsgLength=35
+
+
+----
+Modified: RELEASENOTES.md|17 0
+
+Revision: dbd01fa0afef39c6e4f7ea60eded2d6dc44c8395
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/12/2013 00:17:24
+Message:
+CB-5592 Set MIME type for openExternal when scheme is file: #MsgLength=60
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|14 19
+
+Revision: 629ac53217514289034cbec2009b8bb5f3936b47
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/12/2013 04:04:54
+Message:
+Fix incorrect MIME type for .js files loaded through CordovaResourceAPI. #MsgLength=191
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaResourceApi.java|3 0
+
+Revision: 8e9e5d189397259ccd52e8713e7a98fd6121783a
+Author: Vyacheslav Shabelnik <vyacheslav@kredito.de>
+Date: 23/12/2013 23:20:54
+Message:
+CB-5714 Fix of android build when too big output stops build with error due to buffer overflow. #MsgLength=96
+
+
+----
+Modified: bin/templates/cordova/lib/exec.js|1 2
+Modified: test/cordova/lib/exec.js|1 1
+
+Revision: 4963927c1b1b9cdbc71211d7e57a16a1546d6ab2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 31/12/2013 00:20:13
+Message:
+CB-5447 Removed android:debuggable=“true” from project template. #MsgLength=65
+
+
+----
+Modified: bin/lib/create.js|11 1
+Modified: bin/templates/project/AndroidManifest.xml|1 2
+
+Revision: 70ce111759f7bb0d692772809a0c5c4d2cc5ca3f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 05:40:48
+Message:
+CB-5715 Add Eclipse .project file to create template. #MsgLength=182
+
+
+----
+Modified: bin/create|1 0
+Modified: bin/lib/create.js|8 1
+Added: bin/templates/project/eclipse-project|45 0
+Added: bin/templates/project/eclipse-project-CLI|67 0
+
+Revision: fdb3bef8e3add109020a8c3ce9e1bbc10ce22731
+Author: Archana Naik <naika@lab126.com>
+Date: 19/12/2013 02:50:17
+Message:
+Added missing ScrollEvent.java file. #MsgLength=37
+
+
+----
+Added: framework/src/org/apache/cordova/ScrollEvent.java|67 0
+
+Revision: 5bc99c0475755bc670ce94ca8d740f274ccb81bf
+Author: Archana Naik <naika@lab126.com>
+Date: 19/12/2013 03:13:44
+Message:
+Removed the code segment that allows web debugging. We have devtools plugin to do so. #MsgLength=86
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|1 23
+
+Revision: 17d373a5af9785c6ab409db2930a6fd1654e63b0
+Author: Mark Koudritsky <kamrik@chromium.org>
+Date: 28/11/2013 05:59:20
+Message:
+CB-5422: Don't require JAVA_HOME to be defined #MsgLength=188
+
+
+----
+Modified: bin/lib/check_reqs.js|12 10
+
+Revision: 40b8dc3d2bc464cc8ef8ac1f37c28e1aef567e2f
+Author: Joe Bowser <bowserj@apache.org>
+Date: 04/12/2013 07:44:21
+Message:
+Set VERSION to 3.4.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+Modified: bin/templates/cordova/version|1 1
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|1 1
+
+Revision: 86ce76d36119615a01c1c757c12e254b6fd88d1d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 31/01/2014 09:11:47
+Message:
+Set VERSION to 3.5.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 2d610fcdb44f9f130f34af1146c2d841bd3cc541
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 31/01/2014 09:11:55
+Message:
+Update JS snapshot to version 3.5.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: framework/assets/www/cordova.js|30 26
+
+Revision: 26c4e32b2fb3d674339b80baecf8768c1a3b02df
+Author: Digvijay Dalapathi <digvijay@lab126.com>
+Date: 20/12/2013 08:47:47
+Message:
+Fixes for Cordova 3.3 Instrumentation Tests #MsgLength=96
+
+
+----
+Modified: test/src/org/apache/cordova/test/CordovaWebViewTestActivity.java|15 0
+Modified: test/src/org/apache/cordova/test/junit/BackButtonMultiPageTest.java|2 10
+
+Revision: 5273423bb6881784224bc734c411788b3cbcae5a
+Author: Digvijay Dalapathi <digvijay@lab126.com>
+Date: 28/11/2013 07:11:57
+Message:
+Add Timeout Tests #MsgLength=152
+
+
+----
+Modified: test/AndroidManifest.xml|10 0
+Modified: test/res/xml/config.xml|5 1
+Added: test/src/org/apache/cordova/test/junit/CordovaTimeoutTest.java|99 0
+Added: test/src/org/apache/cordova/test/loadurl.java|13 0
+
+Revision: 3c8e47882c1aa0050eab6829d2e1f06a194cf5d6
+Author: Digvijay Dalapathi <digvijay@lab126.com>
+Date: 21/01/2014 07:53:04
+Message:
+Fix for Search Intercept failures #MsgLength=85
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|13 0
+
+Revision: 8733eff86b5a483dda3a8fd7042ef1905d0bfe39
+Author: Archana Naik <naika@lab126.com>
+Date: 14/01/2014 07:46:31
+Message:
+1. Removed timers logic while loading Urls. Timers were creating threads to check for errors. That was causing crashes while navigating back and forth. Also, fixed handleDestroy() method to fix NPE while hitting back button. 2.Revert "Add Timeout Tests" 3.Implementation of Cordova delegate priority system 4.Fix for fileAccess on gen5 devices 5.Fix for potential AWV call outside UIthread #MsgLength=390
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|11 45
+Modified: framework/src/org/apache/cordova/PluginEntry.java|21 4
+Modified: framework/src/org/apache/cordova/PluginManager.java|67 22
+Modified: test/AndroidManifest.xml|0 10
+Modified: test/res/xml/config.xml|1 5
+Deleted: test/src/org/apache/cordova/test/junit/CordovaTimeoutTest.java|0 99
+Deleted: test/src/org/apache/cordova/test/loadurl.java|0 13
+
+Revision: 64d8428acb06f4614e5c7ee628763d4ff6e2a120
+Author: Joe Bowser <bowserj@apache.org>
+Date: 09/01/2014 05:12:00
+Message:
+CB-5504: Adding onDestroy to app plugin to deregister telephonyReceiver #MsgLength=72
+
+
+----
+Modified: framework/src/org/apache/cordova/App.java|8 0
+
+Revision: 78dc38e1d54d1ae603d17f4b8e9932d575e012c7
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 14/01/2014 01:07:14
+Message:
+Silence excessive logging from scroll events #MsgLength=45
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|4 1
+
+Revision: a67125099f5305b00eb68c4a6fb85d7e9bcbb47d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/01/2014 01:29:53
+Message:
+CB-4910 Update CLI project template to point to config.xml at the root now that it's not in www/ by default. #MsgLength=109
+
+
+----
+Modified: bin/templates/project/eclipse-project-CLI|1 1
+
+Revision: 7996e04f9fe5ba011f0ee399e58d4684e2a66bda
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/01/2014 05:21:57
+Message:
+Remove package.json within bin/ since we never intend to ship bin/ as an npm module #MsgLength=84
+
+
+----
+Deleted: bin/package.json|0 33
+
+Revision: 185547ef152ddc6359e843c3e1c49fb34b3fb935
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/01/2014 00:36:18
+Message:
+CB-5799 Update version of OkHTTP to 1.3 #MsgLength=40
+
+
+----
+Modified: framework/src/com/squareup/okhttp/Address.java|31 2
+Modified: framework/src/com/squareup/okhttp/Connection.java|61 17
+Modified: framework/src/com/squareup/okhttp/ConnectionPool.java|5 4
+Added: framework/src/com/squareup/okhttp/Dispatcher.java|86 0
+Added: framework/src/com/squareup/okhttp/Failure.java|59 0
+Modified: framework/src/com/squareup/okhttp/HttpResponseCache.java|74 45
+Added: framework/src/com/squareup/okhttp/Job.java|232 0
+Added: framework/src/com/squareup/okhttp/MediaType.java|120 0
+Added: framework/src/com/squareup/okhttp/OkAuthenticator.java|123 0
+Modified: framework/src/com/squareup/okhttp/OkHttpClient.java|210 18
+Modified: framework/src/com/squareup/okhttp/OkResponseCache.java|27 9
+Added: framework/src/com/squareup/okhttp/Request.java|284 0
+Added: framework/src/com/squareup/okhttp/Response.java|290 0
+Modified: framework/src/com/squareup/okhttp/ResponseSource.java|0 0
+Modified: framework/src/com/squareup/okhttp/Route.java|3 3
+Added: framework/src/com/squareup/okhttp/RouteDatabase.java|57 0
+Modified: framework/src/com/squareup/okhttp/TunnelRequest.java|0 0
+Modified: framework/src/com/squareup/okhttp/internal/AbstractOutputStream.java|0 0
+Modified: framework/src/com/squareup/okhttp/internal/Base64.java|0 0
+Modified: framework/src/com/squareup/okhttp/internal/DiskLruCache.java|0 0
+Modified: framework/src/com/squareup/okhttp/internal/Dns.java|0 0
+Modified: framework/src/com/squareup/okhttp/internal/FaultRecoveringOutputStream.java|0 0
+Modified: framework/src/com/squareup/okhttp/internal/NamedRunnable.java|3 3
+Modified: framework/src/com/squareup/okhttp/internal/Platform.java|49 68
+Modified: framework/src/com/squareup/okhttp/internal/StrictLineReader.java|1 2
+Modified: framework/src/com/squareup/okhttp/internal/Util.java|67 0
+Modified: framework/src/com/squareup/okhttp/internal/http/AbstractHttpInputStream.java|2 2
+Modified: framework/src/com/squareup/okhttp/internal/http/HeaderParser.java|4 4
+Modified: framework/src/com/squareup/okhttp/internal/http/HttpAuthenticator.java|72 81
+Modified: framework/src/com/squareup/okhttp/internal/http/HttpDate.java|18 12
+Modified: framework/src/com/squareup/okhttp/internal/http/HttpEngine.java|65 43
+Deleted: framework/src/com/squareup/okhttp/internal/http/HttpResponseCache.java|0 608
+Modified: framework/src/com/squareup/okhttp/internal/http/HttpTransport.java|30 18
+Modified: framework/src/com/squareup/okhttp/internal/http/HttpURLConnectionImpl.java|130 96
+Added: framework/src/com/squareup/okhttp/internal/http/HttpsEngine.java|72 0
+Modified: framework/src/com/squareup/okhttp/internal/http/HttpsURLConnectionImpl.java|68 163
+Deleted: framework/src/com/squareup/okhttp/internal/http/OkResponseCache.java|0 55
+Modified: framework/src/com/squareup/okhttp/internal/http/OkResponseCacheAdapter.java|4 0
+Added: framework/src/com/squareup/okhttp/internal/http/Policy.java|49 0
+Modified: framework/src/com/squareup/okhttp/internal/http/RawHeaders.java|48 25
+Modified: framework/src/com/squareup/okhttp/internal/http/RequestHeaders.java|33 6
+Modified: framework/src/com/squareup/okhttp/internal/http/ResponseHeaders.java|21 6
+Modified: framework/src/com/squareup/okhttp/internal/http/RetryableOutputStream.java|0 0
+Modified: framework/src/com/squareup/okhttp/internal/http/RouteSelector.java|11 17
+Modified: framework/src/com/squareup/okhttp/internal/http/SpdyTransport.java|14 7
+Modified: framework/src/com/squareup/okhttp/internal/http/Transport.java|1 1
+Modified: framework/src/com/squareup/okhttp/internal/http/UnknownLengthHttpInputStream.java|3 3
+Added: framework/src/com/squareup/okhttp/internal/spdy/ErrorCode.java|67 0
+Added: framework/src/com/squareup/okhttp/internal/spdy/FrameReader.java|55 0
+Added: framework/src/com/squareup/okhttp/internal/spdy/FrameWriter.java|43 0
+Added: framework/src/com/squareup/okhttp/internal/spdy/HeadersMode.java|49 0
+Added: framework/src/com/squareup/okhttp/internal/spdy/Hpack.java|371 0
+Added: framework/src/com/squareup/okhttp/internal/spdy/Http20Draft06.java|385 0
+Modified: framework/src/com/squareup/okhttp/internal/spdy/IncomingStreamHandler.java|1 1
+Added: framework/src/com/squareup/okhttp/internal/spdy/NameValueBlockReader.java|123 0
+Modified: framework/src/com/squareup/okhttp/internal/spdy/Ping.java|0 0
+Modified: framework/src/com/squareup/okhttp/internal/spdy/Settings.java|22 9
+Renamed: framework/src/com/squareup/okhttp/internal/spdy/Spdy3.java [from framework/src/com/squareup/okhttp/internal/spdy/SpdyReader.java]|347 210
+Modified: framework/src/com/squareup/okhttp/internal/spdy/SpdyConnection.java|184 164
+Modified: framework/src/com/squareup/okhttp/internal/spdy/SpdyStream.java|84 133
+Deleted: framework/src/com/squareup/okhttp/internal/spdy/SpdyWriter.java|0 176
+Renamed: framework/src/com/squareup/okhttp/internal/spdy/Variant.java [from framework/src/com/squareup/okhttp/internal/http/AbstractHttpOutputStream.java]|17 20
+Added: framework/src/com/squareup/okhttp/internal/tls/DistinguishedNameParser.java|407 0
+Added: framework/src/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java|194 0
+
+Revision: acf8a56159d65165bc97496131dd1f8143975566
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/01/2014 00:41:03
+Message:
+CB-5801 exec->spawn in build to make sure compile errors are shown. #MsgLength=68
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|9 12
+Modified: bin/templates/cordova/lib/clean.js|3 3
+Added: bin/templates/cordova/lib/spawn.js|43 0
+
+Revision: 5a0a8ab6f8a95fb1608e9d619769cc52bc9df9d8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/01/2014 01:11:31
+Message:
+CB-5801 Add spawn work-around on windows for it not being able to execute .cmd files #MsgLength=140
+
+
+----
+Modified: bin/templates/cordova/lib/spawn.js|6 0
+
+Revision: 435c5fa1106f58fa5ffecb50ce53c0ce083f5c6d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/01/2014 02:19:39
+Message:
+CB-5803 Fix cordova/emulate on windows. #MsgLength=40
+
+
+----
+Modified: bin/templates/cordova/lib/emulator.js|2 8
+
+Revision: 7c63c954411f77360bb7056d86207a485a27852b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/01/2014 01:00:29
+Message:
+CB-4910 Fix CLI's eclipse project template not working on windows due to "*" in the virtual folder name. #MsgLength=105
+
+
+----
+Modified: bin/templates/project/eclipse-project-CLI|4 4
+
+Revision: da70943395f65157b29300af5fc44099f6e167e5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 20/01/2014 12:08:05
+Message:
+CB-5793 Don't clean before build and change output directory to ant-build to avoid conflicts with Eclipse. #MsgLength=107
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|21 17
+
+Revision: ef2d9ff326ac5a673db8b17d32a3e9da3ff22e9f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 20/01/2014 23:26:53
+Message:
+CB-5793 Forgot to update ant path for clean. #MsgLength=45
+
+
+----
+Modified: bin/templates/cordova/lib/clean.js|2 1
+
+Revision: 3e25bf61acb9f0d66643e8c7afbc669449f8a269
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/01/2014 04:09:15
+Message:
+CB-5793 Add work-around for library references not working with custom output directory (ugh). #MsgLength=95
+
+
+----
+Modified: bin/lib/create.js|7 0
+Modified: bin/templates/cordova/lib/build.js|22 2
+Modified: bin/templates/cordova/lib/clean.js|4 4
+Added: bin/templates/project/custom_rules.xml|14 0
+
+Revision: 3070b650755490e1280fdcaaff97ab02c5b4d3f3
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/01/2014 10:14:32
+Message:
+CB-5793 Make ant work-around work on windows. #MsgLength=46
+
+
+----
+Modified: bin/templates/project/custom_rules.xml|3 0
+
+Revision: 21752000156c68fed83ad6d38e22eb7c29eb7338
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/01/2014 03:53:40
+Message:
+Fix type "LANCH" -> "LAUNCH" #MsgLength=29
+
+
+----
+Modified: bin/templates/cordova/lib/device.js|1 1
+
+Revision: 7668a696f781f3b56cba56c57615332acea62269
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/01/2014 23:29:04
+Message:
+CB-5889 Add a message in the update script about needing to import CordovaLib when using an IDE. #MsgLength=97
+
+
+----
+Modified: bin/lib/create.js|1 0
+
+Revision: 35f2f7d812a1e27f462ed794af8f119c0dfa76d8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/01/2014 23:40:09
+Message:
+CB-5889 Make update script find project name instead of using "null" for CordovaLib #MsgLength=84
+
+
+----
+Modified: bin/lib/create.js|13 4
+
+Revision: 53e24f1460fe44f512366ced2f48a2321c4be78c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 26/01/2014 10:58:28
+Message:
+CB-5793 ant builds: Rename AndroidManifest during -post-build to avoid Eclipse detecting ant-build/ as a project when importing #MsgLength=128
+
+
+----
+Modified: bin/templates/project/custom_rules.xml|4 0
+
+Revision: 0cea5d3a632a716d3f22d44528e32e7828a3ab8b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/01/2014 13:28:42
+Message:
+CB-5715 For CLI, hide assets/www and res/xml/config.xml by default #MsgLength=217
+
+
+----
+Modified: bin/lib/create.js|9 3
+Modified: bin/templates/project/eclipse-project-CLI|23 19
+
+Revision: 6185492b4d3f6eb47938b256ed9f3e7a81fe0e7e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/01/2014 23:29:56
+Message:
+CB-5917 Add a loadUrlIntoView overload that doesn't recreate plugins. #MsgLength=70
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|11 4
+
+Revision: 59501d8279420c4f24039d2709bbd6a4f7e601c3
+Author: Bas Bosman <sbg.bosman@mindef.nl>
+Date: 27/01/2014 06:49:02
+Message:
+CB-4984 Don't create on CordovaActivity name #MsgLength=45
+
+
+----
+Modified: bin/lib/create.js|4 0
+
+Revision: 1252f1b887f3cef0051ee20f077239062bddb964
+Author: Archana Naik <naika@lab126.com>
+Date: 01/02/2014 09:36:32
+Message:
+Updated android platform target to android-19. #MsgLength=47
+
+
+----
+Modified: framework/project.properties|1 1
+
+Revision: 5770d087965ec0126d4b1dda514f490b9cb20ba9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 30/10/2013 22:39:33
+Message:
+Remove Application settings from framework/AndroidManifest.xml #MsgLength=113
+
+
+----
+Modified: framework/AndroidManifest.xml|1 37
+
+Revision: 59833dee1437180503cc9ccadd6c4359e508a36f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 31/10/2013 00:18:20
+Message:
+CB-5232 Change create script to use Cordova as a library. #MsgLength=58
+
+
+----
+Modified: bin/create|6 11
+Modified: bin/lib/create.js|44 51
+Added: bin/lib/simpleargs.js|32 0
+Modified: bin/update|5 10
+
+Revision: a9f794f8e427a299a9e46b686f1e0e7c4414ef9d
+Author: Archana Naik <naika@lab126.com>
+Date: 01/02/2014 15:49:40
+Message:
+Removing getNameRes() function to get webview backend. Removed strings as well. #MsgLength=80
+
+
+----
+Modified: framework/res/values/strings.xml|0 4
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|3 17
+
+Revision: 61eae1176ed44ab1251efec62690e5f725e3f7cd
+Author: Archana Naik <naika@lab126.com>
+Date: 01/02/2014 16:31:32
+Message:
+Fixed create.js + added code to copy libs folder to app's libs. #MsgLength=64
+
+
+----
+Modified: bin/lib/create.js|14 21
+
+Revision: 5dba3164c0a91d30d952b72b882c1429b9e5b0f9
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 13/02/2014 09:11:50
+Message:
+Update JS snapshot to version 3.5.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: framework/assets/www/cordova.js|3 3
+
+Revision: 168649f1a9ed319d7923b9d8679cf4036c20d8b2
+Author: Joe Bowser <bowserj@apache.org>
+Date: 04/02/2014 02:11:53
+Message:
+Removing addJavascriptInterface support from all Android versions lower than 4.2 due to security vulnerability #MsgLength=111
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|2 7
+
+Revision: 457d15847641b748a8a9715ea328154916814edb
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/02/2014 13:12:11
+Message:
+Ignore multiple onPageFinished() callbacks & onReceivedError due to stopLoading() #MsgLength=138
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|6 0
+Modified: framework/src/org/apache/cordova/CordovaWebViewClient.java|13 1
+
+Revision: ea64117b39f997524cef72d425cd61f28215535c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/02/2014 23:00:58
+Message:
+Fix broken build from prev. commit (copy & paste error?) #MsgLength=57
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebViewClient.java|1 1
+
+Revision: e06f49ac24fd5b51ad721e38236d3d4fb94444ac
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 08/02/2014 04:01:57
+Message:
+CB-5395: Make scheme and host (but not path) case-insensitive in whitelist #MsgLength=75
+
+
+----
+Modified: framework/src/org/apache/cordova/Whitelist.java|4 4
+
+Revision: 95fc877fe92df0821e11523c696c2f3ab1952eb1
+Author: arudenko <alexander.rudenko@gmil.com>
+Date: 25/07/2013 11:23:05
+Message:
+Added Log.e when Config is not initialised but accessed #MsgLength=56
+
+
+----
+Modified: framework/src/org/apache/cordova/Config.java|2 0
+
+Revision: 692252b6d27ccf58ea1f7b3370c756d0a1187e08
+Author: Archana Naik <naika@lab126.com>
+Date: 08/02/2014 06:06:59
+Message:
+Updated check_requirements functions to see if AWV sdk is installed in libs folder. This code used to be in cli's platform script but cordova recently moved it to individual platforms. #MsgLength=185
+
+
+----
+Modified: bin/lib/check_reqs.js|7 0
+
+Revision: 35a0c7ad5c85885a89034060aa9f474cd60a727e
+Author: Archana Naik <naika@lab126.com>
+Date: 08/02/2014 06:06:59
+Message:
+Updated check_requirements functions to see if AWV sdk is installed in libs folder. This code used to be in cli's platform script but cordova recently moved it to individual platforms. #MsgLength=384
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|44 30
+Modified: framework/src/org/apache/cordova/CordovaChromeClient.java|45 1
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|10 0
+Added: test/assets/www/plugins/Plugin1.html|3 0
+Added: test/assets/www/plugins/Plugin2.html|3 0
+Added: test/assets/www/plugins/Plugin3.html|3 0
+Added: test/assets/www/plugins/Plugin4.html|3 0
+Added: test/assets/www/plugins/Plugin5.html|3 0
+Added: test/src/org/apache/cordova/pluginApi/Plugin1.java|43 0
+Added: test/src/org/apache/cordova/pluginApi/Plugin2.java|43 0
+Added: test/src/org/apache/cordova/pluginApi/Plugin3.java|43 0
+Added: test/src/org/apache/cordova/pluginApi/Plugin4.java|43 0
+Added: test/src/org/apache/cordova/pluginApi/Plugin5.java|43 0
+Modified: test/src/org/apache/cordova/test/junit/PluginManagerTest.java|187 38
+
+Revision: 7f6357100aac159eea15e7326aded8648ad7e21a
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 11/02/2014 05:53:17
+Message:
+CB-5908: add splascreen images to template #MsgLength=237
+
+
+----
+Added: bin/templates/project/res/drawable-land-hdpi/screen.png|0 0
+Added: bin/templates/project/res/drawable-land-ldpi/screen.png|0 0
+Added: bin/templates/project/res/drawable-land-mdpi/screen.png|0 0
+Added: bin/templates/project/res/drawable-land-xhdpi/screen.png|0 0
+Added: bin/templates/project/res/drawable-port-hdpi/screen.png|0 0
+Added: bin/templates/project/res/drawable-port-ldpi/screen.png|0 0
+Added: bin/templates/project/res/drawable-port-mdpi/screen.png|0 0
+Added: bin/templates/project/res/drawable-port-xhdpi/screen.png|0 0
+
+Revision: 5211319f41c46ee287259ba6a48a3a3bc42fb95d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 14/02/2014 04:56:24
+Message:
+CB-5398 Work-around for KitKat content: URLs not rendering in <img> tags #MsgLength=73
+
+
+----
+Modified: framework/src/org/apache/cordova/IceCreamCordovaWebViewClient.java|9 1
+
+Revision: d4224e1098ae447a01ad22542b43c9866115d9fb
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/02/2014 00:02:17
+Message:
+CB-5398 Apply KitKat content URI fix to all content URIs #MsgLength=57
+
+
+----
+Modified: framework/src/org/apache/cordova/IceCreamCordovaWebViewClient.java|2 6
+
+Revision: fcf4d6b5a6b47eb950430f432ebe7ed06690d55b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/02/2014 06:04:56
+Message:
+updated release notes #MsgLength=22
+
+
+----
+Modified: RELEASENOTES.md|46 1
+
+Revision: 23a64cc834e0557a3c34f7277f767cdc6bca2c5c
+Author: Joe Bowser <bowserj@apache.org>
+Date: 19/02/2014 10:31:28
+Message:
+Updating NOTICE to include Square for OkHttp #MsgLength=45
+
+
+----
+Modified: NOTICE|4 4
+
+Revision: be04e232bd7c9319d37cd15a674712203df2861d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/02/2014 11:11:10
+Message:
+Fix NPE when POLLING bridge mode is used. #MsgLength=42
+
+
+----
+Added: framework/.settings/org.eclipse.jdt.core.prefs|4 0
+Modified: framework/src/org/apache/cordova/NativeToJsMessageQueue.java|8 2
+
+Revision: 4b0bc7a638a7cbb5c3e75de3a4dd1d800d22801e
+Author: Andrew Magee <amagee@gmail.com>
+Date: 17/02/2014 14:18:24
+Message:
+README.md: `android update` to `android-19`. #MsgLength=45
+
+
+----
+Modified: README.md|1 1
+
+Revision: aa66c9b31aef92502957710e1e5359e769007587
+Author: Archana Naik <naika@lab126.com>
+Date: 25/02/2014 06:16:20
+Message:
+Updated android target to android-19. #MsgLength=38
+
+
+----
+Modified: NOTICE|1 1
+Modified: test/project.properties|1 1
+
+Revision: 115817cca3c49e4bf7a06d1db4b1cf9060a4b6d4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/02/2014 09:18:35
+Message:
+Update framework's .classpath to what Eclipse wants it to be. #MsgLength=62
+
+
+----
+Modified: framework/.classpath|2 1
+
+Revision: 0e88d6667b4afaa7a7b4ee8023beeb55852daf47
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/02/2014 09:20:10
+Message:
+Add another convenience overload for CordovaResourceApi.copyResource #MsgLength=69
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaResourceApi.java|4 0
+
+Revision: f69e724c6e0281907cadb41647898825cb40e849
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/02/2014 09:23:07
+Message:
+CB-6047 Fix online sometimes getting in a bad state on page transitions. #MsgLength=326
+
+
+----
+Modified: framework/src/org/apache/cordova/NativeToJsMessageQueue.java|9 5
+
+Revision: 85067e4e665591f369a02875cc7699c0ecf5ea78
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:30
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Modified: NOTICE|2 14
+
+Revision: 6e3e68d9cc435643c659d6e5c074d483025e4513
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/03/2014 10:25:48
+Message:
+Catch uncaught exceptions in from plugins and turn them into error responses. #MsgLength=258
+
+
+----
+Modified: framework/src/org/apache/cordova/PluginManager.java|7 4
+
+Revision: f4990a56f18643ac7de66af723d668c1e79359b6
+Author: Archana Naik <naika@lab126.com>
+Date: 11/03/2014 02:30:22
+Message:
+Added overloaded constructor for CordovaWebView with Bundle as parameter. Need it for AmazonWebChromeClient.onCreateWindow callback. #MsgLength=133
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|26 0
+
+Revision: 74ebe2bf621b4122a935455ee7550c2f2a619f52
+Author: Archana Naik <naika@lab126.com>
+Date: 15/03/2014 05:35:44
+Message:
+CB-5744 Unable to build Hello World application for Kindle Fire HDX tablet using PhoneGap 3.3.0 #MsgLength=158
+
+
+----
+Modified: bin/lib/create.js|9 0
+
+Revision: 5e9cb8fbb85f2295f1472f58df1117ab536ee888
+Author: Archana Naik <naika@lab126.com>
+Date: 12/03/2014 08:45:53
+Message:
+Fixing back button issue by utilizing onBackPressed instead of onKeyUp #MsgLength=71
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|19 5
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|44 42
+
+Revision: bece02e894f67f11d1c46f4d865123b5d5ed9e97
+Author: hadeslee <hadeslee@vip.qq.com>
+Date: 21/03/2014 12:06:23
+Message:
+Remove incorrect usage of AlertDialog.Builder.create #MsgLength=480
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaChromeClient.java|0 3
+
+Revision: c303a636ac6d8671d805561458158ec6fff414b8
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 01/04/2014 23:33:40
+Message:
+Fix CB-6048: Set launchMode=singleTop so tapping app icon does not always restart app #MsgLength=86
+
+
+----
+Modified: bin/templates/project/AndroidManifest.xml|1 1
+
+Revision: 736f44bbc2c663d1211bba59cfa6479ecd52205d
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 03/04/2014 00:08:27
+Message:
+CB-6388: Handle binary data correctly in LOAD_URL bridge #MsgLength=57
+
+
+----
+Modified: framework/src/org/apache/cordova/NativeToJsMessageQueue.java|16 3
+
+Revision: 9375b4103c2cfd32f308a8bedfafc04b0eaacdf0
+Author: Archana Naik <naika@lab126.com>
+Date: 03/04/2014 04:06:51
+Message:
+[CB-6392]Addig amazon-fireos platform fails with not so good error reporting Fixes 2 issues while adding amazon-fireos platform after fresh cordova install. 1. create.js updated to create "libs" folder before copying it to the project's platform folder. Also, checking for awv_interface.jar existance is moved to create_project(). 2. check_reqs.js no longer checks for awv_interface.jar. #MsgLength=388
+
+
+----
+Modified: bin/lib/check_reqs.js|1 7
+Modified: bin/lib/create.js|13 3
+
+Revision: 12e9567fe0412a0a3fb7ca8cea04c996f9f988f6
+Author: Archana Naik <naika@lab126.com>
+Date: 18/03/2014 06:30:40
+Message:
+Adding a safety check to prevent applications from calling init twice Changes to address thread safety concerns in Cordova plugin management #MsgLength=141
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|1 1
+Modified: framework/src/org/apache/cordova/PluginManager.java|20 17
+
+Revision: 037f7757babeed2ee190b31af4c57db19ffb6f3f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 01/05/2014 04:05:41
+Message:
+CB-6556: added top level pacakge.json file #MsgLength=43
+
+
+----
+Added: package.json|21 0
+
+Revision: 09b340fd9090f1ff08dfd2153e009ba9d37f6341
+Author: Archana Naik <naika@lab126.com>
+Date: 03/04/2014 04:06:51
+Message:
+Fixes 2 issues while adding amazon-fireos platform after fresh cordova install. 1. create.js updated to create "libs" folder before copying it to the project's platform folder. 2. check_reqs.js updated to report error and abort if awv_interface.jar is missing from libs folder. #MsgLength=278
+
+
+----
+Modified: bin/lib/check_reqs.js|6 1
+Modified: bin/lib/create.js|1 0
+
+Revision: 280fc8633237a26398bb65bc848997d2e0212daf
+Author: Archana Naik <naika@lab126.com>
+Date: 03/04/2014 04:06:51
+Message:
+[CB-6392]Addig amazon-fireos platform fails with not so good error reporting Fixes 2 issues while adding amazon-fireos platform after fresh cordova install. 1. create.js updated to create "libs" folder before copying it to the project's platform folder. Also, checking for awv_interface.jar existance is moved to create_project(). 2. check_reqs.js no longer checks for awv_interface.jar. #MsgLength=388
+
+
+----
+Modified: bin/lib/check_reqs.js|1 6
+
+Revision: b3c4d5824a810d74f1dcab9af036e13d67c96ab4
+Author: Archana Naik <naika@lab126.com>
+Date: 02/05/2014 02:37:30
+Message:
+Added amazon xmlns to project's template AndroidManifest.xml. #MsgLength=62
+
+
+----
+Modified: bin/templates/project/AndroidManifest.xml|1 1
+
+Revision: 31bfe2ddc10c04d646a2be7e677a2372b4800ac9
+Author: Archana Naik <naika@lab126.com>
+Date: 02/05/2014 06:38:42
+Message:
+Updated log statement - android=>amazon-fireos. #MsgLength=48
+
+
+----
+Modified: bin/create|1 1
+
+Revision: ca48cf569c13692c4e9d0b7eb7f55f362bede587
+Author: Archana Naik <naika@lab126.com>
+Date: 06/05/2014 05:03:46
+Message:
+Updated cordova.js after upleveling cordova-js from android port. #MsgLength=66
+
+
+----
+Modified: framework/assets/www/cordova.js|202 72
+
+Revision: 7e98ec98ecd7362da2909bf8bae63a32e1a1666e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/04/2014 03:47:10
+Message:
+Add JavaDoc for CordovaResourceApi #MsgLength=35
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaResourceApi.java|21 0
+
+Revision: b9d9a75fd966c24ff9125b921545abada5c6fb4f
+Author: Fardjad Davari <public@fardjad.com>
+Date: 24/04/2014 06:31:33
+Message:
+defaults.xml: Add AndroidLaunchMode preference #MsgLength=47
+
+
+----
+Modified: bin/templates/cordova/defaults.xml|1 0
+
+Revision: 18c6752c6fff86b8db4be638338c9e95bc98e267
+Author: Ningxin Hu <ningxin.hu@intel.com>
+Date: 24/04/2014 16:05:42
+Message:
+CB-6543 Fix cordova/run failure when no custom_rules.xml available #MsgLength=86
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|8 3
+
+Revision: f48457e20cec481a9758dc6b79e87e0457bd781b
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 20:44:21
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: 5f2692f7c01c2bdbaabc85e5f3769bd3c61519aa
+Author: Archana Naik <naika@lab126.com>
+Date: 06/05/2014 07:31:32
+Message:
+[CB-6636][amazon-fireos]Need to destroy webview properly Added destroy() call in webview's handleDestroy() method. #MsgLength=115
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|2 0
+
+Revision: b3011d3b654b63c630e99dd801007059ad27342a
+Author: Archana Naik <naika@lab126.com>
+Date: 07/05/2014 04:24:23
+Message:
+[CB-6487]WebView not found in Chrome remote debugging #MsgLength=139
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|22 4
+
+Revision: 8ea445c3582390a3ce09e5f5dcb176be07767677
+Author: Archana Naik <naika@lab126.com>
+Date: 08/05/2014 04:56:07
+Message:
+Set VERSION to 3.6.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 931beb5d32e0bc2de23320e3b006a3ae94a7c7ab
+Author: Archana Naik <naika@lab126.com>
+Date: 08/05/2014 04:56:10
+Message:
+Update JS snapshot to version 3.6.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: framework/assets/www/cordova.js|3 3
+
+Revision: 3328a1f62dd509aeaf6dc50adccd4489836e9513
+Author: Archana Naik <naika@lab126.com>
+Date: 08/05/2014 05:06:10
+Message:
+Update JS snapshot to version 3.6.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: framework/assets/www/cordova.js|3 3
+
+Revision: 0ae3c2dc5ffa84ca8bb881c0144b976886179465
+Author: Archana Naik <naika@lab126.com>
+Date: 08/05/2014 05:53:11
+Message:
+[CB-6644][amazon-fireos]Add a check for webview being null in template code Added a check and some comments to guide devs. #MsgLength=123
+
+
+----
+Modified: bin/templates/project/Activity.java|11 3
+
+Revision: 5aa31cebc66d4c81c5f19836a25ed600bda4bff4
+Author: Archana Naik <naika@lab126.com>
+Date: 09/05/2014 04:30:50
+Message:
+Updated version to 3.5.0 #MsgLength=25
+
+
+----
+Modified: package.json|1 1
+
+Revision: 20a68ec6405ef92752ebdf6c2c533c4851fde1f3
+Author: Archana Naik <naika@lab126.com>
+Date: 09/05/2014 04:40:01
+Message:
+Updated release notes. #MsgLength=23
+
+
+----
+Modified: RELEASENOTES.md|32 0
+
+Revision: 59dc5fbc9d30e1f541922964b030d4fa7be4738a
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 31/05/2014 00:02:50
+Message:
+CB-6818 Add license for CONTRIBUTING.md #MsgLength=40
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: f24c338015bf7ae21d56aaa4cfcc7664614c7f7c
+Author: Archana Naik <naika@lab126.com>
+Date: 03/04/2014 04:06:51
+Message:
+Fixes 2 issues while adding amazon-fireos platform after fresh cordova install. 1. create.js updated to create "libs" folder before copying it to the project's platform folder. 2. check_reqs.js updated to report error and abort if awv_interface.jar is missing from libs folder. #MsgLength=278
+
+
+----
+Modified: bin/lib/check_reqs.js|6 1
+
+Revision: 11ba0a443c3c0ced232d850999347a64c6be2b14
+Author: Archana Naik <naika@lab126.com>
+Date: 23/05/2014 06:34:16
+Message:
+JS confirm dnd alert dialog in Cordova consumes all key events #MsgLength=153
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaChromeClient.java|0 24
+
+Revision: 5fa8d6ef36412e21df6a190c780502b41f982504
+Author: Archana Naik <naika@lab126.com>
+Date: 04/06/2014 03:15:02
+Message:
+[CB-6740]Cleanup error reporting when AmazonWebView SDK is not found Updated create script to check commonlibs folder under ~/.cordova/lib. If it doesnt exist create one and let user know. Error message updated. If exists copy it to specific release's framework/libs folder. #MsgLength=275
+
+
+----
+Modified: bin/lib/create.js|19 6
+
+Revision: f0aaf81031ac9369f5d29412ebb9a3c97c753634
+Author: Archana Naik <naika@lab126.com>
+Date: 10/07/2014 01:33:53
+Message:
+Fixing merge error. #MsgLength=20
+
+
+----
+Modified: bin/lib/check_reqs.js|1 6
+
+Revision: 6b79ea2fb304f6856f678d150428115d39ed3f95
+Author: Archana Naik <naika@lab126.com>
+Date: 21/05/2014 05:10:01
+Message:
+Fixing a typo which was sending the wrong string to plugins for js confirm dialogs #MsgLength=83
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaChromeClient.java|1 1
+
+Revision: 9889f2374b665f588eef3206c579e175b03ffdd8
+Author: Archana Naik <naika@lab126.com>
+Date: 03/04/2014 04:06:51
+Message:
+[CB-6392]Addig amazon-fireos platform fails with not so good error reporting Fixes 2 issues while adding amazon-fireos platform after fresh cordova install. 1. create.js updated to create "libs" folder before copying it to the project's platform folder. Also, checking for awv_interface.jar existance is moved to create_project(). 2. check_reqs.js no longer checks for awv_interface.jar. #MsgLength=388
+
+
+----
+Modified: bin/lib/create.js|1 1
+
+Revision: fcd4db0f2b95b00c48d42445198ff369c65598f1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/05/2014 03:17:49
+Message:
+Revert accidentally removed lines from NOTICE #MsgLength=46
+
+
+----
+Modified: NOTICE|14 2
+
+Revision: a0bfdf7f3cf7275d97105ebba346a340b3f283b4
+Author: Martin Gonzalez <martin.c.glez.glez@gmail.com>
+Date: 16/05/2014 00:55:42
+Message:
+CB-5652 make visible cordova version #MsgLength=126
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|1 0
+
+Revision: 516de168e083b5900490770e72dc5c4af4eff0b7
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 20/05/2014 19:00:21
+Message:
+CB-6707 Update minSdkVersion to 10 consistently #MsgLength=135
+
+
+----
+Modified: framework/AndroidManifest.xml|1 1
+Modified: test/AndroidManifest.xml|1 1
+
+Revision: 7d48a87407a919fcd1d1eca7e187456abca2cbb5
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 20/05/2014 19:09:02
+Message:
+CB-6723 Update package name for Robotium #MsgLength=41
+
+
+----
+Modified: test/README.md|4 2
+Modified: test/src/org/apache/cordova/test/junit/MessageTest.java|2 2
+
+Revision: ad264a0be1944b9dbb373ca85ac76651e313f216
+Author: Joe Bowser <bowserj@apache.org>
+Date: 23/05/2014 03:00:11
+Message:
+CB-6315: Wrapping this so it runs on the UI thread #MsgLength=51
+
+
+----
+Modified: framework/src/org/apache/cordova/App.java|5 1
+
+Revision: f33f6652f6dd85f8b03f840251ec4914143aef3e
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 30/05/2014 02:35:29
+Message:
+Revert "defaults.xml: Add AndroidLaunchMode preference" #MsgLength=119
+
+
+----
+Modified: bin/templates/cordova/defaults.xml|0 1
+
+Revision: 225092d7de45f8c3e19b7494ad0c23aa496be2bc
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 31/05/2014 03:10:54
+Message:
+CB-6784 Add missing licenses #MsgLength=101
+
+
+----
+Modified: test/assets/www/cordova_plugins.js|21 2
+Modified: test/res/xml/config.xml|18 0
+
+Revision: a5043137917903d7510d9e1ef2ad702760b1d297
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/06/2014 03:28:35
+Message:
+Remove +x from README.md #MsgLength=25
+
+
+----
+Modified: README.md|0 0
+
+Revision: 883eb255242dadf8854869a3464d97b8634d1c8a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/06/2014 03:28:45
+Message:
+Add a comment to custom_rules.xml saying why we move AndroidManifest.xml #MsgLength=73
+
+
+----
+Modified: bin/templates/project/custom_rules.xml|1 0
+
+Revision: 06cd4b9ea5676c9db040b85bf8f3d06e3ee13b89
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/06/2014 04:08:35
+Message:
+CB-6860 Add activity_name and launcher_name to AndroidManifest.xml & strings.xml #MsgLength=81
+
+
+----
+Modified: bin/templates/project/AndroidManifest.xml|5 3
+Modified: bin/templates/project/res/values/strings.xml|5 0
+
+Revision: 2d4962acefceb01b70311ba79317bba0245fe2bb
+Author: Joe Bowser <bowserj@apache.org>
+Date: 04/06/2014 06:21:46
+Message:
+CB-6818: I want to remove this code, because Square didn't do their headers properly #MsgLength=85
+
+
+----
+Modified: framework/src/com/squareup/okhttp/internal/spdy/ErrorCode.java|16 0
+Modified: framework/src/com/squareup/okhttp/internal/spdy/Hpack.java|16 0
+Modified: framework/src/com/squareup/okhttp/internal/spdy/NameValueBlockReader.java|16 0
+
+Revision: 06d90451405eeda1d6501175c15dceceba540423
+Author: Joe Bowser <bowserj@apache.org>
+Date: 05/06/2014 02:13:37
+Message:
+Trivial spelling fix in comments when reading CordovaResourceApi #MsgLength=65
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaResourceApi.java|5 2
+
+Revision: 385b50fa959e547150c229c95915a51dd5027fd2
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 05/06/2014 07:12:55
+Message:
+CB-6876 Fix the "print usage" #MsgLength=30
+
+
+----
+Modified: bin/templates/cordova/lib/run.js|1 1
+Modified: bin/templates/cordova/run|1 1
+
+Revision: 345a5a951311461887b4e4ee10f15cc3ba97b3f9
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 05/06/2014 07:23:43
+Message:
+CB-6876 Show the correct executable name #MsgLength=41
+
+
+----
+Modified: bin/templates/cordova/lib/run.js|1 1
+
+Revision: 482a23d222a472b8c6c9ea2a0f3383d179c5d1ef
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/06/2014 10:47:41
+Message:
+CB-6851 Deprecate WebView.sendJavascript() #MsgLength=43
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|18 3
+
+Revision: e11ad069aa8e9b44063469658935b7b78435f053
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 10/06/2014 03:50:20
+Message:
+Add documentation referencing other implementation. #MsgLength=52
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaChromeClient.java|3 0
+
+Revision: a5ca2bd8e54971d939bce19ea21dc3d776597224
+Author: Joe Bowser <bowserj@apache.org>
+Date: 13/06/2014 02:47:41
+Message:
+CB-4404: Changing where android:windowSoftInputMode is in the manifest so it works #MsgLength=83
+
+
+----
+Modified: bin/templates/project/AndroidManifest.xml|2 1
+
+Revision: 18b35792f1c96bbc009a9a13c3779730eef043a8
+Author: Joe Bowser <bowserj@apache.org>
+Date: 13/06/2014 08:51:22
+Message:
+CB-5971: This would have been a good first bug, too bad #MsgLength=56
+
+
+----
+Modified: bin/lib/create.js|23 1
+
+Revision: a3dbbb3f7469dd4fc4cb09edacfc74eff69e0009
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/06/2014 02:18:54
+Message:
+Delete explicit activity.finish() in back button handling. No change in behaviour. #MsgLength=229
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|21 0
+
+Revision: 3152d1798cddfc2ee1d1dfdc3bfb51352f4ebdc4
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 25/06/2014 01:49:12
+Message:
+CB-5971: Factor out package/project name validation logic #MsgLength=58
+
+
+----
+Modified: bin/lib/create.js|66 30
+
+Revision: c664939600c7b2509f037811673ce4e448936100
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 25/06/2014 01:50:00
+Message:
+CB-5971: Add unit tests to cordova-android #MsgLength=43
+
+
+----
+Modified: bin/lib/create.js|4 0
+Modified: package.json|12 1
+Added: spec/create.spec.js|82 0
+
+Revision: 6fa370bd5d964368563921acbe5e729639028a49
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 25/06/2014 02:05:03
+Message:
+CB-5971: Fix package / project validation #MsgLength=42
+
+
+----
+Modified: bin/lib/create.js|8 8
+
+Revision: 859413d9ccfb538bde4e16be8473df907e1f0619
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 25/06/2014 02:55:34
+Message:
+CB-7017 Fix onload=true being set on all subsequent plugins #MsgLength=60
+
+
+----
+Modified: framework/src/org/apache/cordova/PluginManager.java|1 0
+
+Revision: e389e0e069656b1254c467bc4d41c61ad3e32cae
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 25/06/2014 03:08:47
+Message:
+CB-7018 Clean up and deprecation of some button-related functions #MsgLength=66
+
+
+----
+Modified: framework/src/org/apache/cordova/App.java|9 3
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|40 82
+
+Revision: e7aeb96eaf8fe5efdd39a0d877412cc01fba38ac
+Author: Joe Bowser <bowserj@apache.org>
+Date: 25/06/2014 03:30:12
+Message:
+Refactoring the URI handling on Cordova, removing dead code #MsgLength=60
+
+
+----
+Added: framework/src/org/apache/cordova/CordovaUriHelper.java|112 0
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|8 19
+Modified: framework/src/org/apache/cordova/CordovaWebViewClient.java|5 107
+Modified: framework/src/org/apache/cordova/IceCreamCordovaWebViewClient.java|9 2
+
+Revision: e54dd43f21f7c88ae19de118a77f5a6b830b4eb0
+Author: Joe Bowser <bowserj@apache.org>
+Date: 25/06/2014 03:55:56
+Message:
+This breaks running the JUnit tests, we'll bring it back soon #MsgLength=62
+
+
+----
+Deleted: test/src/org/apache/cordova/test/junit/MessageTest.java|0 73
+
+Revision: 2b690a297c46b173075ee7c3858b9278da595a2f
+Author: Joe Bowser <bowserj@apache.org>
+Date: 25/06/2014 03:57:46
+Message:
+Update the errorurl to no longer use intents #MsgLength=45
+
+
+----
+Modified: framework/src/org/apache/cordova/Config.java|10 5
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|1 1
+
+Revision: a6dae890bdd613be2d975a42e6ac77965aa46c6f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/07/2014 01:27:30
+Message:
+CB-6761 Fix native->JS bridge ceasing to fire when page changes and online is set to false and the JS loads quickly #MsgLength=116
+
+
+----
+Modified: framework/src/org/apache/cordova/NativeToJsMessageQueue.java|9 4
+
+Revision: e2d3929226c27a9a3e10d41434fc5945fcd07952
+Author: Archana Naik <naika@lab126.com>
+Date: 08/07/2014 03:17:51
+Message:
+amazon-fireos related changes. #MsgLength=31
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaUriHelper.java|2 2
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|42 1
+Modified: framework/src/org/apache/cordova/CordovaWebViewClient.java|1 1
+
+Revision: 1db84d3009a37c5809d60a17008065d61dd04fff
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/07/2014 09:58:35
+Message:
+CB-5988 Allow exec() only from file: or start-up URL's domain #MsgLength=467
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaChromeClient.java|72 64
+Modified: framework/src/org/apache/cordova/CordovaWebViewClient.java|1 3
+Modified: framework/src/org/apache/cordova/ExposedJsApi.java|25 3
+Modified: framework/src/org/apache/cordova/NativeToJsMessageQueue.java|33 30
+Modified: framework/src/org/apache/cordova/PluginManager.java|6 43
+
+Revision: 95b49e86ade2b4d6cb9cd22d8d4908ee925f981d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/07/2014 10:18:18
+Message:
+Delete Location-change JS->Native bridge mode #MsgLength=119
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaUriHelper.java|1 33
+Modified: framework/src/org/apache/cordova/NativeToJsMessageQueue.java|0 4
+
+Revision: 78523231167fb89c65da8dcb70b4d3ecbc6a9d05
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/07/2014 23:31:32
+Message:
+Refactor Config into ConfigXmlParser, CordovaPreferences #MsgLength=109
+
+
+----
+Modified: framework/src/org/apache/cordova/Config.java|17 170
+Added: framework/src/org/apache/cordova/ConfigXmlParser.java|163 0
+Added: framework/src/org/apache/cordova/CordovaPreferences.java|158 0
+Modified: framework/src/org/apache/cordova/PluginManager.java|8 107
+Modified: framework/src/org/apache/cordova/Whitelist.java|4 0
+
+Revision: eb24a1377e99c575b20f8231716cf525b38173df
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/07/2014 23:38:16
+Message:
+Delete "CB-3064: The errorUrl is..." Log message left over from debugging presumably #MsgLength=85
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|1 7
+
+Revision: c0bf76ad84e0f971594dbd2ede33f3ab978c9692
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/07/2014 23:38:31
+Message:
+Update .classpath to make Eclipse happy (just re-orders one line) #MsgLength=66
+
+
+----
+Modified: framework/.classpath|1 1
+
+Revision: ab3426c15633902964356ed5a7f002979273d450
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/07/2014 23:46:03
+Message:
+Delete dead code from CordovaActivity #MsgLength=38
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|6 79
+
+Revision: faf4d86dae68a3a74d0f3b1c30f75602238802fb
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/07/2014 00:11:19
+Message:
+Move handling of Fullscreen preference to CordovaActivity #MsgLength=142
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|7 5
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|0 20
+
+Revision: 5218ee8b70390b6755de283718647053d472286a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/07/2014 00:19:28
+Message:
+Don't re-parse config.xml in onResume. #MsgLength=72
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|0 2
+
+Revision: c0c48a3b2dda40e23dcaf912cc0752712c114628
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/07/2014 02:52:31
+Message:
+Refactor: Move url-filter information into PluginEntry. #MsgLength=56
+
+
+----
+Modified: framework/src/org/apache/cordova/ConfigXmlParser.java|7 12
+Modified: framework/src/org/apache/cordova/PluginEntry.java|31 23
+Modified: framework/src/org/apache/cordova/PluginManager.java|17 11
+
+Revision: a78cdd665b6b8e8a0c6951912a8c85f9666468f4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/07/2014 04:27:16
+Message:
+Fix CordovaPreferences not correctly parsing hex values (valueOf->decode) #MsgLength=74
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaPreferences.java|13 8
+
+Revision: f4f7db088b7c14829fa6124447ca57fd26e8f157
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/07/2014 04:31:19
+Message:
+Deprecate some convenience methods on CordovaActivity #MsgLength=120
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|11 4
+
+Revision: 79d8396eb8bb9b8c3d4c280515c26a4f5a593ce8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/07/2014 04:32:09
+Message:
+Refactor: Use ConfigXmlParser in activity. Adds CordovaWebView.init() #MsgLength=246
+
+
+----
+Modified: bin/templates/project/Activity.java|4 4
+Modified: framework/src/org/apache/cordova/Config.java|1 1
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|80 139
+Modified: framework/src/org/apache/cordova/CordovaChromeClient.java|2 16
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|71 104
+Modified: framework/src/org/apache/cordova/CordovaWebViewClient.java|2 5
+Modified: framework/src/org/apache/cordova/PluginManager.java|28 27
+
+Revision: 5b73477ba30d49893f488357d206832d9d57000e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/07/2014 01:07:51
+Message:
+CB-4404 Revert setting android:windowSoftInputMode to "adjustPan" #MsgLength=241
+
+
+----
+Modified: bin/templates/project/AndroidManifest.xml|1 1
+
+Revision: 407f5439928ad6c6f067efea0d5d7394f3e3dca2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/07/2014 04:31:29
+Message:
+Make setWebViewClient an override instead of an overload. Delete Location-change JS->Native bridge mode (missed some of it). #MsgLength=125
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|1 1
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|10 24
+Modified: framework/src/org/apache/cordova/CordovaWebViewClient.java|0 21
+
+Revision: 5a250a315804cac9086572dd6dbd46f6e7ae6c01
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/07/2014 23:47:26
+Message:
+Move registration of App plugin from config.xml -> code #MsgLength=80
+
+
+----
+Modified: bin/templates/cordova/defaults.xml|0 5
+Modified: framework/res/xml/config.xml|0 4
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|1 0
+Modified: test/res/xml/config.xml|0 3
+
+Revision: edd45a82c98e4f4ae7d9447dee79992f22dc9495
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/07/2014 23:54:38
+Message:
+Fix PluginManager.setPluginEntries not removing old entries #MsgLength=60
+
+
+----
+Modified: framework/src/org/apache/cordova/PluginManager.java|2 0
+
+Revision: 9ee4b4e971b53aefcd8367b116f95e8818de7daf
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/07/2014 00:05:41
+Message:
+Make CordovaUriHelper class package-private #MsgLength=44
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaUriHelper.java|2 2
+
+Revision: f9455ffe84f405fde755aea5f460ff37c698b254
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/07/2014 02:08:15
+Message:
+Change getProperty -> prefs.get* within CordovaActivity #MsgLength=56
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|10 7
+
+Revision: e25cb6779d07f90d248e7c0c9197e46044d96860
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/07/2014 02:11:14
+Message:
+Convert usages of Config.* to use the non-static versions #MsgLength=58
+
+
+----
+Modified: framework/src/org/apache/cordova/Config.java|5 0
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|3 2
+Modified: framework/src/org/apache/cordova/CordovaChromeClient.java|1 2
+Modified: framework/src/org/apache/cordova/CordovaUriHelper.java|1 1
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|15 16
+Modified: framework/src/org/apache/cordova/IceCreamCordovaWebViewClient.java|1 1
+
+Revision: 2c53eb31b213842fd5abfaa088b26126b930eb2a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/07/2014 02:26:21
+Message:
+Provide CordovaPlugin with CordovaPreferences. Add new Plugin.initialize() #MsgLength=285
+
+
+----
+Modified: framework/src/org/apache/cordova/App.java|2 6
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|2 1
+Modified: framework/src/org/apache/cordova/CordovaPlugin.java|16 5
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|7 1
+Modified: framework/src/org/apache/cordova/PluginEntry.java|1 1
+
+Revision: 53e5ef00c53a63907bdba695c50e24daff0237be
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2014 01:31:44
+Message:
+Update cordova.js snapshot to work with bridge changes #MsgLength=55
+
+
+----
+Modified: framework/assets/www/cordova.js|46 34
+
+Revision: 9ed42b1dc63f83290e2a446535de4c508bae8656
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2014 04:08:18
+Message:
+Add node_module licenses to LICENSE #MsgLength=36
+
+
+----
+Modified: LICENSE|86 1
+
+Revision: 54761a5fcca5f648d34f65d8785516d21e9d806e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2014 09:08:29
+Message:
+Make CordovaWebview resilient to init() not being called (for backwards-compatibility) #MsgLength=195
+
+
+----
+Modified: framework/src/org/apache/cordova/Config.java|14 0
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|16 4
+Modified: test/.classpath|3 3
+Modified: test/src/org/apache/cordova/test/junit/BackButtonMultiPageTest.java|8 6
+Modified: test/src/org/apache/cordova/test/junit/ErrorUrlTest.java|1 1
+
+Revision: 28387c274d3cbd2b2e0f8deba4de7cbc3e471576
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2014 22:23:26
+Message:
+Add non-String overloades for CordovaPreferences.set() #MsgLength=55
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaPreferences.java|12 0
+
+Revision: fa2779d38aed4a7d41aa0a4341b64255e21e1608
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2014 22:23:44
+Message:
+Update unit tests to not use most deprecated things (e.g. DroidGap) #MsgLength=68
+
+
+----
+Modified: test/AndroidManifest.xml|1 1
+Modified: test/src/org/apache/cordova/test/CordovaWebViewTestActivity.java|5 3
+Renamed: test/src/org/apache/cordova/test/MainTestActivity.java [from test/src/org/apache/cordova/test/CordovaActivity.java]|2 3
+Modified: test/src/org/apache/cordova/test/backbuttonmultipage.java|1 2
+Modified: test/src/org/apache/cordova/test/background.java|2 2
+Modified: test/src/org/apache/cordova/test/backgroundcolor.java|2 5
+Modified: test/src/org/apache/cordova/test/errorurl.java|2 3
+Modified: test/src/org/apache/cordova/test/fullscreen.java|2 2
+Modified: test/src/org/apache/cordova/test/htmlnotfound.java|1 1
+Modified: test/src/org/apache/cordova/test/iframe.java|1 1
+Modified: test/src/org/apache/cordova/test/junit/BackButtonMultiPageTest.java|0 2
+Modified: test/src/org/apache/cordova/test/junit/CordovaActivityTest.java|4 30
+Deleted: test/src/org/apache/cordova/test/junit/GapClientTest.java|0 68
+Deleted: test/src/org/apache/cordova/test/junit/UserWebViewTest.java|0 76
+Modified: test/src/org/apache/cordova/test/lifecycle.java|1 1
+Modified: test/src/org/apache/cordova/test/loading.java|2 2
+Modified: test/src/org/apache/cordova/test/splashscreen.java|2 4
+Modified: test/src/org/apache/cordova/test/tests.java|1 1
+Modified: test/src/org/apache/cordova/test/timeout.java|2 2
+Modified: test/src/org/apache/cordova/test/userwebview.java|10 9
+Modified: test/src/org/apache/cordova/test/whitelist.java|5 4
+Modified: test/src/org/apache/cordova/test/xhr.java|1 1
+
+Revision: 593c52d555a0d636639d8d8d3be5f723f5819bd1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2014 22:43:37
+Message:
+Backport CordovaBridge from 4.0.x -> master #MsgLength=44
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|1 1
+Added: framework/src/org/apache/cordova/CordovaBridge.java|185 0
+Modified: framework/src/org/apache/cordova/CordovaChromeClient.java|3 67
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|5 7
+Modified: framework/src/org/apache/cordova/CordovaWebViewClient.java|1 2
+Modified: framework/src/org/apache/cordova/ExposedJsApi.java|6 52
+Modified: framework/src/org/apache/cordova/NativeToJsMessageQueue.java|5 1
+
+Revision: 6092a445300d82e8a6fad3c2b770fab1708e1380
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2014 23:29:26
+Message:
+Tweak log messages in CordovaBridge with bridgeSecret is wrong #MsgLength=63
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaBridge.java|24 26
+
+Revision: 18463d1eb91e383b7e023e88b37087b1a0e10ef4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2014 23:29:44
+Message:
+Un-deprecate CordovaActivity.init() - it's needed to tweak prefs in onCreate #MsgLength=77
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|44 39
+
+Revision: b28bc22352ba2a74bc87955fe795d95f581b4f80
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/07/2014 03:03:53
+Message:
+Tweak CordovaPlugin.initialize method to be less deprecated. #MsgLength=270
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaPlugin.java|14 6
+
+Revision: b83d7abf9fb08b3d0dffd03c64056081af4a5517
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/07/2014 03:14:39
+Message:
+Fix broken compile due to previous commit :( #MsgLength=45
+
+
+----
+Modified: framework/src/org/apache/cordova/App.java|1 1
+
+Revision: 6e830fcc16d21f7dd0a2468d74a9e908ae4b4017
+Author: Ankit Jain <ankitjainist@gmail.com>
+Date: 01/07/2014 02:29:53
+Message:
+Displaying error when regex does not match. #MsgLength=159
+
+
+----
+Modified: bin/lib/check_reqs.js|1 1
+
+Revision: 7da432289dc3d01190a3c8c883a29fb5b6bcf36a
+Author: Eion Robb <eion@robbmob.com>
+Date: 22/06/2014 05:43:30
+Message:
+Fix for `android` not being in PATH check on Windows #MsgLength=65
+
+
+----
+Modified: bin/lib/check_reqs.js|1 1
+
+Revision: 811724d41f0ba63a32715514367a5dff76ed97bd
+Author: Matt Ray <themattray@gmail.com>
+Date: 09/05/2014 03:37:09
+Message:
+Update to check for Google Glass APIs #MsgLength=199
+
+
+----
+Modified: bin/lib/check_reqs.js|4 0
+
+Revision: 340d6581a5898b0451abc11cb336a022028f7c0b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/07/2014 02:06:47
+Message:
+Fix broken unit test due to missing Config.init() call #MsgLength=55
+
+
+----
+Modified: test/src/org/apache/cordova/test/CordovaWebViewTestActivity.java|1 0
+
+Revision: 38586b5730029c81ce1b9423e8d51f448724079f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/07/2014 02:08:27
+Message:
+Move plugin instantiation and instance storing logic PluginEntry->PluginManager #MsgLength=420
+
+
+----
+Modified: framework/src/org/apache/cordova/PluginEntry.java|20 65
+Modified: framework/src/org/apache/cordova/PluginManager.java|70 54
+
+Revision: 9d0cc2ef92c6e886649a15ed63816197939c6903
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/07/2014 02:10:19
+Message:
+@Deprecate methods of PluginManager that were never meant to be public #MsgLength=71
+
+
+----
+Modified: framework/src/org/apache/cordova/PluginManager.java|9 0
+
+Revision: 5a6100979f56ac68274471a88531599c583c4b0f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/07/2014 02:28:27
+Message:
+Undeprecate some just-deprecated symbols in PluginManager. #MsgLength=97
+
+
+----
+Modified: framework/src/org/apache/cordova/PluginManager.java|0 7
+
+Revision: 519cd39e3841f595ca4887d561f45cc7a35d0602
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/07/2014 01:46:29
+Message:
+CB-7018 Fix setButtonPlumbedToJs never un-listening #MsgLength=52
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|6 2
+
+Revision: b535a74b8b6cdcbe94baeb59f1e677de01347e03
+Author: Jan Velecký <VVelda@seznam.cz>
+Date: 21/07/2014 07:04:52
+Message:
+CB-7159 Set background color of webView as well as its parent #MsgLength=94
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|1 0
+
+Revision: 7cb244e4bdbbcd965ba7eb6733a49e1767533be4
+Author: Andrey Kurdyumov <kant2002@gmail.com>
+Date: 20/07/2014 02:28:44
+Message:
+CB-7172 Force window to have focus after resume #MsgLength=130
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|3 0
+
+Revision: 2fdc6757a795c2345eb00948e66a8fb257f30aa4
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 27/06/2014 03:48:50
+Message:
+Extend whitelist to handle URLs without // chars #MsgLength=49
+
+
+----
+Modified: framework/src/org/apache/cordova/Whitelist.java|4 4
+
+Revision: 9c4da7b93eadd31a05e2829dc7e8765aee62d99f
+Author: Joe Bowser <bowserj@apache.org>
+Date: 31/07/2014 23:17:31
+Message:
+CB-7238: Minor band-aid to get tests running again, this has to go away before 3.6.0 is released, since this is an API change. #MsgLength=127
+
+
+----
+Modified: test/src/org/apache/cordova/test/CordovaWebViewTestActivity.java|3 0
+
+Revision: 7d68405f929a6813537ba08737fe153df342b2db
+Author: Joe Bowser <bowserj@apache.org>
+Date: 01/08/2014 00:23:14
+Message:
+CB-7238: I should have collapsed this, but Config.init() must go before the creation of CordovaWebView #MsgLength=103
+
+
+----
+Modified: test/src/org/apache/cordova/test/CordovaWebViewTestActivity.java|0 1
+
+Revision: 5843c7e037d29c09549bb81e9095c98ed62032ce
+Author: Archana Naik <naika@lab126.com>
+Date: 15/08/2014 02:16:40
+Message:
+Amazon related fixes after uplevel. #MsgLength=36
+
+
+----
+Modified: bin/templates/cordova/version|1 1
+Modified: framework/src/org/apache/cordova/App.java|11 7
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|5 9
+Modified: framework/src/org/apache/cordova/CordovaChromeClient.java|2 1
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|18 30
+Modified: framework/src/org/apache/cordova/PluginManager.java|59 22
+Modified: test/assets/www/cordova.js|582 806
+Modified: test/src/org/apache/cordova/test/CordovaWebViewTestActivity.java|3 2
+Modified: test/src/org/apache/cordova/test/junit/BackButtonMultiPageTest.java|4 2
+Modified: test/src/org/apache/cordova/test/junit/PluginManagerTest.java|3 8
+
+Revision: 48ba0036315bea01730e771ee3600e0dc5b6e65b
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 21/07/2014 21:20:49
+Message:
+Handle unsupported protocol errors in webview better #MsgLength=53
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebViewClient.java|13 1
+
+Revision: e8868ebedd8d1af27bf47b91edd2a5bd61852fcb
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 23/07/2014 01:53:33
+Message:
+Filter out non-launchable intents #MsgLength=34
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaUriHelper.java|3 0
+
+Revision: cdcf5f3f1eab216568415ce2d4340b12c508177d
+Author: Martin Bektchiev <martin.bektchiev@telerik.com>
+Date: 06/08/2014 20:24:51
+Message:
+CB-7265 Fix crash when navigating to custom protocol (introduced in 3.5.1) #MsgLength=95
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaUriHelper.java|7 2
+
+Revision: 96c6c52ac3bcff837696efbbffea54fe4430002b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/08/2014 04:18:56
+Message:
+CB-7261 Fix setNativeToJsBridgeMode sometimes crashing when switching to ONLINE_EVENT #MsgLength=86
+
+
+----
+Modified: framework/src/org/apache/cordova/NativeToJsMessageQueue.java|9 4
+
+Revision: 0a53a0c7a923152829a0b05fa39228db41305590
+Author: Joe Bowser <bowserj@apache.org>
+Date: 13/08/2014 02:09:53
+Message:
+Adding tests related to 3.5.1 #MsgLength=30
+
+
+----
+Added: test/src/org/apache/cordova/test/SabotagedActivity.java|73 0
+Added: test/src/org/apache/cordova/test/junit/IntentUriOverrideTest.java|73 0
+
+Revision: 5037bdc77ae05f524096b8aaf54f5abf747e011a
+Author: Joe Bowser <bowserj@apache.org>
+Date: 15/08/2014 05:29:54
+Message:
+Change in test's AndroidManifest.xml needed for the test to run properly #MsgLength=73
+
+
+----
+Modified: test/src/org/apache/cordova/test/junit/IntentUriOverrideTest.java|1 0
+
+Revision: 0f76cc4048b83a5906d75837fae53a665f1ef875
+Author: Joe Bowser <bowserj@apache.org>
+Date: 15/08/2014 05:30:31
+Message:
+Change in test's AndroidManifest.xml needed for the test to run properly. Forgot the manifest. #MsgLength=95
+
+
+----
+Modified: test/AndroidManifest.xml|14 2
+
+Revision: 0053d3dcade994c32dd8ddafa106fdf0e7e0f994
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/08/2014 01:42:43
+Message:
+CB-7044, CB-7299 Fix up PATH problems when possible. #MsgLength=278
+
+
+----
+Modified: bin/lib/check_reqs.js|63 36
+Modified: bin/lib/create.js|1 1
+Modified: bin/templates/cordova/build|2 2
+
+Revision: 99283e6b88a5aa06b71265b6898766d7dadba4e0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/08/2014 01:58:53
+Message:
+CB-7321 Don't require ant for create script #MsgLength=44
+
+
+----
+Modified: bin/lib/check_reqs.js|2 2
+Modified: bin/templates/cordova/lib/build.js|5 1
+Modified: bin/templates/cordova/lib/clean.js|5 1
+
+Revision: 41cb49ab6d0d038ccb0951342fbc5a15a0ee1fab
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 18/08/2014 21:40:33
+Message:
+CB-3445: Add an initial set of Gradle build scripts #MsgLength=321
+
+
+----
+Modified: bin/lib/create.js|13 2
+Added: bin/templates/project/build.gradle|81 0
+Added: bin/templates/project/gradle/wrapper/gradle-wrapper.properties|6 0
+Added: bin/templates/project/gradlew|164 0
+Added: bin/templates/project/gradlew.bat|90 0
+Added: bin/templates/project/libraries.gradle|7 0
+Added: bin/templates/project/settings.gradle|1 0
+Added: framework/build.gradle|33 0
+
+Revision: 7a0eb60a72899977cdc3ac64dc0370192f8efcc5
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 18/08/2014 21:44:00
+Message:
+CB-3445: Add option to build and install with gradle #MsgLength=385
+
+
+----
+Modified: bin/templates/cordova/build|7 3
+Modified: bin/templates/cordova/lib/build.js|177 54
+
+Revision: f40e8e14d8df03337e3293882fde7ddc09ea3905
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 16/08/2014 01:35:50
+Message:
+CB-3445: Add which to checked-in node_modules #MsgLength=46
+
+
+----
+Added: bin/node_modules/which/LICENSE|23 0
+Added: bin/node_modules/which/README.md|5 0
+Added: bin/node_modules/which/bin/which|14 0
+Added: bin/node_modules/which/package.json|31 0
+Added: bin/node_modules/which/which.js|104 0
+
+Revision: db0847e14959bcfd7f03a441c277e57ef514410a
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 20/06/2014 04:12:40
+Message:
+CB-3445: android: Copy Gradle wrapper from Android SDK rather than bundling a JAR #MsgLength=82
+
+
+----
+Modified: bin/lib/check_reqs.js|18 0
+Modified: bin/lib/create.js|13 3
+Deleted: bin/templates/project/gradle/wrapper/gradle-wrapper.properties|0 6
+Deleted: bin/templates/project/gradlew|0 164
+Deleted: bin/templates/project/gradlew.bat|0 90
+
+Revision: c3eda01f56f58a8a567057ad9175496657d413a1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/08/2014 02:16:27
+Message:
+CB-3445 Speed up gradle building (incremental builds go from 10s -> 1.5s for me) #MsgLength=119
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|15 0
+
+Revision: cef7168520bb25bdeeecd067ba2ec365db28eecc
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/08/2014 02:45:23
+Message:
+CB-7044 Add JAVA_HOME when not set. Be stricter about ANDROID_HOME #MsgLength=159
+
+
+----
+Modified: bin/lib/check_reqs.js|71 31
+
+Revision: 94650c0bd629deac69f4a558b4cc3a71317794cf
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/08/2014 02:50:27
+Message:
+CB-3445 Add .gradle template files for "update" as well as "create" #MsgLength=68
+
+
+----
+Modified: bin/lib/create.js|8 6
+
+Revision: 2d71d89c4d72b73dae8f6ad62036d7d80dd38b2d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/08/2014 02:51:10
+Message:
+CB-3445 Copy gradle wrapper in build instead of create #MsgLength=112
+
+
+----
+Modified: bin/lib/check_reqs.js|0 17
+Modified: bin/lib/create.js|0 17
+Modified: bin/templates/cordova/lib/build.js|19 0
+
+Revision: e59bf273b6a3c15a949ea0bc953dc74ca657d6ac
+Author: Archana Naik <naika@lab126.com>
+Date: 19/08/2014 03:43:59
+Message:
+Fixed for AmazonWebView. #MsgLength=25
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebViewClient.java|1 1
+
+Revision: 1b98e84ce2b39cd5b5ed7b9d5a2311fcb82ca3cd
+Author: Archana Naik <naika@lab126.com>
+Date: 19/08/2014 05:46:43
+Message:
+Fixing merge errors. #MsgLength=21
+
+
+----
+Modified: bin/lib/check_reqs.js|1 1
+Modified: bin/lib/create.js|1 1
+Modified: test/AndroidManifest.xml|0 1
+
+Revision: 77d5ebf89610aa6e81cbdeeae9d4287bd01b4419
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/08/2014 04:19:40
+Message:
+CB-3445 Add gradle support clean command (plus some code cleanup) #MsgLength=186
+
+
+----
+Modified: bin/templates/cordova/build|1 1
+Modified: bin/templates/cordova/clean|14 6
+Modified: bin/templates/cordova/lib/build.js|89 48
+Deleted: bin/templates/cordova/lib/clean.js|0 43
+
+Revision: 303b0aac0dd2339e55e25959e5f9ce6bf35ba200
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/08/2014 11:21:26
+Message:
+CB-7330 Don't run "android update" during creation #MsgLength=298
+
+
+----
+Modified: bin/lib/check_reqs.js|41 27
+Modified: bin/lib/create.js|39 12
+Modified: bin/templates/cordova/lib/build.js|64 23
+Added: bin/templates/project/project.properties|15 0
+
+Revision: aaf2f24af704afda84c3acb766a2eb13c13cc3f3
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/08/2014 23:53:53
+Message:
+CB-7330 Fix dangling function call in last commit (broke gradle builds) #MsgLength=72
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|0 2
+
+Revision: 0ad1ae4fcdb805f3d357fa4a454c750957298c3b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/08/2014 23:59:18
+Message:
+CB-7335 Add a .gitignore to android project template #MsgLength=53
+
+
+----
+Modified: bin/lib/create.js|1 0
+Added: bin/templates/project/gitignore|14 0
+
+Revision: 12ec1b36d8d4d453fc30e858df26636ae294c763
+Author: Refael Ackermann <refael@empeeric.com>
+Date: 18/08/2014 19:53:07
+Message:
+CB-7325 Fix error message in android_sdk_version.js when missing SDK on windows #MsgLength=100
+
+
+----
+Modified: bin/lib/android_sdk_version.js|1 1
+
+Revision: c6f47be9cb35e8c597ba2a47e568a95d0149a980
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 20/08/2014 22:44:48
+Message:
+CB-3445: Read project.properties to configure gradle libraries #MsgLength=63
+
+
+----
+Modified: bin/lib/create.js|0 1
+Modified: bin/templates/project/build.gradle|14 2
+Deleted: bin/templates/project/libraries.gradle|0 7
+Modified: bin/templates/project/settings.gradle|18 1
+
+Revision: c8b00ec240a564805fa6f2173e3a582dbca6e869
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 22/08/2014 03:59:05
+Message:
+CB-7291: Add defaults to external whitelist #MsgLength=44
+
+
+----
+Modified: framework/res/xml/config.xml|14 1
+
+Revision: 8afa753c64c980c630988e55ce79a48bc88e17c7
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 22/08/2014 04:10:32
+Message:
+CB-7291: Only add file, content and data URLs to internal whitelist #MsgLength=68
+
+
+----
+Modified: framework/src/org/apache/cordova/ConfigXmlParser.java|5 0
+Modified: framework/src/org/apache/cordova/Whitelist.java|0 4
+
+Revision: 5f2ced5ba09c1b0f7080537d082e474b98b4e7cc
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 27/08/2014 02:58:00
+Message:
+CB-7291: Restrict meaning of "*" in internal whitelist to just http and https #MsgLength=78
+
+
+----
+Modified: framework/src/org/apache/cordova/ConfigXmlParser.java|13 1
+
+Revision: f81ba6c6ffb455995e2173db61ddd4cd1bd9eba2
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 27/08/2014 04:38:04
+Message:
+CB-7291 propogate change in method signature to the native tests #MsgLength=65
+
+
+----
+Modified: test/src/org/apache/cordova/test/CordovaWebViewTestActivity.java|2 2
+
+Revision: 8e947149ed817a23eb914cac34bf5dcd0a7959aa
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 27/08/2014 05:20:58
+Message:
+CB-7410 add whitelist entries to get iframe/GoogleMaps working #MsgLength=63
+
+
+----
+Modified: test/res/xml/config.xml|4 0
+
+Revision: 64a01382f490724ddd45ed976ee9d8c129dfc63c
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 27/08/2014 21:04:32
+Message:
+CB-7385 update cordova.js for testing prior to branch/tag #MsgLength=58
+
+
+----
+Modified: framework/assets/www/cordova.js|31 4
+
+Revision: 58877a5440da33b1c04b01f84e0f8440f033b2fd
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 28/08/2014 01:56:31
+Message:
+CB-7410 clarify the title #MsgLength=26
+
+
+----
+Modified: test/assets/www/index.html|1 1
+Modified: test/res/values/strings.xml|1 1
+
+Revision: e5e5c5e04dd3953bdd6bff0070871561b19d7cb0
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 28/08/2014 23:26:35
+Message:
+CB-3445: Ensure that JAR files in libs directory are included #MsgLength=62
+
+
+----
+Modified: bin/templates/project/build.gradle|1 0
+
+Revision: bb2029db21e78bc307e9fefb4eb1e6761e3ba2b4
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 12/08/2014 23:02:55
+Message:
+CB-7291: Add external-launch-whitelist and use it for filtering intent launches #MsgLength=80
+
+
+----
+Modified: framework/src/org/apache/cordova/Config.java|21 3
+Modified: framework/src/org/apache/cordova/ConfigXmlParser.java|9 3
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|7 5
+Modified: framework/src/org/apache/cordova/CordovaUriHelper.java|11 4
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|16 8
+
+Revision: b07daec774a228b284dc403c5b309268d7fb3a8f
+Author: Archana Naik <naika@lab126.com>
+Date: 29/08/2014 03:01:16
+Message:
+updated cordova.js in tests. #MsgLength=29
+
+
+----
+Modified: test/assets/www/cordova.js|37 10
+
+Revision: cedeae182ef9afdd0f8990f94c19f1e21b53fb62
+Author: Archana Naik <naika@lab126.com>
+Date: 30/08/2014 01:11:18
+Message:
+Set VERSION to 3.7.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+Modified: bin/templates/cordova/version|1 1
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|1 1
+Modified: package.json|31 31
+
+Revision: 3d7550ae0978ca22c1dc5821edad8d0b3e3d3987
+Author: Archana Naik <naika@lab126.com>
+Date: 30/08/2014 01:11:20
+Message:
+Update JS snapshot to version 3.7.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: framework/assets/www/cordova.js|2 29
+
+Revision: 82425ce8eb91a7228ca8a11c7a119005b34a1189
+Author: Joe Bowser <bowserj@apache.org>
+Date: 04/09/2014 06:23:41
+Message:
+CB-7460: Fixing bug with KitKat where the background colour would override the CSS colours on the application #MsgLength=110
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|0 2
+
+Revision: 22ebf1ab600f61111905048ae37fcdb9be483b4d
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 13/09/2014 04:31:04
+Message:
+Update JS snapshot to version 3.7.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: framework/assets/www/cordova.js|2 2
+
+Revision: e384ccbdd3d79d84c379cc0a5429ea3a86bda796
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 29/08/2014 04:17:54
+Message:
+CB-3445: Add environment variable 'BUILD_MULTIPLE_APKS' for splitting APKs based on architecture #MsgLength=97
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|19 7
+Modified: bin/templates/project/build.gradle|1 1
+
+Revision: c980bbc8ba9b118688c62d60a8a24b8d3b433164
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 30/08/2014 04:00:13
+Message:
+CB-3445: Allow build and run scripts to select APK by architecture #MsgLength=67
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|2 2
+Modified: bin/templates/cordova/lib/device.js|6 1
+
+Revision: ccc4a57c0f4e4a556891d9ad90c3af85533eab80
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/08/2014 04:38:38
+Message:
+CB-7410 Fix Basic Authentication test #MsgLength=229
+
+
+----
+Modified: test/src/org/apache/cordova/test/basicauth.java|6 4
+
+Revision: 7ed34e5ca20c4736ced7f60ba83c7c1f7271d8eb
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/08/2014 05:38:03
+Message:
+CB-7410 Fix the errorUrl test #MsgLength=167
+
+
+----
+Modified: test/assets/www/htmlnotfound/error.html|36 17
+
+Revision: b54fde6c06a84aafe08c23db7ec7b849400b4d82
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/08/2014 06:07:29
+Message:
+CB-7410 fix the menu test #MsgLength=102
+
+
+----
+Modified: test/assets/www/menus/index.html|1 1
+Modified: test/src/org/apache/cordova/test/menus.java|3 1
+
+Revision: 4970038ccdb6c6b4fd1be8cb20a745ccf309ed92
+Author: Joe Bowser <bowserj@apache.org>
+Date: 05/09/2014 01:32:29
+Message:
+CB-7463: Adding licences.  I don't know what the gradle syntax is for comments, that still needs to be done. #MsgLength=109
+
+
+----
+Modified: test/src/org/apache/cordova/test/SabotagedActivity.java|19 0
+Modified: test/src/org/apache/cordova/test/junit/IntentUriOverrideTest.java|19 0
+
+Revision: 8a6cdcc4bd81d1fc8c2bdb91df84966e94136836
+Author: Joe Bowser <bowserj@apache.org>
+Date: 05/09/2014 01:49:43
+Message:
+CB-7463: Looked at the Apache BigTop git, gradle uses C-style comments #MsgLength=71
+
+
+----
+Modified: framework/build.gradle|21 0
+
+Revision: 6604aec53c51aa8f37346ebfff99231091f166f9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/09/2014 22:14:38
+Message:
+CB-7511 Auto-detect Android SDK when Android Studio is installed #MsgLength=65
+
+
+----
+Modified: bin/lib/check_reqs.js|16 1
+
+Revision: 9d74ec4800331bc0a3a536d158d9648036aa8a85
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 10/09/2014 22:54:21
+Message:
+CB-7463: Adding licence to project template gradle file #MsgLength=56
+
+
+----
+Modified: bin/templates/project/build.gradle|19 0
+
+Revision: fe85b0b835c8c47300803188a37c0d389564c516
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 10/09/2014 22:57:43
+Message:
+CB-7512: Determine SDK and build tools version dynamcally at build time #MsgLength=72
+
+
+----
+Modified: bin/templates/project/build.gradle|4 2
+Added: bin/templates/project/cordova.gradle|147 0
+Modified: framework/build.gradle|2 2
+
+Revision: 97218ce037a2092d104f3abc87df234192356956
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 10/09/2014 23:39:29
+Message:
+CB-7512: Read android target from project.properties if possible #MsgLength=65
+
+
+----
+Modified: bin/templates/project/cordova.gradle|9 33
+
+Revision: d31dbe81d47d8ada7731337dbaaaf7bb93db0d07
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/09/2014 00:42:37
+Message:
+CB-7330 Don't run check_reqs for bin/create. #MsgLength=142
+
+
+----
+Modified: bin/lib/create.js|1 6
+
+Revision: 9ec000c3cbd2cbd4d8739ae33f154af23d453763
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/09/2014 00:43:40
+Message:
+Use add --compact flag in check_reqs when listing targets. No functional change. #MsgLength=81
+
+
+----
+Modified: bin/lib/check_reqs.js|22 17
+
+Revision: bd291372756c1d2b21b87091f1a3c6f642f113e1
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 12/09/2014 03:12:07
+Message:
+CB-7512: Copy cordova.gradle file to project root on build #MsgLength=59
+
+
+----
+Modified: bin/lib/create.js|1 0
+
+Revision: a90fc0d2cb9da9047ac82a214ad622036e5ca556
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 12/09/2014 03:36:35
+Message:
+CB-7511 Auto-detect android sdk when using stand-alone sdk installer #MsgLength=69
+
+
+----
+Modified: bin/lib/check_reqs.js|13 1
+
+Revision: 823cb6e0ec9ccf8491ae06abbe51e7b057214959
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 13/09/2014 02:19:13
+Message:
+CB-7536 Tweak error messages for missing JDK / SDK / AVDs #MsgLength=58
+
+
+----
+Modified: bin/lib/check_reqs.js|15 7
+Modified: bin/templates/cordova/lib/emulator.js|8 12
+
+Revision: 30f9835c262a48f978bf0d93a4056d6e11c5d651
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 13/09/2014 04:17:42
+Message:
+CB-7536 Tweak Android SDK not installed error message. #MsgLength=99
+
+
+----
+Modified: bin/lib/check_reqs.js|1 1
+
+Revision: 82b77c3bad19f6556f00d7103d36b22b4824b726
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 13/09/2014 05:00:29
+Message:
+Fix invalid syntax (missing + in multiline string) #MsgLength=51
+
+
+----
+Modified: bin/templates/cordova/lib/emulator.js|1 1
+
+Revision: 9062a78bc41307575ed97bc125b341623c04b6aa
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 16/09/2014 00:15:32
+Message:
+CB-7512: Fix logic for detecting SDK directory #MsgLength=47
+
+
+----
+Modified: bin/templates/project/cordova.gradle|13 16
+
+Revision: f9e6447358920ec3a766fc5e684d8b2e51099817
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/09/2014 02:23:26
+Message:
+CB-7554 Use x86 apk when deploying to an intel device / emulator #MsgLength=65
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|15 0
+Modified: bin/templates/cordova/lib/device.js|10 11
+Modified: bin/templates/cordova/lib/emulator.js|6 3
+
+Revision: 0c5c9a3a4716462fc4322706e44d339c179d38de
+Author: mbillau <mike.billau@gmail.com>
+Date: 09/09/2014 21:38:15
+Message:
+Second part of CB-7499, support RTL text direction #MsgLength=51
+
+
+----
+Modified: bin/templates/project/AndroidManifest.xml|1 1
+
+Revision: 6dc2407795460180f9e31d1468a7469ab5fa575c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 16/09/2014 22:28:34
+Message:
+CB-7536 check_reqs: windows tweaks + sdk manager error message #MsgLength=412
+
+
+----
+Modified: bin/lib/check_reqs.js|9 3
+
+Revision: 420e72b2ebcdf69ad4f579c79349755217b7b3b0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2014 01:00:27
+Message:
+CB-7512 Change gradle android plugins from 0.10 -> 0.12 #MsgLength=56
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|1 1
+Modified: bin/templates/project/build.gradle|2 2
+Modified: bin/templates/project/cordova.gradle|1 1
+Modified: framework/build.gradle|6 1
+
+Revision: db03c8b0b294a7280047beed8ebae3b244412c71
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2014 01:01:25
+Message:
+CB-7512 Add gradle environment vars for signing apks #MsgLength=53
+
+
+----
+Modified: bin/templates/project/build.gradle|41 0
+
+Revision: 3e18394a05f669414eaead788f452da142726b18
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2014 02:13:49
+Message:
+CB-7512 Speed up gradle builds by building debug or release (not both) #MsgLength=71
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|6 1
+
+Revision: 82fb93d64866e0a4987ed2766eff9c1a429adf27
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2014 02:59:43
+Message:
+CB-7512 Use aligned apk rather than unaligned apk when sorting #MsgLength=63
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|13 7
+
+Revision: a13d4bd8adc82ba21cfa5cd7ef06878f2d30f922
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2014 03:14:40
+Message:
+CB-7512 Fix gradle not copying all archs to out/ (broken by prev commit) #MsgLength=73
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|7 5
+
+Revision: 8e83ea0db8a77f882c623d7f731c359da9c5e8f0
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/09/2014 13:59:34
+Message:
+CB-7493 Adds test-build command to package.json #MsgLength=48
+
+
+----
+Added: .travis.yml|5 0
+Modified: package.json|2 1
+
+Revision: e95f47a8d9b2714c202328bf6804371985bfe046
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/09/2014 02:23:30
+Message:
+CB-7579 Fix run script's ability to use non-arch-specific APKs #MsgLength=63
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|74 78
+Modified: bin/templates/cordova/lib/device.js|3 2
+Modified: bin/templates/cordova/lib/emulator.js|3 2
+Modified: bin/templates/cordova/lib/run.js|13 13
+
+Revision: 68a92cec14ae6bd27f5fb39310ee342104f38dfc
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/09/2014 03:29:57
+Message:
+CB-7512 Make key password optional & prompt for it when missing #MsgLength=64
+
+
+----
+Modified: bin/templates/project/build.gradle|46 3
+
+Revision: 3f2397a0fdc2d1b4d415d5015446d43adfe9ba7c
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 18/09/2014 03:54:28
+Message:
+CB-3445: Make minSdkVersion and base versionCode settable through env vars #MsgLength=75
+
+
+----
+Modified: bin/templates/project/build.gradle|1 1
+Modified: bin/templates/project/cordova.gradle|1 1
+
+Revision: 3add1138faec0da44c3447ae6f1ec118a8d8065e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/09/2014 09:27:06
+Message:
+CB-7512 Fix gradle asking for release password when building for debug #MsgLength=71
+
+
+----
+Modified: bin/templates/project/build.gradle|6 4
+
+Revision: 304df34183ed8f2b2a1c7cc67cf932be23a5904e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/09/2014 08:54:28
+Message:
+CB-7512 Make gradle build only a single config for sub-libraries (release vs debug) #MsgLength=84
+
+
+----
+Modified: bin/templates/project/build.gradle|12 9
+Modified: framework/build.gradle|1 0
+
+Revision: f9cd9a17adfc584a4f8c085cd89f8ae5275d291e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/09/2014 09:35:39
+Message:
+CB-7512 Use a standard build.gradle for all plugins #MsgLength=112
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|7 0
+Added: bin/templates/cordova/lib/plugin-build.gradle|63 0
+Modified: framework/build.gradle|20 18
+
+Revision: 73e2a9a68a63669f14cfa41036f9b86220792a3b
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 23/09/2014 04:04:24
+Message:
+Added gradle distribution URL updating. #MsgLength=112
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|8 0
+Modified: framework/build.gradle|1 0
+
+Revision: c66c317b81ddef45fb3bfc5b4387ea212ba141e7
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/09/2014 09:03:00
+Message:
+gradle: Write sub-project list explicitly to make Android Studio happy #MsgLength=71
+
+
+----
+Modified: bin/lib/create.js|0 1
+Modified: bin/templates/cordova/lib/build.js|16 0
+Modified: bin/templates/project/build.gradle|4 16
+Deleted: bin/templates/project/settings.gradle|0 18
+
+Revision: 9e636e7765c9b228b0092c858c94014c1bce1070
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/09/2014 09:03:17
+Message:
+gradle: Have project's build.gradle look for a build-extras.gradle #MsgLength=67
+
+
+----
+Modified: bin/templates/project/build.gradle|3 0
+
+Revision: f10faf598745eaa1732f5c81ee0abd2145cd3d57
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/09/2014 09:04:04
+Message:
+gradle: Fix warning about dynamic properties being deprecated #MsgLength=62
+
+
+----
+Modified: bin/templates/project/cordova.gradle|2 2
+
+Revision: 46cdac94344f99820a949235a16af67257781816
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 25/09/2014 04:07:31
+Message:
+gradle: Build only the active architecture when applicable #MsgLength=59
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|38 18
+Modified: bin/templates/cordova/lib/device.js|42 31
+Modified: bin/templates/cordova/lib/emulator.js|43 32
+Modified: bin/templates/cordova/lib/run.js|51 58
+
+Revision: 1b72abc207d53281c6907f6b13ddb957b0c31422
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 23/09/2014 04:04:24
+Message:
+Added gradle distribution URL updating. (commit fix-up) #MsgLength=56
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|1 2
+
+Revision: bfdc08abd8a0c877bc7f4ce3a90d4b759ff5940a
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 25/09/2014 23:25:09
+Message:
+CB-7410 update the docs to match the actual title #MsgLength=50
+
+
+----
+Modified: test/README.md|1 1
+
+Revision: d89a39fae5f0c7eba771748df1325df9df07d6a6
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/09/2014 22:15:37
+Message:
+CB-7634 Detect JAVA_HOME properly on Ubuntu #MsgLength=44
+
+
+----
+Modified: bin/lib/check_reqs.js|2 1
+
+Revision: 40a3abbdc13c6ad0b033dc597f3f8ffa1cc3674a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 30/09/2014 14:49:12
+Message:
+updated .gitignore to include npm-debug.log #MsgLength=44
+
+
+----
+Modified: .gitignore|1 0
+
+Revision: 0585fd5f32cb010391904c3c0d1eeb52d00dd584
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 01/10/2014 06:37:10
+Message:
+CB-7674 move preference activation back into onCreate() #MsgLength=784
+
+
+----
+Modified: bin/templates/project/Activity.java|0 3
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|34 21
+Modified: test/res/xml/config.xml|1 0
+Modified: test/src/org/apache/cordova/test/menus.java|1 2
+
+Revision: 5c273343d8bdbe9c843251a56e014207c77e6ac4
+Author: Joe Bowser <bowserj@apache.org>
+Date: 01/10/2014 08:57:42
+Message:
+CB-7674: Added sleep to avoid null error after most recent change to not break API #MsgLength=83
+
+
+----
+Modified: test/src/org/apache/cordova/test/junit/IntentUriOverrideTest.java|1 0
+
+Revision: 346f53dc338765e6f5f28fb8b1d5f173a51d3e16
+Author: Martin Gonzalez <martin.c.glez.glez@gmail.com>
+Date: 03/10/2014 13:47:13
+Message:
+CB-6837 Fix leaked window when hitting back button while alert being rendered #MsgLength=413
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaChromeClient.java|12 3
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|3 0
+
+Revision: 881e6662c04d5dd43a6c1fe5fab004a329bd55e2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/10/2014 03:14:45
+Message:
+Update .gitignore to ignore /framework/build and /node_modules #MsgLength=63
+
+
+----
+Modified: .gitignore|2 0
+
+Revision: 30afdfff44227741927da1fb5ec2f92bebee5afc
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/10/2014 03:14:51
+Message:
+Fix --shared flag of create script (broke in recent gradle changes) #MsgLength=68
+
+
+----
+Modified: bin/lib/create.js|1 1
+
+Revision: d7a6c574a809c143ab40889ee88854fca0622e0d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/10/2014 22:33:31
+Message:
+CB-7714 Teach check_reqs about brew's install location for android SDK #MsgLength=71
+
+
+----
+Modified: bin/lib/check_reqs.js|8 2
+
+Revision: ca84c3435aebeb8d8bfad55b26a40794527718e1
+Author: Rui Zhao <oahziur@gmail.com>
+Date: 07/10/2014 00:05:06
+Message:
+CB-7707 Added multipart PluginResult (close #125) #MsgLength=143
+
+
+----
+Modified: framework/assets/www/cordova.js|62 48
+Modified: framework/src/org/apache/cordova/NativeToJsMessageQueue.java|53 32
+Modified: framework/src/org/apache/cordova/PluginResult.java|19 0
+
+Revision: 76044fac1dff57538f78409bc0062e0513449f8b
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 23/09/2014 17:21:17
+Message:
+CB-6511 Fixes build for android when app name contains unicode characters. #MsgLength=95
+
+
+----
+Modified: bin/lib/create.js|3 1
+Modified: package.json|1 1
+
+Revision: dd92376108206a924137979bd6d6788f4d266286
+Author: Joe Bowser <bowserj@apache.org>
+Date: 15/10/2014 01:11:09
+Message:
+Replacing Math.random() with something a little more random. #MsgLength=61
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaBridge.java|4 1
+
+Revision: 5244afaa4dfdfbcdc7ebe03176301da2aa1df880
+Author: Joe Bowser <bowserj@apache.org>
+Date: 18/10/2014 04:52:33
+Message:
+Undoing change to Math.random() for now, this creates a weird bug #MsgLength=66
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaBridge.java|1 2
+
+Revision: 7634ecb0a053b56b32cf7ebebf3e98ca71a7495e
+Author: Joe Bowser <bowserj@apache.org>
+Date: 18/10/2014 06:30:28
+Message:
+Fixed the SecureRandom so it only returns positive values #MsgLength=58
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaBridge.java|2 1
+
+Revision: 5c1c26de8314a532fa8d216fa1e935827acd82c1
+Author: Prabhjot Singh <prabhjos@amazon.com>
+Date: 20/10/2014 13:19:37
+Message:
+Updated cordova.js in test and framework #MsgLength=41
+
+
+----
+Modified: framework/assets/www/cordova.js|25 4
+Modified: test/assets/www/cordova.js|85 77
+
+Revision: 39afa074eea07c37af63f5d5c1f9efb78158a08e
+Author: Archana Naik <naika@lab126.com>
+Date: 28/10/2014 05:24:03
+Message:
+Updated cordova.js for fireos. #MsgLength=31
+
+
+----
+Modified: framework/assets/www/cordova.js|27 1
+
+Revision: 900db964a67ad7715d0aa7eb08891ef1f52da6e0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/10/2014 00:43:30
+Message:
+gradle: Allow absolute paths to keystore files #MsgLength=47
+
+
+----
+Modified: bin/templates/project/build.gradle|12 5
+
+Revision: 0367d93b9df156c137116fa03b3be1051b559aa6
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/10/2014 00:59:34
+Message:
+gradle: Allow storeType to be set (allows using .p12 files) #MsgLength=60
+
+
+----
+Modified: bin/templates/project/build.gradle|10 0
+
+Revision: e99f977f68ac75fd42a85384d5ae080b2fcd66d6
+Author: Chris Alfano <chris@jarv.us>
+Date: 27/10/2014 23:51:28
+Message:
+CB-7726 fix typo in gitignore: ant-built -> ant-build #MsgLength=74
+
+
+----
+Modified: bin/templates/project/gitignore|1 1
+
+Revision: 95d8067036686d6d07a4d7793cbc8f9ff8a68fc4
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 28/10/2014 03:26:38
+Message:
+CB-7758: Allow content-url-hosted pages to access the bridge #MsgLength=278
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaBridge.java|7 3
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|1 1
+
+Revision: db508a2ce804747b783b5ae200525bf2ffd7fe02
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/11/2014 04:57:51
+Message:
+CB-7940 Disable exec bridge if bridgeSecret is wrong #MsgLength=53
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaBridge.java|2 0
+
+Revision: 181bf856361297d8dcc595a043bf8b0ec43aa88e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/11/2014 04:33:10
+Message:
+CB-7974 Cancel timeout timer if view is destroyed #MsgLength=50
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|3 0
+
+Revision: 4142cbb57cc63c15f5fed1719a981cec75a71251
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/11/2014 05:23:32
+Message:
+CB-7976 Use webView's context rather than Activity's context for intent receiver #MsgLength=81
+
+
+----
+Modified: framework/src/org/apache/cordova/App.java|2 2
+
+Revision: 54784a0948d3b3bd216383804e5e0729b5abf4b5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/11/2014 14:11:21
+Message:
+CB-8031 Fix race condition that shows as ConcurrentModificationException #MsgLength=139
+
+
+----
+Modified: framework/src/org/apache/cordova/PluginManager.java|29 11
+
+Revision: 6003b9471fc8e3f7e0eb45fcb359686da614c7c9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/11/2014 00:44:49
+Message:
+CB-8081 Allow gradle builds to use Java 6 instead of requiring 7 #MsgLength=65
+
+
+----
+Modified: bin/templates/cordova/lib/plugin-build.gradle|2 2
+Modified: bin/templates/project/build.gradle|2 2
+Modified: framework/build.gradle|2 2
+
+Revision: b84610a6cfdd02d466ce1d7de8be9fff380f3bd6
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/11/2014 23:52:19
+Message:
+CB-6153 Add a preference for controlling hardware button audio stream (DefaultVolumeStream) #MsgLength=273
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|6 3
+
+Revision: b8dcd4e647fdfb0f21d3ebb77ea333b3f3d26720
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/12/2014 23:04:54
+Message:
+CB-8112 Turn off mediaPlaybackRequiresUserGesture #MsgLength=117
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|13 3
+
+Revision: 251130bba2e936bf71458bb55c0e8ea57c03f2f9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/12/2014 22:58:00
+Message:
+CB-8119 Restart adb when we detect it's hung #MsgLength=45
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|37 5
+Modified: bin/templates/cordova/lib/device.js|30 10
+
+Revision: b409290b1d1cd7a4dea61c1835dbf708b7f4e964
+Author: Brian Geppert <briangeppert@briangeppert.com>
+Date: 10/12/2014 01:57:29
+Message:
+Revert Gradle distributionUrlRegex cleanup. #MsgLength=107
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|2 1
+
+Revision: 87602e303be2df4658ef4b35a958feac544e0145
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 10/12/2014 23:07:05
+Message:
+CB-8143: Use the correct Android Gradle plugin for the installed Gradle version #MsgLength=80
+
+
+----
+Modified: bin/templates/project/build.gradle|12 2
+
+Revision: 585db69f6bf3baa2906805421208bdf4c8e29299
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/11/2014 15:46:39
+Message:
+CB-3679 Move splashscreen logic into splashscreen plugin #MsgLength=312
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|37 161
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|7 4
+Added: framework/src/org/apache/cordova/SplashScreenInternal.java|252 0
+
+Revision: df49aca55e3dfb1cceba8a1966ccb486dc415e45
+Author: fujunwei <junwei.fu@intel.com>
+Date: 17/11/2014 15:52:40
+Message:
+Add a section for plugin extensions #MsgLength=264
+
+
+----
+Modified: bin/templates/project/build.gradle|3 0
+
+Revision: 0ed7d2735298378480b670a1e4658a0bf73331d5
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 27/10/2014 22:14:35
+Message:
+CB-7881 Android tooling shouldn't lock application directory #MsgLength=73
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|2 1
+Modified: bin/templates/cordova/lib/device.js|5 4
+Modified: bin/templates/cordova/lib/emulator.js|8 7
+Modified: bin/templates/cordova/lib/log.js|2 1
+
+Revision: 533fd37315c58bdc0ef495040c815d65a356aa51
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/12/2014 09:06:38
+Message:
+Close #137 (already merged). #MsgLength=29
+
+
+----
+Modified: CONTRIBUTING.md|3 2
+
+Revision: 25a43b49ce39917bde4d82c84ff810404d620486
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/12/2014 09:59:51
+Message:
+Close #126 (not-a-problem) #MsgLength=27
+
+
+----
+Modified: CONTRIBUTING.md|1 1
+
+Revision: 06b3ee5e2737468a4a7b4c85080160cfcf89719f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/12/2014 09:30:59
+Message:
+CB-8147 Have corodva/build warn about unrecognized flags rather than fail #MsgLength=86
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|7 2
+
+Revision: f36ebacd2de06bd61bae9bd1c53c08a0fa942db0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/12/2014 10:16:18
+Message:
+Fix syntax error in 3aca14d53068 #MsgLength=33
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|2 2
+
+Revision: 24d21700d662c47f9fed6fab1162b37ba1ac5f8c
+Author: Daniel Toplak <d.toplak@cadenas.de>
+Date: 26/11/2014 15:31:45
+Message:
+CB-8079 Use activity class package name, but fallback to application package name when looking for splash screen drawable #MsgLength=134
+
+
+----
+Modified: framework/src/org/apache/cordova/CordovaPreferences.java|3 0
+Modified: framework/src/org/apache/cordova/SplashScreenInternal.java|3 0
+
+Revision: 11b2b1f43febe74f6955576c2ddb9fea12ba90fe
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/12/2014 03:17:55
+Message:
+CB-8176 Update Android SDK search path for Android Studio 1.0 #MsgLength=62
+
+
+----
+Modified: bin/lib/check_reqs.js|9 3
+
+Revision: 6b60c905af987b3a57865e42c07683089ff4c63a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/12/2014 23:21:17
+Message:
+CB-8202 Fix gradle build signing when passwords provided interactively #MsgLength=71
+
+
+----
+Modified: bin/templates/project/build.gradle|6 7
+
+Revision: 9ea7459e6b0ee59e523a8abaa2127bd13e7e73a5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/12/2014 00:19:21
+Message:
+CB-8143 Use gradle plugin 1.0.0 for Android Studio 1.0.0 #MsgLength=57
+
+
+----
+Modified: bin/templates/project/build.gradle|5 1
+
+Revision: 623efcf2b8b27a0ea3cf7d485a0892bb1c894eed
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/12/2014 00:37:06
+Message:
+CB-8143 Use gradle 2.2.1 instead of 1.12 to appease Android Studio 1.0 warning-on-startup #MsgLength=90
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|2 2
+Modified: bin/templates/project/build.gradle|1 1
+
+Revision: 92dbea709e84d71c373c4291ae3857ae53c51db4
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 23/12/2014 02:24:08
+Message:
+CB-8204: Reinstate link tasks to avoid gradle build failures #MsgLength=61
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|0 23
+
+Revision: 1ce29c2a17a0521da77639dcfe050159a8ea85b2
+Author: fujunwei <junwei.fu@intel.com>
+Date: 23/12/2014 09:34:36
+Message:
+Allow plugins to set ext.multiarch to enable multiple APK building #MsgLength=317
+
+
+----
+Modified: bin/templates/project/build.gradle|2 2
+
+Revision: 252ceaf6c52a97df09d22d2f469bdcd2533b85c3
+Author: Mark Koudritsky <kamrik@gmail.com>
+Date: 07/11/2014 04:38:48
+Message:
+CB-7980: Add 9 to versionCode for minSdk 20+ if not multiarch #MsgLength=62
+
+
+----
+Modified: bin/templates/project/build.gradle|5 3
+
+Revision: a08f80571fc12a064c657415a92886c98cc11a8d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 24/12/2014 05:26:43
+Message:
+CB-7980 Add --minSdkVersion and --versionCode flags to cordova/build command #MsgLength=313
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|24 10
+Modified: bin/templates/project/build.gradle|14 3
+
+Revision: d86bc9d36474540160271157c130752d31aafe66
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 31/12/2014 11:56:43
+Message:
+CB-8229 Gradle: Add CordovaLib as a dependency to all plugin sub-projects #MsgLength=74
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|3 1
+Modified: bin/templates/cordova/lib/plugin-build.gradle|18 2
+Modified: framework/build.gradle|17 10
+
+Revision: 83c8f22451d94a79abb8ec961e0db3dbcac04dd6
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 31/12/2014 11:57:53
+Message:
+CB-8228 Gradle: Allow plugins to use Maven dependencies #MsgLength=56
+
+
+----
+Modified: bin/templates/project/build.gradle|5 0
+
+Revision: 98b1f9780fbcd7af804894d4fecad6391128c1c0
+Author: Jason Chase <jasonpchase@gmail.com>
+Date: 25/12/2014 01:33:31
+Message:
+CB-8210 Use PluginResult instead of sendJavascript() for keyboard events (close #142) #MsgLength=408
+
+
+----
+Modified: framework/assets/www/cordova.js|41 28
+Modified: framework/src/org/apache/cordova/App.java|29 1
+Modified: framework/src/org/apache/cordova/CordovaWebView.java|1 1
+Modified: framework/src/org/apache/cordova/LinearLayoutSoftKeyboardDetect.java|18 9
+
+Revision: 1bbac72c8daa3161cc671daac34d6b34247260f3
+Author: Murat Sutunc <muratsu@microsoft.com>
+Date: 30/12/2014 03:43:46
+Message:
+CB-8168 Add support for `cordova/run --list` (closes #139) #MsgLength=59
+
+
+----
+Modified: bin/templates/cordova/lib/run.js|32 1
+
+Revision: 79fca25044c7c2f769c49f3456195ab02f236b66
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/02/2015 09:40:48
+Message:
+CB-8417 moved platform specific js into platform #MsgLength=49
+
+
+----
+Added: cordova-js-src/android/nativeapiprovider.js|36 0
+Added: cordova-js-src/android/promptbasednativeapi.js|35 0
+Added: cordova-js-src/exec.js|290 0
+Added: cordova-js-src/platform.js|65 0
+Added: cordova-js-src/plugin/android/app.js|107 0
+
+Revision: 7ec09a6bdcab3b7a31d3fe8c051e2fdea5f7e8d9
+Author: Joe Bowser <bowserj@apache.org>
+Date: 16/05/2015 02:15:34
+Message:
+Removing Intent funtionality out of 3.6 #MsgLength=40
+
+
+----
+Modified: framework/src/org/apache/cordova/Config.java|0 1
+Modified: framework/src/org/apache/cordova/CordovaActivity.java|0 1
+Modified: framework/src/org/apache/cordova/CordovaPreferences.java|2 84
+
+Revision: 7a6c4341f92fc854a99b13f1477e3bac50208a79
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 17/06/2015 12:30:59
+Message:
+Adding .ratignore file. #MsgLength=24
+
+
+----
+Added: .ratignore|4 0
+
+Revision: f4bce136019177aca7224fd90bc3151fdf7d99f4
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/10/2016 13:30:41
+Message:
+Add github pull request template #MsgLength=33
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|22 0
+
+Revision: ebc5bc6405367216ff466d00ad322530472c3444
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/12/2017 09:52:32
+Message:
+[CB-12762] point package.json repo items to github instead of apache mirrors site #MsgLength=81
+
+
+----
+Modified: package.json|2 2
+
+Revision: b04501804b0261b1a5a7510d5db34ebd4da25bf9
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 17/04/2019 01:16:37
+Message:
+deprecation notice #MsgLength=18
+
+
+----
+Modified: README.md|10 0
+

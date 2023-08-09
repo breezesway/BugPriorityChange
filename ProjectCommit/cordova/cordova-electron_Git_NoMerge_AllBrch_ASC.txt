@@ -1,0 +1,3053 @@
+Revision: 10b8c6613fdcdb9f000f16190505b6e2ab9e0931
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 31/05/2015 08:59:39
+Message:
+added necessary files to run #MsgLength=29
+
+
+----
+Added: CONTRIBUTING.md|37 0
+Added: README.md|27 0
+Added: bin/create|35 0
+Added: bin/create.bat|26 0
+Added: bin/lib/check_reqs.js|26 0
+Added: bin/lib/create.js|76 0
+Added: bin/lib/update.js|56 0
+Added: bin/templates/project/cordova/build|33 0
+Added: bin/templates/project/cordova/build.bat|26 0
+Added: bin/templates/project/cordova/clean|37 0
+Added: bin/templates/project/cordova/defaults.xml|22 0
+Added: bin/templates/project/cordova/lib/build.js|63 0
+Added: bin/templates/project/cordova/lib/clean.js|48 0
+Added: bin/templates/project/cordova/lib/exec.js|46 0
+Added: bin/templates/project/cordova/lib/main.js|35 0
+Added: bin/templates/project/cordova/lib/run.js|16 0
+Added: bin/templates/project/cordova/run|31 0
+Added: bin/templates/project/cordova/run.bat|26 0
+Added: bin/templates/project/cordova/version|25 0
+Added: bin/templates/project/cordova/version.bat|26 0
+Added: bin/templates/project/www/css/index.css|115 0
+Added: bin/templates/project/www/img/logo.png|0 0
+Added: bin/templates/project/www/index.html|43 0
+Added: bin/templates/project/www/js/index.js|49 0
+Added: bin/templates/project/www/res/icon/android/icon-36-ldpi.png|0 0
+Added: bin/templates/project/www/res/icon/android/icon-48-mdpi.png|0 0
+Added: bin/templates/project/www/res/icon/android/icon-72-hdpi.png|0 0
+Added: bin/templates/project/www/res/icon/android/icon-96-xhdpi.png|0 0
+Added: bin/templates/project/www/res/icon/bada-wac/icon-48-type5.png|0 0
+Added: bin/templates/project/www/res/icon/bada-wac/icon-50-type3.png|0 0
+Added: bin/templates/project/www/res/icon/bada-wac/icon-80-type4.png|0 0
+Added: bin/templates/project/www/res/icon/bada/icon-128.png|0 0
+Added: bin/templates/project/www/res/icon/blackberry/icon-80.png|0 0
+Added: bin/templates/project/www/res/icon/blackberry10/icon-80.png|0 0
+Added: bin/templates/project/www/res/icon/ios/icon-57-2x.png|0 0
+Added: bin/templates/project/www/res/icon/ios/icon-57.png|0 0
+Added: bin/templates/project/www/res/icon/ios/icon-72-2x.png|0 0
+Added: bin/templates/project/www/res/icon/ios/icon-72.png|0 0
+Added: bin/templates/project/www/res/icon/tizen/icon-128.png|0 0
+Added: bin/templates/project/www/res/icon/webos/icon-64.png|0 0
+Added: bin/templates/project/www/res/icon/windows-phone/icon-173-tile.png|0 0
+Added: bin/templates/project/www/res/icon/windows-phone/icon-48.png|0 0
+Added: bin/templates/project/www/res/icon/windows-phone/icon-62-tile.png|0 0
+Added: bin/templates/project/www/res/screen/android/screen-hdpi-landscape.png|0 0
+Added: bin/templates/project/www/res/screen/android/screen-hdpi-portrait.png|0 0
+Added: bin/templates/project/www/res/screen/android/screen-ldpi-landscape.png|0 0
+Added: bin/templates/project/www/res/screen/android/screen-ldpi-portrait.png|0 0
+Added: bin/templates/project/www/res/screen/android/screen-mdpi-landscape.png|0 0
+Added: bin/templates/project/www/res/screen/android/screen-mdpi-portrait.png|0 0
+Added: bin/templates/project/www/res/screen/android/screen-xhdpi-landscape.png|0 0
+Added: bin/templates/project/www/res/screen/android/screen-xhdpi-portrait.png|0 0
+Added: bin/templates/project/www/res/screen/bada-wac/screen-type3.png|0 0
+Added: bin/templates/project/www/res/screen/bada-wac/screen-type4.png|0 0
+Added: bin/templates/project/www/res/screen/bada-wac/screen-type5.png|0 0
+Added: bin/templates/project/www/res/screen/bada/screen-portrait.png|0 0
+Added: bin/templates/project/www/res/screen/blackberry/screen-225.png|0 0
+Added: bin/templates/project/www/res/screen/blackberry10/splash-1280x768.png|0 0
+Added: bin/templates/project/www/res/screen/blackberry10/splash-720x720.png|0 0
+Added: bin/templates/project/www/res/screen/blackberry10/splash-768x1280.png|0 0
+Added: bin/templates/project/www/res/screen/ios/screen-ipad-landscape-2x.png|0 0
+Added: bin/templates/project/www/res/screen/ios/screen-ipad-landscape.png|0 0
+Added: bin/templates/project/www/res/screen/ios/screen-ipad-portrait-2x.png|0 0
+Added: bin/templates/project/www/res/screen/ios/screen-ipad-portrait.png|0 0
+Added: bin/templates/project/www/res/screen/ios/screen-iphone-landscape-2x.png|0 0
+Added: bin/templates/project/www/res/screen/ios/screen-iphone-landscape.png|0 0
+Added: bin/templates/project/www/res/screen/ios/screen-iphone-portrait-2x.png|0 0
+Added: bin/templates/project/www/res/screen/ios/screen-iphone-portrait-568h-2x.png|0 0
+Added: bin/templates/project/www/res/screen/ios/screen-iphone-portrait.png|0 0
+Added: bin/templates/project/www/res/screen/tizen/README.md|3 0
+Added: bin/templates/project/www/res/screen/webos/screen-64.png|0 0
+Added: bin/templates/project/www/res/screen/windows-phone/screen-portrait.jpg|0 0
+Added: bin/templates/project/www/spec.html|68 0
+Added: bin/templates/project/www/spec/helper.js|33 0
+Added: bin/templates/project/www/spec/index.js|67 0
+Added: bin/templates/project/www/spec/lib/jasmine-1.2.0/MIT.LICENSE|20 0
+Added: bin/templates/project/www/spec/lib/jasmine-1.2.0/jasmine-html.js|616 0
+Added: bin/templates/project/www/spec/lib/jasmine-1.2.0/jasmine.css|81 0
+Added: bin/templates/project/www/spec/lib/jasmine-1.2.0/jasmine.js|2529 0
+Added: bin/update|33 0
+Added: bin/update.bat|26 0
+Added: cordova-js-src/confighelper.js|95 0
+Added: cordova-js-src/exec.js|48 0
+Added: cordova-js-src/platform.js|36 0
+Added: cordova-lib/cordova.js|1628 0
+Added: package.json|27 0
+
+Revision: b1748a257c57c0c96b0ac41e361295952387fecc
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 31/05/2015 09:01:05
+Message:
+added npm install step #MsgLength=23
+
+
+----
+Modified: README.md|1 0
+
+Revision: 7f4ef642c825739fe6d3e340b52eed8e18410dc4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 31/05/2015 09:02:08
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|4 4
+
+Revision: 06e144a3705f4dc7e0e706bc0c5cf9464d38e6d1
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/10/2016 13:35:10
+Message:
+Add github pull request template #MsgLength=33
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|22 0
+
+Revision: fb376115ab205d79c93570603a908375b9bece06
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 26/11/2017 17:47:00
+Message:
+updated everything #MsgLength=19
+
+
+----
+Added: .eslintignore|1 0
+Added: .eslintrc.yml|10 0
+Added: .gitattributes|94 0
+Added: .gitignore|8 0
+Added: .travis.yml|12 0
+Added: LICENSE|317 0
+Added: NOTICE|5 0
+Added: RELEASENOTES.md|23 0
+Added: VERSION|1 0
+Added: appveyor.yml|39 0
+Modified: bin/create|56 13
+Modified: bin/lib/check_reqs.js|4 4
+Modified: bin/lib/create.js|56 44
+Modified: bin/lib/update.js|4 34
+Added: bin/template/config.xml|24 0
+Added: bin/template/cordova/Api.js|528 0
+Renamed: bin/template/cordova/build [from bin/templates/project/cordova/build]|2 1
+Renamed: bin/template/cordova/build.bat [from bin/templates/project/cordova/build.bat]|0 0
+Renamed: bin/template/cordova/clean [from bin/templates/project/cordova/clean]|1 2
+Added: bin/template/cordova/clean.bat|26 0
+Renamed: bin/template/cordova/defaults.xml [from bin/templates/project/cordova/defaults.xml]|0 0
+Added: bin/template/cordova/handler.js|131 0
+Renamed: bin/template/cordova/lib/build.js [from bin/templates/project/cordova/lib/build.js]|10 36
+Renamed: bin/template/cordova/lib/clean.js [from bin/templates/project/cordova/lib/clean.js]|21 18
+Renamed: bin/template/cordova/lib/run.js [from bin/templates/project/www/spec/helper.js]|9 13
+Renamed: bin/template/cordova/log [from bin/templates/project/cordova/run]|1 12
+Added: bin/template/cordova/parser.js|120 0
+Added: bin/template/cordova/run|47 0
+Renamed: bin/template/cordova/run.bat [from bin/templates/project/cordova/run.bat]|0 0
+Renamed: bin/template/cordova/version [from bin/templates/project/cordova/version]|1 1
+Renamed: bin/template/cordova/version.bat [from bin/templates/project/cordova/version.bat]|0 0
+Renamed: bin/template/www/css/index.css [from bin/templates/project/www/css/index.css]|0 0
+Added: bin/template/www/favicon.ico|0 0
+Added: bin/template/www/img/logo.png|0 0
+Added: bin/template/www/img/splash.png|0 0
+Renamed: bin/template/www/index.html [from bin/templates/project/www/index.html]|2 1
+Renamed: bin/template/www/js/index.js [from bin/templates/project/www/js/index.js]|4 4
+Added: bin/template/www/manifest.json|21 0
+Deleted: bin/templates/project/cordova/lib/exec.js|0 46
+Deleted: bin/templates/project/cordova/lib/main.js|0 35
+Deleted: bin/templates/project/cordova/lib/run.js|0 16
+Deleted: bin/templates/project/www/img/logo.png|0 0
+Deleted: bin/templates/project/www/res/icon/android/icon-36-ldpi.png|0 0
+Deleted: bin/templates/project/www/res/icon/android/icon-48-mdpi.png|0 0
+Deleted: bin/templates/project/www/res/icon/android/icon-72-hdpi.png|0 0
+Deleted: bin/templates/project/www/res/icon/android/icon-96-xhdpi.png|0 0
+Deleted: bin/templates/project/www/res/icon/bada-wac/icon-48-type5.png|0 0
+Deleted: bin/templates/project/www/res/icon/bada-wac/icon-50-type3.png|0 0
+Deleted: bin/templates/project/www/res/icon/bada-wac/icon-80-type4.png|0 0
+Deleted: bin/templates/project/www/res/icon/bada/icon-128.png|0 0
+Deleted: bin/templates/project/www/res/icon/blackberry/icon-80.png|0 0
+Deleted: bin/templates/project/www/res/icon/blackberry10/icon-80.png|0 0
+Deleted: bin/templates/project/www/res/icon/ios/icon-57-2x.png|0 0
+Deleted: bin/templates/project/www/res/icon/ios/icon-57.png|0 0
+Deleted: bin/templates/project/www/res/icon/ios/icon-72-2x.png|0 0
+Deleted: bin/templates/project/www/res/icon/ios/icon-72.png|0 0
+Deleted: bin/templates/project/www/res/icon/tizen/icon-128.png|0 0
+Deleted: bin/templates/project/www/res/icon/webos/icon-64.png|0 0
+Deleted: bin/templates/project/www/res/icon/windows-phone/icon-173-tile.png|0 0
+Deleted: bin/templates/project/www/res/icon/windows-phone/icon-48.png|0 0
+Deleted: bin/templates/project/www/res/icon/windows-phone/icon-62-tile.png|0 0
+Deleted: bin/templates/project/www/res/screen/android/screen-hdpi-landscape.png|0 0
+Deleted: bin/templates/project/www/res/screen/android/screen-hdpi-portrait.png|0 0
+Deleted: bin/templates/project/www/res/screen/android/screen-ldpi-landscape.png|0 0
+Deleted: bin/templates/project/www/res/screen/android/screen-ldpi-portrait.png|0 0
+Deleted: bin/templates/project/www/res/screen/android/screen-mdpi-landscape.png|0 0
+Deleted: bin/templates/project/www/res/screen/android/screen-mdpi-portrait.png|0 0
+Deleted: bin/templates/project/www/res/screen/android/screen-xhdpi-landscape.png|0 0
+Deleted: bin/templates/project/www/res/screen/android/screen-xhdpi-portrait.png|0 0
+Deleted: bin/templates/project/www/res/screen/bada-wac/screen-type3.png|0 0
+Deleted: bin/templates/project/www/res/screen/bada-wac/screen-type4.png|0 0
+Deleted: bin/templates/project/www/res/screen/bada-wac/screen-type5.png|0 0
+Deleted: bin/templates/project/www/res/screen/bada/screen-portrait.png|0 0
+Deleted: bin/templates/project/www/res/screen/blackberry/screen-225.png|0 0
+Deleted: bin/templates/project/www/res/screen/blackberry10/splash-1280x768.png|0 0
+Deleted: bin/templates/project/www/res/screen/blackberry10/splash-720x720.png|0 0
+Deleted: bin/templates/project/www/res/screen/blackberry10/splash-768x1280.png|0 0
+Deleted: bin/templates/project/www/res/screen/ios/screen-ipad-landscape-2x.png|0 0
+Deleted: bin/templates/project/www/res/screen/ios/screen-ipad-landscape.png|0 0
+Deleted: bin/templates/project/www/res/screen/ios/screen-ipad-portrait-2x.png|0 0
+Deleted: bin/templates/project/www/res/screen/ios/screen-ipad-portrait.png|0 0
+Deleted: bin/templates/project/www/res/screen/ios/screen-iphone-landscape-2x.png|0 0
+Deleted: bin/templates/project/www/res/screen/ios/screen-iphone-landscape.png|0 0
+Deleted: bin/templates/project/www/res/screen/ios/screen-iphone-portrait-2x.png|0 0
+Deleted: bin/templates/project/www/res/screen/ios/screen-iphone-portrait-568h-2x.png|0 0
+Deleted: bin/templates/project/www/res/screen/ios/screen-iphone-portrait.png|0 0
+Deleted: bin/templates/project/www/res/screen/tizen/README.md|0 3
+Deleted: bin/templates/project/www/res/screen/webos/screen-64.png|0 0
+Deleted: bin/templates/project/www/res/screen/windows-phone/screen-portrait.jpg|0 0
+Deleted: bin/templates/project/www/spec.html|0 68
+Deleted: bin/templates/project/www/spec/index.js|0 67
+Deleted: bin/templates/project/www/spec/lib/jasmine-1.2.0/MIT.LICENSE|0 20
+Deleted: bin/templates/project/www/spec/lib/jasmine-1.2.0/jasmine-html.js|0 616
+Deleted: bin/templates/project/www/spec/lib/jasmine-1.2.0/jasmine.css|0 81
+Deleted: bin/templates/project/www/spec/lib/jasmine-1.2.0/jasmine.js|0 2529
+Modified: bin/update|2 2
+Modified: cordova-js-src/confighelper.js|4 9
+Modified: cordova-js-src/exec.js|79 13
+Modified: cordova-js-src/platform.js|10 0
+Modified: cordova-lib/cordova.js|604 369
+Modified: package.json|49 14
+Added: spec/.eslintrc.yml|2 0
+Added: spec/create.spec.js|114 0
+Added: spec/handler.spec.js|54 0
+Added: spec/manifest.spec.js|85 0
+Added: spec/projectApi.spec.js|118 0
+Added: spec/support/jasmine.json|10 0
+
+Revision: 8760eecfd639389738d82f8e8ec0abadbc6b2703
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 28/11/2017 04:29:11
+Message:
+added  command, removed browser specific parts #MsgLength=47
+
+
+----
+Modified: bin/lib/create.js|1 9
+Modified: bin/template/cordova/lib/build.js|1 2
+Modified: bin/template/cordova/lib/run.js|8 5
+Added: bin/template/main.js|57 0
+Deleted: bin/template/www/favicon.ico|0 0
+Deleted: bin/template/www/manifest.json|0 21
+Deleted: spec/manifest.spec.js|0 85
+
+
+Revision: 3528b1dbbc5cc01308e5d0f0626ac1852c95c437
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 15/11/2018 18:44:04
+Message:
+Update README.md #MsgLength=16
+
+
+----
+Modified: README.md|11 11
+
+Revision: b0fa7275d7acc502444387f422b89884e414ae5c
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/09/2018 22:49:11
+Message:
+Update Bug Tracker #MsgLength=19
+
+
+----
+Modified: package.json|1 1
+
+Revision: d7bb56d8891f7abbf9d7e785f1aaa367ea3e21c1
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/09/2018 22:50:01
+Message:
+Bump cordova-common@^2.2.5 #MsgLength=27
+
+
+----
+Modified: package.json|1 1
+
+Revision: 34da3bf2baa4a61592e3610c2ce875dcc1c78564
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/09/2018 22:50:33
+Message:
+Bump electron@^3.0.6 #MsgLength=21
+
+
+----
+Modified: package.json|1 1
+
+Revision: 40c25a9882502cf69973474d323f7abf052065ca
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/09/2018 22:51:07
+Message:
+Bump nopt@^4.0.1 #MsgLength=17
+
+
+----
+Modified: package.json|1 1
+
+Revision: 7b1dbe830b4161de1312a3b275200329967748ab
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/09/2018 22:53:49
+Message:
+Bump ESLint dependencies #MsgLength=191
+
+
+----
+Modified: package.json|6 6
+
+Revision: b11d5f59a0013f45d1041d33d5da9243db38978b
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/09/2018 22:54:26
+Message:
+Bump jasmine@^3.2.0 #MsgLength=20
+
+
+----
+Modified: package.json|1 1
+
+Revision: 94dd821c11c421b47713aa597f8565a9139560b9
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/09/2018 22:54:47
+Message:
+Bump tmp@^0.0.33 #MsgLength=17
+
+
+----
+Modified: package.json|1 1
+
+Revision: d9ca092a9062db1a9ddf785c59b23689ae1eca78
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/09/2018 22:56:15
+Message:
+Dropped Bundle Dependencies #MsgLength=28
+
+
+----
+Modified: package.json|0 5
+
+Revision: c9083a4d55112f313185ccdd8646d0d46f820954
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/09/2018 22:59:23
+Message:
+Dropped deprecated engineStrict from package.json #MsgLength=50
+
+
+----
+Modified: package.json|1 2
+
+Revision: 6edf2652eb061d8cb5f3648a5bc8517b227d8c1e
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/09/2018 23:07:26
+Message:
+Applied ESLint Corrections #MsgLength=27
+
+
+----
+Modified: .eslintrc.yml|1 1
+Modified: bin/template/cordova/Api.js|3 3
+Modified: bin/template/cordova/lib/build.js|0 1
+Modified: bin/template/cordova/lib/run.js|4 4
+Modified: bin/template/main.js|31 31
+Modified: package.json|1 1
+
+Revision: 34b261fdf566c0c23540b13f208fa06217de8488
+Author: エリス <ellis.bryan@gmail.com>
+Date: 19/09/2018 00:42:40
+Message:
+Added fs-extra dependency #MsgLength=26
+
+
+----
+Renamed: bin/template/cordova/lib/check_reqs.js [from bin/lib/check_reqs.js]|0 0
+Modified: package.json|1 0
+
+Revision: 8dfe10483a5ea8f34e59a77642da8dbdbb2f852b
+Author: エリス <ellis.bryan@gmail.com>
+Date: 19/09/2018 00:44:28
+Message:
+Replaced shell.cp and shell.mkdir with fs-extra #MsgLength=48
+
+
+----
+Modified: bin/lib/create.js|8 14
+Modified: bin/template/cordova/Api.js|7 8
+Modified: bin/template/cordova/handler.js|6 7
+Modified: bin/template/cordova/lib/clean.js|2 3
+Modified: bin/template/cordova/parser.js|3 4
+Modified: spec/create.spec.js|6 6
+Modified: spec/handler.spec.js|5 6
+Modified: spec/projectApi.spec.js|3 3
+
+Revision: 23028771f40ce2e6ae3ff0a2e6a0c01109b5e871
+Author: エリス <ellis.bryan@gmail.com>
+Date: 19/09/2018 00:47:53
+Message:
+Updated Test Commands #MsgLength=22
+
+
+----
+Modified: package.json|2 2
+
+Revision: fb5bb7042a12679fd5cb8682c6b21d2bddf9e2cf
+Author: エリス <ellis.bryan@gmail.com>
+Date: 19/09/2018 00:50:50
+Message:
+Drop Node 4 Support & Added Node 10 Support #MsgLength=44
+
+
+----
+Modified: .travis.yml|6 3
+Modified: appveyor.yml|1 1
+Modified: package.json|1 1
+
+Revision: fa0e2914cec221c53135aabb37c2ec63a567b07d
+Author: エリス <ellis.bryan@gmail.com>
+Date: 19/09/2018 00:52:24
+Message:
+Delete random new line #MsgLength=23
+
+
+----
+Modified: .gitignore|1 2
+
+Revision: 43a5a63cbd8512b40dd5fb031405c6b4449ba275
+Author: エリス <ellis.bryan@gmail.com>
+Date: 19/09/2018 15:03:52
+Message:
+Updated Jasmine Test Structure #MsgLength=31
+
+
+----
+Modified: package.json|1 1
+Modified: spec/.eslintrc.yml|1 1
+Renamed: spec/unit.json [from spec/support/jasmine.json]|2 4
+Renamed: spec/unit/create.spec.js [from spec/create.spec.js]|2 2
+Renamed: spec/unit/handler.spec.js [from spec/handler.spec.js]|1 1
+Renamed: spec/unit/projectApi.spec.js [from spec/projectApi.spec.js]|2 2
+
+Revision: 4c21a4ec89cdca2f0831d77359a0858de55d71d7
+Author: エリス <ellis.bryan@gmail.com>
+Date: 19/09/2018 15:23:14
+Message:
+Formatted Apache License to be Consistency #MsgLength=86
+
+
+----
+Modified: .eslintrc.yml|17 0
+Modified: .travis.yml|17 0
+Modified: CONTRIBUTING.md|16 18
+Modified: RELEASENOTES.md|16 18
+Modified: appveyor.yml|4 6
+Modified: bin/create|14 14
+Modified: bin/create.bat|1 1
+Modified: bin/lib/create.js|17 17
+Modified: bin/lib/update.js|14 14
+Modified: bin/template/config.xml|16 18
+Modified: bin/template/cordova/Api.js|17 17
+Modified: bin/template/cordova/build|14 15
+Modified: bin/template/cordova/build.bat|3 3
+Modified: bin/template/cordova/clean|14 15
+Modified: bin/template/cordova/clean.bat|3 3
+Modified: bin/template/cordova/defaults.xml|14 14
+Modified: bin/template/cordova/handler.js|2 2
+Modified: bin/template/cordova/lib/build.js|17 17
+Modified: bin/template/cordova/lib/check_reqs.js|14 14
+Modified: bin/template/cordova/lib/clean.js|17 17
+Modified: bin/template/cordova/lib/run.js|17 17
+Modified: bin/template/cordova/log|16 14
+Modified: bin/template/cordova/parser.js|2 2
+Modified: bin/template/cordova/run|16 16
+Modified: bin/template/cordova/run.bat|3 3
+Modified: bin/template/cordova/version|14 14
+Modified: bin/template/cordova/version.bat|3 3
+Modified: bin/template/main.js|19 0
+Modified: bin/template/www/css/index.css|18 17
+Modified: bin/template/www/index.html|2 2
+Modified: bin/template/www/js/index.js|17 17
+Modified: bin/update|15 14
+Modified: bin/update.bat|1 1
+Modified: cordova-js-src/confighelper.js|16 18
+Modified: cordova-js-src/exec.js|16 18
+Modified: cordova-js-src/platform.js|16 18
+Modified: cordova-lib/cordova.js|16 16
+Modified: spec/.eslintrc.yml|17 0
+Modified: spec/unit/create.spec.js|17 17
+Modified: spec/unit/handler.spec.js|2 2
+Modified: spec/unit/projectApi.spec.js|17 17
+
+Revision: 1725eb462ac2fd4029d6cd4e6b3fe1aed7021e50
+Author: エリス <ellis.bryan@gmail.com>
+Date: 19/09/2018 15:26:52
+Message:
+Update Copyright Notice #MsgLength=24
+
+
+----
+Modified: NOTICE|1 1
+
+Revision: a1b9309a7862db0bd68b37dc0b2d9694187cb838
+Author: エリス <ellis.bryan@gmail.com>
+Date: 19/09/2018 16:05:35
+Message:
+Code Refactor 1 #MsgLength=16
+
+
+----
+Modified: bin/create|15 20
+Modified: bin/lib/create.js|6 6
+Modified: bin/template/cordova/Api.js|15 15
+Modified: bin/template/cordova/build|11 5
+Modified: bin/template/cordova/clean|13 8
+Modified: bin/template/cordova/defaults.xml|0 1
+Modified: bin/template/cordova/handler.js|3 3
+Modified: bin/template/cordova/log|1 1
+Modified: bin/template/cordova/parser.js|5 5
+Modified: bin/template/cordova/run|10 15
+Modified: bin/template/cordova/version|1 1
+Modified: bin/update|1 1
+Modified: cordova-js-src/confighelper.js|21 23
+Modified: cordova-js-src/exec.js|15 22
+Modified: cordova-js-src/platform.js|4 5
+Modified: cordova-lib/cordova.js|1465 1474
+Modified: spec/unit/create.spec.js|8 8
+Modified: spec/unit/handler.spec.js|15 21
+Modified: spec/unit/projectApi.spec.js|20 23
+
+Revision: 6602a82133dcaa17a7ae9213cd34c672831de2c1
+Author: エリス <ellis.bryan@gmail.com>
+Date: 20/09/2018 13:34:13
+Message:
+Code Refactor 2 #MsgLength=16
+
+
+----
+Modified: bin/lib/create.js|2 2
+Modified: bin/lib/update.js|2 4
+Modified: bin/template/cordova/Api.js|140 160
+Modified: bin/template/cordova/handler.js|39 34
+Modified: bin/template/cordova/lib/build.js|2 6
+Modified: bin/template/cordova/lib/check_reqs.js|1 3
+Modified: bin/template/cordova/lib/clean.js|8 10
+Modified: bin/template/cordova/lib/run.js|6 6
+Modified: bin/template/cordova/parser.js|20 33
+Modified: bin/template/main.js|3 3
+Modified: bin/template/www/js/index.js|9 9
+Modified: spec/unit/create.spec.js|14 18
+Modified: spec/unit/handler.spec.js|2 3
+Modified: spec/unit/projectApi.spec.js|14 14
+
+Revision: 5f31e6ae2582e79de23514bb1faff22bbbff5b16
+Author: エリス <ellis.bryan@gmail.com>
+Date: 26/09/2018 15:50:23
+Message:
+Code Refactor 3 #MsgLength=16
+
+
+----
+Modified: bin/lib/create.js|1 1
+Modified: bin/template/cordova/Api.js|404 407
+Modified: bin/template/cordova/lib/check_reqs.js|1 1
+
+Revision: aa722361bc94ca227f86c8a9b84c0091295a1cc6
+Author: エリス <ellis.bryan@gmail.com>
+Date: 20/09/2018 14:22:35
+Message:
+Restructure Folders for Consistency Between Platforms #MsgLength=54
+
+
+----
+Modified: bin/create|2 2
+Modified: bin/lib/create.js|6 6
+Renamed: bin/templates/cordova/Api.js [from bin/template/cordova/Api.js]|0 0
+Renamed: bin/templates/cordova/build [from bin/template/cordova/build]|0 0
+Renamed: bin/templates/cordova/build.bat [from bin/template/cordova/build.bat]|0 0
+Renamed: bin/templates/cordova/clean [from bin/template/cordova/clean]|0 0
+Renamed: bin/templates/cordova/clean.bat [from bin/template/cordova/clean.bat]|0 0
+Renamed: bin/templates/cordova/defaults.xml [from bin/template/cordova/defaults.xml]|0 0
+Renamed: bin/templates/cordova/handler.js [from bin/template/cordova/handler.js]|0 0
+Renamed: bin/templates/cordova/lib/build.js [from bin/template/cordova/lib/build.js]|0 0
+Renamed: bin/templates/cordova/lib/check_reqs.js [from bin/template/cordova/lib/check_reqs.js]|0 0
+Renamed: bin/templates/cordova/lib/clean.js [from bin/template/cordova/lib/clean.js]|0 0
+Renamed: bin/templates/cordova/lib/run.js [from bin/template/cordova/lib/run.js]|0 0
+Renamed: bin/templates/cordova/log [from bin/template/cordova/log]|0 0
+Renamed: bin/templates/cordova/parser.js [from bin/template/cordova/parser.js]|0 0
+Renamed: bin/templates/cordova/run [from bin/template/cordova/run]|0 0
+Renamed: bin/templates/cordova/run.bat [from bin/template/cordova/run.bat]|0 0
+Renamed: bin/templates/cordova/version [from bin/template/cordova/version]|0 0
+Renamed: bin/templates/cordova/version.bat [from bin/template/cordova/version.bat]|0 0
+Renamed: bin/templates/project/config.xml [from bin/template/config.xml]|0 0
+Renamed: bin/templates/project/main.js [from bin/template/main.js]|0 0
+Renamed: bin/templates/project/www/css/index.css [from bin/template/www/css/index.css]|0 0
+Renamed: bin/templates/project/www/img/logo.png [from bin/template/www/img/logo.png]|0 0
+Renamed: bin/templates/project/www/img/splash.png [from bin/template/www/img/splash.png]|0 0
+Renamed: bin/templates/project/www/index.html [from bin/template/www/index.html]|0 0
+Renamed: bin/templates/project/www/js/index.js [from bin/template/www/js/index.js]|0 0
+Modified: package.json|4 4
+Renamed: tests/.eslintrc.yml [from spec/.eslintrc.yml]|0 0
+Renamed: tests/spec/coverage.json [from spec/unit.json]|2 1
+Added: tests/spec/unit.json|9 0
+Renamed: tests/spec/unit/create.spec.js [from spec/unit/create.spec.js]|2 2
+Renamed: tests/spec/unit/handler.spec.js [from spec/unit/handler.spec.js]|1 1
+Renamed: tests/spec/unit/projectApi.spec.js [from spec/unit/projectApi.spec.js]|1 1
+
+Revision: 18dea7b04efc06a3265ec6647e63021e42004a0a
+Author: エリス <ellis.bryan@gmail.com>
+Date: 20/09/2018 14:23:42
+Message:
+Added Code Coverage #MsgLength=20
+
+
+----
+Modified: .gitignore|2 0
+Modified: package.json|15 1
+
+Revision: a690708b1ca1e77796b328d4ba9b7e422a27f2b8
+Author: エリス <ellis.bryan@gmail.com>
+Date: 30/10/2018 14:21:11
+Message:
+Updated Parser #MsgLength=94
+
+
+----
+Modified: bin/templates/cordova/parser.js|62 64
+
+Revision: ce736900774e4bbdfb1300fb6fcbbb93b9182e00
+Author: エリス <ellis.bryan@gmail.com>
+Date: 31/10/2018 07:57:36
+Message:
+Implement Get Platform Info Version #MsgLength=36
+
+
+----
+Modified: bin/templates/cordova/Api.js|1 1
+Modified: bin/templates/cordova/version|9 2
+
+Revision: fb7acc92d922e95d89eff48d514973c32abbfbc2
+Author: Ken Naito <fine14r3@gmail.com>
+Date: 31/10/2018 14:16:51
+Message:
+plugin's json name is unified to (#1) #MsgLength=39
+
+
+----
+Modified: bin/templates/cordova/Api.js|1 2
+Modified: bin/templates/cordova/handler.js|1 1
+
+Revision: f3de449afc2b93094100a4c4bccfaf0ef05766a6
+Author: Ken Naito <fine14r3@gmail.com>
+Date: 02/11/2018 10:47:57
+Message:
+Fix plugin to use browser settings (#2) #MsgLength=143
+
+
+----
+Modified: bin/templates/cordova/Api.js|21 11
+
+Revision: b34269c9e31a6896a4113092359c1b4fb00ac567
+Author: エリス <ellis.bryan@gmail.com>
+Date: 08/11/2018 14:17:30
+Message:
+ESLint Fixes #MsgLength=13
+
+
+----
+Modified: bin/templates/cordova/Api.js|3 4
+Modified: bin/templates/cordova/parser.js|3 3
+
+Revision: 028bf43b3aaa431d8914a837dc86a4a87954b4cb
+Author: エリス <ellis.bryan@gmail.com>
+Date: 13/11/2018 10:00:27
+Message:
+Build Improvement #MsgLength=18
+
+
+----
+Modified: bin/templates/cordova/Api.js|9 142
+Modified: bin/templates/cordova/lib/build.js|85 6
+Added: bin/templates/cordova/lib/build/base.json|15 0
+Added: bin/templates/cordova/lib/build/linux.json|13 0
+Added: bin/templates/cordova/lib/build/mac.json|15 0
+Added: bin/templates/cordova/lib/build/windows.json|11 0
+Added: bin/templates/cordova/lib/prepare.js|160 0
+Modified: package.json|1 0
+
+Revision: 27d587ea7ca84ca6cd4a43f028c7dbfd27953ea5
+Author: エリス <ellis.bryan@gmail.com>
+Date: 13/11/2018 11:00:55
+Message:
+Temp Added Writter for App package.json #MsgLength=40
+
+
+----
+Modified: bin/templates/cordova/lib/prepare.js|32 0
+
+Revision: be90cee03d2e7e1182330e6c0999b0a243b4f4e8
+Author: エリス <ellis.bryan@gmail.com>
+Date: 13/11/2018 12:08:06
+Message:
+Improve Prepare for App package.json #MsgLength=37
+
+
+----
+Modified: bin/templates/cordova/lib/prepare.js|16 6
+
+Revision: dfe095d4057501a9d5a2669ad6c2354299d22731
+Author: エリス <ellis.bryan@gmail.com>
+Date: 13/11/2018 12:21:32
+Message:
+Fix build targets and main.js path #MsgLength=35
+
+
+----
+Modified: bin/lib/create.js|1 1
+Modified: bin/templates/cordova/lib/build/linux.json|7 3
+Modified: bin/templates/cordova/lib/build/mac.json|12 5
+Modified: bin/templates/cordova/lib/build/windows.json|7 3
+Modified: bin/templates/project/main.js|1 1
+
+Revision: 8b201d4cf06fb7afeec1be5d0f18533693659565
+Author: エリス <ellis.bryan@gmail.com>
+Date: 13/11/2018 12:41:31
+Message:
+Updated build step. Added missing license doc block #MsgLength=52
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|21 18
+Modified: bin/templates/cordova/lib/check_reqs.js|0 2
+Modified: bin/templates/cordova/lib/clean.js|0 2
+Modified: bin/templates/cordova/lib/prepare.js|19 0
+Modified: bin/templates/cordova/lib/run.js|0 2
+
+Revision: 6eb168718b5141afbc155177067a67ed77f1709f
+Author: エリス <ellis.bryan@gmail.com>
+Date: 13/11/2018 13:25:34
+Message:
+Fix Eslint #MsgLength=11
+
+
+----
+Modified: bin/templates/cordova/Api.js|2 2
+Modified: bin/templates/cordova/lib/build.js|4 4
+Modified: bin/templates/cordova/lib/prepare.js|3 3
+
+Revision: 3146a51ec18849d5c86e0c729b81aa9ae6a0e9f5
+Author: Ken Naito <fine14r3@gmail.com>
+Date: 13/11/2018 12:58:26
+Message:
+change the name cordova-electron to electron (#4) #MsgLength=51
+
+
+----
+Modified: bin/templates/cordova/Api.js|1 1
+Modified: bin/templates/cordova/lib/run.js|1 1
+
+Revision: 8346521eb3c0aeda178c9ff066ef7f7e7af2d34f
+Author: エリス <ellis.bryan@gmail.com>
+Date: 13/11/2018 14:44:40
+Message:
+Improve build steps #MsgLength=20
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|189 60
+Renamed: bin/templates/cordova/lib/build/darwin.json [from bin/templates/cordova/lib/build/mac.json]|0 0
+Renamed: bin/templates/cordova/lib/build/win32.json [from bin/templates/cordova/lib/build/windows.json]|0 0
+
+Revision: 2602174ca481e2719b2039a2f6c9697929a83b8c
+Author: Ken Naito <fine14r3@gmail.com>
+Date: 13/11/2018 13:42:31
+Message:
+fix location of main.js in run.js (#5) #MsgLength=40
+
+
+----
+Modified: bin/templates/cordova/lib/run.js|1 1
+
+Revision: 7b8fd08ab0be4b59308de584dbc4d280b9ccecdb
+Author: Ken Naito <fine14r3@gmail.com>
+Date: 14/11/2018 14:51:46
+Message:
+escape win32 posix path (#8) #MsgLength=29
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|2 1
+
+Revision: d691e96ede21d184e9190736c38950e6667529f9
+Author: エリス <ellis.bryan@gmail.com>
+Date: 26/11/2018 11:17:22
+Message:
+Updated Build Signing Config Settings #MsgLength=38
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|62 17
+
+Revision: 71ac46d21e8edfd2535eeb1c9d14b44056768899
+Author: エリス <ellis.bryan@gmail.com>
+Date: 28/11/2018 15:02:44
+Message:
+Added Mac Apple Store Signing Support #MsgLength=38
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|12 3
+
+Revision: 8d210072b8e51d2a12e8d61ba07bd730a3b91dec
+Author: エリス <ellis.bryan@gmail.com>
+Date: 30/11/2018 17:00:15
+Message:
+Updated Default Base and Linux Build Configs #MsgLength=45
+
+
+----
+Modified: bin/templates/cordova/lib/build/base.json|11 11
+Modified: bin/templates/cordova/lib/build/linux.json|1 1
+
+Revision: 9d580c39e776e67ca7f6cd36f9abe0e883d4fe39
+Author: エリス <ellis.bryan@gmail.com>
+Date: 30/11/2018 17:00:32
+Message:
+Added DOCUMENTATION.md #MsgLength=23
+
+
+----
+Added: DOCUMENTATION.md|448 0
+
+Revision: 1767969b9f8ec4034a46ebd97cedc12dc5b1c1f1
+Author: エリス <ellis.bryan@gmail.com>
+Date: 04/12/2018 15:46:42
+Message:
+Ensure that platform and platform_www dir exists before copy #MsgLength=61
+
+
+----
+Modified: bin/lib/create.js|8 1
+
+Revision: 8f0f3e769945c9476107eedda75572e51411dd87
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 04/12/2018 19:22:29
+Message:
+Update DOCUMENTATION.md #MsgLength=79
+
+
+----
+Modified: DOCUMENTATION.md|2 2
+
+Revision: 33ec10f9dd1d4ff2f6f0d27f757f822eb9315baa
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 04/12/2018 19:29:08
+Message:
+Update DOCUMENTATION.md #MsgLength=79
+
+
+----
+Modified: DOCUMENTATION.md|1 1
+
+Revision: c1cb21dcd6f898995d3331a9bdfeeb1cab27d530
+Author: エリス <ellis.bryan@gmail.com>
+Date: 05/12/2018 12:27:50
+Message:
+Fixed Creating Windows Build Settings #MsgLength=38
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|12 10
+
+Revision: 4ffa5ef19b9f374f4d20e066562db55013d69068
+Author: エリス <ellis.bryan@gmail.com>
+Date: 05/12/2018 12:29:23
+Message:
+Updated Linux Build Settings to Set Author #MsgLength=43
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|1 0
+Modified: bin/templates/cordova/lib/build/linux.json|1 1
+
+Revision: 2cdb5fb991d2eb30594b26a1dc502cb4b9ce0432
+Author: エリス <ellis.bryan@gmail.com>
+Date: 05/12/2018 15:14:55
+Message:
+Updated Build Settings to Append Windows Signing Correctly #MsgLength=59
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|1 1
+
+
+Revision: 1765617c10d7597e091ae1abd1ea91f5892b2590
+Author: エリス <erisu@users.noreply.github.com>
+Date: 07/12/2018 19:47:46
+Message:
+Updated Correct Version Information (#5) #MsgLength=42
+
+
+----
+Modified: bin/templates/cordova/version|1 1
+Modified: cordova-lib/cordova.js|1 1
+Modified: package.json|1 1
+
+Revision: 3af43187b8a032aed980b7d272e32267a68dfb8c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 19/12/2018 08:52:31
+Message:
+Cleanup Bin Files (#6) #MsgLength=24
+
+
+----
+Modified: bin/templates/cordova/build|13 15
+Modified: bin/templates/cordova/clean|13 16
+Modified: bin/templates/cordova/lib/build.js|7 3
+Modified: bin/templates/cordova/lib/clean.js|5 0
+Modified: bin/templates/cordova/lib/run.js|8 0
+Modified: bin/templates/cordova/run|13 16
+
+Revision: b76c672260567a9f0f1d9f25a06dfd0e67219ebf
+Author: エリス <ellis.bryan@gmail.com>
+Date: 15/01/2019 15:23:24
+Message:
+Updated ESlint Dependencies #MsgLength=28
+
+
+----
+Added: package-lock.json|4870 0
+Modified: package.json|4 4
+
+Revision: f53e89bf2b2efabf4f0aebdcb6d5ddf8ece960f2
+Author: エリス <ellis.bryan@gmail.com>
+Date: 15/01/2019 15:26:36
+Message:
+Updated Testing and Code Coverage Dependencies #MsgLength=47
+
+
+----
+Modified: package.json|2 2
+
+Revision: 353338f96f1b02abc7ee049e80f39a094b7cac9d
+Author: エリス <ellis.bryan@gmail.com>
+Date: 15/01/2019 15:35:21
+Message:
+Bump cordova-common@^3.1.0 #MsgLength=27
+
+
+----
+Modified: package-lock.json|936 121
+Modified: package.json|1 1
+
+Revision: 69e7670d7b0f9abb5a8ef4e64e3de55caff43fa1
+Author: エリス <ellis.bryan@gmail.com>
+Date: 15/01/2019 15:37:41
+Message:
+Bump fs-extra@^7.0.1 #MsgLength=21
+
+
+----
+Modified: package.json|1 1
+
+Revision: 4f1d61b62b307be827401a9d412c4bfabdb73dc0
+Author: エリス <ellis.bryan@gmail.com>
+Date: 15/01/2019 15:43:09
+Message:
+Updated Electron and Builder Dependencies #MsgLength=42
+
+
+----
+Modified: package-lock.json|7 47
+Modified: package.json|2 2
+
+
+Revision: dacce3760f4c4c6af711638b4600db23803be1d0
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 29/01/2019 13:41:56
+Message:
+Create CDV Electron Settings JSON (#8) #MsgLength=40
+
+
+----
+Modified: bin/lib/create.js|3 0
+Modified: bin/templates/cordova/lib/prepare.js|24 0
+Added: bin/templates/project/cdv-electron-settings.json|3 0
+Modified: bin/templates/project/main.js|5 1
+
+Revision: 77c8ee58578c87ebf5832b2bf9ebe74fde00e4ac
+Author: エリス <erisu@users.noreply.github.com>
+Date: 29/01/2019 14:36:53
+Message:
+Electron Build Improvements (#9) #MsgLength=146
+
+
+----
+Modified: bin/templates/cordova/lib/build/base.json|5 3
+Modified: bin/templates/cordova/lib/build/linux.json|0 1
+
+Revision: 1875d49ded2a5165a6ceded9e533494c2e0d78e3
+Author: エリス <erisu@users.noreply.github.com>
+Date: 29/01/2019 17:37:04
+Message:
+Updated README.md (#11) #MsgLength=60
+
+
+----
+Modified: README.md|39 20
+
+Revision: a98e81a52da41abe3865f44f4658148b08259cd5
+Author: エリス <erisu@users.noreply.github.com>
+Date: 29/01/2019 17:37:34
+Message:
+Added NPM Ignore (#10) #MsgLength=24
+
+
+----
+Added: .npmignore|21 0
+
+Revision: 78e118560b64879fe57813ead13120f57fd63141
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:37:07
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 31f6619f8bdc060ece266a13336997a66f436372
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 15/02/2019 10:39:51
+Message:
+Implement Electron Custom App Icons Functionality (#13) #MsgLength=57
+
+
+----
+Modified: DOCUMENTATION.md|38 7
+Modified: bin/lib/create.js|3 0
+Added: bin/templates/build-res/installer.png|0 0
+Modified: bin/templates/cordova/Api.js|1 0
+Modified: bin/templates/cordova/lib/build.js|3 1
+Modified: bin/templates/cordova/lib/build/base.json|2 2
+Modified: bin/templates/cordova/lib/build/darwin.json|1 0
+Modified: bin/templates/cordova/lib/build/linux.json|1 0
+Modified: bin/templates/cordova/lib/build/win32.json|1 0
+Modified: bin/templates/cordova/lib/prepare.js|213 3
+Modified: bin/templates/project/main.js|17 6
+Added: bin/templates/project/www/icons/icon.png|0 0
+Modified: package.json|1 0
+Added: tests/spec/unit/templates/cordova/lib/prepare.spec.js|893 0
+
+Revision: 3bb9e64d46a61d7174b0b066f1c24d9b73d2c3d5
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 15/02/2019 11:17:05
+Message:
+Implement SettingsJson Class Tests and Update Documentation (#15) #MsgLength=67
+
+
+----
+Modified: DOCUMENTATION.md|2 6
+Modified: tests/spec/unit/templates/cordova/lib/prepare.spec.js|129 0
+
+Revision: e24515ce40535c1c1b01acf624463496581956be
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/02/2019 08:42:43
+Message:
+Delete AppVeyor Config #MsgLength=23
+
+
+----
+Deleted: appveyor.yml|0 37
+
+Revision: 16da7b7fe7e64df41debcef03fb76be67f74d5a2
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/02/2019 08:43:01
+Message:
+Update Travis CI for Windows #MsgLength=29
+
+
+----
+Modified: .travis.yml|12 5
+
+Revision: 503f0eb29bcb9e468ae61aedfbbd1637794284fa
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/02/2019 09:12:39
+Message:
+Use path.join method instead of hardcoding paths #MsgLength=49
+
+
+----
+Modified: tests/spec/unit/templates/cordova/lib/prepare.spec.js|100 103
+
+Revision: 5927470b64a6146bfe5e07a2965cc40624b00f75
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/02/2019 09:18:46
+Message:
+Used map instead of Object.values for Node 6 support #MsgLength=53
+
+
+----
+Modified: bin/templates/cordova/lib/prepare.js|5 2
+
+
+Revision: 55f8399876eec8047207b3d2b7ec90fbc54c13c8
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/02/2019 12:35:53
+Message:
+Add Unit Test for Parser Class #MsgLength=31
+
+
+----
+Added: tests/spec/unit/templates/parser.spec.js|237 0
+
+Revision: e390b3c2ae7a0b73ca7071eb6f50755b9a78df25
+Author: エリス <ellis.bryan@gmail.com>
+Date: 18/02/2019 13:49:16
+Message:
+Added Unit Tests for Handler Export #MsgLength=36
+
+
+----
+Modified: bin/templates/cordova/handler.js|3 3
+Modified: tests/spec/unit/handler.spec.js|356 23
+
+Revision: ee3c06e04c7714f7a7f22c94c3e060b0d25e6fcb
+Author: エリス <ellis.bryan@gmail.com>
+Date: 19/02/2019 10:05:31
+Message:
+Rename API Test Spec and Added Tests #MsgLength=37
+
+
+----
+Added: tests/spec/unit/Api.spec.js|324 0
+Deleted: tests/spec/unit/projectApi.spec.js|0 115
+
+Revision: 6d1dddf6ba11a744956c03d4e5ac8a585a840262
+Author: エリス <ellis.bryan@gmail.com>
+Date: 19/02/2019 10:50:52
+Message:
+Refactor Create Test Spec and Added Extra Coverage #MsgLength=51
+
+
+----
+Modified: tests/spec/unit/create.spec.js|44 8
+
+
+Revision: 3eddfcbaa1f961cb00cfcf53e372a0ce89dd9244
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 19/02/2019 11:27:53
+Message:
+Refactor prepare.js and Increase Test Coverage (#18) #MsgLength=54
+
+
+----
+Added: bin/templates/cordova/lib/ManifestJsonParser.js|132 0
+Added: bin/templates/cordova/lib/PackageJsonParser.js|61 0
+Added: bin/templates/cordova/lib/SettingJsonParser.js|42 0
+Modified: bin/templates/cordova/lib/prepare.js|11 174
+Added: tests/spec/fixtures/test-config-1.xml|40 0
+Added: tests/spec/fixtures/test-config-2.xml|39 0
+Added: tests/spec/fixtures/test-config-empty.xml|7 0
+Added: tests/spec/unit/templates/cordova/lib/ManifestJsonParser.spec.js|239 0
+Added: tests/spec/unit/templates/cordova/lib/PackageJsonParser.spec.js|193 0
+Added: tests/spec/unit/templates/cordova/lib/SettingJsonParser.spec.js|177 0
+Modified: tests/spec/unit/templates/cordova/lib/prepare.spec.js|7 126
+
+Revision: b4ae1c9242eb5dff42219e9128752ff423dfd821
+Author: エリス <erisu@users.noreply.github.com>
+Date: 20/02/2019 14:37:01
+Message:
+Fix Audit Report For High Severity Vulnerability (#20) #MsgLength=56
+
+
+----
+Modified: package-lock.json|1177 1494
+
+Revision: cd7658660dca0bbc90e395b95c11009aa4ceafab
+Author: エリス <erisu@users.noreply.github.com>
+Date: 20/02/2019 14:46:45
+Message:
+Adding New Test Specs (#19) #MsgLength=133
+
+
+----
+Added: tests/spec/unit/lib/update.spec.js|47 0
+Added: tests/spec/unit/templates/cordova/lib/clean.spec.js|133 0
+Added: tests/spec/unit/templates/cordova/lib/run.spec.js|70 0
+
+Revision: b9dfc104e30b470adbb084195d6003891879c966
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 20/02/2019 16:42:47
+Message:
+Test module.exports.prepare (#23) #MsgLength=117
+
+
+----
+Modified: bin/templates/cordova/lib/prepare.js|1 1
+Modified: tests/spec/fixtures/test-config-1.xml|1 1
+Modified: tests/spec/fixtures/test-config-2.xml|1 1
+Modified: tests/spec/unit/templates/cordova/lib/prepare.spec.js|367 17
+
+Revision: 0cc78c37f61d08f5e53a431aa3677c75c9c705b3
+Author: Ken Naito <fine14r3@gmail.com>
+Date: 20/02/2019 17:13:17
+Message:
+Add tests to Api.spec.js (#22) #MsgLength=32
+
+
+----
+Modified: bin/templates/cordova/Api.js|1 1
+Modified: bin/templates/cordova/handler.js|1 0
+Added: tests/spec/fixtures/testapp/config.xml|40 0
+Added: tests/spec/fixtures/testapp/cordova/.gitkeep|0 0
+Added: tests/spec/fixtures/testplugin/src/electron/sample.json|3 0
+Added: tests/spec/fixtures/testplugin/www/plugin.js|26 0
+Modified: tests/spec/unit/Api.spec.js|404 19
+Modified: tests/spec/unit/handler.spec.js|7 0
+
+Revision: bc285b2828f41bdcc8ebc3d09e2641c351aa5862
+Author: Ken Naito <fine14r3@gmail.com>
+Date: 21/02/2019 11:58:05
+Message:
+Updated Api.spec.js Async Tests to Return Promise (#25) #MsgLength=57
+
+
+----
+Modified: tests/spec/unit/Api.spec.js|210 250
+
+Revision: b7cf5a2d53282a56fc5a3edb2f13bd2ffb925e6b
+Author: エリス <erisu@users.noreply.github.com>
+Date: 21/02/2019 13:03:01
+Message:
+Apply Missing Apache License Header (#21) #MsgLength=103
+
+
+----
+Modified: README.md|21 0
+Modified: tests/spec/fixtures/test-config-1.xml|19 0
+Modified: tests/spec/fixtures/test-config-2.xml|19 0
+Modified: tests/spec/fixtures/test-config-empty.xml|19 0
+Modified: tests/spec/fixtures/testapp/config.xml|19 0
+
+Revision: 6e23472ea758b4d5393929370afac49b9a37b087
+Author: エリス <erisu@users.noreply.github.com>
+Date: 21/02/2019 14:45:17
+Message:
+Remove Unused and Unreachable Code (#24) #MsgLength=42
+
+
+----
+Modified: bin/templates/cordova/Api.js|4 15
+
+Revision: aaa3af10f1eb1f96091008e7f4a19b12596de370
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 21/02/2019 20:03:05
+Message:
+Build Script Improvements (#27) #MsgLength=98
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|9 8
+
+Revision: dc028f2a8475b605de2371d767c3530f3206d51e
+Author: エリス <ellis.bryan@gmail.com>
+Date: 21/02/2019 20:45:08
+Message:
+Remove stubbed tests, comments and refactor to use emit #MsgLength=56
+
+
+----
+Modified: bin/templates/cordova/Api.js|4 11
+Modified: bin/templates/cordova/lib/run.js|0 1
+Modified: tests/spec/unit/Api.spec.js|31 72
+
+Revision: 03ac30ef265c1b65594ff97dd503c608a2f0f957
+Author: エリス <ellis.bryan@gmail.com>
+Date: 22/02/2019 07:52:53
+Message:
+Fix scope issue that causes prepare to not have API #MsgLength=52
+
+
+----
+Modified: bin/templates/cordova/lib/prepare.js|1 1
+Modified: tests/spec/unit/templates/cordova/lib/prepare.spec.js|25 35
+
+
+Revision: ff232ca3712083b66bf3f2f8347a25418fdf94b1
+Author: エリス <erisu@users.noreply.github.com>
+Date: 22/02/2019 15:13:51
+Message:
+Correct File Header Licenses for Cordova JS Compile CMD (#29) #MsgLength=63
+
+
+----
+Modified: cordova-js-src/confighelper.js|18 16
+Modified: cordova-js-src/exec.js|18 16
+Modified: cordova-js-src/platform.js|18 16
+
+Revision: 6548e758613101a9e99221f4dba2c6375a0a98b5
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/02/2019 10:43:21
+Message:
+Asset Install Fix from Mobilespec Report (#30) #MsgLength=132
+
+
+----
+Modified: bin/templates/cordova/handler.js|3 5
+Modified: tests/spec/unit/handler.spec.js|23 14
+
+Revision: 842862db81417270eaef49ff0b29823733b26f25
+Author: エリス <ellis.bryan@gmail.com>
+Date: 25/02/2019 10:59:59
+Message:
+GH-10 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=60
+
+
+----
+Modified: RELEASENOTES.md|33 3
+Modified: package.json|1 1
+
+Revision: 0c02e817fa18bc4ed4adc70eb300a703a3d26b54
+Author: エリス <ellis.bryan@gmail.com>
+Date: 25/02/2019 11:02:14
+Message:
+Set VERSION to 1.1.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+Modified: package.json|1 1
+
+Revision: bf9f8f7d873376ac9f7cded9161867c0ee439e15
+Author: エリス <ellis.bryan@gmail.com>
+Date: 25/02/2019 11:02:17
+Message:
+Update JS snapshot to version 1.1.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: cordova-lib/cordova.js|1246 1516
+
+Revision: bd2e8061d3f8f39b314d1105d75bb859bad1ba20
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 28/02/2019 13:57:56
+Message:
+Update Run to Work with Pre-Cordova 9.x CLI (#33) #MsgLength=140
+
+
+----
+Modified: DOCUMENTATION.md|7 0
+Modified: bin/templates/cordova/lib/run.js|2 1
+Modified: tests/spec/unit/templates/cordova/lib/run.spec.js|3 1
+
+Revision: 017727a673d293b2a4ca66a9104ca84e432c364f
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 28/02/2019 13:59:33
+Message:
+Improve Temp Folder Cleanup in Api.spec.js (#32) #MsgLength=115
+
+
+----
+Modified: .npmignore|2 1
+Modified: tests/spec/unit/Api.spec.js|6 13
+
+Revision: 1cf1d263324da3ed7c0110ef0a519375603e6ef8
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 04/03/2019 15:28:21
+Message:
+Refactor and test build.js: (#35) #MsgLength=154
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|3 3
+Added: tests/spec/unit/templates/cordova/lib/build.spec.js|1299 0
+
+Revision: 42c87f6787079111e0da66fc8f673f6a1f17e5bd
+Author: エリス <ellis.bryan@gmail.com>
+Date: 04/03/2019 15:36:26
+Message:
+GH-10 Updated version and RELEASENOTES.md for release 1.0.1 #MsgLength=60
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 8649e607d605f8c705b983d7042aa73ba7da1c4f
+Author: エリス <ellis.bryan@gmail.com>
+Date: 04/03/2019 15:39:29
+Message:
+Set VERSION to 1.1.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+
+Revision: 220e95d7239a518e8965612883eaf2d3de23717f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 11/03/2019 10:58:00
+Message:
+Rename Electron Main Entry File (#36) #MsgLength=39
+
+
+----
+Modified: DOCUMENTATION.md|1 1
+Modified: bin/lib/create.js|2 2
+Modified: bin/templates/cordova/lib/PackageJsonParser.js|1 1
+Modified: bin/templates/cordova/lib/run.js|1 1
+Renamed: bin/templates/project/cdv-electron-main.js [from bin/templates/project/main.js]|0 0
+Modified: tests/spec/unit/templates/cordova/lib/PackageJsonParser.spec.js|6 6
+Modified: tests/spec/unit/templates/cordova/lib/run.spec.js|2 2
+
+Revision: a23a0a2a7bf295e734f4f3b1a5d90283a7565cf0
+Author: エリス <erisu@users.noreply.github.com>
+Date: 11/03/2019 11:51:49
+Message:
+Remove nodeIntegration Warning by Setting Default to False (#37) #MsgLength=128
+
+
+----
+Modified: bin/templates/project/cdv-electron-main.js|2 1
+Modified: bin/templates/project/cdv-electron-settings.json|4 1
+
+Revision: 4007c3b4df93b1a2aa6e611855b042d1f97ea37a
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/03/2019 09:31:10
+Message:
+Support User Defined Electron Settings (#38) #MsgLength=155
+
+
+----
+Modified: DOCUMENTATION.md|85 31
+Modified: bin/templates/cordova/lib/SettingJsonParser.js|9 2
+Modified: bin/templates/cordova/lib/build.js|1 14
+Modified: bin/templates/cordova/lib/prepare.js|6 1
+Added: bin/templates/cordova/lib/util.js|13 0
+Modified: bin/templates/project/cdv-electron-main.js|3 7
+Modified: bin/templates/project/cdv-electron-settings.json|7 3
+Modified: tests/spec/unit/templates/cordova/lib/SettingJsonParser.spec.js|95 79
+Modified: tests/spec/unit/templates/cordova/lib/build.spec.js|0 18
+Modified: tests/spec/unit/templates/cordova/lib/prepare.spec.js|240 106
+Added: tests/spec/unit/templates/cordova/lib/util.spec.js|38 0
+
+Revision: 8afbf6af47e85d1e7cce06a38ab26ddbd4706d90
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/03/2019 10:48:20
+Message:
+Added Missing License Header to util.js (#39) #MsgLength=47
+
+
+----
+Modified: bin/templates/cordova/lib/util.js|19 0
+
+Revision: a4663bdff2d551dc2b01877136744931fb8f2876
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 14/03/2019 15:13:48
+Message:
+Remove temp dir after create.spec.js test (#40) #MsgLength=49
+
+
+----
+Modified: tests/spec/unit/create.spec.js|3 0
+
+Revision: 66b33d18c7649f776cdf1c56691bbe0325a15cf2
+Author: エリス <ellis.bryan@gmail.com>
+Date: 14/03/2019 17:09:26
+Message:
+GH-10 Updated version and RELEASENOTES.md for release 1.0.2 #MsgLength=60
+
+
+----
+Modified: RELEASENOTES.md|10 1
+Modified: package.json|1 1
+
+Revision: 95ca4de9d9b42b2cfc8141ddfb1ca9144b6a0e33
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 22/03/2019 09:58:48
+Message:
+Update System Requirements in DOCUMENTATION.md (#41) #MsgLength=54
+
+
+----
+Modified: DOCUMENTATION.md|7 3
+
+Revision: 8eb3a4b17f55a3b99b23f2777287c1776fc5a5e0
+Author: Yusrul <yusrul.nidzuan@gmail.com>
+Date: 09/04/2019 12:55:09
+Message:
+Update README.md (#43) #MsgLength=24
+
+
+----
+Modified: README.md|1 0
+
+Revision: f0b9f8d749a2c17a6ce025a859ae595921df0160
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 09/04/2019 13:16:30
+Message:
+Append Installer Icon to User Build Settings for Custom Builds (#45) #MsgLength=70
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|4 0
+Modified: tests/spec/unit/templates/cordova/lib/build.spec.js|21 10
+
+Revision: fe51a86bec855393b0fbea1d5c595c4b6895ed87
+Author: Jack Van Zyl <jackvanzyl@icloud.com>
+Date: 25/04/2019 14:43:46
+Message:
+Update the config.xml path in the XHR load eventListener (#42) #MsgLength=64
+
+
+----
+Modified: cordova-js-src/confighelper.js|1 1
+Modified: cordova-lib/cordova.js|1 1
+
+Revision: 9bf4945d09c7100c5a9461af1e962291ac6222ed
+Author: エリス <erisu@users.noreply.github.com>
+Date: 01/05/2019 19:57:15
+Message:
+Add Node.js 12 to CI Services (#53) #MsgLength=37
+
+
+----
+Modified: .travis.yml|1 0
+
+Revision: d74df959703fc9e00e357dd29211dd002860ce3e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/05/2019 13:58:05
+Message:
+Updated DOCUMENTATION.md (#61) #MsgLength=32
+
+
+----
+Modified: DOCUMENTATION.md|178 184
+
+Revision: 454656b2bc348e05a04de2ac83847cae3bc1e170
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 27/05/2019 14:07:56
+Message:
+Implement Splash Screen handling (#48) #MsgLength=92
+
+
+----
+Modified: bin/templates/cordova/lib/prepare.js|91 20
+Modified: tests/spec/unit/templates/cordova/lib/prepare.spec.js|294 95
+
+Revision: 229647c8d1714ded2a8628040646ae36c4cb062f
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 27/05/2019 15:48:27
+Message:
+Append package top-level key options (#51) #MsgLength=98
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|7 0
+Modified: tests/spec/unit/templates/cordova/lib/build.spec.js|146 0
+
+Revision: 296c6d0c14bc75eb2359a667a75b304c74cb9737
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 27/05/2019 16:39:56
+Message:
+Allow Users to Set Linux App Category (#59) #MsgLength=45
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|3 0
+Modified: tests/spec/unit/templates/cordova/lib/build.spec.js|3 2
+
+Revision: 639b0c7d0683e36de8329cc9d919080e153e8d49
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 27/05/2019 16:41:10
+Message:
+Remove Maintainer Option from Linux Build JSON (#57) #MsgLength=54
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|0 1
+Modified: bin/templates/cordova/lib/build/linux.json|0 1
+
+Revision: 506553c5a113df968d01f94cdc8373c011163100
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/05/2019 10:48:16
+Message:
+Added Bundle Node Module Support (#54) #MsgLength=208
+
+
+----
+Modified: DOCUMENTATION.md|29 0
+Modified: bin/templates/cordova/lib/PackageJsonParser.js|17 1
+Modified: bin/templates/cordova/lib/prepare.js|3 1
+Modified: tests/spec/unit/templates/cordova/lib/PackageJsonParser.spec.js|195 157
+Modified: tests/spec/unit/templates/cordova/lib/prepare.spec.js|137 50
+
+Revision: 13bef82667c110e2c0aaeab793055d9e47808955
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 28/05/2019 11:55:30
+Message:
+Set Author Name and Email to package.json (#58) #MsgLength=49
+
+
+----
+Modified: bin/templates/cordova/lib/PackageJsonParser.js|8 1
+Modified: tests/spec/unit/templates/cordova/lib/PackageJsonParser.spec.js|2 2
+
+Revision: c535c1580550dca8f9e0fbd6281a8bfef1817f8e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 29/05/2019 10:47:13
+Message:
+Fix Bundle Feature's Project Path Issue & Warning Output (#62) #MsgLength=168
+
+
+----
+Modified: bin/templates/cordova/lib/PackageJsonParser.js|3 1
+Modified: bin/templates/cordova/lib/prepare.js|1 1
+Modified: tests/spec/unit/templates/cordova/lib/PackageJsonParser.spec.js|7 3
+Modified: tests/spec/unit/templates/cordova/lib/prepare.spec.js|39 39
+
+Revision: 4cc33ccc64839b375391519acd3ae1cae1285f45
+Author: エリス <erisu@users.noreply.github.com>
+Date: 13/06/2019 13:33:56
+Message:
+Fixed package.json version to 1.1.0-dev (#65) #MsgLength=47
+
+
+----
+Modified: package.json|1 1
+
+Revision: 0c32148da52e8920382f88171dc8d4f5f16869ce
+Author: エリス <erisu@users.noreply.github.com>
+Date: 15/06/2019 10:46:47
+Message:
+Bump cordova-common@^3.2.0 (#70) #MsgLength=34
+
+
+----
+Modified: package-lock.json|450 502
+Modified: package.json|1 1
+
+Revision: 4e9a3181487d3a2a976ed28846add54b42b26f09
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/06/2019 15:36:14
+Message:
+Bump dependency fs-extra@^8.0.1 (#66) #MsgLength=98
+
+
+----
+Modified: package-lock.json|1569 1386
+Modified: package.json|1 1
+
+Revision: 6b0d08315bc24af85ad716ea94c55752322f0af6
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/06/2019 15:24:02
+Message:
+Update devDependencies (#71) #MsgLength=143
+
+
+----
+Modified: package-lock.json|520 1011
+Modified: package.json|5 5
+
+Revision: e979872ce1acc29ed06cd748428215023c059817
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 26/06/2019 15:42:18
+Message:
+fix: Typo in Build: `Singning` -> `Signing` (#75) #MsgLength=51
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|7 7
+Modified: tests/spec/unit/templates/cordova/lib/build.spec.js|19 19
+
+Revision: 0e116d92dc21a2a0829ae28623dac4bd56587eeb
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 27/06/2019 10:57:16
+Message:
+Append Overridable/Top-Level per Platform Options (#76) #MsgLength=57
+
+
+----
+Modified: bin/templates/cordova/lib/build.js|68 3
+Modified: tests/spec/unit/templates/cordova/lib/build.spec.js|317 0
+
+Revision: d6421290247bd6842cf6ca4bcf658aa56a617b51
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/06/2019 10:01:06
+Message:
+fix: display correct package version in CLI (#77) #MsgLength=51
+
+
+----
+Modified: bin/templates/cordova/version|8 6
+
+Revision: 71244b4ffd1482dbf084ff5f02a5fa49d95084b5
+Author: エリス <ellis.bryan@gmail.com>
+Date: 28/06/2019 10:28:38
+Message:
+Updated RELEASENOTES & version for release 1.1.0 (electron-v1.1.0) #MsgLength=67
+
+
+----
+Modified: RELEASENOTES.md|23 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 924742cf71d9abc61f838b88bee38953decee048
+Author: エリス <ellis.bryan@gmail.com>
+Date: 28/06/2019 10:37:57
+Message:
+Set VERSION to 1.2.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+Modified: package.json|1 1
+
+Revision: 8b7745f63dd31a3f30368509bd44c9a1f5bb9f85
+Author: エリス <ellis.bryan@gmail.com>
+Date: 28/06/2019 10:38:00
+Message:
+Update JS snapshot to version 1.2.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: cordova-lib/cordova.js|38 9
+
+Revision: de08c6b50d6d11a002984abb1438991c648f2737
+Author: エリス <ellis.bryan@gmail.com>
+Date: 28/06/2019 10:40:02
+Message:
+Update package-lock.json to version 1.2.0-dev #MsgLength=46
+
+
+----
+Modified: package-lock.json|1 1
+
+Revision: 339778a896b9b3f5eb0aa8bcbe13001ac368b83e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/07/2019 15:20:54
+Message:
+fix: use spyOn for process global var (#85) #MsgLength=45
+
+
+----
+Modified: tests/spec/unit/templates/cordova/lib/build.spec.js|4 4
+Modified: tests/spec/unit/templates/cordova/lib/clean.spec.js|3 9
+Modified: tests/spec/unit/templates/cordova/lib/run.spec.js|3 9
+
+Revision: e451533654931a1a56d52d46a20516793df30063
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/07/2019 15:58:22
+Message:
+refactor: improve create test spec speed (#86) #MsgLength=48
+
+
+----
+Modified: tests/spec/unit/create.spec.js|38 13
+
+Revision: 46e2106723a6faec502c2cc71ca9ee8ae123de12
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/07/2019 16:01:01
+Message:
+fix: prepare missing dependencies failure (#89) #MsgLength=125
+
+
+----
+Modified: bin/templates/cordova/lib/PackageJsonParser.js|10 8
+Modified: tests/spec/unit/templates/cordova/lib/PackageJsonParser.spec.js|11 0
+
+Revision: 2182fef3226f89e285e1a9e0ee79e2853ed79c16
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 22/07/2019 16:17:31
+Message:
+fix: filter icons only matching requirements (#79) #MsgLength=168
+
+
+----
+Modified: bin/templates/cordova/lib/prepare.js|12 24
+Modified: tests/spec/unit/templates/cordova/lib/prepare.spec.js|84 42
+
+Revision: 13c2616936b050ff3077cf8d6329594f920b180d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 20/08/2019 14:24:59
+Message:
+chore: rebuilt package-lock.json for audit fix (#94) #MsgLength=54
+
+
+----
+Modified: package-lock.json|362 373
+
+Revision: 8d6c6a0e93f02b5a6d033eafcfe98c58e6c7509e
+Author: エリス <ellis.bryan@gmail.com>
+Date: 20/08/2019 14:42:16
+Message:
+Updated RELEASENOTES.md & version for release 1.1.1 (electron-v1.1.1) #MsgLength=70
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 1f30786ca5f0874b8b048307ef7968b6903d5f05
+Author: エリス <ellis.bryan@gmail.com>
+Date: 20/08/2019 15:07:03
+Message:
+Set VERSION to 1.2.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+
+Revision: 74eb4e01ab8340f14c9e8cffb163c984b45b8d6a
+Author: エリス <ellis.bryan@gmail.com>
+Date: 20/08/2019 15:07:06
+Message:
+Update JS snapshot to version 1.2.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: cordova-lib/cordova.js|7 9
+
+Revision: 932bd675de59638d295aee96a111fa9a9b17b634
+Author: エリス <ellis.bryan@gmail.com>
+Date: 20/08/2019 17:02:11
+Message:
+Update package-lock.json to version 1.2.0-dev #MsgLength=46
+
+
+----
+Modified: package-lock.json|1 1
+
+Revision: 418a4a73e0a547c4a65695d6ffa6977029f81e27
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 02/09/2019 15:28:04
+Message:
+feat: Support Loading Local HTML Files or Remote URL in the BrowserWindow (#81) #MsgLength=135
+
+
+----
+Modified: DOCUMENTATION.md|71 2
+Modified: bin/templates/cordova/lib/SettingJsonParser.js|13 3
+Modified: bin/templates/cordova/lib/prepare.js|1 1
+Modified: bin/templates/project/cdv-electron-main.js|6 6
+Modified: tests/spec/unit/templates/cordova/lib/SettingJsonParser.spec.js|14 6
+Modified: tests/spec/unit/templates/cordova/lib/prepare.spec.js|4 4
+
+Revision: d758a46e123cef6e65b3fe4a7214654e79ea31db
+Author: Florian Bernard <florian.bernard64@gmail.com>
+Date: 26/09/2019 06:04:20
+Message:
+fix typo (#96) #MsgLength=16
+
+
+----
+Modified: DOCUMENTATION.md|1 1
+
+Revision: ff14372d7375a2314d71355812417826e725ba68
+Author: エリス <erisu@users.noreply.github.com>
+Date: 15/11/2019 16:31:40
+Message:
+chore: bump version to 2.0.0-dev (#110) #MsgLength=41
+
+
+----
+Modified: VERSION|1 1
+Modified: cordova-lib/cordova.js|1 1
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 3bd22ad9d925ddf9936ea6f7519585dcbf5497af
+Author: エリス <erisu@users.noreply.github.com>
+Date: 13/09/2019 09:54:41
+Message:
+chore: drop node 6 and 8 support (#69) #MsgLength=40
+
+
+----
+Modified: .travis.yml|0 2
+Modified: package.json|1 1
+
+Revision: 860b4a4a0c11562d50ff2b56582547b88a49403d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 13/09/2019 09:55:34
+Message:
+chore: bump electron dependencies (#68) #MsgLength=128
+
+
+----
+Modified: bin/templates/cordova/lib/build/base.json|2 2
+Modified: package-lock.json|228 344
+Modified: package.json|2 2
+
+Revision: c5df1de68979447179534ed3d410a8451865b05b
+Author: エリス <erisu@users.noreply.github.com>
+Date: 13/09/2019 10:25:37
+Message:
+chore: update development dependencies (#67) #MsgLength=312
+
+
+----
+Modified: bin/templates/cordova/Api.js|5 5
+Modified: bin/templates/cordova/handler.js|1 1
+Modified: bin/templates/cordova/lib/build.js|2 2
+Modified: bin/templates/cordova/lib/prepare.js|5 5
+Modified: bin/templates/cordova/parser.js|1 1
+Modified: package-lock.json|125 76
+Modified: package.json|7 8
+Modified: tests/spec/unit/Api.spec.js|5 5
+Modified: tests/spec/unit/create.spec.js|1 1
+Modified: tests/spec/unit/templates/cordova/lib/ManifestJsonParser.spec.js|5 5
+Modified: tests/spec/unit/templates/cordova/lib/PackageJsonParser.spec.js|2 2
+Modified: tests/spec/unit/templates/cordova/lib/build.spec.js|13 13
+Modified: tests/spec/unit/templates/cordova/lib/prepare.spec.js|13 12
+Modified: tests/spec/unit/templates/cordova/lib/util.spec.js|3 3
+Modified: tests/spec/unit/templates/parser.spec.js|12 12
+
+Revision: ee24d80df57e5578d2081318e9e7eb4e849d61a4
+Author: エリス <erisu@users.noreply.github.com>
+Date: 15/11/2019 18:03:55
+Message:
+refactor: eslint setup (#113) #MsgLength=127
+
+
+----
+Modified: .eslintrc.yml|8 9
+Modified: bin/templates/cordova/Api.js|9 10
+Modified: bin/templates/cordova/lib/build.js|5 5
+Modified: cordova-js-src/confighelper.js|4 4
+Modified: cordova-js-src/exec.js|0 4
+Modified: cordova-js-src/platform.js|0 1
+Modified: package-lock.json|355 266
+Modified: package.json|3 9
+Deleted: tests/.eslintrc.yml|0 19
+Modified: tests/spec/unit/Api.spec.js|1 2
+Modified: tests/spec/unit/templates/cordova/lib/ManifestJsonParser.spec.js|0 1
+Modified: tests/spec/unit/templates/cordova/lib/SettingJsonParser.spec.js|0 1
+Modified: tests/spec/unit/templates/cordova/lib/build.spec.js|0 1
+Modified: tests/spec/unit/templates/cordova/lib/clean.spec.js|1 1
+Modified: tests/spec/unit/templates/cordova/lib/prepare.spec.js|0 3
+
+Revision: 11381ff184b6d5a40edece3f1b3170e9894e346e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 15/11/2019 18:29:27
+Message:
+chore: update jasmine dependency (#114) #MsgLength=41
+
+
+----
+Modified: package.json|1 1
+Modified: tests/spec/coverage.json|5 7
+
+Revision: 751b80a09a85c5ae6786006297845ac07542371c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 20/11/2019 16:01:35
+Message:
+feat: move ci to gh-actions (#112) #MsgLength=36
+
+
+----
+Added: .github/workflows/ci.yml|49 0
+Modified: .travis.yml|3 11
+Modified: package-lock.json|718 268
+Modified: package.json|11 8
+
+Revision: dd61597aba3a37753b78cfab4d262c917ef469c0
+Author: エリス <erisu@users.noreply.github.com>
+Date: 21/11/2019 23:51:58
+Message:
+refator: replace shelljs/spawn with execa (#118) #MsgLength=50
+
+
+----
+Modified: bin/templates/cordova/lib/run.js|2 2
+Modified: package-lock.json|136 42
+Modified: package.json|1 0
+Modified: tests/spec/unit/create.spec.js|5 13
+Modified: tests/spec/unit/templates/cordova/lib/run.spec.js|6 8
+
+Revision: 61f4d0f64607be5edebbc3b084cb0da516b8b489
+Author: エリス <erisu@users.noreply.github.com>
+Date: 22/11/2019 00:13:09
+Message:
+refactor: remove shelljs and update tests (#116) #MsgLength=689
+
+
+----
+Modified: bin/templates/cordova/lib/prepare.js|3 6
+Modified: package-lock.json|121 168
+Modified: package.json|1 2
+Modified: tests/spec/unit/templates/cordova/lib/prepare.spec.js|11 36
+
+Revision: 3c3425abefc5d38ab9fb8d039ea233cd49ca7d62
+Author: エリス <erisu@users.noreply.github.com>
+Date: 19/12/2019 18:57:03
+Message:
+refactor: transform var to let/const (#120) #MsgLength=45
+
+
+----
+Modified: bin/templates/cordova/Api.js|1 1
+
+Revision: 04de631547c75d7c5e90c520b80ea93242478d5b
+Author: エリス <erisu@users.noreply.github.com>
+Date: 20/12/2019 05:18:51
+Message:
+refactor: transform arrow functions & arrow returns (#121) #MsgLength=60
+
+
+----
+Modified: bin/templates/cordova/Api.js|1 1
+Modified: bin/templates/cordova/lib/util.js|1 1
+Modified: bin/update|10 6
+Modified: tests/spec/unit/Api.spec.js|229 242
+Modified: tests/spec/unit/templates/cordova/lib/build.spec.js|5 5
+Modified: tests/spec/unit/templates/cordova/lib/prepare.spec.js|14 14
+
+Revision: 617b87f39349002d55e29803c3aee8a986d753f6
+Author: エリス <erisu@users.noreply.github.com>
+Date: 20/12/2019 05:50:15
+Message:
+refactor: transform object shorthand (#122) #MsgLength=45
+
+
+----
+Modified: bin/templates/cordova/Api.js|1 1
+Modified: tests/spec/unit/templates/cordova/lib/build.spec.js|27 27
+
+Revision: 3d9072d9d2fe45ffb0885dff9ff44a8cac150b71
+Author: エリス <erisu@users.noreply.github.com>
+Date: 20/12/2019 05:56:30
+Message:
+refactor: transform template strings (#123) #MsgLength=45
+
+
+----
+Modified: bin/templates/cordova/Api.js|1 1
+Modified: bin/templates/cordova/handler.js|1 1
+Modified: bin/templates/cordova/lib/prepare.js|1 1
+Modified: bin/templates/cordova/parser.js|1 1
+Modified: tests/spec/unit/Api.spec.js|12 12
+
+Revision: 116825fa2633fb0e26185734206c06c139127959
+Author: エリス <erisu@users.noreply.github.com>
+Date: 20/12/2019 06:00:59
+Message:
+refactor: transform for (#124) #MsgLength=32
+
+
+----
+Modified: bin/templates/cordova/lib/prepare.js|5 11
+
+Revision: 90aa4b35b4ead6887e6d627b818c38d0feb80fe3
+Author: エリス <erisu@users.noreply.github.com>
+Date: 30/12/2019 19:50:02
+Message:
+chore: update package.json (#128) #MsgLength=35
+
+
+----
+Modified: package.json|6 9
+
+Revision: 9221d4465ebdf5add3dc674df802e0520a3c081d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 31/12/2019 05:54:19
+Message:
+chore: update electron dependencies (#117) #MsgLength=44
+
+
+----
+Modified: bin/templates/cordova/lib/build/base.json|2 2
+Modified: package-lock.json|688 1420
+Modified: package.json|1 1
+
+Revision: 8b51fc309b844ba2e784bfd1b2c24de37ad8a6fe
+Author: エリス <erisu@users.noreply.github.com>
+Date: 21/01/2020 08:12:46
+Message:
+chore: configure app rel dependencies as abs paths (#125) #MsgLength=59
+
+
+----
+Modified: bin/templates/cordova/lib/PackageJsonParser.js|26 3
+Modified: bin/templates/cordova/lib/prepare.js|1 1
+Modified: tests/spec/unit/templates/cordova/lib/PackageJsonParser.spec.js|69 12
+
+Revision: 7af81cc68d728a4aee12642c46e279395504f775
+Author: エリス <erisu@users.noreply.github.com>
+Date: 21/01/2020 08:25:31
+Message:
+refactor (create): simplify project creation (#129) #MsgLength=246
+
+
+----
+Modified: .eslintignore|2 1
+Modified: .gitignore|1 0
+Added: .npm-scripts/prepack.js|5 0
+Modified: .npmignore|6 1
+Modified: bin/create|1 1
+Modified: bin/lib/create.js|8 30
+Renamed: bin/templates/platform_www/cdv-electron-main.js [from bin/templates/project/cdv-electron-main.js]|0 0
+Renamed: bin/templates/platform_www/cdv-electron-settings.json [from bin/templates/project/cdv-electron-settings.json]|0 0
+Renamed: bin/templates/platform_www/config.xml [from bin/templates/project/config.xml]|0 0
+Renamed: bin/templates/www/css/index.css [from bin/templates/project/www/css/index.css]|0 0
+Renamed: bin/templates/www/icons/icon.png [from bin/templates/project/www/icons/icon.png]|0 0
+Renamed: bin/templates/www/img/logo.png [from bin/templates/project/www/img/logo.png]|0 0
+Renamed: bin/templates/www/img/splash.png [from bin/templates/project/www/img/splash.png]|0 0
+Renamed: bin/templates/www/index.html [from bin/templates/project/www/index.html]|0 0
+Renamed: bin/templates/www/js/index.js [from bin/templates/project/www/js/index.js]|0 0
+Modified: package.json|4 1
+
+Revision: fb9db4fa1dc430e295faefe31b390ff5376d27fc
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/01/2020 10:45:13
+Message:
+fix(npm-script): prepack (#136) #MsgLength=33
+
+
+----
+Modified: .npm-scripts/prepack.js|1 1
+
+Revision: 4eca203f3d13520cc6d3867ea9005887792a95af
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/02/2020 22:02:58
+Message:
+test: refactor with minor fixes & improvements (#131) #MsgLength=515
+
+
+----
+Modified: bin/lib/create.js|0 3
+Modified: bin/templates/cordova/Api.js|23 21
+Modified: bin/templates/cordova/handler.js|4 4
+Modified: bin/templates/cordova/lib/ManifestJsonParser.js|1 1
+Modified: bin/templates/cordova/parser.js|0 11
+Modified: package.json|6 0
+Added: tests/spec/fixtures/test-browser-plugin/plugin.xml|35 0
+Added: tests/spec/fixtures/test-browser-plugin/www/plugin.js|26 0
+Added: tests/spec/fixtures/test-config-no-author-custom-email.xml|57 0
+Added: tests/spec/fixtures/test-non-electron-plugin/plugin.xml|29 0
+Added: tests/spec/fixtures/testplugin-empty-jsmodule/plugin.xml|32 0
+Added: tests/spec/fixtures/testplugin-empty-jsmodule/www/MyTestPlugin2.js|26 0
+Added: tests/spec/fixtures/testplugin/plugin.xml|39 0
+Modified: tests/spec/unit/Api.spec.js|289 437
+Modified: tests/spec/unit/create.spec.js|10 2
+Modified: tests/spec/unit/handler.spec.js|108 310
+Modified: tests/spec/unit/lib/update.spec.js|3 8
+Modified: tests/spec/unit/templates/cordova/lib/ManifestJsonParser.spec.js|140 201
+Modified: tests/spec/unit/templates/cordova/lib/PackageJsonParser.spec.js|116 172
+Modified: tests/spec/unit/templates/parser.spec.js|91 150
+
+Revision: 1ccca7d96c4b36b7f0baf5a919648573bfc56724
+Author: エリス <erisu@users.noreply.github.com>
+Date: 21/02/2020 08:52:26
+Message:
+test (node-12.16.x): fix failures caused by shebang and rewire lint (#141) #MsgLength=76
+
+
+----
+Modified: bin/lib/create.js|0 2
+Modified: bin/templates/cordova/Api.js|15 1
+Modified: bin/templates/cordova/version|2 13
+Modified: tests/spec/unit/Api.spec.js|33 4
+
+Revision: 26f50e31cbc356173549c3fc1c1b926216cf3799
+Author: エリス <erisu@users.noreply.github.com>
+Date: 21/02/2020 21:00:11
+Message:
+breaking: remove platform-centered workflow (#138) #MsgLength=203
+
+
+----
+Deleted: bin/create|0 73
+Deleted: bin/create.bat|0 26
+Modified: bin/templates/cordova/Api.js|5 2
+Deleted: bin/templates/cordova/build|0 37
+Deleted: bin/templates/cordova/build.bat|0 26
+Deleted: bin/templates/cordova/clean|0 37
+Deleted: bin/templates/cordova/clean.bat|0 26
+Deleted: bin/templates/cordova/log|0 22
+Deleted: bin/templates/cordova/run|0 39
+Deleted: bin/templates/cordova/run.bat|0 26
+Deleted: bin/update|0 38
+Deleted: bin/update.bat|0 26
+Modified: package.json|0 1
+Modified: tests/spec/unit/Api.spec.js|11 7
+Modified: tests/spec/unit/create.spec.js|0 35
+
+Revision: c35713fa839e8afef999a8de6a554977fa828089
+Author: エリス <erisu@users.noreply.github.com>
+Date: 11/04/2020 13:04:51
+Message:
+breaking: restructure the platform lib code (#142) #MsgLength=928
+
+
+----
+Modified: bin/templates/cordova/Api.js|8 358
+Added: lib/Api.js|380 0
+Renamed: lib/ManifestJsonParser.js [from bin/templates/cordova/lib/ManifestJsonParser.js]|0 0
+Renamed: lib/PackageJsonParser.js [from bin/templates/cordova/lib/PackageJsonParser.js]|0 0
+Renamed: lib/SettingJsonParser.js [from bin/templates/cordova/lib/SettingJsonParser.js]|0 0
+Renamed: lib/build.js [from bin/templates/cordova/lib/build.js]|2 2
+Renamed: lib/build/base.json [from bin/templates/cordova/lib/build/base.json]|0 0
+Renamed: lib/build/darwin.json [from bin/templates/cordova/lib/build/darwin.json]|0 0
+Renamed: lib/build/linux.json [from bin/templates/cordova/lib/build/linux.json]|0 0
+Renamed: lib/build/win32.json [from bin/templates/cordova/lib/build/win32.json]|0 0
+Renamed: lib/check_reqs.js [from bin/templates/cordova/lib/check_reqs.js]|0 0
+Renamed: lib/clean.js [from bin/templates/cordova/lib/clean.js]|0 0
+Renamed: lib/create.js [from bin/lib/create.js]|5 5
+Renamed: lib/handler.js [from bin/templates/cordova/handler.js]|0 0
+Renamed: lib/parser.js [from bin/templates/cordova/parser.js]|0 0
+Renamed: lib/prepare.js [from bin/templates/cordova/lib/prepare.js]|0 0
+Renamed: lib/run.js [from bin/templates/cordova/lib/run.js]|1 1
+Renamed: lib/update.js [from bin/lib/update.js]|0 0
+Renamed: lib/util.js [from bin/templates/cordova/lib/util.js]|0 0
+Modified: package.json|1 1
+Renamed: tests/spec/unit/lib/Api.spec.js [from tests/spec/unit/Api.spec.js]|13 13
+Renamed: tests/spec/unit/lib/ManifestJsonParser.spec.js [from tests/spec/unit/templates/cordova/lib/ManifestJsonParser.spec.js]|7 5
+Renamed: tests/spec/unit/lib/PackageJsonParser.spec.js [from tests/spec/unit/templates/cordova/lib/PackageJsonParser.spec.js]|7 6
+Renamed: tests/spec/unit/lib/SettingJsonParser.spec.js [from tests/spec/unit/templates/cordova/lib/SettingJsonParser.spec.js]|5 5
+Renamed: tests/spec/unit/lib/build.spec.js [from tests/spec/unit/templates/cordova/lib/build.spec.js]|21 22
+Renamed: tests/spec/unit/lib/clean.spec.js [from tests/spec/unit/templates/cordova/lib/clean.spec.js]|33 58
+Renamed: tests/spec/unit/lib/create.spec.js [from tests/spec/unit/create.spec.js]|4 3
+Renamed: tests/spec/unit/lib/handler.spec.js [from tests/spec/unit/handler.spec.js]|4 1
+Renamed: tests/spec/unit/lib/parser.spec.js [from tests/spec/unit/templates/parser.spec.js]|4 1
+Renamed: tests/spec/unit/lib/prepare.spec.js [from tests/spec/unit/templates/cordova/lib/prepare.spec.js]|8 5
+Renamed: tests/spec/unit/lib/run.spec.js [from tests/spec/unit/templates/cordova/lib/run.spec.js]|9 9
+Modified: tests/spec/unit/lib/update.spec.js|5 1
+Renamed: tests/spec/unit/lib/util.spec.js [from tests/spec/unit/templates/cordova/lib/util.spec.js]|5 1
+
+Revision: 936ab4a4e517c1a2275653b9c8193dfb43725365
+Author: エリス <erisu@users.noreply.github.com>
+Date: 11/04/2020 17:44:31
+Message:
+ci: update workflow (#146) #MsgLength=172
+
+
+----
+Modified: .github/workflows/ci.yml|5 1
+Modified: .npmignore|0 4
+Deleted: .travis.yml|0 30
+
+Revision: c37c354c4e7e5078792ca776c8da4c1908b8f7d9
+Author: エリス <erisu@users.noreply.github.com>
+Date: 11/04/2020 20:02:18
+Message:
+chore(npm): bump @cordova/eslint-config@^3.0.0 w/ lint fix (#144) #MsgLength=67
+
+
+----
+Modified: lib/PackageJsonParser.js|1 1
+Modified: lib/build.js|4 4
+Modified: lib/prepare.js|1 1
+Modified: package-lock.json|203 99
+Modified: package.json|1 1
+Modified: tests/spec/unit/lib/SettingJsonParser.spec.js|1 1
+Modified: tests/spec/unit/lib/handler.spec.js|4 4
+
+Revision: 547ace43c9c8d256e103184b5f945718cb0be321
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/04/2020 18:46:40
+Message:
+chore: various cleanup (#147) #MsgLength=262
+
+
+----
+Modified: .eslintignore|1 1
+Modified: .gitignore|19 8
+Modified: .npmignore|3 10
+Modified: LICENSE|2 59
+Modified: NOTICE|1 1
+
+Revision: 0c0839d86ffd1cc7971f3c445b6a01b862f2b24b
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:18:19
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Modified: CONTRIBUTING.md|23 21
+
+Revision: b36b7ce8c479a7ebf6664dec1f61ca937022dcdd
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:30:47
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: 71478929d2d0cc921baeda1704bbe0ea95051a7a
+Author: エリス <erisu@users.noreply.github.com>
+Date: 02/05/2020 01:53:01
+Message:
+feat: support electron arguments on run command (#148) #MsgLength=180
+
+
+----
+Modified: DOCUMENTATION.md|13 0
+Modified: lib/run.js|9 3
+Modified: tests/spec/unit/lib/run.spec.js|26 0
+
+Revision: 3b3a2eba0a68ff3fa78f2581e6da49b71512db52
+Author: エリス <erisu@users.noreply.github.com>
+Date: 02/05/2020 11:52:58
+Message:
+breaking(npm): update dependencies (#145) #MsgLength=534
+
+
+----
+Modified: LICENSE|0 58
+Modified: lib/build/base.json|2 2
+Modified: package-lock.json|1398 1940
+Modified: package.json|7 8
+
+Revision: 833c2ebb995c54d341448018168d27adf30b983c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/05/2020 15:44:23
+Message:
+breaking: bump cordova-common 4.0.1 (#151) #MsgLength=44
+
+
+----
+Modified: package-lock.json|6 6
+Modified: package.json|1 1
+
+Revision: 0ce08cf4cc1989fd198ddd0b2ed41bb3215d79bc
+Author: エリス <erisu@users.noreply.github.com>
+Date: 29/05/2020 14:46:39
+Message:
+breaking: bump electron & electron-builder (#152) #MsgLength=51
+
+
+----
+Modified: lib/build/base.json|2 2
+Modified: package-lock.json|144 90
+Modified: package.json|2 2
+
+Revision: f2d4575c6217a9e0a6afe417a984f53cb773d5bd
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/06/2020 23:04:28
+Message:
+refactor: cleanup unused code (#153) #MsgLength=286
+
+
+----
+Modified: lib/build.js|0 9
+Modified: lib/clean.js|0 5
+Modified: lib/create.js|0 5
+Modified: lib/run.js|0 7
+Deleted: lib/update.js|0 24
+Modified: tests/spec/unit/lib/build.spec.js|0 19
+Modified: tests/spec/unit/lib/clean.spec.js|0 10
+Modified: tests/spec/unit/lib/create.spec.js|2 10
+Modified: tests/spec/unit/lib/run.spec.js|0 12
+Deleted: tests/spec/unit/lib/update.spec.js|0 46
+
+Revision: cc03aff0541487c5c6ef0fc85c89bb2073c19a24
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/06/2020 23:21:57
+Message:
+feature: support custom scheme & hostname (#154) #MsgLength=335
+
+
+----
+Modified: .eslintrc.yml|4 0
+Modified: bin/templates/platform_www/cdv-electron-main.js|49 3
+Added: bin/templates/platform_www/cdv-reserved-scheme.json|43 0
+Modified: lib/SettingJsonParser.js|6 0
+Added: tests/spec/fixtures/test-config-custom-scheme.xml|28 0
+Modified: tests/spec/unit/lib/SettingJsonParser.spec.js|46 1
+
+Revision: 6d707601757a3a85a464b4adce05fa60cfb39b4a
+Author: エリス <erisu@users.noreply.github.com>
+Date: 15/07/2020 22:17:37
+Message:
+fix(build): format top-level key for nsis-web (#158) #MsgLength=54
+
+
+----
+Modified: lib/build.js|7 1
+Modified: tests/spec/unit/lib/build.spec.js|27 0
+
+Revision: 81356097d1f42ab1a87f7a5881d5d35749cb35f7
+Author: エリス <erisu@users.noreply.github.com>
+Date: 15/07/2020 22:21:56
+Message:
+ci: add node 14 to workflow (#157) #MsgLength=36
+
+
+----
+Modified: .github/workflows/ci.yml|1 1
+
+Revision: d6fbdb83fdacda274d762e955c72607bf38c1e50
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/07/2020 11:47:51
+Message:
+refactor: remove more platform-centered files & update code (#156) #MsgLength=242
+
+
+----
+Deleted: bin/templates/www/css/index.css|0 116
+Deleted: bin/templates/www/icons/icon.png|0 0
+Deleted: bin/templates/www/img/logo.png|0 0
+Deleted: bin/templates/www/img/splash.png|0 0
+Deleted: bin/templates/www/index.html|0 44
+Deleted: bin/templates/www/js/index.js|0 49
+Modified: lib/Api.js|6 2
+Modified: package.json|0 1
+Modified: tests/spec/unit/lib/Api.spec.js|16 1
+Modified: tests/spec/unit/lib/build.spec.js|15 3
+Modified: tests/spec/unit/lib/prepare.spec.js|15 7
+
+Revision: 8c527de81a36cf76a62859083b9edd9f059d6fb1
+Author: エリス <erisu@users.noreply.github.com>
+Date: 04/08/2020 07:06:00
+Message:
+breaking: use platform config parser (#162) #MsgLength=45
+
+
+----
+Modified: lib/Api.js|4 0
+Modified: tests/spec/unit/lib/Api.spec.js|16 3
+
+Revision: c1fa8a5ae40d342e32e1773d68898cad23e603b4
+Author: エリス <erisu@users.noreply.github.com>
+Date: 19/08/2020 22:28:34
+Message:
+feat: install devtool extensions for debug builds (#160) #MsgLength=280
+
+
+----
+Modified: DOCUMENTATION.md|48 0
+Modified: bin/templates/platform_www/cdv-electron-main.js|11 0
+Modified: lib/Api.js|3 11
+Modified: lib/PackageJsonParser.js|16 0
+Modified: lib/prepare.js|1 0
+Modified: lib/util.js|22 0
+Modified: package-lock.json|69 0
+Modified: package.json|1 0
+Modified: tests/spec/unit/lib/Api.spec.js|2 24
+Modified: tests/spec/unit/lib/PackageJsonParser.spec.js|33 0
+Modified: tests/spec/unit/lib/prepare.spec.js|112 0
+
+Revision: 03bd11b93f94982bb9b6b85f6c03f5ee999fed3f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 08/09/2020 22:15:18
+Message:
+chore: bump electron related dependencies (#164) #MsgLength=161
+
+
+----
+Modified: lib/build/base.json|3 3
+Modified: package-lock.json|168 125
+Modified: package.json|2 2
+
+Revision: 734bbe7cf82aecebda614e6c6ca723078b3f50b8
+Author: エリス <erisu@users.noreply.github.com>
+Date: 08/09/2020 22:29:36
+Message:
+chore: bump dependencies to latest (#165) #MsgLength=43
+
+
+----
+Modified: package-lock.json|1499 459
+Modified: package.json|5 5
+
+Revision: df16080d30858812b00af87b578482762e861307
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/09/2020 18:32:02
+Message:
+chore: bump dependencies & related usage (#168) #MsgLength=49
+
+
+----
+Modified: lib/build/base.json|2 2
+Modified: package-lock.json|108 60
+Modified: package.json|2 2
+
+Revision: 143cd27d31480e9e1dd5b20c257df81567f3cbe8
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 17/09/2020 20:28:21
+Message:
+Updated RELEASENOTES.md & version for release 2.0.0 (electron-v2.0.0) #MsgLength=70
+
+
+----
+Modified: RELEASENOTES.md|81 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 701476ce5a8816917eeaa523e93c8a39f054392b
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 17/09/2020 20:30:01
+Message:
+Set VERSION to 2.1.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+Modified: package.json|1 1
+
+Revision: 91469ac07fe84ef9e4e24ce0a9943960c0ffa57b
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 17/09/2020 20:30:06
+Message:
+Update JS snapshot to version 2.1.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: cordova-lib/cordova.js|51 85
+
+Revision: 8e2aaeba8ec9d10a69ce85bfeeb4a90828fc4a0b
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 03/10/2020 02:52:27
+Message:
+test(create): fix, clean up & extend (#90) #MsgLength=403
+
+
+----
+Modified: tests/spec/unit/lib/create.spec.js|29 60
+
+Revision: e796fe37f1e6cc0735d5d32f785bd6bd20a835df
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 03/10/2020 03:29:59
+Message:
+fix(Api): do not depend on globals (#169) #MsgLength=484
+
+
+----
+Modified: bin/templates/cordova/Api.js|0 6
+Modified: lib/Api.js|1 1
+Modified: lib/run.js|2 2
+Modified: tests/spec/unit/lib/run.spec.js|9 4
+
+Revision: 5efe0bae9ed3a50cfa64051425159286be6f1036
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 03/10/2020 03:42:58
+Message:
+chore: clean up package.json (#171) #MsgLength=37
+
+
+----
+Modified: package.json|0 10
+
+Revision: e19c5dab9b298a734622bff956d9afc34137a634
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 04/10/2020 19:31:59
+Message:
+fix(pkg): typo in field "keywords" (#172) #MsgLength=97
+
+
+----
+Modified: package.json|1 1
+
+Revision: d73fad4550a3ecc8ebbb1583d2da5019dd45d652
+Author: エリス <erisu@users.noreply.github.com>
+Date: 26/12/2020 13:57:01
+Message:
+chore: version bump to 3.0.0-dev (#177) #MsgLength=41
+
+
+----
+Modified: VERSION|1 1
+Modified: cordova-lib/cordova.js|1 1
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 1fa798e4c370a25c9267a2e2919a7b2afbdb9daf
+Author: エリス <erisu@users.noreply.github.com>
+Date: 26/12/2020 14:31:25
+Message:
+breaking: add plugin support (#175) #MsgLength=684
+
+
+----
+Modified: .eslintignore|1 0
+Modified: bin/templates/platform_www/cdv-electron-main.js|18 1
+Added: bin/templates/platform_www/cdv-electron-preload.js|16 0
+Modified: cordova-js-src/exec.js|58 52
+Modified: cordova-lib/cordova.js|59 53
+Modified: lib/Api.js|1 1
+Modified: lib/PackageJsonParser.js|25 49
+Modified: lib/handler.js|105 8
+Modified: lib/parser.js|4 1
+Modified: lib/prepare.js|1 3
+Added: tests/spec/fixtures/test-app-with-electron-plugin/config.xml|18 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/package.json|22 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/platforms/electron/config.xml|18 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/platforms/electron/cordova/Api.js|24 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/platforms/electron/cordova/defaults.xml|21 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/platforms/electron/cordova/version|23 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/platforms/electron/cordova/version.bat|26 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/platforms/electron/electron.json|14 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/platforms/electron/platform_www/config.xml|22 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/platforms/electron/www/config.xml|18 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/platforms/electron/www/cordova_plugins.js|8 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/platforms/electron/www/package.json|15 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-device/package.json|46 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-device/plugin.xml|40 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-device/src/electron/index.js|22 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-device/src/electron/package.json|20 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-device/www/device.js|85 0
+Added: tests/spec/fixtures/test-app-with-electron-plugin/www/index.html|34 0
+Modified: tests/spec/unit/lib/PackageJsonParser.spec.js|16 102
+Modified: tests/spec/unit/lib/handler.spec.js|269 1
+
+Revision: 60a8cf1866bf34b10baa912e0aa065f84e1e8083
+Author: エリス <erisu@users.noreply.github.com>
+Date: 05/01/2021 17:56:52
+Message:
+chore(npm): bump dev dependencies for v3.x (#178) #MsgLength=51
+
+
+----
+Modified: package-lock.json|191 1318
+Modified: package.json|1 1
+
+Revision: b2617a94d4a8a859454850054d2b87748ec957e8
+Author: エリス <erisu@users.noreply.github.com>
+Date: 05/01/2021 22:44:31
+Message:
+breaking(dependencies): bump electron, electron-builder & execa (#179) #MsgLength=189
+
+
+----
+Modified: lib/build/base.json|2 2
+Modified: package-lock.json|433 325
+Modified: package.json|3 3
+
+Revision: 4bfb9896757ad30358fe38391acfd397b058d23e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 07/01/2021 23:10:01
+Message:
+fix: restrict deep merging on reserved keys (#182) #MsgLength=52
+
+
+----
+Modified: lib/util.js|4 0
+Modified: tests/spec/unit/lib/util.spec.js|16 0
+
+Revision: eb2ee51940737a4b3be82bd8212d6805aa4769a9
+Author: Zoltán Mihályi <zoltan.mihalyi.90@gmail.com>
+Date: 08/01/2021 17:24:33
+Message:
+fix(windows): electron window not displaying (#180) #MsgLength=53
+
+
+----
+Modified: lib/run.js|1 1
+Modified: tests/spec/unit/lib/run.spec.js|3 2
+
+Revision: 73c2b7f958d8f38a5c7d710a389126ea95659001
+Author: エリス <erisu@users.noreply.github.com>
+Date: 08/01/2021 17:30:14
+Message:
+fix(npm): change prepack script to prepare (#183) #MsgLength=51
+
+
+----
+Renamed: .npm-scripts/prepare.js [from .npm-scripts/prepack.js]|0 0
+Modified: package.json|1 1
+
+Revision: 9c8519010508d7efb037e40adce0a9487bd47717
+Author: エリス <erisu@users.noreply.github.com>
+Date: 08/01/2021 17:30:25
+Message:
+refactor: use class static (#181) #MsgLength=35
+
+
+----
+Modified: lib/Api.js|19 14
+
+Revision: 307407173dcc9197453c33d2211b8e620b01370e
+Author: Zoltán Mihályi <zoltan.mihalyi@webvalto.hu>
+Date: 08/01/2021 18:33:36
+Message:
+feat: forward electron's process stdio to terminal (#184) #MsgLength=59
+
+
+----
+Modified: lib/run.js|1 1
+Modified: tests/spec/unit/lib/run.spec.js|1 1
+
+Revision: 6dd3f835a015d4f8ae59cbf6ab4d1e4ea090cdd8
+Author: エリス <erisu@users.noreply.github.com>
+Date: 23/03/2021 16:31:49
+Message:
+breaking: bump electron@12.0.1 (#189) #MsgLength=39
+
+
+----
+Modified: lib/build/base.json|2 2
+Modified: package-lock.json|32 20
+Modified: package.json|1 1
+
+Revision: 497ac903577724d09969fa9c83d060e08f9860fd
+Author: エリス <erisu@users.noreply.github.com>
+Date: 23/03/2021 17:18:34
+Message:
+chore(dev): rebuilt package-lock (#190) #MsgLength=41
+
+
+----
+Modified: package-lock.json|1198 533
+
+Revision: be521b204cd3ce04f2dfe76804c29b7652ce9ed2
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 14/07/2021 15:37:26
+Message:
+build: build cordova.js on prepare (#194) #MsgLength=43
+
+
+----
+Modified: .eslintignore|0 1
+Deleted: .npm-scripts/prepare.js|0 5
+Modified: .npmignore|0 1
+Deleted: cordova-lib/cordova.js|0 1583
+Modified: package-lock.json|87 0
+Modified: package.json|2 2
+
+Revision: 706aaab6f78be889dd459513d299cbcffc6656c6
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/08/2021 12:48:10
+Message:
+feat!: upgrade electron dependencies (#197) #MsgLength=127
+
+
+----
+Modified: lib/build/base.json|2 2
+Modified: package-lock.json|376 315
+Modified: package.json|3 3
+
+Revision: 8d272cbe4cfc1a58a2c60c0d61354767268d380f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/08/2021 13:09:14
+Message:
+feat!: bump all non-electron dependencies (#198) #MsgLength=169
+
+
+----
+Modified: package-lock.json|527 594
+Modified: package.json|3 3
+
+Revision: 71cfd09fac0059054167928e2643ad9e92341c09
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/08/2021 13:37:21
+Message:
+feat!: update node support (#199) #MsgLength=166
+
+
+----
+Modified: .github/workflows/ci.yml|1 1
+Modified: package.json|1 1
+
+Revision: bdf69e001c283259f46a3f09b835105ee0a1cd23
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/08/2021 16:22:53
+Message:
+feat: update supported platform options (#200) #MsgLength=166
+
+
+----
+Modified: lib/build.js|4 1
+
+Revision: f80e1dbd52ba060d52265248bc78a7c7000cdd4c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 26/08/2021 12:35:09
+Message:
+chore(asf-license): add to header (#201) #MsgLength=42
+
+
+----
+Modified: bin/templates/platform_www/cdv-electron-preload.js|19 0
+Modified: tests/spec/fixtures/test-app-with-electron-plugin/config.xml|20 1
+Modified: tests/spec/fixtures/test-app-with-electron-plugin/platforms/electron/config.xml|20 1
+Modified: tests/spec/fixtures/test-app-with-electron-plugin/platforms/electron/www/config.xml|20 1
+Modified: tests/spec/fixtures/test-app-with-electron-plugin/platforms/electron/www/cordova_plugins.js|19 0
+Modified: tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-device/src/electron/index.js|19 0
+
+Revision: 80fdc437b2e6b43e525f1bd40a6bbc71d2c5b737
+Author: エリス <erisu@users.noreply.github.com>
+Date: 30/08/2021 19:18:38
+Message:
+feat!: remove old VERSION file (#202) #MsgLength=39
+
+
+----
+Deleted: VERSION|0 1
+
+Revision: 7923766012819bca4544e426102cf6a4b76a8960
+Author: エリス <erisu@users.noreply.github.com>
+Date: 31/08/2021 22:03:35
+Message:
+feat!(electron): bump dependency to 14.0.0 (#203) #MsgLength=51
+
+
+----
+Modified: lib/build/base.json|2 2
+Modified: package-lock.json|46 36
+Modified: package.json|1 1
+
+Revision: 4d6874e530b6cfaa7968553daaff75b383a5edd2
+Author: エリス <erisu@users.noreply.github.com>
+Date: 01/09/2021 00:13:56
+Message:
+test: cleanup and remove unneeded code (#204) #MsgLength=47
+
+
+----
+Renamed: tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-sample/package.json [from tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-device/package.json]|8 27
+Renamed: tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-sample/plugin.xml [from tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-device/plugin.xml]|7 7
+Renamed: tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-sample/src/electron/index.js [from tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-device/src/electron/index.js]|5 8
+Renamed: tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-sample/src/electron/package.json [from tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-device/src/electron/package.json]|4 4
+Renamed: tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-sample/www/sample.js [from tests/spec/fixtures/test-app-with-electron-plugin/plugins/cordova-plugin-device/www/device.js]|13 36
+Modified: tests/spec/fixtures/test-browser-plugin/plugin.xml|0 1
+Modified: tests/spec/fixtures/test-config-1.xml|0 1
+Modified: tests/spec/fixtures/test-config-2.xml|0 8
+Modified: tests/spec/fixtures/test-config-no-author-custom-email.xml|0 8
+Modified: tests/spec/fixtures/test-non-electron-plugin/plugin.xml|0 1
+Modified: tests/spec/fixtures/testapp/config.xml|0 8
+Modified: tests/spec/fixtures/testplugin-empty-jsmodule/plugin.xml|0 1
+Modified: tests/spec/fixtures/testplugin/plugin.xml|0 1
+Modified: tests/spec/unit/lib/handler.spec.js|13 13
+
+Revision: 38276994cb2f5928db475d10f2cad3976c799647
+Author: エリス <erisu@users.noreply.github.com>
+Date: 01/09/2021 00:14:06
+Message:
+feat!(Api): remove unused locations data (#205) #MsgLength=49
+
+
+----
+Modified: lib/Api.js|1 4
+Modified: tests/spec/unit/lib/Api.spec.js|1 3
+
+Revision: 31134a6a99b7f6b00eab875f9d76f350a81161f2
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 01/09/2021 11:37:26
+Message:
+Updated RELEASENOTES.md & version for release 3.0.0 (electron-v3.0.0) #MsgLength=70
+
+
+----
+Modified: RELEASENOTES.md|65 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 6fd87891a640fe1cca9e0815adfc94e3c1a896bb
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 06/09/2021 12:23:55
+Message:
+chore: set version to 3.0.1-dev #MsgLength=32
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: b140687e4de1b18adb2b76b1d2e948a4a0d77e23
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/09/2021 11:31:04
+Message:
+doc: mas-dev is macOS package (#207) #MsgLength=38
+
+
+----
+Modified: DOCUMENTATION.md|1 1
+
+Revision: de5e8bd28f7cac37e7e0c0660ab082d11bff2bdd
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date: 11/04/2022 15:47:56
+Message:
+build(deps): bump minimist from 1.2.5 to 1.2.6 (#221) #MsgLength=138
+
+
+----
+Modified: package-lock.json|3 3
+
+Revision: d6d3d415c2d48dd6ba4a6fb2dcd7e8c12660446f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 20/05/2022 20:47:29
+Message:
+dep: bump @cordova/eslint-config@^4.0.0 w/ fix (#226) #MsgLength=183
+
+
+----
+Modified: bin/templates/platform_www/cdv-electron-main.js|6 6
+Modified: cordova-js-src/confighelper.js|3 3
+Modified: cordova-js-src/exec.js|5 5
+Modified: cordova-js-src/platform.js|2 2
+Modified: lib/prepare.js|1 1
+Modified: package-lock.json|8786 1591
+Modified: package.json|1 1
+
+Revision: 87960a12c33aa9850549c29a0a4257671a0c2e21
+Author: エリス <erisu@users.noreply.github.com>
+Date: 20/05/2022 20:50:40
+Message:
+fix: npm 8 does not install plugin dependencies (#229) #MsgLength=56
+
+
+----
+Modified: lib/handler.js|6 0
+
+Revision: 7a69d25c8ab5a435f8aa292c95b5cb9570faef8e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 21/05/2022 00:33:22
+Message:
+feat: bump electron@^14.2.9 (#228) #MsgLength=36
+
+
+----
+Modified: lib/build/base.json|2 2
+Modified: package-lock.json|71 71
+Modified: package.json|1 1
+
+Revision: 181363d087114922ec897e4bb21f3c8728832d2d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 21/05/2022 02:04:23
+Message:
+chore(npm): bump all dependencies to latest minor/path (#231) #MsgLength=63
+
+
+----
+Modified: package-lock.json|3 3
+Modified: package.json|3 3
+
+Revision: 48b1a82ef55b59236be7235d5a86f4a4d937e53a
+Author: エリス <erisu@users.noreply.github.com>
+Date: 21/05/2022 15:52:44
+Message:
+feat: support custom Electron version (#230) #MsgLength=118
+
+
+----
+Modified: lib/build.js|4 2
+Modified: lib/build/base.json|2 2
+Modified: lib/util.js|9 0
+Modified: tests/spec/unit/lib/build.spec.js|6 2
+Modified: tests/spec/unit/lib/util.spec.js|9 0
+
+Revision: b1b7a6ad910e9dae0dae23d44b7cf195615be947
+Author: Erisu <erisu@apache.org>
+Date: 25/05/2022 14:57:04
+Message:
+Updated RELEASENOTES.md & version for release 3.1.0 (electron-v3.1.0) #MsgLength=70
+
+
+----
+Modified: RELEASENOTES.md|21 0
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+
+Revision: c7eb4e2fafad3e4524ca8301c8425de7792875e3
+Author: Erisu <erisu@apache.org>
+Date: 30/05/2022 12:05:25
+Message:
+release(post): bump version to 3.1.1-dev #MsgLength=41
+
+
+----
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+
+Revision: 588347f93bf7a30ebeed4ae1f11dac81fbe39068
+Author: エリス <erisu@users.noreply.github.com>
+Date: 30/05/2022 15:23:05
+Message:
+chore: bump version 4.0.0-dev (#235) #MsgLength=38
+
+
+----
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+
+Revision: 8917f82f295d7c97438c353b976136bcbeb52ebc
+Author: エリス <erisu@users.noreply.github.com>
+Date: 30/05/2022 15:23:42
+Message:
+feat: bump node engine requirement >=14.14.0 (#233) #MsgLength=53
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: a547e872a2d430644f8b5f9fe8c84540fb6fef40
+Author: エリス <erisu@users.noreply.github.com>
+Date: 30/05/2022 15:24:15
+Message:
+feat: bump electron@^18.2.4 (#234) #MsgLength=36
+
+
+----
+Modified: package-lock.json|17 17
+Modified: package.json|1 1
+
+Revision: df29139742e2e6803b31cf57587bd60912e72c6b
+Author: エリス <erisu@users.noreply.github.com>
+Date: 30/05/2022 15:30:50
+Message:
+dep(npm): bump dev dependencies (#232) #MsgLength=40
+
+
+----
+Modified: package-lock.json|308 1547
+Modified: package.json|2 2
+
+Revision: 56b48b1f0a9b653294de1aa654caf38714855301
+Author: エリス <erisu@users.noreply.github.com>
+Date: 30/05/2022 15:36:43
+Message:
+dep(npm): bump electron-builder@^23.0.3 (#227) #MsgLength=135
+
+
+----
+Modified: package-lock.json|95 91
+Modified: package.json|1 1
+
+Revision: 2e8c65e4387fd3e866e7f7e3bd7bc3b3252e0e3a
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/06/2022 14:05:31
+Message:
+ci: update github action workflow (#236) #MsgLength=194
+
+
+----
+Modified: .github/workflows/ci.yml|4 4
+
+Revision: 7053f35efdfc7f4195cf215998ec9fad4796f432
+Author: エリス <erisu@users.noreply.github.com>
+Date: 08/06/2022 22:13:18
+Message:
+feat!: bump electron@^19.0.3 (#237) #MsgLength=37
+
+
+----
+Modified: package-lock.json|9 9
+Modified: package.json|1 1
+

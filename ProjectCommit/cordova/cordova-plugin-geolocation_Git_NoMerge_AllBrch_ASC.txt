@@ -1,0 +1,3418 @@
+Revision: e91dd49b6d1cba9cef1c04640f3927c3c6581bf9
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/04/2013 07:11:35
+Message:
+Initial Commit #MsgLength=15
+
+
+----
+Added: README.md|2 0
+Added: plugin.xml|22 0
+Added: src/android/CordovaLocationListener.java|207 0
+Added: src/android/GPSListener.java|51 0
+Added: src/android/GeoBroker.java|204 0
+Added: src/android/NetworkListener.java|33 0
+
+Revision: 57adba406292dd6f107b2cfc7beb2a0621f4efaa
+Author: Joe Bowser <bowserj@apache.org>
+Date: 18/04/2013 05:22:01
+Message:
+Updating Geolocation Plugin #MsgLength=28
+
+
+----
+Modified: src/android/CordovaLocationListener.java|53 9
+Modified: src/android/GeoBroker.java|10 8
+
+Revision: 09d97d20498ee933771c40f3da9246d9549dd54f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/04/2013 08:24:12
+Message:
+updated plugin #MsgLength=15
+
+
+----
+Added: docs/Coordinates/coordinates.md|127 0
+Added: docs/Position/position.md|121 0
+Added: docs/PositionError/positionError.md|59 0
+Added: docs/geolocation.clearWatch.md|119 0
+Added: docs/geolocation.getCurrentPosition.md|128 0
+Added: docs/geolocation.md|104 0
+Added: docs/geolocation.watchPosition.md|130 0
+Added: docs/parameters/geolocation.options.md|41 0
+Added: docs/parameters/geolocationError.md|32 0
+Added: docs/parameters/geolocationSuccess.md|46 0
+Modified: plugin.xml|18 8
+Added: src/ios/CDVLocation.h|104 0
+Added: src/ios/CDVLocation.m|623 0
+Added: test/.DS_Store|0 0
+Added: test/autotest/html/HtmlReporter.js|101 0
+Added: test/autotest/html/HtmlReporterHelpers.js|60 0
+Added: test/autotest/html/ReporterView.js|164 0
+Added: test/autotest/html/SpecView.js|79 0
+Added: test/autotest/html/SuiteView.js|22 0
+Added: test/autotest/html/TrivialReporter.js|192 0
+Added: test/autotest/index.html|59 0
+Added: test/autotest/jasmine.css|81 0
+Added: test/autotest/jasmine.js|2530 0
+Added: test/autotest/pages/.DS_Store|0 0
+Added: test/autotest/pages/geolocation.html|71 0
+Added: test/autotest/test-runner.js|62 0
+Added: test/autotest/tests/.DS_Store|0 0
+Added: test/autotest/tests/geolocation.tests.js|140 0
+Added: test/cordova.js|71 0
+Added: test/index.html|65 0
+Added: test/location/index.html|169 0
+Added: test/main.js|163 0
+Added: test/master.css|164 0
+
+Revision: bebf7ebe9e2e4ae0b25727d58ffc113ef4b14e53
+Author: hermwong <herm.wong@gmail.com>
+Date: 14/05/2013 04:59:11
+Message:
+added geolocation apis from Cordova-JS #MsgLength=39
+
+
+----
+Added: www/Position.js|33 0
+Added: www/PositionError.js|38 0
+Added: www/geolocation.js|211 0
+
+Revision: 25be2f27a045a8a5bfe18ca48248b8ab7c4e2b76
+Author: hermwong <herm.wong@gmail.com>
+Date: 14/05/2013 04:59:51
+Message:
+updated config to include geolocation class files #MsgLength=50
+
+
+----
+Modified: plugin.xml|12 0
+
+Revision: 5a901e1bb26c3cf2f1f645f98193cc0fd2bc1e07
+Author: hermwong <herm.wong@gmail.com>
+Date: 15/05/2013 05:21:50
+Message:
+update require path to Position & PositionError classes #MsgLength=56
+
+
+----
+Modified: www/geolocation.js|2 2
+
+Revision: 317b235367661f78e2bfc1362d401b5fabf493a2
+Author: hermwong <herm.wong@gmail.com>
+Date: 16/05/2013 02:34:32
+Message:
+added Coordinates class & updated require path to Coordinates class #MsgLength=68
+
+
+----
+Added: www/Coordinates.js|69 0
+Modified: www/Position.js|1 1
+
+Revision: edce813c12a1014153d44bc4e1fc052ee96eb9fd
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 18/05/2013 06:02:08
+Message:
+updated plugin.xml #MsgLength=19
+
+
+----
+Modified: plugin.xml|7 7
+Modified: src/ios/CDVLocation.m|1 1
+
+Revision: a35b834e4a11b991e6c06efe8fa604fd892c862d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 18/05/2013 06:09:53
+Message:
+updated plugin.xml and postion.js #MsgLength=34
+
+
+----
+Modified: plugin.xml|7 1
+Modified: www/Position.js|1 1
+
+Revision: 47add2f5af060a082600b06b5af363fd66fcb7e6
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 18/05/2013 07:15:49
+Message:
+updated feature tag in plugin.xml #MsgLength=34
+
+
+----
+Modified: plugin.xml|7 4
+
+Revision: 4fa66bea04e9b12b1465aea99e7c787e963d9d0f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 18/05/2013 07:58:50
+Message:
+updated tests #MsgLength=14
+
+
+----
+Added: .gitignore|1 0
+Modified: test/autotest/index.html|1 1
+Modified: test/autotest/pages/geolocation.html|1 1
+Renamed: test/cordova-incl.js [from test/cordova.js]|5 6
+Modified: test/index.html|2 2
+Modified: test/location/index.html|1 1
+
+Revision: f8acec22929f3e187f267476cfd68cdd3f8b05f6
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 28/05/2013 08:26:34
+Message:
+first pass at wp7 support #MsgLength=26
+
+
+----
+Modified: plugin.xml|13 1
+Added: src/wp7/GeoLocation.cs|34 0
+
+Revision: 16aab6d19a650ee55c938bb613e83bfbaee7c9a4
+Author: Tim Kim <timk@adobe.com>
+Date: 12/06/2013 07:05:40
+Message:
+Added permission #MsgLength=17
+
+
+----
+Modified: plugin.xml|5 0
+
+Revision: fdbdcf6f9f05684f883e69b1cb55d0fa4dedd3bd
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/06/2013 07:56:04
+Message:
+ripped out compass code #MsgLength=24
+
+
+----
+Modified: src/ios/CDVLocation.h|1 34
+Modified: src/ios/CDVLocation.m|11 291
+
+Revision: e7519214d0ae54ca7253bb50e8410e51a4592510
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 15/06/2013 05:28:38
+Message:
+[CB-3693] added location capability for wp7 #MsgLength=44
+
+
+----
+Modified: plugin.xml|4 0
+
+Revision: 0d61d10b10bc6b2c148f3b1ce3cdcc89771d8ae9
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 25/06/2013 06:34:35
+Message:
+[CB-3694] first pass wp8 support #MsgLength=33
+
+
+----
+Modified: plugin.xml|15 0
+Added: src/wp8/GeoLocation.cs|34 0
+
+Revision: 87f4725e963c33de532fb3e648f8a8514c197578
+Author: lorinbeer <lorin@adobe.com>
+Date: 26/06/2013 07:05:09
+Message:
+[CB-3692] blackberry10 geolocation plugin breakout initial commit #MsgLength=66
+
+
+----
+Modified: plugin.xml|8 0
+Added: src/blackberry10/index.js|64 0
+
+
+Revision: f3ea88aff18a3bd91f57558a2903e34944607294
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:56
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|2 3
+
+Revision: 2910e6bd0d12b7a46906dd0d58412e91594eacac
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 07:58:27
+Message:
+Fix require paths that were broken by plugin id changes #MsgLength=80
+
+
+----
+Modified: test/autotest/html/SpecView.js|1 1
+Modified: www/Position.js|1 1
+Modified: www/geolocation.js|2 2
+
+Revision: 83b6dc06df9b46e28c55557d396d78e13b5382d3
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 06:49:26
+Message:
+[CB-4119] remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|2 2
+Renamed: src/wp/GeoLocation.cs [from src/wp7/GeoLocation.cs]|0 0
+Deleted: src/wp8/GeoLocation.cs|0 34
+
+Revision: a86c311ac11ef46a2b0d96ad44f06c2cb7aa3c31
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 02:54:52
+Message:
+[CB-4131] Use relative require paths in Geolocation plugin. #MsgLength=60
+
+
+----
+Modified: www/Position.js|1 1
+Modified: www/geolocation.js|2 2
+
+Revision: 477c4ee5eb079daafbe93cbf18bf82edde94d52f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: src/android/CordovaLocationListener.java|1 1
+Modified: src/android/GeoBroker.java|3 3
+
+Revision: b0f28b0fbef8742fbbf259347e36984a1d2968e0
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 12/07/2013 02:10:31
+Message:
+Moved js clobbers to each platform execpt windows phone #MsgLength=56
+
+
+----
+Modified: plugin.xml|56 33
+Modified: src/wp/GeoLocation.cs|1 1
+
+Revision: 980a7096b6e3226405e2488f04ace80930f67d1b
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:16:33
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Modified: .gitignore|23 1
+
+Revision: 3d5b867c267fa9b7968903f65459ec9426f62dcd
+Author: Jeffrey Heifetz <jheifetz@blackberry.com>
+Date: 17/07/2013 04:24:19
+Message:
+[BlackBerry10] Adding native permissions #MsgLength=41
+
+
+----
+Modified: plugin.xml|9 2
+
+Revision: d8f8aa5beef0b16d656662d59b31a0bee1b69b0d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|3 0
+
+Revision: 8472280d93fc9e3a9deb9fe31c357cf63b98d643
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:32:17
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 5b8bb17252389082726ae7a09e71062e39d3c7a8
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: c26321b20c6d92ca1214b90e12ade36b619dec60
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 8a0875a339ca9fe2361a68a0395dcfd22c5b12a3
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 06:16:17
+Message:
+[plugin.xml] adding android namespace #MsgLength=38
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: f1057dfaab0230b871070964f7602a350649ff3c
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 08/08/2013 04:20:16
+Message:
+[plugin.xml] adding rim namespace #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: bc608674980335dbff08e61886da0198f6ae4044
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 05:38:30
+Message:
+updated readme, namespace and nametag #MsgLength=38
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|1 1
+
+Revision: 2cc2a573a61b35bebbf79d16394824b713af8560
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-geolocation to its own Java package. #MsgLength=67
+
+
+----
+Modified: plugin.xml|5 5
+Modified: src/android/CordovaLocationListener.java|1 1
+Modified: src/android/GPSListener.java|1 1
+Modified: src/android/GeoBroker.java|1 1
+Modified: src/android/NetworkListener.java|1 1
+
+Revision: 894b96e679359c5aacacbe6e892cd2ea85163988
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 13/08/2013 23:55:18
+Message:
+[CB-4521] Fix geolocation not working after a page change. #MsgLength=59
+
+
+----
+Modified: src/android/GeoBroker.java|9 11
+
+Revision: b7f2204cf9b1c972b847d39c4d37eafd4196cf3f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 06:05:21
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a14be36c89f786b131aa44d6c99c1f1799437b98
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 20/08/2013 06:16:19
+Message:
+[windows8] added support for windows 8 only required permission addition #MsgLength=73
+
+
+----
+Modified: plugin.xml|7 0
+
+Revision: b58cba413dd213393c924801a83980e19bc0fa2a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+[CB-4752] Updated version and changelog #MsgLength=40
+
+
+----
+Added: CHANGELOG.md|25 0
+Modified: plugin.xml|1 1
+
+Revision: 745fe11cbf84eb4871a09dabfe732d620abb53c3
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:22
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: be1c7521bc2b4628915ccae008c1872cbf96c104
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: 8840c938ea7909e7e74dd3a8e7ef61a96629b7d9
+Author: hermwong <herm.wong@gmail.com>
+Date: 18/09/2013 05:45:12
+Message:
+added Geolocation for FirefoxOS #MsgLength=32
+
+
+----
+Modified: plugin.xml|13 0
+Added: src/firefoxos/GeolocationProxy.js|49 0
+
+Revision: b8faed2aacc20937c076b05f9f803260f2dc2a1d
+Author: Kristoffer Flores <kflores@blackberry.com>
+Date: 21/09/2013 01:44:16
+Message:
+[BlackBerry10] removed uneeded permission tags in plugin.xml #MsgLength=109
+
+
+----
+Modified: plugin.xml|0 4
+
+Revision: 7ddbd8f84bd2615c7fce3c6d552b35f3cf861a05
+Author: Kristoffer Flores <kflores@blackberry.com>
+Date: 21/09/2013 01:44:16
+Message:
+[BlackBerry10] removed uneeded permission tags in plugin.xml #MsgLength=109
+
+
+----
+Modified: plugin.xml|0 4
+
+
+Revision: 065e36d954071e909b17e820e4c8aa49506b1e78
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:26:28
+Message:
+CB-4889 renaming org.apache.cordova.core.geolocation to org.apache.cordova.geolocation #MsgLength=87
+
+
+----
+Modified: plugin.xml|2 2
+
+
+Revision: 5f2825bcde4dc3234f39658ec1584709d18f2a28
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:50:24
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: fa3734de0abc9ac4c43b8567c52fe2e125adf26a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 08:45:00
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.3.2 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|5 1
+Modified: plugin.xml|1 1
+
+
+
+Revision: 2af051af0f5eb69ecd364e0e0048a138bff4963c
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:14
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 98b7283f4c30a071c6570889cf2be8de26156b8c
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/10/2013 04:14:18
+Message:
+CB-5128: add repo + issue tag to plugin.xml for geolocation plugin #MsgLength=67
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: b3209cb92870a07528b5340e7e1845664858d6b3
+Author: James Long <longster@gmail.com>
+Date: 05/11/2013 02:50:38
+Message:
+proper implementation for firefoxos #MsgLength=36
+
+
+----
+Modified: plugin.xml|18 3
+Modified: src/firefoxos/GeolocationProxy.js|30 19
+
+Revision: df374aec2f9324e2130aff84b301356d7654caea
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 05/11/2013 21:23:51
+Message:
+pass by only coords #MsgLength=20
+
+
+----
+Modified: src/firefoxos/GeolocationProxy.js|5 1
+
+Revision: 2e823f9004e84309c09bb26e6162647ec779dbec
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 02:56:52
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.3.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+
+Revision: a2f73efc50cea8c671d148890abf9d315b1cd526
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:15
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 74c05d8b3a0476013175b14376f6c819e3bee3ad
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 31/10/2013 21:17:38
+Message:
+call FxOS's getCurrentProxy added #MsgLength=34
+
+
+----
+Modified: src/firefoxos/GeolocationProxy.js|4 4
+
+
+Revision: cbf86fd575ba0d596c6590c8b566c37d858a23b7
+Author: Bryan Higgins <bryan@bryanhiggins.net>
+Date: 11/11/2013 06:43:37
+Message:
+CB-5334 [BlackBerry10] Use command proxy #MsgLength=41
+
+
+----
+Modified: plugin.xml|6 1
+Deleted: src/blackberry10/index.js|0 64
+Added: www/blackberry10/GeolocationProxy.js|61 0
+
+Revision: 9eb9efb6eec18e6ea3b3c531f2916b015198ed79
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 05:59:29
+Message:
+Added amazon-fireos platform + some of the fixes in android code. #MsgLength=66
+
+
+----
+Modified: plugin.xml|37 0
+Modified: src/android/CordovaLocationListener.java|2 1
+Modified: src/android/GPSListener.java|2 2
+Modified: src/android/GeoBroker.java|4 3
+Modified: test/cordova-incl.js|3 1
+
+Revision: 8acd22deaa6426376da38dc8885089ecbfbbd4b2
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 05:59:29
+Message:
+Updated amazon-fireos platform + reverting some of the fixes in android code. #MsgLength=558
+
+
+----
+Modified: plugin.xml|4 4
+Added: src/amazon/CordovaLocationListener.java|252 0
+Added: src/amazon/GPSListener.java|51 0
+Added: src/amazon/GeoBroker.java|205 0
+Added: src/amazon/NetworkListener.java|33 0
+Modified: src/android/GeoBroker.java|2 2
+Modified: test/cordova-incl.js|3 3
+
+Revision: f83af097412970d9f0fe3bccfe0a69001c29c6aa
+Author: Archana Naik <naika@lab126.com>
+Date: 12/11/2013 05:17:55
+Message:
+Code clean-up for android src. #MsgLength=31
+
+
+----
+Modified: src/android/CordovaLocationListener.java|1 2
+Modified: src/android/GPSListener.java|1 2
+Modified: src/android/GeoBroker.java|3 3
+
+
+
+Revision: a91b49aa5072537cf29c2b56f0e86b068e68c718
+Author: SomaticIT <contact@somatic.fr>
+Date: 17/10/2013 18:22:39
+Message:
+Append windows 8 Geolocation proxy #MsgLength=35
+
+
+----
+Added: src/windows8/GeolocationProxy.js|163 0
+
+Revision: 22055cceb53dc64d993abb5f81b39da0e4446da6
+Author: SomaticIT <contact@somatic.fr>
+Date: 17/10/2013 18:24:41
+Message:
+Append proxy to platform definition in plugin.xml #MsgLength=50
+
+
+----
+Modified: plugin.xml|3 0
+
+
+Revision: d11e00592b9e43baa7322c9d3f25d53b68ab2151
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:30
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.3.4 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|12 1
+Modified: plugin.xml|1 1
+
+Revision: 8a9d917a16d8f14fce22ef45de88810bda2065a3
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:03
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 2ecd9d1ec89c903bb7fd26f0bd5305d19e83f624
+Author: Stefan Dobrev <stefan.dobrev@telerik.com>
+Date: 26/09/2013 21:58:23
+Message:
+Removing incorrectly added closing comments for wp7 platform in plugin.xml #MsgLength=75
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 179993f3a500d08aae52cae5a3fe0aac49f3d266
+Author: sgrebnov <sergei.grebnov@gmail.com>
+Date: 04/12/2013 22:04:05
+Message:
+windows8. adds missing reference to PositionError (w/o it the app crashes) #MsgLength=75
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 5f1ede9b405caf369375eea28502facd273f55cf
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/Coordinates/coordinates.md|0 127
+Deleted: docs/Position/position.md|0 121
+Deleted: docs/PositionError/positionError.md|0 59
+Deleted: docs/geolocation.clearWatch.md|0 119
+Deleted: docs/geolocation.getCurrentPosition.md|0 128
+Deleted: docs/geolocation.md|0 104
+Deleted: docs/geolocation.watchPosition.md|0 130
+Deleted: docs/parameters/geolocation.options.md|0 41
+Deleted: docs/parameters/geolocationError.md|0 32
+Deleted: docs/parameters/geolocationSuccess.md|0 46
+
+Revision: a53aa4ddd73c54044a0f5cd079ae971ae5c945fa
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 04:15:47
+Message:
+CB-5658 Add doc.index.md for Geolocation plugin #MsgLength=48
+
+
+----
+Modified: README.md|21 4
+Added: doc/index.md|268 0
+
+Revision: 0af389ca85fc8494cd27d17c3d8f92b845430073
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:02
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: 236ec15d237277d3e2be415a313eb915b8e5579e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.3.5 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: 8a8aa20b71b610fbcf432dade2d46f9aa7aa0665
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f2a355d32b9014520a054a595fa8b372fabaf763
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 07/01/2014 00:02:57
+Message:
+CB-5729 [BlackBerry10] Update GeolocationProxy to return collapsed object #MsgLength=74
+
+
+----
+Modified: www/blackberry10/GeolocationProxy.js|21 13
+
+Revision: f6053e8a08d0770f9d3e3f87e1d515bea78c5398
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:35
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/.DS_Store|0 0
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 59
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/geolocation.html|0 71
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/.DS_Store|0 0
+Deleted: test/autotest/tests/geolocation.tests.js|0 140
+Deleted: test/cordova-incl.js|0 72
+Deleted: test/index.html|0 65
+Deleted: test/location/index.html|0 169
+Deleted: test/main.js|0 163
+Deleted: test/master.css|0 164
+
+Revision: 3d62bc46d270bdae5f7b5ea94d42f0396d210d00
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 14/01/2014 20:04:35
+Message:
+CB-5326 adding FFOS permission and updating supported platforms #MsgLength=64
+
+
+----
+Modified: doc/index.md|11 0
+
+Revision: 04b60f870679e0756d1aa7e1b5e20cb5a437597d
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 20/01/2014 22:25:05
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|22 0
+Added: src/ubuntu/geolocation.cpp|119 0
+Added: src/ubuntu/geolocation.h|69 0
+
+Revision: 52648f3573caa77f50a45817bd757d922dd7abfd
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 21/01/2014 19:31:16
+Message:
+[ubuntu] request location permission #MsgLength=37
+
+
+----
+Modified: plugin.xml|5 0
+
+
+Revision: f5a26ebf7081c2e9f6808f9e5739c9daad7da459
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 31/01/2014 08:33:28
+Message:
+cleaned up plugin.xml #MsgLength=22
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 7393e84b319fe3dd65d047f23b1051b1067e6b3b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:59
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.3.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: d31aa037bd8227a2f7632c43a84e95e9a464f2ae
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:36:08
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-geolocation #MsgLength=71
+
+
+----
+Added: doc/es/index.md|255 0
+
+Revision: c0ac7e4e2308366116e86186c396bb3e87756daf
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:14:47
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-geolocation #MsgLength=71
+
+
+----
+Added: doc/fr/index.md|256 0
+
+Revision: c9ba094eecf0593b4af926841d834c1773dc57ed
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:30
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 99945c542cf65e50b7704ccc6c739246135eef5d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+Revision: ab8a448e52b0c2cc05fabe3e0d0cff3fd859b020
+Author: Joe Bowser <bowserj@apache.org>
+Date: 01/03/2014 06:23:02
+Message:
+CB-5977: Removing the Android Geolocation Code.  Mission Accomplished. #MsgLength=71
+
+
+----
+Modified: plugin.xml|0 27
+Deleted: src/android/CordovaLocationListener.java|0 251
+Deleted: src/android/GPSListener.java|0 50
+Deleted: src/android/GeoBroker.java|0 205
+Deleted: src/android/NetworkListener.java|0 33
+
+Revision: 175f02ed6f19b4912eb345448d38d54c6c61d6e9
+Author: James Jong <wjamesjong@gmail.com>
+Date: 13/03/2014 01:01:29
+Message:
+CB-6212 iOS: fix warnings compiled under arm64 64-bit #MsgLength=54
+
+
+----
+Modified: src/ios/CDVLocation.m|1 1
+
+Revision: cf777ed1c4dd480c39ac6e75f0a8973b8f6de9d7
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2014 07:19:41
+Message:
+CB-6422 [windows8] use cordova/exec/proxy #MsgLength=42
+
+
+----
+Modified: src/windows8/GeolocationProxy.js|1 1
+
+Revision: 6138f99cf30f925f5940c7b8a5a510546ed36070
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:18:08
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+
+Revision: 77342cc4b914776d692b54e1c2bbb11432d3ca04
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.3.7 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+
+Revision: 6f172f5fdba8b4be7ec2de994560dfad30642579
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 1ac2200942713695154b131ec8087cc18603c789
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:27:53
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+
+Revision: 4c0795507beaa9bf0af46004ddc82eb16b3e624c
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 31/10/2013 21:17:38
+Message:
+call FxOS's getCurrentProxy added #MsgLength=34
+
+
+----
+Modified: src/firefoxos/GeolocationProxy.js|4 4
+
+Revision: 61062b906eab51792ca47a9928ff13b67712a377
+Author: James Long <longster@gmail.com>
+Date: 05/11/2013 02:50:38
+Message:
+proper implementation for firefoxos #MsgLength=36
+
+
+----
+Modified: plugin.xml|18 3
+Modified: src/firefoxos/GeolocationProxy.js|30 19
+
+
+Revision: 9e8ce3074e726a2f5315bac5ff848e331dfb5cfb
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 05/11/2013 21:23:51
+Message:
+pass by only coords #MsgLength=20
+
+
+----
+Modified: src/firefoxos/GeolocationProxy.js|5 1
+
+
+
+Revision: d4558831838ae3070de46ef8bcaa5e7174a1db7d
+Author: Rodrigo Silveira <rodrigos@outlook.com>
+Date: 23/04/2014 03:07:19
+Message:
+CB-5416 - Adding support for auto-managing permissions #MsgLength=55
+
+
+----
+Modified: doc/index.md|0 10
+Modified: plugin.xml|3 5
+
+
+
+Revision: c0dd14f0394f230dbb2b88b8e5c49fd4494daa9c
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:49:36
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-geolocation #MsgLength=71
+
+
+----
+Added: doc/ja/index.md|255 0
+
+Revision: 1712b58f76b7fc2ba2c8aaf9b3f1bf1578133dde
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:22:09
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-geolocation #MsgLength=71
+
+
+----
+Modified: doc/es/index.md|13 62
+Modified: doc/fr/index.md|25 75
+Added: doc/it/index.md|206 0
+Added: doc/ko/index.md|206 0
+Added: doc/pl/index.md|206 0
+Added: doc/zh/index.md|196 0
+
+Revision: 9f7aa0227223dc23dbd3532087dc02a574e342c6
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:36:34
+Message:
+documentation translation: cordova-plugin-geolocation #MsgLength=54
+
+
+----
+Added: doc/de/index.md|206 0
+Modified: doc/ja/index.md|19 78
+
+Revision: ddfa62ea4a25f67465087da56e2f84400b3c6b23
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:31:32
+Message:
+CB-6804 Add license #MsgLength=20
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: 26e6ffae5a07a99b7f4986e39b3222a35dc7e299
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:36:08
+Message:
+CB-6127 Spanish and French Translations added. Github close #14 #MsgLength=64
+
+
+----
+Added: doc/de/index.md|206 0
+Added: doc/es/index.md|206 0
+Added: doc/fr/index.md|206 0
+Added: doc/it/index.md|206 0
+Added: doc/ja/index.md|196 0
+Added: doc/ko/index.md|206 0
+Added: doc/pl/index.md|206 0
+Added: doc/zh/index.md|196 0
+
+Revision: a403b4abb60a4ce94d0f7c5eb039870b19c625e0
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:43
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.3.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: plugin.xml|1 1
+
+Revision: ae97461f5af88397e7e01ade7f25a4d3c6eb0549
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 6d413ad9dc8770b1c45b089cb10f8f7b474d6501
+Author: elbarto132 <johannes.heinemann@gmail.com>
+Date: 07/04/2014 21:22:12
+Message:
+ios: Changed distanceFilter from none to 5 meters, prevents it from spamming the callback even though nothing changed. #MsgLength=130
+
+
+----
+Modified: src/ios/CDVLocation.m|3 2
+
+
+Revision: 729554097dea5cea615679af1a4e48b8418505ff
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:27:30
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-geolocation documentation translation: cordova-plugin-geolocation #MsgLength=115
+
+
+----
+Added: doc/ru/index.md|206 0
+
+Revision: 53ef27594e3aa8efe4463bc17b13d76544cecb5f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/07/2014 10:13:14
+Message:
+CB-7187 Delete unused #import of CDVShared.h #MsgLength=45
+
+
+----
+Modified: src/ios/CDVLocation.h|0 1
+Modified: src/ios/CDVLocation.m|0 6
+
+Revision: a0d48c93cec1d9414432cec2b257d6a53282fd7b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/07/2014 11:02:14
+Message:
+CB-7187 ios: Add explicit dependency on CoreLocation.framework #MsgLength=63
+
+
+----
+Modified: plugin.xml|2 1
+
+Revision: 075850a460d8171a04809cf6317fb4c4ef998603
+Author: Bryan Higgins <bryan@bryanhiggins.net>
+Date: 30/10/2013 05:12:57
+Message:
+Convert tests to new style #MsgLength=27
+
+
+----
+Modified: plugin.xml|3 0
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 59
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/geolocation.html|0 71
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/.DS_Store|0 0
+Deleted: test/cordova-incl.js|0 70
+Deleted: test/index.html|0 65
+Deleted: test/main.js|0 163
+Renamed: test/manual.html [from test/location/index.html]|0 0
+Deleted: test/master.css|0 164
+Renamed: test/tests.js [from test/autotest/tests/geolocation.tests.js]|73 75
+
+Revision: 89c4c809cb488848cecf11ab3e93e04bc941cf50
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 25/04/2014 03:54:36
+Message:
+register tests using new style #MsgLength=31
+
+
+----
+Modified: test/tests.js|3 24
+
+Revision: b3ab710e691644d4b05a061bf9d4d7784c21ecaf
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 06/05/2014 00:10:43
+Message:
+Changing cdvtest format to use module exports #MsgLength=46
+
+
+----
+Modified: test/tests.js|2 4
+
+
+Revision: c26bf916dadbbfa3ace12a7c73f5deb168169370
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 19/07/2014 02:31:02
+Message:
+Removed js-module for tests from plugin.xml #MsgLength=44
+
+
+----
+Modified: plugin.xml|0 3
+
+Revision: 500f2b9a3f5ad24a0d02635a1c45c3fe413e450f
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 19/07/2014 02:32:28
+Message:
+CB-7146 Added manual tests #MsgLength=27
+
+
+----
+Modified: test/tests.js|245 23
+
+
+Revision: 24b86dd1a19261bb2c2b2cc5606fb7f5a56245a9
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 28/07/2014 21:39:34
+Message:
+added documentation for manual tests #MsgLength=37
+
+
+----
+Modified: test/tests.js|31 13
+
+Revision: b4b5525cc338f5313ea37bd6ea18b894c3d77a90
+Author: Willy Aguirre <marti1125@gmail.com>
+Date: 29/07/2014 19:16:55
+Message:
+update GeolocationProxy.js #MsgLength=27
+
+
+----
+Modified: src/firefoxos/GeolocationProxy.js|1 1
+
+Revision: 438f50f8c46a798aa4351f70da5f7e03c52766bb
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:23
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.3.9 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+
+Revision: 5ec518294349d5980b764768b501e80e4753220e
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:27
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 6bc1510cf19c6b71224dea4a7420a5123b0de549
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 01/08/2014 23:53:29
+Message:
+Renamed test dir, added nested plugin.xml #MsgLength=42
+
+
+----
+Added: tests/plugin.xml|31 0
+Renamed: tests/tests.js [from test/tests.js]|0 0
+
+
+Revision: e9eaa78a9016783a1f8576c88e3cbda943bf5e3b
+Author: SomaticIT <contact@somatic.fr>
+Date: 17/10/2013 18:45:40
+Message:
+CB-5114 Append Windows 8.1 into plugin.xml + Optimize Windows 8 Geolocation proxy #MsgLength=82
+
+
+----
+Modified: plugin.xml|10 0
+Modified: src/windows8/GeolocationProxy.js|14 20
+Added: src/windows81/GeolocationProxy.js|157 0
+
+Revision: 4137f9dd4c83c118912a582a3bb414c1167ed6cb
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 11/07/2014 21:52:03
+Message:
+CB-5114 Windows 8.1 - Use a new proxy as old geolocation methods is deprecated #MsgLength=203
+
+
+----
+Modified: plugin.xml|42 11
+Renamed: src/windows/GeolocationProxy.js [from src/windows81/GeolocationProxy.js]|15 6
+Deleted: src/windows8/GeolocationProxy.js|0 157
+
+
+Revision: 041807fdf1275aa78b4c3cf868b1c076d335d695
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/08/2014 04:22:29
+Message:
+this closes #5, #3 #MsgLength=19
+
+
+----
+Modified: RELEASENOTES.md|1 0
+
+
+Revision: 1c18ea07948775b5b1b4e2d964836b757fc21fd9
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 04/09/2014 07:15:05
+Message:
+CB-6911 - Geolocation fails in iOS 8 #MsgLength=37
+
+
+----
+Modified: plugin.xml|5 0
+Modified: src/ios/CDVLocation.m|5 0
+
+Revision: 3bc05a423d064413d6d15e68e4f14417d823318c
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 09/09/2014 08:00:35
+Message:
+Revert CB-6911 partially (keeping Info.plist key installation for iOS 8) #MsgLength=73
+
+
+----
+Modified: src/ios/CDVLocation.m|0 5
+
+Revision: 4102a332b0c6b0c3513370a4c030a32e46a51e10
+Author: Wei Li <wei.li@feedhenry.com>
+Date: 08/08/2014 01:36:36
+Message:
+CB-7158 - Fix geolocation for ios 8 #MsgLength=90
+
+
+----
+Modified: src/ios/CDVLocation.m|28 0
+
+Revision: 551b40458c208e23be0005f25ad8a5c896f3aa9f
+Author: Mark Pearce <markwpearce@gmail.com>
+Date: 16/09/2014 03:43:08
+Message:
+CB-7556 - iOS: Clearing all Watches does not stop Location Services #MsgLength=774
+
+
+----
+Modified: src/ios/CDVLocation.m|3 0
+
+Revision: 2288153f47e1dfc384b069a1fd9e39efb080a627
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:41
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.3.10 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|15 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5e5b19091feeae7bf20123e4171370c8d6e8db57
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:01
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: bb6968dbcffbd0e3ca5e4bdd5baf15af25132229
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:15
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: 8ada4de9f1854509c24d1525fb484b758c8ceb82
+Author: Archana Naik <naika@lab126.com>
+Date: 18/09/2014 06:24:40
+Message:
+Removed amazon-fireos code for geolocation. #MsgLength=44
+
+
+----
+Modified: plugin.xml|1 28
+Deleted: src/amazon/CordovaLocationListener.java|0 252
+Deleted: src/amazon/GPSListener.java|0 51
+Deleted: src/amazon/GeoBroker.java|0 205
+Deleted: src/amazon/NetworkListener.java|0 33
+
+Revision: 543afdf88a201131eb8f3109f4c135d6a671f513
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 11:35:12
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.3.10 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 221e9d0590f081ca5b2d606ab67ff6ebdad047db
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 11:37:58
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 887df52687f7fe5edd33013765eba4cc7ae89b30
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:12:15
+Message:
+CB-7700 cordova-plugin-geolocation documentation translation: cordova-plugin-geolocation #MsgLength=89
+
+
+----
+Modified: doc/de/index.md|6 6
+Modified: doc/es/index.md|60 21
+Modified: doc/pl/index.md|5 5
+Modified: doc/ru/index.md|8 8
+
+Revision: 7dc440053469300efc6c8f31904f1e09358318f2
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:11:11
+Message:
+CB-7977 Mention deviceready in plugin docs #MsgLength=43
+
+
+----
+Modified: doc/index.md|11 0
+
+Revision: e3f9685993975cdc59283e4d5b0940cc293ed83b
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 27/11/2014 04:24:51
+Message:
+CB-8085 Fix geolocation plugin on Windows #MsgLength=42
+
+
+----
+Modified: src/windows/GeolocationProxy.js|10 2
+
+Revision: 67bd0fcc47aa49cdc0db610f7a0db2aeefd42c31
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 28/11/2014 18:53:56
+Message:
+CB-8094 Pended auto tests for Windows Store since they require user interaction #MsgLength=80
+
+
+----
+Modified: tests/tests.js|22 2
+
+
+Revision: 55194aab45a17335e7bc581c3ce031c5311991f9
+Author: Christopher Blum <christopher.blum@spellboy.com>
+Date: 05/11/2014 18:23:43
+Message:
+Do not stop updating location when the error is 'kCLErrorLocationUnknown' #MsgLength=74
+
+
+----
+Modified: src/ios/CDVLocation.m|4 2
+
+
+Revision: 0db6fd9952e0bdd00a5d821575180d152231856d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.3.11 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 56620f9e8aa22574bd4b0422643a883d336a34ea
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:50
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b1c963f67be1063a34c4e6a93dbfa19f59ef424e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/01/2015 22:49:20
+Message:
+CB-8351 Use argumentForIndex rather than NSArray extension #MsgLength=59
+
+
+----
+Modified: src/ios/CDVLocation.m|4 4
+
+Revision: ccab812a495c9f9286419f5589ff62cbd412aaf8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.3.12 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a5618f990801bb60ce04eb1b7a5ac573f4d3422d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:02
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: acbceabfe5f12e4d8a2fb9a4cb730356214905bc
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 06/02/2015 03:25:39
+Message:
+CB-8443 Geolocation tests fail on Windows due to done is called multiple times #MsgLength=79
+
+
+----
+Modified: tests/tests.js|14 2
+
+Revision: f50c365b6adcfcd9011953e8d94a4a5443bb6cf5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 16:30:25
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|41 0
+
+Revision: fd95a441fcfc7643082369bced18563d014d3209
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:50:54
+Message:
+CB-8438 cordova-plugin-geolocation documentation translation: cordova-plugin-geolocation #MsgLength=89
+
+
+----
+Modified: doc/de/index.md|83 34
+Modified: doc/es/index.md|26 57
+Modified: doc/fr/index.md|13 5
+Modified: doc/it/index.md|73 24
+Modified: doc/ja/index.md|86 27
+Modified: doc/ko/index.md|81 32
+Modified: doc/pl/index.md|75 26
+Modified: doc/zh/index.md|89 30
+
+Revision: 828471f9cdae5604cf251327167703dd59242fe4
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 09:08:50
+Message:
+CB-8568 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|13 0
+Modified: README.md|2 0
+
+Revision: 3b06100d419f550208a71581bf3a9ae44f461a75
+Author: Jojo Degenhardt <jost.degenhardt@gmail.com>
+Date: 21/11/2014 15:24:23
+Message:
+Wrong parameter in Firefox OS plugin #MsgLength=192
+
+
+----
+Modified: src/firefoxos/GeolocationProxy.js|4 1
+
+
+Revision: 4fc6d57fed4c2b929558e7144cc7225465d749dd
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 13/03/2015 23:01:31
+Message:
+CB-8659: ios: 4.0.x Compatibility: Remove use of deprecated headers #MsgLength=68
+
+
+----
+Modified: src/ios/CDVLocation.m|0 1
+
+Revision: 5c24ac4d42fe51de6ced7203ab8310a8c483f25d
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 13/03/2015 23:01:39
+Message:
+CB-8659: ios: 4.0.x Compatibility: Remove use of initWebView method #MsgLength=68
+
+
+----
+Modified: src/ios/CDVLocation.m|6 10
+
+Revision: 4152ada2233ede5d06815e23a5d0de2ab24f9b82
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:27:43
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|260 2
+Deleted: doc/index.md|0 280
+
+Revision: 973014e43ee4a10735a72ec9a60670c41a2a6bc4
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 19/03/2015 23:07:48
+Message:
+docs: added Windows to supported platforms #MsgLength=43
+
+
+----
+Modified: README.md|1 0
+
+Revision: 90aeac681c764a314b9b3f8f9de98b1a0f3c8b02
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 20/03/2015 22:31:00
+Message:
+CB-8681 Fixed occasional test failures #MsgLength=57
+
+
+----
+Modified: tests/tests.js|57 24
+
+Revision: 4470d7f82366b6e7d5aad5e6abc1954baaa4e81c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:58:05
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 24191e04ebf5d017d97e14ae3d7bb5f9dbcb8dc3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:31
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: 50b43f3a7ffc372c869a3a497414f47256ac64d1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:06:00
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: 6231d681b61f1dea5d9a8ad01e2665f51ae049e8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 07:01:22
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 054b89f3b3eb15cd7ed9e675eb75d312ba72e346
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 07:59:46
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 941dd42fdfa9146b3d793817d117c096f4c51fc5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:38
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|17 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ccf42709f4ee4bf28df1006009825049cb2d0fa9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:47
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: cbe01f6df9d27e68c28503083166615850c1c14b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:31:06
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6dcc55b2a9ef36ae8f300ade8abecf74850e41f0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: a77552d2992cf71a57da34699971e8b26f16b9e7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:22
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4f647ebdc5058d7dc5906c9d024359a0cd1c735c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 23/05/2015 03:17:05
+Message:
+Add more install text for legacy versions of cordova tools. This closes #36 #MsgLength=76
+
+
+----
+Modified: README.md|10 0
+
+Revision: 0514b326662e7981a5d5bec609485a0e41c265d8
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 26/05/2015 16:08:29
+Message:
+CB-8845 Pended tests for Android #MsgLength=51
+
+
+----
+Modified: tests/tests.js|14 13
+
+Revision: 7f5c01cc272dba06083bbe160f5e8dd694ce328e
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 27/05/2015 21:56:29
+Message:
+CB-8845 Updated comment why Android tests are currently pended #MsgLength=63
+
+
+----
+Modified: tests/tests.js|8 4
+
+Revision: 39362a44535c6bee9161fdc08fc3b3c643423f3e
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 02/06/2015 23:51:17
+Message:
+fix npm md issue #MsgLength=17
+
+
+----
+Modified: README.md|17 17
+
+Revision: 444485d3edccb8c60d9f8b07f0b0c5813eb6581b
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:41:22
+Message:
+CB-9128 cordova-plugin-geolocation documentation translation: cordova-plugin-geolocation #MsgLength=89
+
+
+----
+Added: doc/de/README.md|268 0
+Added: doc/es/README.md|266 0
+Added: doc/fr/README.md|227 0
+Added: doc/it/README.md|268 0
+Added: doc/ja/README.md|268 0
+Added: doc/ko/README.md|268 0
+Added: doc/pl/README.md|268 0
+Added: doc/zh/README.md|268 0
+
+Revision: 60d7c3afaf5e923d923d2838e0f3c635255973ab
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:03
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.0.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e529db6abd497dde3ac03fc225d42d3ebaa09601
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 48fde3e6972652b2ef2f4e2d7dc85d313be3b2fe
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:35
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 239751944f6ae7332cb82562a625fe8a10cf0b04
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 06:09:48
+Message:
+remove travis-ci integration #MsgLength=29
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 2
+
+Revision: f88dfd3a7885ee0b596fccbd981d9f2ca4a19041
+Author: daserge <daserge@yandex.ru>
+Date: 13/07/2015 21:30:54
+Message:
+CB-9355 Fix Geolocation plugin start watch fail related to unset MovementThreshold on Windows 10 #MsgLength=97
+
+
+----
+Modified: src/windows/GeolocationProxy.js|72 52
+
+Revision: 1ed7f50dbd7fbd322ec2ddd16becd5db620c1465
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: d2b225d6c2024771430150ca7971f91a35792c36
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:50
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: cbdcedf056bbe8ee932b8542582520f6a3b4eca5
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 28/10/2015 07:45:07
+Message:
+CB-4596 Date objects are supposed to be DOMTimeStamp (s) #MsgLength=57
+
+
+----
+Modified: README.md|1 1
+Modified: doc/de/README.md|1 1
+Modified: doc/de/index.md|1 1
+Modified: doc/es/README.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/README.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/README.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/README.md|1 1
+Modified: doc/ko/README.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/README.md|1 1
+Modified: doc/zh/README.md|1 1
+Modified: doc/zh/index.md|1 1
+Modified: www/Position.js|1 1
+Modified: www/geolocation.js|2 2
+
+Revision: 163051aa38547eb09eef65b9f5267db1bc8c375f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 28/10/2015 07:51:53
+Message:
+Fixed lint errors. #MsgLength=19
+
+
+----
+Modified: src/windows/GeolocationProxy.js|6 6
+Modified: tests/tests.js|3 3
+Modified: www/geolocation.js|2 2
+
+Revision: bf8a373418f3056da93c85f957d91197f51db18a
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 28/10/2015 08:28:50
+Message:
+Expect lastPosition to have a timestamp that is already in msecs (DOMTimeStamp) #MsgLength=80
+
+
+----
+Modified: www/geolocation.js|1 1
+
+Revision: e713e7abe980022e67f4ed1e967a00e74793dcd6
+Author: Joe Bowser <bowserj@apache.org>
+Date: 19/09/2015 04:59:00
+Message:
+Thanks to Marshmallow, we now have a bunch of new code to handle the permissions.  This is a major step backwards. #MsgLength=115
+
+
+----
+Modified: plugin.xml|13 0
+Added: src/android/Geolocation.java|108 0
+Added: www/android/geolocation.js|58 0
+
+Revision: cab6f22d5b20fbb3a68a1f4775d1d0873b82dd61
+Author: Joe Bowser <bowserj@apache.org>
+Date: 23/09/2015 07:03:28
+Message:
+CB-9105: Fixing JS errors in the shim #MsgLength=38
+
+
+----
+Modified: www/android/geolocation.js|2 2
+
+Revision: 40d92dfcc493e070ccfc868b31110f0db4afe6fe
+Author: Joe Bowser <bowserj@apache.org>
+Date: 25/09/2015 06:15:22
+Message:
+Adding engine tags: #MsgLength=20
+
+
+----
+Modified: plugin.xml|8 3
+
+Revision: b9426e98ac41dfe7f94b3e965e5436424c22595e
+Author: Joe Bowser <bowserj@apache.org>
+Date: 01/10/2015 03:44:01
+Message:
+Refactored Geolocation after feedback #MsgLength=38
+
+
+----
+Modified: src/android/Geolocation.java|2 29
+
+Revision: cc7e3cbe42b951d835ca81d4e9c68ea2d542a95a
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/10/2015 05:47:18
+Message:
+Scoping errors with permissions variables, temporary fix #MsgLength=57
+
+
+----
+Modified: src/android/Geolocation.java|16 0
+
+Revision: 3f0c06368a02c0921e44562a60da7d3833f9926c
+Author: Joe Bowser <bowserj@apache.org>
+Date: 07/10/2015 04:29:03
+Message:
+Tweaking the geolocation plugin to contain all the permissions code.  Sadly, we have to do this. #MsgLength=97
+
+
+----
+Modified: src/android/Geolocation.java|11 1
+
+Revision: 8e7ff11b9a97e923c16eb1b8edbb4eeca9eabe13
+Author: Mihkel Sokk <mihkelsokk@gmail.com>
+Date: 23/07/2015 03:16:43
+Message:
+CB-8826 Check for NSLocationWhenInUseUsageDescription first #MsgLength=60
+
+
+----
+Modified: src/ios/CDVLocation.m|5 5
+
+
+Revision: 9714f49f90ebf40917d3576a350685d68720ec43
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/10/2015 08:12:45
+Message:
+CB-9907 Handle ios tests that fail when ios simulator does not have a location #MsgLength=79
+
+
+----
+Modified: tests/tests.js|50 37
+
+Revision: 82457a549065767e3bbf071f36a3082cc1973bd5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|82 83
+
+Revision: d574887175180827bade6bf4fe50e2040a07f152
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:10
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: 9231530543024dc027e2550a452d14b37edc6cc7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:05
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 2.0.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 57eb4dc550a3d88d3ebbb60a0d6a83d61f898dd7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|53 53
+
+Revision: 1af21d083e043784628e37a514483c80a15256e8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1095cc871da8d6a722f15818bfa967a7b83ae6c2
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 28/12/2015 19:31:44
+Message:
+CB-2845 PositionError constants not attached to prototype as specified in W3C document #MsgLength=152
+
+
+----
+Modified: www/PositionError.js|3 3
+
+Revision: fe054593f307f174bf3b880725f89936e924caf6
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 29/12/2015 02:42:32
+Message:
+CB-7146 Remove built-in WebView navigator.geolocation manual tests #MsgLength=85
+
+
+----
+Modified: tests/tests.js|15 51
+
+Revision: 8cf37567c4c144303c59128664db71abe196bc23
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 29/12/2015 03:18:29
+Message:
+CB-10204 Fix getCurrentPosition options on Android #MsgLength=69
+
+
+----
+Modified: www/android/geolocation.js|2 7
+
+Revision: 4f9dcf02f7c4bfc979abbf10a0676ece6459740f
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 29/12/2015 15:06:42
+Message:
+CB-8443 Android: nothing happens if GPS is turned off #MsgLength=72
+
+
+----
+Modified: README.md|7 1
+
+Revision: 49825f17e56dc6df2e8bf50b3fa03a93960ff5e1
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 04/01/2016 16:15:11
+Message:
+CB-10278 geolocation watchPosition doesn't return watchID string #MsgLength=83
+
+
+----
+Modified: tests/tests.js|1 0
+Modified: www/android/geolocation.js|14 7
+
+Revision: a754436ee0f051fb2a684f4a59d361647849dd07
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 31/12/2015 18:07:48
+Message:
+CB-10285 Added tests for PositionError constants #MsgLength=67
+
+
+----
+Modified: tests/tests.js|47 0
+
+Revision: a818d6dcc02cc26a06fec3d95f9eff40f4e6568a
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 29/12/2015 17:26:25
+Message:
+CB-10277 Error callback should be called w/ PositionError when location access is denied #MsgLength=107
+
+
+----
+Modified: plugin.xml|4 0
+Modified: www/android/geolocation.js|16 3
+
+Revision: ed5bfa42dbdd23dc7364b2ed3562ed1bb8d0a595
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 31/12/2015 19:26:33
+Message:
+CB-10286 Don't skip automatic tests on Android devices #MsgLength=73
+
+
+----
+Modified: tests/plugin.xml|1 0
+Modified: tests/tests.js|15 21
+
+Revision: 2134d2b89d386069a4844a13bf5807ed2416e518
+Author: Schaffer Krisztian <tisztamo@battletac.com>
+Date: 27/02/2015 05:50:03
+Message:
+CB-8523 Fixed accuracy when enableHighAccuracy: false on iOS. This closes #39 #MsgLength=78
+
+
+----
+Modified: src/ios/CDVLocation.m|1 2
+
+Revision: 9420f405f64fded667eb8335fc9cddc2401d6ff3
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 12/01/2016 03:06:37
+Message:
+CB-10319 android: Adding reflective helper methods for permission requests #MsgLength=75
+
+
+----
+Modified: plugin.xml|6 10
+Modified: src/android/Geolocation.java|3 7
+Added: src/android/PermissionHelper.java|138 0
+
+Revision: 43ceab3a92d5fc2be6fa5bf227cd35c6e10e2baa
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:35:05
+Message:
+CB-10368 Updated version and RELEASENOTES.md for release 2.1.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|12 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 79bdb044bef0a2b8e5470b32af8db9f7f38c9fb3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:58:32
+Message:
+CB-10368 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4ab4d3a57bef9f9f53b64c2a5ae83ee985873482
+Author: t1st3 <contact@tiste.org>
+Date: 07/02/2016 21:37:10
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=259
+
+
+----
+Modified: package.json|1 1
+
+Revision: a6da270a0bb8d6c83911d8d559c1bb37abe7bbcc
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 12/02/2016 08:19:04
+Message:
+CB-10574: MobileSpec can't get results for WP8.1 Builds #MsgLength=103
+
+
+----
+Modified: src/windows/GeolocationProxy.js|37 38
+
+Revision: e8c921af320a7ca67cde2533db3125759d5e133a
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 16/02/2016 05:45:59
+Message:
+Using a fallback epsilon in case Number.EPSILON is not defined. #MsgLength=64
+
+
+----
+Modified: src/windows/GeolocationProxy.js|9 2
+
+Revision: aa69e1bf15c5a317d5790045336fd5457eaa8ec7
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 17/02/2016 05:24:58
+Message:
+CB-10574: MobileSpec can't get results for WP8.1 Builds #MsgLength=98
+
+
+----
+Modified: src/windows/GeolocationProxy.js|1 1
+
+Revision: d56ab5b08ac855f73025a657521c79dcb93ef617
+Author: daserge <v-seshak@microsoft.com>
+Date: 27/02/2016 01:34:43
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Modified: .gitignore|1 1
+Added: .jshintrc|17 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/windows/GeolocationProxy.js|6 4
+Modified: tests/tests.js|40 36
+Modified: www/android/geolocation.js|4 6
+
+Revision: 7c57ae9c0470905124c0d5a1430bf09f3a46f1cc
+Author: Joe Bowser <bowserj@apache.org>
+Date: 02/03/2016 03:20:24
+Message:
+CB-10691: Check the context to avoid null errors #MsgLength=49
+
+
+----
+Modified: src/android/Geolocation.java|14 10
+
+Revision: 3fa59255930468607c6f4d9e27487d0fecef2643
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 02/03/2016 06:49:40
+Message:
+Minor changes to README #MsgLength=24
+
+
+----
+Modified: README.md|1 2
+
+Revision: ed59863125a4692a1800cf12d9552a5fb14d5e3b
+Author: Norm Estabrook <normesta@microsoft.com>
+Date: 26/03/2016 04:12:29
+Message:
+updating readme witha sample and snippets #MsgLength=42
+
+
+----
+Modified: README.md|450 0
+
+Revision: ba68accdb164606a4982ac569f8004f939e6e561
+Author: Norm Estabrook <normesta@microsoft.com>
+Date: 01/04/2016 07:44:47
+Message:
+Removing sample link and including sample content #MsgLength=50
+
+
+----
+Modified: README.md|0 2
+
+Revision: 9c299af0be7baa9388c3c5fa906acc4a6b6f7c2e
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 06/04/2016 00:12:37
+Message:
+Replace PermissionHelper.java with cordova-plugin-compat #MsgLength=57
+
+
+----
+Modified: plugin.xml|2 1
+Modified: src/android/Geolocation.java|1 0
+Deleted: src/android/PermissionHelper.java|0 138
+
+
+Revision: 444f84ad8e7bcc2b6ed2c54c568690875dfc6225
+Author: Norm Estabrook <normesta@microsoft.com>
+Date: 16/04/2016 00:47:06
+Message:
+Updating weather part of this readme to use a new service #MsgLength=58
+
+
+----
+Modified: README.md|19 17
+
+Revision: 936c9435aa1e64cb89010717adaec2dad270572f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:27
+Message:
+ Updated version and RELEASENOTES.md for release 2.2.0 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 72ec7bc640b4c55bb847c8d0128277de1a68f6a1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:27
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+
+Revision: 5a66abc0e2052d48226fb9f790ef5b2d2af8ed8a
+Author: Norm Estabrook <normesta@microsoft.com>
+Date: 16/04/2016 06:15:36
+Message:
+Adding links to subsections #MsgLength=28
+
+
+----
+Modified: README.md|13 13
+
+Revision: b298182c00d66ebea430ea7090c8dfd744a2a69d
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:50
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: 8fbceca845441f4f421548f243d2f05573d11225
+Author: Guillaumedev <contact@guillaumedev.com>
+Date: 21/01/2016 04:47:40
+Message:
+Update iOS geolocation plugin to avoid THREAD WARNING: ['Geolocation'], operation occurs in new Thread #MsgLength=103
+
+
+----
+Modified: src/ios/CDVLocation.m|28 26
+
+
+Revision: da4c1d4c55162fa9b752b1247fe3c9c4f08333df
+Author: Norm Estabrook <normesta@microsoft.com>
+Date: 28/04/2016 05:31:55
+Message:
+Adding links to reference content and sample content to the top of the readme file #MsgLength=101
+
+
+----
+Modified: README.md|6 2
+
+Revision: b8f65bb60c6792694682ad5060eb9c7554c63785
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:53:59
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: 006523732616ff94b03853d2580cf0e15263c778
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 17:00:54
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|5 3
+
+Revision: edafd7138c4266dd12c61bc8a0d900f427d9b8dc
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 23/08/2016 04:33:59
+Message:
+Plugin uses Android Log class and not Cordova LOG class #MsgLength=56
+
+
+----
+Modified: src/android/Geolocation.java|1 2
+
+Revision: dbbe86aafaf78fce5b4b6a56675db0e269b6bc86
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 21:49:02
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=397
+
+
+----
+Modified: package.json|7 0
+
+Revision: b913653214f1e49ee817635394b7e9d2bd366387
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:54
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 2.3.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|22 13
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: bb8b4fbc09b5a08bee8314265ce00bbfdf41d18b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9f4d681805da48b3e157a6b946642bba1c2c7cec
+Author: Audrey So <auso@adobe.com>
+Date: 23/09/2016 06:07:50
+Message:
+CB-11875 added android.hardware.location.gps uses-feature. #MsgLength=77
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: 870efad50d57748d8fe40f85770e684845009215
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 24/09/2016 06:16:49
+Message:
+Closing invalid pull request: close #78 #MsgLength=40
+
+
+----
+
+Revision: f668ae362adc3e137941e7cbbf2d03b9136df37f
+Author: Alexandre Abreu <alexandre.abreu@canonical.com>
+Date: 10/05/2016 02:14:23
+Message:
+Fix altitude & accuracies retrieval #MsgLength=54
+
+
+----
+Modified: src/ubuntu/geolocation.cpp|24 10
+
+Revision: 111c7478232c99407b5a38fae512f5d0aa1828ec
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 27/09/2016 05:41:06
+Message:
+CB-11904 Updated version and RELEASENOTES.md for release 2.4.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7832b19b533f3322c742a577eed43f62cd2cb917
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 27/09/2016 05:42:02
+Message:
+CB-11904 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7bcaab5148dddd284c39197801fc8435d3ffbe59
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:23:58
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=101
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: f9f7a23c57daad5514ce3d830a2defeb93ba3f78
+Author: obione <obi@huronasolutions.co.uk>
+Date: 05/10/2016 13:14:32
+Message:
+CB-11962: (ios) Added variable for setting NSLocationWhenInUseUsageDescription #MsgLength=97
+
+
+----
+Modified: README.md|11 0
+Modified: plugin.xml|3 2
+
+Revision: 1ff3a9e3d02cc49ae9477d9eb54b8cdd031df4f5
+Author: Sterling <sterlingann@gmail.com>
+Date: 29/10/2016 09:20:28
+Message:
+corrected KCLAuthorizationStatus error, changed to always removed user of [manager locationServicesEnabled].  Must return [CLLocationManager locationServicesEnabled] or 'none' #MsgLength=176
+
+
+----
+Modified: src/ios/CDVLocation.m|1 3
+
+Revision: 34fcfa228593f5d2ee91e8f66f563b7dbeef1600
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 05/11/2016 09:04:02
+Message:
+This closes #84 #MsgLength=16
+
+
+----
+
+Revision: 7934ed70269cab91cd109607da36f602b25d1892
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:45
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 2.4.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|201 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: be0da8421c773eabb9a35350e49c40d25a68b69a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:07
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 459dee34c1d0e5d79c1db4563be98dd266ac9570
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 18:31:48
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: f2af1481d267360e93ebc000b979de0b2c8450c6
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:49:28
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-geolocation #MsgLength=61
+
+
+----
+Modified: RELEASENOTES.md|1 195
+
+Revision: 96f0830caab4d48a01d97db1d9ec3f4c52b95be3
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:31:43
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 5da753661397792514816d066734490f063c5919
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:26
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 2.4.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 2
+Modified: package.json|1 1
+Modified: plugin.xml|176 268
+Modified: tests/plugin.xml|6 31
+
+Revision: 4a7694a654556802c99e363dbafba5193690222c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:56:00
+Message:
+Set VERSION to 2.4.3-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|268 176
+Modified: tests/plugin.xml|31 6
+
+Revision: 41ec6e4a5b83a8d01cda2bf42a14414edefb17c4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 10:19:47
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: 538355ca6f3128e88e3a402189e6c086445b39b7
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/04/2017 09:24:23
+Message:
+Close #88 #MsgLength=10
+
+
+----
+
+Revision: 9f9496f0577ff66fb2449ac21b28ee1f0252aca2
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 20:56:42
+Message:
+CB-12622 Added Android 6.0 build badge to README #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 12fae5bd44d182b526ebb517b89a71a35044d411
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 03:48:20
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 2.4.3 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 43e71bf49ccbb39fbcbb9a260812e9020181d289
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 03:48:22
+Message:
+Set VERSION to 2.4.4-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f085dd3c63e2094d38668f6c06cd45d0fc78e6b3
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 03:58:18
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: 7863bb287e473df9790d6b38376ead22191ea037
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 18:40:35
+Message:
+CB-12847: fixed `bugs` entry in package.json. #MsgLength=46
+
+
+----
+Modified: package.json|1 1
+
+Revision: 4f776e5a88cebd629e04f7c165a971203a3e82a6
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/06/2017 16:22:15
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Modified: .travis.yml|70 3
+
+Revision: 259aa76017c53e6c8af4e8a543b214ed740de7bc
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:31:37
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: 855215324b4bf48e34e4100e0854d466fb405a59
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 15:35:15
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: de69eb1b55c53934d9e5e034681f74487f093d7b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:34:16
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: 69eb5ba5b5e801c55661dd277a2dd6997ff19c4d
+Author: Audrey So <audreyso@apache.org>
+Date: 13/06/2017 01:18:43
+Message:
+CB-12895 : added eslint and removed jshint #MsgLength=43
+
+
+----
+Added: .eslintrc.yml|10 0
+Deleted: .jshintrc|0 17
+Modified: package.json|9 3
+Modified: src/firefoxos/GeolocationProxy.js|15 15
+Modified: src/windows/GeolocationProxy.js|57 56
+Modified: tests/tests.js|62 64
+Modified: www/Coordinates.js|1 1
+Modified: www/Position.js|1 1
+Modified: www/PositionError.js|1 1
+Modified: www/android/geolocation.js|17 17
+Modified: www/blackberry10/GeolocationProxy.js|19 19
+Modified: www/geolocation.js|39 39
+
+Revision: 5e472fd54dd1467f1ebb7f2c5a215adebd98927c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:05:47
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 642a2f35d4df90e9d5929dc5eb2f9bbdb6ad5dbf
+Author: Kelvin Dart <kelvin.dart@crimsontide.co.uk>
+Date: 18/10/2017 23:52:17
+Message:
+CB-13294 Remove cordova-plugin-compat #MsgLength=56
+
+
+----
+Modified: package.json|2 2
+Modified: plugin.xml|4 2
+
+Revision: 23a733527d696963f8325ba98bee83ce96994f00
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:58:57
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: c692c156d75869427358274b0ae7e2abedababc3
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 01/11/2017 18:13:20
+Message:
+CB-13516 (all): Add 'protective' entry to cordovaDependencies #MsgLength=62
+
+
+----
+Modified: package.json|3 0
+
+
+Revision: 4de8bdf3aeb17f158b0219731a0b29b6f487f4a6
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 14/10/2017 23:45:59
+Message:
+CB-13267 (iOS): Remove ios usage descriptions #MsgLength=46
+
+
+----
+Modified: README.md|13 8
+Modified: plugin.xml|0 5
+
+Revision: 0b0ca15c757292be371c9a9e1717e6aaebb1b41a
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 03/11/2017 03:28:02
+Message:
+Add edit-config tag in tests/plugin.xml #MsgLength=40
+
+
+----
+Modified: tests/plugin.xml|3 0
+
+
+Revision: a168c04b33e6bb3f030fc07861c491040b49eb5a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:45
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 3.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 083a1c55b3d6a66c9dec2804934c247313089977
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:39
+Message:
+Set VERSION to 3.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 92f595cefb83716189d6176ae01b044f8d016233
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 13/12/2017 03:31:49
+Message:
+CB-13664: remove deprecated platforms #MsgLength=38
+
+
+----
+Modified: README.md|0 9
+Modified: package.json|3 17
+Modified: plugin.xml|1 145
+Deleted: src/firefoxos/GeolocationProxy.js|0 67
+Deleted: src/ubuntu/geolocation.cpp|0 133
+Deleted: src/ubuntu/geolocation.h|0 69
+Deleted: src/wp/GeoLocation.cs|0 34
+Deleted: www/blackberry10/GeolocationProxy.js|0 69
+
+
+Revision: 0f5868057f12b816c1974e311f89e52dc563954c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:25:13
+Message:
+CB-13681 Updated version and RELEASENOTES.md for release 4.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a9a266b755c44cfc142bf2aa81267ebb7f985adf
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:26:44
+Message:
+Set VERSION to 4.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9dd3b32473fef8f04706a82797202fd610c5aa19
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 27/12/2017 07:25:54
+Message:
+CB-13705: Fix to allow 4.0.0 version install #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+
+Revision: 8167dce4ee5a7106b3cb14606a69f6d16384f276
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:36
+Message:
+CB-13714 Updated version and RELEASENOTES.md for release 4.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|2 197
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 87f53941807acbc30c9de9d2466ccc112180c9fa
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:49
+Message:
+Set VERSION to 4.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e679a5dcbca42dd504cc1f7de40476236cc9ec7d
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 30/12/2017 13:57:49
+Message:
+Fix release notes (#102) #MsgLength=26
+
+
+----
+Modified: RELEASENOTES.md|198 0
+
+Revision: a6cbe408e9922dbf3bf24b8103b55579496061a6
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 10/01/2018 06:48:09
+Message:
+CB-13748: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: 91c731316ea9878e768d827e00d1460a8123a71a
+Author: Jacques de Villiers <jacquesdev@users.noreply.github.com>
+Date: 26/06/2018 16:16:52
+Message:
+Add Apache Cordova issue tracker link to Readme (#107) #MsgLength=56
+
+
+----
+Modified: README.md|3 0
+
+Revision: ba455956a576d1d45cea82f4ac292610b664a4ef
+Author: Elijah Rutschman <elijahr@gmail.com>
+Date: 12/07/2018 18:17:17
+Message:
+CB-14020: (ios) Fix "Collection was mutated while being enumerated" crash (#104) #MsgLength=222
+
+
+----
+Modified: src/ios/CDVLocation.m|48 39
+
+Revision: 3b1f63ad11acbddbde752efae20917701d208e79
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 01/10/2018 18:26:46
+Message:
+add android-27 to `android update sdk -u --filter` #MsgLength=50
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 9408fdd60427ba20e99da84758a1f1a1a7fbf60e
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 01/10/2018 21:46:49
+Message:
+Remove outdated doccs translations (#117) #MsgLength=103
+
+
+----
+Deleted: doc/de/README.md|0 268
+Deleted: doc/de/index.md|0 255
+Deleted: doc/es/README.md|0 266
+Deleted: doc/es/index.md|0 214
+Deleted: doc/fr/README.md|0 227
+Deleted: doc/fr/index.md|0 214
+Deleted: doc/it/README.md|0 268
+Deleted: doc/it/index.md|0 255
+Deleted: doc/ja/README.md|0 268
+Deleted: doc/ja/index.md|0 255
+Deleted: doc/ko/README.md|0 268
+Deleted: doc/ko/index.md|0 255
+Deleted: doc/pl/README.md|0 268
+Deleted: doc/pl/index.md|0 255
+Deleted: doc/ru/index.md|0 206
+Deleted: doc/zh/README.md|0 268
+Deleted: doc/zh/index.md|0 255
+
+Revision: 2fc992b94599aea77fffbe92b6d9971dd0e1081d
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 04/10/2018 07:16:04
+Message:
+remove JIRA link #MsgLength=16
+
+
+----
+Modified: README.md|0 3
+
+Revision: 6fd784740cd232277284933811d08f9c74f33c22
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:39:24
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 1636d9841673aa47f80679a7a868b45aa20246fc
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/06/2019 21:03:09
+Message:
+ci(travis): Update Travis CI configuration for new paramedic (#154) #MsgLength=170
+
+
+----
+Modified: .travis.yml|100 60
+
+Revision: d4a1ac5c69ad5e0b6c8212cce8abb9588522cd39
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 19:00:33
+Message:
+build: add `.npmignore` to remove unneeded files from npm package #MsgLength=66
+
+
+----
+Added: .npmignore|16 0
+
+Revision: 74417bb34e636b444822297816c1ea9abf549535
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 19:00:58
+Message:
+build: add `.gitattributes` to force LF (instead of possible CRLF on Windows) #MsgLength=78
+
+
+----
+Added: .gitattributes|1 0
+
+Revision: 4d2e901512219e2f800422111d3823573aec16e8
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 20:19:14
+Message:
+chore: fix repo and issue urls and license in package.json and plugin.xml #MsgLength=74
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|2 2
+Modified: tests/package.json|1 1
+
+Revision: 87f4f51dc520e98e5b4f810f3a1b2e45a24c52c6
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 23:28:46
+Message:
+chore(release): release notes for 4.0.2 #MsgLength=40
+
+
+----
+Modified: RELEASENOTES.md|16 0
+
+Revision: 6319a2c1d659452495688ed0c475d240daa3abe6
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 23:28:46
+Message:
+chore(release): 4.0.2 (version string) #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7e7a473cfadf9e41034ca82042298f093db281c9
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 23:38:47
+Message:
+chore(release): 4.0.3-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6570cf9fd2c546620f6aa8b2a07cf0b8b073a95c
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 08/07/2019 17:09:05
+Message:
+ci(travis): upgrade to node8 #MsgLength=28
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 89cf51d222e8f225bdfb661965b3007d669c40ff
+Author: Martin Bech <sithwarrior@users.noreply.github.com>
+Date: 18/03/2020 21:37:18
+Message:
+Variable for Require GPS Hardware (#189) #MsgLength=219
+
+
+----
+Modified: README.md|5 0
+Modified: plugin.xml|2 1
+
+Revision: 88ef084afd58fdb87cd661359a98f8cc6c6c24ae
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 20:54:21
+Message:
+chore(npm): improve ignore list (#192) #MsgLength=40
+
+
+----
+Modified: .npmignore|2 15
+
+Revision: a11bdcdbb1d83220319223af141a6280d49efe99
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 20:54:40
+Message:
+ci: updates Node.js versions (#193) #MsgLength=37
+
+
+----
+Modified: .appveyor.yml|8 4
+Modified: .travis.yml|14 13
+
+Revision: 4d14db2e07cb38ffa4d57f1abed0fdb780d27e86
+Author: Mosab A <47486787+mosabab@users.noreply.github.com>
+Date: 30/03/2020 09:15:33
+Message:
+Add missing information for iOS (#181) #MsgLength=606
+
+
+----
+Modified: README.md|14 2
+
+Revision: 70f3d6efbd1742f7395de8c0fe00f951852213d3
+Author: Norman Breau <norman@normanbreau.com>
+Date: 30/03/2020 16:02:34
+Message:
+docs: Removed misleading text (#194) #MsgLength=392
+
+
+----
+Modified: README.md|1 2
+
+Revision: 1e806c220dffa26c1af082d6443ea334dae88872
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:29:26
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Modified: CONTRIBUTING.md|4 4
+
+Revision: 1f264911245f7290e20470f805c6d58e259b0180
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:41:02
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: 6ae7a7a54c735209ea6d0e84c97d7d2e5850d223
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 16:05:12
+Message:
+chore(npm): use short notation in package.json (#201) #MsgLength=55
+
+
+----
+Modified: package.json|2 7
+
+Revision: d6d5a34ed670945b57dd8786fd05a13e478fd368
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 18:12:21
+Message:
+refactor(eslint): use cordova-eslint /w fix (#200) #MsgLength=52
+
+
+----
+Modified: .eslintrc.yml|22 9
+Modified: package.json|3 9
+Modified: src/windows/GeolocationProxy.js|18 15
+Modified: tests/tests.js|145 126
+Modified: www/Coordinates.js|5 5
+Modified: www/Position.js|11 3
+Modified: www/PositionError.js|1 1
+Modified: www/android/geolocation.js|1 1
+Modified: www/geolocation.js|18 13
+
+Revision: 420fffc565cc243c65f68e98d14d11f92be31d87
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 23:43:02
+Message:
+chore: adds package-lock file (#202) #MsgLength=38
+
+
+----
+Added: package-lock.json|1724 0
+
+Revision: fe502a97e12d45845000299a5b6732656a0015cb
+Author: Tim Brust <github@timbrust.de>
+Date: 21/08/2020 22:37:30
+Message:
+ci(travis): updates Android API level #MsgLength=37
+
+
+----
+Modified: .travis.yml|2 2
+
+
+Revision: f1a8f894adec2e7176b703639d5590362a9e934f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/09/2020 18:35:01
+Message:
+ci(travis): update osx xcode image (#209) #MsgLength=136
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: f20ae445e3c7539ffef18169d7fd50baa4225d94
+Author: エリス <erisu@users.noreply.github.com>
+Date: 05/11/2020 22:39:33
+Message:
+chore(npm): rebuild package-lock.json (#214) #MsgLength=46
+
+
+----
+Modified: package-lock.json|197 115
+
+Revision: a9c65b03b17e33bd1b4db1931b020c754f6357be
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 06/11/2020 12:00:41
+Message:
+Updated version and RELEASENOTES.md for release 4.1.0 (geolocation-20201106) #MsgLength=77
+
+
+----
+Modified: RELEASENOTES.md|19 2
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: fff0aa9097d37bd365901ea88b26120593e11c47
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 20/11/2020 11:55:49
+Message:
+Increment package version to 4.1.1-dev #MsgLength=39
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 79155dabd57aeb3aecc7c582178481964d100fb7
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/11/2020 17:22:03
+Message:
+ci: add node-14.x to workflow (#217) #MsgLength=38
+
+
+----
+Modified: .appveyor.yml|1 0
+Modified: .travis.yml|1 1
+
+Revision: 8be9229c44a4a00391a8e1be832758a80fbd5b4c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/09/2021 21:19:00
+Message:
+ci: add gh-actions workflows (#234) #MsgLength=37
+
+
+----
+Added: .github/workflows/android.yml|148 0
+Added: .github/workflows/chrome.yml|73 0
+Added: .github/workflows/ios.yml|88 0
+Added: .github/workflows/lint.yml|56 0
+
+Revision: edccb5bd3521731fddf02604ad6d784feec6b6a0
+Author: Norman Breau <norman@normanbreau.com>
+Date: 21/09/2021 18:00:11
+Message:
+chore: package-lock regen (#237) #MsgLength=34
+
+
+----
+Modified: package-lock.json|362 297
+
+Revision: 15ef2e345251bf7154ac20459dcbc2f845e677bd
+Author: Norman Breau <norman@normanbreau.com>
+Date: 21/09/2021 18:00:27
+Message:
+chore: npmrc (#236) #MsgLength=21
+
+
+----
+Added: .npmrc|2 0
+
+Revision: a84dd2ba606cfcc413d727f463d5dd29cf306071
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 23:07:29
+Message:
+ci: remove travis & appveyor (#238) #MsgLength=37
+
+
+----
+Deleted: .appveyor.yml|0 33
+Modified: .npmignore|0 1
+Deleted: .travis.yml|0 111
+Modified: README.md|0 4
+
+Revision: 014ad58644c822fa2bd4df80ccc851c862ac9c7e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:09:06
+Message:
+ci: add action-badge (#239) #MsgLength=29
+
+
+----
+Modified: README.md|2 0
+
+Revision: 5957a80f644ac1d8477e501e99f7fa04f64b9a3d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 20/10/2021 12:27:13
+Message:
+ci(ios): update workflow w/ iOS 15 (#241) #MsgLength=43
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: aef8395660a9fcef59e52ca54d4427d04264e94f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/07/2022 12:24:51
+Message:
+ci(android): update java requirement for cordova-android@11 (#247) #MsgLength=68
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: da513a33102598b248aa471dd4bfce16e397d6c9
+Author: Dave Alden <dave@workingedge.co.uk>
+Date: 15/07/2021 15:58:21
+Message:
+(ios) fix: Check NSDictionary constructed from native CLLocation data is valid for conversion to JSON before attempting conversion. Prevents crashes due to values invalid for JSON conversion such as INFINITY. #MsgLength=209
+
+
+----
+Modified: src/ios/CDVLocation.m|7 2
+
+
+Revision: b7ec1bf89a03d8cf163d91084c3a8c6b825db06a
+Author: エリス <erisu@users.noreply.github.com>
+Date: 10/08/2022 15:49:39
+Message:
+dep(npm): bump package-lock v2 w/ rebuild (#249) #MsgLength=50
+
+
+----
+Modified: package-lock.json|2670 364
+

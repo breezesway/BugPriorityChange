@@ -1,0 +1,4388 @@
+Revision: 58a8828c0edb90c6d93bc8486b0d709106b8eb82
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/04/2013 02:23:20
+Message:
+Initital Commit #MsgLength=16
+
+
+----
+Added: README.md|2 0
+Added: plugin.xml|17 0
+Added: src/android/ContactAccessor.java|198 0
+Added: src/android/ContactAccessorSdk5.java|2174 0
+Added: src/android/ContactManager.java|122 0
+
+Revision: c1d5a07bc776bcd65b524524c0a09f147aba7672
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/04/2013 02:25:41
+Message:
+Forgot to update plugin.xml #MsgLength=28
+
+
+----
+Modified: plugin.xml|4 2
+
+Revision: 40fbdc30de9a3a4a968719129d5aca2d4de25f06
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 23/05/2013 04:45:40
+Message:
+added ios files #MsgLength=16
+
+
+----
+Modified: plugin.xml|23 7
+Added: src/ios/CDVContact.h|136 0
+Added: src/ios/CDVContact.m|1752 0
+Added: src/ios/CDVContacts.h|151 0
+Added: src/ios/CDVContacts.m|593 0
+
+Revision: db9f6fe675040007b48f00dd1462dbc86895e7fc
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 23/05/2013 08:07:56
+Message:
+updated EVERYTHING #MsgLength=19
+
+
+----
+Added: docs/Contact/contact.md|238 0
+Added: docs/ContactAddress/contactaddress.md|161 0
+Added: docs/ContactError/contactError.md|45 0
+Added: docs/ContactField/contactfield.md|148 0
+Added: docs/ContactFindOptions/contactfindoptions.md|118 0
+Added: docs/ContactName/contactname.md|147 0
+Added: docs/ContactOrganization/contactorganization.md|148 0
+Added: docs/contacts.create.md|78 0
+Added: docs/contacts.find.md|119 0
+Added: docs/contacts.md|104 0
+Added: docs/parameters/contactError.md|27 0
+Added: docs/parameters/contactFields.md|25 0
+Added: docs/parameters/contactFindOptions.md|35 0
+Added: docs/parameters/contactSuccess.md|40 0
+Modified: plugin.xml|43 1
+Added: test/autotest/html/HtmlReporter.js|101 0
+Added: test/autotest/html/HtmlReporterHelpers.js|60 0
+Added: test/autotest/html/ReporterView.js|164 0
+Added: test/autotest/html/SpecView.js|79 0
+Added: test/autotest/html/SuiteView.js|22 0
+Added: test/autotest/html/TrivialReporter.js|192 0
+Added: test/autotest/index.html|59 0
+Added: test/autotest/jasmine.css|81 0
+Added: test/autotest/jasmine.js|2530 0
+Added: test/autotest/pages/.DS_Store|0 0
+Added: test/autotest/pages/contacts.html|71 0
+Added: test/autotest/test-runner.js|62 0
+Added: test/autotest/tests/.DS_Store|0 0
+Added: test/autotest/tests/contacts.tests.js|472 0
+Added: test/contacts/index.html|134 0
+Added: test/cordova-incl.js|70 0
+Added: test/index.html|65 0
+Added: test/main.js|163 0
+Added: test/master.css|164 0
+Added: www/Contact.js|177 0
+Added: www/ContactAddress.js|46 0
+Added: www/ContactError.js|42 0
+Added: www/ContactField.js|37 0
+Added: www/ContactFindOptions.js|34 0
+Added: www/ContactName.js|41 0
+Added: www/ContactOrganization.js|44 0
+Added: www/contacts.js|76 0
+Added: www/ios/Contact.js|51 0
+Added: www/ios/contacts.js|62 0
+
+Revision: b7f6d2bc53d9496a19f2435b7f8e458df61d985d
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 08/06/2013 08:52:58
+Message:
+First pass at wp7 support #MsgLength=26
+
+
+----
+Modified: plugin.xml|13 1
+Added: src/wp7/Contacts.cs|664 0
+
+Revision: 8efe71c06623a1beffee188186995786494974e4
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 14/06/2013 02:23:10
+Message:
+fixed misspelled name #MsgLength=22
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 6d4090b882e8c41308021660098f3bab0c58f7a1
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 14/06/2013 05:57:47
+Message:
+updated contacts.cs for wp7 #MsgLength=28
+
+
+----
+Modified: src/wp7/Contacts.cs|17 12
+
+Revision: 9477b856ccabebdfd63cd1c9479951e0d540f2e8
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 15/06/2013 04:55:31
+Message:
+[CB-3683] added contacts capability to wp7 #MsgLength=43
+
+
+----
+Modified: plugin.xml|4 0
+
+Revision: bfe59ee1e6a972b4e5622a59fb4a265f76e448fd
+Author: Tim Kim <timk@adobe.com>
+Date: 21/06/2013 05:49:03
+Message:
+[CB-3680] - fixed up plugin.xml for android and references #MsgLength=59
+
+
+----
+Modified: plugin.xml|8 2
+Modified: www/Contact.js|1 1
+
+Revision: 603dc428d455979699544d7e72e8b350755c7943
+Author: Tim Kim <timk@adobe.com>
+Date: 21/06/2013 05:49:53
+Message:
+[CB-3681] - fixed small reference for ios #MsgLength=42
+
+
+----
+Modified: www/ios/contacts.js|1 1
+
+Revision: 0c4f9e6fe94c0778fad5b62bf46b73cf4b979b5b
+Author: lorinbeer <lorin@adobe.com>
+Date: 22/06/2013 04:25:53
+Message:
+[CB-3682] contact plugin breakout for blackberry10 initial commit #MsgLength=66
+
+
+----
+Modified: plugin.xml|19 0
+Added: src/blackberry10/ContactActivity.js|26 0
+Added: src/blackberry10/ContactAddress.js|30 0
+Added: src/blackberry10/ContactError.js|30 0
+Added: src/blackberry10/ContactField.js|27 0
+Added: src/blackberry10/ContactFindOptions.js|50 0
+Added: src/blackberry10/ContactName.js|39 0
+Added: src/blackberry10/ContactNews.js|26 0
+Added: src/blackberry10/ContactOrganization.js|22 0
+Added: src/blackberry10/ContactPhoto.js|23 0
+Added: src/blackberry10/contactConsts.js|225 0
+Added: src/blackberry10/contactUtils.js|223 0
+Added: src/blackberry10/index.js|374 0
+Added: src/blackberry10/plugin.xml|41 0
+
+Revision: 88b5792fd205810b48c2367f351e451b7c51f6e4
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 25/06/2013 05:30:03
+Message:
+[CB-3684] first pass wp8 support #MsgLength=33
+
+
+----
+Modified: plugin.xml|16 1
+Added: src/wp8/Contacts.cs|664 0
+
+Revision: e365043c415465c7ac3a5002e858967e851af3aa
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:55
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|2 3
+
+Revision: 66bb54a9fc702aab4ad1dbc2b88ca6fc57f7de62
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 07:46:10
+Message:
+Fix require paths that were broken by plugin id changes #MsgLength=56
+
+
+----
+Modified: docs/parameters/contactError.md|1 1
+Modified: docs/parameters/contactSuccess.md|1 1
+Modified: src/blackberry10/ContactActivity.js|1 1
+Modified: src/blackberry10/ContactNews.js|1 1
+Modified: src/blackberry10/ContactOrganization.js|1 1
+Modified: src/blackberry10/ContactPhoto.js|1 1
+
+Revision: 56a3f96e6e6b514b3aa74516519126066ac111b8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 08:32:23
+Message:
+Fix contacts module doubly defined on iOS #MsgLength=42
+
+
+----
+Modified: plugin.xml|33 8
+
+Revision: 216377214dcbea7ffe6737e3e8a8bcacc91e3369
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 05/07/2013 23:49:50
+Message:
+Revert previous commit #MsgLength=153
+
+
+----
+Modified: plugin.xml|8 33
+
+Revision: 6c7ffaba85c995a7acd580cb0f57dd48f41ece65
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 06:00:31
+Message:
+[CB-4112] remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|2 2
+Renamed: src/wp/Contacts.cs [from src/wp8/Contacts.cs]|0 0
+Deleted: src/wp7/Contacts.cs|0 669
+
+Revision: e0958ce3147e223f7d31ba232ea6a15e50563d2e
+Author: David Kemp <drkemp@chromium.org>
+Date: 08/07/2013 20:18:38
+Message:
+CB-4084 Delete email entries with empty value #MsgLength=46
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|13 5
+
+Revision: bdab26874e8cc5d1ce66554a0fac367728fbd6de
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 02:54:01
+Message:
+[CB-4131] Use relative require paths in contact plugin #MsgLength=55
+
+
+----
+Modified: www/Contact.js|2 2
+Modified: www/contacts.js|2 2
+Modified: www/ios/Contact.js|1 1
+Modified: www/ios/contacts.js|1 1
+
+Revision: 393faadefcd0462e0ef5f38c51c5f71eb7bba3d5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: src/android/ContactAccessor.java|1 1
+Modified: src/android/ContactAccessorSdk5.java|1 1
+Modified: src/android/ContactManager.java|3 3
+
+Revision: 630d2324d8e963efa8e8fbead454d1e1d3cf9fee
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 12/07/2013 05:47:08
+Message:
+[CB-1605] Warning cleanup! Suppressed a warning. #MsgLength=242
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|1 0
+
+Revision: 9387b4f0aca9335330a1f350abfe05d866658780
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:05:45
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Added: .gitignore|23 0
+
+Revision: 6d743cb2632c591fbd5ac917aafa4b978068cac3
+Author: Jeffrey Heifetz <jheifetz@blackberry.com>
+Date: 18/07/2013 11:16:13
+Message:
+[BlackBerry10] Adding support for dependencies and permissions #MsgLength=63
+
+
+----
+Modified: plugin.xml|18 7
+
+Revision: f950428d82b7b5697056746ab2c837ac7d381882
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|3 0
+
+Revision: 1fcd7e42677a3dc6072d1478a148cf276de49cc0
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 19/07/2013 09:35:46
+Message:
+[wp] fix for contacts error #MsgLength=28
+
+
+----
+Modified: src/wp/Contacts.cs|1 1
+
+Revision: a3595a241e2ba201ca1acb2a204d9021e62866b6
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/07/2013 05:57:58
+Message:
+[CB-4362] Contacts plugin needs to specify AddressBook.framework and AddressBookUI.framework dependency in plugin.xml #MsgLength=118
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: dd37c813f05f06a8480936edf5204477440b35b5
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/07/2013 08:07:54
+Message:
+[CB-4368] Explicit CoreGraphics.framework dependency should be specified for some core plugins #MsgLength=95
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: 5f0847d4a13a90df5b37bdcbabae6936610a5345
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 25/07/2013 03:05:10
+Message:
+[wp] fixed search by name and made searching case insensitive #MsgLength=62
+
+
+----
+Modified: src/wp/Contacts.cs|21 7
+
+Revision: a8b3c56ce9a16a817a268fac10af75eb549aaa17
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:32:02
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 4a829d4a1de03a1087cb0a9e365dda0df1b6a345
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: f6c9edbc4ac9df9e4c000b1a8641d6e68bbc41d6
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a0795761652e2cf11409e1bd5aec864f94d7b873
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 06:20:31
+Message:
+[plugin.xml] adding android namespace #MsgLength=38
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: 7e92dc38fa94f4cf45b17f450745f377eb801c96
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 08/08/2013 04:26:36
+Message:
+[plugin.xml] adding rim namespace #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: 53c97a496cf4ec4afc6b9ef18f140189cb907815
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 02:38:30
+Message:
+updated name tag and readme #MsgLength=28
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|4 5
+
+Revision: 4b5f408d8e113170dde9cb2772620156a4cd8395
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 03:05:50
+Message:
+updated namespace #MsgLength=18
+
+
+----
+Modified: plugin.xml|2 1
+
+Revision: 8347ee96508f753c01bbb70ddf289e3bd159c10d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-contacts to its own Java package. #MsgLength=64
+
+
+----
+Modified: plugin.xml|4 4
+Modified: src/android/ContactAccessor.java|1 1
+Modified: src/android/ContactAccessorSdk5.java|1 1
+Modified: src/android/ContactManager.java|1 1
+
+Revision: 57d30ed99063e188f0e9dddfa086a90ecb2f09aa
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 15/08/2013 06:19:51
+Message:
+reverted name element to be human readable #MsgLength=43
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: fe926dccd5e7c006b8beeccc6fd072e75f884f25
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 05:36:49
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 240d440c5f4189b98ea376d02a45cc981734482e
+Author: lorinbeer <lorin@adobe.com>
+Date: 21/08/2013 05:18:33
+Message:
+[CB-4432] copyright notice change #MsgLength=34
+
+
+----
+Modified: src/blackberry10/ContactActivity.js|16 11
+Modified: src/blackberry10/ContactAddress.js|16 11
+Modified: src/blackberry10/ContactError.js|16 11
+Modified: src/blackberry10/ContactField.js|16 11
+Modified: src/blackberry10/ContactFindOptions.js|16 11
+Modified: src/blackberry10/ContactName.js|16 11
+Modified: src/blackberry10/ContactNews.js|16 11
+Modified: src/blackberry10/ContactOrganization.js|16 11
+Modified: src/blackberry10/ContactPhoto.js|16 11
+Modified: src/blackberry10/contactUtils.js|16 11
+
+Revision: 51fe12ef21a54a5f2efab43bf9ba8da9f50655e7
+Author: lorinbeer <lorin@adobe.com>
+Date: 21/08/2013 05:18:33
+Message:
+[CB-4432] copyright notice change #MsgLength=34
+
+
+----
+Modified: src/blackberry10/ContactActivity.js|16 11
+Modified: src/blackberry10/ContactAddress.js|16 11
+Modified: src/blackberry10/ContactError.js|16 11
+Modified: src/blackberry10/ContactField.js|16 11
+Modified: src/blackberry10/ContactFindOptions.js|16 11
+Modified: src/blackberry10/ContactName.js|16 11
+Modified: src/blackberry10/ContactNews.js|16 11
+Modified: src/blackberry10/ContactOrganization.js|16 11
+Modified: src/blackberry10/ContactPhoto.js|16 11
+Modified: src/blackberry10/contactUtils.js|16 11
+
+Revision: bfbb3e9823d5fbf9333618dae88bb5d4fb215367
+Author: lmnbeyond <lmmbeyond@gmail.com>
+Date: 14/08/2013 18:48:03
+Message:
+[CB-4580] fixed up duplicate definitions of module id #MsgLength=54
+
+
+----
+Modified: plugin.xml|3 3
+
+Revision: 7568d53bac1141591c785645d4e38de485254aa7
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+[CB-4752] Updated version and changelog #MsgLength=40
+
+
+----
+Added: CHANGELOG.md|26 0
+Modified: plugin.xml|1 1
+
+
+Revision: b0c8909bf61c7db1a8df054e6eec03792ac22803
+Author: Kristoffer Flores <kflores@blackberry.com>
+Date: 21/09/2013 01:37:18
+Message:
+[BlackBerry10] removed uneeded permission tags in plugin.xml #MsgLength=61
+
+
+----
+Modified: plugin.xml|0 4
+
+Revision: e399a552d9614ff00ab25d5f27162d1a893edaff
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:21
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 9608db091cf26dff8415dccaac702a0c959cdcbf
+Author: James Jong <wjamesjong@gmail.com>
+Date: 17/09/2013 03:29:58
+Message:
+[CB-4824] Fix XCode 5 contacts plugin warnings #MsgLength=47
+
+
+----
+Modified: src/ios/CDVContacts.m|9 3
+
+Revision: 40f4d63272f4991324c8fe6e5a0ed3966f242625
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: ddd77f4e203f3bc1788287050fee9567333e7ccc
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 21/09/2013 05:45:37
+Message:
+added contacts api for firefoxos #MsgLength=33
+
+
+----
+Modified: plugin.xml|12 0
+Added: src/firefoxos/ContactsProxy.js|107 0
+
+Revision: cc7a92f987e3f6ebcaa8c0b6cfd625e24c32798a
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:12:30
+Message:
+CB-4888 renaming org.apache.cordova.core.contacts to org.apache.cordova.contacts #MsgLength=81
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 0409fa8f37e5f3096c13e37521bb660f1504e667
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 21:43:18
+Message:
+CB-4889 renaming blackberry10 reference in plugin.xml #MsgLength=54
+
+
+----
+Modified: src/blackberry10/plugin.xml|1 1
+
+Revision: 590b28656601e7ddece447e4a03596af9c725a68
+Author: Kristoffer Flores <kflores@blackberry.com>
+Date: 21/09/2013 01:37:18
+Message:
+[BlackBerry10] removed uneeded permission tags in plugin.xml #MsgLength=61
+
+
+----
+Modified: plugin.xml|0 4
+
+Revision: 0e436efd63eddae5495074d912f25ad4c6e09a9e
+Author: Kristoffer Flores <kflores@blackberry.com>
+Date: 21/09/2013 01:37:18
+Message:
+[BlackBerry10] removed uneeded permission tags in plugin.xml #MsgLength=61
+
+
+----
+Modified: plugin.xml|0 4
+
+
+Revision: 75f0efaeb9a2e3f8f194b940a5cdf8de246ec433
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:49:58
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 882e4055adfd87c39b7dccfe3d2a93330da1ae52
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 08:05:13
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.2.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|10 0
+Modified: plugin.xml|1 1
+
+
+Revision: 84df899b6252c9df68a2c5859dcedfec885c305b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:12
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: ce6aafafba362263f9f8911ecb205445c3e07b9d
+Author: Gao Chun <chun.gao@intel.com>
+Date: 09/09/2013 10:36:14
+Message:
+[CB-4950] Remove the dependence on concrete component android.webkit.WebView. #MsgLength=148
+
+
+----
+Modified: src/android/ContactAccessor.java|0 2
+Modified: src/android/ContactAccessorSdk5.java|1 3
+Modified: src/android/ContactManager.java|1 1
+
+Revision: 0ce327897c937140fc3be95f2d7598f732e7a0d1
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/10/2013 06:15:01
+Message:
+[CB-5010] Updated version and RELEASENOTES.md for release 0.2.4 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+
+Revision: 0ab0d6a70539e02f2fb88c4eba52036dceb9ad4b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/10/2013 07:03:38
+Message:
+[CB-5010] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: c11acd2eaebeaa1901a2a5d687c2933453730aa2
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 02:23:15
+Message:
+CB-5128: added repo + issue tags for contacts #MsgLength=46
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: eeb36003dc7346405873168b4fb4463dfadd6036
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 02:27:38
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.2.5 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+
+Revision: 7ccd57e843eb8d32424c7dad5ea8d327543b40e2
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 07/11/2013 22:04:11
+Message:
+save is linked with the proxy contact.name doesn't exist www/Contact.js#Contact.prototype.save check on which side is the error #MsgLength=128
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|70 66
+
+Revision: 1dbd3710edf9d2adf924090193aea1687235e806
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 07/11/2013 23:27:04
+Message:
+attempt to save is failing trying to limit the translated contact fields to name and familyName, but still failing #MsgLength=115
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|64 44
+
+Revision: fb78d22bb0485c091fa906e9d820bab57c9f0bbb
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 14/11/2013 02:28:47
+Message:
+save is working #MsgLength=16
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|34 27
+
+Revision: f9da5ee37bcd94eb9bee5fb3699a2ead59aed0cd
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 15/11/2013 20:44:21
+Message:
+add/remove working #MsgLength=19
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|32 23
+
+Revision: 4bb09075228479d88481cb1f1de218cedc673fb5
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 18/11/2013 21:14:40
+Message:
+createMozillaFromCordova and vice versa are used to translate contact objects from one API to another. #MsgLength=151
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|118 68
+
+Revision: 1e1fd29a24eed4301067a908a81d5a3dd45b8f3b
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 27/11/2013 22:46:26
+Message:
+search hacked via getAll #MsgLength=25
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|102 20
+
+Revision: db7c3109a7c8500cd7b1a323d1f2de0c4bff5f09
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 26/11/2013 23:36:36
+Message:
+search added - no idea if this is working #MsgLength=42
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|101 20
+
+
+Revision: 3670b193982f23afef7672727df7f9f0dc304ee6
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 28/11/2013 21:28:53
+Message:
+FxOS name fields are arrays hackedSearch refactored search based on find commented out #MsgLength=87
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|77 59
+
+Revision: df08a04ff585a48413ac84eb2c6512098064beea
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 28/11/2013 21:42:50
+Message:
+docs added #MsgLength=11
+
+
+----
+Modified: README.md|9 0
+
+Revision: 813d3e9828032d8989abec1439454ed06627cae8
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 28/11/2013 21:50:32
+Message:
+wrong example given #MsgLength=20
+
+
+----
+Modified: README.md|1 4
+
+Revision: f71980667f659b73ebcbcb47e91b9cee6a4e3743
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 17/12/2013 23:27:53
+Message:
+fixed update contacts (if id is provided one needs to search for the contact) updateFromCordova moved to prototype of mozContact fields are fixed the right search is used #MsgLength=171
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|202 129
+
+Revision: 510955f129311871aa218e3a013bd7c99f9bde6f
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 18/12/2013 00:21:22
+Message:
+check for id in the right way #MsgLength=30
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|4 14
+
+Revision: b52fafd2465a1b175fe00b4f3caa2ffc88898791
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 18/12/2013 16:45:31
+Message:
+search if contact does exist before remove #MsgLength=43
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|17 6
+
+Revision: 24eed63867fe02253cbbcb004e0044c416904828
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 18/12/2013 17:10:05
+Message:
+refactoring * update from Mozilla moved to Contact prototype * some comments added/modified #MsgLength=92
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|76 64
+
+Revision: 0beadd247ed7f5bb2fc084888eee566f86335c94
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 19/12/2013 21:59:26
+Message:
+addresses added to the Proxy #MsgLength=29
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|35 1
+
+Revision: e43a1a9f3782598737b575e4dacadd883ab62449
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 19/12/2013 22:56:29
+Message:
+added organizations and categories #MsgLength=35
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|27 0
+
+Revision: f7bc6883653fc0628d10b50e4139c00bc20c31e4
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 20/12/2013 21:12:07
+Message:
+explanation about organizations added #MsgLength=38
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|4 0
+
+Revision: 4ca5d1b12d7b5a48e25ff89d76896558182439d8
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 07/01/2014 16:45:28
+Message:
+added readOnly formatted field #MsgLength=31
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|26 9
+
+Revision: 6138b8f018ccfa576ad54a315008531a4e09cb72
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 05/11/2013 10:01:07
+Message:
+handle null filter when fields are specified. ( long standing pull-req from @kevfromireland ) #MsgLength=94
+
+
+----
+Modified: src/wp/Contacts.cs|9 4
+
+Revision: 653f959943d461719546ffcaed797156749750d2
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:13
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: acb6147b4a85d9d018186e422d2d3b1f08333e89
+Author: Bryan Higgins <bryan@bryanhiggins.net>
+Date: 31/10/2013 00:25:55
+Message:
+CB-5198 [BlackBerry10] Update dependencies to point to registry #MsgLength=64
+
+
+----
+Modified: plugin.xml|2 2
+Deleted: src/blackberry10/plugin.xml|0 41
+
+
+Revision: c828b41683f7a4053c55fba8c8e1d46f3e5a3496
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 06:45:36
+Message:
+1. Added amazon-fireos platform. 2. Change to use amazon-fireos as the platform if user agent string contains 'cordova-amazon-fireos'. #MsgLength=135
+
+
+----
+Modified: plugin.xml|19 0
+Modified: test/cordova-incl.js|4 2
+
+
+Revision: 12ac1fd036387968d3a13cf4ba1a94aa42336d10
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/12/2013 06:02:15
+Message:
+CB-3035 Fix issue with windows new line char \n\r #MsgLength=50
+
+
+----
+Modified: src/wp/Contacts.cs|1 1
+
+Revision: 47a923063e4ebc716f960101a257bce829337db6
+Author: Maxim Ermilov <ermilov.maxim@gmail.com>
+Date: 30/09/2013 07:04:21
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|6 0
+Added: src/ubuntu/contacts.cpp|576 0
+Added: src/ubuntu/contacts.h|70 0
+
+Revision: 00e94efe155f0ebdc2895885bcbb41af77d70c11
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 11/11/2013 22:00:09
+Message:
+[ubuntu] specify policy_group #MsgLength=30
+
+
+----
+Modified: plugin.xml|5 0
+
+Revision: 7720e9d70ada386ad3b9a03f1aa045d9e2ec0c4f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 03/12/2013 07:45:16
+Message:
+fixed ubuntu policy error #MsgLength=26
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 85c40309a22911db7f7f33ae1472ed6444e6ebdb
+Author: sgrebnov <sergei.grebnov@gmail.com>
+Date: 02/12/2013 22:01:01
+Message:
+CB-5525 WP8. Contacts Api fails in case of there is special character in contact field #MsgLength=87
+
+
+----
+Modified: src/wp/Contacts.cs|26 16
+
+
+Revision: aea4c52bc70b77b34cf1ba974c8ce46fb74efa65
+Author: sgrebnov <sergei.grebnov@gmail.com>
+Date: 30/10/2013 22:15:28
+Message:
+CB-5214 Make mobile spec tests on WP8 to run w/o user interaction + Sync with cordova-mobile-spec #MsgLength=98
+
+
+----
+Modified: test/autotest/tests/contacts.tests.js|71 5
+
+
+Revision: 5833bc0ae8ebc88f544e7e2783e49a6ee40ecdfc
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 07/11/2013 22:04:11
+Message:
+save is linked with the proxy contact.name doesn't exist www/Contact.js#Contact.prototype.save check on which side is the error #MsgLength=128
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|70 66
+
+Revision: 35def21d258710b8275df88077e4c0b1b290a9d3
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 07/11/2013 23:27:04
+Message:
+attempt to save is failing trying to limit the translated contact fields to name and familyName, but still failing #MsgLength=115
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|64 44
+
+Revision: 0f7ff4195f4a1a29a3e4cc9bb3d8d5945d3cff0c
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 14/11/2013 02:28:47
+Message:
+save is working #MsgLength=16
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|34 27
+
+Revision: 144d69af5a806abd3932b8f56094f490e5d9765b
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 15/11/2013 20:44:21
+Message:
+add/remove working #MsgLength=19
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|32 23
+
+Revision: f10f66616708ea299bc74eb79d3fdc7e8e4965e9
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 18/11/2013 21:14:40
+Message:
+createMozillaFromCordova and vice versa are used to translate contact objects from one API to another. #MsgLength=151
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|118 68
+
+Revision: 08e6dabf53a29247e61447091d5f721ec47c2f04
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 26/11/2013 23:36:36
+Message:
+search added - no idea if this is working #MsgLength=42
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|101 20
+
+Revision: c2fb0d0d1a9950e5512d6542f3382a2a06c3955d
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 27/11/2013 22:46:26
+Message:
+search hacked via getAll #MsgLength=25
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|10 5
+
+Revision: 334080aff9f0b04a615d4c4de47a615acbd8f7b0
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 28/11/2013 21:28:53
+Message:
+FxOS name fields are arrays hackedSearch refactored search based on find commented out #MsgLength=87
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|77 60
+
+Revision: 3a65011d6411b08ae9313ec8a0eb5cf545fd7b4f
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 28/11/2013 21:42:50
+Message:
+docs added #MsgLength=11
+
+
+----
+Modified: README.md|9 0
+
+Revision: 148774d66a8f22db817e3f70effaf92de651eb9b
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 28/11/2013 21:50:32
+Message:
+wrong example given #MsgLength=20
+
+
+----
+Modified: README.md|1 4
+
+Revision: 72e97f3078c1dc27aadb0d40efff192dc399bd66
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/12/2013 06:02:15
+Message:
+CB-3035 Fix issue with windows new line char \n\r #MsgLength=50
+
+
+----
+Modified: src/wp/Contacts.cs|1 9
+
+
+Revision: b9c995405831fb57fe37c67d2f7cfdc19ca5e937
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 05/12/2013 03:15:11
+Message:
+Fix bad commit/merge #MsgLength=21
+
+
+----
+Modified: src/wp/Contacts.cs|11 3
+
+Revision: d610c86414917c613421626d84ed2b5e6409269c
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:30
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.2.6 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|23 0
+Modified: plugin.xml|1 1
+
+Revision: 22cbee63d68677986eedc8ea5d2ce5e33744a8bf
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:03
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 4884d949872e42916ec33b5b328b7a24bcc4895d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/Contact/contact.md|0 238
+Deleted: docs/ContactAddress/contactaddress.md|0 161
+Deleted: docs/ContactError/contactError.md|0 45
+Deleted: docs/ContactField/contactfield.md|0 148
+Deleted: docs/ContactFindOptions/contactfindoptions.md|0 118
+Deleted: docs/ContactName/contactname.md|0 147
+Deleted: docs/ContactOrganization/contactorganization.md|0 148
+Deleted: docs/contacts.create.md|0 78
+Deleted: docs/contacts.find.md|0 119
+Deleted: docs/contacts.md|0 104
+Deleted: docs/parameters/contactError.md|0 27
+Deleted: docs/parameters/contactFields.md|0 25
+Deleted: docs/parameters/contactFindOptions.md|0 35
+Deleted: docs/parameters/contactSuccess.md|0 40
+
+Revision: 0752457e0d4464cd1ba266e3a1700ab85c415b60
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 00:55:44
+Message:
+B-5658 Add doc.index.md for Contacts plugin #MsgLength=44
+
+
+----
+Modified: README.md|19 8
+Added: doc/index.md|640 0
+
+Revision: 7be7d6f0a4d88796fdeb38308d0e060d937f9606
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:02
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: 322753fe37b3a0f1f0c9d4f39b5af1aeebbde153
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.2.7 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+
+Revision: 3478011b5c691da0d9f0c1edbc90b22294fa89c0
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 07/01/2014 20:06:29
+Message:
+* FirefoxOS quirks updated * name.formatted constructed with respect to honorific pre- and suffix #MsgLength=98
+
+
+----
+Modified: doc/index.md|14 0
+Modified: src/firefoxos/ContactsProxy.js|10 9
+
+Revision: 5b25f584420f0388d757f6380ef3733402322ec5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 975913cd73612ca306ab18c2ff8ab27c7d205a0c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:09
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 59
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/contacts.html|0 71
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/.DS_Store|0 0
+Deleted: test/autotest/tests/contacts.tests.js|0 538
+Deleted: test/contacts/index.html|0 134
+Deleted: test/cordova-incl.js|0 72
+Deleted: test/index.html|0 65
+Deleted: test/main.js|0 163
+Deleted: test/master.css|0 164
+
+Revision: 8e89957ccc8b4a29229d4335c39a1ccf961d2498
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/01/2014 08:35:38
+Message:
+CB-4590 - chooseContact in CDVContacts crashes app #MsgLength=51
+
+
+----
+Modified: src/ios/CDVContacts.m|6 1
+
+Revision: c561ba515ffc07cfc627d01e22286010b27d50a1
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 25/01/2014 17:03:19
+Message:
+[CB-3208] FFOS docs updated #MsgLength=28
+
+
+----
+Modified: doc/index.md|36 2
+
+Revision: 55f6248444757f4c6a11d0fcb26dbee741ae6f35
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:58
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.2.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+
+Revision: 0aa9d83f71955e9f947707aeaee77e402ddaeb5d
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:35:38
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-contacts #MsgLength=68
+
+
+----
+Added: doc/es/index.md|633 0
+
+Revision: ec47823c13b27e2783701b4a59304bcf8c692be6
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:14:24
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-contacts #MsgLength=68
+
+
+----
+Added: doc/fr/index.md|633 0
+
+Revision: e42602901cd8b1a6c24b465ac725e4132f5c7a1e
+Author: Lou Sacco <occasl@gmail.com>
+Date: 11/12/2013 07:46:57
+Message:
+CB-5994 Switch Contact ID lookup to use Raw contact id. #MsgLength=242
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|2 2
+
+Revision: adf7042ae9e074cbcc282214a53edc8cb553eb30
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:58
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.2.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: f134edc7b5f99fa1354f278dbc4ea8da10c9a8fe
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:30
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 4cad02e415fa5127e36ec25454453f3dc462bed7
+Author: Sebastien Blanc <scm.blanc@gmail.com>
+Date: 22/02/2014 01:00:01
+Message:
+CB-6086 Fix typo in ffos part of plugin.xml: Camera -> Contacts #MsgLength=64
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: c540c0246b14ea986096dea6239b8bfb66b6a802
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 00:56:29
+Message:
+CB-6114 Updated version and RELEASENOTES.md for release 0.2.9 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+
+Revision: 431eeea9f5d7ea738b3b8277162a4ab4313dc32f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:45:10
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+
+Revision: 04b96dc9426cc0c2504f0a36ba9acacb4ce52e6a
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 13/03/2014 08:33:53
+Message:
+CB-1291 Windows8 Adding contact picker apis #MsgLength=44
+
+
+----
+Modified: plugin.xml|6 1
+Added: src/windows8/ContactProxy.js|37 0
+
+Revision: b1ec0bc49ca291c559d8a9b583ee8b192c21ca75
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/03/2014 13:56:54
+Message:
+CB-1291 Windows8 added some contact conversion, console.error on save because it is not supported #MsgLength=98
+
+
+----
+Modified: src/windows8/ContactProxy.js|59 2
+
+
+Revision: 2f76f2bfbed5a6ba72e96275765a73023e3e6c22
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 18/03/2014 09:35:42
+Message:
+CB-1291 Windows8 supports multiple, added some error checking, converts Windows8 Contact to Cordova Contact #MsgLength=108
+
+
+----
+Modified: src/windows8/ContactProxy.js|115 58
+
+Revision: a97110465f11c9c4feb041bde8ac9aa9b954ea19
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 19/03/2014 04:17:40
+Message:
+Update docs with Windows 8 support info, fix contacts.find example error #MsgLength=73
+
+
+----
+Modified: doc/index.md|27 5
+
+Revision: 6ed8b906b78a445e0521d416fbc07d88987a0745
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 19/03/2014 04:41:04
+Message:
+Windows 8 - added some more #Quirks info #MsgLength=41
+
+
+----
+Modified: doc/index.md|6 4
+
+
+Revision: 427d1d60c43e65d25331d587dcdf2ac9996b87c1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 01:29:15
+Message:
+CB-6114 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 5738562d7e410fae2f1b0c94b0771cfe84820b40
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+
+Revision: db17e0b241ec9124537db09d8778e05385bd60bf
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 26/02/2014 23:04:25
+Message:
+manually merging CB-3208 #MsgLength=25
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|29 29
+
+Revision: 0d7bf3980516b577deae0ff7f365b5c53116cbc1
+Author: James Jong <wjamesjong@gmail.com>
+Date: 12/03/2014 01:28:34
+Message:
+CB-6212 iOS: fix warnings compiled under arm64 64-bit #MsgLength=54
+
+
+----
+Modified: src/ios/CDVContact.m|1 1
+
+Revision: 910f80fae8fe79eb8342bcd737b663c2d5f62d78
+Author: James Jong <wjamesjong@gmail.com>
+Date: 13/03/2014 21:39:14
+Message:
+CB-6212 iOS: fix warnings compiled under arm64 64-bit #MsgLength=74
+
+
+----
+Modified: src/ios/CDVContacts.m|10 10
+
+Revision: 3d79c9035b5c0e46db8fd2ac180efba538dd6cf6
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 14/04/2014 21:11:06
+Message:
+CB-6126 [BlackBerry10] Update docs quirks section for fields which are supported #MsgLength=81
+
+
+----
+Modified: doc/index.md|1 21
+
+
+Revision: e55db4a91c31b4dbc77954fc2de281a737ab31f6
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:15:52
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+
+Revision: 134b3a6ba14e7bdecd934bf8af8b7caa5ef26349
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.2.10 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+
+Revision: e7d7d27ae303b98d14c08945cf831671a1c53ddd
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 55ba3f2580d2c3bbd1662f49d89043710446220a
+Author: huang.xinghui <huang.x.hui@gmail.com>
+Date: 10/04/2014 14:53:33
+Message:
+Docs typo: navigator.contacts.length -> contacts.length #MsgLength=110
+
+
+----
+Modified: doc/index.md|3 3
+
+Revision: 19445dca6d22d3bc0300f006abf3beb36cb2d937
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:22:09
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: a3f290dae995676ae9462e4f97a6c4b8de0e4ade
+Author: Leonidez Acosta <acosta.leonidez@gmail.com>
+Date: 25/04/2014 09:31:54
+Message:
+Add ContactError codes to index.md doc (closes #28) #MsgLength=106
+
+
+----
+Modified: doc/index.md|7 7
+
+
+Revision: fd0c02e6636fae0f9775c510a62869c6036258d3
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/05/2014 03:13:47
+Message:
+CB-6682 move windows8 command proxy into it's missing platform tag. This closes #30 #MsgLength=84
+
+
+----
+Modified: plugin.xml|6 4
+
+Revision: 7334e066f1c68ab08263e845d47cc37d9699a710
+Author: Rodrigo Silveira <rodrigos@outlook.com>
+Date: 23/04/2014 02:25:31
+Message:
+CB-5416 - Adding support for auto-managing permissions #MsgLength=55
+
+
+----
+Modified: doc/index.md|0 16
+Modified: plugin.xml|3 4
+
+
+
+Revision: 6da59ee808933f45f30505dff5ff4fe59829f5dd
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:49:14
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-contacts #MsgLength=68
+
+
+----
+Added: doc/ja/index.md|634 0
+
+Revision: d656191c4072cbef0bf5b3b5f5eb4dfe4817d25b
+Author: Vladimir Kotikov <vladimir.kotikov@akvelon.com>
+Date: 02/04/2014 14:38:12
+Message:
+Add pickContact functionality to cordova contacts plugin #MsgLength=57
+
+
+----
+Modified: doc/index.md|44 12
+Modified: plugin.xml|16 7
+Modified: src/android/ContactAccessor.java|32 35
+Modified: src/android/ContactAccessorSdk5.java|44 37
+Added: src/android/ContactInfoDTO.java|43 0
+Modified: src/android/ContactManager.java|60 2
+Modified: src/ios/CDVContacts.h|11 0
+Modified: src/ios/CDVContacts.m|34 2
+Modified: src/windows8/ContactProxy.js|73 100
+Added: src/wp/ContactPicker.xaml|58 0
+Added: src/wp/ContactPicker.xaml.cs|110 0
+Added: src/wp/ContactPickerTask.cs|107 0
+Modified: src/wp/Contacts.cs|102 206
+Added: src/wp/ContactsHelper.cs|277 0
+Added: www/ContactFieldType.js|38 0
+Modified: www/ContactFindOptions.js|3 1
+Modified: www/contacts.js|25 3
+
+Revision: 71ad712f5d1bdb348f58f1a9345573cb48ebbdca
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 18/04/2014 14:13:42
+Message:
+Update license headers format #MsgLength=30
+
+
+----
+Modified: NOTICE|1 0
+Modified: src/android/ContactAccessor.java|0 1
+Modified: src/android/ContactAccessorSdk5.java|0 2
+Modified: src/android/ContactInfoDTO.java|18 2
+Modified: src/android/ContactManager.java|0 2
+Modified: src/ios/CDVContacts.h|0 2
+Modified: src/ios/CDVContacts.m|0 2
+Modified: src/windows8/ContactProxy.js|2 5
+Modified: src/wp/ContactPicker.xaml|16 1
+Modified: src/wp/ContactPicker.xaml.cs|17 2
+Modified: src/wp/ContactPickerTask.cs|17 2
+Modified: src/wp/Contacts.cs|16 13
+Modified: src/wp/ContactsHelper.cs|17 2
+Modified: www/ContactFieldType.js|19 2
+Modified: www/ContactFindOptions.js|0 1
+Modified: www/contacts.js|0 2
+
+Revision: 23152e8387f61f88a138655387f9ce22b76cd309
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 26/04/2014 07:28:08
+Message:
+[wp8] now pupulates contact photos #MsgLength=35
+
+
+----
+Modified: src/wp/ContactsHelper.cs|43 0
+
+
+
+Revision: efb6b9485424c08356da94d96b4ea11b6764619e
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:21:38
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-contacts #MsgLength=68
+
+
+----
+Modified: doc/es/index.md|99 64
+Modified: doc/fr/index.md|175 140
+Added: doc/it/index.md|668 0
+Added: doc/ko/index.md|668 0
+Added: doc/pl/index.md|668 0
+Added: doc/zh/index.md|668 0
+
+Revision: 0b69b50df3e5f9ab9d32ca9642cafc7c2352a4e3
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:36:04
+Message:
+documentation translation: cordova-plugin-contacts #MsgLength=51
+
+
+----
+Added: doc/de/index.md|668 0
+Modified: doc/ja/index.md|83 49
+
+Revision: 31368195823e9be09ce98f6833f934f9bcc14ba7
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:19:38
+Message:
+CB-6797 Add license #MsgLength=20
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: 08fe76741d5b6e3989d39d1a6b884643af2b41ca
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/06/2014 02:22:41
+Message:
+Remove deprecated symbols for iOS < 6 #MsgLength=38
+
+
+----
+Modified: src/ios/CDVContacts.m|25 77
+
+Revision: c23af568f3cfd36051eea6ea9d6b33b888c116be
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:35:38
+Message:
+CB-6127 Spanish and French Translations added. Github close #25 #MsgLength=64
+
+
+----
+Added: doc/de/index.md|668 0
+Added: doc/es/index.md|668 0
+Added: doc/fr/index.md|668 0
+Added: doc/it/index.md|668 0
+Added: doc/ja/index.md|668 0
+Added: doc/ko/index.md|668 0
+Added: doc/pl/index.md|668 0
+Added: doc/zh/index.md|668 0
+
+Revision: 9075e1355eb23f124629c7639249e508cf51fd66
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:42
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.2.11 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|13 0
+Modified: plugin.xml|1 1
+
+Revision: c3d8987e7d268c668703600f209c8dce9ec4d9e4
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 1b012391aca60220027dd2d560c157b703395be4
+Author: Sean Kladek <skladek@nerdery.com>
+Date: 18/02/2014 12:35:52
+Message:
+CB-5698 ios: Check to see if photoData exists before using #MsgLength=70
+
+
+----
+Modified: src/ios/CDVContact.m|4 0
+
+Revision: e502df5d9b15ab77411247975242107c4303b41a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/06/2014 02:19:54
+Message:
+CB-5698 Fix non-compiling code in previous commit #MsgLength=50
+
+
+----
+Modified: src/ios/CDVContact.m|2 2
+
+Revision: f5908a4fcf8c819dafa9e0d605471c80ad61514f
+Author: Sean Kladek <skladek@nerdery.com>
+Date: 18/02/2014 12:35:52
+Message:
+CB-5698 ios: Check to see if photoData exists before using #MsgLength=70
+
+
+----
+Modified: src/ios/CDVContact.m|4 0
+
+Revision: 337e159c4232c57b32325b083e1f690aab8c9e46
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/06/2014 02:19:54
+Message:
+CB-5698 Fix non-compiling code in previous commit #MsgLength=50
+
+
+----
+Modified: src/ios/CDVContact.m|2 2
+
+Revision: 432b0143442a689e349e347f33ee85aeb2d28663
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 28/06/2014 02:13:34
+Message:
+Revert change to argument order in navigator.contacts.find #MsgLength=59
+
+
+----
+Modified: doc/index.md|1 1
+Modified: www/contacts.js|2 2
+
+Revision: edc744aa50a0cf015e95933fa0be85c5603b4b5c
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 28/06/2014 02:42:19
+Message:
+Updated RELEASENOTES.md for release 0.2.11 #MsgLength=43
+
+
+----
+Modified: RELEASENOTES.md|2 1
+
+
+Revision: aef7032ea4670b381b3bca70cec091f93667f8d5
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 30/06/2014 19:46:26
+Message:
+CB-7003: Make pickContact pick correct contact on Android 4.3 and 4.4.3 #MsgLength=72
+
+
+----
+Modified: src/android/ContactManager.java|14 1
+
+Revision: 104c565615352771afe115ba5f05c673489969e5
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 02/07/2014 21:58:10
+Message:
+Updated RELEASENOTES.md for release 0.2.11 #MsgLength=43
+
+
+----
+Modified: RELEASENOTES.md|2 1
+
+
+
+Revision: b1a1936048cdea096cb7124f884dd7d43cf1fc1d
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:26:40
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-contacts documentation translation: cordova-plugin-contacts #MsgLength=109
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Added: doc/ru/index.md|668 0
+Modified: doc/zh/index.md|1 1
+
+Revision: b8f6ce5bd04298f7fd4cba7c136389cf66eddc6b
+Author: Ryan Willoughby <ryan.willoughby@nitobi.com>
+Date: 23/07/2014 02:12:06
+Message:
+Removing a stray unicode character #MsgLength=51
+
+
+----
+Modified: www/ContactFieldType.js|1 1
+
+
+Revision: 52b82130b4e40eae58482f1ede86b1067bc88e27
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 19/07/2014 02:48:52
+Message:
+merged changes for test framework plugin #MsgLength=41
+
+
+----
+Added: test/tests.js|475 0
+
+Revision: a67a8a9dd095267dea0226727389a33dc20fc060
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 30/07/2014 00:58:46
+Message:
+added documentation for manual tests #MsgLength=37
+
+
+----
+Modified: test/tests.js|6 3
+
+Revision: e1f92c2d0244d2f6111168a28012782a9e7a6b22
+Author: Willy Aguirre <marti1125@gmail.com>
+Date: 29/07/2014 09:52:32
+Message:
+update ContactsProxy.js #MsgLength=24
+
+
+----
+Modified: src/firefoxos/ContactsProxy.js|1 1
+
+Revision: 32a909c8f3c11ddd199692158c0a000049fec8b7
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 02/08/2014 04:23:08
+Message:
+CB-7249cordova-plugin-contacts documentation translation: cordova-plugin-contacts #MsgLength=82
+
+
+----
+Modified: doc/pl/index.md|1 1
+
+Revision: 413cea9d5a5def821014eaadbb85cec5213ed4c3
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 03/08/2014 23:37:18
+Message:
+fixes .find method when 'options' param is not passed #MsgLength=101
+
+
+----
+Modified: www/contacts.js|2 0
+
+Revision: 5148d5ccd8d0492e9b11a333b5ec15b1e7b46a90
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:21
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.2.12 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+
+Revision: 18f6f89b27789273095703a79b3ad83a7f99f824
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:26
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a218a326b99567d059debcb73084ac58eed0f3a4
+Author: Anis Kadri <anis@apache.org>
+Date: 31/10/2013 04:41:57
+Message:
+convert test to new style #MsgLength=26
+
+
+----
+Modified: plugin.xml|5 4
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 59
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/contacts.html|0 71
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/.DS_Store|0 0
+Deleted: test/contacts/index.html|0 134
+Deleted: test/cordova-incl.js|0 70
+Deleted: test/index.html|0 65
+Deleted: test/main.js|0 163
+Deleted: test/master.css|0 164
+Renamed: test/tests.js [from test/autotest/tests/contacts.tests.js]|370 451
+
+Revision: aa3f8859adf636742e02e6927944df8004b19fc7
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 25/04/2014 03:53:14
+Message:
+register tests using new style #MsgLength=31
+
+
+----
+Modified: test/tests.js|3 23
+
+Revision: ab0bf048569106d8af8988d092d60768ec165e80
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 05/05/2014 23:11:17
+Message:
+Changing cdvtest format to use module exports #MsgLength=46
+
+
+----
+Modified: test/tests.js|2 4
+
+
+Revision: 0599cb639a28bd66d47e0025e1a9e549518f9ebe
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 19/07/2014 02:44:35
+Message:
+Removed js-module for tests from plugin.xml #MsgLength=44
+
+
+----
+Modified: plugin.xml|0 6
+
+Revision: 5a6d05314a45964e22e86b2d8872a0d8c062a216
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 19/07/2014 02:48:52
+Message:
+CB-7148 Added manual tests #MsgLength=27
+
+
+----
+Modified: test/tests.js|107 1
+
+Revision: e837e8002f60fb96381d4481a7d0004ad6edffdc
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 01/08/2014 03:58:39
+Message:
+Renamed test dir, added nested plugin.xml #MsgLength=42
+
+
+----
+Added: tests/plugin.xml|31 0
+Renamed: tests/tests.js [from test/tests.js]|0 0
+
+
+Revision: 6240e88d29adf9cdb8c6af61dc651e1cc6f6150c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/08/2014 03:18:10
+Message:
+Oops, not sure how I removed those tags ... This closes #33 #MsgLength=60
+
+
+----
+Modified: plugin.xml|3 1
+
+Revision: d5c112643876290b3fc0903237c3ad802ffcbee8
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 12/08/2014 20:24:36
+Message:
+CB-7290 Adds support for universal Windows platform. #MsgLength=53
+
+
+----
+Modified: doc/index.md|42 0
+Modified: plugin.xml|7 0
+Added: src/windows/ContactProxy.js|219 0
+
+
+Revision: adf7f1a6dc6a3208eb9283b52a054acd28341a4b
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 14/08/2014 00:45:52
+Message:
+rm old test folder and merged with renamed tests folder #MsgLength=56
+
+
+----
+Deleted: test/tests.js|0 478
+Modified: tests/tests.js|6 3
+
+Revision: ceed0b783aa0179bfdafe7003e481f493cd4ec84
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 15/08/2014 03:51:59
+Message:
+Add missing test, skip some specs on wp #MsgLength=216
+
+
+----
+Modified: tests/tests.js|33 6
+
+
+
+Revision: 10bae15d4ae8d9bda8f1e34389199b1509bffa7c
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 19/08/2014 22:50:46
+Message:
+CB-7249cordova-plugin-contacts documentation translation: cordova-plugin-contacts #MsgLength=82
+
+
+----
+Modified: doc/de/index.md|42 1
+Modified: doc/es/index.md|42 1
+Modified: doc/fr/index.md|42 1
+Modified: doc/it/index.md|42 1
+Modified: doc/ja/index.md|42 1
+Modified: doc/ko/index.md|42 1
+Modified: doc/pl/index.md|42 1
+Modified: doc/ru/index.md|42 1
+Modified: doc/zh/index.md|133 92
+
+Revision: 6ca92dd21456066e7d5611b78b0269f92220e7a5
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 26/08/2014 02:52:27
+Message:
+CB-6724 Empty may be expected. #MsgLength=31
+
+
+----
+Modified: tests/tests.js|1 1
+
+Revision: 404aa16c20276b3a682c11037e1311879e3660c4
+Author: Ilya Buziuk <ibuziuk@exadel.com>
+Date: 11/09/2014 20:09:18
+Message:
+CB-7523 Fixing "ContactFieldType" error in the config.xml #MsgLength=77
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: da4962413640e9cf92f3b03860fcb99a0f57cad0
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 15/09/2014 07:09:10
+Message:
+CB-7544 - [Contacts][iOS 8] Contact picker is read-only in iOS 8 #MsgLength=65
+
+
+----
+Modified: src/ios/CDVContacts.m|36 24
+
+Revision: d395664b0c84726efc2a881b57c27904095909b5
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 15/09/2014 07:15:59
+Message:
+CB-6374 - Fix iOS 6 deprecation warnings in Contacts #MsgLength=53
+
+
+----
+Modified: src/ios/CDVContact.m|2 2
+
+Revision: c3c6be2fe05d343dce4e28db5ea58fb8300e1c6e
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 15/09/2014 07:56:35
+Message:
+CB-7546 - [Contacts][iOS] pickContact shows exception in the console log #MsgLength=73
+
+
+----
+Modified: src/ios/CDVContacts.m|1 1
+
+Revision: e42219a7d5b9492eb5b4a31c84e392d3379f6a08
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:39
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.2.13 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|19 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 77109a266f575950a961ec451ee66131c6872219
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:01
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 17a5ced7059f005edcbe4a8590efef6fe7441710
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:13
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: 42cd509a6c5d8a68ea4151ca23073a710609a8b8
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 21/08/2014 20:08:03
+Message:
+CB-7357 Adds missing 'capability' element to phone's appxmanifest. #MsgLength=67
+
+
+----
+Modified: plugin.xml|3 0
+Modified: src/windows/ContactProxy.js|4 4
+
+
+Revision: 7ab651d523f5b92ee1816205058eaf29884d3eb3
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 03/09/2014 20:08:42
+Message:
+CB-7373 Adds additional output if method is not supported. #MsgLength=59
+
+
+----
+Modified: tests/tests.js|18 6
+
+Revision: b695ec7d1f8850e66216381d6cd51d02c728d9f3
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 03/09/2014 20:21:42
+Message:
+CB-7373 Removes unnecessary Error object creation #MsgLength=50
+
+
+----
+Modified: src/windows/ContactProxy.js|3 1
+
+
+Revision: a9df3c4fa00c0a8c8b7591e79fb24769d47f3a04
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 07:10:12
+Message:
+ Updated version and RELEASENOTES.md for release 0.2.14 #MsgLength=56
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c38c6880fdbb827b0d653b56d0adeaed3efb648d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 08:09:46
+Message:
+ Incremented plugin version. #MsgLength=29
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8993008f219dd6b17bc349da15ce2cfad6941df1
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:10:44
+Message:
+CB-7700 cordova-plugin-contacts documentation translation: cordova-plugin-contacts #MsgLength=83
+
+
+----
+Modified: doc/de/index.md|3 3
+Modified: doc/es/index.md|33 33
+Modified: doc/pl/index.md|19 19
+Modified: doc/ru/index.md|145 145
+
+
+Revision: e18d72d1418bfe412e5e102b7b202baa9ed5e147
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 14/10/2014 08:38:38
+Message:
+CB-7762 - Parameter list is incorrect for contacts.find #MsgLength=56
+
+
+----
+Modified: doc/index.md|8 6
+
+Revision: 15d1f9698464335c2fbf3ec2992c87236e0f9fec
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 14/10/2014 08:40:15
+Message:
+CB-7761 - Misleading text in documentation #MsgLength=43
+
+
+----
+Modified: doc/index.md|1 1
+
+Revision: e8fa35f44d165cae13605c416ecc484b0790671e
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 15/10/2014 03:57:05
+Message:
+CB-7772 - [Contacts] Cancelling pickContact should call the error callback, not the success callback #MsgLength=101
+
+
+----
+Modified: src/ios/CDVContacts.m|10 1
+
+Revision: 99efc1f9ebaa70aa872661d1039cd476e2562191
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:08:51
+Message:
+Dropping trailing whitespace #MsgLength=29
+
+
+----
+Modified: doc/index.md|2 2
+
+Revision: 5272778a5ba055a568a675035317e4aad175345d
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:09:06
+Message:
+CB-7977 Mention deviceready in plugin docs #MsgLength=43
+
+
+----
+Modified: doc/index.md|8 1
+
+Revision: 684a4513454224afd1abc80d94aebfd6c6c62f9d
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 29/10/2014 22:48:36
+Message:
+CB-7896 Pending tests for Save and Find methods for windows cause they are not supported yet #MsgLength=93
+
+
+----
+Modified: tests/tests.js|40 7
+
+Revision: 5e4ce8a48f39ef9c7ec74ed5e5f0909efff794e7
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 24/11/2014 14:36:37
+Message:
+CB-7896 Better way to detect Windows and WidnowsPhone81 #MsgLength=56
+
+
+----
+Modified: tests/tests.js|2 2
+
+Revision: 0c179b546992ba377e4404b7b3ca8f29b9b83b20
+Author: Emilio Blanco <emilioeduardob@gmail.com>
+Date: 09/08/2014 02:28:26
+Message:
+CB-7131 Check for profile photo existance #MsgLength=110
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|15 1
+
+
+Revision: 1347f1286826d57bb67bfecc3f129abc3076ffe1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.2.15 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|10 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e36c8c088664d860f6d0fa9ac7e02cc8cf9d61b0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:49
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 47373e0fbecd7ebdfd56c965c9b059c88c8f7b40
+Author: Kiran <svkirans@gmail.com>
+Date: 06/01/2015 03:45:24
+Message:
+Updated the comments for ContactOrganization constructor. #MsgLength=58
+
+
+----
+Modified: www/ContactOrganization.js|2 5
+
+Revision: d7957a0ddca53b0c81c4cfde9996acce9a083def
+Author: Andrey Kurdyumov <kant2002@gmail.com>
+Date: 05/01/2015 16:12:27
+Message:
+Update ContactName support on Android #MsgLength=94
+
+
+----
+Modified: doc/index.md|1 1
+
+
+Revision: d77a13905eb9cdb066b8036a92945e76c14535cc
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/01/2015 22:49:20
+Message:
+CB-8351 Use argumentForIndex rather than NSArray extension #MsgLength=59
+
+
+----
+Modified: src/ios/CDVContacts.m|8 8
+
+Revision: 83f3176cc3df8f0e67c533cfd366489ef927369b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/01/2015 00:32:15
+Message:
+CB-8351 ios: Stop using (newly) deprecated CordovaLib functions #MsgLength=64
+
+
+----
+Modified: src/ios/CDVContact.m|33 9
+Modified: src/ios/CDVContacts.m|13 1
+
+Revision: 95d4d176f3dac4260c304145d9611d585ffb1423
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.2.16 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ddcf92391ee4144fe1c8c7d76fd50155c8b96144
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:02
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c60f50e7f99d8fa555d44b1ed425aad2b3d4dba7
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 02/02/2015 18:47:48
+Message:
+CB-8395 marked unsupported tests pending on wp8 #MsgLength=66
+
+
+----
+Modified: tests/tests.js|7 24
+
+Revision: 2e1e07b9684826324c5c8156d865d3d29705b944
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 11/02/2015 19:45:34
+Message:
+windows: pended .remove test as it is not supported on windows #MsgLength=63
+
+
+----
+Modified: tests/tests.js|5 0
+
+Revision: c40de8aa28ec584235fb2451cf59df26fc963def
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 15:30:38
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|41 0
+
+Revision: 293c8b3f8f3be1f61b9207cc4e3acd1c0cc9ede3
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:47:49
+Message:
+CB-8438 cordova-plugin-contacts documentation translation: cordova-plugin-contacts #MsgLength=83
+
+
+----
+Modified: doc/de/index.md|43 33
+Modified: doc/es/index.md|75 132
+Modified: doc/fr/index.md|74 131
+Modified: doc/it/index.md|39 29
+Modified: doc/ja/index.md|38 28
+Modified: doc/ko/index.md|37 27
+Modified: doc/pl/index.md|36 26
+Modified: doc/zh/index.md|140 130
+
+Revision: cf42332a20e37ae2d55944ec7535af4fc4bce056
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 09:40:47
+Message:
+CB-8561 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|13 0
+Modified: README.md|3 0
+
+Revision: 0e38f7daedccbe57ffdc73ea758ab586af011809
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 04/03/2015 20:22:26
+Message:
+CB-8604 Pended unsupported test for wp8, updated documentation #MsgLength=81
+
+
+----
+Modified: doc/index.md|3 0
+Modified: tests/tests.js|1 2
+
+Revision: 5f89bece7516dea124ccdb0d8eaae49c918f3e50
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 13/03/2015 22:47:57
+Message:
+CB-8659: ios: 4.0.x Compatibility: Remove use of deprecated headers #MsgLength=68
+
+
+----
+Modified: src/ios/CDVContact.m|0 1
+Modified: src/ios/CDVContacts.m|0 3
+
+Revision: a464f35d2365ffa7838a1fac708a877a77511ccc
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 13/03/2015 22:49:58
+Message:
+CB-8659: ios: 4.0.x Compatibility: Remove use of initWebView method #MsgLength=102
+
+
+----
+Modified: src/ios/CDVContacts.m|0 24
+
+Revision: 0d6668eac0fd93be073f6832871519314fe2f1f6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:01:20
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|752 2
+Deleted: doc/index.md|0 773
+
+Revision: 30b21635f91f0a75aaa53a947b50ea527cbeabfa
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:28:09
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 1f4cea78f9868b0afbeae678287c05ab66c62f6e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:30
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: 0eaec69b554fe903cfa157f99d2242e7238bfdc1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:05:59
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: 2985ec160602244e479421b3fde68dcdd7f12352
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:47:53
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 41d6f454718104e70c7f01cb6992e94376e5da59
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 04:47:59
+Message:
+CB-8683 updated wp specific references of old id to new id #MsgLength=59
+
+
+----
+Modified: src/wp/ContactPickerTask.cs|1 1
+
+Revision: 5f0e7f9a6563acfe4b313a2b97cbbbfc253f0897
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 07:53:57
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 036d8970fd1b504e336089b2c27abf8be018da7b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:38
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|17 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d1131c8842a3918077422d14101d25119542b739
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:46
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: bef4b06da83b7635b030bc6303e4f444cbc3afaf
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:30:59
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e95ba2e805149b6175441a3f47f1171223fa4af0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: df09ba5323cd87d3d44a292f79190ccfcfea02db
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:21
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6b69ffa348d4fcec92e805d2df3d412137b660af
+Author: Joe Bowser <bowserj@apache.org>
+Date: 17/04/2015 07:46:08
+Message:
+CB-5278: We must close the cursor or we take down the whole app, and the debugger doesn't catch it. #MsgLength=100
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|2 0
+
+Revision: 959fffad4a1e7c27b16478b24cdc628200d718d4
+Author: Rob Paveza <Rob.Paveza@microsoft.com>
+Date: 09/05/2015 04:19:25
+Message:
+CB-8987: Support for save and remove for Windows 10 #MsgLength=52
+
+
+----
+Modified: README.md|5 3
+Modified: plugin.xml|3 0
+Modified: src/windows/ContactProxy.js|211 11
+Modified: tests/tests.js|51 1
+
+Revision: 8fd5a219b19b4992d36c071bfc26e3ad9c281638
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 21/05/2015 19:50:50
+Message:
+CB-9056 Increased timeout of failing tests #MsgLength=43
+
+
+----
+Modified: tests/tests.js|5 4
+
+Revision: 6fe3757456a3a8a7c96d7430b6165d1e2706b9dc
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 23/05/2015 02:59:54
+Message:
+Add more install text for legacy versions of cordova tools. This closes #60 #MsgLength=76
+
+
+----
+Modified: README.md|9 0
+
+Revision: 7e224b69bee1116ad7cc1f79f70d949984961728
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 02/06/2015 23:44:41
+Message:
+fix npm md issue #MsgLength=17
+
+
+----
+Modified: README.md|16 16
+
+Revision: 1871eed4eaa4b6857deeec52954067c568892ced
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:39:30
+Message:
+CB-9128 cordova-plugin-contacts documentation translation: cordova-plugin-contacts #MsgLength=83
+
+
+----
+Added: doc/de/README.md|735 0
+Added: doc/es/README.md|732 0
+Added: doc/fr/README.md|668 0
+Added: doc/it/README.md|735 0
+Added: doc/ja/README.md|735 0
+Added: doc/ko/README.md|735 0
+Added: doc/pl/README.md|735 0
+Added: doc/zh/README.md|735 0
+
+Revision: 940f1e24232954b6c85aae7549c5f2db61ea7f7d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:02
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e47559b0d4331dd970a2bd629430e89e4f4a7525
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: ec0926c1b06ba037ab561873a60dbb8b2ae1ba3e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:34
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1a18d9c6a0bbfc12e0055c466c39e0fe7c6cde92
+Author: jonmikelm <jonmikelm@gmail.com>
+Date: 27/05/2015 16:12:22
+Message:
+phoneNumbersInformedOnly #MsgLength=25
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|101 84
+Modified: www/ContactFindOptions.js|2 1
+
+Revision: 4cbbc73b3a72487fb386918923ee5f850b8007ab
+Author: jonmikelm <jonmikelm@gmail.com>
+Date: 27/05/2015 20:02:26
+Message:
+hasPhoneNumber #MsgLength=15
+
+
+----
+Modified: README.md|4 1
+Modified: src/android/ContactAccessorSdk5.java|11 11
+Modified: www/ContactFindOptions.js|4 2
+
+Revision: a74b8c2f5f945d2837bcf829d6c4937201591976
+Author: jonmikelm <jonmikelm@gmail.com>
+Date: 27/05/2015 20:05:11
+Message:
+defaultValue #MsgLength=13
+
+
+----
+Modified: README.md|1 1
+
+Revision: ecaa2de345287d5628ef6c4f3cda8887a8f61ab0
+Author: jonmikelm <jonmikelm@gmail.com>
+Date: 27/05/2015 20:07:29
+Message:
+c #MsgLength=2
+
+
+----
+Modified: README.md|1 1
+
+Revision: cd9fda5d31f2375d94510adf9d85dc8299ee7db1
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 26/06/2015 02:57:54
+Message:
+This closes #64 #MsgLength=16
+
+
+----
+Modified: README.md|1 1
+
+Revision: 5c3c71c3b0812e6c930bc1eaeda4859f229a4d54
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 26/06/2015 03:03:38
+Message:
+remove wp7 because 2015 #MsgLength=24
+
+
+----
+Modified: README.md|8 8
+Modified: package.json|0 1
+Modified: plugin.xml|0 15
+
+Revision: 29b6a62891d469fdac7d9fb28af1fd27f3d6c092
+Author: Joe Bowser <bowserj@apache.org>
+Date: 08/07/2015 01:56:13
+Message:
+CB-9054: Can't fully reproduce, but we should probably wrap this in an exception anyway. #MsgLength=89
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|4 0
+
+Revision: 426285615b69bce3c8d5a53bb544fdaa62beb199
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 05:58:58
+Message:
+remove travis-ci integration #MsgLength=29
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 2
+
+Revision: d51590c4bf873e292adbc4c32f06896967c25059
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 31/08/2015 22:05:58
+Message:
+CB-9579 Fixed failed tests when "DeleteMe" contact already exists #MsgLength=66
+
+
+----
+Modified: tests/tests.js|43 37
+
+Revision: 0bbc2303b36a2b20f7c55d8d33f0deae297bbc99
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:26:43
+Message:
+add JIRA issue tracker link #MsgLength=28
+
+
+----
+Modified: README.md|4 2
+
+Revision: 16942ffdcd725be763acb76d40dce91b518de7df
+Author: Abhishek Hingnikar <abhishek@hingnikar.com>
+Date: 27/06/2015 08:29:41
+Message:
+Do not return absolute path for contact images. #MsgLength=47
+
+
+----
+Modified: src/windows/ContactProxy.js|2 2
+
+Revision: dc5537e0d6099015ac61f3bd2c6a34442fbc20aa
+Author: Abhishek Hingnikar <abhishek@hingnikar.com>
+Date: 27/06/2015 08:34:29
+Message:
+Update ContactProxy.js #MsgLength=22
+
+
+----
+Modified: src/windows/ContactProxy.js|1 1
+
+
+Revision: f8b6fb89f619297be3f536d39a9435cf66289ce4
+Author: Rob Close <rob-close>
+Date: 26/02/2015 01:32:34
+Message:
+CB-8537 Updated source to pass Fortify scan. #MsgLength=277
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|44 42
+
+
+Revision: e8a8ee606c0be98fa8240e16ca9911c5e4e6b933
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 30/09/2015 03:45:14
+Message:
+removed mulitple calls toLowerCase(Locale.getDefault()) for the same string, use type Phone enum directly. #MsgLength=107
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|102 85
+
+Revision: fbfde768747c9165752bf6110a21680668498b8c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 30/09/2015 03:50:08
+Message:
+Shortened multiple references to use CommonDataKinds directly #MsgLength=62
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|305 304
+
+Revision: 6bbd5a4a89b3e928d11fce2ce0f64b1cc8900cb8
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 30/09/2015 05:08:01
+Message:
+Close #67 #MsgLength=10
+
+
+----
+
+Revision: e928b520eaf70c9128e9c21e36eab107d90729cf
+Author: Gaetan <gaetan.leerman@gmail.com>
+Date: 04/05/2015 21:19:36
+Message:
+CB-9823 Making sure the photoCursor is always closed. #MsgLength=83
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|4 6
+
+Revision: 366cacf7b23826c52565d353359e9c3c6ee625ad
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: e2ece8db8cd31881b17d423c917c5edb5638c84d
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:49
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: ac9bdbf86534b590a712c3022efed136e958fd69
+Author: Joe Bowser <bowserj@apache.org>
+Date: 01/09/2015 06:31:17
+Message:
+Commit of Contacts Plugin with new API #MsgLength=39
+
+
+----
+Modified: src/android/ContactAccessor.java|2 0
+Modified: src/android/ContactManager.java|154 38
+
+Revision: 610eb844fada71c58754c5f5573e4451040bcb9f
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/09/2015 23:43:24
+Message:
+Fixed error with permission checking. We should exit the method after the permission is denied. #MsgLength=96
+
+
+----
+Modified: src/android/ContactManager.java|1 0
+
+Revision: c7ae850b4f0d0209844e42edcaadcfc2afcbd919
+Author: Joe Bowser <bowserj@apache.org>
+Date: 25/09/2015 06:13:35
+Message:
+Adding engine tag #MsgLength=18
+
+
+----
+Modified: plugin.xml|4 0
+
+Revision: 80864f452fd4514bd43575fa6fb5e8ea54f8fc2a
+Author: Joe Bowser <bowserj@apache.org>
+Date: 01/10/2015 03:43:30
+Message:
+Refactored ContactManager after feedback #MsgLength=41
+
+
+----
+Modified: src/android/ContactManager.java|8 36
+
+Revision: 1b497df320ad7620b50622f605bb647053966469
+Author: Joe Bowser <bowserj@apache.org>
+Date: 31/10/2015 06:31:50
+Message:
+Didn't actually add all the handlers that we need for the permissions to work properly #MsgLength=87
+
+
+----
+Modified: src/android/ContactManager.java|2 0
+
+Revision: d404eec6eab461d130dd76de0a24655fe1588d48
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 04/11/2015 14:31:25
+Message:
+mark tests as pending if iOS permission is blocked. CB-9905 #MsgLength=60
+
+
+----
+Modified: tests/tests.js|21 11
+
+Revision: ea696a0b36ce5e6f26cd242a38cbaf3b8edf5b78
+Author: Piyush Hari <piyush.hari@gmail.com>
+Date: 03/11/2015 22:19:29
+Message:
+[CB-9940] Adding namespace declarations for m3 and uap to plugin.xml. This closes #82 #MsgLength=86
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: 8326accfae364953ae99978ef808217c5e115fd9
+Author: Sachin Gupta <sachin@trimian.com>
+Date: 01/10/2015 05:57:29
+Message:
+CB-9728 Solving memory leak issues due to opened cursor objects #MsgLength=81
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|30 18
+
+Revision: 2e8883dd9113c09a4cd3187f441a49e4995348fc
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 04/11/2015 14:47:48
+Message:
+Fix whitespace, tab size #MsgLength=25
+
+
+----
+Modified: tests/tests.js|518 500
+
+Revision: 4b4d99fb2b5e194a33254f70c8938c8db2be9461
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|118 118
+
+Revision: 1c3011de3ef92e9a117e686e6dade295916bb9c8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:10
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: d250b9aa090b53b46a5b65700e1133411d8b3373
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:05
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 2.0.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|17 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f282464d1d7a083c3c521e5e9fbed94ef502266b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|78 78
+
+Revision: 8929422fe42b85c6b680618922e068336d51a0b1
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 19/11/2015 21:15:24
+Message:
+CB-7021 Adds manual test for pickContact #MsgLength=58
+
+
+----
+Modified: tests/tests.js|29 1
+
+Revision: b6fb48266da616955de233fee6e151c7339581b8
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 19/11/2015 22:03:14
+Message:
+CB-7021 Adds missing button for pickContact test #MsgLength=49
+
+
+----
+Modified: tests/tests.js|4 0
+
+Revision: deda3d83b24f3ae4fd004ee7f75f7b95ab0ca354
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 21/11/2015 21:02:53
+Message:
+CB-7906 Prevent app crash when desiredFields option has undefined items #MsgLength=72
+
+
+----
+Modified: src/ios/CDVContact.m|4 0
+
+Revision: 039947aab894a0ccf8804f4199e1b0b5a2e9e10c
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 21/11/2015 17:50:11
+Message:
+CB-8156 Call error callback on pickContact cancellation #MsgLength=158
+
+
+----
+Modified: README.md|1 0
+Modified: src/android/ContactManager.java|4 2
+Modified: src/ios/CDVContact.h|1 0
+Modified: src/ios/CDVContacts.m|1 1
+Modified: src/windows/ContactProxy.js|3 1
+Modified: tests/tests.js|4 1
+Modified: www/ContactError.js|1 0
+
+Revision: 617fb764bf1c7047cfe02cf346771dd7fa38ed40
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 24/11/2015 20:46:25
+Message:
+CB-9770 Request user permissions before picking a contact #MsgLength=58
+
+
+----
+Modified: src/ios/CDVContacts.m|27 3
+
+Revision: a4599c250c459c190542231047e27e7cbfe0bbcb
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 26/11/2015 21:40:28
+Message:
+CB-3950 Adds support for custom labels #MsgLength=39
+
+
+----
+Modified: src/ios/CDVContact.m|6 2
+
+Revision: 4b3d9709ca41b32cb34cbe0d9e4a7245ebcdf848
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 27/11/2015 21:49:22
+Message:
+CB-10094 Android: Fixed empty string comparison #MsgLength=48
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|6 8
+
+Revision: d3b470256514c5c01fa69a037a764db846a63e42
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 26/11/2015 22:42:46
+Message:
+CB-4921 Corrects examples by adding missing `multiple` option where multiple contacts are expected #MsgLength=99
+
+
+----
+Modified: README.md|3 0
+
+Revision: 49e87f52915785580712cdd1e9c367089ffeba14
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 23/11/2015 22:18:29
+Message:
+CB-5308 Return rawId instead of id when modifying existing contact #MsgLength=67
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|2 2
+
+Revision: 548f890448fd248ba573f17440b48b4d0eaaff3a
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 23/11/2015 23:52:01
+Message:
+CB-5308 Makes contacts save specs passing #MsgLength=167
+
+
+----
+Modified: tests/tests.js|91 50
+
+Revision: dbf415ac0fba9ac1d310e6fb8bad57514766a75a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ecf040a7406e4b52b3c56fb174b2e83a5a9da496
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 26/11/2015 20:21:57
+Message:
+CB-6979 Don't create duplicates for extracted contacts photos #MsgLength=79
+
+
+----
+Modified: src/ios/CDVContact.m|3 9
+
+Revision: fe6ce1db54c95c8bafac243b5a7ab6e0633a71a5
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 02/12/2015 19:10:46
+Message:
+CB-8115 Save contact birthday properly #MsgLength=56
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|45 7
+Modified: tests/tests.js|2 2
+
+Revision: 07f7784ce4abf4e385b2166f86543cf309c6a8e1
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 04/12/2015 15:58:30
+Message:
+CB-10053 Accept assets URIs for contact photos #MsgLength=78
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|15 8
+
+Revision: 4bb747fff0ad957e210408936039755b740659e5
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 08/12/2015 04:05:51
+Message:
+CB-10148 android: Added READ_CONTACTS permission request when picking a contact #MsgLength=80
+
+
+----
+Modified: src/android/ContactManager.java|17 6
+
+Revision: f0314d710c53ad49a06214a0bb769759c8162fca
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 30/11/2015 17:29:50
+Message:
+CB-10053 Documents ContactFieldType enumeration. This closes #93 #MsgLength=65
+
+
+----
+Modified: README.md|33 0
+
+Revision: c7043c9e2ba448de64e86076517f74fe33bf39c6
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 04/12/2015 17:52:43
+Message:
+CB-10131 Fixed null contact creation. This closes #98 #MsgLength=54
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|18 21
+
+Revision: 48c972c73c9b85fade2ea4ddcabe1db1e3fcf8c7
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 03/12/2015 00:51:50
+Message:
+CB-10117 Added new tests #MsgLength=25
+
+
+----
+Modified: tests/tests.js|311 112
+
+Revision: 077631e8220d18008a272d342b35ccd449628909
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 12/01/2016 03:16:31
+Message:
+CB-10319 android: Adding reflective helper methods for permission requests #MsgLength=75
+
+
+----
+Modified: plugin.xml|4 7
+Modified: src/android/ContactManager.java|6 6
+Added: src/android/PermissionHelper.java|138 0
+
+Revision: 00f71a8aafeb26d8172cb77833e7cc6fec7d905c
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 08/12/2015 06:54:22
+Message:
+CB-10159 android: Adding restore callback to handle Activity destruction #MsgLength=73
+
+
+----
+Modified: README.md|21 0
+Modified: src/android/ContactManager.java|11 0
+
+Revision: e9bbdd299c29b51170bebdd0c1bc2db7b6e215c7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:35:05
+Message:
+CB-10368 Updated version and RELEASENOTES.md for release 2.0.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|20 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 82a20121d85066d29c9b7ea943cc3cd9b6b0456a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:58:32
+Message:
+CB-10368 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: df9f936f03e53a044d7bcc70c8273a853861cdae
+Author: t1st3 <contact@tiste.org>
+Date: 07/02/2016 16:30:24
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=259
+
+
+----
+Modified: package.json|1 1
+
+Revision: ca62fa78fcdb2fc0ad1d357788aaf3a365eae7ca
+Author: daserge <v-seshak@microsoft.com>
+Date: 26/02/2016 02:18:28
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=55
+
+
+----
+Modified: .gitignore|1 1
+Added: .jshintrc|24 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/blackberry10/contactUtils.js|3 1
+Modified: src/blackberry10/index.js|15 32
+Modified: src/firefoxos/ContactsProxy.js|36 33
+Modified: src/windows/ContactProxy.js|14 7
+Modified: src/windows8/ContactProxy.js|41 32
+Modified: tests/tests.js|24 28
+Modified: www/contacts.js|4 4
+
+Revision: 3b9dd353f9b13bd86187e9b72e6e80af8e9d8ddb
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 02/03/2016 07:30:07
+Message:
+Minor changes to readme #MsgLength=24
+
+
+----
+Modified: README.md|4 21
+
+Revision: 7db612115755c2be73a98dda76ff4c5fd9d8a575
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 04/03/2016 04:13:29
+Message:
+CB-10632: Fixing jasmine test contact removal #MsgLength=64
+
+
+----
+Modified: tests/tests.js|35 7
+
+Revision: 1c6668ef1ec5e9a0c2394eb969a92a22c57bb48e
+Author: Omar Mefire <omefire@gmail.com>
+Date: 26/03/2016 03:18:14
+Message:
+CB-10881 Remove test dependency on global object Maybe this could fix CI issues on CB-10881 #MsgLength=101
+
+
+----
+Modified: tests/tests.js|42 41
+
+Revision: 8a08f75cad9e6b127884e9e5e2fae3e44225c702
+Author: Omar Mefire <omefire@gmail.com>
+Date: 30/03/2016 03:51:46
+Message:
+CB-10881 Add extra logging to gather more information about tests behavior #MsgLength=75
+
+
+----
+Modified: tests/tests.js|92 8
+
+Revision: 9ba66d83368758f0f002a5ecf176cc44f0ed982e
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 31/03/2016 09:23:46
+Message:
+Fix for the specs 26&27 to use the newly created contacts for removal test #MsgLength=75
+
+
+----
+Modified: tests/tests.js|31 36
+
+Revision: 4a4d2acd58d170b1d2c7952e56adb835115d03d8
+Author: Omar Mefire <omefire@gmail.com>
+Date: 01/04/2016 02:44:50
+Message:
+CB-10881 Increase timeout for Spec22 #MsgLength=37
+
+
+----
+Modified: tests/tests.js|2 1
+
+Revision: fee446e44ba8814e0d24680d6d5b1fefd8cfc28e
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 01/04/2016 06:31:15
+Message:
+Changes to stop using global object - remove all created contacts from the emulator #MsgLength=102
+
+
+----
+Modified: tests/tests.js|69 58
+
+Revision: 4774ee97911f9c3a6b072e9cf44c7bfc6c5fb7ff
+Author: daserge <v-seshak@microsoft.com>
+Date: 31/03/2016 00:16:48
+Message:
+CB-8115 incorrect birthday saved to phonebook using Contacts Plugin #MsgLength=160
+
+
+----
+Modified: plugin.xml|3 0
+Modified: tests/tests.js|19 0
+Modified: www/Contact.js|4 41
+Modified: www/contacts.js|6 5
+Added: www/convertUtils.js|61 0
+
+Revision: 12a76744d519a0d6dc4525f09e64bd1f8fe1dc24
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 06/04/2016 00:16:07
+Message:
+Replace PermissionHelper.java with cordova-plugin-compat #MsgLength=57
+
+
+----
+Modified: plugin.xml|2 1
+Modified: src/android/ContactManager.java|1 0
+Deleted: src/android/PermissionHelper.java|0 138
+
+Revision: 7bec3a5e90b3e91255dbb28796ee375dff04474e
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 21/01/2016 00:24:51
+Message:
+CB-10399 Added Appium tests #MsgLength=28
+
+
+----
+Added: appium-tests/common/common.spec.js|313 0
+Added: appium-tests/helpers/contactsHelper.js|41 0
+
+Revision: c184b4e48ba3983ee4a2681cdf5fee471f076fa1
+Author: Omar Mefire <omefire@gmail.com>
+Date: 06/04/2016 06:17:54
+Message:
+Revert "CB-10881 Add extra logging to gather more information about tests behavior" #MsgLength=194
+
+
+----
+Modified: tests/tests.js|9 93
+
+Revision: 0d33af8e4e197fc9204566b165cb5983ab442db8
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/04/2016 17:17:55
+Message:
+CB-11033 Appium tests: Increased the timeout for updating the contact #MsgLength=70
+
+
+----
+Modified: appium-tests/common/common.spec.js|5 1
+
+Revision: 5bcbb201f8b293ea85b848d3868c28e163d35c1d
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 08/04/2016 07:48:21
+Message:
+CB-11041: cordova-plugin-contacts readme must be updated to include instructions on removing phone number from a contact #MsgLength=140
+
+
+----
+Modified: README.md|27 0
+
+Revision: f551c92841b9ccc1139696b7cc8ee818477017f3
+Author: Omar Mefire <omefire@gmail.com>
+Date: 09/04/2016 03:32:05
+Message:
+CB-11048 Fix spec27's inadvertant breakage that happened during logging rollback #MsgLength=81
+
+
+----
+Modified: tests/tests.js|6 5
+
+Revision: 0f8945b911e3cf2617919bd7d3831019bb3b43f4
+Author: daserge <v-seshak@microsoft.com>
+Date: 06/04/2016 03:55:15
+Message:
+CB-10985 Android sets type to -1 for ims Added a corresponding test #MsgLength=68
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|2 2
+Modified: tests/tests.js|26 0
+
+Revision: d7dd9378fd87d4a6689c7fef57a48a9e9c0a23ba
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 09/04/2016 08:43:27
+Message:
+CB-11043: Android App crashes while trying to save contact with phone numbers array with deleted values #MsgLength=123
+
+
+----
+Modified: README.md|0 1
+Modified: src/android/ContactAccessorSdk5.java|4 2
+
+Revision: b50b9fc625130b5703cc5bb3b4a3aa1cb1b1349b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:26
+Message:
+ Updated version and RELEASENOTES.md for release 2.1.0 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|16 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 714197bf6d0eff7ff6c46084b109d35b12b14a69
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:27
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5cc88467fbde8310284c32f2c22c36b0fae01874
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 21/04/2016 17:43:31
+Message:
+CB-11128 Appium tests: Increased session destruction timeout #MsgLength=61
+
+
+----
+Modified: appium-tests/common/common.spec.js|1 1
+
+Revision: fa91c063cd0991e469d776e8147697b3bdd9f8da
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:50
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: 959c3983e01ae9e87c720b5206327c2ec9f64331
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 25/04/2016 15:27:19
+Message:
+CB-11033 Appium tests: more timeout tweaks #MsgLength=43
+
+
+----
+Modified: appium-tests/common/common.spec.js|2 2
+
+Revision: 956c76b50da1d8c7e86de333ce6748b046b3ce83
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 29/04/2016 23:00:16
+Message:
+CB-11166 Appium tests: Added a check for contact's birthday #MsgLength=60
+
+
+----
+Modified: appium-tests/common/common.spec.js|16 10
+
+Revision: e4d72c34131cb0331bdc2839e73156e99ab6dc22
+Author: TanaseButcaru <contact@butcaru.com>
+Date: 07/05/2016 04:08:40
+Message:
+handle 'Invalid Date' error #MsgLength=47
+
+
+----
+Modified: www/convertUtils.js|13 4
+
+Revision: 9697d791276e5991d44dee7b8d4505a80875a6ab
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 29/04/2016 04:42:32
+Message:
+Add fenced code blocks - with language hints #MsgLength=64
+
+
+----
+Modified: README.md|181 158
+
+Revision: a65672617430b990440dbb1cec54ac3c1e159764
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:53:59
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: 90b7114a2753d69cd6456bc5f93f41fb0917def2
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/05/2016 21:23:57
+Message:
+CB-11296: Appium: Better element clicking and session error handling #MsgLength=69
+
+
+----
+Modified: appium-tests/common/common.spec.js|25 3
+
+Revision: 96b5a8f71fc3a8e5410ee2652f0f7821c0384eef
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 10/06/2016 16:40:39
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|3 1
+
+Revision: 254083d59000061771fdf3944bbaa42bc1c800eb
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 14/07/2016 18:26:32
+Message:
+CB-11574 Appium tests now use new injected promise chain methods #MsgLength=65
+
+
+----
+Modified: appium-tests/common/common.spec.js|3 7
+
+Revision: c7c69d59cd8e5ab5ee97f6a2f535ad30653d6588
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 04/08/2016 08:49:40
+Message:
+CB-11667 - Memory leak in CDVContact for CoreFoundation ABRecordRef #MsgLength=87
+
+
+----
+Modified: src/ios/CDVContact.m|9 0
+
+Revision: bc7845b43269483d7acd43e0380be87aced603d0
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 16/08/2016 19:03:42
+Message:
+CB-11695 Increased session creation timeout for Appium tests #MsgLength=61
+
+
+----
+Modified: appium-tests/common/common.spec.js|1 1
+
+Revision: 533d0d8d18ee1ed7f7efdc67d9ca8ab4eeeb8c97
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 23/08/2016 04:08:27
+Message:
+Plugin uses Android Log class and not Cordova LOG class #MsgLength=56
+
+
+----
+Modified: src/android/ContactAccessor.java|8 8
+Modified: src/android/ContactAccessorSdk5.java|42 44
+Modified: src/android/ContactManager.java|3 3
+
+Revision: a3fe7fd9b17b8d30d54025a0cca3429b3178ccef
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 03/08/2016 05:39:16
+Message:
+Added variable to set the usage #MsgLength=51
+
+
+----
+Modified: README.md|11 0
+Modified: plugin.xml|5 0
+
+Revision: 8bb390b329d158096442064349cc8e1a1e44c1e1
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 31/08/2016 21:30:53
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=398
+
+
+----
+Modified: package.json|7 0
+
+Revision: 31b8545e9cb48eb37374927778e59c2c0cb4ef73
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:54
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 2.2.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|46 29
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c7e04e709f42e900dd54809185d085b4129deca9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 07bff7cea2af5c4aa4d1747d7c12d858feb40648
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 16/09/2016 21:53:58
+Message:
+CB-11864 Fixed tests for the new Jasmine version #MsgLength=49
+
+
+----
+Modified: tests/tests.js|1 1
+
+Revision: d7d49634ff65910618906d024a43e6be7d251e8e
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 24/09/2016 06:49:06
+Message:
+Closing outdated pull request: close #129 #MsgLength=42
+
+
+----
+
+Revision: e0600ee7fbe8d42b3dda2038de46738d1e323fc9
+Author: Nikita Matrosov <matrosov.nikita94@gmail.com>
+Date: 26/09/2016 16:42:56
+Message:
+CB-11350 android: retrieve displayName for contact when specified in desiredFields #MsgLength=189
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|1 1
+Modified: tests/tests.js|29 0
+
+Revision: 534d16c8d2dca01f464db5cd67cded8a980133e8
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:20:01
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been signed and submitted to secretary@apache.org." #MsgLength=137
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: 7f662d6c67ac08a96adef633dd426cf998421296
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 29/10/2016 01:50:37
+Message:
+CB-11206 (android) Fixed custom IM protocol parsing close #128 #MsgLength=63
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|24 1
+
+Revision: a19baba6fbba5ab6d18c27eee0db4c3a2ea94f17
+Author: Nikita Matrosov <matrosov.nikita94@gmail.com>
+Date: 10/10/2016 17:02:17
+Message:
+CB-11975 iOS: Allow to use numeric values in search filter #MsgLength=77
+
+
+----
+Modified: src/ios/CDVContacts.m|3 1
+Modified: tests/tests.js|21 0
+
+Revision: 76f695ef9d151638c80d13ac1b4e2cbc9a781589
+Author: Nikita Matrosov <matrosov.nikita94@gmail.com>
+Date: 02/11/2016 18:11:39
+Message:
+CB-11028 android: Allow to set custom labels for contacts' fields #MsgLength=66
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|48 15
+Modified: tests/tests.js|44 0
+
+Revision: 539ad679caed235f87812767bb5cd7464031bac8
+Author: Nikita Matrosov <matrosov.nikita94@gmail.com>
+Date: 03/11/2016 20:33:51
+Message:
+CB-11541 iOS: Add extra labels for phone, ims #MsgLength=178
+
+
+----
+Modified: src/ios/CDVContact.h|12 1
+Modified: src/ios/CDVContact.m|56 82
+Modified: tests/tests.js|22 3
+
+Revision: 7fa53c1498507e080c412541c293b472fafc8b66
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 04/11/2016 01:45:23
+Message:
+CB-11541 Pended one unsupported test on Windows #MsgLength=48
+
+
+----
+Modified: tests/tests.js|3 0
+
+Revision: af620d6cde05dde428e4e55fafdb21c4b58bc8c2
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:44
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 2.2.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|313 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6bf459db23f97665da3eb2b4711c456ab47aeac2
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:06
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e94b0f01bde401d45e1a56e585de9b7569c91d02
+Author: filmaj <maj.fil@gmail.com>
+Date: 09/12/2016 05:54:56
+Message:
+Fixing up appium spec JavaScript shtuff. #MsgLength=41
+
+
+----
+Modified: appium-tests/common/common.spec.js|7 3
+
+Revision: 1f2af6650507902560726b7a21d5a0587b13fb94
+Author: filmaj <maj.fil@gmail.com>
+Date: 09/12/2016 10:24:53
+Message:
+[Appium] use closed driver variable during appium init #MsgLength=55
+
+
+----
+Modified: appium-tests/common/common.spec.js|2 2
+
+Revision: b97df9c519f23d5a27d55b9195764ce9c786bb87
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 18:01:49
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: 5683400219916979fa6baef20baeb6ba0c057d7a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:42:58
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-contacts #MsgLength=58
+
+
+----
+Modified: RELEASENOTES.md|1 302
+
+Revision: 7c4f94f483fbe90d49e0d273cf8a8f7260f36d20
+Author: filmaj <maj.fil@gmail.com>
+Date: 10/12/2016 07:22:35
+Message:
+Pulled out appium session destruction into a jasmine `afterAll` teardown function (instead of its own test). Tweaking some labels. #MsgLength=131
+
+
+----
+Modified: appium-tests/common/common.spec.js|9 9
+
+Revision: 58d4612f90682453fa59329892440738c73c842b
+Author: filmaj <maj.fil@gmail.com>
+Date: 16/12/2016 05:12:01
+Message:
+[Appium] Add forward-compatibility support for XCUITest automation in iOS. Is backwards-compatible with UIAutomation-based test runs. Leverages finding elements in native iOS land using the accessibility id selector, which also happens to be faster than XPath selectors. #MsgLength=271
+
+
+----
+Modified: appium-tests/common/common.spec.js|58 4
+
+Revision: 88192bf17fe0dc790ae705a7a4f14d016b48f254
+Author: Meir Rotstein <meir@rotstein.co.il>
+Date: 27/12/2016 17:06:39
+Message:
+CB-12300: fix tests failure when running it using jasmine-node #MsgLength=63
+
+
+----
+Modified: tests/tests.js|9 3
+
+Revision: af052a4dda5b0046f02a0374bb2c2c5791e00caa
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 17/01/2017 21:50:57
+Message:
+CB-12357: Tests give user some time to accept the permission alert #MsgLength=67
+
+
+----
+Modified: tests/tests.js|1 1
+
+Revision: 499281438c181b2c3258aa9bcbf412e0dd3ecd32
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:28:07
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: a505a67a94d85866016435441f1204e9365160ff
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 20:52:14
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=69
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|337 0
+
+Revision: e2c38d0e7d778890ebc66a978466301be51c7ca4
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/01/2017 00:19:38
+Message:
+CB-12353 Corrected merges usage in plugin.xml #MsgLength=46
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 5457005a2ad4a8e0e87fc76de8487b9d71442b06
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/02/2017 21:53:24
+Message:
+CB-12445 (Appium) Removed double check for contact's name #MsgLength=58
+
+
+----
+Modified: appium-tests/common/common.spec.js|0 4
+
+Revision: bd13d16179c2b133688f618a9919873d0a319d51
+Author: filmaj <maj.fil@gmail.com>
+Date: 24/02/2017 01:45:55
+Message:
+Close #130 #MsgLength=11
+
+
+----
+
+Revision: 67ae2d539e2cee7a85635a4722781b0a55e7c1ea
+Author: filmaj <maj.fil@gmail.com>
+Date: 24/02/2017 02:14:39
+Message:
+Close #103 #MsgLength=11
+
+
+----
+
+Revision: db1e4f38a51caa90611d65ae8c5b77ef3ec874b9
+Author: filmaj <maj.fil@gmail.com>
+Date: 24/02/2017 02:37:19
+Message:
+Close #102 #MsgLength=11
+
+
+----
+
+Revision: e29ff4a9b65b76286b31e542177aae9a52ae2a2c
+Author: filmaj <maj.fil@gmail.com>
+Date: 24/02/2017 02:51:56
+Message:
+Close #71 #MsgLength=10
+
+
+----
+
+Revision: abdb62aabc3717cd44d69576cc32c79945202e02
+Author: filmaj <maj.fil@gmail.com>
+Date: 24/02/2017 02:54:58
+Message:
+Close #70 #MsgLength=10
+
+
+----
+
+Revision: 8febb96b239cce910c269e32a7461ee785e8b1d6
+Author: filmaj <maj.fil@gmail.com>
+Date: 24/02/2017 03:22:22
+Message:
+Close #10 #MsgLength=10
+
+
+----
+
+Revision: 308922827c24e63470c05896ad90b31a134ba2b5
+Author: Suraj Pindoria <surajpindoria@apache.org>
+Date: 20/04/2016 03:58:45
+Message:
+[CB-8076] Provide error support for browser platform #MsgLength=53
+
+
+----
+Modified: plugin.xml|7 0
+Added: src/browser/ContactsProxy.js|33 0
+
+Revision: 3aacb93f1b72e447dd2bd94e26aca9519902a907
+Author: andreas.kausler <andreas.kausler@camao.de>
+Date: 06/01/2017 21:59:21
+Message:
+CB-12326 fix: Crash on Android: CommonDataKinds.*.LABEL #MsgLength=74
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|65 43
+
+Revision: 914ccc58ae6fabc28fb95b47b62a5299ccfa3317
+Author: Isaac Gordezky <igordezky@blackberry.com>
+Date: 20/10/2015 00:54:18
+Message:
+update to npm dependencies #MsgLength=27
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: def03f1f3dfef5da6ebafd920c625b5d63cbdec2
+Author: filmaj <maj.fil@gmail.com>
+Date: 24/02/2017 04:15:18
+Message:
+Close #81 after rebasing in changes #MsgLength=36
+
+
+----
+
+Revision: 2ca42958e394984f00c76150becb3ae0a3242f98
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:25
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 2.3.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: package.json|1 1
+Modified: plugin.xml|161 233
+Modified: tests/plugin.xml|5 30
+
+Revision: 3dd84c992ebac2ae603ffcf5a3595e8175f6a1ce
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:55:59
+Message:
+Set VERSION to 2.3.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|233 161
+Modified: tests/plugin.xml|30 5
+
+Revision: e5768f232d5f3f1127797598be289af3470b2b24
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/03/2017 08:16:41
+Message:
+CB-12519 updated incorrect version in RELEASENOTES #MsgLength=51
+
+
+----
+Modified: RELEASENOTES.md|1 1
+
+Revision: 0623f67ac03c7591c2d28168ffbe52c60f17d89b
+Author: Cory Thompson <coryjthompson@gmail.com>
+Date: 04/03/2016 07:52:28
+Message:
+CB-10784: CDVContactsPicker finish animating before callback #MsgLength=80
+
+
+----
+Modified: src/ios/CDVContacts.m|17 18
+
+Revision: cb695ce0e31d691848ef8fed499a356dc642ea80
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 17/04/2017 16:58:40
+Message:
+CB-12622: (android) Adapt Appium tests for Android 6 and 7 #MsgLength=59
+
+
+----
+Modified: appium-tests/common/common.spec.js|77 58
+
+Revision: bb8925625f520329e3e932ffb1ee6a24fb0839a1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 09:19:07
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: 367f04b6d369c6fcd4372218e4d685ab002e4b74
+Author: Benjamin <baboring@gmail.com>
+Date: 30/10/2016 08:59:19
+Message:
+android doesn't support data to save photo for contact by image data base64 encoded #MsgLength=84
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|15 0
+
+Revision: d755df7565753526b019600894f78309550cc4da
+Author: Benjamin <baboring@gmail.com>
+Date: 04/11/2016 10:06:34
+Message:
+Missing import for fixing base64 saving #MsgLength=40
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|2 1
+
+Revision: 46185288c0d629359a451a2adcfad96d87fc35da
+Author: Benjamin <baboring@gmail.com>
+Date: 04/11/2016 19:43:05
+Message:
+Change wrong log function #MsgLength=26
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|1 1
+
+Revision: 9d71756e2c6ee243d54eb2c5724c0b0c51dce369
+Author: Benjamin <baboring@gmail.com>
+Date: 06/11/2016 02:15:45
+Message:
+Addtion missing import for build error. #MsgLength=40
+
+
+----
+Modified: src/android/ContactAccessorSdk5.java|1 0
+
+Revision: 8b25503e827e0ac500e64719f202db8261c24029
+Author: filmaj <maj.fil@gmail.com>
+Date: 26/04/2017 08:12:09
+Message:
+Close #142 #MsgLength=11
+
+
+----
+
+Revision: e09f57fd3932c39c269808e50ae8fdd4016e7818
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 20:16:40
+Message:
+CB-12622: Added Android 6.0 build badge to README #MsgLength=50
+
+
+----
+Modified: README.md|3 3
+
+Revision: 1c27c9abb5ae102c30d16a89d9a9c03901a4e226
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 02:42:27
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 2.3.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 04c833b4660bbbfb326eaab898650a38b3e55608
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 02:43:38
+Message:
+Set VERSION to 2.3.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 49007875324c9763adf07326fd7ec47ac3fa2484
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 03:18:50
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: 92a2250c78cc513b811eb032bf39978605902a32
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 18:32:32
+Message:
+CB-12847: fixed `bugs` entry in package.json. #MsgLength=46
+
+
+----
+Modified: package.json|1 1
+
+Revision: a837c9b781b58834b77c73e64ecdc348e2562866
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 23/06/2017 18:20:54
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Modified: .travis.yml|71 3
+
+Revision: da028e66dcd175c65fe6aa49a7792144c3e544c1
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:30:45
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: 7dc36e3b9e60f537034a84310a69dd1509532d32
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 03/07/2017 22:09:26
+Message:
+CB-12982: (Android, iOS) Appium tests: try to create a session harder #MsgLength=70
+
+
+----
+Modified: appium-tests/common/common.spec.js|9 1
+
+Revision: c5da4c754a815a59fda2c17d9cd1938bef208cc7
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 06/07/2017 19:11:16
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: 75f086570bf12b807a671758211b488282482bbb
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:33:35
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: a7354be79160de7e3ee1a0c68973ce4378379c11
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:05:05
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: e47d53bb0555fe6c32b1aa6c0c345400b6fcbb85
+Author: Kelvin Dart <kelvin.dart@crimsontide.co.uk>
+Date: 18/10/2017 23:42:36
+Message:
+CB-13294 Remove cordova-plugin-compat #MsgLength=57
+
+
+----
+Modified: package.json|2 2
+Modified: plugin.xml|4 2
+
+Revision: 579c89ef7c810d2b6d68892c7ffd00ff5cdb6186
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:58:25
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: de78d20deba1cc1f34cdfe7b4ba2846044386773
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 01/11/2017 07:11:12
+Message:
+CB-13521 (all): Add 'protective' entry to cordovaDependencies #MsgLength=62
+
+
+----
+Modified: package.json|3 0
+
+
+Revision: 03424074b2094ea90224b25a856570a07e037750
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 03/11/2017 06:28:46
+Message:
+CB-13522 (iOS): Remove usage description #MsgLength=41
+
+
+----
+Modified: README.md|10 5
+Modified: plugin.xml|0 5
+
+
+Revision: a4d5e28e74e991c1b180c4da32cc99cbc8337a1a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:44
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 3.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 194c15c2576fbd0b7a1438627583af86142577d9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:39
+Message:
+Set VERSION to 3.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 51eb403ea72a4e448a6f3e2628ef739452b73c6b
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 23/11/2017 02:57:07
+Message:
+CB-13062:Added deprecation notice to README #MsgLength=44
+
+
+----
+Modified: README.md|4 0
+
+Revision: cfdffed4612c83d994d7dfa835b600b19b640ddf
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:25:12
+Message:
+CB-13681 Updated version and RELEASENOTES.md for release 3.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6736abdf2cd966154ccd8f548c4b4419348b7877
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:26:44
+Message:
+Set VERSION to 3.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b5888c88437bf74c5d9c150166dc600ad4c0b48b
+Author: DanWithams7d <dan@7d-digital.co.uk>
+Date: 21/12/2017 00:50:04
+Message:
+CB-13693: Improves Documentation (#162) #MsgLength=227
+
+
+----
+Modified: README.md|4 4
+Modified: types/index.d.ts|3 3
+
+Revision: af2a5183684f2d204db951fd65a2f470f7ecfa8e
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 15/01/2018 20:11:50
+Message:
+CB-13759: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: 99f9ea9ff94959c20a7823619744118725d09e31
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 21/09/2018 17:35:02
+Message:
+update README #MsgLength=152
+
+
+----
+Modified: README.md|148 103
+
+Revision: 8a905cac1f0bd3a1319b6c8a0624185e4ca7c78f
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:38:31
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+

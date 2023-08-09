@@ -1,0 +1,2642 @@
+Revision: 87286a2e08982f40554f91655f49acb4db3e3b43
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/04/2013 06:58:03
+Message:
+Initial Commit #MsgLength=15
+
+
+----
+Added: README.md|2 0
+Added: plugin.xml|18 0
+Added: src/android/Globalization.java|577 0
+Added: src/android/GlobalizationError.java|108 0
+
+Revision: 49ecf5ce70aae167eca06a51009498d5fcab0d64
+Author: hermwong <herm.wong@gmail.com>
+Date: 31/05/2013 06:42:25
+Message:
+added native iOS files #MsgLength=23
+
+
+----
+Added: src/ios/CDVGlobalization.h|150 0
+Added: src/ios/CDVGlobalization.m|790 0
+
+Revision: 8a595ebc55aed11eacc91d3caa79f8622956a8be
+Author: hermwong <herm.wong@gmail.com>
+Date: 31/05/2013 06:42:55
+Message:
+added Cordova-JS files #MsgLength=23
+
+
+----
+Added: www/GlobalizationError.js|41 0
+Added: www/globalization.js|391 0
+
+Revision: a4aa44de9d465f1a4dfdaaae2be19014b3498d51
+Author: hermwong <herm.wong@gmail.com>
+Date: 31/05/2013 06:43:46
+Message:
+added configuration for iOS files & JS files #MsgLength=45
+
+
+----
+Modified: plugin.xml|21 1
+
+Revision: 736dd4952650f4f422dbb006a71644e41d55d0a3
+Author: Joe Bowser <bowserj@apache.org>
+Date: 13/06/2013 04:00:55
+Message:
+CB-3736: Cleaning up code so that it's more readable.  Same change that was made to 2.x repo #MsgLength=93
+
+
+----
+Modified: src/android/Globalization.java|6 5
+
+Revision: 1bafef6df3403c4a009cd671b7ce344dddba0a7e
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 08/06/2013 10:19:19
+Message:
+first pass at wp7 support #MsgLength=26
+
+
+----
+Modified: plugin.xml|24 13
+Added: src/wp7/Globalization.cs|1178 0
+
+
+Revision: 54dc4ce41b057556f8fb93af75532db4233686a2
+Author: Tim Kim <timk@adobe.com>
+Date: 12/06/2013 07:09:02
+Message:
+Fixed up plugin.xml #MsgLength=20
+
+
+----
+Modified: plugin.xml|3 3
+
+Revision: b91378446a59abf12f63cece0447b5aad82bef36
+Author: Tim Kim <timk@adobe.com>
+Date: 13/06/2013 05:22:16
+Message:
+Missing parenthesis #MsgLength=20
+
+
+----
+Modified: src/android/Globalization.java|1 1
+
+Revision: 46f5670be4ece571a389c9ab0858399b625ec4a8
+Author: Tim Kim <timk@adobe.com>
+Date: 13/06/2013 05:29:09
+Message:
+Fixed typos #MsgLength=12
+
+
+----
+Modified: src/android/Globalization.java|2 2
+
+Revision: e38a0960ced99ec27d84522e87299508d1b14fda
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/06/2013 02:40:35
+Message:
+Added docs + tests #MsgLength=19
+
+
+----
+Added: docs/GlobalizationError/globalizationerror.md|94 0
+Added: docs/globalization.dateToString.md|97 0
+Added: docs/globalization.getCurrencyPattern.md|112 0
+Added: docs/globalization.getDateNames.md|102 0
+Added: docs/globalization.getDatePattern.md|105 0
+Added: docs/globalization.getFirstDayOfWeek.md|82 0
+Added: docs/globalization.getLocaleName.md|83 0
+Added: docs/globalization.getNumberPattern.md|125 0
+Added: docs/globalization.getPreferredLanguage.md|83 0
+Added: docs/globalization.isDayLightSavingsTime.md|87 0
+Added: docs/globalization.md|63 0
+Added: docs/globalization.numberToString.md|90 0
+Added: docs/globalization.stringToDate.md|114 0
+Added: docs/globalization.stringToNumber.md|93 0
+Added: test/autotest/html/HtmlReporter.js|101 0
+Added: test/autotest/html/HtmlReporterHelpers.js|60 0
+Added: test/autotest/html/ReporterView.js|164 0
+Added: test/autotest/html/SpecView.js|79 0
+Added: test/autotest/html/SuiteView.js|22 0
+Added: test/autotest/html/TrivialReporter.js|192 0
+Added: test/autotest/index.html|59 0
+Added: test/autotest/jasmine.css|81 0
+Added: test/autotest/jasmine.js|2530 0
+Added: test/autotest/pages/.DS_Store|0 0
+Added: test/autotest/pages/globalization.html|70 0
+Added: test/autotest/test-runner.js|62 0
+Added: test/autotest/tests/.DS_Store|0 0
+Added: test/autotest/tests/globalization.tests.js|826 0
+Added: test/cordova-incl.js|85 0
+Added: test/index.html|64 0
+Added: test/main.js|162 0
+Added: test/master.css|164 0
+
+Revision: fe58a0074ad3403db3533414660409f9abb21cce
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/06/2013 02:41:50
+Message:
+updated reference in CDVGlobalization.h #MsgLength=40
+
+
+----
+Modified: src/ios/CDVGlobalization.h|1 1
+
+Revision: 0005e4b08b7d833be91227826726c721fdc1db25
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/06/2013 05:10:23
+Message:
+updated reference in js file #MsgLength=29
+
+
+----
+Modified: www/globalization.js|1 1
+
+Revision: 66cc5de52e1995d5aa325ebd58f3b025fe339d86
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/06/2013 05:38:11
+Message:
+updated reference #MsgLength=18
+
+
+----
+Modified: www/globalization.js|1 1
+
+Revision: 89b1792cd267e23bd93c1f3fb318ed2164600f23
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 25/06/2013 06:40:11
+Message:
+[CB-3715] first pass wp7 support #MsgLength=33
+
+
+----
+Modified: plugin.xml|12 1
+Added: src/wp8/Globalization.cs|1177 0
+
+Revision: 40cc068ac4a377b522d379e1b45fb5b6dd9cc8d1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:56
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|2 3
+
+Revision: b1b62e4b984d3c1f111ee27f6135a265859e460b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 07:28:59
+Message:
+<plugin> -> <feature> #MsgLength=22
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: e9e51c13f48e366ca68726128b77b3450b0dabf3
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 07:46:10
+Message:
+Fix require paths that were broken by plugin id changes #MsgLength=56
+
+
+----
+Modified: plugin.xml|1 1
+Modified: src/wp7/Globalization.cs|1 1
+Modified: src/wp8/Globalization.cs|1 1
+Modified: www/globalization.js|1 1
+
+Revision: 1ae22fc1c80d4aa4b9857f8428f29af8de6eb23b
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 06:51:22
+Message:
+[CB-4120] remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|2 2
+Renamed: src/wp/Globalization.cs [from src/wp8/Globalization.cs]|0 0
+Deleted: src/wp7/Globalization.cs|0 1178
+
+Revision: 525f1f047f8e74e7abbbd5175fffa24e21089fc2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 02:55:00
+Message:
+[CB-4131] Use relative require paths in globalization plugin. #MsgLength=62
+
+
+----
+Modified: www/globalization.js|1 1
+
+Revision: d9da7dbda253d5afa1a65b7f1994f92a8acc39b8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: src/android/Globalization.java|3 3
+
+Revision: 52a977b83ccbb1da54068990d51d98d2607dbe7e
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:16:34
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Added: .gitignore|23 0
+
+Revision: 8caedd2c6674e485dd46941f3f0106f7b17f1bbf
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|3 0
+
+Revision: c7f83fca61492df1e0f90210bd771155ab484f34
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 05:41:05
+Message:
+updated namespace, name tag and readme #MsgLength=39
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|2 2
+
+Revision: 4f52f796614103fce4dce2e4030a2c6a58b74abc
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-globalization to its own Java package. #MsgLength=69
+
+
+----
+Modified: plugin.xml|3 3
+Modified: src/android/Globalization.java|1 1
+Modified: src/android/GlobalizationError.java|1 1
+
+Revision: 9e52a6470e5aa5e2cd813da4b44445e5675d8fcc
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:32:19
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|3 0
+
+
+Revision: 5ba0900fb35a26cdb3f3df3f7d8237fd752ac923
+Author: apla <dot.and.thing@gmail.com>
+Date: 04/08/2013 18:48:03
+Message:
+[CB-4474] Unbreak globailization plugin on 3.0 for iOS. #MsgLength=87
+
+
+----
+Modified: src/ios/CDVGlobalization.h|12 12
+Modified: src/ios/CDVGlobalization.m|123 36
+
+Revision: 818ef0711eb9193f2e5607e796fd97ac835ffde1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/08/2013 00:49:49
+Message:
+[CB-4474] Unbreak globalization plugin on Android #MsgLength=92
+
+
+----
+Modified: plugin.xml|3 1
+
+Revision: b472737182cf882b87b49a47047071613926a8c3
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 06:06:48
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: cf839b5c2ec1a3cabc8567c76f6aec237dd93f30
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+Add empty CHANGELOG.md #MsgLength=23
+
+
+----
+Added: CHANGELOG.md|23 0
+
+Revision: 923563d2d171d79a4f45e9d82f23c62b8f00ca0b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:22
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 60dff439d825ea2b379aee619d300a21969186e1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: d02504e4838d40ac22693de5082140aa9dd42c57
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:28:45
+Message:
+CB-4889 renaming org.apache.cordova.core.globalization to org.apache.cordova.globalization #MsgLength=91
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 8431ac3132ce34ddc43bcfc8b2517041d9b4cd52
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:50:28
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 18abbab66368d5cdb03e9dfacab545391effdd4d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 08:47:13
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.2.2 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|5 1
+Modified: plugin.xml|1 1
+
+Revision: 403ed6d213b1322d7b12b7eb52701fd4966a9118
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:14
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 3ac07b804ffc3c6e14ab015c963f26a3e408d255
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/10/2013 04:23:15
+Message:
+CB-5128: added repo + issue tag to plugin.xml for globalization plugin #MsgLength=71
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: 2d6b2a872916ccbdbfcdc4f2605584a4b0298c9b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 02:57:49
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.2.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: 273cba0908b0041f694ab979874fdc9a7022c47b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:15
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 356324b940138b2f5b9053f4d4b085f3eca1e1b7
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 06:05:33
+Message:
+Added amazon-fireos platform. Change to use amazon-fireos as a platform if the user agent string contains 'cordova-amazon-fireos' #MsgLength=130
+
+
+----
+Modified: plugin.xml|12 0
+Modified: test/cordova-incl.js|2 1
+
+Revision: d04396eef89389a8782706c06e94428d587d714b
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 20/11/2013 18:39:51
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|11 1
+Added: src/ubuntu/globalization.cpp|342 0
+Added: src/ubuntu/globalization.h|93 0
+
+Revision: b098906b8843317a85d2d0b1634bf2dca36c10c0
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 23/11/2013 00:18:04
+Message:
+[ubuntu] add missing file #MsgLength=26
+
+
+----
+Added: www/ubuntu/globalization.js|166 0
+
+
+Revision: a7bf47f3794f1abefd32fff2ab99038c25d8a836
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:30
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.2.4 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: 59d2dc69902a936c34882fa1b39c18b4bbebddbc
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:03
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 43e6d5bc34e1ba578e83a45a846b4abd0e3e7125
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+Add Apache license file #MsgLength=24
+
+
+----
+Added: LICENSE|202 0
+Modified: plugin.xml|1 1
+
+Revision: ccc42e78fd9f12be4742a3c639322d95541c5ee8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/GlobalizationError/globalizationerror.md|0 94
+Deleted: docs/globalization.dateToString.md|0 97
+Deleted: docs/globalization.getCurrencyPattern.md|0 112
+Deleted: docs/globalization.getDateNames.md|0 102
+Deleted: docs/globalization.getDatePattern.md|0 105
+Deleted: docs/globalization.getFirstDayOfWeek.md|0 82
+Deleted: docs/globalization.getLocaleName.md|0 83
+Deleted: docs/globalization.getNumberPattern.md|0 125
+Deleted: docs/globalization.getPreferredLanguage.md|0 83
+Deleted: docs/globalization.isDayLightSavingsTime.md|0 87
+Deleted: docs/globalization.md|0 63
+Deleted: docs/globalization.numberToString.md|0 90
+Deleted: docs/globalization.stringToDate.md|0 114
+Deleted: docs/globalization.stringToNumber.md|0 93
+
+Revision: 1a5a2f0288322ac27a3ca1b24bb417715bdcbb35
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 04:22:49
+Message:
+CB-5658 Add doc.index.md for Globalization plugin #MsgLength=50
+
+
+----
+Modified: README.md|21 4
+Added: doc/index.md|698 0
+
+Revision: ea6a9033dfddddf30db0bf2f76d82120a483a4d5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:02
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: 30a9f0f019322bdf36a772371c7460ba62fdc3e2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.2.5 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: 8b0cc18e8043d4d95734c4b20f1064fa4b2d634a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 340fec4408d2d48b239d2731d42947f76879b56d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:39
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 59
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/globalization.html|0 70
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/.DS_Store|0 0
+Deleted: test/autotest/tests/globalization.tests.js|0 826
+Deleted: test/cordova-incl.js|0 86
+Deleted: test/index.html|0 64
+Deleted: test/main.js|0 162
+Deleted: test/master.css|0 164
+
+Revision: 88d92da2cb0582d82872946005c316014d283cae
+Author: Salvatore Iovene <salvatore@iovene.com>
+Date: 05/12/2013 17:18:59
+Message:
+Add Tizen plugin. #MsgLength=18
+
+
+----
+Modified: plugin.xml|6 0
+Added: src/tizen/GlobalizationProxy.js|470 0
+
+
+Revision: 328c296bd2bc7830614975f10f04715cc328a242
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:59
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.2.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: c3d8061970b26758588b83c22e4c8a8c6ba90cce
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:36:12
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-globalization #MsgLength=73
+
+
+----
+Added: doc/es/index.md|639 0
+
+Revision: 7a7d78d21ff7f577ef818d89f84285ddcc3f3595
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:14:51
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-globalization #MsgLength=73
+
+
+----
+Added: doc/fr/index.md|638 0
+
+Revision: 19d81868b90ba187112b395b9fb64c7a6798913b
+Author: Bas Bosman <sbg.bosman@mindef.nl>
+Date: 27/01/2014 05:28:53
+Message:
+CB-4908 Long.valueOf(0) instead of new Long(0) #MsgLength=182
+
+
+----
+Modified: src/android/Globalization.java|3 3
+
+Revision: 9f0b7a9477370b4eed61eea6ec895f63c9df5ce5
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:59
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.2.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: cd8d2845b08b319075017a67bc2769c4f2dc54b7
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:30
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 6f3cbab37c1a5352f91dfba26821c50150673ada
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+Revision: d1b5e5bdebc954e149feecd745bdf9e4d5e2a668
+Author: James Jong <wjamesjong@gmail.com>
+Date: 13/03/2014 22:01:21
+Message:
+CB-6212 iOS: fix warnings compiled under arm64 64-bit #MsgLength=54
+
+
+----
+Modified: src/ios/CDVGlobalization.m|8 8
+
+Revision: 14f3058a237bd3d1b6b9bf950ffa59a390e2c066
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:18:26
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+
+Revision: 09e39b87a48be8e8bb1e4b271a87d740d2008edc
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 21:50:19
+Message:
+CB-6465: Add license headers to Tizen code #MsgLength=43
+
+
+----
+Modified: src/tizen/GlobalizationProxy.js|21 0
+
+Revision: e61df29abdb94cfa4020d208359f4aa32f585c72
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.2.7 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+
+
+Revision: 068783cf0909bf594ba859b2a31f5daa3afabf2d
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: b02fe3f1b020283936fe313d6ac18ad82573103f
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:29:26
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+
+Revision: 69562f4d726f2ddcca4d82c6cb6a4b02402e2edd
+Author: mbillau <mike.billau@gmail.com>
+Date: 29/04/2014 03:02:39
+Message:
+Android should return BCP47 tag, not localized string #MsgLength=54
+
+
+----
+Modified: doc/index.md|7 3
+Modified: src/android/Globalization.java|51 1
+
+Revision: 693a6f2365533db4843125a62163f65f11b0150d
+Author: mbillau <mike.billau@gmail.com>
+Date: 02/05/2014 00:32:08
+Message:
+getLocale,getLanguage, and docs #MsgLength=32
+
+
+----
+Modified: doc/index.md|120 103
+Modified: src/android/Globalization.java|24 19
+
+Revision: 86bd57c39bee21116ce6ced42254f34be602c9cd
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 16/05/2014 03:34:28
+Message:
+CB-4602 CB-6490 CB-4822 WP Globalization #MsgLength=101
+
+
+----
+Modified: src/wp/Globalization.cs|2 2
+
+Revision: 2ad8451e763896360fc4212fb0051039390e3baf
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 21/05/2014 23:32:41
+Message:
+CB-4602 Added clarification to docs #MsgLength=36
+
+
+----
+Modified: doc/index.md|8 3
+
+
+Revision: f2efc7ef3754a971305633623c3ee1e385301b3e
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 23/05/2014 14:21:23
+Message:
+clean up pull request. this closes #11 #MsgLength=39
+
+
+----
+Modified: src/wp/Globalization.cs|1 1
+
+
+Revision: b0943b57d6c497a1fb78ddf0f5ed365b0e4203d5
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:49:39
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-globalization #MsgLength=73
+
+
+----
+Added: doc/ja/index.md|632 0
+
+Revision: cb3d6d0d9fe02416e41b2ddd0ed97f460fd20461
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:22:14
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-globalization #MsgLength=73
+
+
+----
+Modified: doc/es/index.md|99 88
+Modified: doc/fr/index.md|193 181
+Added: doc/it/index.md|650 0
+Added: doc/ko/index.md|650 0
+Added: doc/pl/index.md|650 0
+Added: doc/zh/index.md|650 0
+
+Revision: 1fe925dde430ff0cea20b9fd1ebdbaca2aaa2106
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:36:39
+Message:
+documentation translation: cordova-plugin-globalization #MsgLength=56
+
+
+----
+Added: doc/de/index.md|650 0
+Modified: doc/ja/index.md|111 93
+
+Revision: 4d93ba03c49f88f9c8c68593f09528c9a5797259
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:29:12
+Message:
+CB-6805 Add license #MsgLength=20
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: fcbcb556e4ea4fbf748ff77859a5250961209396
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:36:12
+Message:
+CB-6127 Spanish and French Translations added. Github close #7 #MsgLength=63
+
+
+----
+Added: doc/de/index.md|650 0
+Added: doc/es/index.md|650 0
+Added: doc/fr/index.md|650 0
+Added: doc/it/index.md|650 0
+Added: doc/ja/index.md|650 0
+Added: doc/ko/index.md|650 0
+Added: doc/pl/index.md|650 0
+Added: doc/zh/index.md|650 0
+
+Revision: 9a4e8c81e575b953a7b64232d36907e074ebd25d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:43
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.2.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: plugin.xml|1 1
+
+Revision: 917019b15af78d76d14db8cdad6a8a9a62e29891
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: b7d0862cf48371959c7413c4244a6822acb0d0a5
+Author: Eric Weiterman <eweiter@us.ibm.com>
+Date: 24/06/2014 05:10:49
+Message:
+CB-4602 geolocation.getPreferredLanguage and geolocation.getLocaleName now return strings with hypen (-) to stay compliant with current standards #MsgLength=146
+
+
+----
+Modified: src/ios/CDVGlobalization.m|5 1
+
+
+Revision: bf3b9d7789e8fa68c392f0c611c94f0b421c1031
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:27:36
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-globalization documentation translation: cordova-plugin-globalization #MsgLength=119
+
+
+----
+Added: doc/ru/index.md|650 0
+
+Revision: bbed836ec5368a135036765eb801c0ead00426d9
+Author: Eric Weiterman <eweiter@us.ibm.com>
+Date: 03/07/2014 23:10:50
+Message:
+CB-4602 ios: Use normalized values for getPreferredLanguage. #MsgLength=72
+
+
+----
+Modified: src/ios/CDVGlobalization.m|14 0
+
+Revision: d405203d86eaacb382f8dcab2a14678d8833da21
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 07/07/2014 17:48:15
+Message:
+Initial implementation #MsgLength=23
+
+
+----
+Modified: doc/index.md|18 0
+Modified: plugin.xml|10 0
+Added: src/firefoxos/GlobalizationProxy.js|248 0
+Added: www/firefoxos/l10n.js|1594 0
+Added: www/firefoxos/l10n_date.js|179 0
+Added: www/firefoxos/locales/date.ar.properties|209 0
+Added: www/firefoxos/locales/date.as.properties|209 0
+Added: www/firefoxos/locales/date.ast.properties|156 0
+Added: www/firefoxos/locales/date.bg.properties|205 0
+Added: www/firefoxos/locales/date.bn-BD.properties|209 0
+Added: www/firefoxos/locales/date.bn-IN.properties|209 0
+Added: www/firefoxos/locales/date.ca.properties|209 0
+Added: www/firefoxos/locales/date.cs.properties|208 0
+Added: www/firefoxos/locales/date.cy.properties|209 0
+Added: www/firefoxos/locales/date.da.properties|209 0
+Added: www/firefoxos/locales/date.de.properties|242 0
+Added: www/firefoxos/locales/date.el.properties|209 0
+Added: www/firefoxos/locales/date.en-GB.properties|205 0
+Added: www/firefoxos/locales/date.en-US.properties|209 0
+Added: www/firefoxos/locales/date.eo.properties|209 0
+Added: www/firefoxos/locales/date.es.properties|209 0
+Added: www/firefoxos/locales/date.et.properties|209 0
+Added: www/firefoxos/locales/date.eu.properties|209 0
+Added: www/firefoxos/locales/date.ff.properties|209 0
+Added: www/firefoxos/locales/date.fr.properties|208 0
+Added: www/firefoxos/locales/date.fy-NL.properties|209 0
+Added: www/firefoxos/locales/date.ga-IE.properties|209 0
+Added: www/firefoxos/locales/date.gd.properties|209 0
+Added: www/firefoxos/locales/date.gl.properties|209 0
+Added: www/firefoxos/locales/date.gu.properties|188 0
+Added: www/firefoxos/locales/date.he.properties|92 0
+Added: www/firefoxos/locales/date.hi-IN.properties|209 0
+Added: www/firefoxos/locales/date.hr.properties|207 0
+Added: www/firefoxos/locales/date.hu.properties|209 0
+Added: www/firefoxos/locales/date.id.properties|209 0
+Added: www/firefoxos/locales/date.ini|209 0
+Added: www/firefoxos/locales/date.it.properties|161 0
+Added: www/firefoxos/locales/date.ja.properties|209 0
+Added: www/firefoxos/locales/date.km.properties|209 0
+Added: www/firefoxos/locales/date.kn.properties|209 0
+Added: www/firefoxos/locales/date.ko.properties|208 0
+Added: www/firefoxos/locales/date.lij.properties|132 0
+Added: www/firefoxos/locales/date.lt.properties|209 0
+Added: www/firefoxos/locales/date.mai.properties|209 0
+Added: www/firefoxos/locales/date.mk.properties|210 0
+Added: www/firefoxos/locales/date.ml.properties|209 0
+Added: www/firefoxos/locales/date.mr.properties|209 0
+Added: www/firefoxos/locales/date.ms.properties|209 0
+Added: www/firefoxos/locales/date.nb-NO.properties|209 0
+Added: www/firefoxos/locales/date.ne-NP.properties|209 0
+Added: www/firefoxos/locales/date.nl.properties|209 0
+Added: www/firefoxos/locales/date.or.properties|209 0
+Added: www/firefoxos/locales/date.pa.properties|209 0
+Added: www/firefoxos/locales/date.pl.properties|188 0
+Added: www/firefoxos/locales/date.pt-BR.properties|205 0
+Added: www/firefoxos/locales/date.ro.properties|209 0
+Added: www/firefoxos/locales/date.ru.properties|161 0
+Added: www/firefoxos/locales/date.si.properties|209 0
+Added: www/firefoxos/locales/date.sk.properties|208 0
+Added: www/firefoxos/locales/date.sl.properties|209 0
+Added: www/firefoxos/locales/date.son.properties|209 0
+Added: www/firefoxos/locales/date.sq.properties|209 0
+Added: www/firefoxos/locales/date.sr-Cyrl.properties|209 0
+Added: www/firefoxos/locales/date.sr-Latn.properties|209 0
+Added: www/firefoxos/locales/date.sv-SE.properties|209 0
+Added: www/firefoxos/locales/date.sw.properties|209 0
+Added: www/firefoxos/locales/date.ta.properties|209 0
+Added: www/firefoxos/locales/date.te.properties|209 0
+Added: www/firefoxos/locales/date.th.properties|51 0
+Added: www/firefoxos/locales/date.tr.properties|209 0
+Added: www/firefoxos/locales/date.ur.properties|209 0
+Added: www/firefoxos/locales/date.vi.properties|207 0
+Added: www/firefoxos/locales/date.xh.properties|207 0
+Added: www/firefoxos/locales/date.zh-CN.properties|209 0
+Added: www/firefoxos/locales/date.zh-TW.properties|210 0
+
+
+Revision: 2155a3ad3b2eaa756424f43b49ca9e72262cf966
+Author: Lianghui Chen <liachen@blackberry.com>
+Date: 11/07/2014 23:16:04
+Message:
+[BlackBerry10] Implement Globalization for BB10 #MsgLength=129
+
+
+----
+Modified: doc/index.md|13 0
+Modified: plugin.xml|7 0
+Added: src/blackberry10/index.js|634 0
+Added: src/blackberry10/native/.cproject|510 0
+Added: src/blackberry10/native/.project|33 0
+Added: src/blackberry10/native/device/libGlobalization.so|0 0
+Added: src/blackberry10/native/public/json/autolink.h|24 0
+Added: src/blackberry10/native/public/json/config.h|48 0
+Added: src/blackberry10/native/public/json/features.h|47 0
+Added: src/blackberry10/native/public/json/forwards.h|44 0
+Added: src/blackberry10/native/public/json/json.h|15 0
+Added: src/blackberry10/native/public/json/reader.h|201 0
+Added: src/blackberry10/native/public/json/value.h|1074 0
+Added: src/blackberry10/native/public/json/writer.h|179 0
+Added: src/blackberry10/native/public/json_batchallocator.h|130 0
+Added: src/blackberry10/native/public/json_internalarray.inl|453 0
+Added: src/blackberry10/native/public/json_internalmap.inl|607 0
+Added: src/blackberry10/native/public/json_reader.cpp|897 0
+Added: src/blackberry10/native/public/json_value.cpp|1731 0
+Added: src/blackberry10/native/public/json_valueiterator.inl|297 0
+Added: src/blackberry10/native/public/json_writer.cpp|834 0
+Added: src/blackberry10/native/public/plugin.cpp|337 0
+Added: src/blackberry10/native/public/plugin.h|86 0
+Added: src/blackberry10/native/public/tokenizer.cpp|222 0
+Added: src/blackberry10/native/public/tokenizer.h|55 0
+Added: src/blackberry10/native/simulator/libGlobalization.so|0 0
+Added: src/blackberry10/native/src/globalization_js.cpp|163 0
+Added: src/blackberry10/native/src/globalization_js.hpp|39 0
+Added: src/blackberry10/native/src/globalization_ndk.cpp|1173 0
+Added: src/blackberry10/native/src/globalization_ndk.hpp|61 0
+
+Revision: ca86296ce45806548c4fb7783f2b1cfbb3ff0fac
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 01/08/2014 21:38:04
+Message:
+Update headers and NOTICE file #MsgLength=31
+
+
+----
+Modified: NOTICE|9 0
+Modified: src/blackberry10/native/public/json/autolink.h|22 0
+Modified: src/blackberry10/native/public/json/config.h|22 0
+Modified: src/blackberry10/native/public/json/features.h|22 0
+Modified: src/blackberry10/native/public/json/forwards.h|22 0
+Modified: src/blackberry10/native/public/json/json.h|22 0
+Modified: src/blackberry10/native/public/json/reader.h|22 0
+Modified: src/blackberry10/native/public/json/value.h|22 0
+Modified: src/blackberry10/native/public/json/writer.h|22 0
+Modified: src/blackberry10/native/public/json_batchallocator.h|20 1
+Modified: src/blackberry10/native/public/json_internalarray.inl|21 0
+Modified: src/blackberry10/native/public/json_internalmap.inl|27 0
+Modified: src/blackberry10/native/public/json_reader.cpp|21 0
+Modified: src/blackberry10/native/public/json_value.cpp|22 0
+Modified: src/blackberry10/native/public/json_valueiterator.inl|21 0
+Modified: src/blackberry10/native/public/json_writer.cpp|21 0
+
+Revision: eba444cc1de9ffaa1fbe3338cc97d5fed4784afd
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 02/08/2014 04:23:56
+Message:
+CB-7249cordova-plugin-globalization documentation translation: cordova-plugin-globalization #MsgLength=92
+
+
+----
+Modified: doc/de/index.md|30 0
+Modified: doc/es/index.md|30 0
+Modified: doc/fr/index.md|30 0
+Modified: doc/it/index.md|30 0
+Modified: doc/ja/index.md|30 0
+Modified: doc/ko/index.md|30 0
+Modified: doc/pl/index.md|30 0
+Modified: doc/ru/index.md|30 0
+Modified: doc/zh/index.md|58 28
+
+Revision: 8d94eb956095baeb275fecc151a64c6c85cd613e
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 05/08/2014 22:56:27
+Message:
+The right Apache License 2.0 added #MsgLength=35
+
+
+----
+Modified: www/firefoxos/l10n.js|22 0
+Modified: www/firefoxos/l10n_date.js|21 2
+Modified: www/firefoxos/locales/date.ar.properties|17 0
+Modified: www/firefoxos/locales/date.as.properties|17 0
+Modified: www/firefoxos/locales/date.ast.properties|17 0
+Modified: www/firefoxos/locales/date.bg.properties|17 0
+Modified: www/firefoxos/locales/date.bn-BD.properties|17 0
+Modified: www/firefoxos/locales/date.bn-IN.properties|17 0
+Modified: www/firefoxos/locales/date.ca.properties|17 0
+Modified: www/firefoxos/locales/date.cs.properties|17 0
+Modified: www/firefoxos/locales/date.cy.properties|17 0
+Modified: www/firefoxos/locales/date.da.properties|17 0
+Modified: www/firefoxos/locales/date.de.properties|17 0
+Modified: www/firefoxos/locales/date.el.properties|17 0
+Modified: www/firefoxos/locales/date.en-GB.properties|17 0
+Modified: www/firefoxos/locales/date.en-US.properties|17 0
+Modified: www/firefoxos/locales/date.eo.properties|17 0
+Modified: www/firefoxos/locales/date.es.properties|17 0
+Modified: www/firefoxos/locales/date.et.properties|17 0
+Modified: www/firefoxos/locales/date.eu.properties|17 0
+Modified: www/firefoxos/locales/date.ff.properties|17 0
+Modified: www/firefoxos/locales/date.fr.properties|17 0
+Modified: www/firefoxos/locales/date.fy-NL.properties|17 0
+Modified: www/firefoxos/locales/date.ga-IE.properties|17 0
+Modified: www/firefoxos/locales/date.gd.properties|17 0
+Modified: www/firefoxos/locales/date.gl.properties|17 0
+Modified: www/firefoxos/locales/date.gu.properties|17 0
+Modified: www/firefoxos/locales/date.he.properties|17 0
+Modified: www/firefoxos/locales/date.hi-IN.properties|17 0
+Modified: www/firefoxos/locales/date.hr.properties|17 0
+Modified: www/firefoxos/locales/date.hu.properties|17 0
+Modified: www/firefoxos/locales/date.id.properties|17 0
+Modified: www/firefoxos/locales/date.ini|18 0
+Modified: www/firefoxos/locales/date.it.properties|17 0
+Modified: www/firefoxos/locales/date.ja.properties|17 0
+Modified: www/firefoxos/locales/date.km.properties|17 0
+Modified: www/firefoxos/locales/date.kn.properties|17 0
+Modified: www/firefoxos/locales/date.ko.properties|17 0
+Modified: www/firefoxos/locales/date.lij.properties|17 0
+Modified: www/firefoxos/locales/date.lt.properties|17 0
+Modified: www/firefoxos/locales/date.mai.properties|17 0
+Modified: www/firefoxos/locales/date.mk.properties|17 0
+Modified: www/firefoxos/locales/date.ml.properties|17 0
+Modified: www/firefoxos/locales/date.mr.properties|17 0
+Modified: www/firefoxos/locales/date.ms.properties|17 0
+Modified: www/firefoxos/locales/date.nb-NO.properties|17 0
+Modified: www/firefoxos/locales/date.ne-NP.properties|17 0
+Modified: www/firefoxos/locales/date.nl.properties|17 0
+Modified: www/firefoxos/locales/date.or.properties|17 0
+Modified: www/firefoxos/locales/date.pa.properties|17 0
+Modified: www/firefoxos/locales/date.pl.properties|17 0
+Modified: www/firefoxos/locales/date.pt-BR.properties|17 0
+Modified: www/firefoxos/locales/date.ro.properties|17 0
+Modified: www/firefoxos/locales/date.ru.properties|17 0
+Modified: www/firefoxos/locales/date.si.properties|17 0
+Modified: www/firefoxos/locales/date.sk.properties|17 0
+Modified: www/firefoxos/locales/date.sl.properties|17 0
+Modified: www/firefoxos/locales/date.son.properties|17 0
+Modified: www/firefoxos/locales/date.sq.properties|17 0
+Modified: www/firefoxos/locales/date.sr-Cyrl.properties|17 0
+Modified: www/firefoxos/locales/date.sr-Latn.properties|17 0
+Modified: www/firefoxos/locales/date.sv-SE.properties|17 0
+Modified: www/firefoxos/locales/date.sw.properties|17 0
+Modified: www/firefoxos/locales/date.ta.properties|17 0
+Modified: www/firefoxos/locales/date.te.properties|17 0
+Modified: www/firefoxos/locales/date.th.properties|17 0
+Modified: www/firefoxos/locales/date.tr.properties|17 0
+Modified: www/firefoxos/locales/date.ur.properties|17 0
+Modified: www/firefoxos/locales/date.vi.properties|17 0
+Modified: www/firefoxos/locales/date.xh.properties|17 0
+Modified: www/firefoxos/locales/date.zh-CN.properties|17 0
+Modified: www/firefoxos/locales/date.zh-TW.properties|17 0
+
+
+Revision: bc3a4053efab47a81e887374a7019df769a804dd
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:23
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.3.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: plugin.xml|1 1
+
+Revision: 7d27c45c22e9c2e5c06b6f01f1a54a87b5604c0e
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:28
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 9d9f5af730c55137db7e63a08293cf4761b57ac8
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 02/07/2014 23:16:02
+Message:
+CB-6962 Ported globalization tests to framework #MsgLength=160
+
+
+----
+Added: test/tests.js|594 0
+
+Revision: 0675cd15c065326c42d43f575c5c65ba9e29cdf6
+Author: Eric Weiterman <eweiter@us.ibm.com>
+Date: 03/07/2014 03:35:40
+Message:
+Added test to complete CB-7064, added tests that check for W3C compliance in language tags generated from PreferredLanguage and GetLocale methods #MsgLength=146
+
+
+----
+Modified: test/tests.js|25 2
+
+
+Revision: 2d0e49220a37fbf801e3462232c4a0ae86c5e63b
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 30/07/2014 02:58:41
+Message:
+Clean-up: removed duplicate code #MsgLength=33
+
+
+----
+Modified: test/tests.js|135 258
+
+Revision: 8d40d5afafdcc73ec0c8cafa08ce280d59f0cd2b
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 02/08/2014 04:34:40
+Message:
+Renamed test dir, added nested plugin.xml #MsgLength=42
+
+
+----
+Added: tests/plugin.xml|29 0
+Renamed: tests/tests.js [from test/tests.js]|0 0
+
+
+Revision: bb87e56af2dee63e2b6f07c601fe41c7ee877bea
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 15/08/2014 04:12:27
+Message:
+CB-7233 [BlackBerry10] Globalization is now supported #MsgLength=54
+
+
+----
+Modified: tests/tests.js|0 5
+
+Revision: 01bb7222203f45bb3bd2f2e4d268880b3c64ad68
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 12/09/2014 18:16:32
+Message:
+Hold the information if L10n was ready before. #MsgLength=47
+
+
+----
+Modified: src/firefoxos/GlobalizationProxy.js|18 5
+
+
+Revision: c4e3eda7db65e3018c40fe103622e5b764139e02
+Author: Lianghui Chen <liachen@blackberry.com>
+Date: 11/09/2014 02:36:41
+Message:
+CB-7548 [BlackBerry10] Allow any numeric type as date in dateToString method. #MsgLength=78
+
+
+----
+Modified: src/blackberry10/native/device/libGlobalization.so|0 0
+Modified: src/blackberry10/native/simulator/libGlobalization.so|0 0
+Modified: src/blackberry10/native/src/globalization_ndk.cpp|2 2
+
+Revision: e79b1486346f1d1a9dc7f5a4d3ea587d8ec8737f
+Author: Lianghui Chen <liachen@blackberry.com>
+Date: 13/09/2014 02:38:24
+Message:
+CB-6490 [BlackBerry10] Use hyphen instead of underscore in getLocaleName(). #MsgLength=76
+
+
+----
+Modified: src/blackberry10/native/device/libGlobalization.so|0 0
+Modified: src/blackberry10/native/simulator/libGlobalization.so|0 0
+Modified: src/blackberry10/native/src/globalization_ndk.cpp|9 3
+
+Revision: 6c4798d263b3abc20bc07bbe24a3b907241555fe
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:42
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.3.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|10 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 830d1b09785b5b75f2c28f4d8d80f2ac3795b8cb
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:02
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 76e1061c467a7b9cb958c71a06d4b3874c6e5ca7
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:16
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: d497d35c2361acd7b05b5950cc371625b23cad9d
+Author: Lianghui Chen <liachen@blackberry.com>
+Date: 16/09/2014 04:48:09
+Message:
+CB-7548 [BlackBerry10] Re-implement getPreferredLanguage() and getLocaleName(). #MsgLength=304
+
+
+----
+Modified: src/blackberry10/native/device/libGlobalization.so|0 0
+Modified: src/blackberry10/native/simulator/libGlobalization.so|0 0
+Modified: src/blackberry10/native/src/globalization_ndk.cpp|67 28
+
+Revision: 648589099980036e19335b78e0a4993d022ed1e3
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 07:10:12
+Message:
+ Updated version and RELEASENOTES.md for release 0.3.2 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8541c5bb0e440db7b52def8201876a519aa36457
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 08:09:46
+Message:
+ Incremented plugin version. #MsgLength=29
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 73be99052fb7df1ea4bff533567ee41b86c19d4c
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:12:25
+Message:
+CB-7700 cordova-plugin-globalization documentation translation: cordova-plugin-globalization #MsgLength=93
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|96 98
+Modified: doc/pl/index.md|29 29
+Modified: doc/ru/index.md|28 28
+
+
+Revision: e8baaaa8db58973c74ab44397a5c7e85ca8967dc
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 08/10/2014 15:45:41
+Message:
+Errors in weekdays fixed * getDateNames should return (Sun - Sat) in all locales * getFirstDayOfWeek should return 1 for Sunday and 2 for Monday * bunch of jsHint fixes #MsgLength=169
+
+
+----
+Modified: src/firefoxos/GlobalizationProxy.js|18 18
+
+
+Revision: 72d5b2a3d8705fc0d5136b8285b87c5a1551259b
+Author: Martin Gonzalez <martin.c.glez.glez@gmail.com>
+Date: 11/10/2014 06:01:40
+Message:
+[CB-7766] Add quirk note about android dateToString #MsgLength=180
+
+
+----
+Modified: doc/index.md|8 0
+
+Revision: 40ab77499c231734818aa18882c837b71e1411d7
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:24:11
+Message:
+CB-7977 Mention deviceready in plugin docs #MsgLength=43
+
+
+----
+Modified: doc/index.md|9 0
+
+Revision: 382010bc21fca40a2f3709ad133102ad81503663
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 20/10/2014 23:38:34
+Message:
+CB-7700 cordova-plugin-globalization documentation translation: cordova-plugin-globalization #MsgLength=93
+
+
+----
+Modified: doc/es/index.md|34 34
+Modified: doc/ja/index.md|2 2
+Modified: doc/pl/index.md|16 16
+Modified: doc/ru/index.md|15 15
+Modified: doc/zh/index.md|39 39
+
+
+Revision: 65db106599ebf8860c0af5c143256889793b3ecb
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.3.3 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b717bc4054e2df44477a3beefc9bd9f3e875fac2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:50
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 46e575d8f2c32e422ddbb6c8012f281f4ade19dd
+Author: daserge <daserge@yandex.ru>
+Date: 22/11/2014 19:09:25
+Message:
+CB-7972 Add cordova-plugin-globalization support for Windows platform #MsgLength=236
+
+
+----
+Modified: doc/index.md|84 2
+Modified: plugin.xml|10 0
+Added: src/windows/GlobalizationProxy.js|124 0
+Added: src/windows/GlobalizationProxy.winmd|0 0
+Added: src/windows/GlobalizationProxy/GlobalizationProxy.sln|38 0
+Added: src/windows/GlobalizationProxy/GlobalizationProxy/.gitignore|3 0
+Added: src/windows/GlobalizationProxy/GlobalizationProxy/Cordova/JSON/JsonHelper.cs|87 0
+Added: src/windows/GlobalizationProxy/GlobalizationProxy/Globalization/GlobalizationApiTypes.cs|429 0
+Added: src/windows/GlobalizationProxy/GlobalizationProxy/Globalization/GlobalizationImpl.cs|612 0
+Added: src/windows/GlobalizationProxy/GlobalizationProxy/Globalization/SettableCultureInfo.cs|36 0
+Added: src/windows/GlobalizationProxy/GlobalizationProxy/GlobalizationProxy.cs|107 0
+Added: src/windows/GlobalizationProxy/GlobalizationProxy/GlobalizationProxy.csproj|130 0
+Added: src/windows/GlobalizationProxy/GlobalizationProxy/Properties/AssemblyInfo.cs|29 0
+Modified: src/wp/Globalization.cs|49 1092
+
+Revision: 9d60ee8ec91216deafb44b3678a11fbb7c2ec7b7
+Author: daserge <daserge@yandex.ru>
+Date: 06/12/2014 04:04:52
+Message:
+CB-7972 Add cordova-plugin-globalization support for Windows platform #MsgLength=309
+
+
+----
+Modified: doc/index.md|24 4
+Modified: src/windows/GlobalizationProxy.js|200 30
+Modified: src/windows/GlobalizationProxy.winmd|0 0
+Modified: src/windows/GlobalizationProxy/GlobalizationProxy/Globalization/GlobalizationImpl.cs|4 4
+Modified: tests/tests.js|7 3
+
+
+Revision: 732285cc53434ac5fd2942ccdcc3d07cf6cf781f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/01/2015 22:49:20
+Message:
+CB-8351 Use argumentForIndex rather than NSArray extension #MsgLength=59
+
+
+----
+Modified: src/ios/CDVGlobalization.m|9 9
+
+Revision: 6b1e88d5342131d77bb379e6040469b68d2f9a82
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.3.4 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 87b3ae4d4f55c6bb8ee077560955c4c1182de39d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:02
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 73febdf4e004f160dc53dfc56f7b3b2d0f950abb
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 11/02/2015 20:29:40
+Message:
+CB-8394 pended unsupported tests for windows and wp8 #MsgLength=71
+
+
+----
+Modified: tests/tests.js|28 0
+
+Revision: f7666b46503328090a56d3ca52c71d7db6e29d74
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 16:32:56
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|41 0
+
+Revision: 29db1e4bcd9bb7dbfccd21d101c66e987d4193ba
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:51:20
+Message:
+CB-8438 cordova-plugin-globalization documentation translation: cordova-plugin-globalization #MsgLength=93
+
+
+----
+Modified: doc/de/index.md|219 106
+Modified: doc/es/index.md|207 173
+Modified: doc/fr/index.md|174 142
+Modified: doc/it/index.md|217 104
+Modified: doc/ja/index.md|231 118
+Modified: doc/ko/index.md|217 104
+Modified: doc/pl/index.md|230 117
+Modified: doc/zh/index.md|252 138
+
+Revision: 0a538d7b935fc32081994550992e3b032ba62375
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 09:14:16
+Message:
+CB-8569 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|13 0
+Modified: README.md|2 0
+
+Revision: a200b1bfb9a19059f1bcf111322146373eba969c
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 13/03/2015 23:14:35
+Message:
+CB-8659: ios: 4.0.x Compatibility: Remove use of initWebView method #MsgLength=68
+
+
+----
+Modified: src/ios/CDVGlobalization.m|2 6
+
+Revision: 202af0b9aefb7164fed4126e64aa36c9f0cafbc4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:29:14
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|854 2
+Deleted: doc/index.md|0 874
+
+Revision: e268328fd454080aa0aee984304db29555596bb9
+Author: daserge <daserge@yandex.ru>
+Date: 15/01/2015 18:27:20
+Message:
+CB-7960 Add cordova-plugin-globalization support for browser platform #MsgLength=119
+
+
+----
+Modified: README.md|57 0
+Modified: plugin.xml|10 0
+Added: src/browser/GlobalizationProxy.js|301 0
+Modified: tests/tests.js|46 12
+Added: www/browser/moment.js|9394 0
+
+Revision: 5feccc1022e43218f433fd70a6cb77457e9e71f7
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 19/03/2015 23:18:01
+Message:
+separate section in plugin.xml and docs for Windows8 platform #MsgLength=155
+
+
+----
+Modified: README.md|14 1
+Modified: plugin.xml|8 0
+
+Revision: 2f9697f06a817e8ddd22ac8719fa15ce3fecdd12
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:33:42
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 572ea56d2ed11c6707db4230b5c53f18b03fb0f2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:32
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: 147b674d186f0a9030bd1d57ad457d812ed57e66
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:06:01
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: 8344270c6f713b65be70b6f2455355b807611c14
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 07:04:41
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 05c36d605db557d5caa607a8474ff6db3c241014
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 07:12:58
+Message:
+CB-8683 updated tizen and browser specific references of old id to new id #MsgLength=74
+
+
+----
+Modified: src/browser/GlobalizationProxy.js|1 1
+Modified: src/tizen/GlobalizationProxy.js|1 1
+
+Revision: a8ae485252c486500eb297cde2413b9221097ca7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 08:00:16
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: f5fdff645474ae78f1b9d9ef097eec9897f76cb8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:38
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|16 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 478af862d06e209ab9bf099f5c865b10667370ab
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:47
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c7c33bd4cf5e7f51286bad51fa487e21e77037a1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:31:07
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: cc9c7c21139d7bdb9a485d7aa3b39f6df662630d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: d06d0fbe6f7bcf05d36e0c675fb95b76d1402fb9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:22
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 61b58bc860218eba08a4b3c6bde4d2cee8a73af1
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 02/06/2015 23:53:19
+Message:
+fix npm md issue #MsgLength=17
+
+
+----
+Modified: README.md|17 17
+
+Revision: 524601a6e5821b8c0083adfe27e9feb21af01a55
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:41:31
+Message:
+CB-9128 cordova-plugin-globalization documentation translation: cordova-plugin-globalization #MsgLength=93
+
+
+----
+Added: doc/de/README.md|862 0
+Added: doc/es/README.md|844 0
+Added: doc/fr/README.md|781 0
+Added: doc/it/README.md|862 0
+Added: doc/ja/README.md|862 0
+Added: doc/ko/README.md|862 0
+Added: doc/pl/README.md|862 0
+Added: doc/zh/README.md|862 0
+
+Revision: 57d6c9eec4d7b4dcbffa102a524121050113d671
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 17/06/2015 12:30:59
+Message:
+Adding .ratignore file. #MsgLength=24
+
+
+----
+Added: .ratignore|2 0
+
+Revision: b0b8fcfbd4549ad0b1d47ac9a222fba91cffa70b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 02:00:50
+Message:
+added license headers #MsgLength=22
+
+
+----
+Modified: src/windows/GlobalizationProxy/GlobalizationProxy.sln|19 2
+Modified: src/windows/GlobalizationProxy/GlobalizationProxy/GlobalizationProxy.csproj|19 1
+Modified: src/windows/GlobalizationProxy/GlobalizationProxy/Properties/AssemblyInfo.cs|16 2
+
+Revision: 5c713ab1ef4a34c4f9a97bf12c0f1519972585cc
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 02:01:56
+Message:
+added moment.js to ratignore #MsgLength=29
+
+
+----
+Modified: .ratignore|1 0
+
+Revision: 57a1905f6c5ae84fbcf7054e2627b1dc0ce1712c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:03
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.0.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: cd9d52355adb0c9514f14f5c2e41c95f4757ddaa
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 5eec555739c0d5d9f42d44bcca164dab6da42350
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:35
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 03d034c1bab7b853e4d4477ecf9960c6476cee78
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 06:12:26
+Message:
+remove travis-ci integration #MsgLength=29
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 2
+
+Revision: fe37ed67111af805be1f590ca087ff5e491ecb91
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 10/07/2015 03:54:28
+Message:
+Fixing license headers and adding moment.js to .ratignore. #MsgLength=59
+
+
+----
+Modified: .ratignore|1 1
+Modified: src/blackberry10/native/.cproject|17 0
+Modified: src/blackberry10/native/.project|18 0
+
+Revision: ca37f40acd3a08eae8fd9f3613a2eabee3303ebb
+Author: Rob Paveza <Rob.Paveza@microsoft.com>
+Date: 11/08/2015 01:24:05
+Message:
+CB-9476: Mobilespec crash on startup when running on Windows 10. #MsgLength=205
+
+
+----
+Modified: src/windows/GlobalizationProxy.js|1 1
+
+Revision: 1e6f24ee0b8ea7b6be593fb1c4ef5e2beb134698
+Author: Edna Morales <edna592@gmail.com>
+Date: 25/07/2015 04:45:26
+Message:
+CB-9409 check that localeIdentifier has underscore #MsgLength=141
+
+
+----
+Modified: src/ios/CDVGlobalization.m|11 8
+
+Revision: 9fe25d36b24e688126a3d9e308b473489cce5302
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:29:11
+Message:
+add JIRA issue tracker link. This closes #42 #MsgLength=45
+
+
+----
+Modified: README.md|17 16
+
+Revision: 965cec0445d675d1cbed274b21c44ac1f8f116d0
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 11/09/2015 05:43:38
+Message:
+Closing stale pull request: close #42 #MsgLength=38
+
+
+----
+
+Revision: a234598ed66df00cfd643a49adffd1fbd5c8b65e
+Author: Albert <aljullu@gmail.com>
+Date: 28/01/2015 22:29:16
+Message:
+Fix typo. This closes #34 #MsgLength=26
+
+
+----
+Modified: README.md|1 1
+
+Revision: bb97c653a8fdeaed6fd0782354fb64cdd7fed7db
+Author: José Pereira <onaips@gmail.com>
+Date: 18/12/2014 12:59:43
+Message:
+Remove annoying log. This closes #32 #MsgLength=37
+
+
+----
+Modified: src/ios/CDVGlobalization.m|0 1
+
+Revision: 4fd97c1baa6228c9ed4e709ba58a7c87e8da342c
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 11/09/2015 06:02:47
+Message:
+Closing stale pull request: close #28 #MsgLength=38
+
+
+----
+
+Revision: 6f018a9291081cd7ce577786ed93203309f3fd0c
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 11/09/2015 08:55:57
+Message:
+Closing stale pull request: close #21 #MsgLength=38
+
+
+----
+
+Revision: 11be63ba210a6dc6b5893bdfc52dd34ddbda6637
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: 7fa607b28bd97898c326bda1a12c988747fedd1c
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:50
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: eda907fcf181f6027597ee0d4ebac7c977d7d4d7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|71 71
+
+Revision: 33dc5d45abc64e1c85a132d3a24f58e1f4166428
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:10
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: 925f821eb6577bd136be1fe9b43c7e2ebfe8b7df
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:05
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 1.0.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4e6174a29907bef4bc2e6b4de2ee748e436334d5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|46 46
+
+Revision: 6076f3559a91cc67b31b6d9ea29a4bc96d2b956a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 736ff7d148cc5e15160b6b469b606f85cfe15397
+Author: t1st3 <contact@tiste.org>
+Date: 08/02/2016 01:30:10
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=259
+
+
+----
+Modified: package.json|1 1
+
+Revision: 35b52aed9332acdbd88ac22c23155d4c8fa38d95
+Author: Edna Morales <edna592@gmail.com>
+Date: 13/02/2016 07:15:14
+Message:
+CB-10605 fix deprecation warnings #MsgLength=51
+
+
+----
+Modified: src/ios/CDVGlobalization.m|6 6
+
+Revision: 05218c9fa0ff69b4088048b731f270923dce6bed
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 02/03/2016 07:11:24
+Message:
+Minor changes to readme #MsgLength=24
+
+
+----
+Modified: README.md|9 22
+
+Revision: 900ea73f364af926e4ecb3f604a40572e5f1e300
+Author: daserge <v-seshak@microsoft.com>
+Date: 29/02/2016 20:46:06
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Modified: .gitignore|1 1
+Added: .jshintignore|1 0
+Added: .jshintrc|16 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/blackberry10/index.js|2 0
+Modified: src/browser/GlobalizationProxy.js|13 6
+Modified: src/tizen/GlobalizationProxy.js|3 2
+Modified: src/windows/GlobalizationProxy.js|6 4
+Modified: tests/tests.js|6 3
+Modified: www/firefoxos/l10n.js|1 0
+Modified: www/firefoxos/l10n_date.js|2 3
+Modified: www/globalization.js|1 2
+Modified: www/ubuntu/globalization.js|4 1
+
+Revision: 5d28a26a9a9166d20052804faac495133de99bb5
+Author: dubeejw <jwdubee@us.ibm.com>
+Date: 05/03/2016 00:50:35
+Message:
+CB-10792 -Cannot install cordova-plugin-globalization with cordova-windows on Ubuntu #MsgLength=144
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 37c3e61e122ea83e0d7bf40df8997eb8b9c27777
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 10/03/2016 03:28:26
+Message:
+CB-10820 Updated version and RELEASENOTES.md for release 1.0.3 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3fe595c36e018ab71def031fbaabfad692825740
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 10/03/2016 11:34:18
+Message:
+CB-10820 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 528a2f165a891552e160186bc6a30b0a6f50be58
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 11/03/2016 02:54:10
+Message:
+clean up release notes #MsgLength=23
+
+
+----
+Modified: RELEASENOTES.md|3 3
+
+Revision: e736047a0f3548ce344a22088e305bced2468443
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:51
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: 0ea5ca9cdd03fb339cb508699a780c4ac1d66307
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:53:59
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: 3b80fe56a01a519646070f548ff3f6cb737aea56
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 09/06/2016 22:04:00
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|3 1
+
+Revision: 93a8a9bbd56ea17a050c863fe903f30054dfb155
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 21:52:06
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=397
+
+
+----
+Modified: package.json|7 0
+
+Revision: 6042184e3c39449b07c80e3f6487360589e88e95
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:54
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 1.0.4 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1cc35b707c824cdeb19470cdf529b2131bdd47a7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4754a887f99a12d01c16329acee49077f7a7f61c
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:32:31
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=101
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: 594651d27275dc2013f86e0ccc7e78a9a6d6f654
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:45
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 1.0.5 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|151 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e98a860f4bd1f89e7750b40ee50d57ab4f049a98
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:07
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ba053c482d4f2aeccd5d7d21cb40342960b7e276
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 18:35:38
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: 3b49c2de5f0c57b867beddc470ddfd4f3321b0c8
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:50:13
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-globalization #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|1 147
+
+Revision: 83f6cce89128cc569985681a05b92e1ef516fd0c
+Author: Simon Constans <simonc@linux.com>
+Date: 04/11/2016 17:50:06
+Message:
+CB-11154: (Android, iOS) Add IANA timezone #MsgLength=61
+
+
+----
+Modified: README.md|2 0
+Modified: src/android/Globalization.java|1 0
+Modified: src/ios/CDVGlobalization.m|2 1
+Modified: tests/tests.js|16 12
+
+Revision: 24a7eb4faa363a82d5f73c8441dd266921d44627
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/01/2017 23:16:52
+Message:
+CB-11154 (Windows) Return IANA timezone as an empty string instead of undefined #MsgLength=80
+
+
+----
+Modified: README.md|2 0
+Modified: src/windows/GlobalizationProxy.winmd|0 0
+Modified: src/windows/GlobalizationProxy/GlobalizationProxy/Globalization/GlobalizationApiTypes.cs|9 1
+Modified: src/windows/GlobalizationProxy/GlobalizationProxy/Globalization/GlobalizationImpl.cs|1 1
+Modified: tests/tests.js|6 3
+
+Revision: a3a70e2788df6aa8d2c9107e720de4b3d849a66a
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:31:56
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 40e89b1ca164d4b3cf9eb3aee178ef8fda3102fc
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 21:08:28
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=68
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|260 0
+
+Revision: b0efb4edac9a969720e2332ca9bcf66f2ae64da3
+Author: Liam Quinn <lquinn@blackberry.com>
+Date: 18/10/2016 01:25:42
+Message:
+CB-12029 blackberry10: Remove logging code that causes crashes on BB10 #MsgLength=264
+
+
+----
+Modified: src/blackberry10/native/device/libGlobalization.so|0 0
+Modified: src/blackberry10/native/simulator/libGlobalization.so|0 0
+Modified: src/blackberry10/native/src/globalization_js.cpp|0 47
+Modified: src/blackberry10/native/src/globalization_js.hpp|0 2
+Modified: src/blackberry10/native/src/globalization_ndk.cpp|0 123
+
+Revision: f334dcb0e05dc61389fe8df619ff2d914d2cec46
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:26
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 1.0.6 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package.json|1 1
+Modified: plugin.xml|102 154
+Modified: tests/plugin.xml|5 28
+
+Revision: d6235e0419b0cec31328ddf722275bbacfddabe8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:56:00
+Message:
+Set VERSION to 1.0.7-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|154 102
+Modified: tests/plugin.xml|28 5
+
+Revision: 3b24ea7b085ece075f359504c3ccfc64f14aa4db
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 10:20:26
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: 587937c41a644ee621b6d7efa404f4f549980403
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 20:58:51
+Message:
+CB-12622 Added Android 6.0 build badge to README #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 273e5a674ec25e3f01a8c3992fa25c16f0f66065
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 03:49:33
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 1.0.7 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 61f4e97645f48ad66fae43a381a119ff25d77413
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 03:49:38
+Message:
+Set VERSION to 1.0.8-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1b8be429d12cd77841af655afaa773731413a95e
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 18:20:42
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: 801052ce37d6ebf86bcc6c90d093796e56679c30
+Author: Ibby Hadeed <ibby93@gmail.com>
+Date: 26/05/2017 05:25:15
+Message:
+Set language for code blocks to add colors #MsgLength=42
+
+
+----
+Modified: README.md|68 38
+
+Revision: 2dcc3f63f6fe894ecec2a361ad4eb6e5e505541b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/06/2017 17:07:02
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Modified: .travis.yml|70 3
+
+Revision: 7d67cfce888643dad765f18d9044952c5c682af8
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:31:44
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: f3e48eeb592957fe60dd1cf7e5765c714784b9ae
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 15:43:50
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: 9e6c25aa8e14d02c5e97bc4f956a34f37a04e24d
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:34:22
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: e9a2b1771549ef7e30ccb5edc424daa31d32aa70
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 27/07/2017 14:41:37
+Message:
+CB-13028 (CI) Browser builds on Travis and AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|3 2
+Modified: .travis.yml|16 0
+Modified: README.md|1 1
+
+Revision: f9583fe545298cc60b3965768b67fb0b7da15531
+Author: Audrey So <audreyso@apache.org>
+Date: 08/08/2017 00:57:59
+Message:
+Reseting github mirror #MsgLength=23
+
+
+----
+
+Revision: 77894697a1931eece7cca33d39def94a096632f0
+Author: Audrey So <audreyso@apache.org>
+Date: 13/06/2017 01:26:46
+Message:
+CB-12895 : added eslint and removed jshint #MsgLength=43
+
+
+----
+Renamed: .eslintignore [from .jshintignore]|0 0
+Added: .eslintrc.yml|10 0
+Deleted: .jshintrc|0 16
+Modified: package.json|9 3
+Modified: src/blackberry10/index.js|82 93
+Modified: src/browser/GlobalizationProxy.js|109 108
+Modified: src/firefoxos/GlobalizationProxy.js|116 117
+Modified: src/tizen/GlobalizationProxy.js|64 76
+Modified: src/windows/GlobalizationProxy.js|57 55
+Modified: tests/tests.js|77 77
+Modified: www/GlobalizationError.js|1 2
+Modified: www/firefoxos/l10n.js|1380 1409
+Modified: www/firefoxos/l10n_date.js|151 151
+Modified: www/globalization.js|329 334
+Modified: www/ubuntu/globalization.js|44 55
+
+Revision: 0a2d22b009d7e5019b91f01751a0cf8c97d78884
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:06:23
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 7e43a1f12b7302b07b112ecfbc97c8584ab70f43
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:59:01
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 5ce46debb1d91889f11ceffa2df8cbaabc33786c
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 15:22:50
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: a99c829800d08850057c0755ad785c730954ec64
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:45
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 1.0.8 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 522b13a8a93b6d07d7cc836807026bb023939560
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:39
+Message:
+Set VERSION to 1.0.9-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: fc09be6cbd6b178b024c39f76a3ad5c3e0cf6293
+Author: sruthakeerthikotla <sruthakeerthikotla@gmail.com>
+Date: 06/11/2017 15:03:35
+Message:
+Update moment.js to version 2.19.1 #MsgLength=278
+
+
+----
+Modified: www/browser/moment.js|4025 8905
+
+
+Revision: 52669f2693b57eed403baefff514f524a1268419
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 08/11/2017 07:44:38
+Message:
+:memo: Updated README #MsgLength=22
+
+
+----
+Modified: README.md|3 0
+
+Revision: c5b860377c484e19c7874ee1a7aba902c648fad4
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 18/11/2017 09:02:16
+Message:
+:memo: Updated README with Phonegap blog post link for Migration to ECMA API #MsgLength=77
+
+
+----
+Modified: README.md|2 1
+
+Revision: f135a5d12807b61d9e4c5ffe350ebb2de38f4374
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 13/12/2017 03:29:06
+Message:
+Updated README with link to Cordova Blog post #MsgLength=46
+
+
+----
+Modified: README.md|1 1
+
+
+Revision: a7b978f4a5c0359c140b6e84b41d38e1b7a5ce5a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:25:13
+Message:
+CB-13681 Updated version and RELEASENOTES.md for release 1.0.9 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 493fe798ca9bfbb887056646550a35c0692dc5f3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:26:44
+Message:
+Set VERSION to 1.0.10-dev (via coho) #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ed64d794d08ff602285a50b2b5782927c07e9366
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 11/01/2018 06:34:01
+Message:
+CB-13761: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: a44f4c809bac526e8dd9ce14bb9aa78dfcc3ce45
+Author: sruthakeerthikotla <sruthakeerthikotla@gmail.com>
+Date: 08/02/2018 16:30:31
+Message:
+Updating moment.js to version 2.20.1 (#64) #MsgLength=44
+
+
+----
+Modified: www/browser/moment.js|36 15
+
+Revision: 65331146ca90d92d4fcb47c58937a7fcb8933797
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:06:22
+Message:
+CB-14030 Updated version and RELEASENOTES.md for release 1.11.0 (via coho) #MsgLength=75
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8c8aa138e9d519055e221342beef220c7af01e70
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:16:16
+Message:
+Set VERSION to 1.11.1-dev (via coho) #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: aa626dab061a7a684e3e00250bff6cbfab6ca2c1
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 18/07/2018 18:42:00
+Message:
+fix CI badges in README #MsgLength=23
+
+
+----
+Modified: README.md|1 1
+
+Revision: 18549ced1eb3f6b894d9b5cedd134882acfd0e0b
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:39:33
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 2606f27389cdd4a7de8c0710b745e346b8a973b4
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 02:44:45
+Message:
+ci(travis): Update Travis CI configuration for new paramedic (#76) #MsgLength=68
+
+
+----
+Modified: .travis.yml|95 76
+

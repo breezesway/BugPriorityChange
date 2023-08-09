@@ -1,0 +1,3080 @@
+Revision: 512a1388c65fc099b56c0a40e6c63458b2d029eb
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/10/2013 09:03:18
+Message:
+Added statusbar plugin. #MsgLength=144
+
+
+----
+Added: plugin.xml|38 0
+Added: src/ios/CDVStatusBar.h|38 0
+Added: src/ios/CDVStatusBar.m|108 0
+Added: www/statusbar.js|57 0
+
+Revision: 2e15c9c025da731a0ac279e4c7559b470053a9b5
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 06/10/2013 15:39:36
+Message:
+Incorrect js for statusbar plugin #MsgLength=35
+
+
+----
+Modified: www/statusbar.js|5 10
+
+Revision: da275b579fbb3642635d0777082f7b96ae003e20
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 06/10/2013 15:47:33
+Message:
+Added statusbar background, including API to change its background color #MsgLength=74
+
+
+----
+Modified: src/ios/CDVStatusBar.h|3 0
+Modified: src/ios/CDVStatusBar.m|22 0
+Modified: www/statusbar.js|4 0
+
+Revision: 058c6b71cc45b9fa29579fece2a30fc384ea1b35
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 06/10/2013 16:18:06
+Message:
+Added ability to set statusbar background color by hex string. #MsgLength=64
+
+
+----
+Modified: src/ios/CDVStatusBar.h|1 0
+Modified: src/ios/CDVStatusBar.m|20 0
+Modified: www/statusbar.js|4 0
+
+Revision: 690de48214efcce41a369c26670faba286754cb8
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/10/2013 06:13:32
+Message:
+Added statusbar preferences to plugin.xml #MsgLength=144
+
+
+----
+Modified: plugin.xml|5 0
+Modified: src/ios/CDVStatusBar.m|52 7
+
+Revision: c42b57e4dc4ed883cc1b7b4de14b6c346765def3
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/10/2013 06:23:55
+Message:
+Removed StatusBarStyle. iOS users should just use the UIStatusBarStyle key in Info.plist #MsgLength=90
+
+
+----
+Modified: plugin.xml|0 1
+Modified: src/ios/CDVStatusBar.m|0 5
+
+Revision: 4ddd82446a2f13da328d723f8255ce0692b939fe
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/10/2013 06:26:24
+Message:
+Add <info> section to the statusbar plugin.xml #MsgLength=48
+
+
+----
+Modified: plugin.xml|6 0
+
+Revision: ec5fa951df0c92c43a2d4c75c547ccc8f6216e94
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/10/2013 07:30:16
+Message:
+Match statusbar style to default background color of #000000 #MsgLength=62
+
+
+----
+Modified: src/ios/CDVStatusBar.m|1 1
+
+Revision: e9414a4ab691ee07c7e1a37c111697fbba77acff
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/10/2013 07:30:33
+Message:
+Add StatusBar plugin docs. #MsgLength=28
+
+
+----
+Added: README.md|149 0
+
+Revision: b61eaae31024e0af53009dcd7143d3c1580ab68c
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/10/2013 07:51:36
+Message:
+Fixed statusbar background view not auto-resizing on landscape. #MsgLength=65
+
+
+----
+Modified: src/ios/CDVStatusBar.m|2 4
+
+Revision: 4be7bcc82626c047117a80c802158a9be095e16a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/10/2013 08:20:36
+Message:
+Removed statusBar prefix from StatusBar plugin API #MsgLength=52
+
+
+----
+Modified: README.md|11 11
+Modified: src/ios/CDVStatusBar.h|3 3
+Modified: src/ios/CDVStatusBar.m|6 6
+Modified: www/statusbar.js|6 6
+
+Revision: c2f13fe2319b5a6744c50808a2f8ac097e9fcb9b
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/10/2013 08:53:04
+Message:
+Implement StatusBar.isVisible #MsgLength=31
+
+
+----
+Modified: README.md|16 1
+Modified: src/ios/CDVStatusBar.h|2 0
+Modified: src/ios/CDVStatusBar.m|24 0
+Modified: www/statusbar.js|3 1
+
+Revision: 7e42f7db49778a89d44aefd76aa90d691a850e8a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 15/10/2013 07:47:38
+Message:
+Added show() and hide() to StatusBar API #MsgLength=42
+
+
+----
+Modified: src/ios/CDVStatusBar.h|3 0
+Modified: src/ios/CDVStatusBar.m|61 6
+Modified: www/statusbar.js|8 0
+
+Revision: 6dd6e4a0b5bb8572681c7cd623b94e706073b186
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 15/10/2013 22:57:20
+Message:
+Updated StatusBar docs for show and hide API #MsgLength=46
+
+
+----
+Modified: README.md|29 0
+
+Revision: ea57d604f55c49002c0ce31b120d694bec213792
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 15/10/2013 22:58:20
+Message:
+Increment StatusBar plugin version to 0.1.1 #MsgLength=45
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 9c9a8ba983a8963a17c5f878e876e5956e1e3751
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 16/10/2013 05:12:41
+Message:
+StatusBar - remove dependence of UIViewControllerBasedStatusBarAppearance Info.plist key #MsgLength=90
+
+
+----
+Modified: README.md|0 7
+Modified: plugin.xml|0 12
+Modified: src/ios/CDVStatusBar.h|2 0
+Modified: src/ios/CDVStatusBar.m|105 18
+
+Revision: 94afc08b1cd03bce46770cd5b36d48999ff76ac8
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 16/10/2013 05:13:33
+Message:
+Updated StatusBar plugin version to 0.1.2 #MsgLength=43
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 062dfceb29cddc4636d7b873f39b7b035251004f
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 19/11/2013 09:20:22
+Message:
+CB-5431 - Status Bar Plugin blanks view on call overlaysWebView(false) in landscape orientation #MsgLength=288
+
+
+----
+Modified: src/ios/CDVStatusBar.m|27 8
+
+Revision: fee10a1334b71557efad1c17393b12c03f2f3f8b
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 23/11/2013 04:18:34
+Message:
+CB-5389 - iOS - Status Bar plugin issues with orientation #MsgLength=59
+
+
+----
+Modified: src/ios/CDVStatusBar.h|2 0
+Modified: src/ios/CDVStatusBar.m|39 11
+
+Revision: 0ab29280ddc87a3545a4bcfb02628d20aa01abcc
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 23/11/2013 04:23:35
+Message:
+Update statusbar version to 0.1.3 #MsgLength=35
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: ebe7939402d44da11890680662ebca7cdc65b39b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/02/2014 12:38:32
+Message:
+statusbar - Load JS on iOS only #MsgLength=85
+
+
+----
+Modified: plugin.xml|7 7
+
+Revision: 378d68883392479d7fb7986d723c77c2167bff18
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 19/02/2014 07:38:42
+Message:
+Updated StatusBar docs for config.xml preferences. #MsgLength=52
+
+
+----
+Modified: README.md|14 1
+
+Revision: c94025e4dca8cf3a321d43c57bef276a1b7c7311
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 19/02/2014 13:16:13
+Message:
+Updated StatusBar docs for instructions on how to hide it at app startup. #MsgLength=75
+
+
+----
+Modified: README.md|15 2
+
+Revision: 9509848776e01d78f72d7214e3219e78cff0eb38
+Author: Andrey Kurdyumov <kant2002@gmail.com>
+Date: 24/02/2014 17:52:58
+Message:
+Created statusbar version of plugin for Android #MsgLength=49
+
+
+----
+Modified: plugin.xml|14 3
+Added: src/android/StatusBar.java|90 0
+
+Revision: 4883d17f1475ad19029a877edb9ab1c437c09400
+Author: Andrey Kurdyumov <kant2002@gmail.com>
+Date: 25/02/2014 17:54:14
+Message:
+Updated docs to include support for Android #MsgLength=45
+
+
+----
+Modified: README.md|3 1
+
+Revision: 3055b675a84e877476f58470deba6a0798973086
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 26/02/2014 15:10:35
+Message:
+Incremented version for StatusBar to 0.1.4 (some Android support) #MsgLength=67
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 69c1aee5ceba76fce49bfa70961fb41aa3d140b8
+Author: Ryan Willoughby <ryan.willoughby@adobe.com>
+Date: 25/02/2014 14:30:04
+Message:
+CB-6186 - Statusbar problems in Landscape Mode iOS 7 #MsgLength=54
+
+
+----
+Modified: src/ios/CDVStatusBar.m|6 2
+
+Revision: a4d6320c373967fb964a26647cde91087f453a76
+Author: Ryan Willoughby <ryan.willoughby@adobe.com>
+Date: 26/02/2014 09:54:37
+Message:
+CB-6187 - If you Show and Hide the StatusBar - it will expand the screen-size by ~20 pixels + don't resize the webview on hide if statusbar overlays it #MsgLength=153
+
+
+----
+Modified: src/ios/CDVStatusBar.m|11 7
+
+Revision: 83cc8464e10aa930067dabb0ee67e49bdac9c5f5
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 07/03/2014 09:40:01
+Message:
+moved named color resolving to JS so platforms can just worry about hex values #MsgLength=80
+
+
+----
+Modified: www/statusbar.js|18 1
+
+Revision: 7b648411cd402d282d60416ba602eb350beb8eb4
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/03/2014 05:23:13
+Message:
+support shorthand css color values like #F3D and sanity check for leading octothorp #MsgLength=85
+
+
+----
+Modified: www/statusbar.js|99 86
+
+Revision: d7498d31ed88e912deef1fc89905f00a181d542e
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/03/2014 05:25:15
+Message:
+Added Windows Phone support #MsgLength=29
+
+
+----
+Modified: plugin.xml|20 0
+Added: src/wp/StatusBar.cs|142 0
+
+Revision: 20da4198f938eb85501e3559ba277648744b0034
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/03/2014 06:22:54
+Message:
+Store updated value of isVisible when we call show/hide. Use callback to set initial isVisible value for _ready #MsgLength=113
+
+
+----
+Modified: www/statusbar.js|6 1
+
+Revision: fa8aa9869db0a283d8121fda3a82a24a70c4a723
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/03/2014 06:24:18
+Message:
+lightContent always sets BG to black, default always sets BG to white #MsgLength=71
+
+
+----
+Modified: src/wp/StatusBar.cs|9 5
+
+Revision: 3d5ed0a4f1d80825158d35d215e75303f4df6fcc
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 13/03/2014 03:00:11
+Message:
+calling styleDefault and styleLightContent should only affect text color #MsgLength=74
+
+
+----
+Modified: src/wp/StatusBar.cs|0 5
+
+Revision: bdbaf129595c4a4e3d957a1bc218d05dc5f82a9e
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 13/03/2014 03:17:04
+Message:
+cleaned up js, removed unused requires, removed unused 'new' object function and defined directly #MsgLength=99
+
+
+----
+Modified: www/statusbar.js|69 71
+
+Revision: a6a4cf473b21056116f8a97e3cad583a57eafdf6
+Author: Andrey Kurdyumov <kant2002@gmail.com>
+Date: 19/03/2014 18:48:59
+Message:
+CB-6314 - Add StatusBar.isVisible support to Android #MsgLength=53
+
+
+----
+Modified: README.md|1 1
+Modified: src/android/StatusBar.java|5 0
+Modified: www/statusbar.js|5 5
+
+Revision: 563c71978a57e073bc857bb70d219a74540a9cc1
+Author: Andrey Kurdyumov <kant2002@gmail.com>
+Date: 20/03/2014 15:55:57
+Message:
+CB-6316 Moved StatusBar plugin documentation to docs folder #MsgLength=60
+
+
+----
+Renamed: doc/index.md [from README.md]|0 0
+
+Revision: cbee196f1d514cd516fd47fc924ae8185a73b956
+Author: Andrey Kurdyumov <kant2002@gmail.com>
+Date: 20/03/2014 16:03:01
+Message:
+CB-6316 Added license header to the documentation. Added README.md which point to the new location for docs #MsgLength=108
+
+
+----
+Added: README.md|0 0
+Modified: doc/index.md|20 0
+
+Revision: 6ada08af4d0ec3937eec77d8af38d4e6ef549c1e
+Author: Andrey Kurdyumov <kant2002@gmail.com>
+Date: 20/03/2014 16:04:42
+Message:
+CB-6316 Added README.md which point to the new location for docs #MsgLength=65
+
+
+----
+Modified: README.md|22 0
+
+Revision: 004b0853499d7806441fcac3976dec3353129736
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:22:26
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+
+Revision: d9c9f0bc6d0d83cd90d0dd7e3fe1bb7d1e9c83ef
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.1.5 #MsgLength=62
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 50febd81ba536eaa9db14454cfd73c914f6b49fa
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:06:11
+Message:
+CB-6452 Actually added RELEASENOTES.md for release 0.1.5 #MsgLength=57
+
+
+----
+Added: RELEASENOTES.md|28 0
+
+Revision: b2e42925e4f110e9e5f7aad37ae261f32d4857a4
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 0b0e9d8fc5bbc36a0bfffa5ff5c4e3580116784d
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 25/04/2014 03:53:54
+Message:
+CB-6513 - Statusbar plugin for Android is not compiling #MsgLength=110
+
+
+----
+Modified: src/android/StatusBar.java|1 0
+
+Revision: 949b15eb098fb02275a991c8ec1e0b1255c792c6
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 26/04/2014 06:27:03
+Message:
+Update docs with recent WP changes, remove 'clear' from the loist of named colors in documentation #MsgLength=99
+
+
+----
+Modified: doc/index.md|27 2
+
+Revision: 80203f655bb83e4cae646c9bddbb36704f75504a
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 26/04/2014 06:49:54
+Message:
+CB-6264 minor formatting issue #MsgLength=31
+
+
+----
+Modified: doc/index.md|1 0
+
+Revision: 29f119154eef9e21130e1b44f409bd953069cf36
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:35:25
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: 4cfee575a1d54ffcc09767dce4db8e4944d26047
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:38:18
+Message:
+CB-6812 Add license #MsgLength=20
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: 55575f5409cbfa0fe521168c06763008c8c6bc09
+Author: pelish8 <pelish8@gmail.com>
+Date: 15/05/2014 20:05:14
+Message:
+CB-6783 - added StatusBarStyle config preference,  updated docs (closes #9) #MsgLength=130
+
+
+----
+Modified: doc/index.md|15 12
+Modified: plugin.xml|4 3
+Modified: src/ios/CDVStatusBar.m|56 52
+
+Revision: 11195658af7dc1691893bea818428234b88ed621
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:43
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.1.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: plugin.xml|1 1
+
+Revision: d2f8b0b0a55720282aebb3afd8172e0486318756
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 92a4eaeab5f1b025772abc513628389746e3da9d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 25/06/2014 00:18:07
+Message:
+android: Fix StatusBar.initialize() not running on UI thread #MsgLength=61
+
+
+----
+Modified: src/android/StatusBar.java|10 5
+
+Revision: ccb465f807a0572bddb0d595f1b75a851c5ff61d
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:28:30
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-statusbar documentation translation: cordova-plugin-statusbar #MsgLength=111
+
+
+----
+Added: doc/de/index.md|238 0
+Added: doc/es/index.md|238 0
+Added: doc/fr/index.md|238 0
+Added: doc/it/index.md|238 0
+Added: doc/ja/index.md|238 0
+Added: doc/ko/index.md|238 0
+Added: doc/ru/index.md|238 0
+Added: doc/zh/index.md|238 0
+
+Revision: 6552bddfd1083dff8a13c165ed8c68476b332ee6
+Author: Tiancheng Zhu <phaitour@gmail.com>
+Date: 11/04/2014 07:25:47
+Message:
+ios: Fix hide to adjust webview's frame only when status bar is not overlaying webview #MsgLength=87
+
+
+----
+Modified: src/ios/CDVStatusBar.m|6 5
+
+Revision: f0031ca2b4d778d8feea1959ec1fd8773ad39872
+Author: Tiancheng Zhu <phaitour@gmail.com>
+Date: 11/04/2014 07:56:24
+Message:
+CB-6626 ios: Add a JS event for tapping on statusbar #MsgLength=63
+
+
+----
+Modified: src/ios/CDVStatusBar.m|22 0
+
+Revision: be8a3e5947e5ad47e602cd0064e0ce9442177729
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/07/2014 10:55:04
+Message:
+ios: Use a persistent callbackId instead of calling sendJs #MsgLength=59
+
+
+----
+Modified: src/ios/CDVStatusBar.h|1 3
+Modified: src/ios/CDVStatusBar.m|31 8
+Modified: www/statusbar.js|7 1
+
+Revision: d9a8528c8baaa1b94efa0b0efea0c22ccf988cf1
+Author: Brad Berger <brad@bradb.net>
+Date: 21/07/2014 15:42:44
+Message:
+Update backgroundColorByHexString function #MsgLength=591
+
+
+----
+Modified: www/statusbar.js|3 3
+
+Revision: 95f8de0852021306a052e149cdcd1bdc6449ddf9
+Author: Brad Berger <brad@bradb.net>
+Date: 21/07/2014 15:44:23
+Message:
+Update statusbar.js #MsgLength=31
+
+
+----
+Modified: www/statusbar.js|1 1
+
+Revision: 83697e52ef311735b8bed5b3cd8b3341197e8a6f
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 25/07/2014 03:11:27
+Message:
+CB-7195 ported statusbar tests to framework #MsgLength=44
+
+
+----
+Added: test/tests.js|101 0
+
+Revision: 0d52e1bf10101e6625bddc49579c7d0159fc4a73
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 29/07/2014 23:53:53
+Message:
+added documentation for manual tests, moved background color test below overlay test #MsgLength=85
+
+
+----
+Modified: test/tests.js|12 6
+
+Revision: ad834b573ac15415fdb73da6573926f13fd24c17
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 25/07/2014 03:37:43
+Message:
+Add LICENSE and NOTICE #MsgLength=23
+
+
+----
+Added: LICENSE|202 0
+Added: NOTICE|5 0
+
+Revision: df64e5b1547a016eaf8c10dd05038f5506d77aae
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 02/08/2014 04:24:33
+Message:
+CB-7249cordova-plugin-statusbar documentation translation: cordova-plugin-statusbar #MsgLength=84
+
+
+----
+Added: doc/pl/index.md|238 0
+Modified: doc/ru/index.md|5 5
+
+Revision: 2ba62cb92c3548bb5bac539af8a0941b889afa90
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:24
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.1.7 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|10 0
+Modified: plugin.xml|1 1
+
+Revision: c4638c858301d93512d4ef0c4cb42da6a39fe59d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:29
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 32fca02faa735e97d679e69b42e93f15422fd976
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 02/08/2014 04:39:12
+Message:
+Renamed test dir, added nested plugin.xml #MsgLength=42
+
+
+----
+Added: tests/plugin.xml|31 0
+Renamed: tests/tests.js [from test/tests.js]|0 0
+
+
+
+Revision: 61024e50b3ffed4d7b149ccf9199cfcacd0cc5bc
+Author: SayreBlades <sayre.blades@gmail.com>
+Date: 13/08/2014 23:37:11
+Message:
+CB-7486 - Remove StatusBarBackgroundColor intial preference (black background) so background will be initially transparent #MsgLength=530
+
+
+----
+Modified: plugin.xml|0 1
+
+Revision: 921daccd2cc7be5294488adb64b8c4c36363b63c
+Author: twomz <williamsjakeb@gmail.com>
+Date: 16/09/2014 05:19:20
+Message:
+CB-7549 - [StatusBar][iOS 8] Landscape issue #MsgLength=522
+
+
+----
+Modified: src/ios/CDVStatusBar.m|2 2
+
+Revision: 6cce5132370a1200e5b402db5fda99e60b667ee3
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:44
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.1.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6481e0fc8a19c13856a4c6521203c1b1b5cff3a8
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:02
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 68d55085391f02894ae1e1299013433aa09c9fc8
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:18
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: 33674fffd369c31a73713ca957833d926b25b63d
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:13:25
+Message:
+CB-7700 cordova-plugin-statusbar documentation translation: cordova-plugin-statusbar #MsgLength=85
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/ru/index.md|2 2
+
+Revision: 5658e7548c813bf7d6102eea4eaa7726b727b18e
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 07/10/2014 05:43:12
+Message:
+CB-7549 - (Re-fix) [StatusBar][iOS 8] Landscape issue (closes #15) #MsgLength=67
+
+
+----
+Modified: src/ios/CDVStatusBar.m|21 22
+
+Revision: f1c76226e184f140542a84508d0419f804effe57
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:13:34
+Message:
+Inserting leading space after # for consistency #MsgLength=48
+
+
+----
+Modified: doc/index.md|1 1
+
+Revision: 1e9d588101c4d587e6a0dc1601d6d85865b5e78f
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:15:57
+Message:
+CB-7979 Each plugin doc should have a ## Installation section #MsgLength=62
+
+
+----
+Modified: doc/index.md|4 0
+
+Revision: 8685564ec1d5e520eefedecb6a76759954cdb811
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:16:06
+Message:
+CB-7977 Mention deviceready in plugin docs #MsgLength=43
+
+
+----
+Modified: doc/index.md|8 0
+
+Revision: a6344f14f99c19d60a783d92a742285fa3c62fca
+Author: daserge <daserge@yandex.ru>
+Date: 11/11/2014 03:20:42
+Message:
+CB-7986 Add cordova-plugin-statusbar support for Windows Phone 8.1 #MsgLength=126
+
+
+----
+Modified: doc/index.md|9 0
+Modified: plugin.xml|6 0
+Added: src/windows/StatusBar.js|90 0
+Modified: www/statusbar.js|3 0
+
+
+Revision: 7bc7c326c8a3ed7f2ec03e5dd099233cf90bf98a
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 13/11/2014 06:53:06
+Message:
+Renamed to proxy #MsgLength=17
+
+
+----
+Renamed: src/windows/StatusBarProxy.js [from src/windows/StatusBar.js]|17 13
+
+Revision: 251e904492fe6fc2a0a2880cc52655d7e88cd0ba
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 13/11/2014 06:53:44
+Message:
+rejiggered some stuff around #MsgLength=29
+
+
+----
+Modified: plugin.xml|1 1
+Modified: www/statusbar.js|0 3
+
+Revision: c89fdd46174975fe22b4faccffe624c3ac765a22
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 13/11/2014 10:04:38
+Message:
+added checks for running on windows when StatusBar is NOT available #MsgLength=68
+
+
+----
+Modified: src/windows/StatusBarProxy.js|17 11
+
+Revision: a96226a0740eecb8badb03aad20f038fafadda74
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 20/11/2014 08:24:12
+Message:
+CB-8010 - Statusbar colour does not change to orange #MsgLength=53
+
+
+----
+Modified: www/statusbar.js|1 1
+
+Revision: 3bc16d942be9c5ccb20ee84da5b2115743ca6f3e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/11/2014 03:51:49
+Message:
+Fix onload attribute within <feature> to be a <param> #MsgLength=99
+
+
+----
+Modified: plugin.xml|4 2
+
+Revision: e445123e4ce7976b9cd93c27fe4917a32bc28e61
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.1.9 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|12 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: eb119e7180ddb684fe41ce75adb3b28d2ca28cdd
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:50
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: cad3a13c375b7df63d04711d7e60175e82494129
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/01/2015 22:49:21
+Message:
+CB-8351 Use argumentForIndex rather than NSArray extension #MsgLength=59
+
+
+----
+Modified: src/ios/CDVStatusBar.m|3 3
+
+Revision: 5feffc9314c23d8f7345784d521835d19e4ceaa8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.1.10 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 566ecc792327b9c2764f8609b332cf005554a105
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:03
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: dff669ece8bef92b48a6db2936763fad3daaebb3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 16:57:45
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|37 0
+
+Revision: b492b1f4b0e78a5a07eafee3bee43321d926a511
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:53:05
+Message:
+CB-8438 cordova-plugin-statusbar documentation translation: cordova-plugin-statusbar #MsgLength=85
+
+
+----
+Modified: doc/de/index.md|25 1
+Modified: doc/es/index.md|28 14
+Modified: doc/fr/index.md|29 5
+Modified: doc/it/index.md|25 1
+Modified: doc/ja/index.md|26 2
+Modified: doc/ko/index.md|25 1
+Modified: doc/pl/index.md|25 1
+Modified: doc/zh/index.md|34 10
+
+Revision: 29b42dd93e543a2f03dd28f6cf78e78f97208ecc
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 09:46:03
+Message:
+CB-8575 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|13 0
+Modified: README.md|2 0
+
+Revision: 43c8c15bf48d058fec9e91a6d2bcad17880b2b78
+Author: EddyVerbruggen <eddyverbruggen@gmail.com>
+Date: 27/02/2015 17:29:39
+Message:
+Allow setting the statusbar backgroundcolor on Android #MsgLength=55
+
+
+----
+Modified: doc/index.md|4 0
+Modified: src/android/StatusBar.java|25 0
+
+Revision: 84ee94cb418de381baacc3135594dfbf263924f7
+Author: EddyVerbruggen <eddyverbruggen@gmail.com>
+Date: 28/02/2015 05:35:30
+Message:
+- Add support for StatusBar.backgroundColorByHexString (and StatusBar.backgroundColorByName) on Android 5 and up #MsgLength=113
+
+
+----
+Modified: doc/index.md|2 0
+Modified: src/android/StatusBar.java|21 9
+
+Revision: 7f135a46e18d8c8fd2c868e3a194d63d72b97807
+Author: EddyVerbruggen <eddyverbruggen@gmail.com>
+Date: 28/02/2015 15:59:47
+Message:
+- Use StatusBarBackgroundColor instead of AndroidStatusBarBackgroundColor, and added a quirk to the readme. #MsgLength=108
+
+
+----
+Modified: doc/index.md|9 5
+Modified: src/android/StatusBar.java|7 5
+
+
+Revision: c55bbcc1532e9ad747b25415c9fb16bd01ea5fa3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:43:44
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|275 2
+Deleted: doc/index.md|0 294
+
+Revision: ad786647fff5cef73595597e836644d8f213246a
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:44:27
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 56f038efc4a696ccbfced7ba3447c1797c57f60c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:33
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: 2d25d2ec4cebd76a04f7baf7d9ff1daed50966d2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:06:02
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|2 2
+
+Revision: a4298897b36fd38ea3816fdcf3fd4a6b1df534cc
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 07:44:02
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 07c18077e57d5493c1e2b6c3833c75ec99e12672
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 08:04:26
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: aa07a30c3c93ce09b5ea470f4fcb9927fa2e4d27
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:38
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|14 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 18e33cafc7dfdac4137bbcc46a734f23b25ef794
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:47
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7c59f7dac6ce89d7eaad8c37e59c2f5c7330711e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:31:13
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 261f9576fe9f986ea12eda8ade79fac2c647ed69
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 2b3935af315034fdf6626a1010e91d3d8f4483f0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:22
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f9ec3c09c3a83c396cb47fd3af181394e96d00c7
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 03/06/2015 00:04:14
+Message:
+fix npm md issue #MsgLength=17
+
+
+----
+Modified: README.md|16 16
+
+Revision: 47fef8450c04e2360be2c933910075456a350de8
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:42:43
+Message:
+CB-9128 cordova-plugin-statusbar documentation translation: cordova-plugin-statusbar #MsgLength=85
+
+
+----
+Added: doc/de/README.md|276 0
+Added: doc/es/README.md|276 0
+Added: doc/fr/README.md|276 0
+Added: doc/it/README.md|276 0
+Added: doc/ja/README.md|276 0
+Added: doc/ko/README.md|276 0
+Added: doc/pl/README.md|276 0
+Added: doc/zh/README.md|276 0
+
+Revision: 8e1e88a30a2f58339901bdfedffaa7448c254b45
+Author: Gillardo <darren.gillard81@gmail.com>
+Date: 08/05/2015 19:08:43
+Message:
+CB-9180 Add correct supported check for Windows 8.1 desktop #MsgLength=191
+
+
+----
+Modified: src/windows/StatusBarProxy.js|32 22
+
+Revision: a345f376b97a449a930826999e7cc2234a268390
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 17/06/2015 08:15:00
+Message:
+add auto-tests for basic api #MsgLength=29
+
+
+----
+Modified: tests/tests.js|41 0
+
+Revision: e8c448100c81847c2fd350b09bc65818a33cb070
+Author: Peter Bakondy <pbakondy@gmail.com>
+Date: 20/04/2015 22:39:10
+Message:
+fix warning message #MsgLength=228
+
+
+----
+Modified: src/android/StatusBar.java|1 0
+
+
+Revision: 607e5d66add7dea9f791defe97cf62c711741d5e
+Author: Connor Pearson <cjp822@gmail.com>
+Date: 08/01/2015 08:55:34
+Message:
+update docs for StatusBarBackgroundColor #MsgLength=89
+
+
+----
+Modified: doc/index.md|1 1
+
+
+Revision: 5ac69e4962a1c8115836de71f0ae69acdb4b219a
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 18/06/2015 03:54:29
+Message:
+Added verbose install text for users on < cordova 5.0, This closes #23 #MsgLength=71
+
+
+----
+Modified: README.md|9 0
+
+Revision: 3f5f727629dd9a90a657570d033b87ade46d2ccb
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:05
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.0.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d07ecff31a8164c852ec4151bcf59c19a9be2819
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 2e8164693ebd49b442e3ec52f785b2f59c69e209
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:36
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1dfc83d57ddaab4f0ecced0d58a11ade94a52843
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 09:00:25
+Message:
+remove travis-ci #MsgLength=17
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 2
+
+Revision: 07b55b752960e66ca4d0ba33b9c49d41b7241b43
+Author: Christian Wannerstedt <cwannerstedt@contractor.ea.com>
+Date: 01/07/2015 19:25:26
+Message:
+Use correct statusbar height for landscape orientation in iOS >= 8 #MsgLength=67
+
+
+----
+Modified: src/ios/CDVStatusBar.m|1 1
+
+Revision: 3e821abfc2888b77a3e86657698a2d6774152793
+Author: Christian Wannerstedt <cwannerstedt@contractor.ea.com>
+Date: 01/07/2015 19:49:50
+Message:
+Don't use IsAtLeastiOSVersion macro to determine height #MsgLength=56
+
+
+----
+Modified: src/ios/CDVStatusBar.m|1 5
+
+
+Revision: a0e5b517e07acc92e891fe869e1b8fc8c395b6a2
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 01/09/2015 06:55:17
+Message:
+[CB-7965] Add cordova-plugin-statusbar support for browser platform #MsgLength=68
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|7 1
+Added: src/browser/StatusBarProxy.js|40 0
+
+
+Revision: b0b61af61a6c3ab0948657b77608dd906cee517b
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 02/09/2015 15:22:57
+Message:
+removed proxy and renamed platform file, merge instead of clobber,  fixed failing tests for missing methods. #MsgLength=109
+
+
+----
+Modified: plugin.xml|2 2
+Renamed: src/browser/statusbar.js [from src/browser/StatusBarProxy.js]|6 1
+
+Revision: 1b3fbf3f9a0116d6573b5fed9cfea615d5537630
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 19/09/2015 03:50:13
+Message:
+Close #7 #MsgLength=9
+
+
+----
+
+Revision: baefe6d109d3c5bac202d567c96ab55d4c84e45c
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:32:55
+Message:
+add JIRA issue tracker link #MsgLength=28
+
+
+----
+Modified: README.md|3 3
+
+Revision: 1923d4e91e320d392ac42f43b472d1ddf044f23b
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 19/09/2015 03:55:11
+Message:
+Close #34, merged #MsgLength=18
+
+
+----
+
+Revision: 145fad6764196588360934d8c02263c46b3153b9
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 15/09/2015 02:43:48
+Message:
+fix ios warnings #MsgLength=47
+
+
+----
+Modified: src/ios/CDVStatusBar.m|14 6
+
+Revision: 986516cf97b12e4c18de2a75fe119121a182cdfd
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 15/09/2015 05:04:53
+Message:
+removed silly copy/paste mistakes #MsgLength=69
+
+
+----
+Modified: src/ios/CDVStatusBar.m|2 2
+
+
+Revision: fbfaeaa7ab53e95f676e5d2ca35c07af59eddb14
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: 3795486e33a4a9113773d5e688374d142f93828c
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:50
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: 86b9edba5dd09edadd0f814b1d6f631df5d89d8f
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 01/11/2015 01:01:26
+Message:
+Fixes CB-4712, CB-5439 statusbar issues #MsgLength=233
+
+
+----
+Modified: src/ios/CDVStatusBar.m|55 43
+
+Revision: cf1092fe81422e0f66d129db50ed113de3cb0029
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/11/2015 05:45:13
+Message:
+Added weakSelf reference for block use #MsgLength=39
+
+
+----
+Modified: src/ios/CDVStatusBar.m|3 4
+
+Revision: 60686a944a76a7164dd7406c44a0a141acefc4c2
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/11/2015 05:53:41
+Message:
+Pushed too soon, missed a _ #MsgLength=28
+
+
+----
+Modified: src/ios/CDVStatusBar.m|1 1
+
+Revision: dc945bdc95dc20b9d1fa09f8579e122492406523
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|49 49
+
+Revision: 265fde25a0fdde5a30a92162c71285ed94c329a2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:11
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: a63282219cdfc12fd798dcd858715dda2b1c51fd
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:06
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 2.0.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|13 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7c27000b3ad89abeccf0ca762544c7e071d59427
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|37 37
+
+Revision: 999ad4f6c25feaf1afece1364ab50dab44063aac
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3e9ce84a56c43c8ad58e49c1d9373a563efa8063
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 25/12/2015 15:42:40
+Message:
+CB-10118 Fixes plugin loading error for browser platform #MsgLength=74
+
+
+----
+Modified: plugin.xml|1 1
+Modified: src/browser/statusbar.js|0 4
+
+Revision: d853f828d614778e66ec4e6b3b0b79cbb9601d5f
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 30/12/2015 15:16:58
+Message:
+CB-8720 Fix status bar position when app started upside down on iOS 7. This closes #44 #MsgLength=87
+
+
+----
+Modified: src/ios/CDVStatusBar.m|10 0
+
+Revision: a4a1065c4f47243f835f195c8359f33c2379922a
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 29/12/2015 15:27:43
+Message:
+CB-9513 Allow to show/hide status bar in fullscreen mode. This closes #42 #MsgLength=74
+
+
+----
+Modified: src/android/StatusBar.java|24 0
+
+Revision: e6e8c5be1043b07d3f5236189b5ff07d35bf8f73
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:35:06
+Message:
+CB-10368 Updated version and RELEASENOTES.md for release 2.1.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 97f87d36c12f7f8693482006e1eaf09bd3ca13cf
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:58:32
+Message:
+CB-10368 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a464526477fecf15c091856d1a152e8eb38be033
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 17/01/2016 03:23:36
+Message:
+Fix for CB-10102 #MsgLength=113
+
+
+----
+Modified: src/ios/CDVStatusBar.m|1 1
+
+Revision: 573176e3a714b7e12de1a49798d3d61f7cb73276
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/02/2016 16:43:38
+Message:
+CB-10557 Updated version and RELEASENOTES.md for release 2.1.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 241577c3c885bf22327eb864b192fd24caae6870
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/02/2016 17:44:03
+Message:
+CB-10557 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 47f245462d1438bd783d503042de8dc225e0af2e
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 23/02/2016 02:41:22
+Message:
+CB-10047 fix iOS 8 deprecated warnings #MsgLength=270
+
+
+----
+Modified: src/ios/CDVStatusBar.m|5 5
+
+Revision: 8a3f9edb9d3a32db89f42e8ae3b08185533dc19c
+Author: daserge <v-seshak@microsoft.com>
+Date: 24/02/2016 15:28:04
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Added: .gitignore|24 0
+Added: .jshintrc|16 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/browser/statusbar.js|0 2
+Modified: src/windows/StatusBarProxy.js|9 7
+Modified: tests/tests.js|3 0
+Modified: www/statusbar.js|2 0
+
+Revision: bf7869cec7a46e0a538c2e4d61ffa28ddba135cf
+Author: daserge <v-seshak@microsoft.com>
+Date: 24/02/2016 15:32:46
+Message:
+CB-10683 Fix wrong StatusBar.isVisible initial value on Windows #MsgLength=64
+
+
+----
+Modified: src/windows/StatusBarProxy.js|4 2
+Modified: www/statusbar.js|11 9
+
+Revision: 7ca35522242c1fa73b4e3e7b33b804c121e14194
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 06/03/2016 18:55:49
+Message:
+Fix for CB-10752 status bar overlays the webview on iOS 6 in some cases #MsgLength=188
+
+
+----
+Modified: src/ios/CDVStatusBar.m|23 26
+
+Revision: f1aa062557c7e2965c78b629d7005a615f79fc41
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 10/03/2016 03:28:26
+Message:
+CB-10820 Updated version and RELEASENOTES.md for release 2.1.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1011b2a162e369d12c1b6f90f098990be95a91ab
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 10/03/2016 11:34:18
+Message:
+CB-10820 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 15043c1db222df78efcf4c7808c76534b0c9c58d
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 11/03/2016 02:51:47
+Message:
+clean releasenotes bold font #MsgLength=29
+
+
+----
+Modified: RELEASENOTES.md|4 4
+
+Revision: 244eb717fda536adad073b727fd4af1dd3cd58fd
+Author: daserge <v-seshak@microsoft.com>
+Date: 29/03/2016 21:49:29
+Message:
+CB-10884 Inappbrowser breaks UI while Screen orientation changes from landscape to portrait on iOS #MsgLength=99
+
+
+----
+Modified: src/ios/CDVStatusBar.m|2 0
+
+Revision: 16ff9b449f83a71b6bf80ca59b44bed84f2af810
+Author: daserge <v-seshak@microsoft.com>
+Date: 05/04/2016 22:39:36
+Message:
+CB-11018 Fix statusbar with inappbrowser causing incorrect orientation on iOS8 #MsgLength=79
+
+
+----
+Modified: src/ios/CDVStatusBar.m|10 1
+
+Revision: ef7266874a8ef52ece0b2319f6198dd437d2683f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:27
+Message:
+ Updated version and RELEASENOTES.md for release 2.1.3 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c3705fe46ea1438367b3899857459ba3c2884547
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:28
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 259cdb65ef81649ff37742138a4491ce2137b158
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:51
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: fc56eb211f2864d555034d4f3982bbfd14245a4b
+Author: t1st3 <contact@tiste.org>
+Date: 08/02/2016 17:46:11
+Message:
+chore: edit package.json license to match SPDX id. This closes #46. #MsgLength=276
+
+
+----
+Modified: package.json|1 1
+
+Revision: b448166624a29cac607c38b45f454581757eb411
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 17/05/2016 09:01:34
+Message:
+patched missing _ready method, and changed the way the proxy is installed #MsgLength=74
+
+
+----
+Modified: plugin.xml|2 2
+Renamed: src/browser/StatusBarProxy.js [from src/browser/statusbar.js]|12 3
+
+Revision: 16c653747ebd82874ab55ce7b53976955357e24e
+Author: Richard Knoll <richard.b.knoll@gmail.com>
+Date: 15/03/2016 03:03:21
+Message:
+CB-10866: Adding engine info to package.json #MsgLength=62
+
+
+----
+Modified: package.json|6 5
+
+Revision: c34e3a02c2f40c3f22318217bb534e2087927c70
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:54:00
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: cfce72991210086ef27c74e31570231639cf75e2
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 23/05/2016 19:42:22
+Message:
+CB-11197 Keep status bar hidden when keyboard pops up #MsgLength=72
+
+
+----
+Modified: src/android/StatusBar.java|4 2
+
+Revision: f8873fd48142e0133b1e4ae0a298cdc5b3da2a7d
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 17:13:59
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|3 1
+
+Revision: 8159e1b307f69629efd75940458e73ebab90f5f8
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 05/07/2016 03:20:33
+Message:
+CB-11485 fix resize on rotation with popover #MsgLength=45
+
+
+----
+Modified: src/ios/CDVStatusBar.m|5 1
+
+Revision: 86cfafeaf9796c45c855fc55c3605aadb713af62
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 05/07/2016 06:12:20
+Message:
+CB-11287: (ios) - fix webview resize after modal on iPhones #MsgLength=60
+
+
+----
+Modified: src/ios/CDVStatusBar.m|1 1
+
+Revision: aca5eceaf98ada01c3c9c09e03d4bdd7884cf048
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 31/07/2016 06:27:54
+Message:
+Closing stale pull request: close #19 #MsgLength=38
+
+
+----
+
+Revision: f2c49454da36bdab5371a744b2ba145a94a62b0c
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 23/08/2016 04:52:13
+Message:
+Plugin uses Android Log class and not Cordova LOG class #MsgLength=56
+
+
+----
+Modified: src/android/StatusBar.java|6 6
+
+Revision: 554e65e60f7f801f23553929386e8bdcf3835a15
+Author: Gosha Arinich <me@goshakkk.name>
+Date: 07/04/2016 21:44:32
+Message:
+Handle extended status bar on iOS #MsgLength=52
+
+
+----
+Modified: src/ios/CDVStatusBar.m|11 2
+
+Revision: 1d1ac928a858c899a2a3aa87c86fe4cd42b99bb3
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 02/09/2016 02:12:20
+Message:
+Removed duplicate code #MsgLength=23
+
+
+----
+Modified: src/ios/CDVStatusBar.m|5 8
+
+Revision: dbc7b29680518a897a0813f87c50da2f9b10cd41
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 22:43:02
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=397
+
+
+----
+Modified: package.json|3 0
+
+Revision: ad5f7d912c3bc29eaee40dd9d83bcce597e07acc
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:55
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 2.2.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|18 5
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 53d0b04ed69431139de1a1767a6d311d450211c3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 940a8ee92045b365b11790aa5e3e55964ef913a2
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:26:09
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=101
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: 2c036c9c91130293ae09b0206e42c881406138c6
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 22/09/2016 05:58:25
+Message:
+CB-11191: Statusbar plugin causing issues with webview size #MsgLength=78
+
+
+----
+Modified: src/ios/CDVStatusBar.m|7 0
+
+Revision: 086234b881f3b8d75b3609d4ceb70497539938f8
+Author: Julio Cesar Sanchez Hernandez <jcesarmobile@gmail.com>
+Date: 30/10/2016 18:32:50
+Message:
+CB-10341 ios, document statusTap event #MsgLength=57
+
+
+----
+Modified: README.md|21 0
+
+Revision: b7dc5ef7cbc474b0f26f3c66b8a6abfbf953efd4
+Author: Julio Cesar Sanchez Hernandez <jcesarmobile@gmail.com>
+Date: 30/10/2016 22:37:58
+Message:
+CB-10158 (ios) fix StatusBar issue when recovering from fullscreen video #MsgLength=91
+
+
+----
+Modified: src/ios/CDVStatusBar.m|5 5
+
+Revision: 6bfc749f846e44d2784e93fa7629ec3049ab418d
+Author: Jonathan Li <jonathan.li@sap.com>
+Date: 29/08/2016 04:01:54
+Message:
+CB-10288 statusbar plugin interaction with iOS multitasking #MsgLength=78
+
+
+----
+Modified: src/ios/CDVStatusBar.m|4 4
+
+Revision: a50208bda2728902c1e1640a7ebeae599fb42b5d
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:46
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 2.2.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a07c24fe78feaadeba628795023ac464344208ed
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:08
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 59101557b792ad45b356754bbd52f5fc6b2d6796
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 18:45:32
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: d601f1a143547d252f7d366526b7af74a7455f18
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:58:46
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-statusbar #MsgLength=59
+
+
+----
+Modified: RELEASENOTES.md|1 0
+
+Revision: 834b8cb5fba212788febcba9d2695cf8a5db0159
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 16/12/2016 07:03:03
+Message:
+Closing invalid pull request: close #72 #MsgLength=40
+
+
+----
+
+Revision: a120ba1a1ffb27d46f2ac7962648e6f8a7a5b24c
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 09/12/2016 07:18:23
+Message:
+CB-12141 (ios) fix white app screen after camera overlay shown on iPad #MsgLength=88
+
+
+----
+Modified: src/ios/CDVStatusBar.m|5 18
+
+Revision: fa57e92c5582d0edc7fc4b1f4be7f5e3380d93cf
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 28/12/2016 03:32:54
+Message:
+CB-12196 (iOS) fix Status Bar Not Hiding #MsgLength=59
+
+
+----
+Modified: src/ios/CDVStatusBar.h|1 0
+Modified: src/ios/CDVStatusBar.m|8 2
+
+Revision: a204f69ffe2ac0812043b676ffde2558858cd6fa
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:38:21
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 995e4fdf9de78609ff0fb30bab2610b9e5293410
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 21:11:46
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=68
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|77 0
+
+Revision: 916cccc2c00a1b7c77e2e738c83e74a22bdd55e7
+Author: olln3 <johnnyyellow@gmail.com>
+Date: 09/02/2017 08:35:45
+Message:
+CB-12188 Status Bar is not changing in some specific android phone (Red MI 3s Prime) #MsgLength=103
+
+
+----
+Modified: src/android/StatusBar.java|1 1
+
+Revision: cb1297b0ac65d73340bb31a5e562f2bd7845902c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:27
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 2.2.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|9 1
+Modified: package.json|1 1
+Modified: plugin.xml|58 97
+Modified: tests/plugin.xml|5 30
+
+Revision: 95eb824d0ac37b542ffc2dad38d00c11dd1f660b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:56:01
+Message:
+Set VERSION to 2.2.3-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|97 58
+Modified: tests/plugin.xml|30 5
+
+Revision: d980145c98258d947e2682c26bf51471a960e98a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 10:27:17
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: 3f552ed7343bf5f7982abc187afefe0b097ae7f2
+Author: Andrea Lazzarotto <andrea.lazzarotto@gmail.com>
+Date: 27/02/2017 03:11:07
+Message:
+CB-10879: Enable overlaysWebView on Android API 21+ #MsgLength=357
+
+
+----
+Modified: src/android/StatusBar.java|34 0
+
+Revision: ecf61e78009c2592841286bb06027b577a42ff2a
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 21:34:23
+Message:
+CB-12622 Added Android 6.0 build badge to README #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 77a6ae5dfe664bb209c1fa79847bc9d81e137fc8
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:07:47
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 2.2.3 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 0285cf0a215f82628c08fde774b02c400cdb9a89
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:07:50
+Message:
+Set VERSION to 2.2.4-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 0a3dadfdb037ba613da0d2ccaae2bf84ae1874ef
+Author: filmaj <maj.fil@gmail.com>
+Date: 26/05/2017 01:05:08
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: 92fff60cc7e52f4be876ae559bde2b980edb2415
+Author: imgx64 <imgx64@gmail.com>
+Date: 14/05/2017 17:19:56
+Message:
+CB-12812: (browser) Fix statusbar plugin with browser platform #MsgLength=63
+
+
+----
+Modified: src/browser/StatusBarProxy.js|3 1
+
+Revision: 0364d4a4f92923dc184d034d75e6058b1ea2a58a
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 27/06/2017 14:06:11
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Modified: .travis.yml|70 3
+
+Revision: 1ae18933d536f936b6737b6bf761c82bad017101
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:32:32
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: 2cd86e63ace3d09dec6601ed5ce90fa783995ec5
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 16:38:40
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: 1bb250788e5e7f647a6b236b483bf6e02e55eb52
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:35:05
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: b204d2747d6b3af1973d6509dfaa78f6d2a7009b
+Author: Lu Wang <ul.gnaw@gmail.com>
+Date: 27/07/2017 06:59:36
+Message:
+Add preference for native scroll to top #MsgLength=106
+
+
+----
+Modified: README.md|4 0
+Modified: src/ios/CDVStatusBar.m|7 1
+
+Revision: 70468157c5ed87e32a44b197178dee922b12a886
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 09/07/2017 19:49:36
+Message:
+Fix issue tracker link - closes #82 #MsgLength=36
+
+
+----
+Modified: README.md|1 1
+
+Revision: 267ebad1bee997ddf7bfea6fd71a3fe842286a11
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 28/07/2017 19:42:35
+Message:
+CB-13028 (CI) Browser builds on Travis and AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|3 2
+Modified: .travis.yml|17 1
+
+Revision: ef5fb5b9e6b3d36950febbbdf85abf78f2aba7d8
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:07:13
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: fff289c0b8a7d0eb5b94f06d8ace9733054185bd
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 22/09/2017 02:55:26
+Message:
+CB-13311: (iOS) Statusbar does not overlay correctly on iPhone X #MsgLength=83
+
+
+----
+Modified: src/ios/CDVStatusBar.m|17 2
+
+Revision: 08127bf674bcfc5a161466a4c19e8fd21f726892
+Author: Joe Bowser <bowserj@apache.org>
+Date: 11/10/2017 05:38:32
+Message:
+This closes #64 #MsgLength=16
+
+
+----
+
+Revision: dd879140c42fa09c4274a76b9693be16e7f24f2a
+Author: Max Ruman <rmx@zanvio.com>
+Date: 21/04/2017 18:55:58
+Message:
+CB-11858: (android) Add StatusBarStyle feature support for Android M+ #MsgLength=70
+
+
+----
+Modified: README.md|4 0
+Modified: src/android/StatusBar.java|75 0
+
+
+
+Revision: ca3da118f040fad7fe8ea53ca47a7de8dab40531
+Author: Joe Bowser <bowserj@apache.org>
+Date: 13/10/2017 04:27:20
+Message:
+This closes #51 #MsgLength=16
+
+
+----
+
+Revision: 241d30fff5ef622180a546790cdbb3336c926daf
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:59:30
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 049ac41dadf6b5e66bec50fd29f91e0775c6deff
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 15:23:31
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: cdc9295b30b013425f4906670e16b50461aeca8d
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 13/10/2017 06:42:50
+Message:
+CB-13394 (iOS): fix iPhone X StatusBar rendering in landscape #MsgLength=95
+
+
+----
+Modified: src/ios/CDVStatusBar.m|11 9
+
+Revision: c45331b95555c5c77b4ed4ca690236a9b077ec4b
+Author: Julio Cesar Sanchez Hernandez <jcesarmobile@gmail.com>
+Date: 20/10/2017 22:40:46
+Message:
+CB-13476 (iOS): handle double size statusbar on SDK 10 for iOS 11 #MsgLength=84
+
+
+----
+Modified: src/ios/CDVStatusBar.m|4 6
+
+
+
+Revision: 655f6cb1da172f4a675903b7239e6afa5a71aae0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:46
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 2.3.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 611169c89f81514965b86115ca254900b78460b9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:40
+Message:
+Set VERSION to 2.3.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9a976a97446d57b18f88eee91975dda349bce07b
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 01/12/2017 07:11:35
+Message:
+CB-13623 (iOS): Remove iOS 6-7 code #MsgLength=36
+
+
+----
+Modified: src/ios/CDVStatusBar.m|38 85
+
+
+Revision: caf2ae6605179a8ff9bcdcadb94cd4c7dab359da
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:25:13
+Message:
+CB-13681 Updated version and RELEASENOTES.md for release 2.4.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6352d80a9687e1bd64f19e7cd10dbcbe43e9d9bc
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:26:45
+Message:
+Set VERSION to 2.4.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8da38f5075ac165ea80fee39dc14f807a343c590
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 27/12/2017 23:43:58
+Message:
+CB-13712 (iOS): fix overlaysWebView reset on rotation (#92) #MsgLength=61
+
+
+----
+Modified: src/ios/CDVStatusBar.m|6 2
+
+Revision: 4988b6fec3d9086b553f9b41b7cb8a9359c193e3
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:36
+Message:
+CB-13714 Updated version and RELEASENOTES.md for release 2.4.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|2 165
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: bca70c21e95cc98da003c37918184fef9cf6e04d
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:50
+Message:
+Set VERSION to 2.4.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 70a421bd257f4bb83ebcf95104d9ade72d9018fb
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 30/12/2017 13:55:27
+Message:
+Fix release notes (#93) #MsgLength=25
+
+
+----
+Modified: RELEASENOTES.md|166 0
+
+Revision: f1407e7ae5e2e65d2844a06d0f657b086269bd4e
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 10/01/2018 07:19:36
+Message:
+CB-13754: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: 62e8a187c1ce182d53467d76b63544e7a2bac806
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 12/01/2018 06:13:12
+Message:
+CB-12679: Remove Permissions section #MsgLength=37
+
+
+----
+Modified: README.md|0 9
+
+
+Revision: fbc4862dbd0713a1eb276eb0e184a2963c08d7aa
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:06:22
+Message:
+CB-14030 Updated version and RELEASENOTES.md for release 2.4.2 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b8e0b0188839265088bbef6372dd4eb855f4a677
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:16:16
+Message:
+Set VERSION to 2.4.3-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e0256b2f74797508f83995f07a07199ef08b0e01
+Author: Gearoid M <Menardi@users.noreply.github.com>
+Date: 22/06/2018 11:03:55
+Message:
+Add Android overlay support to README #MsgLength=114
+
+
+----
+Modified: README.md|25 16
+
+
+Revision: ecf8ccd164e26d86417e54a327ca346006ee0b84
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 18/07/2018 17:32:36
+Message:
+remove second title headline #MsgLength=28
+
+
+----
+Modified: README.md|0 3
+
+Revision: 5b77cae78c9690e07821e81771b6868eafac1184
+Author: Travis Dahl <travdahl@gmail.com>
+Date: 11/08/2018 13:46:11
+Message:
+Alpha example doesn't match description #MsgLength=190
+
+
+----
+Modified: README.md|1 1
+
+Revision: 9b5baa2cf96b0f4402da3c903639c7944548ba3b
+Author: Travis Dahl <travdahl@gmail.com>
+Date: 01/09/2018 08:51:35
+Message:
+Add link to explain hexadecimal ARGB values #MsgLength=43
+
+
+----
+Modified: README.md|3 1
+
+
+Revision: c8a13b8da9cc758a3b489678ff5b26039ca45f14
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 01/10/2018 18:57:02
+Message:
+also accept terms for android sdk `android-27` #MsgLength=46
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: adcee9f66f01f95eaa286f956105bbccf62b14df
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 04/10/2018 07:17:08
+Message:
+remove JIRA link #MsgLength=16
+
+
+----
+Modified: README.md|0 3
+
+Revision: 727eea3f5cc396e6bde49b934c70fc245d9b81ea
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:40:35
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: a07612a2993cbce5c6c160153d0c4d7831e06982
+Author: Tim Brust <ratchet.player@gmx.de>
+Date: 21/02/2019 17:57:31
+Message:
+chore: drop Node.js v4 support (#124) #MsgLength=926
+
+
+----
+Modified: .appveyor.yml|11 4
+Modified: .gitignore|0 9
+Modified: .travis.yml|60 75
+
+Revision: 003fa610307f0d2b68aed2cebdc04a939d77912f
+Author: Tim Brust <ratchet.player@gmx.de>
+Date: 07/05/2019 17:24:12
+Message:
+feat: update typings (#132) #MsgLength=109
+
+
+----
+Modified: types/index.d.ts|22 18
+
+Revision: a538bfed649b70a8c570c386ce2159acb91fdf2e
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 18/06/2019 23:27:52
+Message:
+ci(travis): Update Travis CI configuration for new paramedic (#139) #MsgLength=184
+
+
+----
+Modified: .travis.yml|85 37
+
+Revision: da6c2a8c9d56c4214849248b7973b065d1137094
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:41:03
+Message:
+build: add `.gitattributes` to force LF (instead of possible CRLF on Windows) #MsgLength=78
+
+
+----
+Added: .gitattributes|1 0
+
+Revision: 84081deb75cadb9254e3e647a0cb4953ff17a8fc
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:41:16
+Message:
+build: add `.npmignore` to remove unneeded files from npm package #MsgLength=66
+
+
+----
+Added: .npmignore|16 0
+
+Revision: 8dacefad298c9a185b91382731d5d012236af981
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:43:26
+Message:
+docs: remove outdated translations #MsgLength=35
+
+
+----
+Deleted: doc/de/README.md|0 276
+Deleted: doc/de/index.md|0 262
+Deleted: doc/es/README.md|0 276
+Deleted: doc/es/index.md|0 252
+Deleted: doc/fr/README.md|0 276
+Deleted: doc/fr/index.md|0 262
+Deleted: doc/it/README.md|0 276
+Deleted: doc/it/index.md|0 262
+Deleted: doc/ja/README.md|0 276
+Deleted: doc/ja/index.md|0 262
+Deleted: doc/ko/README.md|0 276
+Deleted: doc/ko/index.md|0 262
+Deleted: doc/pl/README.md|0 276
+Deleted: doc/pl/index.md|0 262
+Deleted: doc/ru/index.md|0 238
+Deleted: doc/zh/README.md|0 276
+Deleted: doc/zh/index.md|0 262
+
+Revision: 288bd719e02502263aaf3a06406a751c4b8c7be9
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:43:44
+Message:
+chore: fix github issues link #MsgLength=30
+
+
+----
+Modified: package.json|1 1
+
+Revision: fade76bfee6f1d316ac45d2fd0c7ab50531ff52b
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:43:56
+Message:
+chore(types): remove version from types #MsgLength=40
+
+
+----
+Modified: types/index.d.ts|1 1
+
+Revision: 33e410a29ab4f5c4d2f3ccdb07228fff0708786d
+Author: Norman Breau <norman@normanbreau.com>
+Date: 19/06/2019 22:26:26
+Message:
+docs: Improved documentation and removed text that implies iOS only (#130) #MsgLength=76
+
+
+----
+Modified: README.md|7 3
+
+
+Revision: 5290c2e294f16a09ff2f7860f9b284d6cb97f6e3
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:48:56
+Message:
+chore(release): release notes for 2.4.3 #MsgLength=40
+
+
+----
+Modified: RELEASENOTES.md|19 0
+
+Revision: d456212b4c8abe5b4121edc5ab2148520ffcedbc
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:48:56
+Message:
+chore(release): 2.4.3 (version string) #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 86d60a91b411cc8230116f70ae66cbf64199dc77
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:50:46
+Message:
+chore(release): 2.4.4-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9703774c6cc6f2be85e3efafee974649e7ba6c23
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 03/07/2019 16:28:03
+Message:
+ci(travis): upgrade to node 8 #MsgLength=29
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: eb9e106510d97a669de61cbf1c2032ee9bc787b9
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 04/07/2019 19:46:36
+Message:
+ci(appveyor): replace node 6 with node 12 #MsgLength=41
+
+
+----
+Modified: .appveyor.yml|1 1
+
+Revision: 5f6614c3c16ac140c37307583e29eb19cfb1f41f
+Author: i-need-to-tell-you-something <i-need-to-tell-you-something@users.noreply.github.com>
+Date: 19/10/2019 22:13:24
+Message:
+docs(README): Clarify StatusBarStyle (#160) #MsgLength=45
+
+
+----
+Modified: README.md|1 1
+
+Revision: 13645b9f53a58ad5c0041247087f1f2864ef4c29
+Author: MrBullfinsh <TobiasGimpel@gmx.de>
+Date: 20/10/2019 18:16:48
+Message:
+fix(iOS): Delay resizeWebView on viewWillAppear for correct statusbar height (#157) #MsgLength=85
+
+
+----
+Modified: src/ios/CDVStatusBar.m|5 1
+
+Revision: 217f792101b87531ed72cfb946c76e1a7bb7838b
+Author: Tim Brust <github@timbrust.de>
+Date: 24/10/2019 15:54:45
+Message:
+fix: remove deprecated platforms (#126) #MsgLength=192
+
+
+----
+Modified: README.md|9 29
+Modified: package.json|0 4
+Modified: plugin.xml|0 25
+Deleted: src/wp/StatusBar.cs|0 141
+
+Revision: 7d5d067f0391a9b07fae2ea89de818d0f2247527
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 17/11/2019 19:55:08
+Message:
+fix(ios): make default set black text on iOS 13 too (#169) #MsgLength=60
+
+
+----
+Modified: src/ios/CDVStatusBar.m|6 1
+
+Revision: 24d5f278d0b7ea77f2a966d803af79520f1bfc88
+Author: Kyle Kirby <kylekirby@optimalconnection.net>
+Date: 17/11/2019 19:58:53
+Message:
+Update README.md (#168) #MsgLength=55
+
+
+----
+Modified: README.md|9 0
+
+Revision: 29283396113ab1c46d36b61f397f5cdde32686f7
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 21/03/2020 20:59:48
+Message:
+deprecate blacktranslucent, blackopaque, styleBlackTranslucent and styleBlackOpaque (#173) #MsgLength=92
+
+
+----
+Modified: README.md|5 3
+Modified: src/android/StatusBar.java|5 1
+Modified: src/ios/CDVStatusBar.m|5 1
+Modified: www/statusbar.js|2 2
+
+Revision: 01e69a8863e9b9692a082507dfb9835d549817da
+Author: Tim Brust <github@timbrust.de>
+Date: 27/03/2020 21:24:04
+Message:
+ci: updates Node.js versions (#182) #MsgLength=37
+
+
+----
+Modified: .appveyor.yml|1 4
+Modified: .travis.yml|13 12
+
+Revision: 7f48d65100863700997209c82de17c1d31953796
+Author: Tim Brust <github@timbrust.de>
+Date: 27/03/2020 21:56:14
+Message:
+chore(npm): improve ignore list (#183) #MsgLength=40
+
+
+----
+Modified: .npmignore|2 15
+
+Revision: 5332e3b667db28e71eb2cecda3d1a6b72723a880
+Author: Norman Breau <norman@normanbreau.com>
+Date: 12/04/2020 08:12:47
+Message:
+BREAKING CHANGE!: (android) Read config.xml for statusbar overlay preference (#171) #MsgLength=384
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|1 0
+Modified: src/android/StatusBar.java|3 0
+
+Revision: f9c8119768d22c12ca9c6bb410308ccd5ad1a81e
+Author: Norman Breau <norman@normanbreau.com>
+Date: 12/04/2020 09:32:15
+Message:
+chore(release): 3.0.0-dev (#184) #MsgLength=34
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c5e359dfc254734d908a706d39c58f45569af490
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:32:56
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Modified: CONTRIBUTING.md|4 4
+
+Revision: 6dcb757e51ac686f1ed802d8e3672d4d9a679d19
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:42:50
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: 35279c36c735b179e0da10e1fa384036a244d96c
+Author: Norman Breau <norman@normanbreau.com>
+Date: 26/06/2020 02:15:15
+Message:
+Removed iOS 7+ (#190) #MsgLength=120
+
+
+----
+Modified: README.md|1 1
+
+Revision: d472e382d8479dc013471d9ef8679775f74234c6
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 16:04:55
+Message:
+chore(npm): use short notation in package.json (#195) #MsgLength=55
+
+
+----
+Modified: package.json|2 7
+
+Revision: 1aaa96068312b36a93b93720c843f924ee216f86
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 18:12:16
+Message:
+refactor(eslint): use cordova-eslint (#194) #MsgLength=45
+
+
+----
+Added: .eslintrc.yml|23 0
+Deleted: .jshintrc|0 16
+Modified: package.json|3 3
+Modified: src/browser/StatusBarProxy.js|10 11
+Modified: src/windows/StatusBarProxy.js|17 15
+Modified: tests/tests.js|80 52
+Modified: www/statusbar.js|41 37
+
+Revision: 3b781ccc629a401747fe26cab2817a04a72735d2
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 23:42:35
+Message:
+chore: adds package-lock file (#196) #MsgLength=38
+
+
+----
+Added: package-lock.json|1724 0
+
+Revision: a0e21770ddcf0ef9f67de688341af1e5b83f94e4
+Author: Tim Brust <github@timbrust.de>
+Date: 22/08/2020 20:32:47
+Message:
+ci(travis): updates Android API level (#199) #MsgLength=46
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 1e2a5cb71046913044f4b71cce53093831f6e964
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/09/2020 18:34:00
+Message:
+ci(travis): update osx xcode image (#200) #MsgLength=136
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 283cbb4fa20f3c68bd933ac78063d2d0448ced27
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/11/2020 16:18:31
+Message:
+ci: add node-14.x to workflow (#208) #MsgLength=38
+
+
+----
+Modified: .appveyor.yml|1 0
+Modified: .travis.yml|1 1
+
+Revision: 4ff4f00d58d6d71daf70789d977854af8bf8c28a
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/09/2021 21:57:47
+Message:
+ci: add gh-actions workflows (#218) #MsgLength=341
+
+
+----
+Added: .github/workflows/android.yml|148 0
+Added: .github/workflows/chrome.yml|73 0
+Added: .github/workflows/ios.yml|88 0
+Added: .github/workflows/lint.yml|56 0
+
+Revision: eb2da5d7e92cdb3bed7073336841decc697128f6
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 23:08:22
+Message:
+ci: remove travis & appveyor (#219) #MsgLength=37
+
+
+----
+Deleted: .appveyor.yml|0 33
+Modified: .npmignore|0 1
+Deleted: .travis.yml|0 120
+Modified: README.md|0 4
+
+Revision: 3ebae213dfd9798dc1c674fbbeb4d0ad49947c1d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:04:49
+Message:
+ci: add action-badge (#220) #MsgLength=29
+
+
+----
+Modified: README.md|2 0
+
+Revision: cc24a4d2575a6f8f484d9b269c29e1b2dd7d5f93
+Author: エリス <erisu@users.noreply.github.com>
+Date: 19/10/2021 13:23:15
+Message:
+ci(ios): update workflow w/ iOS 15 (#222) #MsgLength=43
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: ad9fa6e016de836a72a7bd01944fc8938c873178
+Author: エリス <erisu@users.noreply.github.com>
+Date: 19/11/2021 15:46:10
+Message:
+dep(dev): @cordova/eslint-config@4.0.0 w/ fix (#223) #MsgLength=54
+
+
+----
+Modified: .eslintrc.yml|4 0
+Modified: package-lock.json|2794 871
+Modified: package.json|1 1
+
+Revision: d95cc821fc7efa2b2bddfaa247e25b3154d2d60d
+Author: Erisu <erisu@users.noreply.github.com>
+Date: 19/11/2021 16:11:52
+Message:
+Updated version and RELEASENOTES.md for release 3.0.0 (statusbar-v3.0.0) #MsgLength=73
+
+
+----
+Modified: RELEASENOTES.md|26 0
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 813e64c91cace96608a32e95a9088294857ef10c
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 20/11/2021 01:41:54
+Message:
+fix: update engines for working on 3.0.0 (#224) #MsgLength=49
+
+
+----
+Modified: package.json|1 1
+
+Revision: 49bb5ec69e8897458caa994878e1534b37e222ca
+Author: Erisu <erisu@users.noreply.github.com>
+Date: 25/11/2021 07:36:36
+Message:
+Updated version and RELEASENOTES.md for release 3.0.0 (statusbar-v3.0.0) #MsgLength=73
+
+
+----
+Modified: RELEASENOTES.md|2 1
+Modified: package-lock.json|1 1
+
+Revision: 02d4e10d8594e0964acde0502dc419ef0fe0a502
+Author: Erisu <erisu@users.noreply.github.com>
+Date: 01/12/2021 10:55:54
+Message:
+Increment package version to 3.0.1-dev #MsgLength=39
+
+
+----
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ceb186aeb54ab2156ca295fd42be56ed77a5b660
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/07/2022 13:16:45
+Message:
+ci(android): update java requirement for cordova-android@11 (#232) #MsgLength=68
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: b3a2b77b644244435ea8037fef5777cd7fdda81a
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/07/2022 16:53:45
+Message:
+chore(npm): rebuilt package-lock (#233) #MsgLength=41
+
+
+----
+Modified: package-lock.json|477 342
+
+Revision: 0d3533269779b72b3e3f15e073fc8f729513d1b7
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 27/07/2022 07:04:40
+Message:
+fix(browser): Remove invalid proxy function (#230) #MsgLength=52
+
+
+----
+Modified: src/browser/StatusBarProxy.js|0 1
+
+Revision: b7b6c66cbe349cddea2c4481b514caf1a0bb2ed7
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/08/2022 23:40:50
+Message:
+ci: sync workflow with paramedic (#237) #MsgLength=41
+
+
+----
+Modified: .github/workflows/android.yml|12 22
+Modified: .github/workflows/ios.yml|4 13
+
+Revision: 49b94aed6a877d1f1c88c57748fce3de352e3825
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 06/09/2022 05:17:55
+Message:
+fix(android)!: styleDefault not working on new devices (#238) #MsgLength=63
+
+
+----
+Modified: src/android/StatusBar.java|8 4
+
+Revision: fbe33eb327d86b5be4c72e535a8b5c4dcd2b1d2e
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 06/09/2022 05:20:52
+Message:
+refactor!: remove deprecated methods (#229) #MsgLength=45
+
+
+----
+Modified: README.md|1 38
+Modified: src/android/StatusBar.java|1 26
+Modified: src/browser/StatusBarProxy.js|0 2
+Modified: src/ios/CDVStatusBar.h|0 2
+Modified: src/ios/CDVStatusBar.m|1 18
+Modified: src/windows/StatusBarProxy.js|0 10
+Modified: tests/tests.js|0 19
+Modified: types/index.d.ts|0 10
+Modified: www/statusbar.js|0 10
+
+Revision: 39e59297006d1721a05faafd110dfa20de78d908
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 07/09/2022 02:58:10
+Message:
+chore: bump plugin to 4.0.0-dev (#240) #MsgLength=40
+
+
+----
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e214fad877017bb872b62808195b964628376a00
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 07/09/2022 02:58:35
+Message:
+chore!: require cordova-android >= 10 (#241) #MsgLength=46
+
+
+----
+Modified: package.json|4 0
+Modified: plugin.xml|1 0
+
+Revision: 1672883a7fda51e73069d6f350393bb2719228e3
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 08/09/2022 04:08:39
+Message:
+chore(ios): Silence/fix warnings (#228) #MsgLength=41
+
+
+----
+Modified: src/ios/CDVStatusBar.m|10 1
+
+Revision: 53ead01614aad4ad0ca93e312804a81ffe1d70a8
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 08/09/2022 04:10:39
+Message:
+refactor(android): Remove unused code (#242) #MsgLength=46
+
+
+----
+Modified: src/android/StatusBar.java|65 105
+

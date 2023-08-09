@@ -1,0 +1,3347 @@
+Revision: 6d0d603883d3cba8af02152d23b0d72ba79c8afd
+Author: Kim van der Riet <kpvdr@localhost.localdomain>
+Date: 11/06/2015 22:47:50
+Message:
+QPIDIT-1: Intial checkin of Proton Python test shim #MsgLength=52
+
+
+----
+Added: .project|17 0
+Added: .pydevproject|8 0
+Added: LICENSE|202 0
+Added: QUICKSTART|59 0
+Added: README|63 0
+Added: STATUS|48 0
+Added: etc/proton-python-amqp-types.patch|215 0
+Added: shims/qpid-proton-python/src/__init__.py|18 0
+Added: shims/qpid-proton-python/src/proton-python-receive|106 0
+Added: shims/qpid-proton-python/src/proton-python-send|136 0
+Added: src/py/qpid-interop-test/__init__.py|22 0
+Added: src/py/qpid-interop-test/shim_utils.py|388 0
+Added: src/py/qpid-interop-test/shim_utils.pyc|0 0
+Added: src/py/qpid-interop-test/types/simple_type_tests.py|357 0
+
+Revision: 77eba676f7653c3bdb1ea44d1e1c6cb81f47a932
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 09/07/2015 11:29:14
+Message:
+QPIDIT-1: Intial commit of qpid-jms shim #MsgLength=41
+
+
+----
+Added: jars/README|3 0
+Added: jars/slf4j-nop-1.5.6.jar|0 0
+Added: shims/qpid-jms/java-build.sh|13 0
+Added: shims/qpid-jms/java-clean.sh|5 0
+Added: shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/shim/ProtonJmsReceiver.java|269 0
+Added: shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/shim/ProtonJmsSender.java|258 0
+Modified: shims/qpid-proton-python/src/proton-python-send|1 1
+Modified: src/py/qpid-interop-test/types/simple_type_tests.py|76 41
+
+Revision: ebdacb0dd9063d73b49b681d39f7450fa05b391b
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 26/08/2015 10:48:34
+Message:
+QPIDIT-17: Add JMS test suite with Qpid-JMS and Proton-Python clients. #MsgLength=71
+
+
+----
+Added: jars/javax.json-1.0.4.jar|0 0
+Added: jars/javax.json-api-1.0.jar|0 0
+Added: java-build.sh|15 0
+Added: java-clean.sh|5 0
+Modified: shims/qpid-jms/java-build.sh|4 3
+Renamed: shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/shim/AmqpReceiver.java [from shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/shim/ProtonJmsReceiver.java]|11 9
+Renamed: shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/shim/AmqpSender.java [from shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/shim/ProtonJmsSender.java]|7 5
+Added: shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/shim/JmsReceiverShim.java|349 0
+Added: shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/shim/JmsSenderShim.java|368 0
+Renamed: shims/qpid-proton-python/src/amqp-receive [from shims/qpid-proton-python/src/proton-python-receive]|3 7
+Renamed: shims/qpid-proton-python/src/amqp-send [from shims/qpid-proton-python/src/proton-python-send]|2 3
+Added: shims/qpid-proton-python/src/jms-receiver-shim.py|234 0
+Added: shims/qpid-proton-python/src/jms-sender-shim.py|241 0
+Added: src/main/java/org/apache/qpid/interop_test/obj_util/BytesToJavaObj.java|83 0
+Added: src/main/java/org/apache/qpid/interop_test/obj_util/JavaObjToBytes.java|129 0
+Modified: src/py/qpid-interop-test/__init__.py|1 0
+Added: src/py/qpid-interop-test/interop_test_errors.py|29 0
+Added: src/py/qpid-interop-test/jms/jms_message_tests.py|367 0
+Modified: src/py/qpid-interop-test/shim_utils.py|1 1
+Deleted: src/py/qpid-interop-test/shim_utils.pyc|0 0
+Modified: src/py/qpid-interop-test/types/simple_type_tests.py|18 24
+
+Revision: 6c8f781bb4a99a710eb6fa058d1d7c2a161289e3
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 26/08/2015 23:13:29
+Message:
+NO-JIRA: Update of AMQP type support patch etc/proton-python-amqp-types.patch. Update QUICKSTART file. Commented out some troublesome types in simple_type_tests.py so that the those that do work will complete. #MsgLength=210
+
+
+----
+Modified: QUICKSTART|3 2
+Modified: etc/proton-python-amqp-types.patch|16 30
+Modified: src/py/qpid-interop-test/types/simple_type_tests.py|13 14
+
+Revision: 4dfa2bd51209805639667da9d4204423ab81586f
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 26/08/2015 23:16:35
+Message:
+Added some .gitignore files to help ignore build artifacts and temp dirs #MsgLength=73
+
+
+----
+Added: .gitignore|1 0
+Added: shims/qpid-jms/.gitignore|1 0
+Added: src/py/qpid-interop-test/.gitignore|2 0
+
+Revision: 899a9a863cf0b95bb78f59ac9b190e67b1a811e5
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 30/09/2015 05:07:39
+Message:
+QPIDIT-18: Added JSON transfer of structured data between test and shims. Also: QPIDIT-6: AMQP type decimal64 fails..., QPIDIT-5: AMQP type decimal32 fails..., QPIDIT-3: AMQP type decimal128 hangs... #MsgLength=200
+
+
+----
+Modified: QUICKSTART|9 5
+Modified: etc/proton-python-amqp-types.patch|4 4
+Renamed: shims/qpid-proton-python/src/JmsReceiverShim.py [from shims/qpid-proton-python/src/jms-receiver-shim.py]|10 0
+Renamed: shims/qpid-proton-python/src/JmsSenderShim.py [from shims/qpid-proton-python/src/jms-sender-shim.py]|0 4
+Renamed: shims/qpid-proton-python/src/TypesReceiverShim.py [from shims/qpid-proton-python/src/amqp-receive]|27 20
+Renamed: shims/qpid-proton-python/src/TypesSenderShim.py [from shims/qpid-proton-python/src/amqp-send]|21 24
+Modified: src/py/qpid-interop-test/jms/jms_message_tests.py|83 30
+Modified: src/py/qpid-interop-test/types/simple_type_tests.py|159 120
+
+Revision: 6c8ab3b0a25b549de355a85f09e83dde6aa5cd19
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 12/11/2015 04:00:58
+Message:
+QPIDIT-20: Added ability to detect broker and automatically exclude tests that fail for that broker #MsgLength=100
+
+
+----
+Modified: src/py/qpid-interop-test/__init__.py|3 1
+Added: src/py/qpid-interop-test/broker_properties.py|55 0
+Modified: src/py/qpid-interop-test/jms/jms_message_tests.py|29 20
+Deleted: src/py/qpid-interop-test/shim_utils.py|0 388
+Added: src/py/qpid-interop-test/test_type_map.py|80 0
+Modified: src/py/qpid-interop-test/types/simple_type_tests.py|32 21
+
+Revision: 5f7ac58b029c7fe2294b0bbd1097bf2750b91653
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 16/12/2015 04:58:44
+Message:
+QPIDIT-21: Add shims for C++ client #MsgLength=36
+
+
+----
+Modified: QUICKSTART|1 1
+Added: shims/qpid-proton-cpp/CMakeLists.txt|24 0
+Added: shims/qpid-proton-cpp/src/CMakeLists.txt|78 0
+Added: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.cpp|197 0
+Added: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.hpp|165 0
+Added: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.cpp|279 0
+Added: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.hpp|75 0
+Added: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.cpp|329 0
+Added: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.hpp|90 0
+Added: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.cpp|311 0
+Added: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.hpp|88 0
+Added: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.cpp|336 0
+Added: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.hpp|85 0
+Modified: shims/qpid-proton-python/src/JmsSenderShim.py|8 7
+Modified: shims/qpid-proton-python/src/TypesReceiverShim.py|9 4
+Modified: shims/qpid-proton-python/src/TypesSenderShim.py|8 3
+Modified: src/py/qpid-interop-test/jms/jms_message_tests.py|63 47
+Modified: src/py/qpid-interop-test/types/simple_type_tests.py|71 38
+
+Revision: 2204fc595217f7e1dcebe85d14cfb1ba5f3f66e8
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 27/01/2016 23:30:42
+Message:
+QPIDIT-22: Add ability to run on Jenkins continuous integration platform.  Added ability to find qpid-proton and qpid-jms components from build locations.  Some tidy-up. #MsgLength=170
+
+
+----
+Modified: shims/qpid-jms/java-build.sh|15 1
+Modified: shims/qpid-proton-cpp/CMakeLists.txt|5 1
+Modified: shims/qpid-proton-cpp/src/CMakeLists.txt|5 1
+Modified: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.cpp|25 21
+Modified: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.hpp|11 10
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.cpp|6 17
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.hpp|3 4
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.cpp|29 11
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.hpp|7 6
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.cpp|17 9
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.hpp|6 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.cpp|27 17
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.hpp|13 8
+Modified: shims/qpid-proton-python/src/TypesReceiverShim.py|2 2
+Modified: src/py/qpid-interop-test/jms/jms_message_tests.py|72 41
+
+Revision: e2dd1a3f9893c745c5d241d178d00da8c7dfc8b9
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 29/01/2016 03:52:08
+Message:
+NO_JIRA: Update to QUICKSTART file, removed spurious include from src/py/qpid-interop-test/test_type_map.py #MsgLength=108
+
+
+----
+Modified: QUICKSTART|8 1
+Modified: src/py/qpid-interop-test/test_type_map.py|0 2
+
+Revision: b07013efee722b247a462687ba9a3e6c85d28a09
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 04/02/2016 23:26:49
+Message:
+NO-JIRA: Added exit code to tests so that calling scripts can determine success or failure #MsgLength=91
+
+
+----
+Modified: src/py/qpid-interop-test/jms/jms_message_tests.py|4 1
+Modified: src/py/qpid-interop-test/types/simple_type_tests.py|3 1
+
+Revision: 62aaea88860c61f60fb363a02e493d1fd55e1474
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 09/02/2016 22:37:11
+Message:
+PROTON-1061: Fixed error in Python mapping in which int types were treated as AMQP type long. Fix to paths in QUICKSTART text file. #MsgLength=132
+
+
+----
+Modified: QUICKSTART|1 1
+Modified: shims/qpid-proton-python/src/JmsSenderShim.py|2 2
+
+Revision: 1ab3a142f37478d20e0deb82590198c038fd3622
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 12/02/2016 00:30:50
+Message:
+QPIDIT-21: Fixes to accomodate recent changes to the C++ Proton binding #MsgLength=72
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.cpp|11 10
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.cpp|11 11
+
+Revision: d7ea0b7e66446ced737ff73d2273ce0db6735174
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 24/02/2016 00:54:59
+Message:
+NO_JIRA: small addition to check if connection properties are successfully returned in JMS messaging test. This brings this test to the same as the AMQP types test in this regard.  A trivial change which terminates the test with a message instead of crashing when broker fails to return connection properties. #MsgLength=310
+
+
+----
+Modified: src/py/qpid-interop-test/jms/jms_message_tests.py|3 0
+
+Revision: b381453789f7b553de76ec559db7295a3dacd1a3
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 26/02/2016 03:25:10
+Message:
+QPIDIT-24: Updated AMQP type and JMS message tests so that a failure in obtaining connection properties does not prevent the tests from running. #MsgLength=145
+
+
+----
+Modified: src/py/qpid-interop-test/broker_properties.py|8 9
+Modified: src/py/qpid-interop-test/jms/jms_message_tests.py|8 7
+Modified: src/py/qpid-interop-test/types/simple_type_tests.py|8 7
+
+Revision: 75c73667fdf62157e1ab41cffea38a997e7b3989
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 07/03/2016 22:53:18
+Message:
+QPIDIT-22: Removed +inf and -inf from 32-bit float in both JMS and AMQP type tests because of failure in RHEL7 (see PROTON-1149) #MsgLength=129
+
+
+----
+Modified: src/py/qpid-interop-test/jms/jms_message_tests.py|2 2
+Modified: src/py/qpid-interop-test/types/simple_type_tests.py|2 2
+
+Revision: bcd3684c6409d02ea2d844bb367b56ae105897ee
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 08/03/2016 00:19:49
+Message:
+QPIDIT-22: Added test skips for both Qpid and ActiveMQ brokers on AMQP null type (until underlying bug is fixed) so that test can pass. #MsgLength=136
+
+
+----
+Modified: src/py/qpid-interop-test/types/simple_type_tests.py|3 1
+
+Revision: ab84b0eee90b33912ccad8e9a0ee8b5660f413a0
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 15/03/2016 04:00:01
+Message:
+QPIDIT-22: Updated c++ shims for latest changes to Proton c++ API. WIP - JMS shims not working, issues with AMQP types #MsgLength=119
+
+
+----
+Modified: shims/qpid-jms/java-build.sh|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.cpp|18 18
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.hpp|6 0
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.cpp|57 59
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.hpp|7 0
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.cpp|20 20
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.hpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.cpp|21 21
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.hpp|2 2
+Modified: src/py/qpid-interop-test/jms/jms_message_tests.py|0 119
+
+Revision: ab9f27a5353f2c0a3b7e02144d34a9331fe21820
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 15/03/2016 22:54:15
+Message:
+NO_JIRA: Minor updates to README and QUICKSTART #MsgLength=48
+
+
+----
+Modified: QUICKSTART|10 19
+Modified: README|5 5
+
+Revision: 901635ad72f222ad11892dbc3163150afbca2349
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 18/03/2016 00:59:19
+Message:
+QPIDIT-22: Updated AMQP and types test to latest Proton C++ API. #MsgLength=65
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.cpp|3 2
+Modified: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.hpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.cpp|6 6
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.cpp|5 5
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.cpp|18 18
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.hpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.cpp|38 38
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.hpp|2 2
+Modified: src/py/qpid-interop-test/jms/jms_message_tests.py|119 0
+
+Revision: 4f9b9ac68f17137fd985342eb4acfdc4107ed1f1
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 18/03/2016 01:00:12
+Message:
+QPIDIT-22: Updated AMQP and types test to latest Proton C++ API. Files missed in last commit #MsgLength=93
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.cpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.cpp|15 7
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.hpp|6 0
+
+Revision: c1e7146ff44d661d043a3f3b89d5b0997e465b82
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 18/03/2016 01:11:46
+Message:
+NO_JIRA: Update to QUICKSTART file #MsgLength=35
+
+
+----
+Modified: QUICKSTART|32 8
+
+Revision: 35536d60e615b6d7793a1eb7951eb54588038927
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 25/03/2016 23:13:23
+Message:
+QPIDIT-22: Updates to QUICKSTART, reduced size of some test messages to avoid Qpid bug (will add large message tests later), fixed names of shims to be consistent across tests, removed old comments #MsgLength=198
+
+
+----
+Modified: QUICKSTART|5 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.cpp|2 2
+Modified: src/py/qpid-interop-test/jms/jms_message_tests.py|2 2
+Modified: src/py/qpid-interop-test/types/simple_type_tests.py|14 9
+
+Revision: ece43490c0fd564aa80ece215c610e10e22a5314
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 02/04/2016 00:09:07
+Message:
+QPIDIT-21: C++ API changed, adjusted qpid-proton-cpp shims, also reduced verbosity of JMS tests to match AMQP type tests #MsgLength=121
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.cpp|65 50
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.hpp|7 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.cpp|25 9
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.hpp|9 4
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.cpp|10 11
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.hpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.cpp|11 11
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.hpp|5 5
+Modified: src/py/qpid-interop-test/jms/jms_message_tests.py|0 2
+
+Revision: a2bee83f05e179368e12d3dad3f5baa2211e03de
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 02/04/2016 05:21:18
+Message:
+QPIDIT-22: Added support for MAVEN_REPO_PATH environment variable in JMS tests for use on Jenkins #MsgLength=98
+
+
+----
+Modified: src/py/qpid-interop-test/jms/jms_message_tests.py|1 1
+
+Revision: a3753a434d0f89ab4afa43cfe5a768a422d696c9
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 12/04/2016 22:07:28
+Message:
+QPIDIT-21: Updated to reflect latest C++ API changes in Qpid Proton #MsgLength=68
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.cpp|14 14
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.hpp|6 6
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.cpp|13 13
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.hpp|8 8
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.cpp|5 4
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.hpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.cpp|6 5
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.hpp|4 4
+
+Revision: 87e8eae63bd219a62c212d971554c881c689958b
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 19/04/2016 22:48:02
+Message:
+QPIDIT-22: Fixed an error in the use of JAVA_HOME exposed by Jenkins #MsgLength=69
+
+
+----
+Modified: src/py/qpid-interop-test/jms/jms_message_tests.py|2 2
+
+Revision: f4b87a1edcac4d17d25cb36a8d0c80a437657596
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 04/05/2016 22:28:18
+Message:
+QPIDIT-32: Added Maven pom files, removed jars directory containing copies of dependent jars. Also updated to latest Proton C++ API #MsgLength=132
+
+
+----
+Modified: .gitignore|1 1
+Modified: QUICKSTART|6 9
+Deleted: etc/proton-python-amqp-types.patch|0 201
+Deleted: jars/README|0 3
+Deleted: jars/javax.json-1.0.4.jar|0 0
+Deleted: jars/javax.json-api-1.0.jar|0 0
+Deleted: jars/slf4j-nop-1.5.6.jar|0 0
+Deleted: java-build.sh|0 15
+Deleted: java-clean.sh|0 5
+Added: pom.xml|37 0
+Modified: shims/qpid-jms/.gitignore|1 0
+Deleted: shims/qpid-jms/java-build.sh|0 28
+Deleted: shims/qpid-jms/java-clean.sh|0 5
+Added: shims/qpid-jms/pom.xml|97 0
+Renamed: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/AmqpReceiver.java [from shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/shim/AmqpReceiver.java]|0 0
+Renamed: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/AmqpSender.java [from shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/shim/AmqpSender.java]|0 0
+Renamed: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/JmsReceiverShim.java [from shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/shim/JmsReceiverShim.java]|0 0
+Renamed: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/JmsSenderShim.java [from shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/shim/JmsSenderShim.java]|0 0
+Added: shims/qpid-proton-cpp/.gitignore|1 0
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.cpp|6 5
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.hpp|2 3
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.cpp|6 5
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.hpp|3 3
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.cpp|3 5
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.hpp|0 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.cpp|4 5
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.hpp|1 1
+Renamed: src/python/qpid-interop-test/.gitignore [from src/py/qpid-interop-test/.gitignore]|0 0
+Renamed: src/python/qpid-interop-test/__init__.py [from src/py/qpid-interop-test/__init__.py]|0 0
+Renamed: src/python/qpid-interop-test/broker_properties.py [from src/py/qpid-interop-test/broker_properties.py]|0 0
+Renamed: src/python/qpid-interop-test/interop_test_errors.py [from src/py/qpid-interop-test/interop_test_errors.py]|0 0
+Renamed: src/python/qpid-interop-test/jms/jms_message_tests.py [from src/py/qpid-interop-test/jms/jms_message_tests.py]|10 37
+Renamed: src/python/qpid-interop-test/test_type_map.py [from src/py/qpid-interop-test/test_type_map.py]|0 0
+Renamed: src/python/qpid-interop-test/types/simple_type_tests.py [from src/py/qpid-interop-test/types/simple_type_tests.py]|0 0
+Added: utils/.gitignore|1 0
+Added: utils/pom.xml|55 0
+Renamed: utils/src/main/java/org/apache/qpid/qpid_interop_test/obj_util/BytesToJavaObj.java [from src/main/java/org/apache/qpid/interop_test/obj_util/BytesToJavaObj.java]|0 0
+Renamed: utils/src/main/java/org/apache/qpid/qpid_interop_test/obj_util/JavaObjToBytes.java [from src/main/java/org/apache/qpid/interop_test/obj_util/JavaObjToBytes.java]|0 0
+
+Revision: 4e6f4f29102bf645ca0e155bf60666d3696c426f
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 05/05/2016 01:31:04
+Message:
+NO_JIRA: Fixed whitespace issues in code: removed tabs, fixed indentation, removed trailing whitespace #MsgLength=103
+
+
+----
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/AmqpReceiver.java|179 179
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/AmqpSender.java|177 177
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/JmsReceiverShim.java|243 243
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/JmsSenderShim.java|259 260
+
+Revision: 36c7b3be80e71f41f4a2625cf3cec336f205c2c5
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 05/05/2016 01:36:28
+Message:
+NO_JIRA: Fixed whitespace issues in code: removed tabs, fixed indentation, removed trailing whitespace #MsgLength=103
+
+
+----
+Modified: utils/src/main/java/org/apache/qpid/qpid_interop_test/obj_util/BytesToJavaObj.java|55 55
+Modified: utils/src/main/java/org/apache/qpid/qpid_interop_test/obj_util/JavaObjToBytes.java|92 92
+
+Revision: c8712d872505513d6f5a2032f73f1956e21de888
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 05/05/2016 22:33:33
+Message:
+QPIDIT-32: Added build.plugins.plugin.version for maven-compiler-plugin in the pom.xml files to silence warning (recommended since maven 3.0) #MsgLength=142
+
+
+----
+Modified: shims/qpid-jms/pom.xml|1 0
+Modified: utils/pom.xml|1 0
+
+Revision: 159efd475397f37f51327c078cb1ef9486063963
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 14/05/2016 04:25:39
+Message:
+QPIDIT-32: Improvements to Maven pom.xml files from Robbie Gemmell. #MsgLength=68
+
+
+----
+Modified: .gitignore|1 1
+Modified: pom.xml|37 4
+Modified: shims/qpid-jms/pom.xml|6 23
+Modified: utils/pom.xml|5 29
+
+Revision: f33dffc47f56b1361e3dfaf4c2041463d27701d7
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 18/05/2016 23:15:28
+Message:
+QPIDIT-21: Uptaded for latest changes to Proton C++ API #MsgLength=56
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.cpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.hpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.cpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.hpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.cpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.hpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.cpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.hpp|2 2
+
+Revision: b37d02fd4566eb0ead6a3e53afb89450a2b4070f
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 21/05/2016 02:38:24
+Message:
+QPIDIT-22: Skipped tests that dont run on Artemis #MsgLength=50
+
+
+----
+Modified: src/python/qpid-interop-test/types/simple_type_tests.py|8 3
+
+Revision: 422f55593a194c887eac6c659cb86d13039b7ee5
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 27/05/2016 03:20:07
+Message:
+QPIDIT-33: WIP: Added JMS Message type (which has no body) to tests. Updates to QUICKSTART file. #MsgLength=97
+
+
+----
+Modified: QUICKSTART|8 2
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/JmsReceiverShim.java|7 3
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/JmsSenderShim.java|20 3
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.cpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.cpp|15 1
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.hpp|1 0
+Modified: shims/qpid-proton-python/src/JmsReceiverShim.py|10 0
+Modified: shims/qpid-proton-python/src/JmsSenderShim.py|15 1
+Modified: src/python/qpid-interop-test/jms/jms_message_tests.py|15 15
+Modified: src/python/qpid-interop-test/types/simple_type_tests.py|2 0
+
+Revision: 69cb5a21371ef92b42406bcbaa5b49f7802c0b21
+Author: Kim van der Riet <kvdr@dhcp-1-146.atl.redhat.com>
+Date: 01/06/2016 00:33:13
+Message:
+QPIDIT-22: Updates to match recent changes to the Proton C++ API. Minor fix to QUICKSTART file #MsgLength=95
+
+
+----
+Modified: QUICKSTART|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.cpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.cpp|6 6
+
+Revision: 3545a9fb748f3e10b5dd66aaed2cb814a12aa4f6
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 16/06/2016 03:57:23
+Message:
+QPIDIT-34: Fixed issue with trailing carriage return no longer present in latest versions of jsoncpp - added explicit test for trailing carraige return before removing it #MsgLength=171
+
+
+----
+Modified: src/python/qpid-interop-test/jms/jms_message_tests.py|4 3
+
+Revision: 8876c8fcbfe2af76bbb40e6ad029b0322374205c
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 01/09/2016 05:36:27
+Message:
+QPIDIT-33: JMS headers added to tests; JMS properties still to be completed when proton C++ API issues are fixed. #MsgLength=114
+
+
+----
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/JmsReceiverShim.java|353 181
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/JmsSenderShim.java|190 67
+Modified: shims/qpid-proton-cpp/CMakeLists.txt|1 2
+Modified: shims/qpid-proton-cpp/src/CMakeLists.txt|3 4
+Modified: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.cpp|25 0
+Modified: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.hpp|21 0
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.cpp|12 7
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.hpp|3 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.cpp|11 6
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.hpp|2 1
+Added: shims/qpid-proton-cpp/src/qpidit/shim/JmsDefinitions.hpp|46 0
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.cpp|118 13
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.hpp|22 1
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.cpp|131 10
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.hpp|24 1
+Modified: shims/qpid-proton-python/src/JmsReceiverShim.py|69 4
+Modified: shims/qpid-proton-python/src/JmsSenderShim.py|89 6
+Modified: src/python/qpid-interop-test/.gitignore|2 0
+Modified: src/python/qpid-interop-test/jms/jms_message_tests.py|218 48
+Modified: src/python/qpid-interop-test/test_type_map.py|7 0
+Modified: src/python/qpid-interop-test/types/simple_type_tests.py|7 5
+
+Revision: 038afc553794eefbd1a4800e33dfeef015e8ecff
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 07/09/2016 21:07:46
+Message:
+QPIDIT-22: Minor fix for Artemis, which adds message properties not part of the origianl message - pyhton client did not handle this. #MsgLength=134
+
+
+----
+Modified: shims/qpid-proton-python/src/JmsReceiverShim.py|1 2
+
+Revision: ec0e4bbc6df2d3f6b216b8dd0c4a80a62998f912
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 08/09/2016 02:53:48
+Message:
+NO_JIRA: Tidy-up of Python code #MsgLength=32
+
+
+----
+Modified: shims/qpid-proton-python/src/JmsReceiverShim.py|43 14
+Modified: shims/qpid-proton-python/src/JmsSenderShim.py|58 12
+Modified: shims/qpid-proton-python/src/TypesReceiverShim.py|16 3
+Modified: shims/qpid-proton-python/src/TypesSenderShim.py|21 3
+Modified: src/python/qpid-interop-test/jms/jms_message_tests.py|113 129
+Modified: src/python/qpid-interop-test/types/simple_type_tests.py|50 23
+
+Revision: 1c5a913babb5a391b568cc0ebbff2e95dcb074fc
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 16/09/2016 21:45:23
+Message:
+QPIDIT-36: Changed test harnesses so that send and receive shims work concurrently on different threads. The sender is started prior to the receiver for allowing operation against brokerless dispatch router configurations. #MsgLength=223
+
+
+----
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/JmsSenderShim.java|1 0
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.cpp|3 2
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.cpp|46 42
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.cpp|1 3
+Modified: shims/qpid-proton-python/src/JmsReceiverShim.py|9 0
+Modified: shims/qpid-proton-python/src/JmsSenderShim.py|9 0
+Modified: src/python/qpid-interop-test/jms/jms_message_tests.py|81 177
+Added: src/python/qpid-interop-test/shims.py|178 0
+Modified: src/python/qpid-interop-test/types/simple_type_tests.py|57 139
+
+Revision: 54c1e4af45d9b5c1f1113831e325c04ca474d695
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 17/09/2016 01:32:41
+Message:
+QPIDIT-38: Added better handling of message property keys in Python Receiver shim which was failing when it encountered properties added by the Artemis broker and were not part of the original test message. #MsgLength=207
+
+
+----
+Modified: shims/qpid-proton-python/src/JmsReceiverShim.py|24 22
+
+Revision: c810fc3af4d7272158c19646e4da98418afb40e6
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 22/09/2016 04:36:37
+Message:
+QPIDIT-22: Updated JMS client dependencies for JMS 2.0 #MsgLength=55
+
+
+----
+Modified: shims/qpid-jms/pom.xml|9 2
+
+Revision: f5d177d0537aa22ccce5a384ec6419e7cf7992a3
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 01/10/2016 01:52:28
+Message:
+QPIDIT-40: Added thread kill after timeout. Also improved reporting of errors from shims using stderr. #MsgLength=103
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.cpp|7 1
+Modified: src/python/qpid-interop-test/jms/jms_message_tests.py|2 6
+Modified: src/python/qpid-interop-test/shims.py|41 17
+Modified: src/python/qpid-interop-test/types/simple_type_tests.py|4 4
+
+Revision: 5dc10051e27922896c73deb9fdf05b18e4315c87
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 01/10/2016 04:19:30
+Message:
+QPIDIT-40: Improvement to terminate and kill code based on testing, also some pylint-suggested tidy-ups #MsgLength=104
+
+
+----
+Modified: src/python/qpid-interop-test/shims.py|42 18
+Modified: src/python/qpid-interop-test/types/simple_type_tests.py|20 19
+
+Revision: cd3ab86dceefe1f356b5e34506ccc89eef829034
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 01/10/2016 04:46:42
+Message:
+QPIDIT-40: Added os kill based on testing where some threads could not be killed by process.kill() #MsgLength=99
+
+
+----
+Modified: src/python/qpid-interop-test/jms/jms_message_tests.py|2 0
+Modified: src/python/qpid-interop-test/shims.py|16 4
+Modified: src/python/qpid-interop-test/types/simple_type_tests.py|2 0
+
+Revision: 6717f243d64ffbb59609d86ed5520f0c7f3b26f7
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 01/10/2016 04:51:48
+Message:
+QPIDIT-40: Also added queue name to receiver thread name #MsgLength=57
+
+
+----
+Modified: src/python/qpid-interop-test/shims.py|1 1
+
+Revision: 9047325367288be2917a3e5aa25094d7028fc3af
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 04/10/2016 19:31:40
+Message:
+QPIDIT-40: Kill not working for groups, changed to terminate process group and kill process group #MsgLength=98
+
+
+----
+Modified: src/python/qpid-interop-test/shims.py|15 24
+
+Revision: baed642d95f7b462938971696d3d2cac1a270ff0
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 04/10/2016 19:59:21
+Message:
+QPIDIT-40: Fixed bug in last commit: global name 'os' not defined #MsgLength=66
+
+
+----
+Modified: src/python/qpid-interop-test/shims.py|2 2
+
+Revision: 83b89fe4077e33554de5ed593b5fe1c4009e18ad
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 05/10/2016 03:17:05
+Message:
+QPIDIT-41: Re-organization of project directory structure #MsgLength=58
+
+
+----
+Renamed: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/amqp_types_test/Receiver.java [from shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/AmqpReceiver.java]|5 2
+Renamed: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/amqp_types_test/Sender.java [from shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/AmqpSender.java]|2 2
+Renamed: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_messages_test/Receiver.java [from shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/JmsReceiverShim.java]|4 4
+Renamed: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_messages_test/Sender.java [from shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/shim/JmsSenderShim.java]|4 4
+Modified: shims/qpid-proton-cpp/src/CMakeLists.txt|51 24
+Renamed: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Receiver.cpp [from shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.cpp]|20 20
+Renamed: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Receiver.hpp [from shims/qpid-proton-cpp/src/qpidit/shim/AmqpReceiver.hpp]|8 8
+Renamed: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.cpp [from shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.cpp]|25 25
+Renamed: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.hpp [from shims/qpid-proton-cpp/src/qpidit/shim/AmqpSender.hpp]|8 8
+Renamed: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/JmsDefinitions.hpp [from shims/qpid-proton-cpp/src/qpidit/shim/JmsDefinitions.hpp]|4 4
+Renamed: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Receiver.cpp [from shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.cpp]|34 34
+Renamed: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Receiver.hpp [from shims/qpid-proton-cpp/src/qpidit/shim/JmsReceiver.hpp]|12 12
+Renamed: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Sender.cpp [from shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.cpp]|35 35
+Renamed: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Sender.hpp [from shims/qpid-proton-cpp/src/qpidit/shim/JmsSender.hpp]|9 9
+Renamed: shims/qpid-proton-python/src/amqp_types_test/Receiver.py [from shims/qpid-proton-python/src/TypesReceiverShim.py]|0 0
+Renamed: shims/qpid-proton-python/src/amqp_types_test/Sender.py [from shims/qpid-proton-python/src/TypesSenderShim.py]|0 0
+Renamed: shims/qpid-proton-python/src/jms_messages_test/Receiver.py [from shims/qpid-proton-python/src/JmsReceiverShim.py]|0 0
+Renamed: shims/qpid-proton-python/src/jms_messages_test/Sender.py [from shims/qpid-proton-python/src/JmsSenderShim.py]|0 0
+Modified: src/python/qpid-interop-test/__init__.py|1 0
+Renamed: src/python/qpid-interop-test/amqp_types_test.py [from src/python/qpid-interop-test/types/simple_type_tests.py]|8 8
+Renamed: src/python/qpid-interop-test/jms_messages_test.py [from src/python/qpid-interop-test/jms/jms_message_tests.py]|10 10
+
+Revision: 514bac7511be39c2ceb25eb31c3234ccd9c1ae74
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 08/10/2016 00:49:53
+Message:
+QPIDIT-41: Reorganized dir structure and tidied up the test code. Copied the old jms_messages_test to a new jms_hdrs_props_test and simplified the jms_messages_test to include only message body tests. Simplified parameters sent to shims to the same format for all shims, only one JSON string to and returned from receiver shim. #MsgLength=328
+
+
+----
+Modified: .pydevproject|2 3
+Added: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_hdrs_props_test/Receiver.java|525 0
+Added: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_hdrs_props_test/Sender.java|508 0
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_messages_test/Receiver.java|4 122
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_messages_test/Sender.java|4 105
+Modified: shims/qpid-proton-cpp/src/CMakeLists.txt|44 0
+Added: shims/qpid-proton-cpp/src/qpidit/JmsTestBase.cpp|69 0
+Renamed: shims/qpid-proton-cpp/src/qpidit/JmsTestBase.hpp [from shims/qpid-proton-cpp/src/qpidit/jms_messages_test/JmsDefinitions.hpp]|38 20
+Added: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.cpp|396 0
+Added: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.hpp|100 0
+Added: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Sender.cpp|451 0
+Added: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Sender.hpp|109 0
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Receiver.cpp|10 131
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Receiver.hpp|4 26
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Sender.cpp|1 137
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Sender.hpp|2 27
+Modified: shims/qpid-proton-python/src/amqp_types_test/Receiver.py|5 4
+Modified: shims/qpid-proton-python/src/amqp_types_test/Sender.py|6 5
+Added: shims/qpid-proton-python/src/jms_hdrs_props_test/Receiver.py|357 0
+Added: shims/qpid-proton-python/src/jms_hdrs_props_test/Sender.py|388 0
+Modified: shims/qpid-proton-python/src/jms_messages_test/Receiver.py|7 77
+Modified: shims/qpid-proton-python/src/jms_messages_test/Sender.py|7 98
+Renamed: src/python/qpid_interop_test/.gitignore [from src/python/qpid-interop-test/.gitignore]|0 0
+Renamed: src/python/qpid_interop_test/__init__.py [from src/python/qpid-interop-test/__init__.py]|0 3
+Renamed: src/python/qpid_interop_test/amqp_types_test.py [from src/python/qpid-interop-test/amqp_types_test.py]|28 20
+Renamed: src/python/qpid_interop_test/broker_properties.py [from src/python/qpid-interop-test/broker_properties.py]|5 4
+Renamed: src/python/qpid_interop_test/interop_test_errors.py [from src/python/qpid-interop-test/interop_test_errors.py]|0 0
+Renamed: src/python/qpid_interop_test/jms_hdrs_props_test.py [from src/python/qpid-interop-test/jms_messages_test.py]|44 35
+Added: src/python/qpid_interop_test/jms_messages_test.py|402 0
+Renamed: src/python/qpid_interop_test/shims.py [from src/python/qpid-interop-test/shims.py]|2 4
+Renamed: src/python/qpid_interop_test/test_type_map.py [from src/python/qpid-interop-test/test_type_map.py]|4 3
+
+Revision: 424d23636b8ba4e4e02b27585c5214b9c1bf937f
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 15/10/2016 04:14:53
+Message:
+QPIDIT-42: JMS headers/properties test finalized. #MsgLength=50
+
+
+----
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_hdrs_props_test/Receiver.java|43 3
+Modified: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.cpp|9 0
+Modified: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.hpp|7 0
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.cpp|49 5
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.hpp|2 0
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Sender.cpp|1 1
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Receiver.py|45 9
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|250 96
+Modified: src/python/qpid_interop_test/shims.py|6 4
+
+Revision: aa01b8e0c9078770a24b357cd6447496bdb3f7c2
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 17/10/2016 21:54:39
+Message:
+QPIDIT-42: Fix for shim compilation error owing to missing include #MsgLength=67
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.cpp|1 0
+
+Revision: 138dc7d1ea271c824fd45a0b574b69c07a8101e4
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 18/10/2016 04:16:55
+Message:
+QPIDIT-43 QPIDIT-44 QPIDIT-45: Added framework for new tests: AMQP features test, AMQP and JMS DTX and large content tests #MsgLength=123
+
+
+----
+Deleted: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/amqp_types_test/Receiver.java|0 274
+Deleted: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/amqp_types_test/Sender.java|0 260
+Added: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_dtx_test/Receiver.java|407 0
+Added: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_dtx_test/Sender.java|113 0
+Added: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_large_content_test/Receiver.java|407 0
+Added: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_large_content_test/Sender.java|113 0
+Modified: shims/qpid-proton-cpp/src/CMakeLists.txt|51 78
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_dtx_test/Receiver.cpp|43 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_dtx_test/Receiver.hpp|39 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_dtx_test/Sender.cpp|43 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_dtx_test/Sender.hpp|39 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_features_test/Receiver.cpp|43 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_features_test/Receiver.hpp|39 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_features_test/Sender.cpp|44 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_features_test/Sender.hpp|39 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Receiver.cpp|43 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Receiver.hpp|39 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Sender.cpp|43 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Sender.hpp|40 0
+Added: shims/qpid-proton-cpp/src/qpidit/jms_dtx_test/Receiver.cpp|43 0
+Added: shims/qpid-proton-cpp/src/qpidit/jms_dtx_test/Receiver.hpp|39 0
+Added: shims/qpid-proton-cpp/src/qpidit/jms_dtx_test/Sender.cpp|43 0
+Added: shims/qpid-proton-cpp/src/qpidit/jms_dtx_test/Sender.hpp|39 0
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.cpp|12 1
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.hpp|2 1
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Sender.hpp|0 1
+Added: shims/qpid-proton-cpp/src/qpidit/jms_large_content_test/Receiver.cpp|43 0
+Added: shims/qpid-proton-cpp/src/qpidit/jms_large_content_test/Receiver.hpp|39 0
+Added: shims/qpid-proton-cpp/src/qpidit/jms_large_content_test/Sender.cpp|43 0
+Added: shims/qpid-proton-cpp/src/qpidit/jms_large_content_test/Sender.hpp|39 0
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Receiver.hpp|0 1
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Sender.hpp|0 1
+Added: shims/qpid-proton-python/src/amqp_dtx_test/Receiver.py|75 0
+Added: shims/qpid-proton-python/src/amqp_dtx_test/Sender.py|94 0
+Added: shims/qpid-proton-python/src/amqp_features_test/Receiver.py|75 0
+Added: shims/qpid-proton-python/src/amqp_features_test/Sender.py|94 0
+Added: shims/qpid-proton-python/src/amqp_large_content_test/Receiver.py|75 0
+Added: shims/qpid-proton-python/src/amqp_large_content_test/Sender.py|94 0
+Modified: shims/qpid-proton-python/src/amqp_types_test/Receiver.py|9 7
+Modified: shims/qpid-proton-python/src/amqp_types_test/Sender.py|8 6
+Added: shims/qpid-proton-python/src/jms_dtx_test/Receiver.py|76 0
+Added: shims/qpid-proton-python/src/jms_dtx_test/Sender.py|95 0
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Receiver.py|10 12
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Sender.py|10 21
+Added: shims/qpid-proton-python/src/jms_large_content_test/Receiver.py|76 0
+Added: shims/qpid-proton-python/src/jms_large_content_test/Sender.py|95 0
+Modified: shims/qpid-proton-python/src/jms_messages_test/Receiver.py|11 13
+Modified: shims/qpid-proton-python/src/jms_messages_test/Sender.py|15 28
+Added: src/python/qpid_interop_test/amqp_dtx_test.py|136 0
+Added: src/python/qpid_interop_test/amqp_features_test.py|136 0
+Added: src/python/qpid_interop_test/amqp_large_content_test.py|156 0
+Modified: src/python/qpid_interop_test/amqp_types_test.py|1 1
+Added: src/python/qpid_interop_test/jms_dtx_test.py|144 0
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|1 1
+Added: src/python/qpid_interop_test/jms_large_content_test.py|144 0
+Added: src/python/qpid_interop_test/jms_types.py|39 0
+
+Revision: f27896de1b5f015a1f3366c12ecbf9e1b9fe9ad3
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 18/10/2016 05:35:13
+Message:
+QPIDIT-42: Omitted fix for Python receiver shim for handling "queue://" and "topic://" prefix added to address by some brokers #MsgLength=127
+
+
+----
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Receiver.py|2 0
+
+Revision: f17dac39f2c635ef917ed7554664495b0dd8650e
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 19/10/2016 02:33:20
+Message:
+QPIDIT-43: WIP messaging features: added connection properties test into main test harness and into the python shim. The C++ shim is incomplete woing to the inability to access these properties through the C++ bindings ATM. #MsgLength=224
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_features_test/Sender.cpp|91 1
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_features_test/Sender.hpp|27 0
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.cpp|7 6
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.hpp|2 1
+Modified: shims/qpid-proton-python/src/amqp_features_test/Receiver.py|24 4
+Modified: shims/qpid-proton-python/src/amqp_features_test/Sender.py|21 3
+Modified: src/python/qpid_interop_test/amqp_features_test.py|64 10
+Modified: src/python/qpid_interop_test/amqp_types_test.py|1 6
+Modified: src/python/qpid_interop_test/broker_properties.py|4 4
+Modified: src/python/qpid_interop_test/shims.py|22 12
+
+Revision: 62ff8f4c953f04904ed8f5e4585205e254ab8aa8
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 19/10/2016 03:29:19
+Message:
+QPIDIT-43: Fix for previous checkin: Change in logic broke existing tests #MsgLength=74
+
+
+----
+Modified: src/python/qpid_interop_test/amqp_types_test.py|3 2
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|3 2
+Modified: src/python/qpid_interop_test/jms_messages_test.py|3 2
+
+Revision: 188fb098c5b16764a746b2dac9c160ce9eab2190
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 25/10/2016 08:22:14
+Message:
+QPIDIT-43 QPIDIT-44: Complete Large Content test for AMQP, some fixes to other shims and test fixtures #MsgLength=103
+
+
+----
+Modified: shims/qpid-proton-cpp/src/CMakeLists.txt|33 23
+Added: shims/qpid-proton-cpp/src/qpidit/AmqpReceiverBase.cpp|45 0
+Added: shims/qpid-proton-cpp/src/qpidit/AmqpReceiverBase.hpp|44 0
+Added: shims/qpid-proton-cpp/src/qpidit/AmqpSenderBase.cpp|60 0
+Added: shims/qpid-proton-cpp/src/qpidit/AmqpSenderBase.hpp|52 0
+Added: shims/qpid-proton-cpp/src/qpidit/AmqpTestBase.cpp|63 0
+Added: shims/qpid-proton-cpp/src/qpidit/AmqpTestBase.hpp|53 0
+Modified: shims/qpid-proton-cpp/src/qpidit/JmsTestBase.cpp|3 2
+Modified: shims/qpid-proton-cpp/src/qpidit/JmsTestBase.hpp|8 6
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_features_test/Sender.hpp|1 0
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Receiver.cpp|131 1
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Receiver.hpp|21 2
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Sender.cpp|130 3
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Sender.hpp|28 3
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Receiver.cpp|6 5
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Receiver.hpp|2 1
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.cpp|4 46
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.hpp|5 17
+Modified: shims/qpid-proton-python/src/amqp_dtx_test/Receiver.py|5 5
+Modified: shims/qpid-proton-python/src/amqp_features_test/Receiver.py|5 5
+Modified: shims/qpid-proton-python/src/amqp_large_content_test/Receiver.py|65 11
+Modified: shims/qpid-proton-python/src/amqp_large_content_test/Sender.py|59 12
+Modified: shims/qpid-proton-python/src/amqp_types_test/Receiver.py|4 4
+Modified: shims/qpid-proton-python/src/jms_dtx_test/Receiver.py|5 5
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Receiver.py|4 4
+Modified: shims/qpid-proton-python/src/jms_large_content_test/Receiver.py|5 5
+Modified: shims/qpid-proton-python/src/jms_messages_test/Receiver.py|4 4
+Modified: src/python/qpid_interop_test/amqp_dtx_test.py|0 0
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|114 21
+Modified: src/python/qpid_interop_test/shims.py|1 1
+
+Revision: 59fbdfe572626a01b3178ae6fb7882b5e6bf0690
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 25/10/2016 08:39:48
+Message:
+QPIDIT-43 QPIDIT-44: Minor fix for compiling on RHEL which does not occur on Fedora #MsgLength=84
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/AmqpSenderBase.hpp|1 0
+
+Revision: 5579efd4bf07196f09bcea3a0657c18ad8fa305b
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 25/10/2016 11:45:29
+Message:
+QPIDIT-43 QPIDIT-44: Minor fix for compiling on RHEL which does not occur on Fedora (again) #MsgLength=92
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Sender.cpp|3 3
+
+Revision: 156ac5a56c2fdf88efb5ea5e5d43dbc313d3da76
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 05/11/2016 03:41:52
+Message:
+QPIDIT-47: Add Rhea javascript client. Also includes minor adjustments to python and c++ shims owing to expended tests and not using message ids as a part of the test. #MsgLength=168
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Receiver.cpp|2 1
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Receiver.hpp|1 1
+Modified: shims/qpid-proton-python/src/amqp_types_test/Receiver.py|1 1
+Added: shims/rhea-js/amqp_types_test/.gitignore|1 0
+Added: shims/rhea-js/amqp_types_test/README|47 0
+Added: shims/rhea-js/amqp_types_test/Receiver.js|196 0
+Added: shims/rhea-js/amqp_types_test/Sender.js|340 0
+Added: shims/rhea-js/amqp_types_test/rhea-long-ulong.patch|50 0
+Modified: src/python/qpid_interop_test/amqp_types_test.py|91 36
+Modified: src/python/qpid_interop_test/shims.py|9 0
+
+Revision: 97cad30c7706b1a92fa25575000eb80f4a51eec8
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 12/11/2016 02:49:49
+Message:
+QPIDIT-47: Patch accepted into upstream Rhea. Removed patch file and text in README concerning the patch. #MsgLength=106
+
+
+----
+Modified: shims/rhea-js/amqp_types_test/README|0 12
+Deleted: shims/rhea-js/amqp_types_test/rhea-long-ulong.patch|0 50
+
+Revision: fc408e3b11ca3d6ad8f5c23318d4d448aea1c701
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 12/11/2016 03:29:57
+Message:
+QPIDIT-48: Removed --broker, added --sender and --receiver options. This allows sender and reciever to use different IP addresses for use in dispatch router or other distributed tests. Also some minor tidy-up: removed bangs from test strings (as they are difficult to use on the bash command-line) and (slightly) improved debug strings in the shim Sender and Receiver functions #MsgLength=378
+
+
+----
+Modified: src/python/qpid_interop_test/amqp_types_test.py|29 21
+Modified: src/python/qpid_interop_test/shims.py|4 4
+
+Revision: 1c1ec17258df462bfc3f674fd815c96c0bb99fb8
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 15/11/2016 02:26:56
+Message:
+QPIDIT-48: Added --sender and --receiver options to reamining tests; also some minor code clean-up #MsgLength=99
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Receiver.hpp|1 1
+Modified: src/python/qpid_interop_test/amqp_dtx_test.py|1 1
+Modified: src/python/qpid_interop_test/amqp_features_test.py|17 12
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|21 17
+Modified: src/python/qpid_interop_test/amqp_types_test.py|13 14
+Modified: src/python/qpid_interop_test/jms_dtx_test.py|5 3
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|26 16
+Modified: src/python/qpid_interop_test/jms_messages_test.py|19 17
+
+Revision: fc29349e053f5ef20e6e6cbd6fcf10bc81cfdb6a
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 19/11/2016 02:06:17
+Message:
+NO_JIRA: Update instructions in QUICKSTART #MsgLength=43
+
+
+----
+Modified: QUICKSTART|153 56
+
+Revision: ca103a025f24524fdcc76c98dab7d0b40fe054fd
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 22/11/2016 03:40:55
+Message:
+QPIDIT-49: Describe C++ dependencies better #MsgLength=44
+
+
+----
+Modified: QUICKSTART|1 1
+
+Revision: 238015950eaa2006e6f6d0aeb4ac6829f0fbe4e9
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 22/11/2016 03:46:37
+Message:
+QPIDIT-50: Dereference Json::ValueConstIterator as object #MsgLength=58
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Sender.cpp|5 5
+
+Revision: 0e153797bdb6625c81be4834faf31a553997e7b6
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 24/11/2016 01:51:46
+Message:
+QPIDIT-52: Make qpid-interop-test installable. Now the test is installable via the use of cmake / make from the top level directory. #MsgLength=133
+
+
+----
+Modified: .gitignore|1 0
+Added: CMakeLists.txt|58 0
+Modified: QUICKSTART|9 27
+Added: setup.py|66 0
+Modified: shims/qpid-proton-cpp/CMakeLists.txt|1 1
+Renamed: shims/qpid-proton-python/src/amqp_dtx_test/__init__.py [from shims/qpid-proton-python/src/__init__.py]|1 0
+Added: shims/qpid-proton-python/src/amqp_features_test/__init__.py|19 0
+Added: shims/qpid-proton-python/src/amqp_large_content_test/__init__.py|19 0
+Added: shims/qpid-proton-python/src/amqp_types_test/__init__.py|19 0
+Added: shims/qpid-proton-python/src/jms_dtx_test/__init__.py|19 0
+Added: shims/qpid-proton-python/src/jms_hdrs_props_test/__init__.py|19 0
+Added: shims/qpid-proton-python/src/jms_large_content_test/__init__.py|19 0
+Added: shims/qpid-proton-python/src/jms_messages_test/__init__.py|19 0
+Renamed: src/python/not_yet_impl/amqp_dtx_test.py [from src/python/qpid_interop_test/amqp_dtx_test.py]|0 0
+Renamed: src/python/not_yet_impl/amqp_features_test.py [from src/python/qpid_interop_test/amqp_features_test.py]|0 0
+Renamed: src/python/not_yet_impl/jms_dtx_test.py [from src/python/qpid_interop_test/jms_dtx_test.py]|0 0
+Renamed: src/python/not_yet_impl/jms_large_content_test.py [from src/python/qpid_interop_test/jms_large_content_test.py]|0 0
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|4 8
+Modified: src/python/qpid_interop_test/amqp_types_test.py|7 12
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|4 8
+Modified: src/python/qpid_interop_test/jms_messages_test.py|4 8
+
+Revision: 236d7079583990492964f8d487a5a78cbbebd0d2
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 24/11/2016 05:49:46
+Message:
+QPIDIT-40: Added daemon status to sender and receiver threads so that they will respond to KeyboardInterrupts #MsgLength=110
+
+
+----
+Modified: src/python/qpid_interop_test/shims.py|6 2
+
+Revision: 547f1dd8be923f1d6404895a2201f1ed01966e2c
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 24/11/2016 06:45:50
+Message:
+QPIDIT-2: Added mutually exclusive options --exclude-shim and --include-shim to tests #MsgLength=86
+
+
+----
+Renamed: src/python/not_yet_impl/jms_types.py [from src/python/qpid_interop_test/jms_types.py]|0 0
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|29 7
+Modified: src/python/qpid_interop_test/amqp_types_test.py|36 12
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|29 10
+Modified: src/python/qpid_interop_test/jms_messages_test.py|29 10
+
+Revision: 2ce7f69704ef18005ae471649577f437ff9a85c2
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 08/12/2016 00:42:27
+Message:
+QPIDIT-59: Added a HOWTO for writing shims #MsgLength=43
+
+
+----
+Added: docs/Shim_HOWTO.txt|458 0
+
+Revision: e622fa5798a4211ec5e74d456d945b3fe5a146e4
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 13/12/2016 02:31:35
+Message:
+QPIDIT-2: Added --include-type and --exclude-type parameters, as well as --no-skip flag to control tests #MsgLength=105
+
+
+----
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|54 24
+Modified: src/python/qpid_interop_test/amqp_types_test.py|82 85
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|66 67
+Modified: src/python/qpid_interop_test/jms_messages_test.py|62 64
+Modified: src/python/qpid_interop_test/test_type_map.py|21 0
+
+Revision: 73a2aa661328eaeb1e5aabd6068f3f36f5fd7889
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 13/12/2016 02:32:29
+Message:
+QPIDIT-59: Minor updates to HOWTO file #MsgLength=39
+
+
+----
+Modified: docs/Shim_HOWTO.txt|3 3
+
+Revision: 69f02aad62546643077c4847fbf3ed3e9382c029
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 20/12/2016 04:36:19
+Message:
+QPIDIT-67: Added missing #includes after recent checkin by Andrew Stitcher which cleans up the Proton C++ binding headers #MsgLength=122
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/AmqpReceiverBase.cpp|2 0
+Modified: shims/qpid-proton-cpp/src/qpidit/AmqpSenderBase.cpp|1 0
+Modified: shims/qpid-proton-cpp/src/qpidit/AmqpTestBase.cpp|1 0
+Modified: shims/qpid-proton-cpp/src/qpidit/JmsTestBase.cpp|1 0
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_features_test/Sender.cpp|4 0
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Receiver.cpp|4 0
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Sender.cpp|3 0
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Receiver.cpp|5 1
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.cpp|2 0
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.cpp|3 0
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Sender.cpp|2 0
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Receiver.cpp|3 0
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Sender.cpp|2 0
+
+Revision: 73d7b9c08f43c619f88cf40dd3718923a834a90b
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 20/12/2016 06:04:25
+Message:
+QPIDIT-67: Additional #include needed on some versions of Fedora #MsgLength=65
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/JmsTestBase.hpp|1 0
+
+Revision: 0569f2baef8b341c5440c616612e45055f6e480c
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 22/12/2016 06:31:44
+Message:
+QPIDIT-62: Add AMQP.Net Lite client shims #MsgLength=232
+
+
+----
+Added: shims/amqpnetlite/src/amqp_types_test/Receiver/App.config|24 0
+Added: shims/amqpnetlite/src/amqp_types_test/Receiver/Properties/AssemblyInfo.cs|57 0
+Added: shims/amqpnetlite/src/amqp_types_test/Receiver/Receiver.cs|459 0
+Added: shims/amqpnetlite/src/amqp_types_test/Receiver/Receiver.csproj|87 0
+Added: shims/amqpnetlite/src/amqp_types_test/Receiver/packages.config|21 0
+Added: shims/amqpnetlite/src/amqp_types_test/Sender/App.config|24 0
+Added: shims/amqpnetlite/src/amqp_types_test/Sender/Properties/AssemblyInfo.cs|57 0
+Added: shims/amqpnetlite/src/amqp_types_test/Sender/Sender.cs|477 0
+Added: shims/amqpnetlite/src/amqp_types_test/Sender/Sender.csproj|86 0
+Added: shims/amqpnetlite/src/amqp_types_test/Sender/packages.config|21 0
+
+Revision: a1789577aad8a620516b985de0f4cba78594b9dc
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 23/12/2016 01:13:27
+Message:
+QPIDIT-62: Fix sender to support null message type #MsgLength=51
+
+
+----
+Modified: shims/amqpnetlite/src/amqp_types_test/Sender/Sender.cs|69 63
+
+Revision: 91d746e627c7ae369ebf19a60ca26b97361e4109
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 06/01/2017 03:09:37
+Message:
+QPIDIT-69: Missing file jms_types.py replaced #MsgLength=46
+
+
+----
+Renamed: src/python/qpid_interop_test/jms_types.py [from src/python/not_yet_impl/jms_types.py]|0 0
+
+Revision: 99af3b26968ddbaf6813161e2be22eb64329d158
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 06/01/2017 03:24:21
+Message:
+QPIDIT-62: Add AMQP.Net Lite shim - hook up new shim #MsgLength=504
+
+
+----
+Modified: CMakeLists.txt|1 0
+Added: shims/amqpnetlite/src/CMakeLists.txt|142 0
+Renamed: shims/amqpnetlite/src/amqp_types_test/Receiver/Receiver.csproj.in [from shims/amqpnetlite/src/amqp_types_test/Receiver/Receiver.csproj]|11 21
+Modified: shims/amqpnetlite/src/amqp_types_test/Sender/Sender.cs|4 4
+Renamed: shims/amqpnetlite/src/amqp_types_test/Sender/Sender.csproj.in [from shims/amqpnetlite/src/amqp_types_test/Sender/Sender.csproj]|11 21
+Modified: src/python/qpid_interop_test/amqp_types_test.py|6 0
+Modified: src/python/qpid_interop_test/shims.py|11 0
+
+Revision: 456a3496b29154f7a6d1b953e1fe36c8ceebce02
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 07/01/2017 01:31:24
+Message:
+QPIDIT-57 QPIDIT-62: Added mechanism to disable shims if they are not installed. Added cmake file for detecting node.js and npm for Rhea and disabling install if not found. Fixed minor cmake problem in AMQP DotNetLite cmake script #MsgLength=231
+
+
+----
+Modified: CMakeLists.txt|5 7
+Modified: setup.py|0 3
+Modified: shims/amqpnetlite/src/CMakeLists.txt|1 1
+Added: shims/rhea-js/CMakeLists.txt|55 0
+Modified: src/python/qpid_interop_test/amqp_types_test.py|13 4
+
+Revision: 8b71071f8325f97a61377d5af059d7626902e79c
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 06/01/2017 23:17:58
+Message:
+QPIDIT-71: cmake fails to detect program mono version #MsgLength=177
+
+
+----
+Modified: shims/amqpnetlite/src/CMakeLists.txt|21 11
+
+
+Revision: f5c4263a48353b1431d0a4d36d777a86ebf51aa3
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 07/01/2017 01:34:58
+Message:
+QPIDIT-70: Properly encode json results #MsgLength=290
+
+
+----
+Modified: shims/amqpnetlite/src/amqp_types_test/Receiver/Receiver.cs|50 11
+
+Revision: a9229c1008bcfaef92581123515ed3b104692c14
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 07/01/2017 02:58:52
+Message:
+QPIDIT-70: Get encoding to work right #MsgLength=125
+
+
+----
+Modified: shims/amqpnetlite/src/amqp_types_test/Receiver/Receiver.cs|10 6
+
+Revision: 98bbff870d672362bad696b024bb7f12f7fb1a63
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 07/01/2017 03:39:48
+Message:
+NO-JIRA: fix debug typo #MsgLength=24
+
+
+----
+Modified: src/python/qpid_interop_test/shims.py|1 1
+
+Revision: 79fcae609c041890cd910dd5a579f6d691c256e5
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 07/01/2017 04:31:54
+Message:
+QPIDIT-62: AMQP.Net Lite shim feature complete #MsgLength=256
+
+
+----
+Modified: shims/amqpnetlite/src/amqp_types_test/Sender/Sender.cs|23 0
+
+Revision: 8d883313dc49965ed999adbb1dda4118a7c6f27a
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 07/01/2017 05:11:08
+Message:
+QPIDIT-72: Return correct value for null message. #MsgLength=235
+
+
+----
+Modified: shims/amqpnetlite/src/amqp_types_test/Receiver/Receiver.cs|1 1
+
+Revision: 1bccde68efe6b8bcdd9d0305873ccd6e4530ae91
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 24/01/2017 04:40:28
+Message:
+QPIDIT-73: Fixed Rhea JS shim handling of AMQP char type #MsgLength=57
+
+
+----
+Modified: shims/rhea-js/amqp_types_test/Receiver.js|4 8
+Modified: shims/rhea-js/amqp_types_test/Sender.js|2 4
+
+Revision: 5b4cc511bc1b16295132edf21446ff03f1a96808
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 18/02/2017 00:21:13
+Message:
+QPIDIT-66: Install shims into libexec directory #MsgLength=48
+
+
+----
+Modified: CMakeLists.txt|0 12
+Modified: setup.py|50 31
+Modified: shims/amqpnetlite/src/CMakeLists.txt|1 1
+Modified: shims/qpid-jms/pom.xml|1 1
+Deleted: shims/qpid-proton-python/src/amqp_dtx_test/__init__.py|0 19
+Deleted: shims/qpid-proton-python/src/amqp_features_test/__init__.py|0 19
+Deleted: shims/qpid-proton-python/src/amqp_large_content_test/__init__.py|0 19
+Deleted: shims/qpid-proton-python/src/amqp_types_test/__init__.py|0 19
+Deleted: shims/qpid-proton-python/src/jms_dtx_test/__init__.py|0 19
+Deleted: shims/qpid-proton-python/src/jms_hdrs_props_test/__init__.py|0 19
+Deleted: shims/qpid-proton-python/src/jms_large_content_test/__init__.py|0 19
+Deleted: shims/qpid-proton-python/src/jms_messages_test/__init__.py|0 19
+Modified: shims/rhea-js/CMakeLists.txt|1 1
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|9 31
+Modified: src/python/qpid_interop_test/amqp_types_test.py|13 19
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|9 11
+Modified: src/python/qpid_interop_test/jms_messages_test.py|9 12
+Modified: src/python/qpid_interop_test/shims.py|4 25
+
+Revision: c8f80b564781457b165607a9b3c4b9cbfb32714b
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 21/02/2017 02:48:28
+Message:
+QPIDIT-53: SASL disabled for Python shims and for the broker discovery (ie module broker_properties) #MsgLength=101
+
+
+----
+Modified: src/python/qpid_interop_test/broker_properties.py|1 1
+
+Revision: 2aee75916cfec9c2e9e6085b34430fc1fe908e74
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 23/02/2017 00:16:53
+Message:
+QPIDIT-53: Fixed shims so that property disabling SASL is used correctly in all Python shims #MsgLength=93
+
+
+----
+Modified: shims/qpid-proton-python/src/amqp_dtx_test/Receiver.py|2 1
+Modified: shims/qpid-proton-python/src/amqp_dtx_test/Sender.py|2 1
+Modified: shims/qpid-proton-python/src/amqp_features_test/Receiver.py|2 1
+Modified: shims/qpid-proton-python/src/amqp_features_test/Sender.py|2 1
+Modified: shims/qpid-proton-python/src/amqp_large_content_test/Receiver.py|2 1
+Modified: shims/qpid-proton-python/src/amqp_large_content_test/Sender.py|2 1
+Modified: shims/qpid-proton-python/src/amqp_types_test/Receiver.py|2 1
+Modified: shims/qpid-proton-python/src/amqp_types_test/Sender.py|2 1
+Modified: shims/qpid-proton-python/src/jms_dtx_test/Receiver.py|2 1
+Modified: shims/qpid-proton-python/src/jms_dtx_test/Sender.py|2 1
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Receiver.py|2 1
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Sender.py|2 1
+Modified: shims/qpid-proton-python/src/jms_large_content_test/Receiver.py|2 1
+Modified: shims/qpid-proton-python/src/jms_large_content_test/Sender.py|2 1
+Modified: shims/qpid-proton-python/src/jms_messages_test/Receiver.py|2 1
+Modified: shims/qpid-proton-python/src/jms_messages_test/Sender.py|4 3
+
+Revision: 7e868582e226d285defa4054c35ea644c623dd27
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 28/02/2017 22:01:53
+Message:
+QPIDIT-52 QPIDIT-55: Added better detection of Proton install following pattern suggested by Chuck Rolke #MsgLength=105
+
+
+----
+Modified: CMakeLists.txt|22 1
+Added: CMakeModules/FindProton.cmake|82 0
+Added: CMakeModules/FindProtonCpp.cmake|45 0
+Deleted: shims/qpid-proton-cpp/CMakeLists.txt|0 27
+Modified: shims/qpid-proton-cpp/src/CMakeLists.txt|4 0
+
+Revision: daf0c0a7e91c47709f93915b2a243d4244e15ee1
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 28/02/2017 23:12:36
+Message:
+QPIDIT-52 QPIDIT-55: Changed DIRECTORY for PATH in get_filename_component for compatibility with cmake 2.x versions (used in RHEL) #MsgLength=131
+
+
+----
+Modified: CMakeLists.txt|2 2
+
+Revision: 83fc550d97f966a739ab915a07285b88b5914466
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 01/03/2017 00:04:45
+Message:
+QPIDIT-51: Added --broker-type parameter to test command-line args, if used will not test broker for connection properties #MsgLength=123
+
+
+----
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|25 16
+Modified: src/python/qpid_interop_test/amqp_types_test.py|25 17
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|27 16
+Modified: src/python/qpid_interop_test/jms_messages_test.py|25 16
+
+Revision: 39bedc3a259aed721daa31e177ab424e3ce52be3
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 14/03/2017 01:17:21
+Message:
+QPIDIT-56: Additional improvements for handling local folder containing Rhea #MsgLength=77
+
+
+----
+Added: NOTICE|5 0
+Deleted: STATUS|0 48
+Modified: shims/rhea-js/CMakeLists.txt|17 2
+
+Revision: 932552dc1dfb10f37f1246ef17331f9ae3181ad5
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 25/03/2017 02:22:18
+Message:
+QPIDIT-59 QPIDIT-60: Added HOWTO docs for writing tests and shims #MsgLength=66
+
+
+----
+Modified: docs/Shim_HOWTO.txt|18 82
+Added: docs/Test_HOWTO.txt|260 0
+Added: docs/qpid-interop-test-devel-overview.txt|191 0
+
+Revision: d300ca4569515f265230f309ced7b5bbb920aac3
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 23/06/2017 04:52:50
+Message:
+QPIDIT-82: JMS tests fail intermittantly with null message #MsgLength=59
+
+
+----
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_hdrs_props_test/Receiver.java|5 3
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_messages_test/Receiver.java|4 2
+
+Revision: ae5bc341de974cb718794e9f0d24135be0e17609
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 23/06/2017 22:37:44
+Message:
+QPIDIT-83: Classpath for JMS shims points to Maven repository rather than installed directory #MsgLength=94
+
+
+----
+Modified: src/python/qpid_interop_test/shims.py|1 6
+
+Revision: 8f88738f40a23a08c25327efb359ac43e65d8ada
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 23/06/2017 22:48:44
+Message:
+QPIDIT-84: Update README and QUICKSTART (change to markdown from text); added a users guide #MsgLength=92
+
+
+----
+Added: QUICKSTART.md|198 0
+Deleted: README|0 63
+Added: README.md|65 0
+Added: docs/CMakeLists.txt|24 0
+Added: docs/users-guide.txt|263 0
+
+Revision: c74fcf51879ce2db708cc2d13d0bba4b43488202
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 23/06/2017 22:49:14
+Message:
+QPIDIT-84: Update README and QUICKSTART (change to markdown from text); added a users guide #MsgLength=92
+
+
+----
+Deleted: QUICKSTART|0 171
+
+Revision: eefd86878b8349a45e1f6966a524315853cb6a86
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 23/06/2017 23:17:02
+Message:
+QPIDIT-83: change classpath to look at installed directory, QPIDIT-80: Disable option --include-type option in jms_hdrs_props_test #MsgLength=131
+
+
+----
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|13 9
+Modified: src/python/qpid_interop_test/jms_messages_test.py|7 5
+Modified: src/python/qpid_interop_test/test_type_map.py|2 2
+
+Revision: f36e1a53433b3fa7952ae65f4b8efc54a4188ca2
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 07/07/2017 22:30:58
+Message:
+QPIDIT-81: Temporarily disable check of default priority until underlying Proton bug (PROTON-1505) is fixed. #MsgLength=109
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.cpp|20 17
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Receiver.py|5 3
+
+Revision: 51d81e3b53c747efa307e4acb0252f5a4812bce2
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 07/07/2017 22:47:30
+Message:
+QPIDIT-86: Improved shim build and installation under cmake. Also improved Java installation through use of placing all dependencies into a single jar file. #MsgLength=157
+
+
+----
+Modified: .gitignore|2 0
+Modified: .project|1 0
+Modified: CMakeLists.txt|2 4
+Modified: pom.xml|9 6
+Modified: setup.py|0 25
+Added: shims/qpid-jms/CMakeLists.txt|41 0
+Modified: shims/qpid-jms/pom.xml|19 0
+Modified: shims/qpid-proton-cpp/src/CMakeLists.txt|18 9
+Added: shims/qpid-proton-python/src/CMakeLists.txt|23 0
+
+Revision: 4bb501561f5bb8a4166b874efdbe25cbed67853a
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 07/07/2017 22:51:41
+Message:
+NO_JIRA: Code style tidy-up (particularly #incudes), minor improvements to exception handling #MsgLength=94
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/AmqpReceiverBase.cpp|3 4
+Modified: shims/qpid-proton-cpp/src/qpidit/AmqpReceiverBase.hpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/AmqpSenderBase.cpp|3 3
+Modified: shims/qpid-proton-cpp/src/qpidit/AmqpSenderBase.hpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/AmqpTestBase.cpp|5 5
+Modified: shims/qpid-proton-cpp/src/qpidit/AmqpTestBase.hpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/JmsTestBase.cpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/JmsTestBase.hpp|3 3
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_dtx_test/Receiver.hpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_dtx_test/Sender.hpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_features_test/Receiver.hpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_features_test/Sender.cpp|7 7
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_features_test/Sender.hpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Receiver.cpp|38 32
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Receiver.hpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Sender.cpp|7 7
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Sender.hpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Receiver.cpp|107 103
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Receiver.hpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.cpp|5 5
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.hpp|3 3
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_dtx_test/Receiver.hpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_dtx_test/Sender.hpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.hpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Sender.cpp|6 11
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Sender.hpp|4 4
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_large_content_test/Receiver.hpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_large_content_test/Sender.hpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Receiver.cpp|23 22
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Receiver.hpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Sender.cpp|13 18
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Sender.hpp|4 4
+
+Revision: 038994d199318930eac1e84c79db94e8a6547183
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 08/07/2017 00:42:11
+Message:
+QPIDIT-86: Provided custom script for parsing pom file for project version that works on older distros (xpath was problematic) #MsgLength=127
+
+
+----
+Added: get-proj-ver|10 0
+Modified: shims/qpid-jms/CMakeLists.txt|1 1
+
+Revision: bddf691068a9cdb95612870788832dd4f9b44199
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 08/07/2017 00:57:03
+Message:
+QPIDIT-86: Fixed problem with get-proj-ver script #MsgLength=50
+
+
+----
+Modified: get-proj-ver|1 1
+Modified: shims/qpid-jms/CMakeLists.txt|1 1
+
+Revision: 03aa6068fe554bb5359a115d60262edb6c166bd7
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 19/08/2017 02:50:26
+Message:
+QPIDIT-89: Write single line to stderr on failure for better detection #MsgLength=170
+
+
+----
+Modified: shims/amqpnetlite/src/amqp_types_test/Receiver/Receiver.cs|11 10
+Modified: shims/amqpnetlite/src/amqp_types_test/Sender/Sender.cs|16 10
+
+Revision: 70f1e527aa4412b50e5a277e0e016a7a5470ab68
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 19/08/2017 02:57:09
+Message:
+QPIDIT-88: Add per-client test skip to handle unsupported types #MsgLength=205
+
+
+----
+Modified: src/python/qpid_interop_test/amqp_types_test.py|10 0
+Modified: src/python/qpid_interop_test/test_type_map.py|32 2
+
+Revision: d27dfca1525c61528a0dfed0ba83d53d438e9ae2
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 19/08/2017 03:33:01
+Message:
+QPIDIT-88: CLIENT_SKIP map defines which types are not supported by which clients #MsgLength=82
+
+
+----
+Modified: docs/Test_HOWTO.txt|5 0
+
+Revision: f920bdf76099a5415a798cc80eb4cd9c1b633bb6
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 19/08/2017 04:02:19
+Message:
+NO-JIRA: debug print to print whole message as single large string #MsgLength=250
+
+
+----
+Modified: src/python/qpid_interop_test/shims.py|2 2
+
+Revision: 466c14a24e5be80c832cca33fa8d2494452efb74
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 06/09/2017 22:32:34
+Message:
+QPIDIT-86, QPIDIT-84: Improvements to installation; updated docs, QUICKSTART.md still WIP #MsgLength=90
+
+
+----
+Modified: CMakeLists.txt|2 0
+Modified: QUICKSTART.md|58 51
+Modified: README.md|21 0
+Added: config.sh.in|22 0
+Modified: get-proj-ver|16 1
+
+Revision: 63243b69c4f99707e1475823bfc092eeb15629cb
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 01/09/2017 04:23:54
+Message:
+QPIDIT-91: Add AmqpNetLite large_content shim. #MsgLength=328
+
+
+----
+Modified: shims/amqpnetlite/src/CMakeLists.txt|51 41
+Added: shims/amqpnetlite/src/amqp_large_content_test/Receiver/App.config|24 0
+Added: shims/amqpnetlite/src/amqp_large_content_test/Receiver/Properties/AssemblyInfo.cs|57 0
+Added: shims/amqpnetlite/src/amqp_large_content_test/Receiver/Receiver.cs|586 0
+Added: shims/amqpnetlite/src/amqp_large_content_test/Receiver/Receiver.csproj.in|77 0
+Added: shims/amqpnetlite/src/amqp_large_content_test/Receiver/packages.config|21 0
+Added: shims/amqpnetlite/src/amqp_large_content_test/Sender/App.config|24 0
+Added: shims/amqpnetlite/src/amqp_large_content_test/Sender/Properties/AssemblyInfo.cs|57 0
+Added: shims/amqpnetlite/src/amqp_large_content_test/Sender/Sender.cs|782 0
+Added: shims/amqpnetlite/src/amqp_large_content_test/Sender/Sender.csproj.in|76 0
+Added: shims/amqpnetlite/src/amqp_large_content_test/Sender/packages.config|21 0
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|9 0
+
+Revision: 8bf7bfe4c9e4f3415138ea3f8a65ca60c60ccee5
+Author: Chuck Rolke <crolke@redhat.com>
+Date: 01/09/2017 04:37:51
+Message:
+QPIDIT-92: Repair Lite v2.0.0 API change #MsgLength=41
+
+
+----
+Modified: shims/amqpnetlite/src/amqp_types_test/Receiver/Receiver.cs|1 1
+
+
+Revision: 986f0f4888c09cb02efc4456c37c62559f56b1ba
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 07/09/2017 00:24:15
+Message:
+QPIDIT-94: Solving Python 2.x path discovery issue #MsgLength=51
+
+
+----
+Modified: CMakeLists.txt|8 5
+Added: get-python-dir-name|19 0
+
+Revision: bedf06c21dcfe6ec9f611c36733feb3d85c45f93
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 13/09/2017 00:26:37
+Message:
+QPIDIT-84: Updated QUICKSTART.md file, also update to config.sh.in to use Python directory as discovered by utility rather than hardcoding it #MsgLength=142
+
+
+----
+Modified: QUICKSTART.md|126 99
+Modified: config.sh.in|2 1
+
+Revision: c2019e201beccb2fc4186ab76e105ffbbdf99f1f
+Author: Robbie Gemmell <robbie@apache.org>
+Date: 25/09/2017 20:13:37
+Message:
+QPIDIT-95: update to the v18 apache parent #MsgLength=43
+
+
+----
+Modified: pom.xml|1 1
+
+Revision: eae8c64356f6f3ca1f76a741923e2c8d0fbc8edf
+Author: Robbie Gemmell <robbie@apache.org>
+Date: 25/09/2017 21:54:50
+Message:
+NO-JIRA: remove redundant version elements #MsgLength=43
+
+
+----
+Modified: shims/qpid-jms/pom.xml|0 1
+Modified: utils/pom.xml|0 1
+
+Revision: 35ee14e3751b48d5732375fb1fee5dac35cf6551
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 04/10/2017 01:23:02
+Message:
+QPIDIT-96: Changes to QUICKSTART.md to improve instructions around the Java components (particularly Qpid-JMS). Also improvements to dependency version management - the version numbers are stored in properties in the main pom file, also all dependencies are moved to the main pom file. #MsgLength=286
+
+
+----
+Modified: QUICKSTART.md|26 17
+Modified: pom.xml|37 0
+Modified: shims/qpid-jms/pom.xml|0 12
+
+Revision: dda19a9c2eb2a9ecbfbd5222fc7b61d6f121d452
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 04/10/2017 02:01:01
+Message:
+QPIDIT-96: Minor change to QUICKSTART.md #MsgLength=41
+
+
+----
+Modified: QUICKSTART.md|0 7
+
+Revision: 84a22327ea84e32519c1bb71a3592dc4a217e38f
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 05/10/2017 05:20:31
+Message:
+QPIDIT-97: Prepare for v. 0.1.0, this is RC3 #MsgLength=45
+
+
+----
+Modified: pom.xml|2 2
+Modified: shims/qpid-jms/pom.xml|1 1
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_hdrs_props_test/Receiver.java|1 1
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_hdrs_props_test/Sender.java|1 1
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_messages_test/Receiver.java|1 1
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_messages_test/Sender.java|1 1
+Renamed: shims/qpid-jms/src_not_yet_impl/main/java/org/apache/qpid/qpid_interop_test/jms_dtx_test/Receiver.java [from shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_dtx_test/Receiver.java]|1 1
+Renamed: shims/qpid-jms/src_not_yet_impl/main/java/org/apache/qpid/qpid_interop_test/jms_dtx_test/Sender.java [from shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_dtx_test/Sender.java]|1 1
+Renamed: shims/qpid-jms/src_not_yet_impl/main/java/org/apache/qpid/qpid_interop_test/jms_large_content_test/Receiver.java [from shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_large_content_test/Receiver.java]|1 1
+Renamed: shims/qpid-jms/src_not_yet_impl/main/java/org/apache/qpid/qpid_interop_test/jms_large_content_test/Sender.java [from shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_large_content_test/Sender.java]|1 1
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/amqp_dtx_test/Receiver.cpp [from shims/qpid-proton-cpp/src/qpidit/amqp_dtx_test/Receiver.cpp]|0 0
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/amqp_dtx_test/Receiver.hpp [from shims/qpid-proton-cpp/src/qpidit/amqp_dtx_test/Receiver.hpp]|0 0
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/amqp_dtx_test/Sender.cpp [from shims/qpid-proton-cpp/src/qpidit/amqp_dtx_test/Sender.cpp]|0 0
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/amqp_dtx_test/Sender.hpp [from shims/qpid-proton-cpp/src/qpidit/amqp_dtx_test/Sender.hpp]|0 0
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/amqp_features_test/Receiver.cpp [from shims/qpid-proton-cpp/src/qpidit/amqp_features_test/Receiver.cpp]|0 0
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/amqp_features_test/Receiver.hpp [from shims/qpid-proton-cpp/src/qpidit/amqp_features_test/Receiver.hpp]|0 0
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/amqp_features_test/Sender.cpp [from shims/qpid-proton-cpp/src/qpidit/amqp_features_test/Sender.cpp]|0 0
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/amqp_features_test/Sender.hpp [from shims/qpid-proton-cpp/src/qpidit/amqp_features_test/Sender.hpp]|0 0
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/jms_dtx_test/Receiver.cpp [from shims/qpid-proton-cpp/src/qpidit/jms_dtx_test/Receiver.cpp]|0 0
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/jms_dtx_test/Receiver.hpp [from shims/qpid-proton-cpp/src/qpidit/jms_dtx_test/Receiver.hpp]|0 0
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/jms_dtx_test/Sender.cpp [from shims/qpid-proton-cpp/src/qpidit/jms_dtx_test/Sender.cpp]|0 0
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/jms_dtx_test/Sender.hpp [from shims/qpid-proton-cpp/src/qpidit/jms_dtx_test/Sender.hpp]|0 0
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/jms_large_content_test/Receiver.cpp [from shims/qpid-proton-cpp/src/qpidit/jms_large_content_test/Receiver.cpp]|0 0
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/jms_large_content_test/Receiver.hpp [from shims/qpid-proton-cpp/src/qpidit/jms_large_content_test/Receiver.hpp]|0 0
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/jms_large_content_test/Sender.cpp [from shims/qpid-proton-cpp/src/qpidit/jms_large_content_test/Sender.cpp]|0 0
+Renamed: shims/qpid-proton-cpp/src/not_yet_impl/jms_large_content_test/Sender.hpp [from shims/qpid-proton-cpp/src/qpidit/jms_large_content_test/Sender.hpp]|0 0
+Renamed: shims/qpid-proton-python/not_yet_impl/amqp_dtx_test/Receiver.py [from shims/qpid-proton-python/src/amqp_dtx_test/Receiver.py]|0 0
+Renamed: shims/qpid-proton-python/not_yet_impl/amqp_dtx_test/Sender.py [from shims/qpid-proton-python/src/amqp_dtx_test/Sender.py]|0 0
+Renamed: shims/qpid-proton-python/not_yet_impl/amqp_features_test/Receiver.py [from shims/qpid-proton-python/src/amqp_features_test/Receiver.py]|0 0
+Renamed: shims/qpid-proton-python/not_yet_impl/amqp_features_test/Sender.py [from shims/qpid-proton-python/src/amqp_features_test/Sender.py]|0 0
+Renamed: shims/qpid-proton-python/not_yet_impl/jms_dtx_test/Receiver.py [from shims/qpid-proton-python/src/jms_dtx_test/Receiver.py]|0 0
+Renamed: shims/qpid-proton-python/not_yet_impl/jms_dtx_test/Sender.py [from shims/qpid-proton-python/src/jms_dtx_test/Sender.py]|0 0
+Renamed: shims/qpid-proton-python/not_yet_impl/jms_large_content_test/Receiver.py [from shims/qpid-proton-python/src/jms_large_content_test/Receiver.py]|0 0
+Renamed: shims/qpid-proton-python/not_yet_impl/jms_large_content_test/Sender.py [from shims/qpid-proton-python/src/jms_large_content_test/Sender.py]|0 0
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|5 3
+Modified: src/python/qpid_interop_test/jms_messages_test.py|6 3
+Modified: src/python/qpid_interop_test/shims.py|0 5
+Modified: utils/pom.xml|1 1
+
+Revision: 4153bf1728dadf12572346c6197445606726422e
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 25/10/2017 21:50:13
+Message:
+QPIDIT-97: Further fixes and updates for the release of 0.1.0 #MsgLength=62
+
+
+----
+Modified: shims/qpid-jms/pom.xml|3 0
+Renamed: shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/jms_hdrs_props_test/Receiver.java [from shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_hdrs_props_test/Receiver.java]|1 1
+Renamed: shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/jms_hdrs_props_test/Sender.java [from shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_hdrs_props_test/Sender.java]|1 1
+Renamed: shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/jms_messages_test/Receiver.java [from shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_messages_test/Receiver.java]|1 1
+Renamed: shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/jms_messages_test/Sender.java [from shims/qpid-jms/src/main/java/org/apache/qpid/qpid_interop_test/jms_messages_test/Sender.java]|1 1
+Deleted: shims/qpid-jms/src_not_yet_impl/main/java/org/apache/qpid/qpid_interop_test/jms_dtx_test/Receiver.java|0 407
+Deleted: shims/qpid-jms/src_not_yet_impl/main/java/org/apache/qpid/qpid_interop_test/jms_dtx_test/Sender.java|0 113
+Deleted: shims/qpid-jms/src_not_yet_impl/main/java/org/apache/qpid/qpid_interop_test/jms_large_content_test/Receiver.java|0 407
+Deleted: shims/qpid-jms/src_not_yet_impl/main/java/org/apache/qpid/qpid_interop_test/jms_large_content_test/Sender.java|0 113
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/amqp_dtx_test/Receiver.cpp|0 43
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/amqp_dtx_test/Receiver.hpp|0 39
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/amqp_dtx_test/Sender.cpp|0 43
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/amqp_dtx_test/Sender.hpp|0 39
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/amqp_features_test/Receiver.cpp|0 43
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/amqp_features_test/Receiver.hpp|0 39
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/amqp_features_test/Sender.cpp|0 138
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/amqp_features_test/Sender.hpp|0 67
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/jms_dtx_test/Receiver.cpp|0 43
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/jms_dtx_test/Receiver.hpp|0 39
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/jms_dtx_test/Sender.cpp|0 43
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/jms_dtx_test/Sender.hpp|0 39
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/jms_large_content_test/Receiver.cpp|0 43
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/jms_large_content_test/Receiver.hpp|0 39
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/jms_large_content_test/Sender.cpp|0 43
+Deleted: shims/qpid-proton-cpp/src/not_yet_impl/jms_large_content_test/Sender.hpp|0 39
+Deleted: shims/qpid-proton-python/not_yet_impl/amqp_dtx_test/Receiver.py|0 76
+Deleted: shims/qpid-proton-python/not_yet_impl/amqp_dtx_test/Sender.py|0 95
+Deleted: shims/qpid-proton-python/not_yet_impl/amqp_features_test/Receiver.py|0 96
+Deleted: shims/qpid-proton-python/not_yet_impl/amqp_features_test/Sender.py|0 113
+Deleted: shims/qpid-proton-python/not_yet_impl/jms_dtx_test/Receiver.py|0 77
+Deleted: shims/qpid-proton-python/not_yet_impl/jms_dtx_test/Sender.py|0 96
+Deleted: shims/qpid-proton-python/not_yet_impl/jms_large_content_test/Receiver.py|0 77
+Deleted: shims/qpid-proton-python/not_yet_impl/jms_large_content_test/Sender.py|0 96
+Deleted: src/python/not_yet_impl/amqp_dtx_test.py|0 136
+Deleted: src/python/not_yet_impl/amqp_features_test.py|0 195
+Deleted: src/python/not_yet_impl/jms_dtx_test.py|0 146
+Deleted: src/python/not_yet_impl/jms_large_content_test.py|0 144
+Modified: src/python/qpid_interop_test/amqp_types_test.py|0 3
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|2 2
+Modified: src/python/qpid_interop_test/jms_messages_test.py|2 2
+Renamed: utils/src/main/java/org/apache/qpid/interop_test/obj_util/BytesToJavaObj.java [from utils/src/main/java/org/apache/qpid/qpid_interop_test/obj_util/BytesToJavaObj.java]|0 0
+Renamed: utils/src/main/java/org/apache/qpid/interop_test/obj_util/JavaObjToBytes.java [from utils/src/main/java/org/apache/qpid/qpid_interop_test/obj_util/JavaObjToBytes.java]|0 0
+
+Revision: a44c7a43e3ae9d8113515cfd8203b887e422265b
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 25/10/2017 23:20:26
+Message:
+QPIDIT-97: Added cmake checks for required components: Java version 1.8, Python version 2.7, xpath, mvn #MsgLength=104
+
+
+----
+Modified: CMakeLists.txt|41 5
+
+Revision: eae733a679c76153b640f0c14b800164407eb0d7
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 26/10/2017 02:01:05
+Message:
+QPIDIT-97: Removed blah target from jms shims CMakefile.txt #MsgLength=60
+
+
+----
+Modified: shims/qpid-jms/CMakeLists.txt|1 6
+
+Revision: 5a0ad815958f77be37ecf411e99b7799af43aa6b
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 26/10/2017 02:07:51
+Message:
+QPIDIT-98: Change calls to proton::value::get<>() to proton::get<>() #MsgLength=69
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Receiver.cpp|7 7
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Receiver.cpp|26 26
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.cpp|25 25
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Receiver.cpp|25 25
+
+Revision: 790059a3849b61cf4bc9e0a10078c9a4a4f218a8
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 27/10/2017 21:32:36
+Message:
+QPIDIT-97: Workaround in cmake script for RHEL7 Java_FOUND issue, also added min version of Proton to 0.18 #MsgLength=107
+
+
+----
+Modified: CMakeLists.txt|6 3
+
+Revision: 3881d008df839c99e6b28b4f5030f8731d2291eb
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 27/10/2017 21:34:08
+Message:
+QPIDIT-98: Changed proton::default_container to proton::container (as the former is now deprecated) #MsgLength=100
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Receiver.cpp|1 2
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Sender.cpp|1 2
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Receiver.cpp|1 2
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.cpp|1 2
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.cpp|1 2
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Sender.cpp|1 2
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Receiver.cpp|1 2
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Sender.cpp|1 2
+
+Revision: 225e85788a876b58d6acf641c613da5d6225c5f3
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 28/10/2017 01:04:56
+Message:
+QPIDIT-97: Reduced required Proton version from 0.18 to 0.17 because RHEL-7 does not have the 0.18 packages yet. #MsgLength=113
+
+
+----
+Modified: CMakeLists.txt|2 2
+Modified: shims/rhea-js/CMakeLists.txt|2 2
+
+Revision: 796b62222059c94a12c77ed95d9edd0e14772840
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 06/12/2017 06:37:11
+Message:
+NO_JIRA: Minor changes to doc files so that only ASCII chars are used for tree structure diagrams #MsgLength=98
+
+
+----
+Modified: docs/Shim_HOWTO.txt|16 16
+Modified: docs/qpid-interop-test-devel-overview.txt|51 51
+Modified: shims/qpid-jms/CMakeLists.txt|1 1
+
+Revision: d85b0189fa76651b8aa4f5d72fb5cf90e8186597
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 06/12/2017 07:13:35
+Message:
+NO_JIRA: Trivial change to QUICKSTART.md file, removed {{}} format which erroneously landed in the file. #MsgLength=105
+
+
+----
+Modified: QUICKSTART.md|1 1
+
+Revision: c0268bf6acb0dce7b4b562b771656cddbb388cc0
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 12/12/2017 00:24:47
+Message:
+QPIDIT-106: Added a hint for CMake to find custom-installed mvn at //usr//local//maven #MsgLength=87
+
+
+----
+Modified: CMakeLists.txt|2 1
+
+Revision: d6d837edd719ad1a548621d1394d18d981013d6c
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 13/01/2018 00:45:57
+Message:
+QPIDIT-65: Added --{include,exclude}-hdr and --{include,exclude}-prop options, and implemented them. The --exclude-{hdr,prop} option allows the value "ALL" to exclude all values from the test. #MsgLength=193
+
+
+----
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|69 12
+
+Revision: 9b662ec6f14ed620a21590d8ada182050efff846
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 16/01/2018 03:09:11
+Message:
+QPIDIT-107: Added support for new Proton API access to message properties. Tested against Proton Python and Qpid JMS shims, works correctly. #MsgLength=141
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.cpp|45 3
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Sender.cpp|9 9
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Sender.hpp|0 4
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|2 2
+
+Revision: ff1d6c274fc47cce9f9b557d4e17d9f1fcc8c62e
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 16/01/2018 03:12:53
+Message:
+NO_JIRA: Minor tidy-up, removed some commented-out code that was missed from the last checkin #MsgLength=94
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.cpp|0 4
+
+Revision: 1276fe1975f8fda5a3cde0320488ef3e1bafdbe0
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 17/01/2018 00:26:16
+Message:
+QPIDIT-65: Added the last test section (section D) that depends on the message properties to work #MsgLength=98
+
+
+----
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|4 7
+
+Revision: 8b37b4aae714cc441433d9ae59e03039e499ab9c
+Author: Robbie Gemmell <robbie@apache.org>
+Date: 17/01/2018 18:36:04
+Message:
+NO-JIRA: update year in NOTICE file #MsgLength=36
+
+
+----
+Modified: NOTICE|2 2
+
+Revision: 703daa7196cdac240ad4306ae79ddd46f3d56aa3
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 18/01/2018 02:51:09
+Message:
+QPIDIT-109: Added Python 3 compatibility to Python shims; Added Python 3 shims to tests, but left them commented out for now unitl issues with having both Proton's Python 2 and Python 3 bindings available at the same time. #MsgLength=223
+
+
+----
+Modified: config.sh.in|1 1
+Modified: setup.py|4 1
+Added: shims/qpid-proton-python/src/_compat.py|50 0
+Modified: shims/qpid-proton-python/src/amqp_large_content_test/Receiver.py|13 7
+Modified: shims/qpid-proton-python/src/amqp_large_content_test/Sender.py|8 6
+Modified: shims/qpid-proton-python/src/amqp_types_test/Receiver.py|11 7
+Modified: shims/qpid-proton-python/src/amqp_types_test/Sender.py|33 33
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Receiver.py|14 14
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Sender.py|23 22
+Modified: shims/qpid-proton-python/src/jms_messages_test/Receiver.py|11 11
+Modified: shims/qpid-proton-python/src/jms_messages_test/Sender.py|21 21
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|22 8
+Modified: src/python/qpid_interop_test/amqp_types_test.py|5 2
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|5 2
+Modified: src/python/qpid_interop_test/jms_messages_test.py|5 2
+Modified: src/python/qpid_interop_test/shims.py|15 5
+
+Revision: ee57f686f510e31295bbe8086f492e6d21419210
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 21/01/2018 06:03:55
+Message:
+QPIDIT-109: Made all Python shims run under either Python 2 or Python 3. Added separate shims for Python 2 and Python 3 so that both these can run against the other shims. Modified config.sh to add a PYTHON3PATH to the environment which is used when the Python 3 shims are in use, and presuppose that the Proton Python3 artifacts are installed into /lib64/proton/bindings/python3. At present, this must be done by hand. #MsgLength=420
+
+
+----
+Modified: config.sh.in|3 1
+Modified: shims/qpid-proton-python/src/_compat.py|4 0
+Modified: shims/qpid-proton-python/src/amqp_large_content_test/Receiver.py|4 4
+Modified: shims/qpid-proton-python/src/amqp_large_content_test/Sender.py|3 3
+Modified: shims/qpid-proton-python/src/amqp_types_test/Receiver.py|3 2
+Modified: shims/qpid-proton-python/src/amqp_types_test/Sender.py|4 4
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Receiver.py|14 7
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Sender.py|12 12
+Modified: shims/qpid-proton-python/src/jms_messages_test/Receiver.py|23 16
+Modified: shims/qpid-proton-python/src/jms_messages_test/Sender.py|11 11
+Modified: src/python/qpid_interop_test/__init__.py|0 5
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|2 3
+Modified: src/python/qpid_interop_test/amqp_types_test.py|2 3
+Modified: src/python/qpid_interop_test/interop_test_errors.py|1 1
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|6 7
+Modified: src/python/qpid_interop_test/jms_messages_test.py|6 7
+Modified: src/python/qpid_interop_test/shims.py|19 7
+Modified: src/python/qpid_interop_test/test_type_map.py|2 2
+
+Revision: 58a8b9ae47cecfc9cb9370ded292be0bc9ec3ffe
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 26/01/2018 12:21:36
+Message:
+QPIDIT-93: Added xUnit logging by using --xunit-log parameter; Refactoring of test classes, added qpid_interop_test.qit which runs all tests #MsgLength=141
+
+
+----
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|85 174
+Modified: src/python/qpid_interop_test/amqp_types_test.py|99 205
+Modified: src/python/qpid_interop_test/interop_test_errors.py|1 2
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|315 432
+Modified: src/python/qpid_interop_test/jms_messages_test.py|96 191
+Added: src/python/qpid_interop_test/qit.py|57 0
+Added: src/python/qpid_interop_test/qit_common.py|363 0
+Modified: src/python/qpid_interop_test/shims.py|27 23
+Deleted: src/python/qpid_interop_test/test_type_map.py|0 137
+Added: src/python/qpid_interop_test/xunit_log.py|116 0
+
+Revision: aea81083aac055472957eb6c4857639030c95752
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 26/01/2018 23:01:58
+Message:
+NO-JIRA: Renamed the git module to run_all, this will run all the tests in succession. #MsgLength=87
+
+
+----
+Renamed: src/python/qpid_interop_test/run_all.py [from src/python/qpid_interop_test/qit.py]|15 21
+
+Revision: f93886f54aae1b085164f59e60397fb166fdf984
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 01/02/2018 23:21:30
+Message:
+QPIDIT-79: Fixed threading issues in shims, ctl+c now stops shims as they should. QPIDIT-110: Also added check for sender shim failure, if so, signals receiver shim to stop #MsgLength=173
+
+
+----
+Modified: shims/qpid-proton-python/src/_compat.py|16 15
+Modified: shims/qpid-proton-python/src/amqp_large_content_test/Receiver.py|23 12
+Modified: shims/qpid-proton-python/src/amqp_large_content_test/Sender.py|28 19
+Modified: shims/qpid-proton-python/src/amqp_types_test/Receiver.py|28 17
+Modified: shims/qpid-proton-python/src/amqp_types_test/Sender.py|49 42
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Receiver.py|56 44
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Sender.py|92 81
+Modified: shims/qpid-proton-python/src/jms_messages_test/Receiver.py|46 36
+Modified: shims/qpid-proton-python/src/jms_messages_test/Sender.py|84 73
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|19 17
+Modified: src/python/qpid_interop_test/amqp_types_test.py|16 14
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|40 40
+Modified: src/python/qpid_interop_test/jms_messages_test.py|29 31
+Modified: src/python/qpid_interop_test/qit_common.py|13 3
+Modified: src/python/qpid_interop_test/shims.py|49 151
+
+Revision: 77efd7582b512dfe450c50568b1fdc5b3bca2a68
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 02/02/2018 04:15:03
+Message:
+QPIDIT-112: Changed queue name prefix for all tests from "jms.queue.qpid_interop" to "qit". QPIDIT-109: Additional Python 3 compatibility issue found and fixed related to use of ord(). #MsgLength=185
+
+
+----
+Modified: shims/qpid-proton-python/src/_compat.py|4 0
+Modified: shims/qpid-proton-python/src/amqp_types_test/Receiver.py|3 2
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|1 1
+Modified: src/python/qpid_interop_test/amqp_types_test.py|1 1
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|1 1
+Modified: src/python/qpid_interop_test/jms_messages_test.py|1 1
+
+Revision: 887d386864225f83accfdfa1773cab3b9d694f31
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 15/02/2018 21:46:50
+Message:
+QPIDIT-109: Minor change to handling of PYTHON3PATH in config.sh file #MsgLength=70
+
+
+----
+Modified: config.sh.in|2 1
+
+Revision: e20ae3c8b29a0af816d55238beff688c2700d62d
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 16/02/2018 06:19:17
+Message:
+QPIDIT-61: Fixed error in jms_hdrs_props_test Python Sender shim, which contained an invalid import which was not changed to match the newly refactored modules. #MsgLength=161
+
+
+----
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Sender.py|13 13
+
+Revision: 1820e98b5e8d35c1d3a8c8820ef0350254db5e05
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 27/02/2018 06:04:14
+Message:
+QPIDIT-37: Added a default timeout to each test suite. This timeout applies to each test in the test suite. (For example, the default for amqp_types_test test suite has been set to 10 seconds, and each of its tests must complete within this time.) There is also a --timeout option which can be used to override the default timeout for a test suite if, for example, the test is being run on a slow (or a fast) machine. There is currently no way to set timeouts for individual tests, however. Each test within a test suite uses the same value. This could be addressed in a later fix. #MsgLength=582
+
+
+----
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|18 17
+Modified: src/python/qpid_interop_test/amqp_types_test.py|17 16
+Modified: src/python/qpid_interop_test/interop_test_errors.py|6 0
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|40 28
+Modified: src/python/qpid_interop_test/jms_messages_test.py|19 15
+Modified: src/python/qpid_interop_test/qit_common.py|4 1
+Modified: src/python/qpid_interop_test/shims.py|24 7
+
+Revision: fb6f8541cddd9ca37148fda76b004246505bb233
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 27/02/2018 06:45:55
+Message:
+QPIDIT-85: Added check for presnece of broker when tests read the connection properties and aborts the test is no broker is present. Shims for C++, Python and RheaJs were modified to also exit if no broker is present, shims for Amqp.NetLite and QpidJms already exit with a connection error. #MsgLength=291
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/AmqpReceiverBase.cpp|7 1
+Modified: shims/qpid-proton-cpp/src/qpidit/AmqpSenderBase.cpp|7 1
+Modified: shims/qpid-proton-python/src/amqp_large_content_test/Receiver.py|4 1
+Modified: shims/qpid-proton-python/src/amqp_large_content_test/Sender.py|4 1
+Modified: shims/qpid-proton-python/src/amqp_types_test/Receiver.py|4 1
+Modified: shims/qpid-proton-python/src/amqp_types_test/Sender.py|4 1
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Receiver.py|4 1
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Sender.py|4 1
+Modified: shims/qpid-proton-python/src/jms_messages_test/Receiver.py|4 1
+Modified: shims/qpid-proton-python/src/jms_messages_test/Sender.py|4 1
+Modified: shims/rhea-js/amqp_types_test/Receiver.js|5 1
+Modified: shims/rhea-js/amqp_types_test/Sender.js|2 1
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|9 5
+Modified: src/python/qpid_interop_test/amqp_types_test.py|9 5
+Modified: src/python/qpid_interop_test/broker_properties.py|8 5
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|9 5
+Modified: src/python/qpid_interop_test/jms_messages_test.py|9 5
+Modified: src/python/qpid_interop_test/shims.py|2 2
+
+Revision: 601940ab03939444a433f4d4c63f705fef1d52df
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 27/02/2018 06:47:37
+Message:
+QPIDIT-85: Accidentally checked in with a pair of debug messages still activated. They are now commented out. #MsgLength=110
+
+
+----
+Modified: src/python/qpid_interop_test/shims.py|2 2
+
+Revision: f92c5ad4758e8e290783a7c1f070524c94384a91
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 01/03/2018 01:48:36
+Message:
+QPIDIT-113: Workaround which ignores spurious error message from AMQP.NetLite on stderr #MsgLength=88
+
+
+----
+Modified: src/python/qpid_interop_test/shims.py|4 1
+
+Revision: 71ea06dfc2a7f29784878593f75ad2dfcd0baaf3
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 01/03/2018 02:30:49
+Message:
+QPIDIT-114: Added AMQP type char to list of excluded types for AMQP.NetLite shims #MsgLength=82
+
+
+----
+Modified: src/python/qpid_interop_test/amqp_types_test.py|1 0
+
+Revision: 4b1c194aaa0053025943b01a117bbd87319796e6
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 02/03/2018 01:10:19
+Message:
+QPIDIT-61: This is more of a renaming of modules so that all common libs have a name starting with qit_. This makes it easier to see the common lib modules in a file list. #MsgLength=172
+
+
+----
+Modified: docs/Test_HOWTO.txt|9 9
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Receiver.py|2 2
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Sender.py|2 2
+Modified: shims/qpid-proton-python/src/jms_messages_test/Receiver.py|2 2
+Modified: shims/qpid-proton-python/src/jms_messages_test/Sender.py|2 2
+Modified: src/python/qpid_interop_test/.gitignore|2 2
+Modified: src/python/qpid_interop_test/__init__.py|2 2
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|1 3
+Modified: src/python/qpid_interop_test/amqp_types_test.py|1 3
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|1 3
+Modified: src/python/qpid_interop_test/jms_messages_test.py|1 3
+Renamed: src/python/qpid_interop_test/qit_broker_props.py [from src/python/qpid_interop_test/broker_properties.py]|1 1
+Modified: src/python/qpid_interop_test/qit_common.py|18 18
+Renamed: src/python/qpid_interop_test/qit_errors.py [from src/python/qpid_interop_test/interop_test_errors.py]|0 0
+Renamed: src/python/qpid_interop_test/qit_jms_types.py [from src/python/qpid_interop_test/jms_types.py]|0 0
+Renamed: src/python/qpid_interop_test/qit_shim.py [from src/python/qpid_interop_test/shims.py]|1 1
+Renamed: src/python/qpid_interop_test/qit_xunit_log.py [from src/python/qpid_interop_test/xunit_log.py]|1 1
+
+Revision: 90944238f6c749d68e77c52dafbf59413a42d2ac
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 10/03/2018 00:36:49
+Message:
+NO_JIRA: Documentation update for QUICKSTART.md. Includes instructions on building Proton for both Pyton2 and Python3 and some initial notes on using docker images. #MsgLength=165
+
+
+----
+Modified: QUICKSTART.md|122 3
+
+Revision: b87dc72a330724d6d888d87faa567d003a2e5c07
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 21/03/2018 00:52:00
+Message:
+QPIDIT-46: Added encoding for AMQP list and map types, and which can contain other lists and maps. This has been completed on the ProtonCpp and ProtonPython{2,3} shims, and RheaJs and AmqpNetLite have this test disabled for now. #MsgLength=229
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.cpp|4 0
+Modified: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.hpp|1 0
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Receiver.cpp|177 137
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Receiver.hpp|5 2
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.cpp|127 104
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.hpp|11 16
+Modified: shims/qpid-proton-python/src/amqp_types_test/Receiver.py|169 51
+Modified: shims/qpid-proton-python/src/amqp_types_test/Sender.py|112 50
+Modified: src/python/qpid_interop_test/amqp_types_test.py|42 35
+
+Revision: 7ec8c53a9c71293156106ef97e1cd18cdcfc0fb1
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 22/03/2018 02:50:19
+Message:
+QPIDIT-46: Minor fix for previous checkin, some early compilers won't handle nullptr, use NULL instead #MsgLength=103
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.cpp|2 2
+
+Revision: c1fb41599b6046ca8fddb5a754d57191240b313c
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 30/03/2018 01:54:19
+Message:
+QPIDIT-119: Generator for amqp_complex_types_test, which can generate Python and C++ data files from JSON at this point. RheaJs and AmqpNetLite remain stubbed, and will be completed later. A first version of the JSON test data files are also included, one each for arrays, lists and maps. #MsgLength=289
+
+
+----
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_complex_types_test/data_utils.hpp|61 0
+Added: shims/qpid-proton-python/src/amqp_complex_types_test/Receiver.py|97 0
+Added: shims/qpid-proton-python/src/amqp_complex_types_test/Sender.py|113 0
+Added: src/python/qpid_interop_test/amqp_complex_types_test.array.json|157 0
+Added: src/python/qpid_interop_test/amqp_complex_types_test.list.json|157 0
+Added: src/python/qpid_interop_test/amqp_complex_types_test.map.json|116 0
+Added: src/python/qpid_interop_test/amqp_complex_types_test_generator.py|762 0
+
+Revision: b4e6d0b56ef98c32eb4752032e512a46230e873e
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 14/04/2018 00:45:58
+Message:
+QPIDIT-119: WIP: Data JSON files, generator (with Python and C++ generation complete) and Python 2/3 shims. #MsgLength=108
+
+
+----
+Modified: CMakeLists.txt|10 0
+Modified: setup.py|8 0
+Added: shims/amqpnetlite/src/amqp_complex_types_test/.gitignore|1 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_complex_types_test/.gitignore|1 0
+Modified: shims/qpid-proton-python/src/CMakeLists.txt|0 1
+Modified: shims/qpid-proton-python/src/_compat.py|18 2
+Added: shims/qpid-proton-python/src/amqp_complex_types_test/.gitignore|1 0
+Added: shims/qpid-proton-python/src/amqp_complex_types_test/Common.py|185 0
+Modified: shims/qpid-proton-python/src/amqp_complex_types_test/Receiver.py|194 26
+Modified: shims/qpid-proton-python/src/amqp_complex_types_test/Sender.py|32 33
+Added: shims/qpid-proton-python/src/amqp_complex_types_test/__init__.py|16 0
+Modified: shims/qpid-proton-python/src/amqp_types_test/Sender.py|2 2
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Sender.py|4 4
+Modified: shims/qpid-proton-python/src/jms_messages_test/Sender.py|3 3
+Added: shims/rhea-js/amqp_complex_types_test/.gitignore|1 0
+Modified: src/python/qpid_interop_test/amqp_complex_types_test.array.json|1 2
+Modified: src/python/qpid_interop_test/amqp_complex_types_test.list.json|41 7
+Modified: src/python/qpid_interop_test/amqp_complex_types_test.map.json|33 4
+Added: src/python/qpid_interop_test/amqp_complex_types_test.py|271 0
+Modified: src/python/qpid_interop_test/amqp_complex_types_test_generator.py|46 30
+Modified: src/python/qpid_interop_test/qit_shim.py|4 2
+
+Revision: 49cb0d602e1c0725bb4e8ddc6a8571c70851f4b6
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 26/04/2018 04:35:32
+Message:
+QPIDIT-119: C++ shims completed. Because of PROTON-1824, it is not possible to use arrays with Python 2/3 clients, so run test using --exclude-type array --exclude-subtype array to avoid this open issue. The array part of the shims are still relatively untested (but should mostly work for the ProtonCpp shim), but this will not be addressed until this Proton Array issue is fixed. #MsgLength=382
+
+
+----
+Modified: CMakeLists.txt|30 10
+Modified: shims/qpid-proton-cpp/src/CMakeLists.txt|50 0
+Modified: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.cpp|25 0
+Modified: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.hpp|21 1
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_complex_types_test/Common.cpp|128 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_complex_types_test/Common.hpp|71 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_complex_types_test/Receiver.cpp|167 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_complex_types_test/Receiver.hpp|53 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_complex_types_test/Sender.cpp|86 0
+Added: shims/qpid-proton-cpp/src/qpidit/amqp_complex_types_test/Sender.hpp|45 0
+Modified: shims/qpid-proton-python/src/amqp_complex_types_test/Receiver.py|1 1
+Modified: src/python/qpid_interop_test/amqp_complex_types_test.array.json|1 3
+Modified: src/python/qpid_interop_test/amqp_complex_types_test.list.json|1 5
+Modified: src/python/qpid_interop_test/amqp_complex_types_test.map.json|1 3
+Modified: src/python/qpid_interop_test/amqp_complex_types_test.py|22 12
+Modified: src/python/qpid_interop_test/amqp_complex_types_test_generator.py|307 181
+
+Revision: d7f76fb1cd7ed9962b26db19f1b2e31bb368ea3d
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 26/04/2018 22:40:40
+Message:
+NOJIRA: Minor tidy-up in amqp_types_test; reorganization of Eclipse projects, hence adding their artifacts to .gitignore #MsgLength=121
+
+
+----
+Modified: .gitignore|5 1
+Deleted: .project|0 18
+Deleted: .pydevproject|0 7
+Added: shims/qpid-jms/src/.gitignore|1 0
+Modified: shims/qpid-proton-python/src/amqp_types_test/Sender.py|1 2
+Modified: src/python/qpid_interop_test/amqp_types_test.py|7 3
+
+Revision: dcc943f2203f236e93db4b2ed28a29cc088a1473
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 26/04/2018 23:02:28
+Message:
+QPIDIT-119: Included explicit C++11 flags for shim builds as c++11 features are now being used and earlier compilers do not turn these on by default #MsgLength=149
+
+
+----
+Modified: shims/qpid-proton-cpp/src/CMakeLists.txt|1 1
+
+Revision: b9a3ef265908f44b2372890239cc4506f4998154
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 27/04/2018 23:42:41
+Message:
+QPIDIT-119: Minor fix to C++ receiver shim, in which maps embedded in lists were being tested by the == operator, and this does not allow for a change in map order. Switched to using the checkMapEqual() method instead. #MsgLength=219
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_complex_types_test/Receiver.cpp|1 1
+
+Revision: 050b4f7f795f5de650613625dd2cb8c59c0f1ea1
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 28/04/2018 00:09:52
+Message:
+NOJIRA: Minor fix to commit d7f76fb1cd7ed9962b26db19f1b2e31bb368ea3d on 04/26/2018: The receiver shims for amqp_types test format the returned values in a short hex format 0x1, so the test values must also use this format. Changed 0x00 and 0x01 to 0x0 and 0x1 respectively. #MsgLength=274
+
+
+----
+Modified: src/python/qpid_interop_test/amqp_types_test.py|2 2
+
+Revision: c3b3cff6cf9a7ed40aebb5b90938835588eb3f24
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 03/05/2018 21:36:52
+Message:
+QPIDIT-115: When stderr output from a shim is present, also show stdout output. #MsgLength=80
+
+
+----
+Modified: src/python/qpid_interop_test/qit_shim.py|1 1
+
+Revision: 929b22bdcddd53037b460b370b2719f6ecb8da63
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 22/05/2018 00:59:20
+Message:
+QPIDIT-93: Modified schema to include properties containing test metadata and some additional attributes. Also some cleanup. #MsgLength=125
+
+
+----
+Modified: src/python/qpid_interop_test/amqp_complex_types_test.py|1 1
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|1 1
+Modified: src/python/qpid_interop_test/amqp_types_test.py|1 1
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|1 1
+Modified: src/python/qpid_interop_test/jms_messages_test.py|1 1
+Modified: src/python/qpid_interop_test/qit_common.py|102 55
+Modified: src/python/qpid_interop_test/qit_xunit_log.py|105 35
+
+Revision: 26e4efdd2d78a7ebbb4e3fa27db2006d14267843
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 21/06/2018 00:21:24
+Message:
+NO-JIRA: Added RELEASE file which contains issues addressed in each release. #MsgLength=77
+
+
+----
+Added: docs/RELEASE.txt|81 0
+
+Revision: 2c7cba50c1bf0d0150f3fc1e2f4b37833559807a
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 21/06/2018 00:59:22
+Message:
+NO-JIRA: Added Apache license to RELEASE.txt file #MsgLength=50
+
+
+----
+Modified: docs/RELEASE.txt|15 0
+
+Revision: 309071ef2793433dd8621964331277856cf6481c
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 29/06/2018 23:50:26
+Message:
+QPIDIT-125: Added Apache license text to each .gitignore file, updated doc files #MsgLength=81
+
+
+----
+Modified: .gitignore|18 0
+Modified: QUICKSTART.md|112 119
+Modified: docs/users-guide.txt|64 45
+Modified: shims/amqpnetlite/src/amqp_complex_types_test/.gitignore|18 0
+Modified: shims/qpid-jms/.gitignore|18 0
+Modified: shims/qpid-jms/src/.gitignore|18 0
+Modified: shims/qpid-proton-cpp/.gitignore|18 0
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_complex_types_test/.gitignore|18 0
+Modified: shims/qpid-proton-python/src/amqp_complex_types_test/.gitignore|18 0
+Modified: shims/rhea-js/amqp_complex_types_test/.gitignore|18 0
+Modified: shims/rhea-js/amqp_types_test/.gitignore|18 0
+Modified: src/python/qpid_interop_test/.gitignore|18 0
+Modified: utils/.gitignore|18 0
+
+Revision: 11eb478731f1a839f6c20d1dc41a98bb8756c0bd
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 30/06/2018 00:08:27
+Message:
+QPIDIT-125: Changed version number in the pom.xml file #MsgLength=55
+
+
+----
+Modified: pom.xml|1 1
+
+Revision: 4cd85c248634beaf176dabbeef76d87cb0fe2a7f
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 30/06/2018 23:36:54
+Message:
+QPIDIT-125: Fix for two .pom files with incorrect version and dependecy version information #MsgLength=92
+
+
+----
+Modified: pom.xml|2 2
+Modified: shims/qpid-jms/pom.xml|1 1
+
+Revision: 21bd232bdc9fd66715a94bd331e1e3c47d8ffb45
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 10/07/2018 00:26:17
+Message:
+QPIDIT-125: Updated QUICKSTART to give some details on installing Amqp.Net Lite, changed Maven pom files on master to be release 0.3.0-SNAPSHOT #MsgLength=144
+
+
+----
+Modified: QUICKSTART.md|26 4
+Modified: pom.xml|1 1
+Modified: shims/qpid-jms/pom.xml|1 1
+Modified: utils/pom.xml|1 1
+
+Revision: 28dffad8596b26b552d6b50dd99d6be8b2b9397b
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 10/07/2018 00:59:37
+Message:
+QPIDIT-127: Updated parent apache pom to v19 #MsgLength=45
+
+
+----
+Modified: pom.xml|1 1
+
+Revision: 7af2e6db6299ebd4b656b404791160153caebe26
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 11/07/2018 01:01:14
+Message:
+QPIDIT-129: Updated hard-coded shim version number in qit_common.py. #MsgLength=69
+
+
+----
+Modified: src/python/qpid_interop_test/qit_common.py|1 1
+
+Revision: fcca6895b45bfea76258327ebad2ea735066a337
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 12/07/2018 00:10:56
+Message:
+QPIDIT-125: Minor updates to QUICKSTART.md #MsgLength=43
+
+
+----
+Modified: QUICKSTART.md|1 0
+
+Revision: 5f8ef9974efb6c19d0229a4d6a25c55c03344346
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 12/07/2018 00:19:44
+Message:
+QPIDIT-125: More minor updates to QUICKSTART.md #MsgLength=48
+
+
+----
+Modified: QUICKSTART.md|2 1
+
+Revision: 451f21a504701fd4a488a335fc153f3edece56ad
+Author: Robbie Gemmell <robbie@apache.org>
+Date: 12/07/2018 20:04:18
+Message:
+QPIDIT-125: correct component title/intro in README.md, link to website and trim redundant details #MsgLength=99
+
+
+----
+Modified: README.md|2 10
+
+Revision: 2cf9bbf877c1c1da72ea17ade782fdbcb99d8780
+Author: Robbie Gemmell <robbie@apache.org>
+Date: 12/07/2018 20:07:34
+Message:
+QPIDIT-125: focus on details that works rather than what doesnt, correct duplicate numbering in headings #MsgLength=105
+
+
+----
+Modified: QUICKSTART.md|21 22
+
+Revision: 6e623b61d7fc457c584669f135b45be38c8a43b3
+Author: Robbie Gemmell <robbie@apache.org>
+Date: 12/07/2018 20:20:12
+Message:
+QPIDIT-125: some more quickstart tweaks - Dont describe development tags as releases as they aren't. - Move developer repo details down as they are not a primary entry point for regular users. #MsgLength=193
+
+
+----
+Modified: QUICKSTART.md|11 10
+
+Revision: 0dee2b3c7cfb6fa8d113c8ec960bbd4926f7d904
+Author: Robbie Gemmell <robbie@apache.org>
+Date: 12/07/2018 20:26:54
+Message:
+QPIDIT-125: try adding a sub-heading for visibility and separation #MsgLength=67
+
+
+----
+Modified: QUICKSTART.md|2 0
+
+Revision: 3e797692d36b1091f8c188896ef74821742e5d3f
+Author: Robbie Gemmell <robbie@apache.org>
+Date: 12/07/2018 20:30:11
+Message:
+QPIDIT-127: also override up to surefire 2.21.0 to resolve Java 10 compatibility issue #MsgLength=87
+
+
+----
+Modified: pom.xml|2 1
+
+Revision: 0c128063ec46ffc7e64244f4487cdfa64ae15656
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 16/07/2018 22:17:03
+Message:
+QPIDIT-133: Removed float test values 'inf', '-inf' from amqp-complex-types-test becasue of Proton bug #MsgLength=103
+
+
+----
+Modified: src/python/qpid_interop_test/amqp_complex_types_test.array.json|0 2
+Modified: src/python/qpid_interop_test/amqp_complex_types_test.list.json|0 2
+Modified: src/python/qpid_interop_test/amqp_complex_types_test.map.json|0 2
+
+Revision: 774f2564d084ed018f452ca60c4d7f612f0baa33
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 16/07/2018 23:06:55
+Message:
+QPIDIT-128: Changed construction of JAVA_HOME to be compliant with Java norms, also added warning when shim jar file is not found at start of JMS tests. #MsgLength=153
+
+
+----
+Modified: src/python/qpid_interop_test/qit_common.py|2 0
+Modified: src/python/qpid_interop_test/qit_shim.py|2 2
+
+Revision: 50076724ab96214148c4dbc89d4290583ccb6949
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 16/07/2018 23:08:15
+Message:
+QPIDIT-125: Minor addition to QUICKSTART.md file #MsgLength=49
+
+
+----
+Modified: QUICKSTART.md|2 1
+
+Revision: d2eea54c62fba703577422fc78c6efbdf5efd0c0
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 04/08/2018 00:00:57
+Message:
+QPIDIT-135: Added check for Python3 availability, disable Python3 shims when not present #MsgLength=89
+
+
+----
+Modified: CMakeLists.txt|8 5
+Modified: config.sh.in|8 3
+Modified: get-python-dir-name|12 2
+Modified: src/python/qpid_interop_test/qit_common.py|6 2
+
+Revision: 6d748f860714f8d1633d8ca61fc90705fca0c819
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 10/08/2018 23:19:02
+Message:
+QPIDIT-136: Fix python2.7 site package path in PYTHON3PATH issue #MsgLength=65
+
+
+----
+Modified: CMakeLists.txt|10 0
+Modified: setup.py|3 2
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Sender.py|21 13
+
+Revision: 153441f9af7215502c4af0fd379bb489c559d363
+Author: Robbie Gemmell <robbie@apache.org>
+Date: 14/12/2018 19:17:59
+Message:
+NO-JIRA: update repo location links/metadata #MsgLength=45
+
+
+----
+Modified: QUICKSTART.md|1 1
+Modified: pom.xml|3 3
+
+Revision: d6434c645637e3ecf2adab10baef7d1c51486746
+Author: Robbie Gemmell <robbie@apache.org>
+Date: 29/01/2019 19:41:49
+Message:
+NO-JIRA: update years in NOTICE file #MsgLength=37
+
+
+----
+Modified: NOTICE|1 1
+
+Revision: ee9eeea6db2190ea2d807be0cc3a82ca92f99d71
+Author: Kim van der Riet <kvdr@localhost.localdomain>
+Date: 04/09/2019 05:24:15
+Message:
+QPIDIT-137: Change broker properties connection to use retries - 25 retries are now attmepted before the test fails. #MsgLength=117
+
+
+----
+Modified: src/python/qpid_interop_test/qit_broker_props.py|18 4
+
+Revision: 840745408b307b14f12515888526d9217ff3ff75
+Author: Robbie Gemmell <robbie@apache.org>
+Date: 01/10/2019 18:25:36
+Message:
+NO-JIRA: add .asf.yaml file with github repo metadata #MsgLength=54
+
+
+----
+Added: .asf.yaml|32 0
+
+Revision: 6313c68612f56d3527c630730ed468cc89a81b83
+Author: Robbie Gemmell <robbie@apache.org>
+Date: 01/10/2019 18:28:24
+Message:
+NO-JIRA: fixup for last commit #MsgLength=31
+
+
+----
+Modified: .asf.yaml|0 1
+
+Revision: bb122f32c8b9e89f854b29c244f405cc7c6ef77a
+Author: Robbie Gemmell <robbie@apache.org>
+Date: 09/01/2020 21:01:04
+Message:
+bump year in NOTICE file #MsgLength=25
+
+
+----
+Modified: NOTICE|1 1
+
+Revision: 9a39c6b10b3cadd70d80fc2be2c984bb73094bcc
+Author: Kim van der Riet <kvdr@europa.lan>
+Date: 16/01/2020 05:07:49
+Message:
+QPIDIT-138: Changed amqp.netlite shims to use dotnet rather than mono #MsgLength=70
+
+
+----
+Modified: shims/amqpnetlite/src/CMakeLists.txt|72 89
+Deleted: shims/amqpnetlite/src/amqp_large_content_test/Receiver/App.config|0 24
+Deleted: shims/amqpnetlite/src/amqp_large_content_test/Receiver/Properties/AssemblyInfo.cs|0 57
+Modified: shims/amqpnetlite/src/amqp_large_content_test/Receiver/Receiver.cs|0 2
+Modified: shims/amqpnetlite/src/amqp_large_content_test/Receiver/Receiver.csproj.in|3 72
+Deleted: shims/amqpnetlite/src/amqp_large_content_test/Receiver/packages.config|0 21
+Deleted: shims/amqpnetlite/src/amqp_large_content_test/Sender/App.config|0 24
+Deleted: shims/amqpnetlite/src/amqp_large_content_test/Sender/Properties/AssemblyInfo.cs|0 57
+Modified: shims/amqpnetlite/src/amqp_large_content_test/Sender/Sender.cs|2 3
+Modified: shims/amqpnetlite/src/amqp_large_content_test/Sender/Sender.csproj.in|3 71
+Deleted: shims/amqpnetlite/src/amqp_large_content_test/Sender/packages.config|0 21
+Deleted: shims/amqpnetlite/src/amqp_types_test/Receiver/App.config|0 24
+Deleted: shims/amqpnetlite/src/amqp_types_test/Receiver/Properties/AssemblyInfo.cs|0 57
+Modified: shims/amqpnetlite/src/amqp_types_test/Receiver/Receiver.cs|0 2
+Modified: shims/amqpnetlite/src/amqp_types_test/Receiver/Receiver.csproj.in|3 72
+Deleted: shims/amqpnetlite/src/amqp_types_test/Receiver/packages.config|0 21
+Deleted: shims/amqpnetlite/src/amqp_types_test/Sender/App.config|0 24
+Deleted: shims/amqpnetlite/src/amqp_types_test/Sender/Properties/AssemblyInfo.cs|0 57
+Modified: shims/amqpnetlite/src/amqp_types_test/Sender/Sender.cs|3 4
+Modified: shims/amqpnetlite/src/amqp_types_test/Sender/Sender.csproj.in|3 71
+Deleted: shims/amqpnetlite/src/amqp_types_test/Sender/packages.config|0 21
+Modified: shims/rhea-js/amqp_types_test/README|1 1
+Modified: src/python/qpid_interop_test/qit_common.py|2 2
+Modified: src/python/qpid_interop_test/qit_shim.py|5 3
+
+Revision: daf14bd8334ce3bea5c1aedb11e37147704ca65f
+Author: Kim van der Riet <kvdr@europa.lan>
+Date: 16/01/2020 06:07:13
+Message:
+NO_JIRA: Minor improvement to error reporting from cmake file when complex_data_test fails generation #MsgLength=102
+
+
+----
+Modified: CMakeLists.txt|9 4
+
+Revision: 2db1a16ef378ca01c3ce391d35d53f078cb4d933
+Author: Kim van der Riet <kvdr@europa.lan>
+Date: 16/01/2020 06:11:20
+Message:
+NO_JIRA: Minor improvement to error reporting from cmake file when complex_data_test fails generation #MsgLength=102
+
+
+----
+Modified: CMakeLists.txt|3 1
+
+Revision: 859629927c66f6ad0b58b73650c4304d37f06a47
+Author: Kim van der Riet <kvdr@europa.lan>
+Date: 16/01/2020 06:14:50
+Message:
+NO_JIRA: Minor improvement to error reporting from cmake file when complex_data_test fails generation #MsgLength=102
+
+
+----
+Modified: CMakeLists.txt|2 0
+
+Revision: 2cf31b57029caca95a78c96957fc030bbbf797cd
+Author: Kim van der Riet <kvdr@europa.lan>
+Date: 16/01/2020 20:35:49
+Message:
+NO_JIRA: Minor improvement to error reporting from cmake file when complex_data_test fails generation #MsgLength=102
+
+
+----
+Modified: CMakeLists.txt|4 10
+
+Revision: b22e477020c775f4062f363bc3186eb7cc61b538
+Author: Kim van der Riet <kvdr@europa.lan>
+Date: 17/01/2020 01:29:23
+Message:
+QPIDIT-138: Corrected wrong dotnet version: 3.1 changed to 2.1 #MsgLength=63
+
+
+----
+Modified: shims/amqpnetlite/src/CMakeLists.txt|1 1
+
+Revision: 402fb98659e8244eddfac938ecc0db4f40edbbcc
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 18/01/2020 01:17:33
+Message:
+QPIDIT-139: Improving install's detection of Python 2 and Python 3, preparing for swith to Python 3 tests. QPIDIT-135: Minor improvements to handling of Python 2 and Python 3 shims. The presence of PYTHON2PATH and PYTHON3PATH in env controls the running of the shims. QPIDIT-138: Minor improvements to messages during cmake run. #MsgLength=329
+
+
+----
+Modified: CMakeLists.txt|68 37
+Modified: config.sh.in|20 6
+Modified: shims/amqpnetlite/src/CMakeLists.txt|4 4
+Modified: src/python/qpid_interop_test/qit_common.py|14 8
+Modified: src/python/qpid_interop_test/qit_shim.py|2 0
+
+Revision: 2f64059af5258d8b358bd07acfd4b1def15dfbe6
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 18/01/2020 04:19:44
+Message:
+QPIDIT-139: Replacing workaround for for RHEL/CentOS 7 bug where Java_FOUND not being set correctly which was removed in last checkin. #MsgLength=135
+
+
+----
+Modified: CMakeLists.txt|2 2
+
+Revision: 693b60ea69f53f6635a28d1654aaf97792270e9f
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 18/01/2020 07:06:03
+Message:
+QPIDIT-139: Further refinements and removing ugly stuff in the install, fixed python error around checking env vars #MsgLength=116
+
+
+----
+Modified: CMakeLists.txt|4 18
+Modified: config.sh.in|0 1
+Modified: src/python/qpid_interop_test/qit_shim.py|4 2
+
+Revision: 111537291e52b7c8ef437bcbfccb4afa2c939f43
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 19/01/2020 02:40:54
+Message:
+QPIDIT-139: Added separate install for python 3 rather than using symbolic links #MsgLength=81
+
+
+----
+Modified: CMakeLists.txt|5 2
+
+Revision: 0693a8a8d985bbeb9897d19a3e5d4aabe4aa4216
+Author: Kim van der Riet <kvanderr@redhat.com>
+Date: 05/02/2020 15:58:29
+Message:
+QPIDIT-140: Fix for python pointing to Python 3.x in Fedora 31. Changed all references to python to python2. #MsgLength=109
+
+
+----
+Modified: CMakeLists.txt|4 4
+Modified: src/python/qpid_interop_test/qit_shim.py|2 2
+
+Revision: 0ee6a0ab67c15e350a23bde1b3212f3f6ce48426
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 14/07/2020 01:58:22
+Message:
+QPIDIT-139: Updated tests for Python3. Updated shims to receive and send base64-encoded binary, as JSON cannot send binary. Other tidy-ups and small optimizations. #MsgLength=164
+
+
+----
+Modified: .gitignore|1 0
+Modified: config.sh.in|2 2
+Modified: shims/amqpnetlite/src/amqp_types_test/Receiver/Receiver.cs|118 144
+Modified: shims/amqpnetlite/src/amqp_types_test/Sender/Sender.cs|3 9
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/jms_hdrs_props_test/Receiver.java|9 8
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/jms_hdrs_props_test/Sender.java|21 16
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/jms_messages_test/Receiver.java|8 12
+Modified: shims/qpid-jms/src/main/java/org/apache/qpid/interop_test/jms_messages_test/Sender.java|22 19
+Modified: shims/qpid-proton-cpp/src/CMakeLists.txt|2 0
+Added: shims/qpid-proton-cpp/src/qpidit/Base64.cpp|125 0
+Added: shims/qpid-proton-cpp/src/qpidit/Base64.hpp|32 0
+Modified: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.cpp|2 2
+Modified: shims/qpid-proton-cpp/src/qpidit/QpidItErrors.hpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_complex_types_test/Common.cpp|0 3
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_complex_types_test/Common.hpp|0 1
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Receiver.cpp|7 2
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Sender.cpp|10 8
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Receiver.cpp|41 86
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Receiver.hpp|0 3
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.cpp|17 135
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.hpp|0 9
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.cpp|24 17
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Sender.cpp|28 22
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Sender.hpp|1 1
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Receiver.cpp|21 14
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Sender.cpp|21 24
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Sender.hpp|1 1
+Modified: shims/qpid-proton-python/src/amqp_complex_types_test/Common.py|7 2
+Modified: shims/qpid-proton-python/src/amqp_complex_types_test/Receiver.py|14 13
+Modified: shims/qpid-proton-python/src/amqp_types_test/Receiver.py|4 42
+Modified: shims/qpid-proton-python/src/amqp_types_test/Sender.py|6 64
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Receiver.py|19 13
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Sender.py|8 7
+Modified: shims/qpid-proton-python/src/jms_messages_test/Receiver.py|17 12
+Modified: shims/qpid-proton-python/src/jms_messages_test/Sender.py|7 6
+Modified: shims/rhea-js/amqp_types_test/Receiver.js|5 16
+Modified: shims/rhea-js/amqp_types_test/Sender.js|8 20
+Modified: src/python/qpid_interop_test/amqp_complex_types_test.array.json|1 1
+Modified: src/python/qpid_interop_test/amqp_complex_types_test.py|11 6
+Modified: src/python/qpid_interop_test/amqp_complex_types_test_generator.py|390 381
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|5 4
+Modified: src/python/qpid_interop_test/amqp_types_test.py|38 111
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|35 17
+Modified: src/python/qpid_interop_test/jms_messages_test.py|30 10
+Modified: src/python/qpid_interop_test/qit_broker_props.py|17 3
+Modified: src/python/qpid_interop_test/qit_common.py|8 7
+Modified: src/python/qpid_interop_test/qit_errors.py|0 2
+Modified: src/python/qpid_interop_test/qit_jms_types.py|1 1
+Modified: src/python/qpid_interop_test/qit_shim.py|13 10
+Modified: src/python/qpid_interop_test/qit_xunit_log.py|3 2
+Modified: src/python/qpid_interop_test/run_all.py|1 1
+
+Revision: 9b2fde34007179eb933670c48f2e5728310eaf06
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 14/07/2020 02:17:43
+Message:
+QPIDIT-139: Added header <cstring> to amqp_large_content_test sender cpp shim #MsgLength=78
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_large_content_test/Sender.cpp|1 0
+
+Revision: 6157dd13760c3a1dd8f5af07ff1dcb7e96bb424e
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 14/07/2020 02:21:31
+Message:
+QPIDIT-139: Added header <cstring> to other sender cpp shims #MsgLength=61
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/amqp_types_test/Sender.cpp|1 0
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Sender.cpp|1 0
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Sender.cpp|1 0
+
+Revision: f106e0f64ff371aa37a7cebf30415b5976547e44
+Author: Kim van der Riet <kpvdr@apache.org>
+Date: 14/07/2020 02:25:16
+Message:
+QPIDIT-139: Added header <cstring> to other receiver cpp shims #MsgLength=63
+
+
+----
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_hdrs_props_test/Receiver.cpp|1 0
+Modified: shims/qpid-proton-cpp/src/qpidit/jms_messages_test/Receiver.cpp|1 0
+
+Revision: 073db2f3a7cd35a6fcaa8ee23d0cb114141dfc7a
+Author: Kim van der Riet <kimp@vanderriet.com>
+Date: 16/01/2021 01:54:08
+Message:
+Update to remove dependency on perl-XML-XPath, use mvn query instead to extract version from pom.xml #MsgLength=101
+
+
+----
+Modified: CMakeLists.txt|0 10
+Deleted: get-proj-ver|0 25
+Modified: shims/qpid-jms/CMakeLists.txt|2 3
+
+Revision: c8725eda6bdb8ca84b68fdc22caac97ed68d2b7b
+Author: Kim van der Riet <kimp@vanderriet.com>
+Date: 04/02/2021 23:25:56
+Message:
+Fix for bad vesion problem using maven to search the pom file #MsgLength=62
+
+
+----
+Modified: shims/qpid-jms/CMakeLists.txt|1 0
+
+Revision: 302c3b495f38ba686bf73349537767890bd6dff0
+Author: Kim van der Riet <kvanderr@redhat.com>
+Date: 28/04/2021 03:34:50
+Message:
+A change to RHEA's processing of timestamps from ulongs to Date objects requires a fix to the javascript receive shim. #MsgLength=119
+
+
+----
+Modified: shims/rhea-js/amqp_types_test/Receiver.js|7 3
+
+Revision: 9a6865d586c7759785262b7811f15d3d19cf1b37
+Author: Kim van der Riet <kvanderr@redhat.com>
+Date: 28/04/2021 03:48:27
+Message:
+Fixed minor syntax typo in previous commit #MsgLength=43
+
+
+----
+Modified: shims/rhea-js/amqp_types_test/Receiver.js|1 1
+
+Revision: c638a8b786d9fbe808cc19720ddf0367fb48f9bd
+Author: Kim van der Riet <kvanderr@redhat.com>
+Date: 28/04/2021 23:51:22
+Message:
+Final fix for new Rhea - AMQP timestamp type converting from Date objects back to unix timestamps #MsgLength=98
+
+
+----
+Modified: shims/rhea-js/amqp_types_test/Receiver.js|1 1
+
+Revision: 0e5dafc14d539af317dc4f38e0201939cfc2c4e3
+Author: Kim van der Riet <kvanderr@redhat.com>
+Date: 05/05/2021 00:03:59
+Message:
+Updates for Java 11, DotNet 5.0, Rhea and other Java deps #MsgLength=58
+
+
+----
+Modified: .gitignore|2 0
+Modified: CMakeLists.txt|2 3
+Modified: pom.xml|12 9
+Modified: shims/amqpnetlite/src/CMakeLists.txt|2 2
+
+Revision: 829b2c7e8cb7e2488162bc8aea77fe1d6811fefd
+Author: Kim van der Riet <kvanderr@redhat.com>
+Date: 05/05/2021 22:48:35
+Message:
+Changed config for maven-compiler-plugin from <release>11</release> to <source>11</source> and <target>11</target> #MsgLength=115
+
+
+----
+Modified: pom.xml|3 3
+
+Revision: c21f4874ed812132906e39d3732ab3ea2cd0bbab
+Author: Kim van der Riet <kvanderr@redhat.com>
+Date: 06/05/2021 00:03:40
+Message:
+Updates to pom.xml files #MsgLength=25
+
+
+----
+Modified: pom.xml|1 1
+Modified: shims/qpid-jms/pom.xml|4 3
+
+Revision: a32f97d25afd35d5c4909eda7f04dbea788eff8e
+Author: Kim van der Riet <kvanderr@redhat.com>
+Date: 06/05/2021 00:16:59
+Message:
+Changed script build.sh to local-build.sh #MsgLength=42
+
+
+----
+Added: local-build.sh|26 0
+
+Revision: c27c3c04e8e01783ad10b9ecb5ac9988f4f5c15b
+Author: Kim van der Riet <kvanderr@redhat.com>
+Date: 06/05/2021 00:19:26
+Message:
+Deleted local-build.sh #MsgLength=23
+
+
+----
+Deleted: local-build.sh|0 26
+
+Revision: 936de31ccf909dbf642966bd3d5ca70dfcbad4c3
+Author: Kim van der Riet <kvanderr@redhat.com>
+Date: 10/08/2021 20:26:17
+Message:
+WIP: Temporary debug: print shim entry params enabled #MsgLength=54
+
+
+----
+Modified: src/python/qpid_interop_test/qit_shim.py|2 2
+
+Revision: 32dda0d9d14f9a1f42e947b87091c9e342c549e8
+Author: Kim van der Riet <kvanderr@redhat.com>
+Date: 10/08/2021 20:49:11
+Message:
+WIP: Reversed temporary debug: print shim entry params enabled #MsgLength=63
+
+
+----
+Modified: src/python/qpid_interop_test/qit_shim.py|2 2
+
+Revision: 97e13f6b4f47c18b65d5a52ccdc203d409c625a6
+Author: Kim van der Riet <kimp@apache.org>
+Date: 14/09/2021 22:51:34
+Message:
+Updated minimum version of cmake to 2.8.12 owing to deprecation warning #MsgLength=72
+
+
+----
+Modified: CMakeLists.txt|1 1
+
+Revision: 64338824ca0dd44dbbff4f1f15f6255b6458782a
+Author: Kim van der Riet <kimp@apache.org>
+Date: 14/09/2021 23:05:57
+Message:
+Updated minimum version of cmake to 3.16.3 #MsgLength=43
+
+
+----
+Modified: CMakeLists.txt|1 1
+
+Revision: b2f181529e8143480e678f6ce9f45ce31100f479
+Author: Kim van der Riet <kimp@apache.org>
+Date: 14/09/2021 23:17:35
+Message:
+Updated min cmake version for sub-CMakeLists.txt files, also updated proton PYTHON3PATH for new proton dir #MsgLength=107
+
+
+----
+Modified: config.sh.in|1 1
+Modified: docs/CMakeLists.txt|2 2
+Modified: shims/amqpnetlite/src/CMakeLists.txt|1 1
+Modified: shims/qpid-jms/CMakeLists.txt|1 1
+Modified: shims/qpid-proton-cpp/src/CMakeLists.txt|1 1
+Modified: shims/qpid-proton-python/src/CMakeLists.txt|1 1
+
+Revision: acd8bfc748723aa39edd18f030bb29dcf71160ca
+Author: Kim van der Riet <kimp@apache.org>
+Date: 15/09/2021 01:56:57
+Message:
+WIP: Removing references to Python 2 in main tests, updating some code to Python 3 conventions #MsgLength=95
+
+
+----
+Modified: config.sh.in|1 9
+Modified: src/python/qpid_interop_test/amqp_complex_types_test.py|2 2
+Modified: src/python/qpid_interop_test/amqp_complex_types_test_generator.py|1 1
+Modified: src/python/qpid_interop_test/amqp_large_content_test.py|2 2
+Modified: src/python/qpid_interop_test/amqp_types_test.py|4 4
+Modified: src/python/qpid_interop_test/jms_hdrs_props_test.py|5 5
+Modified: src/python/qpid_interop_test/jms_messages_test.py|3 3
+Modified: src/python/qpid_interop_test/qit_broker_props.py|1 1
+Modified: src/python/qpid_interop_test/qit_common.py|2 8
+Modified: src/python/qpid_interop_test/qit_shim.py|8 21
+Modified: src/python/qpid_interop_test/qit_xunit_log.py|1 1
+
+Revision: 266c23c04aaaf406854694a528023ee263c4fdd2
+Author: Kim van der Riet <kimp@apache.org>
+Date: 15/09/2021 05:33:39
+Message:
+Removed _compat.py for shim py2/3 compatibility, made all shims py3 only. #MsgLength=74
+
+
+----
+Modified: CMakeLists.txt|8 8
+Modified: setup.py|4 8
+Deleted: shims/qpid-proton-python/src/_compat.py|0 75
+Modified: shims/qpid-proton-python/src/amqp_complex_types_test/Common.py|5 6
+Modified: shims/qpid-proton-python/src/amqp_complex_types_test/Receiver.py|2 2
+Modified: shims/qpid-proton-python/src/amqp_complex_types_test/Sender.py|1 1
+Modified: shims/qpid-proton-python/src/amqp_large_content_test/Receiver.py|3 8
+Modified: shims/qpid-proton-python/src/amqp_large_content_test/Sender.py|5 6
+Modified: shims/qpid-proton-python/src/amqp_types_test/Receiver.py|10 19
+Modified: shims/qpid-proton-python/src/amqp_types_test/Sender.py|10 11
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Receiver.py|6 17
+Modified: shims/qpid-proton-python/src/jms_hdrs_props_test/Sender.py|10 11
+Modified: shims/qpid-proton-python/src/jms_messages_test/Receiver.py|5 16
+Modified: shims/qpid-proton-python/src/jms_messages_test/Sender.py|12 13
+Modified: src/python/qpid_interop_test/amqp_complex_types_test_generator.py|5 5
+Modified: src/python/qpid_interop_test/qit_xunit_log.py|1 1
+
+Revision: 2895206ecc78a8951fc0cad7d19447e570b353b2
+Author: Kim van der Riet <kimp@apache.org>
+Date: 23/09/2021 01:32:39
+Message:
+Changed installation so that tests can be run as binaries from the bin dir, and QIT is not installed as a Python library. #MsgLength=122
+
+
+----
+Modified: CMakeLists.txt|18 56
+Added: bin/amqp_complex_types_test|3 0
+Added: bin/amqp_large_content_test|3 0
+Added: bin/amqp_types_test|3 0
+Added: bin/jms_hdrs_props_test|3 0
+Added: bin/jms_messages_test|3 0
+Modified: config.sh.in|4 15
+Deleted: get-python-dir-name|0 29
+Deleted: setup.py|0 65
+Renamed: shims/qpid-proton-python/CMakeLists.txt [from shims/qpid-proton-python/src/CMakeLists.txt]|16 0
+Modified: src/python/qpid_interop_test/qit_common.py|28 28
+
+Revision: 60ab8dc59f668794e046a7fee7cbfacff5b7517a
+Author: Kim van der Riet <kimp@apache.org>
+Date: 30/09/2021 04:51:57
+Message:
+Changed location of installed python files to me more standard, also added entry point in /usr/local/bin. #MsgLength=106
+
+
+----
+Modified: CMakeLists.txt|5 8
+Modified: NOTICE|1 1
+Modified: QUICKSTART.md|35 103
+Modified: README.md|6 7
+Deleted: bin/amqp_complex_types_test|0 3
+Deleted: bin/amqp_large_content_test|0 3
+Deleted: bin/amqp_types_test|0 3
+Deleted: bin/jms_hdrs_props_test|0 3
+Deleted: bin/jms_messages_test|0 3
+Added: bin/qpid-interop-test.in|84 0
+Deleted: config.sh.in|0 25
+Modified: src/python/qpid_interop_test/qit_common.py|3 2
+Modified: src/python/qpid_interop_test/qit_shim.py|9 12
+
+Revision: cb8300b11f905b3c56a5b6b2cf6d60ca5407dfd6
+Author: Kim van der Riet <kimp@apache.org>
+Date: 01/10/2021 23:15:08
+Message:
+Changed dotnet cmake file to install only during make install #MsgLength=62
+
+
+----
+Modified: CMakeLists.txt|3 3
+Modified: shims/amqpnetlite/src/CMakeLists.txt|15 32
+
+Revision: 475fd7425f34eb441b31932fc06228cafae9ff66
+Author: Kim van der Riet <kimp@apache.org>
+Date: 13/10/2021 02:19:03
+Message:
+Added container Dockerfiles for Fedora 34, CentOS 8 and Ubuntu Focal. #MsgLength=70
+
+
+----
+Added: containers/Dockerfile.centos8|27 0
+Added: containers/Dockerfile.f34|20 0
+Added: containers/Dockerfile.focal|25 0
+
+Revision: 216169d127d7544f2fa2dca9ef5cb96170339261
+Author: Kim van der Riet <kimp@apache.org>
+Date: 14/10/2021 01:27:10
+Message:
+First draft of markdown docs, mainly in QUICKSTART #MsgLength=51
+
+
+----
+Modified: QUICKSTART.md|209 211
+Modified: bin/qpid-interop-test.in|17 14
+Modified: docs/RELEASE.txt|4 1
+
+Revision: 8136ca9c2106357b45cd982f989b07241aa47c6e
+Author: Kim van der Riet <kimp@apache.org>
+Date: 14/10/2021 01:48:55
+Message:
+Further edits to QUICKSTART.md #MsgLength=31
+
+
+----
+Modified: QUICKSTART.md|85 77
+
+Revision: 32c677a82296eec3148709c127e232322054d220
+Author: Kim van der Riet <kimp@apache.org>
+Date: 14/10/2021 02:08:52
+Message:
+Further edits to QUICKSTART.md #MsgLength=31
+
+
+----
+Modified: QUICKSTART.md|4 4
+
+Revision: c4453ad822f5a6a46e84a1116106a8ad016234a3
+Author: Kim van der Riet <kimp@apache.org>
+Date: 14/10/2021 02:46:26
+Message:
+Further edits to QUICKSTART.md #MsgLength=31
+
+
+----
+Modified: QUICKSTART.md|44 26
+
+Revision: 805bbb81849f451492e87d206756aaaeaffe7b57
+Author: Kim van der Riet <kimp@apache.org>
+Date: 14/10/2021 03:54:40
+Message:
+Further edits to QUICKSTART.md, also updates to Shim_HOWTO.txt and Test_HOWTO.txt #MsgLength=82
+
+
+----
+Modified: QUICKSTART.md|7 8
+Modified: README.md|11 33
+Modified: docs/Test_HOWTO.txt|55 42
+Modified: docs/users-guide.txt|3 5
+
+Revision: f7d117c940a7d8dae715d0edba916c87bab87b19
+Author: Kim van der Riet <kimp@apache.org>
+Date: 16/10/2021 02:33:32
+Message:
+Updates to user documentation #MsgLength=30
+
+
+----
+Modified: QUICKSTART.md|38 233
+Added: docs/USERGUIDE.md|534 0
+Modified: src/python/qpid_interop_test/qit_common.py|8 8
+
+Revision: 7c313cd4b39a38e94528f964821f483684c101d3
+Author: Kim van der Riet <kimp@apache.org>
+Date: 18/10/2021 23:02:27
+Message:
+Modified CMakeLists.txt to install QIT docs, updates to docs #MsgLength=61
+
+
+----
+Modified: CMakeLists.txt|3 0
+Modified: QUICKSTART.md|1 1
+Modified: docs/CMakeLists.txt|10 1
+Modified: docs/USERGUIDE.md|78 45
+
+Revision: 199b52e3d64c601892702edcd8638f4040383ec5
+Author: Kim van der Riet <kimp@apache.org>
+Date: 18/10/2021 23:32:29
+Message:
+Adding missing Apache License text in files, minor updates #MsgLength=59
+
+
+----
+Modified: containers/Dockerfile.centos8|17 0
+Modified: containers/Dockerfile.f34|17 0
+Modified: containers/Dockerfile.focal|17 0
+Modified: shims/amqpnetlite/src/amqp_large_content_test/Receiver/Receiver.csproj.in|21 0
+Modified: shims/amqpnetlite/src/amqp_large_content_test/Sender/Sender.csproj.in|21 0
+Modified: shims/amqpnetlite/src/amqp_types_test/Receiver/Receiver.csproj.in|21 0
+Modified: shims/amqpnetlite/src/amqp_types_test/Sender/Sender.csproj.in|21 0
+Modified: shims/qpid-jms/CMakeLists.txt|1 0
+Modified: shims/rhea-js/CMakeLists.txt|1 2
+Modified: shims/rhea-js/amqp_types_test/README|17 1
+Modified: src/python/qpid_interop_test/.gitignore|2 6
+
+Revision: 5994fe083ad497e72f89c81e5444380a6ac29efb
+Author: Kim van der Riet <kimp@apache.org>
+Date: 19/10/2021 01:04:31
+Message:
+Updated main branch to 0.4.0-SNAPSHOT #MsgLength=38
+
+
+----
+Modified: docs/RELEASE.txt|7 0
+Modified: pom.xml|1 1
+Modified: shims/qpid-jms/pom.xml|1 1
+Modified: src/python/qpid_interop_test/qit_common.py|1 1
+Modified: utils/pom.xml|1 1
+
+Revision: 2ae24aa2ac6998b9598b02e5b181f187f7b51212
+Author: Kim van der Riet <kimp@apache.org>
+Date: 26/10/2021 22:55:36
+Message:
+Spelling fixes, minor style updates to USERGUIDE #MsgLength=49
+
+
+----
+Modified: docs/USERGUIDE.md|38 38
+

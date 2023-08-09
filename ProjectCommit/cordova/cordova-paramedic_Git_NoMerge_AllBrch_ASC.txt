@@ -1,0 +1,4578 @@
+Revision: 9dce1d3052bb84b91a9e3264b9476a2b1f4af0f7
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 15/11/2014 09:15:31
+Message:
+feels like starting over #MsgLength=25
+
+
+----
+Added: .gitignore|3 0
+Added: main.js|163 0
+Added: package.json|24 0
+Added: todo.txt|17 0
+
+Revision: b17a19e679360bcc28bc5396afaa0a1623783570
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 15/11/2014 09:19:59
+Message:
+removed crufty ({})(); #MsgLength=23
+
+
+----
+Modified: main.js|7 5
+
+Revision: e36481689c98b1aba59b864cb2fbb2cbd1325327
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 18/11/2014 07:10:17
+Message:
+Fix logic issue, improved logging #MsgLength=34
+
+
+----
+Modified: main.js|6 7
+Modified: package.json|1 1
+
+Revision: 721c08b6b8511adb4cb182240ef453bb0bdb60ec
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 19/11/2014 09:40:30
+Message:
+use plugin id to resolve plugins and clone locally, still specific to me #MsgLength=73
+
+
+----
+Modified: main.js|6 3
+
+Revision: 0aae95383d459cb65e21797e277f0133821863e3
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 20/11/2014 07:00:31
+Message:
+Create README.md #MsgLength=16
+
+
+----
+Added: README.md|6 0
+
+Revision: 6774b9b0ad040ca6c834f3b5e6e51d6db04ecf7a
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 20/11/2014 09:57:26
+Message:
+rename and remove dep #MsgLength=22
+
+
+----
+Modified: package.json|1 2
+
+Revision: e0cb8e9584c81230ada0a4e1d765ec06ac59ee14
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/11/2014 07:15:36
+Message:
+changed local-medic to cordova-paramedic in output, stubbed run call for testing #MsgLength=81
+
+
+----
+Modified: main.js|9 10
+
+Revision: 56d77484321794d5c368d63b945235c06cdf7817
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/11/2014 07:27:55
+Message:
+perform build #MsgLength=14
+
+
+----
+Modified: main.js|1 1
+
+Revision: b04b875263a2e6405a035b9e1385cd4f700ab267
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/11/2014 08:46:36
+Message:
+updated to use passed in plugin added logging #MsgLength=46
+
+
+----
+Modified: main.js|6 6
+
+Revision: 50fe607f29d78b223127c505d15ee5e865fa19bf
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 04/12/2014 10:42:53
+Message:
+medic is putting, not posting #MsgLength=30
+
+
+----
+Modified: main.js|1 1
+
+Revision: 17aa5006c254cc4d45a97fd9fd88c5f799e79a36
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 15/01/2015 08:26:42
+Message:
+ignore stupid DS_Store files #MsgLength=29
+
+
+----
+Modified: .gitignore|1 0
+
+Revision: 98d6c496ccd6c6b545539c56eb3cb45cec3824f2
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 15/01/2015 09:55:44
+Message:
+add testable plugin for running local test against #MsgLength=51
+
+
+----
+Added: spec/testable-plugin/plugin.xml|41 0
+Added: spec/testable-plugin/tests/plugin.xml|30 0
+Added: spec/testable-plugin/tests/tests.js|41 0
+Added: spec/testable-plugin/www/testable.js|23 0
+
+Revision: 7c8cf54045da2b3e2ee451c60c99ebaaaa572d34
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/01/2015 08:58:07
+Message:
+ios does not need localtunnel, other platforms are stubbed/wip for now. #MsgLength=72
+
+
+----
+Modified: main.js|23 13
+
+Revision: 8cfac13c584bb5a61efe43e5eeb9c1def06eba60
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/01/2015 09:03:56
+Message:
+runs tests for ios #MsgLength=19
+
+
+----
+Modified: package.json|1 1
+
+Revision: 330fe332bd8ce40c8e8845eea086c1e342ddbb8b
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/01/2015 09:04:25
+Message:
+testing travis integration #MsgLength=27
+
+
+----
+Added: .travis.yml|9 0
+
+Revision: f207ce9257b6ab59c52f664aa54fffb5bc8e860d
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/01/2015 09:09:50
+Message:
+force travis to build, I hope #MsgLength=30
+
+
+----
+Modified: .travis.yml|2 1
+
+Revision: d4ed641dda646d63448918aa44c05606ed4545fe
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/01/2015 09:20:21
+Message:
+force travis to build, in OSX #MsgLength=30
+
+
+----
+Modified: .travis.yml|2 4
+
+Revision: 346efe697fdc29ec15689d7399591b853b4ceb70
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/01/2015 09:27:31
+Message:
+git clone plugin test framework and remove device dep #MsgLength=54
+
+
+----
+Modified: .travis.yml|3 0
+Modified: main.js|1 1
+
+Revision: 07de9deac9307a061605158664622ae940f7ee0f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/01/2015 09:31:52
+Message:
+missing half colon #MsgLength=19
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 94b0226c0cc861e77da7d147b2d405c4d7756e73
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/01/2015 09:35:52
+Message:
+cd back in #MsgLength=11
+
+
+----
+Modified: .travis.yml|1 0
+
+Revision: a308f877d867789be0c0392b15297634c5f66980
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 20/01/2015 09:55:19
+Message:
+add some info, more to come #MsgLength=28
+
+
+----
+Modified: README.md|4 0
+
+Revision: 641bcb55aef459a93202cdb33edc884bdcd4aaac
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 20/01/2015 09:57:43
+Message:
+cleanup console.logs #MsgLength=21
+
+
+----
+Modified: main.js|4 5
+
+Revision: f9b66b58e85c0f92f920e9a47ff2acb9e38c0d87
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 20/01/2015 09:58:39
+Message:
+add cl alias, point to repo #MsgLength=28
+
+
+----
+Modified: package.json|8 3
+
+Revision: 4156283264d5ab1f62217d99c0259a9294ceaa05
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 20/01/2015 10:03:55
+Message:
+fix build issue, install before running tests #MsgLength=46
+
+
+----
+Modified: .travis.yml|1 0
+
+Revision: 2bab91a1b64a376580815a53445b42d2ce39c3ab
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 22/01/2015 03:14:23
+Message:
+remove global ios-sim #MsgLength=22
+
+
+----
+Modified: .travis.yml|1 2
+
+Revision: eaedfa7242395403eac679178886a9e5adc24fdd
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 22/01/2015 03:34:08
+Message:
+try link #MsgLength=9
+
+
+----
+Modified: .travis.yml|1 0
+
+Revision: 251241b34dd0c3dd2b77f8c83d4a396fc0067f2d
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 22/01/2015 05:57:22
+Message:
+updated usage info #MsgLength=19
+
+
+----
+Modified: README.md|6 0
+
+Revision: 2196b6db4a073a36aa51c961b3090b607c440390
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 22/01/2015 14:19:52
+Message:
+assign main #MsgLength=12
+
+
+----
+Modified: package.json|2 2
+
+Revision: 0c2d737c4f1646d0b37af6784557a868bb620db3
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/01/2015 07:18:00
+Message:
+install test-framework via github #MsgLength=34
+
+
+----
+Modified: main.js|2 1
+
+Revision: b2a808ccc4a737a6607680bc8bf137201428482f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/01/2015 07:26:05
+Message:
+bump version #MsgLength=13
+
+
+----
+Modified: package.json|1 1
+
+Revision: 07792d0f5e20c293a320dbdb947b3cf2187b1d48
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/01/2015 07:39:13
+Message:
+add 5 minute test run timeout #MsgLength=30
+
+
+----
+Modified: main.js|5 1
+
+Revision: 0e6baa6bca4cac48d5a64163ba50e29bd3c13fad
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/01/2015 07:39:37
+Message:
+bump version #MsgLength=13
+
+
+----
+Modified: package.json|1 1
+
+Revision: 9558007863e0c137df8757036fd68ea621362464
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/01/2015 09:31:42
+Message:
+failed tests should exit with 1 #MsgLength=32
+
+
+----
+Modified: main.js|7 1
+
+Revision: d44e6e58d2df468237f76fb04b1b3f1584c04580
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/01/2015 09:32:15
+Message:
+version bump 0.0.5 #MsgLength=19
+
+
+----
+Modified: package.json|1 1
+
+Revision: 4b0ce712aad5e47fbde1f75a7fa64dfc9de69cb0
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/01/2015 09:55:36
+Message:
+check return code from plugin installs #MsgLength=39
+
+
+----
+Modified: main.js|19 3
+
+Revision: 3513bf2066649277073666aca96d7a07996962b0
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/01/2015 09:56:08
+Message:
+bump to 6 #MsgLength=10
+
+
+----
+Modified: package.json|1 1
+
+Revision: 0e1ade5edb93ccd241637881f201ddf228f47733
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/01/2015 10:02:24
+Message:
+remove strict host checking #MsgLength=28
+
+
+----
+Modified: .travis.yml|1 0
+
+Revision: 6775bf3a5057447adb7f4fcdb80200d23abd8c55
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/01/2015 10:19:55
+Message:
+check the output from cordova emulate #MsgLength=38
+
+
+----
+Modified: main.js|12 2
+
+Revision: f4f0a069970e133315948376972cde85ceaa5d48
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/02/2015 07:48:11
+Message:
+add experimental android support #MsgLength=33
+
+
+----
+Modified: main.js|5 1
+
+Revision: b84cda7f3529475a5652023a53ae31ff0a237779
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/02/2015 07:50:03
+Message:
+bump version #MsgLength=13
+
+
+----
+Modified: package.json|1 1
+
+Revision: ae0363a970687c1b68ea6c933a99d41f6bc8a4e9
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/02/2015 09:29:35
+Message:
+10 minute timeout, bump version #MsgLength=32
+
+
+----
+Modified: main.js|2 1
+Modified: package.json|1 1
+
+Revision: 15710161913d4e54a8384b71482d3a94a3c26eff
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/02/2015 09:56:42
+Message:
+try a local ip/url #MsgLength=19
+
+
+----
+Modified: main.js|19 3
+Modified: package.json|5 4
+Modified: spec/testable-plugin/plugin.xml|3 0
+
+Revision: 0061e33b0fd2e70761a662adbd18e30c8f6af561
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/02/2015 10:22:58
+Message:
+travis specific tests #MsgLength=22
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 5c66c29aafd3d3345a571e4a1b4c417e682a3fcb
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/02/2015 10:23:16
+Message:
+build a real url #MsgLength=17
+
+
+----
+Modified: main.js|1 1
+
+Revision: 32e216755b0170ad34aeecd394060bd1612241c1
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/02/2015 10:23:43
+Message:
+added multiple tests per platform #MsgLength=34
+
+
+----
+Modified: package.json|7 1
+
+Revision: 434e2736cab1a275eb2c531215807e01a353bad0
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/02/2015 10:24:04
+Message:
+appveyor specific tests are run #MsgLength=32
+
+
+----
+Added: appveyor.yml|12 0
+
+Revision: 779d9ac99606a102285098c3e675b989a488f3c4
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/02/2015 11:17:15
+Message:
+cleaned up tests so they are runnable #MsgLength=38
+
+
+----
+Modified: .travis.yml|1 1
+Modified: appveyor.yml|1 1
+Modified: package.json|3 3
+
+Revision: 3282743b5286231be083896da35af0875722dae2
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/02/2015 11:39:42
+Message:
+add license finally #MsgLength=20
+
+
+----
+Added: LICENSE|264 0
+
+Revision: 5f1b0d54dd958e254f5f8951a6f3b5ca82b0f69f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/02/2015 11:52:48
+Message:
+get appveyor to work #MsgLength=21
+
+
+----
+Modified: package.json|1 1
+
+Revision: 1baeca6068a5a06f6fbb51d51d415240ec33ffd9
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/02/2015 12:02:20
+Message:
+come on appveyor give me meaningful output #MsgLength=43
+
+
+----
+Modified: appveyor.yml|6 0
+Modified: package.json|1 1
+
+Revision: 0ad9d9b1f2d766059aebfaa56cc1b908a36ec1c3
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/02/2015 12:09:47
+Message:
+ugh, duh #MsgLength=9
+
+
+----
+Modified: appveyor.yml|0 1
+
+Revision: 880b927547283f2f80e2ab75f2b0b8ef7390f32d
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/02/2015 12:25:51
+Message:
+run it #MsgLength=7
+
+
+----
+Modified: main.js|1 0
+
+Revision: 962db83a0a50154aecbe0882247337beff632165
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 13/02/2015 09:16:24
+Message:
+added windows tests and set appveyor default #MsgLength=45
+
+
+----
+Modified: package.json|4 3
+
+Revision: 51180a96edab5f7ed8ddad17178c5ec6680d46ef
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 13/02/2015 09:17:20
+Message:
+cleanup platformId checks and testing windows as target #MsgLength=56
+
+
+----
+Modified: main.js|31 31
+
+Revision: 749693a80b10cd694b4ac944b8b73c1eba042561
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 13/02/2015 09:29:02
+Message:
+appveyor failing ... path issue #MsgLength=32
+
+
+----
+Modified: package.json|1 1
+
+Revision: 78c63f34a56f4da01cceccbf1556ca7d1b6c5d5a
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/02/2015 07:32:37
+Message:
+Added travis badge #MsgLength=18
+
+
+----
+Modified: README.md|2 0
+
+Revision: 8ddb84a2bd5680c7f56357badc83cf5243d43e03
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 11/03/2015 08:52:27
+Message:
+#5 accept timeout param or use default #MsgLength=39
+
+
+----
+Modified: main.js|4 3
+
+Revision: 948f98d7f5cc783fa672b02f036a0d9e8efd1b28
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 11/03/2015 08:56:22
+Message:
+remove defaults for required params #MsgLength=36
+
+
+----
+Modified: main.js|0 2
+
+
+Revision: 6815d6685622dd2fc697979838577962564599a5
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/03/2015 04:48:54
+Message:
+Run shelljs scripts in silent mode where possuble #MsgLength=50
+
+
+----
+Modified: main.js|14 12
+
+Revision: f35c6cba0c8e13d7472f0ed27a4a2a3ed45156ab
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/03/2015 04:54:21
+Message:
+Remove magic, ios default, skip unused clone #MsgLength=45
+
+
+----
+Modified: .travis.yml|0 1
+Modified: main.js|1 1
+Modified: package.json|3 3
+
+Revision: 84d2bf66dca4fc69cf53b5a2d315a1dcb48b4d69
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/03/2015 08:59:01
+Message:
+remove unneeded extra change dirs #MsgLength=34
+
+
+----
+Modified: .travis.yml|0 2
+
+Revision: 2312e53c3d82b54ff86630b39bd498db46c13a80
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/03/2015 08:59:30
+Message:
+test for something #MsgLength=19
+
+
+----
+Modified: spec/testable-plugin/tests/tests.js|1 1
+
+Revision: a5fcab013f4b0e86ddb53d87d4ca8b7e8ae697d4
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/03/2015 09:08:03
+Message:
+added specialized android emulator ip for host machine. Thanks @infil00p #MsgLength=73
+
+
+----
+Modified: main.js|20 16
+
+Revision: 031c2122b44be4674a20ab977c25f45892aae40e
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/03/2015 09:10:31
+Message:
+ignore that annoying debug log file #MsgLength=36
+
+
+----
+Modified: .gitignore|2 0
+
+Revision: aa7d1f66c17b779f930a4d6f3dbfa5b793d1b138
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/03/2015 05:59:03
+Message:
+bump version, add PORT param #MsgLength=29
+
+
+----
+Modified: main.js|6 1
+Modified: package.json|1 1
+
+Revision: d83fdbcc024c5f48a62f1863cee8c05bf3bc6637
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/03/2015 06:31:41
+Message:
+added justbuild param, set to truthy to exit without running installing all the tests. This closes #12 #MsgLength=103
+
+
+----
+Modified: main.js|76 46
+
+Revision: 8e90ba4fa80120af67abd798a88ebd26e34f719e
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/03/2015 08:29:43
+Message:
+now supports multiple plugins, some jshint suggested cleanups #MsgLength=62
+
+
+----
+Modified: main.js|24 19
+
+Revision: 2660ba9b4382bf2003a9ed79c13fa480527df58c
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 21/03/2015 07:58:54
+Message:
+Updated readme for --justbuild option #MsgLength=38
+
+
+----
+Modified: README.md|5 3
+
+
+Revision: 54facf29bdd9eda7587309d7408a20a3e35196d0
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/03/2015 08:41:14
+Message:
+bump version for npm #MsgLength=21
+
+
+----
+Modified: package.json|1 1
+
+Revision: 9921119874f6551dcb94436117cb90b78c4bd051
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/03/2015 08:48:32
+Message:
+update docs for port and timeout #MsgLength=33
+
+
+----
+Modified: README.md|4 2
+
+Revision: ede1cee12250bd589e5df72f273b111f81132545
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/03/2015 08:49:50
+Message:
+doc support for multiple plugins #MsgLength=33
+
+
+----
+Modified: README.md|1 0
+
+Revision: 21dc126fa2d91222dbc2bb0660a59757d96f09b4
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 21/03/2015 07:45:31
+Message:
+Added tmp module support. #MsgLength=26
+
+
+----
+Modified: main.js|10 3
+Modified: package.json|2 1
+
+Revision: bbd060d7ed3df02be855216c98038bd473c55733
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 21/03/2015 13:05:10
+Message:
+Fixed failing tests. #MsgLength=21
+
+
+----
+Modified: main.js|5 3
+Modified: package.json|4 4
+
+Revision: f3f58e76defff93b025c39b146c6779efdffbe9b
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 21/03/2015 14:54:10
+Message:
+Fixes tests with relative and absolute paths for plugins. #MsgLength=58
+
+
+----
+Modified: main.js|1 1
+Modified: package.json|4 4
+
+
+Revision: e2412e3232b7fadfd2e80cc80fda4d2a5f6bf867
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/03/2015 16:34:06
+Message:
+cleanup, readme #MsgLength=16
+
+
+----
+Modified: README.md|4 5
+Deleted: todo.txt|0 17
+
+Revision: a9fbce841b44751b040f9027ed9d5782267febb3
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/03/2015 16:36:59
+Message:
+more cleanup #MsgLength=13
+
+
+----
+Modified: README.md|9 5
+
+Revision: 9718efe68bc0bf4a9f71470a709aa8f78477d73d
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/03/2015 16:38:11
+Message:
+version bump 0.0.11 #MsgLength=20
+
+
+----
+Modified: package.json|1 1
+
+Revision: bffb14e175ae4439e851544d2a171926a926d173
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 24/03/2015 06:40:49
+Message:
+split module out so this can be used both as a module and a cli #MsgLength=64
+
+
+----
+Modified: README.md|11 1
+Modified: main.js|12 273
+Modified: package.json|1 1
+Added: paramedic.js|284 0
+
+Revision: ed53a92524a787b927a07c5b3327c2ee03523a74
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 24/03/2015 06:43:37
+Message:
+minor bump, added module interface #MsgLength=35
+
+
+----
+Modified: package.json|1 1
+
+Revision: 59ecc14c305a5d82f812f77b9c3af384a104a7be
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 01/04/2015 08:07:29
+Message:
+Make this code usable as a module #MsgLength=34
+
+
+----
+Modified: paramedic.js|13 6
+
+Revision: 1c739c9055f5e32e308d28449cbf5f6200a04cff
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 01/04/2015 08:09:02
+Message:
+Add a callback to get the results from the now modular version of paramedic.js #MsgLength=79
+
+
+----
+Modified: main.js|10 4
+
+Revision: 3815760cf881dcc8ddfd3b0467ed3cf0967d01b7
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 01/04/2015 08:31:35
+Message:
+Bump version for publish. API changed #MsgLength=38
+
+
+----
+Modified: package.json|1 1
+
+Revision: b275816ecd1542dac8a6fc63fce9829f42d72c27
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 01/04/2015 09:02:24
+Message:
+clean up usage info output #MsgLength=27
+
+
+----
+Modified: main.js|11 6
+
+Revision: d41f158c68a211cf1745cdc7049ecdda257f7fbd
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 02/04/2015 14:04:06
+Message:
+Allow output to be suppressed in module with additional param bSilent. This closes #22 #MsgLength=87
+
+
+----
+Modified: main.js|4 3
+Modified: paramedic.js|48 35
+
+Revision: a688d653d2c02db8468be854066f1850b08683e0
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/04/2015 08:38:57
+Message:
+Updates to use new modular paramedic lib #MsgLength=41
+
+
+----
+Modified: main.js|9 9
+
+Revision: cbdd3c712d9876f34f5705c2157853b702af9f11
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/04/2015 08:39:29
+Message:
+modular, will still fail if you attempt to create multiple emulators .. #MsgLength=72
+
+
+----
+Modified: paramedic.js|246 262
+
+Revision: faa4eed677f2219cba77c847759485c0612aa992
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/04/2015 08:39:49
+Message:
+add some hinting #MsgLength=17
+
+
+----
+Modified: package.json|6 1
+
+Revision: 09cb6ac438b8997b10c4a9c2a464361196044fc1
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/04/2015 08:40:19
+Message:
+bump version, in prep for npm pub #MsgLength=34
+
+
+----
+Modified: package.json|1 1
+
+Revision: de183052d992e13f57133c856d74476d057637d7
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/04/2015 04:23:33
+Message:
+honor timeout even when justbuild is specified. This closes #25 #MsgLength=64
+
+
+----
+Modified: paramedic.js|8 5
+
+Revision: ccd9954492926fb3ee735a9363e556bb4a556007
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/04/2015 04:25:02
+Message:
+version jump and pump #MsgLength=22
+
+
+----
+Modified: package.json|1 1
+
+Revision: b4884a099fdde68b25f60f1d67626d5b19a39344
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 24/04/2015 01:56:57
+Message:
+Cleanup copy/paste license cruft #MsgLength=33
+
+
+----
+Modified: LICENSE|0 61
+
+Revision: c55403bc447523c749972a6aa766f885d109c709
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 24/04/2015 02:02:45
+Message:
+license tweak #MsgLength=14
+
+
+----
+Modified: LICENSE|0 25
+
+Revision: 0818793d1e35d7ece9bec250c593ef6d192165cc
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 20/05/2015 08:27:06
+Message:
+added support for --browserify #MsgLength=31
+
+
+----
+Modified: main.js|4 3
+Modified: paramedic.js|9 3
+
+Revision: b81f56c83439afbc2466b3ffdc67a18b8068fba7
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 22/08/2015 07:18:17
+Message:
+dropped in browser support #MsgLength=27
+
+
+----
+Modified: README.md|1 1
+Modified: paramedic.js|1 0
+
+Revision: 7ed83daa0f7ba30f8c9f5808eed8674371c2d0a6
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 22/08/2015 07:20:30
+Message:
+bump version #MsgLength=13
+
+
+----
+Modified: package.json|1 1
+
+Revision: f18caece0cec097dcfa600c86c3123cd09ea94e7
+Author: Tomasz Subik <tsubik@gmail.com>
+Date: 03/06/2015 01:36:55
+Message:
+browserify missing argument #MsgLength=28
+
+
+----
+Modified: paramedic.js|2 2
+
+Revision: 32096dd9bc9581f6607f7d1862a63657bd51f587
+Author: Tomasz Subik <tsubik@gmail.com>
+Date: 03/06/2015 01:01:18
+Message:
+verbose mode available #MsgLength=23
+
+
+----
+Modified: main.js|4 3
+Modified: paramedic.js|14 11
+
+Revision: 65bb275f06601e02e1c948bc8cedfcdedcdc2380
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/08/2015 02:40:30
+Message:
+Bump version for added --verbose api. This closes #29 #MsgLength=54
+
+
+----
+Modified: package.json|1 1
+
+Revision: 8186932829d7d704f1a9e91693f3ef90583f70c3
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 22/03/2015 02:14:54
+Message:
+Add build-fail-plugin #MsgLength=22
+
+
+----
+Added: spec/build-fail-plugin/plugin.xml|44 0
+Added: spec/build-fail-plugin/src/ios/CDVBuildFailPlugin.h|4 0
+Added: spec/build-fail-plugin/src/ios/CDVBuildFailPlugin.m|4 0
+
+Revision: e1b4c7c36f80e35a9ceb3a0b7ab72ab5202e64d6
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 22/03/2015 02:20:43
+Message:
+Added build-success-plugin #MsgLength=27
+
+
+----
+Modified: spec/build-fail-plugin/plugin.xml|1 1
+Added: spec/build-success-plugin/plugin.xml|44 0
+Added: spec/build-success-plugin/src/ios/CDVBuildSuccessPlugin.h|4 0
+Added: spec/build-success-plugin/src/ios/CDVBuildSuccessPlugin.m|4 0
+
+Revision: c626f8d1c3ad70804c226928c02de0b5ff1a2751
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 22/03/2015 02:34:41
+Message:
+Added sh-read-input plugin #MsgLength=27
+
+
+----
+Added: spec/sh-read-input-plugin/install.sh|6 0
+Added: spec/sh-read-input-plugin/plugin.xml|42 0
+
+
+
+Revision: 1a2b17e921642ffd27edd187595d1c072c9f9bf8
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/08/2015 07:31:53
+Message:
+update readme. This closes #24 and #23 #MsgLength=39
+
+
+----
+Modified: README.md|13 12
+
+Revision: a00cc72677d3dce5b67403bbe9678ad7c27d88a3
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/11/2015 15:45:51
+Message:
+Default to current working directory if plugin not specified #MsgLength=61
+
+
+----
+Modified: main.js|1 1
+Modified: paramedic.js|3 0
+
+Revision: 3598572e7445d2a2cd52d63b8418c3c7fa0567f9
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/11/2015 15:47:42
+Message:
+bump version #MsgLength=13
+
+
+----
+Modified: package.json|1 1
+
+Revision: 8a5b6f41b2bc713125e6e17d9ce39dc99e9681ce
+Author: Tobias Bocanegra <tripod@adobe.com>
+Date: 07/11/2015 03:27:58
+Message:
+trivial: add missing new line #MsgLength=30
+
+
+----
+Modified: main.js|1 1
+
+Revision: 5edd705385af36d3d505ef1d45901b1ab5d95df4
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/11/2015 15:55:06
+Message:
+Added param to specify a platformPath #MsgLength=38
+
+
+----
+Modified: main.js|3 2
+Modified: package.json|1 1
+Modified: paramedic.js|17 14
+
+Revision: 940ab35176f8bed2c4e62bd15c49461caeaf1a0f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 05/03/2016 14:49:16
+Message:
+update repo url to apache/cordova-paramedic #MsgLength=44
+
+
+----
+Modified: package.json|1 1
+
+Revision: 8615f31c9bca2f152a409d38a48c5c9587abf67d
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/03/2016 15:56:52
+Message:
+Allow unknown platforms, assume localhost will receive a result #MsgLength=64
+
+
+----
+Modified: paramedic.js|6 8
+
+Revision: b1aa699dfa56d442e75294448e3253ac6c7f0995
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 25/03/2016 18:54:21
+Message:
+Adding real time logging and other improvements #MsgLength=64
+
+
+----
+Added: .jshintrc|14 0
+Modified: .travis.yml|1 0
+Modified: README.md|150 14
+Added: lib/LocalServer.js|99 0
+Added: lib/ParamedicConfig.js|83 0
+Added: lib/PluginsManager.js|51 0
+Added: lib/Target.js|9 0
+Added: lib/TestsRunner.js|121 0
+Added: lib/Tunnel.js|19 0
+Added: lib/logger.js|150 0
+Added: lib/paramedic.js|156 0
+Added: lib/portScanner.js|54 0
+Added: lib/reporters/ConsoleReporter.js|153 0
+Added: lib/reporters/ParamedicReporter.js|43 0
+Added: lib/specReporters.js|68 0
+Added: lib/utils.js|22 0
+Modified: main.js|39 30
+Modified: package.json|15 9
+Added: paramedic-plugin/JasmineParamedicProxy.js|56 0
+Added: paramedic-plugin/paramedic.js|74 0
+Added: paramedic-plugin/plugin.xml|37 0
+Added: paramedic-plugin/socket.io.js|4 0
+Deleted: paramedic.js|0 305
+Added: sample-config/.paramedic-core-plugins.config.js|51 0
+Added: sample-config/.paramedic.config.js|33 0
+
+Revision: 145845166c3a9e5c1d01d19d8057ef8966daabd1
+Author: Richard Knoll <richard.b.knoll@gmail.com>
+Date: 31/03/2016 02:28:32
+Message:
+Revert "Adding real time logging and other improvements" #MsgLength=120
+
+
+----
+Deleted: .jshintrc|0 14
+Modified: .travis.yml|0 1
+Modified: README.md|14 150
+Deleted: lib/LocalServer.js|0 99
+Deleted: lib/ParamedicConfig.js|0 83
+Deleted: lib/PluginsManager.js|0 51
+Deleted: lib/Target.js|0 9
+Deleted: lib/TestsRunner.js|0 121
+Deleted: lib/Tunnel.js|0 19
+Deleted: lib/logger.js|0 150
+Deleted: lib/paramedic.js|0 156
+Deleted: lib/portScanner.js|0 54
+Deleted: lib/reporters/ConsoleReporter.js|0 153
+Deleted: lib/reporters/ParamedicReporter.js|0 43
+Deleted: lib/specReporters.js|0 68
+Deleted: lib/utils.js|0 22
+Modified: main.js|30 39
+Modified: package.json|9 15
+Deleted: paramedic-plugin/JasmineParamedicProxy.js|0 56
+Deleted: paramedic-plugin/paramedic.js|0 74
+Deleted: paramedic-plugin/plugin.xml|0 37
+Deleted: paramedic-plugin/socket.io.js|0 4
+Added: paramedic.js|305 0
+Deleted: sample-config/.paramedic-core-plugins.config.js|0 51
+Deleted: sample-config/.paramedic.config.js|0 33
+
+Revision: 9655060c7a27371b72f5da16050a8b1b25f37bd3
+Author: sgrebnov <sergei.grebnov@gmail.com>
+Date: 12/04/2016 14:44:42
+Message:
+Paramedic real time logging and other improvements #MsgLength=68
+
+
+----
+Added: .jshintrc|14 0
+Modified: .travis.yml|2 0
+Modified: README.md|128 14
+Modified: appveyor.yml|0 3
+Added: lib/LocalServer.js|154 0
+Added: lib/ParamedicConfig.js|107 0
+Added: lib/PluginsManager.js|71 0
+Added: lib/Reporters.js|31 0
+Added: lib/paramedic.js|231 0
+Added: lib/utils/execWrapper.js|39 0
+Added: lib/utils/index.js|23 0
+Modified: main.js|39 30
+Modified: package.json|16 10
+Added: paramedic-plugin/JasmineParamedicProxy.js|86 0
+Added: paramedic-plugin/paramedic.js|95 0
+Added: paramedic-plugin/plugin.xml|37 0
+Added: paramedic-plugin/socket.io.js|4 0
+Deleted: paramedic.js|0 305
+Added: sample-config/.paramedic.config.js|30 0
+
+Revision: 739c4326ba8c5014d4776e53b28e6da817c85cfb
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 14/04/2016 01:59:19
+Message:
+Code changes for Collecting Device Logs - Killing the Emulator Process - Setting Permissions in iOS #MsgLength=100
+
+
+----
+Modified: README.md|33 1
+Modified: lib/ParamedicConfig.js|42 8
+Added: lib/ParamedicKill.js|100 0
+Added: lib/ParamedicLog.js|98 0
+Added: lib/ParamediciOSPermissions.js|42 0
+Modified: lib/Reporters.js|3 3
+Modified: lib/paramedic.js|53 15
+Modified: lib/utils/index.js|3 2
+Added: lib/utils/utilities.js|123 0
+Modified: main.js|33 7
+Modified: package.json|2 1
+
+Revision: 9ce2935843d0a71f8bd4f59cbd12061a3ca06e1a
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 06/05/2016 08:24:38
+Message:
+Target Chooser Code changes. This closes #5 #MsgLength=44
+
+
+----
+Modified: README.md|0 9
+Added: lib/ParamedicAppUninstall.js|68 0
+Modified: lib/ParamedicConfig.js|1 1
+Modified: lib/ParamedicKill.js|2 1
+Modified: lib/ParamedicLog.js|5 4
+Added: lib/ParamedicTargetChooser.js|108 0
+Modified: lib/ParamediciOSPermissions.js|3 2
+Modified: lib/paramedic.js|53 25
+Modified: lib/utils/utilities.js|9 4
+
+Revision: 8b9bd605e58b6bb6d9e2443c894af92cdd7fbe04
+Author: sgrebnov <sergei.grebnov@gmail.com>
+Date: 23/05/2016 23:34:32
+Message:
+Skip ParamedicTargetChooser when --buildOnly #MsgLength=62
+
+
+----
+Modified: lib/paramedic.js|2 2
+
+Revision: 57967f5a7c22944d603825680ae3e1edefad3445
+Author: sgrebnov <sergei.grebnov@gmail.com>
+Date: 31/05/2016 18:51:31
+Message:
+make paramedic working for android with --justbuild #MsgLength=52
+
+
+----
+Modified: lib/paramedic.js|6 3
+
+Revision: c5cf6230d702265b9c077a1146700ebc030a8863
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/05/2016 21:05:04
+Message:
+Update Travis badge URL in README #MsgLength=34
+
+
+----
+Modified: README.md|1 1
+
+Revision: 85c71c964f6c73100d584a64e237d3aea978d8f5
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 01/06/2016 14:12:48
+Message:
+CB-11332 Added SauceLabs support #MsgLength=33
+
+
+----
+Modified: lib/ParamedicConfig.js|24 2
+Modified: lib/paramedic.js|275 40
+Modified: lib/utils/execWrapper.js|16 1
+Modified: lib/utils/index.js|4 3
+Modified: lib/utils/utilities.js|5 3
+Modified: main.js|6 2
+Modified: package.json|2 3
+
+Revision: ef226cab00f5f56d1a055b8f8942036325361e2e
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 01/06/2016 19:33:29
+Message:
+Choose wp8.1 target more gracefully #MsgLength=36
+
+
+----
+Modified: lib/ParamedicTargetChooser.js|6 2
+
+Revision: d11156fbc3751059ee4f08ac04830a7d339220c8
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 01/06/2016 19:57:50
+Message:
+Kill WP8.1 emulator after test run #MsgLength=35
+
+
+----
+Modified: lib/ParamedicKill.js|1 2
+
+Revision: d27099569d1d46af930b36397444bffb7163d54e
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 01/06/2016 21:52:49
+Message:
+CB-11351 Fixed JSHint warnings, white space and license headers #MsgLength=64
+
+
+----
+Modified: lib/LocalServer.js|19 21
+Modified: lib/ParamedicAppUninstall.js|45 26
+Modified: lib/ParamedicConfig.js|24 24
+Modified: lib/ParamedicKill.js|48 29
+Modified: lib/ParamedicLog.js|46 28
+Modified: lib/ParamedicTargetChooser.js|52 35
+Modified: lib/ParamediciOSPermissions.js|35 15
+Modified: lib/PluginsManager.js|7 7
+Modified: lib/Reporters.js|2 2
+Modified: lib/paramedic.js|54 54
+Modified: lib/utils/execWrapper.js|3 4
+Modified: lib/utils/utilities.js|48 30
+
+Revision: 05ae852c60e3d6aa406bc4265ba9ced763c0ff3a
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 02/06/2016 21:15:05
+Message:
+Update iOS sim deployment logic #MsgLength=157
+
+
+----
+Modified: lib/ParamediciOSPermissions.js|19 2
+Modified: lib/utils/utilities.js|10 7
+
+Revision: 7dde725f3e0ab909121793ad14ea657fb4ff0e13
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 02/06/2016 21:52:21
+Message:
+Exit with correct code when running on Saucelabs #MsgLength=49
+
+
+----
+Modified: lib/paramedic.js|5 3
+Modified: main.js|5 1
+
+Revision: 983c6bcfec6db6b4d8b21d85ad63da0be583056d
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 03/06/2016 18:46:58
+Message:
+Log start and end time for tests #MsgLength=33
+
+
+----
+Modified: lib/paramedic.js|2 0
+
+Revision: 28d5dac1d7adf2ba11027936421a71ede356fdce
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 02/06/2016 17:02:06
+Message:
+Add logic to enable package debugging mode on Windows #MsgLength=54
+
+
+----
+Added: debug-mode-plugin/plugin.xml|34 0
+Added: debug-mode-plugin/scripts/EnableDebuggingForPackage.ps1|83 0
+Added: debug-mode-plugin/scripts/disable-debug-mode.js|32 0
+Added: debug-mode-plugin/scripts/enable-debug-mode.js|46 0
+Modified: lib/paramedic.js|7 3
+
+Revision: c3cb0defa8e9034256ba608ac98cb5565261af8f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 04/06/2016 00:01:18
+Message:
+Enabled Saucelabs results gathering without localtunnel #MsgLength=56
+
+
+----
+Added: event-cache-plugin/EventCache.js|94 0
+Added: event-cache-plugin/paramedic.js|43 0
+Added: event-cache-plugin/plugin.xml|35 0
+Modified: lib/ParamedicConfig.js|4 0
+Added: lib/appium/helpers/lib/q.min.js|1 0
+Added: lib/appium/helpers/screenshotHelper.js|57 0
+Added: lib/appium/helpers/wdHelper.js|175 0
+Modified: lib/paramedic.js|54 21
+Modified: main.js|1 1
+Modified: paramedic-plugin/JasmineParamedicProxy.js|14 13
+
+Revision: dc8d56fc38fdab8dcf890cda53f724746f99bb64
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/06/2016 02:08:20
+Message:
+Flattened promise chain, fixed exit code (again) #MsgLength=49
+
+
+----
+Modified: lib/paramedic.js|55 46
+
+Revision: 83c1961d322575d4d0fc7f08b0a3f950a5ef73db
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/06/2016 17:45:34
+Message:
+Respect sauce arguments even when using config #MsgLength=47
+
+
+----
+Modified: lib/ParamedicConfig.js|16 0
+Modified: main.js|22 6
+
+Revision: 18da15fb70908c5ae27d309676c49b4cfc856a7e
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 07/06/2016 17:31:42
+Message:
+Add plugin to allow geolocation on iOS #MsgLength=39
+
+
+----
+Added: ios-geolocation-permissions-plugin/plugin.xml|42 0
+Added: ios-geolocation-permissions-plugin/src/ios/CDVAllowLocation.m|36 0
+Modified: lib/paramedic.js|3 0
+
+Revision: 39c200d2c062e245ec21faef9635811ea87cbabc
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/06/2016 18:37:37
+Message:
+Better fallback to local testing when platform is not ios or android #MsgLength=69
+
+
+----
+Modified: lib/ParamedicConfig.js|0 4
+Modified: lib/paramedic.js|2 1
+
+Revision: c978171a200a824f38c690f7009e8a6fee842a41
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/06/2016 23:28:16
+Message:
+Get detailed error message on failed test run #MsgLength=46
+
+
+----
+Modified: lib/paramedic.js|3 4
+
+Revision: d21b72d16e830fb4de792af17c490719172c1fff
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 08/06/2016 19:04:29
+Message:
+Sauce testing: Fixed occasional Appium context failures #MsgLength=56
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|3 3
+
+Revision: ced1ed1add6fcfee09185dec05abb9c7ea37c676
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 08/06/2016 22:33:02
+Message:
+Don't ignore --useTunnel when using config #MsgLength=43
+
+
+----
+Modified: lib/ParamedicConfig.js|4 0
+
+Revision: 214b678c0657a2b172039357b69d1ef0b0603231
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 08/06/2016 22:34:34
+Message:
+Don't ignore --useTunnel when using config (for reals) #MsgLength=55
+
+
+----
+Modified: main.js|4 0
+
+Revision: 317fd11b247077bf535e457bc72141e860236f7c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/06/2016 21:17:43
+Message:
+Sauce testing: Fixed event cache polling for inappbrowser tests on android #MsgLength=75
+
+
+----
+Modified: lib/paramedic.js|20 1
+Modified: main.js|8 2
+
+Revision: 93b6509a4e02799cd3db3d7a2d3d1f0fab9ff859
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/06/2016 22:39:01
+Message:
+Handle build errors when using sauce #MsgLength=37
+
+
+----
+Modified: lib/paramedic.js|12 4
+Modified: lib/utils/execWrapper.js|2 2
+
+Revision: 6aeb416c646a99e54d76c8222e3810fb6c9f6850
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/06/2016 20:29:18
+Message:
+Increased webdriver's http timeout #MsgLength=35
+
+
+----
+Modified: lib/paramedic.js|6 0
+
+Revision: f04eb3ffa62fea251e5366641a47dd948ada9761
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/06/2016 22:41:57
+Message:
+Sauce tests: Try to poll results from all available windows if not found in the first one #MsgLength=90
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|51 1
+Modified: lib/paramedic.js|2 22
+
+Revision: 3680cfe754647c4cc7d4cd19055b2e285528edb3
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 14/06/2016 23:11:26
+Message:
+Cut out the output from zip command #MsgLength=36
+
+
+----
+Modified: lib/paramedic.js|1 1
+
+Revision: 89aedf465956e41d6fbef4092b0a0912dc9e25b9
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 14/06/2016 20:49:26
+Message:
+Display links to saucelabs job and logs #MsgLength=40
+
+
+----
+Modified: lib/paramedic.js|40 1
+Modified: package.json|2 1
+
+Revision: 3470be06bf2639a75baf3187fd7a1c839009ca45
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 16/06/2016 19:49:51
+Message:
+Fixed a link to adb logs on Saucelabs #MsgLength=38
+
+
+----
+Modified: lib/paramedic.js|1 1
+
+Revision: bcabd7f9facd0645d61fd715d8aee1aee35c0728
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 20/06/2016 15:56:22
+Message:
+Increased iOS simulator version to 9.3 #MsgLength=39
+
+
+----
+Modified: lib/paramedic.js|1 1
+
+Revision: a47bdf8ac500923b5a8c2fc93eb69a508600b491
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 21/06/2016 16:02:26
+Message:
+CB-11430 Set SAUCELABS_ENV when running on Sauce #MsgLength=49
+
+
+----
+Modified: event-cache-plugin/paramedic.js|5 0
+
+Revision: 257ba7eaedf58b090b0efae35c214d394575930a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 23/06/2016 07:49:10
+Message:
+Wrong badge link #MsgLength=17
+
+
+----
+Modified: README.md|1 1
+
+Revision: 09d861aefb7f1628e4c5c91823e0b0c08559cbc5
+Author: Vladimir <v-vlkoti@microsoft.com>
+Date: 23/06/2016 16:33:30
+Message:
+CB-11472 Always deploy to simulator #MsgLength=36
+
+
+----
+Modified: lib/paramedic.js|9 1
+
+Revision: afad9b3d06c77cdf94e49fe57bd8c38478a7a529
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 08/07/2016 00:31:39
+Message:
+CB-11546 Appium tests support #MsgLength=30
+
+
+----
+Modified: lib/ParamedicConfig.js|66 21
+Modified: lib/ParamedicLog.js|9 1
+Modified: lib/Reporters.js|21 1
+Added: lib/appium/.jshintrc|11 0
+Added: lib/appium/AppiumRunner.js|473 0
+Added: lib/appium/cordova_logo_thumb.jpg|0 0
+Modified: lib/appium/helpers/wdHelper.js|82 21
+Modified: lib/paramedic.js|198 101
+Modified: lib/utils/utilities.js|22 1
+Modified: main.js|40 3
+Modified: package.json|8 0
+
+Revision: a8ed6943ca5cc919a48766ec9520d3556330d51d
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 11/07/2016 20:17:30
+Message:
+CB-11551 Updated README with Sauce Labs info #MsgLength=45
+
+
+----
+Modified: README.md|38 1
+
+Revision: 492025eada668aec25c8797220eef190ded78495
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 12/07/2016 18:41:15
+Message:
+CB-11557 Fixed app upload to Sauce Labs before Appium test run #MsgLength=63
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|3 3
+Modified: lib/paramedic.js|3 2
+
+Revision: 615e8cac370e6ff0918422f3e892f91b6e8e8db4
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 12/07/2016 19:58:31
+Message:
+CB-11559 Fixed "Environment is unavailable" error #MsgLength=50
+
+
+----
+Modified: lib/ParamedicConfig.js|2 2
+
+Revision: 3ede89b8e295d59b5290863330f5149f8542eb81
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 13/07/2016 18:32:26
+Message:
+CB-11568 Run Appium tests from any directory #MsgLength=45
+
+
+----
+Modified: lib/appium/AppiumRunner.js|4 3
+
+Revision: 6ff2afd80121ac92e612b6796996bfcf3b95fdbf
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 14/07/2016 18:59:28
+Message:
+CB-11575 Added a notice about loopback exemption to the readme file #MsgLength=68
+
+
+----
+Modified: README.md|4 0
+
+Revision: c53e22e6ee3a543b7621fedd49c2831e709dc630
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 14/07/2016 19:46:28
+Message:
+CB-11576 Paramedic fails to launch Appium tests on iOS "Plus" Simulators #MsgLength=73
+
+
+----
+Modified: lib/appium/AppiumRunner.js|1 1
+
+Revision: bbd6f46b3c442c2ca5acc026d6d13ef92ea526b8
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 15/07/2016 17:07:40
+Message:
+CB-11584 Don't try to run Appium tests when --justBuild'ing #MsgLength=60
+
+
+----
+Modified: lib/ParamedicConfig.js|1 1
+Modified: lib/paramedic.js|5 0
+
+Revision: 8b6fc48b040d543b85e60e61ccaeafc89069b3df
+Author: Vladimir <v-vlkoti@microsoft.com>
+Date: 25/07/2016 20:43:04
+Message:
+Add .vscode folder to gitignore #MsgLength=32
+
+
+----
+Modified: .gitignore|2 1
+
+Revision: 3e1caa77f46c924e196744c05943b0d49d66c0d0
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 02/08/2016 16:47:18
+Message:
+Fixed "driver.then is not a function" #MsgLength=38
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|1 0
+
+Revision: 9ea17579f2cf504984f4d9be61c31d686be6c94b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 08/08/2016 18:09:57
+Message:
+Increased the webdriver http timeout for Appium tests #MsgLength=54
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|7 0
+Modified: lib/paramedic.js|3 3
+Modified: lib/utils/utilities.js|3 0
+
+Revision: e2d6f96c9ecfb6e6a6159adf4bbec59f5f6707fb
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/08/2016 17:10:16
+Message:
+CB-11684 Introduced --skipAppiumTests and --skipMainTests args #MsgLength=63
+
+
+----
+Modified: lib/ParamedicConfig.js|19 1
+Modified: lib/paramedic.js|37 10
+Modified: main.js|12 2
+
+Revision: c6f4d3700d53ae149a3e84dbc356f97500277303
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 16/08/2016 18:56:02
+Message:
+CB-11695 Increased the webdriver timeout #MsgLength=41
+
+
+----
+Modified: lib/utils/utilities.js|1 1
+
+Revision: acdc3991bd227707eca36f63c61b9292f15ba983
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 16/08/2016 22:23:12
+Message:
+(iOS) Properly package the app for Sauce Labs #MsgLength=46
+
+
+----
+Modified: lib/paramedic.js|2 1
+
+Revision: 66f8e9fd87c9d0f928522bc4e04e5bc510c8c087
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 27/08/2016 04:33:37
+Message:
+add AppVeyor CI link #MsgLength=21
+
+
+----
+Modified: README.md|2 0
+
+Revision: d9752168b3ff1ca7cf31239f5da4226c327a62ef
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 27/08/2016 04:43:38
+Message:
+keep badges on 1 line #MsgLength=22
+
+
+----
+Modified: README.md|0 1
+
+Revision: fe6d2b7de70eea4c8da5f6ba9f9b376c3ddfffa1
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 27/08/2016 05:32:38
+Message:
+Fixed typo and grammar #MsgLength=23
+
+
+----
+Modified: paramedic-plugin/paramedic.js|1 1
+
+Revision: 4daf71e5bc10fb6c2913972b505faba619fdb429
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 27/08/2016 05:38:58
+Message:
+CB-11775 - Fix jshint failures #MsgLength=31
+
+
+----
+Added: .jshintignore|1 0
+Modified: lib/appium/helpers/screenshotHelper.js|5 5
+
+Revision: fbd7ddaf24ac01bf8225a4df85a175638a629e37
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 03/09/2016 02:07:07
+Message:
+Override action in config if --justBuild is specified #MsgLength=54
+
+
+----
+Modified: main.js|4 0
+
+Revision: 3ef549a3bffa05c0944af7bd2debbbbb49694867
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 16/09/2016 22:54:42
+Message:
+Support for various apk names when running on SauceLabs #MsgLength=56
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|1 4
+Modified: lib/paramedic.js|18 4
+
+Revision: eca89c5e8f75608cecc7e694f5b5d6c14211ff66
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 22/09/2016 22:30:33
+Message:
+Inject global PARAMEDIC flag to the app #MsgLength=40
+
+
+----
+Modified: paramedic-plugin/JasmineParamedicProxy.js|1 1
+Modified: paramedic-plugin/paramedic.js|4 0
+
+Revision: 4c6089a58c915d5aa5f7c5b21687775a8b2567fd
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 23/09/2016 00:32:02
+Message:
+Added a plugin to let tests know that they are running in CI env #MsgLength=65
+
+
+----
+Added: ci-plugin/ci.js|32 0
+Added: ci-plugin/plugin.xml|33 0
+
+Revision: d599d7562da4d314497c3f6ac5652ffdec148539
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 23/09/2016 18:29:09
+Message:
+Introduced --ci arg #MsgLength=20
+
+
+----
+Modified: lib/ParamedicConfig.js|6 1
+Modified: lib/paramedic.js|3 0
+
+Revision: 031343cbb1cf730fad9b61e8c1d250a8a6b72f09
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 29/09/2016 20:15:30
+Message:
+Run Appium tests only for plugins under test #MsgLength=45
+
+
+----
+Modified: lib/paramedic.js|3 0
+
+Revision: 3315570a458d58ee5a33c683cc8a5964533fd124
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 28/09/2016 22:54:22
+Message:
+CB-11926 Start a server for file-transfer tests locally #MsgLength=56
+
+
+----
+Modified: lib/LocalServer.js|63 9
+Modified: lib/appium/AppiumRunner.js|5 9
+Modified: lib/paramedic.js|28 13
+Modified: lib/utils/utilities.js|11 1
+Modified: paramedic-plugin/paramedic.js|40 5
+
+Revision: 91c906ff3c14015a42c67784989511fb4efa9e91
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/09/2016 00:00:44
+Message:
+Better file transfer server clean up #MsgLength=37
+
+
+----
+Modified: lib/paramedic.js|16 13
+
+Revision: 859d02c7ed67fbb350f8355a828782c09ac0a9ed
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/09/2016 01:36:05
+Message:
+A quick fix for running tests locally #MsgLength=38
+
+
+----
+Modified: lib/paramedic.js|3 3
+
+Revision: ffa40f80b12341ae82244ce2a92e80308c43d42b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 01/10/2016 00:14:52
+Message:
+You can now specify a target to run tests on #MsgLength=45
+
+
+----
+Modified: lib/ParamedicConfig.js|14 1
+Modified: lib/ParamedicTargetChooser.js|20 11
+Modified: lib/paramedic.js|6 1
+Modified: lib/utils/utilities.js|7 2
+Modified: main.js|25 14
+
+Revision: bd04d5f532e30c0f7c3a773eff7944d705b9fb15
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 04/10/2016 00:37:16
+Message:
+CB-11926 Pass the file transfer server address to the tests via variable #MsgLength=73
+
+
+----
+Modified: README.md|3 2
+Modified: lib/LocalServer.js|1 1
+Modified: lib/ParamedicKill.js|3 3
+Modified: lib/PluginsManager.js|20 4
+Modified: lib/paramedic.js|5 10
+Modified: paramedic-plugin/paramedic.js|1 6
+
+Revision: 538aa2627493298622514309a022b2007a703c66
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/10/2016 13:18:56
+Message:
+Add github pull request template #MsgLength=33
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|22 0
+
+Revision: f2d0b9d08540ae0e712ee535275d7cd156f4aa62
+Author: Tobias Bocanegra <tripod@adobe.com>
+Date: 13/10/2016 10:46:31
+Message:
+CB-12006 Add OSX support for paramedic #MsgLength=57
+
+
+----
+Modified: README.md|1 0
+
+Revision: 39e3bc86d932a7b55db8cd0052215340100c1770
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 25/10/2016 23:45:41
+Message:
+CB-12066 Async platform add and requirements check #MsgLength=51
+
+
+----
+Modified: lib/paramedic.js|22 9
+
+Revision: 5dea2407fda8c3da56a55d2fde76bb3b2d78267d
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 02/12/2016 18:30:53
+Message:
+CB-12209 Async app uninstall #MsgLength=29
+
+
+----
+Modified: lib/ParamedicAppUninstall.js|22 19
+Modified: lib/paramedic.js|7 4
+
+Revision: 4ac87e0e8d5e27017f2943aa36e62b000102d7be
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 05/12/2016 18:52:18
+Message:
+CB-12209 Properly handle app uninstall timeout #MsgLength=47
+
+
+----
+Modified: lib/ParamedicAppUninstall.js|4 1
+Modified: lib/paramedic.js|7 3
+
+Revision: 9079176814d7ac257f7b7940dedfd5d43396eb34
+Author: filmaj <maj.fil@gmail.com>
+Date: 13/12/2016 06:13:14
+Message:
+Use basename when searching for appium plugin tests within generated app directory, so that tests can be found if plugin is provided with either absolute or relative directories. #MsgLength=179
+
+
+----
+Modified: lib/paramedic.js|1 1
+
+Revision: ea0f78d16f5475e76921f28973b182a75f116ee9
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 29/12/2016 16:54:18
+Message:
+CB-12303 Fixed premature process termination after running Appium tests #MsgLength=72
+
+
+----
+Modified: package.json|1 2
+
+Revision: 9482b8b48b1af16181ac44583581ab611d34871c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 12/01/2017 16:50:41
+Message:
+CB-12348 Added configs #MsgLength=23
+
+
+----
+Added: conf/periodic/android-4.4.config.json|7 0
+Added: conf/periodic/android-5.1.config.json|7 0
+Added: conf/periodic/ios-10.0.config.json|7 0
+Added: conf/periodic/ios-9.3.config.json|7 0
+Added: conf/periodic/local/android-4.4.config.json|7 0
+Added: conf/periodic/local/android-5.1.config.json|7 0
+Added: conf/periodic/local/ios-10.0.config.json|7 0
+Added: conf/periodic/local/ios-9.3.config.json|7 0
+Added: conf/periodic/local/windows-10-store.config.json|8 0
+Added: conf/periodic/windows-10-store.config.json|8 0
+Added: conf/pr/android-4.4.config.json|7 0
+Added: conf/pr/android-5.1.config.json|7 0
+Added: conf/pr/ios-10.0.config.json|7 0
+Added: conf/pr/ios-9.3.config.json|7 0
+Added: conf/pr/local/android-4.4.config.json|7 0
+Added: conf/pr/local/android-5.1.config.json|7 0
+Added: conf/pr/local/ios-10.0.config.json|7 0
+Added: conf/pr/local/ios-9.3.config.json|7 0
+Added: conf/pr/local/windows-10-store.config.json|8 0
+Added: conf/pr/windows-10-store.config.json|8 0
+
+Revision: 1fe2c2d649ccfa002c55d0ca2599b76fcb4590da
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 17/01/2017 21:34:03
+Message:
+CB-12357 Added alert buster #MsgLength=28
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|33 3
+Modified: lib/paramedic.js|2 2
+
+Revision: 674440f221982e3eb39422dec41e85dbe7a8f284
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/01/2017 20:07:24
+Message:
+CB-12357 Only poll for events if previous poll is finished #MsgLength=59
+
+
+----
+Modified: lib/paramedic.js|16 10
+
+Revision: b27449fd93ca16716ca3d49addb634c086991d5f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/01/2017 20:44:45
+Message:
+CB-12357 Fixed inappbrowser plugin test polling on Android #MsgLength=59
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|1 1
+
+Revision: ce67362e92ef940df960e2fcc9e17b095c2aefde
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 24/01/2017 18:16:04
+Message:
+Added --fileTransferServer arg to specify a custom file transfer server address #MsgLength=80
+
+
+----
+Modified: lib/ParamedicConfig.js|10 1
+Modified: lib/PluginsManager.js|10 3
+Modified: lib/paramedic.js|1 1
+Modified: main.js|5 0
+
+Revision: 872b9d7b3c3d56b64bc15c606a2fe42c52b6080f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 25/01/2017 23:38:15
+Message:
+CB-12393 --browserify now affects Sauce runs too #MsgLength=49
+
+
+----
+Modified: lib/ParamedicConfig.js|12 3
+Modified: lib/appium/AppiumRunner.js|2 1
+Modified: lib/paramedic.js|4 2
+Modified: main.js|4 0
+
+Revision: 6991af65703ea100cf6de18f851e532ef98ea0f8
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/01/2017 15:27:27
+Message:
+CB-12393 Fixed --browserify argument configuration #MsgLength=51
+
+
+----
+Modified: lib/ParamedicConfig.js|3 3
+
+Revision: e9c056c2c2563814a3b6dacc06fbd681bc9cffb7
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/01/2017 19:36:59
+Message:
+Added --cli argument #MsgLength=21
+
+
+----
+Modified: lib/ParamedicConfig.js|24 3
+Modified: lib/ParamedicTargetChooser.js|4 3
+Modified: lib/PluginsManager.js|2 2
+Modified: lib/appium/AppiumRunner.js|2 2
+Modified: lib/paramedic.js|26 12
+Modified: lib/utils/utilities.js|3 3
+Modified: main.js|24 15
+
+Revision: 6bbae689d6b5dd60495cf7483a3ba2ae3c907a91
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/01/2017 20:17:38
+Message:
+Fixed emulator name parsing on iOS #MsgLength=35
+
+
+----
+Modified: lib/ParamedicTargetChooser.js|1 1
+
+Revision: 1ed075d57cbba1b4242e0f36c2c3e721d80b0039
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/02/2017 23:35:31
+Message:
+Retry creating LocalServer if port got taken during initialization #MsgLength=67
+
+
+----
+Modified: lib/LocalServer.js|23 6
+
+Revision: 053b3576b6d15ebcd4bf9f661ce8b09cb5206c8f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/02/2017 21:10:44
+Message:
+Don't retry connection, just take a random port from increased range #MsgLength=69
+
+
+----
+Modified: lib/LocalServer.js|15 27
+Modified: lib/ParamedicConfig.js|2 2
+
+Revision: 7d1dfa629947eada435cc5870950a6bf6b3ae83d
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/02/2017 19:22:01
+Message:
+Don't run test FT server if --ci is passed #MsgLength=43
+
+
+----
+Modified: lib/paramedic.js|1 1
+
+Revision: 25900dcf65237d0679f5a1f3a89f90ccc2a5d390
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 16/02/2017 17:34:05
+Message:
+Increased http timeout for Appium tests #MsgLength=40
+
+
+----
+Modified: lib/utils/utilities.js|1 1
+
+Revision: 92ecc98786dcd2f68ce40c18e4dd988c425bacd3
+Author: filmaj <maj.fil@gmail.com>
+Date: 16/12/2016 12:47:02
+Message:
+CB-11473: add a `--version` flag, which will just print the version from package.json and exit. Closes #20. #MsgLength=108
+
+
+----
+Modified: main.js|6 2
+
+Revision: 0e0d1c0a9c26fa643f716f6e24ab78c3620a70ec
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 28/03/2017 17:42:37
+Message:
+Disable Gradle daemon on CI #MsgLength=28
+
+
+----
+Modified: lib/paramedic.js|10 2
+
+Revision: a8a39e63ec8970c45529ce2813d476e2185c7a63
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 29/03/2017 20:14:10
+Message:
+Disable Gradle daemon on CI (take two) #MsgLength=39
+
+
+----
+Modified: lib/paramedic.js|23 10
+
+Revision: 74cce8525b8404214e7603aa342378c2e57fd7b6
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 03/04/2017 22:31:42
+Message:
+CB-12629 Pass `--no-update-notifier` and `--no-telemetry` flags to each Cordova command invoked #MsgLength=96
+
+
+----
+Modified: lib/ParamedicTargetChooser.js|1 1
+Modified: lib/PluginsManager.js|4 3
+Modified: lib/appium/AppiumRunner.js|2 2
+Modified: lib/paramedic.js|5 5
+Modified: lib/utils/utilities.js|3 2
+
+Revision: 2e7d8da299d81214af22536baf22f482b38fcc36
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/04/2017 22:43:24
+Message:
+Updated wd dep, added Android permission buster #MsgLength=48
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|18 11
+Modified: package.json|1 1
+
+Revision: 5f71c7545945acf0f60a600078108a01bda4d3b8
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/04/2017 22:05:37
+Message:
+Fixed iOS polling #MsgLength=18
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|1 1
+
+Revision: 4ea0b1010af06e3c7dcd8ebda50c78b9d1560fb0
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/04/2017 22:49:41
+Message:
+Don't poll for windowHandles on iOS #MsgLength=36
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|4 0
+
+Revision: 697cc5bb3b17cdaf11c46d4d7b219c77e729c2cb
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 12/04/2017 21:54:19
+Message:
+Added periodic build configs for Android 6.0 and 7.0 #MsgLength=53
+
+
+----
+Added: conf/periodic/android-6.0.config.json|8 0
+Added: conf/periodic/android-7.0.config.json|9 0
+
+Revision: cdb6a23c6b3239e838ca2a5fdfd0669476c222f7
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 13/04/2017 14:56:27
+Message:
+Permission buster now handles Android 7.0 alerts #MsgLength=49
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|1 2
+
+Revision: 8f05d465643c64c8118f87b59cb28afd20911c6f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 13/04/2017 15:16:42
+Message:
+Added PR configs for Android 6 and 7 #MsgLength=37
+
+
+----
+Added: conf/pr/android-6.0.config.json|8 0
+Added: conf/pr/android-7.0.config.json|9 0
+
+Revision: 2ca68d375481342a20e5c9525c937f915b67a072
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 17/04/2017 13:24:32
+Message:
+Fix for `waitForDeviceReady` function on Android 6 & 7 #MsgLength=55
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|3 1
+
+Revision: 2821809dbb2633f6e0c4cd098b549de1af1da9b9
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 21/04/2017 13:52:30
+Message:
+Add plugins with --nofetch #MsgLength=27
+
+
+----
+Modified: lib/PluginsManager.js|2 3
+Modified: lib/utils/utilities.js|1 0
+
+Revision: d36105760d2835a3705b8993e914d5d69c271a80
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 25/04/2017 14:18:51
+Message:
+Add platforms with --nofetch #MsgLength=29
+
+
+----
+Modified: lib/paramedic.js|1 1
+Modified: lib/utils/utilities.js|16 15
+
+Revision: 52bf7a1b09ace7e67be9ae2042c70474d45f72b9
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 21/04/2017 19:37:02
+Message:
+Added package.json to all the plugins #MsgLength=38
+
+
+----
+Added: ci-plugin/package.json|14 0
+Added: debug-mode-plugin/package.json|13 0
+Added: event-cache-plugin/package.json|14 0
+Added: ios-geolocation-permissions-plugin/package.json|13 0
+Added: paramedic-plugin/package.json|14 0
+
+Revision: 22f2a73b949a9dbfac3b8063bf39c76d700d08fc
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 28/04/2017 19:30:40
+Message:
+Show args when adding platform/plugin #MsgLength=38
+
+
+----
+Modified: lib/PluginsManager.js|2 2
+Modified: lib/paramedic.js|1 2
+
+Revision: 828340f2d6ce4c4666ae115ca5697757955c5f26
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 03/05/2017 15:43:43
+Message:
+Allow testing of wkwebview plugin #MsgLength=34
+
+
+----
+Modified: lib/paramedic.js|17 0
+
+Revision: 263dea7ee715c4e175f0091031ae1fba15a62550
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 05/05/2017 20:48:33
+Message:
+When running Appium tests locally and 4723 port is taken, don't try to install Appium server #MsgLength=93
+
+
+----
+Modified: lib/appium/AppiumRunner.js|9 2
+
+Revision: ddef72b02c670bec3e304f498b38501140191c4b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/05/2017 15:18:48
+Message:
+Search for configs under 'conf' dir #MsgLength=36
+
+
+----
+Modified: lib/utils/utilities.js|27 1
+Modified: main.js|2 1
+
+Revision: 75d60ec9a0711495803b96262cea4d4e3ee50100
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/05/2017 15:52:55
+Message:
+Better parsing of --config arg #MsgLength=31
+
+
+----
+Modified: lib/utils/utilities.js|2 1
+
+Revision: 5b8bf1503d1ab8ade3abfa5300ddbd65b3946491
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/05/2017 18:34:15
+Message:
+Updated Sauce configs to include Appium version #MsgLength=48
+
+
+----
+Modified: conf/periodic/android-6.0.config.json|1 1
+Modified: conf/periodic/ios-10.0.config.json|2 1
+Modified: conf/pr/android-6.0.config.json|1 1
+Modified: conf/pr/ios-10.0.config.json|2 1
+
+Revision: 7e607a205f913fdf369f68ced552aac30a15d73d
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/05/2017 20:11:37
+Message:
+Skip permission buster for splashscreen plugin #MsgLength=47
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|9 4
+Modified: lib/paramedic.js|10 1
+
+Revision: 9f99eee055e12099607e49eda34b5d1bae74735b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/05/2017 16:55:17
+Message:
+Fixed inappbrowser runs on Android 7 #MsgLength=37
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|10 0
+
+Revision: ec0903381debe1cbdd15db6124780655c676fb21
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 31/05/2017 13:58:22
+Message:
+Fixed a windows handle error for long runs #MsgLength=43
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|6 2
+
+Revision: cff76544b41ea3e7dfa2a7c691ca72798f77693f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 01/06/2017 14:35:18
+Message:
+Actually fix the bug instead of shady blacklisting workarounds #MsgLength=63
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|2 16
+
+Revision: 9613dfa5025636877b998ad6a2852de99bddeb20
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 22/06/2017 17:52:39
+Message:
+CB-12935 Use the same environment variable as Travis does to identify Sauce User #MsgLength=81
+
+
+----
+Modified: README.md|1 1
+Modified: lib/utils/utilities.js|1 1
+
+Revision: f7495e6bddb4ce9be25436f8724ce8d72a4374c7
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 03/07/2017 19:26:08
+Message:
+Spam dots when connecting webdriver to avoid 'no output' termination #MsgLength=69
+
+
+----
+Modified: lib/paramedic.js|13 1
+
+Revision: 3b32f80bfc5b81f72b5ebf6d78a86a1705b27587
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 03/07/2017 21:57:58
+Message:
+CB-12982 Increase the WebDriver timeout and spam dots when trying to launch Appium tests #MsgLength=89
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|12 1
+Modified: lib/utils/utilities.js|2 2
+
+Revision: e3367b83c336c16fd91b369a97138682911c83b3
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 17:23:57
+Message:
+Better default Sauce Labs job name #MsgLength=35
+
+
+----
+Modified: lib/ParamedicConfig.js|2 2
+Modified: lib/paramedic.js|8 8
+
+Revision: aecb6c4444a24d917f5c03c1db3cda6fe384b53d
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 17/07/2017 19:41:07
+Message:
+CB-13028 Now can test in browser! (only locally ATM) #MsgLength=53
+
+
+----
+Added: conf/periodic/local/browser.config.json|6 0
+Added: conf/pr/local/browser.config.json|6 0
+Modified: lib/ParamedicKill.js|6 0
+Modified: lib/ParamedicLog.js|1 1
+Modified: lib/paramedic.js|62 36
+Modified: lib/utils/utilities.js|1 0
+
+Revision: 76dc9e63716d50a42caa0a44be8099d49246af80
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/07/2017 18:13:40
+Message:
+CB-13028 Fix typo #MsgLength=18
+
+
+----
+Modified: lib/paramedic.js|1 1
+
+Revision: 0c9f8517c9087a61583ca5dc7b12d63949137169
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 21/07/2017 19:05:42
+Message:
+CB-13028 Run tests for browser platform on Sauce #MsgLength=49
+
+
+----
+Modified: README.md|12 4
+Added: conf/pr/browser-chrome.config.json|8 0
+Added: conf/pr/browser-edge.config.json|8 0
+Added: conf/pr/browser-firefox.config.json|8 0
+Added: conf/pr/browser-safari.config.json|8 0
+Modified: lib/LocalServer.js|4 2
+Modified: lib/ParamedicConfig.js|26 2
+Modified: lib/appium/AppiumRunner.js|5 74
+Added: lib/appium/helpers/appPatcher.js|112 0
+Modified: lib/appium/helpers/wdHelper.js|5 4
+Modified: lib/paramedic.js|109 40
+Modified: main.js|7 2
+
+Revision: 4776b4da1566caf34ac33c4d4e20ee719622d766
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 21/07/2017 19:41:01
+Message:
+CB-13028 Fix local browser test run #MsgLength=36
+
+
+----
+Modified: lib/paramedic.js|2 2
+
+Revision: df594468494574ef27d516f8f6f62efbe4a34e16
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 25/07/2017 16:20:42
+Message:
+CB-13028 Automatically start up a Sauce Connect tunnel when testing browser #MsgLength=76
+
+
+----
+Modified: lib/paramedic.js|54 9
+Modified: lib/utils/execWrapper.js|1 1
+Modified: lib/utils/utilities.js|25 16
+Modified: package.json|3 2
+
+Revision: 258f10e8b2d6832834f4176f3b4b392c93adbcff
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 25/07/2017 16:33:29
+Message:
+CB-13028 Pick up tunnel id from env.var #MsgLength=40
+
+
+----
+Modified: lib/paramedic.js|1 1
+
+Revision: 0db350ed51b4454b56c2f924bcd3f4219a9dc437
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 25/07/2017 18:58:40
+Message:
+CB-13028 Don't always use Sauce Connect, also try to work around "Bad Gateway" error #MsgLength=85
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|15 1
+Modified: lib/paramedic.js|8 3
+
+Revision: 3f72bca489a83bda7d68d3caf5cd7c077a6aec0d
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 01/08/2017 15:54:11
+Message:
+Stop using --nofetch (no more need) #MsgLength=36
+
+
+----
+Modified: lib/utils/utilities.js|2 2
+
+Revision: e0c9cb778c155e3a3a3f81a519d04df038bd9e8f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 01/08/2017 16:15:18
+Message:
+Added periodic configs for browser #MsgLength=35
+
+
+----
+Added: conf/periodic/browser-chrome.config.json|8 0
+Added: conf/periodic/browser-edge.config.json|8 0
+Added: conf/periodic/browser-firefox.config.json|8 0
+Added: conf/periodic/browser-safari.config.json|8 0
+
+Revision: 211100d4fcbb9001d6769782fd7bdacb2580d096
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/08/2017 18:02:43
+Message:
+Disable browser pop-up for newer version of cordova-browser #MsgLength=60
+
+
+----
+Modified: lib/paramedic.js|11 4
+
+Revision: 318fc18787205665cbaa9614a80e594d6306c97d
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 19:44:14
+Message:
+Removed unnecessary 'cordova-plugin-device' from the list of additionally installed plugins #MsgLength=92
+
+
+----
+Modified: lib/paramedic.js|1 1
+
+Revision: aa940aad3ecedf327ef412ee04baa205e2474966
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 16/11/2017 16:24:06
+Message:
+Bump Safari version on Sauce #MsgLength=29
+
+
+----
+Modified: conf/periodic/browser-safari.config.json|1 1
+Modified: conf/pr/browser-safari.config.json|1 1
+
+Revision: 760493ef519051cc60228ce5290dcc4308e353f2
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 16/11/2017 22:43:33
+Message:
+Improve README #MsgLength=100
+
+
+----
+Modified: README.md|31 29
+
+Revision: e43017c23647eb136d5b2f97f3321ea48908722b
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 09/01/2018 15:06:49
+Message:
+Updated Android apk path #MsgLength=25
+
+
+----
+Modified: lib/appium/AppiumRunner.js|10 2
+Modified: lib/paramedic.js|21 5
+
+Revision: 0e90d836f6871b28a0f1b5ce4a5c9432a709a949
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 09/01/2018 17:50:29
+Message:
+Fixed Android apk not being found (for reals this time) #MsgLength=56
+
+
+----
+Modified: lib/paramedic.js|2 17
+
+Revision: 31155dfd9287e9c53b034bc00dba4473f7c9bf5c
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 26/01/2018 19:47:21
+Message:
+Properly handle failed build #MsgLength=29
+
+
+----
+Modified: lib/appium/AppiumRunner.js|2 2
+Modified: lib/paramedic.js|6 2
+
+Revision: e02c7391bf96c12a957979ce83c9c5f1453db106
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 22/09/2018 05:21:35
+Message:
+fix typo #MsgLength=8
+
+
+----
+Modified: README.md|1 1
+
+Revision: bc3241b375c685bed1cd3d328c9eed82bcea7c27
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 30/09/2018 05:10:03
+Message:
+Run Safari tests on macOS High Sierra (10.13) #MsgLength=45
+
+
+----
+Modified: lib/paramedic.js|1 1
+
+Revision: 952654880dfd22fcf7e783595ddd2db47341ebd4
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 30/09/2018 05:46:03
+Message:
+Switch to Safari 11.1 #MsgLength=22
+
+
+----
+Modified: conf/periodic/browser-safari.config.json|1 1
+Modified: conf/pr/browser-safari.config.json|1 1
+
+Revision: f6f0d4b23bf3cc0d00cd234d5e94ddf010e0c3a3
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 01/10/2018 02:03:41
+Message:
+Update nodejs version for Travis to 6.2 (#16) #MsgLength=47
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: cefba8cfe92ea105c5873683e3070c0663c17ef6
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 01/10/2018 03:03:39
+Message:
+Fix jshint errors (#32) #MsgLength=1057
+
+
+----
+Modified: lib/ParamedicConfig.js|7 7
+Modified: lib/appium/AppiumRunner.js|1 1
+Modified: lib/paramedic.js|4 4
+
+Revision: cd41bdcef7364d1bdbf4dccc9f2898764b182ef7
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 01/10/2018 20:26:49
+Message:
+increase timeout to 10min + clearer output in case this timeout isn't enough #MsgLength=77
+
+
+----
+Modified: lib/paramedic.js|3 3
+
+Revision: 5bed039d6dfbb758a19e066d27a2aa1c1739b2f5
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 01/10/2018 21:06:10
+Message:
+decrease to 9 min to work around 10min command limit on travis: https://docs.travis-ci.com/user/common-build-problems/#build-times-out-because-no-output-was-received #MsgLength=166
+
+
+----
+Modified: lib/paramedic.js|1 1
+
+Revision: c78d74aa7efa85bb585533727ad8b28a487da38d
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 02/10/2018 03:49:44
+Message:
+Add package.json files to plugins and plugin tests (#34) #MsgLength=157
+
+
+----
+Added: spec/build-fail-plugin/package.json|11 0
+Added: spec/build-success-plugin/package.json|11 0
+Added: spec/sh-read-input-plugin/package.json|11 0
+Added: spec/testable-plugin/package.json|14 0
+Added: spec/testable-plugin/tests/package.json|11 0
+
+Revision: 86101e4c0a9bf7d15c085ce0c5a8bb3b6035232f
+Author: johanlantz <ilantzconsulting@gmail.com>
+Date: 03/10/2018 02:56:25
+Message:
+Support physical Android devices (#24) #MsgLength=149
+
+
+----
+Modified: README.md|8 0
+Modified: lib/ParamedicTargetChooser.js|8 0
+
+Revision: dfed2c716bfaf1c9bfde2fba5c073d8e0685d7af
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 03/10/2018 03:27:34
+Message:
+Fix inappbrowser on Android 7 (#50) #MsgLength=475
+
+
+----
+Modified: lib/paramedic.js|5 2
+
+Revision: 2b24b0ac527af19d8a06bd10cbb7f67ce4278c2c
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 01/10/2018 03:14:20
+Message:
+most rudimentary package.json for plugins and plugin tests possible #MsgLength=68
+
+
+----
+Added: spec/build-fail-plugin/package.json|11 0
+Added: spec/build-success-plugin/package.json|11 0
+Added: spec/sh-read-input-plugin/package.json|11 0
+Added: spec/testable-plugin/package.json|14 0
+Added: spec/testable-plugin/tests/package.json|11 0
+
+Revision: ac87c1cb9d33b5fa662dce92bca2acf8efe5d746
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 01/10/2018 03:28:40
+Message:
+nobody needs wp8 any more, but browser would be useful #MsgLength=55
+
+
+----
+Modified: package.json|1 1
+
+
+Revision: 3fe85559317976506f516984a5c95595c761d5c5
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 11/10/2018 16:01:57
+Message:
+remove wp8 ref #MsgLength=14
+
+
+----
+Modified: README.md|1 2
+
+Revision: 4dd81902e083cde03fb1ae38b00aae4791040ce6
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 11/10/2018 16:03:49
+Message:
+Remove wp8 ref #MsgLength=14
+
+
+----
+Modified: main.js|1 1
+
+Revision: 2b3e03f32a6f13af6dce9b0ed9a9417597a9349e
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 25/11/2018 01:17:00
+Message:
+[CB-12210] require a string when parsing the plugin argument. (#19) #MsgLength=69
+
+
+----
+Modified: main.js|3 1
+
+Revision: c18912389df746e414202b0f1729f8067255c38b
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 25/11/2018 04:56:38
+Message:
+test browser on appveyor (#65) #MsgLength=73
+
+
+----
+Modified: package.json|1 1
+
+Revision: 80ecd5b4da6348ec9e824600ff2a788782a6320c
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 04/12/2018 21:56:44
+Message:
+Improve code and traceability (#78) #MsgLength=283
+
+
+----
+Modified: lib/LocalServer.js|1 1
+Modified: lib/ParamedicAppUninstall.js|2 2
+Modified: lib/ParamedicKill.js|3 2
+Modified: lib/ParamedicLog.js|3 1
+Modified: lib/ParamedicTargetChooser.js|2 2
+Modified: lib/ParamediciOSPermissions.js|2 0
+Modified: lib/PluginsManager.js|3 1
+Modified: lib/appium/AppiumRunner.js|5 1
+Modified: lib/paramedic.js|22 5
+Modified: lib/utils/execWrapper.js|1 0
+Modified: lib/utils/utilities.js|4 4
+Added: package-lock.json|2087 0
+Modified: package.json|4 4
+
+Revision: 91468049bb1d1def39beb5370ad62dba25f382da
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 05/12/2018 05:54:21
+Message:
+Fix exec usage (#83) #MsgLength=101
+
+
+----
+Modified: lib/ParamedicAppUninstall.js|1 1
+Modified: lib/ParamedicKill.js|2 2
+Modified: lib/ParamedicLog.js|1 1
+Modified: lib/ParamedicTargetChooser.js|1 1
+Modified: lib/PluginsManager.js|1 1
+Modified: lib/paramedic.js|1 1
+Modified: lib/utils/utilities.js|3 3
+Modified: main.js|10 7
+
+Revision: 3efce857da410df836a17e3f624e4ba63ec09401
+Author: Niklas Merz <NiklasMerz@gmx.net>
+Date: 05/12/2018 05:57:03
+Message:
+Fix some npm audit issues (upgrade dependencies) (#40) #MsgLength=109
+
+
+----
+Modified: package.json|3 3
+
+Revision: df7cf4025f910d6b9b00bd56280384347ee913ab
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 05/12/2018 06:00:31
+Message:
+update package-lock #MsgLength=20
+
+
+----
+Modified: package-lock.json|516 272
+
+Revision: 44fb0e5bb34c8e927090353a12e3585b0b37f528
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 05/12/2018 07:55:30
+Message:
+Revert "Fix some npm audit issues (upgrade dependencies) (#40)" #MsgLength=127
+
+
+----
+Modified: package.json|3 3
+
+Revision: c8f633df009974ee9bc06e44883e7a845b417869
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 05/12/2018 07:57:34
+Message:
+Revert "update package-lock" #MsgLength=92
+
+
+----
+Modified: package-lock.json|272 516
+
+Revision: 336ccca9f8d6290968f27a8e527084a102256aef
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 05/12/2018 20:54:13
+Message:
+[CI] Update Travis config: More local, Saucelabs (#81) #MsgLength=290
+
+
+----
+Modified: .travis.yml|51 11
+
+Revision: 3687bf64220ad767c91b3b8a6a9d2425b20742ff
+Author: Andreas Rehn <mrfatstrat@gmail.com>
+Date: 06/12/2018 22:40:21
+Message:
+Updated ParamedicKill.js to support qemu-system-x86_64 (#90) #MsgLength=630
+
+
+----
+Modified: lib/ParamedicKill.js|1 1
+
+Revision: 7705467414615f50e4ec7a58163c67f16502d58c
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 09/12/2018 03:17:56
+Message:
+Improve README (#77) #MsgLength=230
+
+
+----
+Modified: README.md|212 63
+
+Revision: 902d204fb1e09ea186946866ab3939f11bd7df34
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/12/2018 02:23:42
+Message:
+update DEFAULT_SAUCE_APPIUM_VERSION to 1.6.3 https://wiki.saucelabs.com/display/DOCS/2018/12/03/Announcing+end+of+life+for+Appium+versions+1.6.2+and+below+on+Emulators+and+Simulators #MsgLength=183
+
+
+----
+Modified: lib/ParamedicConfig.js|1 1
+
+Revision: ed8c5b32861e6d0b9c3f844bca87d859a0a571f9
+Author: Niklas Merz <niklasmerz@linux.com>
+Date: 06/01/2019 01:28:14
+Message:
+add documentation for --args command line parameter #MsgLength=52
+
+
+----
+Modified: README.md|8 0
+Modified: main.js|1 0
+
+Revision: 978ef83891e3e57e74250d668a43016ea9aeb028
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 06/01/2019 02:13:05
+Message:
+fix encoding #MsgLength=61
+
+
+----
+Modified: main.js|1 1
+
+Revision: 05a515d1c3694bc880432ff4d7c4a39d065264b0
+Author: Niklas Merz <niklasmerz@linux.com>
+Date: 06/01/2019 02:25:36
+Message:
+sort parameters #MsgLength=16
+
+
+----
+Modified: main.js|1 1
+
+
+Revision: 9654dd810c40f7bbc5fa3254475e9445d7db07e8
+Author: Niklas Merz <niklasmerz@linux.com>
+Date: 06/01/2019 01:29:47
+Message:
+add build flag to iOS test command #MsgLength=35
+
+
+----
+Modified: package.json|1 1
+
+
+Revision: 8b2bf13f80e22042063ab0f90357a0ead4a07b0f
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:37:59
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: a1e2493595f0a715571210a76747a8a932fb5806
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 28/03/2019 01:52:19
+Message:
+Extract classes from paramedic.js (App, SauceLabs) (#86) #MsgLength=655
+
+
+----
+Added: lib/ParamedicApp.js|143 0
+Renamed: lib/ParamedicLogCollector.js [from lib/ParamedicLog.js]|8 8
+Added: lib/ParamedicSauceLabs.js|551 0
+Modified: lib/paramedic.js|30 634
+Modified: package.json|12 3
+
+Revision: 71678c2e95df9e24b96260c0a4ec04c71d77b497
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 29/03/2019 19:16:43
+Message:
+Make Paramedic CI work with Cordova CLI 8 (and respective platforms): node 6, xcode9, android28 and built-tools 28.0.3 (#102) #MsgLength=289
+
+
+----
+Modified: .travis.yml|15 18
+Modified: package.json|1 1
+
+Revision: 70559f0b329d932eae22f6d2c6ecc16ddf8b1330
+Author: エリス <erisu@users.noreply.github.com>
+Date: 02/04/2019 11:03:02
+Message:
+Replace requireCordovaModule with require (#109) #MsgLength=50
+
+
+----
+Modified: debug-mode-plugin/scripts/disable-debug-mode.js|1 1
+Modified: debug-mode-plugin/scripts/enable-debug-mode.js|1 1
+
+Revision: af8cd793336a4fb8e94593e3603db27abff0ce45
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 03/04/2019 19:06:17
+Message:
+Improve SauceLabs Android setup (#105) #MsgLength=240
+
+
+----
+Modified: .travis.yml|115 31
+Modified: conf/periodic/android-6.0.config.json|0 1
+Modified: conf/periodic/android-7.0.config.json|0 1
+Modified: conf/pr/android-6.0.config.json|0 1
+Modified: conf/pr/android-7.0.config.json|0 1
+Added: conf/pr/android-7.1.config.json|8 0
+Added: conf/pr/android-8.0.config.json|8 0
+Added: conf/pr/android-8.1.config.json|8 0
+Modified: lib/ParamedicConfig.js|3 3
+
+Revision: 65248dac3f6d9d0345f37f992e750b94b687144b
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 04/04/2019 02:07:47
+Message:
+Improve SauceLabs Browser setup (#107) #MsgLength=129
+
+
+----
+Modified: .travis.yml|9 1
+
+Revision: ce697af40d0cffee2989f48c0b3cfaaffdf7ffe8
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 05/04/2019 23:11:29
+Message:
+Improve Android parts of .travis.yml (use anchor/alias) (#106) #MsgLength=149
+
+
+----
+Modified: .travis.yml|22 84
+
+Revision: 23f1ef569111fb70816c8ef1f2281b779dcf1f0b
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 12:51:28
+Message:
+Replace JSHint with ESLint #MsgLength=27
+
+
+----
+Renamed: .eslintignore [from .jshintignore]|0 0
+Added: .eslintrc.yml|13 0
+Deleted: .jshintrc|0 14
+Modified: lib/LocalServer.js|24 25
+Modified: lib/ParamedicApp.js|46 48
+Modified: lib/ParamedicAppUninstall.js|25 26
+Modified: lib/ParamedicConfig.js|27 27
+Modified: lib/ParamedicKill.js|7 7
+Modified: lib/ParamedicLogCollector.js|23 23
+Modified: lib/ParamedicSauceLabs.js|255 251
+Modified: lib/ParamedicTargetChooser.js|50 50
+Modified: lib/ParamediciOSPermissions.js|15 15
+Modified: lib/PluginsManager.js|4 4
+Modified: lib/Reporters.js|5 5
+Modified: lib/appium/AppiumRunner.js|34 35
+Modified: lib/appium/helpers/appPatcher.js|3 3
+Modified: lib/appium/helpers/screenshotHelper.js|2 2
+Modified: lib/appium/helpers/wdHelper.js|94 92
+Modified: lib/paramedic.js|167 169
+Modified: lib/utils/execWrapper.js|4 4
+Modified: lib/utils/index.js|3 3
+Modified: lib/utils/utilities.js|34 34
+Modified: package-lock.json|1177 426
+Modified: package.json|11 5
+
+Revision: b564cecb9ffd79ae6daf742a09b5cc5d5123e827
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 14:16:57
+Message:
+Convert ParamedicReporter to class w/ Refactor #MsgLength=47
+
+
+----
+Modified: lib/Reporters.js|22 21
+
+Revision: c8c2326af54f267956043309a3b2f1cd39f4a7b5
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 14:23:08
+Message:
+Convert PluginsManager to class w/ Refactor #MsgLength=44
+
+
+----
+Modified: lib/PluginsManager.js|69 66
+
+Revision: 20326d50f719909285a61adecce43868040be0c3
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 14:30:13
+Message:
+Convert ParamedicTargetChooser to class w/ Refactor #MsgLength=52
+
+
+----
+Modified: lib/ParamedicTargetChooser.js|105 107
+
+Revision: 90831cf41f9269473072a7eb9d0a66c143cd9a79
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 14:50:38
+Message:
+Convert ParamedicSauceLabs to class w/ Refactor #MsgLength=48
+
+
+----
+Modified: lib/ParamedicSauceLabs.js|492 477
+
+Revision: c9211f95d29d81fcc744731e91264c6131ea995f
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 14:58:49
+Message:
+Convert ParamedicLogCollector to class w/ Refactor #MsgLength=51
+
+
+----
+Modified: lib/ParamedicLogCollector.js|97 91
+
+Revision: 79e468d880c017593189be801b9fd4a520092f51
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 15:05:48
+Message:
+Convert ParamedicKill to class w/ Refactor #MsgLength=43
+
+
+----
+Modified: lib/ParamedicKill.js|77 81
+
+Revision: 3f86ecd20c57e8ee09cbf86337d2a5adf435c2bd
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 15:14:15
+Message:
+Convert ParamediciOSPermissions to class w/ Refactor #MsgLength=53
+
+
+----
+Modified: lib/ParamediciOSPermissions.js|52 48
+
+Revision: 2eff2219f1681223547da0450cda91171177d397
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 15:19:55
+Message:
+Convert ParamedicConfig to class w/ Refactor #MsgLength=45
+
+
+----
+Modified: lib/ParamedicConfig.js|243 241
+
+Revision: 19fe1a2e29f43f770f04d5f04bdd7bfdb8a6b7cc
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 15:23:46
+Message:
+Convert ParamedicAppUninstall to class w/ Refactor #MsgLength=51
+
+
+----
+Modified: lib/ParamedicAppUninstall.js|62 61
+
+Revision: b7e3195e2109adc2962221e210d0a16494f5b71c
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 15:31:13
+Message:
+Convert ParamedicApp to class w/ Refactor #MsgLength=42
+
+
+----
+Modified: lib/ParamedicApp.js|105 106
+
+Revision: 2ed6bbb17ca9540c6cdf5b1da665c3db2b1fd0de
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 15:44:30
+Message:
+Convert LocalServer to class w/ Refactor #MsgLength=41
+
+
+----
+Modified: lib/LocalServer.js|131 158
+
+Revision: 16de3a190418a3d0c7d988e62e42a4ed6ce2fbdb
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 16:06:06
+Message:
+Convert ParamedicRunner to class w/ Refactor #MsgLength=45
+
+
+----
+Modified: lib/paramedic.js|364 388
+
+Revision: 4ec8c574527ee46b70a3e752a0a441813debdd77
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 17:06:14
+Message:
+Convert AppiumRunner to class w/ Refactor #MsgLength=42
+
+
+----
+Modified: lib/appium/AppiumRunner.js|323 323
+
+Revision: f7ff7adcca6583ed6ab87f1f84f4510cf1058302
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 18:29:18
+Message:
+Update TEST_(PASS|FAILED) to Boolean Values #MsgLength=44
+
+
+----
+Modified: lib/utils/utilities.js|2 2
+
+Revision: ca4263a5e8311bf50827a8f99ac5e3336d465e52
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 19:09:08
+Message:
+Change Scope for Uploading App #MsgLength=31
+
+
+----
+Modified: lib/paramedic.js|2 2
+
+Revision: 8023047ef6304f03d8eec68f852b7363124cc49a
+Author: エリス <ellis.bryan@gmail.com>
+Date: 02/04/2019 21:48:29
+Message:
+Cleanup #MsgLength=8
+
+
+----
+Modified: lib/appium/AppiumRunner.js|3 3
+Modified: lib/paramedic.js|5 5
+
+Revision: 4a193d14cef3fadff4a01cb9ebbe1389722019b8
+Author: エリス <ellis.bryan@gmail.com>
+Date: 03/04/2019 11:24:30
+Message:
+Fix AppVeyor Failure with Just Build Flag #MsgLength=42
+
+
+----
+Modified: lib/paramedic.js|10 4
+
+Revision: bd8f0bbc1447fe3d3a9c50a5134970ec534c9c0d
+Author: Gedas Gardauskas <gedas.gardauskas@gmail.com>
+Date: 06/04/2019 10:35:48
+Message:
+Apply suggestions from code review #MsgLength=91
+
+
+----
+Modified: lib/LocalServer.js|1 1
+Modified: lib/ParamedicApp.js|11 11
+Modified: lib/ParamedicKill.js|6 9
+Modified: lib/ParamedicLogCollector.js|4 4
+Modified: lib/ParamedicSauceLabs.js|10 8
+Modified: lib/ParamedicTargetChooser.js|3 3
+Modified: lib/appium/AppiumRunner.js|10 10
+Modified: lib/appium/helpers/appPatcher.js|2 2
+Modified: lib/appium/helpers/wdHelper.js|2 2
+Modified: lib/paramedic.js|2 2
+Modified: lib/utils/utilities.js|1 1
+
+
+Revision: a37baad051227944ffd5d19a38e68a6489de20f0
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 14/04/2019 23:20:54
+Message:
+Improve SauceLabs iOS setup: iOS 10+ (#118) #MsgLength=1437
+
+
+----
+Modified: .travis.yml|15 5
+Added: conf/pr/ios-11.3.config.json|8 0
+Added: conf/pr/ios-12.0.config.json|8 0
+Modified: lib/appium/helpers/wdHelper.js|5 2
+Modified: package-lock.json|7 7
+Modified: package.json|2 2
+
+Revision: d3cb384a888da1912d55558e8c4742453d996169
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 15/04/2019 20:19:11
+Message:
+[CI] Test iOS 12.2 on SauceLabs (#128) #MsgLength=55
+
+
+----
+Modified: .travis.yml|2 0
+Added: conf/pr/ios-12.2.config.json|8 0
+
+Revision: 14bfac849985cbfc7d0c4840d2c2a5f328aac72c
+Author: Guillermo Martínez <gmotzespina@users.noreply.github.com>
+Date: 16/04/2019 00:05:48
+Message:
+Add args to build command used for Saucelabs as well (#114) #MsgLength=1716
+
+
+----
+Modified: lib/ParamedicSauceLabs.js|5 1
+
+Revision: 6079573b40174ebd13e9bf3574127830e391bd7d
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 18/04/2019 19:58:46
+Message:
+Document usage of --target for iOS (#104) #MsgLength=121
+
+
+----
+Modified: README.md|8 1
+
+Revision: a62bb98dc1e16f8a340eab0366a5e1d419891ae4
+Author: エリス <ellis.bryan@gmail.com>
+Date: 03/04/2019 13:02:47
+Message:
+Drop path-extra dependency #MsgLength=27
+
+
+----
+Modified: lib/ParamedicLogCollector.js|3 2
+Modified: lib/ParamedicTargetChooser.js|1 1
+Modified: lib/utils/utilities.js|2 2
+Modified: package-lock.json|0 5
+Modified: package.json|0 1
+
+Revision: a05946a171cd99668a229b339664e0756688d4bf
+Author: エリス <ellis.bryan@gmail.com>
+Date: 03/04/2019 13:07:47
+Message:
+Refactor utilities.js #MsgLength=22
+
+
+----
+Modified: lib/utils/utilities.js|34 35
+
+Revision: bb6ed2e85b2205488d0531ebdf9850c36569761a
+Author: エリス <ellis.bryan@gmail.com>
+Date: 03/04/2019 13:09:26
+Message:
+Refactor disable-debug-mode.js #MsgLength=31
+
+
+----
+Modified: debug-mode-plugin/scripts/disable-debug-mode.js|8 8
+
+Revision: fa37dc2d238f228867a95122e4329cd8326b4ccc
+Author: エリス <ellis.bryan@gmail.com>
+Date: 03/04/2019 13:13:04
+Message:
+Refactor enable-debug-mode.js #MsgLength=30
+
+
+----
+Modified: debug-mode-plugin/scripts/enable-debug-mode.js|16 16
+
+Revision: abb061fcf42231d0ad80e2cde26e4a262a2b5513
+Author: エリス <ellis.bryan@gmail.com>
+Date: 09/04/2019 13:50:28
+Message:
+Bumped cordova-common@^3.1.0 #MsgLength=29
+
+
+----
+Modified: package-lock.json|227 87
+Modified: package.json|1 1
+
+Revision: c877d055e62a1334304e1d17392ffafae2d0ad15
+Author: エリス <ellis.bryan@gmail.com>
+Date: 09/04/2019 13:50:31
+Message:
+Bumped expect-telnet@^1.0.0 #MsgLength=28
+
+
+----
+Modified: package-lock.json|3 3
+Modified: package.json|1 1
+
+Revision: 90833d0da6cd70fdccd20af163931e81ef6ac1a6
+Author: エリス <ellis.bryan@gmail.com>
+Date: 09/04/2019 13:50:34
+Message:
+Bumped jasmine@^3.4.0 #MsgLength=22
+
+
+----
+Modified: package-lock.json|8 44
+Modified: package.json|1 1
+
+Revision: 25b6a9486fed3886777029bf831e19e77a70d596
+Author: エリス <ellis.bryan@gmail.com>
+Date: 09/04/2019 13:50:37
+Message:
+Bumped jasmine-reporters@^2.3.2 #MsgLength=32
+
+
+----
+Modified: package.json|1 1
+
+Revision: 71be93aac706eeefccdf32919735ea7702b5fab4
+Author: エリス <ellis.bryan@gmail.com>
+Date: 09/04/2019 13:50:40
+Message:
+Bumped jasmine-spec-reporter@^4.2.1 & Update Usage #MsgLength=51
+
+
+----
+Modified: lib/Reporters.js|2 2
+Modified: package-lock.json|4 4
+Modified: package.json|1 1
+
+Revision: 3644bb451766fde0dc06c71d199d29c7f357963f
+Author: エリス <ellis.bryan@gmail.com>
+Date: 09/04/2019 13:50:45
+Message:
+Bumped localtunnel@^1.9.1 #MsgLength=26
+
+
+----
+Modified: package-lock.json|363 76
+Modified: package.json|1 1
+
+Revision: 69ba2eef20ea10b1c62bab58ca68ad57bf801b7a
+Author: エリス <ellis.bryan@gmail.com>
+Date: 09/04/2019 13:50:48
+Message:
+Bumped minimist@^1.2.0 #MsgLength=23
+
+
+----
+Modified: package-lock.json|3 3
+Modified: package.json|1 1
+
+Revision: f32016d408463721a12cbfb41ac6dbf2d76a116f
+Author: エリス <ellis.bryan@gmail.com>
+Date: 09/04/2019 13:50:51
+Message:
+Bumped q@^1.5.1 #MsgLength=16
+
+
+----
+Modified: package.json|1 1
+
+Revision: 0647b09bd46673c21ef0153b150392889a3d2e79
+Author: エリス <ellis.bryan@gmail.com>
+Date: 09/04/2019 13:50:57
+Message:
+Bumped shelljs@^0.8.3 #MsgLength=22
+
+
+----
+Modified: package-lock.json|21 3
+Modified: package.json|1 1
+
+Revision: e512e1a755f7202eefb7ff7e5d0bb14fe3cdf16b
+Author: エリス <ellis.bryan@gmail.com>
+Date: 09/04/2019 13:51:00
+Message:
+Bumped socket.io@^2.2.0 #MsgLength=24
+
+
+----
+Modified: package-lock.json|115 179
+Modified: package.json|1 1
+
+Revision: f0ce544ae52bb50079d61e4db1649f8c96495482
+Author: エリス <ellis.bryan@gmail.com>
+Date: 09/04/2019 13:51:04
+Message:
+Bumped tcp-port-used@^1.0.1 #MsgLength=28
+
+
+----
+Modified: package-lock.json|30 23
+Modified: package.json|1 1
+
+Revision: c9813c430676f5079b1600f193a85f9df7b78e9e
+Author: エリス <ellis.bryan@gmail.com>
+Date: 09/04/2019 13:51:06
+Message:
+Bumped tmp@^0.1.0 #MsgLength=18
+
+
+----
+Modified: package-lock.json|16 3
+Modified: package.json|1 1
+
+Revision: 163a9c69fd91883123f5ef64e7de20d8e1f1a147
+Author: エリス <ellis.bryan@gmail.com>
+Date: 09/04/2019 13:51:09
+Message:
+Bumped tree-kill@^1.2.1 #MsgLength=24
+
+
+----
+Modified: package.json|1 1
+
+Revision: ddd4ae058fc2ad5c8d4e2ad07b05dbe0c8a7ee97
+Author: エリス <ellis.bryan@gmail.com>
+Date: 09/04/2019 13:55:00
+Message:
+Remove leftover jshint for ESLint #MsgLength=34
+
+
+----
+Modified: lib/ParamedicApp.js|1 1
+Modified: lib/ParamedicKill.js|1 1
+Modified: lib/ParamedicSauceLabs.js|1 1
+Deleted: lib/appium/.jshintrc|0 11
+Modified: lib/appium/AppiumRunner.js|1 1
+Modified: lib/appium/helpers/appPatcher.js|0 1
+Modified: lib/appium/helpers/screenshotHelper.js|0 1
+Modified: lib/appium/helpers/wdHelper.js|0 2
+
+Revision: 6f9e2d21b066e2dcfadca9ceead20f4d3e077f77
+Author: エリス <ellis.bryan@gmail.com>
+Date: 12/04/2019 09:54:32
+Message:
+Remove browserify #MsgLength=18
+
+
+----
+Modified: lib/ParamedicConfig.js|1 14
+Modified: lib/ParamedicSauceLabs.js|1 2
+Modified: lib/appium/AppiumRunner.js|1 2
+Modified: lib/paramedic.js|0 1
+Modified: main.js|1 6
+
+Revision: 6aa3f57387cb3d53599fb76c19a4d1e4e86f4650
+Author: エリス <ellis.bryan@gmail.com>
+Date: 12/04/2019 20:25:04
+Message:
+Refactor lib/appium & lib/utils/execWrapper.js #MsgLength=47
+
+
+----
+Modified: lib/appium/AppiumRunner.js|8 8
+Modified: lib/appium/helpers/appPatcher.js|29 44
+Modified: lib/appium/helpers/screenshotHelper.js|11 15
+Modified: lib/appium/helpers/wdHelper.js|58 70
+Modified: lib/utils/execWrapper.js|4 4
+
+
+Revision: d66714bbb1cd37b4a9d0d4b19f15a3c007ebcb3b
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 16/04/2019 00:15:57
+Message:
+fix messed up merge #MsgLength=19
+
+
+----
+Modified: lib/ParamedicSauceLabs.js|1 0
+
+Revision: 1beaade6069846b26446e3f56d5acbd2c391f6bb
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 16/04/2019 16:58:44
+Message:
+fix 2 #MsgLength=5
+
+
+----
+Modified: lib/ParamedicSauceLabs.js|0 1
+
+Revision: b876b50321d69aa0d0df7bf1f5e1122d2c2a45e8
+Author: エリス <ellis.bryan@gmail.com>
+Date: 23/04/2019 08:57:52
+Message:
+Convert output to stdout #MsgLength=25
+
+
+----
+Modified: lib/ParamedicLogCollector.js|1 1
+Modified: lib/ParamedicTargetChooser.js|1 1
+Modified: lib/utils/utilities.js|3 3
+
+Revision: 33f670c3ab6378f32eaedd6239354328048fc09b
+Author: エリス <ellis.bryan@gmail.com>
+Date: 23/04/2019 09:30:34
+Message:
+Update Simulator ID Selector for iPhone XR #MsgLength=43
+
+
+----
+Modified: lib/utils/utilities.js|6 1
+
+
+Revision: 344438b3fce6d4c57bdc1dc0e68c56dab772ce5d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/04/2019 01:06:30
+Message:
+Improve Local Testing (#130) #MsgLength=411
+
+
+----
+Modified: .travis.yml|1 4
+Modified: lib/ParamedicLogCollector.js|1 1
+Modified: lib/paramedic.js|1 1
+Modified: lib/utils/utilities.js|9 10
+Modified: package.json|3 3
+
+Revision: f162e007172da7e1f69ab431fb8433577d32bf3f
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/04/2019 00:44:44
+Message:
+fix Windows-Loopback-Exemption-Manager link #MsgLength=43
+
+
+----
+Modified: README.md|3 2
+
+Revision: a54e0fc069d38b6d99bfc9cae4c9e56ea2d66270
+Author: エリス <ellis.bryan@gmail.com>
+Date: 25/04/2019 10:33:43
+Message:
+Fix iOS Configs for Backward Testing and Cleanup #MsgLength=49
+
+
+----
+Modified: conf/periodic/ios-10.0.config.json|1 1
+Modified: conf/periodic/ios-9.3.config.json|3 2
+Modified: conf/periodic/local/ios-10.0.config.json|2 2
+Modified: conf/periodic/local/ios-9.3.config.json|3 2
+Modified: conf/pr/ios-9.3.config.json|3 2
+Modified: conf/pr/local/ios-10.0.config.json|1 1
+Modified: conf/pr/local/ios-9.3.config.json|3 2
+
+Revision: 34e02b822cc8b16322c4b23dda6c243ff150a9b0
+Author: エリス <ellis.bryan@gmail.com>
+Date: 25/04/2019 13:24:34
+Message:
+Set Device Name to iPhone XR Simulator #MsgLength=39
+
+
+----
+Modified: conf/pr/ios-12.2.config.json|2 1
+
+Revision: 697d8ba28d781ecef4e1c50b7b8da3c5ef4c76e9
+Author: エリス <ellis.bryan@gmail.com>
+Date: 26/04/2019 10:56:07
+Message:
+Updated iOS App Uninstall Command #MsgLength=34
+
+
+----
+Modified: lib/ParamedicAppUninstall.js|8 3
+
+Revision: c4e4db38f8382241a948117393364c30135dde80
+Author: エリス <ellis.bryan@gmail.com>
+Date: 26/04/2019 12:25:47
+Message:
+Updated the iOS Target Chooser #MsgLength=31
+
+
+----
+Modified: lib/ParamedicTargetChooser.js|4 4
+
+Revision: 6b290d0ef54d8468e6ac73eae0abb27723e2cdb8
+Author: エリス <ellis.bryan@gmail.com>
+Date: 26/04/2019 14:27:44
+Message:
+Remove periodic configs #MsgLength=24
+
+
+----
+Deleted: conf/periodic/android-4.4.config.json|0 7
+Deleted: conf/periodic/android-5.1.config.json|0 7
+Deleted: conf/periodic/android-6.0.config.json|0 7
+Deleted: conf/periodic/android-7.0.config.json|0 8
+Deleted: conf/periodic/browser-chrome.config.json|0 8
+Deleted: conf/periodic/browser-edge.config.json|0 8
+Deleted: conf/periodic/browser-firefox.config.json|0 8
+Deleted: conf/periodic/browser-safari.config.json|0 8
+Deleted: conf/periodic/ios-10.0.config.json|0 8
+Deleted: conf/periodic/ios-9.3.config.json|0 8
+Deleted: conf/periodic/local/android-4.4.config.json|0 7
+Deleted: conf/periodic/local/android-5.1.config.json|0 7
+Deleted: conf/periodic/local/browser.config.json|0 6
+Deleted: conf/periodic/local/ios-10.0.config.json|0 7
+Deleted: conf/periodic/local/ios-9.3.config.json|0 8
+Deleted: conf/periodic/local/windows-10-store.config.json|0 8
+Deleted: conf/periodic/windows-10-store.config.json|0 8
+
+Revision: 3d0f0a0737e1845003b2aeca6864aee9aef08780
+Author: エリス <ellis.bryan@gmail.com>
+Date: 26/04/2019 15:49:31
+Message:
+Update Travis CI Test Script Execution #MsgLength=39
+
+
+----
+Modified: .travis.yml|8 5
+
+Revision: f8c340e16dccdda511b57296289a2da370046339
+Author: エリス <ellis.bryan@gmail.com>
+Date: 26/04/2019 22:22:23
+Message:
+Added Android Local #MsgLength=20
+
+
+----
+Modified: .travis.yml|2 0
+
+Revision: 639a7d2e696a2c8f951a5e03429ebbdd54a37a55
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 06/05/2019 01:04:40
+Message:
+try to fix ios-deploy problem #MsgLength=29
+
+
+----
+Modified: .travis.yml|2 3
+
+Revision: 954559f41cfca41d4e6343c65eeef0f9bcc4ec31
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 06/05/2019 17:48:19
+Message:
+remove local android again #MsgLength=26
+
+
+----
+Modified: .travis.yml|0 2
+
+Revision: e463b01c040dd7c3cd70dc570e710f095681484f
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 06/05/2019 17:49:18
+Message:
+resort before_install #MsgLength=21
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 040060343de61c4103758b6b596b2e0eeac8688f
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 06/05/2019 18:41:52
+Message:
+shouldUseSauce in config #MsgLength=24
+
+
+----
+Modified: conf/pr/local/ios-10.0.config.json|1 0
+
+Revision: bc33d28cd8b3f9d607a90dad7399671e9a8059c8
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 06/05/2019 18:42:04
+Message:
+shouldUseSauce in config #MsgLength=24
+
+
+----
+Modified: conf/pr/local/ios-9.3.config.json|1 0
+
+Revision: 14acc4cb856ad33e6ba41115d2ffc31551cc82c2
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 06/05/2019 18:42:43
+Message:
+shouldUseSauce no in travis.yml any more #MsgLength=40
+
+
+----
+Modified: .travis.yml|1 7
+
+Revision: d6941fa76802aa9d7d79dd43f286cf7004ad18a6
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 06/05/2019 19:21:25
+Message:
+fix PR confs #MsgLength=13
+
+
+----
+Modified: conf/pr/android-4.4.config.json|1 0
+Modified: conf/pr/android-5.1.config.json|1 0
+Modified: conf/pr/android-6.0.config.json|1 0
+Modified: conf/pr/android-7.0.config.json|1 0
+Modified: conf/pr/android-7.1.config.json|1 0
+Modified: conf/pr/android-8.0.config.json|1 0
+Modified: conf/pr/android-8.1.config.json|1 0
+Modified: conf/pr/browser-chrome.config.json|3 2
+Modified: conf/pr/browser-edge.config.json|3 2
+Modified: conf/pr/browser-firefox.config.json|3 2
+Modified: conf/pr/browser-safari.config.json|3 2
+Modified: conf/pr/ios-10.0.config.json|3 2
+Modified: conf/pr/ios-11.3.config.json|3 2
+Modified: conf/pr/ios-12.0.config.json|3 2
+Modified: conf/pr/ios-12.2.config.json|3 2
+Modified: conf/pr/local/ios-10.0.config.json|0 1
+Modified: conf/pr/local/ios-9.3.config.json|0 1
+Modified: conf/pr/windows-10-store.config.json|1 0
+
+Revision: a819c36bd973fcf5d3d6992ea87206ab032903e7
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 06/05/2019 19:22:59
+Message:
+remove duplicate `npm install -g ios-deploy` #MsgLength=45
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 7543da8646a32c7704c29d829bb1c0eed698f6a7
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 06/05/2019 19:56:24
+Message:
+add back local browser build #MsgLength=29
+
+
+----
+Modified: .travis.yml|1 0
+
+Revision: f4f7c151af7464bde121275e90cc2c8814a16a57
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 06/05/2019 20:18:13
+Message:
+run local browser on macOS as well #MsgLength=35
+
+
+----
+Modified: .travis.yml|1 0
+
+Revision: 445ec91708743003603439510f87e5d917e5baf6
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 06/05/2019 20:35:47
+Message:
+try iPhone-XR for local iOS #MsgLength=28
+
+
+----
+Modified: conf/pr/local/ios-10.0.config.json|1 1
+
+
+Revision: abfdf6537568ea8856379b097cfd77969285f784
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 08/05/2019 04:39:53
+Message:
+eslint fix #MsgLength=10
+
+
+----
+Modified: lib/ParamedicSauceLabs.js|1 1
+
+Revision: 1b056056e8929da2c1992ae9b383980044832145
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 08/05/2019 19:06:54
+Message:
+Make Travis CI more copy-able to plugins (#137) #MsgLength=169
+
+
+----
+Modified: .travis.yml|24 4
+
+Revision: 6e1c5bf9f7db6c0a43b386f9396c7b0edfa2b708
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 08/05/2019 23:37:27
+Message:
+move comment #MsgLength=12
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 7fc5bca873b537653ba78fb38bd6a514823252eb
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 10/05/2019 01:30:27
+Message:
+trigger build #MsgLength=13
+
+
+----
+Modified: README.md|1 0
+
+Revision: b06ca5eefd3037381f7279b4ddeaa16c00be395e
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 10/05/2019 04:33:11
+Message:
+Remove unsupported SauceLabs iOS simulators (iOS 9.3 and 10) (#140) #MsgLength=129
+
+
+----
+Modified: .travis.yml|0 2
+Deleted: conf/pr/ios-10.0.config.json|0 9
+Deleted: conf/pr/ios-9.3.config.json|0 8
+
+Revision: 0a0d7777584198481da6c80782db4327991e64ed
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 10/05/2019 22:02:32
+Message:
+CI: Output variables in Travis (#147) #MsgLength=39
+
+
+----
+Modified: .travis.yml|9 1
+
+Revision: e5c371d8b7176b6b9fd58cbce87aeb1e64d1b708
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 11/05/2019 02:25:57
+Message:
+ADDITIONAL_TESTS_DIR (to replace TEST_DIR) (#143) #MsgLength=215
+
+
+----
+Modified: .travis.yml|11 3
+Added: spec/testable-plugin/tests/foo/package.json|10 0
+
+Revision: d0c7c92dbaae4796f9c460192e11df96db64933e
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 24/05/2019 20:15:00
+Message:
+Remove Android 4.4 that is not available on SauceLabs any more (#153) #MsgLength=71
+
+
+----
+Modified: .travis.yml|0 2
+
+Revision: 21bf9e559e3c8c4a568691865ee2adc36f782c78
+Author: Ken Naito <fine14r3@gmail.com>
+Date: 24/05/2019 23:22:11
+Message:
+execute launching app and waiting results in parallel (#152) #MsgLength=799
+
+
+----
+Modified: lib/paramedic.js|36 27
+
+Revision: ba49a5d2302d825367a23d2a3c10f826e0d59cc0
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 28/05/2019 01:29:24
+Message:
+more explicit comment: SAUCE_ACCESS_KEY #MsgLength=39
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 5168e6571e33d5d041a72f3e839c1ee46bda85cc
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 31/05/2019 18:55:58
+Message:
+CI, Saucelabs: Add Android 9 Emulator (#155) #MsgLength=104
+
+
+----
+Modified: .travis.yml|2 0
+Added: conf/pr/android-9.0.config.json|9 0
+
+Revision: a9f377b4a2fef4fa74c50446850795b67ec0b92b
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/06/2019 04:10:10
+Message:
+Fix AppiumRunner getPackagePath bug (#156) #MsgLength=44
+
+
+----
+Modified: lib/appium/AppiumRunner.js|1 1
+
+Revision: ab6bbb4466e3b021d274fde6d22bfd9c88aa5dde
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/06/2019 05:15:28
+Message:
+Upgrade Travis from Node 6 to Node 8 #MsgLength=36
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 182124374a12b34b206c34511a942ab020d49a7e
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/06/2019 05:44:37
+Message:
+fix: really take the last webview context (instead of first) #MsgLength=114
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|1 0
+
+Revision: 16877acc101f959f9c3579bc4b67968bf276a82c
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/06/2019 05:59:20
+Message:
+feat: upgrade sauceAppiumVersion to 1.13.0 for iOS 12.2 #MsgLength=55
+
+
+----
+Modified: conf/pr/ios-12.2.config.json|1 1
+
+Revision: 224c026ddd6317b63fb019d656fa05ca3ee6e5a7
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/06/2019 17:18:11
+Message:
+refactor: Better (and less confusing) pollForResults error message prefix #MsgLength=73
+
+
+----
+Modified: lib/ParamedicSauceLabs.js|2 2
+
+Revision: b584b024139725b2062168114d84bbc28fd9668a
+Author: エリス <erisu@users.noreply.github.com>
+Date: 29/06/2019 18:04:53
+Message:
+refactor: fetch target (simulator) with execa (#159) #MsgLength=54
+
+
+----
+Modified: lib/paramedic.js|29 30
+Modified: lib/utils/utilities.js|18 8
+Modified: package-lock.json|68 2
+Modified: package.json|1 0
+
+Revision: a3026ba7a1b153b7552e4db9a7f5ee8a17ee0323
+Author: エリス <erisu@users.noreply.github.com>
+Date: 29/06/2019 18:24:58
+Message:
+fix: appium with proper udid & app path (#161) #MsgLength=191
+
+
+----
+Modified: lib/ParamedicTargetChooser.js|2 1
+Modified: lib/appium/AppiumRunner.js|6 4
+Modified: lib/paramedic.js|1 1
+Modified: lib/utils/utilities.js|30 10
+
+Revision: da2770f7303c0decb2d6350cc099521db466a924
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 29/06/2019 19:20:26
+Message:
+feat: Appium "Test" (#151) #MsgLength=135
+
+
+----
+Modified: lib/appium/AppiumRunner.js|1 0
+Modified: lib/appium/helpers/wdHelper.js|2 1
+Added: spec/testable-plugin/appium-tests/common/common.spec.js|103 0
+Modified: spec/testable-plugin/plugin.xml|1 1
+
+Revision: 3df79b10a518560dd0e478582c7fe3bafad5160d
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 01/07/2019 16:37:12
+Message:
+feat: Additional logging to better structure generated output (#171) #MsgLength=187
+
+
+----
+Modified: lib/LocalServer.js|5 0
+Modified: lib/ParamedicApp.js|6 0
+Modified: lib/ParamedicConfig.js|4 0
+Modified: lib/ParamedicSauceLabs.js|3 0
+Modified: lib/paramedic.js|27 1
+
+Revision: f233020b79369a67e105ff87c39f3473728c78ad
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 01/07/2019 22:24:16
+Message:
+ci: node 12 (#174) #MsgLength=66
+
+
+----
+Modified: .travis.yml|2 2
+Modified: package.json|1 1
+
+Revision: 9045995173665952b1809d88f680b2c54664353f
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 23:30:06
+Message:
+ci: updates Node.js versions (#198) #MsgLength=37
+
+
+----
+Modified: .travis.yml|9 8
+Modified: appveyor.yml|13 4
+
+Revision: d8f0450c1bafec3a0105a9fba48e4e28a688206a
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:43:30
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Added: CONTRIBUTING.md|37 0
+
+Revision: 62801d8ec9f0a11d0df7994701fec759f9a0399c
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:37:34
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: 1e59494e5bcf52a6275c15010c76c458dbdbeb79
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/07/2020 18:57:24
+Message:
+breaking: use latest android platform & development tools  (#201) #MsgLength=151
+
+
+----
+Modified: .travis.yml|2 2
+Modified: conf/pr/android-4.4.config.json|1 1
+Modified: conf/pr/android-5.1.config.json|1 1
+Modified: conf/pr/android-6.0.config.json|1 1
+Modified: conf/pr/android-7.0.config.json|1 1
+Modified: conf/pr/android-7.1.config.json|1 1
+Modified: conf/pr/android-8.0.config.json|1 1
+Modified: conf/pr/android-8.1.config.json|1 1
+Modified: conf/pr/android-9.0.config.json|1 1
+Modified: conf/pr/local/android-4.4.config.json|1 1
+Modified: conf/pr/local/android-5.1.config.json|1 1
+
+Revision: f9135d458def156543313b156a38e1e42441b998
+Author: Tim Brust <github@timbrust.de>
+Date: 26/08/2020 22:26:52
+Message:
+ci(travis): removes obsolete key and adds license header (#204) #MsgLength=65
+
+
+----
+Modified: .travis.yml|16 1
+
+Revision: 1533aa63b4430b946a05b917aa8cc9862b22fe70
+Author: エリス <erisu@users.noreply.github.com>
+Date: 27/08/2020 00:26:35
+Message:
+breaking: use latest platform & development tools (#200) #MsgLength=181
+
+
+----
+Modified: .travis.yml|1 1
+Modified: conf/pr/browser-chrome.config.json|1 1
+Modified: conf/pr/browser-edge.config.json|1 1
+Modified: conf/pr/browser-firefox.config.json|1 1
+Modified: conf/pr/browser-safari.config.json|1 1
+Modified: conf/pr/ios-11.3.config.json|1 1
+Modified: conf/pr/ios-12.0.config.json|1 1
+Modified: conf/pr/ios-12.2.config.json|1 1
+Modified: conf/pr/local/browser.config.json|1 1
+Modified: conf/pr/local/ios-10.0.config.json|2 2
+Modified: conf/pr/local/ios-9.3.config.json|1 1
+Modified: conf/pr/local/windows-10-store.config.json|1 1
+Modified: conf/pr/windows-10-store.config.json|1 1
+Modified: sample-config/.paramedic.config.js|1 1
+
+Revision: cfdb5b6c07385dcc3fa95d9634e18ba738a39061
+Author: Norman Breau <norman@normanbreau.com>
+Date: 05/08/2020 10:39:27
+Message:
+feat: android 10 configs #MsgLength=25
+
+
+----
+Modified: .travis.yml|2 0
+Added: conf/pr/android-10.0.config.json|9 0
+
+
+Revision: d3c6e7b3cec3997ffaad33d20d0a66d8c1f2b0df
+Author: Tim Brust <github@timbrust.de>
+Date: 28/08/2020 20:32:45
+Message:
+chore: remove local Android 4.4 config #MsgLength=38
+
+
+----
+Deleted: conf/pr/local/android-4.4.config.json|0 7
+
+Revision: fcd875ccde8d9c1cc69f7146d28e00d145a8516c
+Author: Tim Brust <github@timbrust.de>
+Date: 28/08/2020 20:43:50
+Message:
+chore: remove Android 4.4 config (#205) #MsgLength=86
+
+
+----
+Deleted: conf/pr/android-4.4.config.json|0 8
+
+Revision: 5465099f23cec4d2e64e10f5cc23794e4b289e92
+Author: エリス <erisu@users.noreply.github.com>
+Date: 01/09/2020 22:22:49
+Message:
+tmp: use cordova-plugin-test-framework master repo (#209) #MsgLength=59
+
+
+----
+Modified: lib/ParamedicApp.js|1 1
+
+Revision: 480f2912430c18e79960caefa37467dd19baae29
+Author: Tim Brust <github@timbrust.de>
+Date: 01/09/2020 23:06:29
+Message:
+build(deps): upgrade in-range dependencies to their latest version (#211) #MsgLength=75
+
+
+----
+Modified: package-lock.json|2116 1120
+Modified: package.json|8 8
+
+Revision: 5e3231cd7af9c7ed338088fb3f8c0e2fe8a9f0a4
+Author: Tim Brust <github@timbrust.de>
+Date: 02/09/2020 16:23:57
+Message:
+fix(ios): remove WKWebView check (#207) #MsgLength=81
+
+
+----
+Modified: lib/ParamedicSauceLabs.js|1 10
+
+Revision: 7924664accdaf720bd41762c49c7731afc4f6b78
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 03/09/2020 18:42:35
+Message:
+(ios): add ios13 local config (#199) #MsgLength=83
+
+
+----
+Modified: .travis.yml|3 1
+Added: conf/pr/local/ios-13.6.config.json|7 0
+Modified: lib/utils/utilities.js|3 0
+
+Revision: e99fd383dbdfae8e3a07a7f4fec87c1c9c3bcce2
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 03/10/2020 03:43:13
+Message:
+chore: clean up package.json (#212) #MsgLength=139
+
+
+----
+Modified: package.json|2 4
+
+Revision: 8ca66d8b1dceb5ec003c6271733b9e064d348827
+Author: zachawilson <zachawilson@users.noreply.github.com>
+Date: 27/08/2021 10:25:14
+Message:
+feat(android): reference emulator from node_modules for cordova-android@10.x support (#214) #MsgLength=93
+
+
+----
+Modified: lib/ParamedicTargetChooser.js|4 1
+
+Revision: 95bb3b31b3d3ed367576abdd87a4e564f870fcf4
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/08/2021 15:12:39
+Message:
+feat(gh-actions): add workflow (#215) #MsgLength=929
+
+
+----
+Added: .github/workflows/android.yml|81 0
+Added: .github/workflows/chrome.yml|45 0
+Added: .github/workflows/ios.yml|53 0
+Added: conf/pr/local/android-11.config.json|7 0
+Modified: conf/pr/local/android-5.1.config.json|0 1
+Added: conf/pr/local/ios-11.4.config.json|7 0
+Modified: lib/ParamedicApp.js|23 1
+Modified: lib/ParamedicTargetChooser.js|2 2
+Modified: lib/appium/AppiumRunner.js|2 0
+Modified: lib/appium/helpers/wdHelper.js|4 1
+Modified: lib/paramedic.js|1 1
+Modified: lib/utils/utilities.js|8 3
+Modified: paramedic-plugin/package.json|3 6
+Modified: paramedic-plugin/plugin.xml|22 1
+
+Revision: 3db1b33916dbaf43856eddbea0a47cca6fb2be47
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/09/2021 21:42:43
+Message:
+feat!: bump node engine requirement >=12 (#220) #MsgLength=49
+
+
+----
+Modified: package.json|1 1
+
+Revision: bd1261972c842f61ae32d5447df39697f7c9b323
+Author: エリス <erisu@users.noreply.github.com>
+Date: 04/09/2021 01:36:07
+Message:
+ci(gh-actions): add test strategy matrix (#216) #MsgLength=49
+
+
+----
+Modified: .github/workflows/android.yml|73 16
+Modified: .github/workflows/chrome.yml|24 6
+Modified: .github/workflows/ios.yml|39 14
+Added: conf/pr/local/android-10.config.json|7 0
+Modified: conf/pr/local/android-11.config.json|1 1
+Modified: conf/pr/local/android-5.1.config.json|2 1
+Added: conf/pr/local/android-6.config.json|7 0
+Added: conf/pr/local/android-7.1.config.json|7 0
+Added: conf/pr/local/android-7.config.json|7 0
+Added: conf/pr/local/android-8.1.config.json|7 0
+Added: conf/pr/local/android-8.config.json|7 0
+Added: conf/pr/local/android-9.config.json|7 0
+Added: conf/pr/local/ios-12.x.config.json|7 0
+Added: conf/pr/local/ios-13.x.config.json|7 0
+Added: conf/pr/local/ios-14.x.config.json|7 0
+Added: paramedic-plugin/package-lock.json|63 0
+
+Revision: 87ec39026c8eeb51eab466addb41fde279d8516c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 04/09/2021 01:38:31
+Message:
+ci: remove travis & appveyor (#217) #MsgLength=37
+
+
+----
+Deleted: .travis.yml|0 140
+Modified: README.md|0 3
+Deleted: appveyor.yml|0 23
+Modified: package.json|0 2
+
+Revision: c654756fbf9036ffd1bfaa5f6ca49a90ec69be88
+Author: エリス <erisu@users.noreply.github.com>
+Date: 04/09/2021 01:40:02
+Message:
+ci(gh-actions): add status badge (#218) #MsgLength=41
+
+
+----
+Modified: README.md|4 0
+
+Revision: bd9940b658fe2cf0df3de92003fc329bfeea023e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 04/09/2021 01:41:08
+Message:
+doc: update & format readme (#219) #MsgLength=36
+
+
+----
+Modified: README.md|74 44
+
+Revision: cbd9c9b65d1f387235cee2f6991883119ec77df0
+Author: エリス <erisu@users.noreply.github.com>
+Date: 04/09/2021 02:16:59
+Message:
+feat!: upgrade eslint process w/ workflow testing (#221) #MsgLength=58
+
+
+----
+Modified: .eslintrc.yml|1 13
+Added: .github/workflows/lint.yml|56 0
+Modified: lib/LocalServer.js|1 3
+Modified: lib/ParamedicApp.js|1 1
+Modified: lib/ParamedicSauceLabs.js|6 6
+Modified: lib/ParamedicTargetChooser.js|3 3
+Modified: lib/Reporters.js|1 1
+Modified: lib/appium/AppiumRunner.js|11 10
+Modified: lib/appium/helpers/wdHelper.js|2 2
+Modified: lib/paramedic.js|3 5
+Modified: lib/utils/utilities.js|1 1
+Modified: package-lock.json|650 322
+Modified: package.json|4 10
+
+Revision: acb6f556acfe103307e5a829d7a53ddf34104ece
+Author: エリス <erisu@users.noreply.github.com>
+Date: 04/09/2021 02:35:29
+Message:
+ci: add ignore cases to run platform test (#222) #MsgLength=50
+
+
+----
+Modified: .github/workflows/android.yml|11 1
+Modified: .github/workflows/chrome.yml|11 1
+Modified: .github/workflows/ios.yml|11 1
+
+Revision: 8dfb13c1937332ff3e1c2ac56793dcb836d2f37d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/09/2021 19:56:35
+Message:
+test(paramedic-plugin): update edit-config for file plugin (#224) #MsgLength=67
+
+
+----
+Modified: paramedic-plugin/plugin.xml|4 2
+
+Revision: c92a2a09eebdad92eb39948874c30f27b0d1bd52
+Author: Norman Breau <norman@normanbreau.com>
+Date: 17/09/2021 21:20:52
+Message:
+chore: npmrc (#223) #MsgLength=21
+
+
+----
+Added: .npmrc|2 0
+
+Revision: 56445ebc1955f6f02774808d32cc6b0e32a83ead
+Author: Tim Brust <github@timbrust.de>
+Date: 16/10/2021 13:35:59
+Message:
+chore(ios): remove unsupported iOS 9 config (#208) #MsgLength=91
+
+
+----
+Deleted: conf/pr/local/ios-9.3.config.json|0 8
+
+Revision: ee7b7c398c4e07e7c8aa7b1dbd304392c844d26c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/10/2021 13:56:27
+Message:
+ci(ios): improve version matrix & pr configs (#227) #MsgLength=53
+
+
+----
+Modified: .github/workflows/ios.yml|18 4
+Modified: conf/pr/local/ios-12.x.config.json|1 1
+Modified: conf/pr/local/ios-14.x.config.json|1 1
+
+Revision: a77e7b7f4afd05c04aefd17d00d5bc10b79d542f
+Author: Tommy Goode <airdrummingfool@users.noreply.github.com>
+Date: 18/10/2021 11:10:47
+Message:
+feat(ios): add Xcode 13 & iOS 15 support (#226) #MsgLength=723
+
+
+----
+Modified: .github/workflows/ios.yml|4 0
+Added: conf/pr/local/ios-15.x.config.json|7 0
+Modified: lib/appium/helpers/wdHelper.js|4 0
+Modified: lib/utils/utilities.js|44 27
+
+Revision: 5c6bddb653f4484fc484c038d504a7b150dd3c17
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/10/2021 12:00:45
+Message:
+chore: add hacktoberfest label (#228) #MsgLength=39
+
+
+----
+Modified: .asf.yaml|18 0
+
+Revision: 86db94a0cc1b94e6f36d050d7533ed9e9b11a8b0
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/10/2021 23:03:20
+Message:
+ci(ios): add step comment for iOS 12.x testing (#229) #MsgLength=55
+
+
+----
+Modified: .github/workflows/ios.yml|5 0
+
+Revision: c394568c093b13da6a1fe69546aef0a66c21a7de
+Author: エリス <erisu@users.noreply.github.com>
+Date: 22/10/2021 20:16:18
+Message:
+dep!: update all dependencies w/ minor fixes (#230) #MsgLength=465
+
+
+----
+Modified: lib/LocalServer.js|3 2
+Modified: package-lock.json|5163 2231
+Modified: package.json|11 11
+Modified: paramedic-plugin/paramedic.js|1 1
+Modified: paramedic-plugin/socket.io.js|7 4
+
+Revision: 6b8d91691c966c0729eb6d10fb535a79c5978c28
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date: 29/04/2022 18:26:26
+Message:
+build(deps): bump async from 2.6.3 to 2.6.4 (#234) #MsgLength=555
+
+
+----
+Modified: package-lock.json|6 6
+
+Revision: d0f95a1dc850b2599e4dbe9313996b9cced41934
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date: 29/04/2022 18:26:42
+Message:
+build(deps): bump minimist from 1.2.5 to 1.2.6 (#233) #MsgLength=513
+
+
+----
+Modified: package-lock.json|6 6
+
+Revision: aacd5f73864547b4df35b11d055b4cf48a2d32fa
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date: 29/04/2022 18:52:25
+Message:
+build(deps): bump shelljs from 0.8.4 to 0.8.5 (#235) #MsgLength=582
+
+
+----
+Modified: package-lock.json|6 6
+
+Revision: 41ee44ff358e86f0df8f97d1612666c1e75d4606
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date: 29/04/2022 18:52:33
+Message:
+build(deps): bump follow-redirects from 1.14.4 to 1.14.9 (#236) #MsgLength=584
+
+
+----
+Modified: package-lock.json|6 6
+
+Revision: 674bb5795da5584cb97b21d5031054325ab9fb9b
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date: 29/04/2022 18:52:39
+Message:
+build(deps): bump plist from 3.0.4 to 3.0.5 (#237) #MsgLength=575
+
+
+----
+Modified: package-lock.json|6 6
+
+Revision: 955f6fbfb060173430b4e621788699d9c9ef5891
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date: 29/04/2022 19:36:26
+Message:
+build(deps): bump ansi-regex from 4.1.0 to 4.1.1 (#238) #MsgLength=509
+
+
+----
+Modified: package-lock.json|6 6
+
+Revision: 41ff4c3c95994b7b745500f6703013bf62729169
+Author: エリス <erisu@users.noreply.github.com>
+Date: 08/08/2022 21:49:59
+Message:
+ci(android): refactor workflow (#242) #MsgLength=245
+
+
+----
+Modified: .github/workflows/android.yml|15 26
+Added: conf/pr/local/android-12.config.json|7 0
+Added: conf/pr/local/android-12L.config.json|7 0
+
+Revision: 77f5cc885f82723d42a63b07b990d7e7f544c347
+Author: エリス <erisu@users.noreply.github.com>
+Date: 08/08/2022 21:50:36
+Message:
+ci(ios): drop macos 10.15 & iOS 12 (#241) #MsgLength=43
+
+
+----
+Modified: .github/workflows/ios.yml|3 18
+
+Revision: 0bcf4af5d160573a18f201b39bd25dcce3ccc074
+Author: エリス <erisu@users.noreply.github.com>
+Date: 11/08/2022 12:31:34
+Message:
+ci(ios): add continue-on-error flag (#244) #MsgLength=44
+
+
+----
+Modified: .github/workflows/ios.yml|1 0
+

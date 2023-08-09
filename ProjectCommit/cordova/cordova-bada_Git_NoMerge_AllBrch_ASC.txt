@@ -1,0 +1,1543 @@
+Revision: bc6f171e7c2cd67fe280e738cfe442be31fb94e2
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 10/03/2011 06:06:11
+Message:
+adding description #MsgLength=19
+
+
+----
+Added: README|1 0
+
+Revision: bc671106f3c487bdb0ead2de52f50b1f51749b2b
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 10/03/2011 06:13:05
+Message:
+adding geolocation/accelerometer/deviceinfo #MsgLength=44
+
+
+----
+Added: .badaprj|19 0
+Added: .cproject|418 0
+Added: .project|83 0
+Added: Icons/PhoneGap.png|0 0
+Added: Icons/Splash.png|0 0
+Added: Res/eng-GB.xml|5 0
+Added: Res/index.html|43 0
+Added: Res/main.js|96 0
+Added: Res/style.css|31 0
+Added: application.xml|24 0
+Added: inc/Accelerometer.h|33 0
+Added: inc/Device.h|26 0
+Added: inc/GeoLocation.h|34 0
+Added: inc/PhoneGap.h|61 0
+Added: inc/PhoneGapCommand.h|30 0
+Added: inc/WebForm.h|60 0
+Added: manifest.xml|31 0
+Added: src/Accelerometer.cpp|81 0
+Added: src/Device.cpp|64 0
+Added: src/GeoLocation.cpp|104 0
+Added: src/PhoneGap.cpp|127 0
+Added: src/PhoneGapCommand.cpp|18 0
+Added: src/PhoneGapEntry.cpp|45 0
+Added: src/WebForm.cpp|194 0
+
+Revision: 26925dd9aee4e816f31fcddf363fee0f2c446336
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 10/03/2011 06:27:38
+Message:
+adding javascript files from iphone implementation #MsgLength=51
+
+
+----
+Added: Res/javascripts/.DS_Store|0 0
+Added: Res/javascripts/core/GetFunctionName.js|69 0
+Added: Res/javascripts/core/acceleration.js|37 0
+Added: Res/javascripts/core/accelerometer.js|73 0
+Added: Res/javascripts/core/camera.js|80 0
+Added: Res/javascripts/core/compass.js|104 0
+Added: Res/javascripts/core/contact.js|424 0
+Added: Res/javascripts/core/debugconsole.js|108 0
+Added: Res/javascripts/core/device.js|31 0
+Added: Res/javascripts/core/file.js|481 0
+Added: Res/javascripts/core/geolocation.js|198 0
+Added: Res/javascripts/core/license.js|11 0
+Added: Res/javascripts/core/media.js|71 0
+Added: Res/javascripts/core/network.js|49 0
+Added: Res/javascripts/core/notification.js|79 0
+Added: Res/javascripts/core/orientation.js|67 0
+Added: Res/javascripts/core/phonegap.js.base|280 0
+Added: Res/javascripts/core/position.js|76 0
+Added: Res/javascripts/core/sms.js|23 0
+Added: Res/javascripts/core/telephony.js|19 0
+Added: Res/javascripts/plugins/README.md|3 0
+
+Revision: 1a5d4daf981f832a5c5224147f592f2cb39437ad
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 10/03/2011 07:22:23
+Message:
+adding build script for js files #MsgLength=33
+
+
+----
+Added: Res/Makefile|50 0
+Added: Res/VERSION|1 0
+Added: Res/util/yuicompressor/LICENSE|31 0
+Added: Res/util/yuicompressor/README|140 0
+Added: Res/util/yuicompressor/yuicompressor-2.4.2.jar|0 0
+
+Revision: 74d5d482b368afb1504763ec479f392fe1e077c2
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 12/03/2011 10:06:46
+Message:
+removing old sample files #MsgLength=26
+
+
+----
+Deleted: Res/index.html|0 43
+Deleted: Res/main.js|0 96
+
+Revision: 94289dd764117eb1c533c84e015e0c8bb0f63f77
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 12/03/2011 10:08:51
+Message:
+conforming to phonegap api. acceleration/geolocation should work #MsgLength=65
+
+
+----
+Added: Res/index.html|44 0
+Added: Res/main.js|98 0
+Modified: inc/Device.h|1 1
+Modified: inc/WebForm.h|1 1
+Modified: src/Accelerometer.cpp|14 1
+Modified: src/Device.cpp|8 3
+Modified: src/GeoLocation.cpp|11 7
+Modified: src/WebForm.cpp|28 30
+
+Revision: dd546d0faefe92302f2b430026c8a75de813afea
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 16/03/2011 04:14:04
+Message:
+adding phonegap-js #MsgLength=19
+
+
+----
+Added: .gitmodules|3 0
+Added: Res/phonegap-js|1 0
+
+Revision: 62eae006482eb0082bbf998a98379a21c3d0bc95
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 16/03/2011 07:25:49
+Message:
+deleting old js #MsgLength=16
+
+
+----
+Deleted: Res/javascripts/.DS_Store|0 0
+Deleted: Res/javascripts/core/GetFunctionName.js|0 69
+Deleted: Res/javascripts/core/acceleration.js|0 37
+Deleted: Res/javascripts/core/accelerometer.js|0 73
+Deleted: Res/javascripts/core/camera.js|0 80
+Deleted: Res/javascripts/core/compass.js|0 104
+Deleted: Res/javascripts/core/contact.js|0 424
+Deleted: Res/javascripts/core/debugconsole.js|0 108
+Deleted: Res/javascripts/core/device.js|0 31
+Deleted: Res/javascripts/core/file.js|0 481
+Deleted: Res/javascripts/core/geolocation.js|0 198
+Deleted: Res/javascripts/core/license.js|0 11
+Deleted: Res/javascripts/core/media.js|0 71
+Deleted: Res/javascripts/core/network.js|0 49
+Deleted: Res/javascripts/core/notification.js|0 79
+Deleted: Res/javascripts/core/orientation.js|0 67
+Deleted: Res/javascripts/core/phonegap.js.base|0 280
+Deleted: Res/javascripts/core/position.js|0 76
+Deleted: Res/javascripts/core/sms.js|0 23
+Deleted: Res/javascripts/core/telephony.js|0 19
+Deleted: Res/javascripts/plugins/README.md|0 3
+Deleted: Res/phonegap-js|0 1
+
+Revision: adda759455608d2846488ab363c3600e787b0092
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 22/03/2011 08:12:12
+Message:
+geolocation conforms to new api. adding js build file #MsgLength=54
+
+
+----
+Deleted: .gitmodules|0 3
+Deleted: Res/Makefile|0 50
+Deleted: Res/VERSION|0 1
+Modified: Res/index.html|4 4
+Modified: Res/main.js|13 2
+Added: Res/phonegap/accelerometer.js|121 0
+Added: Res/phonegap/app.js|89 0
+Added: Res/phonegap/camera.js|93 0
+Added: Res/phonegap/compass.js|115 0
+Added: Res/phonegap/contact.js|297 0
+Added: Res/phonegap/device.js|99 0
+Added: Res/phonegap/file.js|1050 0
+Added: Res/phonegap/geolocation.js|194 0
+Added: Res/phonegap/media.js|201 0
+Added: Res/phonegap/network.js|64 0
+Added: Res/phonegap/notification.js|118 0
+Added: Res/phonegap/phonegap.base.js|545 0
+Added: Res/phonegap/phonegap.bat|1 0
+Added: Res/phonegap/phonegap.js.base|866 0
+Added: Res/phonegap/position.js|84 0
+Deleted: Res/style.css|0 31
+Modified: inc/GeoLocation.h|2 0
+Modified: src/GeoLocation.cpp|47 15
+Modified: src/WebForm.cpp|7 7
+
+Revision: 3188877f1420c8dcf52cab1ba43b4428f7b1ac28
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 22/03/2011 08:15:38
+Message:
+adding new js files, deleting old/unused ones #MsgLength=46
+
+
+----
+Modified: Res/phonegap/accelerometer.js|19 23
+Deleted: Res/phonegap/app.js|0 89
+Modified: Res/phonegap/camera.js|12 11
+Deleted: Res/phonegap/compass.js|0 115
+Modified: Res/phonegap/contact.js|182 208
+Modified: Res/phonegap/device.js|10 83
+Modified: Res/phonegap/file.js|408 788
+Modified: Res/phonegap/geolocation.js|67 63
+Deleted: Res/phonegap/media.js|0 201
+Modified: Res/phonegap/network.js|13 28
+Modified: Res/phonegap/notification.js|18 76
+Deleted: Res/phonegap/phonegap.js.base|0 866
+Modified: Res/phonegap/position.js|17 39
+
+Revision: f3c3eda8f2e0eaf6e0ccfcf2efbb89ab47defb66
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 23/03/2011 08:34:55
+Message:
+added acceleration support. updated sample app/js #MsgLength=50
+
+
+----
+Modified: Res/index.html|46 33
+Modified: Res/main.js|19 4
+Modified: Res/phonegap/accelerometer.js|52 26
+Modified: Res/phonegap/phonegap.bat|1 1
+Modified: inc/Accelerometer.h|5 0
+Modified: src/Accelerometer.cpp|42 10
+
+Revision: 4712b696e3206caab3a0adea0c1896e004f498c8
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 24/03/2011 11:09:06
+Message:
+adding Network.isReachable() support #MsgLength=37
+
+
+----
+Modified: .badaprj|4 4
+Modified: Res/index.html|11 0
+Modified: Res/main.js|20 0
+Modified: Res/phonegap/network.js|9 0
+Modified: Res/phonegap/phonegap.bat|1 1
+Modified: inc/Accelerometer.h|1 1
+Modified: inc/Device.h|1 1
+Modified: inc/GeoLocation.h|1 1
+Added: inc/Network.h|40 0
+Modified: inc/WebForm.h|2 0
+Modified: manifest.xml|3 0
+Added: src/Network.cpp|103 0
+Modified: src/WebForm.cpp|5 0
+
+Revision: 1e2342e96d6973477c76e0ca6f1615d18e0cf47e
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 25/03/2011 06:44:20
+Message:
+adding error handling in network. some overall cleanup #MsgLength=55
+
+
+----
+Modified: Res/main.js|3 2
+Modified: inc/Network.h|1 1
+Modified: src/Accelerometer.cpp|3 12
+Modified: src/Device.cpp|1 6
+Modified: src/GeoLocation.cpp|4 12
+Modified: src/Network.cpp|18 15
+Modified: src/WebForm.cpp|4 4
+
+Revision: 6120dd6b6d3e8d9d1ee356b16ad1f2e9a77d4570
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 25/03/2011 07:23:37
+Message:
+updating README #MsgLength=16
+
+
+----
+Modified: README|13 1
+
+Revision: 152ea57dfb6f0f6e67d7a1bc5cc2fc1f429c4c30
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 25/03/2011 08:50:24
+Message:
+adding debug console and some global cleanup #MsgLength=45
+
+
+----
+Modified: Res/index.html|6 0
+Modified: Res/main.js|9 0
+Added: Res/phonegap/debugconsole.js|105 0
+Modified: Res/phonegap/phonegap.base.js|4 4
+Modified: Res/phonegap/phonegap.bat|1 1
+Modified: inc/Accelerometer.h|1 2
+Added: inc/DebugConsole.h|24 0
+Modified: inc/Device.h|1 1
+Modified: inc/GeoLocation.h|1 2
+Modified: inc/Network.h|1 2
+Modified: inc/PhoneGapCommand.h|2 3
+Modified: inc/WebForm.h|3 0
+Modified: src/Accelerometer.cpp|1 1
+Added: src/DebugConsole.cpp|64 0
+Modified: src/Device.cpp|1 1
+Modified: src/GeoLocation.cpp|1 1
+Modified: src/Network.cpp|1 1
+Modified: src/PhoneGapCommand.cpp|2 4
+Modified: src/WebForm.cpp|8 4
+
+Revision: b24053308e3dc7b3f9494dd8a2cf2eff3817f4f5
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 26/03/2011 02:07:35
+Message:
+better logging of objects #MsgLength=26
+
+
+----
+Modified: Res/phonegap/debugconsole.js|5 5
+Modified: src/DebugConsole.cpp|1 1
+
+Revision: 79956c931101f8c47d4061fd75de3b15db6d206e
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 26/03/2011 05:11:58
+Message:
+cleanup html/js, adding support for contacts, cleanup device stuff #MsgLength=67
+
+
+----
+Modified: Res/index.html|19 31
+Modified: Res/main.js|37 17
+Modified: Res/phonegap/contact.js|355 202
+Modified: Res/phonegap/device.js|6 7
+Modified: Res/phonegap/phonegap.base.js|1 1
+Modified: Res/phonegap/phonegap.bat|1 1
+Added: inc/Contacts.h|26 0
+Modified: inc/WebForm.h|6 1
+Modified: manifest.xml|3 0
+Added: src/Contacts.cpp|48 0
+Modified: src/Device.cpp|1 1
+Modified: src/WebForm.cpp|0 8
+
+Revision: f465567d58be80209d1df6f0d00762d24178f1c5
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 26/03/2011 08:41:12
+Message:
+adding first support for compass #MsgLength=33
+
+
+----
+Modified: Res/main.js|18 0
+Added: Res/phonegap/compass.js|55 0
+Modified: Res/phonegap/contact.js|2 2
+Added: inc/Compass.h|35 0
+Added: src/Compass.cpp|112 0
+
+Revision: 3b3c638ae3bd33f9322179dca6053f81dc9a6ac2
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 26/03/2011 08:44:56
+Message:
+next time compile before commit/push :) #MsgLength=40
+
+
+----
+Modified: inc/Compass.h|1 1
+Modified: src/Compass.cpp|3 3
+
+Revision: 95502d914f3178070906d20d0dad0be7259da17a
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 29/03/2011 06:17:23
+Message:
+adding complete compass support #MsgLength=32
+
+
+----
+Modified: Res/index.html|10 1
+Modified: Res/main.js|69 1
+Modified: Res/phonegap/compass.js|11 10
+Modified: Res/phonegap/phonegap.base.js|0 1
+Modified: Res/phonegap/phonegap.bat|1 1
+Modified: inc/WebForm.h|2 0
+Modified: src/Compass.cpp|11 7
+Modified: src/WebForm.cpp|6 0
+
+Revision: 8f6bcc6bb8e36db8f1015a670f8fb6733fc144c4
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 29/03/2011 06:25:30
+Message:
+updated README #MsgLength=15
+
+
+----
+Modified: README|11 7
+
+Revision: 2f0270fb0304dd1462bae3337bc0bb4281fabe40
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 29/03/2011 06:26:52
+Message:
+formatted README #MsgLength=17
+
+
+----
+Renamed: README.md [from README]|0 0
+
+Revision: c37001c5bd31bd7607c3e9ad2510e59a24653a8b
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 29/03/2011 09:17:34
+Message:
+adding query component and updating contact #MsgLength=44
+
+
+----
+Modified: Res/phonegap/contact.js|2 2
+Modified: Res/phonegap/phonegap.base.js|7 6
+
+Revision: c6e4fdff91952974514ec211266a8557d32928e5
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 30/03/2011 09:36:58
+Message:
+adding create contact support #MsgLength=30
+
+
+----
+Modified: Res/main.js|4 1
+Modified: Res/phonegap/contact.js|2 3
+Modified: Res/phonegap/phonegap.base.js|10 6
+Modified: inc/Contacts.h|7 2
+Modified: inc/WebForm.h|2 0
+Modified: src/Compass.cpp|0 1
+Modified: src/Contacts.cpp|47 8
+Modified: src/WebForm.cpp|5 0
+
+Revision: 9fefe49e68cfa6a714aa410c63b831af178030bb
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 02/04/2011 08:55:28
+Message:
+adding contact support names/phonenumbers/emails #MsgLength=49
+
+
+----
+Modified: Res/main.js|31 19
+Modified: Res/phonegap/contact.js|3 2
+Modified: inc/Contacts.h|15 7
+Modified: src/Contacts.cpp|192 43
+
+Revision: ed954349217e59e453781fc9a95bc2307a1f1d8b
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 02/04/2011 08:59:13
+Message:
+minor changes to contacts #MsgLength=26
+
+
+----
+Modified: src/Contacts.cpp|2 2
+
+Revision: daebb0c274397520a48c708dec94546f07fbe6ee
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 05/04/2011 05:52:06
+Message:
+finishing add contact and fixing network failure #MsgLength=49
+
+
+----
+Modified: Res/main.js|1 1
+Modified: Res/phonegap/contact.js|4 20
+Modified: inc/Contacts.h|1 1
+Modified: src/Contacts.cpp|204 15
+Modified: src/Network.cpp|1 1
+
+Revision: cc58ad1ddf75607bf2f1a9fb890c285fe05f9df3
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 05/04/2011 08:10:35
+Message:
+fixing find contacts and adding phonegap icon #MsgLength=46
+
+
+----
+Modified: Icons/PhoneGap.png|0 0
+Modified: Res/index.html|1 0
+Modified: Res/main.js|14 0
+Modified: Res/phonegap/contact.js|13 79
+Modified: inc/Contacts.h|5 0
+Modified: src/Contacts.cpp|132 30
+
+Revision: 52a8bbb1c3cd722eeeecbb9db96674b216eec94f
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 05/04/2011 09:48:27
+Message:
+a few fixes on contacts #MsgLength=24
+
+
+----
+Modified: Res/index.html|1 0
+Modified: Res/main.js|18 2
+Modified: Res/phonegap/contact.js|15 14
+Modified: inc/Contacts.h|2 0
+Modified: src/Contacts.cpp|67 13
+
+Revision: efa93d12291e6f4108967513d5ce3ab3bac7c90c
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 06/04/2011 07:41:41
+Message:
+fixing remove action #MsgLength=21
+
+
+----
+Modified: Res/main.js|9 2
+Modified: Res/phonegap/contact.js|0 1
+Modified: inc/Contacts.h|0 1
+Modified: src/Contacts.cpp|13 15
+
+Revision: bc3d1267af25486b92773430a957633e255587c8
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 07/04/2011 02:07:18
+Message:
+fixing queue issue and contact deletion #MsgLength=40
+
+
+----
+Modified: Res/main.js|3 2
+Modified: src/Contacts.cpp|3 0
+Modified: src/Device.cpp|1 1
+Modified: src/WebForm.cpp|2 3
+
+Revision: 71b90738327298753803ee37d2e788bdab808cc5
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 07/04/2011 07:50:59
+Message:
+adding dialog notifications and partial vibration support #MsgLength=58
+
+
+----
+Modified: Res/index.html|8 0
+Modified: Res/main.js|31 0
+Modified: Res/phonegap/notification.js|50 5
+Modified: Res/phonegap/phonegap.bat|1 1
+Added: inc/Notification.h|31 0
+Modified: inc/WebForm.h|2 0
+Added: src/Notification.cpp|122 0
+Modified: src/WebForm.cpp|14 9
+
+Revision: 9f9c4f9f72e057a260bef740297f06218fcfa6c9
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 13/04/2011 01:07:27
+Message:
+official manifest from bada developers #MsgLength=39
+
+
+----
+Modified: manifest.xml|40 37
+
+Revision: bee035d30a99812d2b2bb90ee562dafc232fd57a
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 13/04/2011 06:03:43
+Message:
+adding vibration and beep #MsgLength=26
+
+
+----
+Modified: .cproject|1112 116
+Modified: Res/main.js|11 3
+Modified: inc/Notification.h|4 2
+Modified: src/Notification.cpp|51 14
+Modified: src/WebForm.cpp|1 1
+
+Revision: 5b1b536fda0a514d97568e264c00a3477fcd4c65
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 13/04/2011 06:24:53
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|31 3
+
+Revision: 01cdd07bc5ccd9a7c31277ec28a5f4b2d0f776e5
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 13/04/2011 07:37:20
+Message:
+fixing accelerometer on target #MsgLength=31
+
+
+----
+Modified: Res/main.js|0 2
+Modified: Res/phonegap/accelerometer.js|7 33
+Modified: inc/Accelerometer.h|1 1
+Modified: src/Accelerometer.cpp|22 21
+Modified: src/Compass.cpp|0 1
+
+Revision: acbd40f2acb5b6782bf10f812e24210774f7e1cc
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 15/04/2011 05:39:16
+Message:
+adding mobile spec fixing some events #MsgLength=38
+
+
+----
+Added: Res/mobile-spec/.index.html.swp|0 0
+Added: Res/mobile-spec/LICENSE|21 0
+Added: Res/mobile-spec/README.md|37 0
+Added: Res/mobile-spec/index.html|37 0
+Added: Res/mobile-spec/qunit.css|215 0
+Added: Res/mobile-spec/qunit.js|1434 0
+Added: Res/mobile-spec/test-runner.js|26 0
+Added: Res/mobile-spec/tests/accelerometer.tests.js|55 0
+Added: Res/mobile-spec/tests/camera.tests.js|12 0
+Added: Res/mobile-spec/tests/capture.tests.js|76 0
+Added: Res/mobile-spec/tests/contacts.tests.js|180 0
+Added: Res/mobile-spec/tests/device.tests.js|36 0
+Added: Res/mobile-spec/tests/file.tests.js|2379 0
+Added: Res/mobile-spec/tests/geolocation.tests.js|57 0
+Added: Res/mobile-spec/tests/map.tests.js|12 0
+Added: Res/mobile-spec/tests/media.tests.js|31 0
+Added: Res/mobile-spec/tests/network.tests.js|29 0
+Added: Res/mobile-spec/tests/notification.tests.js|22 0
+Added: Res/mobile-spec/tests/orientation.tests.js|34 0
+Added: Res/mobile-spec/tests/sms.tests.js|12 0
+Added: Res/mobile-spec/tests/storage.tests.js|170 0
+Added: Res/mobile-spec/tests/system.tests.js|261 0
+Added: Res/mobile-spec/tests/telephony.tests.js|12 0
+Modified: Res/phonegap/device.js|1 1
+Deleted: Res/util/yuicompressor/LICENSE|0 31
+Deleted: Res/util/yuicompressor/README|0 140
+Deleted: Res/util/yuicompressor/yuicompressor-2.4.2.jar|0 0
+
+Revision: 1e1b65325ebdfc4ab29f00559fc3b55bea9ed9d9
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 15/04/2011 05:39:46
+Message:
+removing swap file :) #MsgLength=22
+
+
+----
+Deleted: Res/mobile-spec/.index.html.swp|0 0
+
+Revision: 63b4c079f9cc000d9a730a0f4412659d86384537
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 19/04/2011 05:17:16
+Message:
+reworking geolocation contacts and updated tests #MsgLength=49
+
+
+----
+Modified: Res/mobile-spec/tests/accelerometer.tests.js|2 2
+Modified: Res/mobile-spec/tests/contacts.tests.js|4 4
+Modified: Res/mobile-spec/tests/geolocation.tests.js|2 2
+Modified: Res/phonegap/geolocation.js|8 66
+Modified: inc/GeoLocation.h|1 1
+Modified: src/Contacts.cpp|4 3
+Modified: src/GeoLocation.cpp|24 29
+Modified: src/WebForm.cpp|1 0
+
+Revision: 5487537ce084b9b17bfe7273d47353e0aeb4c6cc
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 19/04/2011 06:44:10
+Message:
+updating network and tests #MsgLength=27
+
+
+----
+Modified: Res/mobile-spec/tests/geolocation.tests.js|1 0
+Modified: Res/mobile-spec/tests/network.tests.js|3 2
+Modified: src/Network.cpp|1 1
+Modified: src/WebForm.cpp|2 2
+
+Revision: a01e0760942d9a1b1d3c443dff077581bd43eee0
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 20/04/2011 10:14:51
+Message:
+adding camera support #MsgLength=22
+
+
+----
+Modified: Res/index.html|9 3
+Modified: Res/main.js|18 0
+Modified: Res/mobile-spec/index.html|1 0
+Modified: Res/phonegap/camera.js|1 5
+Modified: Res/phonegap/phonegap.bat|1 1
+Added: inc/Kamera.h|31 0
+Modified: inc/WebForm.h|2 0
+Added: src/Kamera.cpp|104 0
+Modified: src/WebForm.cpp|7 4
+
+Revision: bc928d18f263cf1aaa50d18f33bd005516fb5074
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 20/04/2011 10:45:06
+Message:
+adding camera to mobile-spec #MsgLength=29
+
+
+----
+Modified: Res/mobile-spec/index.html|1 0
+
+Revision: bbb7927bf6be9ede16dfdf766f54024999fcab2b
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 21/04/2011 07:46:06
+Message:
+adding version and license #MsgLength=27
+
+
+----
+Added: LICENSE|64 0
+Added: VERSION|1 0
+
+Revision: f1a8b05c388431b72d5a1b9f9b71bad932f7c868
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 29/04/2011 02:51:23
+Message:
+changing version #MsgLength=17
+
+
+----
+Modified: src/Device.cpp|1 1
+
+Revision: 3d84b665083f1b65755a50e28733df034c0a2e7c
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 20/05/2011 01:53:23
+Message:
+updating version #MsgLength=17
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 9e775e70715ca81c6d03856b39590de83156e8c8
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 07/07/2011 08:07:03
+Message:
+updating instructions #MsgLength=22
+
+
+----
+Modified: README.md|4 3
+
+Revision: 5d38dea0091a6764942bbe879bad3dcdc45dd7c2
+Author: stevengill <steve.gill@nitobi.com>
+Date: 29/06/2011 07:21:59
+Message:
+updated version #MsgLength=16
+
+
+----
+Modified: VERSION|1 1
+
+
+
+Revision: 82a6a374198d8bed38848f272a43a194c0b7a8cb
+Author: stevengill <steve.gill@nitobi.com>
+Date: 19/07/2011 08:58:24
+Message:
+updated version #MsgLength=16
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 8c86f69bda60fabf5e09c19213c9695c36430839
+Author: stevengill <steve.gill@nitobi.com>
+Date: 29/07/2011 15:00:01
+Message:
+updated version #MsgLength=16
+
+
+----
+Modified: VERSION|1 1
+
+Revision: e60813988b422b6391a28966ea8d8d0c652dec63
+Author: stevengill <steve.gill@nitobi.com>
+Date: 01/10/2011 07:48:42
+Message:
+updated version to 1.1.0 #MsgLength=25
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 74e3f3d066101f253e21e207a17b63a597981c28
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 24/01/2012 08:07:31
+Message:
+Updating phonegap version #MsgLength=26
+
+
+----
+Modified: src/Device.cpp|1 1
+
+Revision: bb2803e2498a641116778249d29d4d1294025905
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 28/01/2012 05:07:32
+Message:
+ignoring unsed files #MsgLength=21
+
+
+----
+Added: .gitignore|1 0
+
+Revision: 916f0afbdf918929c7c50342e7596398a6f33d33
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 28/01/2012 05:12:00
+Message:
+upating version 1.4.0rc #MsgLength=24
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 27af3cf076dc8b30a9e52e9f6677773982fd98ce
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 31/01/2012 08:08:59
+Message:
+updating to 1.4.0 #MsgLength=18
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 009f6318dbf716d0b9db49c0b7ceacd0bb743d3b
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 02/02/2012 04:44:58
+Message:
+updating Device and VERSION to 1.4.1 #MsgLength=37
+
+
+----
+Modified: VERSION|1 1
+Modified: src/Device.cpp|1 1
+
+Revision: 06a6095c4ed2fed3028d9beebde8ead7b247f0fb
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 09/02/2012 08:22:19
+Message:
+CB-219 Rename PhoneGap to Cordova #MsgLength=34
+
+
+----
+Modified: .project|1 1
+Modified: inc/Accelerometer.h|2 2
+Modified: inc/Compass.h|2 2
+Modified: inc/Contacts.h|2 2
+Renamed: inc/Cordova.h [from inc/PhoneGap.h]|7 7
+Renamed: inc/CordovaCommand.h [from inc/PhoneGapCommand.h]|8 8
+Modified: inc/DebugConsole.h|2 2
+Modified: inc/Device.h|2 2
+Modified: inc/GeoLocation.h|2 2
+Modified: inc/Kamera.h|2 2
+Modified: inc/Network.h|2 2
+Modified: inc/Notification.h|2 2
+Modified: inc/WebForm.h|2 2
+Modified: src/Accelerometer.cpp|1 1
+Modified: src/Compass.cpp|1 1
+Modified: src/Contacts.cpp|1 1
+Renamed: src/Cordova.cpp [from src/PhoneGap.cpp]|13 13
+Renamed: src/CordovaCommand.cpp [from src/PhoneGapCommand.cpp]|5 5
+Renamed: src/CordovaEntry.cpp [from src/PhoneGapEntry.cpp]|2 2
+Modified: src/DebugConsole.cpp|1 1
+Modified: src/Device.cpp|1 1
+Modified: src/GeoLocation.cpp|1 1
+Modified: src/Kamera.cpp|1 1
+Modified: src/Network.cpp|1 1
+Modified: src/Notification.cpp|1 1
+Modified: src/WebForm.cpp|23 23
+
+Revision: 4d0b46b91e6b7aed0acb304ef971b3aecdff0370
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 03/03/2012 08:33:00
+Message:
+updated t 1.5.0 #MsgLength=16
+
+
+----
+Deleted: LICENSE|0 64
+Modified: VERSION|1 1
+
+Revision: 9fa91dee8a236954f95439c6a76a5300277bdb58
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 24/03/2012 05:36:46
+Message:
+tagging 1.6.0rc1 #MsgLength=17
+
+
+----
+Modified: VERSION|1 1
+Modified: src/Device.cpp|1 1
+
+Revision: a7ea36dee150f27aace558e3c93e15024a9c0f4b
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 29/03/2012 02:19:44
+Message:
+CB-405 updating README.rd #MsgLength=26
+
+
+----
+Modified: README.md|4 2
+
+Revision: d3ab5427236abd53027517e15610037ec4b4de83
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 29/03/2012 02:50:37
+Message:
+more renaming #MsgLength=14
+
+
+----
+Added: LICENSE|202 0
+Modified: README.md|1 1
+Renamed: Res/cordova/accelerometer.js [from Res/phonegap/accelerometer.js]|6 6
+Renamed: Res/cordova/camera.js [from Res/phonegap/camera.js]|3 3
+Renamed: Res/cordova/compass.js [from Res/phonegap/compass.js]|5 5
+Renamed: Res/cordova/contact.js [from Res/phonegap/contact.js]|9 9
+Renamed: Res/cordova/cordova.base.js [from Res/phonegap/phonegap.base.js]|108 108
+Added: Res/cordova/cordova.bat|1 0
+Renamed: Res/cordova/debugconsole.js [from Res/phonegap/debugconsole.js]|7 7
+Renamed: Res/cordova/device.js [from Res/phonegap/device.js]|3 3
+Renamed: Res/cordova/file.js [from Res/phonegap/file.js]|6 6
+Renamed: Res/cordova/geolocation.js [from Res/phonegap/geolocation.js]|14 14
+Renamed: Res/cordova/network.js [from Res/phonegap/network.js]|3 3
+Renamed: Res/cordova/notification.js [from Res/phonegap/notification.js]|6 6
+Renamed: Res/cordova/position.js [from Res/phonegap/position.js]|1 1
+Deleted: Res/phonegap/phonegap.bat|0 1
+Modified: src/Accelerometer.cpp|3 3
+Modified: src/Compass.cpp|3 3
+Modified: src/Contacts.cpp|3 3
+Modified: src/DebugConsole.cpp|1 1
+Modified: src/Device.cpp|1 1
+Modified: src/GeoLocation.cpp|3 3
+Modified: src/Kamera.cpp|1 1
+Modified: src/Network.cpp|1 1
+Modified: src/Notification.cpp|3 3
+Modified: src/WebForm.cpp|8 8
+
+Revision: 6ddd9bfb53d375534373381bee7ef3d42f205540
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/04/2012 05:28:33
+Message:
+changing VERSION to 1.6.0 #MsgLength=26
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 5b5363d779e1e3aceaf25761c58b5635f15363e5
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 12/04/2012 03:14:25
+Message:
+adding NOTICE file #MsgLength=19
+
+
+----
+Added: NOTICE|5 0
+
+Revision: 9ca9d919c912ee04fb5e07c8dd07ba7a99af8714
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 12/04/2012 06:22:37
+Message:
+fixing callbacks #MsgLength=17
+
+
+----
+Modified: src/Accelerometer.cpp|3 3
+Modified: src/Compass.cpp|3 3
+Modified: src/Contacts.cpp|6 6
+Modified: src/Cordova.cpp|1 1
+Modified: src/GeoLocation.cpp|6 6
+Modified: src/Kamera.cpp|4 4
+Modified: src/Network.cpp|2 2
+Modified: src/Notification.cpp|10 10
+Modified: src/WebForm.cpp|6 6
+
+Revision: f727b2efbb0674e16e344445c36fd6a0f8a31e88
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 12/04/2012 06:22:56
+Message:
+fixing sample app #MsgLength=18
+
+
+----
+Modified: Res/index.html|1 1
+Modified: Res/main.js|3 3
+
+Revision: 3ee9a5ac0993f03e7a3e456a1bdd02c09148a59f
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 12/04/2012 06:23:24
+Message:
+adding cordova.js to avoid users generating it #MsgLength=47
+
+
+----
+Added: Res/cordova/cordova.js|1649 0
+
+Revision: 0da38596deda1b80e16ba87671f8c55db3c1b35c
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 13/04/2012 07:27:31
+Message:
+updating bada project parameters #MsgLength=33
+
+
+----
+Modified: .badaprj|4 4
+Modified: .cproject|2 2
+Modified: .project|1 1
+Deleted: Res/mobile-spec/LICENSE|0 21
+Deleted: Res/mobile-spec/README.md|0 37
+Deleted: Res/mobile-spec/index.html|0 39
+Deleted: Res/mobile-spec/qunit.css|0 215
+Deleted: Res/mobile-spec/qunit.js|0 1434
+Deleted: Res/mobile-spec/test-runner.js|0 26
+Deleted: Res/mobile-spec/tests/accelerometer.tests.js|0 55
+Deleted: Res/mobile-spec/tests/camera.tests.js|0 12
+Deleted: Res/mobile-spec/tests/capture.tests.js|0 76
+Deleted: Res/mobile-spec/tests/contacts.tests.js|0 180
+Deleted: Res/mobile-spec/tests/device.tests.js|0 36
+Deleted: Res/mobile-spec/tests/file.tests.js|0 2379
+Deleted: Res/mobile-spec/tests/geolocation.tests.js|0 58
+Deleted: Res/mobile-spec/tests/map.tests.js|0 12
+Deleted: Res/mobile-spec/tests/media.tests.js|0 31
+Deleted: Res/mobile-spec/tests/network.tests.js|0 30
+Deleted: Res/mobile-spec/tests/notification.tests.js|0 22
+Deleted: Res/mobile-spec/tests/orientation.tests.js|0 34
+Deleted: Res/mobile-spec/tests/sms.tests.js|0 12
+Deleted: Res/mobile-spec/tests/storage.tests.js|0 170
+Deleted: Res/mobile-spec/tests/system.tests.js|0 261
+Deleted: Res/mobile-spec/tests/telephony.tests.js|0 12
+
+Revision: aaf13491d9d4de6a2138fa87077bc0821726c6a5
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 13/04/2012 07:29:10
+Message:
+adding artwork and removing old phonegap references #MsgLength=52
+
+
+----
+Added: Icons/Cordova.png|0 0
+Added: Icons/Cordova_Splash.png|0 0
+Deleted: Icons/PhoneGap.png|0 0
+Deleted: Icons/Splash.png|0 0
+Added: Res/images/cordova_logo_normal_dark.png|0 0
+Modified: Res/index.html|2 2
+Modified: Res/main.js|1 1
+Modified: application.xml|5 5
+
+Revision: 65adb6270934873695ec8e2ae7b06d173b27b3bf
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 13/04/2012 07:30:12
+Message:
+CB-4 adding Apache Source Headers #MsgLength=34
+
+
+----
+Modified: inc/Accelerometer.h|18 1
+Modified: inc/Compass.h|18 1
+Modified: inc/Contacts.h|18 1
+Modified: inc/CordovaCommand.h|18 1
+Modified: inc/DebugConsole.h|18 1
+Modified: inc/Device.h|18 1
+Modified: inc/GeoLocation.h|18 1
+Modified: inc/Kamera.h|19 1
+Modified: inc/Network.h|18 1
+Modified: inc/Notification.h|18 1
+Modified: inc/WebForm.h|19 0
+Modified: src/Accelerometer.cpp|18 1
+Modified: src/Compass.cpp|18 1
+Modified: src/Contacts.cpp|18 1
+Modified: src/Cordova.cpp|17 5
+Modified: src/CordovaCommand.cpp|18 1
+Modified: src/CordovaEntry.cpp|17 2
+Modified: src/DebugConsole.cpp|18 1
+Modified: src/Device.cpp|18 1
+Modified: src/GeoLocation.cpp|18 1
+Modified: src/Kamera.cpp|18 1
+Modified: src/Network.cpp|18 1
+Modified: src/Notification.cpp|18 1
+Modified: src/WebForm.cpp|19 0
+
+Revision: 1be7f088f0646ac76f11cad179f74057875c1c5d
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 13/04/2012 07:45:45
+Message:
+fixing network problem #MsgLength=23
+
+
+----
+Modified: Res/main.js|1 0
+Modified: src/Network.cpp|1 1
+
+Revision: 9e1d6ebfff31aa690176c57e824fee1f4649b410
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 19/04/2012 05:30:05
+Message:
+updating version to 1.6.1 #MsgLength=26
+
+
+----
+Modified: VERSION|1 1
+Modified: src/Device.cpp|1 1
+
+Revision: ff9b99bc5a224f08493356b8aabf1190455fb84a
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 24/04/2012 02:38:09
+Message:
+updating version to 1.7.0rc1 #MsgLength=29
+
+
+----
+Modified: VERSION|1 1
+Modified: src/Device.cpp|1 1
+
+Revision: 1edff69a0f199e21ebc7c1b11175949897c121bc
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 01/05/2012 05:59:33
+Message:
+updating version to 1.7.0 #MsgLength=26
+
+
+----
+Modified: VERSION|1 2
+Modified: src/Device.cpp|1 1
+
+Revision: 47b5bf3919a8c7bd9ff02b0d2b12d44d8cf63c69
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 06/05/2012 20:38:01
+Message:
+updating apache licenses with apache rat #MsgLength=41
+
+
+----
+Modified: Res/cordova/accelerometer.js|20 6
+Modified: Res/cordova/camera.js|19 7
+Modified: Res/cordova/compass.js|21 0
+Modified: Res/cordova/contact.js|18 5
+Modified: Res/cordova/cordova.base.js|19 7
+Modified: Res/cordova/cordova.bat|20 0
+Modified: Res/cordova/cordova.js|19 7
+Modified: Res/cordova/debugconsole.js|21 0
+Modified: Res/cordova/device.js|21 0
+Modified: Res/cordova/file.js|19 7
+Modified: Res/cordova/geolocation.js|19 7
+Modified: Res/cordova/network.js|19 7
+Modified: Res/cordova/notification.js|19 7
+Modified: Res/cordova/position.js|19 7
+Modified: Res/eng-GB.xml|26 5
+Modified: Res/index.html|108 87
+Modified: Res/main.js|390 369
+Modified: application.xml|45 24
+Modified: inc/Cordova.h|82 61
+Modified: manifest.xml|22 1
+
+Revision: 03adecf5a74cbfde00c98e03a8b734201ceaba5b
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 12/06/2012 05:20:12
+Message:
+CB-900 using org.apache.cordova namespace #MsgLength=42
+
+
+----
+Modified: Res/cordova/accelerometer.js|3 3
+Modified: Res/cordova/camera.js|1 1
+Modified: Res/cordova/compass.js|3 3
+Modified: Res/cordova/contact.js|6 6
+Modified: Res/cordova/cordova.js|24 24
+Modified: Res/cordova/debugconsole.js|3 3
+Modified: Res/cordova/geolocation.js|3 3
+Modified: Res/cordova/network.js|1 1
+Modified: Res/cordova/notification.js|4 4
+Modified: src/Accelerometer.cpp|3 3
+Modified: src/Compass.cpp|3 3
+Modified: src/Contacts.cpp|3 3
+Modified: src/DebugConsole.cpp|1 1
+Modified: src/GeoLocation.cpp|3 3
+Modified: src/Kamera.cpp|1 1
+Modified: src/Network.cpp|1 1
+Modified: src/Notification.cpp|3 3
+Modified: src/WebForm.cpp|8 8
+
+Revision: 213374b6db3c8a351e80c1ee8110ffc016845df3
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 26/05/2012 01:12:42
+Message:
+updating VERSION for 1.2 #MsgLength=25
+
+
+----
+Modified: VERSION|1 1
+
+Revision: ed9755eff035cd8471826e7218e39eb4ecab857f
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 26/05/2012 01:12:56
+Message:
+updating Device version #MsgLength=24
+
+
+----
+Modified: src/Device.cpp|1 1
+
+Revision: 02fff8b6d4d7a8505c2449499eb13f8395990fe6
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 06/06/2012 06:10:32
+Message:
+updating version to 1.8.0 #MsgLength=26
+
+
+----
+Modified: VERSION|1 1
+
+
+Revision: 1c11e751f3f15c786a4da414a4059b4bb237fc26
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 13/06/2012 05:35:01
+Message:
+updating version to 1.8.1 #MsgLength=26
+
+
+----
+Modified: VERSION|1 1
+Modified: src/Device.cpp|1 1
+
+Revision: 3eaedc0cbf5179603efca595601ecc12f1f0b5f5
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 22/06/2012 10:33:13
+Message:
+updating version #MsgLength=17
+
+
+----
+Modified: VERSION|1 1
+Modified: src/Device.cpp|1 1
+
+Revision: 60d3d72b6d9d24688d1ccea910d0ea737a24eb6a
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 30/06/2012 04:37:09
+Message:
+updating version to 1.9.0 #MsgLength=26
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 3f9a146232050e1bfea17b5acf31193746124267
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 14/07/2012 06:03:04
+Message:
+updating VERSION to 2.0.0rc1 #MsgLength=29
+
+
+----
+Modified: VERSION|1 1
+Modified: src/Device.cpp|1 1
+
+Revision: 7707bf8d31320b7daa159a0493ebffb29e2c5ed7
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 12/09/2012 09:01:16
+Message:
+updating device version #MsgLength=24
+
+
+----
+Modified: src/Device.cpp|1 1
+
+Revision: 72e9625e8ba053bdbd352cfac2167a8690735d42
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 24/08/2012 09:19:40
+Message:
+updating VERSION #MsgLength=17
+
+
+----
+Modified: VERSION|1 1
+Modified: src/Device.cpp|1 1
+
+Revision: b8ff808a6e3232e550cdd465978402c132160bd5
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 04/09/2012 12:56:32
+Message:
+updating version file #MsgLength=22
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 1d3b2cae5c45f87a0a278ab64883ffbc62cbcf97
+Author: Michael Brooks <michael@michaelbrooks.ca>
+Date: 31/08/2012 06:32:23
+Message:
+[#1306] Update PhoneGap references to Apache Cordova. #MsgLength=54
+
+
+----
+Modified: Res/index.html|1 1
+Modified: Res/main.js|2 2
+
+
+
+Revision: fbce43f38ce95775f2fa4d60950261f690c9c421
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 12/09/2012 09:02:01
+Message:
+updating VERSION file #MsgLength=22
+
+
+----
+Modified: VERSION|1 1
+
+Revision: e815027d93f8adb6c97ba7c7b482dc611452b3a9
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 16/10/2012 06:19:17
+Message:
+bumping version #MsgLength=16
+
+
+----
+Modified: VERSION|1 1
+Modified: src/Device.cpp|1 1
+
+Revision: 32d818550bd7817b13785281b19da0a2751bf7ff
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 25/10/2012 03:53:58
+Message:
+updating version to 2.2.0rc2 #MsgLength=29
+
+
+----
+Modified: VERSION|1 1
+
+Revision: cac1ac1baeb47c8d21f71c30fbda00a9f8a260b8
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 01/11/2012 06:16:17
+Message:
+updated version to 2.2.0 #MsgLength=25
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 5f4590e77edbd530662863c7efa89a8b48135976
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 27/11/2012 05:56:27
+Message:
+updating VERSION #MsgLength=17
+
+
+----
+Modified: VERSION|1 1
+Modified: src/Device.cpp|1 1
+
+Revision: ae910bcd8a73ee3ac75b7c60575fbd257c813980
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/12/2012 06:49:35
+Message:
+updating VERSION file #MsgLength=22
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 5f76b8336c3323e9e6344203dc5554e8274f53ec
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 03/01/2013 14:15:16
+Message:
+updating VERSION #MsgLength=17
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 603ce18cca529aa0b92fd071a7e5cad55f1f7439
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 22/01/2013 06:29:59
+Message:
+updating version #MsgLength=17
+
+
+----
+Modified: VERSION|1 1
+Modified: src/Device.cpp|1 1
+
+Revision: 434e5ed6e3637c718f5e56f5516948dff1169a65
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 05/02/2013 06:05:19
+Message:
+updating VERSION #MsgLength=17
+
+
+----
+Modified: VERSION|1 1
+
+Revision: cfcd8a8150129d0911e3851d776db6de0dea76b9
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 20/02/2013 08:32:16
+Message:
+updating Device.cpp #MsgLength=20
+
+
+----
+Modified: src/Device.cpp|1 1
+
+Revision: 46efcece124e266dfa969c5bf9711634120cfd61
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 20/02/2013 15:24:32
+Message:
+Updating Bada JS, VERSION to 2.5.0rc1 #MsgLength=38
+
+
+----
+Modified: VERSION|1 1
+Modified: src/Device.cpp|1 1
+
+Revision: 0462f96de1b72bab62a0cb853cf8763a5caafd96
+Author: Josh Soref <jsoref@rim.com>
+Date: 11/09/2012 03:38:37
+Message:
+Spelling: print [Code Change] #MsgLength=30
+
+
+----
+Modified: Res/main.js|1 1
+
+Revision: cc7c3a651b217b72c747f5ea5e28f14cc3118d04
+Author: Josh Soref <jsoref@rim.com>
+Date: 11/09/2012 03:35:53
+Message:
+Spelling: existing #MsgLength=19
+
+
+----
+Modified: src/Contacts.cpp|1 1
+
+Revision: f7bd2a6ff98a21c54dc532ddc2497f166ccdab17
+Author: Josh Soref <jsoref@rim.com>
+Date: 11/09/2012 03:37:02
+Message:
+Spelling: occurred #MsgLength=19
+
+
+----
+Modified: Res/main.js|4 4
+
+Revision: f23f031b825cc770ae63a3a3635cac7a931273a0
+Author: Josh Soref <jsoref@rim.com>
+Date: 11/09/2012 03:37:39
+Message:
+Spelling: writing #MsgLength=18
+
+
+----
+Modified: README.md|1 1
+
+Revision: 30558c4955fb443515bbbd302d4ddadcd17fa6fd
+Author: Josh Soref <jsoref@rim.com>
+Date: 11/09/2012 03:43:54
+Message:
+Spelling: reachability #MsgLength=23
+
+
+----
+Modified: Res/cordova/cordova.js|1 1
+Modified: Res/cordova/network.js|1 1
+
+Revision: 3f9b8e142f27442571028b4075801487eb6b3e9c
+Author: Josh Soref <jsoref@rim.com>
+Date: 11/09/2012 03:44:35
+Message:
+Spelling: running #MsgLength=18
+
+
+----
+Modified: README.md|1 1
+
+Revision: a022be0ae90a7b10b558f1e567c2b74ed00c89e3
+Author: Josh Soref <jsoref@rim.com>
+Date: 11/09/2012 03:32:16
+Message:
+Brand: Bada #MsgLength=12
+
+
+----
+Modified: Res/cordova/contact.js|2 2
+Modified: Res/cordova/cordova.js|2 2
+Modified: src/CordovaEntry.cpp|1 1
+
+
+Revision: 03c285b706eb664d1787c81679a7965d5c0d833e
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 27/02/2013 10:13:53
+Message:
+Updating Bada JS, VERSION to 2.5.0 #MsgLength=35
+
+
+----
+Modified: VERSION|1 1
+Modified: src/Device.cpp|1 1
+
+Revision: 458ac390a18927b7ec64eaab663351b101684143
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 22/03/2013 06:25:19
+Message:
+Updating Bada JS, VERSION to 2.6.0rc1 #MsgLength=38
+
+
+----
+Modified: VERSION|1 1
+Modified: src/Device.cpp|1 1
+
+Revision: 07d35517f19edc0b6a3cecf5d84231b5be665e3c
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 20:56:08
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: c8fc9065779b2443d253ff7c4021bb41afea6c72
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 31/05/2014 00:10:10
+Message:
+CB-6818 Add license for CONTRIBUTING.md #MsgLength=40
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: a985b6e27fcfc3dd2eac0fccc41ec573d71fa90c
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 31/05/2014 03:17:31
+Message:
+CB-6830 Add missing license #MsgLength=28
+
+
+----
+Modified: README.md|21 0
+
+Revision: 954520b02569844164005ce200e4ce1257f895bd
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/10/2016 13:32:08
+Message:
+Add github pull request template #MsgLength=33
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|22 0
+
+Revision: 908a67d8905ba753d6f1c2a0b9173590b076c603
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 17/04/2019 01:17:09
+Message:
+deprecation notice #MsgLength=18
+
+
+----
+Modified: README.md|13 1
+

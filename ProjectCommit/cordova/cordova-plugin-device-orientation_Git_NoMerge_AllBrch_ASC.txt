@@ -1,0 +1,2467 @@
+Revision: dbc800081633ab4e31091d847b644ba4c4e2c53e
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/04/2013 07:53:58
+Message:
+added files for device-orientation #MsgLength=35
+
+
+----
+Added: README.md|4 0
+Added: docs/compass.clearWatch.md|113 0
+Added: docs/compass.clearWatchFilter.md|23 0
+Added: docs/compass.getCurrentHeading.md|98 0
+Added: docs/compass.md|81 0
+Added: docs/compass.watchHeading.md|134 0
+Added: docs/compass.watchHeadingFilter.md|23 0
+Added: docs/compassError/compassError.md|40 0
+Added: docs/parameters/compassError.md|30 0
+Added: docs/parameters/compassHeading.md|48 0
+Added: docs/parameters/compassOptions.md|45 0
+Added: docs/parameters/compassSuccess.md|40 0
+Added: plugin.xml|32 0
+Added: src/android/CompassListener.java|296 0
+Added: src/ios/CDVLocation.h|104 0
+Added: src/ios/CDVLocation.m|623 0
+Added: test/autotest/html/HtmlReporter.js|101 0
+Added: test/autotest/html/HtmlReporterHelpers.js|60 0
+Added: test/autotest/html/ReporterView.js|164 0
+Added: test/autotest/html/SpecView.js|79 0
+Added: test/autotest/html/SuiteView.js|22 0
+Added: test/autotest/html/TrivialReporter.js|192 0
+Added: test/autotest/index.html|59 0
+Added: test/autotest/jasmine.css|81 0
+Added: test/autotest/jasmine.js|2530 0
+Added: test/autotest/pages/.DS_Store|0 0
+Added: test/autotest/pages/compass.html|71 0
+Added: test/autotest/test-runner.js|62 0
+Added: test/autotest/tests/.DS_Store|0 0
+Added: test/autotest/tests/compass.tests.js|98 0
+Added: test/compass/index.html|150 0
+Added: test/cordova.js|71 0
+Added: test/index.html|65 0
+Added: test/main.js|163 0
+Added: test/master.css|164 0
+
+Revision: 7354fa1fc134a987dcf0a0f8085bfca0bcb0a649
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/04/2013 08:28:10
+Message:
+updated plugin.xml #MsgLength=19
+
+
+----
+Modified: plugin.xml|10 12
+
+Revision: 1c60bb25ac02ab2ed50c6df36c8c6da3f797a9ba
+Author: hermwong <herm.wong@gmail.com>
+Date: 09/05/2013 07:06:11
+Message:
+added compass js files from Cordova-JS #MsgLength=39
+
+
+----
+Modified: plugin.xml|12 0
+Added: www/CompassError.js|34 0
+Added: www/CompassHeading.js|29 0
+Added: www/compass.js|102 0
+
+Revision: 12d6ac7a5117d96a53e0c148225c5a0927eaf92d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 11/05/2013 08:56:13
+Message:
+updated plugin, renamed class to compass from location #MsgLength=55
+
+
+----
+Modified: plugin.xml|7 6
+Renamed: src/ios/CDVCompass.h [from src/ios/CDVLocation.h]|1 1
+Renamed: src/ios/CDVCompass.m [from src/ios/CDVLocation.m]|3 3
+
+Revision: a81a1431d0fbcc2cfb4f600d707b34e7c89eee31
+Author: hermwong <herm.wong@gmail.com>
+Date: 14/05/2013 04:26:23
+Message:
+update require path to CompassHeading & CompassError classes #MsgLength=61
+
+
+----
+Modified: www/compass.js|2 2
+
+Revision: 7617ea07ebf4d28ca325edbfd4c1b19b51691d60
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/05/2013 04:58:25
+Message:
+updated plugin.xml to use feature #MsgLength=34
+
+
+----
+Modified: plugin.xml|11 7
+
+Revision: 0fc2021692378b938a56e9acbb7763355b0a8611
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 15/05/2013 01:51:18
+Message:
+updated to work with plugman #MsgLength=29
+
+
+----
+Modified: www/compass.js|2 2
+
+
+Revision: f4cbc82e92c6672f9bb99f00fc5a17569c951f9f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 16/05/2013 06:32:24
+Message:
+updated plugin.xml #MsgLength=19
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 361bbb1041e6fc07369518b46c49883d30fa6122
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 16/05/2013 07:43:56
+Message:
+updated js reference in tests #MsgLength=30
+
+
+----
+Modified: test/cordova.js|1 1
+
+Revision: 0c1b24328c572634c8e8f4fb2a478eef2bc79c0e
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 16/05/2013 09:04:14
+Message:
+updated reference in CDVCompass.m #MsgLength=34
+
+
+----
+Modified: src/ios/CDVCompass.m|1 1
+
+Revision: 01a6372ead06fd5950851958a8545b124a778763
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 17/05/2013 04:39:56
+Message:
+added tests #MsgLength=12
+
+
+----
+Modified: test/autotest/html/SpecView.js|1 1
+Modified: test/autotest/index.html|1 1
+Modified: test/autotest/pages/compass.html|1 1
+Modified: test/compass/index.html|1 1
+Renamed: test/cordova-incl.js [from test/cordova.js]|5 6
+Modified: test/index.html|2 2
+
+Revision: 721a71b002cde6975453b135622bb7dc0e2befbb
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 18/05/2013 07:14:57
+Message:
+added git ignore #MsgLength=17
+
+
+----
+Added: .gitignore|1 0
+
+Revision: c6ed20b2b8edf4eea5f0536721a5ee45f0b6c732
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 22/05/2013 07:35:13
+Message:
+first pass at wp7 support #MsgLength=26
+
+
+----
+Modified: plugin.xml|12 1
+Added: src/wp7/Compass.cs|362 0
+
+Revision: efbacd5e3b77a90cb68be6299522367ffb9d9f42
+Author: hermwong <herm.wong@gmail.com>
+Date: 11/06/2013 06:48:42
+Message:
+added Android's location permissions to config file #MsgLength=52
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 1d7c6a44aafa1b83617d84fa44bc581a76998bfc
+Author: hermwong <herm.wong@gmail.com>
+Date: 11/06/2013 07:34:39
+Message:
+wrapped android permissions in <config-file> #MsgLength=45
+
+
+----
+Modified: plugin.xml|14 12
+
+Revision: 8bfda8b279627656d7776210c67d01f2b1ee81d2
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/06/2013 07:56:38
+Message:
+ripped out geolocation code #MsgLength=28
+
+
+----
+Modified: src/ios/CDVCompass.h|1 37
+Modified: src/ios/CDVCompass.m|4 321
+
+Revision: 9a27a88ba3a4e514d48c00f127ceebb2d1d4773d
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 15/06/2013 05:03:26
+Message:
+[CB-3686] added sensor capability for wp7 #MsgLength=42
+
+
+----
+Modified: plugin.xml|4 0
+
+
+Revision: 86bfd871de0638cb58081b98861d6619a31c2b46
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:56
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|2 3
+
+Revision: 852cd73cfb1b0bd596ac7ed6d49ae7eaf8baadda
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 07:46:10
+Message:
+Fix require paths that were broken by plugin id changes #MsgLength=56
+
+
+----
+Modified: docs/compass.clearWatchFilter.md|1 1
+Modified: src/ios/CDVCompass.m|1 1
+Modified: www/compass.js|2 2
+
+Revision: b6987b335a317681c7fe0b2dc7cd420a597704f2
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 06:08:45
+Message:
+[CB-4115] remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|16 1
+Renamed: src/wp/Compass.cs [from src/wp7/Compass.cs]|0 0
+
+Revision: b065436059c6696ecb9ae199cac74ea3f3264490
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 02:54:25
+Message:
+[CB-4131] Use relative require paths in compass plugin. #MsgLength=56
+
+
+----
+Modified: www/compass.js|2 2
+
+Revision: 83816f21cf8cb8e3991db07f2fac8ec01127169e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: src/android/CompassListener.java|4 4
+
+Revision: a36ea72996004415d6c48810e700c876bc49e150
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:16:33
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Modified: .gitignore|23 1
+
+Revision: 75ae8b8156b59e72b3ed8f981e8ff6ca6e2c63c0
+Author: lorinbeer <lorin@adobe.com>
+Date: 17/07/2013 05:48:05
+Message:
+[CB-3687] compass functionality is supported by cordova common js and the blackberry10 runtime. No native functionality exists, and compass works as expected. README added. #MsgLength=173
+
+
+----
+Added: src/blackberry10/README.md|3 0
+
+Revision: a522c97336d859a57c89d11a2dde7cb9a5771b15
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|3 0
+Modified: src/blackberry10/README.md|22 0
+
+Revision: 6f403ad9309e7a3d815f959a5ace7fdb18ecae38
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:32:09
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 4102b0863fdf0a37189e30a9a35c1833e2104070
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 01/08/2013 05:54:02
+Message:
+[Windows8][CB-4439] Add windows8 support #MsgLength=41
+
+
+----
+Modified: plugin.xml|7 0
+Added: src/windows8/CompassProxy.js|65 0
+
+Revision: 54b3b10e1be6df863b9d0fc91189655561374fe3
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: 62415f61d1ab2056ce75db18ac5c7fce5a550289
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: e30280f14a4b649ac60ae1ef41e5c90547b54020
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 06:19:33
+Message:
+[plugin.xml] adding android namespace #MsgLength=38
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: cea69bda539cdb68a901d568eefc2a19ea19a888
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 02:55:53
+Message:
+updated nametag and readme #MsgLength=27
+
+
+----
+Modified: README.md|1 1
+
+Revision: b0e5515b21bbd152c430625f49b91e607c02a736
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 03:03:02
+Message:
+updated namespace #MsgLength=18
+
+
+----
+Modified: plugin.xml|4 4
+
+Revision: 8477e4b1aa09a69aa37f1b3a398701010d96a354
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-device-orientation to its own Java package. #MsgLength=74
+
+
+----
+Modified: plugin.xml|2 2
+Modified: src/android/CompassListener.java|1 1
+
+Revision: 1aec35e55ced981cfad0ebfc3bf81729144c214b
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 20/08/2013 05:15:19
+Message:
+[windows8] require/use CompassError #MsgLength=36
+
+
+----
+Modified: src/windows8/CompassProxy.js|8 4
+
+Revision: 000ca836f881af93b28edca90545d585df2af184
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 20/08/2013 05:36:07
+Message:
+[windows8] just pass back the code to fail, so we don't get nested error codes : code.code = 20 #MsgLength=96
+
+
+----
+Modified: src/windows8/CompassProxy.js|5 6
+
+Revision: 6f408923aa8dab07fbb28a8cc1c7b26699632bb3
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 05:41:23
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 79b0908ac595f6c776ed9b8bbe71b70c8f854977
+Author: Kristoffer Flores <kflores@blackberry.com>
+Date: 17/08/2013 00:13:55
+Message:
+[CB-3687] Added compass plugin support for blackberry10 #MsgLength=56
+
+
+----
+Modified: plugin.xml|16 8
+Deleted: src/blackberry10/README.md|0 25
+Added: src/blackberry10/index.js|33 0
+
+Revision: ed81f95effb6bb2dbbb6af55707c81f97620b77e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+[CB-4752] Updated version and changelog #MsgLength=40
+
+
+----
+Added: CHANGELOG.md|25 0
+Modified: plugin.xml|1 1
+
+Revision: f5c4c49c3709d15e4b74407d50b56014b53572fd
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:21
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 2b461284af5a3007562217dacfdc100c7f9c89bd
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: b98dd172fbf89e151bcff9c68f6c282922756a36
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 24/09/2013 16:33:49
+Message:
+[windows8] commandProxy was moved #MsgLength=34
+
+
+----
+Modified: src/windows8/CompassProxy.js|1 1
+
+Revision: 35d45d40d7c71099990e252271e27205fe5685d4
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 25/09/2013 03:19:29
+Message:
+[CB-4900] Windows 8 Compass plugin have extra define breaks plugin loading #MsgLength=75
+
+
+----
+Modified: src/windows8/CompassProxy.js|22 23
+
+Revision: 9c17364cb97730320ffe040c5e1ee238fd4125cc
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 22:04:02
+Message:
+CB-4889 renaming core in CompassProxy #MsgLength=38
+
+
+----
+Modified: src/windows8/CompassProxy.js|3 3
+
+
+Revision: d863af77758d0d58f4bdb71cc0ba2f30b9d24228
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:12:47
+Message:
+CB-4889 renaming id #MsgLength=20
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 1870cd96e18b6ba20adf4d8afe0f8576c35a8dba
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 08:18:25
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.3.1 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: plugin.xml|1 1
+
+Revision: 804e2477dd95d020aacac13784206f776c72b287
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:13
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: adac3919823479dc0c1d2810771a23e6f2b9cfb7
+Author: hermwong <herm.wong@gmail.com>
+Date: 22/10/2013 07:03:06
+Message:
+CB-5128: added repo + issue tag to plugin.xml for device orientation plugin #MsgLength=76
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: ac6b46c4a161c2479b02b830a9a24c59e01062f7
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 24/10/2013 20:23:35
+Message:
+orientation plugin #MsgLength=19
+
+
+----
+Modified: plugin.xml|13 0
+Added: src/firefoxos/compass.js|23 0
+
+
+Revision: 5a6fd27c28b86b66f1433231f2b9d20b02797c99
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 02:43:16
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.3.2 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|6 1
+Modified: plugin.xml|1 1
+
+Revision: 10f5438343446ef294a601638510c6f0a6bd7d8e
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:14
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: b622be522e85661957a76174b74bfa0d8f6b85a3
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 02:24:25
+Message:
+1. Added amazon-fireos platform. 2. Change to use amazon-fireos as a platform if user agent string contains 'cordova-amazon-fireos'. #MsgLength=133
+
+
+----
+Modified: plugin.xml|16 0
+Modified: test/cordova-incl.js|4 2
+
+Revision: bc3767fa1104c0584720b0c7875bef90fd8954ad
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 20/11/2013 23:53:11
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|6 0
+
+
+Revision: 1280a6726094278c996eba6681d7cae99e3b157c
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:30
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.3.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: 3ee13261c56b78adba102eb749bc5dd3e4b0009e
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:03
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f0ae9c80399d96b57f7a6348fd51b97a3be60917
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/compass.clearWatch.md|0 113
+Deleted: docs/compass.clearWatchFilter.md|0 23
+Deleted: docs/compass.getCurrentHeading.md|0 98
+Deleted: docs/compass.md|0 81
+Deleted: docs/compass.watchHeading.md|0 134
+Deleted: docs/compass.watchHeadingFilter.md|0 23
+Deleted: docs/compassError/compassError.md|0 40
+Deleted: docs/parameters/compassError.md|0 30
+Deleted: docs/parameters/compassHeading.md|0 48
+Deleted: docs/parameters/compassOptions.md|0 45
+Deleted: docs/parameters/compassSuccess.md|0 40
+
+Revision: 958ada72d79d1ec5499ac3b84934ec829d220aa1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 03:10:28
+Message:
+CB-5658 Add doc.index.md for Compass plugin #MsgLength=44
+
+
+----
+Modified: README.md|20 5
+Added: doc/index.md|184 0
+
+Revision: 1f630cf202242e9b62ee1973a414f31942f7aaa1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:02
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: e6378bcc742d7597ebb0d7cf07000814ad597762
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.3.4 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: 81b03b226c703bed19f4e7c0fbcb1497c9ae0534
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 0b8777f8a1eea376d67fe3a284fd3b31c2368b76
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:21
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 59
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/compass.html|0 71
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/.DS_Store|0 0
+Deleted: test/autotest/tests/compass.tests.js|0 98
+Deleted: test/compass/index.html|0 150
+Deleted: test/cordova-incl.js|0 72
+Deleted: test/index.html|0 65
+Deleted: test/main.js|0 163
+Deleted: test/master.css|0 164
+
+Revision: 0cad0fe934cc882932048828249095babdf0fe00
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 13/01/2014 20:56:03
+Message:
+FFOS info added #MsgLength=16
+
+
+----
+Modified: doc/index.md|11 0
+
+Revision: 67d8b4b8c0263ecb3e66f5b60a2381e19661e57e
+Author: Salvatore Iovene <salvatore@iovene.com>
+Date: 03/12/2013 17:29:47
+Message:
+Add support for Tizen. #MsgLength=23
+
+
+----
+Modified: plugin.xml|6 0
+Added: src/tizen/CompassProxy.js|36 0
+
+
+Revision: d02710c79f9501573d6f8ace980554e7410f31ae
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 20/01/2014 22:03:45
+Message:
+[ubuntu] add missing files #MsgLength=27
+
+
+----
+Added: src/ubuntu/compass.cpp|75 0
+Added: src/ubuntu/compass.h|58 0
+
+Revision: fa701983e998d02d9cc133d4f834f169e7e95f41
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 21/01/2014 19:32:53
+Message:
+[ubuntu] request sensors permission #MsgLength=36
+
+
+----
+Modified: plugin.xml|5 0
+
+
+Revision: 06b6df742cc48d592232ca00b69d7f3c6188cdba
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:58
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.3.5 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+
+Revision: 7f9f4ed82d4598a8e66076be8708fb2d6b23c8cd
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:30
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 4b274afec64710e0899a7828d81c37362bff53aa
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+Revision: d315f3b64471cd0de90b6d10d7943f893c97da0f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2014 07:10:48
+Message:
+CB-6422 [windows8] use cordova/exec/proxy #MsgLength=42
+
+
+----
+Modified: src/windows8/CompassProxy.js|1 1
+
+Revision: 051ecbaa7f00e213e25ba253355082bcf77100fe
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/04/2014 05:42:03
+Message:
+CB-6381 unexpected error object [WP8] #MsgLength=38
+
+
+----
+Modified: src/wp/Compass.cs|1 1
+
+Revision: ad63475e618ce3f617e974c60365bbabfe7e97ec
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:16:55
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+Modified: src/firefoxos/compass.js|20 0
+
+Revision: b3ae1f8d975ab9d04c706b95ae07b51f0ad6b272
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 21:49:55
+Message:
+CB-6465: Add license headers to Tizen code #MsgLength=43
+
+
+----
+Modified: src/tizen/CompassProxy.js|21 0
+
+Revision: b02b21774adbf4880c99e4a9d114f29a44fe418c
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.3.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+
+Revision: f434201bf4ce6d2fd870d8faf70094c8ca3df7ca
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f01348ff4e94440bdb1f47345cb84e41beeb011d
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:23:48
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: 730f91734d12e877037c0356db6dc764c42bbff2
+Author: sgrebnov <sergei.grebnov@gmail.com>
+Date: 04/12/2013 18:52:22
+Message:
+windows8. makes getHeading callback spec compliant #MsgLength=51
+
+
+----
+Modified: src/windows8/CompassProxy.js|2 2
+
+Revision: 9bc423854aacd3cf9083b925c585f03ad79607ae
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:23:02
+Message:
+CB-6799 Add license #MsgLength=20
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: d66777a007dd36fb6859da3a2d283e2c58f24e64
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:42
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.3.7 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: e8da873ac282d850003fb201b50680cf6cbb22cb
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 996259ca6c03f5dd1ff0984976532f907e337689
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/07/2014 10:14:32
+Message:
+CB-7187 Delete unused #import of CDVShared.h #MsgLength=45
+
+
+----
+Modified: src/ios/CDVCompass.h|0 1
+Modified: src/ios/CDVCompass.m|1 12
+
+Revision: 163e63ace4d10b4ba8f6f5d4646c6956af434512
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 22/07/2014 11:01:54
+Message:
+CB-7187 ios: Add explicit dependency on CoreLocation.framework #MsgLength=63
+
+
+----
+Modified: plugin.xml|6 6
+Modified: src/ios/CDVCompass.h|1 0
+
+Revision: fa9b7f8d62cc84d923f4199cf85283557beea8c4
+Author: Willy Aguirre <marti1125@gmail.com>
+Date: 29/07/2014 11:57:48
+Message:
+update compass.js #MsgLength=18
+
+
+----
+Modified: src/firefoxos/compass.js|1 1
+
+Revision: fc8b28414f1688348c7485c2998ccf1eb376ea9d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:21
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.3.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: fd69a87bdd4c631146af42cf4c2d0da9c9bf4908
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:26
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 6e44a4a9d21ea86b4af5063c5cfa4577cf7d8ff3
+Author: Samir Silva <ssrico14@gmail.com>
+Date: 01/07/2014 02:31:36
+Message:
+[CB-6960] Port compass tests to plugin-test-framework #MsgLength=225
+
+
+----
+Added: test/tests.js|140 0
+
+Revision: 7457cba1c08cf2727f9c03eba5e376098be3c071
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 18/07/2014 04:20:25
+Message:
+CB-6960 Added manual tests #MsgLength=27
+
+
+----
+Modified: test/tests.js|159 63
+
+
+Revision: d77710f4322c0400ff030a5388702ba521f57776
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/08/2014 22:07:05
+Message:
+CB-7249cordova-plugin-device-orientation documentation translation: cordova-plugin-device-orientation #MsgLength=102
+
+
+----
+Added: doc/de/index.md|189 0
+Added: doc/es/index.md|189 0
+Added: doc/fr/index.md|189 0
+Added: doc/it/index.md|189 0
+Added: doc/ja/index.md|189 0
+Added: doc/ko/index.md|189 0
+Added: doc/pl/index.md|189 0
+Added: doc/ru/index.md|189 0
+Added: doc/zh/index.md|189 0
+
+Revision: 8baf73010e3aa4699241711411dbbc2f156c3e3f
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 30/08/2014 07:07:06
+Message:
+Add support for the browser #MsgLength=28
+
+
+----
+Modified: plugin.xml|11 0
+Added: src/browser/CompassProxy.js|45 0
+Added: src/browser/compass.js|109 0
+
+Revision: e483ccc41bcc21c8756b757c397ffad240540596
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 06/09/2014 00:56:27
+Message:
+Updated docs for browser #MsgLength=25
+
+
+----
+Modified: doc/index.md|5 0
+
+Revision: c1d79099d91561130f7bc9a1880d7634d73dc54d
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 25/07/2014 01:42:36
+Message:
+added documentation for manual tests #MsgLength=37
+
+
+----
+Modified: test/tests.js|12 4
+
+Revision: fc3837d74c6f7c92d3b7a53cd518888b031bfee1
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 03/09/2014 23:11:31
+Message:
+CB-7086 Renamed dir, added nested plugin.xml #MsgLength=103
+
+
+----
+Added: tests/plugin.xml|30 0
+Renamed: tests/tests.js [from test/tests.js]|1 1
+
+Revision: ce6ab122d337ad468715e5df27d67b3e443c2ade
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 03/09/2014 23:19:28
+Message:
+Fixed problem with watchCompass if pressed twice #MsgLength=101
+
+
+----
+Modified: tests/tests.js|3 0
+
+
+Revision: 288738286d408e98d0c49889ef8f416d8d2e36ea
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 25/07/2014 01:42:36
+Message:
+added documentation for manual tests #MsgLength=37
+
+
+----
+Modified: test/tests.js|12 4
+
+
+Revision: c1a0bf1ee5f59b8bfc2ea7461d2312dc96bae651
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 03/09/2014 23:11:31
+Message:
+CB-7086 Renamed dir, added nested plugin.xml #MsgLength=103
+
+
+----
+Added: tests/plugin.xml|30 0
+Renamed: tests/tests.js [from test/tests.js]|1 1
+
+Revision: 56654b0d8baa36ee524bd8d9122e9c836a140428
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 03/09/2014 23:19:28
+Message:
+Fixed problem with watchCompass if pressed twice #MsgLength=101
+
+
+----
+Modified: tests/tests.js|3 0
+
+
+Revision: 2cc67b162397df78ddbe497cac75865d21dfddfd
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 16/09/2014 05:25:46
+Message:
+CB-7471 cordova-plugin-device-orientation documentation translation: cordova-plugin-device-orientation #MsgLength=103
+
+
+----
+Modified: doc/de/index.md|7 2
+Modified: doc/es/index.md|6 1
+Modified: doc/fr/index.md|8 3
+Modified: doc/it/index.md|5 0
+Modified: doc/ja/index.md|7 2
+Modified: doc/ko/index.md|6 1
+Modified: doc/pl/index.md|6 1
+Modified: doc/ru/index.md|9 4
+Modified: doc/zh/index.md|12 7
+
+Revision: a09ef3c4ff052359f7a0ae366f7d18f667c3d9e2
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:40
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.3.9 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|14 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 671a20f709c7d3f24c2e74be1f41a27cc02ea685
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:01
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 9e3b8c83d681f582885c1ea64e23a1557980b06b
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:14
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: 988b17f9f43002a511d6fb80aa5c0da41986f76c
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:11:15
+Message:
+CB-7700 cordova-plugin-device-orientation documentation translation: cordova-plugin-device-orientation #MsgLength=103
+
+
+----
+Modified: doc/de/index.md|4 4
+Modified: doc/es/index.md|3 3
+Modified: doc/pl/index.md|9 9
+Modified: doc/ru/index.md|13 13
+
+Revision: 41cdaeabd5d6b25ea127875da9e914c4985908a1
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:09:52
+Message:
+CB-7977 Mention deviceready in plugin docs #MsgLength=43
+
+
+----
+Modified: doc/index.md|9 0
+
+Revision: eef90c56591daf94f7ea7264f378c80d7def093f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.3.10 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 20d1a14ee3d6bf966e687380ef009472d93d71c9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:50
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 490dc67bbe3aceee407ca04a26f313cd8c0c87b9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/01/2015 22:49:20
+Message:
+CB-8351 Use argumentForIndex rather than NSArray extension #MsgLength=59
+
+
+----
+Modified: src/ios/CDVCompass.m|2 2
+
+Revision: d8fd79b2ae8d0392247e3dba4709d2fe25206b6d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.3.11 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4d36668cb77381dde3844dbc99584218aa5f47ce
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:02
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7f813a89a1438bbdc35d5df63fbbd380a7bc1ee5
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 11/02/2015 22:48:46
+Message:
+CB-8458 Fixes false failure of test, when compass hardware is not available #MsgLength=150
+
+
+----
+Modified: tests/tests.js|17 11
+
+Revision: 3cf4e4d52be187f1b1959f69928bb48caa54e2f6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 16:06:10
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|44 0
+
+Revision: 98ee0b6aa4090f2764df236753a12ddbf2c62bd3
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:49:08
+Message:
+CB-8438 cordova-plugin-device-orientation documentation translation: cordova-plugin-device-orientation #MsgLength=103
+
+
+----
+Modified: doc/de/index.md|18 8
+Modified: doc/es/index.md|24 27
+Modified: doc/fr/index.md|20 23
+Modified: doc/it/index.md|20 10
+Modified: doc/ja/index.md|18 8
+Modified: doc/ko/index.md|20 10
+Modified: doc/pl/index.md|19 9
+Modified: doc/zh/index.md|23 13
+
+Revision: 904504f1bfa29c92ce7bf897889f261e462b656d
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 07:19:04
+Message:
+CB-8563 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|13 0
+Modified: README.md|2 0
+
+Revision: 1358eb869f6bfa803b54ad89cfd52d354252792e
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 05/03/2015 19:59:53
+Message:
+CB-8614 Fixed getCurrentHeading and watchHeading on windows platform #MsgLength=87
+
+
+----
+Modified: src/windows8/CompassProxy.js|4 21
+
+Revision: d4157035ce7786f4bb0ce06de89b304daa5b81e4
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 07/03/2015 04:13:31
+Message:
+Updated plugin to be 'windows' instead of 'windows8' #MsgLength=53
+
+
+----
+Modified: plugin.xml|3 3
+Renamed: src/windows/CompassProxy.js [from src/windows8/CompassProxy.js]|0 0
+
+Revision: 527bb316ed5aa95f4d960fb5912e7a812b2f6ff7
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 07/03/2015 04:14:57
+Message:
+force async callbacks #MsgLength=22
+
+
+----
+Modified: src/windows/CompassProxy.js|6 2
+
+Revision: b90ce09a16ddaa0a9e13061f6e1a28b1955c3267
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 13/03/2015 22:51:18
+Message:
+CB-8659: ios: 4.0.x Compatibility: Remove use of deprecated headers #MsgLength=68
+
+
+----
+Modified: src/ios/CDVCompass.m|0 1
+
+Revision: 4a3ca8a69ab1244d3a05db7fde89e18dc7659539
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 13/03/2015 22:51:36
+Message:
+CB-8659: ios: 4.0.x Compatibility: Remove use of initWebView method #MsgLength=68
+
+
+----
+Modified: src/ios/CDVCompass.m|6 10
+
+Revision: a3650729d69aae7b3202f542e5bdeecdcd309774
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:13:27
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|189 2
+Deleted: doc/index.md|0 209
+
+Revision: fe7a7e66b5af51a790f7380e4907f44c63484239
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:32:39
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: b49c4a452f55798ef9c9151e1667f301d75b82ff
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:30
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: b3bb8b279fb4f73eb7fe1fe0cf10a24253f41141
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:06:00
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: 96b1ae48e1cfe1171b786e5cd4610d4e7b14da23
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:57:55
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7e012f478848fb27a04f485a28ad4ce90124ef08
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 05:38:35
+Message:
+CB-8683 updated windows and tizen specific references of old id to new id #MsgLength=74
+
+
+----
+Modified: src/tizen/CompassProxy.js|2 2
+Modified: src/windows/CompassProxy.js|2 2
+
+Revision: 661b1a10d0293e3ffeba81a16c9d9304a1365f12
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 07:56:26
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: d4d5c366eb008df4702b3afa707e378d575d0de0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:38
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|18 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9e53561b1742142f5cb570b2a5afaf25feaf33e8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:47
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6b1f20623b06ba59d33ccc69a1102cc6acbf4ea8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:31:02
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ec0f27f4ae66126ec99b9df5cb35462d93389b99
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 56df8806424c15b9ae93ee97a95c32b4d6604a79
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:21
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d0c83f2cde672a77567195437db02d113438f3a6
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 13/05/2015 08:29:48
+Message:
+Remove console log message from test #MsgLength=37
+
+
+----
+Modified: tests/tests.js|0 1
+
+Revision: c692aecc3a8baf059848a1dec9cafc1018448eba
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 02/06/2015 23:46:35
+Message:
+fix npm md issue #MsgLength=17
+
+
+----
+Modified: README.md|16 16
+
+Revision: 6f3938451004425e3b49ee4e466d157da131dca5
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:40:07
+Message:
+CB-9128 cordova-plugin-device-orientation documentation translation: cordova-plugin-device-orientation #MsgLength=103
+
+
+----
+Added: doc/de/README.md|206 0
+Added: doc/es/README.md|206 0
+Added: doc/fr/README.md|193 0
+Added: doc/it/README.md|206 0
+Added: doc/ja/README.md|206 0
+Added: doc/ko/README.md|206 0
+Added: doc/pl/README.md|206 0
+Added: doc/zh/README.md|206 0
+
+Revision: 20ab61d22e371c1efc77401532cd4a8440be93c3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:02
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.0.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 427d49f61297f749b09b971c00dfeedc289c1809
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 124ec5540ed6fe284f65665546420ae6d35beace
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:35
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4271adb2c44bd2c2e1ed632a060f3a9500fab28f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 08:39:16
+Message:
+remove travis-ci #MsgLength=17
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 1
+
+Revision: eb976dc650d954c721967e2a26808f1cd15635c5
+Author: Tim Barham <tim.barham@microsoft.com>
+Date: 29/07/2015 13:40:06
+Message:
+CB-9426 Fix exception when using device orientation plugin on browser platform. #MsgLength=849
+
+
+----
+Modified: plugin.xml|0 4
+Deleted: src/browser/compass.js|0 109
+Modified: www/compass.js|16 1
+
+Revision: 794d5e118e9f09484628a0d270b50f5f506a9c43
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: 7bbed8e8aff7ef1275df0cce2f3752abec626428
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:50
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: 298abb9fc1c1695066c6783f7d1b8e6addd94dd5
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 28/10/2015 07:27:07
+Message:
+CB-4596 Fix timestamp to be DOMTimeStamp across the board #MsgLength=58
+
+
+----
+Modified: README.md|1 1
+Modified: src/blackberry10/index.js|1 1
+
+Revision: 9815b6fa3d18fbdb83b742d300ce52db6cf66120
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:26:58
+Message:
+add JIRA issue tracker link #MsgLength=28
+
+
+----
+Modified: README.md|2 1
+
+
+Revision: 555f6d67e8a3a0391b569fb460193e29cb01d4c6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|69 70
+
+Revision: 8b99d04d82e819f05182be07f95b866ca6269ab9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:10
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: 25636b1614dacee39adf26728dd8e7056b8edcfd
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:05
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 1.0.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5c9ca663e2db0b48566e465b2681b8be144a10c8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|43 43
+
+Revision: 7eba983017d7c993732f009181776986f5d89341
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1044045ad2c0dd736d95cefac2fb31778f2ed8d2
+Author: t1st3 <contact@tiste.org>
+Date: 07/02/2016 16:31:56
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=259
+
+
+----
+Modified: package.json|1 1
+
+Revision: 3e3145f931e26cb7954736c1393ca07ff715cb43
+Author: daserge <v-seshak@microsoft.com>
+Date: 26/02/2016 19:32:21
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Modified: .gitignore|1 1
+Added: .jshintrc|19 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/blackberry10/index.js|2 0
+Modified: src/browser/CompassProxy.js|0 2
+Modified: src/firefoxos/compass.js|3 5
+Modified: src/tizen/CompassProxy.js|1 2
+Modified: src/windows/CompassProxy.js|1 2
+Modified: tests/tests.js|20 19
+
+Revision: f2418e59687bac88245cba8fbc0f7c25434807ba
+Author: Omar Mefire <omefire@gmail.com>
+Date: 03/03/2016 04:25:48
+Message:
+Remove 'warning' emoji, as it doesn't correctly display in the docs website: http://cordova.apache.org/docs/en/dev/cordova-plugin-device-orientation/index.html #MsgLength=160
+
+
+----
+Modified: README.md|1 1
+
+Revision: 3b8d6166285ee6c5a67eef8ef00919bc0d712715
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:26
+Message:
+ Updated version and RELEASENOTES.md for release 1.0.3 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 875b55ef63f563edd21faa8709b6df27d4ea7d99
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:27
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 11135f7869134d505c1201ff825f60bd89a6e51e
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 23/04/2016 06:17:02
+Message:
+remove quirk code #MsgLength=18
+
+
+----
+Modified: src/ios/CDVCompass.m|0 2
+
+Revision: 47b5c27c809af138d5bf2376003918ef19171eff
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 23/04/2016 06:37:06
+Message:
+Removed ios quirk code documentation #MsgLength=37
+
+
+----
+Modified: README.md|0 2
+Modified: doc/de/README.md|0 2
+Modified: doc/de/index.md|0 2
+Modified: doc/es/README.md|0 2
+Modified: doc/es/index.md|0 2
+Modified: doc/fr/README.md|0 2
+Modified: doc/fr/index.md|0 2
+Modified: doc/it/README.md|0 2
+Modified: doc/it/index.md|0 2
+Modified: doc/ja/README.md|1 3
+Modified: doc/ja/index.md|0 2
+Modified: doc/ko/README.md|0 2
+Modified: doc/ko/index.md|0 2
+Modified: doc/pl/README.md|0 2
+Modified: doc/pl/index.md|0 2
+Modified: doc/ru/index.md|0 2
+Modified: doc/zh/README.md|0 2
+Modified: doc/zh/index.md|0 2
+
+Revision: f49ad6fc35c40f74a404eacf13d8a5a990380067
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 23/04/2016 06:56:21
+Message:
+This closes #16. Resolved in another commit. #MsgLength=45
+
+
+----
+
+Revision: b42306ffae02663818e1f6676b5a3d165360b98e
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:50
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: f95e56f4667fd78e19d42a809e8f5535c7cea5c8
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:53:59
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: e7c6e8af007f0b2e25ce764e3a3531ed1387f144
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 16:48:54
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|3 1
+
+Revision: dd1c66ce0d8490b297b996d0fe99b03b9cf2c8e7
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 21:42:25
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=397
+
+
+----
+Modified: package.json|7 0
+
+Revision: c3ccdbcf48b75acd056aff7276feab2407f1cb6e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:54
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 1.0.4 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|8 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 34c744dece34791974ba14948e8480fea460925b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f4cfb73fa4f26c0ee1349ceca5dba62f01a7a490
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:34:23
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=101
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: c5b4d7da064301e31582dac31f844e04aaa673a4
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 03/11/2016 18:39:18
+Message:
+CB-9179 (ios) Fixed trueHeading being always 0 #MsgLength=47
+
+
+----
+Modified: src/ios/CDVCompass.m|1 0
+Modified: tests/tests.js|81 15
+
+Revision: 4b5ead9000326e36eda4975f29e7bf9cf12bbaa4
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:44
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 1.0.5 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|136 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: cc9986030484f4720cc54dcfe0f871a883eb2819
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:07
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 165e4faaf987425f7b65576b51c42c70fc0d0996
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 18:14:01
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: 90f0270b6ba3f69bcdc4415bd2a5020b476d334d
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:44:57
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-device-orientation #MsgLength=68
+
+
+----
+Modified: RELEASENOTES.md|1 131
+
+Revision: c90692094663ebb1c4149f9c4e3c030e074eaa6c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:29:20
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 24d97ef2c95af0c4618a219f9db25a8292aba582
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 20:55:09
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=68
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|86 0
+
+Revision: 3a460dad08d477042971619dd8567db68920f671
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/01/2017 00:23:16
+Message:
+CB-12353 Corrected merges usage in plugin.xml #MsgLength=46
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: c8c3a91ed9aaababa04d3cfa158354e969c6c8a8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:26
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 1.0.6 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|110 169
+Modified: tests/plugin.xml|5 29
+
+Revision: 6ae9d88e89505ed0d4871749f8bf499ccf5db4da
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:55:59
+Message:
+Set VERSION to 1.0.7-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|169 110
+Modified: tests/plugin.xml|29 5
+
+Revision: dfa095479d0a8f3b52f72df02a149de132b8a315
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 10:12:44
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: fb8805dcc8cbabaa598ce0191042d32524bea83c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 20:33:46
+Message:
+CB-12622: Added Android 6.0 build badge to README #MsgLength=50
+
+
+----
+Modified: README.md|3 3
+
+Revision: 7af309f316f69835cd1c8b806d4edbcbdab9128d
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 03:16:11
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 1.0.7 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c2c1884e2c4b5695f9a65c2194a8a73f6755f876
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 03:16:17
+Message:
+Set VERSION to 1.0.8-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b8672651c9845cb1a30c44f4f0f3bab391d86cf3
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 03:39:04
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: 41051a2c557f9f7cbc7ad6dff5971555702f2ec1
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 18:36:54
+Message:
+CB-12847: fixed `bugs` entry in package.json. #MsgLength=46
+
+
+----
+Modified: package.json|1 1
+
+Revision: a77b4fa0a410d22a0d36edddb0cc0a603d8dea43
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 18/04/2017 16:58:25
+Message:
+CB-12667 android: Added logic for searching sensors from Samsung vendor #MsgLength=72
+
+
+----
+Modified: src/android/CompassListener.java|6 0
+
+Revision: 38d76d5974f8ab1a7252b619a235c36f136a2b74
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/06/2017 13:54:25
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Modified: .travis.yml|71 3
+
+Revision: 3fb0614e055b534e086eb237e69f047b21a9b823
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:31:07
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: edbf583f9d209be4c363504702570dc3c2128c3c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 14:58:23
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: 949c32cc50195d080f090fc305d319376a53679c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:33:54
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: c67827428b888e69c91c29a79c6d0f45ec950ce6
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 11/07/2017 01:16:24
+Message:
+CB-12667: Reset changes for searching Samsung sensors #MsgLength=54
+
+
+----
+Modified: src/android/CompassListener.java|0 6
+
+Revision: fc8d07f9629c148e5f299219dbc2f4f4a26147d1
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 31/07/2017 15:49:31
+Message:
+CB-13028 (CI) Browser builds on Travis and AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|3 2
+Modified: .travis.yml|16 0
+Modified: src/browser/CompassProxy.js|7 13
+Modified: tests/tests.js|23 14
+
+Revision: 86e3cf2758c3f9a9b6b9687b3ec0714112e6080d
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 10/06/2017 04:13:42
+Message:
+CB-12728: Device Orientation - SUNSET #MsgLength=56
+
+
+----
+Modified: README.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 27e49ef430d9c853011fb75e438fbeb5b504e539
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/09/2017 13:21:32
+Message:
+CB-13076: merged in pr. closes #39 #MsgLength=35
+
+
+----
+Modified: README.md|9 2
+
+Revision: eaf09fdd133c2212db796e23c8cab4d5ba7267cc
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 10/08/2017 08:14:32
+Message:
+CB-13076: Updated README #MsgLength=25
+
+
+----
+Modified: README.md|1 1
+
+Revision: 5a22d7ee595b66d1cd0c1471f5942cb36cbdfccb
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 10/08/2017 08:19:06
+Message:
+Updated README to point to correct issue tracker #MsgLength=49
+
+
+----
+Modified: README.md|1 1
+
+Revision: 25b07c246a92edf9d9fb50dff8b11ef1e29c054a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/09/2017 13:27:12
+Message:
+CB-13076: added deprecation notice to info tag #MsgLength=47
+
+
+----
+Modified: plugin.xml|5 0
+
+Revision: 5300be1e0b106880d52e1b9923d4ab574208ef5f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/09/2017 04:30:44
+Message:
+CB-13294 Updated version and RELEASENOTES.md for release 1.0.8 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|12 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2ed5d5e588c85ddbb718669e3dfd8d6bf5a6dc62
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/09/2017 04:31:03
+Message:
+Set VERSION to 1.0.9-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d6b3322fcb29f2c0dee6152c1733029725668ea4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/09/2017 04:51:26
+Message:
+CB-13294: Updated version to 2.0.0 for deprecation #MsgLength=51
+
+
+----
+Modified: RELEASENOTES.md|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 78bf2d736cda334d0650c6f79e5bb7f9d2f44979
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/09/2017 04:52:36
+Message:
+Set VERSION to 2.0.1-dev #MsgLength=25
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 2e9c6df041a13eb8a306521ceadee5d747580c42
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:05:22
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 6ea0e624ce670493881544c259526614c53e2de5
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 19/10/2017 04:56:30
+Message:
+Closes #19 #MsgLength=11
+
+
+----
+
+Revision: b6f834e2fe80dfd260abaf4b8511f7fb0ef0e78e
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 20/10/2017 02:05:22
+Message:
+Deprecate it #MsgLength=12
+
+
+----
+Modified: README.md|5 191
+
+Revision: afba20b1b53e69788a6bff06369efe6bbe4fee81
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:58:39
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: b8ce4ad520f3e634b7c7512cb3ceada55becab83
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 15:22:34
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: 70cbb3ec2811200274d393b8073e6f61e66750ba
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 26/03/2018 05:46:25
+Message:
+CB-14002: Fix cordovaDependencies to allow plugin install #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+
+Revision: 8b0c435a01dbfeaa96fe38216976c644a21aecd3
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 27/03/2018 05:16:55
+Message:
+CB-13766: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: 477eb2b52efbadbe6714e3f6e7e945ee6a79cc84
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/04/2018 03:51:03
+Message:
+CB-14030 Updated version and RELEASENOTES.md for release 2.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e3e0c602efed494f4ba887a495656a1cc068d363
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/04/2018 03:52:10
+Message:
+Set VERSION to 2.0.2-dev #MsgLength=25
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c49896d42a2a5b641e24f0d4824e852e9197b4bc
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:38:54
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 4f4db464dfa456c4a44ae125022ba88b02a1911e
+Author: Tim Brust <github@timbrust.de>
+Date: 25/08/2020 20:36:24
+Message:
+docs: undeprecate plugin (#54) #MsgLength=84
+
+
+----
+Modified: README.md|192 5
+
+Revision: 182f7b0752144b772ee6378fc8b68ec36a64724f
+Author: Tim Brust <github@timbrust.de>
+Date: 27/08/2020 16:58:15
+Message:
+chore(npm): adds ignore list (#55) #MsgLength=36
+
+
+----
+Added: .npmignore|2 0
+
+Revision: 4ed047f34fc1fa2b34bb7b6db8f5b26424b4e8b2
+Author: Tim Brust <github@timbrust.de>
+Date: 27/08/2020 16:59:06
+Message:
+docs: remove outdated translations (#56) #MsgLength=42
+
+
+----
+Deleted: doc/de/README.md|0 204
+Deleted: doc/de/index.md|0 202
+Deleted: doc/es/README.md|0 204
+Deleted: doc/es/index.md|0 189
+Deleted: doc/fr/README.md|0 191
+Deleted: doc/fr/index.md|0 189
+Deleted: doc/it/README.md|0 204
+Deleted: doc/it/index.md|0 202
+Deleted: doc/ja/README.md|0 204
+Deleted: doc/ja/index.md|0 202
+Deleted: doc/ko/README.md|0 204
+Deleted: doc/ko/index.md|0 202
+Deleted: doc/pl/README.md|0 204
+Deleted: doc/pl/index.md|0 202
+Deleted: doc/ru/index.md|0 192
+Deleted: doc/zh/README.md|0 204
+Deleted: doc/zh/index.md|0 202
+
+Revision: b34dd2ddd4e4ac081b0a3e72ac9cb577866d9ef6
+Author: Tim Brust <github@timbrust.de>
+Date: 27/08/2020 16:59:16
+Message:
+fix!: remove deprecated platforms (#57) #MsgLength=41
+
+
+----
+Modified: README.md|1 35
+Modified: package.json|2 16
+Modified: plugin.xml|7 92
+Deleted: src/blackberry10/index.js|0 35
+Deleted: src/firefoxos/compass.js|0 41
+Deleted: src/tizen/CompassProxy.js|0 56
+Deleted: src/ubuntu/compass.cpp|0 75
+Deleted: src/ubuntu/compass.h|0 58
+Deleted: src/wp/Compass.cs|0 362
+
+Revision: 0052dfbf90e41b905a9500032ce2508116efe099
+Author: Tim Brust <github@timbrust.de>
+Date: 27/08/2020 17:08:14
+Message:
+chore: package cleanup (#58) #MsgLength=136
+
+
+----
+Modified: package.json|3 8
+Modified: plugin.xml|3 8
+
+Revision: e7f536e4e0827658dab51d025597f007b7e5721c
+Author: Tim Brust <github@timbrust.de>
+Date: 28/08/2020 18:21:13
+Message:
+docs: update usage notice #MsgLength=106
+
+
+----
+Modified: README.md|1 3
+
+Revision: ed482427ef66c5b62f083ff0caf9d07d3af1ef3c
+Author: Tim Brust <github@timbrust.de>
+Date: 28/08/2020 19:12:09
+Message:
+chore: bump version to 3.0.0-dev (#60) #MsgLength=40
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7e1c0f57f3cc943d80985c3d181e5bcb64e573ee
+Author: Tim Brust <github@timbrust.de>
+Date: 28/08/2020 19:12:51
+Message:
+refactor(eslint): use cordova-eslint w/ fix (#61) #MsgLength=51
+
+
+----
+Added: .eslintrc.yml|23 0
+Deleted: .jshintrc|0 19
+Modified: package.json|3 3
+Modified: src/browser/CompassProxy.js|3 3
+Modified: src/windows/CompassProxy.js|8 11
+Modified: tests/tests.js|105 89
+Modified: www/CompassError.js|3 3
+Modified: www/CompassHeading.js|6 6
+Modified: www/compass.js|86 82
+
+Revision: ee05df544d7a0c7514a3303193bf9413d41cfcbe
+Author: Tim Brust <github@timbrust.de>
+Date: 28/08/2020 19:13:44
+Message:
+chore: adds package-lock file (#62) #MsgLength=37
+
+
+----
+Added: package-lock.json|1724 0
+
+Revision: c33d6f2b55093fb16004f34f2ce25d55a661af88
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:11:36
+Message:
+ci: add github actions workflow (#65) #MsgLength=39
+
+
+----
+Added: .github/workflows/android.yml|148 0
+Added: .github/workflows/chrome.yml|73 0
+Added: .github/workflows/ios.yml|88 0
+Added: .github/workflows/lint.yml|56 0
+Modified: README.md|2 0
+
+Revision: ecb2c42342f007ed35d384aa7c2ec002c7dd03df
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:59:42
+Message:
+ci: remove old ci service (#66) #MsgLength=33
+
+
+----
+Deleted: .appveyor.yml|0 28
+Deleted: .travis.yml|0 87
+Modified: README.md|0 4
+
+Revision: 74d4055ae7d8c4066fd7333e137bd9f036c13da6
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/10/2021 20:08:50
+Message:
+ci(ios): update workflow w/ iOS 15 (#67) #MsgLength=42
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: 0aa40188ff52c8efd065f277199b8c43124e4351
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/07/2022 13:40:55
+Message:
+ci(android): update java requirement for cordova-android@11 (#70) #MsgLength=67
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: c3ab80809c5c108eed24b81f23cd5ede1e235f3e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/07/2022 17:43:16
+Message:
+chore(npm): bump package-lock v2 w/ rebuild (#76) #MsgLength=51
+
+
+----
+Modified: package-lock.json|2928 478
+
+Revision: ec37a37d180dcac51b8519d95a8a2b7ef0def11f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/08/2022 23:41:51
+Message:
+ci: sync workflow with paramedic (#77) #MsgLength=40
+
+
+----
+Modified: .github/workflows/android.yml|12 22
+Modified: .github/workflows/ios.yml|4 13
+

@@ -1,0 +1,2016 @@
+Revision: 82699d9be9135f177a5b79732b83e14fdf19e97b
+Author: Michael Brooks <michael@michaelbrooks.ca>
+Date: 05/06/2012 02:34:18
+Message:
+Add README #MsgLength=11
+
+
+----
+Added: README.md|3 0
+
+Revision: cef079e25977c741167baee8eacc64c8de312436
+Author: Brian LeRoux <brian@westcoastlogic.com>
+Date: 13/06/2012 07:17:38
+Message:
+added some clarity for those seeking it #MsgLength=40
+
+
+----
+Modified: README.md|2 0
+
+Revision: 836d958eb2c5f2081b362ddca3883a45522dcbef
+Author: Michael Brooks <michael@michaelbrooks.ca>
+Date: 13/07/2012 02:22:50
+Message:
+Add .gitignore. #MsgLength=16
+
+
+----
+Added: .gitignore|2 0
+
+Revision: e81dcb2b93cb651c745aafc0c5eb8f097af12700
+Author: Michael Brooks <michael@michaelbrooks.ca>
+Date: 13/07/2012 02:28:10
+Message:
+Update README.md with commit instructions. #MsgLength=43
+
+
+----
+Modified: README.md|13 1
+
+Revision: 68340ce435cf0f6f2e70a1a60b46bd9fbd4af84a
+Author: Michael Brooks <michael@michaelbrooks.ca>
+Date: 13/07/2012 02:33:40
+Message:
+Update README.md with project organization. #MsgLength=44
+
+
+----
+Modified: README.md|10 5
+
+Revision: efbd0eddd7a070d4431c104b34c5f30c5d6717ca
+Author: hermwong <herm.wong@gmail.com>
+Date: 14/03/2013 04:30:24
+Message:
+remove default README #MsgLength=22
+
+
+----
+Deleted: README.md|0 22
+
+Revision: 8b8d4f6c58b6eedeadfc1a4d7a9e0a482b433670
+Author: hermwong <herm.wong@gmail.com>
+Date: 14/03/2013 05:01:59
+Message:
+restore default README #MsgLength=23
+
+
+----
+Added: README.md|22 0
+
+Revision: 7a089f42e8ffc143aa4c20b3b9999e4a054065b2
+Author: Michael Brooks <michael@michaelbrooks.ca>
+Date: 02/08/2012 00:46:52
+Message:
+Update README.md with migration steps. #MsgLength=39
+
+
+----
+Modified: README.md|22 2
+
+Revision: 6984ce603dfcf1bccfbe4e5b8c22ba4b995355db
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 29/10/2013 22:20:32
+Message:
+Adds an oppinionated plugin testing method #MsgLength=43
+
+
+----
+Added: cordova-app-test-harness/LICENSE|191 0
+Added: cordova-app-test-harness/README.md|0 0
+Added: cordova-app-test-harness/www/assets/jasmine-2.0.0-rc3/boot.js|105 0
+Added: cordova-app-test-harness/www/assets/jasmine-2.0.0-rc3/jasmine-html.js|356 0
+Added: cordova-app-test-harness/www/assets/jasmine-2.0.0-rc3/jasmine.css|55 0
+Added: cordova-app-test-harness/www/assets/jasmine-2.0.0-rc3/jasmine.js|2391 0
+Added: cordova-app-test-harness/www/assets/jasmine-2.0.0-rc3/jasmine_favicon.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/.gitignore|6 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/Gruntfile.js|277 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/LICENSE|203 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/NOTICE|193 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/README.md|89 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/contributors.txt|7 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-desktop-dark.css|3450 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-desktop-dark.min.css|1 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-desktop-light.css|3450 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-desktop-light.min.css|1 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-mobile-dark.css|3700 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-mobile-dark.min.css|1 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-mobile-light.css|3700 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-mobile-light.min.css|1 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/css/brackets.css|69 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/css/main.css|508 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/css/theme.css|28 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.eot|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.svg|242 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.ttf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.woff|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.eot|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.svg|243 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.ttf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.woff|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.eot|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.svg|243 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.ttf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.woff|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.eot|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.svg|243 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.ttf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.woff|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/stylesheet.css|57 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/index.html|3167 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/js/main.js|44 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/js/rainbow-custom.min.js|11 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/js/rainbow.linenumbers.min.js|2 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/topcoat-desktop-light.html|3167 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/topcoat-mobile-dark.html|3417 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/topcoat-mobile-light.html|3417 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/build/styleguide.css|495 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/build/styleguide.js|10 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/tasks/checkchromiumsrc.js|13 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/tasks/telemetrygentest.js|98 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/tasks/telemetrysubmit.js|101 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/README.md|79 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/bin/runAll.py|200 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/bin/runAll.sh|105 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/csvToJSON.js|56 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/extractFileName.js|12 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/settings.js|31 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/submitData.js|61 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/perf/page_sets/topcoat/topcoat_telemetry.jade|17 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/LICENSE.txt|93 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceCodePro-Black.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceCodePro-Bold.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceCodePro-ExtraLight.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceCodePro-Light.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceCodePro-Regular.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceCodePro-Semibold.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-Black.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-BlackIt.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-Bold.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-BoldIt.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-ExtraLight.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-ExtraLightIt.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-It.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-Light.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-LightIt.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-Regular.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-Semibold.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-SemiboldIt.otf|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/avatar.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/bg_dark.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/breadcrumb.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/checkbox_checked.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/checkbox_checked_dark.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/checkbox_unchecked.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/checkbox_unchecked_dark.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/checkmark_bw.svg|15 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/dark-combo-box-bg.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/dark-combo-box-bg2x.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/dark-grips.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/dark-sprites2x.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/dialog-zone-bg.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/drop-down-triangle-dark.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/drop-down-triangle.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/hamburger_bw.svg|1912 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/hamburger_dark.svg|1935 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/hamburger_light.svg|1936 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/light-combo-box-bg.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/light-combo-box-bg2x.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/light-grips.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/light-sprites2x.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/pop-up-triangle-dark.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/pop-up-triangle.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/search-bg.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/search-bg2x.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/search.svg|11 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/search_bw.svg|16 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/search_dark.svg|16 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/search_light.svg|11 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/spinner.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/img/spinner2x.png|0 0
+Added: cordova-app-test-harness/www/assets/topcoat-0.7.5/package.json|85 0
+Added: cordova-app-test-harness/www/config.xml|15 0
+Added: cordova-app-test-harness/www/index.html|19 0
+Added: cordova-app-test-harness/www/main.css|17 0
+Added: cordova-app-test-harness/www/main.js|148 0
+Added: cordova-plugin-test-framework/LICENSE|191 0
+Added: cordova-plugin-test-framework/README.md|0 0
+Added: cordova-plugin-test-framework/plugin.xml|15 0
+Added: cordova-plugin-test-framework/www/test.js|151 0
+
+Revision: b7670a674ad99e8ebc04e57ad7caf1b471162776
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 30/10/2013 03:24:22
+Message:
+Moving HTML reporter out of plugin and into app #MsgLength=48
+
+
+----
+Modified: cordova-app-test-harness/www/main.js|34 9
+Modified: cordova-plugin-test-framework/www/test.js|4 36
+
+Revision: 17fef24307341218650f343206d17f619d222b30
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 30/10/2013 03:36:26
+Message:
+Compute all installed plugins #MsgLength=30
+
+
+----
+Modified: cordova-app-test-harness/www/main.css|5 0
+Modified: cordova-app-test-harness/www/main.js|7 6
+
+Revision: d6e8048ea346b61d23eae66413bdf1bfa4b30edd
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 30/10/2013 04:26:34
+Message:
+change the way we find test jsmodules to be sane #MsgLength=49
+
+
+----
+Modified: cordova-app-test-harness/www/main.js|8 7
+
+Revision: d2df9537450721fa656c6ffdda3990178f90cdb6
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 30/10/2013 04:32:29
+Message:
+styling changes #MsgLength=16
+
+
+----
+Modified: cordova-app-test-harness/www/main.css|21 0
+
+Revision: 88ae03c8936e599ca3ff9d022ff204dcd2b64cfd
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 30/10/2013 04:38:52
+Message:
+remember your location across restarts #MsgLength=39
+
+
+----
+Modified: cordova-app-test-harness/www/main.js|11 6
+
+Revision: eb137c82b5030fcd2b79154ad5aae20ca95dafd9
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 30/10/2013 04:51:55
+Message:
+meta tags to try and fix BB miniature fonts #MsgLength=44
+
+
+----
+Modified: cordova-app-test-harness/www/index.html|3 0
+
+Revision: 6432c73c805523d8c807d9f4cd5d54f226bd3925
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 30/10/2013 22:35:15
+Message:
+update jasmine to rc5 #MsgLength=22
+
+
+----
+Deleted: cordova-app-test-harness/www/assets/jasmine-2.0.0-rc3/jasmine_favicon.png|0 0
+Renamed: cordova-app-test-harness/www/assets/jasmine-2.0.0-rc5/boot.js [from cordova-app-test-harness/www/assets/jasmine-2.0.0-rc3/boot.js]|84 8
+Added: cordova-app-test-harness/www/assets/jasmine-2.0.0-rc5/console.js|160 0
+Renamed: cordova-app-test-harness/www/assets/jasmine-2.0.0-rc5/jasmine-html.js [from cordova-app-test-harness/www/assets/jasmine-2.0.0-rc3/jasmine-html.js]|6 3
+Renamed: cordova-app-test-harness/www/assets/jasmine-2.0.0-rc5/jasmine.css [from cordova-app-test-harness/www/assets/jasmine-2.0.0-rc3/jasmine.css]|0 0
+Renamed: cordova-app-test-harness/www/assets/jasmine-2.0.0-rc5/jasmine.js [from cordova-app-test-harness/www/assets/jasmine-2.0.0-rc3/jasmine.js]|236 260
+Added: cordova-app-test-harness/www/assets/jasmine-2.0.0-rc5/jasmine_favicon.png|0 0
+Modified: cordova-app-test-harness/www/index.html|3 3
+
+Revision: aeaecf7e99420d8ddcb62d487241aba58a17f120
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 31/10/2013 00:11:34
+Message:
+some restructuring in prep for manual tests #MsgLength=44
+
+
+----
+Modified: cordova-app-test-harness/www/index.html|1 1
+Modified: cordova-app-test-harness/www/main.css|3 1
+Modified: cordova-app-test-harness/www/main.js|49 32
+Modified: cordova-plugin-test-framework/www/test.js|50 12
+
+Revision: abed9026583e8a59f2548b0780df0f97fbb71637
+Author: David Kemp <drkemp@chromium.org>
+Date: 31/10/2013 01:51:29
+Message:
+adding 2.0 compliant couch reporter #MsgLength=36
+
+
+----
+Modified: cordova-app-test-harness/www/index.html|1 0
+Added: cordova-app-test-harness/www/jasmine-jsreporter.js|256 0
+Modified: cordova-app-test-harness/www/main.js|14 0
+
+Revision: 78337f6a7c1604ef6e1dd314cefb1c8dc0aff649
+Author: David Kemp <drkemp@chromium.org>
+Date: 06/11/2013 02:10:50
+Message:
+Added config settings plugin, configurable couchdb module #MsgLength=58
+
+
+----
+Modified: cordova-app-test-harness/www/main.js|55 28
+Added: cordova-plugin-settings/LICENSE|191 0
+Added: cordova-plugin-settings/README.md|2 0
+Added: cordova-plugin-settings/plugin.xml|44 0
+Added: cordova-plugin-settings/src/android/AppSettings.java|35 0
+Added: cordova-plugin-settings/src/ios/AppSettings.h|13 0
+Added: cordova-plugin-settings/src/ios/AppSettings.m|39 0
+Added: cordova-plugin-settings/www/appsettings.js|22 0
+Modified: cordova-plugin-test-framework/plugin.xml|14 0
+
+Revision: c2ccde6471853416a7bdc09d00b9bfc02a301b8d
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 02/11/2013 02:18:11
+Message:
+Chaning API for adding manual tests #MsgLength=36
+
+
+----
+Modified: cordova-plugin-test-framework/www/test.js|12 2
+
+Revision: 52ff719c2b120c10d4f7392f4fdef0ec8565e7ff
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 09/11/2013 03:19:39
+Message:
+Refactoring test plugin #MsgLength=24
+
+
+----
+Modified: cordova-app-test-harness/www/main.js|57 50
+
+Revision: 42e92abdb54da05a7a46c3c63bcfbd90d17bb394
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 07/12/2013 03:38:23
+Message:
+Updating the way we create jasmineInterface #MsgLength=44
+
+
+----
+Modified: cordova-plugin-test-framework/www/test.js|23 52
+
+Revision: adc757661df7ed6421fe618deb3eb031b8258b3b
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 14/12/2013 00:02:15
+Message:
+rename settings plugin; add dependancy for it #MsgLength=46
+
+
+----
+Renamed: cordova-plugin-appsettings/LICENSE [from cordova-plugin-settings/LICENSE]|0 0
+Renamed: cordova-plugin-appsettings/README.md [from cordova-plugin-settings/README.md]|0 0
+Renamed: cordova-plugin-appsettings/plugin.xml [from cordova-plugin-settings/plugin.xml]|0 0
+Renamed: cordova-plugin-appsettings/src/android/AppSettings.java [from cordova-plugin-settings/src/android/AppSettings.java]|0 0
+Renamed: cordova-plugin-appsettings/src/ios/AppSettings.h [from cordova-plugin-settings/src/ios/AppSettings.h]|0 0
+Renamed: cordova-plugin-appsettings/src/ios/AppSettings.m [from cordova-plugin-settings/src/ios/AppSettings.m]|0 0
+Renamed: cordova-plugin-appsettings/www/appsettings.js [from cordova-plugin-settings/www/appsettings.js]|0 0
+Modified: cordova-plugin-test-framework/plugin.xml|2 0
+
+Revision: b12e2cf1ce038bbbfa40031e50fd372aadf4c5f1
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 01/04/2014 03:01:54
+Message:
+css syntax fix #MsgLength=15
+
+
+----
+Modified: cordova-app-test-harness/www/main.css|1 1
+
+Revision: d0aae3cd22d2039cd3a680979410f31d2d8ae885
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 01/04/2014 03:04:21
+Message:
+mobing config.xml up out of www #MsgLength=32
+
+
+----
+Deleted: cordova-app-test-harness/www/config.xml|0 15
+
+Revision: 8be3e81ecbb05ee5c0510945da93c5963e30ccef
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 22/04/2014 22:11:58
+Message:
+Adding project files to cordova-app-test-harness #MsgLength=49
+
+
+----
+Added: cordova-app-test-harness/.gitignore|2 0
+Added: cordova-app-test-harness/config.xml|15 0
+Added: cordova-app-test-harness/hooks/before_prepare/pre-prepare.js|17 0
+
+Revision: fce98946d5ba344531b3fa1c1033f40537e204ae
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 22/04/2014 22:22:56
+Message:
+replace jasmine rc5 with release version #MsgLength=41
+
+
+----
+Renamed: cordova-app-test-harness/www/assets/jasmine-2.0.0/boot.js [from cordova-app-test-harness/www/assets/jasmine-2.0.0-rc5/boot.js]|0 0
+Renamed: cordova-app-test-harness/www/assets/jasmine-2.0.0/console.js [from cordova-app-test-harness/www/assets/jasmine-2.0.0-rc5/console.js]|4 4
+Renamed: cordova-app-test-harness/www/assets/jasmine-2.0.0/jasmine-html.js [from cordova-app-test-harness/www/assets/jasmine-2.0.0-rc5/jasmine-html.js]|0 0
+Renamed: cordova-app-test-harness/www/assets/jasmine-2.0.0/jasmine.css [from cordova-app-test-harness/www/assets/jasmine-2.0.0-rc5/jasmine.css]|0 0
+Renamed: cordova-app-test-harness/www/assets/jasmine-2.0.0/jasmine.js [from cordova-app-test-harness/www/assets/jasmine-2.0.0-rc5/jasmine.js]|177 143
+Renamed: cordova-app-test-harness/www/assets/jasmine-2.0.0/jasmine_favicon.png [from cordova-app-test-harness/www/assets/jasmine-2.0.0-rc5/jasmine_favicon.png]|0 0
+Modified: cordova-app-test-harness/www/index.html|5 3
+
+Revision: 908dd2888583b07bed661a1e33d63cdad902270a
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 22/04/2014 23:09:24
+Message:
+Replacing with new test harness #MsgLength=32
+
+
+----
+Modified: cordova-app-test-harness/www/index.html|15 3
+Deleted: cordova-app-test-harness/www/jasmine-jsreporter.js|0 256
+Added: cordova-app-test-harness/www/jasmine-medic.js|129 0
+Added: cordova-app-test-harness/www/jasmine_helpers.js|77 0
+Modified: cordova-app-test-harness/www/main.css|39 14
+Modified: cordova-app-test-harness/www/main.js|74 182
+Added: cordova-app-test-harness/www/medic.js|38 0
+Added: cordova-app-test-harness/www/tests.js|64 0
+
+Revision: a9b2849b79de688d83104d6e9031b774f6d72e3a
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 25/04/2014 00:06:31
+Message:
+Add auto-reload testing #MsgLength=24
+
+
+----
+Modified: cordova-app-test-harness/config.xml|2 0
+Added: cordova-app-test-harness/update.sh|9 0
+Added: cordova-app-test-harness/www/assets/zepto.js|1550 0
+Modified: cordova-app-test-harness/www/index.html|1 0
+Added: cordova-app-test-harness/www/last_update|1 0
+Modified: cordova-app-test-harness/www/main.js|20 0
+
+Revision: 7d614b920899e9dc442f6d5e44b307605e5f8fb8
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 25/04/2014 02:29:58
+Message:
+First working plugin test in new style #MsgLength=39
+
+
+----
+Modified: cordova-app-test-harness/.gitignore|2 0
+Modified: cordova-app-test-harness/www/last_update|1 1
+Modified: cordova-app-test-harness/www/main.js|0 1
+Modified: cordova-app-test-harness/www/tests.js|19 0
+
+Revision: 42f74c39af06da38fd16de0a3e31a6131e5b489c
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 25/04/2014 21:55:53
+Message:
+minor changes to workflow #MsgLength=26
+
+
+----
+Modified: cordova-app-test-harness/hooks/before_prepare/pre-prepare.js|1 2
+Modified: cordova-app-test-harness/update.sh|1 1
+Deleted: cordova-app-test-harness/www/last_update|0 1
+
+Revision: f695e4bf9a13617582b5cd188221f5b25bfc7381
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 26/04/2014 03:20:11
+Message:
+Remove dev preferences from config #MsgLength=35
+
+
+----
+Modified: cordova-app-test-harness/config.xml|0 2
+Deleted: cordova-app-test-harness/hooks/before_prepare/pre-prepare.js|0 16
+Added: cordova-app-test-harness/hooks/before_prepare/pre-prepare.sh|16 0
+Modified: cordova-plugin-test-framework/plugin.xml|1 15
+
+Revision: 9f765bcf7f008c69eff8f4755f2eb40ac741cc06
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 28/04/2014 21:35:53
+Message:
+Moving test management from app to plugin #MsgLength=42
+
+
+----
+Modified: cordova-app-test-harness/www/index.html|0 1
+Modified: cordova-app-test-harness/www/main.js|4 2
+Deleted: cordova-app-test-harness/www/tests.js|0 83
+Modified: cordova-plugin-test-framework/www/test.js|67 109
+
+Revision: e0df895f314d7b9eaddc99fbf64594d9e042255a
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 28/04/2014 22:48:32
+Message:
+Change plugin test definitions to use module exports #MsgLength=53
+
+
+----
+Modified: cordova-plugin-test-framework/www/test.js|21 35
+
+Revision: df862a4cb6e563f722382bafa8b1a74d4b4020af
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 03/05/2014 04:33:23
+Message:
+Log visibility auto-toggle #MsgLength=27
+
+
+----
+Modified: cordova-app-test-harness/www/main.css|1 1
+Modified: cordova-app-test-harness/www/main.js|18 7
+
+Revision: 15d2581de4ebdd38602a90385c045b31ccb7721c
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 05/05/2014 23:01:31
+Message:
+Moving test-harness out of app and into plugin #MsgLength=47
+
+
+----
+Modified: cordova-app-test-harness/config.xml|2 1
+Deleted: cordova-app-test-harness/www/assets/zepto.js|0 1550
+Modified: cordova-plugin-test-framework/plugin.xml|5 1
+Renamed: cordova-plugin-test-framework/www/assets/index.html [from cordova-app-test-harness/www/index.html]|10 10
+Renamed: cordova-plugin-test-framework/www/assets/jasmine-2.0.0/boot.js [from cordova-app-test-harness/www/assets/jasmine-2.0.0/boot.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/jasmine-2.0.0/console.js [from cordova-app-test-harness/www/assets/jasmine-2.0.0/console.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/jasmine-2.0.0/jasmine-html.js [from cordova-app-test-harness/www/assets/jasmine-2.0.0/jasmine-html.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/jasmine-2.0.0/jasmine.css [from cordova-app-test-harness/www/assets/jasmine-2.0.0/jasmine.css]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/jasmine-2.0.0/jasmine.js [from cordova-app-test-harness/www/assets/jasmine-2.0.0/jasmine.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/jasmine-2.0.0/jasmine_favicon.png [from cordova-app-test-harness/www/assets/jasmine-2.0.0/jasmine_favicon.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/main.css [from cordova-app-test-harness/www/main.css]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/.gitignore [from cordova-app-test-harness/www/assets/topcoat-0.7.5/.gitignore]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/Gruntfile.js [from cordova-app-test-harness/www/assets/topcoat-0.7.5/Gruntfile.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/LICENSE [from cordova-app-test-harness/www/assets/topcoat-0.7.5/LICENSE]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/NOTICE [from cordova-app-test-harness/www/assets/topcoat-0.7.5/NOTICE]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/README.md [from cordova-app-test-harness/www/assets/topcoat-0.7.5/README.md]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/contributors.txt [from cordova-app-test-harness/www/assets/topcoat-0.7.5/contributors.txt]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-desktop-dark.css [from cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-desktop-dark.css]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-desktop-dark.min.css [from cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-desktop-dark.min.css]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-desktop-light.css [from cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-desktop-light.css]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-desktop-light.min.css [from cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-desktop-light.min.css]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-mobile-dark.css [from cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-mobile-dark.css]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-mobile-dark.min.css [from cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-mobile-dark.min.css]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-mobile-light.css [from cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-mobile-light.css]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-mobile-light.min.css [from cordova-app-test-harness/www/assets/topcoat-0.7.5/css/topcoat-mobile-light.min.css]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/css/brackets.css [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/css/brackets.css]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/css/main.css [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/css/main.css]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/css/theme.css [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/css/theme.css]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.eot [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.eot]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.svg [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.svg]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.ttf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.ttf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.woff [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.woff]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.eot [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.eot]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.svg [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.svg]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.ttf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.ttf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.woff [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.woff]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.eot [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.eot]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.svg [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.svg]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.ttf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.ttf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.woff [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.woff]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.eot [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.eot]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.svg [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.svg]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.ttf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.ttf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.woff [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.woff]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/stylesheet.css [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/fonts/stylesheet.css]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/index.html [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/index.html]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/js/main.js [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/js/main.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/js/rainbow-custom.min.js [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/js/rainbow-custom.min.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/js/rainbow.linenumbers.min.js [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/js/rainbow.linenumbers.min.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/topcoat-desktop-light.html [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/topcoat-desktop-light.html]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/topcoat-mobile-dark.html [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/topcoat-mobile-dark.html]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/topcoat-mobile-light.html [from cordova-app-test-harness/www/assets/topcoat-0.7.5/demo/topcoat-mobile-light.html]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/build/styleguide.css [from cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/build/styleguide.css]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/build/styleguide.js [from cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/build/styleguide.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/tasks/checkchromiumsrc.js [from cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/tasks/checkchromiumsrc.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/tasks/telemetrygentest.js [from cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/tasks/telemetrygentest.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/tasks/telemetrysubmit.js [from cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/tasks/telemetrysubmit.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/README.md [from cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/README.md]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/bin/runAll.py [from cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/bin/runAll.py]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/bin/runAll.sh [from cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/bin/runAll.sh]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/csvToJSON.js [from cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/csvToJSON.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/extractFileName.js [from cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/extractFileName.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/settings.js [from cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/settings.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/submitData.js [from cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/submitData.js]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/perf/page_sets/topcoat/topcoat_telemetry.jade [from cordova-app-test-harness/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/perf/page_sets/topcoat/topcoat_telemetry.jade]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/LICENSE.txt [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/LICENSE.txt]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceCodePro-Black.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceCodePro-Black.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceCodePro-Bold.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceCodePro-Bold.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceCodePro-ExtraLight.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceCodePro-ExtraLight.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceCodePro-Light.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceCodePro-Light.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceCodePro-Regular.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceCodePro-Regular.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceCodePro-Semibold.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceCodePro-Semibold.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-Black.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-Black.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-BlackIt.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-BlackIt.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-Bold.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-Bold.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-BoldIt.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-BoldIt.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-ExtraLight.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-ExtraLight.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-ExtraLightIt.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-ExtraLightIt.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-It.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-It.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-Light.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-Light.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-LightIt.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-LightIt.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-Regular.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-Regular.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-Semibold.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-Semibold.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-SemiboldIt.otf [from cordova-app-test-harness/www/assets/topcoat-0.7.5/font/SourceSansPro-SemiboldIt.otf]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/avatar.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/avatar.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/bg_dark.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/bg_dark.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/breadcrumb.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/breadcrumb.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/checkbox_checked.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/checkbox_checked.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/checkbox_checked_dark.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/checkbox_checked_dark.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/checkbox_unchecked.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/checkbox_unchecked.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/checkbox_unchecked_dark.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/checkbox_unchecked_dark.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/checkmark_bw.svg [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/checkmark_bw.svg]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/dark-combo-box-bg.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/dark-combo-box-bg.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/dark-combo-box-bg2x.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/dark-combo-box-bg2x.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/dark-grips.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/dark-grips.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/dark-sprites2x.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/dark-sprites2x.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/dialog-zone-bg.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/dialog-zone-bg.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/drop-down-triangle-dark.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/drop-down-triangle-dark.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/drop-down-triangle.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/drop-down-triangle.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/hamburger_bw.svg [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/hamburger_bw.svg]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/hamburger_dark.svg [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/hamburger_dark.svg]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/hamburger_light.svg [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/hamburger_light.svg]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/light-combo-box-bg.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/light-combo-box-bg.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/light-combo-box-bg2x.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/light-combo-box-bg2x.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/light-grips.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/light-grips.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/light-sprites2x.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/light-sprites2x.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/pop-up-triangle-dark.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/pop-up-triangle-dark.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/pop-up-triangle.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/pop-up-triangle.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/search-bg.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/search-bg.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/search-bg2x.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/search-bg2x.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/search.svg [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/search.svg]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/search_bw.svg [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/search_bw.svg]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/search_dark.svg [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/search_dark.svg]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/search_light.svg [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/search_light.svg]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/spinner.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/spinner.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/spinner2x.png [from cordova-app-test-harness/www/assets/topcoat-0.7.5/img/spinner2x.png]|0 0
+Renamed: cordova-plugin-test-framework/www/assets/topcoat-0.7.5/package.json [from cordova-app-test-harness/www/assets/topcoat-0.7.5/package.json]|0 0
+Renamed: cordova-plugin-test-framework/www/jasmine_helpers.js [from cordova-app-test-harness/www/jasmine_helpers.js]|22 5
+Renamed: cordova-plugin-test-framework/www/main.js [from cordova-app-test-harness/www/main.js]|30 33
+Modified: cordova-plugin-test-framework/www/test.js|15 4
+
+Revision: 2dcca21168bd80f24e30daaa93d49daad5a661df
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 06/05/2014 02:47:40
+Message:
+change target of asset dir to cdvtest #MsgLength=38
+
+
+----
+Modified: cordova-plugin-test-framework/plugin.xml|1 1
+
+Revision: 599ebd16e8f7c011b2dc86399db093ca3533cc94
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 06/05/2014 02:56:43
+Message:
+fail from unsupported mode #MsgLength=27
+
+
+----
+Modified: cordova-app-test-harness/config.xml|1 1
+Modified: cordova-plugin-test-framework/www/main.js|5 4
+
+Revision: 851130a464815b4e8705d225500cbcb7eecfafd7
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 07/05/2014 01:26:27
+Message:
+Changing some names around #MsgLength=27
+
+
+----
+Modified: cordova-plugin-test-framework/plugin.xml|2 2
+Modified: cordova-plugin-test-framework/www/main.js|6 6
+Renamed: cordova-plugin-test-framework/www/tests.js [from cordova-plugin-test-framework/www/test.js]|25 10
+
+Revision: f767bbf4328af7b51c9be6c02047133dd11987a5
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 07/05/2014 01:27:10
+Message:
+Fix regex to match js-modules named exactly 'tests' #MsgLength=52
+
+
+----
+Modified: cordova-plugin-test-framework/www/tests.js|1 1
+
+Revision: d9924127770216e057fe5910e81ea9506be15559
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 07/05/2014 02:05:38
+Message:
+Fix: use globally defined describe #MsgLength=35
+
+
+----
+Modified: cordova-plugin-test-framework/www/tests.js|1 1
+
+Revision: 8ae8e03361e3dce02b0c37924e8e9195cd233b79
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 07/05/2014 03:20:34
+Message:
+Make a working on screen logger #MsgLength=32
+
+
+----
+Modified: cordova-plugin-test-framework/www/assets/main.css|15 2
+Modified: cordova-plugin-test-framework/www/main.js|64 19
+
+Revision: cce7ca2acdd7307888a2fb6081eb209151909198
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 07/05/2014 03:45:21
+Message:
+Adding a Readme #MsgLength=16
+
+
+----
+Modified: cordova-plugin-test-framework/README.md|30 0
+
+Revision: d2ecf355b239c91c7fa1ccb6e8c8a3ebc19f90a0
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 07/05/2014 22:12:52
+Message:
+README update #MsgLength=14
+
+
+----
+Modified: cordova-plugin-test-framework/README.md|110 17
+
+Revision: 500da73f2e7677868165bac07527c1ac84801c7c
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 08/05/2014 00:55:48
+Message:
+Rename manual test page to plugin id #MsgLength=37
+
+
+----
+Modified: cordova-plugin-test-framework/www/main.js|2 1
+Modified: cordova-plugin-test-framework/www/tests.js|1 1
+
+Revision: 5b61fcb58ff182a6e4366a3809d7ab90042af68c
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 10/07/2014 23:32:49
+Message:
+Moving plugin to root of repo #MsgLength=30
+
+
+----
+Renamed: LICENSE [from cordova-app-test-harness/LICENSE]|0 0
+Modified: README.md|108 27
+Deleted: cordova-app-test-harness/.gitignore|0 4
+Deleted: cordova-app-test-harness/README.md|0 0
+Deleted: cordova-app-test-harness/config.xml|0 16
+Deleted: cordova-app-test-harness/hooks/before_prepare/pre-prepare.sh|0 16
+Deleted: cordova-app-test-harness/update.sh|0 9
+Deleted: cordova-app-test-harness/www/jasmine-medic.js|0 129
+Deleted: cordova-app-test-harness/www/medic.js|0 38
+Deleted: cordova-plugin-appsettings/LICENSE|0 191
+Deleted: cordova-plugin-appsettings/README.md|0 2
+Deleted: cordova-plugin-appsettings/plugin.xml|0 44
+Deleted: cordova-plugin-appsettings/src/android/AppSettings.java|0 35
+Deleted: cordova-plugin-appsettings/src/ios/AppSettings.h|0 13
+Deleted: cordova-plugin-appsettings/src/ios/AppSettings.m|0 39
+Deleted: cordova-plugin-appsettings/www/appsettings.js|0 22
+Deleted: cordova-plugin-test-framework/LICENSE|0 191
+Deleted: cordova-plugin-test-framework/README.md|0 123
+Renamed: plugin.xml [from cordova-plugin-test-framework/plugin.xml]|0 0
+Renamed: www/assets/index.html [from cordova-plugin-test-framework/www/assets/index.html]|0 0
+Renamed: www/assets/jasmine-2.0.0/boot.js [from cordova-plugin-test-framework/www/assets/jasmine-2.0.0/boot.js]|0 0
+Renamed: www/assets/jasmine-2.0.0/console.js [from cordova-plugin-test-framework/www/assets/jasmine-2.0.0/console.js]|0 0
+Renamed: www/assets/jasmine-2.0.0/jasmine-html.js [from cordova-plugin-test-framework/www/assets/jasmine-2.0.0/jasmine-html.js]|0 0
+Renamed: www/assets/jasmine-2.0.0/jasmine.css [from cordova-plugin-test-framework/www/assets/jasmine-2.0.0/jasmine.css]|0 0
+Renamed: www/assets/jasmine-2.0.0/jasmine.js [from cordova-plugin-test-framework/www/assets/jasmine-2.0.0/jasmine.js]|0 0
+Renamed: www/assets/jasmine-2.0.0/jasmine_favicon.png [from cordova-plugin-test-framework/www/assets/jasmine-2.0.0/jasmine_favicon.png]|0 0
+Renamed: www/assets/main.css [from cordova-plugin-test-framework/www/assets/main.css]|0 0
+Renamed: www/assets/topcoat-0.7.5/.gitignore [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/.gitignore]|0 0
+Renamed: www/assets/topcoat-0.7.5/Gruntfile.js [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/Gruntfile.js]|0 0
+Renamed: www/assets/topcoat-0.7.5/LICENSE [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/LICENSE]|0 0
+Renamed: www/assets/topcoat-0.7.5/NOTICE [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/NOTICE]|0 0
+Renamed: www/assets/topcoat-0.7.5/README.md [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/README.md]|0 0
+Renamed: www/assets/topcoat-0.7.5/contributors.txt [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/contributors.txt]|0 0
+Renamed: www/assets/topcoat-0.7.5/css/topcoat-desktop-dark.css [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-desktop-dark.css]|0 0
+Renamed: www/assets/topcoat-0.7.5/css/topcoat-desktop-dark.min.css [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-desktop-dark.min.css]|0 0
+Renamed: www/assets/topcoat-0.7.5/css/topcoat-desktop-light.css [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-desktop-light.css]|0 0
+Renamed: www/assets/topcoat-0.7.5/css/topcoat-desktop-light.min.css [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-desktop-light.min.css]|0 0
+Renamed: www/assets/topcoat-0.7.5/css/topcoat-mobile-dark.css [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-mobile-dark.css]|0 0
+Renamed: www/assets/topcoat-0.7.5/css/topcoat-mobile-dark.min.css [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-mobile-dark.min.css]|0 0
+Renamed: www/assets/topcoat-0.7.5/css/topcoat-mobile-light.css [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-mobile-light.css]|0 0
+Renamed: www/assets/topcoat-0.7.5/css/topcoat-mobile-light.min.css [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/css/topcoat-mobile-light.min.css]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/css/brackets.css [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/css/brackets.css]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/css/main.css [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/css/main.css]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/css/theme.css [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/css/theme.css]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.eot [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.eot]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.svg [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.svg]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.ttf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.ttf]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.woff [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcecodepro-regular-webfont.woff]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.eot [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.eot]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.svg [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.svg]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.ttf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.ttf]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.woff [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-light-webfont.woff]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.eot [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.eot]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.svg [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.svg]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.ttf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.ttf]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.woff [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-regular-webfont.woff]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.eot [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.eot]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.svg [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.svg]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.ttf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.ttf]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.woff [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/sourcesanspro-semibold-webfont.woff]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/fonts/stylesheet.css [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/fonts/stylesheet.css]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/index.html [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/index.html]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/js/main.js [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/js/main.js]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/js/rainbow-custom.min.js [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/js/rainbow-custom.min.js]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/js/rainbow.linenumbers.min.js [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/js/rainbow.linenumbers.min.js]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/topcoat-desktop-light.html [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/topcoat-desktop-light.html]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/topcoat-mobile-dark.html [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/topcoat-mobile-dark.html]|0 0
+Renamed: www/assets/topcoat-0.7.5/demo/topcoat-mobile-light.html [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/demo/topcoat-mobile-light.html]|0 0
+Renamed: www/assets/topcoat-0.7.5/dev/build/styleguide.css [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/build/styleguide.css]|0 0
+Renamed: www/assets/topcoat-0.7.5/dev/build/styleguide.js [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/build/styleguide.js]|0 0
+Renamed: www/assets/topcoat-0.7.5/dev/tasks/checkchromiumsrc.js [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/tasks/checkchromiumsrc.js]|0 0
+Renamed: www/assets/topcoat-0.7.5/dev/tasks/telemetrygentest.js [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/tasks/telemetrygentest.js]|0 0
+Renamed: www/assets/topcoat-0.7.5/dev/tasks/telemetrysubmit.js [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/tasks/telemetrysubmit.js]|0 0
+Renamed: www/assets/topcoat-0.7.5/dev/test/perf/telemetry/README.md [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/README.md]|0 0
+Renamed: www/assets/topcoat-0.7.5/dev/test/perf/telemetry/bin/runAll.py [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/bin/runAll.py]|0 0
+Renamed: www/assets/topcoat-0.7.5/dev/test/perf/telemetry/bin/runAll.sh [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/bin/runAll.sh]|0 0
+Renamed: www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/csvToJSON.js [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/csvToJSON.js]|0 0
+Renamed: www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/extractFileName.js [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/extractFileName.js]|0 0
+Renamed: www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/settings.js [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/settings.js]|0 0
+Renamed: www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/submitData.js [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/lib/submitData.js]|0 0
+Renamed: www/assets/topcoat-0.7.5/dev/test/perf/telemetry/perf/page_sets/topcoat/topcoat_telemetry.jade [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/dev/test/perf/telemetry/perf/page_sets/topcoat/topcoat_telemetry.jade]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/LICENSE.txt [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/LICENSE.txt]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceCodePro-Black.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceCodePro-Black.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceCodePro-Bold.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceCodePro-Bold.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceCodePro-ExtraLight.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceCodePro-ExtraLight.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceCodePro-Light.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceCodePro-Light.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceCodePro-Regular.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceCodePro-Regular.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceCodePro-Semibold.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceCodePro-Semibold.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceSansPro-Black.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-Black.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceSansPro-BlackIt.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-BlackIt.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceSansPro-Bold.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-Bold.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceSansPro-BoldIt.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-BoldIt.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceSansPro-ExtraLight.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-ExtraLight.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceSansPro-ExtraLightIt.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-ExtraLightIt.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceSansPro-It.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-It.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceSansPro-Light.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-Light.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceSansPro-LightIt.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-LightIt.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceSansPro-Regular.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-Regular.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceSansPro-Semibold.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-Semibold.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/font/SourceSansPro-SemiboldIt.otf [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/font/SourceSansPro-SemiboldIt.otf]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/avatar.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/avatar.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/bg_dark.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/bg_dark.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/breadcrumb.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/breadcrumb.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/checkbox_checked.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/checkbox_checked.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/checkbox_checked_dark.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/checkbox_checked_dark.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/checkbox_unchecked.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/checkbox_unchecked.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/checkbox_unchecked_dark.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/checkbox_unchecked_dark.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/checkmark_bw.svg [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/checkmark_bw.svg]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/dark-combo-box-bg.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/dark-combo-box-bg.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/dark-combo-box-bg2x.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/dark-combo-box-bg2x.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/dark-grips.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/dark-grips.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/dark-sprites2x.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/dark-sprites2x.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/dialog-zone-bg.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/dialog-zone-bg.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/drop-down-triangle-dark.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/drop-down-triangle-dark.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/drop-down-triangle.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/drop-down-triangle.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/hamburger_bw.svg [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/hamburger_bw.svg]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/hamburger_dark.svg [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/hamburger_dark.svg]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/hamburger_light.svg [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/hamburger_light.svg]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/light-combo-box-bg.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/light-combo-box-bg.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/light-combo-box-bg2x.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/light-combo-box-bg2x.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/light-grips.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/light-grips.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/light-sprites2x.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/light-sprites2x.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/pop-up-triangle-dark.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/pop-up-triangle-dark.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/pop-up-triangle.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/pop-up-triangle.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/search-bg.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/search-bg.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/search-bg2x.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/search-bg2x.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/search.svg [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/search.svg]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/search_bw.svg [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/search_bw.svg]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/search_dark.svg [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/search_dark.svg]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/search_light.svg [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/search_light.svg]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/spinner.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/spinner.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/img/spinner2x.png [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/img/spinner2x.png]|0 0
+Renamed: www/assets/topcoat-0.7.5/package.json [from cordova-plugin-test-framework/www/assets/topcoat-0.7.5/package.json]|0 0
+Renamed: www/jasmine_helpers.js [from cordova-plugin-test-framework/www/jasmine_helpers.js]|0 0
+Renamed: www/main.js [from cordova-plugin-test-framework/www/main.js]|0 0
+Renamed: www/tests.js [from cordova-plugin-test-framework/www/tests.js]|0 0
+
+Revision: bec266f1c84e982249383ca1e6ab24bcd337e7ed
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 11/07/2014 00:02:44
+Message:
+Updating README with recent repo changes #MsgLength=41
+
+
+----
+Modified: README.md|9 16
+
+Revision: 9e6f054888cfb92fbd892480ff3640962a2d337f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 15/07/2014 04:09:20
+Message:
+Add a back button when ?showBack exists (used in mobilespec) #MsgLength=61
+
+
+----
+Modified: www/main.js|5 0
+
+Revision: 1d7e5b7e737c23cba033fd2fb7a03fb7ae7aa313
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 16/07/2014 22:32:15
+Message:
+Add option to append actionButton to custom elt #MsgLength=296
+
+
+----
+Modified: www/main.js|3 2
+
+
+Revision: fba9e8defa89d620daae616217e5d2e1ea08666d
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 17/07/2014 04:08:24
+Message:
+Added css for info id #MsgLength=51
+
+
+----
+Modified: www/assets/main.css|19 0
+
+
+Revision: 31c26e15aab13ce58fddedd67002140464c4418a
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 02/08/2014 02:03:46
+Message:
+CB-7251 Add medic reporting for CI #MsgLength=35
+
+
+----
+Modified: plugin.xml|1 0
+Modified: www/assets/index.html|1 0
+Added: www/assets/jasmine-medic.js|128 0
+Modified: www/jasmine_helpers.js|3 4
+Modified: www/main.js|12 12
+Added: www/medic.js|53 0
+Modified: www/tests.js|1 1
+
+Revision: e1dc65cc8b1a270e07f8d1dbbb08692204d187e4
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 07/08/2014 04:00:20
+Message:
+Implement unwrapConsole, to show line numbers when using remote inspector #MsgLength=74
+
+
+----
+Modified: www/main.js|8 4
+
+Revision: b73c9bdbb3f7afc5f482dbc87798bb28c722085c
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 07/08/2014 04:01:27
+Message:
+Replace ?showBack with #?showBack for wp8 #MsgLength=42
+
+
+----
+Modified: www/main.js|1 1
+
+Revision: 1aea198223f83535214b2c024f1e35d44cb9fc05
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/08/2014 08:29:48
+Message:
+Fix indentation to 4 spaces from 2 #MsgLength=35
+
+
+----
+Modified: www/jasmine_helpers.js|53 53
+
+Revision: 75d7bcede30a599f98272fb7737ff0bf3144ba3b
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/08/2014 10:06:49
+Message:
+Handle case where file not found throws exception #MsgLength=50
+
+
+----
+Modified: www/medic.js|11 1
+
+Revision: a068ec42a638ce530122ca0e2e9f4b1919adb16a
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 15/08/2014 06:15:42
+Message:
+Added the boot.js script load. #MsgLength=31
+
+
+----
+Modified: www/assets/index.html|1 0
+
+Revision: 5a0365b59aa3056f73ef0244654c28064136ea46
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 16/08/2014 02:36:01
+Message:
+Revert "Added the boot.js script load." #MsgLength=103
+
+
+----
+Modified: www/assets/index.html|0 1
+
+Revision: 5f6940e45873bd64fa604b5dba8e6023036affbd
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 26/08/2014 23:05:39
+Message:
+make the titles more consistent #MsgLength=32
+
+
+----
+Modified: www/main.js|1 1
+
+Revision: bee5f2582ccfae4928e0b268eba6c0375812ab56
+Author: Jason Chase <jasonpchase@gmail.com>
+Date: 04/09/2014 23:10:46
+Message:
+CB-7459 Allow auto tests to be run for specific plugin(s) #MsgLength=857
+
+
+----
+Modified: www/assets/main.css|21 0
+Modified: www/main.js|163 5
+Modified: www/tests.js|27 3
+
+
+Revision: b346d90aa827bb92029bb8942535a0e7d0d5c623
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 11/09/2014 02:29:42
+Message:
+Updated test-framework docs #MsgLength=46
+
+
+----
+Modified: README.md|17 11
+
+Revision: babbc4e9006b8a9e35f1e17a793982643e8e765f
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 16/09/2014 02:02:01
+Message:
+CB-7524 add missing licenses #MsgLength=29
+
+
+----
+Added: NOTICE|199 0
+Modified: README.md|21 0
+Modified: plugin.xml|18 0
+Modified: www/assets/index.html|20 0
+Modified: www/assets/jasmine-medic.js|21 0
+Modified: www/assets/main.css|21 0
+
+Revision: 357b89932cf13e0bc035e36cfb65116f98bd6d2a
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 25/11/2014 17:46:23
+Message:
+CB-8070 MedicReporter from plugin-test-framework incompatible with medic couch db structure. It's fixed. #MsgLength=105
+
+
+----
+Modified: www/assets/jasmine-medic.js|6 3
+Modified: www/jasmine_helpers.js|14 10
+Modified: www/medic.js|4 3
+
+Revision: 80225da9beef00cbf96c5eeaf944737b722e76b4
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 25/11/2014 17:50:46
+Message:
+Fixed minor formatting bugs #MsgLength=28
+
+
+----
+Modified: www/assets/jasmine-medic.js|1 1
+Modified: www/jasmine_helpers.js|1 1
+Modified: www/medic.js|1 1
+
+Revision: 213a3e597e04abcb15747d65509ae0d6ecdbeb4d
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 02/12/2014 22:43:16
+Message:
+Removes duplicate medic loading (should be already loaded in main.init()) #MsgLength=103
+
+
+----
+Modified: www/jasmine_helpers.js|11 12
+Modified: www/medic.js|2 2
+
+
+Revision: 1456ebc984e93ddd7b708aa8f00ebeae32d4eea7
+Author: Jason Chase <jasonpchase@gmail.com>
+Date: 15/09/2014 21:55:50
+Message:
+CB-7459 Add header to show number of enabled plugin tests #MsgLength=532
+
+
+----
+Modified: www/assets/main.css|1 2
+Modified: www/main.js|98 7
+
+
+Revision: 74c53004567ecae319fd3280022c39d9db7df056
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 15/01/2015 05:36:59
+Message:
+Simplify some of the testing UI code #MsgLength=37
+
+
+----
+Modified: www/main.js|48 116
+
+Revision: f6ed190a58f9c77734da7debe1e2472811b57d01
+Author: Jason Chase <jasonpchase@gmail.com>
+Date: 14/01/2015 23:30:09
+Message:
+CB-8295 Enable CSP for mobile spec - Uses a javascript include file (provided by mobile spec app) to document.write a CSP tag on page - If hosted outside of mobile spec, that app must provide similar injection script - Change index page to remove inline script (to comply with CSP) #MsgLength=282
+
+
+----
+Modified: www/assets/index.html|10 5
+Added: www/assets/main-bootstrap.js|26 0
+
+
+Revision: 14a1905b9b74aefe82b59a8dcdbe378332f9d500
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 15/01/2015 07:10:20
+Message:
+xhr status of 0 is valid as well, some platforms when loading from file: url do not report 200 #MsgLength=95
+
+
+----
+Modified: www/medic.js|1 1
+
+Revision: 0bc62606e399fdf75cb43c2c830656dcf10dcaec
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 15/01/2015 10:04:41
+Message:
+CB-8311 remove dependency on cordova-plugin-device #MsgLength=51
+
+
+----
+Modified: www/assets/jasmine-medic.js|3 1
+
+Revision: 84382143d095ca85e0332708dbe8682f0bfbd6c1
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 31/01/2015 00:42:32
+Message:
+CB-8388 Prevent Windows app from crashing on test failure #MsgLength=76
+
+
+----
+Modified: www/main.js|9 0
+
+Revision: 6aad2946993d7b69b9dcccd8a89c2f744f16627e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.0.1 #MsgLength=62
+
+
+----
+Added: RELEASENOTES.md|25 0
+Modified: plugin.xml|1 1
+
+Revision: 8538cad07cd791b1963f6533b4b03c7c00b2cea4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:03
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f11ea3a6502429a91273271611839a23f977f768
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 04/02/2015 18:04:09
+Message:
+CB-8385 Ensure plugin-test-framework trigger tests only once #MsgLength=61
+
+
+----
+Modified: www/medic.js|19 21
+
+Revision: eaa187540f5e797dc4d85429cc596c02afb54417
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 16:59:56
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|20 0
+
+Revision: 1971971c3481b318c51b8b5cab6999a368c9fdce
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 04/03/2015 05:05:50
+Message:
+Close already merged PR (close #10) #MsgLength=36
+
+
+----
+
+Revision: c1a4d120432d661ba2238c4a925b6e9e71b501cd
+Author: Marcus Pridham <marcus.pridham@sap.com>
+Date: 24/02/2015 03:13:50
+Message:
+CB-8528 Update test framework plugin to use Jasmine 2.2.0 (close #11) #MsgLength=70
+
+
+----
+Modified: www/assets/index.html|3 3
+Deleted: www/assets/jasmine-2.0.0/jasmine.css|0 55
+Deleted: www/assets/jasmine-2.0.0/jasmine_favicon.png|0 0
+Renamed: www/assets/jasmine-2.2.0/boot.js [from www/assets/jasmine-2.0.0/boot.js]|4 64
+Renamed: www/assets/jasmine-2.2.0/console.js [from www/assets/jasmine-2.0.0/console.js]|54 24
+Renamed: www/assets/jasmine-2.2.0/jasmine-html.js [from www/assets/jasmine-2.0.0/jasmine-html.js]|133 76
+Added: www/assets/jasmine-2.2.0/jasmine.css|62 0
+Renamed: www/assets/jasmine-2.2.0/jasmine.js [from www/assets/jasmine-2.0.0/jasmine.js]|1263 616
+Added: www/assets/jasmine-2.2.0/jasmine_favicon.png|0 0
+Modified: www/jasmine_helpers.js|3 22
+
+Revision: 114a428818068b05315e305bdd34e9f1677f1d72
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/03/2015 00:42:33
+Message:
+CB-8528 Add a shim for `jasmine.Expectation.addMatchers` being moved in jasmine 2.2.0 #MsgLength=86
+
+
+----
+Modified: www/jasmine_helpers.js|5 0
+
+Revision: 6e46988a3253b57015299e992b05d01e0e8eafef
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:51:36
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|6 6
+
+Revision: 79b0c695515151217b9b791cd2bda75a41f87c2f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 08:00:54
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: www/assets/main-bootstrap.js|2 2
+Modified: www/jasmine_helpers.js|1 1
+Modified: www/main.js|6 6
+Modified: www/tests.js|1 1
+
+Revision: f61081ac2ee5ed25dfae5c3e39c07b75c15a1fb3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 08:04:52
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 0d302e3d8b4f14027df43f6a8d1d42ac9918f5ea
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:38
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|10 0
+Modified: plugin.xml|1 1
+
+Revision: b8bd7eb388cb1317992d831a1f453f3dc9682ecd
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:48
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: e2c98247fe777ab59cbd969a53c4b2ee54782ea3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:31:14
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a2b4871a028d56d483a598bfc48231da788716d1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 9e42cb74a5247e9768a7635cee36868604b2a8ca
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:22
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: a810e535ec9a1cd6e773479e68c408acb29ea202
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 02:15:30
+Message:
+added ratignore file #MsgLength=21
+
+
+----
+Added: .ratignore|2 0
+
+Revision: e8caa9b8cd4f6a7a573c6a2111a60f877e961f71
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:05
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.0.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 474dc12b90f568221b930eb44639346f47500b97
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: bba0868ee2f5a81439556c6ebea8c9265cfb4f21
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:37
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 654e23cbc995f597576f6be98e07b499f1179394
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:57:03
+Message:
+fixed issue with package.json #MsgLength=30
+
+
+----
+Modified: package.json|1 1
+
+Revision: 0167a2f9ab8e6f65215cae07bc9b24715d3ae336
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:57:06
+Message:
+Revert "CB-9192 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 777d61efe37a53f876e855930628e48b42a8ab07
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:59:37
+Message:
+Revert "Revert "CB-9192 Incremented plugin version."" #MsgLength=117
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: b5812049a00b30ef313d938636921f67add311c1
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 10/07/2015 04:15:56
+Message:
+Ignoring all of jasmine-2.2.0 just like the other Jasmine versions. #MsgLength=68
+
+
+----
+Modified: .ratignore|1 2
+
+Revision: c0d6f6e9679810905db7dd6d16c217e9edceb3e5
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 20/08/2015 17:19:57
+Message:
+Ensure WinJS is available when adding Windows unhandled error hook #MsgLength=67
+
+
+----
+Modified: www/main.js|2 2
+
+Revision: e8567f0de84602d92b43ddbef46ce2b35f3dd69d
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 22/08/2015 01:46:30
+Message:
+fix readme typo describe instead of define #MsgLength=43
+
+
+----
+Modified: README.md|2 2
+
+Revision: 356aea5ea17d00e7fd67c069763d80faeec869b2
+Author: Rob Paveza <Rob.Paveza@microsoft.com>
+Date: 07/05/2015 07:36:23
+Message:
+CB-8973: Changed the functionality of making the log appear and disappear from modifying the #log class list, to modifying the body class list, and having the #middle and #log elements adjust their appearances based on having body.expanded-log selector.. This closes #12 #MsgLength=271
+
+
+----
+Modified: www/assets/main.css|5 1
+Modified: www/main.js|10 6
+
+Revision: e9808da76b6e10eb0ecba55d7631f6d138146122
+Author: daserge <v-seshak@microsoft.com>
+Date: 17/10/2015 21:34:21
+Message:
+CB-8973: Changed the functionality of making the log appear and disappear #MsgLength=233
+
+
+----
+Modified: www/main.js|32 6
+
+Revision: c95392c8bca7af2abe032762a4a7fa0c88654dbe
+Author: daserge <v-seshak@microsoft.com>
+Date: 22/10/2015 16:58:50
+Message:
+CB-8973: Changed the functionality of making the log appear and disappear #MsgLength=111
+
+
+----
+Modified: www/main.js|6 5
+
+Revision: 1862707412a8b1aea6959d669c1781962bd65d55
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|4 5
+
+Revision: 623ce97b2f37a32097a7637427d469d26560cef8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:11
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: 647026902d0237d139764295e46c415f83cadc06
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:06
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 3ad99649672f5dffe4356d663b70d7b0f7d42998
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|9 9
+
+Revision: d81274e2a25cde290bf8bd6165b58fdfd6230535
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: c75448f2ace8f05dc6ac06d4716064d1955182dd
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 11/01/2016 23:11:38
+Message:
+CB-10318 Do not wrap test title #MsgLength=32
+
+
+----
+Modified: www/assets/main.css|1 0
+
+Revision: c431d1270b97f268d44e855086f3455befccd489
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:35:06
+Message:
+CB-10368 Updated version and RELEASENOTES.md for release 1.1.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: c1c38f5890c1306e32539c78c130d98ca21ade44
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:58:32
+Message:
+CB-10368 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 1555a42b4c23b290db9108c01ec1a8c4b33fbf3c
+Author: daserge <v-seshak@microsoft.com>
+Date: 01/03/2016 17:48:59
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Modified: .gitignore|2 0
+Added: .jshintignore|2 0
+Added: .jshintrc|18 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: www/assets/jasmine-medic.js|14 45
+Modified: www/assets/main-bootstrap.js|2 2
+Modified: www/jasmine_helpers.js|2 1
+Modified: www/main.js|3 1
+Modified: www/medic.js|2 1
+Modified: www/tests.js|5 2
+
+Revision: 9c717bbfafda1d806a3601fbde794fb3b09f89ac
+Author: daserge <v-seshak@microsoft.com>
+Date: 15/03/2016 23:51:23
+Message:
+CB-10876 Enable inertia scrolling in test framework #MsgLength=52
+
+
+----
+Modified: www/assets/main.css|2 1
+
+Revision: 12b4e16ba867756899b4a0d2e465bc048769b492
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:27
+Message:
+ Updated version and RELEASENOTES.md for release 1.1.2 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 49212ca558073274be9f8d42ac4c60265dbadbc0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:28
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 9d75c5df22870fe42f9f2dc31b0350cdee49bf4a
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 14/04/2016 02:04:41
+Message:
+Add spec started/completed log #MsgLength=49
+
+
+----
+Modified: www/assets/jasmine-medic.js|2 1
+
+Revision: 56945a7bb2eb49fd1c9f242ada9f48628869f91d
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 21/04/2016 08:40:23
+Message:
+CB-11124 Fixing cordova-ios build failure due to unnecessary post calls to couchdb and adding handlers to xhr call #MsgLength=133
+
+
+----
+Modified: www/assets/jasmine-medic.js|12 0
+Modified: www/main.js|0 3
+Modified: www/medic.js|0 9
+
+Revision: 375818b800867060ab6af2fc3b5b6e4b87d6d1cf
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:54:00
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: 4a04f9624c6fbcf09d9726a32a155138388be7c3
+Author: Marcus Pridham <marcus.pridham@sap.com>
+Date: 07/01/2016 02:40:46
+Message:
+CB-9071 Update test framework plugin to use Jasmine 2.4.1 #MsgLength=76
+
+
+----
+Modified: .ratignore|1 1
+Modified: www/assets/index.html|3 3
+Deleted: www/assets/jasmine-2.2.0/jasmine.css|0 62
+Renamed: www/assets/jasmine-2.4.1/boot.js [from www/assets/jasmine-2.2.0/boot.js]|15 6
+Renamed: www/assets/jasmine-2.4.1/console.js [from www/assets/jasmine-2.2.0/console.js]|0 0
+Renamed: www/assets/jasmine-2.4.1/jasmine-html.js [from www/assets/jasmine-2.2.0/jasmine-html.js]|110 53
+Added: www/assets/jasmine-2.4.1/jasmine.css|58 0
+Renamed: www/assets/jasmine-2.4.1/jasmine.js [from www/assets/jasmine-2.2.0/jasmine.js]|568 162
+Renamed: www/assets/jasmine-2.4.1/jasmine_favicon.png [from www/assets/jasmine-2.2.0/jasmine_favicon.png]|0 0
+Modified: www/jasmine_helpers.js|1 0
+
+Revision: b86962697279265f9c91e6ffe6f77f130ff11447
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 27/08/2016 05:55:54
+Message:
+Fix jshint errors #MsgLength=18
+
+
+----
+Modified: .jshintignore|1 1
+
+Revision: d6e0248035b89c5a46617ded27ef3459dc756730
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:55
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 1.1.3 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|9 3
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 89dd3538defd39f813dad95789e45aedb10e25ab
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: c1374e3060cc93c07a9655905c5e0f342fcd6d8a
+Author: t1st3 <contact@tiste.org>
+Date: 28/09/2016 21:26:00
+Message:
+Edit package.json license to match SPDX id #MsgLength=245
+
+
+----
+Modified: package.json|1 1
+
+Revision: 5a20c0389c4222d4227774a6930ea315b6106a68
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:31:06
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=101
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: 1a9d5cd24164898a9d2e3ab5d96ac7de6dba1704
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:46
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 1.1.4 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: c07e337443a98217ced398c3a2001a630d9bdfa6
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:08
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: a9a24fe75592132adcb6195d98a462a16610655c
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:59:38
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-test-framework #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|1 0
+
+Revision: 7181e778dc634aebf18ec80def05bcb033316e38
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:28
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 1.1.5 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|11 39
+
+Revision: 68c34c55ddfe0c781fa50ca2a1ac6a92021f03c1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:56:01
+Message:
+Set VERSION to 1.1.6-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|39 11
+
+Revision: 9db5559eb0d40d199b00786da87af7695f25ea9f
+Author: Rob Rohan <rob@therohans.com>
+Date: 12/04/2017 08:10:52
+Message:
+Fixing a few markdown rendering items #MsgLength=172
+
+
+----
+Modified: README.md|3 0
+
+Revision: d0d3af99c6166d0ce8657450a8ccf820c467b470
+Author: filmaj <maj.fil@gmail.com>
+Date: 26/05/2017 01:06:26
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: 37acdf6074e05a27768e02ab892782f97fedee24
+Author: Audrey So <audreyso@apache.org>
+Date: 01/08/2017 08:00:17
+Message:
+CB-12895 : replaced jshint with eslint #MsgLength=39
+
+
+----
+Added: .eslintignore|2 0
+Added: .eslintrc.yml|10 0
+Modified: package.json|9 3
+Modified: www/assets/jasmine-medic.js|106 106
+Modified: www/assets/main-bootstrap.js|3 3
+Modified: www/jasmine_helpers.js|13 13
+Modified: www/main.js|282 282
+Modified: www/medic.js|19 20
+Modified: www/tests.js|84 91
+
+Revision: 33749f1727f5cc0456ea5abbfa7d3751b8431393
+Author: Audrey So <audreyso@apache.org>
+Date: 27/09/2017 06:32:53
+Message:
+CB-13342 : Updated README.md regarding package.json #MsgLength=52
+
+
+----
+Modified: README.md|4 0
+
+Revision: dfe4e84453cc5c711b65f9d9d7824730292a497d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:46
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 1.1.6 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: fdaf24f37fdebdc04a8a984305fc49615fe60232
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:40
+Message:
+Set VERSION to 1.1.7-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 7520926d69d05cfc0075501eaf403c197ef10545
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 05/12/2018 23:25:18
+Message:
+Clean up and improve README (#29) #MsgLength=72
+
+
+----
+Modified: README.md|34 24
+
+Revision: 37763a3ef35d575b2748bd1f02995a6592768d21
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 09/12/2018 03:10:30
+Message:
+Add two version badges (#30) #MsgLength=74
+
+
+----
+Modified: README.md|2 0
+
+Revision: e09315bc8a5fa16c8a8e712df58d1451e259b4fe
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:40:43
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: cba4e14c9ecde6dd1e689b496bdc765bf4d482f6
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:43:10
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Added: CONTRIBUTING.md|37 0
+
+Revision: 6d4256f842cc6f488040111738e7295f6173234d
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:43:08
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: 7b1bb7762461428a980b522f7984351a89b864d4
+Author: エリス <erisu@users.noreply.github.com>
+Date: 06/07/2020 08:16:52
+Message:
+breaking: major version bump 2.0.0-dev (#46) #MsgLength=46
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 76f14dbae543bc301712472bd60a946f9a96fd92
+Author: エリス <erisu@users.noreply.github.com>
+Date: 06/07/2020 08:17:24
+Message:
+chore: use short notation in package.json (#47) #MsgLength=49
+
+
+----
+Modified: package.json|2 7
+
+Revision: c3e10dc86b7ce3f4f654e2e44378f741727c116d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 06/07/2020 08:17:53
+Message:
+chore: test node 10 to 12 (#48) #MsgLength=33
+
+
+----
+Modified: .travis.yml|2 1
+
+Revision: 5285562989b2f0761c2fd5b49161e9589445da92
+Author: エリス <erisu@users.noreply.github.com>
+Date: 06/07/2020 08:18:19
+Message:
+breaking: upgrade eslint w/ fix & cleanup (#49) #MsgLength=49
+
+
+----
+Modified: .eslintrc.yml|24 9
+Deleted: .jshintignore|0 2
+Deleted: .jshintrc|0 18
+Modified: package.json|3 9
+Modified: www/assets/jasmine-medic.js|6 10
+Modified: www/assets/main-bootstrap.js|1 1
+Modified: www/jasmine_helpers.js|0 2
+Modified: www/main.js|6 8
+Modified: www/medic.js|1 1
+Modified: www/tests.js|9 10
+
+Revision: 63952e8a49e1bde7c99e565a760f86f328b6d84d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 06/08/2020 12:07:07
+Message:
+chore: add package-lock.json (#50) #MsgLength=36
+
+
+----
+Added: package-lock.json|1724 0
+
+Revision: 4c5097ba3db1dbee330b63f3c551c31b329a7e37
+Author: エリス <erisu@users.noreply.github.com>
+Date: 06/08/2020 12:07:18
+Message:
+feat: add ios custom scheme (#51) #MsgLength=35
+
+
+----
+Modified: plugin.xml|6 0
+
+Revision: 0e9fe54178787f8d901962e812e2846a0621ad98
+Author: svenemtell <sven@emtell.com>
+Date: 06/08/2020 23:33:28
+Message:
+chore: bump jasmine-standalone@2.99.2 (#45) #MsgLength=292
+
+
+----
+Modified: .eslintignore|1 1
+Modified: .ratignore|1 1
+Modified: NOTICE|23 0
+Modified: README.md|15 2
+Modified: www/assets/index.html|3 3
+Deleted: www/assets/jasmine-2.4.1/jasmine.js|0 3454
+Renamed: www/assets/jasmine/boot.js [from www/assets/jasmine-2.4.1/boot.js]|4 1
+Renamed: www/assets/jasmine/console.js [from www/assets/jasmine-2.4.1/console.js]|1 1
+Renamed: www/assets/jasmine/jasmine-html.js [from www/assets/jasmine-2.4.1/jasmine-html.js]|108 36
+Renamed: www/assets/jasmine/jasmine.css [from www/assets/jasmine-2.4.1/jasmine.css]|1 0
+Added: www/assets/jasmine/jasmine.js|5586 0
+Renamed: www/assets/jasmine/jasmine_favicon.png [from www/assets/jasmine-2.4.1/jasmine_favicon.png]|0 0
+
+Revision: cde533a8a1a503dc5ef36d9cb94916111581aa75
+Author: Tim Brust <github@timbrust.de>
+Date: 27/08/2020 15:28:10
+Message:
+ci(travis): removes deprecated key and adds missing license header (#53) #MsgLength=74
+
+
+----
+Modified: .travis.yml|17 1
+
+Revision: 52642118a835fe4502c16ad05e6e9b9d1db27c91
+Author: Tim Brust <github@timbrust.de>
+Date: 27/08/2020 17:29:36
+Message:
+ci: migrate from TravisCI to GH Actions (#54) #MsgLength=47
+
+
+----
+Added: .github/workflows/ci.yml|47 0
+Deleted: .travis.yml|0 21
+Modified: README.md|1 1
+
+Revision: e277c944a7067c866dd0d9d0d7bc8fe7333766cc
+Author: エリス <erisu@users.noreply.github.com>
+Date: 19/07/2022 14:57:50
+Message:
+chore(npm): rebuilt package-lock to v2 (#58) #MsgLength=46
+
+
+----
+Modified: package-lock.json|2925 482
+

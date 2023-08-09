@@ -1,0 +1,2204 @@
+Revision: a166f99a680f627e18100981cd1b5a2ae27b43e3
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/11/2013 07:40:11
+Message:
+initial commit #MsgLength=15
+
+
+----
+Added: nothing|0 0
+
+Revision: b6c3aee7eb52f55ea002dc545e2e6db3a23821cb
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 07/11/2013 14:39:06
+Message:
+3.0 #MsgLength=4
+
+
+----
+Added: CMakeLists.txt|134 0
+Added: Cordovaqt/CordovaViewInternal.qml|145 0
+Added: Cordovaqt/cordova_wrapper.js|48 0
+Added: Cordovaqt/qmldir|5 0
+Added: LICENSE|202 0
+Added: README.md|14 0
+Added: VERSION|1 0
+Added: bin/build/build|28 0
+Added: bin/build/clean|28 0
+Added: bin/build/run|29 0
+Added: bin/build/version|26 0
+Added: bin/check_reqs|32 0
+Added: bin/create|59 0
+Added: bin/package.json|33 0
+Added: main.cpp|97 0
+Added: qml/CordovaView.qml.in|52 0
+Added: qml/main.qml.in|26 0
+Added: src/cordova.cpp|141 0
+Added: src/cordova.h|69 0
+Added: src/coreplugins.cpp|37 0
+Added: src/coreplugins.h|20 0
+Added: src/cplugin.cpp|151 0
+Added: src/cplugin.h|119 0
+Added: src/js/bootstrap.js|102 0
+Added: src/js/common/argscheck.js|64 0
+Added: src/js/common/builder.js|111 0
+Added: src/js/common/channel.js|239 0
+Added: src/js/common/commandProxy.js|28 0
+Added: src/js/common/modulemapper.js|107 0
+Added: src/js/common/pluginloader.js|119 0
+Added: src/js/common/symbols.js|11 0
+Added: src/js/common/utils.js|168 0
+Added: src/js/cordova.js|251 0
+Added: src/js/exec.js|77 0
+Added: src/js/platform.js|35 0
+Added: src/js/require.js|91 0
+Added: src/qmlplugin.cpp|26 0
+Added: src/qmlplugin.h|101 0
+Added: www/basic.js|294 0
+Added: www/index.html.in|90 0
+Added: www/plugins.xml|44 0
+Added: xml/config.xml|46 0
+
+Revision: 97f1955f1e29a8ac12f97f4daa7bc7ab7f3b23fb
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 11/11/2013 14:43:47
+Message:
+use config.xml #MsgLength=15
+
+
+----
+Modified: main.cpp|41 38
+
+Revision: 143d6a6048d5affe9b08aaf286c3defc42e01040
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 13/11/2013 13:57:06
+Message:
+cplugin: fix escaping of QVariantMap #MsgLength=37
+
+
+----
+Modified: src/cplugin.cpp|5 6
+Modified: src/cplugin.h|1 1
+
+Revision: 331de7cfc4c8cacf71b5a31e73cb2ed163c35377
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 13/11/2013 21:18:29
+Message:
+look for plugins only in app_dir #MsgLength=33
+
+
+----
+Modified: src/cordova.cpp|1 1
+
+Revision: 5f33f141e36014973f68854117fe1f1d2cb4f3e6
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 18/11/2013 19:10:46
+Message:
+add CordovaViewInternal.plugin #MsgLength=31
+
+
+----
+Modified: Cordovaqt/CordovaViewInternal.qml|3 0
+
+
+Revision: 25ac2037f34522c5ef82d27346d411d511e78360
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/11/2013 07:41:15
+Message:
+removed nothing file #MsgLength=21
+
+
+----
+Deleted: nothing|0 0
+
+Revision: 3d081d61b364b94051ef18903be90ca626e1bc8c
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 28/11/2013 03:50:33
+Message:
+changed version to 3.2.0 #MsgLength=25
+
+
+----
+Modified: VERSION|1 1
+
+Revision: cfa91826e7865088f24fa2693c78d64948e7ee2f
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 22/11/2013 23:00:24
+Message:
+support DisallowOverscroll #MsgLength=27
+
+
+----
+Modified: Cordovaqt/CordovaViewInternal.qml|2 1
+Modified: main.cpp|6 2
+Modified: qml/CordovaView.qml.in|3 0
+Modified: qml/main.qml.in|1 0
+
+Revision: 1f44ec5129fd8ad76f3d04fe187761df25e139f8
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 23/11/2013 00:13:32
+Message:
+add missing files #MsgLength=18
+
+
+----
+Added: bin/build/lib/ubuntu.js|48 0
+Added: src/plugins/empty|0 0
+
+Revision: 7a125fc1ec1ff3b555c928b8ad5d1883dd7bf310
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 23/11/2013 00:14:56
+Message:
+move src/js/* to cordova-js #MsgLength=28
+
+
+----
+Modified: CMakeLists.txt|4 39
+Deleted: src/js/bootstrap.js|0 102
+Deleted: src/js/common/argscheck.js|0 64
+Deleted: src/js/common/builder.js|0 111
+Deleted: src/js/common/channel.js|0 239
+Deleted: src/js/common/commandProxy.js|0 28
+Deleted: src/js/common/modulemapper.js|0 107
+Deleted: src/js/common/pluginloader.js|0 119
+Deleted: src/js/common/symbols.js|0 11
+Deleted: src/js/common/utils.js|0 168
+Deleted: src/js/cordova.js|0 251
+Deleted: src/js/exec.js|0 77
+Deleted: src/js/platform.js|0 35
+Deleted: src/js/require.js|0 91
+Deleted: www/basic.js|0 294
+Added: www/cordova.js|1423 0
+Deleted: www/index.html.in|0 90
+Deleted: www/plugins.xml|0 44
+
+
+Revision: c61af6402613ab56b63a690a55f0dc3c00e0d351
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/12/2013 05:02:40
+Message:
+Set VERSION to 3.4.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 7f43563398620c23536707734563d33f9c86575b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/12/2013 05:02:43
+Message:
+Update JS snapshot to version 3.4.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: www/cordova.js|6 5
+
+Revision: 78848046e7a9c369d9b14f3c4d49d1a705eedc62
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 11/12/2013 22:33:36
+Message:
+bin/create check for shelljs/elementtree #MsgLength=41
+
+
+----
+Modified: bin/create|18 5
+
+Revision: 9bd33ef495c6776ff00ec34e396a147b84b929b7
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 12/12/2013 23:02:18
+Message:
+use child_process.exec correctly #MsgLength=33
+
+
+----
+Modified: bin/create|30 16
+
+Revision: b3e5e9ebdd2f56ef7d80f832152403f400e93d65
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 13/12/2013 06:49:04
+Message:
+Update JS snapshot to version 3.4.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: www/cordova.js|26 22
+
+Revision: 8f9ab56930c3509260d4d50efd5642ceb378d3a5
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 18/12/2013 23:41:33
+Message:
+support running apps on device #MsgLength=31
+
+
+----
+Modified: CMakeLists.txt|1 3
+Modified: bin/build/lib/ubuntu.js|152 13
+Modified: bin/build/run|1 1
+Modified: bin/check_reqs|49 28
+Modified: bin/create|4 1
+Modified: bin/package.json|5 3
+
+Revision: 464ae58bb6088a2e8f7d8e5281216822cd876919
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 22/12/2013 21:43:27
+Message:
+bin/build/run: add --debug option #MsgLength=34
+
+
+----
+Modified: bin/build/lib/ubuntu.js|24 7
+Modified: bin/build/run|2 1
+
+Revision: 5996eb9473d06a4f12cb0fc05802c435d8824947
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 23/12/2013 20:14:04
+Message:
+bin/build/run build only for target #MsgLength=36
+
+
+----
+Modified: bin/build/build|1 1
+Modified: bin/build/lib/ubuntu.js|14 5
+Modified: bin/build/run|0 2
+
+Revision: 537927d8f47113b9018c20fd1efa61121bfebdb7
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 23/12/2013 22:30:12
+Message:
+bin/run: use optimist node module for option parsing #MsgLength=53
+
+
+----
+Modified: bin/build/run|3 1
+Modified: bin/create|1 0
+Modified: bin/package.json|2 1
+
+Revision: c948125f296847f30d4ee66b3e112a8517420a45
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 23/12/2013 23:22:14
+Message:
+bin/build/run: --target option #MsgLength=31
+
+
+----
+Added: bin/build/lib/msg.js|24 0
+Modified: bin/build/lib/ubuntu.js|51 14
+Modified: bin/build/run|2 2
+
+Revision: a4aaf83f774cb18ae318f2b0a767d61db6690607
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 23/12/2013 23:37:15
+Message:
+bin/build/run: --nobuild option #MsgLength=32
+
+
+----
+Modified: bin/build/lib/ubuntu.js|17 9
+Modified: bin/build/run|2 2
+
+Revision: 699f0d245f89db6adb6007e258c5c0e25ab2906b
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 29/12/2013 12:40:19
+Message:
+bin/build/build: generate deb package #MsgLength=38
+
+
+----
+Modified: bin/build/lib/ubuntu.js|24 0
+
+Revision: 21a78aac11a515d2d79a67fef412a5b2f1566d9f
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 19/01/2014 15:55:15
+Message:
+change compiler flags #MsgLength=22
+
+
+----
+Modified: CMakeLists.txt|1 1
+
+Revision: 00f7bbb112d17f336356353dc69447a052dc9d49
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 19/01/2014 16:00:41
+Message:
+src/cordova.cpp: better debug message #MsgLength=38
+
+
+----
+Modified: src/cordova.cpp|2 2
+
+Revision: 2dcd53fb8acd1974e5e39cb58dc117be1299dcbc
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 19/01/2014 17:33:11
+Message:
+fix bin/build/version #MsgLength=22
+
+
+----
+Modified: bin/build/version|5 6
+
+Revision: b0aa70930dcfdd8d13fa816895a13417d505f17a
+Author: Alexandre Abreu <wiss1976@gmail.com>
+Date: 25/01/2014 00:46:02
+Message:
+Expose main webview as a property #MsgLength=34
+
+
+----
+Modified: Cordovaqt/CordovaViewInternal.qml|7 1
+Modified: qml/CordovaView.qml.in|5 0
+
+
+Revision: cd6b3d11b58f38932797f1f4130ce40f772bdcd5
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 28/01/2014 17:07:49
+Message:
+support content property from config.xml #MsgLength=41
+
+
+----
+Modified: main.cpp|11 0
+Modified: qml/CordovaView.qml.in|2 0
+Modified: qml/main.qml.in|1 0
+Modified: src/cordova.cpp|8 2
+Modified: src/cordova.h|1 1
+Modified: src/qmlplugin.h|47 23
+
+Revision: fc2a5fa9282a97c978a0b0dea2a685fac0cc8d8f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 31/01/2014 09:05:23
+Message:
+Set VERSION to 3.5.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+
+Revision: bb64cfa4e4b7ebb8bf1322f6ae445afac69da776
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 31/01/2014 09:05:31
+Message:
+Update JS snapshot to version 3.5.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: www/cordova.js|2 2
+
+Revision: 9d3f6143917be1a04dd369bbef499671580c5abb
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 13/02/2014 09:01:24
+Message:
+Update JS snapshot to version 3.5.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: www/cordova.js|3 3
+
+Revision: 2be494cc1d98eb9b9b6b0b36477900e20f19d775
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:45:51
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: 250ba9fcb08c2d02b226e21fa5907417c6f691ab
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 01/05/2014 04:25:56
+Message:
+CB-6559: added top level package.json #MsgLength=38
+
+
+----
+Added: package.json|17 0
+
+Revision: e4d45807644f8f0a453b112ae674727b24b1f4e0
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 14/04/2014 19:04:35
+Message:
+bin/build: switch to async shelljs.exec #MsgLength=40
+
+
+----
+Modified: bin/build/lib/ubuntu.js|98 62
+Modified: bin/create|1 0
+Modified: bin/package.json|1 0
+
+Revision: 63bb865cc4069ce265f157d3c4000737b2a5275a
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 14/04/2014 19:30:42
+Message:
+bin/build: specify framework instead of series for click chroot #MsgLength=64
+
+
+----
+Modified: bin/build/lib/ubuntu.js|4 3
+Modified: bin/check_reqs|4 4
+
+Revision: 46553475de8818e4af526a95c343db2bcc8935bf
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 14/04/2014 19:46:36
+Message:
+bin/build: fixes for --nobuild #MsgLength=31
+
+
+----
+Modified: bin/build/lib/ubuntu.js|2 2
+
+Revision: 94a65b966e32ddeb46f204fa08a435a4ba38e88f
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 15/04/2014 18:10:01
+Message:
+don't hard code cpu count #MsgLength=26
+
+
+----
+Modified: bin/build/lib/ubuntu.js|9 3
+
+Revision: af5a228e1c72cb98ec12083c55ed94dc052b87b1
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 15/04/2014 18:13:05
+Message:
+bin/build/[build,run] always report errors #MsgLength=43
+
+
+----
+Modified: bin/build/build|1 1
+Modified: bin/build/run|1 1
+
+Revision: 77cda302b077d712bb4e938581febd1bce5efca2
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 16/04/2014 17:50:22
+Message:
+check requirements before build #MsgLength=32
+
+
+----
+Modified: bin/build/build|3 1
+Modified: bin/build/lib/ubuntu.js|5 0
+Modified: bin/build/run|3 1
+Modified: bin/check_reqs|10 17
+Modified: bin/create|1 0
+
+Revision: 0c28378e833e56d2b2d8c4a63cfb34702983cf34
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 16/04/2014 18:20:10
+Message:
+workaround for qt 5.2 #MsgLength=22
+
+
+----
+Modified: Cordovaqt/cordova_wrapper.js|1 1
+
+Revision: 02f836318184a123fba9c0b9f1725d6734cd5066
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 25/04/2014 18:23:58
+Message:
+add .editorconfig #MsgLength=18
+
+
+----
+Added: .editorconfig|25 0
+
+Revision: 67869587550e8dcc658360238f9e4c86c83d5b30
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 02/05/2014 05:38:39
+Message:
+allow inter plugin communication #MsgLength=33
+
+
+----
+Modified: src/cordova.cpp|19 19
+Modified: src/cordova.h|16 7
+
+Revision: 3b6762c655c21cf635964cc45e66a5c365c915ff
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 02/05/2014 05:43:12
+Message:
+another qt 5.2 workaround #MsgLength=26
+
+
+----
+Modified: Cordovaqt/cordova_wrapper.js|3 0
+
+
+Revision: 2139f500c72a565ba68e1484a3bf0f943eeba121
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 08/05/2014 06:03:30
+Message:
+CB-6954: updated version to 3.5.0 in package.json #MsgLength=50
+
+
+----
+Modified: package.json|1 1
+
+Revision: a287e4bd402d918744922ccbd4d466a8197cb2b1
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 08/05/2014 06:03:49
+Message:
+Set VERSION to 3.6.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+
+Revision: bc726f7bcd3363b23f0bf6fa94c2eb9fddcb211c
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 08/05/2014 06:03:54
+Message:
+Update JS snapshot to version 3.6.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: www/cordova.js|163 47
+
+Revision: 431c103aab357f5b599edebe720899eb99cc6e82
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 31/05/2014 00:09:11
+Message:
+CB-6818 Add license for CONTRIBUTING.md #MsgLength=40
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: 60a10cd281fcb2ae0407edb3c2a8cda6f3cd32b8
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 17/05/2014 04:58:24
+Message:
+cplugin: add onAppLoaded #MsgLength=25
+
+
+----
+Modified: Cordovaqt/CordovaViewInternal.qml|2 1
+Modified: main.cpp|0 1
+Modified: src/cordova.cpp|8 1
+Modified: src/cordova.h|1 0
+Modified: src/cplugin.h|2 0
+Modified: src/qmlplugin.h|4 0
+
+Revision: 1120af7a028dbac7006aef4b6a7f2c4b7f9078aa
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 17/05/2014 04:59:09
+Message:
+CordovaViewInternal: add overrideScheme #MsgLength=40
+
+
+----
+Modified: Cordovaqt/CordovaViewInternal.qml|14 0
+
+Revision: 290260946db2b447e4d1ea26330a5638edfb2cc6
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 02/06/2014 03:46:52
+Message:
+add support for non-arm based Ubuntu Touch devices #MsgLength=51
+
+
+----
+Modified: bin/build/lib/ubuntu.js|38 19
+
+Revision: 11e4cf2d9a0d996832ed1929f0f53a3cd11f3f40
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 02/06/2014 23:51:49
+Message:
+add emulator support #MsgLength=21
+
+
+----
+Modified: bin/build/lib/msg.js|2 1
+Modified: bin/build/lib/ubuntu.js|26 16
+Modified: bin/build/run|2 2
+
+Revision: bb6b1b4632a68810207a0743434ed290c7d1042f
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 03/06/2014 05:52:43
+Message:
+bin/build/[build,run] add --framework option #MsgLength=45
+
+
+----
+Modified: bin/build/build|3 1
+Modified: bin/build/lib/ubuntu.js|17 12
+Modified: bin/build/run|2 2
+Modified: bin/create|0 1
+
+Revision: a815d5834d4699bed76002b6b7eb83f741de2bc9
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 03/06/2014 06:21:32
+Message:
+bin/build/build: check chroot env before build #MsgLength=47
+
+
+----
+Modified: bin/build/lib/ubuntu.js|18 0
+Modified: bin/check_reqs|1 15
+
+Revision: 042ecbe42ad439345bd55efe46d8126dd873f02f
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 04/06/2014 05:33:43
+Message:
+bin/build/build: integrate with click-reviewers-tools #MsgLength=54
+
+
+----
+Modified: bin/build/lib/ubuntu.js|56 2
+
+Revision: 89786384bf9da4f92ef2af63fb38516d0e6b1c6a
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 10/06/2014 04:28:11
+Message:
+fix build problem with ubuntu-sdk-14.04 #MsgLength=40
+
+
+----
+Modified: bin/build/lib/ubuntu.js|5 4
+
+Revision: 91aa1ea98977a937193a82594a9128e06ac78dcf
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 22/06/2014 08:36:27
+Message:
+use different compiler flags for debug/release build #MsgLength=53
+
+
+----
+Modified: CMakeLists.txt|8 1
+Modified: bin/build/build|1 1
+Modified: bin/build/lib/ubuntu.js|23 11
+
+Revision: fb396160a6fb16a8cd08cef6f6e25a0b52a3c554
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 27/06/2014 08:56:42
+Message:
+plugin could specify additional build dependency #MsgLength=49
+
+
+----
+Modified: CMakeLists.txt|7 1
+Modified: bin/build/lib/ubuntu.js|72 5
+
+Revision: 040c8981e11bbe6ca4f9b2648b194368a5bc744d
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 28/06/2014 12:08:49
+Message:
+change default to ubuntu-sdk-14.04 #MsgLength=35
+
+
+----
+Modified: Cordovaqt/CordovaViewInternal.qml|0 1
+Modified: bin/build/lib/ubuntu.js|4 2
+
+Revision: 1f76dfef6092db9abd89b9400e530c5301c104e2
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 28/06/2014 12:34:12
+Message:
+remove -flto from compiler flags #MsgLength=75
+
+
+----
+Modified: CMakeLists.txt|1 1
+Modified: bin/build/lib/ubuntu.js|2 3
+
+Revision: 24367fe133409af6bfba02c3b53839fcf0cd09d5
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 28/07/2014 07:42:08
+Message:
+set policy_version in apparmor.json based on framework version #MsgLength=63
+
+
+----
+Modified: bin/build/lib/ubuntu.js|7 1
+
+Revision: be0da07cf912bc6fe8767f9faf3412be12e9158c
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 30/07/2014 06:33:48
+Message:
+switch to incremental build #MsgLength=28
+
+
+----
+Modified: bin/build/lib/ubuntu.js|0 1
+
+Revision: a003c32d39a863c33a99843374137a1d21412009
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 19/08/2014 20:06:26
+Message:
+bin/create: create www #MsgLength=23
+
+
+----
+Modified: bin/create|3 0
+
+Revision: 41827cc8c8269d603ef023ca0015c13f35d5c069
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 27/08/2014 07:57:59
+Message:
+added missing licenses #MsgLength=23
+
+
+----
+Modified: CMakeLists.txt|20 0
+Modified: README.md|21 0
+
+Revision: c590e5d26ab13b45ed1503000df126d4fdf51514
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 27/08/2014 08:31:31
+Message:
+Set VERSION to 3.7.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+Modified: bin/build/version|1 1
+Modified: package.json|16 16
+
+Revision: 8170e18341d85d1fa41335352525b49f4b77e292
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 27/08/2014 08:31:36
+Message:
+Update JS snapshot to version 3.7.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: www/cordova.js|5 5
+
+Revision: 8d3e5ee1d3aae3f167d75eccc6fdf0b153fa12bc
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 03/09/2014 08:23:50
+Message:
+added RELEASENOTES.md #MsgLength=22
+
+
+----
+Added: RELEASENOTES.md|45 0
+
+Revision: 77dc7c078ee67aa206f2a04bfa38ef10b0e811df
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 13/09/2014 04:44:52
+Message:
+Update JS snapshot to version 3.7.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: www/cordova.js|2 2
+
+Revision: 465000de106d071a14e9c6ba339683240b2de775
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 27/08/2014 07:55:05
+Message:
+make sure 'native' dir exist #MsgLength=29
+
+
+----
+Modified: bin/build/lib/ubuntu.js|1 1
+
+Revision: 61ff3cfd49b1b84ef511fe183b39d4411b4142f3
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 02/09/2014 08:23:34
+Message:
+put icon into generated deb #MsgLength=28
+
+
+----
+Modified: bin/build/lib/ubuntu.js|12 2
+Modified: bin/check_reqs|1 1
+
+Revision: 46a8fa5c3f634ae90611cfe4973c6d0c8e665918
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 02/09/2014 08:59:28
+Message:
+set correct deb dependencies #MsgLength=29
+
+
+----
+Modified: bin/build/lib/ubuntu.js|8 1
+
+Revision: d896d28c78a1115d84dd5d5443d3c13e898b7b12
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 07/09/2014 06:18:28
+Message:
+bin/build: produce debian source package instead of binary #MsgLength=59
+
+
+----
+Added: bin/build/lib/templates/changelog|7 0
+Added: bin/build/lib/templates/compat|1 0
+Added: bin/build/lib/templates/control|17 0
+Added: bin/build/lib/templates/cordova.desktop|7 0
+Added: bin/build/lib/templates/install|3 0
+Added: bin/build/lib/templates/rules|27 0
+Modified: bin/build/lib/ubuntu.js|42 28
+Modified: bin/check_reqs|1 1
+
+Revision: 730703200d44d0a3cf7787238ceac84dd55c641f
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 08/09/2014 19:22:11
+Message:
+bin/build/run: support deploying to latest Ubuntu Touch #MsgLength=56
+
+
+----
+Modified: bin/build/lib/ubuntu.js|3 3
+Modified: main.cpp|3 0
+
+Revision: 0aa3d662bceb768983f13ddacababdb686e8a034
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 09/09/2014 17:57:45
+Message:
+add bin/update #MsgLength=15
+
+
+----
+Modified: bin/build/lib/ubuntu.js|57 0
+Modified: bin/create|3 22
+Added: bin/update|61 0
+
+Revision: 9b0b979dbcbb2c7c44511ace44637e5b4f887095
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 17/09/2014 17:33:55
+Message:
+bin/build/run: skip signature verification #MsgLength=43
+
+
+----
+Modified: bin/build/lib/ubuntu.js|2 2
+
+Revision: 9669f2caffc8368590e98262be508645d82d5107
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 02/10/2014 02:24:01
+Message:
+implement uri whitelist #MsgLength=24
+
+
+----
+Modified: CMakeLists.txt|5 1
+Modified: Cordovaqt/CordovaViewInternal.qml|7 0
+Modified: src/cordova.cpp|7 1
+Modified: src/cordova.h|5 0
+Added: src/cordova_config.cpp|44 0
+Added: src/cordova_config.hpp|35 0
+Added: src/cordova_whitelist.cpp|116 0
+Added: src/cordova_whitelist.hpp|49 0
+Modified: src/qmlplugin.h|7 0
+
+Revision: ed47b556cb34de78fb8e0c1fc25bceec925c25ed
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 17/10/2014 09:25:15
+Message:
+port to oxide #MsgLength=14
+
+
+----
+Modified: Cordovaqt/CordovaViewInternal.qml|57 48
+Modified: Cordovaqt/cordova_wrapper.js|2 2
+Added: Cordovaqt/escape.js|1 0
+Modified: src/qmlplugin.h|4 0
+Modified: www/cordova.js|11 3
+
+Revision: eb7c05c3480c2ba8ddef1aca0699fb0a7f37bc97
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 29/10/2014 08:10:28
+Message:
+add wrapper class for cordova.xml #MsgLength=34
+
+
+----
+Modified: main.cpp|2 51
+Modified: qml/CordovaView.qml.in|4 8
+Modified: qml/main.qml.in|15 5
+Modified: src/cordova.cpp|6 6
+Modified: src/cordova.h|1 1
+Modified: src/cordova_config.cpp|50 3
+Modified: src/cordova_config.hpp|13 1
+Modified: src/qmlplugin.cpp|1 3
+Modified: src/qmlplugin.h|14 19
+
+Revision: 4894ac2f9d7b83ff94d895badfef4f5d93b9b02a
+Author: Jean-Francois Moy <jeanfrancois.moy@gmail.com>
+Date: 29/10/2014 19:56:03
+Message:
+Separated ubuntu.js in multiple tasks files for better maintainability. Use template folder for storing project assets and tasks. Deleted unecessary package.json. Various improvements. #MsgLength=185
+
+
+----
+Deleted: bin/build/lib/ubuntu.js|0 610
+Modified: bin/check_reqs|2 12
+Modified: bin/create|10 47
+Added: bin/lib/check_reqs.js|92 0
+Added: bin/lib/create.js|63 0
+Added: bin/lib/update.js|69 0
+Deleted: bin/package.json|0 37
+Renamed: bin/templates/project/cordova/build [from bin/build/build]|7 6
+Renamed: bin/templates/project/cordova/clean [from bin/build/clean]|1 2
+Added: bin/templates/project/cordova/defaults.xml|33 0
+Added: bin/templates/project/cordova/lib/build.js|352 0
+Added: bin/templates/project/cordova/lib/constants.js|33 0
+Added: bin/templates/project/cordova/lib/device.js|72 0
+Renamed: bin/templates/project/cordova/lib/msg.js [from bin/build/lib/msg.js]|0 0
+Added: bin/templates/project/cordova/lib/run.js|137 0
+Added: bin/templates/project/cordova/lib/utils.js|72 0
+Renamed: bin/templates/project/cordova/run [from bin/build/run]|8 7
+Renamed: bin/templates/project/cordova/version [from bin/build/version]|0 0
+Renamed: bin/templates/project/misc/changelog [from bin/build/lib/templates/changelog]|0 0
+Renamed: bin/templates/project/misc/compat [from bin/build/lib/templates/compat]|0 0
+Renamed: bin/templates/project/misc/control [from bin/build/lib/templates/control]|0 0
+Renamed: bin/templates/project/misc/cordova.desktop [from bin/build/lib/templates/cordova.desktop]|0 0
+Renamed: bin/templates/project/misc/install [from bin/build/lib/templates/install]|0 0
+Renamed: bin/templates/project/misc/rules [from bin/build/lib/templates/rules]|0 0
+Modified: bin/update|7 34
+Modified: package.json|28 2
+
+Revision: c376721e22199382bbf3a3d4c6ec8e87622f6247
+Author: Jean-Francois Moy <jeanfrancois.moy@gmail.com>
+Date: 30/10/2014 18:30:15
+Message:
+Fixed issues identified by @zaspire for merge request. #MsgLength=55
+
+
+----
+Modified: bin/check_reqs|1 1
+Modified: bin/create|1 1
+Modified: bin/lib/check_reqs.js|23 23
+Modified: bin/lib/create.js|19 19
+Modified: bin/lib/update.js|6 7
+Modified: bin/templates/project/cordova/lib/build.js|4 4
+Modified: bin/update|1 1
+
+
+Revision: bb6acd7c8f57bbb3641101ba9567e8b52e43dbac
+Author: Jean-Francois Moy <jeanfrancois.moy@gmail.com>
+Date: 06/11/2014 19:39:14
+Message:
+Adb Exec Sync: fixed function call. #MsgLength=36
+
+
+----
+Modified: bin/templates/project/cordova/lib/device.js|1 1
+
+Revision: e242ffa63e9eed9b5f5d606c1cc5bf830a8b3144
+Author: Jean-Francois Moy <jeanfrancois.moy@gmail.com>
+Date: 06/11/2014 19:51:13
+Message:
+Run On Device was not working because of invalid calls. #MsgLength=56
+
+
+----
+Modified: bin/templates/project/cordova/lib/run.js|9 10
+
+Revision: 352c1b47ac533dcd44de464bc12800d1036ba8f0
+Author: Jean-Francois Moy <jeanfrancois.moy@gmail.com>
+Date: 06/11/2014 19:40:02
+Message:
+Added node_modules to .gitignore. #MsgLength=34
+
+
+----
+Added: .gitignore|1 0
+
+
+Revision: ba8276bae1982e60967a0482669ce7c4bce4ac42
+Author: Jean-Francois Moy <jeanfrancois.moy@gmail.com>
+Date: 06/11/2014 20:53:46
+Message:
+Removed old msg.js file as we now use constants instead. #MsgLength=57
+
+
+----
+Deleted: bin/templates/project/cordova/lib/msg.js|0 25
+
+Revision: cb3692c68de6243d7bbc2475446b3d396d1e4de9
+Author: Jean-Francois Moy <jeanfrancois.moy@gmail.com>
+Date: 06/11/2014 20:54:27
+Message:
+Corrected a spelling mistake in a msg property key. #MsgLength=52
+
+
+----
+Modified: bin/templates/project/cordova/lib/constants.js|2 2
+Modified: bin/templates/project/cordova/lib/run.js|2 2
+
+Revision: a9fe227aedd9e7d8622315b164c4aaf5d67e64c3
+Author: Jean-Francois Moy <jeanfrancois.moy@gmail.com>
+Date: 07/11/2014 00:00:23
+Message:
+Added a new logging system as well as more meaningful debugging messages. #MsgLength=272
+
+
+----
+Modified: bin/templates/project/cordova/build|4 1
+Modified: bin/templates/project/cordova/lib/build.js|19 20
+Added: bin/templates/project/cordova/lib/config.js|44 0
+Modified: bin/templates/project/cordova/lib/device.js|9 4
+Added: bin/templates/project/cordova/lib/logger.js|57 0
+Modified: bin/templates/project/cordova/lib/run.js|23 12
+Modified: bin/templates/project/cordova/lib/utils.js|21 13
+Modified: bin/templates/project/cordova/run|3 0
+
+Revision: 9438fb3e7a395550e748fcdd47bc0544e4ad9c72
+Author: Jean-Francois Moy <jeanfrancois.moy@gmail.com>
+Date: 06/11/2014 19:40:02
+Message:
+Added node_modules to .gitignore. #MsgLength=34
+
+
+----
+Added: .gitignore|1 0
+
+Revision: d931accd5c6d746523ede085d4a06391348971d4
+Author: Jean-Francois Moy <jeanfrancois.moy@gmail.com>
+Date: 06/11/2014 19:39:14
+Message:
+Adb Exec Sync: fixed function call. #MsgLength=36
+
+
+----
+Modified: bin/templates/project/cordova/lib/device.js|1 1
+
+Revision: 1d007b524b41487c29cf97c0ad3618df8f60773e
+Author: Jean-Francois Moy <jeanfrancois.moy@gmail.com>
+Date: 06/11/2014 19:51:13
+Message:
+Run On Device was not working because of invalid calls. #MsgLength=56
+
+
+----
+Modified: bin/templates/project/cordova/lib/run.js|9 10
+
+
+Revision: 31aea7b8216b7f9f4c6c306d802efd83521c0ed0
+Author: Jean-Francois Moy <jeanfrancois.moy@gmail.com>
+Date: 10/11/2014 23:06:33
+Message:
+Use --verbose instead of --debug as argument to enabled additional output. #MsgLength=177
+
+
+----
+Modified: bin/templates/project/cordova/build|3 3
+Modified: bin/templates/project/cordova/lib/config.js|6 6
+Modified: bin/templates/project/cordova/lib/logger.js|1 1
+Modified: bin/templates/project/cordova/lib/utils.js|14 4
+Modified: bin/templates/project/cordova/run|3 3
+
+Revision: effa597347525a508196cd5dc941cd9d0cd0d295
+Author: Jean-Francois Moy <jeanfrancois.moy@gmail.com>
+Date: 11/11/2014 22:56:54
+Message:
+Logger.warn instead of Logger.info for some key messages. #MsgLength=58
+
+
+----
+Modified: bin/templates/project/cordova/lib/build.js|2 2
+Modified: bin/templates/project/cordova/lib/run.js|2 3
+
+
+Revision: cd667415bc8e7b76881408f18751d669e97775a2
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 24/11/2014 08:07:40
+Message:
+set ubuntu-sdk-14.10 as default framework #MsgLength=42
+
+
+----
+Modified: bin/templates/project/cordova/lib/build.js|2 9
+Modified: bin/templates/project/cordova/lib/constants.js|1 1
+
+Revision: 3b7bbe49ba8dd8d07053e80f57837bc05f01bfbc
+Author: Jean-Francois Moy <jeanfrancois.moy@gmail.com>
+Date: 25/11/2014 22:43:52
+Message:
+Added device flag in build for building for phone. Desktop otherwise. #MsgLength=70
+
+
+----
+Modified: bin/templates/project/cordova/build|5 2
+
+Revision: b442e854702523c80a9060dbf026d5b58df75b80
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 01/12/2014 13:29:47
+Message:
+set UBUNTU_TOUCH flag for device target #MsgLength=40
+
+
+----
+Modified: CMakeLists.txt|4 0
+Modified: bin/templates/project/cordova/lib/build.js|1 1
+
+Revision: 7e279a61215e8f4c1c7e2ae2c6a8650b3f1033e2
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 01/12/2014 14:15:38
+Message:
+CB-5655: make visible cordova version(native) #MsgLength=46
+
+
+----
+Modified: CMakeLists.txt|4 4
+Modified: main.cpp|3 3
+
+Revision: 6c1f2014f7bd821bbe8f070fa671c5fedee2bff2
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 05/12/2014 14:55:22
+Message:
+misc #MsgLength=5
+
+
+----
+Modified: CMakeLists.txt|2 2
+Renamed: CordovaUbuntu/CordovaViewInternal.qml [from Cordovaqt/CordovaViewInternal.qml]|0 0
+Renamed: CordovaUbuntu/cordova_wrapper.js [from Cordovaqt/cordova_wrapper.js]|0 0
+Renamed: CordovaUbuntu/escape.js [from Cordovaqt/escape.js]|0 0
+Renamed: CordovaUbuntu/qmldir [from Cordovaqt/qmldir]|0 0
+
+Revision: 837959268bf8fb18fc2e0bdf5ae331870b487159
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 08/12/2014 17:01:08
+Message:
+unit tests #MsgLength=11
+
+
+----
+Modified: CMakeLists.txt|2 13
+Modified: qml/main.qml.in|1 0
+Added: tests/CMakeLists.txt|46 0
+Added: tests/data/config.xml|45 0
+Added: tests/data/www/index.html|7 0
+Added: tests/main.cpp|74 0
+
+Revision: bbcd1e3b8702f143c1c89e8c87e4e434f125a6d7
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 09/12/2014 21:51:57
+Message:
+move manifest generator from cordova-lib #MsgLength=41
+
+
+----
+Modified: bin/templates/project/cordova/lib/build.js|5 0
+Added: bin/templates/project/cordova/lib/config_parser.js|65 0
+Added: bin/templates/project/cordova/lib/manifest.js|74 0
+Modified: package.json|4 2
+
+Revision: 5a1db3299d718c43e4c34ca0edb3f546dc4ad74a
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 11/12/2014 02:54:45
+Message:
+fix warning message about missing chroot #MsgLength=41
+
+
+----
+Modified: bin/templates/project/cordova/lib/build.js|1 1
+
+Revision: 937e133c6994f59b8c1e8c69a6e07a0b4ef6906f
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 12/12/2014 21:16:02
+Message:
+add missing license header #MsgLength=27
+
+
+----
+Modified: tests/main.cpp|16 0
+
+
+Revision: dd5cc573cfe7d3a072a4d3bd454649be986235e7
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 16/12/2014 21:26:20
+Message:
+add missing license header #MsgLength=27
+
+
+----
+Modified: CordovaUbuntu/escape.js|19 0
+Modified: tests/data/www/index.html|17 0
+
+Revision: 5eb8fa0e76bbc9edbff5750e9e08041e377d01c1
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 16/12/2014 22:14:04
+Message:
+change version in CordovaUbuntu/qmldir #MsgLength=39
+
+
+----
+Modified: CordovaUbuntu/qmldir|2 2
+
+Revision: a936f12fd9f0690d1c279dfc723c8d25ae4df3eb
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 16/12/2014 22:31:44
+Message:
+Set VERSION to 4.1.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+Modified: bin/templates/project/cordova/version|1 1
+Modified: package.json|2 2
+
+Revision: 7d547b50a7d085a6f25e1a6c30f1239e7d30595a
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 16/12/2014 22:31:47
+Message:
+Update JS snapshot to version 4.1.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: www/cordova.js|52 29
+
+Revision: a00fa7c47b765b5ef2fb47f11d4e0d4621f49805
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/02/2015 09:43:57
+Message:
+CB-8417 moved platform specific js into platform #MsgLength=49
+
+
+----
+Added: cordova-js-src/exec.js|85 0
+Added: cordova-js-src/platform.js|33 0
+
+Revision: 1fd49d70f843e3fcfa36dea161fd0e46bd0a09a4
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 15/01/2015 22:47:12
+Message:
+add custom hooks into manifest.js #MsgLength=34
+
+
+----
+Modified: bin/templates/project/cordova/lib/manifest.js|9 2
+
+Revision: 8db47ce687ae9f8bc60992c6fc0fd0344b4678f7
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 16/01/2015 03:11:30
+Message:
+support Orientation preference from config.xml #MsgLength=47
+
+
+----
+Modified: CordovaUbuntu/CordovaViewInternal.qml|1 1
+Modified: qml/CordovaView.qml.in|10 0
+Modified: src/cordova_config.cpp|12 0
+Modified: src/cordova_config.hpp|10 0
+
+Revision: e6cfbb865b75a21b6ab4145c4355a3a29b516269
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 19/01/2015 21:36:38
+Message:
+build: suggest to install dependencies automatically #MsgLength=53
+
+
+----
+Modified: bin/templates/project/cordova/lib/build.js|48 22
+
+Revision: 84c68f69bf1afddf4ddff36cbf8900c6a18f0e74
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 19/01/2015 22:31:57
+Message:
+build: misc fix #MsgLength=16
+
+
+----
+Modified: bin/templates/project/cordova/lib/manifest.js|10 1
+
+Revision: 4696b6309e14bf62ca7b2ef678c2f3a862b06ce8
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 15/05/2015 20:28:35
+Message:
+CordovaViewInternal: provide ItemSelector for oxide #MsgLength=52
+
+
+----
+Modified: CordovaUbuntu/CordovaViewInternal.qml|4 0
+Added: CordovaUbuntu/ItemSelector.qml|67 0
+
+Revision: 2151c7a70a256c1dcb61f4597971f143e304130f
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 09/07/2015 18:22:50
+Message:
+support ubuntu-sdk-15.04 #MsgLength=25
+
+
+----
+Modified: bin/templates/project/cordova/lib/build.js|1 1
+
+Revision: 09c95eba2910037954a3a1b9f688db71395920f2
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 09/07/2015 18:35:36
+Message:
+fix desktop file generator #MsgLength=27
+
+
+----
+Modified: VERSION|1 1
+Modified: bin/templates/project/cordova/lib/manifest.js|1 1
+
+Revision: 02cd9d9c499e31089d34e92e446a06c8fee927ce
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 23/07/2015 16:12:13
+Message:
+use 1.3 policy_version for ubuntu-sdk-15.04+ #MsgLength=45
+
+
+----
+Modified: bin/templates/project/cordova/lib/build.js|5 1
+
+Revision: 49bbb5ac6a579af16ca3e3259b8ad595006153e4
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 23/07/2015 16:24:05
+Message:
+build: split error message #MsgLength=27
+
+
+----
+Modified: bin/templates/project/cordova/lib/build.js|16 4
+
+Revision: e312e20b847166d7ebe9d13c15f5942c3d19f7cf
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 23/07/2015 16:35:49
+Message:
+add default icon #MsgLength=17
+
+
+----
+Modified: bin/templates/project/cordova/lib/manifest.js|3 3
+Added: default_icon.png|0 0
+
+Revision: 13efcce00ae2afe9590b7f30c00f6ecedbed5379
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 25/06/2015 08:23:34
+Message:
+CB-8965 Copy cordova-js-src directory to platform folder during create. This closes #11 #MsgLength=88
+
+
+----
+Modified: bin/lib/create.js|1 0
+
+Revision: d3a674f2a07ab269bfb2e2acaa60dc2ab25c4d50
+Author: Alberto Mardegan <mardy@users.sourceforge.net>
+Date: 08/10/2015 14:36:31
+Message:
+build: fix mechanism for additional dependencies #MsgLength=955
+
+
+----
+Modified: bin/templates/project/cordova/lib/build.js|13 22
+
+
+Revision: 99f5f5bb4c3952d4b6e511601c18434d63a760d0
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 06:16:54
+Message:
+CB-9800 Fixing contribute link. #MsgLength=32
+
+
+----
+Modified: CONTRIBUTING.md|1 1
+
+
+Revision: 5af80bb36606087f87114f78ab25ade49c8bd660
+Author: daserge <v-seshak@microsoft.com>
+Date: 05/11/2015 17:31:32
+Message:
+CB-9836 Add .gitattributes to prevent CRLF line endings in repos #MsgLength=84
+
+
+----
+Added: .gitattributes|94 0
+
+
+Revision: 91f655d03047583919582e841fb51c1f0df1ff63
+Author: David Barth <david.barth@canonical.com>
+Date: 18/11/2015 19:19:02
+Message:
+Set VERSION to 4.4.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+Modified: bin/templates/project/cordova/version|1 1
+Modified: package.json|1 1
+
+Revision: 63d740326f2191de3bf568a06d8013395733ca2c
+Author: David Barth <david.barth@canonical.com>
+Date: 18/11/2015 19:19:04
+Message:
+Update JS snapshot to version 4.4.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: www/cordova.js|201 37
+
+Revision: 6fe31e7cb0568bee263cdf4c39c829f9e9bf4c97
+Author: David Barth <david.barth@canonical.com>
+Date: 29/10/2015 02:50:38
+Message:
+don't check deps at create time and propose to auto-install once at build time; this is for the native/desktop build #MsgLength=117
+
+
+----
+Modified: bin/create|1 6
+Modified: bin/lib/check_reqs.js|4 29
+Modified: bin/templates/project/cordova/lib/build.js|121 75
+
+Revision: 8eeea8d71dabfa43bbaab240ecf666d1e89efa88
+Author: David Barth <david.barth@canonical.com>
+Date: 12/11/2015 23:06:16
+Message:
+better info msg #MsgLength=16
+
+
+----
+Modified: bin/templates/project/cordova/lib/build.js|2 2
+
+Revision: 6630211fd507766176b2f1a1ba9a7619339a486a
+Author: David Barth <david.barth@canonical.com>
+Date: 18/11/2015 21:51:34
+Message:
+fix typo #MsgLength=9
+
+
+----
+Modified: bin/lib/check_reqs.js|1 1
+
+
+Revision: 75819c8186476c7d7534e6e19c6faebecd7fc9cd
+Author: David Barth <david.barth@canonical.com>
+Date: 30/09/2015 22:51:05
+Message:
+check if content src points to a url or local file #MsgLength=51
+
+
+----
+Modified: src/cordova.cpp|13 9
+Added: tests/config.xml|45 0
+Modified: tests/main.cpp|14 0
+
+Revision: 86e994affa1d7406295952bfac2d2af634485d2c
+Author: David Barth <david.barth@canonical.com>
+Date: 12/11/2015 23:07:06
+Message:
+fix critical issue introduced by general URL support changes earlier #MsgLength=69
+
+
+----
+Modified: src/cordova.cpp|3 2
+
+Revision: ac27c286c124776c2c4b938ccf86f2beaa20ac7e
+Author: David Barth <david.barth@canonical.com>
+Date: 13/11/2015 00:02:26
+Message:
+set mainUrl when the file exists #MsgLength=33
+
+
+----
+Modified: src/cordova.cpp|3 3
+
+Revision: cf5bbb6343aab3f0662550554c580bc464dc95d2
+Author: David Barth <david.barth@canonical.com>
+Date: 18/11/2015 21:56:36
+Message:
+use QUrl::fromLocalFile() #MsgLength=26
+
+
+----
+Modified: src/cordova.cpp|1 1
+
+
+Revision: 576fca86f5bc51df285ad5b3a94332039bf75161
+Author: David Barth <david.barth@canonical.com>
+Date: 01/10/2015 00:20:19
+Message:
+add defaut icon parameter to config.xml #MsgLength=40
+
+
+----
+Modified: bin/templates/project/cordova/defaults.xml|3 1
+
+Revision: 33f61c7fb7d2370c907beec51a604026b62a57ea
+Author: David Barth <david.barth@canonical.com>
+Date: 28/10/2015 22:30:39
+Message:
+default icon name www/img/logo.png #MsgLength=35
+
+
+----
+Modified: bin/templates/project/cordova/defaults.xml|1 1
+
+
+
+Revision: 36c777579ffcb8011dc1631981179a9421b9d83d
+Author: David Barth <david.barth@canonical.com>
+Date: 18/11/2015 23:13:46
+Message:
+CB-10030 Updated RELEASENOTES and Version for release 4.3.1-dev #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|114 0
+Modified: package.json|6 2
+
+Revision: 13ef191d834ab5343e4e2fca777507b3c246aa88
+Author: David Barth <david.barth@canonical.com>
+Date: 18/11/2015 23:16:34
+Message:
+fix email json typo #MsgLength=20
+
+
+----
+Modified: package.json|1 1
+
+Revision: 443816e8482960846bbd4cdba4deb9a585c2e8c1
+Author: David Barth <david.barth@canonical.com>
+Date: 18/11/2015 23:17:31
+Message:
+Set VERSION to 4.4.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|2 2
+
+Revision: c32e70491218277ca0581a15823a5d22333a93e5
+Author: David Barth <david.barth@canonical.com>
+Date: 19/11/2015 16:29:38
+Message:
+set version back to 4.3.1 (without coho) #MsgLength=41
+
+
+----
+Modified: VERSION|1 1
+Modified: bin/templates/project/cordova/version|1 1
+
+Revision: 9a10c78bb75ec7c5a9175d960803f4c265ae92ef
+Author: David Barth <david.barth@canonical.com>
+Date: 19/11/2015 16:30:04
+Message:
+Set VERSION to 4.4.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+Modified: bin/templates/project/cordova/version|1 1
+
+Revision: 178832e268b6cb66f16e02ce718063692d6893b3
+Author: David Barth <david.barth@canonical.com>
+Date: 19/11/2015 23:31:24
+Message:
+fix for update script #MsgLength=22
+
+
+----
+Modified: bin/lib/update.js|1 1
+Modified: bin/update|1 0
+
+Revision: 4efeff2c275709ff617c8d68c05ab5a187f24f91
+Author: David Barth <david.barth@canonical.com>
+Date: 19/11/2015 23:31:24
+Message:
+add www sub-directory to let the unit tests run properly #MsgLength=127
+
+
+----
+Added: tests/www/.touch|0 0
+
+Revision: d4e4f06c81d930c8130b1d436d2ed28ddeba8d30
+Author: David Barth <david.barth@canonical.com>
+Date: 19/11/2015 16:30:04
+Message:
+Update JS snapshot to version 4.3.1 (via coho) #MsgLength=47
+
+
+----
+Modified: www/cordova.js|1 1
+
+Revision: 2ef1e974429e08b34664011b29636e1379c623b0
+Author: David Barth <david.barth@canonical.com>
+Date: 19/11/2015 16:30:04
+Message:
+Set VERSION to 4.3.1 (via coho) #MsgLength=32
+
+
+----
+Modified: package.json|1 1
+
+Revision: 4941dfad8a69f5c52506183b1b233f488304bc35
+Author: David Barth <david.barth@canonical.com>
+Date: 19/11/2015 23:31:24
+Message:
+fix for update script #MsgLength=22
+
+
+----
+Modified: bin/lib/update.js|1 1
+Modified: bin/update|1 0
+
+Revision: 0f97fd32eaadcc03e918c9598205125ec215b492
+Author: David Barth <david.barth@canonical.com>
+Date: 19/11/2015 23:31:24
+Message:
+add www sub-directory to let the unit tests run properly #MsgLength=57
+
+
+----
+Added: tests/www/.touch|0 0
+
+
+Revision: 12ada30ceec8f1450ce3f3da897551a44fcf5440
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/11/2015 09:10:40
+Message:
+added .ratignore file #MsgLength=22
+
+
+----
+Added: .ratignore|6 0
+
+Revision: a1ce1169b718c4a2e13075edcf8c4e7c92ce9e93
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/11/2015 09:23:46
+Message:
+updated releasenotes for 4.3.1 #MsgLength=31
+
+
+----
+Modified: RELEASENOTES.md|5 9
+
+Revision: d6992c6d483b36d85059953a27f5f39116cc5459
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/11/2015 09:27:08
+Message:
+Set VERSION to 4.4.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+Modified: bin/templates/project/cordova/version|1 1
+Modified: package.json|1 1
+
+Revision: 06a0679271ce04e845a441ee59bb76ac79256f07
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/11/2015 09:27:10
+Message:
+Update JS snapshot to version 4.4.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: www/cordova.js|3 3
+
+
+Revision: 215cfa1f289e72972790b8a0f8aa1a4a8bd5398a
+Author: David Barth <david.barth@canonical.com>
+Date: 12/12/2015 00:00:12
+Message:
+CB-10119 - default framework upgraded to 15.04 #MsgLength=47
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: bin/templates/project/cordova/lib/constants.js|1 1
+
+Revision: 4de08bf483b7bf9f424a2e67477a897485f339ba
+Author: Alexandre Abreu <alexandre.abreu@canonical.com>
+Date: 08/12/2015 05:30:55
+Message:
+Fix nodejs deps install which refers to an invalid ubuntu deps check function #MsgLength=97
+
+
+----
+Modified: RELEASENOTES.md|3 1
+Modified: bin/lib/check_reqs.js|1 1
+
+Revision: c0782b24dcd54be99f546b59edd93499ed0d4dc9
+Author: David Barth <david.barth@canonical.com>
+Date: 18/12/2015 01:51:35
+Message:
+CB-10210 Updated RELEASENOTES and Version for release 4.3.2 #MsgLength=60
+
+
+----
+Modified: RELEASENOTES.md|1 1
+Modified: package.json|2 2
+
+Revision: ed9f9bef37d5f2d09bb9a4b75f2f7639acdef904
+Author: David Barth <david.barth@canonical.com>
+Date: 18/12/2015 02:45:06
+Message:
+Set VERSION to 4.4.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|2 2
+
+Revision: 3ff56ddff637c095e6a9d07a2586d37be21dc76f
+Author: David Barth <david.barth@canonical.com>
+Date: 18/12/2015 02:45:09
+Message:
+Update JS snapshot to version 4.4.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: www/cordova.js|3 3
+
+Revision: ad0cc0bdf987a3438702948d48436330f803167d
+Author: David Barth <david.barth@canonical.com>
+Date: 18/12/2015 19:14:16
+Message:
+adding missing node_modules #MsgLength=98
+
+
+----
+Added: node_modules/.bin/shjs|1 0
+Added: node_modules/colors/MIT-LICENSE.txt|22 0
+Added: node_modules/colors/ReadMe.md|77 0
+Added: node_modules/colors/colors.js|342 0
+Added: node_modules/colors/example.html|76 0
+Added: node_modules/colors/example.js|77 0
+Added: node_modules/colors/package.json|46 0
+Added: node_modules/colors/test.js|70 0
+Added: node_modules/colors/themes/winston-dark.js|12 0
+Added: node_modules/colors/themes/winston-light.js|12 0
+Added: node_modules/elementtree/.npmignore|1 0
+Added: node_modules/elementtree/.travis.yml|10 0
+Added: node_modules/elementtree/CHANGES.md|39 0
+Added: node_modules/elementtree/LICENSE.txt|203 0
+Added: node_modules/elementtree/Makefile|21 0
+Added: node_modules/elementtree/NOTICE|5 0
+Added: node_modules/elementtree/README.md|141 0
+Added: node_modules/elementtree/lib/constants.js|20 0
+Added: node_modules/elementtree/lib/elementpath.js|343 0
+Added: node_modules/elementtree/lib/elementtree.js|611 0
+Added: node_modules/elementtree/lib/errors.js|31 0
+Added: node_modules/elementtree/lib/parser.js|33 0
+Added: node_modules/elementtree/lib/parsers/index.js|1 0
+Added: node_modules/elementtree/lib/parsers/sax.js|56 0
+Added: node_modules/elementtree/lib/sprintf.js|86 0
+Added: node_modules/elementtree/lib/treebuilder.js|60 0
+Added: node_modules/elementtree/lib/utils.js|72 0
+Added: node_modules/elementtree/node_modules/sax/AUTHORS|9 0
+Added: node_modules/elementtree/node_modules/sax/LICENSE|23 0
+Added: node_modules/elementtree/node_modules/sax/README.md|213 0
+Added: node_modules/elementtree/node_modules/sax/examples/big-not-pretty.xml|8002 0
+Added: node_modules/elementtree/node_modules/sax/examples/example.js|41 0
+Added: node_modules/elementtree/node_modules/sax/examples/get-products.js|58 0
+Added: node_modules/elementtree/node_modules/sax/examples/hello-world.js|4 0
+Added: node_modules/elementtree/node_modules/sax/examples/not-pretty.xml|8 0
+Added: node_modules/elementtree/node_modules/sax/examples/pretty-print.js|74 0
+Added: node_modules/elementtree/node_modules/sax/examples/shopping.xml|2 0
+Added: node_modules/elementtree/node_modules/sax/examples/strict.dtd|870 0
+Added: node_modules/elementtree/node_modules/sax/examples/switch-bench.js|45 0
+Added: node_modules/elementtree/node_modules/sax/examples/test.html|15 0
+Added: node_modules/elementtree/node_modules/sax/examples/test.xml|1254 0
+Added: node_modules/elementtree/node_modules/sax/lib/sax.js|1006 0
+Added: node_modules/elementtree/node_modules/sax/package.json|89 0
+Added: node_modules/elementtree/node_modules/sax/test/buffer-overrun.js|25 0
+Added: node_modules/elementtree/node_modules/sax/test/cdata-chunked.js|11 0
+Added: node_modules/elementtree/node_modules/sax/test/cdata-end-split.js|15 0
+Added: node_modules/elementtree/node_modules/sax/test/cdata-fake-end.js|28 0
+Added: node_modules/elementtree/node_modules/sax/test/cdata-multiple.js|15 0
+Added: node_modules/elementtree/node_modules/sax/test/cdata.js|10 0
+Added: node_modules/elementtree/node_modules/sax/test/index.js|86 0
+Added: node_modules/elementtree/node_modules/sax/test/issue-23.js|43 0
+Added: node_modules/elementtree/node_modules/sax/test/issue-30.js|24 0
+Added: node_modules/elementtree/node_modules/sax/test/issue-35.js|15 0
+Added: node_modules/elementtree/node_modules/sax/test/issue-47.js|13 0
+Added: node_modules/elementtree/node_modules/sax/test/issue-49.js|31 0
+Added: node_modules/elementtree/node_modules/sax/test/parser-position.js|28 0
+Added: node_modules/elementtree/node_modules/sax/test/script.js|12 0
+Added: node_modules/elementtree/node_modules/sax/test/self-closing-child-strict.js|40 0
+Added: node_modules/elementtree/node_modules/sax/test/self-closing-child.js|40 0
+Added: node_modules/elementtree/node_modules/sax/test/self-closing-tag.js|25 0
+Added: node_modules/elementtree/node_modules/sax/test/stray-ending.js|17 0
+Added: node_modules/elementtree/node_modules/sax/test/trailing-non-whitespace.js|17 0
+Added: node_modules/elementtree/node_modules/sax/test/unquoted.js|17 0
+Added: node_modules/elementtree/node_modules/sax/test/xmlns-issue-41.js|67 0
+Added: node_modules/elementtree/node_modules/sax/test/xmlns-rebinding.js|59 0
+Added: node_modules/elementtree/node_modules/sax/test/xmlns-strict.js|71 0
+Added: node_modules/elementtree/node_modules/sax/test/xmlns-unbound.js|15 0
+Added: node_modules/elementtree/node_modules/sax/test/xmlns-xml-default-prefix-attribute.js|35 0
+Added: node_modules/elementtree/node_modules/sax/test/xmlns-xml-default-prefix.js|20 0
+Added: node_modules/elementtree/node_modules/sax/test/xmlns-xml-default-redefine.js|40 0
+Added: node_modules/elementtree/package.json|75 0
+Added: node_modules/elementtree/tests/data/xml1.xml|17 0
+Added: node_modules/elementtree/tests/data/xml2.xml|14 0
+Added: node_modules/elementtree/tests/test-simple.js|339 0
+Added: node_modules/optimist/.travis.yml|4 0
+Added: node_modules/optimist/LICENSE|21 0
+Added: node_modules/optimist/example/bool.js|10 0
+Added: node_modules/optimist/example/boolean_double.js|7 0
+Added: node_modules/optimist/example/boolean_single.js|7 0
+Added: node_modules/optimist/example/default_hash.js|8 0
+Added: node_modules/optimist/example/default_singles.js|7 0
+Added: node_modules/optimist/example/divide.js|8 0
+Added: node_modules/optimist/example/line_count.js|20 0
+Added: node_modules/optimist/example/line_count_options.js|29 0
+Added: node_modules/optimist/example/line_count_wrap.js|29 0
+Added: node_modules/optimist/example/nonopt.js|4 0
+Added: node_modules/optimist/example/reflect.js|2 0
+Added: node_modules/optimist/example/short.js|3 0
+Added: node_modules/optimist/example/string.js|11 0
+Added: node_modules/optimist/example/usage-options.js|19 0
+Added: node_modules/optimist/example/xup.js|10 0
+Added: node_modules/optimist/index.js|343 0
+Added: node_modules/optimist/node_modules/minimist/.travis.yml|4 0
+Added: node_modules/optimist/node_modules/minimist/LICENSE|18 0
+Added: node_modules/optimist/node_modules/minimist/example/parse.js|2 0
+Added: node_modules/optimist/node_modules/minimist/index.js|187 0
+Added: node_modules/optimist/node_modules/minimist/package.json|67 0
+Added: node_modules/optimist/node_modules/minimist/readme.markdown|73 0
+Added: node_modules/optimist/node_modules/minimist/test/bool.js|119 0
+Added: node_modules/optimist/node_modules/minimist/test/dash.js|24 0
+Added: node_modules/optimist/node_modules/minimist/test/default_bool.js|20 0
+Added: node_modules/optimist/node_modules/minimist/test/dotted.js|22 0
+Added: node_modules/optimist/node_modules/minimist/test/long.js|31 0
+Added: node_modules/optimist/node_modules/minimist/test/num.js|36 0
+Added: node_modules/optimist/node_modules/minimist/test/parse.js|197 0
+Added: node_modules/optimist/node_modules/minimist/test/parse_modified.js|9 0
+Added: node_modules/optimist/node_modules/minimist/test/short.js|67 0
+Added: node_modules/optimist/node_modules/minimist/test/whitespace.js|8 0
+Added: node_modules/optimist/node_modules/wordwrap/LICENSE|18 0
+Added: node_modules/optimist/node_modules/wordwrap/README.markdown|70 0
+Added: node_modules/optimist/node_modules/wordwrap/example/center.js|10 0
+Added: node_modules/optimist/node_modules/wordwrap/example/meat.js|3 0
+Added: node_modules/optimist/node_modules/wordwrap/index.js|76 0
+Added: node_modules/optimist/node_modules/wordwrap/package.json|63 0
+Added: node_modules/optimist/node_modules/wordwrap/test/break.js|30 0
+Added: node_modules/optimist/node_modules/wordwrap/test/idleness.txt|63 0
+Added: node_modules/optimist/node_modules/wordwrap/test/wrap.js|31 0
+Added: node_modules/optimist/package.json|64 0
+Added: node_modules/optimist/readme.markdown|500 0
+Added: node_modules/optimist/test/_.js|71 0
+Added: node_modules/optimist/test/_/argv.js|2 0
+Added: node_modules/optimist/test/_/bin.js|3 0
+Added: node_modules/optimist/test/dash.js|31 0
+Added: node_modules/optimist/test/parse.js|446 0
+Added: node_modules/optimist/test/parse_modified.js|14 0
+Added: node_modules/optimist/test/short.js|16 0
+Added: node_modules/optimist/test/usage.js|292 0
+Added: node_modules/optimist/test/whitespace.js|8 0
+Added: node_modules/q/LICENSE|18 0
+Added: node_modules/q/README.md|916 0
+Added: node_modules/q/node_modules/asap/CHANGES.md|64 0
+Added: node_modules/q/node_modules/asap/LICENSE.md|21 0
+Added: node_modules/q/node_modules/asap/README.md|237 0
+Added: node_modules/q/node_modules/asap/asap.js|65 0
+Added: node_modules/q/node_modules/asap/browser-asap.js|66 0
+Added: node_modules/q/node_modules/asap/browser-raw.js|220 0
+Added: node_modules/q/node_modules/asap/package.json|85 0
+Added: node_modules/q/node_modules/asap/raw.js|101 0
+Added: node_modules/q/node_modules/pop-iterate/.npmignore|1 0
+Added: node_modules/q/node_modules/pop-iterate/README.md|82 0
+Added: node_modules/q/node_modules/pop-iterate/array-iterator.js|23 0
+Added: node_modules/q/node_modules/pop-iterate/iteration.js|18 0
+Added: node_modules/q/node_modules/pop-iterate/object-iterator.js|20 0
+Added: node_modules/q/node_modules/pop-iterate/package.json|55 0
+Added: node_modules/q/node_modules/pop-iterate/pop-iterate.js|22 0
+Added: node_modules/q/node_modules/pop-iterate/test/pop-iterate-test.js|72 0
+Added: node_modules/q/node_modules/weak-map/README.md|129 0
+Added: node_modules/q/node_modules/weak-map/package.json|61 0
+Added: node_modules/q/node_modules/weak-map/weak-map.js|685 0
+Added: node_modules/q/package.json|130 0
+Added: node_modules/q/q.js|1802 0
+Added: node_modules/q/queue.js|25 0
+Added: node_modules/shelljs/.documentup.json|6 0
+Added: node_modules/shelljs/.jshintrc|7 0
+Added: node_modules/shelljs/.npmignore|2 0
+Added: node_modules/shelljs/.travis.yml|5 0
+Added: node_modules/shelljs/LICENSE|26 0
+Added: node_modules/shelljs/README.md|552 0
+Added: node_modules/shelljs/bin/shjs|51 0
+Added: node_modules/shelljs/global.js|3 0
+Added: node_modules/shelljs/make.js|47 0
+Added: node_modules/shelljs/package.json|61 0
+Added: node_modules/shelljs/scripts/generate-docs.js|21 0
+Added: node_modules/shelljs/scripts/run-tests.js|50 0
+Added: node_modules/shelljs/shell.js|153 0
+Added: node_modules/shelljs/src/cat.js|43 0
+Added: node_modules/shelljs/src/cd.js|19 0
+Added: node_modules/shelljs/src/chmod.js|208 0
+Added: node_modules/shelljs/src/common.js|189 0
+Added: node_modules/shelljs/src/cp.js|200 0
+Added: node_modules/shelljs/src/dirs.js|191 0
+Added: node_modules/shelljs/src/echo.js|20 0
+Added: node_modules/shelljs/src/error.js|10 0
+Added: node_modules/shelljs/src/exec.js|181 0
+Added: node_modules/shelljs/src/find.js|51 0
+Added: node_modules/shelljs/src/grep.js|52 0
+Added: node_modules/shelljs/src/ls.js|126 0
+Added: node_modules/shelljs/src/mkdir.js|68 0
+Added: node_modules/shelljs/src/mv.js|80 0
+Added: node_modules/shelljs/src/popd.js|1 0
+Added: node_modules/shelljs/src/pushd.js|1 0
+Added: node_modules/shelljs/src/pwd.js|11 0
+Added: node_modules/shelljs/src/rm.js|145 0
+Added: node_modules/shelljs/src/sed.js|43 0
+Added: node_modules/shelljs/src/tempdir.js|56 0
+Added: node_modules/shelljs/src/test.js|85 0
+Added: node_modules/shelljs/src/to.js|29 0
+Added: node_modules/shelljs/src/toEnd.js|29 0
+Added: node_modules/shelljs/src/which.js|79 0
+
+Revision: 3d172c8af35985923e4e425a4599134cb0c3f01c
+Author: David Barth <david.barth@canonical.com>
+Date: 27/01/2016 19:58:00
+Message:
+Update JS snapshot to version 4.4.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: www/cordova.js|3 3
+
+Revision: 848bf8087b29f0d306f04d40e9af243ef1976d45
+Author: Peter Bakondy <pbakondy@gmail.com>
+Date: 20/01/2016 18:07:54
+Message:
+fix typo #MsgLength=8
+
+
+----
+Modified: RELEASENOTES.md|1 1
+
+Revision: 3cb3550895f216b78fdd0053d70acb2acd8a1705
+Author: Alexandre Abreu <alexandre.abreu@canonical.com>
+Date: 27/01/2016 00:25:39
+Message:
+Fix reliance on deprecated Oxide's onLoadingChanged signal #MsgLength=59
+
+
+----
+Modified: CordovaUbuntu/CordovaViewInternal.qml|5 5
+Modified: src/coreplugins.cpp|1 1
+
+Revision: 1ecfc4f18409c19f29060e33f434a5664a74d5c9
+Author: Alexandre Abreu <alexandre.abreu@canonical.com>
+Date: 27/01/2016 05:17:25
+Message:
+Fix debugging enabled flag & remove webkit specific bit #MsgLength=56
+
+
+----
+Modified: CordovaUbuntu/CordovaViewInternal.qml|2 2
+Modified: bin/templates/project/cordova/lib/run.js|4 4
+Modified: main.cpp|20 4
+
+Revision: 8136602f23a004cf5dc7c80aeffbc4d7ca8f6159
+Author: Peter Bakondy <pbakondy@gmail.com>
+Date: 20/01/2016 18:07:54
+Message:
+fix typo #MsgLength=8
+
+
+----
+Modified: RELEASENOTES.md|1 1
+
+
+Revision: 0c2c3e222d9e2b2928d92fa2dc8fafb0bb89f1a3
+Author: Alexandre Abreu <alexandre.abreu@canonical.com>
+Date: 27/01/2016 00:25:39
+Message:
+Fix reliance on deprecated Oxide's onLoadingChanged signal #MsgLength=59
+
+
+----
+Modified: CordovaUbuntu/CordovaViewInternal.qml|5 5
+Modified: src/coreplugins.cpp|1 1
+
+
+Revision: af17a8628613d70368cbf5e53f48e732f12c9cb2
+Author: Alexandre Abreu <alexandre.abreu@canonical.com>
+Date: 27/01/2016 05:17:25
+Message:
+Fix debugging enabled flag & remove webkit specific bit #MsgLength=56
+
+
+----
+Modified: CordovaUbuntu/CordovaViewInternal.qml|2 2
+Modified: bin/templates/project/cordova/lib/run.js|4 4
+Modified: main.cpp|20 4
+
+
+Revision: 9509e621af44ba9db296b88012c34274d0663f20
+Author: David Barth <david.barth@canonical.com>
+Date: 28/01/2016 19:15:01
+Message:
+Use com.canonical.oxide 1.9 only, 1.10 won't work #MsgLength=50
+
+
+----
+Modified: CordovaUbuntu/CordovaViewInternal.qml|1 1
+
+
+Revision: 7c96ab3d5723b5cc087759770a18321e7811ebd4
+Author: David Barth <david.barth@canonical.com>
+Date: 28/01/2016 19:27:12
+Message:
+CB-10453 Updated RELEASENOTES and Version for release 4.3.3 #MsgLength=60
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|2 2
+
+Revision: e64d55827b35f462b381a8a9eedd9b146534b138
+Author: Alexandre Abreu <alexandre.abreu@canonical.com>
+Date: 10/05/2016 04:45:46
+Message:
+Improve debugging behavior; Add ip option #MsgLength=42
+
+
+----
+Modified: CordovaUbuntu/CordovaViewInternal.qml|17 1
+Modified: main.cpp|34 2
+
+Revision: 2b00f308215a00ad7c3305190e8f5a74fdd4dd0f
+Author: Alexandre Abreu <alexandre.abreu@canonical.com>
+Date: 10/05/2016 08:25:32
+Message:
+Add app launch tweaks #MsgLength=22
+
+
+----
+Modified: CordovaUbuntu/CordovaViewInternal.qml|2 2
+Modified: bin/templates/project/cordova/lib/run.js|28 3
+Modified: main.cpp|5 4
+
+Revision: 98a1fe603d70cb0c63904d19c3ee1f5de18740af
+Author: Alexandre Abreu <alexandre.abreu@canonical.com>
+Date: 10/05/2016 22:08:03
+Message:
+Tweak debug launch #MsgLength=19
+
+
+----
+Modified: bin/templates/project/cordova/lib/run.js|1 1
+Modified: main.cpp|6 0
+
+Revision: 5c888c631789bdab71d807c10ceea938cdcb5f54
+Author: Alexandre Abreu <alexandre.abreu@canonical.com>
+Date: 10/05/2016 23:48:19
+Message:
+tweak devtools url message #MsgLength=27
+
+
+----
+Modified: main.cpp|1 1
+
+Revision: 626568c614dd9b7ce6fa6ad4cd1b75d7ce23108c
+Author: Alexandre Abreu <alexandre.abreu@canonical.com>
+Date: 11/05/2016 01:27:38
+Message:
+Update run devtools message #MsgLength=28
+
+
+----
+Modified: bin/templates/project/cordova/lib/run.js|2 6
+
+
+Revision: bc919c100e4bd89be12b8be141d7f1d7e4dbce40
+Author: David Barth <david.barth@canonical.com>
+Date: 18/05/2016 00:39:52
+Message:
+use ubuntu-app-stop to stop the app more cleanly #MsgLength=49
+
+
+----
+Modified: bin/templates/project/cordova/lib/run.js|2 2
+
+Revision: d6f921f7fa178388cf4cb353f32d38b50bd5959d
+Author: David Barth <david.barth@canonical.com>
+Date: 18/05/2016 01:26:23
+Message:
+fix build issue with function signature missing the cordova variable name; also avoid a warning #MsgLength=96
+
+
+----
+Modified: src/coreplugins.cpp|2 1
+
+Revision: 2e2083f60929f82a13494e9fdccec36a96627f1a
+Author: David Barth <david.barth@canonical.com>
+Date: 19/05/2016 16:13:59
+Message:
+CB-11294 Updated RELEASENOTES and Version for release 4.3.4 #MsgLength=60
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: package.json|1 1
+
+Revision: 68d1cd91f25560de8642aa3386e126045e1f3784
+Author: David Barth <david.barth@canonical.com>
+Date: 10/06/2016 21:34:16
+Message:
+initPlugins only once; See CB-11355; Thanks to Pat Deegan for pointing that out #MsgLength=80
+
+
+----
+Modified: src/cordova.cpp|7 0
+
+Revision: 3e4fd3691fb7da8836151f8881514ec23c340743
+Author: Alexandre Abreu <alexandre.abreu@canonical.com>
+Date: 14/07/2016 04:14:32
+Message:
+Fix (Yn) prompt issue with chroot install #MsgLength=42
+
+
+----
+Modified: bin/templates/project/cordova/lib/build.js|3 3
+
+
+Revision: 73b952f353729a0cb732546120a9e6d459a0a9c2
+Author: Alexandre Abreu <alexandre.abreu@canonical.com>
+Date: 19/07/2016 05:00:47
+Message:
+Add connectivity dev build dependencies #MsgLength=40
+
+
+----
+Modified: bin/templates/project/cordova/lib/build.js|3 2
+Modified: bin/templates/project/misc/control|2 1
+
+
+Revision: 1e8c852b1a28bd0bf59b521fff8e4f42c8991f6f
+Author: Alexandre Abreu <alexandre.abreu@canonical.com>
+Date: 28/07/2016 23:41:18
+Message:
+Make sure that all plugin dependencies linking flags are taken into account when compiling #MsgLength=91
+
+
+----
+Modified: CMakeLists.txt|7 1
+
+
+Revision: a66e07bb63ac144b58c25bc020877839311661c2
+Author: David Barth <david.barth@canonical.com>
+Date: 02/09/2016 21:52:47
+Message:
+CB-11733 Updated RELEASENOTES and Version for release 4.3.5 #MsgLength=60
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+
+Revision: 28cd3c1b53c1558baed4c66cb2deba597f05b3c6
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/10/2016 13:20:37
+Message:
+Add github pull request template #MsgLength=33
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|22 0
+
+Revision: 658aac2f9066ae3a98a858e142504519b40c6165
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/12/2017 10:04:40
+Message:
+[CB-12762] point package.json repo to github instead of apache #MsgLength=62
+
+
+----
+Modified: package.json|1 1
+
+Revision: 1097b7fad0ae46d3d5fae1f9f3667784859ba4a2
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 17/04/2019 01:14:35
+Message:
+deprecation notice #MsgLength=18
+
+
+----
+Modified: README.md|10 0
+

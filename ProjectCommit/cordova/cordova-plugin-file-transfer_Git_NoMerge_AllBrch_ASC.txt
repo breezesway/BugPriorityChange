@@ -1,0 +1,5124 @@
+Revision: 35e89b3aeccc9377d85ea382091ea50a0915949f
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/04/2013 06:42:06
+Message:
+Initial Commit #MsgLength=15
+
+
+----
+Added: plugin.xml|19 0
+Added: src/android/FileProgressResult.java|63 0
+Added: src/android/FileTransfer.java|960 0
+Added: src/android/FileUploadResult.java|73 0
+
+Revision: feb16bf34111b3dcb0ebc26991640414688af54d
+Author: Joe Bowser <bowserj@apache.org>
+Date: 14/05/2013 02:42:24
+Message:
+Updating FileTransfer based on changes in master, read pre-3.0 commit history for author info #MsgLength=94
+
+
+----
+Modified: src/android/FileTransfer.java|12 7
+
+Revision: 3a4a622c9c778acd5e8272d7d541eb71f3fb2e76
+Author: hermwong <herm.wong@gmail.com>
+Date: 15/06/2013 01:59:12
+Message:
+added README #MsgLength=13
+
+
+----
+Added: README.md|2 0
+
+Revision: 81cf31677f544332d3409b9c37624bc927ae2537
+Author: hermwong <herm.wong@gmail.com>
+Date: 15/06/2013 01:59:53
+Message:
+added iOS files #MsgLength=16
+
+
+----
+Added: src/ios/CDVFileTransfer.h|82 0
+Added: src/ios/CDVFileTransfer.m|730 0
+
+Revision: 571d316e7ad3cf6df75f5485c72f38607a71cfcc
+Author: hermwong <herm.wong@gmail.com>
+Date: 15/06/2013 02:15:26
+Message:
+added js files from Cordova-JS #MsgLength=31
+
+
+----
+Added: www/FileTransfer.js|207 0
+Added: www/FileTransferError.js|39 0
+
+Revision: bfb7af458429f68876485df307ab2d29c2a28c6d
+Author: hermwong <herm.wong@gmail.com>
+Date: 15/06/2013 02:17:18
+Message:
+updated config for iOS #MsgLength=23
+
+
+----
+Modified: plugin.xml|12 0
+
+Revision: 550e560ac62fcdcae0ae43e86cc0e504576d0685
+Author: hermwong <herm.wong@gmail.com>
+Date: 15/06/2013 02:19:03
+Message:
+updated config to include paths to JS files #MsgLength=44
+
+
+----
+Modified: plugin.xml|8 0
+
+Revision: 187a12725b5b37179f90b5903fcc82b7e5490c10
+Author: hermwong <herm.wong@gmail.com>
+Date: 15/06/2013 02:25:03
+Message:
+added Android file system permissions #MsgLength=38
+
+
+----
+Modified: plugin.xml|4 0
+
+Revision: e248ef742fa7096932404775ffb82602e1447c70
+Author: hermwong <herm.wong@gmail.com>
+Date: 15/06/2013 03:03:10
+Message:
+added dependency config. for the file plugin into plugin.xml #MsgLength=61
+
+
+----
+Modified: plugin.xml|3 1
+
+Revision: 62e365cbc1f482cc629489d7e8e4bd3535f65da2
+Author: Tim Kim <timk@adobe.com>
+Date: 15/06/2013 06:02:02
+Message:
+Fixing up plugin.xml #MsgLength=21
+
+
+----
+Modified: plugin.xml|4 4
+
+Revision: 26b4948cd32b5f9821187f3ee7ceb63c796d3a70
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 15/06/2013 06:41:11
+Message:
+[CB-3728] first pass wp7 support #MsgLength=33
+
+
+----
+Modified: plugin.xml|13 2
+Added: src/wp7/FileTransfer.cs|526 0
+
+Revision: 5ac7d847368ea43d4394736cdd2752edf39207ad
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/06/2013 07:34:22
+Message:
+updated ios references, added docs & tests #MsgLength=43
+
+
+----
+Added: docs/filetransfer/filetransfer.md|303 0
+Added: docs/filetransfererror/filetransfererror.md|45 0
+Modified: plugin.xml|1 2
+Modified: src/ios/CDVFileTransfer.h|1 1
+Modified: src/ios/CDVFileTransfer.m|3 1
+Added: test/autotest/html/HtmlReporter.js|101 0
+Added: test/autotest/html/HtmlReporterHelpers.js|60 0
+Added: test/autotest/html/ReporterView.js|164 0
+Added: test/autotest/html/SpecView.js|79 0
+Added: test/autotest/html/SuiteView.js|22 0
+Added: test/autotest/html/TrivialReporter.js|192 0
+Added: test/autotest/index.html|59 0
+Added: test/autotest/jasmine.css|81 0
+Added: test/autotest/jasmine.js|2530 0
+Added: test/autotest/pages/.DS_Store|0 0
+Added: test/autotest/pages/filetransfer.html|91 0
+Added: test/autotest/test-runner.js|62 0
+Added: test/autotest/tests/.DS_Store|0 0
+Added: test/autotest/tests/filetransfer.tests.js|753 0
+Added: test/cordova-incl.js|85 0
+Added: test/index.html|64 0
+Added: test/main.js|162 0
+Added: test/master.css|164 0
+
+Revision: 54684892ecedfd8bbcba5a1b62c7547565f8b0fd
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/06/2013 07:36:11
+Message:
+fixed mistake in ios references #MsgLength=32
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|1 1
+
+Revision: 48f8ede7376ea17d528e682540db9d89951f5255
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/06/2013 08:34:43
+Message:
+updated referenes #MsgLength=18
+
+
+----
+Modified: www/FileTransfer.js|4 4
+
+Revision: 00ffa38bbbce4e9aa39e553e89604b19de3090d8
+Author: Tim Kim <timk@adobe.com>
+Date: 21/06/2013 04:47:49
+Message:
+Changed to feature tag #MsgLength=23
+
+
+----
+Modified: plugin.xml|4 2
+
+Revision: 2b290934233f7353f3dafa53b7fa1de45796f9c1
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 25/06/2013 06:25:23
+Message:
+[CB-3729] first pass wp8 support #MsgLength=33
+
+
+----
+Modified: plugin.xml|21 0
+Added: src/wp8/FileTransfer.cs|526 0
+Added: www/wp/FileTransfer.js|123 0
+
+Revision: bc4b0f12e5837a22277652e496b2e60f6d0fb2bd
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:56
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|3 3
+
+Revision: de38d4a2c81020487b1a194861b5271de55274cf
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 07:46:10
+Message:
+Fix require paths that were broken by plugin id changes #MsgLength=56
+
+
+----
+Modified: www/FileTransfer.js|4 4
+
+Revision: aedea9130733cc30f39cdf1daa5dac51222ba123
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 06:46:03
+Message:
+[CB-4118] remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|2 2
+Renamed: src/wp/FileTransfer.cs [from src/wp7/FileTransfer.cs]|0 0
+Deleted: src/wp8/FileTransfer.cs|0 526
+
+Revision: 5694fefb8e20e228e28b717d87f68dc83df1dbe8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 02:54:45
+Message:
+[CB-4131] Use relative require paths in FileTransfer plugin. #MsgLength=61
+
+
+----
+Modified: www/FileTransfer.js|1 1
+
+Revision: cdb45cd9314c234a7056231939ac4b408ebf1618
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: src/android/FileTransfer.java|3 3
+
+Revision: e4559a21d724b497ab685f869043ff1d3577dc64
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 10/07/2013 23:56:29
+Message:
+[CB-3430] [CB-1413] Remove Old (2.3.3) HTTP Workaround #MsgLength=116
+
+
+----
+Modified: src/android/FileTransfer.java|0 36
+
+Revision: f1c774938289b4d9a34b89acd45edf2955f78d69
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/07/2013 03:14:00
+Message:
+Use UriResolvers in FileTransfer. Fixes mobile-spec test where source is a file:// URL. #MsgLength=88
+
+
+----
+Modified: src/android/FileTransfer.java|113 142
+
+Revision: fd6ef121aec3070c6d34d1fa2a55c118acea0dc6
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 12/07/2013 05:44:58
+Message:
+[CB-1605] Warning cleanup! Closed an input stream. #MsgLength=73
+
+
+----
+Modified: src/android/FileTransfer.java|1 3
+
+Revision: d39016ecb216b7f317ac6c76b2dcf4e11d34b69c
+Author: Hasan Ahmad <haahmad@blackberry.com>
+Date: 28/06/2013 23:51:38
+Message:
+[CB-3732] blackberry10 support #MsgLength=124
+
+
+----
+Modified: plugin.xml|16 6
+Modified: www/FileTransfer.js|1 1
+Added: www/blackberry10/FileTransfer.js|188 0
+Added: www/blackberry10/XHRImplementation.js|201 0
+
+Revision: 34fd9247ff6992f0b4ae0d1e61516ff52bc7aed8
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 16/07/2013 04:28:06
+Message:
+[CB-3727] Fix require issue for FileTransferError #MsgLength=50
+
+
+----
+Modified: www/FileTransfer.js|1 1
+
+Revision: a1951f158e92b90ce07f56785b69d55c44573455
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 16/07/2013 05:13:00
+Message:
+[CB-3727] [BlackBerry10] Update FileError require for BB10 override #MsgLength=68
+
+
+----
+Modified: www/blackberry10/FileTransfer.js|1 1
+
+Revision: 834248d040fd76e9e8206418964347066b6c05bb
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 16/07/2013 05:30:34
+Message:
+[CB-3727] [BlackBerry10] One more resolve issue fix #MsgLength=52
+
+
+----
+Modified: www/blackberry10/FileTransfer.js|1 1
+
+Revision: 616bc344beadc469333bc97969d8b55083012c84
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 08:59:21
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Added: .gitignore|23 0
+
+Revision: d29f2b044b2457ac40e80929ecda143ffeb310f0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 14/07/2013 05:18:23
+Message:
+[android] [CB-3384] Make FileTransfer use CordovaResourceApi. #MsgLength=62
+
+
+----
+Modified: src/android/FileTransfer.java|71 98
+
+Revision: c44678466c6c58d629b8da085be7fe3a0ce9a14b
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 13/07/2013 09:54:23
+Message:
+WIP, fixed param handling #MsgLength=26
+
+
+----
+Modified: src/wp/FileTransfer.cs|91 13
+
+Revision: d189aacf9a306e8d88b55ec30841314790adc09a
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 17/07/2013 15:55:27
+Message:
+fixed numerous wp issues #MsgLength=25
+
+
+----
+Modified: src/wp/FileTransfer.cs|195 149
+
+Revision: 02a23a997bcd1f032df0405dcf05aecceadd5bbe
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|3 0
+
+Revision: e37895a56e314832d8480dfde221a1f72d915140
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/07/2013 08:12:06
+Message:
+[CB-4367] Explicit AssetsLibrary.framework dependency should be specified for some core plugins #MsgLength=96
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: 4dbb483654cdab425834a1dad70e257d3efdbc69
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:32:15
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 445f737f4365278d9c1b4d15561cbf7539c64b27
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 31/07/2013 09:19:25
+Message:
+[Windows8][CB-4442] Added windows 8 support #MsgLength=44
+
+
+----
+Modified: plugin.xml|7 0
+Added: www/windows8/FileTransferProxy.js|110 0
+
+Revision: 659639fba7ce7e1b0cf46da8f705ec2e05f22d07
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 01/08/2013 02:13:40
+Message:
+fixed dependency subdir=/* wrong subdir specification. #MsgLength=55
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 94131974c3e203aafbe7e80b326be5fb84d26ec1
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: 3fa3f96a94b96450db324b11a8ec2cff906eee9f
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 8f920d277242ca2d241ed5722c1c9001cebc193a
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 06:40:43
+Message:
+[plugin.xml] adding android namespace #MsgLength=38
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: d50689cd43b35cc398c9d30e164deb8827c2b6ee
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 05:37:20
+Message:
+updated namespace, name tag and readme #MsgLength=39
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|4 4
+
+Revision: a83011685dc13e136685dda9fc5e77088f2afe70
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 30/07/2013 23:35:09
+Message:
+Fix NPE in mobile-spec Upload of an unknown host test. #MsgLength=92
+
+
+----
+Modified: src/android/FileTransfer.java|2 1
+
+Revision: 9a125991f76d3094aa903b3e851cb8a06a1571e1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-file-transfer to its own Java package. #MsgLength=69
+
+
+----
+Modified: plugin.xml|4 4
+Modified: src/android/FileProgressResult.java|1 1
+Modified: src/android/FileTransfer.java|2 1
+Modified: src/android/FileUploadResult.java|1 1
+
+Revision: fbbfff122ad18f5d2f10e31a594d6c400b5d4531
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/08/2013 01:46:47
+Message:
+[CB-4480] Using 64 bit ints to store file size #MsgLength=47
+
+
+----
+Modified: src/ios/CDVFileTransfer.h|3 3
+Modified: src/ios/CDVFileTransfer.m|11 11
+
+Revision: a59755ec72cb2b8623c0b205d310138215221947
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/08/2013 01:51:11
+Message:
+[CB-4480] Fix up a couple Unsigned->Signed mistakes from previous commit. #MsgLength=143
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|6 6
+
+Revision: 6a6adadfee3bd8624c9b29c7a8010864b689a115
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 05:59:04
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 55b026b56314d87804b5f3807f48f547b7324b60
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 06/09/2013 08:51:54
+Message:
+[wp8] added progress events and fixed failing tests #MsgLength=52
+
+
+----
+Modified: src/wp/FileTransfer.cs|195 35
+
+Revision: f71dba4311dfbb2c11df6fa36302fea2d6f0d9e5
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 05:37:20
+Message:
+updated namespace, name tag and readme #MsgLength=39
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|2 2
+
+
+Revision: 95fa68041ef5e22d7e1647696f53eeef1379184d
+Author: Viras- <viras@users.sourceforge.net>
+Date: 05/09/2013 13:00:38
+Message:
+[CB-4668] WP8 FileTransfer works with the standard JS implementation. Fixing error in parsing of HTTP params which causes sub-JSON objects to not work #MsgLength=151
+
+
+----
+Modified: plugin.xml|1 7
+Modified: src/wp/FileTransfer.cs|2 2
+Deleted: www/wp/FileTransfer.js|0 123
+
+
+Revision: 5a0e96113d4e1d07dc0eba734893f3db2ff6f248
+Author: Viras- <viras@users.sourceforge.net>
+Date: 06/09/2013 13:17:35
+Message:
+[CB-4668] updating WP7 definition to use same code as WP8 #MsgLength=58
+
+
+----
+Modified: plugin.xml|0 5
+
+Revision: 66ad62f92dd4d87c1fe73f8f27fe42b3f1229c8d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:22
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 2e868f197f06db4320b4b383bd2cd4b76fcf51a2
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+Add empty CHANGELOG.md #MsgLength=23
+
+
+----
+Added: CHANGELOG.md|23 0
+
+
+
+
+Revision: 6eaa2efcd073595b0052f4db0bf4036a021406cb
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 12/09/2013 09:39:51
+Message:
+add atob+btoa for wp7 only fixes FileTransfer issues #MsgLength=53
+
+
+----
+Modified: plugin.xml|8 2
+Modified: src/wp/FileTransfer.cs|110 59
+Modified: test/autotest/tests/filetransfer.tests.js|80 53
+Added: www/wp7/base64.js|71 0
+
+Revision: 6bd367c5120f54955a4e52874d273c340ec9dd28
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 13/09/2013 08:24:09
+Message:
+fixed merge anomaly error #MsgLength=26
+
+
+----
+Modified: src/wp/FileTransfer.cs|5 5
+
+Revision: 8cfb8a25685c6081764b7d026bd9d2fc7dd2fad2
+Author: Viras- <viras@users.sourceforge.net>
+Date: 14/09/2013 00:38:48
+Message:
+fixing base64 helper function clobber for wp7 [CB-4668] fixing FileTransfer code to work in wp7 and be safe for headers which contain ':' #MsgLength=138
+
+
+----
+Modified: plugin.xml|1 1
+Modified: src/wp/FileTransfer.cs|7 4
+
+Revision: 61bb9604cf7d4e9a7c19f98225ae68aee02d234d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: 00ec110525e96acaf8514f8548fbd345d7ce724f
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:25:10
+Message:
+CB-4889 renaming org.apache.cordova.core.file-transfer to org.apache.cordova.file-transfer and updating dependency #MsgLength=115
+
+
+----
+Modified: plugin.xml|3 3
+
+Revision: 93d8bfc2c50eed169bac1f171b29c24c30cda300
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 22:46:54
+Message:
+CB-4889 updating core references #MsgLength=33
+
+
+----
+Modified: www/FileTransfer.js|3 3
+Modified: www/windows8/FileTransferProxy.js|3 3
+
+Revision: ae3caf491ab828fd70a7e29c6b4e101429c01ca8
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 24/09/2013 16:41:00
+Message:
+[windows8] commandProxy was moved #MsgLength=34
+
+
+----
+Modified: www/windows8/FileTransferProxy.js|1 1
+
+
+Revision: 2655c12baecf094c12f0b9c01a8a1df60469c4ee
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:50:19
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 2be905fcabe31aabc308dfbc81e100ee6579df52
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 08:42:26
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.3.2 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|6 1
+Modified: plugin.xml|1 1
+
+Revision: 32e980dbde11f0f20d9dfe01b13e70be29386f14
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 01/10/2013 05:03:05
+Message:
+Merge branch 'fix-win8' of https://github.com/Touchit/cordova-plugin-file-transfer into dev #MsgLength=92
+
+
+----
+Modified: www/FileTransfer.js|1 1
+Modified: www/windows8/FileTransferProxy.js|10 1
+
+Revision: 9337aa1a89eb6fd0382590b7976cac5431557796
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 01/10/2013 05:19:42
+Message:
+removed un-needed undef check #MsgLength=30
+
+
+----
+Modified: www/windows8/FileTransferProxy.js|3 4
+
+Revision: cf9b9fece6a20325614ecf8a8da0c8dd9a356d90
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:13
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 714bff1ec2bc4a4d25a25bee18e446ecfbff8bf6
+Author: Maxime LUCE <somatic@live.fr>
+Date: 18/09/2013 09:33:13
+Message:
+Fix Windows 8 HTMLAnchorElement return host:80 which force Basic Auth Header to replace options Auth Header #MsgLength=108
+
+
+----
+Modified: www/windows8/FileTransferProxy.js|8 0
+
+Revision: e80d0788a61d6150487416369ba5aa1bd4a44e7e
+Author: Maxime LUCE <somatic@live.fr>
+Date: 18/09/2013 09:33:58
+Message:
+Fix missing headers in Windows 8 Proxy #MsgLength=39
+
+
+----
+Modified: www/FileTransfer.js|1 1
+
+Revision: 02afbec042f76fab8e6fc23825a913d69aa2b23c
+Author: Maxime LUCE <somatic@live.fr>
+Date: 18/09/2013 09:43:14
+Message:
+Fix missing headers in Windows 8 upload proxy #MsgLength=46
+
+
+----
+Modified: www/windows8/FileTransferProxy.js|2 1
+
+
+Revision: 318f5433739b73fe33f79ba5281e443e98c96bb3
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 01/10/2013 05:19:42
+Message:
+removed un-needed undef check #MsgLength=30
+
+
+----
+Modified: www/windows8/FileTransferProxy.js|3 4
+
+Revision: 9d2246e85c7f4b002218e6d231c0d452a9650cf7
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/10/2013 06:22:38
+Message:
+[CB-5010] Updated version and RELEASENOTES.md for release 0.3.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+
+
+Revision: 9a10ff4548e8955caafbd8146165bf4773191128
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/10/2013 07:06:08
+Message:
+[CB-5010] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: d7db66c8105c9e5590a298944e9d00a2dc43a8bc
+Author: hermwong <herm.wong@gmail.com>
+Date: 22/10/2013 07:47:46
+Message:
+CB-5128: added repo + issue tag to plugin.xml for file transfer plugin #MsgLength=71
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: 2e5e6eafafbeb66bc67912e9d53a42a8bea788da
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 02:49:05
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.3.4 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+
+Revision: 60f96e078b5d2cd8cf1c22556fb76d62f473fbca
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:15
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a80ae0417b45052c8e2064f605c7027afcadcd06
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 05:44:05
+Message:
+Added amazon-fireos platform. Change to use amazon-fireos as the platform if the user agen string contains 'cordova-amazon-fireos' #MsgLength=131
+
+
+----
+Modified: plugin.xml|17 0
+Added: src/amazon/FileTransfer.java|873 0
+Modified: test/cordova-incl.js|2 1
+
+Revision: 2f1411f5dc37854ded35ee31671e66b380b8117f
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 22/11/2013 22:40:56
+Message:
+CB-5466: Update FileTransfer plugin to accept filesystem urls #MsgLength=62
+
+
+----
+Modified: src/ios/CDVFileTransfer.h|1 0
+Modified: src/ios/CDVFileTransfer.m|69 60
+Modified: www/FileTransfer.js|1 0
+
+Revision: a61f0f3d50078590ae4fef099cd9a4d2e4bde751
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 22/11/2013 23:20:57
+Message:
+CB-5466: Minor version bump #MsgLength=28
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 4219ef3f81d542fad18d6c0716a2953614a381c4
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 13/11/2013 13:54:59
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|6 0
+Added: src/ubuntu/file-transfer.cpp|247 0
+Added: src/ubuntu/file-transfer.h|97 0
+
+
+Revision: 4c11f54bd587008debf6e22e18199044711d0976
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 04/12/2013 21:50:38
+Message:
+CB-5466: Partial revert; we're not ready yet for FS urls #MsgLength=57
+
+
+----
+Modified: src/ios/CDVFileTransfer.h|0 1
+Modified: src/ios/CDVFileTransfer.m|43 51
+
+Revision: 76baae9690a1254a8b17cd36970597aabffac07e
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:30
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.4.0 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+
+Revision: 09b67189bfafb19e74bdde5e3c22146d30d83937
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:03
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 647dad7aba71f6e69d8b35b3cb76328c26127c1f
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 11/12/2013 02:59:09
+Message:
+CB-5466: Update to work with filesystem URLs #MsgLength=177
+
+
+----
+Modified: plugin.xml|1 1
+Modified: src/ios/CDVFileTransfer.h|1 0
+Modified: src/ios/CDVFileTransfer.m|55 43
+
+Revision: 692f1fb955976370f068020e96237cf6db8c8750
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 14/12/2013 00:42:34
+Message:
+Remove @1 designation from file plugin dependency until pushed to npm #MsgLength=70
+
+
+----
+Modified: plugin.xml|2 1
+
+Revision: 148a13bc8c8e4ee58c938dbe41a14732a33fd5da
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/filetransfer/filetransfer.md|0 303
+Deleted: docs/filetransfererror/filetransfererror.md|0 45
+
+Revision: 102e7afc9399fc7cb2c15e7c6bfd319c9dab3aac
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 04:01:58
+Message:
+CB-5658 Add doc.index.md for File Transfer plugin #MsgLength=50
+
+
+----
+Modified: README.md|21 4
+Added: doc/index.md|253 0
+
+Revision: 7986a60a1dd7cad019386804fc2acbafd357ce33
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:02
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: 398a9ecafbbe32d5e68254b32c19dd4f821a11ec
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 04/01/2014 00:15:31
+Message:
+CB-5722 [BlackBerry10] Update upload function to use native file object #MsgLength=72
+
+
+----
+Modified: www/blackberry10/XHRImplementation.js|1 1
+
+Revision: 73541fb5a23ee1652f834742cbca5f99c1bd9402
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:31
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 59
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/filetransfer.html|0 91
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/.DS_Store|0 0
+Deleted: test/autotest/tests/filetransfer.tests.js|0 780
+Deleted: test/cordova-incl.js|0 86
+Deleted: test/index.html|0 64
+Deleted: test/main.js|0 162
+Deleted: test/master.css|0 164
+
+Revision: 613ee821df54d58af64bfa512e3a57857dac87a0
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 10/01/2014 00:24:08
+Message:
+CB-4899 [BlackBerry10] Improve binary file transfer download #MsgLength=61
+
+
+----
+Modified: www/blackberry10/XHRImplementation.js|2 2
+
+Revision: 3c1ff1606447c3d6dadc5a032bbe987ac570188a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/01/2014 00:44:55
+Message:
+CB-5762 android: Fix lengthComputable set wrong for gzip downloads #MsgLength=133
+
+
+----
+Modified: src/android/FileTransfer.java|4 2
+
+Revision: 8374b3dd67ecdb62423ff55ccb9d0a4454cfe4a4
+Author: Colin Mahoney <cdmahoney+githubrepo@gmail.com>
+Date: 10/01/2014 00:20:43
+Message:
+CB-5631 Removed SimpleTrackingInputStream.read(byte[] buffer) #MsgLength=485
+
+
+----
+Modified: src/android/FileTransfer.java|2 5
+
+Revision: 4ca546b3d85d48f93b6b4325be8792685c6a76ed
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 24/01/2014 11:37:27
+Message:
+iOS: Update for new file plugin api #MsgLength=36
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|2 2
+
+Revision: be44194066f20b1b927608005f76afb7d11994d6
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 29/01/2014 07:23:10
+Message:
+CB-2421 explicitly write the bytesSent,responseCode,result to the FileUploadResult pending release of cordova-plugin-file dependency, added some sanity checks for callbacks #MsgLength=173
+
+
+----
+Modified: www/windows8/FileTransferProxy.js|17 15
+
+Revision: d3b21b35fc7b3c7b38a8285a688d527578753f05
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 05/02/2014 07:23:02
+Message:
+CB-5365 Remove unused exception var to prevent warnings? #MsgLength=57
+
+
+----
+Modified: src/wp/FileTransfer.cs|4 4
+
+Revision: 3c36ee1fcf64371fc97d521dcd7c721145858fa6
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:59
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.4.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|13 0
+Modified: plugin.xml|1 1
+
+Revision: dd73f9b3af66ca1a271dc3509f256903a2837897
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:36:03
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-file-transfer #MsgLength=73
+
+
+----
+Added: doc/es/index.md|253 0
+
+Revision: 89986af8f05df606959822c76f269eed8ce034c9
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:14:43
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-file-transfer #MsgLength=73
+
+
+----
+Added: doc/fr/index.md|253 0
+
+Revision: 6f91ac3a3068a12b7bffe3d03471943a1690941e
+Author: Bas Bosman <sbg.bosman@mindef.nl>
+Date: 27/01/2014 05:40:23
+Message:
+CB-4907 Close stream when we're finished with it #MsgLength=49
+
+
+----
+Modified: src/android/FileTransfer.java|12 8
+
+Revision: 651460fb6b41035c96bcc31a38621ec8100648f1
+Author: Christoph Neumann <christoph@neumannhaus.com>
+Date: 26/09/2013 22:35:11
+Message:
+CB-6000 Nginx rejects Content-Type without a space before "boundary". #MsgLength=139
+
+
+----
+Modified: src/android/FileTransfer.java|1 1
+Modified: src/wp/FileTransfer.cs|1 1
+
+Revision: 28fb0a7c4d07278d2f765f6762fb8b1a6fd1d2e4
+Author: Daniel Heffernan <daniel@cookpad.com>
+Date: 11/02/2014 03:58:37
+Message:
+CB-5588 iOS: Add response headers to upload result #MsgLength=133
+
+
+----
+Modified: src/ios/CDVFileTransfer.h|1 0
+Modified: src/ios/CDVFileTransfer.m|3 1
+
+Revision: f8884981e4f2163650253e763170d38250d1ebfc
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/02/2014 04:11:05
+Message:
+CB-5588 Docs for upload headers. #MsgLength=33
+
+
+----
+Modified: doc/index.md|3 0
+
+Revision: 3c242d8ba816aec8417723c31e08b23445d54eda
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:59
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.4.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|13 0
+Modified: plugin.xml|1 1
+
+Revision: 914946857f6c4260b4f91e921cf51f0a68a32ea0
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:30
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 31ac00d3ae35f9ca280cf4e6c9edc9df23ea95b5
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 13/02/2014 22:49:09
+Message:
+CB-6022: Add backwards-compatibility notes to doc #MsgLength=135
+
+
+----
+Modified: doc/index.md|34 13
+
+Revision: 35f80e42ec0a0343022bffa88b1cbd2e68f0fc3f
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 19/02/2014 04:25:01
+Message:
+CB-6050: Use instance method on actual file plugin object to get FileEntry to return on download #MsgLength=97
+
+
+----
+Modified: plugin.xml|1 1
+Modified: src/android/FileTransfer.java|14 2
+
+Revision: a1d6fc07e8a40c1b2b16f4103c403b30e1089668
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/02/2014 09:58:31
+Message:
+Fix default value for trustAllHosts on iOS (YES->NO) #MsgLength=53
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|2 2
+
+Revision: a588236cbdb3c81e2b38b8bfc036aa89520b28d5
+Author: Jan Pittner <sourcetree@janpittner.com>
+Date: 19/02/2014 03:44:48
+Message:
+CB-2190 Make backgroundTaskId apply to downloads as well. Move backgroundTaskId to the delegate. #MsgLength=97
+
+
+----
+Modified: src/ios/CDVFileTransfer.h|1 1
+Modified: src/ios/CDVFileTransfer.m|14 8
+
+Revision: 49b4774e7ecea3730fb060eafd0c7d8b7e98523a
+Author: Jan Pittner <jan.pittner@gmail.com>
+Date: 19/02/2014 23:56:27
+Message:
+CB-6059 iOS: Stop FileTransfer.download doing IO on the UI thread. #MsgLength=67
+
+
+----
+Modified: src/ios/CDVFileTransfer.h|1 0
+Modified: src/ios/CDVFileTransfer.m|8 2
+
+Revision: 0f8467bdfe238bee5cd3af9545dfe152de12d65f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 20/02/2014 00:49:24
+Message:
+CB-6059 iOS: Add necessary @synchronized blocks for newly introduced multi-threading. #MsgLength=86
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|40 30
+
+Revision: d28f85d7b054bb6d9fb577f94df2852ede75c2b1
+Author: lmnbeyond <lmnbeyond@gmail.com>
+Date: 24/02/2014 11:14:16
+Message:
+Make it a priority to use filesystemName to create FileSystem object #MsgLength=69
+
+
+----
+Modified: www/FileTransfer.js|1 1
+
+Revision: e76deb20d562aa4c4a35f6f6a1c7e68a91bfaa71
+Author: lmnbeyond <lmnbeyond@gmail.com>
+Date: 25/02/2014 10:34:11
+Message:
+ios:Get file plugin via commandDelegate to avoid using global file plugin directly. #MsgLength=84
+
+
+----
+Modified: src/ios/CDVFileTransfer.h|2 0
+Modified: src/ios/CDVFileTransfer.m|7 8
+
+
+Revision: ed24e210f4d781db17861319e9daa3ad89c9bd95
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 28/02/2014 05:40:32
+Message:
+CB-6106: Ensure that nativeURL is used by file transfer download #MsgLength=65
+
+
+----
+Modified: www/FileTransfer.js|1 0
+
+Revision: b3369db9107c7b586c2a0f90e90da03c2eaa7e3b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 00:56:29
+Message:
+CB-6114 Updated version and RELEASENOTES.md for release 0.4.2 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: plugin.xml|1 1
+
+Revision: 4d2c87350d2ddeb2bd895279df45a61c9e7ddfa4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|8 0
+
+
+
+Revision: 05786ec2ecf24a9244d43a88dce4c645eb0059b4
+Author: Archana Naik <naika@lab126.com>
+Date: 11/03/2014 14:02:28
+Message:
+Upleveled from android port with following commits: 3c1ff16 Andrew Grieve - CB-5762 android: Fix lengthComputable set wrong for gzip downloads 8374b3d Colin Mahoney - CB-5631 Removed SimpleTrackingInputStream.read(byte[] buffer) 6f91ac3 Bas Bosman - CB-4907 Close stream when we're finished with it 651460f Christoph Neumann - CB-6000 Nginx rejects Content-Type without a space before "boundary". 35f80e4 Ian Clelland - CB-6050: Use instance method on actual file plugin object to get FileEntry to return on download #MsgLength=517
+
+
+----
+Modified: src/amazon/FileTransfer.java|34 19
+
+
+Revision: f115394912e08800d20ff6ca315b30e39562460d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 01:29:15
+Message:
+CB-6114 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: c35ca1a5c22298542f84e372a3f9ff6da914a05b
+Author: Archana Naik <naika@lab126.com>
+Date: 11/03/2014 14:02:28
+Message:
+Upleveled from android port with following commits: 3c1ff16 Andrew Grieve - CB-5762 android: Fix lengthComputable set wrong for gzip downloads 8374b3d Colin Mahoney - CB-5631 Removed SimpleTrackingInputStream.read(byte[] buffer) 6f91ac3 Bas Bosman - CB-4907 Close stream when we're finished with it 651460f Christoph Neumann - CB-6000 Nginx rejects Content-Type without a space before "boundary". 35f80e4 Ian Clelland - CB-6050: Use instance method on actual file plugin object to get FileEntry to return on download #MsgLength=517
+
+
+----
+Modified: src/amazon/FileTransfer.java|34 19
+
+Revision: 0f84287df03e7372eebe1d8620f8a78bb4900b4e
+Author: James Jong <wjamesjong@gmail.com>
+Date: 13/03/2014 21:27:01
+Message:
+CB-6212 iOS: fix warnings compiled under arm64 64-bit #MsgLength=54
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|2 2
+
+Revision: 653ec00fa65528afba0a203f364600f8999ccc9f
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 21/03/2014 23:09:50
+Message:
+[ios] Cleanup extra semicolons #MsgLength=31
+
+
+----
+Modified: src/ios/CDVFileTransfer.h|1 1
+Modified: src/ios/CDVFileTransfer.m|3 3
+
+Revision: 449df558480b12afc048af01138be7c0d4f8699a
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 21/03/2014 23:22:46
+Message:
+[ios] Cast id references to NSURL to avoid compiler warnings (Fixes: apache/cordova-plugin-file-transfer#18) #MsgLength=109
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|2 2
+
+Revision: 223d08626df36c0f386af3fe609d0a36c450d6d9
+Author: torrmal <jorge.torres.maldonado@gmail.com>
+Date: 26/03/2014 23:58:26
+Message:
+[CB-5175] CDVFileTransfer asynchronous download (Fixes #24) #MsgLength=155
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|6 2
+
+Revision: 2309e0e76ca7f4db63e273be75dfd7332b6eb824
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 28/03/2014 22:36:01
+Message:
+iOS: Fix error where files were not removed on abort #MsgLength=53
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|21 15
+
+Revision: f2e56a2ac0ee85de15e1c95eaae2edcbc1c3f134
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2014 07:18:01
+Message:
+CB-6422 [windows8] use cordova/exec/proxy #MsgLength=42
+
+
+----
+Modified: www/windows8/FileTransferProxy.js|1 1
+
+Revision: 9b85ae122aa722d059cafd2719cb2e32f250259a
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:17:53
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|19 0
+
+Revision: 8b727b2cfd295b55c200c58da2c16df509e97632
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.4.3 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|13 0
+Modified: plugin.xml|1 1
+
+
+Revision: eb63c466e8425f9bf7ceb9c570f91d42979e5993
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 98e5da556f11ff04d532d2f7569f4ef7bd786ba1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/04/2014 10:16:53
+Message:
+CB-6494 android: Fix upload of KitKat content URIs #MsgLength=101
+
+
+----
+Modified: src/android/FileTransfer.java|1 8
+
+
+Revision: 2043b4e8b087f6d112883beaefbd5825de29d3dc
+Author: Staci <smcooper@us.ibm.com>
+Date: 23/04/2014 01:40:56
+Message:
+CB-6466 Auto-create directories in download #MsgLength=163
+
+
+----
+Modified: src/wp/FileTransfer.cs|45 45
+
+
+Revision: 2ecc6859e298131fbcaf3d28a78c365d7f181fb7
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:26:21
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+
+Revision: 67ae8d8852bcd53d5c8df514016b6b099eb399ef
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/05/2014 22:25:01
+Message:
+CB-6378 Use connection.disconnect() instead of stream.close() for thread-safety #MsgLength=80
+
+
+----
+Modified: src/android/FileTransfer.java|24 20
+
+Revision: c6bafea30e273d617e34bbcf6feac033263aa666
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 09/05/2014 02:00:02
+Message:
+CB-3440 [BlackBerry10] Update implementation to use modules from file plugin #MsgLength=77
+
+
+----
+Modified: plugin.xml|9 3
+Added: www/blackberry10/FileTransferProxy.js|36 0
+Deleted: www/blackberry10/XHRImplementation.js|0 201
+Added: www/blackberry10/xhrFileTransfer.js|259 0
+
+Revision: 3bdf3775ebc1137ccf56b2db8d833ceac0152063
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 16/05/2014 22:47:20
+Message:
+CB-6706: Relax dependency on file plugin #MsgLength=41
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 0a2e3cb62f9f699a28148645bae9565dd6506ac4
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:49:32
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-file-transfer #MsgLength=73
+
+
+----
+Added: doc/ja/index.md|281 0
+
+Revision: 70463c238aa3668c133cbfe88fe4646b1c46a4a6
+Author: Martin Hujer <mhujer@gmail.com>
+Date: 09/03/2014 05:33:37
+Message:
+Upload progress now works also for second file #MsgLength=222
+
+
+----
+Modified: src/wp/FileTransfer.cs|2 0
+
+
+
+Revision: 131f84f123652a1bc16b5764481283cb086b4aa0
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:22:04
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-file-transfer #MsgLength=73
+
+
+----
+Modified: doc/es/index.md|42 14
+Modified: doc/fr/index.md|52 24
+Added: doc/it/index.md|281 0
+Added: doc/ko/index.md|281 0
+Added: doc/pl/index.md|281 0
+Added: doc/zh/index.md|281 0
+
+Revision: df530ad57beafdb5d0d1b39e4ed1c406936a8813
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:36:29
+Message:
+documentation translation: cordova-plugin-file-transfer #MsgLength=56
+
+
+----
+Added: doc/de/index.md|281 0
+Modified: doc/ja/index.md|9 9
+
+Revision: ef0853dbe8f3be254c3959b7b4bad64520dd645d
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:25:53
+Message:
+CB-6802 Add license #MsgLength=20
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: c5d5c9e2bff15270af0f8b150b9462a09cde9b73
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 03/05/2014 01:25:56
+Message:
+ubuntu: support 'cdvfile' URI #MsgLength=30
+
+
+----
+Modified: src/ubuntu/file-transfer.cpp|49 31
+Modified: src/ubuntu/file-transfer.h|10 4
+
+Revision: ec2e268faee68205cfffc4080f29b527ed72b948
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:36:03
+Message:
+CB-6127 Spanish and French Translations added. Github close #21 #MsgLength=64
+
+
+----
+Added: doc/de/index.md|281 0
+Added: doc/es/index.md|281 0
+Added: doc/fr/index.md|281 0
+Added: doc/it/index.md|281 0
+Added: doc/ja/index.md|281 0
+Added: doc/ko/index.md|281 0
+Added: doc/pl/index.md|281 0
+Added: doc/zh/index.md|281 0
+
+Revision: db9eca0aa83115051cbb516913424c15882479e8
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:43
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.4.4 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|14 0
+Modified: plugin.xml|1 1
+
+Revision: b4a86333f6d4b594134accf19b7d74cc6ad9bc8d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 690824248cd745a44ba79b622b370d0b41cdbce0
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 07/06/2014 02:27:57
+Message:
+CB-6890: Fix pluginManager access for 4.0.x branch #MsgLength=51
+
+
+----
+Modified: src/android/FileTransfer.java|22 1
+
+
+Revision: 46f9c1d458de7c4f85f2fa19e0020ffb6072651d
+Author: ignisvulpis <axel@nennker.de>
+Date: 30/05/2014 02:31:10
+Message:
+CB-6781: add the exception text to the error object #MsgLength=52
+
+
+----
+Modified: src/android/FileTransfer.java|21 14
+
+Revision: 32106e7a3f6e0b932cb41371260e6f5198c1a6de
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 12/06/2014 04:34:35
+Message:
+CB-6781: Continue previous commit with one new instance (This closes #30) #MsgLength=74
+
+
+----
+Modified: src/android/FileTransfer.java|1 1
+
+Revision: 1bc00a21db2d3d6a35caf561f20512a60cb8f0ae
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 12/06/2014 04:42:39
+Message:
+CB-6781: Update new docs to match AlexNennker's changes in PR30 #MsgLength=64
+
+
+----
+Modified: doc/index.md|2 1
+
+
+Revision: 63d07020cfa891d85be0b5df7da605cffefbc524
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/06/2014 09:09:55
+Message:
+CB-2420 [Windows8] honor fileKey and param options. This closes #15 #MsgLength=68
+
+
+----
+Modified: www/windows8/FileTransferProxy.js|32 9
+
+Revision: 2cd642211b9731138e00797bb2b45c25e6975326
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 18/06/2014 15:42:40
+Message:
+[Windows8] upload uses the provided fileName or the actual fileName #MsgLength=68
+
+
+----
+Modified: www/windows8/FileTransferProxy.js|1 1
+
+Revision: 318c9412bca4ae8e2398085b24f9d727c124e0fb
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 20/06/2014 22:48:25
+Message:
+Update index.md #MsgLength=57
+
+
+----
+Modified: doc/index.md|4 4
+
+
+Revision: 1adf1c7a1b350da68b7c6aaf750da913e29df4e9
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 28/06/2014 00:12:14
+Message:
+Update release notes and clean pull requests. #MsgLength=110
+
+
+----
+Modified: RELEASENOTES.md|2 0
+
+
+Revision: 04d45bab345122a34d79b9c09c730955404f493f
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:27:22
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-file-transfer documentation translation: cordova-plugin-file-transfer #MsgLength=119
+
+
+----
+Modified: doc/de/index.md|7 5
+Modified: doc/es/index.md|7 5
+Modified: doc/fr/index.md|7 5
+Modified: doc/it/index.md|7 5
+Modified: doc/ja/index.md|7 5
+Modified: doc/ko/index.md|7 5
+Added: doc/ru/index.md|283 0
+Modified: doc/zh/index.md|7 5
+
+Revision: 4e5f10c3a332405781bc066ececd667f795ccb29
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 08/07/2014 21:48:11
+Message:
+[BlackBerry10] Minor doc correction #MsgLength=36
+
+
+----
+Modified: doc/index.md|1 1
+
+Revision: 22f1ea573c4eadf784b7731fc4a4d815fa0a067b
+Author: Javier Puerto <javier.puerto@becompany.ch>
+Date: 12/06/2014 16:34:42
+Message:
+CB-6928: Open output stream only if it's necessary. #MsgLength=52
+
+
+----
+Modified: src/android/FileTransfer.java|1 2
+
+Revision: b88584c5a3f874f975942ca5c9509526d63825af
+Author: Javier Puerto <javier.puerto@becompany.ch>
+Date: 19/06/2014 08:20:51
+Message:
+CB-6928: Handle 304 status code #MsgLength=32
+
+
+----
+Modified: src/android/FileTransfer.java|78 64
+Modified: www/FileTransferError.js|1 0
+
+Revision: 97a831e568d555e776c078f40fb3ea7bf4fbdf23
+Author: Javier Puerto <javier.puerto@becompany.ch>
+Date: 19/06/2014 16:52:34
+Message:
+CB-6928: Add new error code to documentation #MsgLength=45
+
+
+----
+Modified: doc/es/index.md|2 1
+Modified: doc/fr/index.md|2 1
+Modified: doc/index.md|1 0
+Modified: doc/it/index.md|2 1
+Modified: doc/ja/index.md|2 1
+Modified: doc/ko/index.md|2 1
+Modified: doc/pl/index.md|1 0
+Modified: doc/zh/index.md|2 1
+
+
+Revision: 7e331313f651b3d7deda0c44c3f44feab2a2aa19
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 10/07/2014 02:43:30
+Message:
+CB-7110cordova-plugin-file-transfer documentation translation: cordova-plugin-file-transfer #MsgLength=92
+
+
+----
+Modified: doc/de/index.md|2 1
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/ru/index.md|2 1
+Modified: doc/zh/index.md|2 2
+
+Revision: bdd3e2d56f2e33266667333308d38db387cdd7d8
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 14/07/2014 22:56:08
+Message:
+CB-6781: Expose FileTransferError.exception to application #MsgLength=59
+
+
+----
+Modified: www/FileTransfer.js|2 2
+Modified: www/FileTransferError.js|2 1
+
+Revision: 5c32f656169733581ca83d6a32814575c5df8111
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 03/07/2014 01:26:25
+Message:
+CB-6961 port file-transfer tests to framework #MsgLength=84
+
+
+----
+Added: test/tests.js|976 0
+
+
+Revision: 683a0facefa7586f1c10a77124f67b8dd27ac261
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 25/07/2014 02:48:35
+Message:
+added documentation to manual tests #MsgLength=36
+
+
+----
+Modified: test/tests.js|14 5
+
+Revision: 5877844711ed1e4e6190caa106a0fa0028eb51ac
+Author: Rodrigo Silveira <rodrigos@outlook.com>
+Date: 10/07/2014 06:48:26
+Message:
+FirefoxOS initial implementation #MsgLength=33
+
+
+----
+Modified: doc/index.md|3 0
+Modified: plugin.xml|10 0
+Added: www/firefoxos/FileTransferProxy.js|223 0
+
+
+Revision: fa0ba8ff81eaf590e4ee20498b1c9b9235df0d68
+Author: Andrew Reedy <andrewrreedy@gmail.com>
+Date: 23/07/2014 11:55:19
+Message:
+Upload parameters out of order #MsgLength=30
+
+
+----
+Modified: doc/index.md|2 2
+
+
+Revision: de4bf61d4cbc0a8bdd5f3394ffb0b763b011845e
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 02/08/2014 04:23:44
+Message:
+CB-7249cordova-plugin-file-transfer documentation translation: cordova-plugin-file-transfer #MsgLength=92
+
+
+----
+Modified: doc/de/index.md|5 2
+Modified: doc/es/index.md|5 2
+Modified: doc/fr/index.md|21 18
+Modified: doc/it/index.md|5 2
+Modified: doc/ja/index.md|5 2
+Modified: doc/ko/index.md|5 2
+Modified: doc/pl/index.md|14 9
+Modified: doc/ru/index.md|9 6
+Modified: doc/zh/index.md|14 11
+
+Revision: a071c5bf9a3b2814968c9607b30899b537e384d8
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:22
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.4.5 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|16 0
+Modified: plugin.xml|1 1
+
+Revision: 4425ef64e429b50e6391699be92cf2bc6e37d60f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:27
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 3b4afc8606b21a755e8dc8c2e73bd418ad47a6ce
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 29/07/2014 03:57:29
+Message:
+Fixed failing spec.19 on wp8 #MsgLength=58
+
+
+----
+Modified: test/tests.js|3 28
+
+
+Revision: fbca17be1e877addfa54b50eee10f1e2bf3fbdca
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 02/08/2014 04:30:43
+Message:
+Renamed test dir, added nested plugin.xml and test #MsgLength=72
+
+
+----
+Added: tests/plugin.xml|30 0
+Renamed: tests/tests.js [from test/tests.js]|0 0
+
+
+
+Revision: 0b257f534c96c6c1584ebc4657ecdd0be9a6ccff
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 13/08/2014 01:06:36
+Message:
+CB-6466 created mobile-spec test #MsgLength=167
+
+
+----
+Modified: tests/tests.js|24 36
+
+
+Revision: b5d1dffc2f6b8c37fbca4df966cb0d0f74c86ca2
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 16/08/2014 02:58:07
+Message:
+CB-6466 Fix failing test due to recent url change #MsgLength=50
+
+
+----
+Modified: tests/tests.js|1 1
+
+
+Revision: 6f9b59fd8832b90f79c88d8a1af7369e9fadfabf
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 19/08/2014 01:39:29
+Message:
+added documentation for new test #MsgLength=33
+
+
+----
+Modified: tests/tests.js|2 1
+
+Revision: f92244aff9641dd3a287e7efe7f15344cec3db1c
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 15/08/2014 16:41:59
+Message:
+CB-7316 Improves current specs compatibility: #MsgLength=578
+
+
+----
+Modified: www/FileTransfer.js|17 14
+Modified: www/windows8/FileTransferProxy.js|171 31
+
+Revision: ad0382e24c3ece62802b64afa9c5f2cfb3e0b032
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 15/08/2014 16:47:15
+Message:
+CB-7316 Adds support for Windows platform, moves *Proxy files to proper directory. #MsgLength=83
+
+
+----
+Modified: plugin.xml|8 1
+Renamed: src/windows/FileTransferProxy.js [from www/windows8/FileTransferProxy.js]|0 0
+Added: src/windows8/FileTransferProxy.js|283 0
+
+Revision: 05f2e7737d94f7a6945936027e2b36d83f9d9930
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 15/08/2014 17:36:16
+Message:
+CB-7316 Updates docs with actual information. #MsgLength=46
+
+
+----
+Modified: doc/index.md|4 1
+
+
+Revision: affb5ec0a6a91fc124e5d67c4fb2d30314f167fd
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/08/2014 02:59:40
+Message:
+Remove dupe file windows+windows8 both use the same one #MsgLength=56
+
+
+----
+Modified: plugin.xml|1 1
+Deleted: src/windows8/FileTransferProxy.js|0 283
+
+Revision: 82ad25e2c0b9858af53a301ec42f99d4cd03c52a
+Author: Archana Naik <naika@lab126.com>
+Date: 29/08/2014 03:07:06
+Message:
+Amazon related changes. #MsgLength=24
+
+
+----
+Modified: tests/tests.js|1 1
+
+Revision: 38d35c291f74006f486f7c9fda67579b6a44ae6e
+Author: Edna Morales <eymorale@us.ibm.com>
+Date: 03/09/2014 05:07:35
+Message:
+CB-7423 fix spec28,29 lastProgressEvent not visible to afterEach function #MsgLength=74
+
+
+----
+Modified: tests/tests.js|3 2
+
+Revision: d1642de6553132e16c808927a4f1f840f68ff167
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 05/09/2014 10:30:55
+Message:
+CB-7249 cordova-plugin-file-transfer documentation translation: cordova-plugin-file-transfer #MsgLength=93
+
+
+----
+Modified: doc/de/index.md|4 1
+Modified: doc/es/index.md|4 1
+Modified: doc/fr/index.md|4 1
+Modified: doc/it/index.md|4 1
+Modified: doc/ja/index.md|4 1
+Modified: doc/ko/index.md|4 1
+Modified: doc/ru/index.md|4 1
+Modified: doc/zh/index.md|4 1
+
+Revision: 58a60f1bf35eb3dcba6b9ba23f469b170fb89c2e
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 16/09/2014 05:26:09
+Message:
+CB-7471 cordova-plugin-file-transfer documentation translation: cordova-plugin-file-transfer #MsgLength=93
+
+
+----
+Modified: doc/pl/index.md|4 1
+
+Revision: 16249c2f7ac53cb593e11eeae180066a88a28271
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:41
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.4.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|17 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8391656b49da49c0f1d01d30739f8e9782ee0bd7
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:01
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: edcdfebf029e021d94ab45b5b9aed6473d8c9cc0
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:15
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: 49c57d27b38df9e11e53c4bc11495d9f6a13852e
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 12/09/2014 14:10:33
+Message:
+CB-7529 Adds support for 'ms-appdata' URIs for windows #MsgLength=55
+
+
+----
+Modified: src/windows/FileTransferProxy.js|15 2
+
+Revision: 2b86a85c749a476d0998bb0caff6859c160cb92b
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 12/09/2014 16:07:33
+Message:
+CB-7532 Handle non-existent download dirs properly #MsgLength=51
+
+
+----
+Modified: src/windows/FileTransferProxy.js|20 4
+
+Revision: 223191f9bc6083abfe84dfca6e1e6fc0fa5a5f8f
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 12/09/2014 16:08:16
+Message:
+Construct proper FileEntry with nativeURL property set #MsgLength=55
+
+
+----
+Modified: src/windows/FileTransferProxy.js|6 2
+
+
+Revision: d0d8698af14731e2c8256693997c716db15d568d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 07:10:12
+Message:
+ Updated version and RELEASENOTES.md for release 0.4.7 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|6 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7cfde19cac789c537475dc33b442e0b9e4f651f0
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 08:09:46
+Message:
+ Incremented plugin version. #MsgLength=29
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8ae7ab05911a273ca2647f847ab681b85451e908
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:12:05
+Message:
+CB-7700 cordova-plugin-file-transfer documentation translation: cordova-plugin-file-transfer #MsgLength=93
+
+
+----
+Modified: doc/es/index.md|2 2
+Modified: doc/pl/index.md|4 4
+Modified: doc/ru/index.md|6 6
+
+
+Revision: aebe887ffecf3a7480aebba350e605972a769043
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 11/10/2014 00:46:50
+Message:
+CB-7700 cordova-plugin-file-transfer documentation translation: cordova-plugin-file-transfer #MsgLength=93
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: 60b020e5934b506f2ec45a21f5b12ea6aaefd180
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:10:57
+Message:
+CB-7977 Mention deviceready in plugin docs #MsgLength=43
+
+
+----
+Modified: doc/index.md|9 0
+
+Revision: 6fee8359287ff6c3e022ec6fd0826c293e440ad8
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 05/11/2014 22:43:08
+Message:
+CB-7944 Pended unsupported auto tests for windows #MsgLength=67
+
+
+----
+Modified: tests/tests.js|23 1
+
+Revision: 9d0ecc233f1e06d33dfb6dcb6f2d4fdd4f6a16af
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 30/07/2014 04:03:35
+Message:
+CB-6900 fixed spec.7 for wp8 #MsgLength=97
+
+
+----
+Modified: test/tests.js|4 1
+
+Revision: 74fe40d69d8f49fd92bd32d241840d11743d2ab6
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 30/07/2014 04:06:14
+Message:
+CB-7223 spec.27 marked pending for wp8 #MsgLength=82
+
+
+----
+Modified: test/tests.js|3 0
+
+
+
+Revision: 77a812a95b5120ccc2d9297031ed5b2260c7b372
+Author: Lucas Gonze <lucas@gonze.com>
+Date: 26/11/2014 08:26:48
+Message:
+Fixes #CB-8021 - adds documentation for httpMethod to doc/index.md. However, translations still need to be addressed. #MsgLength=118
+
+
+----
+Modified: doc/index.md|1 0
+
+
+Revision: 4879a0955334a7fee11cfbc89dd8815021c3a978
+Author: Kiran <svkirans@gmail.com>
+Date: 29/10/2014 00:32:25
+Message:
+Fix for https://issues.apache.org/jira/browse/CB-4674 #MsgLength=101
+
+
+----
+Modified: doc/index.md|3 3
+
+
+Revision: 04e114e05538175915e921bd33812aeee4a83e00
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.4.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7ee3bcaf5340bc7e95dba3d651561b08b2aa227e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:50
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 80aa82802183f7b9794064fd984b1b646c0ecaaa
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 27/11/2014 22:45:42
+Message:
+CB-8093 Fixes incorrect FileTransferError returned in case of download failure #MsgLength=79
+
+
+----
+Modified: src/windows/FileTransferProxy.js|31 25
+
+
+Revision: 27c01daf0074ca332f018fffc0e899f7b4fe3e80
+Author: Willy Aguirre <marti1125@gmail.com>
+Date: 27/11/2014 00:44:19
+Message:
+update array #MsgLength=13
+
+
+----
+Modified: www/blackberry10/xhrFileTransfer.js|1 1
+Modified: www/firefoxos/FileTransferProxy.js|1 1
+
+
+Revision: 941e81ef22fa199c8ad8608bfcf4c4ca543ad4a7
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/12/2014 07:24:46
+Message:
+Alias FileTransferError to FTErr to save some horizontal space #MsgLength=63
+
+
+----
+Modified: src/windows/FileTransferProxy.js|16 16
+
+Revision: cea07c08d5bf1abfd47bb5d511fd8657c1b00b7b
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/12/2014 07:40:02
+Message:
+alias appData to Windows.Storage.ApplicationData.current #MsgLength=57
+
+
+----
+Modified: src/windows/FileTransferProxy.js|10 8
+
+Revision: 7fbab9fa1cb98bb43f92b6d834e542a0b5d8ca46
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/12/2014 07:51:58
+Message:
+Error callback should always be called with the FileTransferError object, and not just the code #MsgLength=96
+
+
+----
+Modified: src/windows/FileTransferProxy.js|4 3
+
+Revision: 71bd73ec9cdcdb5a2afbc9167b938668ca9b87d2
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/12/2014 07:58:16
+Message:
+exec guarentees that proxy is called with success/error function so there is no need to constantly check that it exists #MsgLength=120
+
+
+----
+Modified: src/windows/FileTransferProxy.js|17 17
+
+Revision: e6e44aaa2f184f62b9c156c4fc163a9d51f145a1
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/12/2014 08:13:49
+Message:
+removed unneeded String() casting all over the place, fixed my own missing ) error #MsgLength=83
+
+
+----
+Modified: src/windows/FileTransferProxy.js|24 23
+
+Revision: 674c3ae180e99864b9f0cc2a577216eb9d449943
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 31/10/2014 03:32:37
+Message:
+CB-7912: Update to work with whitelist plugins in Cordova 4.x #MsgLength=62
+
+
+----
+Modified: src/android/FileTransfer.java|34 3
+
+
+Revision: fc8f4f0001b8f4620d58c8633b0b44cd8c4f7945
+Author: Dmitry Blotsky <dblotsky@microsoft.com>
+Date: 05/12/2014 10:29:01
+Message:
+CB-8125: Reorganize and clean up test suite. #MsgLength=684
+
+
+----
+Modified: tests/tests.js|687 723
+
+Revision: 2bfbd2c78298bf6defef874fcafe5c4c9d4b6efc
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 18/12/2014 00:05:39
+Message:
+CB-8125: Fix spec tests 28 and 29 #MsgLength=155
+
+
+----
+Modified: tests/tests.js|17 3
+
+Revision: 2527338f4334eb43abaaee712354c5110f6bb6d4
+Author: Andrey Kurdyumov <kant2002@gmail.com>
+Date: 05/01/2015 16:23:53
+Message:
+Document "body" property on FileTransferError #MsgLength=46
+
+
+----
+Modified: doc/index.md|3 0
+
+Revision: 355ed3897dc911a7d426248970493db71e63ad79
+Author: Dov Dukes <ddukes@chabad.org>
+Date: 03/04/2014 04:54:48
+Message:
+cleanUrl needs relative path for local download #MsgLength=48
+
+
+----
+Modified: src/wp/FileTransfer.cs|1 1
+
+
+Revision: 6db2820258c922789a8c44decc80e9d9958aef4f
+Author: Edna Morales <edna592@gmail.com>
+Date: 14/01/2015 00:43:06
+Message:
+CB-8296 ios: Fix crash when upload fails and file is not yet created (close #57) #MsgLength=81
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|5 1
+
+Revision: 0481a2ad92159fae8b4013020318d130ec653bd1
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 20/01/2015 00:34:20
+Message:
+www/FileTransfer.js #MsgLength=64
+
+
+----
+Modified: www/FileTransfer.js|1 1
+
+Revision: 2b111a229df9a16d275c9812898e3ff3e6f4e7e9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/01/2015 02:36:12
+Message:
+CB-8351 Use a local copy of DLog macro rather than CordovaLib version #MsgLength=70
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|8 0
+
+Revision: 24a26d235b935b35cf938355f4ce5fa1561d62ea
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/01/2015 22:49:20
+Message:
+CB-8351 Use argumentForIndex rather than NSArray extension #MsgLength=59
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|13 13
+
+Revision: adf0816544bef18412f5de002c63ba0e8bcdc984
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/01/2015 00:32:58
+Message:
+ios: Fix compile warning about implicity int conversion #MsgLength=56
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|1 1
+
+Revision: c12f1eb9befb2111717b3219be10975476efec64
+Author: Darryl Pogue <dvpdiner2@gmail.com>
+Date: 28/01/2015 13:14:45
+Message:
+CB-5059 Add a CookieManager abstraction for pluggable webviews (close #60) #MsgLength=180
+
+
+----
+Modified: src/android/FileTransfer.java|32 2
+
+Revision: 0aae94495f68ef110cfcc4b3e0900d4b3a30ce46
+Author: Kelly Campbell <kelly.a.campbell@gmail.com>
+Date: 01/02/2015 06:05:41
+Message:
+android: Fix error reporting for unknown uri type on sourceUri instead of targetUri #MsgLength=84
+
+
+----
+Modified: src/android/FileTransfer.java|1 1
+
+Revision: e781bceba7763a44f344e43f0d31e16e0d8ea1be
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 27/11/2014 23:49:13
+Message:
+CB-8095 Rewrite upload method to support progress events properly #MsgLength=162
+
+
+----
+Modified: src/windows/FileTransferProxy.js|121 42
+
+Revision: 320f0d417369a908ea30250fa0c637e9243083f2
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 27/11/2014 23:50:01
+Message:
+CB-8095 Updates tests and documentation #MsgLength=40
+
+
+----
+Modified: doc/index.md|2 4
+Modified: tests/tests.js|0 12
+
+Revision: 837771c4c6d460c7c9df1b729a4a4c1d2b76755a
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 08/01/2015 21:28:45
+Message:
+CB-8095 Fixes JSHint and formatting issues #MsgLength=43
+
+
+----
+Modified: src/windows/FileTransferProxy.js|11 14
+Modified: tests/tests.js|36 28
+
+Revision: bb0ed704a8e1b09d61ba603d43bb2319919ac07f
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 30/01/2015 15:17:33
+Message:
+CB-7957 Adds support for `browser` platform #MsgLength=44
+
+
+----
+Modified: doc/index.md|1 0
+Modified: plugin.xml|7 0
+Modified: tests/tests.js|32 12
+Added: www/browser/FileTransfer.js|325 0
+
+Revision: e680c783d3d1d719dc6a275c07c3366425938f62
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.5.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|13 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 976275e955d48d0e06cee7b1e7e157d7585933a4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:02
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 28189e54f38bc61d4f28b117dfee6d9521f3bf3c
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 03/02/2015 20:50:31
+Message:
+CB-8407 Removes excess path to native path conversion in download method #MsgLength=188
+
+
+----
+Modified: src/windows/FileTransferProxy.js|2 2
+
+Revision: 5ee666ce0b65fcde396e45974795a86f1097e5bc
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 03/02/2015 22:06:14
+Message:
+CB-8407 Use File proxy to construct valid FileEntry for download success callback #MsgLength=380
+
+
+----
+Modified: src/windows/FileTransferProxy.js|4 1
+
+Revision: 314677c0c3604a805a5cc1b8ccb11cc2582c8709
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 06/02/2015 19:53:57
+Message:
+Fixes typo, introduced in https://github.com/apache/cordova-plugin-file-transfer/commit/bc43b46 #MsgLength=96
+
+
+----
+Modified: src/windows/FileTransferProxy.js|1 1
+
+Revision: e0f9aad374adb5942b491c3b34bcd89937f905c3
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/02/2015 22:57:48
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.5.0 (take 2) #MsgLength=71
+
+
+----
+Modified: RELEASENOTES.md|1 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d8f75455267137fc0122d759e747b88ea4bf9733
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/02/2015 22:59:59
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 18f3efdad2379102e7a6d41924d919b58bb94868
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 27/11/2014 23:49:13
+Message:
+CB-8095 Rewrite upload method to support progress events properly #MsgLength=162
+
+
+----
+Modified: src/windows/FileTransferProxy.js|121 42
+
+Revision: 8983e51175bd2b4982842cea3a13dc0bcc2c7645
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 27/11/2014 23:50:01
+Message:
+CB-8095 Updates tests and documentation #MsgLength=40
+
+
+----
+Modified: doc/index.md|2 4
+Modified: tests/tests.js|0 12
+
+Revision: fa900e11f0dcd42c3757cadf076f887623822148
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 08/01/2015 21:28:45
+Message:
+CB-8095 Fixes JSHint and formatting issues #MsgLength=43
+
+
+----
+Modified: src/windows/FileTransferProxy.js|11 14
+Modified: tests/tests.js|36 28
+
+
+Revision: 155988881b969a66f1af256c99ca13049a919ccf
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.5.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|13 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7753baacf79677b46360eddf4bc7a113c21c410b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:02
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 0394c0ce1eaf60f93ef1d529bc2fe1634d5d33da
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 03/02/2015 20:50:31
+Message:
+CB-8407 Removes excess path to native path conversion in download method #MsgLength=188
+
+
+----
+Modified: src/windows/FileTransferProxy.js|2 2
+
+Revision: 7a93626812522e473248c7629238da81d03fb805
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 03/02/2015 22:06:14
+Message:
+CB-8407 Use File proxy to construct valid FileEntry for download success callback #MsgLength=380
+
+
+----
+Modified: src/windows/FileTransferProxy.js|4 1
+
+Revision: 33876409dd79362b5a817dae3136afbecea90735
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 06/02/2015 19:53:57
+Message:
+Fixes typo, introduced in https://github.com/apache/cordova-plugin-file-transfer/commit/bc43b46 #MsgLength=96
+
+
+----
+Modified: src/windows/FileTransferProxy.js|1 1
+
+Revision: 1882bfbd2d150c6db501b2092374d644cb056505
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/02/2015 22:57:48
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.5.0 (take 2) #MsgLength=71
+
+
+----
+Modified: RELEASENOTES.md|1 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a00c258c098b8871f1c50a7ee7f273684800d92a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/02/2015 22:59:59
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b7af2e7e009ca4b47d5a69a46f6aaabbfe4b6b0e
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 30/01/2015 15:17:33
+Message:
+CB-7957 Adds support for `browser` platform #MsgLength=44
+
+
+----
+Modified: doc/index.md|1 0
+Modified: plugin.xml|7 0
+Modified: tests/tests.js|32 12
+Added: www/browser/FileTransfer.js|325 0
+
+
+
+Revision: c772257a8534e6198c9e808af4a5689bda8b4428
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 18/02/2015 22:02:40
+Message:
+CB-8495 Fixed wp8 and wp81 test failures #MsgLength=41
+
+
+----
+Modified: tests/tests.js|34 16
+
+Revision: fc2cdcca21412ebc3af1639005daba53b3ab58e0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 16:26:08
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|44 0
+
+Revision: 5bdcc2d930424bed3cb1cb28129f6dbedb02b054
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:50:39
+Message:
+CB-8438 cordova-plugin-file-transfer documentation translation: cordova-plugin-file-transfer #MsgLength=93
+
+
+----
+Modified: doc/de/index.md|39 27
+Modified: doc/es/index.md|54 82
+Modified: doc/fr/index.md|70 99
+Modified: doc/it/index.md|34 22
+Modified: doc/ja/index.md|36 24
+Modified: doc/ko/index.md|43 31
+Modified: doc/pl/index.md|35 23
+Modified: doc/zh/index.md|56 44
+
+Revision: dc2161be2d67741fbc49b75a464896ebfb0ea112
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 09:28:51
+Message:
+CB-8566 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|13 0
+Modified: README.md|2 0
+
+Revision: 3ff8382929c35aa3a8d8a0d507ae5a01fb714834
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 05/03/2015 15:56:42
+Message:
+CB-8590 (Windows) Fixed download.onprogress.lengthComputable #MsgLength=79
+
+
+----
+Modified: src/windows/FileTransferProxy.js|3 1
+
+Revision: fde0d823d938569c4b0446e30bfc31138eb83911
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 12/03/2015 17:20:15
+Message:
+CB-8654 Note WP8 download requests caching in docs #MsgLength=51
+
+
+----
+Modified: doc/index.md|4 0
+
+Revision: 30eb233d53e27e4ba209a07a8fa161c38e9eda8d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:25:18
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|282 1
+Deleted: doc/index.md|0 301
+
+Revision: ffc6150a9e84eca0edc3d2c035b8de5165b8ab21
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:56:52
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 4e12365d333408b6d89e0488853a6b948284c581
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:31
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: decdd2241581adbf0da6f70ecb6e07f4f67466ef
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:06:00
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: 0530d90fb0e46128558bbb6579ea44f9832b7b4d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 10:11:23
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: src/ubuntu/file-transfer.cpp|1 1
+Modified: src/windows/FileTransferProxy.js|4 4
+Modified: tests/plugin.xml|1 1
+Modified: www/FileTransfer.js|3 3
+Modified: www/blackberry10/FileTransferProxy.js|1 1
+Modified: www/blackberry10/xhrFileTransfer.js|2 2
+
+Revision: a868e04b223b5115ceeeb80c07e1724befc74d64
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 14:20:47
+Message:
+CB-8747 updated dependency, added peer dependency #MsgLength=50
+
+
+----
+Modified: package.json|3 0
+Modified: plugin.xml|1 1
+
+Revision: 6ed66a4f298c18769f95bf57a7682719729b29f7
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 30/03/2015 18:56:51
+Message:
+CB-8589 Fixes upload failure when server's response doesn't contain any data #MsgLength=77
+
+
+----
+Modified: src/windows/FileTransferProxy.js|11 4
+
+Revision: 918b2cf8d2ed3803c16bcf9692b84f77f24cd540
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 01/04/2015 18:58:40
+Message:
+CB-8583 Forces download to overwrite existing target file #MsgLength=58
+
+
+----
+Modified: src/windows/FileTransferProxy.js|1 1
+
+Revision: 8e22d5a6b0402f881751b3283e99fd69f021235c
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 02/04/2015 17:50:45
+Message:
+CB-8641 Fixed tests to pass on windows and wp8 #MsgLength=47
+
+
+----
+Modified: src/wp/FileTransfer.cs|1 1
+Modified: tests/tests.js|48 45
+
+Revision: cf9911ad935e2e22abc47413932f9a926a4be76f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 07:59:15
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 53f74e77086cb07ec78d1edee42051898245ed8c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 08:07:07
+Message:
+CB-8746 bumped version of file dependency #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 398bebe0a8b77cecee80fa360daa1888d231504b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:38
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|30 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 739cd3087f4c34f66f29197d0da70318667020de
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:47
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3568eeb38793fa64bb2151066685b89e4077c126
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:57:55
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 99d2979f19cf9da118975a51e8c28018a1d7c05a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:58:54
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: ef564a5e2d5308f35ffe0e9c6ad6898225391f1d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:22
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e9e21eb57981565735948139aef03d584b544d8e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:10:23
+Message:
+fixed invalid package.json #MsgLength=27
+
+
+----
+Modified: package.json|1 1
+
+Revision: 490063e1e56cd9a5aeb9a5501d91dc79abd8a672
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:12:48
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: dfd2c45142c167b295949fae73479ae1e760738c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:13:18
+Message:
+Revert "Revert "CB-8858 Incremented plugin version."" #MsgLength=117
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 75d55ddaaa184f8d48b3ecaf2071fe858596359c
+Author: Dan Polivy <dan@cellartracker.com>
+Date: 27/03/2015 15:19:56
+Message:
+CB-8761 [wp8]: Copy cookies from WebBrowser #MsgLength=657
+
+
+----
+Modified: src/wp/FileTransfer.cs|90 2
+
+Revision: 4f7e1566bd346c9fcfa6763dc598f7746b71ebe5
+Author: Dan Polivy <dan@cellartracker.com>
+Date: 27/03/2015 14:13:12
+Message:
+CB-6313 [wp8]: Extra boundary in upload #MsgLength=389
+
+
+----
+Modified: src/wp/FileTransfer.cs|0 1
+
+Revision: cd7eb26c7a0a01327389a6be2fed44f2f8b39b1d
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 30/04/2015 19:15:35
+Message:
+CB-8933 Increased download and upload test timeout #MsgLength=51
+
+
+----
+Modified: tests/tests.js|9 8
+
+Revision: e5c25b6bc7764b088585dcc2ee5831d131a1de2b
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 05/05/2015 20:48:15
+Message:
+CB-8951 Fixed crash related to headers parsing on wp8 #MsgLength=54
+
+
+----
+Modified: src/wp/FileTransfer.cs|10 4
+
+Revision: e251db5cac485261e0139934cb3ab81aa18e89b9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/05/2015 08:07:39
+Message:
+CB-8959 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f9dfd2d511fd87257c2aa068eb4b6091781e0655
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/05/2015 08:37:22
+Message:
+CB-8959 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 569568f8b437ec0a0248b4017479b5421456e619
+Author: Jan Visser <starquake@linuxeverywhere.org>
+Date: 01/04/2015 18:50:37
+Message:
+Replace all slashes in windows path #MsgLength=66
+
+
+----
+Modified: src/windows/FileTransferProxy.js|1 1
+
+
+Revision: 21fb03aa9c55fbd1ca4df6097b466840e91c16b8
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 24/03/2015 16:19:19
+Message:
+CB-8721 Fixes incorrect headers and upload params parsing on wp8 #MsgLength=65
+
+
+----
+Modified: src/wp/FileTransfer.cs|18 23
+Modified: www/FileTransfer.js|23 0
+
+
+Revision: f1e41ac1f55b94e539b8e9346dfe1e6ffabb8aee
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/05/2015 08:47:08
+Message:
+fix failing test resulting from overlapping async calls #MsgLength=56
+
+
+----
+Modified: src/wp/FileTransfer.cs|5 6
+
+Revision: 9402cf41e4d18dd42a7e11c89e9c84c61d9490fb
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/05/2015 09:00:32
+Message:
+This closes #80, This closes #12 #MsgLength=33
+
+
+----
+Modified: README.md|1 1
+
+Revision: 93d24a94c21acbd45dc7e832b906decd4b9b40ee
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/05/2015 12:35:15
+Message:
+bump required cordova-wp8 version to 4.0.0 #MsgLength=43
+
+
+----
+Modified: plugin.xml|4 0
+
+Revision: 5078eceb2b486aead0e52649cdf241faf9c23bc2
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/05/2015 16:38:53
+Message:
+fix bad commit (mine) for cordova-wp8@4.0.0 engine req #MsgLength=55
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 428d791f5597eb74b45536fe95b38f7ee2bd9e81
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 13/05/2015 06:16:15
+Message:
+Remove verbose console log messages #MsgLength=36
+
+
+----
+Modified: tests/tests.js|0 3
+
+Revision: 82b089bc90de48524baf290ca84841fc44ea8f5c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/05/2015 07:58:23
+Message:
+relax engine requirement to allow -dev versions #MsgLength=48
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 907e1cdb138c420227c9e597868562dbeb861556
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 15/05/2015 08:21:40
+Message:
+Check for the existence of Json.net assembly to determin how we deserialize our headers. #MsgLength=89
+
+
+----
+Modified: src/wp/FileTransfer.cs|26 2
+
+Revision: 72a5d951a6efd02b573f0bf648ee0eb298a228a9
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 15/05/2015 08:26:21
+Message:
+[wp8] Relaxed engine version requirement, using reflection to see if methods are available #MsgLength=91
+
+
+----
+Modified: plugin.xml|1 5
+
+Revision: ea225af6f236793e7a14f80d8c37eda3c11e3a29
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 21/05/2015 16:29:16
+Message:
+CB-8951 (wp8) Handle exceptions in download() and upload() again #MsgLength=83
+
+
+----
+Modified: src/wp/FileTransfer.cs|30 13
+
+Revision: dbd7a5ee6d95c9923309bdd3c874b9d6cb2ae939
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 02/06/2015 23:50:09
+Message:
+fix npm md issue #MsgLength=17
+
+
+----
+Modified: README.md|17 17
+
+Revision: f5d6cd8e16b407bb6ee2c0ad630690082e522859
+Author: Darryl Pogue <darryl@ayogo.com>
+Date: 06/03/2015 03:48:47
+Message:
+Fix NoSuchMethodException looking up cookies. #MsgLength=46
+
+
+----
+Modified: src/android/FileTransfer.java|1 1
+
+
+Revision: 04f088b6c906e0b74bf3610005787b90aa548b9e
+Author: Michael Chen <machenmusik@michaelhensmbp2.home>
+Date: 05/04/2014 02:17:23
+Message:
+CB-6503: Allow payload content-types other than multipart/form-data to be used for upload #MsgLength=90
+
+
+----
+Modified: README.md|4 3
+Modified: src/amazon/FileTransfer.java|19 9
+Modified: src/android/FileTransfer.java|22 10
+Modified: src/ios/CDVFileTransfer.m|29 13
+
+Revision: 7591ab84b5378df8d2aa790f8bf8adf33677ab7a
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 09/07/2014 00:51:44
+Message:
+CB-6503: Null pointer check for headers in upload (This closes #27) #MsgLength=68
+
+
+----
+Modified: src/amazon/FileTransfer.java|1 1
+Modified: src/android/FileTransfer.java|1 1
+
+
+Revision: a2c11947d324bf5db17610fe595290f34cbd622d
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:41:13
+Message:
+CB-9128 cordova-plugin-file-transfer documentation translation: cordova-plugin-file-transfer #MsgLength=93
+
+
+----
+Added: doc/de/README.md|311 0
+Added: doc/es/README.md|311 0
+Added: doc/fr/README.md|270 0
+Added: doc/it/README.md|311 0
+Added: doc/ja/README.md|311 0
+Added: doc/ko/README.md|311 0
+Added: doc/pl/README.md|311 0
+Added: doc/zh/README.md|311 0
+
+Revision: 965581fa4b773a32373be1ff186f67c647f9cad1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:03
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.2.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|18 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b01ab78fec5e76793f1fae431e685bd3c814d288
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 2d7d14e9e08fa0f370bfe406afae8e857ef36af9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:35
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 051ada102e617478a1a47c1eee8d224665f45b88
+Author: aroberson <adam.roberson@ventyx.abb.com>
+Date: 16/06/2015 04:54:27
+Message:
+Added option to allow for passing cookies automatically in the browser #MsgLength=71
+
+
+----
+Modified: www/browser/FileTransfer.js|8 1
+
+Revision: f52d324b4fe516256c16c23eaf18ea3a3bf1ca19
+Author: aroberson <adam.roberson@ventyx.abb.com>
+Date: 16/06/2015 05:03:56
+Message:
+Updated documentation for browser #MsgLength=34
+
+
+----
+Modified: README.md|7 0
+
+Revision: f17b7fcdd109eaf5e51db68cc7b316380e93ceef
+Author: aroberson <adam.roberson@ventyx.abb.com>
+Date: 16/06/2015 09:38:21
+Message:
+Updated code per code review. #MsgLength=30
+
+
+----
+Modified: www/browser/FileTransfer.js|2 6
+
+
+Revision: e8ca110a3026b74276f762a81bb10c4a04ade4fe
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 02/07/2015 03:36:15
+Message:
+CB-9275 [WP8] Fix build failure on WP8 by using reflection to detect presence of JSON.NET based serialization #MsgLength=110
+
+
+----
+Modified: src/wp/FileTransfer.cs|10 9
+
+Revision: 2d6faac5cd37e218ddc361b76a2b7234bdb38c9c
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 08/07/2015 01:03:14
+Message:
+CB-9312 Updated version and RELEASENOTES.md for release 1.2.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8e8106e8d84b44f94866f75d9113fb7426cdb36c
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 08/07/2015 01:57:14
+Message:
+CB-9312 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f0209a2f756c21a423852ada317d821db80613c1
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 06:04:20
+Message:
+remove travis-ci integration #MsgLength=29
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 2
+
+Revision: 499ec5c07b4087829623facc07f1b1f3e31e9afc
+Author: daserge <daserge@yandex.ru>
+Date: 16/07/2015 20:40:44
+Message:
+CB-9376 Fix FileTransfer plugin manual tests issue - 'undefined' in paths #MsgLength=74
+
+
+----
+Modified: tests/tests.js|2 2
+
+Revision: c8a52682f0775c3858a89473e51291be488ea661
+Author: Johan Eliasson <johan.eliasson@allbinary.se>
+Date: 27/07/2015 23:21:59
+Message:
+removed broken link in README #MsgLength=30
+
+
+----
+Modified: README.md|0 2
+
+Revision: 8f62f8bc13c6a92004a3847ca3b3ccb6822a2914
+Author: Dan Jarvis <djarvis@kmbs.konicaminolta.us>
+Date: 06/07/2015 22:32:04
+Message:
+README :: remove duplicate httpMethod option. #MsgLength=148
+
+
+----
+Modified: README.md|0 1
+
+
+Revision: dcc98db15fdbca24cd48e3bb6e802f1066314703
+Author: biodiv <tom@eyesonic.net>
+Date: 16/03/2015 23:33:59
+Message:
+CB-8816 Add cdvfile:// support on windows #MsgLength=60
+
+
+----
+Modified: src/windows/FileTransferProxy.js|6 0
+
+Revision: 1c39fb547f9d111a62965793667535847c37478f
+Author: daserge <daserge@yandex.ru>
+Date: 14/08/2015 22:16:32
+Message:
+CB-9493 Fix file paths in file-transfer manual tests #MsgLength=111
+
+
+----
+Modified: tests/tests.js|4 4
+
+Revision: cebdae3a402b595c280c722e7f851993f6d5b2c5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 20/08/2015 14:33:49
+Message:
+updated tests to use cordova apache vm #MsgLength=39
+
+
+----
+Modified: tests/tests.js|2 2
+
+Revision: ad6647120db12f0e67ee4a952a71ea494a39a475
+Author: Joe Bowser <bowserj@apache.org>
+Date: 19/08/2015 05:55:18
+Message:
+Fixing headers so they don't accept non-ASCII #MsgLength=46
+
+
+----
+Modified: src/android/FileTransfer.java|21 1
+
+Revision: 2b31723708256c08c5209308eb6ccfb03e2ab990
+Author: Snay <me@snay.me>
+Date: 27/08/2015 04:56:06
+Message:
+CB-9562 Fixed incorrect headers handling on Android #MsgLength=52
+
+
+----
+Modified: src/android/FileTransfer.java|1 1
+
+Revision: 8fcdb1aa3deb892691b44bdf57e8d780da09e2a4
+Author: Joe Bowser <bowserj@apache.org>
+Date: 09/09/2015 02:19:34
+Message:
+Found issue where : is accepted as a valid header, this is obviously wrong #MsgLength=75
+
+
+----
+Modified: src/android/FileTransfer.java|1 0
+
+Revision: a4a448095c02a658c2e1fdcff267d5d3de5785f3
+Author: Joe Bowser <bowserj@apache.org>
+Date: 09/09/2015 05:04:04
+Message:
+CB-9624: There's a difference between what's being passed in and what should actually be sent to the File Transfer plugin #MsgLength=122
+
+
+----
+Modified: src/android/FileTransfer.java|3 2
+
+Revision: 05873a07fdc2fed835cd49a2bccbd4972935e55c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/09/2015 06:10:34
+Message:
+CB-9681 Updated version and RELEASENOTES.md for release 1.3.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|10 2
+Modified: package.json|2 2
+Modified: plugin.xml|2 2
+Modified: tests/plugin.xml|1 1
+
+Revision: b3e225b454eee6a8628d54de0051f37541a6a3a1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/09/2015 06:41:56
+Message:
+CB-9681 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7a1008c4bb4603c7d61dd8ca89550cf1b8c8da1e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/09/2015 07:51:23
+Message:
+updated releasenotes #MsgLength=21
+
+
+----
+Modified: RELEASENOTES.md|2 1
+
+Revision: 1142a96b2ce281fcc11b914dc21fac01eb446d9e
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 13/10/2015 20:41:41
+Message:
+CB-9791 Decreased download and upload tests timeout #MsgLength=52
+
+
+----
+Modified: tests/tests.js|4 4
+
+Revision: c0b3122e744df0274d17f7cd26a93e4f3b163d3f
+Author: Ganster41 <ganster0x29@gmail.com>
+Date: 17/07/2015 21:23:19
+Message:
+CB-9385 Return FILE_NOT_FOUND_ERR when receiving 404 code on iOS #MsgLength=65
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|2 1
+
+Revision: 83ee62514a26ab657935bbdb091d4f709a2589d7
+Author: daserge <v-seshak@microsoft.com>
+Date: 16/10/2015 00:17:27
+Message:
+CB-9385 Return FILE_NOT_FOUND_ERR when receiving 404 code on iOS #MsgLength=98
+
+
+----
+Modified: tests/tests.js|1 0
+
+Revision: f8b0f82dfa600f2c43ce90fb44ed94d5a07c7514
+Author: jason-ong <jasonong91@gmail.com>
+Date: 21/08/2015 17:35:42
+Message:
+CB-9790 Align FileUploadOptions fileName and mimeType default parameter values to the docs on iOS #MsgLength=251
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|2 2
+
+Revision: 869eea41ec37853e9cc7e74371f52f46353af993
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 17/09/2015 00:04:29
+Message:
+CB-9673 Fixed test spec.6 failure on iOS #MsgLength=61
+
+
+----
+Modified: tests/tests.js|3 0
+
+Revision: ea271933e933361312be9af36f1e2244099be0d8
+Author: Vito Rifino <vito.rifino@gmail.com>
+Date: 17/10/2015 16:34:32
+Message:
+CB-8431 File Transfer tests crash on Android Lolipop #MsgLength=72
+
+
+----
+Modified: src/android/FileTransfer.java|5 1
+
+Revision: 116a21b810095b788e40a429d0a55c764560ba75
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:27:12
+Message:
+add JIRA issue tracker link #MsgLength=28
+
+
+----
+Modified: README.md|3 1
+
+Revision: c79ee367a108384cbe10b8bc8038911612a67bef
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/10/2015 17:43:53
+Message:
+Github close #101, close #25, close #54 #MsgLength=40
+
+
+----
+
+Revision: b4b7284315652706c719536db99c3229df2953cd
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: 65d28795a6fb31a6eeae866ae5cfd02bfafdb28e
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:50
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: 4dc697a8636bc0541b2fe99f136ce9aa39cbe970
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 27/10/2015 18:51:47
+Message:
+CB-9843 Added wp8 quirk to test spec 12 #MsgLength=60
+
+
+----
+Modified: tests/tests.js|8 1
+
+Revision: c5d92726c22b2e8f942a5cf9f544c420555b1769
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 04/11/2015 14:14:55
+Message:
+filetransfer.spec.6 was failing in 4.x branch of iOS because -1 was returned. #MsgLength=78
+
+
+----
+Modified: tests/tests.js|1 1
+
+
+Revision: 1e900148e6f25c7982a3afdf79ad649077bce618
+Author: daserge <v-seshak@microsoft.com>
+Date: 04/11/2015 22:47:26
+Message:
+CB-9950 Unpend Filetransfer spec.27 on wp8 as custom headers are now supported #MsgLength=79
+
+
+----
+Modified: tests/tests.js|0 4
+
+Revision: 587e05122593b7ff3c509e1f21369cae7f49cd99
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/11/2015 05:54:57
+Message:
+CB-9906 cleanup duplicate code, removed 2nd isWP8 declaration. #MsgLength=63
+
+
+----
+Modified: tests/tests.js|1 5
+
+Revision: 5857384b943ced5ea7b949882b103f4638d25d27
+Author: daserge <v-seshak@microsoft.com>
+Date: 11/11/2015 14:28:21
+Message:
+CB-51 API: FileTransfer - Support PUT Method #MsgLength=118
+
+
+----
+Modified: src/windows/FileTransferProxy.js|2 0
+Modified: tests/tests.js|27 0
+
+Revision: 189942284a64fb3de11e81f3fb41af4e102b1ac6
+Author: daserge <v-seshak@microsoft.com>
+Date: 09/11/2015 21:25:03
+Message:
+CB-6928 Wrong behaviour transferring cacheable content #MsgLength=132
+
+
+----
+Modified: src/ios/CDVFileTransfer.h|2 1
+Modified: src/ios/CDVFileTransfer.m|2 1
+Modified: src/windows/FileTransferProxy.js|3 0
+Modified: tests/tests.js|25 1
+
+Revision: cdeec1c59fd8fcfa9159ad733081ac93ec060f5a
+Author: Jeroen Verhoest <jeroen@cheqroom.com>
+Date: 26/10/2015 17:02:37
+Message:
+CB-9879 getCookies can cause unhandled NullPointerException #MsgLength=168
+
+
+----
+Modified: src/android/FileTransfer.java|1 1
+
+Revision: 58ad621fcf284f3471e939c4f476b18b4a5bdc11
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|170 172
+
+Revision: 60f5bf47e61cb5398cd3403c1f97b61f6262d3a9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:10
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: 2f4c106fcc65bac4b4ce1d0e0a196659de997547
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:05
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 1.4.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|14 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 2
+Modified: tests/plugin.xml|1 1
+
+Revision: 97031b2d7528033c82bdff4659b9041dd9512a51
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|129 129
+
+Revision: 9e93bad83c9e980cb593dc057fe8af40f35652f1
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 20/11/2015 09:02:35
+Message:
+CB-8863 fix block usage of self #MsgLength=32
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|4 3
+
+Revision: 007f98692b15f5a6c4902abf393bee8dc5edeced
+Author: daserge <v-seshak@microsoft.com>
+Date: 24/11/2015 06:20:00
+Message:
+CB-9563 Mulptipart form data is used even a header named Content-Type is present #MsgLength=395
+
+
+----
+Modified: src/android/FileTransfer.java|29 30
+Modified: src/windows/FileTransferProxy.js|113 102
+Modified: tests/tests.js|33 7
+
+Revision: 887c91750a28d077976bd5340f9002ab2b569da6
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/11/2015 16:31:56
+Message:
+CB-10037 Add progress indicator to file-transfer manual tests #MsgLength=62
+
+
+----
+Modified: tests/tests.js|18 1
+
+Revision: b7c500e1ebd01257445e478801eb57aad8e6e848
+Author: daserge <v-seshak@microsoft.com>
+Date: 26/11/2015 15:11:50
+Message:
+CB-10086 There are two spec.31 tests for file-transfer tests #MsgLength=61
+
+
+----
+Modified: tests/tests.js|1 1
+
+Revision: c97f544ef8511605b5fd74321cdf548d380b5601
+Author: daserge <v-seshak@microsoft.com>
+Date: 27/11/2015 03:52:54
+Message:
+CB-9969 Filetransfer upload error deletes original file #MsgLength=198
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|3 1
+Modified: src/windows/FileTransferProxy.js|2 4
+Modified: tests/tests.js|41 1
+
+Revision: 3ae73a28792197e38cca797b278617b7b73e3333
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 27/11/2015 05:45:07
+Message:
+CB-10088 - filetransfer spec.10 and spec.11 test is faulty #MsgLength=59
+
+
+----
+Modified: tests/tests.js|2 0
+
+Revision: 6e960b2ffd16ba86ffbe8a94fa3e58526be473fc
+Author: daserge <v-seshak@microsoft.com>
+Date: 27/11/2015 15:53:34
+Message:
+CB-9969 Filetransfer upload error deletes original file #MsgLength=77
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|1 3
+
+Revision: fe81475829c08ce6be6a393691e5ee59d0246c0f
+Author: daserge <v-seshak@microsoft.com>
+Date: 30/11/2015 16:03:10
+Message:
+CB-9969 Filetransfer upload error deletes original file #MsgLength=81
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|3 1
+
+Revision: 416be7633bc71594ca5d331ab61facce808de224
+Author: daserge <v-seshak@microsoft.com>
+Date: 30/11/2015 19:43:25
+Message:
+CB-10098 filetransfer.spec.33 is faulty #MsgLength=40
+
+
+----
+Modified: tests/tests.js|1 1
+
+Revision: 73223a7d451f3dfb81102d906598ca5bca24eaad
+Author: daserge <v-seshak@microsoft.com>
+Date: 11/11/2015 19:06:23
+Message:
+CB-7006 Empty file is created on file transfer if server response is 304 #MsgLength=243
+
+
+----
+Modified: src/windows/FileTransferProxy.js|10 5
+Modified: tests/tests.js|54 0
+
+Revision: 079f70bf37e3ccbd4b42cad7cc4359bbe2011d79
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b11415da28b4696607e7855d615287b1ea42b281
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 10:10:47
+Message:
+CB-10100 updated file dependency to not grab new majors #MsgLength=56
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 0913325be598f1eeebebd4ad2cf2a911a561c939
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 03/12/2015 11:20:44
+Message:
+Adding linting and fixing linter warnings. Reducing timeouts to 7 seconds. #MsgLength=75
+
+
+----
+Modified: .gitignore|1 9
+Added: .jscsrc|24 0
+Added: .jshintrc|91 0
+Modified: package.json|10 1
+Modified: tests/tests.js|130 126
+
+Revision: a762f3fe58fca8210d42f22a67de779878faa8a0
+Author: daserge <v-seshak@microsoft.com>
+Date: 04/12/2015 01:59:03
+Message:
+CB-8641 (Windows Phone 8.1) Some file-transfer plugin tests occasionally fail in mobilespec #MsgLength=555
+
+
+----
+Modified: README.md|4 0
+Modified: src/windows/FileTransferProxy.js|15 8
+Modified: tests/tests.js|6 4
+
+Revision: e14b7e539119010ade7aa4ab9f9af9ec2da0a1c8
+Author: FF Xu <codable@gmail.com>
+Date: 23/03/2015 02:16:56
+Message:
+CB-9840 Fallback file-transfer upload/download response encoding to latin1 in case not encoded with UTF-8 on iOS #MsgLength=113
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|7 0
+
+Revision: 866349eb849e6260755d587066850c783d6bdb05
+Author: daserge <v-seshak@microsoft.com>
+Date: 04/12/2015 20:03:37
+Message:
+CB-9840 Fallback file-transfer uploadResponse encoding to latin1 in case not encoded with UTF-8 on iOS #MsgLength=180
+
+
+----
+Modified: tests/tests.js|77 0
+
+Revision: a9470ff1cc313be542f625f857d33fb14a520d6f
+Author: daserge <v-seshak@microsoft.com>
+Date: 07/12/2015 17:53:03
+Message:
+CB-9600 FileUploadOptions params not posted on iOS #MsgLength=94
+
+
+----
+Modified: README.md|1 1
+
+Revision: 182b0c5ebebd8c0d313c676de0f92b8a56a81cb1
+Author: daserge <v-seshak@microsoft.com>
+Date: 10/12/2015 00:08:14
+Message:
+CB-9837 Add data URI support to file-transfer upload on iOS #MsgLength=233
+
+
+----
+Modified: README.md|1 1
+Modified: src/ios/CDVFileTransfer.m|27 0
+Modified: src/windows/FileTransferProxy.js|222 90
+Modified: tests/tests.js|90 1
+
+Revision: 333dd7ec1ac87298aba3c7af037c49103a1ffd52
+Author: daserge <v-seshak@microsoft.com>
+Date: 17/12/2015 17:57:25
+Message:
+CB-10208 Fix file-transfer multipart form data upload format on Windows #MsgLength=72
+
+
+----
+Modified: src/windows/FileTransferProxy.js|1 1
+
+Revision: 3540af439ed0a91885ff2cbf5e0a3d42c7fd05ed
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:35:05
+Message:
+CB-10368 Updated version and RELEASENOTES.md for release 1.5.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|19 0
+Modified: package.json|1 1
+Modified: plugin.xml|2 2
+Modified: tests/plugin.xml|1 1
+
+Revision: 6ae9af436ce2a1b44bd9379364d650f49a1f19b1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:58:32
+Message:
+CB-10368 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: afbeab405f53cbe871c7c1a874e0307cdc6e4e7e
+Author: t1st3 <contact@tiste.org>
+Date: 07/02/2016 21:35:55
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=259
+
+
+----
+Modified: package.json|1 1
+
+Revision: 418e904a98c0283cfa07fa8ca22997080d0851a4
+Author: daserge <v-seshak@microsoft.com>
+Date: 25/02/2016 19:30:21
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Modified: .jscsrc|0 1
+Modified: .jshintrc|17 89
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|2 2
+Modified: src/windows/FileTransferProxy.js|12 13
+Modified: www/FileTransfer.js|5 1
+Added: www/blackberry10/.jshintrc|5 0
+Modified: www/blackberry10/FileTransfer.js|4 2
+Modified: www/blackberry10/xhrFileTransfer.js|3 2
+Modified: www/browser/FileTransfer.js|24 8
+Modified: www/firefoxos/FileTransferProxy.js|1 2
+Modified: www/wp7/base64.js|2 0
+
+Revision: 3d2d3124849a23333ad5da33d0f895db626b9ed1
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 02/03/2016 06:31:39
+Message:
+Minor changes to Readme #MsgLength=24
+
+
+----
+Modified: README.md|11 14
+
+Revision: 584754869befd2d899f8e20270ba086ffe525625
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 25/03/2016 08:17:15
+Message:
+CB-10771: Fixing failure when empty string passed as a value for option parameter in upload function #MsgLength=101
+
+
+----
+Modified: README.md|4 0
+Modified: src/windows/FileTransferProxy.js|2 1
+
+Revision: ca6593703ec860863b5ac74df3b29b915fc1049d
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 22/03/2016 06:13:38
+Message:
+CB-10782: Occasional failure in file transfer tests causing mobilespec crash #MsgLength=96
+
+
+----
+Modified: tests/tests.js|408 151
+
+Revision: 2b8c1a6101c57198000a8d9ab6d48d239c1c5014
+Author: daserge <v-seshak@microsoft.com>
+Date: 29/03/2016 13:57:57
+Message:
+CB-10978 Fix file-transfer.tests JSHint issues #MsgLength=47
+
+
+----
+Modified: tests/tests.js|2 2
+
+Revision: c48fc02d7e47e37137e7528be97b59652d1b8ae1
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 31/03/2016 03:39:09
+Message:
+Removing the expectation in spec.34 for the transfer method to be called. #MsgLength=74
+
+
+----
+Modified: tests/tests.js|0 4
+
+Revision: b66cb2ec6a9666798316a7b471a817982b91bc42
+Author: Richard Knoll <richard.b.knoll@gmail.com>
+Date: 05/04/2016 08:44:46
+Message:
+CB-10536: Removing flaky test assertions about abort callback latency #MsgLength=88
+
+
+----
+Modified: tests/tests.js|2 10
+
+Revision: a4031db7008d91135f5c08f1d73fde62ec5fb1ed
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:27
+Message:
+ Updated version and RELEASENOTES.md for release 1.5.1 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: fd7b28f19307db0a4fe1767e84f89f1d897025d6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:27
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 128c388d57ca06e4195b8d2bf05f63e9183d914e
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:50
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: eb8052711fe0b4dec4559458860a4217e262c5b1
+Author: Mikejo5001 <m.jones168@outlook.com>
+Date: 02/04/2016 05:04:31
+Message:
+CB-11003: Adding sample section to documentation. #MsgLength=69
+
+
+----
+Modified: README.md|250 0
+
+Revision: 07d419d5b48cb970906b4bacd48af14a4e342f7f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 28/04/2016 07:18:52
+Message:
+CB-11165 removed peer dependency #MsgLength=33
+
+
+----
+Modified: package.json|0 3
+
+Revision: 6ad92c92ab54a4d954698efe8678b3e9a4f4d093
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 10/05/2016 01:22:48
+Message:
+Add fenced code blocks to help code formatting #MsgLength=47
+
+
+----
+Modified: README.md|107 96
+
+Revision: 9347606dd33fe07ea36799b4dd28804019c68835
+Author: daserge <v-seshak@microsoft.com>
+Date: 13/04/2016 22:24:57
+Message:
+CB-10974 Cordova file transfer Content-Length header problem #MsgLength=418
+
+
+----
+Modified: README.md|4 0
+Modified: src/android/FileTransfer.java|1 1
+Modified: src/ios/CDVFileTransfer.h|1 0
+Modified: src/ios/CDVFileTransfer.m|9 4
+Modified: tests/tests.js|87 0
+
+Revision: c475060acb02500dfb85ee7c84e9eaddf791f9a6
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:53:59
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: 82c5af9b5dd6accbd6b2d25174d3c1f4e576e5b3
+Author: Mikejo5001 <m.jones168@outlook.com>
+Date: 04/05/2016 02:27:46
+Message:
+added link to sample #MsgLength=21
+
+
+----
+Modified: README.md|7 3
+
+Revision: 7f76831b72ae9f790c0dc41494649190d7c19f82
+Author: Conrado Costa <conradocosta@Halloween.local>
+Date: 31/05/2016 01:00:47
+Message:
+documentation with a wrong log message in fileTransfer.download function #MsgLength=92
+
+
+----
+Modified: README.md|1 1
+
+Revision: 134dde5f90220cff0e9b035d6207d39dd64632ad
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 16:59:13
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|5 3
+
+Revision: 855def11c3c35df6f9de10ccca46e7336baa2506
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 07/07/2016 19:39:30
+Message:
+CB-11497 Use cordova-vm for testing 304 errors #MsgLength=47
+
+
+----
+Modified: tests/tests.js|5 27
+
+Revision: 41fa11b50fb2248cc07dee394fe020fe38cd5ae5
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 16/08/2016 19:56:00
+Message:
+Close invalid PRs #MsgLength=36
+
+
+----
+
+Revision: 9dc41bd4e97eafe80fb9bc6573396fcab5967708
+Author: Ben Marshall <ben3005@users.noreply.github.com>
+Date: 07/06/2016 20:56:57
+Message:
+CB-11316 windows: Added content-type for files #MsgLength=133
+
+
+----
+Modified: src/windows/FileTransferProxy.js|1 0
+
+Revision: 3ccf9f8462c1de61c15c3841f77010b25fd6de58
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 18/08/2016 21:30:19
+Message:
+CB-9022 Resolve source URI on background thread #MsgLength=219
+
+
+----
+Modified: src/android/FileTransfer.java|9 5
+
+Revision: 13d5cfe4dc63c1ce14bc2eb6b5d3b641599e7932
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 23/08/2016 04:27:02
+Message:
+Plugin uses Android Log class and not Cordova LOG class #MsgLength=56
+
+
+----
+Modified: src/android/FileTransfer.java|41 41
+
+Revision: 2b6b6d9333848beb05a6128242701261467b5d69
+Author: Adam Nemitoff <adamn@teamnemitoff.com>
+Date: 08/01/2016 00:43:28
+Message:
+CB-9022 Fix exception thrown by call to remapApi on main thread #MsgLength=474
+
+
+----
+Modified: src/android/FileTransfer.java|5 5
+
+Revision: 4bda9f546b17efc9fd983c4c79938b4c629aefc9
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 21:47:40
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=398
+
+
+----
+Modified: package.json|7 0
+
+Revision: 60b2cd324e37805560d25c45692d4fa0b8727759
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:54
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 1.6.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|39 21
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1cfc66ce0dd0f4c96d180b4d9c904510a44c9fb6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e68f766639602cd84f72f77d51384b4b20570169
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 05/10/2016 03:40:39
+Message:
+CB-11926 Tests can use local server #MsgLength=36
+
+
+----
+Added: tests/hooks/after_prepare.js|70 0
+Modified: tests/plugin.xml|4 0
+Modified: tests/tests.js|27 3
+
+Revision: ed88cfc1181a69e486c547c8cb525e6f72eed402
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:33:06
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=102
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: 709fd057f2f9b29c8aafd696c96f02b9f043368a
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 05/10/2016 20:26:56
+Message:
+CB-11959 Fixed filetransfer.spec.21 test failure on iOS and Windows Store when using local server #MsgLength=98
+
+
+----
+Modified: tests/tests.js|4 1
+
+Revision: ebf280b53155de7f3167fdfff01478d723fa86c0
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 05/10/2016 23:08:29
+Message:
+CB-11959 Increased the array length for ios and winstore even more #MsgLength=67
+
+
+----
+Modified: tests/tests.js|2 1
+
+Revision: ac5233d349b3936fe16b55a87d2972b1288a9ebb
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 31/10/2016 16:08:34
+Message:
+CB-11959 Fixed the jshint issues #MsgLength=33
+
+
+----
+Modified: tests/tests.js|2 2
+
+Revision: addf885c7474422d4d5bfed62544f7f0425c23c4
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 02/11/2016 00:15:32
+Message:
+CB-12100 (ios) Fixed test plugin install at platform add on cordova@6.3.1 #MsgLength=74
+
+
+----
+Modified: tests/hooks/after_prepare.js|6 1
+
+Revision: 9b322dec6790f6d273b8f707bc07976d778c4cf6
+Author: junweifu <junwei.fu@intel.com>
+Date: 04/11/2016 10:23:11
+Message:
+Don't crash on low memory devices #MsgLength=205
+
+
+----
+Modified: tests/tests.js|2 1
+
+Revision: 655489905ab5bd2600d4eaf80e8dd5d27e96b461
+Author: daserge <v-seshak@microsoft.com>
+Date: 23/11/2016 19:33:32
+Message:
+CB-10974 Cordova file transfer Content-Length header problem #MsgLength=221
+
+
+----
+Modified: src/android/FileTransfer.java|5 2
+
+Revision: 5a711e8722804d4d427fa5e580c9e6767c8a6cee
+Author: daserge <v-seshak@microsoft.com>
+Date: 23/11/2016 23:57:11
+Message:
+CB-12154 file-transfer progressEvent.total = -1 on iOS #MsgLength=141
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|3 2
+Modified: tests/tests.js|3 1
+
+Revision: aee45754a9d685ac867a9d0fbb843a66d2845551
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:45
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 1.6.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|352 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b83a991e7caf82baaa862e51188c297e960d1e28
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:07
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1cf4657cb79b0109946dca9ce87e222eb4134249
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 18:26:57
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: 7c1388062d9d9e6d8792e34f15c612b4dd060404
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:47:34
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-file-transfer #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|1 340
+Modified: tests/plugin.xml|1 1
+
+Revision: 629e833611f0d83cf1659ec2ca09a89bfbfaff82
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:30:52
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 8c13381cd2ae0708fc503c19478652f2432b04c1
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 21:07:53
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=69
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|136 0
+
+Revision: ac2ae8ba2edc099dcde49cd66b810eb225e04d3d
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/01/2017 00:25:45
+Message:
+CB-12353 Corrected merges usage in plugin.xml #MsgLength=46
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 93ccb4974fb66563229359c5de0739e89ec5bab0
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/02/2017 18:23:54
+Message:
+CB-12439 (Tests) Temporarily disable tests that use fileserver on CI #MsgLength=69
+
+
+----
+Modified: tests/tests.js|115 0
+
+Revision: 70961b36fc9916cb6a5cb5cba53986fd1e29c49b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 17/02/2017 23:52:44
+Message:
+CB-12439 (Tests) Re-enable the tests #MsgLength=292
+
+
+----
+Modified: tests/tests.js|53 168
+
+Revision: 37c43b2e7fcd26b018312f7769987b1685479438
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:26
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 1.6.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|104 167
+Modified: tests/plugin.xml|7 33
+
+Revision: e95238e1f591eee4c794f8baf304a525805b04e8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:56:00
+Message:
+Set VERSION to 1.6.3-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|167 104
+Modified: tests/plugin.xml|33 7
+
+Revision: e9d93c0a542e1b952fb742a94e711ca514148934
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 06/04/2017 21:24:26
+Message:
+CB-10696 iOS: Encode target path with spaces #MsgLength=45
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|10 0
+Modified: tests/tests.js|41 0
+
+Revision: ab48be5560a20a640ebfdaddeed58cbc5f3629ae
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 10:18:59
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: 3876e4cd76c53b9c8fdae09f0b31b053fbaa07af
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 20:40:53
+Message:
+Added Android 6.0 build badge to README #MsgLength=40
+
+
+----
+Modified: README.md|3 3
+
+Revision: 720f3146b35ba4e6a057fdada4653cb76df9d18f
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 03:40:24
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 1.6.3 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: cae8cf4801ed76a1774b0f55210b19f71cd55a01
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 03:40:28
+Message:
+Set VERSION to 1.6.4-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 84d7f482ceabb9ae5343f51f0bf03949fbba00d8
+Author: filmaj <maj.fil@gmail.com>
+Date: 29/04/2017 03:49:18
+Message:
+(tests): Add additional logging about cases where file transfer server URL cannot be determined via XHR due to wkwebview-engine plugin limitations. #MsgLength=148
+
+
+----
+Modified: tests/tests.js|1 0
+
+Revision: f6621c59230caaef2f8f2ef55d176bfb5f550be8
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 03:56:10
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: 295f742ae840444d3abb113f777063a7abe4a5a8
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 31/05/2017 15:19:44
+Message:
+(tests): Fixed tests' flakiness by increasing the timeouts #MsgLength=59
+
+
+----
+Modified: tests/tests.js|6 6
+
+Revision: b4af73fab281a2078f553e2d2b5fc2ad55b27cb2
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/06/2017 15:38:05
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Modified: .travis.yml|71 3
+
+Revision: 593e3f407f1a08b507a1df9b13f049d8d881d8c6
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:31:29
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: 9cf583ab39cc31b8c93c96e36000bffe25dddcc0
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 15:25:31
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: 5513bf302f691bdc1191a3c1f796e5a40580e4f1
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:34:11
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: a7d3c876506a0d694294c97e16d9e6b10b160c7a
+Author: Benjamin J DeLong <howaboutben+github@gmail.com>
+Date: 08/07/2017 08:11:23
+Message:
+Fire successCallback for any 2XX HTTP status #MsgLength=91
+
+
+----
+Modified: www/browser/FileTransfer.js|3 1
+
+
+Revision: fba018ef6543a250f8b5875f682c52a961d9564e
+Author: Luca Torella <lucatorella@gmail.com>
+Date: 02/11/2016 16:24:47
+Message:
+Removed warning #MsgLength=55
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|1 1
+
+Revision: 14b77d70079f28c09bd56e28b2e7b298be68b914
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 09/07/2017 05:00:03
+Message:
+Remove broken headline and useless reference to it #MsgLength=50
+
+
+----
+Modified: README.md|1 3
+
+Revision: 976ba2e9b2aa38c6514fd89f0b94870f5af86c4a
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/07/2017 07:23:08
+Message:
+This closes #164. Closes #167. Closes #183 #MsgLength=43
+
+
+----
+
+Revision: 43ec63a7b1ec054bf89cf0e246358220356969d8
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/07/2017 07:40:55
+Message:
+fix merge conflict #MsgLength=19
+
+
+----
+Modified: README.md|2 2
+
+Revision: 77310a3cd30b02f8b1aa11a803e50a69e343230e
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/07/2017 07:44:21
+Message:
+Close #144 #MsgLength=11
+
+
+----
+
+Revision: 1dc68db3ae410394af019693dac29046e3db1959
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/07/2017 07:51:09
+Message:
+Close #130. Close #139. #MsgLength=24
+
+
+----
+
+Revision: 3e93c94d3bc49b37592cc2f20f66ce638cf377e9
+Author: filmaj <maj.fil@gmail.com>
+Date: 15/07/2017 03:41:25
+Message:
+CB-7995: document that `FileTransferError.exception` on iOS is never defined. #MsgLength=78
+
+
+----
+Modified: README.md|4 0
+
+Revision: 68e97542d5d7828d9eba4d12da89605f9b8e3e5b
+Author: filmaj <maj.fil@gmail.com>
+Date: 10/08/2017 23:26:29
+Message:
+Close #186 #MsgLength=11
+
+
+----
+
+Revision: 82100791e3b2a0a7baef3749623413576ff406f1
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 21/08/2017 23:42:25
+Message:
+CB-12809: Google Play Blocker: Unsafe SSL TrustManager Defined #MsgLength=76
+
+
+----
+Modified: README.md|2 2
+Modified: src/android/FileTransfer.java|0 99
+
+Revision: 706b1aa53978da301b5623ee93e1dfc855426919
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:05:41
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: a77cb37ad71e591761fb406ff1b98c8ce95ace1c
+Author: Kelvin Dart <kelvin.dart@crimsontide.co.uk>
+Date: 18/10/2017 23:47:44
+Message:
+CB-13294 Remove cordova-plugin-compat #MsgLength=57
+
+
+----
+Modified: package.json|2 2
+Modified: plugin.xml|4 2
+
+Revision: b82354085f3a30dc609b04b1fa8736049ac0c91a
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:58:52
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 14588a0a4420bae279f810c9b17800031412e7ab
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 21/10/2017 01:47:19
+Message:
+Revert "CB-13294 Remove cordova-plugin-compat" #MsgLength=110
+
+
+----
+Modified: package.json|2 2
+Modified: plugin.xml|2 4
+
+Revision: a0195ccaeac779e602ff97493c2181a377dd75a1
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 21/10/2017 04:21:28
+Message:
+Updated README with Deprecated Status #MsgLength=38
+
+
+----
+Modified: README.md|4 0
+
+Revision: 265b63faa13792632d5953a194c6b6183b9a8e23
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 21/10/2017 04:24:35
+Message:
+Updated links in Deprecation Notice #MsgLength=55
+
+
+----
+Modified: README.md|2 2
+
+Revision: 130d66660b28659052a8d1fd6e1b9ec8ed9d405f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:45
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 1.7.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2f5abe4a2a7058fe047e7a2f8bec8ea2ef164cf2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:39
+Message:
+Set VERSION to 1.7.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c9ac8e1b3e2c57cdfd406f24b03af977542078ed
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 08:01:14
+Message:
+CB-13542 updated file plugin dependency #MsgLength=40
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|2 2
+
+Revision: 9cd8d2b52e73f9097cd87d08360b8f2de760bbc0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 08:24:40
+Message:
+Set VERSION to 1.7.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: ac8e397e0641da6e53caf03e3336ab115a8a0a42
+Author: Volkan Gümüs <hallo@f1-computer.de>
+Date: 02/01/2018 15:14:41
+Message:
+change dependency version to file 6.0.0 #MsgLength=40
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 6fc811f348ca20040d54342f1937407ceb937f14
+Author: Volkan Gümüs <hallo@f1-computer.de>
+Date: 03/01/2018 14:44:45
+Message:
+change dependency version to file >=5.0.0 #MsgLength=42
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 9197eeaa269563aada37292aac22fc1a656a419b
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 05/01/2018 04:45:31
+Message:
+Update plugin.xml #MsgLength=17
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 57e01ea2b6ef12883b15d8168534e88e53614546
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 15/01/2018 20:14:51
+Message:
+CB-13749: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: 8747b4018e206ae4262a7b493c5053f253b9ce3c
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 25/01/2018 06:38:34
+Message:
+ CB-13826 Updated version and RELEASENOTES.md for release 1.7.1 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b7de6f9d4ef25b76b63a07906dac3a602625664f
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 26/01/2018 03:47:20
+Message:
+CB-13826 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2e4539d4065cf6861471506d2fdf020606458bab
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 02/10/2018 04:41:49
+Message:
+also accept android sdk terms for android-27 #MsgLength=44
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 6c99dfa8d9938ec36a8dea63a6f8005a7c032956
+Author: Trong Tran <trongrg@gmail.com>
+Date: 02/10/2018 04:45:08
+Message:
+[windows] Fix js error "The parameter is incorrect" (#199) #MsgLength=905
+
+
+----
+Modified: src/windows/FileTransferProxy.js|4 0
+
+Revision: 33ccf5e5af9b97978fab9cbe0b39373244e28385
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 24/11/2018 05:16:22
+Message:
+remove outdated translations (#211) #MsgLength=37
+
+
+----
+Deleted: doc/de/README.md|0 311
+Deleted: doc/de/index.md|0 302
+Deleted: doc/es/README.md|0 311
+Deleted: doc/es/index.md|0 262
+Deleted: doc/fr/README.md|0 270
+Deleted: doc/fr/index.md|0 261
+Deleted: doc/it/README.md|0 311
+Deleted: doc/it/index.md|0 302
+Deleted: doc/ja/README.md|0 311
+Deleted: doc/ja/index.md|0 302
+Deleted: doc/ko/README.md|0 311
+Deleted: doc/ko/index.md|0 302
+Deleted: doc/pl/README.md|0 311
+Deleted: doc/pl/index.md|0 302
+Deleted: doc/ru/index.md|0 290
+Deleted: doc/zh/README.md|0 311
+Deleted: doc/zh/index.md|0 302
+
+Revision: dc8fbd78a234bd88450ebe01835c60371bc2cf8e
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:39:17
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 2d5d3519b95922aa77a1336c0a8764154c938511
+Author: Tim Brust <github@timbrust.de>
+Date: 25/08/2020 20:36:13
+Message:
+docs: undeprecate the plugin (#267) #MsgLength=89
+
+
+----
+Modified: README.md|8 4
+
+Revision: 64bfd154b3ed8426ede8b66a2b7902cdf6122a21
+Author: Tim Brust <github@timbrust.de>
+Date: 26/08/2020 05:44:32
+Message:
+fix(ios): re-implement user agent overwrite (#268) #MsgLength=73
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|23 25
+
+Revision: 61d386ccf2c4f1839e8bf7eb0f372cfdc794df17
+Author: Tim Brust <github@timbrust.de>
+Date: 26/08/2020 19:36:48
+Message:
+chore(npm): adds ignore list (#269) #MsgLength=37
+
+
+----
+Added: .npmignore|2 0
+
+Revision: 46666ee89c2316e972780b859f44f20519f5dbf7
+Author: Tim Brust <github@timbrust.de>
+Date: 31/08/2020 22:02:08
+Message:
+fix!: remove deprecated platforms (#270) #MsgLength=42
+
+
+----
+Modified: README.md|0 12
+Modified: package.json|0 14
+Modified: plugin.xml|0 85
+Deleted: src/amazon/FileTransfer.java|0 898
+Deleted: src/ubuntu/file-transfer.cpp|0 265
+Deleted: src/ubuntu/file-transfer.h|0 103
+Deleted: src/wp/FileTransfer.cs|0 994
+Modified: tests/tests.js|7 39
+Deleted: www/blackberry10/.jshintrc|0 5
+Deleted: www/blackberry10/FileTransfer.js|0 190
+Deleted: www/blackberry10/FileTransferProxy.js|0 36
+Deleted: www/blackberry10/xhrFileTransfer.js|0 260
+Deleted: www/firefoxos/FileTransferProxy.js|0 222
+Deleted: www/wp7/base64.js|0 73
+
+Revision: dd18914ed7a6ac88706ea7b0fcf9fb3c8e6e27b3
+Author: Tim Brust <github@timbrust.de>
+Date: 31/08/2020 23:39:59
+Message:
+chore: bump version to 2.0.0-dev (#273) #MsgLength=41
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b4a4c2a74ed4529699629228cb75d15fae00edf7
+Author: Tim Brust <github@timbrust.de>
+Date: 31/08/2020 23:40:17
+Message:
+chore: package cleanup (#272) #MsgLength=31
+
+
+----
+Modified: package.json|2 7
+Modified: plugin.xml|2 2
+
+Revision: cd15b501729b9bc4495edd28a7665389c2c69406
+Author: Tim Brust <github@timbrust.de>
+Date: 01/09/2020 23:08:24
+Message:
+refactor(eslint): use cordova-eslint /w fix (#275) #MsgLength=52
+
+
+----
+Added: .eslintrc.yml|23 0
+Deleted: .jscsrc|0 23
+Deleted: .jshintrc|0 19
+Modified: package.json|3 5
+Modified: src/windows/FileTransferProxy.js|283 267
+Modified: tests/hooks/after_prepare.js|40 29
+Modified: tests/tests.js|1300 1031
+Modified: www/FileTransfer.js|71 56
+Modified: www/FileTransferError.js|2 2
+Modified: www/browser/FileTransfer.js|162 145
+
+Revision: 4a1e766fb7535637acdda00dd6700f42379daca3
+Author: Tim Brust <github@timbrust.de>
+Date: 02/09/2020 01:58:16
+Message:
+chore: adds package-lock file (#274) #MsgLength=38
+
+
+----
+Added: package-lock.json|1724 0
+
+Revision: 24b15c5f5a4bfdd2c69678da84e7399bb2c43660
+Author: Norman Breau <norman@normanbreau.com>
+Date: 23/09/2020 18:20:22
+Message:
+doc: Improve progressEvent documentation (#280) #MsgLength=49
+
+
+----
+Modified: README.md|7 2
+
+Revision: dcae9269b8f44a36837a3a0f79241a08f9c6c3a7
+Author: Christiaan Baartse <anotherhero@gmail.com>
+Date: 27/10/2020 20:56:35
+Message:
+fix(ios): headers are not being sent (#284) #MsgLength=45
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|21 24
+
+Revision: 88e39df8a547ba321ed02ec5dde4df68544bf09d
+Author: Tim Brust <github@timbrust.de>
+Date: 27/10/2020 23:40:46
+Message:
+fix(ios): remove hardcoded X-Requested-With header (#287) #MsgLength=190
+
+
+----
+Modified: src/ios/CDVFileTransfer.m|0 2
+
+Revision: 648b57792f2f33ffc9da6d2fa020d26a48799048
+Author: Alexis THOMAS <ath0mas@users.noreply.github.com>
+Date: 21/02/2021 06:31:37
+Message:
+chore: bump 'protective' entry for major release 2.0 to come (#299) #MsgLength=69
+
+
+----
+Modified: package.json|1 1
+
+Revision: 2cdb0403a81821e144998c8d9a00d338d6ece3ee
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/07/2021 00:12:56
+Message:
+feat!: remove deprecated whitelist usage (#307) #MsgLength=49
+
+
+----
+Modified: src/android/FileTransfer.java|2 18
+
+Revision: 256f4c92d60487d82ee685d8e72d27eebb93134b
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/09/2021 21:18:47
+Message:
+ci: add gh-actions workflows (#311) #MsgLength=37
+
+
+----
+Added: .github/workflows/android.yml|155 0
+Added: .github/workflows/chrome.yml|80 0
+Added: .github/workflows/ios.yml|95 0
+Added: .github/workflows/lint.yml|56 0
+Modified: tests/plugin.xml|1 1
+Added: tests/server/index.js|156 0
+Added: tests/server/package-lock.json|2187 0
+Added: tests/server/package.json|23 0
+
+Revision: 2ce746e0453d777a14f973eec0592622083e86e6
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 12:15:20
+Message:
+test: fix asset file paths (#313) #MsgLength=35
+
+
+----
+Modified: tests/tests.js|3 3
+
+Revision: cab8b4607acb6cfd4dfcbbe714677d1feabc8f8a
+Author: kpatfln <89169052+kpatfln@users.noreply.github.com>
+Date: 24/09/2021 12:36:25
+Message:
+fix(android): enable download functionality with Android Q (#310) #MsgLength=67
+
+
+----
+Modified: src/android/FileTransfer.java|2 1
+
+Revision: aa2233d4302e2aab6f79744e8906b0747e6075ae
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 23:07:25
+Message:
+ci: remove travis & appveyor (#314) #MsgLength=37
+
+
+----
+Deleted: .appveyor.yml|0 28
+Deleted: .travis.yml|0 71
+Modified: README.md|0 4
+
+Revision: ec11d2fd0e87d7d9e0ba94b1989ffb71af1c3c96
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:07:41
+Message:
+ci: add action-badge (#315) #MsgLength=29
+
+
+----
+Modified: README.md|2 0
+
+Revision: 5c29f9a0e1b0cddb9c0cdf7b79139ae8e523e5c1
+Author: エリス <erisu@users.noreply.github.com>
+Date: 20/10/2021 12:26:59
+Message:
+ci(ios): update workflow w/ iOS 15 (#318) #MsgLength=43
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: 48d1c3ef21700f2623011cf914d575f8a0c951e5
+Author: Norman Breau <norman@normanbreau.com>
+Date: 06/01/2022 23:54:27
+Message:
+chore: .npmrc (#323) #MsgLength=22
+
+
+----
+Added: .npmrc|2 0
+
+Revision: 5ed73ae0a8d070ccdc9162a4da1e3cd4c872c799
+Author: Norman Breau <norman@normanbreau.com>
+Date: 06/01/2022 23:55:33
+Message:
+chore: package-lock upgrade (#324) #MsgLength=36
+
+
+----
+Modified: package-lock.json|2740 425
+
+Revision: 96aad0e22e25fcdf4ac04e9688ec97e85b6eceaa
+Author: エリス <erisu@users.noreply.github.com>
+Date: 23/05/2022 15:41:35
+Message:
+chore: remove use-permission WRITE_EXTERNAL_STORAGE (#335) #MsgLength=60
+
+
+----
+Modified: plugin.xml|0 4
+
+Revision: 6153f6d7bfb3d7d8cd96fdba12c5f5fcaa500082
+Author: Norman Breau <norman@nbsolutions.ca>
+Date: 15/06/2022 00:41:28
+Message:
+chore: eslint upgrade (#325) #MsgLength=30
+
+
+----
+Modified: package-lock.json|814 1209
+Modified: package.json|1 1
+Modified: src/windows/FileTransferProxy.js|85 85
+Modified: tests/hooks/after_prepare.js|12 12
+Modified: tests/server/index.js|4 4
+Modified: tests/tests.js|234 234
+Modified: www/FileTransfer.js|35 35
+Modified: www/FileTransferError.js|1 1
+Modified: www/browser/FileTransfer.js|43 43
+
+Revision: e6f17f00d76069c73ee8c8bf27ddb123c79bbefc
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date: 15/06/2022 00:41:59
+Message:
+Bump minimist from 1.2.5 to 1.2.6 (#329) #MsgLength=491
+
+
+----
+Modified: package-lock.json|6 6
+
+Revision: 6a9aaf9747eb49ab2c3bf7c76f8211e62c166590
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date: 15/06/2022 01:28:58
+Message:
+Bump i from 0.3.6 to 0.3.7 in /tests/server (#341) #MsgLength=489
+
+
+----
+Modified: tests/server/package-lock.json|3 3
+
+Revision: 169877e8e1d07cd0e8221946c09396809e062b8f
+Author: Norman Breau <norman@nbsolutions.ca>
+Date: 15/06/2022 03:24:39
+Message:
+chore: Increase min file plugin version to 7.0 (#340) #MsgLength=55
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: e1349cd84e779d1b6c2f691599bfc61030f03932
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/07/2022 12:33:08
+Message:
+ci(android): update java requirement for cordova-android@11 (#343) #MsgLength=68
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: 2465f508adfadd5be4a8ea9ecd1ca01779164ea2
+Author: エリス <erisu@users.noreply.github.com>
+Date: 22/07/2022 11:44:47
+Message:
+dep(npm): bump package-lock v2 w/ rebuild (#344) #MsgLength=50
+
+
+----
+Modified: package-lock.json|412 277
+

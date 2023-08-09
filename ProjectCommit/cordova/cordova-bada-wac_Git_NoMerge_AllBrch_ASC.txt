@@ -1,0 +1,983 @@
+Revision: c0b08894b19393e2b334406363b01a2cb3481624
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 03/04/2012 07:33:33
+Message:
+initial commit #MsgLength=15
+
+
+----
+Added: .badaprj|9 0
+Added: .project|18 0
+Added: Icons/CordovaWAC_type3.png|0 0
+Added: Icons/CordovaWAC_type4.png|0 0
+Added: Icons/CordovaWAC_type5.png|0 0
+Added: Icons/Splash_type3.png|0 0
+Added: Icons/Splash_type4.png|0 0
+Added: Icons/Splash_type5.png|0 0
+Added: Res/index.html|66 0
+Added: Res/js/accelerometer.js|48 0
+Added: Res/js/compass.js|34 0
+Added: Res/js/connection.js|30 0
+Added: Res/js/device.js|68 0
+Added: Res/js/sample.js|107 0
+Added: application.xml|30 0
+Added: manifest.xml|37 0
+
+Revision: 628e8ea626b5b24eba56f03c483fcd48dd32e177
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 04/04/2012 07:41:29
+Message:
+adding initial compass support #MsgLength=31
+
+
+----
+Modified: Res/index.html|13 0
+Modified: Res/js/accelerometer.js|3 4
+Modified: Res/js/compass.js|34 15
+Modified: Res/js/sample.js|61 0
+
+Revision: 07c467f89354e320cf74127c0c68e8257d972737
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 05/04/2012 07:50:23
+Message:
+adding connection object #MsgLength=25
+
+
+----
+Modified: Res/index.html|10 0
+Modified: Res/js/connection.js|18 11
+Modified: Res/js/sample.js|9 0
+
+Revision: fa18c75f5181b511b22acba73a679ce47602aad5
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 07/04/2012 07:46:51
+Message:
+adding beep vibrate and lighton #MsgLength=32
+
+
+----
+Modified: Res/index.html|20 0
+Added: Res/js/notification.js|48 0
+Modified: Res/js/sample.js|24 0
+
+Revision: 06e81ddd2fd81c00d64d6beff472abb0b3969fdc
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 07/04/2012 08:21:53
+Message:
+adding camera preview #MsgLength=22
+
+
+----
+Modified: Res/index.html|8 0
+Added: Res/js/camera.js|26 0
+Modified: Res/js/sample.js|4 0
+
+Revision: cb955492c283f307fc437d948293b62561740ef6
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/04/2012 09:39:27
+Message:
+adding image/video capture support #MsgLength=35
+
+
+----
+Modified: Res/index.html|22 2
+Added: Res/js/capture.js|53 0
+Modified: Res/js/sample.js|30 2
+
+Revision: 3057bbd16bf2a7e36cd2e5b3db460cde44700bb9
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 28/04/2012 06:46:38
+Message:
+updating repository with cordovajs #MsgLength=35
+
+
+----
+Modified: Res/index.html|8 2
+Deleted: Res/js/camera.js|0 26
+Added: Res/js/cordova.bada.js|4308 0
+Modified: Res/js/sample.js|14 1
+
+Revision: 6917db2d8ddf571f3ddb416c7135860ddd86b8e5
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 28/04/2012 08:14:49
+Message:
+initial commit #MsgLength=15
+
+
+----
+Added: LICENCE|201 0
+Added: NOTICE|5 0
+
+Revision: 4c75b440eb6006c20eb877812cf74c843e72b7bb
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 28/04/2012 08:15:13
+Message:
+adding cordova artwork #MsgLength=23
+
+
+----
+Added: Icons/codova_bada_wac_splash_type4.png|0 0
+Added: Icons/codova_bada_wac_splash_type5.png|0 0
+Added: Icons/cordova_bada_icon_type5.png|0 0
+Added: Icons/cordova_bada_wac_icon_type3.png|0 0
+Added: Icons/cordova_bada_wac_icon_type4.png|0 0
+Added: Icons/cordova_bada_wac_splash_type3.png|0 0
+
+Revision: ce4a61b92842781f1081f98b8476db5b57ee310c
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 28/04/2012 08:16:28
+Message:
+adding sample app #MsgLength=18
+
+
+----
+Modified: Res/js/sample.js|20 1
+
+Revision: 0a2741f01bf3e91ab2d1fe52f8dd702f90617468
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 28/04/2012 08:17:58
+Message:
+adding application and manifest files #MsgLength=38
+
+
+----
+Modified: application.xml|11 11
+
+Revision: 8ba2525d60923e0f3f06a0d40d67b607f4177416
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 28/04/2012 08:18:23
+Message:
+adding IDE project file #MsgLength=24
+
+
+----
+Modified: .project|1 1
+
+Revision: fdb75da09d87d5b99dd1977f44efe405e44e0e17
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 28/04/2012 08:18:50
+Message:
+adding cordova.js #MsgLength=18
+
+
+----
+Modified: Res/js/cordova.bada.js|187 133
+
+Revision: 7850fb863407e9aa092d9dee3050d800a4bffd8b
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 28/04/2012 08:21:47
+Message:
+removing unsed icons and javascript files #MsgLength=42
+
+
+----
+Deleted: Icons/CordovaWAC_type3.png|0 0
+Deleted: Icons/CordovaWAC_type4.png|0 0
+Deleted: Icons/CordovaWAC_type5.png|0 0
+Deleted: Icons/Splash_type3.png|0 0
+Deleted: Icons/Splash_type4.png|0 0
+Deleted: Icons/Splash_type5.png|0 0
+Deleted: Res/js/accelerometer.js|0 47
+Deleted: Res/js/capture.js|0 53
+Deleted: Res/js/compass.js|0 53
+Deleted: Res/js/connection.js|0 37
+Deleted: Res/js/device.js|0 68
+Deleted: Res/js/notification.js|0 48
+
+Revision: 8d2872a83d59802f455881f41360d8be6a20b008
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 28/04/2012 08:25:45
+Message:
+updating index.html removing unsed things #MsgLength=42
+
+
+----
+Modified: Res/index.html|120 136
+
+Revision: 5fc88249ca51d50b860b81a4939ca33fe0d85009
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 28/04/2012 09:11:58
+Message:
+adding VERSION and README.md #MsgLength=29
+
+
+----
+Added: README.md|12 0
+Added: VERSION|1 0
+Modified: application.xml|1 1
+
+Revision: 92674d93f3cc1fc4e7aa96db66429802816e4280
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 01/05/2012 05:57:19
+Message:
+adding the latest cordova js #MsgLength=29
+
+
+----
+Modified: Res/js/cordova.bada.js|3 3
+
+Revision: 679ad67f0b2485c370097fab0193f8a5999a968a
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 06/05/2012 20:41:51
+Message:
+updating apache licences with apache rat #MsgLength=41
+
+
+----
+Modified: Res/index.html|21 0
+Modified: application.xml|21 0
+Modified: manifest.xml|22 1
+
+Revision: 5858fc14862fd45aca18f784797945292a9c6248
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 09/05/2012 17:54:03
+Message:
+adding getPicture and captureImage examples #MsgLength=44
+
+
+----
+Modified: Res/js/cordova.bada.js|424 142
+Modified: Res/js/sample.js|36 4
+
+Revision: 8511f42429d245e4a2585d4ecf308b654ec7214e
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 09/05/2012 17:54:14
+Message:
+updating UI #MsgLength=12
+
+
+----
+Modified: Res/index.html|9 1
+
+Revision: 085fd431203a31432941e25e2adbb7973b3f8e79
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 09/05/2012 20:54:56
+Message:
+adding captureVideo example #MsgLength=28
+
+
+----
+Modified: Res/js/sample.js|21 7
+
+Revision: 558ba7e8709d383734c83922508853087104121a
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 09/05/2012 20:55:14
+Message:
+updating cordova.js #MsgLength=20
+
+
+----
+Modified: Res/js/cordova.bada.js|36 9
+
+Revision: 4de73030913143429ac2ce1fd2c614bddecee3c1
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 09/05/2012 20:56:50
+Message:
+updating UI with video capture buttons #MsgLength=39
+
+
+----
+Modified: Res/index.html|3 1
+
+Revision: a36a49ae15857820c63e801a513ff9511d8815a8
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/05/2012 23:17:02
+Message:
+updating sample UI #MsgLength=19
+
+
+----
+Modified: Res/index.html|9 0
+
+Revision: fa5648e4fb92b9486c79c021b00af4120f6b10e0
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/05/2012 23:18:12
+Message:
+updating cordova.js #MsgLength=20
+
+
+----
+Modified: Res/js/cordova.bada.js|265 3
+
+Revision: c4f7a099f8a1ee38f4f7171588167cfd30bccb55
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/05/2012 23:18:43
+Message:
+updating sample code #MsgLength=21
+
+
+----
+Modified: Res/js/sample.js|93 0
+
+Revision: 23bb3e5f38a92fa1870b612af37cceb0e2a1f0a0
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 26/05/2012 00:47:23
+Message:
+adding latest cordovajs #MsgLength=24
+
+
+----
+Modified: Res/js/cordova.bada.js|727 100
+
+Revision: 747eaecdd140e86a9d4fb776df31a801d36f8549
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 26/05/2012 00:47:56
+Message:
+changing filename #MsgLength=18
+
+
+----
+Renamed: Res/js/cordova.js [from Res/js/cordova.bada.js]|0 0
+
+Revision: 37a989d0592db5af9aaa9f9faae86a11ed1f0be2
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 26/05/2012 01:01:08
+Message:
+updating js reference #MsgLength=22
+
+
+----
+Modified: Res/index.html|1 1
+
+Revision: 9587d881752944bded51fa18851be7ddb5c98242
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 26/05/2012 01:01:28
+Message:
+updating to lastest js #MsgLength=23
+
+
+----
+Modified: Res/js/cordova.js|4 4
+
+Revision: 395eedcfe8bbe36dfb0419b561db07d7eddf3bbb
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 26/05/2012 01:09:44
+Message:
+updating cordova.js version #MsgLength=28
+
+
+----
+Modified: Res/js/cordova.js|4 7
+
+Revision: 42bbcbf58efe6abbd36d1a1c80a6c1b9251dce2b
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 26/05/2012 01:11:52
+Message:
+updating VERSION #MsgLength=17
+
+
+----
+Modified: VERSION|1 1
+
+Revision: cef76ff1be59026d316859a53cb90a8e0b20d134
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 06/06/2012 07:18:39
+Message:
+reverting to old javascript and updating VERSION #MsgLength=49
+
+
+----
+Modified: Res/js/cordova.js|103 727
+Modified: VERSION|1 1
+
+Revision: 62c656d9d3754b2ada74e896209329905d2ea348
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 07/06/2012 06:28:16
+Message:
+updating cordova.js with overriden objects #MsgLength=43
+
+
+----
+Modified: Res/index.html|1 1
+Modified: Res/js/cordova.js|808 119
+
+Revision: 003380f95f239e210c1ad22ed890504e457c51b5
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 13/06/2012 06:00:04
+Message:
+rocking with the latest cordovajs #MsgLength=34
+
+
+----
+Modified: Res/js/cordova.js|9 3
+
+Revision: 110a3da8323d0c339ed18c74088654b597421cc2
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 13/06/2012 06:01:03
+Message:
+updating VERSION file to 1.8.1 #MsgLength=31
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 6ddecfa3c8acf77d966a614d58571ea08d2cf94b
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 22/06/2012 10:34:47
+Message:
+updating version #MsgLength=17
+
+
+----
+Modified: Res/js/cordova.js|2 2
+Modified: VERSION|1 1
+
+Revision: 1bf09f15cacfdd5afae4d87876ba4572cec50c0b
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 19/07/2012 07:15:02
+Message:
+adding standard sample app to bada #MsgLength=35
+
+
+----
+Added: Res/config.xml|47 0
+Added: Res/cordova-2.0.0.js|5676 0
+Added: Res/css/index.css|100 0
+Added: Res/img/cordova.png|0 0
+Modified: Res/index.html|22 165
+Added: Res/js/index.js|15 0
+Added: Res/res/icon/cordova_128.png|0 0
+Added: Res/res/icon/cordova_16.png|0 0
+Added: Res/res/icon/cordova_24.png|0 0
+Added: Res/res/icon/cordova_256.png|0 0
+Added: Res/res/icon/cordova_32.png|0 0
+Added: Res/res/icon/cordova_48.png|0 0
+Added: Res/res/icon/cordova_512.png|0 0
+Added: Res/res/icon/cordova_64.png|0 0
+Added: Res/res/icon/cordova_android_36.png|0 0
+Added: Res/res/icon/cordova_android_48.png|0 0
+Added: Res/res/icon/cordova_android_72.png|0 0
+Added: Res/res/icon/cordova_android_96.png|0 0
+Added: Res/res/icon/cordova_bb_80.png|0 0
+Added: Res/res/icon/cordova_ios_114.png|0 0
+Added: Res/res/icon/cordova_ios_144.png|0 0
+Added: Res/res/icon/cordova_ios_57.png|0 0
+Added: Res/res/icon/cordova_ios_72.png|0 0
+Added: Res/res/screen/android_hdpi_landscape.png|0 0
+Added: Res/res/screen/android_hdpi_portrait.png|0 0
+Added: Res/res/screen/android_ldpi_landscape.png|0 0
+Added: Res/res/screen/android_ldpi_portrait.png|0 0
+Added: Res/res/screen/android_mdpi_landscape.png|0 0
+Added: Res/res/screen/android_mdpi_portrait.png|0 0
+Added: Res/res/screen/android_xhdpi_landscape.png|0 0
+Added: Res/res/screen/android_xhdpi_portrait.png|0 0
+Added: Res/res/screen/blackberry_transparent_300.png|0 0
+Added: Res/res/screen/blackberry_transparent_400.png|0 0
+Added: Res/res/screen/ipad_landscape.png|0 0
+Added: Res/res/screen/ipad_portrait.png|0 0
+Added: Res/res/screen/ipad_retina_landscape.png|0 0
+Added: Res/res/screen/ipad_retina_portrait.png|0 0
+Added: Res/res/screen/iphone_landscape.png|0 0
+Added: Res/res/screen/iphone_portrait.png|0 0
+Added: Res/res/screen/iphone_retina_landscape.png|0 0
+Added: Res/res/screen/iphone_retina_portrait.png|0 0
+Added: Res/res/screen/windows_phone_portrait.jpg|0 0
+Added: Res/sample/index.html|167 0
+Renamed: Res/sample/js/cordova.js [from Res/js/cordova.js]|0 0
+Renamed: Res/sample/js/sample.js [from Res/js/sample.js]|0 0
+Added: Res/spec.html|50 0
+Added: Res/spec/helper.js|11 0
+Added: Res/spec/index.js|49 0
+Added: Res/spec/lib/jasmine-1.2.0/MIT.LICENSE|20 0
+Added: Res/spec/lib/jasmine-1.2.0/jasmine-html.js|616 0
+Added: Res/spec/lib/jasmine-1.2.0/jasmine.css|81 0
+Added: Res/spec/lib/jasmine-1.2.0/jasmine.js|2529 0
+
+Revision: d4fc6ae2657cc7d8a865b88db1d7526819c2bf4c
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 27/06/2012 22:28:11
+Message:
+CB-963 renaming LICENCE to us english #MsgLength=38
+
+
+----
+Renamed: LICENSE [from LICENCE]|0 0
+
+Revision: 4c14da2584bc3fe3c19c159d62f13f0993835e04
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 30/06/2012 04:38:11
+Message:
+updating VERSION to 1.9.0 #MsgLength=26
+
+
+----
+Modified: VERSION|1 1
+
+Revision: b6a50a02dfd0ed819c3cb4063996aee4e719920f
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 13/07/2012 04:58:20
+Message:
+[CB-1038] Updating JS to latest to use refactored device module. #MsgLength=65
+
+
+----
+Modified: Res/js/cordova.js|188 240
+
+Revision: ac9b30d8a7218e243575a13d77192eaf8a978fd9
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 14/07/2012 06:02:01
+Message:
+updating VERSION to 2.0.0rc1 #MsgLength=29
+
+
+----
+Modified: Res/js/cordova.js|2 2
+Modified: VERSION|1 1
+
+
+Revision: afe4d7e3bd22356cfeba24b5c9794d6dacdd1d6f
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 19/07/2012 07:21:28
+Message:
+updating VERSION file #MsgLength=22
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 8bd1eb412a6f5bbb8cbee6953f4fd6f779187ffe
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 24/08/2012 08:33:59
+Message:
+updating icon #MsgLength=14
+
+
+----
+Modified: Icons/cordova_bada_wac_icon_type3.png|0 0
+
+Revision: 493720e234c39d83ba4889c4e276f6a069a66e7e
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 24/08/2012 09:00:22
+Message:
+updating javascript and version #MsgLength=32
+
+
+----
+Renamed: Res/cordova-2.1.0.js [from Res/cordova-2.0.0.js]|54 38
+Modified: Res/index.html|1 1
+Modified: VERSION|1 1
+
+Revision: db7563edb30ad29ee2abec9fd0fde03a40e9c91f
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 04/09/2012 12:55:37
+Message:
+updating version and reference to file #MsgLength=39
+
+
+----
+Renamed: Res/cordova.js [from Res/cordova-2.1.0.js]|5506 5523
+Modified: Res/index.html|1 1
+Modified: VERSION|1 1
+
+Revision: 19d5be80c695345466d64554186d07483adea56f
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 05/09/2012 07:37:56
+Message:
+updating www #MsgLength=13
+
+
+----
+Modified: Res/index.html|1 1
+Renamed: Res/js/cordova.js [from Res/cordova.js]|0 0
+
+Revision: baf1e632631f35ba9123242a2feea8eeef075388
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 05/09/2012 08:03:18
+Message:
+updating to latest hello world app #MsgLength=35
+
+
+----
+Modified: Res/css/index.css|62 47
+Added: Res/img/logo.png|0 0
+Modified: Res/index.html|26 8
+Modified: Res/js/index.js|42 8
+Added: Res/res/icon/android/icon-36-ldpi.png|0 0
+Added: Res/res/icon/android/icon-48-mdpi.png|0 0
+Added: Res/res/icon/android/icon-72-hdpi.png|0 0
+Added: Res/res/icon/android/icon-96-xhdpi.png|0 0
+Added: Res/res/icon/bada-wac/icon-48-type5.png|0 0
+Added: Res/res/icon/bada-wac/icon-50-type3.png|0 0
+Added: Res/res/icon/bada-wac/icon-80-type4.png|0 0
+Added: Res/res/icon/bada/icon-128.png|0 0
+Added: Res/res/icon/blackberry/icon-80.png|0 0
+Added: Res/res/icon/ios/icon-57-2x.png|0 0
+Added: Res/res/icon/ios/icon-57.png|0 0
+Added: Res/res/icon/ios/icon-72-2x.png|0 0
+Added: Res/res/icon/ios/icon-72.png|0 0
+Added: Res/res/icon/webos/icon-64.png|0 0
+Added: Res/res/icon/windows-phone/icon-173-tile.png|0 0
+Added: Res/res/icon/windows-phone/icon-48.png|0 0
+Added: Res/res/icon/windows-phone/icon-62-tile.png|0 0
+Added: Res/res/screen/android/screen-hdpi-landscape.png|0 0
+Added: Res/res/screen/android/screen-hdpi-portrait.png|0 0
+Added: Res/res/screen/android/screen-ldpi-landscape.png|0 0
+Added: Res/res/screen/android/screen-ldpi-portrait.png|0 0
+Added: Res/res/screen/android/screen-mdpi-landscape.png|0 0
+Added: Res/res/screen/android/screen-mdpi-portrait.png|0 0
+Added: Res/res/screen/android/screen-xhdpi-landscape.png|0 0
+Added: Res/res/screen/android/screen-xhdpi-portrait.png|0 0
+Added: Res/res/screen/bada-wac/screen-type3.png|0 0
+Added: Res/res/screen/bada-wac/screen-type4.png|0 0
+Added: Res/res/screen/bada-wac/screen-type5.png|0 0
+Added: Res/res/screen/bada/screen-portrait.png|0 0
+Added: Res/res/screen/blackberry/screen-225.png|0 0
+Added: Res/res/screen/ios/screen-ipad-landscape-2x.png|0 0
+Added: Res/res/screen/ios/screen-ipad-landscape.png|0 0
+Added: Res/res/screen/ios/screen-ipad-portrait-2x.png|0 0
+Added: Res/res/screen/ios/screen-ipad-portrait.png|0 0
+Added: Res/res/screen/ios/screen-iphone-landscape-2x.png|0 0
+Added: Res/res/screen/ios/screen-iphone-landscape.png|0 0
+Added: Res/res/screen/ios/screen-iphone-portrait-2x.png|0 0
+Added: Res/res/screen/ios/screen-iphone-portrait.png|0 0
+Added: Res/res/screen/webos/screen-64.png|0 0
+Added: Res/res/screen/windows-phone/screen-portrait.jpg|0 0
+Modified: Res/spec.html|18 0
+Modified: Res/spec/helper.js|22 0
+Modified: Res/spec/index.js|37 19
+
+Revision: 7bc7982b33e98988772859c784d8884124642b7a
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 05/09/2012 08:11:42
+Message:
+removing unused files #MsgLength=22
+
+
+----
+Deleted: Res/config.xml|0 47
+Deleted: Res/img/cordova.png|0 0
+
+Revision: e9253114b2504db4d132451a8311fd6b211d8cf4
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 05/09/2012 08:38:47
+Message:
+removing irrelevant files and fixing a minor js issue #MsgLength=54
+
+
+----
+Modified: Res/index.html|1 1
+Modified: Res/js/cordova.js|1 1
+Deleted: Res/res/icon/android/icon-36-ldpi.png|0 0
+Deleted: Res/res/icon/android/icon-48-mdpi.png|0 0
+Deleted: Res/res/icon/android/icon-72-hdpi.png|0 0
+Deleted: Res/res/icon/android/icon-96-xhdpi.png|0 0
+Deleted: Res/res/icon/bada/icon-128.png|0 0
+Deleted: Res/res/icon/blackberry/icon-80.png|0 0
+Deleted: Res/res/icon/cordova_128.png|0 0
+Deleted: Res/res/icon/cordova_16.png|0 0
+Deleted: Res/res/icon/cordova_24.png|0 0
+Deleted: Res/res/icon/cordova_256.png|0 0
+Deleted: Res/res/icon/cordova_32.png|0 0
+Deleted: Res/res/icon/cordova_48.png|0 0
+Deleted: Res/res/icon/cordova_512.png|0 0
+Deleted: Res/res/icon/cordova_64.png|0 0
+Deleted: Res/res/icon/cordova_android_36.png|0 0
+Deleted: Res/res/icon/cordova_android_48.png|0 0
+Deleted: Res/res/icon/cordova_android_72.png|0 0
+Deleted: Res/res/icon/cordova_android_96.png|0 0
+Deleted: Res/res/icon/cordova_bb_80.png|0 0
+Deleted: Res/res/icon/cordova_ios_114.png|0 0
+Deleted: Res/res/icon/cordova_ios_144.png|0 0
+Deleted: Res/res/icon/cordova_ios_57.png|0 0
+Deleted: Res/res/icon/cordova_ios_72.png|0 0
+Deleted: Res/res/icon/ios/icon-57-2x.png|0 0
+Deleted: Res/res/icon/ios/icon-57.png|0 0
+Deleted: Res/res/icon/ios/icon-72-2x.png|0 0
+Deleted: Res/res/icon/ios/icon-72.png|0 0
+Deleted: Res/res/icon/webos/icon-64.png|0 0
+Deleted: Res/res/icon/windows-phone/icon-173-tile.png|0 0
+Deleted: Res/res/icon/windows-phone/icon-48.png|0 0
+Deleted: Res/res/icon/windows-phone/icon-62-tile.png|0 0
+Deleted: Res/res/screen/android/screen-hdpi-landscape.png|0 0
+Deleted: Res/res/screen/android/screen-hdpi-portrait.png|0 0
+Deleted: Res/res/screen/android/screen-ldpi-landscape.png|0 0
+Deleted: Res/res/screen/android/screen-ldpi-portrait.png|0 0
+Deleted: Res/res/screen/android/screen-mdpi-landscape.png|0 0
+Deleted: Res/res/screen/android/screen-mdpi-portrait.png|0 0
+Deleted: Res/res/screen/android/screen-xhdpi-landscape.png|0 0
+Deleted: Res/res/screen/android/screen-xhdpi-portrait.png|0 0
+Deleted: Res/res/screen/android_hdpi_landscape.png|0 0
+Deleted: Res/res/screen/android_hdpi_portrait.png|0 0
+Deleted: Res/res/screen/android_ldpi_landscape.png|0 0
+Deleted: Res/res/screen/android_ldpi_portrait.png|0 0
+Deleted: Res/res/screen/android_mdpi_landscape.png|0 0
+Deleted: Res/res/screen/android_mdpi_portrait.png|0 0
+Deleted: Res/res/screen/android_xhdpi_landscape.png|0 0
+Deleted: Res/res/screen/android_xhdpi_portrait.png|0 0
+Deleted: Res/res/screen/bada/screen-portrait.png|0 0
+Deleted: Res/res/screen/blackberry/screen-225.png|0 0
+Deleted: Res/res/screen/blackberry_transparent_300.png|0 0
+Deleted: Res/res/screen/blackberry_transparent_400.png|0 0
+Deleted: Res/res/screen/ios/screen-ipad-landscape-2x.png|0 0
+Deleted: Res/res/screen/ios/screen-ipad-landscape.png|0 0
+Deleted: Res/res/screen/ios/screen-ipad-portrait-2x.png|0 0
+Deleted: Res/res/screen/ios/screen-ipad-portrait.png|0 0
+Deleted: Res/res/screen/ios/screen-iphone-landscape-2x.png|0 0
+Deleted: Res/res/screen/ios/screen-iphone-landscape.png|0 0
+Deleted: Res/res/screen/ios/screen-iphone-portrait-2x.png|0 0
+Deleted: Res/res/screen/ios/screen-iphone-portrait.png|0 0
+Deleted: Res/res/screen/ipad_landscape.png|0 0
+Deleted: Res/res/screen/ipad_portrait.png|0 0
+Deleted: Res/res/screen/ipad_retina_landscape.png|0 0
+Deleted: Res/res/screen/ipad_retina_portrait.png|0 0
+Deleted: Res/res/screen/iphone_landscape.png|0 0
+Deleted: Res/res/screen/iphone_portrait.png|0 0
+Deleted: Res/res/screen/iphone_retina_landscape.png|0 0
+Deleted: Res/res/screen/iphone_retina_portrait.png|0 0
+Deleted: Res/res/screen/webos/screen-64.png|0 0
+Deleted: Res/res/screen/windows-phone/screen-portrait.jpg|0 0
+Deleted: Res/res/screen/windows_phone_portrait.jpg|0 0
+
+Revision: 01723718a04f175e983ccf6ca391474a8466af77
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 12/09/2012 08:58:43
+Message:
+updating VERSION file #MsgLength=22
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 6df4c2c59265a357694cdecdf7c451811f0eead3
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 12/09/2012 08:59:55
+Message:
+updating to latest cordova.js #MsgLength=30
+
+
+----
+Modified: Res/js/cordova.js|5343 5466
+
+Revision: 6bf358d17cc2c0a09e9aa214364e20b5c0a892f2
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 13/09/2012 08:14:03
+Message:
+updating cordova.js #MsgLength=20
+
+
+----
+Modified: Res/js/cordova.js|3 10
+
+Revision: 7b22e3503ff1256bf540a2e216e8ba7498248557
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 16/10/2012 08:25:26
+Message:
+updating cordova version #MsgLength=25
+
+
+----
+Modified: Res/js/cordova.js|1037 256
+Modified: VERSION|1 1
+
+Revision: aa7f3fea7c0eda9a31a4091b4fff1f38a934e3b2
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 25/10/2012 03:55:15
+Message:
+updating JS and bumping VER number #MsgLength=35
+
+
+----
+Modified: Res/js/cordova.js|5 6
+Modified: VERSION|1 1
+
+Revision: 09b29de41bd0bb4a6b3c292b04eb162ce1369a8f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 01/11/2012 06:29:47
+Message:
+updated to 2.2.0 #MsgLength=17
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 92c21a51459f0b76d79dd9f8f32854ad280a85cb
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 02/11/2012 00:50:53
+Message:
+updating javascript #MsgLength=20
+
+
+----
+Modified: Res/js/cordova.js|4 4
+
+Revision: 54fd3ea9d3e4176896f3ba0c5fd0fcfcb013400d
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 27/11/2012 06:00:59
+Message:
+updating VERSION file #MsgLength=22
+
+
+----
+Modified: Res/js/cordova.js|259 357
+Modified: VERSION|1 1
+
+Revision: 705c038b8fa2a768db2375af95cfca8c897e94be
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/12/2012 06:52:25
+Message:
+updating js and VERSION file #MsgLength=29
+
+
+----
+Modified: Res/js/cordova.js|48 11
+Modified: VERSION|1 1
+
+Revision: a65d38123ba84cd73ead5c124d04ae2ae42b5ca6
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 03/01/2013 14:17:56
+Message:
+updating javascript and VERSION file #MsgLength=37
+
+
+----
+Modified: Res/js/cordova.js|5 5
+Modified: VERSION|1 1
+
+Revision: 400e92db07181a70284dcdd8fa2ba9bfec3c999d
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 22/01/2013 06:25:21
+Message:
+Updating javascript and VERSION #MsgLength=32
+
+
+----
+Modified: Res/js/cordova.js|491 432
+Modified: VERSION|1 1
+
+Revision: e35647c34cca0b83859fd9b9b271ca1c4bbb6c58
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 05/02/2013 05:59:18
+Message:
+updating version to 2.4.0 #MsgLength=26
+
+
+----
+Modified: Res/js/cordova.js|6 3
+Modified: VERSION|1 1
+
+Revision: 37e752c9052ad2f990cd2d24aafbd126ee10834d
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 20/02/2013 15:24:40
+Message:
+Updating bada-wac JS, VERSION to 2.5.0rc1 #MsgLength=42
+
+
+----
+Added: Res/cordova.js|6298 0
+Modified: VERSION|1 1
+
+Revision: 4d4600100d4be7231974879cbf119252e55cdaec
+Author: Josh Soref <jsoref@rim.com>
+Date: 11/09/2012 03:57:47
+Message:
+Brand: cordova #MsgLength=15
+
+
+----
+Renamed: Icons/cordova_bada_wac_splash_type4.png [from Icons/codova_bada_wac_splash_type4.png]|0 0
+Renamed: Icons/cordova_bada_wac_splash_type5.png [from Icons/codova_bada_wac_splash_type5.png]|0 0
+Modified: application.xml|4 4
+
+Revision: a40750319ec548bdab509f5422935c5d4400be2f
+Author: Josh Soref <jsoref@rim.com>
+Date: 11/09/2012 04:01:57
+Message:
+Brand: JavaScript #MsgLength=18
+
+
+----
+Modified: README.md|1 1
+
+
+Revision: a5e05ba01cf4125a3545d81c831c455cb06e3eeb
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 27/02/2013 06:38:43
+Message:
+CB-2344 fixing deviceReady event not firing #MsgLength=44
+
+
+----
+Modified: Res/js/cordova.js|550 365
+
+Revision: 9acb1d39ab3df1132d317bf07aef45cc43c58577
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 27/02/2013 10:14:12
+Message:
+Updating bada-wac JS, VERSION to 2.5.0 #MsgLength=39
+
+
+----
+Modified: Res/cordova.js|117 51
+Modified: VERSION|1 1
+
+Revision: 3abaa1f0e37459e946481053cfb24409f49ed351
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 27/02/2013 10:16:33
+Message:
+fixing deviceReady again #MsgLength=25
+
+
+----
+Modified: Res/js/cordova.js|1 4
+
+Revision: f5fb09aa61499cfeb8f212e9512191433a120a08
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 22/03/2013 06:25:32
+Message:
+Updating bada-wac JS, VERSION to 2.6.0rc1 #MsgLength=42
+
+
+----
+Modified: Res/cordova.js|324 44
+Modified: VERSION|1 1
+
+Revision: d9fb3051afa902702e5c45b21ae2d0a350ae7103
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 20:50:03
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: 56292b943a4a88a314fdf5d9971c56c4a9015c0b
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 31/05/2014 00:10:54
+Message:
+CB-6818 Add license for CONTRIBUTING.md #MsgLength=40
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: 06a333e759f83bc003ce89c83bd27c9033635066
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 31/05/2014 03:18:02
+Message:
+CB-6830 Add missing license #MsgLength=28
+
+
+----
+Modified: README.md|21 0
+
+Revision: 2e8029b411bd1625ebd565718f73cc9b0c1223cd
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/10/2016 13:31:59
+Message:
+Add github pull request template #MsgLength=33
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|22 0
+
+Revision: e83a949d15fa6275dcc73ed3356d98abe5231d6d
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 17/04/2019 01:17:28
+Message:
+deprecation notice #MsgLength=18
+
+
+----
+Modified: README.md|10 0
+

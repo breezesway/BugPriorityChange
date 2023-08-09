@@ -1,0 +1,5637 @@
+Revision: 59effec9aa1f7ec75c27109555e7f7dfd027124c
+Author: Fil Maj <fil@adobe.com>
+Date: 02/07/2012 06:36:00
+Message:
+Initial commit #MsgLength=15
+
+
+----
+Added: README.md|4 0
+
+Revision: e8e7151dbd4f3698278faaa0f63a1b4621211a5c
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 02/07/2012 08:19:32
+Message:
+workin it #MsgLength=10
+
+
+----
+Added: .gitignore|1 0
+Modified: README.md|23 3
+Added: android/jenkins.sh|76 0
+Added: config|5 0
+Added: package.json|0 0
+Added: server.js|2 0
+Added: setupspec.sh|29 0
+Added: src/junit-reporter.js|186 0
+
+Revision: 548151fef84843414fec181a9992a5754d5578a9
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 03/07/2012 11:33:27
+Message:
+split out stuff into two separate scripts: android and mobilespec. start of node server. worked out readme. added cordova.xml with modified whitelist for use in mobile spec Android. dropped todos #MsgLength=196
+
+
+----
+Modified: README.md|14 2
+Modified: android/jenkins.sh|11 24
+Modified: config|9 2
+Modified: server.js|21 2
+Modified: setupspec.sh|1 1
+Added: src/cordova.xml|9 0
+Modified: src/junit-reporter.js|1 1
+
+Revision: a0b63ced4ae1c6c20d6045edc34775f49665c5ce
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 26/10/2012 05:04:53
+Message:
+Added library clone bootstrap script, moving more stuff over to node. custom junit reporter should now post test results via XHR #MsgLength=129
+
+
+----
+Modified: .gitignore|2 0
+Added: bootstrap.js|18 0
+Deleted: config|0 12
+Added: config.json|6 0
+Modified: package.json|16 0
+Modified: server.js|24 17
+Modified: src/junit-reporter.js|3 15
+
+Revision: 742c04389aa39ac85a69b38871b35be11f5bac81
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 26/10/2012 05:39:03
+Message:
+moving more shit to node #MsgLength=25
+
+
+----
+Modified: server.js|11 1
+Deleted: setupspec.sh|0 29
+Deleted: src/cordova.xml|0 9
+Added: src/create_mobile-spec_app.js|21 0
+Added: src/updater.js|13 0
+
+Revision: 2829f78b4045ea14f66c88660370ed30be2fd9e2
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 26/10/2012 05:56:38
+Message:
+minor pathing fixes. logging out actions so server log is more verbose #MsgLength=71
+
+
+----
+Modified: package.json|1 1
+Modified: server.js|5 2
+Deleted: src/create_mobile-spec_app.js|0 21
+Added: src/create_mobile_spec_app.js|25 0
+Modified: src/updater.js|3 1
+
+Revision: e064e59564480afa6148d897d5dab697b9bedcbd
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 26/10/2012 07:07:47
+Message:
+start of android app making + deployment #MsgLength=41
+
+
+----
+Modified: server.js|10 4
+Added: src/makers/android.js|46 0
+
+Revision: ebe9af49da46982e537cb752209dee3668bdcfa8
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 26/10/2012 07:11:41
+Message:
+README updates #MsgLength=15
+
+
+----
+Modified: README.md|12 19
+
+Revision: c83563772916456721f1accf42d292ccf2dc5c6a
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 27/10/2012 04:35:31
+Message:
+logging more verbose. fixed some syntax issues. post content now contains lib + mobile spec version #MsgLength=100
+
+
+----
+Modified: config.json|1 1
+Modified: server.js|4 4
+Modified: src/create_mobile_spec_app.js|6 1
+Modified: src/junit-reporter.js|6 4
+Modified: src/makers/android.js|13 0
+
+Revision: f81825c5ff3a39245d2a3beab88af28f46abc766
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 27/10/2012 05:06:44
+Message:
+writing out tests results to filesystem now #MsgLength=44
+
+
+----
+Modified: .gitignore|1 0
+Modified: package.json|2 1
+Modified: server.js|24 7
+Modified: src/junit-reporter.js|2 0
+
+Revision: 8da81a116342e44bafa5375466ab5374d78a3608
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 27/10/2012 05:09:12
+Message:
+bootstrap needs to make the lib dir mang #MsgLength=41
+
+
+----
+Modified: bootstrap.js|1 0
+
+Revision: baad0c5c57c9539a5ff0281c8453d0116e5ca404
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 27/10/2012 05:56:54
+Message:
+instead of using debug, invoke ant to do pure compilation and not compile #MsgLength=74
+
+
+----
+Modified: src/makers/android.js|2 2
+
+Revision: 4cf44e4708130e7016782def467a060c9fb37438
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 27/10/2012 06:16:36
+Message:
+uninstall android apps first #MsgLength=29
+
+
+----
+Modified: src/makers/android.js|5 1
+
+Revision: 1754f82197101d6afdf8484791c1edc00109aad7
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 27/10/2012 06:50:45
+Message:
+overwrite xml output every time #MsgLength=32
+
+
+----
+Modified: server.js|1 3
+
+Revision: 22c869092d66e09b3bbbb7fcb71cba139a9a09e2
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 29/10/2012 12:41:05
+Message:
+added fruitstrap as dependency #MsgLength=31
+
+
+----
+Modified: bootstrap.js|15 1
+Modified: package.json|2 1
+
+Revision: 961b9a6539a3db5440b4043d959fb55a2cbe460d
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 30/10/2012 05:35:26
+Message:
+fruitstrap now npmified, removing fruitstrap fuckery from bootstrap #MsgLength=68
+
+
+----
+Modified: bootstrap.js|0 13
+
+Revision: 90b35002f92e5345d1a802ff07d0befc7d2875e9
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 03/11/2012 04:26:26
+Message:
+ios support! #MsgLength=13
+
+
+----
+Modified: config.json|1 3
+Modified: server.js|7 6
+Modified: src/junit-reporter.js|2 2
+Added: src/makers/ios.js|101 0
+
+Revision: 88423236874bc3e2b645ce34a7eef9de02d5e420
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 03/11/2012 04:26:52
+Message:
+readme updates #MsgLength=15
+
+
+----
+Modified: README.md|1 1
+
+Revision: f68caf0e981ec8a24de5a1588bc281bf0b303e34
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 03/11/2012 05:33:38
+Message:
+added uuid stuff and uncommeted android builds #MsgLength=47
+
+
+----
+Modified: server.js|2 1
+
+Revision: 5d0a132f678a3955ad7218dfba4d5909b716a349
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 03/11/2012 06:02:56
+Message:
+dont bail if uninstall fails on ios, map certain plastform names to proper names #MsgLength=81
+
+
+----
+Modified: server.js|7 0
+Modified: src/makers/ios.js|1 1
+
+Revision: 88af7566df733e38e35dcc596a0166fee8e7f762
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 03/11/2012 06:13:15
+Message:
+a few more additions to ios device map #MsgLength=39
+
+
+----
+Modified: server.js|4 2
+
+Revision: c9093a07362161a1bd25a25ded2a4af22eaca547
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 03/11/2012 06:18:02
+Message:
+small tweak to platform map #MsgLength=28
+
+
+----
+Modified: server.js|1 1
+
+Revision: 148472f695dd1f8117d447d55f3911db16e68b68
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 07/11/2012 14:49:56
+Message:
+start of template work. reading existing test results. #MsgLength=55
+
+
+----
+Modified: package.json|1 0
+Modified: server.js|51 36
+Added: src/generate_templates.js|86 0
+
+Revision: 9422e186321dd703b8aa019c8b52f6dfa639576f
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 08/11/2012 11:32:50
+Message:
+split out builder to own module. #MsgLength=33
+
+
+----
+Modified: server.js|42 49
+Added: src/builder.js|13 0
+Modified: src/create_mobile_spec_app.js|11 10
+Modified: src/updater.js|17 8
+
+Revision: c952b37b30b067fe84ba686b11267e9ffb283fa7
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 08/11/2012 11:37:42
+Message:
+builder only builds what specified in commits #MsgLength=46
+
+
+----
+Modified: config.json|1 1
+Modified: src/builder.js|21 8
+
+Revision: c25303053aaa3079b13abdafce7c1d96649dc440
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 08/11/2012 17:04:10
+Message:
+clearer routes. split some code into submodules. #MsgLength=49
+
+
+----
+Modified: server.js|49 45
+Modified: src/builder.js|4 3
+Modified: src/updater.js|1 1
+
+Revision: 4a665cdb144a4388aa34611a5ad9f1cb802069c9
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 09/11/2012 07:00:13
+Message:
+very basic dashboard page #MsgLength=26
+
+
+----
+Modified: server.js|13 10
+Modified: src/generate_templates.js|86 28
+
+Revision: 074c3bdb561f8b28b5514daeb63fbdd7e5b15107
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 09/11/2012 07:14:34
+Message:
+some extra console logs for server monitoring #MsgLength=46
+
+
+----
+Modified: server.js|5 2
+
+Revision: 50a267c0a2bce659d472ffa26460cedf96b179b1
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 09/11/2012 07:33:23
+Message:
+fixes to routing logic. unified mobile spec location. build mobile spec if it does not exist. #MsgLength=94
+
+
+----
+Modified: server.js|18 17
+Modified: src/builder.js|4 0
+Modified: src/makers/android.js|1 1
+Modified: src/makers/ios.js|1 1
+Modified: src/updater.js|1 0
+
+Revision: d3a948719156de6604dbf87b18bbea38bc40a5d8
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 09/11/2012 07:34:08
+Message:
+dashes! #MsgLength=8
+
+
+----
+Modified: src/builder.js|2 2
+
+Revision: 6e6156fd4312b1863820ab617d7b0240fc152f6a
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 09/11/2012 07:39:06
+Message:
+fixed a find/replace bug introduced. #MsgLength=37
+
+
+----
+Modified: src/create_mobile_spec_app.js|1 1
+
+Revision: 380788106de015de701d01d67b6f2e72265af504
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 09/11/2012 12:10:36
+Message:
+removed old folder #MsgLength=19
+
+
+----
+Deleted: android/jenkins.sh|0 63
+
+Revision: 55f80d7e9f2c42bce7286f91804af26b5f57b88e
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 09/11/2012 12:11:52
+Message:
+terser logging, some refactoring, updating commit list when a new sha comes in. #MsgLength=80
+
+
+----
+Modified: server.js|10 11
+Modified: src/generate_templates.js|20 9
+
+Revision: 7275a37b168c70523164ee3a283514fe8ba92b60
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 09/11/2012 12:18:06
+Message:
+updates to readme #MsgLength=18
+
+
+----
+Modified: README.md|9 10
+
+Revision: 0b62cf8f8fb8c843074f93348ae8cf7b275c8729
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 10/11/2012 02:55:24
+Message:
+minor cleanup #MsgLength=14
+
+
+----
+Modified: src/builder.js|8 1
+Modified: src/generate_templates.js|4 4
+
+Revision: 8e5303594b7e7c55bda11400dc282827943c3db7
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 10/11/2012 03:53:56
+Message:
+added forever module for fault tolerance #MsgLength=41
+
+
+----
+Modified: README.md|2 1
+Modified: package.json|2 1
+
+Revision: 647d360f160a84b3b126ffaa99f86d3c3bd9deed
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 10/11/2012 05:56:09
+Message:
+alert out basic assertion failure text #MsgLength=39
+
+
+----
+Modified: src/generate_templates.js|15 5
+
+Revision: 2fdd376180153039004bcca740b7fd8f19e5cb12
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 10/11/2012 07:40:00
+Message:
+some comments #MsgLength=14
+
+
+----
+Modified: src/generate_templates.js|3 2
+
+Revision: 107beaaac347eef1e25c6178951315e4cc9f06c3
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 11/11/2012 16:43:43
+Message:
+pass shaw from commit POST #MsgLength=27
+
+
+----
+Modified: src/builder.js|4 4
+Modified: src/makers/android.js|1 3
+Modified: src/makers/ios.js|2 2
+
+Revision: 6fe4c054610bbe5962c7cd00c2785134c39b4f2b
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 11/11/2012 16:16:49
+Message:
+start of blackberry support #MsgLength=28
+
+
+----
+Modified: bootstrap.js|1 1
+Modified: server.js|2 1
+Modified: src/builder.js|6 3
+Added: src/makers/blackberry.js|64 0
+
+Revision: 6b3d7c1c4d7e090d1c32b3299134e6744d91d0ce
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 12/11/2012 10:36:30
+Message:
+better handling of errors. start of blackberry support. asyncing all the things. #MsgLength=81
+
+
+----
+Modified: config.json|6 1
+Modified: server.js|0 1
+Modified: src/builder.js|1 5
+Modified: src/generate_templates.js|28 12
+Modified: src/makers/android.js|80 49
+Modified: src/makers/blackberry.js|53 45
+
+Revision: d10f74de9bad6604b6951d82f48d8b1c8012c312
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 12/11/2012 10:36:56
+Message:
+blackberry scanner module. factored out error writing. #MsgLength=55
+
+
+----
+Added: src/makers/blackberry/blackberry_scanner.js|38 0
+Added: src/makers/error_writer.js|17 0
+
+Revision: fdc93ee67db032b9e9a313019fd1c091e6a1033c
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 12/11/2012 10:44:48
+Message:
+hooking up writing out error details to templates as well as to FS #MsgLength=67
+
+
+----
+Modified: src/generate_templates.js|16 2
+Modified: src/makers/error_writer.js|3 1
+
+Revision: 575b178544c24e399cc7092f3a3a0d7b1bca93e6
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 12/11/2012 10:57:19
+Message:
+tweaks to error rendering logic #MsgLength=32
+
+
+----
+Modified: src/generate_templates.js|2 2
+Modified: src/makers/error_writer.js|4 1
+
+Revision: 6a972a69a5b05074a26ae4daa17ee34b54f92ce1
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 12/11/2012 12:46:13
+Message:
+working out some more blackberry goodness #MsgLength=42
+
+
+----
+Modified: config.json|3 2
+Modified: src/makers/blackberry.js|41 50
+Modified: src/makers/blackberry/blackberry_scanner.js|3 2
+
+Revision: f9b3ecc84a1762489e2d2cd98118d86e9328c6ab
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 13/11/2012 13:40:28
+Message:
+refactor of templates into more succinct modules #MsgLength=49
+
+
+----
+Modified: server.js|13 6
+Deleted: src/generate_templates.js|0 196
+Modified: src/makers/error_writer.js|2 2
+Added: src/templates.js|75 0
+Added: src/templates/commit_list.js|19 0
+Added: src/templates/process_results.js|50 0
+Added: src/templates/render.js|61 0
+Modified: src/updater.js|12 4
+
+Revision: 3267bd39d88805b841a0e9b90af6756cbba727c6
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 13/11/2012 13:41:55
+Message:
+requirements in readme #MsgLength=23
+
+
+----
+Modified: README.md|8 0
+
+Revision: 7b9bb2e56ede2f546ae747803b901e9a2ef1769f
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 14/11/2012 12:40:28
+Message:
+more work on blackberry. #MsgLength=25
+
+
+----
+Modified: config.json|12 4
+Modified: package.json|2 1
+Modified: server.js|4 3
+Modified: src/makers/blackberry.js|37 5
+Added: src/makers/blackberry/bbten_builder.js|4 0
+Modified: src/makers/blackberry/blackberry_scanner.js|11 4
+Added: src/makers/blackberry/playbook_builder.js|41 0
+Modified: src/templates/render.js|5 1
+Modified: src/updater.js|1 1
+
+Revision: 03a2ae75276cb845ca6980635a44a50ae06d08cc
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 14/11/2012 15:41:30
+Message:
+more flexible errors, can be model or version specific. more work on blackberry support #MsgLength=88
+
+
+----
+Modified: src/makers/blackberry.js|8 2
+Modified: src/makers/blackberry/bbten_builder.js|1 1
+Modified: src/makers/blackberry/playbook_builder.js|13 3
+Modified: src/makers/error_writer.js|12 0
+Modified: src/templates.js|26 4
+Modified: src/templates/process_results.js|23 2
+Modified: src/templates/render.js|15 7
+
+Revision: 060014bd562dda4ad842a9a089309ee8d225c6a5
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 15/11/2012 05:07:40
+Message:
+playbook deployment should now work #MsgLength=36
+
+
+----
+Modified: .gitignore|1 0
+Modified: config.json|3 3
+Modified: src/makers/blackberry.js|1 6
+Modified: src/makers/blackberry/blackberry_scanner.js|1 1
+Modified: src/makers/blackberry/playbook_builder.js|10 6
+
+Revision: 9f710ff14dcbb042fa67a3d3028b8f31c7953a84
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 15/11/2012 05:09:15
+Message:
+working out playbook dpeloyment in readme #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: b8c3e3d81132fa57383e8ca858498cca9092fa74
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 15/11/2012 08:13:00
+Message:
+log tweak #MsgLength=10
+
+
+----
+Modified: src/create_mobile_spec_app.js|1 1
+
+Revision: 962f281165bfa4836366859abf365a20a0b2d0c0
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 15/11/2012 08:16:41
+Message:
+removed unused dependency #MsgLength=26
+
+
+----
+Modified: src/templates/render.js|0 2
+
+Revision: 48d655af91248a95b64c5b71310eac80147384d9
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 15/11/2012 08:47:11
+Message:
+checkout all files first before pulling down #MsgLength=45
+
+
+----
+Modified: src/updater.js|2 2
+
+Revision: ed5f4f59bcdfe33129633b9d33b0804bd2f94e85
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 16/11/2012 07:18:25
+Message:
+refactored ios building #MsgLength=24
+
+
+----
+Modified: src/makers/ios.js|51 79
+Added: src/makers/ios/deploy.js|61 0
+
+Revision: f902df1cdc39879482b008f5408ea328eaf32551
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 16/11/2012 07:27:57
+Message:
+ios deployment needs to happen in series with fruitstrap #MsgLength=57
+
+
+----
+Modified: src/makers/ios/deploy.js|29 22
+
+Revision: 4d26f0b8a224aec551c0f732088603f0e625d4b8
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 16/11/2012 07:28:50
+Message:
+only log POSTs #MsgLength=15
+
+
+----
+Modified: server.js|1 1
+
+Revision: 96c55c5f0f89ecc86ce6c6d78ade844fa9df411d
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 16/11/2012 07:47:43
+Message:
+adding keychain configs #MsgLength=24
+
+
+----
+Modified: config.json|2 0
+
+Revision: 7c888658d7e47a77cf3548f89813d10fb5e44699
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 16/11/2012 07:52:17
+Message:
+unlock keychain before compiling ios #MsgLength=37
+
+
+----
+Modified: src/makers/ios.js|58 48
+
+Revision: 7a3aeccc073aff1d925cf5662d3d9c47a236328b
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 18/11/2012 07:11:53
+Message:
+splitting shit into a dashboard server and a build server #MsgLength=58
+
+
+----
+Added: build.js|41 0
+Modified: config.json|7 4
+Renamed: dashboard.js [from server.js]|7 34
+Modified: package.json|1 1
+Added: src/jasmine-jsreporter.js|222 0
+Deleted: src/junit-reporter.js|0 178
+
+Revision: 962f07be4e367bda9d429f34528ab0266c016b16
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 18/11/2012 10:04:36
+Message:
+basic couch handling module. updating error writer to post to couch. moved mobile spec builder to makers dir. moved building mobile spec out of updater module. #MsgLength=160
+
+
+----
+Modified: package.json|2 1
+Modified: src/builder.js|16 9
+Added: src/couchdb.js|58 0
+Modified: src/makers/android.js|3 3
+Modified: src/makers/error_writer.js|30 21
+Renamed: src/makers/mobile_spec.js [from src/create_mobile_spec_app.js]|11 11
+Modified: src/updater.js|5 10
+
+Revision: 36dc83e0569c78e967fa8c1fd667fbe5a8e513a0
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 18/11/2012 10:33:32
+Message:
+fixes to jasmine reporter and ios builds #MsgLength=41
+
+
+----
+Modified: src/couchdb.js|11 3
+Modified: src/jasmine-jsreporter.js|12 4
+Modified: src/makers/ios.js|7 7
+Modified: src/makers/ios/deploy.js|0 2
+Modified: src/updater.js|2 2
+
+Revision: 104b2224e39d4c32c3476f05a98f6de136645971
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 18/11/2012 10:39:29
+Message:
+have all test + fail nums at top level of mobilespec results doc #MsgLength=65
+
+
+----
+Modified: src/jasmine-jsreporter.js|8 3
+
+Revision: 7116ca14ce545ba84a91d8340a7ffa5e67ba5b62
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 18/11/2012 11:39:37
+Message:
+clearer division of source files #MsgLength=33
+
+
+----
+Modified: build.js|2 2
+Renamed: src/build/builder.js [from src/builder.js]|5 5
+Renamed: src/build/couchdb.js [from src/couchdb.js]|2 1
+Renamed: src/build/makers/android.js [from src/makers/android.js]|2 2
+Renamed: src/build/makers/blackberry.js [from src/makers/blackberry.js]|6 7
+Renamed: src/build/makers/blackberry/bbten_builder.js [from src/makers/blackberry/bbten_builder.js]|1 1
+Renamed: src/build/makers/blackberry/blackberry_scanner.js [from src/makers/blackberry/blackberry_scanner.js]|8 5
+Renamed: src/build/makers/blackberry/playbook_builder.js [from src/makers/blackberry/playbook_builder.js]|2 2
+Renamed: src/build/makers/error_writer.js [from src/makers/error_writer.js]|0 0
+Renamed: src/build/makers/ios.js [from src/makers/ios.js]|3 3
+Renamed: src/build/makers/ios/deploy.js [from src/makers/ios/deploy.js]|1 1
+Renamed: src/build/makers/mobile_spec.js [from src/makers/mobile_spec.js]|4 4
+Renamed: src/build/makers/mobile_spec/jasmine-jsreporter.js [from src/jasmine-jsreporter.js]|1 1
+Renamed: src/build/updater.js [from src/updater.js]|2 8
+Renamed: src/dashboard/templates.js [from src/templates.js]|0 0
+Renamed: src/dashboard/templates/commit_list.js [from src/templates/commit_list.js]|0 0
+Renamed: src/dashboard/templates/process_results.js [from src/templates/process_results.js]|0 0
+Renamed: src/dashboard/templates/render.js [from src/templates/render.js]|0 0
+
+Revision: 7157ec2691cd1050d5cd782395d0d7e6cea51295
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 19/11/2012 02:20:52
+Message:
+decouple couch node interface from specific database. add sha + timestamp to all build errors. some minor syntax fixes. also start of version controlling couch db design doc. #MsgLength=175
+
+
+----
+Modified: src/build/couchdb.js|13 11
+Modified: src/build/makers/blackberry.js|1 1
+Modified: src/build/makers/error_writer.js|9 2
+Modified: src/build/makers/mobile_spec.js|1 1
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|3 1
+Added: src/couchdb/views/mobilespec.json|41 0
+
+Revision: 2e11e5d916ccc555167e6d0ed2b171cec6294589
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 19/11/2012 03:05:12
+Message:
+config params for specifying url of build server. #MsgLength=50
+
+
+----
+Modified: config.json|3 0
+Renamed: src/couchdb/interface.js [from src/build/couchdb.js]|0 0
+
+Revision: daccc376c120d2154e3cb1bb96e5f552ae2de8a3
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 19/11/2012 03:05:50
+Message:
+generalizing couch interface a bit more. start work on dashboard. #MsgLength=66
+
+
+----
+Modified: dashboard.js|13 50
+Modified: package.json|2 1
+Modified: src/build/makers/error_writer.js|1 1
+Modified: src/couchdb/interface.js|18 3
+Modified: src/dashboard/templates/process_results.js|0 4
+
+Revision: ced317c71a8d3d1e3bbe4cbc778026edd313b1cf
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 19/11/2012 03:10:26
+Message:
+dashboard port serving added to config #MsgLength=39
+
+
+----
+Modified: config.json|3 0
+
+Revision: 74148d3281073712ab360ce17a66b4008c1ef4e9
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 19/11/2012 05:13:06
+Message:
+added _changes api for couch interface. start of templates cleanup. moved commit_list module to build server. updater now notifies couch of changes to cordova commits. small syntax fixes. #MsgLength=188
+
+
+----
+Modified: bootstrap.js|4 0
+Modified: build.js|1 0
+Modified: dashboard.js|18 6
+Modified: package.json|1 0
+Renamed: src/build/commit_list.js [from src/dashboard/templates/commit_list.js]|0 0
+Modified: src/build/makers/blackberry.js|0 2
+Modified: src/build/makers/error_writer.js|1 1
+Modified: src/build/updater.js|16 3
+Modified: src/couchdb/interface.js|16 4
+Modified: src/dashboard/templates.js|1 13
+Modified: src/dashboard/templates/process_results.js|5 65
+
+Revision: b8cdb639ea2196bbdad3e0ad12208d0e528c8436
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 19/11/2012 10:49:02
+Message:
+dont need a build server, only a timer / commit hook system. working out more stuff for the dashboard #MsgLength=102
+
+
+----
+Modified: build.js|15 31
+Modified: dashboard.js|2 21
+Modified: src/couchdb/interface.js|19 4
+Renamed: src/dashboard/templates/init_from_couch.js [from src/dashboard/templates/process_results.js]|2 1
+
+Revision: 7c508a38f7d27d0d4abb1606f10f3d5db9defd9c
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 19/11/2012 10:50:35
+Message:
+dont skip mobile-spec! #MsgLength=23
+
+
+----
+Modified: src/build/commit_list.js|0 1
+
+Revision: 14e0c20f0ada8d8647bc4fe612be0789477aa499
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 19/11/2012 11:28:07
+Message:
+removed old unnecessary template modules and other cruft. #MsgLength=58
+
+
+----
+Modified: build.js|1 1
+Modified: dashboard.js|1 4
+Added: libraries.js|6 0
+Modified: src/couchdb/interface.js|1 1
+Modified: src/dashboard/templates.js|23 28
+Deleted: src/dashboard/templates/init_from_couch.js|0 8
+
+Revision: dcc062df70bc97194840eeab0c72a3b3e335e76d
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 19/11/2012 11:57:49
+Message:
+some simple fixes and a logic error in jasmine json reporter. #MsgLength=62
+
+
+----
+Modified: build.js|2 2
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|2 0
+Modified: src/build/updater.js|1 0
+Modified: src/dashboard/templates.js|1 0
+
+Revision: aab03f69f703c9b98e11e503e379e0f0cea846fa
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 19/11/2012 12:29:04
+Message:
+fixes to jasmine reporter (properly overrides couch results) and closures!! in javascript. wtfm8 #MsgLength=97
+
+
+----
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|5 1
+Modified: src/couchdb/interface.js|4 2
+
+Revision: 9523f8c2fc829619a0aa7a940df341514d45f96b
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 19/11/2012 13:17:07
+Message:
+propagate error messages to specs #MsgLength=34
+
+
+----
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|7 0
+Modified: src/couchdb/views/mobilespec.json|1 0
+
+Revision: 36ce0491050c61041681dc9c1160cd03e88a7ea4
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 19/11/2012 13:38:03
+Message:
+final syntax fix for jasmine reporter #MsgLength=38
+
+
+----
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|1 1
+
+Revision: e2a47b6a488f354e45e39835899993ac49adbb46
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 20/11/2012 03:44:17
+Message:
+blackberry scanner tweaks based on different sdks #MsgLength=50
+
+
+----
+Modified: src/build/makers/blackberry/blackberry_scanner.js|7 3
+
+Revision: 0f505b2981d3f7adbbae56774844ec69948cdecc
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 20/11/2012 03:45:03
+Message:
+incrementally building up map functions for couch #MsgLength=50
+
+
+----
+Modified: src/couchdb/views/mobilespec.json|48 4
+
+Revision: d3aedfaf438ccaf7f6be81e376ab17bc4df376ac
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 20/11/2012 05:48:05
+Message:
+mobilespec couch map function provides all necessary info for mobilespec results #MsgLength=81
+
+
+----
+Deleted: src/couchdb/views/mobilespec.json|0 86
+Added: src/couchdb/views/results.json|14 0
+
+Revision: fe6f2471d37df4af8331055bd0307c9209633417
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 20/11/2012 16:59:43
+Message:
+bb10 building should work. #MsgLength=27
+
+
+----
+Modified: build.js|5 0
+Modified: src/build/makers/blackberry/bbten_builder.js|65 2
+
+Revision: 46ee8c9afa25276e3ee2e391452e72bdcab8da26
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 21/11/2012 08:11:31
+Message:
+build host in config no longer necessary. updating ios builder to account for changed command name. #MsgLength=100
+
+
+----
+Modified: config.json|0 3
+Modified: src/build/makers/ios.js|2 2
+Modified: src/couchdb/interface.js|1 1
+
+Revision: 668aa076e31a65cf72f4a3571c2891ca791debe4
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 21/11/2012 08:14:01
+Message:
+woops #MsgLength=6
+
+
+----
+Modified: build.js|0 3
+
+Revision: 819b6d83485d315690677616eb78a87966bac9d9
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 21/11/2012 08:26:29
+Message:
+todos and check if blackberry sdk is filled in; if not, dont build for that platform #MsgLength=85
+
+
+----
+Modified: build.js|2 0
+Modified: src/build/makers/blackberry.js|5 2
+
+Revision: 9a819012b1adf7c4df6d6ba1a86852ef14c96444
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 21/11/2012 08:28:02
+Message:
+check if keychain info filled out. if not, log out and stop building for ios. #MsgLength=78
+
+
+----
+Modified: src/build/makers/ios.js|4 0
+
+Revision: ae5fbb37f03f1cacd0d8cd4ee72c2bcc1f3291b6
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 21/11/2012 08:52:52
+Message:
+throw error if couch is not configured #MsgLength=39
+
+
+----
+Modified: libraries.js|2 0
+Modified: src/couchdb/interface.js|5 0
+
+Revision: d4bd3c37097dc78204277c2820ece8da04300ff6
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 21/11/2012 08:54:48
+Message:
+fixing some stuff in couch views #MsgLength=33
+
+
+----
+Modified: src/couchdb/views/results.json|2 2
+
+Revision: fb06abf6d2644facae48c6f59f45328c964e8447
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 21/11/2012 15:43:14
+Message:
+dashboard working again. readme updates. #MsgLength=41
+
+
+----
+Modified: README.md|19 18
+Modified: build.js|1 0
+Modified: dashboard.js|21 19
+Modified: libraries.js|6 4
+Modified: src/build/updater.js|3 2
+Modified: src/couchdb/interface.js|30 31
+Modified: src/dashboard/templates.js|58 27
+
+Revision: 204aed8e03657ca7b51ef75fabc4fd4d95401a84
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/11/2012 02:12:47
+Message:
+better rolling up of jasmine data #MsgLength=34
+
+
+----
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|23 99
+
+Revision: c8ed34a2966d2563a91115bb78b803d45fe8b83a
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/11/2012 03:14:20
+Message:
+serialized each platform build as ios would fail if too many devices were connected and too much shit wsa going on. callbackified most builder modules. #MsgLength=152
+
+
+----
+Modified: libraries.js|6 0
+Modified: package.json|2 1
+Modified: src/build/builder.js|24 15
+Modified: src/build/makers/android.js|13 2
+Modified: src/build/makers/blackberry.js|9 3
+Modified: src/build/makers/blackberry/bbten_builder.js|4 1
+Modified: src/build/makers/blackberry/playbook_builder.js|3 1
+Modified: src/build/makers/ios.js|6 2
+Modified: src/build/makers/ios/deploy.js|8 4
+
+Revision: a6a68380c3c71512881c528223663f99237de0ab
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/11/2012 03:14:53
+Message:
+fixed up jasmine reporter #MsgLength=26
+
+
+----
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|2 2
+
+Revision: 8da2efa1b10ab73c73172c1df8fa1393a6708481
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/11/2012 04:49:07
+Message:
+show date in build log, and logix fix in jasmine reporter #MsgLength=58
+
+
+----
+Modified: build.js|1 1
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|3 2
+
+Revision: d94bc8a1eaf222c3642253c94263f2072d855fb2
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/11/2012 05:18:41
+Message:
+callback fixes for ios deployment. also fiNALLY fixed hte jasmine reporter #MsgLength=75
+
+
+----
+Modified: src/build/makers/ios/deploy.js|2 2
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|6 4
+
+Revision: fa93801517de265a985cd7fd229b7233be31299a
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/11/2012 06:28:45
+Message:
+updated couch views and dashboard now works to render new data #MsgLength=63
+
+
+----
+Modified: src/couchdb/views/results.json|3 3
+Modified: src/dashboard/templates/render.js|1 1
+
+Revision: 2f6f834714ac44f9cbc4d75ed5f88f283da955e0
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/11/2012 07:10:19
+Message:
+renders error in a more meaningful but still fugly way #MsgLength=55
+
+
+----
+Modified: src/dashboard/templates/render.js|22 1
+
+Revision: ba0e6f504ae097372aef692b59dfb7d6e600d607
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/11/2012 16:49:25
+Message:
+updates to reflect cordova repo name change #MsgLength=44
+
+
+----
+Modified: bootstrap.js|4 6
+Modified: libraries.js|8 8
+Modified: package.json|1 1
+Modified: src/build/builder.js|5 5
+Modified: src/build/makers/blackberry.js|1 1
+Modified: src/dashboard/templates.js|1 2
+Modified: src/dashboard/templates/render.js|2 2
+
+Revision: 20b66c4a3d386031a5e1849deb24676839b2a34f
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 23/11/2012 02:39:04
+Message:
+fixing bootstrap #MsgLength=17
+
+
+----
+Modified: bootstrap.js|1 1
+
+Revision: 8f864e8fabd5d1db1611e5b31292d98ee03f3bb8
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 23/11/2012 02:43:44
+Message:
+tweak to mobile spec build #MsgLength=27
+
+
+----
+Modified: src/build/makers/mobile_spec.js|1 1
+
+Revision: 0d8fbae74c5609f029f9d589ee9b6fe20ca2fe82
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 23/11/2012 02:46:44
+Message:
+axing "incubator" #MsgLength=18
+
+
+----
+Modified: README.md|2 2
+Modified: src/build/builder.js|2 2
+Modified: src/build/makers/android.js|1 1
+Modified: src/build/makers/ios.js|1 1
+Modified: src/build/updater.js|1 1
+
+Revision: aa3c58114aac38647fe3b8a7da9089efee32eea5
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 23/11/2012 04:37:29
+Message:
+fixing dashboard #MsgLength=17
+
+
+----
+Modified: src/dashboard/templates.js|6 5
+Modified: src/dashboard/templates/render.js|1 2
+
+Revision: fc11d42b9a75c2220a68c7d542bf5e486f5184bc
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 24/11/2012 06:38:23
+Message:
+catch exceptions during build and report them #MsgLength=46
+
+
+----
+Modified: src/build/builder.js|2 2
+Modified: src/build/makers/android.js|84 79
+Modified: src/build/makers/blackberry.js|77 71
+Modified: src/build/makers/ios.js|69 63
+
+Revision: d9c287833463d770cce918aafbea83242d08e710
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 24/11/2012 06:51:01
+Message:
+more fine-grained exception handling. handles issues with modifying cordova mobile spec #MsgLength=88
+
+
+----
+Modified: src/build/makers/android.js|79 71
+Modified: src/build/makers/blackberry.js|55 54
+Modified: src/build/makers/ios.js|50 49
+
+Revision: ff67ab0bdb2e214fc2953d7c48c0761838b7b951
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 24/11/2012 06:54:08
+Message:
+no longer need to modify cordova.plist for whitelist modification. everything is open by default #MsgLength=97
+
+
+----
+Modified: src/build/makers/ios.js|0 7
+
+Revision: 69bbe40b49e99e7f7b2d07357746a5aff1d9aaea
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 24/11/2012 06:57:36
+Message:
+error catching i ncouch interface #MsgLength=34
+
+
+----
+Modified: src/couchdb/interface.js|5 2
+
+Revision: e40ab0e543bebfe87b921d5c421ad34ebfbaf7ab
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 24/11/2012 08:17:18
+Message:
+refactored templates a bit #MsgLength=27
+
+
+----
+Modified: src/build/makers/error_writer.js|1 2
+Modified: src/dashboard/templates.js|9 39
+Modified: src/dashboard/templates/render.js|115 64
+
+Revision: 6e9fbe4b4f6d8412b51192c37941337e43aa703b
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 24/11/2012 08:26:39
+Message:
+template bootup now gets build errors. added couchdb views for build errors. #MsgLength=77
+
+
+----
+Added: src/couchdb/views/errors.json|14 0
+Modified: src/dashboard/templates.js|24 10
+
+Revision: 663b9be615d63397992459e72581ba9a9e56be38
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 24/11/2012 14:21:29
+Message:
+updater now only updates cordova commits if they indeed differ. couchdb interface tweaks for _changes db. refactored templates and hooked up re-rendering to _changes from couch. #MsgLength=178
+
+
+----
+Modified: src/build/updater.js|18 8
+Modified: src/couchdb/interface.js|6 2
+Modified: src/dashboard/templates.js|83 31
+
+Revision: 9283bbf6e20a2ca03d32fea75aa3acddbb981be2
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 24/11/2012 14:27:52
+Message:
+add model and version to _changes data #MsgLength=39
+
+
+----
+Modified: src/dashboard/templates.js|5 3
+
+Revision: 38119194e4b0cf25aad5ac3cc5f31a2f7c39bbc2
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 30/11/2012 05:24:46
+Message:
+removed some todos. jasmine js reporter needs to log out being done if fails to communicate with couch. dont show url to couch on launch #MsgLength=137
+
+
+----
+Modified: build.js|1 5
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|1 0
+Modified: src/couchdb/interface.js|0 2
+
+Revision: ac72235d4326beb7eb13314055b9ce8e951ae0f6
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 05/12/2012 06:40:16
+Message:
+moving stuff/axing deps for jitsu integration #MsgLength=46
+
+
+----
+Modified: dashboard.js|0 2
+Modified: package.json|28 23
+
+Revision: 4837bff86907ef47744e324588fa6456260d76a1
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 05/12/2012 06:40:43
+Message:
+using mah couch server #MsgLength=23
+
+
+----
+Modified: config.json|1 1
+
+Revision: ae993803cc257c5a1b27fea06aba130e8779847c
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 05/12/2012 06:41:45
+Message:
+shell is a legit dep #MsgLength=21
+
+
+----
+Modified: package.json|2 2
+
+Revision: fd3ad72e31e44e56a67706538fd505d2171375ab
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 05/12/2012 07:53:58
+Message:
+trying to fit a square peg into round hole #MsgLength=43
+
+
+----
+Modified: README.md|3 3
+Modified: dashboard.js|17 16
+Modified: package.json|2 3
+
+Revision: a100cc780b2468594231fcc44efa318c916bab5f
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 05/12/2012 07:55:18
+Message:
+moving request to deps #MsgLength=23
+
+
+----
+Modified: package.json|1 1
+
+Revision: 6faff282cd3aaabc346a05c0458bac1b9ce12e47
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 05/12/2012 07:56:09
+Message:
+moving follow to deps #MsgLength=22
+
+
+----
+Modified: package.json|2 2
+
+Revision: ec2b6fd81f871be286dff8357b6eec92c05d49f4
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 05/12/2012 08:19:15
+Message:
+need to update html template when we get new results in on-the-fly #MsgLength=67
+
+
+----
+Modified: package.json|1 1
+Modified: src/dashboard/templates.js|2 2
+
+Revision: f90400bf2a792f9fe8f358016f7a8f4ef1839e4a
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 05/12/2012 08:33:23
+Message:
+adding google analytics #MsgLength=24
+
+
+----
+Modified: src/dashboard/templates/render.js|1 0
+
+Revision: 6399d7ee0c00f5ddb04e4ba9a7b6d8c156a491ff
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 05/12/2012 08:45:37
+Message:
+drop proper link to sha #MsgLength=24
+
+
+----
+Modified: package.json|1 1
+Modified: src/dashboard/templates/render.js|1 0
+
+Revision: 9c94ab1ccf890d350bb4e50b075f98543e219dea
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 07/12/2012 06:36:48
+Message:
+bumping interval time to 5mins. #MsgLength=32
+
+
+----
+Modified: build.js|8 5
+
+Revision: 7e2ed4369a91decd3a9cc2af2d3a88c24a8eff4c
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 08/12/2012 03:10:17
+Message:
+first steps to set up a proper queueing system #MsgLength=47
+
+
+----
+Modified: build.js|10 16
+Modified: src/build/builder.js|28 18
+Modified: src/build/makers/android.js|1 1
+Modified: src/build/makers/blackberry.js|1 1
+Modified: src/build/makers/ios.js|1 1
+Added: src/build/queue.js|49 0
+Modified: src/build/updater.js|42 28
+
+Revision: 63cc8f74df2a08f07bb6e251befbf03cfafb8c55
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 18/12/2012 07:37:57
+Message:
+a little refactor goodness #MsgLength=27
+
+
+----
+Modified: build.js|12 2
+Modified: src/build/makers/android.js|11 19
+Added: src/build/makers/android/devices.js|19 0
+Modified: src/build/makers/blackberry.js|2 2
+Renamed: src/build/makers/blackberry/devices.js [from src/build/makers/blackberry/blackberry_scanner.js]|8 6
+Modified: src/build/makers/ios.js|8 10
+Added: src/build/makers/ios/devices.js|16 0
+Modified: src/build/queue.js|4 0
+
+Revision: f08a9b139e10fb7b713a56656ecb3d752e64fafe
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 18/12/2012 15:13:33
+Message:
+start of refactor for deployment and device detection per platform. more work on da queue. #MsgLength=91
+
+
+----
+Modified: build.js|11 1
+Modified: src/build/makers/android.js|22 48
+Added: src/build/makers/android/deploy.js|46 0
+Modified: src/build/makers/android/devices.js|33 2
+Modified: src/build/makers/blackberry/bbten_builder.js|3 3
+Modified: src/build/makers/blackberry/devices.js|10 1
+Modified: src/build/makers/blackberry/playbook_builder.js|3 3
+
+Revision: 5c956d511e816e8a670c09e9b1415e79290f6705
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 20/12/2012 05:57:51
+Message:
+adding ability to specific individual ips in config.json for bb devices, or a range #MsgLength=84
+
+
+----
+Modified: config.json|1 1
+
+Revision: 92e1819938f5c2aed938ea5f9fa801c86a8c991d
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 10/01/2013 08:32:06
+Message:
+queueing should basically work now #MsgLength=35
+
+
+----
+Modified: build.js|41 16
+Modified: libraries.js|2 2
+Modified: src/build/makers/android.js|6 0
+Modified: src/build/makers/android/deploy.js|24 2
+Modified: src/build/makers/blackberry/devices.js|51 32
+Modified: src/build/makers/ios/devices.js|7 12
+Modified: src/build/queue.js|13 4
+Modified: src/couchdb/interface.js|18 26
+
+Revision: 8e84ddf0b31ec2375fa4ba81526c05c0a1c56f52
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 10/01/2013 08:36:06
+Message:
+write out proper lib version in mobilespec cordova.js #MsgLength=54
+
+
+----
+Modified: src/build/makers/blackberry.js|2 0
+Modified: src/build/makers/ios.js|5 0
+
+Revision: bb95d6ea9dcb07421b8adab91c9fa89f0466a713
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 11/01/2013 08:55:18
+Message:
+bumped to newest version of shelljs. timeout handling on android now that queue system is in place (5 min max to run mobilespec on android). tad bit better output #MsgLength=163
+
+
+----
+Modified: build.js|1 1
+Modified: package.json|2 3
+Modified: src/build/makers/android.js|5 0
+Modified: src/build/makers/android/deploy.js|6 3
+Modified: src/build/queue.js|1 1
+
+Revision: 937d3fc886481a0d057d509162a4d0d01eb7226c
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 11/01/2013 09:07:14
+Message:
+slight tweak to logging language #MsgLength=33
+
+
+----
+Modified: src/build/makers/android/deploy.js|1 1
+
+Revision: a0d7c25f2ceb888b08b471c101047ef329a0ed3f
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 12/01/2013 03:57:53
+Message:
+fixes for builderrors on the dashboard, gitpubsub service wired up. #MsgLength=68
+
+
+----
+Modified: build.js|16 11
+Added: src/apache-gitpubsub-parser.js|25 0
+Modified: src/build/queue.js|1 1
+Modified: src/dashboard/templates.js|3 3
+Modified: src/dashboard/templates/render.js|11 13
+
+Revision: d64da2a6926cb845522bdb4836c428077ad8bd10
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 12/01/2013 05:56:41
+Message:
+at least for ios commits with no results at all, queue on build startup. small syntax fix in apache gitpubsub parser too. #MsgLength=122
+
+
+----
+Modified: build.js|64 43
+Modified: src/apache-gitpubsub-parser.js|1 1
+
+Revision: 9b1a6561d2694462b9005db71ae4f52bbaf1df46
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 12/01/2013 06:19:20
+Message:
+updates now that we can use config.xml to specify start page #MsgLength=61
+
+
+----
+Modified: src/build/makers/android.js|4 0
+Modified: src/build/makers/ios.js|4 0
+Modified: src/build/makers/ios/deploy.js|0 1
+
+Revision: 9c00c5bce5f45980565e03378096871e74e8fb1e
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 12/01/2013 09:45:47
+Message:
+Fixes #14: implemented per-platform queue. #MsgLength=43
+
+
+----
+Modified: config.json|2 2
+Modified: src/build/makers/android.js|1 1
+Modified: src/build/makers/ios.js|1 1
+Modified: src/build/queue.js|25 15
+
+Revision: f815d010830b572d6941f94a4a12ff6d18245639
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 12/01/2013 10:37:01
+Message:
+try/catch around the gitpubsub parser in case something happens. #MsgLength=65
+
+
+----
+Modified: package.json|1 1
+Modified: src/apache-gitpubsub-parser.js|16 11
+
+Revision: 5dd2ca52c8a8cde07d6070234190c5b7295500ab
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 15/01/2013 03:08:38
+Message:
+organizing templates a bit more. using cordova.io styles on dashboard now #MsgLength=74
+
+
+----
+Renamed: src/dashboard/render.js [from src/dashboard/templates/render.js]|4 12
+Modified: src/dashboard/templates.js|1 1
+Added: src/dashboard/templates/index.html|23 0
+
+Revision: 68c7059f2f3123bebb32b8f78a2bad4119976b1e
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 15/01/2013 03:34:00
+Message:
+now storing dates with commits as well #MsgLength=39
+
+
+----
+Modified: src/build/commit_list.js|11 3
+Modified: src/build/updater.js|2 4
+Modified: src/dashboard/templates/index.html|2 6
+
+Revision: 65552266af357ea6a433961a61d478b2c4035c58
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 15/01/2013 03:35:40
+Message:
+show exception-causing json on barf #MsgLength=36
+
+
+----
+Modified: src/apache-gitpubsub-parser.js|1 1
+
+Revision: 3a281623b8501caab0af2927ef241259a15e982c
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 15/01/2013 09:01:50
+Message:
+Now have basic JSON API. Fixes #16 #MsgLength=35
+
+
+----
+Modified: dashboard.js|50 17
+Modified: libraries.js|1 0
+Added: src/dashboard/api.js|140 0
+Deleted: src/dashboard/render.js|0 134
+Modified: src/dashboard/templates.js|4 145
+Modified: src/dashboard/templates/index.html|58 2
+
+Revision: 63caeb25cac3ff2b090c731c95760a3a68c7972c
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 16/01/2013 03:24:32
+Message:
+updating dashboard template to show basic graph #MsgLength=48
+
+
+----
+Modified: dashboard.js|13 0
+Modified: src/dashboard/templates/index.html|5 60
+
+Revision: 421eae83698487c9c9fdea6c4a6ef37af92559ac
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 16/01/2013 03:32:40
+Message:
+Fixes #17: adding a 5 min timeout for ios device deployment #MsgLength=60
+
+
+----
+Modified: package.json|1 1
+Modified: src/build/makers/ios/deploy.js|17 6
+Added: src/dashboard/templates/js/index.js|87 0
+
+Revision: 654c67e54377cd191fedbed4df6680a6c20ee2a3
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 16/01/2013 06:40:25
+Message:
+expanded on commit list module, can return timestamps+shas since a particular sha #MsgLength=82
+
+
+----
+Modified: src/build/commit_list.js|47 20
+Modified: src/build/updater.js|1 1
+Modified: src/dashboard/templates/index.html|2 1
+Modified: src/dashboard/templates/js/index.js|99 8
+
+Revision: f993c7f3ebf5d44582e99f8b2e94ef38f865d3b4
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 16/01/2013 08:58:28
+Message:
+working towards more robust data serving. making headway for proper visualization #MsgLength=82
+
+
+----
+Modified: dashboard.js|2 1
+Modified: libraries.js|4 0
+Modified: src/dashboard/api.js|31 15
+Modified: src/dashboard/templates/js/index.js|35 77
+
+Revision: 708084c581edf4d54017e6292751b7ae8e3258d6
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 17/01/2013 03:34:11
+Message:
+chartz! #MsgLength=8
+
+
+----
+Modified: src/dashboard/api.js|2 2
+Modified: src/dashboard/templates/index.html|1 1
+Added: src/dashboard/templates/js/highcharts.src.js|15281 0
+Modified: src/dashboard/templates/js/index.js|155 12
+
+Revision: 0c403557eaf30e35b51506b961c188a674f7eee0
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 17/01/2013 03:35:05
+Message:
+add predeploy for jitsu goodness, to clone libs down. #MsgLength=54
+
+
+----
+Modified: package.json|2 1
+
+Revision: 57219f1434148bcc61a0715c80af4980ee9199da
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 17/01/2013 04:05:37
+Message:
+asynced the bootstrap script #MsgLength=29
+
+
+----
+Modified: bootstrap.js|19 5
+Modified: package.json|2 2
+
+Revision: f8d664c17d65deb3ece5c2fd247bf4df948c433f
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 17/01/2013 04:28:12
+Message:
+queued the bootstrap file. basic laoding screen. #MsgLength=49
+
+
+----
+Modified: bootstrap.js|16 14
+Modified: package.json|1 1
+Modified: src/dashboard/templates/index.html|1 0
+Modified: src/dashboard/templates/js/index.js|1 0
+
+Revision: d2e32329e14ab625edad5eb5de48314117aad4a3
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 17/01/2013 04:31:40
+Message:
+some issues with GA #MsgLength=20
+
+
+----
+Modified: src/dashboard/templates/index.html|1 1
+
+Revision: f11ba49c4ddfda888f9f2bcf938b1d7363d1fb63
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 17/01/2013 06:38:57
+Message:
+queueing up querying of results #MsgLength=32
+
+
+----
+Modified: bootstrap.js|3 1
+Modified: package.json|4 3
+Modified: src/dashboard/api.js|15 11
+
+Revision: 1b7e59c395d61a6754b1ace1b07fdc74a8c72b5d
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 17/01/2013 07:16:05
+Message:
+now works on jitsu yay #MsgLength=23
+
+
+----
+Modified: bootstrap.js|10 5
+Modified: dashboard.js|11 5
+Modified: package.json|3 4
+
+Revision: 2aa6d26012ccbd19923b99619731a55055c6cd38
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 18/01/2013 05:24:57
+Message:
+instrument bootstrap in the build #MsgLength=34
+
+
+----
+Modified: README.md|2 3
+Modified: build.js|77 74
+
+Revision: 0b9769706fcb78517b62a40362eda8d287b4b6e5
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 19/01/2013 10:30:39
+Message:
+start simple: quick snapshot view on load #MsgLength=42
+
+
+----
+Modified: dashboard.js|21 11
+Modified: package.json|3 2
+Added: src/dashboard/templates/css/medic.css|81 0
+Added: src/dashboard/templates/img/grid.png|0 0
+Added: src/dashboard/templates/img/platforms.svg|208 0
+Modified: src/dashboard/templates/index.html|33 9
+Modified: src/dashboard/templates/js/index.js|97 0
+Added: src/dashboard/templates/js/moment.min.js|6 0
+
+Revision: 3891e9a911548e007cb38f3ae42f78ea54fa0d27
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 21/01/2013 09:08:09
+Message:
+start page dashboard looks good now #MsgLength=36
+
+
+----
+Modified: src/dashboard/templates/css/medic.css|1 1
+Added: src/dashboard/templates/img/down.png|0 0
+Added: src/dashboard/templates/img/up.png|0 0
+Modified: src/dashboard/templates/index.html|4 0
+Modified: src/dashboard/templates/js/index.js|105 83
+
+Revision: fa00662ef4b2ca1059fac9c4c0ea043681e2037a
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 21/01/2013 14:39:21
+Message:
+shows percentage for last commit, as well as up or down arrow (change since last commit). hovering over pie chart shows results for specific sections. #MsgLength=151
+
+
+----
+Modified: package.json|1 1
+Modified: src/dashboard/templates/css/medic.css|3 0
+Modified: src/dashboard/templates/js/index.js|20 275
+Added: src/dashboard/templates/js/masterdetail.js|263 0
+
+Revision: 85c4914da560fcbbfeb5a1fa7407be223e121680
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 21/01/2013 15:45:27
+Message:
+added a popup to hold failure reports. click on the pie chart to get failures from last commit. #MsgLength=96
+
+
+----
+Modified: package.json|2 2
+Modified: src/dashboard/templates/css/medic.css|42 0
+Added: src/dashboard/templates/img/no.png|0 0
+Modified: src/dashboard/templates/index.html|9 3
+Modified: src/dashboard/templates/js/index.js|43 6
+
+Revision: 1b19f68002e603786a1ab8ae7cf7f2371347b39e
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/01/2013 01:27:17
+Message:
+bump bootup delay to 3 seconds to give jitsu some time. 0.1.8 #MsgLength=62
+
+
+----
+Modified: dashboard.js|1 1
+Modified: package.json|1 1
+
+Revision: 2fb460aba2e0f64546ebb8fbd7fada848c3ee391
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/01/2013 03:45:53
+Message:
+log out if couch has most up-to-date commits. #MsgLength=46
+
+
+----
+Modified: bootstrap.js|1 1
+Modified: package.json|1 1
+Modified: src/build/updater.js|2 0
+
+Revision: 9562454b5e7035e8df0f07a7355e3187d36238e2
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/01/2013 07:20:59
+Message:
+updating dashboard template. a bit more resiliency for dashboard api #MsgLength=69
+
+
+----
+Modified: dashboard.js|44 13
+Modified: package.json|1 1
+Modified: src/dashboard/templates/css/medic.css|2 2
+Modified: src/dashboard/templates/index.html|1 1
+Modified: src/dashboard/templates/js/index.js|6 4
+
+Revision: 3905d1b52b822c7fcee0e40254aca42aba81ab38
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/01/2013 08:09:07
+Message:
+get recent commits from local libs cloned instead of couch. #MsgLength=60
+
+
+----
+Modified: package.json|2 2
+Modified: src/dashboard/api.js|1 18
+
+Revision: 26871fd0b27b9049b5be347c571da96830b55d46
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/01/2013 10:13:54
+Message:
+bumping up size of device pie #MsgLength=30
+
+
+----
+Modified: src/dashboard/templates/css/medic.css|2 2
+
+Revision: 983ca4ccabb1a8248b287af05f2d685abc349b14
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 23/01/2013 09:17:05
+Message:
+add a --force parameter to build.js to force a specific commit build/queue. #MsgLength=76
+
+
+----
+Modified: README.md|7 0
+Modified: build.js|104 69
+Modified: package.json|3 2
+Modified: src/dashboard/templates/css/medic.css|2 2
+
+Revision: 6cf37858bc8a1cd72a8a37695b9ff8150b2141b2
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 24/01/2013 04:23:02
+Message:
+modularizing the gitpubsub listener so you can attach callbacks to it. dashboard should now listen to gitpubsub from apache for commit updates. #MsgLength=144
+
+
+----
+Modified: build.js|9 2
+Modified: src/apache-gitpubsub-parser.js|20 23
+Modified: src/build/commit_list.js|9 0
+Modified: src/dashboard/api.js|25 21
+
+Revision: 27780b7d96b1e3abfcf084e19aeafd435b883408
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 24/01/2013 04:23:24
+Message:
+0.1.13 #MsgLength=7
+
+
+----
+Modified: package.json|1 1
+
+Revision: eb3a9c1d1500262cd8482a91fd37eb80110d2e0e
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 24/01/2013 07:17:38
+Message:
+build.js syntax error #MsgLength=22
+
+
+----
+Modified: build.js|1 1
+
+Revision: 22430af18cce5748a92a689d7dfca08b09947255
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 25/01/2013 04:31:13
+Message:
+dont update commits for mobile-spec #MsgLength=36
+
+
+----
+Modified: src/dashboard/api.js|1 0
+
+Revision: c3d5597ba83e86b1c589776cc374b08fcf5f8c59
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 25/01/2013 04:31:25
+Message:
+0.1.14 #MsgLength=7
+
+
+----
+Modified: package.json|1 1
+
+Revision: 2ebaf4b7e84f9f80e4d76dba3628f55be8522265
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 25/01/2013 05:26:07
+Message:
+removing use of "recent cordova commits" as necessary db in couch. #MsgLength=67
+
+
+----
+Modified: README.md|1 1
+Modified: build.js|62 63
+Modified: package.json|2 2
+Modified: src/build/updater.js|1 23
+Modified: src/couchdb/interface.js|1 2
+Modified: src/dashboard/api.js|2 2
+
+Revision: 7a39fc109b58e2f135ea4c15810f1001fd78639e
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 25/01/2013 06:58:09
+Message:
+Fixed weirdness with git commit recent listing. #MsgLength=48
+
+
+----
+Modified: package.json|1 1
+Modified: src/dashboard/api.js|10 8
+
+Revision: 1eb952de1309222953afcb3e529e102e024549e5
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 23/01/2013 07:27:19
+Message:
+start of rework for bb queue stuff #MsgLength=35
+
+
+----
+Modified: config.json|3 3
+Modified: libraries.js|7 6
+Modified: src/build/makers/android/deploy.js|2 0
+Modified: src/build/makers/blackberry/bbten_builder.js|65 5
+Modified: src/build/makers/ios/deploy.js|1 0
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|3 0
+
+Revision: f8e372d5da8d12005ae3664e7d5b9192894dd999
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 25/01/2013 08:06:32
+Message:
+Figured out timeout weirdness. Pass-by-reference with objects for the confusing win! #MsgLength=85
+
+
+----
+Modified: src/build/makers/blackberry.js|21 46
+Modified: src/build/makers/blackberry/bbten_builder.js|19 13
+Added: src/build/makers/blackberry/deploy.js|42 0
+
+Revision: 531c2e856434cf5c4c4dbe98442890c6f2db365a
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 07/02/2013 07:14:00
+Message:
+fixes #26: check-n-queue for 5 most recent commits on every commit notification. this way if multiple commits get pushed up we have decent continuity of results #MsgLength=161
+
+
+----
+Modified: build.js|77 70
+
+Revision: cf0c714e0243c7b50581293d48b8ea0c545985bf
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 09/02/2013 05:35:13
+Message:
+build should ignore mobile spec stuff #MsgLength=38
+
+
+----
+Modified: build.js|2 0
+
+Revision: e4201ee76d929c9e1c231f77c88c964eeeaab218
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 13/02/2013 08:27:52
+Message:
+Refactoring to allow for non-mobile-spec apps! #MsgLength=47
+
+
+----
+Modified: README.md|22 5
+Modified: bootstrap.js|28 6
+Modified: build.js|132 52
+Modified: config.json|13 2
+Modified: libraries.js|5 5
+Modified: src/build/builder.js|32 38
+Modified: src/build/makers/android.js|3 2
+Modified: src/build/makers/blackberry.js|3 2
+Modified: src/build/makers/ios.js|74 67
+Modified: src/build/makers/mobile_spec.js|31 24
+Added: src/build/makers/mobile_spec/commit_hook.js|13 0
+Modified: src/build/queue.js|9 2
+Modified: src/build/updater.js|10 4
+Modified: src/dashboard/api.js|1 1
+
+Revision: e451a745c937cf1817c594a4ac3b89c55be4a836
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 13/02/2013 08:29:52
+Message:
+:O #MsgLength=3
+
+
+----
+Modified: config.json|1 1
+
+Revision: 72ab8fb2df56946cc6133c3473ff29b2f17fd0f6
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 13/02/2013 08:45:51
+Message:
+updating sdk to 6.1 to work with latest xcode. #MsgLength=47
+
+
+----
+Modified: build.js|0 1
+Modified: src/build/makers/ios.js|1 1
+
+Revision: f7d7b76ccb934ea4abbd6986454a87af8315972f
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 13/02/2013 08:58:12
+Message:
+adding support for entry point customization for apps #MsgLength=54
+
+
+----
+Modified: build.js|4 1
+Modified: src/build/builder.js|3 2
+Modified: src/build/makers/android.js|3 3
+Modified: src/build/makers/blackberry.js|2 2
+Modified: src/build/makers/ios.js|4 3
+Modified: src/build/makers/mobile_spec.js|1 1
+Modified: src/build/queue.js|2 2
+
+Revision: 5c24af682e847387ef2d2d5c7885a8fc06dbb603
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 13/02/2013 08:58:50
+Message:
+adding stock entry point config for mobile-spec #MsgLength=48
+
+
+----
+Modified: config.json|1 0
+
+Revision: 4dc67c4ee7e1ef00e3619533e3755281ed35b4dc
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 13/02/2013 09:07:40
+Message:
+syntax fixes #MsgLength=13
+
+
+----
+Modified: build.js|1 1
+Modified: src/build/builder.js|1 1
+Modified: src/build/makers/android.js|1 1
+
+Revision: 423f4f0e9f8b151a3d57d185eefb12a7746cf424
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 13/02/2013 09:22:28
+Message:
+working out the readme some more #MsgLength=33
+
+
+----
+Modified: README.md|42 15
+
+Revision: 3a8c11b48fb8f6c4cc5a57eb73ea5351a5fbce85
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 13/02/2013 09:24:52
+Message:
+more readme tweaks #MsgLength=19
+
+
+----
+Modified: README.md|2 1
+
+Revision: 48700342629d47df1916fd9db7f263d6324b58d5
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 13/02/2013 15:39:21
+Message:
+factored out more application specifics. added a static app builder. #MsgLength=69
+
+
+----
+Modified: build.js|76 67
+Modified: config.json|1 1
+Modified: src/build/builder.js|17 2
+Modified: src/build/makers/android.js|8 5
+Modified: src/build/makers/blackberry.js|4 3
+Modified: src/build/makers/ios.js|11 7
+Added: src/build/makers/static.js|30 0
+Added: src/build/makers/static/jasmine-jsreporter.js|182 0
+Modified: src/build/queue.js|2 2
+
+Revision: 5bb0901c8a2b81ebe1ac867228c47404036b767d
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 13/02/2013 16:04:46
+Message:
+added remote url loading! #MsgLength=26
+
+
+----
+Modified: README.md|18 0
+Modified: build.js|4 3
+Modified: src/build/makers/static.js|5 2
+
+Revision: 6842d8e6fdb2a02171d26e53d9aa522c3ee6d2a7
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 14/02/2013 02:24:58
+Message:
+fixing up some cordova CI build stuff #MsgLength=38
+
+
+----
+Modified: build.js|9 6
+
+Revision: edf6797a1e13a4aa5efdd777680dcfb4ac46d625
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 16/02/2013 05:20:44
+Message:
+A little bit extra lgoging #MsgLength=27
+
+
+----
+Modified: build.js|1 1
+Modified: src/apache-gitpubsub-parser.js|1 1
+
+Revision: 3f407b2e589d09cad50ae3d32aa510bc9e94d469
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 16/02/2013 05:25:10
+Message:
+duh, need to update local repo if we get a commit notification... #MsgLength=66
+
+
+----
+Modified: build.js|12 7
+
+Revision: 8a192c77675a731f5f8c37a887397217527e9c4e
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 19/02/2013 07:39:47
+Message:
+added historical data charts. bumped to 0.2.0 #MsgLength=46
+
+
+----
+Modified: dashboard.js|1 1
+Modified: libraries.js|2 2
+Modified: package.json|1 1
+Modified: src/dashboard/templates/css/medic.css|7 7
+Modified: src/dashboard/templates/index.html|19 6
+Modified: src/dashboard/templates/js/index.js|14 2
+Modified: src/dashboard/templates/js/masterdetail.js|20 30
+
+Revision: 879ab4d764333a9b339577feeaacdea9814d0fd0
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 21/02/2013 04:11:32
+Message:
+small fix for forgetting about bb for a bit #MsgLength=44
+
+
+----
+Modified: package.json|1 1
+Modified: src/dashboard/api.js|2 1
+
+Revision: 8806814a7761d13b60ba8acc93f1e5145e41ad44
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 21/02/2013 04:52:04
+Message:
+tweaking positioning of detail graphs, and min/max y axis #MsgLength=58
+
+
+----
+Modified: src/dashboard/templates/js/masterdetail.js|3 3
+
+Revision: 3c132f182e7f4825aa162f070c9e8674a23dc01b
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/02/2013 04:05:55
+Message:
+0.2.2. only build master branch. apache parser now passes in ref to branch in callback #MsgLength=87
+
+
+----
+Modified: build.js|3 2
+Modified: package.json|1 1
+Modified: src/apache-gitpubsub-parser.js|1 1
+Modified: src/build/makers/mobile_spec/commit_hook.js|2 2
+
+Revision: 51eb62934aa6a3bcc9203887893b989cc543a663
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/02/2013 13:20:18
+Message:
+adding master check for refs #MsgLength=29
+
+
+----
+Modified: src/dashboard/api.js|16 14
+
+Revision: 2c9887d88b5b68fe5e268a089bfa1fb63ce4f2bf
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 23/02/2013 03:48:14
+Message:
+fixing commit list weirdness on new commits inside dashboard #MsgLength=61
+
+
+----
+Modified: src/dashboard/api.js|19 17
+
+Revision: bbe99de35de02f10f9423cd29f4bcb387751ce4e
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 23/02/2013 04:01:27
+Message:
+0.2.3 #MsgLength=6
+
+
+----
+Modified: package.json|1 1
+
+Revision: 653c42c7ee04b864575b0fd81c3c85a82701b5c2
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 23/02/2013 04:35:37
+Message:
+fix for frozen builds. #MsgLength=23
+
+
+----
+Modified: build.js|2 2
+
+Revision: fbdd11d896803a3405c33bf57eb8660c08c77d1a
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 23/02/2013 06:03:48
+Message:
+Fixed #29: license, headers and all that fkn bullshit that shouldnt matter #MsgLength=75
+
+
+----
+Added: LICENSE|203 0
+Added: NOTICE|44 0
+Modified: bootstrap.js|16 0
+Modified: build.js|15 0
+Modified: dashboard.js|16 0
+Modified: libraries.js|16 0
+Modified: src/apache-gitpubsub-parser.js|15 0
+Modified: src/build/builder.js|16 0
+Modified: src/build/commit_list.js|16 0
+Modified: src/build/makers/android.js|16 0
+Modified: src/build/makers/android/deploy.js|16 0
+Modified: src/build/makers/android/devices.js|16 0
+Modified: src/build/makers/blackberry.js|16 0
+Modified: src/build/makers/blackberry/deploy.js|16 0
+Modified: src/build/makers/blackberry/devices.js|16 0
+Modified: src/build/makers/error_writer.js|16 0
+Modified: src/build/makers/ios.js|16 0
+Modified: src/build/makers/ios/deploy.js|16 0
+Modified: src/build/makers/ios/devices.js|16 0
+Modified: src/build/makers/mobile_spec.js|16 0
+Modified: src/build/makers/mobile_spec/commit_hook.js|16 0
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|15 0
+Modified: src/build/makers/static.js|16 0
+Modified: src/build/makers/static/jasmine-jsreporter.js|15 0
+Modified: src/build/queue.js|16 0
+Modified: src/build/updater.js|16 0
+Modified: src/couchdb/interface.js|16 0
+Modified: src/dashboard/api.js|16 0
+Modified: src/dashboard/templates.js|16 0
+
+Revision: 632e0cfc40c4991002249c6c5e5249edd140d46d
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 23/02/2013 06:04:53
+Message:
+added apl to top of readme #MsgLength=27
+
+
+----
+Modified: README.md|2 4
+
+Revision: dc9e79392068684992867da280a7e3b52bc50907
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 08/03/2013 06:07:38
+Message:
+support for pulling tags #MsgLength=25
+
+
+----
+Modified: bootstrap.js|1 1
+Modified: src/build/updater.js|1 1
+
+Revision: 0fa8525257aaeff0f2716f3a03798037c7e7240a
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 26/03/2013 12:07:23
+Message:
+fix issue with using <platform>@HEAD when specifying frozen builds #MsgLength=67
+
+
+----
+Modified: build.js|4 0
+
+Revision: 5812490f134665d1135f1d7bc724d8ed10e01a62
+Author: Don Coleman <dcoleman@chariotsolutions.com>
+Date: 04/04/2013 09:55:25
+Message:
+copy cordva.js for android without the version suffix #MsgLength=54
+
+
+----
+Modified: src/build/makers/android.js|3 5
+
+
+Revision: 854a17170883dd2418daba1df6434b08bdf8ad6b
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 04/04/2013 10:00:40
+Message:
+don as contributor. thanks @don! #MsgLength=33
+
+
+----
+Modified: package.json|4 1
+
+Revision: fab150978f5da7f9c1bb8e82f4ad458f782a2ee1
+Author: kruyvanna <kruyvanna@gmail.com>
+Date: 06/03/2013 18:52:39
+Message:
+Update README.md #MsgLength=50
+
+
+----
+Modified: README.md|29 0
+
+Revision: a327606205ff8e8d71343ec560c57728a8c8bd04
+Author: kruyvanna <kruyvanna@gmail.com>
+Date: 06/03/2013 18:59:39
+Message:
+Update README.md #MsgLength=49
+
+
+----
+Modified: README.md|10 5
+
+Revision: 9eb08591dd4bec06315c43fdb8f4ff1ba06715fa
+Author: kruyvanna <kruyvanna@gmail.com>
+Date: 07/03/2013 13:00:26
+Message:
+Update README.md #MsgLength=64
+
+
+----
+Modified: README.md|19 0
+
+Revision: 39ce9569b4a7d7443e155096cb08bc4dbdc93134
+Author: kruyvanna <kruyvanna@gmail.com>
+Date: 07/03/2013 13:01:14
+Message:
+Update README.md #MsgLength=54
+
+
+----
+Modified: README.md|0 1
+
+Revision: e5e853448dbcff0cdb4cd33b49ae86cce9a203bd
+Author: lorinbeer <lorin@adobe.com>
+Date: 22/04/2013 23:03:14
+Message:
+added additional detail logging and error message logging #MsgLength=58
+
+
+----
+Modified: src/build/makers/blackberry/devices.js|9 2
+
+Revision: 216f6350b6e64368aac48b6d65927d6db932d680
+Author: David Kemp <drkemp@chromium.org>
+Date: 16/10/2013 01:19:20
+Message:
+Syncing history of medic to bb-test This joins the two projects in spite of some Incorrect procedures early in bb-test history #MsgLength=127
+
+
+----
+Modified: README.md|47 158
+Deleted: bootstrap.js|0 83
+Modified: build.js|13 262
+Added: build_android.js|39 0
+Added: build_ios.js|39 0
+Added: buildinfo.js|47 0
+Renamed: config.json.sample [from config.json]|3 2
+Added: cordova_config.json|16 0
+Deleted: dashboard.js|0 136
+Added: dbwrite.js|56 0
+Added: fullbuild.sh|61 0
+Modified: libraries.js|0 7
+Added: master.cfg|300 0
+Added: runtests.js|224 0
+Added: runtests2.js|143 0
+Deleted: src/apache-gitpubsub-parser.js|0 42
+Deleted: src/build/builder.js|0 89
+Deleted: src/build/commit_list.js|0 78
+Modified: src/build/makers/android.js|44 76
+Modified: src/build/makers/android/deploy.js|10 2
+Modified: src/build/makers/ios.js|52 90
+Modified: src/build/makers/ios/deploy.js|6 3
+Modified: src/build/makers/ios/devices.js|4 2
+Modified: src/build/makers/mobile_spec.js|2 15
+Deleted: src/build/makers/mobile_spec/commit_hook.js|0 29
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|1 0
+Deleted: src/build/makers/static.js|0 49
+Deleted: src/build/makers/static/jasmine-jsreporter.js|0 197
+Deleted: src/build/queue.js|0 95
+Deleted: src/build/updater.js|0 61
+Modified: src/couchdb/interface.js|10 5
+Added: writejson.js|25 0
+
+Revision: a2a4f3cd977308bca9847b84e5ff08c5658e66f8
+Author: David Kemp <drkemp@google.com>
+Date: 21/08/2013 20:32:04
+Message:
+file cleanup #MsgLength=13
+
+
+----
+Deleted: build.js|0 19
+Deleted: dbwrite.js|0 56
+Deleted: fullbuild.sh|0 61
+Deleted: runtests.js|0 224
+Deleted: runtests2.js|0 143
+
+Revision: 0347567e60e0b7c61e984394b65dc498208054d6
+Author: David Kemp <drkemp@google.com>
+Date: 21/08/2013 22:29:24
+Message:
+readme changes #MsgLength=15
+
+
+----
+Modified: README.md|16 3
+
+Revision: 1812fc186ebd5d5ba649c51c138845fafea5c2e0
+Author: David Kemp <drkemp@google.com>
+Date: 21/08/2013 23:57:46
+Message:
+Edit Readme #MsgLength=12
+
+
+----
+Modified: README.md|20 8
+
+Revision: 69fdc6c78b9abbaee3f28b2eb380aeec7a9a8f36
+Author: David Kemp <drkemp@google.com>
+Date: 22/08/2013 01:19:30
+Message:
+README added more operation details Changed test runners to report individual test failures as a testrun failure. Previously test runs with errors returned OK as long as all tests deployed and ran. #MsgLength=198
+
+
+----
+Modified: README.md|4 0
+Modified: src/build/makers/android/deploy.js|25 12
+Modified: src/build/makers/ios/deploy.js|7 0
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|5 1
+
+Revision: d598451d8b0c1e0ce45ec52b4855f23fb6ebca0a
+Author: David Kemp <drkemp@google.com>
+Date: 22/08/2013 04:31:18
+Message:
+Pretty Names, DB Id fix, add URL for results, log file cleanup #MsgLength=63
+
+
+----
+Modified: buildinfo.js|1 2
+Modified: src/build/makers/android.js|1 1
+Modified: src/build/makers/ios.js|1 1
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|2 1
+
+Revision: a64c9b3cad913468e9459f15dcb4d68d891432c1
+Author: David Kemp <drkemp@google.com>
+Date: 22/08/2013 05:23:59
+Message:
+fix sha, log android url #MsgLength=25
+
+
+----
+Modified: src/build/makers/android/deploy.js|2 0
+Modified: src/build/makers/ios/deploy.js|3 1
+
+Revision: a316f6186b2618f5f2d4217149817d1de22f34be
+Author: David Kemp <drkemp@google.com>
+Date: 22/08/2013 21:56:34
+Message:
+ccleanup URLs and test completion #MsgLength=34
+
+
+----
+Modified: src/build/makers/ios/deploy.js|11 5
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|6 6
+
+Revision: 97831bc17dedce5074a9df722bc480cee9c99bfa
+Author: David Kemp <drkemp@google.com>
+Date: 22/08/2013 23:53:00
+Message:
+fix loggin of android, fix deploy of ios #MsgLength=41
+
+
+----
+Modified: src/build/makers/android/deploy.js|3 2
+Modified: src/build/makers/ios.js|2 2
+
+Revision: 161839b6d838f94fffbcc01e21d7fc430d1abd3a
+Author: David Kemp <drkemp@google.com>
+Date: 23/08/2013 01:20:47
+Message:
+Cleaning up logging and cache artifacts #MsgLength=40
+
+
+----
+Modified: master.cfg|32 32
+Modified: src/build/makers/android/deploy.js|7 7
+Modified: src/build/makers/ios/deploy.js|7 8
+
+Revision: 55f7a3e18827d847671547096171ccb328d8c579
+Author: David Kemp <drkemp@google.com>
+Date: 23/08/2013 01:45:37
+Message:
+added missing exit codes #MsgLength=25
+
+
+----
+Modified: src/build/makers/mobile_spec/jasmine-jsreporter.js|5 0
+
+Revision: 25130b542322b1a4494ca1d802c0bc59ef909010
+Author: David Kemp <drkemp@google.com>
+Date: 23/08/2013 04:09:47
+Message:
+Added parameter for branch #MsgLength=27
+
+
+----
+Modified: writejson.js|8 4
+
+Revision: 31d54a2680ef63bd5ac1a033161aca4106c3389d
+Author: David Kemp <drkemp@google.com>
+Date: 26/08/2013 22:53:47
+Message:
+changed to handle the branches specified in json config also now tests release platform with mast plugins and master platform with dev plugins #MsgLength=143
+
+
+----
+Added: checkout.js|38 0
+Modified: master.cfg|67 101
+Added: repos.json|219 0
+
+Revision: 9671725592b3c07ee8f739d7d88d7f1fddea4b1b
+Author: David Kemp <drkemp@google.com>
+Date: 27/08/2013 00:08:52
+Message:
+added missing glob node module #MsgLength=31
+
+
+----
+Modified: package.json|2 1
+
+Revision: 648815243568f05dcc91c1a996d4c00fcfd1acdb
+Author: David Kemp <drkemp@google.com>
+Date: 27/08/2013 01:01:32
+Message:
+Fixed handling of missing directories #MsgLength=38
+
+
+----
+Modified: checkout.js|1 2
+
+Revision: b0f7e0fd5c358798e750f30e41e89e191735e734
+Author: David Kemp <drkemp@google.com>
+Date: 27/08/2013 02:06:38
+Message:
+remove unused code, fix readme, fix release build #MsgLength=50
+
+
+----
+Modified: README.md|14 12
+Deleted: cordova_config.json|0 16
+Deleted: libraries.js|0 31
+Modified: master.cfg|8 10
+
+Revision: eaeb151e043a28bd876ff24d667c9864db5b422e
+Author: David Kemp <drkemp@google.com>
+Date: 27/08/2013 02:32:27
+Message:
+removed unused reference #MsgLength=25
+
+
+----
+Modified: src/build/makers/mobile_spec.js|0 1
+
+Revision: f23b09c99e4ec89c785752841a11a5473832c4b6
+Author: David Kemp <drkemp@google.com>
+Date: 27/08/2013 03:13:10
+Message:
+fixed release tagging #MsgLength=22
+
+
+----
+Modified: checkout.js|3 0
+Modified: master.cfg|9 9
+Modified: repos.json|16 2
+
+Revision: 16e56f29a416e264d28a8beed0604bd710db6e2b
+Author: David Kemp <drkemp@google.com>
+Date: 27/08/2013 04:08:39
+Message:
+removed excess logging, added notes to readme #MsgLength=46
+
+
+----
+Modified: README.md|19 0
+Modified: master.cfg|0 3
+
+Revision: b72afee3a543acac454220eac905bbd9501d3628
+Author: David Kemp <drkemp@google.com>
+Date: 27/08/2013 05:00:14
+Message:
+added pretty names to build display #MsgLength=36
+
+
+----
+Modified: master.cfg|3 3
+
+Revision: b69b61090b9e6626aa1d8f6edd6c0343e40ec2e6
+Author: David Kemp <drkemp@google.com>
+Date: 27/08/2013 20:50:59
+Message:
+fixed ios patch to work with both 3.0 and tip of tree (it changed) #MsgLength=67
+
+
+----
+Modified: src/build/makers/ios.js|2 1
+
+Revision: c96d38334a5d2c850587065861375578681ddb1c
+Author: David Kemp <drkemp@google.com>
+Date: 27/08/2013 21:43:15
+Message:
+fixed ios missing bracket #MsgLength=26
+
+
+----
+Modified: src/build/makers/ios.js|1 1
+
+Revision: 9fdc6eee582cb5905e40807145cffc4f6629cc3f
+Author: David Kemp <drkemp@google.com>
+Date: 28/08/2013 21:51:51
+Message:
+ios release/master compatibility #MsgLength=33
+
+
+----
+Modified: master.cfg|3 0
+Modified: src/build/makers/ios.js|2 2
+
+Revision: 9bf6b7b77d1c8f36b80d138b1dea983b700ae599
+Author: David Kemp <drkemp@google.com>
+Date: 28/08/2013 22:44:52
+Message:
+ios compat fix #MsgLength=15
+
+
+----
+Modified: src/build/makers/ios.js|1 1
+
+Revision: 8ba567d26349b1cbf199db84939e21912795e295
+Author: David Kemp <drkemp@google.com>
+Date: 05/09/2013 21:33:14
+Message:
+fixed unicode issues and updated to buildbot 0.8.8 #MsgLength=51
+
+
+----
+Modified: README.md|1 1
+Modified: master.cfg|19 18
+
+Revision: ea9e167d88ffc13e84ef145b570ebcc803198911
+Author: David Kemp <drkemp@google.com>
+Date: 05/09/2013 23:07:09
+Message:
+Undo json changes for git branches - they are unicode #MsgLength=54
+
+
+----
+Modified: master.cfg|3 3
+
+Revision: 4c72ce82555ca51251137bcfde464651d56b1541
+Author: David Kemp <drkemp@google.com>
+Date: 06/09/2013 04:56:07
+Message:
+category list must not have str() #MsgLength=34
+
+
+----
+Modified: master.cfg|9 3
+
+Revision: 87e6e82f9da7e328b87b10cea211cd8f9a316fa7
+Author: David Kemp <drkemp@chromium.org>
+Date: 20/09/2013 03:24:41
+Message:
+added note about separate slave config #MsgLength=39
+
+
+----
+Modified: README.md|5 1
+
+Revision: 963632c75b93726cae80c9660f69a8100103b696
+Author: David Kemp <drkemp@chromium.org>
+Date: 20/09/2013 03:28:27
+Message:
+added substantially working plugin #MsgLength=35
+
+
+----
+Added: cordova-plugin-medic/LICENSE|202 0
+Added: cordova-plugin-medic/README.md|7 0
+Added: cordova-plugin-medic/docs/medic.md|61 0
+Added: cordova-plugin-medic/docs/medic.sha.md|109 0
+Added: cordova-plugin-medic/plugin.xml|41 0
+Added: cordova-plugin-medic/www/jasmine-jsreporter.js|208 0
+Added: cordova-plugin-medic/www/medic.js|50 0
+
+Revision: e09ed6927a86339a6003ba08948979c09926f52a
+Author: David Kemp <drkemp@chromium.org>
+Date: 05/10/2013 02:27:05
+Message:
+Configuration Update for 3.1 and mail Changes to test repos for 3.1 Mobilespec Changes for 3.1 plugman, CLI Adds support for email notification #MsgLength=144
+
+
+----
+Modified: config.json.sample|6 0
+Modified: master.cfg|30 3
+Modified: repos.json|11 5
+
+Revision: 57da03f0e6085e37fd883d24d20506ddff6ea3eb
+Author: David Kemp <drkemp@chromium.org>
+Date: 16/10/2013 22:03:26
+Message:
+changed medic repo to new cordova-medic (was bb-test) #MsgLength=54
+
+
+----
+Modified: repos.json|1 1
+
+Revision: 0f8005edb517e367b0cefbebb89875debf7117b6
+Author: David Kemp <drkemp@chromium.org>
+Date: 28/10/2013 21:29:54
+Message:
+change to use ios-deploy instead of fruitstrap #MsgLength=47
+
+
+----
+Modified: package.json|2 1
+Modified: src/build/makers/ios/deploy.js|1 1
+
+Revision: ad54c57a9ad6b14c9fbca80a4ed7e975ba1a5243
+Author: David Kemp <drkemp@chromium.org>
+Date: 28/10/2013 22:37:50
+Message:
+added plugman,cli tests, ios release uses release mspec #MsgLength=56
+
+
+----
+Modified: master.cfg|31 5
+Modified: repos.json|22 7
+
+Revision: 1116e91f9400e3801720d8be9b5776116b401fcf
+Author: David Kemp <drkemp@chromium.org>
+Date: 29/10/2013 01:34:51
+Message:
+added extra minute to ios test timeout #MsgLength=39
+
+
+----
+Modified: src/build/makers/ios/deploy.js|1 1
+
+Revision: b87400e04d1c087e2cc9aa336f43aa94bf3b1260
+Author: David Kemp <drkemp@chromium.org>
+Date: 30/10/2013 01:52:44
+Message:
+change to install plugman before cli #MsgLength=37
+
+
+----
+Modified: master.cfg|4 4
+
+Revision: 80d3de9b7826f46a1022f6fa3f4eea47ce59c52f
+Author: sgrebnov <sergei.grebnov@gmail.com>
+Date: 06/11/2013 17:35:08
+Message:
+CB-5289 Medic. Can't be installed on Windows due to ios-deploy dependency #MsgLength=74
+
+
+----
+Added: install.js|24 0
+Modified: package.json|4 3
+
+Revision: 6beb2289829fe6ebf7e6c6fa1b1ef15bb0912797
+Author: sgrebnov <sergei.grebnov@gmail.com>
+Date: 01/11/2013 23:50:45
+Message:
+wp8 support for buildbot #MsgLength=25
+
+
+----
+Modified: .gitignore|2 0
+Modified: README.md|54 28
+Added: build_wp8.js|41 0
+Modified: buildinfo.js|3 3
+Added: config.json.sample-windows|32 0
+Modified: master.cfg|86 30
+Modified: package.json|2 1
+Modified: repos.json|14 2
+Added: src/build/makers/wp8.js|140 0
+Added: src/build/makers/wp8/deploy.js|26 0
+Added: src/build/makers/wp8/devices.js|0 0
+Modified: src/couchdb/interface.js|42 38
+Added: src/utils/patch_wp8_template.js|14 0
+Modified: writejson.js|9 2
+
+Revision: 867514ffc33afddc9b8d9489bf46715e2c851bfc
+Author: sgrebnov <sergei.grebnov@gmail.com>
+Date: 06/11/2013 00:41:15
+Message:
+removes --force param from grunt build #MsgLength=39
+
+
+----
+Modified: master.cfg|1 1
+
+Revision: cad775120f5fbf845aeb7aa20b3acbef6eb0aa17
+Author: sgrebnov <sergei.grebnov@gmail.com>
+Date: 07/11/2013 21:17:24
+Message:
+adds windows8 support #MsgLength=22
+
+
+----
+Added: build_windows8.js|41 0
+Modified: config.json.sample-windows|4 1
+Modified: master.cfg|28 4
+Modified: repos.json|15 2
+Added: src/build/makers/windows8.js|228 0
+Added: src/build/makers/windows8/deploy.js|55 0
+Modified: src/build/makers/wp8.js|2 2
+Added: src/utils/StoreAppLauncher.dll|0 0
+Added: src/utils/StoreAppLauncher.exe|0 0
+
+Revision: 4b37702287347a9dcc716ee5ff1e98335a2e824f
+Author: David Kemp <drkemp@chromium.org>
+Date: 07/11/2013 23:36:41
+Message:
+fixed cordova clean wildcard problem for previous commits #MsgLength=58
+
+
+----
+Modified: master.cfg|1 1
+
+Revision: 90a8caf4fe7120e2c192994153173a554448e816
+Author: David Kemp <drkemp@chromium.org>
+Date: 08/11/2013 00:36:57
+Message:
+removed fruitstrap use in list-devices #MsgLength=39
+
+
+----
+Modified: src/build/makers/ios/devices.js|4 2
+
+Revision: 164c60a7cddb64e41cd3236eee045aea5e495246
+Author: David Kemp <drkemp@chromium.org>
+Date: 08/11/2013 02:04:20
+Message:
+removed fruitstrap list-devices usage #MsgLength=38
+
+
+----
+Modified: src/build/makers/ios/deploy.js|0 7
+
+Revision: 8f2288c22f08f156ad4c66d2668da5d098d54bd2
+Author: sgrebnov <sergei.grebnov@gmail.com>
+Date: 18/12/2013 02:38:36
+Message:
+windows8 stability improvements and fixes #MsgLength=42
+
+
+----
+Modified: config.json.sample-windows|2 10
+Modified: cordova-plugin-medic/www/jasmine-jsreporter.js|8 4
+Modified: master.cfg|1 4
+Modified: src/build/makers/windows8.js|22 26
+Modified: src/build/makers/windows8/deploy.js|4 2
+Modified: writejson.js|5 0
+
+Revision: f2fac4ad5efeb5a4186b4e85c8659e756d9e278e
+Author: sgrebnov <sergei.grebnov@gmail.com>
+Date: 18/12/2013 03:24:42
+Message:
+adds windows8 related info to home page #MsgLength=40
+
+
+----
+Modified: README.md|5 1
+
+Revision: b62413633bfb02b56ce21480debd864c1120062f
+Author: David Kemp <drkemp@chromium.org>
+Date: 10/01/2014 22:31:39
+Message:
+CB-5761 fix recording of test to couchdb #MsgLength=41
+
+
+----
+Modified: build_android.js|1 1
+Modified: cordova-plugin-medic/www/medic.js|10 2
+Modified: src/build/makers/android.js|13 28
+
+Revision: 8064d2ae81141d48d6a64b79b86f75eb58b0d4c8
+Author: David Kemp <drkemp@chromium.org>
+Date: 10/01/2014 23:59:56
+Message:
+CB-5761 fix reported URL #MsgLength=25
+
+
+----
+Modified: cordova-plugin-medic/www/jasmine-jsreporter.js|5 3
+Modified: cordova-plugin-medic/www/medic.js|3 2
+
+Revision: 6e2b04fe5c9a52e467d2bcf915b8882b7c409c8b
+Author: David Kemp <drkemp@chromium.org>
+Date: 11/01/2014 03:47:54
+Message:
+CB-5761 ios specific changes for couchdb url #MsgLength=45
+
+
+----
+Modified: build_ios.js|1 1
+Modified: src/build/makers/ios.js|41 53
+
+Revision: d598c4e532bb3043ad0d430ec8fafced9028e847
+Author: David Kemp <drkemp@chromium.org>
+Date: 11/01/2014 06:01:00
+Message:
+CB-5771 create missing .cordova directory #MsgLength=42
+
+
+----
+Modified: writejson.js|4 0
+
+Revision: d2af2c568349334022bd6289557f7de515797e13
+Author: David Kemp <drkemp@chromium.org>
+Date: 15/01/2014 21:36:27
+Message:
+remove NPM install in android/bin #MsgLength=34
+
+
+----
+Modified: master.cfg|1 1
+
+Revision: 837efc27dfc83a1d3a588ba569e124d848d8f6bf
+Author: David Kemp <drkemp@chromium.org>
+Date: 22/01/2014 03:08:16
+Message:
+add device flag since the default changed #MsgLength=42
+
+
+----
+Modified: src/build/makers/ios/deploy.js|1 1
+
+Revision: 682e33a7f0b05fabea586b6ad514f4ed2d06fcaf
+Author: David Kemp <drkemp@chromium.org>
+Date: 22/01/2014 03:21:19
+Message:
+add device flag in the right spot.. #MsgLength=36
+
+
+----
+Modified: src/build/makers/ios.js|1 1
+Modified: src/build/makers/ios/deploy.js|1 1
+
+Revision: 8ddeec4a7416fb98cc78fc8a28bac9b08f240112
+Author: David Kemp <drkemp@chromium.org>
+Date: 22/01/2014 05:53:07
+Message:
+add searchpath to get correct plugins #MsgLength=38
+
+
+----
+Modified: master.cfg|1 1
+
+Revision: 16dd43e0813f6c0484dece48368cce3ff725ed7f
+Author: David Kemp <drkemp@chromium.org>
+Date: 22/01/2014 22:29:07
+Message:
+handle new ant files #MsgLength=21
+
+
+----
+Modified: src/build/makers/android.js|4 1
+
+Revision: c92d9c5ec0bd21b03c9e6441dc45dadc18fdd256
+Author: David Kemp <drkemp@chromium.org>
+Date: 22/01/2014 22:42:10
+Message:
+fix incorrect path/command #MsgLength=27
+
+
+----
+Modified: src/build/makers/android.js|1 1
+
+Revision: f9589fd345ed53b092bbdead0ef4847da7a34d3c
+Author: David Kemp <drkemp@chromium.org>
+Date: 23/01/2014 01:49:33
+Message:
+fix path for windows #MsgLength=21
+
+
+----
+Modified: master.cfg|1 1
+
+Revision: bd0c9ff8421590d10b1c17dd45d75143cd5d40be
+Author: David Kemp <drkemp@google.com>
+Date: 25/01/2014 05:19:28
+Message:
+adding new test runner #MsgLength=23
+
+
+----
+Added: runner/package.json|22 0
+Added: runner/runchrome.sh|5 0
+Added: runner/testrunner.js|71 0
+
+Revision: eee9d1daeb22ca4f1f19fc291399f7bece61c15c
+Author: David Kemp <drkemp@chromium.org>
+Date: 28/01/2014 04:19:18
+Message:
+fixed paths, args #MsgLength=18
+
+
+----
+Modified: runner/testrunner.js|2 2
+
+Revision: 0d2d62e8298bf529e3ad0055dc9a5b05c6e36159
+Author: David Kemp <drkemp@google.com>
+Date: 28/01/2014 04:40:09
+Message:
+handling exitcode #MsgLength=18
+
+
+----
+Modified: runner/testrunner.js|10 3
+
+Revision: d6b2611db8f4d62bbb67035174273dcbb1f1bed0
+Author: David Kemp <drkemp@chromium.org>
+Date: 29/01/2014 00:39:43
+Message:
+fix testrunner to stop correctly #MsgLength=33
+
+
+----
+Modified: runner/runchrome.sh|1 1
+Modified: runner/testrunner.js|6 4
+
+Revision: d7d104f7396d483e274ae048f15d814013180fbb
+Author: David Kemp <drkemp@chromium.org>
+Date: 03/02/2014 21:18:03
+Message:
+adding support for Chrome Apps testing #MsgLength=39
+
+
+----
+Added: runner/runcca.sh|5 0
+Modified: runner/testrunner.js|8 1
+
+Revision: c7077a59e883d2894ac7c25b543218d23960e13a
+Author: David Kemp <drkemp@chromium.org>
+Date: 03/02/2014 22:56:04
+Message:
+fixing support for external ips #MsgLength=32
+
+
+----
+Modified: runner/testrunner.js|12 5
+
+Revision: e39ab0154230f3a22ab6c7766b65897d4be84fa8
+Author: David Kemp <drkemp@chromium.org>
+Date: 04/02/2014 01:39:21
+Message:
+added whitelist hack #MsgLength=21
+
+
+----
+Modified: runner/testrunner.js|16 0
+
+Revision: 37e05c6518a94ead1e40fe95967441bdfaedeaef
+Author: David Kemp <drkemp@chromium.org>
+Date: 12/02/2014 05:00:26
+Message:
+Change couchdb url to non-json version #MsgLength=39
+
+
+----
+Modified: cordova-plugin-medic/www/jasmine-jsreporter.js|1 1
+
+Revision: 303c1bb4ac47301477dd42e90831c4b02fce5b1f
+Author: David Kemp <drkemp@chromium.org>
+Date: 13/02/2014 22:57:16
+Message:
+Handle config.xmlk move, add Chrome tests #MsgLength=42
+
+
+----
+Modified: master.cfg|49 2
+Modified: repos.json|29 2
+
+Revision: 90367aefe7daf36066e5e36b0eb16132de88b491
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 15/02/2014 02:57:33
+Message:
+Made minor fixes to default files. #MsgLength=178
+
+
+----
+Modified: config.json.sample|1 1
+Modified: master.cfg|7 9
+
+Revision: dd5173036939fc1505a71601b15062116e65c6cc
+Author: David Kemp <drkemp@chromium.org>
+Date: 21/02/2014 03:51:31
+Message:
+use vfb to run chrome headless #MsgLength=31
+
+
+----
+Modified: runner/runchrome.sh|4 0
+
+Revision: cdf088429ff859cd1904a46827f0df8ae1ce6df4
+Author: David Kemp <drkemp@chromium.org>
+Date: 24/02/2014 22:45:14
+Message:
+move js to platform_www - agrieve #MsgLength=34
+
+
+----
+Modified: master.cfg|4 4
+
+Revision: d5c43683fc3606929b04df49b0aa72f6da2bf410
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 21/02/2014 09:45:01
+Message:
+Remove random character from README #MsgLength=36
+
+
+----
+Modified: README.md|1 1
+
+Revision: 67c6874ec675567eae0639cb9f6aa0c3bf82db5c
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 11/03/2014 01:30:08
+Message:
+Removed direct cloning of chrome-cordova. #MsgLength=212
+
+
+----
+Modified: master.cfg|0 2
+
+Revision: 9e1783aa7f037ed97f4f026d30fe3667b4d0797b
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 11/03/2014 02:04:39
+Message:
+Made desktop Chrome tests use the correct repo. #MsgLength=160
+
+
+----
+Modified: master.cfg|3 3
+Modified: repos.json|0 7
+
+Revision: 3472553bd8038464f7aebb1af8f274e1155302f1
+Author: David Kemp <drkemp@chromium.org>
+Date: 26/03/2014 03:48:23
+Message:
+change to use global install of ios-deploy #MsgLength=43
+
+
+----
+Modified: src/build/makers/ios/deploy.js|3 1
+
+Revision: f9cd6d197f29a863a150bcfc35daf860c56f9d65
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Modified: NOTICE|4 43
+
+Revision: c9579c52f8c1e64c0acccace49b09a4f8221c251
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:17:02
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: a4ad6cfd7e2407b180dd7ca57b377f4af8ca7632
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 30/04/2014 22:44:17
+Message:
+Make medic use master branch for plugins. #MsgLength=42
+
+
+----
+Modified: README.md|5 4
+Modified: master.cfg|4 4
+Modified: repos.json|20 20
+
+Revision: c9c17e53ec5742d9812baca35d6b83f26366f5a2
+Author: David Kemp <drkemp@chromium.org>
+Date: 01/05/2014 03:57:14
+Message:
+[CB-6572] remove Release builders #MsgLength=34
+
+
+----
+Modified: master.cfg|2 31
+Modified: repos.json|0 42
+
+Revision: 936d0f61ab9dc4ae78316588e5278729b6604e9d
+Author: David Kemp <drkemp@chromium.org>
+Date: 07/05/2014 03:55:40
+Message:
+Changes required for cordova-lib #MsgLength=33
+
+
+----
+Modified: master.cfg|14 13
+Modified: repos.json|7 8
+
+Revision: dccca3f474835aa3e1cfd1fbfb51b80cf5403e55
+Author: Danyi Lin <danylin@blackberry.com>
+Date: 01/05/2014 04:58:35
+Message:
+Add bb10 support #MsgLength=17
+
+
+----
+Modified: build_android.js|2 2
+Added: build_blackberry10.js|39 0
+Modified: master.cfg|29 5
+Modified: repos.json|23 1
+Deleted: src/build/makers/blackberry.js|0 104
+Deleted: src/build/makers/blackberry/bbten_builder.js|0 136
+Deleted: src/build/makers/blackberry/deploy.js|0 58
+Deleted: src/build/makers/blackberry/devices.js|0 106
+Deleted: src/build/makers/blackberry/playbook_builder.js|0 57
+Added: src/build/makers/blackberry10.js|50 0
+Added: src/build/makers/blackberry10/deploy.js|47 0
+Added: src/build/makers/blackberry10/devices.js|58 0
+Modified: writejson.js|5 0
+
+Revision: 727e144ddecfe7e8a7e3c1bb31fd4d9ad929976a
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 31/05/2014 00:07:25
+Message:
+CB-6818 Add license to CONTRIBUTING.md #MsgLength=39
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: ccb29fffd7e33734b114aeb03309f87f18d779a2
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 30/05/2014 15:50:06
+Message:
+CB-6846 Fixes `Platform Add` fail on Windows slave #MsgLength=69
+
+
+----
+Modified: writejson.js|1 1
+
+Revision: da161f5d7317f0f570a7a283a6a14d9c21de558e
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/06/2014 19:51:50
+Message:
+CB-6889 Change "-i" sed's argument behaviour #MsgLength=86
+
+
+----
+Modified: master.cfg|1 1
+
+Revision: 3a3d42de84b9389e1e610cc4caa715ebac9df93e
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/06/2014 21:35:12
+Message:
+CB-6909 Removes platform-dependent commands #MsgLength=95
+
+
+----
+Modified: master.cfg|25 31
+
+Revision: 1719d7ed90011746ef0ac74edd0e4aa66d7e14b6
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/06/2014 16:57:42
+Message:
+CB-6899 Replaces "ln -s" command #MsgLength=131
+
+
+----
+Modified: master.cfg|3 3
+
+Revision: 7febfbd258effa6dafbf20a3000f91b277ac28d2
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 08/07/2014 03:10:10
+Message:
+Changed mobilespec to copy from www/. #MsgLength=123
+
+
+----
+Modified: master.cfg|2 2
+
+Revision: 15fcefece6e66664cc325c00def22d224a7e99ac
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 08/07/2014 16:05:07
+Message:
+CB-6899 Fixes exception while parsing master.cfg #MsgLength=68
+
+
+----
+Modified: master.cfg|2 5
+
+Revision: d1b7c1080179b7db58455827c3524d71f8251adf
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 22/07/2014 00:30:27
+Message:
+Update cordova repos instead of re-cloning them. #MsgLength=48
+
+
+----
+Modified: master.cfg|8 1
+
+Revision: 6d3d7200950232963366cde7c3222b679aa03bbb
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 22/07/2014 00:32:22
+Message:
+Removed an unnecessary block of steps. #MsgLength=130
+
+
+----
+Modified: master.cfg|3 13
+
+
+Revision: 765186034c3b4366e7ed16b921fed1b03f52e557
+Author: Michal Mocny <mmocny@gmail.com>
+Date: 02/08/2014 02:43:14
+Message:
+CB-7251 Adding medic plugin for new style tests CI reporting #MsgLength=61
+
+
+----
+Added: cordova-plugin-medic-newstyle-tests/plugin.xml|14 0
+
+Revision: eb41b063474c356559533d6f8c9345182a4795db
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 15/08/2014 04:54:14
+Message:
+Added a script that calls `cordova run`. #MsgLength=41
+
+
+----
+Added: runner/runcdvtests.sh|5 0
+
+Revision: d5dc8114e13031e1f913083737360afe26e191e7
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 05/08/2014 21:59:22
+Message:
+master.cfg: platform test steps via base class and overrides #MsgLength=61
+
+
+----
+Modified: master.cfg|337 284
+
+Revision: 997d05e8e84f03aad85ba4a54fdc375be334554e
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 05/08/2014 22:00:10
+Message:
+improve checkout to support custom repos and branches #MsgLength=54
+
+
+----
+Modified: checkout.js|26 5
+
+Revision: 1c0521e60e4909755201c941baafdddafe7f6247
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 05/08/2014 22:01:50
+Message:
+additional build configurations for windows #MsgLength=44
+
+
+----
+Modified: repos.json|19 13
+
+Revision: fe88e35aa2783a0734c321a7f87cdb4a4bb7902d
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 05/08/2014 22:02:57
+Message:
+windows universal apps support #MsgLength=31
+
+
+----
+Modified: build_windows8.js|14 1
+Modified: config.json.sample-windows|2 2
+Modified: cordova-plugin-medic/www/medic.js|1 1
+Added: src/build/makers/testRunner.js|46 0
+Modified: src/build/makers/windows8.js|66 181
+Deleted: src/build/makers/windows8/deploy.js|0 57
+Modified: src/build/makers/wp8.js|28 70
+Deleted: src/build/makers/wp8/deploy.js|0 26
+Deleted: src/build/makers/wp8/devices.js|0 0
+Added: src/utils/EnableDebuggingForPackage.ps1|83 0
+Deleted: src/utils/StoreAppLauncher.dll|0 0
+Deleted: src/utils/StoreAppLauncher.exe|0 0
+Modified: writejson.js|9 3
+
+Revision: 36a7967059d76eabac504aedb7baa33930797d47
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 05/08/2014 22:04:02
+Message:
+new script to write test configuration to config.xml #MsgLength=53
+
+
+----
+Added: updateconfig.js|50 0
+
+Revision: 613e42149e378e1133c63514fd8bf2222991dac7
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 05/08/2014 22:05:51
+Message:
+Updates README with actual configuration and notes. (+1 squashed commits) #MsgLength=126
+
+
+----
+Modified: README.md|46 21
+
+Revision: 93820649a50c35d75cf9d2bcda8690296c10a767
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 06/08/2014 19:52:28
+Message:
+Added back logic to update cordova repos instead of re-cloning them #MsgLength=68
+
+
+----
+Modified: master.cfg|8 6
+
+Revision: e1b6492ef9ee0e4ee097cfa3a5d6a8b33a2ee027
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 12/08/2014 16:53:37
+Message:
+Windows: logic to specify target build version via config #MsgLength=245
+
+
+----
+Modified: build_windows8.js|20 0
+
+Revision: cfb3616238b13674d3eaef73718149b0c8c14365
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 07/10/2014 23:03:14
+Message:
+Use ‘--link-to= ‘ param during ‘cordova create’ instead of manually linking mobilespec/www #MsgLength=91
+
+
+----
+Modified: master.cfg|1 3
+
+Revision: 8e6e2b6e67c45d4ebf255eebd3f4db21af590d1a
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 07/10/2014 23:13:11
+Message:
+Added platfromVersion from platfrom/VERSION file to Grunt step. Fixed: Running grunt in cordova-js folder failed #MsgLength=113
+
+
+----
+Added: build_js.js|14 0
+Modified: master.cfg|1 1
+
+Revision: f15c3daa3d54bb666ae5d7430da017f3cbbd209f
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 08/10/2014 15:38:26
+Message:
+Adding platform from downloaded folder instead of npm package #MsgLength=62
+
+
+----
+Modified: master.cfg|8 1
+
+Revision: 23d1cd592c2cb0c78b55c5b2ac1af6e7ce2ff6c6
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 08/10/2014 19:20:06
+Message:
+Fixed error with "COHO Clone failed: Invalid repo value: wp8 Use the list-repos command to see value values." #MsgLength=110
+
+
+----
+Modified: master.cfg|2 0
+
+Revision: 2cde8c0ab47fe3e99d0f8115598ecf31ad64470a
+Author: MariaBukharina <maria.bukharina@akvelon.com>
+Date: 08/10/2014 20:18:12
+Message:
+replacing 'windows8' platform with 'windows' #MsgLength=45
+
+
+----
+Renamed: build_windows.js [from build_windows8.js]|7 11
+Modified: master.cfg|9 19
+Modified: repos.json|4 4
+Renamed: src/build/makers/windows.js [from src/build/makers/windows8.js]|3 3
+
+Revision: 81cf92db7022f33cd10f36e8e165f014d87f1607
+Author: dmitriy-barkalov <v-dmbark@microsoft.com>
+Date: 23/10/2014 21:37:11
+Message:
+Create mobile-spec application via createmobilespec script #MsgLength=58
+
+
+----
+Modified: master.cfg|5 6
+
+Revision: 8ace6367747e1ff7a8b070283e308d82cc5a1334
+Author: dmitriy-barkalov <v-dmbark@microsoft.com>
+Date: 24/10/2014 01:22:04
+Message:
+Add step displaying results of mobilespec tests #MsgLength=47
+
+
+----
+Modified: build_android.js|2 0
+Modified: build_blackberry10.js|2 0
+Modified: build_ios.js|2 0
+Modified: build_windows.js|2 0
+Modified: build_wp8.js|2 0
+Added: testchecker.js|60 0
+
+Revision: c1203119a207d5f6abcad7fc39cde059cb411877
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 31/10/2014 20:42:47
+Message:
+Added support of --nobuild key #MsgLength=31
+
+
+----
+Modified: src/build/makers/windows.js|29 6
+
+Revision: 17ddd9b89a5e1c20b5ec132af96c7afc4135ea5f
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 29/10/2014 18:54:51
+Message:
+Merged config.json.sample-windows and config.json.sample files #MsgLength=63
+
+
+----
+Modified: config.json.sample|10 2
+
+
+Revision: 9783c6f4cfe397bd97542d7415d6be4eafa86bd9
+Author: dmitriy-barkalov <v-dmbark@microsoft.com>
+Date: 11/11/2014 18:19:51
+Message:
+Fix step displaying results of mobilespec tests #MsgLength=47
+
+
+----
+Modified: build_android.js|1 1
+Modified: build_blackberry10.js|1 1
+Modified: build_ios.js|1 1
+Modified: build_windows.js|8 3
+Modified: build_wp8.js|10 5
+Modified: testchecker.js|59 47
+
+Revision: 9c31ddbb305b38ef5b232f926e769a10997d346a
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 07/11/2014 21:23:33
+Message:
+CB-7987 Added "cordova-" prefix to all slave names. #MsgLength=52
+
+
+----
+Modified: master.cfg|18 18
+
+
+Revision: 9625b32406ba112498fd1a13e630d862840ca388
+Author: dmitriy-barkalov <v-dmbark@microsoft.com>
+Date: 11/11/2014 18:55:03
+Message:
+Updated documentation for "cordova-" prefix and config.json sample #MsgLength=66
+
+
+----
+Modified: README.md|4 7
+Deleted: config.json.sample-windows|0 27
+
+Revision: f64c7dd84765fdde33476b37389f936788ef5704
+Author: dmitriy-barkalov <v-dmbark@microsoft.com>
+Date: 11/11/2014 22:37:05
+Message:
+Add Android full build under Windows #MsgLength=36
+
+
+----
+Modified: master.cfg|1 1
+
+Revision: 4767f52d4f29f9ea42846331a256defe0835401b
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 18/11/2014 23:03:44
+Message:
+CB-8033 Replaced "coho repo-clone" step by downloading repos from custom urls from repos.json #MsgLength=114
+
+
+----
+Modified: checkout.js|12 34
+Modified: master.cfg|5 8
+Modified: repos.json|21 10
+
+Revision: 1cf7ef4be4a1e8e22d1fd683b6c3d0f12675b442
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 27/11/2014 23:09:26
+Message:
+CB-8091 Trigger build of Windows and WP8 platforms on commits to plugin and tools repositories #MsgLength=95
+
+
+----
+Modified: master.cfg|8 21
+Modified: repos.json|3 3
+
+Revision: 0ba57fd979f0d28f8b9150f117f135dd9c0951fa
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 28/11/2014 22:39:27
+Message:
+CB-8099 Removed unnecessary steps from master.cfg #MsgLength=50
+
+
+----
+Modified: master.cfg|6 29
+
+Revision: 784c8844b7d8a5fde3399235d46e617027c31cb2
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 01/12/2014 21:01:05
+Message:
+splits master.cfg according to INFRA's buildbot configuration #MsgLength=246
+
+
+----
+Modified: README.md|16 7
+Added: cordova.conf|352 0
+Modified: master.cfg|213 347
+Added: projects.conf|10 0
+
+Revision: 9efe50734d77945b2432124df5bba93404c8e843
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 01/12/2014 23:36:04
+Message:
+Multiple improvements #MsgLength=325
+
+
+----
+Modified: config.json.sample|1 1
+Modified: cordova.conf|142 168
+
+Revision: 806e218e83766fe3e9f487a82a2394456312c11b
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 02/12/2014 15:39:45
+Message:
+Replace comment with module docstring #MsgLength=38
+
+
+----
+Modified: cordova.conf|3 5
+
+Revision: 9bb8e0ba765ca597bfacb4006e4992426f552b99
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 01/12/2014 23:51:00
+Message:
+fixes createmobilespec failure due to lack of cordova-plugman repo #MsgLength=111
+
+
+----
+Modified: cordova.conf|9 18
+
+Revision: 4ee3512d3bec5737534fb5277177426c90b0a398
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 02/12/2014 18:54:30
+Message:
+Improvements and unnecessary steps cleanup #MsgLength=410
+
+
+----
+Deleted: build_js.js|0 14
+Modified: cordova.conf|3 26
+Modified: updateconfig.js|6 14
+Deleted: writejson.js|0 56
+
+Revision: 291ccef69e3414ab6132fd8ff9c72b48ce2dc8cc
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 02/12/2014 18:55:10
+Message:
+Fixes some of PEP8 issues #MsgLength=26
+
+
+----
+Modified: cordova.conf|33 12
+
+
+Revision: 448eeb85add2104df51b9a33ca43ea4e9c06d6c3
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 02/12/2014 23:19:02
+Message:
+CB-8070 Adds medic.json for cordova-plugin-test-framework plugin #MsgLength=65
+
+
+----
+Modified: src/build/makers/windows.js|2 0
+
+Revision: 19f2c0a8b885ba8b1c09d53d7b1bfa7b40d133f3
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 03/12/2014 21:49:11
+Message:
+Fixes test runner failure due to duplicated medic plugin installation #MsgLength=208
+
+
+----
+Modified: cordova.conf|0 1
+
+Revision: cda4e54d8b1887bb296e269224ff71af2d362783
+Author: dmitriy-barkalov <v-dmbark@microsoft.com>
+Date: 11/12/2014 16:31:36
+Message:
+Applay changes per Apache buildbot configuration #MsgLength=48
+
+
+----
+Renamed: cordova-repos.json [from repos.json]|45 45
+Modified: cordova.conf|4 4
+
+Revision: 64f62e66b5db8825b62381d8e0b5acd9484298cb
+Author: dmitriy-barkalov <v-dmbark@microsoft.com>
+Date: 11/12/2014 19:09:25
+Message:
+Fixed category names in cordova.conf #MsgLength=36
+
+
+----
+Modified: cordova.conf|4 4
+
+Revision: 2383e1521a7c411ac9ce397fc7d5828344b0bbf1
+Author: Dmitry Blotsky <dblotsky@microsoft.com>
+Date: 10/01/2015 09:30:45
+Message:
+Added nightly Scheduler and fixed config file name. #MsgLength=52
+
+
+----
+Modified: cordova.conf|11 0
+Modified: master.cfg|1 1
+
+Revision: de1d16aa361712723160a0cdda86890656a4f488
+Author: Dmitry Blotsky <dblotsky@microsoft.com>
+Date: 13/01/2015 04:12:06
+Message:
+Removed unnecessary import. #MsgLength=28
+
+
+----
+Modified: cordova.conf|0 1
+
+Revision: f66cfa57bbbc44f2d76a1c55b98219102ff33519
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 13/01/2015 22:14:16
+Message:
+Renamed builders for consistency and avoiding conflicts #MsgLength=56
+
+
+----
+Modified: cordova-repos.json|12 12
+Modified: cordova.conf|11 11
+
+
+Revision: 5d04d215ac5b15962f72f7f5d9b874cb83cb4958
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 14/01/2015 16:35:11
+Message:
+Fixed builder names in Nightly scheduler. #MsgLength=42
+
+
+----
+Modified: cordova.conf|9 1
+
+Revision: 452a06f8e61d98d4eb28f7125e390c8b2ae3ea69
+Author: maria.bukharina <maria.bukharina@akvelon.com>
+Date: 19/11/2014 23:57:52
+Message:
+CB-8045 Fixed wrong name of activity to run at Android builder #MsgLength=63
+
+
+----
+Modified: src/build/makers/android.js|2 2
+Modified: src/build/makers/android/deploy.js|1 1
+
+
+Revision: 7764f0ac6ddc5398cb1e06761d28b903ee9dddb7
+Author: Dmitry Blotsky <dblotsky@microsoft.com>
+Date: 24/01/2015 06:42:55
+Message:
+[INFRA-8588] Fixed bug for ASF Buildbot. Made build cleanup step work on Windows. #MsgLength=82
+
+
+----
+Modified: cordova.conf|12 5
+
+Revision: 7a372b1bf45eed055588de989004eb509f38219a
+Author: Dmitry Blotsky <dblotsky@microsoft.com>
+Date: 28/01/2015 08:25:19
+Message:
+[INFRA-8588] Fixing build script bugs, with a focus on OS X. #MsgLength=61
+
+
+----
+Modified: cordova.conf|2 1
+
+Revision: 3560d457e2eb894cbac2cda7385b36ee64c2b501
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 04/02/2015 17:26:30
+Message:
+Re-direct stdout to file for createMobileSpec task to workaround node.js bug on windows #MsgLength=88
+
+
+----
+Modified: cordova.conf|18 14
+
+Revision: 8ed5c44ff244cb290e9d683a50da8f033cc73173
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 05/02/2015 10:00:06
+Message:
+Re-direct output of removing working directory task #MsgLength=70
+
+
+----
+Modified: cordova.conf|2 2
+
+Revision: 4f76c1af3ef4a2e014ab9395e3ee4485e4346302
+Author: Dmitry Blotsky <dblotsky@microsoft.com>
+Date: 29/01/2015 12:13:35
+Message:
+[INFRA-8588] Using local npm cache for npm install to avoid conflicts with other builders. Switching from 9989 to 9889 for slave port. #MsgLength=153
+
+
+----
+Modified: cordova.conf|20 15
+Modified: master.cfg|2 2
+
+Revision: 4c475e59b694a056003c21ac5dff42e0fe3770ea
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 05/02/2015 21:22:59
+Message:
+changed deploy step description to 'Run tests' #MsgLength=47
+
+
+----
+Modified: cordova.conf|7 7
+
+Revision: 951b99c732fc262c18e96890ced2e809fe5a4379
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 05/02/2015 16:17:01
+Message:
+Ensure Windows apps have debugging enabled to avoid suspending #MsgLength=63
+
+
+----
+Modified: src/build/makers/windows.js|1 1
+
+Revision: e7875c4cf19500174482396c86a02b960e2e497e
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 06/02/2015 01:05:10
+Message:
+Print summary of failing tests #MsgLength=31
+
+
+----
+Modified: testchecker.js|8 0
+
+Revision: f041a8ba4c53d4581193b1e15a9f8dbdccf2b1e6
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 05/02/2015 10:00:06
+Message:
+Re-direct output of removing working directory task #MsgLength=52
+
+
+----
+Modified: cordova.conf|2 2
+
+
+
+Revision: fa95208819206d06b3fb3a25363bb3d36721a4d5
+Author: Dmitry Blotsky <dblotsky@microsoft.com>
+Date: 10/02/2015 06:51:36
+Message:
+[INFRA-8588] Using local npm cache for builds. Working around cordova entrypoint on iOS. Making medic just run 'cordova build' and 'cordova run'. #MsgLength=146
+
+
+----
+Modified: .gitignore|1 0
+Modified: src/build/makers/ios.js|34 53
+Modified: updateconfig.js|8 2
+
+Revision: 8b979556dc138c6c28aa94d332061bcb8f97bcd3
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 11/02/2015 06:44:38
+Message:
+[INFRA-8588] Addressing CR comments. #MsgLength=37
+
+
+----
+Modified: src/build/makers/ios.js|1 1
+Modified: updateconfig.js|0 6
+
+Revision: 5776366e9b4c8bd7795ecd7b3075955dbdc345f1
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 11/02/2015 17:15:53
+Message:
+[INFRA-8588] 'Fixing' medic.json path. #MsgLength=39
+
+
+----
+Modified: src/build/makers/ios.js|1 1
+
+
+Revision: d7184d6098a69dc9ebc0336b47ae394cc8d48094
+Author: Dmitry Blotsky <dblotsky@microsoft.com>
+Date: 18/02/2015 07:20:15
+Message:
+[INFRA-8588] Enabling build cancellation. Serializing builds to mitigate conflicts. #MsgLength=102
+
+
+----
+Modified: master.cfg|4 4
+
+Revision: bf6bcd92e793a621c696abfc9ea456854a35fc32
+Author: amfowler <amfowler@optusnet.com.au>
+Date: 11/02/2015 11:07:09
+Message:
+CB-8452 Set apk path for gradle build #MsgLength=56
+
+
+----
+Modified: src/build/makers/android.js|8 2
+
+Revision: 399c2140f9dd14fc999b6b583cf6cce16b33d16b
+Author: dmitriy-barkalov <v-dmbark@microsoft.com>
+Date: 19/02/2015 16:37:02
+Message:
+CB-8507 Adjusted documentation to mention cordova-config.json and cordova-repos.json #MsgLength=84
+
+
+----
+Modified: README.md|13 15
+Renamed: cordova-config.json.sample [from config.json.sample]|0 0
+
+Revision: aa2f08ba496448e7d44c40e68fe8cd2ee34664fe
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 19/02/2015 16:41:20
+Message:
+CB-8508 Android scripts rework, config patching changes #MsgLength=73
+
+
+----
+Modified: build_android.js|35 29
+Modified: src/build/makers/android.js|125 66
+Deleted: src/build/makers/android/deploy.js|0 113
+Deleted: src/build/makers/android/devices.js|0 66
+Modified: testchecker.js|30 33
+Modified: updateconfig.js|43 7
+
+Revision: 3c2ad53171a4016d565f0c1cfb39d80e48ac2854
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 26/02/2015 15:08:36
+Message:
+CB-8544 made iOS builder to wait for tests to complete, refactored builder scripts #MsgLength=101
+
+
+----
+Modified: build_android.js|14 10
+Modified: build_ios.js|36 30
+Modified: build_windows.js|41 35
+Modified: build_wp8.js|41 35
+Modified: src/build/makers/android.js|5 24
+Modified: src/build/makers/ios.js|17 38
+Modified: src/build/makers/windows.js|40 50
+Modified: src/build/makers/wp8.js|22 31
+Added: src/utils/createMedicJson.js|8 0
+
+Revision: 3016068dcbdf7f35bf2e17832489b40b9dd1f549
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 26/02/2015 16:52:46
+Message:
+CB-8535 Mentioned Android SD card limitations in docs #MsgLength=72
+
+
+----
+Modified: README.md|2 0
+
+Revision: eb060496c7d4aba488d0d6cd55ca4c235066f356
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 07/03/2015 00:03:36
+Message:
+CB-8623 Removed obsolete jasmineReporter patching code #MsgLength=55
+
+
+----
+Modified: build_windows.js|1 1
+Modified: build_wp8.js|1 1
+Modified: src/build/makers/blackberry10.js|14 20
+Deleted: src/build/makers/mobile_spec.js|0 40
+Modified: src/build/makers/windows.js|20 39
+Modified: src/build/makers/wp8.js|24 50
+
+Revision: 0e37682dc95cbff014bef348aa53f81b2b642479
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 07/03/2015 13:35:18
+Message:
+[CB-8698] Rewriting cordova.conf: factoring out common build code, parametrising builds with Buildbot Properties, and adding extra steps for cleanup. Removing unused plugin code. Cleaning up documentation. Cleaning up file layout. Adding config extensibility. #MsgLength=260
+
+
+----
+Modified: .gitignore|2 7
+Modified: README.md|175 166
+Added: SLAVES.md|39 0
+Added: bin/checkout.js|53 0
+Modified: build_android.js|1 1
+Modified: build_blackberry10.js|2 2
+Modified: build_ios.js|1 1
+Modified: build_windows.js|3 3
+Modified: build_wp8.js|2 2
+Added: buildbot-conf/cordova-config.json.sample|42 0
+Added: buildbot-conf/cordova-internal.conf|92 0
+Added: buildbot-conf/cordova-repos.json|457 0
+Added: buildbot-conf/cordova.conf|331 0
+Renamed: buildbot-conf/master.cfg [from master.cfg]|93 50
+Added: buildbot-conf/private.py.sample|11 0
+Renamed: buildbot-conf/projects.conf [from projects.conf]|1 0
+Deleted: checkout.js|0 39
+Deleted: cordova-config.json.sample|0 53
+Deleted: cordova-plugin-medic-newstyle-tests/plugin.xml|0 14
+Deleted: cordova-plugin-medic/LICENSE|0 202
+Deleted: cordova-plugin-medic/README.md|0 7
+Deleted: cordova-plugin-medic/docs/medic.md|0 61
+Deleted: cordova-plugin-medic/docs/medic.sha.md|0 109
+Deleted: cordova-plugin-medic/plugin.xml|0 41
+Deleted: cordova-plugin-medic/www/jasmine-jsreporter.js|0 214
+Deleted: cordova-plugin-medic/www/medic.js|0 59
+Deleted: cordova-repos.json|0 295
+Deleted: cordova.conf|0 347
+Deleted: install.js|0 24
+Modified: package.json|6 20
+Modified: src/build/makers/windows.js|1 1
+Modified: src/couchdb/interface.js|5 5
+Modified: src/utils/createMedicJson.js|1 1
+Modified: updateconfig.js|1 1
+
+Revision: a4f6dc34b5a09eafb936bd6e23b1d5c148f48ec3
+Author: Dmitry Blotsky <dblotsky@microsoft.com>
+Date: 19/03/2015 03:43:33
+Message:
+[CB-8726] Fixed naming issue for BlackBerry. Crudely made Blackberry when no devices are specified. #MsgLength=118
+
+
+----
+Modified: buildbot-conf/cordova.conf|15 14
+Modified: src/build/makers/blackberry10/devices.js|8 3
+
+Revision: 5272807977cdd2384e455f23f5e76d738fe92bd0
+Author: Dmitry Blotsky <dblotsky@microsoft.com>
+Date: 07/04/2015 07:02:57
+Message:
+[CB-8803] Naive temporary workaround for issue. Making last cleanup attempt flunk the build. #MsgLength=128
+
+
+----
+Modified: buildbot-conf/cordova.conf|2 0
+
+Revision: cd54cfdc9b510ce0d225d0e7376a1e009393db83
+Author: Dmitry Blotsky <dblotsky@microsoft.com>
+Date: 08/04/2015 08:52:25
+Message:
+Adding docs for adding slaves to Apache's master. Also adding some helpful pointers. #MsgLength=102
+
+
+----
+Modified: SLAVES.md|22 3
+
+Revision: 639f9a6d62f1a780ff69260690e1e990083a8ed2
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 31/03/2015 19:43:24
+Message:
+[CB-8805] Added ability to specify a custom repos config file via forced builds. #MsgLength=81
+
+
+----
+Modified: buildbot-conf/cordova.conf|26 8
+
+Revision: f7f91b5cbbba851de13c157b4a05389aac0d893b
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 17/04/2015 12:12:27
+Message:
+[CB-8853] Killing Android emulator before build. #MsgLength=49
+
+
+----
+Modified: buildbot-conf/cordova.conf|5 0
+
+Revision: b561debe91c100706eee9fd583a88fc025566a17
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 18/04/2015 05:34:52
+Message:
+[CB-8803] Properly fixing the intermittent cleanup issue. #MsgLength=58
+
+
+----
+Added: bin/medic.js|136 0
+Modified: buildbot-conf/cordova.conf|9 18
+Modified: package.json|8 6
+
+
+Revision: 7640a905ef3764d1887119ee0c14878f64870e74
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2015 08:10:07
+Message:
+Syncing code from Apache Infra SVN. #MsgLength=36
+
+
+----
+Modified: buildbot-conf/cordova.conf|17 1
+Modified: buildbot-conf/master.cfg|1 0
+
+Revision: a85184db555cd42596d2731f86fdeec1a48c42f1
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 25/04/2015 05:39:24
+Message:
+[CB-8910] Specifying NPM temp folder to be in build directory instead of system temp folder. #MsgLength=93
+
+
+----
+Modified: buildbot-conf/cordova.conf|7 1
+
+Revision: 0ad8700e997fba1c8a91a8485c80f5b47c54bf48
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 30/04/2015 06:22:35
+Message:
+[CB-8870] Moving CouchDB code and Windows patch over to lib/. #MsgLength=62
+
+
+----
+Renamed: lib/couchdb.js [from src/couchdb/interface.js]|47 33
+Renamed: lib/patches/EnableDebuggingForPackage.ps1 [from src/utils/EnableDebuggingForPackage.ps1]|1 1
+Renamed: lib/testcheck.js [from testchecker.js]|31 8
+Renamed: lib/testwait.js [from src/build/makers/testRunner.js]|35 5
+
+Revision: 49da31f2aed90d4c1cff5175a7cb27abc99ae9e3
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 30/04/2015 06:27:45
+Message:
+[CB-8870] Splitting medic file into subcommands and adding missing commands. #MsgLength=77
+
+
+----
+Deleted: bin/checkout.js|0 53
+Added: lib/util.js|56 0
+Added: medic/medic-check.js|58 0
+Added: medic/medic-checkout.js|80 0
+Renamed: medic/medic-clean.js [from bin/medic.js]|25 50
+Added: medic/medic-kill.js|110 0
+Added: medic/medic-run.js|380 0
+Added: medic/medic.js|40 0
+
+Revision: fe8f70e1acc2f67eb3a868d4c772c88c3f65f572
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 30/04/2015 06:30:06
+Message:
+[CB-8870] Updating dependencies and making cordova.conf use new medic.js. #MsgLength=74
+
+
+----
+Modified: buildbot-conf/cordova.conf|64 112
+Modified: package.json|5 7
+
+Revision: 021e9e1575af14fc3db42471cd08b24a4bf08cba
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 30/04/2015 06:31:45
+Message:
+[CB-8870] Removing refactored code. #MsgLength=36
+
+
+----
+Deleted: build_android.js|0 51
+Deleted: build_blackberry10.js|0 41
+Deleted: build_ios.js|0 47
+Deleted: build_windows.js|0 83
+Deleted: build_wp8.js|0 54
+Deleted: buildinfo.js|0 46
+Deleted: runner/package.json|0 22
+Deleted: runner/runcca.sh|0 5
+Deleted: runner/runcdvtests.sh|0 5
+Deleted: runner/runchrome.sh|0 9
+Deleted: runner/testrunner.js|0 110
+Deleted: src/build/makers/android.js|0 117
+Deleted: src/build/makers/blackberry10.js|0 44
+Deleted: src/build/makers/blackberry10/deploy.js|0 47
+Deleted: src/build/makers/blackberry10/devices.js|0 63
+Deleted: src/build/makers/error_writer.js|0 65
+Deleted: src/build/makers/ios.js|0 37
+Deleted: src/build/makers/ios/deploy.js|0 109
+Deleted: src/build/makers/ios/devices.js|0 31
+Deleted: src/build/makers/mobile_spec/jasmine-jsreporter.js|0 207
+Deleted: src/build/makers/windows.js|0 105
+Deleted: src/build/makers/wp8.js|0 63
+Deleted: src/couchdb/views/errors.json|0 14
+Deleted: src/couchdb/views/results.json|0 14
+Deleted: src/dashboard/api.js|0 171
+Deleted: src/dashboard/templates.js|0 25
+Deleted: src/dashboard/templates/css/medic.css|0 126
+Deleted: src/dashboard/templates/img/down.png|0 0
+Deleted: src/dashboard/templates/img/grid.png|0 0
+Deleted: src/dashboard/templates/img/no.png|0 0
+Deleted: src/dashboard/templates/img/platforms.svg|0 208
+Deleted: src/dashboard/templates/img/up.png|0 0
+Deleted: src/dashboard/templates/index.html|0 69
+Deleted: src/dashboard/templates/js/highcharts.src.js|0 15281
+Deleted: src/dashboard/templates/js/index.js|0 195
+Deleted: src/dashboard/templates/js/masterdetail.js|0 253
+Deleted: src/dashboard/templates/js/moment.min.js|0 6
+Deleted: src/utils/createMedicJson.js|0 8
+Deleted: src/utils/patch_wp8_template.js|0 14
+Deleted: updateconfig.js|0 78
+
+Revision: 2aeaebcf948c8059e50e9c08cdbc7759bb0b7d4b
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 30/04/2015 07:58:56
+Message:
+[CB-8870] Addressing code review comments and properly detecting and returning errors. #MsgLength=87
+
+
+----
+Modified: lib/util.js|1 1
+Modified: medic/medic-check.js|3 3
+Modified: medic/medic-clean.js|1 1
+Modified: medic/medic-run.js|17 18
+
+Revision: ce40c20a487ce010548d7de3459c27daaf5afefd
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 01/05/2015 05:27:28
+Message:
+INFRA-9518 Remove IRC bot from common medic config so we don't get a bot for every installation of medic. #MsgLength=106
+
+
+----
+Modified: buildbot-conf/cordova.conf|1 17
+
+Revision: 904ab01def12c124d7f85858a1c5aaeae2e1176d
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 02/05/2015 02:06:27
+Message:
+CB-8944 Added categories to builders. #MsgLength=38
+
+
+----
+Modified: buildbot-conf/cordova.conf|11 8
+
+Revision: d8cc710395a8d4ecf963c32f228b383f962a7870
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 01/05/2015 07:37:37
+Message:
+CB-8870 Fixing windows debug script path. Making builds store the master's hostname. Adding test number display to build steps. Adding --path parameter to medic-check. #MsgLength=168
+
+
+----
+Modified: buildbot-conf/cordova.conf|63 28
+Modified: lib/testcheck.js|1 21
+Modified: lib/util.js|4 0
+Modified: medic/medic-check.js|38 7
+Modified: medic/medic-checkout.js|1 1
+Modified: medic/medic-run.js|14 15
+
+Revision: 5ebbdf5bfbcc275e88a7089460d22e7d7cae9cbb
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 05/05/2015 05:12:10
+Message:
+Making builds turn orange when tests fail. #MsgLength=43
+
+
+----
+Modified: buildbot-conf/cordova.conf|4 4
+
+Revision: e75b82259c26b549f1578c1a08682fb7719bc35b
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 06/05/2015 14:10:06
+Message:
+CB-8961 Adding ARM emulator and ADB to list of killed tasks for Android on OSX. #MsgLength=80
+
+
+----
+Modified: medic/medic-kill.js|1 1
+
+Revision: c6e5bd7020d5df8ac920536ac5814eeecca2f449
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 06/05/2015 08:08:11
+Message:
+Adding extra slave docs after some recent problems came up and were resolved. #MsgLength=78
+
+
+----
+Modified: SLAVES.md|32 5
+
+Revision: ff1ca207ce32bc3e0291e2f9962754f46d7c7d7c
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 09/05/2015 02:20:43
+Message:
+CB-8961 Killing tasks more forcefully on Unix. #MsgLength=47
+
+
+----
+Modified: medic/medic-kill.js|1 1
+
+Revision: 9dd297c0734b42f0cde476e4a6834f1c7ee521e4
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 08/05/2015 16:39:11
+Message:
+CB-8936 Gathering logs for Android. This closes #53. #MsgLength=53
+
+
+----
+Modified: buildbot-conf/cordova.conf|11 0
+Added: medic/medic-log.js|61 0
+Modified: medic/medic.js|1 0
+
+Revision: 298c08d6674cf10fa07fe590ce2c8d08dc7432b7
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 15/05/2015 05:09:30
+Message:
+Removed extra Cordova config from repo. There is now only a sample file, just like cordova-config.json and private.py. #MsgLength=119
+
+
+----
+Modified: .gitignore|1 0
+Added: buildbot-conf/cordova-extra.conf.sample|38 0
+Deleted: buildbot-conf/cordova-internal.conf|0 92
+Modified: buildbot-conf/cordova.conf|13 0
+Modified: buildbot-conf/projects.conf|0 1
+
+Revision: 4d70349e5430770b76deb308d838f5559474a3ee
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 15/05/2015 05:14:58
+Message:
+Updating docs to reflect change to custom config file. #MsgLength=55
+
+
+----
+Modified: README.md|2 2
+
+Revision: 6bc3d568712d573ecd8d6d141d9ee3efbe53a5b5
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 19/05/2015 13:59:24
+Message:
+CB-9011 Adding support for GitHub web hooks and adding an authentication file and accompanying docs. #MsgLength=101
+
+
+----
+Modified: .gitignore|0 3
+Modified: README.md|5 2
+Added: buildbot-conf/.gitignore|4 0
+Added: buildbot-conf/github.passwd.sample|1 0
+Modified: buildbot-conf/master.cfg|6 1
+
+Revision: 199d39056025e1cfc7a6bc703acaa02c76d5ec0e
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 19/05/2015 14:00:10
+Message:
+CB-9011 Switching to using Buildbot codebases. Now using Buildbot checkout steps. Adding per-commit scheduler. Simplifying repo config. Splitting Windows builders. Cleaning up build steps. #MsgLength=189
+
+
+----
+Modified: buildbot-conf/cordova-repos.json|174 346
+Modified: buildbot-conf/cordova.conf|304 188
+
+Revision: 7ab35cc879c2b6e3fd923e64118fb0a127bcb9c3
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 21/05/2015 09:33:32
+Message:
+No longer hiding clone steps because Buildbot keeps hiding them even when they fail. #MsgLength=85
+
+
+----
+Modified: buildbot-conf/cordova.conf|2 2
+
+Revision: 778bc6aa3b7fe3fef1a87886703b4951a4995f10
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 22/05/2015 07:00:20
+Message:
+Running diagnostic steps even if test run failed. Getting logs before getting test results. Decreasing log timeout. #MsgLength=116
+
+
+----
+Modified: buildbot-conf/cordova.conf|16 12
+
+Revision: 90ec4ac2f10fb3daea15f558e303a7b5ada778b7
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 22/05/2015 09:41:07
+Message:
+Making periodic builds unconditional for now. #MsgLength=46
+
+
+----
+Modified: buildbot-conf/cordova.conf|0 1
+
+Revision: 5c5a01807b8701672cbc36628250d34a01858a84
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 22/05/2015 15:46:34
+Message:
+Temporarily disabling BlackBerry builders while there are no slaves to properly run them. #MsgLength=90
+
+
+----
+Modified: buildbot-conf/cordova.conf|10 10
+
+Revision: 15f5d2befb7b423d0519496316c3fc2c61d97770
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 27/05/2015 15:30:25
+Message:
+INFRA-9622 Removing old Cordova slaves. Renaming cordova-ios-slave to cordova-osx-slave. #MsgLength=89
+
+
+----
+Modified: buildbot-conf/cordova.conf|1 1
+Modified: buildbot-conf/master.cfg|2 28
+Modified: buildbot-conf/private.py.sample|2 6
+
+Revision: 491c2409cd2a66957fd773d0fc49b92beb3cad32
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 29/05/2015 04:37:06
+Message:
+INFRA-9683 Adding Buildbot 0.8.12 GitHub hook config for test installations of medic (Apache installation uses a different master.cfg). #MsgLength=136
+
+
+----
+Modified: buildbot-conf/master.cfg|8 3
+Modified: buildbot-conf/private.py.sample|1 0
+
+Revision: ff3ea7c0865363598d2ce469028d388f583a6634
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 29/05/2015 07:31:56
+Message:
+Fixing output error detection pattern. #MsgLength=39
+
+
+----
+Modified: medic/medic-run.js|1 1
+
+Revision: fc7619ba881f5d913813c805f6c6b2572ac63bc9
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 29/05/2015 10:40:15
+Message:
+Fixing error detection pattern to be case-insensitive. #MsgLength=55
+
+
+----
+Modified: medic/medic-run.js|1 1
+
+Revision: 3b2dc2be5799382fd6df87b15af2258a41e68ccb
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 03/06/2015 07:46:15
+Message:
+Switching to building Android with --gradle instead of --ant. #MsgLength=62
+
+
+----
+Modified: medic/medic-run.js|1 1
+
+Revision: 84362b586a71b486f4f9f4f1b1522a37b91262c2
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 05/06/2015 07:00:23
+Message:
+Fixing installation process for tools. Adding 'prefix' variable for NPM commands to keep NPM packages and links local to build. #MsgLength=128
+
+
+----
+Modified: buildbot-conf/cordova.conf|38 12
+
+Revision: 917c999ec1957d7706303f328fb419cc85c42540
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 04/06/2015 23:03:35
+Message:
+CB-9000 Failing properly if no test results were found. This closes #55. #MsgLength=73
+
+
+----
+Modified: lib/testcheck.js|7 3
+Modified: medic/medic-check.js|11 11
+
+Revision: aad449f768259ce4bca186d6fe4b775945e931a7
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 10/06/2015 04:58:26
+Message:
+Adding convenience slave constant. #MsgLength=35
+
+
+----
+Modified: buildbot-conf/cordova.conf|3 2
+
+Revision: f2bf571afb2a86302e80c920552935add1212504
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 11/06/2015 02:20:57
+Message:
+Making medic-check output test failure details and stack traces. #MsgLength=65
+
+
+----
+Modified: medic/medic-check.js|14 4
+
+Revision: e7a4ec3270d9194e1a3b6899168ec9b2dc157eaa
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 12/06/2015 08:55:41
+Message:
+Making medic-check more robust. #MsgLength=32
+
+
+----
+Modified: medic/medic-check.js|16 5
+
+Revision: 271ad8e79e9342cf31c85c9e87fa97ef9dbd64b6
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 13/06/2015 06:08:47
+Message:
+Making periodic builds only nightly since per-commit builds are now working. #MsgLength=77
+
+
+----
+Modified: buildbot-conf/cordova.conf|4 6
+
+Revision: 8d6a66bfee336d8e90d7130f600d127c2bcfd575
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 17/06/2015 14:24:16
+Message:
+CB-9196 Adding JSHint config for medic. Making medic-log return an error code. Making medic-clean --exclude repeatable. Making medic-clean take a target directory. Fixing JSHint-detected errors. #MsgLength=195
+
+
+----
+Modified: buildbot-conf/cordova.conf|7 6
+Modified: lib/testcheck.js|12 12
+Modified: lib/testwait.js|19 15
+Added: medic/.jshintrc|11 0
+Modified: medic/medic-check.js|2 2
+Modified: medic/medic-checkout.js|1 1
+Modified: medic/medic-clean.js|24 6
+Modified: medic/medic-kill.js|8 4
+Modified: medic/medic-log.js|51 13
+Modified: medic/medic-run.js|29 29
+Modified: package.json|4 1
+
+Revision: 0b9bb65bc1f50def84c7991a653971aec2ec1465
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 18/06/2015 08:28:01
+Message:
+Adding .ratignore file. #MsgLength=24
+
+
+----
+Added: .ratignore|1 0
+
+Revision: 7b75716f5b478d6d41571703dcfab10277ba83de
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 10/07/2015 07:43:15
+Message:
+Making nightly builds always run. Making change-based builds use the changes they got instead of the branch. #MsgLength=109
+
+
+----
+Modified: buildbot-conf/cordova.conf|12 5
+
+Revision: 3c5a153d6c1edca8c7952b801df03cb389bff144
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 10/07/2015 07:55:18
+Message:
+Shifting nightly build by a minute. #MsgLength=36
+
+
+----
+Modified: buildbot-conf/cordova.conf|1 0
+
+Revision: d56612fd3fac958f019f74097aa8b43376d86958
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 10/07/2015 08:31:38
+Message:
+Fixing include. #MsgLength=16
+
+
+----
+Modified: buildbot-conf/cordova.conf|1 1
+
+Revision: be7b7888e43d5c42cd86a86e18a2e20d06c20045
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 10/07/2015 08:34:00
+Message:
+Sorry for polluting history. Previous fix didn't work. #MsgLength=55
+
+
+----
+Modified: buildbot-conf/cordova.conf|2 1
+
+Revision: e9c23a130265c0e13fb92db71e23d2e39aec4fc9
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 14/07/2015 08:38:31
+Message:
+Add red color for name of testing failing. #MsgLength=43
+
+
+----
+Modified: medic/medic-check.js|4 1
+
+Revision: bfe1d56013da4df1aa126b01600071edab745b6e
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 14/07/2015 09:07:29
+Message:
+Remove strict mode to make the color value setting compile #MsgLength=59
+
+
+----
+Modified: medic/medic-check.js|0 2
+
+Revision: e8ad8b30c8e12be3dd6fcddf3839e87fee70b9e6
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 18/07/2015 04:29:45
+Message:
+Making periodic builds happen 4 times per day. #MsgLength=47
+
+
+----
+Modified: buildbot-conf/cordova.conf|2 2
+
+Revision: a4be82610ef7810cb62a6e92ed8fd10a9662730e
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 31/07/2015 19:45:03
+Message:
+Renaming the periodic builder to reflect its name. Also giving the CI a kick. #MsgLength=78
+
+
+----
+Modified: buildbot-conf/cordova.conf|2 2
+
+Revision: d1b2bf7f0ee219e137c863977b7826a852b779a9
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 04/08/2015 15:26:42
+Message:
+Adding steps to set NPM version and node version. #MsgLength=50
+
+
+----
+Modified: buildbot-conf/cordova.conf|7 1
+
+Revision: 5e932c17c7943c0dfcf8f112ac2ad1c3f19abf79
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 12/08/2015 23:24:26
+Message:
+CB-8936 Windows logs gathering #MsgLength=31
+
+
+----
+Modified: SLAVES.md|5 0
+Modified: medic/medic-log.js|12 1
+Modified: medic/medic-run.js|24 0
+
+Revision: 389ab64e2d65f73d57f7d4b1db717562b5fba957
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 28/08/2015 14:21:57
+Message:
+Fix cordova log windows script integration #MsgLength=43
+
+
+----
+Modified: medic/medic-run.js|19 19
+
+Revision: 5e596ead971b2d5481a54ff46f20bcb4eb6533ed
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 24/08/2015 21:23:25
+Message:
+CB-8936 iOS logs gathering #MsgLength=27
+
+
+----
+Modified: buildbot-conf/cordova.conf|4 3
+Modified: medic/medic-log.js|16 5
+
+Revision: c8f6bb2833cd3e16cb5458f8eb35a152340e5340
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 02/09/2015 21:39:48
+Message:
+CB-8936 Utilizing --dump flag for logs on Windows #MsgLength=50
+
+
+----
+Modified: medic/medic-log.js|7 10
+Modified: medic/medic-run.js|0 19
+
+Revision: 6b783fbd34420c90d100dc548acb9a7fac928bdd
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 15/09/2015 21:36:46
+Message:
+CB-8936 Gather 15 minutes of logs on Windows #MsgLength=45
+
+
+----
+Modified: medic/medic-log.js|1 1
+
+Revision: 3b913d11ec6d76de59ddd7f5238484bdbca4f7de
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 15/09/2015 22:13:21
+Message:
+CB-9660 Kill emulator/app process at the end of test run. This closes #63. #MsgLength=75
+
+
+----
+Modified: buildbot-conf/cordova.conf|3 0
+
+Revision: 16843dc9c482865223fff83abbe0496a8aa25e91
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 22/09/2015 20:31:12
+Message:
+CB-9660 Don't kill emulators/apps after failed test run #MsgLength=56
+
+
+----
+Modified: buildbot-conf/cordova.conf|2 1
+
+Revision: 1dcbac1ccf2ce8b7b4af726efd9dff932468a64f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 22/09/2015 16:15:51
+Message:
+CB-8936 Tweaking windows log gathering timeout. This closes # 64. #MsgLength=66
+
+
+----
+Modified: buildbot-conf/cordova.conf|2 1
+Modified: lib/util.js|6 0
+Modified: medic/medic-log.js|11 4
+
+Revision: 7274752cd5a163d260a49339b3a5f981e0fa120b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 23/09/2015 20:40:57
+Message:
+CB-9660 Kill wp8.1 emulator in medic-kill on Windows. This closes #66. #MsgLength=71
+
+
+----
+Modified: medic/medic-kill.js|1 1
+
+Revision: 8add38fe1e78762013fd9026ceff688ffed59741
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 24/09/2015 16:38:58
+Message:
+CB-9695 Add a command to print globally installed npm modules. This closes #67. #MsgLength=80
+
+
+----
+Modified: buildbot-conf/cordova.conf|2 0
+
+Revision: 0d77d5d6585422164d8fd78447ac2be95ad17629
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 08/10/2015 10:18:56
+Message:
+Adding medic CLI script to package.json. #MsgLength=41
+
+
+----
+Modified: package.json|3 0
+
+Revision: c966b6ceff079c1ff72901907e744400d9393494
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 08/10/2015 10:07:00
+Message:
+CB-9759 Adding cordova-common to build process. #MsgLength=48
+
+
+----
+Modified: buildbot-conf/cordova.conf|5 0
+
+Revision: c8a54db5cf348f3336d84174df88b34df82f63b3
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 22/10/2015 02:24:41
+Message:
+Adding link step for cordova-common to platform install. #MsgLength=57
+
+
+----
+Modified: buildbot-conf/cordova.conf|1 0
+
+Revision: 20071e2415ab93d1a8216b985495cfd4cf88661a
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 06:16:46
+Message:
+CB-9800 Fixing contribute link. #MsgLength=32
+
+
+----
+Modified: CONTRIBUTING.md|1 1
+
+Revision: fdd31518248970082a55e7d235d9c55aa6aac3d6
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 29/10/2015 04:57:05
+Message:
+Removing platform link step because cordova-common now comes packaged with platforms. #MsgLength=86
+
+
+----
+Modified: buildbot-conf/cordova.conf|0 1
+
+Revision: 5fd1c869e8958cc6bfad21c82be8181ddfb4b517
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 10/11/2015 03:26:04
+Message:
+CB-9939 Encoding URI sent to CouchDB. #MsgLength=38
+
+
+----
+Modified: lib/testcheck.js|1 1
+
+Revision: 09fa6998172fd4a8f33a050f6637e0c2ba0a88dd
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 04/12/2015 07:11:26
+Message:
+Fixing linter errors. Adding check to medic-run that aborts the run if the results server is down. #MsgLength=99
+
+
+----
+Modified: lib/couchdb.js|43 26
+Modified: lib/testwait.js|3 2
+Modified: lib/util.js|10 5
+Modified: medic/medic-run.js|85 70
+Modified: package.json|5 1
+
+Revision: 0958662e38c42063405deb0a80c4b36a40d86b53
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 12/01/2016 09:46:08
+Message:
+Made medic run on device by default. #MsgLength=37
+
+
+----
+Modified: medic/medic-run.js|1 1
+
+Revision: c66fbcacddabb202740b1c8939a626d082200ae3
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 12/01/2016 13:04:46
+Message:
+Made medic-run fall back to emulator if running via device fails because a device is not found. #MsgLength=96
+
+
+----
+Modified: lib/util.js|29 23
+Modified: medic/medic-run.js|52 29
+
+Revision: c58110613104ef1bb78365235ab75845f58a40e1
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 14/01/2016 06:23:29
+Message:
+Made medic-log bail out unless there is exactly one Android device available. #MsgLength=78
+
+
+----
+Modified: medic/medic-log.js|22 3
+
+Revision: 2c9e1d33cace0f046ba0989b56fc5ebe845c42c0
+Author: Sarangan Rajamanickam <sarangan12@yahoo.com>
+Date: 20/01/2016 10:12:42
+Message:
+CB-10390: ADB doesn't recognize existing devices in Medic #MsgLength=556
+
+
+----
+Modified: medic/medic-log.js|3 2
+
+Revision: a40181e1768fa5af5233ba752a7e143a1b488bc2
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 21/01/2016 05:45:57
+Message:
+CB-10401: Connectivity Issue to github from cordova- #MsgLength=330
+
+
+----
+Modified: buildbot-conf/cordova.conf|1 1
+
+Revision: 9160c3d3e23dd07b15ea9cf901832bcd894d99e5
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 22/01/2016 04:52:28
+Message:
+Factored out some constants. #MsgLength=29
+
+
+----
+Modified: buildbot-conf/cordova.conf|3 1
+
+Revision: 8dc0c07640ac1324c20c2d4a386e906767d7ee50
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 21/01/2016 09:21:19
+Message:
+CB-10405 - Connectivity issue to Cordova VM. This closes #72. #MsgLength=188
+
+
+----
+Modified: medic/medic-run.js|29 20
+
+Revision: 50770495d86c46fcf3544ead6864657ef8b46213
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 30/01/2016 07:47:54
+Message:
+CB-10405: Adding retry logic in check command #MsgLength=46
+
+
+----
+Modified: lib/testcheck.js|29 20
+Modified: medic/medic-check.js|3 1
+
+Revision: 50d20dca3173fd658c09b104c086b81c4ef64163
+Author: Richard Knoll <richard.b.knoll@gmail.com>
+Date: 29/01/2016 09:18:22
+Message:
+CB-10474: Fix medic-log behavior for cordova-ios. Adding --app flag to medic-log for iOS. This closes #73. #MsgLength=107
+
+
+----
+Modified: buildbot-conf/cordova.conf|1 0
+Modified: medic/medic-log.js|74 8
+
+Revision: f1a0c5bffdd8b3f85afd8effa43c7a4ef37fb3b3
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 04/02/2016 11:41:18
+Message:
+Added docs for deploying. #MsgLength=26
+
+
+----
+Modified: README.md|36 0
+
+Revision: 950989b3fc3dba41fc812c9f3fac444f0c7b138b
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 09/02/2016 06:36:26
+Message:
+Removing wp8 and windows-store-8.0 builders #MsgLength=44
+
+
+----
+Modified: buildbot-conf/cordova-config.json.sample|0 3
+Modified: buildbot-conf/cordova-repos.json|0 8
+Modified: buildbot-conf/cordova.conf|0 11
+Modified: lib/util.js|0 1
+Modified: medic/medic-kill.js|0 2
+Modified: medic/medic-log.js|0 7
+Modified: medic/medic-run.js|3 37
+
+Revision: da1bdbcd3ce7af803a7ef346318a3a933da04d2d
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 11/02/2016 05:48:36
+Message:
+Only building changes to master branch. #MsgLength=40
+
+
+----
+Modified: buildbot-conf/cordova.conf|19 12
+
+Revision: ddcbd637cc9d9fca2a4ee4102d7050d755e4f1e8
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 03/02/2016 01:40:38
+Message:
+CB-10396 Implemented Appium test runner #MsgLength=40
+
+
+----
+Modified: buildbot-conf/cordova-config.json.sample|7 0
+Modified: buildbot-conf/cordova.conf|57 13
+Added: medic/medic-appium.js|519 0
+Modified: medic/medic.js|2 0
+Modified: package.json|8 2
+
+Revision: 94554b93afb6721da6051bee520ea9fce72c0b3c
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 09/02/2016 10:28:50
+Message:
+CB-10433: Removing the ETIMEDOUT errors in medic-run. This closes #76 #MsgLength=135
+
+
+----
+Modified: lib/testwait.js|22 4
+Modified: medic/medic-run.js|4 4
+
+Revision: cb2c7d530fa7994732c878b540e2e6383a80c8d4
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 13/02/2016 04:27:23
+Message:
+CB-10540: Changing request call to non-streaming version #MsgLength=57
+
+
+----
+Modified: medic/medic-run.js|15 12
+
+Revision: 90d06a39cbaf9313edae0fa3cc63a63003b65553
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 12/02/2016 06:39:53
+Message:
+CB-10510: Retry starting the Android emulator if it hangs on boot #MsgLength=66
+
+
+----
+Modified: medic/medic-kill.js|20 14
+Modified: medic/medic-run.js|112 31
+
+Revision: 7682cd7205f153bc252ab8e1ef445169d34e11c2
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 17/02/2016 07:00:03
+Message:
+CB-10510: Removing require statement for process to maintain 0.12.2 compatability #MsgLength=82
+
+
+----
+Modified: medic/medic-run.js|2 3
+
+Revision: f1662f3469709555bee97fcfb459a3886fa58fb4
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 17/02/2016 10:11:03
+Message:
+Revert commits 7682cd7 and 90d06a3 #MsgLength=224
+
+
+----
+Modified: medic/medic-kill.js|14 20
+Modified: medic/medic-run.js|33 113
+
+Revision: 9e3d872a3fccd483b977b7199f0900146369d1c7
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 12/02/2016 06:39:53
+Message:
+CB-10510: Reapply Android Emulator retry logic with process fix #MsgLength=257
+
+
+----
+Added: lib/start-android-emulator.js|91 0
+Modified: medic/medic-kill.js|20 14
+Modified: medic/medic-run.js|76 35
+
+Revision: db92ae5c6c0d41b2a8a99a210284c3a0ed8581d4
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/02/2016 04:31:46
+Message:
+Minor spacing change (a.k.a. bumping the CI). #MsgLength=46
+
+
+----
+Modified: buildbot-conf/cordova.conf|0 1
+
+Revision: 2d555eeff32c93ee9b7689d047fcedd74d3d6fe2
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/02/2016 06:28:07
+Message:
+Using better interpreter string for the Python files. #MsgLength=54
+
+
+----
+Modified: buildbot-conf/cordova-extra.conf.sample|2 0
+Modified: buildbot-conf/cordova.conf|1 2
+Modified: buildbot-conf/projects.conf|1 1
+
+Revision: 9f8002bc65f6a85f9886a6a8a484420ccabf031f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/02/2016 23:03:42
+Message:
+CB-10652 Added the instruction on how to prepare a slave for Appium tests #MsgLength=74
+
+
+----
+Modified: SLAVES.md|23 0
+
+Revision: e583d860204fe02f633fcbfde6e5be2f29cc2e55
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 26/02/2016 03:17:52
+Message:
+CB-10671: Killing adb server as part of Android medic-kill step #MsgLength=64
+
+
+----
+Modified: medic/medic-kill.js|26 5
+
+Revision: cea6c852e39766aa54032e75879b50912f1541ba
+Author: riknoll <richard.b.knoll@gmail.com>
+Date: 26/02/2016 03:18:43
+Message:
+CB-10699: Attempt to uninstall mobilespec on Android emulator before run #MsgLength=73
+
+
+----
+Modified: lib/util.js|22 1
+Modified: medic/medic-log.js|1 13
+Modified: medic/medic-run.js|20 0
+
+Revision: 48c2c28a956a5eac4d640d5521f15b73bfdfd39f
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 01/03/2016 05:26:04
+Message:
+Undoing an accidental change. #MsgLength=30
+
+
+----
+Modified: buildbot-conf/cordova.conf|1 0
+
+Revision: b3ccc0748e1fc106b492741e382b6ddc14e17d59
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 24/02/2016 19:36:36
+Message:
+CB-10638 Appium runner: Fixed build command on OSX, Refactored runner code, Updated Appium version to 1.5 #MsgLength=106
+
+
+----
+Modified: buildbot-conf/cordova-config.json.sample|6 5
+Modified: buildbot-conf/cordova.conf|18 23
+Added: lib/medicReporter.js|130 0
+Modified: medic/medic-appium.js|208 300
+Modified: package.json|1 1
+
+Revision: 4bd711ccce6694969e1c2d86f165d67546e08b48
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 02/03/2016 23:45:35
+Message:
+Fix the location of the Appium screenshots folder #MsgLength=50
+
+
+----
+Modified: medic/medic-appium.js|9 2
+
+Revision: 73528ed96409f2a4bc6a3389050e616b2f113bc8
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 31/03/2016 17:17:30
+Message:
+Appium runner/CI improvements: #MsgLength=347
+
+
+----
+Modified: buildbot-conf/cordova-config.json.sample|2 2
+Modified: buildbot-conf/cordova.conf|4 0
+Added: lib/appium/helpers/lib/q.min.js|1 0
+Added: lib/appium/helpers/screenshotHelper.js|57 0
+Added: lib/appium/helpers/wdHelper.js|122 0
+Modified: medic/medic-appium.js|55 34
+
+Revision: 0d17435238b78a8e33e86026f2cb4c4c0f07fbba
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 06/04/2016 23:38:46
+Message:
+Appium test runner: Added waitForDeviceReady function to wdHelper #MsgLength=66
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|9 0
+
+Revision: 932c1e0da0901dc2394403aa70df64fa9ea6ed1c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/04/2016 23:08:18
+Message:
+Kill ios_webkit_debug_proxy before running #MsgLength=43
+
+
+----
+Modified: medic/medic-appium.js|1 1
+
+Revision: f6ef4e4f11c03a4444117913cb15899784c3564f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/04/2016 23:40:34
+Message:
+Kill ios_webkit_debug_proxy before running (reverted from commit 932c1e0da0901dc2394403aa70df64fa9ea6ed1c) #MsgLength=107
+
+
+----
+Modified: medic/medic-appium.js|1 1
+
+Revision: f57a7e6794f895be609fc00e5fc4fe71f72790df
+Author: Omar Mefire <omefire@gmail.com>
+Date: 13/04/2016 01:13:03
+Message:
+CB-10898 Kill iOS Simulator, Xcode7 style With Xcode7, the way to kill the simulator is now by running: "killall -9 Simulator" #MsgLength=154
+
+
+----
+Modified: medic/medic-kill.js|1 1
+
+Revision: d45909b2e5decd2defebb5d1583e09e4270fe110
+Author: Omar Mefire <omefire@gmail.com>
+Date: 13/04/2016 09:04:26
+Message:
+CB-10898 Kill simulator Xcode6 style #MsgLength=55
+
+
+----
+Modified: medic/medic-kill.js|1 1
+
+Revision: b4b2fd412b50020148a499424a3bbc2aa196cf0b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 13/04/2016 20:59:31
+Message:
+CB-11075 Appium tests: Exit gracefully on uncaught exception #MsgLength=61
+
+
+----
+Modified: medic/medic-appium.js|13 5
+
+Revision: a29e0d0e538456640065bd16ec4b4f1fc8e03b40
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 13/04/2016 23:38:53
+Message:
+CB-11075 Added a 2sec timeout at uncaught exception to let processes finish #MsgLength=76
+
+
+----
+Modified: medic/medic-appium.js|4 1
+
+Revision: 3d21d71770baef72083cbf02ae3dcb94ad1e24f5
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 13/04/2016 13:45:51
+Message:
+Ensure Android adb logs have timestamp #MsgLength=57
+
+
+----
+Modified: medic/medic-log.js|2 2
+
+Revision: 4cbdf655b17d96af110d89ae306f280db1d4de62
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 14/04/2016 22:33:43
+Message:
+CB-11084 CameraUsesGeolocation=true for iOS #MsgLength=44
+
+
+----
+Modified: medic/medic-appium.js|48 12
+Modified: package.json|1 0
+
+Revision: cfe4e828fb392709ee97f4da1df46264e6d0faa7
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 13/04/2016 07:45:39
+Message:
+Add medic command to download BuildBot CI logs #MsgLength=47
+
+
+----
+Added: medic/medic-downloadlogs.js|83 0
+Modified: medic/medic.js|1 0
+Modified: package.json|2 1
+
+Revision: 1a137453c0ad7363ecc40396be021fdbceaf0c6c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 20/04/2016 21:49:54
+Message:
+CB-11122 Look for Appium tests in the plugins folder #MsgLength=53
+
+
+----
+Modified: medic/medic-appium.js|9 6
+
+Revision: be02de80914528cdbfd2b5c789d8976ecfa898e3
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 21/04/2016 00:26:32
+Message:
+Add option to specify limit for log age to be downloaded #MsgLength=57
+
+
+----
+Modified: medic/medic-downloadlogs.js|14 3
+Modified: package.json|1 1
+
+Revision: f8d07291a1fafefe25d15bf91a6952d9c91af4ef
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 20/04/2016 00:46:13
+Message:
+CB-11112 Added Appium documentation #MsgLength=36
+
+
+----
+Added: APPIUM.md|87 0
+Modified: README.md|2 0
+Modified: SLAVES.md|0 10
+
+Revision: f02a5b05b2b42282517b95d5c5b0481dee212f6f
+Author: Omar Mefire <omefire@gmail.com>
+Date: 20/04/2016 02:54:25
+Message:
+CB-10475 (cordova-plugin-contacts) Grant 'Contacts' permissions while running on iOS simulator #MsgLength=113
+
+
+----
+Added: lib/medicIOSPermissions.js|42 0
+Modified: lib/util.js|94 16
+Modified: medic/medic-run.js|30 0
+Modified: package.json|2 1
+
+Revision: 9660ca551fd7e90767f291ede48f06147e389486
+Author: Omar Mefire <omefire@gmail.com>
+Date: 22/04/2016 05:05:52
+Message:
+CB-11135 iOS Contacts Perms: Handle case where 'cordova-cli' install not global #MsgLength=98
+
+
+----
+Modified: lib/util.js|13 3
+Modified: medic/medic-run.js|6 14
+
+Revision: dd33cab36b1498b384eebf9ee3942ef2cfd32d63
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 22/04/2016 08:16:11
+Message:
+Revert "CB-11135 and CB-10475 changes". This #MsgLength=159
+
+
+----
+Deleted: lib/medicIOSPermissions.js|0 42
+Modified: lib/util.js|16 104
+Modified: medic/medic-run.js|6 28
+Modified: package.json|1 2
+
+Revision: b82a1ee969539ee502286ab9f3069ef81c4167ce
+Author: Omar Mefire <omefire@gmail.com>
+Date: 22/04/2016 09:55:46
+Message:
+Revert the revert of commits related to CB-11135 and CB-10475 This reverts commit dd33cab36b1498b384eebf9ee3942ef2cfd32d63. #MsgLength=125
+
+
+----
+Added: lib/medicIOSPermissions.js|42 0
+Modified: lib/util.js|104 16
+Modified: medic/medic-run.js|28 6
+Modified: package.json|2 1
+
+Revision: bf99e19777f6f7b93fc03f9490aa36eca2bc77e2
+Author: Omar Mefire <omefire@gmail.com>
+Date: 22/04/2016 09:53:39
+Message:
+CB-11135 If folder is pre-existent, don't error out #MsgLength=70
+
+
+----
+Modified: lib/medicIOSPermissions.js|4 1
+
+Revision: 43dd9d1606acae2445819f6cbd82f21182dd1c17
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 22/04/2016 17:35:29
+Message:
+CB-11137 Appium runner: don't use deprecated server args #MsgLength=57
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|3 1
+Modified: medic/medic-appium.js|1 8
+
+Revision: c2a7efcd9d94fe24e256f7dcdd3bd72588e4a745
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 23/04/2016 01:23:02
+Message:
+CB-11141 Display device/emulator logs after the Appium run #MsgLength=59
+
+
+----
+Modified: buildbot-conf/cordova.conf|15 0
+
+Revision: 163c89d9e1dc41354800f6d207b49340c3cc9d44
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 25/04/2016 23:32:02
+Message:
+CB-11149 Use already running instance of Appium server if there is one #MsgLength=71
+
+
+----
+Modified: medic/medic-appium.js|25 15
+
+Revision: 2dcba6aa42c17310b7c4d43924fbed9c07d01239
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 22/04/2016 23:50:07
+Message:
+CB-11140 Patch CSP tag to allow Appium to execute async scripts #MsgLength=64
+
+
+----
+Modified: medic/medic-appium.js|41 0
+
+Revision: 9a2036b8f3dde10d26877795d3b9e9ece69cef89
+Author: Raghav Katyal <rakatyal@microsoft.com>
+Date: 27/04/2016 05:42:40
+Message:
+CB-11152: Removing the android win builder #MsgLength=62
+
+
+----
+Modified: README.md|1 1
+Modified: buildbot-conf/cordova.conf|0 4
+Modified: medic/medic-downloadlogs.js|1 1
+
+Revision: a2c8f37dd25ca8799001eda05942f95197075f2d
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 29/04/2016 01:17:10
+Message:
+Fixing the appName correctly #MsgLength=48
+
+
+----
+Modified: medic/medic-run.js|1 1
+
+Revision: 01a43ab5c8eab701f4f87bdeba6b7d6955563bea
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 25/02/2016 05:45:00
+Message:
+Adding configuration files to be used in Jenkins CI #MsgLength=70
+
+
+----
+Added: jenkins-conf/android.config.json|5 0
+Added: jenkins-conf/ios.config.json|5 0
+Added: jenkins-conf/windows-10-store.config.json|7 0
+Added: jenkins-conf/windows-8.1-phone.config.json|7 0
+Added: jenkins-conf/windows-8.1-store.config.json|7 0
+Added: lib/tcc/TCC.db|0 0
+
+Revision: bed55f47334ec0d6a5544fca2b57de95f79cf50d
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 29/04/2016 19:28:07
+Message:
+CB-11175 Appium runner: added tapElementByXPath function to wdHelper #MsgLength=69
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|19 0
+
+Revision: 30e71c167ed5306bc47c20296cccf93d338a68f8
+Author: Richard Knoll <richard.b.knoll@gmail.com>
+Date: 10/05/2016 08:23:32
+Message:
+CB-11237: linking cordova-fetch #MsgLength=32
+
+
+----
+Modified: buildbot-conf/cordova.conf|6 0
+
+Revision: be6fc18a9a94b7e49684a26777f5b2accbeb84eb
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 13/05/2016 04:57:27
+Message:
+Reorganized the config files and split them for periodic and pr #MsgLength=83
+
+
+----
+Renamed: jenkins-conf/periodic/android.config.json [from jenkins-conf/android.config.json]|0 0
+Renamed: jenkins-conf/periodic/ios.config.json [from jenkins-conf/ios.config.json]|0 0
+Renamed: jenkins-conf/periodic/windows-10-store.config.json [from jenkins-conf/windows-10-store.config.json]|0 0
+Renamed: jenkins-conf/periodic/windows-8.1-phone.config.json [from jenkins-conf/windows-8.1-phone.config.json]|0 0
+Renamed: jenkins-conf/periodic/windows-8.1-store.config.json [from jenkins-conf/windows-8.1-store.config.json]|0 0
+Added: jenkins-conf/pr/android.config.json|5 0
+Added: jenkins-conf/pr/ios.config.json|5 0
+Added: jenkins-conf/pr/windows-10-store.config.json|7 0
+Added: jenkins-conf/pr/windows-8.1-phone.config.json|7 0
+Added: jenkins-conf/pr/windows-8.1-store.config.json|7 0
+
+Revision: 1aa20535f94705f3f8635364974c020ef12e8eb8
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 11/05/2016 22:31:24
+Message:
+CB-11232: - Adding whitelist rule to config.xml before Appium tests launch - Fixed tapElementByXPath to correctly tap on elements when their location has a fractional number #MsgLength=174
+
+
+----
+Modified: lib/appium/helpers/wdHelper.js|7 5
+Modified: medic/medic-appium.js|18 0
+
+Revision: 18a735220dd00577bf601d36bbc2d7d2c49eae3b
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 12/05/2016 06:20:33
+Message:
+CB-11283: Adding Instructions for Jenkins setup #MsgLength=66
+
+
+----
+Added: JENKINS.md|144 0
+
+Revision: 282b82feedb467c254ec2b0e9563d443faee931f
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 01/06/2016 19:07:21
+Message:
+Use x64 arch to build Win 10 apps #MsgLength=34
+
+
+----
+Modified: jenkins-conf/periodic/windows-10-store.config.json|1 1
+Modified: jenkins-conf/pr/windows-10-store.config.json|1 1
+
+Revision: e8d082bf88a2fb01ede14f3251c3822d883c7a74
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 02/08/2016 19:13:49
+Message:
+Update windows build options #MsgLength=29
+
+
+----
+Modified: jenkins-conf/periodic/windows-10-store.config.json|1 1
+Modified: jenkins-conf/pr/windows-10-store.config.json|1 1
+
+Revision: d09b90602a0e3d4eb36bd696bea48fd59e6fbdcd
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 02/08/2016 18:31:35
+Message:
+Added Jenkins configs for Android 4.4 and 5.1 #MsgLength=46
+
+
+----
+Added: jenkins-conf/periodic/android-4.4.config.json|6 0
+Added: jenkins-conf/periodic/android-5.1.config.json|6 0
+Added: jenkins-conf/pr/android-4.4.config.json|6 0
+Added: jenkins-conf/pr/android-5.1.config.json|6 0
+
+Revision: 2c5e46572d06bc3e91f699c9b4cd46d207791424
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 08/09/2016 15:58:16
+Message:
+Make Jenkins builds verbose #MsgLength=28
+
+
+----
+Modified: jenkins-conf/periodic/android-4.4.config.json|2 1
+Modified: jenkins-conf/periodic/android-5.1.config.json|2 1
+Modified: jenkins-conf/periodic/android.config.json|2 1
+Modified: jenkins-conf/periodic/ios.config.json|2 1
+Modified: jenkins-conf/periodic/windows-10-store.config.json|2 1
+Modified: jenkins-conf/periodic/windows-8.1-phone.config.json|2 1
+Modified: jenkins-conf/periodic/windows-8.1-store.config.json|2 1
+Modified: jenkins-conf/pr/android-4.4.config.json|2 1
+Modified: jenkins-conf/pr/android-5.1.config.json|2 1
+Modified: jenkins-conf/pr/android.config.json|2 1
+Modified: jenkins-conf/pr/ios.config.json|2 1
+Modified: jenkins-conf/pr/windows-10-store.config.json|2 1
+Modified: jenkins-conf/pr/windows-8.1-phone.config.json|2 1
+Modified: jenkins-conf/pr/windows-8.1-store.config.json|2 1
+
+Revision: b02505756b41cdbfc6a08a4537ceceb02ee2a093
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 15/09/2016 22:00:37
+Message:
+Added x86-arch configs for Jenkins builds on Windows #MsgLength=53
+
+
+----
+Added: jenkins-conf/periodic/windows-10-store-x86.config.json|8 0
+Added: jenkins-conf/periodic/windows-8.1-phone-x86.config.json|8 0
+Added: jenkins-conf/periodic/windows-8.1-store-x86.config.json|8 0
+Added: jenkins-conf/pr/windows-10-store-x86.config.json|8 0
+Added: jenkins-conf/pr/windows-8.1-phone-x86.config.json|8 0
+Added: jenkins-conf/pr/windows-8.1-store-x86.config.json|8 0
+
+Revision: 6af8ac65a3afe90ad184c95406d786f1d519ef37
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 05/10/2016 06:39:28
+Message:
+Added Jenkins configs for local testing #MsgLength=40
+
+
+----
+Added: jenkins-conf/periodic/local/android-4.4.config.json|7 0
+Added: jenkins-conf/periodic/local/android-5.1.config.json|7 0
+Added: jenkins-conf/periodic/local/ios.config.json|6 0
+Added: jenkins-conf/periodic/local/windows-10-store.config.json|8 0
+Added: jenkins-conf/periodic/local/windows-8.1-phone.config.json|8 0
+Added: jenkins-conf/periodic/local/windows-8.1-store.config.json|8 0
+Added: jenkins-conf/pr/local/android-4.4.config.json|7 0
+Added: jenkins-conf/pr/local/android-5.1.config.json|7 0
+Added: jenkins-conf/pr/local/ios.config.json|6 0
+Added: jenkins-conf/pr/local/windows-10-store.config.json|8 0
+Added: jenkins-conf/pr/local/windows-8.1-phone.config.json|8 0
+Added: jenkins-conf/pr/local/windows-8.1-store.config.json|8 0
+
+Revision: d3efbf1b888b49d43a1d99b5b646409e87f963d3
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/10/2016 13:18:32
+Message:
+Add github pull request template #MsgLength=33
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|22 0
+
+Revision: 42c1992efc7bab70409c32bd66938a62cdd45b70
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 17/04/2019 01:18:08
+Message:
+deprecation notice #MsgLength=18
+
+
+----
+Modified: README.md|10 0
+

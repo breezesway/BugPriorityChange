@@ -1,0 +1,2471 @@
+Revision: 341aade358946284f3801a97f0f09475d2e7bf23
+Author: Joe Bowser <bowserj@apache.org>
+Date: 02/04/2013 06:31:19
+Message:
+Initial Commit #MsgLength=15
+
+
+----
+Added: README.md|2 0
+Added: plugin.xml|17 0
+Added: src/android/BatteryListener.java|163 0
+
+Revision: 622b53742d35c62eba4ea0f6937441ba56f47124
+Author: hermwong <herm.wong@gmail.com>
+Date: 17/05/2013 06:18:20
+Message:
+added Cordova-JS battery apis, iOS native classes & updated the plugin.xml config with js-module tag & iOS configuration #MsgLength=121
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|16 2
+Added: src/ios/CDVBattery.h|40 0
+Added: src/ios/CDVBattery.m|152 0
+Added: www/battery.js|99 0
+
+Revision: 31815511ab99141e13d4eb5894d0403a43688389
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/05/2013 08:32:14
+Message:
+added docs, tests and updated plugin.xml #MsgLength=41
+
+
+----
+Added: docs/events.batterycritical.md|94 0
+Added: docs/events.batterylow.md|94 0
+Added: docs/events.batterystatus.md|102 0
+Modified: plugin.xml|9 5
+Added: test/autotest/html/HtmlReporter.js|101 0
+Added: test/autotest/html/HtmlReporterHelpers.js|60 0
+Added: test/autotest/html/ReporterView.js|164 0
+Added: test/autotest/html/SpecView.js|79 0
+Added: test/autotest/html/SuiteView.js|22 0
+Added: test/autotest/html/TrivialReporter.js|192 0
+Added: test/autotest/index.html|59 0
+Added: test/autotest/jasmine.css|81 0
+Added: test/autotest/jasmine.js|2530 0
+Added: test/autotest/pages/.DS_Store|0 0
+Added: test/autotest/pages/battery.html|66 0
+Added: test/autotest/test-runner.js|62 0
+Added: test/autotest/tests/.DS_Store|0 0
+Added: test/autotest/tests/battery.tests.js|26 0
+Added: test/battery/index.html|118 0
+Added: test/cordova-incl.js|70 0
+Added: test/index.html|65 0
+Added: test/main.js|163 0
+Added: test/master.css|164 0
+
+Revision: ec25c1f3d63ee45a8490c5adeb282bdff36e396d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/05/2013 08:34:13
+Message:
+updated clobber target #MsgLength=23
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a339c3f5c629da84f66c0a26de29083d7530e697
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 28/05/2013 08:26:01
+Message:
+first pass at wp7 support #MsgLength=26
+
+
+----
+Modified: plugin.xml|12 1
+Added: src/wp7/Battery.cs|79 0
+
+Revision: 290b1decb658eeef8553f752588e8a56aaab85db
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 18/06/2013 06:03:21
+Message:
+fixing invalid xml. #MsgLength=20
+
+
+----
+Modified: plugin.xml|1 2
+
+Revision: 478154b6683a151de7f846cbb71e2077a4598d5b
+Author: lorinbeer <lorin@adobe.com>
+Date: 22/06/2013 03:45:50
+Message:
+[CB-3672] blackberry 10 battery plugin breakout #MsgLength=48
+
+
+----
+Modified: plugin.xml|8 0
+Added: src/blackberry10/index.js|72 0
+
+Revision: 5fd19bb5cca1950235816e1ea9fe37dedfdf487f
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 25/06/2013 05:06:42
+Message:
+[CB-3674] first pass wp8 support #MsgLength=33
+
+
+----
+Modified: plugin.xml|11 0
+Added: src/wp8/Battery.cs|79 0
+
+Revision: 63a5f6fb92646e850f5f11aa384e3516f7b7a443
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:55
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 808a3e259c960efa65e5d1b53162c70a59454c45
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 05:48:02
+Message:
+[CB-4109] Remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|2 2
+Renamed: src/wp/Battery.cs [from src/wp7/Battery.cs]|0 0
+Deleted: src/wp8/Battery.cs|0 79
+
+Revision: bbcebbeb46272e6359a81aa25a25ff568de4985c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: src/android/BatteryListener.java|3 3
+
+Revision: 7368fd80e8032198d064cb69ce5ca6b98b8f859f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:01:19
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Added: .gitignore|23 0
+
+Revision: f52824aba6aa0f470d2ee5b3d53466fd8668ac56
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|3 0
+
+Revision: 494478c5e344c40e50fceaaa16f4b077ff0e9458
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:31:05
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 03bf20fd98e84ffe5505c4851feddd2c77df1361
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: a228b40b3646c390b673a740703ae1e3f6e607b6
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 2d9deaa97b814fffca09493fdb6c9521174297cd
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 01:49:39
+Message:
+updated name tag and readme #MsgLength=28
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|2 2
+
+Revision: 39d4d14efb62fe4c171fe3da2e5d4a92cd687a05
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 03:06:52
+Message:
+updated namespace #MsgLength=18
+
+
+----
+Modified: plugin.xml|2 1
+
+Revision: 4b841d6b7b1966c38c4b3bd51715db138ec2553b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-battery-status to its own Java package. #MsgLength=70
+
+
+----
+Modified: plugin.xml|2 2
+Modified: src/android/BatteryListener.java|1 1
+
+Revision: 5594ebdbe8d55f39e66162a56f16c66f6b392b1a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 15/08/2013 06:22:23
+Message:
+reverted name element to be human readable #MsgLength=43
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 6194de42ddb9f5f750661b3e880454fcbbf616c5
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 05:24:56
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 8392d314d511cf71dbe352fe880c9ec8c41fa8b7
+Author: lorinbeer <lorin@adobe.com>
+Date: 21/08/2013 04:50:49
+Message:
+[CB-4432] copyright notice change #MsgLength=34
+
+
+----
+Modified: src/blackberry10/index.js|16 11
+
+Revision: 17f9b43b7c79beeea3e40e695625606fd6460697
+Author: lorinbeer <lorin@adobe.com>
+Date: 21/08/2013 04:50:49
+Message:
+[CB-4432] copyright notice change #MsgLength=34
+
+
+----
+Modified: src/blackberry10/index.js|16 11
+
+Revision: d218f0af80708127f6398996f795c8a25f524076
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:52:55
+Message:
+[CB-4752] Updated version and changelog #MsgLength=40
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 8d3411e2c8c7aefd90838450da915e6d2dacd2ef
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 17:57:54
+Message:
+CB-4889 renaming org.apache.cordova.core.battery-status to org.apache.cordova.battery-status #MsgLength=93
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 92b96786f8ad2659a978b8340827a58019d324fe
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:00:32
+Message:
+reverting on master #MsgLength=20
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: dd6820d28bc9332789c55bfbbb47163613f59234
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:01:18
+Message:
+CB-4889 renaming org.apache.cordova.core.battery-status to org.apache.cordova.battery-status #MsgLength=93
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 35c7290483f28080d71e693a9c58823c97575748
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:21
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+
+
+Revision: e1007aeb1932880a5f40ddd84ab4b3c0d2b388b2
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:49:43
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 10840b70509b814bae9109afbe377d4f6f0e432f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 07:52:48
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.2.3 #MsgLength=64
+
+
+----
+Added: RELEASENOTES.md|26 0
+Modified: plugin.xml|1 1
+
+
+Revision: 6a184e97dc70c7f1bcd3891632aae74abee8f1e1
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:12
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f9fbc36e2f146365d2450fd777ead07f2bf4304a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 22/10/2013 06:21:24
+Message:
+CB-5128: added repo + issue tag to plugin.xml for battery status plugin #MsgLength=72
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: d01cff72c3778086d132a726766621dc6cf9686f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/10/2013 07:21:44
+Message:
+CB-5188:Updated version and RELEASENOTES.md for release 0.2.4 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+
+Revision: c35a2e21599b80a012ee832cca28d3838e1d24a2
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:13
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: fcf0625daa20fe3b253891193bc88828b949c621
+Author: Archana Naik <naika@lab126.com>
+Date: 17/10/2013 07:50:29
+Message:
+1. Updated platform name amazon->amazon-fireos. Deleted src files. 2. Change to use amazon-fireos as the platform if user agent string contains 'cordova-amazon-fireos' #MsgLength=168
+
+
+----
+Modified: plugin.xml|12 1
+Modified: test/cordova-incl.js|4 2
+
+Revision: fcc108cb4e46a72d5e04bdf3d2da80b50cfb2deb
+Author: Maxim Ermilov <ermilov.maxim@gmail.com>
+Date: 29/09/2013 12:19:01
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|7 1
+Added: src/ubuntu/battery.cpp|78 0
+Added: src/ubuntu/battery.h|62 0
+
+
+Revision: 7f98d2855befc1097d7d8336ecd7bee0448c8947
+Author: fupw_pc <fupw@polyvi.com>
+Date: 01/11/2013 17:10:09
+Message:
+wp8 add support in level #MsgLength=25
+
+
+----
+Modified: docs/events.batterystatus.md|1 1
+Modified: src/wp/Battery.cs|12 2
+
+
+Revision: 58877911e8edaa3dbf5baeaf34a00cd313721648
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 04/12/2013 06:33:19
+Message:
+Merged WP8 support for level, but #def'd it out so the same code runs on wp7.  Updated docs to reflect WP8 support for battery level, and low+critical events #MsgLength=158
+
+
+----
+Modified: docs/events.batterycritical.md|1 0
+Modified: docs/events.batterylow.md|1 0
+Modified: docs/events.batterystatus.md|2 2
+Modified: src/wp/Battery.cs|17 2
+
+Revision: dc07961b43c8633903b530ddc260cbe336ea4356
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:29
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.2.5 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|8 2
+Modified: plugin.xml|1 1
+
+Revision: 520d7bea5e16181fa115ff25b6e1a59a1343c584
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:03
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 390655dd5b029230647912fbcc7502dc7f4b1bdd
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/events.batterycritical.md|0 95
+Deleted: docs/events.batterylow.md|0 95
+Deleted: docs/events.batterystatus.md|0 102
+
+Revision: e736db3c4d5bb936bc38c4ae8df1d24d4a84116c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 23:53:25
+Message:
+CB-5658 Add doc/index.md for Battery Status. #MsgLength=45
+
+
+----
+Modified: README.md|1 2
+Added: doc/index.md|136 0
+
+Revision: 8003da66d51aacc5a8adf275f287669d0aa68de0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 00:28:51
+Message:
+Fix up Markdown license to actually be in comments. #MsgLength=52
+
+
+----
+Modified: README.md|20 2
+Modified: doc/index.md|2 2
+
+Revision: 74927e74ef20630ede8b98a320be6df51a1e6b2e
+Author: Michael Brooks <michael@michaelbrooks.ca>
+Date: 19/12/2013 00:35:11
+Message:
+[CB-5658] Remove Apache license comment from README.md. #MsgLength=89
+
+
+----
+Modified: README.md|0 19
+
+Revision: 9ed64cc53376075330863d84561cf7e9f614fca7
+Author: Michael Brooks <michael@michaelbrooks.ca>
+Date: 19/12/2013 00:37:28
+Message:
+[CB-5658] Update license comment formatting of doc/index.md. #MsgLength=61
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: c71ce756c0d80580a9182718ac6788506b5acddc
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:03:40
+Message:
+Fix typo in docs H2 -> H3 #MsgLength=26
+
+
+----
+Modified: doc/index.md|2 2
+
+Revision: 7b013fbeab56d0ab26c6a02ed8da54ff0ce3d3e0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.2.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: 984d44f442393e5c62275befc62263e3cafcc705
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f0311ae8585305ff5a03f3284c6d674578e3483f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:00
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 59
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/battery.html|0 66
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/.DS_Store|0 0
+Deleted: test/autotest/tests/battery.tests.js|0 26
+Deleted: test/battery/index.html|0 118
+Deleted: test/cordova-incl.js|0 72
+Deleted: test/index.html|0 65
+Deleted: test/main.js|0 163
+Deleted: test/master.css|0 164
+
+Revision: 5f16245e703dee5e15fef928c4645897c9fcd5f1
+Author: Salvatore Iovene <salvatore@iovene.com>
+Date: 31/12/2013 18:18:54
+Message:
+Add Tizen plugin. #MsgLength=18
+
+
+----
+Modified: plugin.xml|7 1
+Added: src/tizen/BatteryStatusProxy.js|26 0
+
+
+Revision: 86df72c2f3691d762d063db705ab6f7e795eaffb
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:58
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.2.7 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: 2592b9f435ee1c1387b2c75bce2c4160155e6170
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:35:30
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-battery-status #MsgLength=74
+
+
+----
+Added: doc/es/index.md|129 0
+
+Revision: 240478f38c2515c0b6a9c5bc36bc97504aeb87b3
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:14:18
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-battery-status #MsgLength=74
+
+
+----
+Added: doc/fr/index.md|129 0
+
+Revision: 6c8faff5d509d31d1502ad9cc3864152d47e5cee
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:29
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 622ce171956d7f25e3a70cc78ec2880bf15864ba
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+Revision: d6266cd4641759627da1431ce0b5e1639c577838
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:15:13
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: README.md|19 0
+Modified: plugin.xml|17 0
+
+Revision: 5fcfd00409ec34eaf285f59e8e42fbe56356c48f
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 21:48:36
+Message:
+CB-6465: Add license headers to Tizen code #MsgLength=43
+
+
+----
+Modified: src/tizen/BatteryStatusProxy.js|21 0
+
+Revision: c19c13c167f1bc93d4c95fe68497b6add531ae0b
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.2.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: 362c457e216b51675fc554604ea1485af424cd71
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 5558e84c91b0f8df45abd7e2b4184208b5dae391
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:35:30
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-battery-status #MsgLength=74
+
+
+----
+Added: doc/es/index.md|129 0
+
+Revision: ca143ac2eeb08e8907a6611de94b940efb587a1b
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:14:18
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-battery-status #MsgLength=74
+
+
+----
+Added: doc/fr/index.md|129 0
+
+Revision: d38f0ab5539032b607d868f4842b267fb7c1ee0b
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:19:14
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+
+Revision: 9821813a4ed4d1cc9af1341763e0adc9d8a0a12d
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 15/05/2014 08:12:03
+Message:
+CB-4519, CB-4520 low+critical weren't firing when level went from 21->19, and were when level went 19->20 #MsgLength=106
+
+
+----
+Modified: www/battery.js|13 9
+
+Revision: 7d9f58d195709d6220c7ac1358a3b45848f95a31
+Author: Richard Sentino <richard@mingdinative.com>
+Date: 28/02/2014 20:13:55
+Message:
+CB-5611 firefoxos: battery-status plugin #MsgLength=41
+
+
+----
+Modified: plugin.xml|7 0
+Added: src/firefoxos/BatteryProxy.js|61 0
+
+Revision: 7222959f2741cc54401c84c4506413001684e799
+Author: Rodrigo Silveira <rodrigos@outlook.com>
+Date: 02/05/2014 05:52:38
+Message:
+Updated documentation. Added support for mozBattery. #MsgLength=53
+
+
+----
+Modified: doc/index.md|3 0
+Modified: src/firefoxos/BatteryProxy.js|1 1
+
+
+
+Revision: 8f8c92a056c6ef08cd2580270db7644543342156
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 21/05/2014 02:38:23
+Message:
+CB-6721 Test for batterycritical change before batterylow change #MsgLength=65
+
+
+----
+Modified: www/battery.js|10 7
+
+Revision: b48708e7f733fc5612559120d2f0587b70ad0a82
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 22/05/2014 03:24:07
+Message:
+CB-6721 ignore null values if previous value was not null #MsgLength=58
+
+
+----
+Modified: www/battery.js|10 6
+
+
+Revision: 5a92083036be94adfd55697f7f71fa6adfc2cbbe
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:49:06
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-battery-status #MsgLength=74
+
+
+----
+Added: doc/ja/index.md|129 0
+
+Revision: 734807bc11c556684a03aa3160aede1f97307c8b
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:21:26
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-battery-status #MsgLength=74
+
+
+----
+Modified: doc/es/index.md|3 0
+Modified: doc/fr/index.md|3 0
+Added: doc/it/index.md|132 0
+Added: doc/ko/index.md|132 0
+Added: doc/pl/index.md|132 0
+Added: doc/zh/index.md|132 0
+
+Revision: 7bf2c50fea2fec98e03e4165c99bda51f9f6aad8
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:35:54
+Message:
+documentation translation: cordova-plugin-battery-status #MsgLength=57
+
+
+----
+Added: doc/de/index.md|132 0
+Modified: doc/ja/index.md|7 4
+
+Revision: 9d14a01284c59b2e2c4981c04455bfdf3c8fcd3b
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:17:55
+Message:
+CB-6794 Add license for CONTRIBUTING.md #MsgLength=40
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: 60f68fc0d5a1149b1d3da69b9d980c209c0135b5
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:42
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.2.9 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: plugin.xml|1 1
+
+Revision: e01a80a3fd055c5d9872281953b5e05cdbb87d2d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:49
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 4e262999be9a4a5caa6a1b78e548f92311c6f4af
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 21/06/2014 04:11:20
+Message:
+Minor doc corrections #MsgLength=22
+
+
+----
+Modified: doc/index.md|1 1
+
+
+Revision: f54a130c96332eedd874c7421527d393ede397fd
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:26:09
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-battery-status documentation translation: cordova-plugin-battery-status #MsgLength=121
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Added: doc/ru/index.md|132 0
+Modified: doc/zh/index.md|1 1
+
+Revision: 8ff34324139ed68e64a927e21086beb424da4cb7
+Author: Martin Gonzalez <martin.c.glez.glez@gmail.com>
+Date: 16/07/2014 21:11:10
+Message:
+CB-6957 Ported Battery-status manual & automated #MsgLength=598
+
+
+----
+Added: test/tests.js|549 0
+
+
+Revision: f6079cdb6a718ba03a6a5246a5fd0cd423dd2378
+Author: Martin Gonzalez <martin.c.glez.glez@gmail.com>
+Date: 18/07/2014 05:27:57
+Message:
+CB-6957 Style improvements on Manual tests #MsgLength=318
+
+
+----
+Modified: test/tests.js|38 40
+
+Revision: 6be10452d14c9b944b8f7cc30c6787565e366b4c
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 30/07/2014 03:01:48
+Message:
+added documentation for manual tests #MsgLength=37
+
+
+----
+Modified: test/tests.js|11 53
+
+Revision: de09e5955ed03486d36f61275fcf66c1c25c9460
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 02/08/2014 04:22:47
+Message:
+CB-7249cordova-plugin-battery-status documentation translation: cordova-plugin-battery-status #MsgLength=94
+
+
+----
+Modified: doc/pl/index.md|1 1
+
+Revision: 490888663ec50cb996eb0899aa936d22d3faac61
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:20
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.2.10 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|5 6
+Modified: plugin.xml|1 1
+
+Revision: deba7f47a01a61ab39df6fea82c58479ba2bddfc
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:25
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: f01bb645668133ee100e3275a8c933fb5fad1723
+Author: Martin Gonzalez <martin.c.glez.glez@gmail.com>
+Date: 01/08/2014 14:36:36
+Message:
+CB-6957 renamed folder to tests + added nested plugin.xml #MsgLength=58
+
+
+----
+Added: tests/plugin.xml|31 0
+Renamed: tests/tests.js [from test/tests.js]|2 2
+
+
+
+Revision: 08ad91f4ab289e7d7695300da56e741a84f41a17
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 19/08/2014 02:10:43
+Message:
+cb6724re-add accidental removed of var keyword #MsgLength=47
+
+
+----
+Modified: tests/tests.js|1 1
+
+Revision: 4e7319d650b3131c31afad15e1ccaab8e0a8b6cf
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 19/08/2014 22:50:29
+Message:
+CB-7249cordova-plugin-battery-status documentation translation: cordova-plugin-battery-status #MsgLength=94
+
+
+----
+Modified: doc/de/index.md|16 16
+
+Revision: c80ffae72fd1c3ad1b2dada96be79abb7dad8d49
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:39
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.2.11 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 50206e243dfe16cf2f53df39f2d194b0e4af256e
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:01
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 7295519a9dd97e74b46865dc2f6c6ac5367f9471
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:13
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: 6725aa985d863b693ce68c359f40091c2aba8fea
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:10:08
+Message:
+CB-7700 cordova-plugin-battery-status documentation translation: cordova-plugin-battery-status #MsgLength=95
+
+
+----
+Modified: doc/es/index.md|16 16
+Modified: doc/pl/index.md|7 7
+Modified: doc/ru/index.md|7 7
+
+Revision: 9f477a136e2ec83bf3c085ac12574b4a9c16fca1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 07/11/2014 05:19:00
+Message:
+CB-7976 Android: Use webView's context rather than Activity's context for intent receiver #MsgLength=90
+
+
+----
+Modified: src/android/BatteryListener.java|2 2
+
+Revision: ec59ef11a57df6e21dc10f1e6c81395dc58bf181
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:01
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.2.12 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5d4a3e5fb7aa4d8ab836684110b61bf46808ea7e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:49
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 09de5dbcd256b6993d51c24cd2621e18869546f8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 14:40:50
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|39 0
+
+Revision: fcbe7a7417e79dab34cf8fc52352c85eb680a150
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 28/02/2015 08:24:30
+Message:
+add travis.yml for CI with paramedic #MsgLength=37
+
+
+----
+Added: .travis.yml|13 0
+
+Revision: 72c46483b968370a051b76396859ea83fbf047d7
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 28/02/2015 08:53:39
+Message:
+added apache/travis badge - will not show until INFRA updates the github integration #MsgLength=85
+
+
+----
+Modified: README.md|2 0
+
+Revision: 50fd63d192a01fa2b76515714943fda44e67ef1d
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 13/03/2015 22:43:54
+Message:
+CB-8659: ios: 4.0.x Compatibility: Remove use of initWithWebView method #MsgLength=72
+
+
+----
+Modified: src/ios/CDVBattery.m|3 7
+
+Revision: c8dc4b93b647cb105039d9758991c99213043430
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 07:46:53
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|118 2
+Deleted: doc/index.md|0 139
+
+Revision: c29fdde22f0e65dcdac4942302248e15019e4672
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 19/03/2015 22:41:13
+Message:
+CB-7971 Add cordova-plugin-battery-status support for Windows Phone 8.1 #MsgLength=149
+
+
+----
+Modified: README.md|16 0
+Modified: plugin.xml|9 0
+Added: src/windows/BatteryProxy.js|76 0
+Added: src/windows/BatteryStatus.winmd|0 0
+Added: src/windows/BatteryStatus/BatteryStatus.sln|22 0
+Added: src/windows/BatteryStatus/BatteryStatus/.gitignore|3 0
+Added: src/windows/BatteryStatus/BatteryStatus/BatteryStatus.cs|90 0
+Added: src/windows/BatteryStatus/BatteryStatus/BatteryStatus.csproj|54 0
+Added: src/windows/BatteryStatus/BatteryStatus/Properties/AssemblyInfo.cs|30 0
+
+Revision: 16740d612db8dec22fd34ca26a9302abb6d63b1b
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 13:05:04
+Message:
+add Android+FireOS warning to tell devs that prolonged use will drain the battery. #MsgLength=83
+
+
+----
+Modified: README.md|4 0
+
+Revision: 0977076836eb9ad783a23a3b68bc05846fa8a221
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 13:10:37
+Message:
+Fix travis+paramedic pathing issue #MsgLength=35
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 5d98ddabe160ba5d68ad244b7892d9a532ef5803
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 13:18:36
+Message:
+Doc correction, Use the apostrophe to show possession #MsgLength=54
+
+
+----
+Modified: README.md|1 1
+
+Revision: 09dc325f25f04a9eb9a9a3dfdfd7e24c45f870ae
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:21:47
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 3aa0dfad15e089269aa66636e2751c5be02799f5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:30
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|3 3
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|3 3
+Modified: doc/zh/index.md|2 2
+
+Revision: 6262017475c263e5806323f66227d3ebc62700f8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 06:45:20
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 29d23daa7e1e0c505de9614a646d41a930c5ae4b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:05:59
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: 9447f7b8bd34f720ad0f85c9a0e00ba83c06247d
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/04/2015 18:56:51
+Message:
+CB-8831 Adds extra check for available API on Windows #MsgLength=54
+
+
+----
+Modified: plugin.xml|1 1
+Modified: src/windows/BatteryProxy.js|13 5
+
+Revision: af08f66c77107bf747a5a6b47168df8f5beb99e4
+Author: alsorokin <alexander.sorokin@akvelon.com>
+Date: 07/04/2015 22:45:56
+Message:
+CB-8808 Fixed tests to pass on Windows Phone 8.1 #MsgLength=49
+
+
+----
+Modified: tests/tests.js|264 220
+
+
+Revision: 9336e673f6b110d355ff5c376ce7f28d31eb78eb
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 07:08:37
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 039de61c269190d991e99ccee45890b44b67ae95
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:37
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|17 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5c23e0b8f0860e7eda2d608ba1d533758f951de6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:46
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e6c4c5bd77dd76a7753d25cf3dc61bcc12b665e7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:30:49
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 21ac0286c12891607377eb1c2da14de19588dde1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: afc15f49fb958be5fdc4cb0d5062ebd752c8759f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:21
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: fae86be3aeb08062c9c6d22944956fd7f06db6f2
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 02/06/2015 23:41:09
+Message:
+attempt to fix npm issue #MsgLength=25
+
+
+----
+Modified: README.md|17 17
+
+Revision: 51185c0683ed561e6c0d7edff5345d9a61d47e40
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:38:26
+Message:
+CB-9128 cordova-plugin-battery-status documentation translation: cordova-plugin-battery-status #MsgLength=95
+
+
+----
+Added: doc/de/README.md|151 0
+Added: doc/es/README.md|151 0
+Added: doc/fr/README.md|151 0
+Added: doc/it/README.md|151 0
+Added: doc/ja/README.md|151 0
+Added: doc/ko/README.md|151 0
+Added: doc/pl/README.md|151 0
+Added: doc/zh/README.md|151 0
+
+Revision: ed64714c55ba6e3366e8af710200b01bf687c137
+Author: daserge <daserge@yandex.ru>
+Date: 18/03/2015 16:47:21
+Message:
+CB-7953 Add cordova-plugin-battery-status support for browser platform #MsgLength=129
+
+
+----
+Modified: README.md|15 0
+Modified: plugin.xml|7 0
+Added: src/browser/BatteryProxy.js|80 0
+
+Revision: bbbc47e01ccf1fffa594b64846e8a4d7d28ef5ef
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 01:23:08
+Message:
+added missing license headers #MsgLength=30
+
+
+----
+Modified: src/windows/BatteryStatus/BatteryStatus.sln|18 0
+Modified: src/windows/BatteryStatus/BatteryStatus/BatteryStatus.cs|15 1
+Modified: src/windows/BatteryStatus/BatteryStatus/BatteryStatus.csproj|19 1
+Modified: src/windows/BatteryStatus/BatteryStatus/Properties/AssemblyInfo.cs|15 1
+
+Revision: d3aeadbc24748175b559799a1e53358a5af57e25
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:01
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8f3f8a8d6633345c8dee630419314a2145eae6c7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:40
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: b5c041547dbebee69005a3247bb31824600b263d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:34
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2214699491f697113f204ea384558e15be52c4b5
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 08:33:47
+Message:
+remove travis-ci integration #MsgLength=29
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 1
+
+Revision: b6aa537da09e0e1e6bb9fa06d3dd900d9343e42e
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: 8f36b9542a38882180b478c62540a453ece11b57
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:49
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: 8545db70ad8b7d92e886ac358a9a6940d19c781b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|52 52
+
+Revision: e6d3aee778f9e09905858ef096b6a56544c80ac5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:10
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: 917c70ed69249870964c92ddbd8e79d1918d97c4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:05
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 1.1.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 946f15f5beba7f6cb0a213b961eeb6c627e93d13
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|33 33
+
+Revision: 346339d5b3a93c608089591acab8fcc83634b23a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:06
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 104fb81f56517b1ef49ea592c78c8be680f4a678
+Author: t1st3 <contact@tiste.org>
+Date: 06/02/2016 18:15:04
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=259
+
+
+----
+Modified: package.json|1 1
+
+Revision: 367aefb72dae9eff053856f61dad100ec3932f72
+Author: daserge <v-seshak@microsoft.com>
+Date: 25/02/2016 19:57:23
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Modified: .gitignore|1 1
+Added: .jshintrc|17 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/blackberry10/index.js|6 4
+Modified: src/browser/BatteryProxy.js|3 3
+Modified: src/tizen/BatteryStatusProxy.js|1 1
+Modified: src/windows/BatteryProxy.js|21 20
+Modified: tests/tests.js|6 3
+Modified: www/battery.js|9 9
+
+Revision: a544d4cda0bc6bc756361f35b600e56004e0cb03
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 27/02/2016 10:32:59
+Message:
+CB-10720 Reorganizing and rewording docs. #MsgLength=42
+
+
+----
+Modified: README.md|42 87
+
+Revision: f33cfa12167d4a9e67e9f344d50b6fd930b85eec
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:26
+Message:
+ Updated version and RELEASENOTES.md for release 1.1.2 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 69f9d6f04a607390181175ceeefda18d41f734af
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:27
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 60d35149cc992eeca06659c44506673481b38edf
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:39
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: caff96838594346b5e94b5a9092c2700d7aa90a3
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:46:13
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: f8bf8e0ad93515d225e01ef1a629b1f541b15a31
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 15:48:48
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|3 1
+
+Revision: e11f8673e6c46ac824e9691b1efaf190dad5b31d
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 23/08/2016 03:49:19
+Message:
+Plugin uses Android Log class and not Cordova LOG class #MsgLength=56
+
+
+----
+Modified: src/android/BatteryListener.java|3 3
+
+Revision: b738071565c4ec3d9b3c037eff549b97fd458313
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 21:09:11
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=398
+
+
+----
+Modified: package.json|7 0
+
+Revision: 4f9044ec327e4f403ea15fcfef89643fb9de6545
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:52
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 1.2.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|9 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5d69bedf81a7063dbc1a9a52ddf6d83d866748bf
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:02
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e7c1a16b37ab803be7a7838ab91a795d89a898b1
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:36:39
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=101
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: 85c6f507a3e4b8640ae81eac3be953e6d7cf19ab
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 07/11/2016 19:46:20
+Message:
+CB-8929 Use PowerManager to get battery state on Win 10 #MsgLength=73
+
+
+----
+Modified: README.md|3 3
+Modified: src/windows/BatteryProxy.js|41 1
+Modified: tests/tests.js|23 17
+
+Revision: 248f96fcdd98e02a69e1d82b7a53bfdfed510a08
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/11/2016 15:14:42
+Message:
+CB-8929 Fix failing tests on iOS #MsgLength=33
+
+
+----
+Modified: tests/tests.js|3 2
+
+Revision: 59189285b60dacf6433aafa7294178598fb920a4
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:43
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 1.2.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|131 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6c2a4fa97dd4c005e71f5892aea28b38dbe1a5b5
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:06
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3c7cfffa552b65992910cc98188cbaffa17c66fa
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 16:54:08
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: 76d388a488ba7e344e593fb46f257be74289c246
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:04:17
+Message:
+CB-12236 - Fix RELEASENOTES.md for cordova-plugin-battery-status #MsgLength=65
+
+
+----
+Modified: RELEASENOTES.md|3 125
+
+Revision: 1d8218621645e45c25898d04f5e87d41e90b3e6a
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 12/12/2016 19:29:54
+Message:
+CB-12227 (windows) Fixed Browserify error #MsgLength=42
+
+
+----
+Modified: src/windows/BatteryProxy.js|52 52
+
+Revision: ee2388710d2c2bffe1e0dc1491c9f7c29b90a23b
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 15/12/2016 04:21:39
+Message:
+CB-12237 Updated version and RELEASENOTES.md for release 1.2.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1c12db572bef0874e9c1400e2351d123171b4985
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 15/12/2016 04:27:34
+Message:
+CB-12237 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 125dfd9810754664ff77a04dcfaebb400c8d3479
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 17:51:06
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: c12bd1a8336c14303a7aa86b4210071ec947f7b6
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 20:48:14
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=68
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|125 0
+
+Revision: 0baa20c8c0af8ec65a330371c4a3271d7fac7d6d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:22
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 1.2.3 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|82 131
+Modified: tests/plugin.xml|5 30
+
+Revision: af669c8170b328bff2e596ab000c7b501b67e434
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:55:56
+Message:
+Set VERSION to 1.2.4-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|131 82
+Modified: tests/plugin.xml|30 5
+
+Revision: 86b6be5249873450600feb76415ef2511275dad7
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 06/04/2017 21:05:26
+Message:
+CB-12639 (all) Tests: console.err() -> console.error() #MsgLength=55
+
+
+----
+Modified: tests/tests.js|3 3
+
+Revision: ee4f2de21c001d07732fd449924df0d30c62740b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 09:06:45
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: 8234eb876b53b489dbf103b8d87ac60e2f09588a
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/04/2017 07:46:29
+Message:
+Close #43 #MsgLength=10
+
+
+----
+
+Revision: d2847771ff54ba01fabaf1f0670e4e807d340cf3
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 19:19:35
+Message:
+CB-12622: (Android) Added Android 6.0 build badge #MsgLength=50
+
+
+----
+Modified: README.md|3 3
+
+Revision: dfec094c16bbab1852766db927d42fab049ca672
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 00:29:55
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 1.2.4 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 04fb766dc0adcdc3a24d3d98782482bbe3f7448f
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 00:33:06
+Message:
+Set VERSION to 1.2.5-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5d996a9d2356c2a1d9bca4e239099e13007b234a
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 02:02:56
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: c618aa7d1e33ae1e983fd5e232a2b77c5de3ed9e
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 18:34:57
+Message:
+CB-12847: fixed `bugs` entry in package.json. #MsgLength=46
+
+
+----
+Modified: package.json|1 1
+
+Revision: 266da57982bbd359b4a947787812b2cc753a7f78
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 20/06/2017 13:45:03
+Message:
+CB-12935 Run paramedic builds on Travis #MsgLength=40
+
+
+----
+Modified: .travis.yml|71 3
+
+Revision: b049070217eb9720065f8209160e6b6e232ecbea
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 22/06/2017 18:40:20
+Message:
+CB-12935 (CI) Correct Sauce Labs job name #MsgLength=42
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 8ca07a96fa3907496462d3da33246c878fc4cd90
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 23/06/2017 16:01:44
+Message:
+CB-12935: (CI) Travis should use Node 4.2 instead of 0.10 #MsgLength=58
+
+
+----
+Modified: .travis.yml|3 6
+
+Revision: a02fff5083583317a8f645a726a7a5040a6018a2
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:30:02
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: 74080ced9b3feff84a7c94684f78922b2a13f0d3
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 06/07/2017 18:49:06
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: 545e6ed082b63297e471a14ac95be7b084e436a9
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 13:34:21
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: fc23fc0a265e111fdfd578f615d4bf59f61b5568
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/07/2017 18:30:30
+Message:
+CB-13028 (CI) Added browser platform to AppVeyor #MsgLength=49
+
+
+----
+Modified: .appveyor.yml|3 2
+
+Revision: 01c636f04cb6fcac004499456f00157c3bbb88c2
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 21/07/2017 19:15:28
+Message:
+CB-13028 (CI) Added browser platform to Travis #MsgLength=47
+
+
+----
+Modified: .travis.yml|17 1
+
+Revision: 835acc8d4daf4693d21c4be086fb06d1bdf9fc81
+Author: Audrey So <audreyso@apache.org>
+Date: 10/06/2017 05:41:05
+Message:
+CB-12895 : added eslint and removed jshint #MsgLength=43
+
+
+----
+Added: .eslintrc.yml|10 0
+Deleted: .jshintrc|0 17
+Modified: package.json|9 2
+Modified: src/blackberry10/index.js|24 24
+Modified: src/browser/BatteryProxy.js|10 10
+Modified: src/firefoxos/BatteryProxy.js|11 11
+Modified: src/tizen/BatteryStatusProxy.js|6 6
+Modified: src/windows/BatteryProxy.js|11 11
+Modified: tests/tests.js|152 155
+Modified: www/battery.js|24 25
+
+Revision: 3a7376c3dcc61daaeaa49cc40c50d001d4150e39
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 13:41:06
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 92048c3ffbb73e4eeffc29c37d804df34e18ab82
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 19/10/2017 19:53:54
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 679e86b28b7886f5f9dc7e452de96225f89ecbf6
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 14:38:34
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: e336730d4b1190fe21fadc0e7159a72523553286
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:41
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 1.2.5 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f215efcedcc690bdddb1051f2a469512c5bd2aa5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:37
+Message:
+Set VERSION to 1.2.6-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 85dffffca46d2fad281ed9a5da4fce14af331b27
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 13/12/2017 03:51:02
+Message:
+CB-13667 : Remove deprecated platforms #MsgLength=39
+
+
+----
+Modified: README.md|5 30
+Modified: package.json|4 16
+Modified: plugin.xml|1 62
+Deleted: src/blackberry10/index.js|0 79
+Deleted: src/firefoxos/BatteryProxy.js|0 61
+Deleted: src/tizen/BatteryStatusProxy.js|0 47
+Deleted: src/ubuntu/battery.cpp|0 78
+Deleted: src/ubuntu/battery.h|0 62
+Deleted: src/wp/Battery.cs|0 104
+
+
+Revision: 8f1872cd45e5dc1afe0dc70c26fb5afea7ed6995
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:25:06
+Message:
+CB-13681 Updated version and RELEASENOTES.md for release 2.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 470427c224234b2848c7a2d06dcdbf0f81124bb7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:26:41
+Message:
+Set VERSION to 2.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 074616099d2a823493fbd3cb2ff09c4b740b2e41
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 27/12/2017 23:49:34
+Message:
+CB-13700: Fix to allow 2.0.0 version install (#62) #MsgLength=52
+
+
+----
+Modified: package.json|1 1
+
+Revision: 7fa0fe492d0817a6cd9c90027036462960b1d1d5
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:36
+Message:
+CB-13714 Updated version and RELEASENOTES.md for release 2.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|2 141
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b61f8f8b3bdf0d9a1c6a601992268f7889c04ac4
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:49
+Message:
+Set VERSION to 2.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: bd7bf5f3ee92387c605df3548f31f839e0c3c685
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 30/12/2017 13:59:58
+Message:
+Fix release notes (#63) #MsgLength=25
+
+
+----
+Modified: RELEASENOTES.md|142 0
+
+Revision: f5a77afc7acc7695e78ea4f6bb75515a72e89ff2
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 11/01/2018 07:06:11
+Message:
+CB-13764: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: 7d04d6dbaa0b67686facd460458f42a991b66ffb
+Author: Aaron Toth <atoth89@gmail.com>
+Date: 18/02/2016 23:23:47
+Message:
+CB-10645 The battery status handler doesn't reinitialize on Android after window.location.reload(). Instead of throwing an error, rather remove the status handler and re-initialize. #MsgLength=182
+
+
+----
+Modified: src/android/BatteryListener.java|1 2
+
+
+Revision: aebf1a1445bb0b5daa92634a0f245976e729045e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:06:17
+Message:
+CB-14030 Updated version and RELEASENOTES.md for release 2.0.2 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 34af4ad8e6861080cb309a49d7e08777bcdb28a6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:16:12
+Message:
+Set VERSION to 2.0.3-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 53beb6d1abb78a87dce9ebffef311db14a5c57c5
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 01/10/2018 18:13:53
+Message:
+add android-27 to `android update sdk -u --filter` #MsgLength=50
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 9c272a67997f8f15dd57b64913252f1cced60cdf
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:38:07
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 83c6e4476fd66f160bac36e76ae6bb701c580364
+Author: Tim Brust <ratchet.player@gmx.de>
+Date: 04/03/2019 21:38:16
+Message:
+chore: drop Node.js v4 support (#73) #MsgLength=1341
+
+
+----
+Modified: .appveyor.yml|11 4
+Modified: .travis.yml|62 73
+
+Revision: 41d35b743081df52869705f7e665d83b2d50fb6f
+Author: Tim Brust <ratchet.player@gmx.de>
+Date: 04/03/2019 22:31:59
+Message:
+feat: update typings (#72) #MsgLength=1352
+
+
+----
+Modified: README.md|1 1
+Modified: types/index.d.ts|27 106
+
+Revision: 58a3c2dc542482f4f7203d158ce901cd3a318629
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 18/06/2019 23:27:23
+Message:
+ci(travis): Update Travis CI configuration for new paramedic (#75) #MsgLength=183
+
+
+----
+Modified: .travis.yml|89 42
+
+Revision: fb133001925f59dae16c63dac899902923c51417
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:09:29
+Message:
+docs: remove outdated translations #MsgLength=35
+
+
+----
+Deleted: doc/de/README.md|0 151
+Deleted: doc/de/index.md|0 132
+Deleted: doc/es/README.md|0 151
+Deleted: doc/es/index.md|0 132
+Deleted: doc/fr/README.md|0 151
+Deleted: doc/fr/index.md|0 132
+Deleted: doc/it/README.md|0 151
+Deleted: doc/it/index.md|0 132
+Deleted: doc/ja/README.md|0 151
+Deleted: doc/ja/index.md|0 132
+Deleted: doc/ko/README.md|0 151
+Deleted: doc/ko/index.md|0 132
+Deleted: doc/pl/README.md|0 151
+Deleted: doc/pl/index.md|0 132
+Deleted: doc/ru/index.md|0 132
+Deleted: doc/zh/README.md|0 151
+Deleted: doc/zh/index.md|0 132
+
+Revision: 9c5c510db463f0ac81a66246b2a9770f8d52d005
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:09:56
+Message:
+chore: update github repo and issue link in plugin.xml #MsgLength=55
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 56b3d6c236d3eb24b7a70fc5aa655a68d687cf84
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:10:08
+Message:
+fix(types): remove version number #MsgLength=34
+
+
+----
+Modified: types/index.d.ts|1 1
+
+Revision: 55bca6219cd847d9baf5944ae10b0807aeca97ac
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:10:33
+Message:
+build: add `.npmignore` to remove unneeded files from npm package #MsgLength=66
+
+
+----
+Added: .npmignore|16 0
+
+Revision: aded849e1a89df39d061c312f88ea2bb5c5f9dfd
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:11:04
+Message:
+build: add `.gitattributes` to force LF (instead of possible CRLF on Windows) #MsgLength=78
+
+
+----
+Added: .gitattributes|1 0
+
+Revision: 68bbd2213c8c11275cecfa4ce2cf8c444eccccc0
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:12:26
+Message:
+chore(release): release notes for 2.0.3 #MsgLength=40
+
+
+----
+Modified: RELEASENOTES.md|13 0
+
+Revision: 93d27ca2d5ebc19480efd5fe0425eee27328feed
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:12:27
+Message:
+chore(release): 2.0.3 (version string) #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 66f0a73203ff89fa349c322b68d3e80cded987bb
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 22:13:25
+Message:
+chore(release): 2.0.4-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5a73933ba66fb5db261e5bafa37cb46a36f1802b
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 03/07/2019 16:28:07
+Message:
+ci(travis): upgrade to node 8 #MsgLength=29
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 0c8422028dacb3d7de3f5b5c7783489a6370f63c
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/07/2019 00:23:16
+Message:
+ci(appveyor): remove node 6, add node 12 #MsgLength=40
+
+
+----
+Modified: .appveyor.yml|1 1
+
+Revision: 1ec029e3721499df0cbd44ba21bacd89b286493c
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 18:47:25
+Message:
+ci: updates Node.js versions (#80) #MsgLength=36
+
+
+----
+Modified: .appveyor.yml|1 4
+Modified: .travis.yml|14 14
+
+Revision: feaabf1f8a3f94fcbd126086add884a96a8cefd5
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 18:49:25
+Message:
+chore(npm): improve ignore list (#79) #MsgLength=39
+
+
+----
+Modified: .npmignore|2 15
+
+Revision: f6b27a1cc4198e7ab87ebc3e281a529094298f2b
+Author: Tim Brust <github@timbrust.de>
+Date: 30/03/2020 05:27:56
+Message:
+refactor(eslint): use cordova-eslint (#81) #MsgLength=44
+
+
+----
+Modified: .eslintrc.yml|22 9
+Modified: package.json|3 10
+Modified: src/browser/BatteryProxy.js|7 2
+Modified: src/windows/BatteryProxy.js|24 19
+Modified: tests/tests.js|73 50
+Modified: www/battery.js|8 9
+
+Revision: 59c516a1e6d2a86c0c084bb3a16c6a5a1dfdd976
+Author: Tim Brust <github@timbrust.de>
+Date: 30/03/2020 22:30:43
+Message:
+chore: commit package-lock.json (#83) #MsgLength=39
+
+
+----
+Added: package-lock.json|1705 0
+
+Revision: f1c658474060a8281c01638fc41558c9240e321f
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:20:39
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Modified: CONTRIBUTING.md|4 4
+
+Revision: d894f9d3df1500e0a264d2e0b2c279f6915a7a93
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:39:31
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: 0a8e0631fa8377a37762012324b868d820e33ebf
+Author: Tim Brust <github@timbrust.de>
+Date: 22/08/2020 20:33:39
+Message:
+ci(travis): updates Android API level (#85) #MsgLength=45
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: df8fce2137a22498536befca7cdb76cbf25b3082
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/09/2020 18:33:34
+Message:
+ci(travis): update osx xcode image (#86) #MsgLength=135
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 28a4f82c41967f2491229293f830a88a9863c14e
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 03/10/2020 03:43:16
+Message:
+chore: clean up package.json (#87) #MsgLength=138
+
+
+----
+Modified: package.json|2 7
+
+Revision: 7a23945d2422dd1b800571cea943f150798f1689
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/11/2020 16:11:53
+Message:
+ci: add node-14.x to workflow (#88) #MsgLength=37
+
+
+----
+Modified: .appveyor.yml|1 0
+Modified: .travis.yml|1 1
+
+Revision: c22d199ecb97c53cbe044492844840bc597b9fa9
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/09/2021 21:17:33
+Message:
+ci: add gh-actions workflows (#90) #MsgLength=36
+
+
+----
+Added: .github/workflows/android.yml|148 0
+Added: .github/workflows/chrome.yml|73 0
+Added: .github/workflows/ios.yml|88 0
+Added: .github/workflows/lint.yml|56 0
+
+Revision: 1820fcb19ded4eb67186a427e6932c7bede272e6
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 23:07:02
+Message:
+ci: remove travis & appveyor (#91) #MsgLength=36
+
+
+----
+Deleted: .appveyor.yml|0 33
+Modified: .npmignore|0 1
+Deleted: .travis.yml|0 120
+Modified: README.md|0 4
+
+Revision: 281f7b1beab414cac7c18334d4b89647ee169ca5
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:00:37
+Message:
+ci: add action-badge (#92) #MsgLength=28
+
+
+----
+Modified: README.md|2 0
+
+Revision: a0d217334265e9a58b7e1610be1745fdd4ddb210
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/10/2021 20:08:38
+Message:
+ci(ios): update workflow w/ iOS 15 (#93) #MsgLength=42
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: 030b2d439a63e174ae4976af733467a9e3f46f0b
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/07/2022 13:41:17
+Message:
+ci(android): update java requirement for cordova-android@11 (#95) #MsgLength=67
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: 5e71686768c29dba4ac3d758065623edba0e9636
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/07/2022 17:26:38
+Message:
+chore(npm): bump package-lock v2 w/ rebuild (#102) #MsgLength=52
+
+
+----
+Modified: package-lock.json|2990 521
+
+Revision: ec70a25f2bb0343e777abb4daafdbae313ecc57a
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/08/2022 23:42:08
+Message:
+ci: sync workflow with paramedic (#103) #MsgLength=41
+
+
+----
+Modified: .github/workflows/android.yml|12 22
+Modified: .github/workflows/ios.yml|4 13
+

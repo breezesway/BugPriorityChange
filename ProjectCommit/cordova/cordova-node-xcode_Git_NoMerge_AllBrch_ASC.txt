@@ -1,0 +1,3960 @@
+Revision: 3fce2a9ff6a2d9fd0bafb359a3c8bf03a2aa09d3
+Author: alunny <alunny@gmail.com>
+Date: 26/01/2012 06:23:05
+Message:
+initial commit #MsgLength=15
+
+
+----
+Added: node_modules/.bin/pegjs|1 0
+Added: node_modules/pegjs/CHANGELOG|146 0
+Added: node_modules/pegjs/LICENSE|22 0
+Added: node_modules/pegjs/README.md|226 0
+Added: node_modules/pegjs/VERSION|1 0
+Added: node_modules/pegjs/bin/pegjs|142 0
+Added: node_modules/pegjs/examples/arithmetics.pegjs|22 0
+Added: node_modules/pegjs/examples/css.pegjs|554 0
+Added: node_modules/pegjs/examples/javascript.pegjs|1530 0
+Added: node_modules/pegjs/examples/json.pegjs|120 0
+Added: node_modules/pegjs/lib/peg.js|5141 0
+Added: node_modules/pegjs/package.json|24 0
+Added: package.json|16 0
+
+Revision: 2595be0ea9d02d94f3d6e94b34130e50a4893c4f
+Author: alunny <alunny@gmail.com>
+Date: 26/01/2012 06:42:18
+Message:
+first pass at grammar #MsgLength=69
+
+
+----
+Added: examples/simple.pbxproj|6 0
+Added: pbxproj.pegjs|84 0
+
+Revision: 4c032cc30ee0fa4e39abd2f534f551a867bcca90
+Author: alunny <alunny@gmail.com>
+Date: 26/01/2012 06:51:58
+Message:
+support for objects as values #MsgLength=30
+
+
+----
+Modified: examples/simple.pbxproj|2 0
+Modified: pbxproj.pegjs|11 3
+
+Revision: 4f7a159327d842ff376acc376fef3b9bd112e3b8
+Author: alunny <alunny@gmail.com>
+Date: 26/01/2012 07:08:56
+Message:
+including objects section in simple.pbxproj #MsgLength=44
+
+
+----
+Modified: examples/simple.pbxproj|9 0
+
+Revision: 3704439b852ea96ef2ed3f66c47335e3409df968
+Author: alunny <alunny@gmail.com>
+Date: 26/01/2012 08:39:57
+Message:
+handled delimited sections #MsgLength=27
+
+
+----
+Modified: pbxproj.pegjs|27 5
+
+Revision: 8ef9c9602cf3983658162188a8ce4905cbd0638d
+Author: alunny <alunny@gmail.com>
+Date: 26/01/2012 09:13:53
+Message:
+handle comments in assigments #MsgLength=105
+
+
+----
+Modified: pbxproj.pegjs|51 2
+
+Revision: 4bc12ff2f73a5b5658eb2adc02e07b771a3414a5
+Author: alunny <alunny@gmail.com>
+Date: 26/01/2012 09:17:34
+Message:
+[npm] ndeunit@0.6.4 #MsgLength=20
+
+
+----
+Added: node_modules/.bin/nodeunit|1 0
+Added: node_modules/nodeunit/.npmignore|3 0
+Added: node_modules/nodeunit/CONTRIBUTORS.md|68 0
+Added: node_modules/nodeunit/LICENSE|19 0
+Added: node_modules/nodeunit/Makefile|176 0
+Added: node_modules/nodeunit/README.md|443 0
+Added: node_modules/nodeunit/bin/nodeunit|125 0
+Added: node_modules/nodeunit/bin/nodeunit.json|10 0
+Added: node_modules/nodeunit/deps/async.js|623 0
+Added: node_modules/nodeunit/deps/console.log.js|55 0
+Added: node_modules/nodeunit/deps/ejs/History.md|70 0
+Added: node_modules/nodeunit/deps/ejs/Makefile|20 0
+Added: node_modules/nodeunit/deps/ejs/Readme.md|152 0
+Added: node_modules/nodeunit/deps/ejs/benchmark.js|14 0
+Added: node_modules/nodeunit/deps/ejs/ejs.js|531 0
+Added: node_modules/nodeunit/deps/ejs/ejs.min.js|2 0
+Added: node_modules/nodeunit/deps/ejs/examples/client.html|5 0
+Added: node_modules/nodeunit/deps/ejs/examples/list.ejs|7 0
+Added: node_modules/nodeunit/deps/ejs/examples/list.js|16 0
+Added: node_modules/nodeunit/deps/ejs/index.js|2 0
+Added: node_modules/nodeunit/deps/ejs/lib/ejs.js|251 0
+Added: node_modules/nodeunit/deps/ejs/lib/filters.js|198 0
+Added: node_modules/nodeunit/deps/ejs/lib/utils.js|23 0
+Added: node_modules/nodeunit/deps/ejs/package.json|11 0
+Added: node_modules/nodeunit/deps/ejs/support/compile.js|173 0
+Added: node_modules/nodeunit/deps/ejs/test/ejs.test.js|269 0
+Added: node_modules/nodeunit/deps/json2.js|481 0
+Added: node_modules/nodeunit/dist/nodeunit/bin/nodeunit|125 0
+Added: node_modules/nodeunit/dist/nodeunit/bin/nodeunit.json|10 0
+Added: node_modules/nodeunit/dist/nodeunit/deps/async.js|623 0
+Added: node_modules/nodeunit/dist/nodeunit/deps/console.log.js|55 0
+Added: node_modules/nodeunit/dist/nodeunit/deps/ejs.js|125 0
+Added: node_modules/nodeunit/dist/nodeunit/deps/json2.js|481 0
+Added: node_modules/nodeunit/dist/nodeunit/index.js|3 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/.swp|0 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/assert.js|327 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/core.js|316 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/nodeunit.js|104 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/reporters/browser.js|121 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/reporters/default.js|130 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/reporters/eclipse.js|104 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/reporters/html.js|109 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/reporters/index.js|14 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/reporters/junit.js|183 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/reporters/machineout.js|111 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/reporters/minimal.js|120 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/reporters/nested.js|213 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/reporters/skip_passed.js|107 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/reporters/tap.js|65 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/reporters/verbose.js|122 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/track.js|48 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/types.js|189 0
+Added: node_modules/nodeunit/dist/nodeunit/lib/utils.js|209 0
+Added: node_modules/nodeunit/dist/nodeunit/package.json|65 0
+Added: node_modules/nodeunit/dist/nodeunit/share/junit.xml.ejs|19 0
+Added: node_modules/nodeunit/dist/nodeunit/share/license.js|11 0
+Added: node_modules/nodeunit/dist/nodeunit/share/nodeunit.css|70 0
+Added: node_modules/nodeunit/doc/nodeunit.md|60 0
+Added: node_modules/nodeunit/examples/browser/nodeunit.js|2034 0
+Added: node_modules/nodeunit/examples/browser/suite1.js|12 0
+Added: node_modules/nodeunit/examples/browser/suite2.js|13 0
+Added: node_modules/nodeunit/examples/browser/suite3.js|7 0
+Added: node_modules/nodeunit/examples/browser/test.html|18 0
+Added: node_modules/nodeunit/examples/nested/nested_reporter_test.unit.js|94 0
+Added: node_modules/nodeunit/img/example_fail.png|0 0
+Added: node_modules/nodeunit/img/example_machineout.png|0 0
+Added: node_modules/nodeunit/img/example_pass.png|0 0
+Added: node_modules/nodeunit/index.js|3 0
+Added: node_modules/nodeunit/lib/assert.js|327 0
+Added: node_modules/nodeunit/lib/core.js|316 0
+Added: node_modules/nodeunit/lib/nodeunit.js|104 0
+Added: node_modules/nodeunit/lib/reporters/browser.js|121 0
+Added: node_modules/nodeunit/lib/reporters/default.js|130 0
+Added: node_modules/nodeunit/lib/reporters/eclipse.js|104 0
+Added: node_modules/nodeunit/lib/reporters/html.js|109 0
+Added: node_modules/nodeunit/lib/reporters/index.js|14 0
+Added: node_modules/nodeunit/lib/reporters/junit.js|179 0
+Added: node_modules/nodeunit/lib/reporters/machineout.js|111 0
+Added: node_modules/nodeunit/lib/reporters/minimal.js|120 0
+Added: node_modules/nodeunit/lib/reporters/nested.js|213 0
+Added: node_modules/nodeunit/lib/reporters/skip_passed.js|107 0
+Added: node_modules/nodeunit/lib/reporters/tap.js|65 0
+Added: node_modules/nodeunit/lib/reporters/verbose.js|122 0
+Added: node_modules/nodeunit/lib/track.js|48 0
+Added: node_modules/nodeunit/lib/types.js|189 0
+Added: node_modules/nodeunit/lib/utils.js|209 0
+Added: node_modules/nodeunit/man1/nodeunit.1|95 0
+Added: node_modules/nodeunit/node_modules/tap-assert/AUTHORS|2 0
+Added: node_modules/nodeunit/node_modules/tap-assert/LICENSE|23 0
+Added: node_modules/nodeunit/node_modules/tap-assert/README.md|3 0
+Added: node_modules/nodeunit/node_modules/tap-assert/assert.js|396 0
+Added: node_modules/nodeunit/node_modules/tap-assert/package.json|29 0
+Added: node_modules/nodeunit/node_modules/tap-producer/README.md|4 0
+Added: node_modules/nodeunit/node_modules/tap-producer/node_modules/inherits/README.md|51 0
+Added: node_modules/nodeunit/node_modules/tap-producer/node_modules/inherits/inherits.js|29 0
+Added: node_modules/nodeunit/node_modules/tap-producer/node_modules/inherits/package.json|7 0
+Added: node_modules/nodeunit/node_modules/tap-producer/node_modules/tap-results/README.md|2 0
+Added: node_modules/nodeunit/node_modules/tap-producer/node_modules/tap-results/package.json|11 0
+Added: node_modules/nodeunit/node_modules/tap-producer/node_modules/tap-results/results.js|68 0
+Added: node_modules/nodeunit/node_modules/tap-producer/node_modules/yamlish/LICENSE|19 0
+Added: node_modules/nodeunit/node_modules/tap-producer/node_modules/yamlish/README.md|20 0
+Added: node_modules/nodeunit/node_modules/tap-producer/node_modules/yamlish/package.json|9 0
+Added: node_modules/nodeunit/node_modules/tap-producer/node_modules/yamlish/yamlish.js|221 0
+Added: node_modules/nodeunit/node_modules/tap-producer/package.json|12 0
+Added: node_modules/nodeunit/node_modules/tap-producer/tap-producer.js|113 0
+Added: node_modules/nodeunit/nodelint.cfg|7 0
+Added: node_modules/nodeunit/package.json|65 0
+Added: node_modules/nodeunit/share/junit.xml.ejs|19 0
+Added: node_modules/nodeunit/share/license.js|11 0
+Added: node_modules/nodeunit/share/nodeunit.css|70 0
+Added: node_modules/nodeunit/test/fixtures/coffee/mock_coffee_module.coffee|4 0
+Added: node_modules/nodeunit/test/fixtures/dir/mock_module3.js|1 0
+Added: node_modules/nodeunit/test/fixtures/dir/mock_module4.js|1 0
+Added: node_modules/nodeunit/test/fixtures/mock_module1.js|1 0
+Added: node_modules/nodeunit/test/fixtures/mock_module2.js|1 0
+Added: node_modules/nodeunit/test/fixtures/raw_jscode1.js|3 0
+Added: node_modules/nodeunit/test/fixtures/raw_jscode2.js|3 0
+Added: node_modules/nodeunit/test/fixtures/raw_jscode3.js|1 0
+Added: node_modules/nodeunit/test/test-base.js|219 0
+Added: node_modules/nodeunit/test/test-failing-callbacks.js|114 0
+Added: node_modules/nodeunit/test/test-httputil.js|55 0
+Added: node_modules/nodeunit/test/test-runfiles.js|214 0
+Added: node_modules/nodeunit/test/test-runmodule.js|177 0
+Added: node_modules/nodeunit/test/test-runtest.js|46 0
+Added: node_modules/nodeunit/test/test-sandbox.js|31 0
+Added: node_modules/nodeunit/test/test-testcase-legacy.js|257 0
+Added: node_modules/nodeunit/test/test-testcase.js|256 0
+Added: node_modules/nodeunit/test/test.html|28 0
+Modified: package.json|3 1
+
+Revision: 03d30c5d2645eabb16afa019210fd75ff2b931c0
+Author: alunny <alunny@gmail.com>
+Date: 26/01/2012 11:41:11
+Message:
+[parser] support for numeric literals #MsgLength=38
+
+
+----
+Modified: pbxproj.pegjs|12 5
+
+Revision: bf3de1055dd64b124ecb0a4c0ff1cf86f6a4648b
+Author: alunny <alunny@gmail.com>
+Date: 26/01/2012 11:41:33
+Message:
+[test] initial test cases #MsgLength=26
+
+
+----
+Added: test/hash.js|23 0
+Added: test/projects/hash.pbxproj|8 0
+
+Revision: b94a411cae4f7dd5801f0e38e1d4e6c967831ab0
+Author: alunny <alunny@gmail.com>
+Date: 27/01/2012 00:50:52
+Message:
+[test] support for commented values #MsgLength=36
+
+
+----
+Modified: pbxproj.pegjs|1 1
+Modified: test/hash.js|6 0
+Renamed: test/projects/section.pbxproj [from examples/simple.pbxproj]|0 0
+
+Revision: e72df9d85f3af36e373fc345c20d11405c39bfc2
+Author: alunny <alunny@gmail.com>
+Date: 27/01/2012 02:48:39
+Message:
+[grammar] cleaning up grammar a little #MsgLength=39
+
+
+----
+Modified: pbxproj.pegjs|4 14
+
+Revision: e2905b46018c8966f8ecfbc56ad791c782ce4c5c
+Author: alunny <alunny@gmail.com>
+Date: 27/01/2012 04:07:55
+Message:
+[grammar] remove Literal rule in favor of Value #MsgLength=48
+
+
+----
+Modified: pbxproj.pegjs|11 7
+Modified: test/hash.js|5 0
+Modified: test/projects/hash.pbxproj|1 0
+
+Revision: 3913901f9765855635f88495d416a31b09d0d568
+Author: alunny <alunny@gmail.com>
+Date: 27/01/2012 04:21:57
+Message:
+[grammar] placeholder array rules #MsgLength=34
+
+
+----
+Modified: pbxproj.pegjs|4 1
+
+Revision: 5fe4051cd734190de8a49fe8d9c1feaef2d80c47
+Author: alunny <alunny@gmail.com>
+Date: 27/01/2012 04:43:35
+Message:
+[grammar] reorg #MsgLength=16
+
+
+----
+Modified: pbxproj.pegjs|35 9
+
+Revision: e1eddfdd33da55eb8db90f6f03ba92b7f5cddb02
+Author: alunny <alunny@gmail.com>
+Date: 27/01/2012 05:07:58
+Message:
+[grammar] handle arrays #MsgLength=24
+
+
+----
+Modified: pbxproj.pegjs|31 2
+
+Revision: b0758fbb6c5969b29e0a6554487116ea8244735d
+Author: alunny <alunny@gmail.com>
+Date: 27/01/2012 06:27:17
+Message:
+[grammar] modifications for array support #MsgLength=42
+
+
+----
+Modified: pbxproj.pegjs|1 1
+Added: test/projects/with_array.pbxproj|18 0
+Added: test/with_array.js|25 0
+
+Revision: 272453ae03adcc519656ffd5c4592849f1dcee18
+Author: alunny <alunny@gmail.com>
+Date: 27/01/2012 06:28:07
+Message:
+[test] tests for delimited sections #MsgLength=36
+
+
+----
+Added: test/section.js|28 0
+
+Revision: c3c56d029c3119f0b81ed38b43be02401f3f1701
+Author: alunny <alunny@gmail.com>
+Date: 27/01/2012 07:31:52
+Message:
+[grammar] handle multiple DelimitedSections #MsgLength=44
+
+
+----
+Modified: pbxproj.pegjs|3 2
+Added: test/projects/two-sections.pbxproj|29 0
+Added: test/two-sections.js|18 0
+
+Revision: 29cfc8b279faa01b1c49c7457ed1344a4bb7ca59
+Author: alunny <alunny@gmail.com>
+Date: 27/01/2012 08:19:22
+Message:
+[grammar] handle QuotedStrings and DecimalValues #MsgLength=49
+
+
+----
+Modified: pbxproj.pegjs|26 2
+
+Revision: 11fb6eb53d89b228e93916c48067575bf68e1051
+Author: alunny <alunny@gmail.com>
+Date: 27/01/2012 08:26:12
+Message:
+[grammar] style #MsgLength=16
+
+
+----
+Modified: pbxproj.pegjs|1 1
+
+Revision: c58e360eb713ae61cdc40f28499cb2380678e1fc
+Author: alunny <alunny@gmail.com>
+Date: 27/01/2012 08:38:33
+Message:
+license and readme #MsgLength=19
+
+
+----
+Added: LICENSE|14 0
+Added: README.md|5 0
+
+Revision: eade9bbc4502754abbbcb5d074e1c09ca13f0be4
+Author: alunny <alunny@gmail.com>
+Date: 01/02/2012 05:00:00
+Message:
+generated parser #MsgLength=17
+
+
+----
+Added: pbxproj.js|2622 0
+
+Revision: 3db86352da0c0d223052e96356d894e0a8fcd8db
+Author: alunny <alunny@gmail.com>
+Date: 01/02/2012 07:28:18
+Message:
+[project] reorganize #MsgLength=21
+
+
+----
+Renamed: lib/parser/pbxproj.js [from pbxproj.js]|0 0
+Renamed: lib/parser/pbxproj.pegjs [from pbxproj.pegjs]|0 0
+Added: test/parser/build-config.js|12 0
+Renamed: test/parser/hash.js [from test/hash.js]|2 2
+Added: test/parser/projects/build-config.pbxproj|115 0
+Added: test/parser/projects/full.pbxproj|534 0
+Renamed: test/parser/projects/hash.pbxproj [from test/projects/hash.pbxproj]|0 0
+Renamed: test/parser/projects/section.pbxproj [from test/projects/section.pbxproj]|0 0
+Renamed: test/parser/projects/two-sections.pbxproj [from test/projects/two-sections.pbxproj]|0 0
+Renamed: test/parser/projects/with_array.pbxproj [from test/projects/with_array.pbxproj]|0 0
+Renamed: test/parser/section.js [from test/section.js]|2 2
+Renamed: test/parser/two-sections.js [from test/two-sections.js]|2 2
+Renamed: test/parser/with_array.js [from test/with_array.js]|2 2
+
+Revision: a25f5e7430965764631875c1ea23830910f42942
+Author: alunny <alunny@gmail.com>
+Date: 01/02/2012 08:23:28
+Message:
+beginnings of pbxProject interface #MsgLength=35
+
+
+----
+Added: lib/parseJob.js|16 0
+Added: lib/pbxProject.js|30 0
+Added: test/pbxProject.js|42 0
+
+Revision: 5c05b76557d8bef50edb3f52ea52440f2d6db81b
+Author: alunny <alunny@gmail.com>
+Date: 01/02/2012 09:17:17
+Message:
+[grammar] fix integerValue #MsgLength=27
+
+
+----
+Modified: lib/parser/pbxproj.js|1 1
+Modified: lib/parser/pbxproj.pegjs|1 1
+Modified: test/parser/hash.js|1 0
+
+Revision: cc9f7f0a321ffaf8573338afacb4fcd8820ceaad
+Author: alunny <alunny@gmail.com>
+Date: 01/02/2012 10:24:29
+Message:
+[parser] ensure array are ordered and trimmed #MsgLength=46
+
+
+----
+Modified: lib/parser/pbxproj.js|2 2
+Modified: lib/parser/pbxproj.pegjs|2 2
+Modified: test/parser/with_array.js|14 0
+
+Revision: a2098c77b88566a68b60f8701762126f7a127a80
+Author: alunny <alunny@gmail.com>
+Date: 01/02/2012 10:26:35
+Message:
+Makefile for making #MsgLength=20
+
+
+----
+Added: Makefile|2 0
+
+Revision: 42fd1ec55bfe86c47c145599457999fe1e70701d
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 03:37:34
+Message:
+switching tabs to spaces #MsgLength=70
+
+
+----
+Modified: test/parser/projects/section.pbxproj|5 5
+
+Revision: 8ee07b6145b340e93fd6645a97ef86badb8a2ad2
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 03:46:27
+Message:
+pbxWriter object #MsgLength=17
+
+
+----
+Modified: lib/pbxProject.js|7 1
+Added: lib/pbxWriter.js|194 0
+Added: test/pbxWriter.js|46 0
+
+Revision: 582bed5e29f8fab2574afeb3a05ef5c6226c0a4f
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 04:09:29
+Message:
+[writer] handle multiple sections #MsgLength=34
+
+
+----
+Modified: lib/pbxWriter.js|31 18
+Modified: test/pbxWriter.js|21 34
+
+Revision: 369209d044aa738863800f32adbe9f184b4bf1ee
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 04:28:58
+Message:
+[parser] don't add "id" property to section #MsgLength=44
+
+
+----
+Modified: lib/parser/pbxproj.js|6 3
+Modified: lib/parser/pbxproj.pegjs|6 3
+
+Revision: e11cc276d4ecba8e762470479631fed33084b48f
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 04:29:55
+Message:
+[pbxWriter] fix sections with multiple entries #MsgLength=47
+
+
+----
+Modified: lib/pbxWriter.js|17 8
+
+Revision: 45d4cfa96d98297dd0bfc81a22a2f96951e482a1
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 04:37:09
+Message:
+[parser] fix regression on comments #MsgLength=36
+
+
+----
+Modified: lib/parser/pbxproj.js|2 1
+Modified: lib/parser/pbxproj.pegjs|2 1
+
+Revision: f799c0712ae6415b090549ec7fb1b8f3da66dbbf
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 04:45:28
+Message:
+[parser] store double-quoted strings correctly #MsgLength=47
+
+
+----
+Modified: lib/parser/pbxproj.js|1 1
+Modified: lib/parser/pbxproj.pegjs|1 1
+Added: test/parser/projects/section-entries.pbxproj|28 0
+Added: test/parser/section-entries.js|25 0
+
+Revision: 59295038a8148a9d9c7f466de9dd959f553b0abe
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 05:14:55
+Message:
+[parser] fix for decimal literals #MsgLength=135
+
+
+----
+Modified: lib/parser/pbxproj.js|26 12
+Modified: lib/parser/pbxproj.pegjs|6 1
+Modified: test/parser/build-config.js|8 0
+
+Revision: 463c9259ccdcad9657fa832be24ccb86b44c9765
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 05:43:15
+Message:
+[internal] switching output from spaces to tabs #MsgLength=88
+
+
+----
+Modified: lib/pbxWriter.js|1 1
+Modified: test/pbxWriter.js|1 1
+
+Revision: 0922e36cb13da74bfa749b556a8feeb2f5582180
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 05:46:23
+Message:
+[pbxWriter] write out build-config #MsgLength=161
+
+
+----
+Modified: lib/pbxWriter.js|23 3
+Modified: test/parser/projects/build-config.pbxproj|0 3
+Modified: test/pbxWriter.js|25 0
+
+Revision: 012d509b874cb674da196bb6d90fd4f79fed6ff0
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 05:51:33
+Message:
+make tests #MsgLength=11
+
+
+----
+Modified: Makefile|3 0
+
+Revision: af2210937f8864abe1644cec26bc3573dbf3f75e
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 06:16:30
+Message:
+[pbxWriter] handle objects in arrays #MsgLength=37
+
+
+----
+Modified: lib/pbxWriter.js|9 1
+Added: test/parser/projects/nested-object.pbxproj|39 0
+Modified: test/pbxWriter.js|3 0
+
+Revision: b40596e83d4d61c18d18003d3079fd60043fcc4a
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 06:56:01
+Message:
+[writer] handle inline objects #MsgLength=84
+
+
+----
+Modified: lib/pbxWriter.js|54 7
+Added: test/parser/projects/build-files.pbxproj|41 0
+Modified: test/pbxWriter.js|7 0
+
+Revision: 26685f99214f8b99a5775e9135c86f8f25e87b8f
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 07:02:42
+Message:
+[writer] additional test for PBXFileReference #MsgLength=46
+
+
+----
+Added: test/parser/projects/file-references.pbxproj|45 0
+Modified: test/pbxWriter.js|3 0
+
+Revision: 7d00b9fc4b4c811d8f4c49acccb33e8839f59594
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 07:03:22
+Message:
+[npm] v0.1.0 #MsgLength=13
+
+
+----
+Modified: package.json|1 1
+
+Revision: 7a9dfa24feb85530f631e2cbf5748fbeead26c6b
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 08:26:44
+Message:
+[pbxProject] allUuids function #MsgLength=31
+
+
+----
+Modified: lib/pbxProject.js|18 0
+Added: test/fixtures/buildFiles.json|1 0
+Modified: test/pbxProject.js|16 1
+
+Revision: d4e58b5973a2ed849010b61d2e95f1a4fab32073
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 08:29:59
+Message:
+[npm] node_modules@1.3.3 #MsgLength=25
+
+
+----
+Added: node_modules/node-uuid/.npmignore|2 0
+Added: node_modules/node-uuid/LICENSE.md|3 0
+Added: node_modules/node-uuid/README.md|199 0
+Added: node_modules/node-uuid/benchmark/README.md|53 0
+Added: node_modules/node-uuid/benchmark/bench.gnu|174 0
+Added: node_modules/node-uuid/benchmark/bench.sh|34 0
+Added: node_modules/node-uuid/benchmark/benchmark-native.c|34 0
+Added: node_modules/node-uuid/benchmark/benchmark.js|84 0
+Added: node_modules/node-uuid/package.json|14 0
+Added: node_modules/node-uuid/test/benchmark-native|0 0
+Added: node_modules/node-uuid/test/compare_v1.js|63 0
+Added: node_modules/node-uuid/test/test.html|17 0
+Added: node_modules/node-uuid/test/test.js|240 0
+Added: node_modules/node-uuid/uuid.js|249 0
+Modified: package.json|2 1
+
+Revision: b104dfcfb1404a9ed593086943fc40bc14f4470b
+Author: alunny <alunny@gmail.com>
+Date: 02/02/2012 08:45:52
+Message:
+[pbxProject] generateUuid function #MsgLength=35
+
+
+----
+Modified: lib/pbxProject.js|14 0
+Modified: test/pbxProject.js|24 0
+
+Revision: 957692c935e1515357d2b584b307622997052e3f
+Author: alunny <alunny@gmail.com>
+Date: 03/02/2012 03:17:44
+Message:
+[pbxFile] file wrapper object #MsgLength=30
+
+
+----
+Added: lib/pbxFile.js|38 0
+Added: test/pbxFile.js|63 0
+
+Revision: 0a4a717de438811fd507070d62b3eeead6709c65
+Author: alunny <alunny@gmail.com>
+Date: 03/02/2012 03:58:13
+Message:
+[pbxFile] adding basename field #MsgLength=32
+
+
+----
+Modified: lib/pbxFile.js|5 3
+Modified: test/pbxFile.js|9 0
+
+Revision: 920b7c6a41591ef03684e92d14d231f4fc295cab
+Author: alunny <alunny@gmail.com>
+Date: 03/02/2012 05:30:44
+Message:
+[pbxProject] addSourceFile #MsgLength=106
+
+
+----
+Modified: lib/pbxFile.js|4 1
+Modified: lib/pbxProject.js|152 3
+Added: test/addSourceFile.js|131 0
+Added: test/fixtures/full-project.json|1 0
+
+Revision: 5d3ce9312a035591fa154fd6f8b131013363a5c2
+Author: alunny <alunny@gmail.com>
+Date: 03/02/2012 05:58:17
+Message:
+[pbxProject] addHeaderFile #MsgLength=50
+
+
+----
+Modified: lib/pbxProject.js|36 24
+Added: test/addHeaderFile.js|78 0
+
+Revision: bace240666ac9896e3aec6fb1fd45ea6891d37b8
+Author: alunny <alunny@gmail.com>
+Date: 03/02/2012 06:27:14
+Message:
+[pbxProject] addResourceFile #MsgLength=29
+
+
+----
+Modified: lib/pbxFile.js|7 1
+Modified: lib/pbxProject.js|51 13
+Added: test/addResourceFile.js|130 0
+
+Revision: a61e21a4bbbceeac86e24ae1137d3809a386edb0
+Author: alunny <alunny@gmail.com>
+Date: 03/02/2012 06:27:34
+Message:
+[npm] 0.2.0 #MsgLength=12
+
+
+----
+Modified: package.json|1 1
+
+Revision: a2f45363cf1097f0182e3dcb6a3509543b9437fb
+Author: alunny <alunny@gmail.com>
+Date: 07/02/2012 04:52:45
+Message:
+[npm] added suitable package entry point #MsgLength=41
+
+
+----
+Added: index.js|1 0
+Modified: package.json|2 1
+
+Revision: d76a338e40cd6b1d0da2ee2f29f1ece85460762b
+Author: alunny <alunny@gmail.com>
+Date: 07/02/2012 04:58:58
+Message:
+[pbxProject] the old new without new trick #MsgLength=43
+
+
+----
+Modified: lib/pbxProject.js|3 0
+Modified: test/pbxProject.js|15 0
+
+Revision: 318929ac4f27bc800eb5d31730221a65efefb746
+Author: alunny <alunny@gmail.com>
+Date: 07/02/2012 05:13:27
+Message:
+[repo] ignoring node_modules #MsgLength=75
+
+
+----
+Added: .gitignore|1 0
+Deleted: node_modules/.bin/nodeunit|0 1
+Deleted: node_modules/.bin/pegjs|0 1
+Deleted: node_modules/node-uuid/.npmignore|0 2
+Deleted: node_modules/node-uuid/LICENSE.md|0 3
+Deleted: node_modules/node-uuid/README.md|0 199
+Deleted: node_modules/node-uuid/benchmark/README.md|0 53
+Deleted: node_modules/node-uuid/benchmark/bench.gnu|0 174
+Deleted: node_modules/node-uuid/benchmark/bench.sh|0 34
+Deleted: node_modules/node-uuid/benchmark/benchmark-native.c|0 34
+Deleted: node_modules/node-uuid/benchmark/benchmark.js|0 84
+Deleted: node_modules/node-uuid/package.json|0 14
+Deleted: node_modules/node-uuid/test/benchmark-native|0 0
+Deleted: node_modules/node-uuid/test/compare_v1.js|0 63
+Deleted: node_modules/node-uuid/test/test.html|0 17
+Deleted: node_modules/node-uuid/test/test.js|0 240
+Deleted: node_modules/node-uuid/uuid.js|0 249
+Deleted: node_modules/nodeunit/.npmignore|0 3
+Deleted: node_modules/nodeunit/CONTRIBUTORS.md|0 68
+Deleted: node_modules/nodeunit/LICENSE|0 19
+Deleted: node_modules/nodeunit/Makefile|0 176
+Deleted: node_modules/nodeunit/README.md|0 443
+Deleted: node_modules/nodeunit/bin/nodeunit|0 125
+Deleted: node_modules/nodeunit/bin/nodeunit.json|0 10
+Deleted: node_modules/nodeunit/deps/async.js|0 623
+Deleted: node_modules/nodeunit/deps/console.log.js|0 55
+Deleted: node_modules/nodeunit/deps/ejs/History.md|0 70
+Deleted: node_modules/nodeunit/deps/ejs/Makefile|0 20
+Deleted: node_modules/nodeunit/deps/ejs/Readme.md|0 152
+Deleted: node_modules/nodeunit/deps/ejs/benchmark.js|0 14
+Deleted: node_modules/nodeunit/deps/ejs/ejs.js|0 531
+Deleted: node_modules/nodeunit/deps/ejs/ejs.min.js|0 2
+Deleted: node_modules/nodeunit/deps/ejs/examples/client.html|0 5
+Deleted: node_modules/nodeunit/deps/ejs/examples/list.ejs|0 7
+Deleted: node_modules/nodeunit/deps/ejs/examples/list.js|0 16
+Deleted: node_modules/nodeunit/deps/ejs/index.js|0 2
+Deleted: node_modules/nodeunit/deps/ejs/lib/ejs.js|0 251
+Deleted: node_modules/nodeunit/deps/ejs/lib/filters.js|0 198
+Deleted: node_modules/nodeunit/deps/ejs/lib/utils.js|0 23
+Deleted: node_modules/nodeunit/deps/ejs/package.json|0 11
+Deleted: node_modules/nodeunit/deps/ejs/support/compile.js|0 173
+Deleted: node_modules/nodeunit/deps/ejs/test/ejs.test.js|0 269
+Deleted: node_modules/nodeunit/deps/json2.js|0 481
+Deleted: node_modules/nodeunit/dist/nodeunit/bin/nodeunit|0 125
+Deleted: node_modules/nodeunit/dist/nodeunit/bin/nodeunit.json|0 10
+Deleted: node_modules/nodeunit/dist/nodeunit/deps/async.js|0 623
+Deleted: node_modules/nodeunit/dist/nodeunit/deps/console.log.js|0 55
+Deleted: node_modules/nodeunit/dist/nodeunit/deps/ejs.js|0 125
+Deleted: node_modules/nodeunit/dist/nodeunit/deps/json2.js|0 481
+Deleted: node_modules/nodeunit/dist/nodeunit/index.js|0 3
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/.swp|0 0
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/assert.js|0 327
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/core.js|0 316
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/nodeunit.js|0 104
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/reporters/browser.js|0 121
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/reporters/default.js|0 130
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/reporters/eclipse.js|0 104
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/reporters/html.js|0 109
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/reporters/index.js|0 14
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/reporters/junit.js|0 183
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/reporters/machineout.js|0 111
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/reporters/minimal.js|0 120
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/reporters/nested.js|0 213
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/reporters/skip_passed.js|0 107
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/reporters/tap.js|0 65
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/reporters/verbose.js|0 122
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/track.js|0 48
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/types.js|0 189
+Deleted: node_modules/nodeunit/dist/nodeunit/lib/utils.js|0 209
+Deleted: node_modules/nodeunit/dist/nodeunit/package.json|0 65
+Deleted: node_modules/nodeunit/dist/nodeunit/share/junit.xml.ejs|0 19
+Deleted: node_modules/nodeunit/dist/nodeunit/share/license.js|0 11
+Deleted: node_modules/nodeunit/dist/nodeunit/share/nodeunit.css|0 70
+Deleted: node_modules/nodeunit/doc/nodeunit.md|0 60
+Deleted: node_modules/nodeunit/examples/browser/nodeunit.js|0 2034
+Deleted: node_modules/nodeunit/examples/browser/suite1.js|0 12
+Deleted: node_modules/nodeunit/examples/browser/suite2.js|0 13
+Deleted: node_modules/nodeunit/examples/browser/suite3.js|0 7
+Deleted: node_modules/nodeunit/examples/browser/test.html|0 18
+Deleted: node_modules/nodeunit/examples/nested/nested_reporter_test.unit.js|0 94
+Deleted: node_modules/nodeunit/img/example_fail.png|0 0
+Deleted: node_modules/nodeunit/img/example_machineout.png|0 0
+Deleted: node_modules/nodeunit/img/example_pass.png|0 0
+Deleted: node_modules/nodeunit/index.js|0 3
+Deleted: node_modules/nodeunit/lib/assert.js|0 327
+Deleted: node_modules/nodeunit/lib/core.js|0 316
+Deleted: node_modules/nodeunit/lib/nodeunit.js|0 104
+Deleted: node_modules/nodeunit/lib/reporters/browser.js|0 121
+Deleted: node_modules/nodeunit/lib/reporters/default.js|0 130
+Deleted: node_modules/nodeunit/lib/reporters/eclipse.js|0 104
+Deleted: node_modules/nodeunit/lib/reporters/html.js|0 109
+Deleted: node_modules/nodeunit/lib/reporters/index.js|0 14
+Deleted: node_modules/nodeunit/lib/reporters/junit.js|0 179
+Deleted: node_modules/nodeunit/lib/reporters/machineout.js|0 111
+Deleted: node_modules/nodeunit/lib/reporters/minimal.js|0 120
+Deleted: node_modules/nodeunit/lib/reporters/nested.js|0 213
+Deleted: node_modules/nodeunit/lib/reporters/skip_passed.js|0 107
+Deleted: node_modules/nodeunit/lib/reporters/tap.js|0 65
+Deleted: node_modules/nodeunit/lib/reporters/verbose.js|0 122
+Deleted: node_modules/nodeunit/lib/track.js|0 48
+Deleted: node_modules/nodeunit/lib/types.js|0 189
+Deleted: node_modules/nodeunit/lib/utils.js|0 209
+Deleted: node_modules/nodeunit/man1/nodeunit.1|0 95
+Deleted: node_modules/nodeunit/node_modules/tap-assert/AUTHORS|0 2
+Deleted: node_modules/nodeunit/node_modules/tap-assert/LICENSE|0 23
+Deleted: node_modules/nodeunit/node_modules/tap-assert/README.md|0 3
+Deleted: node_modules/nodeunit/node_modules/tap-assert/assert.js|0 396
+Deleted: node_modules/nodeunit/node_modules/tap-assert/package.json|0 29
+Deleted: node_modules/nodeunit/node_modules/tap-producer/README.md|0 4
+Deleted: node_modules/nodeunit/node_modules/tap-producer/node_modules/inherits/README.md|0 51
+Deleted: node_modules/nodeunit/node_modules/tap-producer/node_modules/inherits/inherits.js|0 29
+Deleted: node_modules/nodeunit/node_modules/tap-producer/node_modules/inherits/package.json|0 7
+Deleted: node_modules/nodeunit/node_modules/tap-producer/node_modules/tap-results/README.md|0 2
+Deleted: node_modules/nodeunit/node_modules/tap-producer/node_modules/tap-results/package.json|0 11
+Deleted: node_modules/nodeunit/node_modules/tap-producer/node_modules/tap-results/results.js|0 68
+Deleted: node_modules/nodeunit/node_modules/tap-producer/node_modules/yamlish/LICENSE|0 19
+Deleted: node_modules/nodeunit/node_modules/tap-producer/node_modules/yamlish/README.md|0 20
+Deleted: node_modules/nodeunit/node_modules/tap-producer/node_modules/yamlish/package.json|0 9
+Deleted: node_modules/nodeunit/node_modules/tap-producer/node_modules/yamlish/yamlish.js|0 221
+Deleted: node_modules/nodeunit/node_modules/tap-producer/package.json|0 12
+Deleted: node_modules/nodeunit/node_modules/tap-producer/tap-producer.js|0 113
+Deleted: node_modules/nodeunit/nodelint.cfg|0 7
+Deleted: node_modules/nodeunit/package.json|0 65
+Deleted: node_modules/nodeunit/share/junit.xml.ejs|0 19
+Deleted: node_modules/nodeunit/share/license.js|0 11
+Deleted: node_modules/nodeunit/share/nodeunit.css|0 70
+Deleted: node_modules/nodeunit/test/fixtures/coffee/mock_coffee_module.coffee|0 4
+Deleted: node_modules/nodeunit/test/fixtures/dir/mock_module3.js|0 1
+Deleted: node_modules/nodeunit/test/fixtures/dir/mock_module4.js|0 1
+Deleted: node_modules/nodeunit/test/fixtures/mock_module1.js|0 1
+Deleted: node_modules/nodeunit/test/fixtures/mock_module2.js|0 1
+Deleted: node_modules/nodeunit/test/fixtures/raw_jscode1.js|0 3
+Deleted: node_modules/nodeunit/test/fixtures/raw_jscode2.js|0 3
+Deleted: node_modules/nodeunit/test/fixtures/raw_jscode3.js|0 1
+Deleted: node_modules/nodeunit/test/test-base.js|0 219
+Deleted: node_modules/nodeunit/test/test-failing-callbacks.js|0 114
+Deleted: node_modules/nodeunit/test/test-httputil.js|0 55
+Deleted: node_modules/nodeunit/test/test-runfiles.js|0 214
+Deleted: node_modules/nodeunit/test/test-runmodule.js|0 177
+Deleted: node_modules/nodeunit/test/test-runtest.js|0 46
+Deleted: node_modules/nodeunit/test/test-sandbox.js|0 31
+Deleted: node_modules/nodeunit/test/test-testcase-legacy.js|0 257
+Deleted: node_modules/nodeunit/test/test-testcase.js|0 256
+Deleted: node_modules/nodeunit/test/test.html|0 28
+Deleted: node_modules/pegjs/CHANGELOG|0 146
+Deleted: node_modules/pegjs/LICENSE|0 22
+Deleted: node_modules/pegjs/README.md|0 226
+Deleted: node_modules/pegjs/VERSION|0 1
+Deleted: node_modules/pegjs/bin/pegjs|0 142
+Deleted: node_modules/pegjs/examples/arithmetics.pegjs|0 22
+Deleted: node_modules/pegjs/examples/css.pegjs|0 554
+Deleted: node_modules/pegjs/examples/javascript.pegjs|0 1530
+Deleted: node_modules/pegjs/examples/json.pegjs|0 120
+Deleted: node_modules/pegjs/lib/peg.js|0 5141
+Deleted: node_modules/pegjs/package.json|0 24
+
+Revision: d219194868cc1d3963a9f9c1e24a70a59afec2f3
+Author: alunny <alunny@gmail.com>
+Date: 24/05/2012 10:41:44
+Message:
+default source tree: SOURCE_ROOT, not "<group>" #MsgLength=81
+
+
+----
+Modified: lib/pbxFile.js|1 1
+Modified: package.json|1 1
+Modified: test/addHeaderFile.js|1 1
+Modified: test/addResourceFile.js|1 1
+Modified: test/addSourceFile.js|1 1
+
+Revision: 236741922f2bf5a3fc595b9082f807d7367743a5
+Author: alunny <alunny@gmail.com>
+Date: 24/05/2012 12:56:08
+Message:
+[project] initial addFramework support #MsgLength=129
+
+
+----
+Modified: lib/pbxFile.js|34 8
+Modified: lib/pbxProject.js|33 26
+Added: test/addFramework.js|124 0
+Modified: test/pbxFile.js|53 0
+
+Revision: 581cdf101cf1861d6724560cab16d11342b4bb85
+Author: alunny <alunny@gmail.com>
+Date: 25/05/2012 01:58:04
+Message:
+0.3.1 #MsgLength=6
+
+
+----
+Modified: package.json|1 1
+
+Revision: eba4b442cc03b66c6e69d17e1cc4eb48315658c4
+Author: alunny <alunny@gmail.com>
+Date: 27/05/2012 14:14:51
+Message:
+[pbxFile] default source tree back to "<group>" #MsgLength=56
+
+
+----
+Modified: lib/pbxFile.js|1 1
+Modified: test/addHeaderFile.js|1 1
+Modified: test/addResourceFile.js|1 1
+Modified: test/addSourceFile.js|1 1
+Modified: test/pbxFile.js|2 2
+
+Revision: 95a46f7ce214e5151a20d48d5f9fccd149f06127
+Author: alunny <alunny@gmail.com>
+Date: 27/05/2012 14:15:15
+Message:
+fixing bug in pbxFrameworksBuildPhaseObj #MsgLength=61
+
+
+----
+Modified: lib/pbxProject.js|1 1
+Modified: test/addFramework.js|2 2
+
+Revision: aa3236c3a7336db5ba94035908decf18435dbc66
+Author: alunny <alunny@gmail.com>
+Date: 27/05/2012 14:15:52
+Message:
+0.3.2 #MsgLength=6
+
+
+----
+Modified: package.json|1 1
+
+Revision: 0ee1e1ed224871d6289fab9a716f630010471803
+Author: alunny <alunny@gmail.com>
+Date: 19/06/2012 15:24:37
+Message:
+[pbxProject] throw parser errors correctly #MsgLength=43
+
+
+----
+Modified: lib/pbxProject.js|4 2
+Added: test/parser/projects/fail.pbxproj|18 0
+Modified: test/pbxProject.js|8 0
+
+Revision: 0a979d90fc01a2f96bcae83173946062dcc80150
+Author: alunny <alunny@gmail.com>
+Date: 19/06/2012 15:38:05
+Message:
+[package] npm test script #MsgLength=26
+
+
+----
+Modified: package.json|3 0
+
+Revision: aab13d6f2b4c57eef76be2bcddf24ea4bddcddf7
+Author: alunny <alunny@gmail.com>
+Date: 19/06/2012 15:39:20
+Message:
+minor README change #MsgLength=20
+
+
+----
+Modified: README.md|1 1
+
+Revision: d00b9839b1b74e7341e7717804aa0c4e8965b040
+Author: alunny <alunny@gmail.com>
+Date: 19/06/2012 15:39:38
+Message:
+[parser] support comments before the proj obj #MsgLength=46
+
+
+----
+Modified: lib/parser/pbxproj.js|25 6
+Modified: lib/parser/pbxproj.pegjs|1 1
+Added: test/parser/comments.js|12 0
+Added: test/parser/projects/comments.pbxproj|30 0
+Modified: test/pbxProject.js|8 0
+
+Revision: d3f4301b6a1a03185647c26a24030c71ac51f16e
+Author: alunny <alunny@gmail.com>
+Date: 19/06/2012 15:41:30
+Message:
+0.3.3 #MsgLength=6
+
+
+----
+Modified: package.json|4 4
+
+Revision: 32f65ec24c9615eef505b192c4ecd847b435555d
+Author: alunny <alunny@gmail.com>
+Date: 20/06/2012 05:45:57
+Message:
+[pbxFile] support .framework (not just dylib) #MsgLength=46
+
+
+----
+Modified: lib/pbxFile.js|9 3
+Modified: test/pbxFile.js|24 2
+
+Revision: ddbad7dcd33d8089fd3ca3213eec4a53d6e90fc6
+Author: alunny <alunny@gmail.com>
+Date: 20/06/2012 05:52:45
+Message:
+example in README #MsgLength=18
+
+
+----
+Modified: README.md|24 2
+
+Revision: efd0b8a6451ef8099ea2531f9858f9bff25b7e12
+Author: alunny <alunny@gmail.com>
+Date: 20/06/2012 05:53:12
+Message:
+0.3.4 #MsgLength=6
+
+
+----
+Modified: package.json|1 1
+
+Revision: cb57a76513ef5135a75626ac7f9a0ddf0dac7b69
+Author: alunny <alunny@gmail.com>
+Date: 27/06/2012 02:38:16
+Message:
+[npm] support node 0.8 #MsgLength=23
+
+
+----
+Modified: package.json|2 2
+
+Revision: 0c01b15af639f007f64fa5ad597302c3d6d2a724
+Author: alunny <alunny@gmail.com>
+Date: 04/08/2012 06:15:35
+Message:
+ignore npm-debug.log #MsgLength=21
+
+
+----
+Modified: .gitignore|1 0
+
+Revision: 2cfaa069749ca07f56d00695aa21ec887a93d449
+Author: alunny <alunny@gmail.com>
+Date: 07/08/2012 06:55:55
+Message:
+parser fix for escaped strings #MsgLength=104
+
+
+----
+Modified: lib/parser/pbxproj.js|1 1
+Modified: lib/parser/pbxproj.pegjs|1 1
+Modified: lib/pbxWriter.js|0 9
+Modified: test/parser/build-config.js|10 0
+Added: test/parser/header-search.js|16 0
+Added: test/parser/projects/header-search.pbxproj|47 0
+Modified: test/pbxWriter.js|5 1
+
+Revision: d504220d40f8fa86de2962aedb04dca0d1d0ba1b
+Author: alunny <alunny@gmail.com>
+Date: 07/08/2012 06:56:59
+Message:
+0.4.0 #MsgLength=6
+
+
+----
+Modified: package.json|1 1
+
+Revision: faf4114d4abe34a3d47a005d841693deb0e766a0
+Author: alunny <alunny@gmail.com>
+Date: 09/08/2012 06:31:25
+Message:
+respect <group> of Plugins #MsgLength=27
+
+
+----
+Modified: lib/pbxProject.js|13 0
+Modified: test/addHeaderFile.js|1 1
+Modified: test/addResourceFile.js|16 0
+Modified: test/addSourceFile.js|1 1
+
+Revision: 3fb1aabe58531a4ed10aa000386189c90030f955
+Author: alunny <alunny@gmail.com>
+Date: 09/08/2012 06:41:20
+Message:
+[refactor] DRY up addPluginFiles #MsgLength=33
+
+
+----
+Modified: lib/pbxProject.js|12 16
+Modified: package.json|1 1
+
+Revision: 6c8604ce38890dc1774829e638b88011847c1b8a
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/09/2012 04:44:55
+Message:
+adding remove functions for most file types #MsgLength=44
+
+
+----
+Modified: lib/pbxProject.js|106 1
+
+Revision: 9e1ebed843e4c35e14be7684c1dd1680392953fd
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/09/2012 06:23:28
+Message:
+adding removeSourceFile.js #MsgLength=27
+
+
+----
+Added: test/removeSourceFile.js|131 0
+
+Revision: 14e1342bf888c448097b4bf1999d7721b97fd7cc
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/09/2012 06:33:34
+Message:
+fixing a few issues with delete and using splice instead #MsgLength=57
+
+
+----
+Modified: lib/pbxProject.js|5 4
+
+Revision: 9230e795b68c1c02f567244f23436a36f7dce6cc
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/09/2012 06:49:38
+Message:
+adding removeHeaderFile.js nodeunit test #MsgLength=41
+
+
+----
+Added: test/removeHeaderFile.js|121 0
+
+Revision: 8f056c20ae796f338ac35855a6ca7e8a32e16518
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/09/2012 07:20:10
+Message:
+renaming test name :P #MsgLength=22
+
+
+----
+Modified: test/removeHeaderFile.js|1 17
+
+Revision: 8a56d12294c6c22762ff52e60adfea6e6004641f
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/09/2012 07:47:05
+Message:
+stupid me #MsgLength=10
+
+
+----
+Modified: lib/pbxProject.js|2 2
+
+Revision: d09c261b0e4edb6671fccade50b5a5446705474a
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/09/2012 07:47:23
+Message:
+adding removeResourceFile.js unit test #MsgLength=39
+
+
+----
+Added: test/removeResourceFile.js|184 0
+
+Revision: 9d682af95ae66e3776903238ad09042a422915f9
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/09/2012 08:27:24
+Message:
+adding Frameworks removal #MsgLength=26
+
+
+----
+Modified: lib/pbxProject.js|24 1
+
+Revision: d508e58e340488bdbaacdadf5abfcce76c5b7011
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 11/09/2012 08:27:48
+Message:
+adding removeFramework.js unit test #MsgLength=36
+
+
+----
+Added: test/removeFramework.js|103 0
+
+Revision: 2551ea18c898832f6da01a3b2e6fb5e0511ba372
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 20/09/2012 10:43:05
+Message:
+FCUK me #MsgLength=8
+
+
+----
+Modified: lib/pbxProject.js|2 2
+
+Revision: d621e02343768fec3abacb9a04b0297defcd3475
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 20/09/2012 10:55:06
+Message:
+typo in test comment #MsgLength=21
+
+
+----
+Modified: test/removeResourceFile.js|1 1
+
+Revision: ec3f7398b7fa093409c9db0835c1787d85fe6142
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 21/09/2012 07:37:49
+Message:
+Added "updateProductName" method. #MsgLength=34
+
+
+----
+Modified: lib/pbxProject.js|22 0
+
+
+Revision: 572223b7d609965a5bcb533b2f340473f143aa40
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/09/2012 03:52:05
+Message:
+Added test for updateProductName #MsgLength=33
+
+
+----
+Modified: test/pbxProject.js|23 0
+
+
+Revision: 646d5db8798f69102c4151b908d6af758cc033b4
+Author: Mike Reinstein <reinstein.mike@gmail.com>
+Date: 02/10/2012 02:19:20
+Message:
+added parseSync function #MsgLength=25
+
+
+----
+Modified: .gitignore|1 0
+Modified: lib/pbxProject.js|8 0
+Modified: test/pbxProject.js|9 0
+
+Revision: 60bfe0e054a080a01b49c591c29a51292236e9cb
+Author: Mike Reinstein <reinstein.mike@gmail.com>
+Date: 02/10/2012 02:26:19
+Message:
+fixed parseSync function sig #MsgLength=29
+
+
+----
+Modified: lib/pbxProject.js|4 3
+
+
+Revision: 7d692f99d4eae210cb6dd95b4dfeb31402309b55
+Author: Mike Reinstein <reinstein.mike@gmail.com>
+Date: 03/10/2012 08:23:15
+Message:
+added test to validate parseSync has valid hash #MsgLength=48
+
+
+----
+Modified: test/pbxProject.js|12 1
+
+
+Revision: 2abad746fe5f2baeab5abb02a324fca7a0537191
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 04/10/2012 06:14:24
+Message:
+how the fuck did this slip in #MsgLength=30
+
+
+----
+Modified: lib/pbxProject.js|1 1
+
+Revision: aa3bd6bc8cf2ae5c37d42ffb2559a1d807212385
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 04/10/2012 06:59:00
+Message:
+adding resource files to Resources folder #MsgLength=42
+
+
+----
+Modified: lib/pbxProject.js|37 3
+Modified: test/addResourceFile.js|19 19
+Modified: test/removeResourceFile.js|14 14
+
+Revision: 0a7543c9e7171f08dbf6cb3ecea28c811b2eefa8
+Author: Anis Kadri <anis.kadri@gmail.com>
+Date: 05/10/2012 07:54:40
+Message:
+modified PBXFileReference removal to handle xcodes stupidity #MsgLength=61
+
+
+----
+Modified: lib/pbxProject.js|1 1
+
+Revision: a5da62142b21fec7fc6aacd1269e80c433525a6d
+Author: alunny <alunny@gmail.com>
+Date: 15/10/2012 11:00:21
+Message:
+0.5.0 #MsgLength=24
+
+
+----
+Added: AUTHORS|4 0
+Modified: package.json|1 1
+
+Revision: 98628fe482b52e9c47f5af7eecd62a8b2a0ee3b6
+Author: alunny <alunny@gmail.com>
+Date: 15/10/2012 12:39:02
+Message:
+[pbxProject] "plugin" option to addResourceFile #MsgLength=87
+
+
+----
+Modified: lib/pbxProject.js|21 7
+Modified: test/addResourceFile.js|71 0
+
+Revision: e4abe04e1c2dcfc06e65008061bff56da2cd930b
+Author: alunny <alunny@gmail.com>
+Date: 15/10/2012 12:39:50
+Message:
+0.5.1 #MsgLength=6
+
+
+----
+Modified: package.json|1 1
+
+Revision: aeb25d732354422b9d949764a0d79a49e857a180
+Author: alunny <alunny@gmail.com>
+Date: 18/10/2012 10:08:52
+Message:
+[test] wrong function called in test #MsgLength=37
+
+
+----
+Modified: test/addFramework.js|1 1
+
+Revision: 111392ac485fa090565d89f9dc476ce84cab8730
+Author: alunny <alunny@gmail.com>
+Date: 19/10/2012 04:21:19
+Message:
+[project] accessor for productName #MsgLength=59
+
+
+----
+Modified: lib/pbxProject.js|32 1
+Modified: test/pbxProject.js|11 0
+
+Revision: 62e73169938be91a8cdbe2c1f543836194f094b3
+Author: alunny <alunny@gmail.com>
+Date: 19/10/2012 04:56:49
+Message:
+[project] addStaticLibrary - support for .a files #MsgLength=194
+
+
+----
+Modified: lib/pbxFile.js|5 1
+Modified: lib/pbxProject.js|40 3
+Added: test/addStaticLibrary.js|170 0
+Modified: test/pbxFile.js|20 0
+
+Revision: f689c61c045794c4df14801f81c8f6645203857a
+Author: alunny <alunny@gmail.com>
+Date: 19/10/2012 04:58:05
+Message:
+0.5.2 #MsgLength=6
+
+
+----
+Modified: package.json|1 1
+
+Revision: 6a12350c845f8cf8fc3f33e48d9a84dd969b8d8d
+Author: alunny <alunny@gmail.com>
+Date: 19/10/2012 06:46:16
+Message:
+[pbxProject] add static libraries as plugins #MsgLength=45
+
+
+----
+Modified: lib/pbxProject.js|25 6
+Modified: test/addStaticLibrary.js|51 18
+
+Revision: 84d184102c09a6209841392c12438a7136cf09f9
+Author: alunny <alunny@gmail.com>
+Date: 19/10/2012 06:47:08
+Message:
+0.5.3 #MsgLength=6
+
+
+----
+Modified: package.json|1 1
+
+Revision: 8427c537c8c5a9d3ac23df7f1ffdcd788f4d1fb8
+Author: alunny <alunny@gmail.com>
+Date: 19/10/2012 06:56:45
+Message:
+[proj] static library plugins without group fix #MsgLength=48
+
+
+----
+Modified: lib/pbxProject.js|9 2
+Modified: test/addStaticLibrary.js|34 14
+
+Revision: 69e3cb69f90e5ffff6d8dc500855790b2e82c42d
+Author: alunny <alunny@gmail.com>
+Date: 19/10/2012 06:57:03
+Message:
+0.5.4 #MsgLength=6
+
+
+----
+Modified: package.json|1 1
+
+Revision: 65a0c402bbbbca091168e22f4521e0d7ebc790fe
+Author: alunny <alunny@gmail.com>
+Date: 19/10/2012 07:04:04
+Message:
+[proj] always add static libraries to build phases #MsgLength=51
+
+
+----
+Modified: lib/pbxProject.js|1 1
+Modified: test/addStaticLibrary.js|12 0
+
+Revision: 2d6a0eeb759c16107228492b5b27bd9f6f20d097
+Author: alunny <alunny@gmail.com>
+Date: 19/10/2012 07:04:41
+Message:
+0.5.5 #MsgLength=6
+
+
+----
+Modified: package.json|1 1
+
+Revision: 5884dec1ec7138c5ff8d8980469a5d5861a9f7d5
+Author: Brett Rudd <brettrudd@gmail.com>
+Date: 31/10/2012 02:16:14
+Message:
+[pbxFile] implement option for weak linked frameworks #MsgLength=54
+
+
+----
+Modified: lib/pbxFile.js|3 0
+Modified: lib/pbxProject.js|1 0
+Modified: test/addFramework.js|13 0
+Modified: test/pbxFile.js|28 0
+
+Revision: 293ca2cfa64a8e35e6a356ac4fddcee1fd0f2e97
+Author: Brett Rudd <brettrudd@gmail.com>
+Date: 31/10/2012 02:36:36
+Message:
+[pbxProject] enforce quote delimiters to support unsupported chars #MsgLength=133
+
+
+----
+Modified: lib/pbxProject.js|4 2
+Modified: test/addFramework.js|2 2
+Modified: test/addHeaderFile.js|2 2
+Modified: test/addResourceFile.js|4 4
+Modified: test/addSourceFile.js|2 2
+Modified: test/addStaticLibrary.js|2 2
+Modified: test/removeHeaderFile.js|2 2
+Modified: test/removeResourceFile.js|2 2
+
+
+Revision: ef21e5491b872e26d0605ac0eab1f3be40e4f6e8
+Author: alunny <alunny@gmail.com>
+Date: 01/11/2012 04:36:59
+Message:
+[AUTHORS] add Brett #MsgLength=20
+
+
+----
+Modified: AUTHORS|1 0
+
+Revision: cd937af0c0caedea5e9f36ea8679752c95f28fdd
+Author: alunny <alunny@gmail.com>
+Date: 01/11/2012 05:24:08
+Message:
+[pbxProject] first pass at #hasFile method #MsgLength=43
+
+
+----
+Modified: AUTHORS|1 0
+Modified: lib/pbxProject.js|22 1
+Modified: test/pbxProject.js|19 0
+
+Revision: 347651f44c5597b4e4bd72432490b75c2534f6a9
+Author: alunny <alunny@gmail.com>
+Date: 01/11/2012 06:09:17
+Message:
+[project] check if file exists before adding #MsgLength=45
+
+
+----
+Modified: lib/pbxProject.js|12 6
+Modified: test/addFramework.js|8 0
+Modified: test/addHeaderFile.js|20 0
+Modified: test/addResourceFile.js|34 0
+Modified: test/addSourceFile.js|26 0
+Modified: test/addStaticLibrary.js|16 0
+
+Revision: 3d20386ee206972be6154bdbd569b233d952dabe
+Author: alunny <alunny@gmail.com>
+Date: 01/11/2012 06:10:27
+Message:
+0.6.0 #MsgLength=6
+
+
+----
+Modified: package.json|1 1
+
+Revision: 915ef358e37c45e62a4199531b09965f57600ed9
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/05/2013 03:10:23
+Message:
+adding support for adding/removing from library search paths #MsgLength=61
+
+
+----
+Modified: lib/pbxProject.js|28 2
+
+Revision: c4be849817aa8c327600bed2b39bc29bb15d54d4
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 22/05/2013 06:56:15
+Message:
+fixed failing tests and added test for adding/removing from lib search paths. #MsgLength=78
+
+
+----
+Modified: lib/pbxProject.js|1 1
+
+Revision: af20a96ab7b93bfae1f89a8433dd1cf6137eaede
+Author: Andrew Lunny <alunny@twitter.com>
+Date: 19/06/2013 06:53:47
+Message:
+fix for #11 #MsgLength=12
+
+
+----
+Modified: lib/parser/pbxproj.js|31 10
+Modified: lib/parser/pbxproj.pegjs|5 2
+Added: test/parser/file-references.js|12 0
+Modified: test/parser/projects/file-references.pbxproj|1 1
+
+Revision: 06053b713e0e7dd843a43f0f55f33af29ddaf5cc
+Author: Andrew Lunny <alunny@twitter.com>
+Date: 19/06/2013 06:57:05
+Message:
+docs for updating grammar #MsgLength=26
+
+
+----
+Modified: README.md|15 0
+
+Revision: c2f1b15c3843d2395718a38d2195399420c05cdd
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 03/07/2013 01:31:03
+Message:
+Forgot to add the librarysearchpaths test file.. #MsgLength=49
+
+
+----
+Added: test/LibrarySearchPaths.js|48 0
+
+
+Revision: 86c501114f15c169e560e062944b40f59be3b682
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 03/07/2013 01:47:06
+Message:
+start of compiler flag support. #MsgLength=32
+
+
+----
+Modified: lib/pbxFile.js|6 0
+Modified: test/pbxFile.js|8 0
+
+Revision: dc0d5fb7c862d05ecf5c07c5ea0b3ba54673c6af
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 04/07/2013 00:02:33
+Message:
+0.6.1 #MsgLength=6
+
+
+----
+Modified: package.json|1 1
+
+Revision: f69eb1715201b48919daa97388830e090e033793
+Author: alunny <alunny@gmail.com>
+Date: 13/10/2013 11:21:57
+Message:
+allow periods in unquoted property names #MsgLength=52
+
+
+----
+Modified: lib/parser/pbxproj.js|4 4
+Modified: lib/parser/pbxproj.pegjs|1 1
+Added: test/parser/dotsInNames.js|15 0
+Added: test/parser/projects/dots-in-names.pbxproj|17 0
+
+Revision: 67f5f9688ce184e7b862a56544076d250cb21cca
+Author: alunny <alunny@gmail.com>
+Date: 21/10/2013 11:35:43
+Message:
+handle "$(inherited)" library search paths value #MsgLength=60
+
+
+----
+Modified: lib/pbxProject.js|10 6
+Added: test/fixtures/library-search-paths.json|1 0
+Added: test/parser/projects/library-search-paths.pbxproj|500 0
+Added: test/xcode5searchPaths.js|58 0
+
+Revision: 533d9b87e6539c5e33aa20435b835edce6094032
+Author: Maximiliano Fierro <elmasse@gmail.com>
+Date: 19/10/2013 02:29:11
+Message:
+Adding add/removeToHeaderSearchPath #MsgLength=36
+
+
+----
+Modified: lib/pbxProject.js|43 0
+Added: test/HeaderSearchPaths.js|48 0
+
+Revision: 4d566be7fd889162d87e0c27a9371b57941797a4
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 02/11/2013 03:27:41
+Message:
+Bump version to 0.6.2. #MsgLength=23
+
+
+----
+Modified: package.json|1 1
+
+Revision: 71118fb3a24b3b5db31f83444d463540759a0599
+Author: Anis Kadri <anis@apache.org>
+Date: 12/11/2013 09:21:01
+Message:
+Issue #17 adding/removing custom frameworks #MsgLength=44
+
+
+----
+Modified: lib/pbxFile.js|13 5
+Modified: lib/pbxProject.js|71 7
+Added: test/FrameworkSearchPaths.js|46 0
+Modified: test/addFramework.js|54 0
+Modified: test/removeFramework.js|51 0
+
+
+Revision: 748e982c462255610726642ce87d350800a958d0
+Author: Anis Kadri <anis@apache.org>
+Date: 24/11/2013 09:54:46
+Message:
+Bumping version #MsgLength=16
+
+
+----
+Modified: package.json|1 1
+
+
+Revision: 4cca665465054f156c40452bff58e6181d8ef79e
+Author: Ignacio Calderon <ignacio.calderon@spilgames.com>
+Date: 29/11/2013 23:05:07
+Message:
+Removed the customFramework check on the correctPath, since it's better to use the filepath instead. Xcode can navigate the location of the framework for inspection of the files. #MsgLength=179
+
+
+----
+Modified: lib/pbxFile.js|0 2
+
+Revision: 70b3e29b2f54c19952bb84bb4805b36f26fde36d
+Author: Ignacio Calderon <ignacio.calderon@spilgames.com>
+Date: 29/11/2013 23:41:38
+Message:
+Modified unit test to reflect the right behaviour #MsgLength=50
+
+
+----
+Modified: test/addFramework.js|1 1
+
+
+Revision: 31462a9d35ca54712ec63a4b1d60189403c78251
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 11/01/2014 03:37:09
+Message:
+Add test/ to .npmignore #MsgLength=78
+
+
+----
+Added: .npmignore|1 0
+
+Revision: d40003d2016d254624d0fe855604b89706b33f2a
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 11/01/2014 03:37:29
+Message:
+Bump version to 0.6.4. #MsgLength=23
+
+
+----
+Modified: package.json|1 1
+
+Revision: 47c9d8daa5685fe54dda7aee4957ee350dd33479
+Author: Ignacio Calderon <ignacio.calderon@spilgames.com>
+Date: 14/01/2014 23:48:04
+Message:
+FIX escaping search path of custom frameworks. #MsgLength=47
+
+
+----
+Modified: lib/pbxProject.js|1 1
+
+Revision: 7e14b97f0e9fab6ba6e57d8bed7ace622d418cec
+Author: Ignacio Calderon <ignacio.calderon@spilgames.com>
+Date: 15/01/2014 00:20:53
+Message:
+FIX adding ; #MsgLength=13
+
+
+----
+Modified: lib/pbxProject.js|1 1
+
+Revision: 075949833c8f9eed6f09b3d1807436686bbb84fa
+Author: Ignacio Calderon <ignacio.calderon@spilgames.com>
+Date: 15/01/2014 17:07:54
+Message:
+FIX unit test for escaped paths #MsgLength=32
+
+
+----
+Modified: test/addFramework.js|2 2
+
+Revision: d2374f0c52b9a34643a3091eefcfacb525c28fad
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 17/01/2014 02:30:53
+Message:
+Fix missing comma in var block. #MsgLength=32
+
+
+----
+Modified: lib/pbxProject.js|1 1
+
+Revision: a825f32ad66d4d15c27d83b707cb542b91c90904
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 17/01/2014 02:31:07
+Message:
+Bump version to 0.6.5 #MsgLength=22
+
+
+----
+Modified: package.json|1 1
+
+Revision: a429a59a52aa063c521c711683755237cf7a0259
+Author: Braden Shepherdson <braden.shepherdson@gmail.com>
+Date: 17/01/2014 06:37:40
+Message:
+Update version to 0.6.6. No changes, just overriding old NPM version. #MsgLength=70
+
+
+----
+Modified: package.json|1 1
+
+Revision: 5562020dfeedff6a6184651436c35362397cbc00
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 11/07/2014 02:49:05
+Message:
+adds updateBuildProperty for changing custom build settings #MsgLength=257
+
+
+----
+Modified: lib/pbxProject.js|6 2
+
+Revision: f145205e90fe89f3dacdbeef6efdb17061e7f263
+Author: Anis Kadri <anis@apache.org>
+Date: 11/07/2014 04:12:09
+Message:
+adding test for updateBuildProperty #MsgLength=36
+
+
+----
+Modified: test/pbxProject.js|19 0
+
+Revision: ff9f67a543f5ec91988e06937b0f73e23ac38a9e
+Author: Anis Kadri <anis@apache.org>
+Date: 11/07/2014 04:12:50
+Message:
+bumping version to 0.6.7 #MsgLength=25
+
+
+----
+Modified: package.json|1 1
+
+Revision: fab08c5f056da36d6b027979e53778c3d2366e96
+Author: Joe Wilm <joe@gameclosure.com>
+Date: 09/12/2014 04:22:57
+Message:
+Support string args to add lib/include path #MsgLength=377
+
+
+----
+Modified: lib/pbxProject.js|10 2
+Modified: test/HeaderSearchPaths.js|11 0
+Modified: test/LibrarySearchPaths.js|11 0
+
+
+Revision: 09d646668aeb36e61c0dfb3aa32bce068f3adf38
+Author: Xingchen Yu <initialxy@gmail.com>
+Date: 17/04/2015 06:15:11
+Message:
+Fixes issue #44, where removeFromPbxFileReferenceSection fails to remove its given file from PBXFileReference. #MsgLength=111
+
+
+----
+Modified: lib/pbxProject.js|3 1
+
+Revision: e4d45d76a5075e27527f256202e62386b368df23
+Author: Xingchen Yu <initialxy@gmail.com>
+Date: 19/04/2015 00:18:18
+Message:
+Added a unit test to verify correct source file removal from PBXFileReference after being modified by Xcode. #MsgLength=109
+
+
+----
+Modified: test/removeSourceFile.js|15 0
+
+
+Revision: 17926117b388d08f05ec2db1e1ad8262f67a2a8d
+Author: Olivier Goguel <o@goguel.com>
+Date: 21/05/2015 06:11:41
+Message:
+added multiple target support #MsgLength=30
+
+
+----
+Modified: lib/pbxProject.js|65 20
+Added: test/fixtures/multiple-targets.json|1 0
+Added: test/multipleTargets.js|153 0
+
+
+Revision: 7267f779502c847965a9c6511258714853e2a9af
+Author: Ilian Iliev <iliev.net@gmail.com>
+Date: 27/05/2015 23:46:53
+Message:
+Added double quotes around COMPILER_FLAGS Adding COMPILER_FLAGS with = or space corrupts the project file and it can not be parsed by xcode or xcodebuild I tested how xcode behaves and it adds quotes around the COMPILER_FLAGS setting, but it doesn't add quotes to Weak from ATTRIBUTES. This is the reason this fix is applied only when opt.compilerFlags is present #MsgLength=364
+
+
+----
+Modified: lib/pbxFile.js|2 1
+Modified: test/pbxFile.js|2 2
+
+
+
+Revision: 53a6f7fdc4a25018fbccacd4c62519397e7036f1
+Author: Paul Panserrieu <paul.panserrieu@gmail.com>
+Date: 28/05/2015 22:55:16
+Message:
+iojs support (v2.1.0) #MsgLength=22
+
+
+----
+Modified: lib/pbxProject.js|2 1
+
+
+
+Revision: 94245e54e46ac930af0f570aee68b43797fda97e
+Author: byeonggee.seo <byeonggee.seo@redduck.com>
+Date: 12/03/2015 20:09:39
+Message:
+XCBuildConfiguration array field replace ok #MsgLength=44
+
+
+----
+Modified: lib/pbxProject.js|1 1
+
+Revision: 42e3fb4d5354a3d90cf96ad9c6e06fbbe7ff5360
+Author: byeonggee.seo <byeonggee.seo@redduck.com>
+Date: 19/03/2015 10:08:43
+Message:
+add test replacing field that has array case #MsgLength=45
+
+
+----
+Modified: test/pbxProject.js|3 0
+
+
+
+Revision: 1542225da38a30154a665c1fc2bc0c96f98e403d
+Author: Bas Bosman <github@nazgul.nu>
+Date: 22/10/2014 16:56:33
+Message:
+Windows path fix #MsgLength=17
+
+
+----
+Modified: lib/pbxProject.js|10 16
+Modified: test/pbxProject.js|22 0
+
+
+
+Revision: a8f8e25780700716cefdc0e43da4d755f80f51b2
+Author: Anis Kadri <anis@apache.org>
+Date: 29/05/2015 23:10:35
+Message:
+Bumping version #MsgLength=16
+
+
+----
+Modified: package.json|1 1
+
+Revision: d3bf486ac2c137eb29e0eafc49a89b67ee6f0535
+Author: Martin Bektchiev <martin.bektchiev@telerik.com>
+Date: 29/05/2015 23:58:13
+Message:
+Fix parser to merge properties of multiple sections with the same name #MsgLength=145
+
+
+----
+Modified: lib/parser/pbxproj.js|24 2
+Modified: lib/parser/pbxproj.pegjs|13 2
+Added: test/parser/projects/section-split.pbxproj|25 0
+Added: test/parser/section-split.js|35 0
+
+
+Revision: 1c7d060648a6c8a2a7983388a3091b1ca96d688c
+Author: Anis Kadri <anis@apache.org>
+Date: 18/06/2015 04:27:42
+Message:
+Updating nodeunit to 0.9.0 #MsgLength=27
+
+
+----
+Modified: package.json|1 1
+
+Revision: c61762da76b2363c14567cfe65c93f5f6bbae576
+Author: Rashin Arab <rashin@buddybuild.com>
+Date: 10/06/2015 06:18:09
+Message:
+Fixing bug whereby parser would fail when array entry does not have a trailing comma #MsgLength=179
+
+
+----
+Modified: lib/parser/pbxproj.js|1659 2518
+Modified: lib/parser/pbxproj.pegjs|5 2
+Added: test/parser/projects/expected/with_array_expected.pbxproj|25 0
+Modified: test/parser/projects/with_array.pbxproj|7 0
+Modified: test/pbxWriter.js|12 4
+
+Revision: 3085e40ad6cf8f90026d6064a324b6348512e8f5
+Author: Dimitar Kerezov <dimitar.kerezov@telerik.com>
+Date: 26/06/2015 17:31:50
+Message:
+Introduce a way to add Build Phases #MsgLength=202
+
+
+----
+Modified: lib/pbxProject.js|32 3
+Added: test/addBuildPhase.js|76 0
+
+
+Revision: 15ec06794225c70dc1fc4c42967faf37e0910f63
+Author: Anis Kadri <anis@apache.org>
+Date: 27/06/2015 01:00:12
+Message:
+Bumping version #MsgLength=16
+
+
+----
+Modified: package.json|1 1
+
+Revision: 4982cedb488b51c9c282183897e0ebb9704d31e9
+Author: Dimitar Kerezov <dimitar.kerezov@telerik.com>
+Date: 29/06/2015 14:42:55
+Message:
+Fix build phase uuid being written in the PBXproject #MsgLength=126
+
+
+----
+Modified: lib/pbxProject.js|1 2
+Modified: test/addBuildPhase.js|4 4
+
+Revision: 6af1ba82ad702b4a9900f8e2513128f76e2405b4
+Author: Dimitar Kerezov <dimitar.kerezov@telerik.com>
+Date: 30/06/2015 23:02:38
+Message:
+Fix AddBuildPhase able to add duplicate files #MsgLength=146
+
+
+----
+Modified: lib/pbxProject.js|28 1
+Modified: test/addBuildPhase.js|37 5
+
+
+Revision: 23d24df78d1064054414eca812fb36e297601064
+Author: Dimitar Kerezov <dimitar.kerezov@telerik.com>
+Date: 29/06/2015 17:20:57
+Message:
+Allow setting of 'includeInIndex' and 'explicitFileType' properties #MsgLength=224
+
+
+----
+Modified: lib/pbxProject.js|6 0
+Added: test/addToPbxFileReferenceSection.js|62 0
+
+
+
+Revision: 0c3bf196a870b41bef47fb0d3482252ccef9ef8c
+Author: Dimitar Kerezov <dimitar.kerezov@telerik.com>
+Date: 30/06/2015 15:45:19
+Message:
+Introduce a way to add PBXGroups #MsgLength=252
+
+
+----
+Modified: lib/pbxProject.js|51 0
+Added: test/addPbxGroup.js|149 0
+
+
+
+Revision: 4cffcd374eae542f125b09e4876647641b624323
+Author: Dimitar Kerezov <dimitar.kerezov@telerik.com>
+Date: 30/06/2015 20:20:57
+Message:
+Introduce a way to add XCConfigurationLists #MsgLength=206
+
+
+----
+Modified: lib/pbxProject.js|30 0
+Added: test/addXCConfigurationList.js|115 0
+
+
+
+Revision: 6a3108aeef96c68bcb41f44d78b031382bd2df36
+Author: Dimitar Kerezov <dimitar.kerezov@telerik.com>
+Date: 01/07/2015 20:54:21
+Message:
+Implement pbxTargetByName and pbxItemByComment #MsgLength=199
+
+
+----
+Modified: lib/pbxProject.js|14 6
+Added: test/pbxItemByComment.js|50 0
+Added: test/pbxTargetByName.js|29 0
+
+
+
+Revision: eba0492c473e8f7dcb082c88d04ec527511e97f1
+Author: Dimitar Kerezov <dimitar.kerezov@telerik.com>
+Date: 30/06/2015 20:49:45
+Message:
+Expose PbxProject Section #MsgLength=96
+
+
+----
+Modified: lib/pbxProject.js|3 0
+
+
+
+Revision: 7c617e4b73584637922d7bd8a49be9124b7ae6fd
+Author: Anis Kadri <anis@apache.org>
+Date: 10/07/2015 02:50:18
+Message:
+Bumping version #MsgLength=16
+
+
+----
+Modified: package.json|1 1
+
+Revision: 13988b851cdd4ef734adfd7946bf435a2f8937b1
+Author: Dimitar Kerezov <dimitar.kerezov@telerik.com>
+Date: 01/07/2015 19:31:44
+Message:
+Introduce a way to add PBXTargetDependencies to a target #MsgLength=192
+
+
+----
+Modified: lib/pbxProject.js|55 0
+Added: test/addTargetDependency.js|146 0
+Modified: test/fixtures/full-project.json|1 1
+
+
+Revision: 1b738a4babb665102bff8fad4c627ddfcbfb90b4
+Author: Anis Kadri <anis@apache.org>
+Date: 14/07/2015 04:43:00
+Message:
+bumping version #MsgLength=16
+
+
+----
+Modified: package.json|1 1
+
+Revision: 7b42cdf36a2eff9b64da917ffa703d18d78798e4
+Author: Georgi Alexandrov <georgi.alexandrov@telerik.com>
+Date: 31/07/2015 20:32:01
+Message:
+Change framework extension regex to verify, that the path ends with .framework #MsgLength=79
+
+
+----
+Modified: lib/pbxFile.js|1 1
+Modified: test/pbxFile.js|7 0
+
+
+Revision: 9baa6ffefe44f4d8c146f911ce19742714f8aa98
+Author: Ivan Karpan <ivan.karpan@gmail.com>
+Date: 01/09/2015 20:22:03
+Message:
+Added addToOtherLinkerFlags and removeFromOtherLinkerFlags to pbxProject #MsgLength=73
+
+
+----
+Modified: lib/pbxProject.js|46 0
+
+Revision: 93accef49345c5d77f51ef2c77ce9e5899ca830a
+Author: Ivan Karpan <ivan.karpan@gmail.com>
+Date: 07/09/2015 17:57:47
+Message:
+Added tests for addToOtherLinkerFlags and removeFromOtherLinkerFlags #MsgLength=69
+
+
+----
+Added: test/OtherLinkerFlags.js|43 0
+
+Revision: b51590a79680e72d5131c5cd1a69ed0ee5f5baa1
+Author: Ivan Karpan <ivan.karpan@gmail.com>
+Date: 09/09/2015 23:18:52
+Message:
+Added addToBuildSettings and removeFromBuildSettings to pbxProject #MsgLength=67
+
+
+----
+Modified: lib/pbxProject.js|24 0
+Added: test/BuildSettings.js|41 0
+
+Revision: b0b5db88d6cee4e78371be4ff3e7ae3eb6d818c2
+Author: Ivan Karpan <ivan.karpan@gmail.com>
+Date: 10/09/2015 23:19:48
+Message:
+Refactored removeFromPbxFileReferenceSection to recognize file references that have base file name as path (also minor improvements for readability and quality) Added removePbxGroup Added tests Added quote helper function #MsgLength=222
+
+
+----
+Modified: lib/pbxProject.js|41 16
+Renamed: test/addRemovePbxGroup.js [from test/addPbxGroup.js]|12 1
+
+Revision: 60b7f9ec186e1eef82d0929c40461c95bb384bb1
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 14/09/2015 18:18:43
+Message:
+Don't force async parsing worker to exit. #MsgLength=241
+
+
+----
+Modified: lib/parseJob.js|5 6
+
+
+Revision: 0d58e6f01850039b990ae0f949b01094865b9bf2
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 22:05:21
+Message:
+Add helpers for finding root project + first target #MsgLength=52
+
+
+----
+Modified: lib/pbxProject.js|31 0
+
+Revision: 8b7763c0ac56563d1eaa77bac5ea1892df3b0cd9
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 22:15:04
+Message:
+Add methods for adding files to "Products" group: addProductFile/removeProductFile, addToProductsPbxGroup/removeFromProductsPbxGroup #MsgLength=133
+
+
+----
+Modified: lib/pbxProject.js|188 150
+
+Revision: 48cef4c2fbd0d1c7d1cffdc7440399585b8867f6
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 22:18:41
+Message:
+Add helpers to add new pbxNativeTarget uuid to root pbxProject #MsgLength=63
+
+
+----
+Modified: lib/pbxProject.js|14 0
+
+Revision: ddd269f574894192166d621b7b81a13bedd4bd6c
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 22:19:35
+Message:
+Add helper to add new PBXNativeTarget to the PBXNativeTarget section. #MsgLength=70
+
+
+----
+Modified: lib/pbxProject.js|7 0
+
+Revision: 097cb70702e34d57fe6031c04af6a31539e077ae
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 22:26:10
+Message:
+Rename pbxNativeTarget() to pbxNativeTargetSection() #MsgLength=53
+
+
+----
+Modified: lib/pbxProject.js|2 2
+
+Revision: e4d5ed4796d43eb163dc1bf71fc74ea4eafcce2a
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 22:29:08
+Message:
+pbxFileReferenceObj: Made "lastKnownFileType" property optional, unified checking for "includeInIndex" property #MsgLength=112
+
+
+----
+Modified: lib/pbxProject.js|4 1
+
+Revision: 4bc9e073816524098ae160ccc4c666771ba003ae
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 23:07:25
+Message:
+hasFile(): Return file object on success instead of Boolean #MsgLength=60
+
+
+----
+Modified: lib/pbxProject.js|1 1
+
+Revision: fc4473beeff8b7c809f48942a0044572e4911b17
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 23:11:11
+Message:
+Add main method for adding targets: addTarget(name, type) #MsgLength=58
+
+
+----
+Modified: lib/pbxProject.js|87 0
+
+Revision: a19508cf23f4c88091b6940f9610a2ea370ccc9a
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 23:11:43
+Message:
+Add helper: productTypeForTargettype() #MsgLength=39
+
+
+----
+Modified: lib/pbxProject.js|18 0
+
+Revision: 5b1ad258255541ffd1fa26d3f3473dc549ce6cf2
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 23:17:26
+Message:
+pbxFileReferenceComment(): Use node paths' function for resolving file base names #MsgLength=82
+
+
+----
+Modified: lib/pbxProject.js|1 1
+
+Revision: 9738ab3c33ae8055faed8aab677a999620a49038
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 23:18:14
+Message:
+pbxFileReferenceObj: Made path property optional. #MsgLength=50
+
+
+----
+Modified: lib/pbxProject.js|3 0
+
+Revision: af2a0e536c529edaebf9132692c207fe43b2cf26
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 23:20:04
+Message:
+pbxFileReferenceObj: Always check for "lastKnownFileType" instead of ambiguous "lastType" property #MsgLength=99
+
+
+----
+Modified: lib/pbxProject.js|0 1
+
+Revision: fc56521631e1bd771fa6a3791d157bfc48581976
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 23:23:55
+Message:
+pbxFile: Replace string-based internal filetype dictionaries with object-based maps, using currently known values (XCode 7.0) #MsgLength=126
+
+
+----
+Modified: lib/pbxFile.js|70 10
+
+Revision: 46f89b58270e9d3eb3f24b8da1ff20faf60145ef
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 23:28:12
+Message:
+pbxFile: Rewritten detectType() method, using updated dictionaries. #MsgLength=68
+
+
+----
+Modified: lib/pbxFile.js|8 15
+
+Revision: dabc065f9a350f0fa118d6a30e1fd36857639ddb
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 23:28:50
+Message:
+pbxFile: Added defaultExtension() method for detecting extensions for build products. #MsgLength=86
+
+
+----
+Modified: lib/pbxFile.js|7 0
+
+Revision: c812865921d3a9f5d1d0f3c3558ae59a251be9b0
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 23:30:15
+Message:
+pbxFile: Added defaultPath,defaultGroup,defaultSourcetree,defaultEncoding methods, using updated dictionaries. #MsgLength=111
+
+
+----
+Modified: lib/pbxFile.js|46 30
+
+Revision: f16baa8ef96a17af621f2fe917c655357c19ff93
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 23:31:32
+Message:
+pbxFile: Replace "lastType" with "lastKnownFileType" property. #MsgLength=63
+
+
+----
+Modified: lib/pbxFile.js|1 1
+
+Revision: f2514b5fa59df5ffb0f879f07e837d56ea8959e0
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 16/07/2015 23:32:20
+Message:
+pbxFile: Added support for product files, based on the "explicitFileType" property. #MsgLength=84
+
+
+----
+Modified: lib/pbxFile.js|15 4
+
+Revision: a59dfc257c3bb35757a040a97aced6b42fc10931
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 17/07/2015 03:37:09
+Message:
+pbxFile: Replace lookup via Product Type by lookup via Filetype #MsgLength=64
+
+
+----
+Modified: lib/pbxFile.js|7 18
+
+Revision: 96e1d715d252c3e57c5bacf117d62c818ac4996f
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 17/07/2015 03:38:16
+Message:
+pbxFileReferenceComment(): Re-add file.basename support for backwards compatibility #MsgLength=84
+
+
+----
+Modified: lib/pbxProject.js|1 1
+
+Revision: 8b3c7f626bfada46b9b29d071e24745862540281
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 17/07/2015 03:40:30
+Message:
+addBuildPhase(): Add ad-hoc creation of "CopyFiles" build phase, as it is not available in empty (Cordova) projects #MsgLength=116
+
+
+----
+Modified: lib/pbxProject.js|32 6
+
+Revision: 90375888abbcd998002bd0df6cd0e238f8cfedfb
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 17/07/2015 03:41:47
+Message:
+addProductFile: Remove creation of fileReference & buildFile entries - only add file to "Products" group #MsgLength=105
+
+
+----
+Modified: lib/pbxProject.js|2 2
+
+Revision: 9bc7077d10fb3ec69c1ab1c23255ebc15545e7d5
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 17/07/2015 03:44:10
+Message:
+Add complete interface for creating "Copy Files" build phase entries. #MsgLength=70
+
+
+----
+Modified: lib/pbxProject.js|89 0
+
+Revision: 5142defbfe358cb1b563d63ba5cff8c93c1f22d3
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 17/07/2015 03:45:08
+Message:
+Add helper filetypeForProducttype() method for resolving filetypes for product types. #MsgLength=86
+
+
+----
+Modified: lib/pbxProject.js|18 0
+
+Revision: 8eb7b5db873f4fc87e6634e754cfc5f2db26eb96
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 17/07/2015 03:45:54
+Message:
+pbxTargetDependency: Commit earlier rename of pbxNativeTarget() to bxNativeTargetSection() #MsgLength=91
+
+
+----
+Modified: lib/pbxProject.js|1 1
+
+Revision: 90e413119d14e834052abc70efe1ad1e128b3b54
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 17/07/2015 03:47:58
+Message:
+Add fixes for new addTarget() helper function. #MsgLength=47
+
+
+----
+Modified: lib/pbxProject.js|10 8
+Modified: test/addTargetDependency.js|1 1
+
+Revision: 489292c2dae13d660a130f4b296d5460c0a526f3
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 17/07/2015 22:10:47
+Message:
+Infoplist pfad #MsgLength=15
+
+
+----
+Modified: lib/pbxProject.js|2 2
+
+Revision: 2d1ce250c77d856d33b72ea4243594024b11bbe2
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 17/07/2015 22:11:45
+Message:
+Fix uuid #MsgLength=9
+
+
+----
+Modified: lib/pbxProject.js|1 1
+
+Revision: bd8148066f25379e24436e8a41f81b2daae6abdd
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 17/07/2015 23:06:07
+Message:
+Update embed code #MsgLength=18
+
+
+----
+Modified: lib/pbxProject.js|9 11
+
+Revision: a70320f3fe640d69b148ec72fcc48ff43be11d93
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 17/07/2015 23:13:13
+Message:
+Helper PBX #MsgLength=11
+
+
+----
+Modified: lib/pbxProject.js|13 0
+
+Revision: 8297ac670981909b00e08a408f211a5b2bf68193
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 17/07/2015 23:34:04
+Message:
+no message #MsgLength=11
+
+
+----
+Modified: lib/pbxProject.js|1322 1342
+
+Revision: 5db21ba3b2b337b0779beee3a70b798dfea2853b
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 20/07/2015 10:39:51
+Message:
+Add fixes for app_extension Info.plist files. Add build phase creation and registering with custom targets. Cleanup. #MsgLength=117
+
+
+----
+Modified: lib/pbxProject.js|59 34
+
+
+Revision: 795e4293be24f970adfb5e2ea18e906808fbaa68
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 24/08/2015 04:58:53
+Message:
+fix(pbxProject): Added error throwing for missing addTarget params. Minor refactoring of file reference object creation. #MsgLength=121
+
+
+----
+Modified: lib/pbxProject.js|25 28
+
+Revision: 8f622063b70e4a3a34f15c5622bb9b3662ff1089
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 24/08/2015 05:01:13
+Message:
+tests(pbxFile): Replaced file.lastType references with the reference lastKnownFileType #MsgLength=87
+
+
+----
+Modified: test/pbxFile.js|13 13
+
+Revision: 0f6c8ac6a11e79b604620801e89138bce2c92237
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 24/08/2015 05:02:52
+Message:
+tests(addFramework,addResource,removeResourceFile): Normalized quoting of file types for always using using standard quotes internally. #MsgLength=136
+
+
+----
+Modified: test/addFramework.js|1 1
+Modified: test/addResourceFile.js|2 2
+Modified: test/removeResourceFile.js|1 1
+
+Revision: f94ad9b2ecf08dc5c6548005588b7cc96bf96a12
+Author: Sidney Bofah <sidney.bofah@googlemail.com>
+Date: 24/08/2015 05:03:30
+Message:
+tests(adddTarget): Added unit tests for new addTarget feature. #MsgLength=63
+
+
+----
+Added: test/addTarget.js|89 0
+
+
+
+Revision: 3131b93f8c58a140e392039e584986fb5d10bd9f
+Author: jdmcgrew <justin.d.mcgrew@intel.com>
+Date: 29/09/2015 03:14:38
+Message:
+added group functions and unit tests #MsgLength=37
+
+
+----
+Modified: lib/pbxProject.js|245 13
+Added: test/group.js|320 0
+Added: test/parser/projects/group.pbxproj|575 0
+
+
+Revision: 96d16c94b40595976d0e521d0f8d0351c8f3306e
+Author: Anis Kadri <anis@apache.org>
+Date: 06/10/2015 06:16:48
+Message:
+Bumping version #MsgLength=16
+
+
+----
+Modified: package.json|1 1
+
+Revision: 88a027e8338e945d41bbdddde2fa0dda0a6e0985
+Author: Richard Wong <chao787@gmail.com>
+Date: 22/09/2015 14:37:40
+Message:
+Add addBuildProperty and removeBuildProperty #MsgLength=62
+
+
+----
+Modified: lib/pbxProject.js|25 0
+Modified: test/pbxProject.js|84 0
+
+
+Revision: 4bb5af9c66e6eed49a3e0c4107096b21046f4ecb
+Author: Anis Kadri <anis@apache.org>
+Date: 06/10/2015 07:09:50
+Message:
+removing console.error statement #MsgLength=33
+
+
+----
+Modified: lib/pbxProject.js|0 1
+
+
+Revision: 2f1362730854702d0f71b058a09abbb39614bae9
+Author: Anis Kadri <anis@apache.org>
+Date: 06/10/2015 07:10:39
+Message:
+Bumping version #MsgLength=16
+
+
+----
+Modified: package.json|1 1
+
+
+
+Revision: 7fcc0e764f06dd9800843eb4af8a791bd7c0c95e
+Author: Ivan Karpan <ivan.karpan@gmail.com>
+Date: 07/12/2015 18:55:30
+Message:
+Made xcdatamodeld group detection to be Sources Added XCVersionGroup collection getter #MsgLength=87
+
+
+----
+Modified: lib/pbxFile.js|6 1
+Modified: lib/pbxProject.js|8 0
+
+Revision: c5047b51f17e4c62ff5df05113817df7e6491053
+Author: Ivan Karpan <ivan.karpan@gmail.com>
+Date: 07/12/2015 19:56:08
+Message:
+Bugfixed xcdatamodeld group detection #MsgLength=38
+
+
+----
+Modified: lib/pbxFile.js|2 2
+
+Revision: 718d6a69f8cd44270fe4558aac0de29ec83eb2fe
+Author: Ivan Karpan <ivan.karpan@gmail.com>
+Date: 07/12/2015 20:04:01
+Message:
+Added tests for data model and data model document files #MsgLength=57
+
+
+----
+Modified: test/pbxFile.js|13 0
+
+Revision: 1e8d3f975be8863b32c6d6a7c85e39fa48df97dd
+Author: Ivan Karpan <ivan.karpan@gmail.com>
+Date: 08/12/2015 00:34:10
+Message:
+Added simple-plist package to parse plists Added findTargetKey utility method Renamed pbxVersionGroupSection to xcVersionGroupSection Implemented addToXcVersionGroupSection Implemented addDataModelDocument Added dataModelDocument test Added 2 data model documents for tests (single and multiple models) #MsgLength=303
+
+
+----
+Modified: lib/pbxProject.js|94 1
+Modified: package.json|3 2
+Added: test/dataModelDocument.js|160 0
+Added: test/fixtures/multiple-data-model.xcdatamodeld/.xccurrentversion|8 0
+Added: test/fixtures/multiple-data-model.xcdatamodeld/1.xcdatamodel/contents|4 0
+Added: test/fixtures/multiple-data-model.xcdatamodeld/2.xcdatamodel/contents|4 0
+Added: test/fixtures/single-data-model.xcdatamodeld/SingleDataModel.xcdatamodel/contents|4 0
+
+Revision: cc71bfc29946b3bd0b528e7867ab8e01eb315d48
+Author: Ivan Karpan <ivan.karpan@gmail.com>
+Date: 08/12/2015 00:46:40
+Message:
+Added name to XCVersionGroup #MsgLength=29
+
+
+----
+Modified: lib/pbxProject.js|1 0
+Modified: test/dataModelDocument.js|1 0
+
+
+
+Revision: 6d8870262b71a0734a9b0be30a783184b1935f4c
+Author: Anis Kadri <anis@apache.org>
+Date: 12/01/2016 07:01:41
+Message:
+bumping version to 0.8.3 #MsgLength=25
+
+
+----
+Modified: package.json|1 1
+
+Revision: c5990c1ded08e2fbb5382a4dc8bcc662f1bf4529
+Author: Roberto Andrade <roberto@cloud.com>
+Date: 25/02/2016 00:11:59
+Message:
+Adding options to make embedding of frameworks (i.e.: iOS 8 custom frameworks) as well as linking (i.e.: skipping it for header-only frameworks) optional. #MsgLength=155
+
+
+----
+Modified: lib/pbxProject.js|49 15
+Modified: test/addFramework.js|24 3
+Modified: test/fixtures/full-project.json|1252 1
+
+Revision: 8c6fa3ab1a4d5c52e791790251987fe1146a6a2e
+Author: Roberto Andrade <roberto@cloud.com>
+Date: 26/02/2016 00:02:13
+Message:
+Enabling code signing of frameworks during build #MsgLength=49
+
+
+----
+Modified: lib/pbxFile.js|13 5
+Modified: test/addFramework.js|12 0
+Modified: test/pbxFile.js|17 1
+
+
+Revision: f6f75d1e4a527dbcb7ed10f0a9b940ff0163cd2e
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 05/03/2016 17:38:25
+Message:
+Use correct path separator when dealing with FRAMEWORK_SEARCH_PATHS #MsgLength=68
+
+
+----
+Modified: lib/pbxFile.js|2 3
+Modified: lib/pbxProject.js|1 1
+Modified: test/dataModelDocument.js|2 1
+
+
+Revision: eb0e23e44c451d0e7ea92d881eb8c82f4aa86481
+Author: Anis Kadri <anis@apache.org>
+Date: 10/03/2016 09:14:20
+Message:
+Bumping version to 0.8.4 #MsgLength=25
+
+
+----
+Modified: package.json|1 1
+
+Revision: 98b22b228bf90bf8911ee5717aed382fecaf020a
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 05/05/2016 17:00:07
+Message:
+Remove custom frameworks correctly #MsgLength=141
+
+
+----
+Modified: lib/pbxProject.js|1 2
+Modified: test/removeFramework.js|17 18
+
+
+
+Revision: 2e9a353d008afb0487c5498f4386eec722a76eef
+Author: Anis Kadri <anis@apache.org>
+Date: 07/05/2016 02:34:17
+Message:
+bumping to 0.8.5 #MsgLength=17
+
+
+----
+Modified: package.json|1 1
+
+Revision: 9078f3d1d14601f38bd14ae1bbd0791f8b715cc4
+Author: Anis Kadri <anis@apache.org>
+Date: 12/05/2016 07:56:39
+Message:
+Issue #89 updating node-uuid to 1.4.7 #MsgLength=38
+
+
+----
+Modified: package.json|1 1
+
+Revision: 57f2a08a6d2576a8f96779dc80c9f6565669dc3c
+Author: Roberto Andrade <roberto.andrade@gmail.com>
+Date: 10/05/2016 13:08:07
+Message:
+Adjusting framework settings to only be applied when embedding to avoid parsing crashes on Xcode 7.3 #MsgLength=101
+
+
+----
+Modified: lib/pbxFile.js|8 3
+Modified: lib/pbxProject.js|37 9
+Modified: package.json|1 1
+Modified: test/addFramework.js|13 13
+
+
+
+Revision: ef65ea02c6263bd2a4667194b54ebf9bd886406a
+Author: Roberto Andrade <roberto.andrade@gmail.com>
+Date: 12/05/2016 10:10:41
+Message:
+Addressing test failures #MsgLength=25
+
+
+----
+Modified: lib/pbxProject.js|1 0
+Modified: test/pbxFile.js|2 2
+
+
+
+Revision: f8675fb1ce3e2fa07a9e4eac53b31de1cebe9585
+Author: Alon Amir <aabluedragon@gmail.com>
+Date: 19/04/2016 23:04:01
+Message:
+pbxProject: pbxCopyFilesBuildPhaseObj missing 'frameworks' #MsgLength=137
+
+
+----
+Modified: lib/pbxProject.js|1 0
+
+Revision: 6a8a0cebc5808cb9826e39bcbbae7fa8fc9638ff
+Author: Alon Amir <aabluedragon@gmail.com>
+Date: 17/05/2016 01:02:00
+Message:
+Update addFramework.js #MsgLength=59
+
+
+----
+Modified: test/addFramework.js|3 0
+
+Revision: 3abd5d4c81e8f60ea14dcf145bc11c33f504ed20
+Author: Alon Amir <aabluedragon@gmail.com>
+Date: 17/05/2016 01:27:47
+Message:
+Update addBuildPhase.js #MsgLength=63
+
+
+----
+Modified: test/addBuildPhase.js|6 1
+
+Revision: c835f55a0a8937068b904f2217ba9d23bf155022
+Author: Alon Amir <aabluedragon@gmail.com>
+Date: 17/05/2016 01:35:15
+Message:
+Update addBuildPhase.js #MsgLength=50
+
+
+----
+Modified: test/addBuildPhase.js|1 1
+
+
+
+Revision: 941ed7ceb200759e34b28f98c83e4d07494bc5f5
+Author: Anis Kadri <anis@apache.org>
+Date: 18/05/2016 22:23:51
+Message:
+Bumping version to 0.8.7 #MsgLength=25
+
+
+----
+Modified: package.json|1 1
+
+Revision: b89d31c400a4dd3c2d711130f77d9b08c69baabc
+Author: Ratson <github@ratson.name>
+Date: 26/05/2016 20:42:34
+Message:
+Update dependencies #MsgLength=20
+
+
+----
+Modified: package.json|3 3
+
+
+
+Revision: 38e196555cf72a3996e3f172a0ac0c724bd44147
+Author: jdmcgrew <justin.d.mcgrew@intel.com>
+Date: 17/03/2016 01:40:27
+Message:
+ResourceFile group capability #MsgLength=30
+
+
+----
+Modified: lib/pbxProject.js|33 8
+Modified: package.json|1 1
+Modified: test/group.js|33 3
+
+
+Revision: 3dd4ef261e29fa47b3d161df92c9db29e0ba4ec2
+Author: Scott Kyle <scott@appden.com>
+Date: 12/05/2016 18:32:22
+Message:
+Support adding/removing tbd files just like dylibs #MsgLength=127
+
+
+----
+Modified: lib/pbxFile.js|4 0
+
+Revision: 3613a96cac2c969b2d6e08b3113e64ac1a699ae3
+Author: Scott Kyle <scott@appden.com>
+Date: 01/06/2016 05:54:37
+Message:
+Add tests for new tbd file support #MsgLength=34
+
+
+----
+Modified: test/pbxFile.js|34 1
+
+
+
+Revision: 35824cb8bd180decdc15b1ade895090abf941583
+Author: Anis Kadri <anis@apache.org>
+Date: 02/06/2016 01:26:08
+Message:
+Bumping to 0.8.8 #MsgLength=17
+
+
+----
+Modified: package.json|1 1
+
+Revision: 58cf7df4b0d99ebd7d0a6a49640c278687f53a27
+Author: Anis Kadri <anis@apache.org>
+Date: 05/06/2016 20:23:48
+Message:
+minor change to pbxFile #MsgLength=24
+
+
+----
+Modified: lib/pbxFile.js|2 3
+
+Revision: bc5f2500944a2578f4606fba8c7cab14525fff14
+Author: Anis Kadri <anis@apache.org>
+Date: 06/06/2016 20:36:01
+Message:
+Issue #97 removing unused self reference #MsgLength=41
+
+
+----
+Modified: lib/pbxFile.js|4 5
+
+Revision: 9f3726f6d766875500eebd85d9712925e3faa8b3
+Author: Anis Kadri <anis@apache.org>
+Date: 22/07/2016 05:46:51
+Message:
+bumping version to 0.8.9 #MsgLength=25
+
+
+----
+Modified: package.json|1 1
+
+Revision: e686ab72335717cba6ce71baf5218a7a7b702bdb
+Author: Anis Kadri <anis@apache.org>
+Date: 18/08/2016 06:00:34
+Message:
+Issue #102 Changing license in README.md #MsgLength=41
+
+
+----
+Modified: README.md|1 1
+
+Revision: e854e0a6f74e472bb6bc6ce9732b6c272670cc0e
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 18/08/2016 08:08:52
+Message:
+Added license key to package.json (Apache-2.0) #MsgLength=47
+
+
+----
+Modified: package.json|2 1
+
+
+Revision: 4687604d31691be9aea9b8fdefb0c277f72d2dde
+Author: Ryan Sundberg <ryan.sundberg@gmail.com>
+Date: 27/10/2016 04:34:55
+Message:
+Add support for PBXShellScriptBuildPhase #MsgLength=41
+
+
+----
+Modified: lib/pbxProject.js|17 3
+
+Revision: e8b9f7aeb31cc954117308248a5fb8c10dbac01c
+Author: Ryan Sundberg <ryan.sundberg@gmail.com>
+Date: 28/10/2016 02:25:46
+Message:
+RM debug logs #MsgLength=14
+
+
+----
+Modified: lib/pbxProject.js|0 2
+
+Revision: f7a77f1a4cc75eb5d954c138bf15aaf1b3e32ce3
+Author: Ryan Sundberg <ryan.sundberg@gmail.com>
+Date: 27/10/2016 04:35:40
+Message:
+Upgrade to 0.9.0 #MsgLength=17
+
+
+----
+Modified: package.json|1 1
+
+Revision: cab0d0d8eb3781ef6d190a1c11490f2f75d8bd5c
+Author: Ryan Sundberg <ryan.sundberg@gmail.com>
+Date: 28/10/2016 02:29:51
+Message:
+Test case for PBXShellScriptBuildPhase #MsgLength=39
+
+
+----
+Modified: test/addBuildPhase.js|7 0
+
+
+Revision: c78d781e59d88767b72799d8c27b2f321bff72ee
+Author: Sergey <sergey@MacBook-Pro-Sergey.local>
+Date: 09/12/2016 20:24:35
+Message:
+pbxProject addTargetAttribute #MsgLength=30
+
+
+----
+Modified: lib/pbxProject.js|17 6
+Modified: test/group.js|10 2
+
+Revision: fb628c61f92a8363b471fbfc5eb708d009071085
+Author: Sergey <sergey@MacBook-Pro-Sergey.local>
+Date: 10/12/2016 21:48:52
+Message:
+pbxProject removeTargetAttribute #MsgLength=33
+
+
+----
+Modified: lib/pbxProject.js|9 0
+Modified: test/group.js|24 3
+
+
+Revision: e842a9e5a472ddb00f7cae97bd1e1f812f93efb5
+Author: kelvinho <kelvinho@igloohome.co>
+Date: 03/12/2016 03:44:49
+Message:
+added PBXVariantGroup for localization and nodeunit test cases #MsgLength=63
+
+
+----
+Modified: lib/pbxFile.js|4 2
+Modified: lib/pbxProject.js|129 33
+Modified: test/addResourceFile.js|16 0
+Added: test/parser/projects/variantgroup.pbxproj|589 0
+Added: test/variantGroup.js|177 0
+
+
+
+Revision: 92b4acd7a6c467a624ead304fb94c7435e3e5f44
+Author: John Warmann <john.warmann@gmail.com>
+Date: 17/12/2016 07:57:10
+Message:
+Adding and removing knownRegions to/from PBXProject section #MsgLength=60
+
+
+----
+Modified: lib/pbxProject.js|33 0
+
+Revision: 96660f281cfb5cfe1520afb8fb13e7bb0dfe9f16
+Author: John Warmann <john.warmann@gmail.com>
+Date: 17/12/2016 07:57:51
+Message:
+Tests for knownRegions #MsgLength=23
+
+
+----
+Added: test/knownRegions.js|76 0
+
+
+Revision: f40466f2c5155829c104ab8994621986a97bcc00
+Author: zhenglu.zl <zhenglu.zl@alipay.com>
+Date: 09/12/2016 17:24:02
+Message:
+change tail recursive -> iterate #MsgLength=33
+
+
+----
+Modified: lib/parser/pbxproj.js|1443 1387
+Modified: lib/parser/pbxproj.pegjs|11 21
+
+
+
+Revision: b735df930f42aeb327b4cd670826b58ea952a89c
+Author: Anis Kadri <anis@apache.org>
+Date: 04/01/2017 06:10:12
+Message:
+Bumping to 0.9.1 #MsgLength=17
+
+
+----
+Modified: package.json|1 1
+
+Revision: ffb938b0824746043a4418af661d98f4c37fba85
+Author: freiserg <freiserg@gmail.com>
+Date: 22/12/2016 19:35:16
+Message:
+Update a uuid module #MsgLength=21
+
+
+----
+Modified: lib/pbxProject.js|1 1
+Modified: package.json|2 2
+
+
+
+Revision: 9592ed1de49fd8ea458d769aed06197400fa51da
+Author: imhotep <anis.kadri@gmail.com>
+Date: 01/04/2017 07:06:47
+Message:
+bumping version to 0.9.2 #MsgLength=25
+
+
+----
+Modified: package.json|1 1
+
+Revision: bba0d3189d1fca205f9d1d5f85121bafb5ec2e5d
+Author: Ya Zhuang <zhuangya@gmail.com>
+Date: 08/02/2017 22:57:36
+Message:
+chore: upgrade PEG, simple-plist and nodeunit #MsgLength=46
+
+
+----
+Modified: package.json|5 5
+Modified: test/parser/build-config.js|1 1
+Modified: test/parser/comments.js|1 1
+Modified: test/parser/dotsInNames.js|1 1
+Modified: test/parser/file-references.js|1 1
+Modified: test/parser/hash.js|1 1
+Modified: test/parser/header-search.js|1 1
+Modified: test/parser/section-entries.js|1 1
+Modified: test/parser/section-split.js|1 1
+Modified: test/parser/section.js|1 1
+Modified: test/parser/two-sections.js|1 1
+Modified: test/parser/with_array.js|1 1
+
+
+
+Revision: 1cd220819906b62fc06c8833f905897600a53127
+Author: imhotep <anis.kadri@gmail.com>
+Date: 07/04/2017 21:49:27
+Message:
+bumping to 0.9.3 #MsgLength=17
+
+
+----
+Modified: package.json|1 1
+
+Revision: 9e91d873be775a30f696ef501b94e78f5613c20c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 12/04/2017 04:50:45
+Message:
+Updated License, Copyright, Contributors and repo url, in prep for contributing this project to Apache Cordova #MsgLength=111
+
+
+----
+Modified: LICENSE|190 2
+Modified: package.json|27 3
+
+
+Revision: be8498daf8159033c884c03622eead34a3ea1e90
+Author: Paul Dixon <paul.dixon@mintbridge.co.uk>
+Date: 24/09/2017 19:07:54
+Message:
+add check for isArray so that strings don't cause an error when calling .filter #MsgLength=97
+
+
+----
+Modified: lib/pbxProject.js|2 2
+
+Revision: ed7b53995d52e61579e8d9fc96ed0a02f4c84dba
+Author: ZauberNerd <zaubernerd@zaubernerd.de>
+Date: 04/05/2017 21:24:06
+Message:
+Fix possible null-access error in "removeFromFrameworksPbxGroup" #MsgLength=469
+
+
+----
+Modified: lib/pbxProject.js|3 0
+
+Revision: 0d0519729fc5641e6e85cfa7176bb93b8e0e5f9e
+Author: ZauberNerd <zaubernerd@zaubernerd.de>
+Date: 01/06/2017 20:21:50
+Message:
+Fix null-access errors in "addTo/removeFrom*PbxGroup" methods #MsgLength=1011
+
+
+----
+Modified: lib/pbxProject.js|29 4
+Modified: test/group.js|80 0
+Added: test/parser/projects/empty-groups.pbxproj|16 0
+
+Revision: 53dda04aae950ab733bac3faedb25ae9d94ed3da
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 06/10/2017 03:18:30
+Message:
+CB-13380 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=63
+
+
+----
+Added: .ratignore|2 0
+Added: RELEASENOTES.md|28 0
+Modified: package.json|1 1
+
+Revision: 9345e5ed03e2118b3f5baccd96c570446406d2a2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 06/10/2017 08:34:46
+Message:
+CB-13380 added missing license headers #MsgLength=39
+
+
+----
+Modified: Makefile|19 0
+Modified: README.md|21 0
+Modified: index.js|17 0
+Modified: lib/parseJob.js|17 0
+Modified: lib/parser/pbxproj.js|17 0
+Modified: lib/parser/pbxproj.pegjs|17 0
+Modified: lib/pbxFile.js|17 0
+Modified: lib/pbxProject.js|17 0
+Modified: lib/pbxWriter.js|17 0
+Modified: test/BuildSettings.js|17 0
+Modified: test/FrameworkSearchPaths.js|17 0
+Modified: test/HeaderSearchPaths.js|17 0
+Modified: test/LibrarySearchPaths.js|17 0
+Modified: test/OtherLinkerFlags.js|17 0
+Modified: test/addBuildPhase.js|17 0
+Modified: test/addFramework.js|17 0
+Modified: test/addHeaderFile.js|17 0
+Modified: test/addRemovePbxGroup.js|17 0
+Modified: test/addResourceFile.js|17 0
+Modified: test/addSourceFile.js|17 0
+Modified: test/addStaticLibrary.js|17 0
+Modified: test/addTarget.js|17 0
+Modified: test/addTargetDependency.js|17 0
+Modified: test/addToPbxFileReferenceSection.js|18 1
+Modified: test/addXCConfigurationList.js|17 0
+Modified: test/dataModelDocument.js|17 0
+Modified: test/group.js|17 0
+Modified: test/knownRegions.js|17 0
+Modified: test/multipleTargets.js|17 0
+Modified: test/parser/build-config.js|17 0
+Modified: test/parser/comments.js|17 0
+Modified: test/parser/dotsInNames.js|17 0
+Modified: test/parser/file-references.js|17 0
+Modified: test/parser/hash.js|17 0
+Modified: test/parser/header-search.js|17 0
+Modified: test/parser/section-entries.js|17 0
+Modified: test/parser/section-split.js|17 0
+Modified: test/parser/section.js|17 0
+Modified: test/parser/two-sections.js|17 0
+Modified: test/parser/with_array.js|17 0
+Modified: test/pbxFile.js|17 0
+Modified: test/pbxItemByComment.js|17 0
+Modified: test/pbxProject.js|17 0
+Modified: test/pbxTargetByName.js|17 0
+Modified: test/pbxWriter.js|17 0
+Modified: test/removeFramework.js|17 0
+Modified: test/removeHeaderFile.js|17 0
+Modified: test/removeResourceFile.js|17 0
+Modified: test/removeSourceFile.js|17 0
+Modified: test/variantGroup.js|18 1
+Modified: test/xcode5searchPaths.js|17 0
+
+Revision: ba195a85438c810eac41905adc4930428ba90a24
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/10/2017 06:28:29
+Message:
+CB-13380 Incremented package version to -dev #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+Revision: 747d7ba94c6621ef0accf6832cb457f7a746bc7f
+Author: Ihab Khattab <ikhattab@users.noreply.github.com>
+Date: 10/02/2018 20:40:59
+Message:
+update invalid link of PEGjs on README #MsgLength=38
+
+
+----
+Modified: README.md|1 1
+
+
+Revision: d1ff114a9495743dc3ca1a965d590e2f186e40a7
+Author: kelvinhokk <kelvinhokk@users.noreply.github.com>
+Date: 22/05/2018 14:35:52
+Message:
+Fixed bug where comment is not removed on removing embedded frameworks. (#5) #MsgLength=78
+
+
+----
+Modified: lib/pbxProject.js|3 2
+Modified: test/removeFramework.js|27 0
+
+Revision: 2dbcd314f9a1b215c2f17e5792a46604784d76cc
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 09/07/2018 23:58:19
+Message:
+package.json remove extra blank lines #MsgLength=38
+
+
+----
+Modified: package.json|0 2
+
+Revision: 80e3a5130d70c5ad88850468389e89e2ed275c63
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 10/07/2018 00:04:33
+Message:
+CB-14145 explicit nodeunit@^0.11.3 update #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+
+Revision: e7646f0680d509b590b839e567c217590451505b
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 10/07/2018 00:16:17
+Message:
+pegjs updates #MsgLength=179
+
+
+----
+Modified: README.md|3 2
+Modified: package.json|3 2
+
+Revision: 91476c31a39a40a5c0f86f67d810115163413463
+Author: Chris Brody <chris.brody@gmail.com>
+Date: 06/12/2018 00:29:58
+Message:
+test/knownRegions.js let -> var (quick fix) (#18) #MsgLength=91
+
+
+----
+Modified: test/knownRegions.js|2 2
+
+Revision: dc4438adf653a855f8548228c686d7fc5768a4c8
+Author: Chris Brody <chris.brody@gmail.com>
+Date: 06/12/2018 01:41:21
+Message:
+Introduce .travis.yml (#19) #MsgLength=724
+
+
+----
+Added: .travis.yml|28 0
+
+Revision: bd09508d80e5f66bdad1b598ec50a911f48d9e5c
+Author: Chris Brody <chris.brody@gmail.com>
+Date: 07/12/2018 00:06:07
+Message:
+.travis.yml remove comment (#21) #MsgLength=82
+
+
+----
+Modified: .travis.yml|0 2
+
+Revision: d043fdbf81d9cc3e9410f36d229e9c370a5f017d
+Author: Chris Brody <chris.brody@gmail.com>
+Date: 07/12/2018 00:15:23
+Message:
+Add Travis CI badge (#22) #MsgLength=27
+
+
+----
+Modified: README.md|2 0
+
+Revision: 67feda8bc70bb616fcba268af754a803d1b67f99
+Author: Laurin Quast <laurinquast@googlemail.com>
+Date: 07/12/2018 23:13:28
+Message:
+docs(readme): highlight code example (#25) #MsgLength=44
+
+
+----
+Modified: README.md|16 14
+
+Revision: 3440e481fa7612f45c04e3431c9d6be8308f6983
+Author: Chris Brody <chris.brody@gmail.com>
+Date: 10/12/2018 02:06:41
+Message:
+Add npm badge; fix title & description (#26) #MsgLength=203
+
+
+----
+Modified: README.md|6 3
+
+Revision: 72daa2dcbb5f302d8d8cafd0a6537e7f11d7ab15
+Author: Laurin Quast <laurinquast@googlemail.com>
+Date: 10/12/2018 04:48:47
+Message:
+feat: omit objects with empty values (#24) #MsgLength=57
+
+
+----
+Modified: lib/pbxProject.js|2 2
+Modified: lib/pbxWriter.js|17 2
+Added: test/parser/projects/expected/with_omit_empty_values_disabled_expected.pbxproj|582 0
+Added: test/parser/projects/expected/with_omit_empty_values_enabled_expected.pbxproj|581 0
+Added: test/parser/projects/with_omit_empty_values_disabled.pbxproj|574 0
+Added: test/parser/projects/with_omit_empty_values_enabled.pbxproj|574 0
+Modified: test/pbxWriter.js|32 0
+
+Revision: b732ae53130d1049ba1d1cb1b8ce11498e8d8232
+Author: Chris Brody <chris.brody@gmail.com>
+Date: 12/12/2018 05:13:50
+Message:
+Resolve issue with pbxFile extension (#31) #MsgLength=533
+
+
+----
+Modified: lib/pbxFile.js|4 3
+Modified: test/pbxFile.js|8 0
+
+Revision: 09db825074a76f4783d29f16d9a5dec9f477296d
+Author: Chris Brody <chris.brody@gmail.com>
+Date: 12/12/2018 05:38:35
+Message:
+git ignore package-lock.json (#32) #MsgLength=36
+
+
+----
+Modified: .gitignore|1 0
+
+Revision: 95b529c81fac82acea7d9223feea6f53852a53c8
+Author: Chris Brody <chris.brody@gmail.com>
+Date: 12/12/2018 08:05:26
+Message:
+Remove trailing space from test pbxproj (#33) #MsgLength=84
+
+
+----
+Modified: test/parser/projects/comments.pbxproj|2 2
+
+Revision: db422427dd41d8f695befb33234809c8cf8305de
+Author: Chris Brody <chris.brody@gmail.com>
+Date: 12/12/2018 08:09:47
+Message:
+Remove trailing whitespace from test/*.js (#34) #MsgLength=49
+
+
+----
+Modified: test/addBuildPhase.js|13 13
+Modified: test/addHeaderFile.js|1 1
+Modified: test/addRemovePbxGroup.js|14 14
+Modified: test/addResourceFile.js|4 4
+Modified: test/addSourceFile.js|1 1
+Modified: test/addStaticLibrary.js|2 2
+Modified: test/addTarget.js|10 11
+Modified: test/addTargetDependency.js|16 16
+Modified: test/addToPbxFileReferenceSection.js|3 3
+Modified: test/addXCConfigurationList.js|4 4
+Modified: test/multipleTargets.js|15 15
+Modified: test/pbxItemByComment.js|4 4
+Modified: test/pbxProject.js|1 1
+Modified: test/pbxTargetByName.js|2 2
+Modified: test/removeHeaderFile.js|12 12
+Modified: test/removeResourceFile.js|13 13
+
+Revision: c51e81e1d12055aa4ecdc3da9a41f31b7877165c
+Author: Chris Brody <chris.brody@gmail.com>
+Date: 12/12/2018 08:30:17
+Message:
+Remove trailing whitespace from lib/pbxWriter.js (#35) #MsgLength=56
+
+
+----
+Modified: lib/pbxWriter.js|2 2
+
+Revision: 071550e407ffe1a40c76a143b9dd77701ef08da0
+Author: Chris Brody <chris.brody@gmail.com>
+Date: 19/12/2018 23:25:14
+Message:
+uuid@3 update (#40) #MsgLength=140
+
+
+----
+Modified: package.json|1 1
+
+Revision: 018cec426c50b253ab438812c3f52fb034ec37b9
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 20/12/2018 00:40:14
+Message:
+Update version & RELEASENOTES.md for release 1.1.0 #MsgLength=51
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: package.json|1 1
+
+Revision: d7ab1f15876ccf55acd1e932ff44533d38381414
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 20/12/2018 00:53:34
+Message:
+Increment package version to 2.0.0-dev #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+
+Revision: b396eb09f769773ed444a819b50186ebc928aa7e
+Author: Laurin Quast <laurinquast@googlemail.com>
+Date: 20/12/2018 03:28:24
+Message:
+drop support for Node.js pre-6.0 (#29) #MsgLength=209
+
+
+----
+Modified: .travis.yml|0 7
+Modified: package.json|1 1
+
+Revision: a83c407c89e44176b3a34e357f96f43d7aaa3bad
+Author: Laurin Quast <laurinquast@googlemail.com>
+Date: 20/12/2018 03:36:03
+Message:
+fix: simple-plist@1 update in dependencies (#30) #MsgLength=169
+
+
+----
+Modified: package.json|1 1
+
+Revision: b1ff4cc775379e7dc64490c95262444027710a52
+Author: Mark Atkinson <markatkinson0@gmail.com>
+Date: 20/12/2018 03:48:59
+Message:
+Updated to use ECMAScript 2015 Object.assign. (#14) #MsgLength=190
+
+
+----
+Modified: lib/parser/pbxproj.js|1 13
+
+Revision: 1a2222cf05c7e03650c637779ace783ef52293c3
+Author: エリス <ellis.bryan@gmail.com>
+Date: 15/01/2019 12:43:17
+Message:
+GH-10 Updated version and RELEASENOTES.md for release 2.0.0 #MsgLength=60
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+
+Revision: 415924977a8c6da5dda2cd2cfe40d67b365b1ea3
+Author: エリス <ellis.bryan@gmail.com>
+Date: 15/01/2019 13:18:25
+Message:
+GH-10 Incremented package version to -dev #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+
+Revision: a65e1943ed8c71d93e4c673d0a7aabf4ebca7623
+Author: Frederic Barthelemy <git@fbartho.com>
+Date: 11/03/2019 04:55:37
+Message:
+Update writeObjectsSections to match current Xcode format (#46) #MsgLength=114
+
+
+----
+Modified: lib/pbxWriter.js|2 7
+Modified: test/parser/projects/build-config.pbxproj|1 0
+Modified: test/parser/projects/build-files.pbxproj|1 0
+Modified: test/parser/projects/empty-groups.pbxproj|1 0
+Modified: test/parser/projects/expected/with_omit_empty_values_disabled_expected.pbxproj|1 0
+Modified: test/parser/projects/expected/with_omit_empty_values_enabled_expected.pbxproj|1 0
+Modified: test/parser/projects/fail.pbxproj|1 0
+Modified: test/parser/projects/file-references.pbxproj|1 0
+Modified: test/parser/projects/header-search.pbxproj|1 0
+Modified: test/parser/projects/nested-object.pbxproj|1 0
+Modified: test/parser/projects/section-entries.pbxproj|1 0
+Modified: test/parser/projects/section-split.pbxproj|1 0
+Modified: test/parser/projects/section.pbxproj|1 0
+Modified: test/parser/projects/two-sections.pbxproj|1 0
+Modified: test/parser/projects/with_omit_empty_values_disabled.pbxproj|1 0
+Modified: test/parser/projects/with_omit_empty_values_enabled.pbxproj|1 0
+
+Revision: b81970519188e4bac022f04c86a44f2437c4981e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/06/2019 19:09:53
+Message:
+Add Node.js 12 to CI Services (#51) #MsgLength=37
+
+
+----
+Modified: .travis.yml|1 0
+
+Revision: d06078f9e727c2006372e2d06b08d228ece8c9cd
+Author: Christopher J. Brody <chris@brody.consulting>
+Date: 26/09/2019 23:01:05
+Message:
+Travis CI now on Linux & macOS ("osx") #MsgLength=39
+
+
+----
+Modified: .travis.yml|4 0
+
+Revision: 122994dd1a0acfd3ccc2330d98a34b119d3fa229
+Author: l3ender <l3ender@users.noreply.github.com>
+Date: 17/10/2019 11:14:52
+Message:
+add dependencies for per-file testing (#67) #MsgLength=45
+
+
+----
+Modified: test/addTarget.js|1 0
+
+Revision: 0d3304c4a04ba0b5fa900932ac11a85f4e261143
+Author: l3ender <l3ender@users.noreply.github.com>
+Date: 17/10/2019 11:20:13
+Message:
+Test coverage for `app_extension` target types (#66) #MsgLength=255
+
+
+----
+Modified: test/addBuildPhase.js|50 0
+Modified: test/addTarget.js|20 0
+
+Revision: 2c9d0e8f9ae554278d3aaa538003319a4e6c5b47
+Author: Chris Brody <chris@brody.consulting>
+Date: 17/10/2019 23:19:19
+Message:
+fix a comment in lib/pbxProject.js (#68) #MsgLength=152
+
+
+----
+Modified: lib/pbxProject.js|1 2
+
+Revision: 3588e16cb4f90fc43aba97ad48c533173601ea7b
+Author: Chris Brody <chris@brody.consulting>
+Date: 18/10/2019 21:06:37
+Message:
+Test existing WatchKit support (#71) #MsgLength=325
+
+
+----
+Added: test/addWatchApp.js|114 0
+Added: test/addWatchExtension.js|114 0
+
+Revision: 4c5c6306f986fc6ae25703e93bff675fd5b589a0
+Author: l3ender <l3ender@users.noreply.github.com>
+Date: 18/10/2019 21:23:53
+Message:
+Add proper `filetypeForProducttype` test coverage (#72) #MsgLength=137
+
+
+----
+Modified: test/addTarget.js|130 0
+
+Revision: bd85d9a360f4cc096ce2c486e1bc6687ddc322af
+Author: Chris Brody <chris@brody.consulting>
+Date: 18/10/2019 21:26:20
+Message:
+remove internal propReplace function not needed (#69) #MsgLength=55
+
+
+----
+Modified: lib/pbxProject.js|0 14
+
+Revision: a80e27b539635e5eae916d778662dfd14fd74660
+Author: l3ender <l3ender@users.noreply.github.com>
+Date: 22/10/2019 01:14:58
+Message:
+Test coverage: `addTarget` add to main project as dependency (#76) #MsgLength=168
+
+
+----
+Modified: test/addTarget.js|20 0
+
+Revision: 0e0386ad7ddd90acfafd6b8d391f3943dc687ede
+Author: l3ender <l3ender@users.noreply.github.com>
+Date: 22/10/2019 01:43:56
+Message:
+Support watch2 apps/extensions (#56) #MsgLength=581
+
+
+----
+Modified: lib/pbxProject.js|61 7
+Modified: test/addBuildPhase.js|10 0
+Modified: test/addTarget.js|26 0
+Added: test/addWatch2App.js|165 0
+Added: test/addWatch2Extension.js|187 0
+
+Revision: 0d1373569f0e9ae45012aba2d5cad2c6ae616048
+Author: l3ender <l3ender@users.noreply.github.com>
+Date: 12/11/2019 06:58:45
+Message:
+ensure coverage for addTargetDependency with invalid input (#81) #MsgLength=399
+
+
+----
+Modified: test/addTargetDependency.js|77 1
+
+Revision: 83075188e984e09ca11ca2484c54494ac9348ed5
+Author: l3ender <l3ender@users.noreply.github.com>
+Date: 13/11/2019 00:40:31
+Message:
+Add target test coverage (#82) #MsgLength=385
+
+
+----
+Modified: test/addTarget.js|89 0
+
+Revision: 0dad487dcc67d7d713fc14fa378b6d68f1e5b2ed
+Author: Christopher J. Brody <chris@brody.consulting>
+Date: 13/12/2019 08:24:20
+Message:
+Update version & RELEASENOTES.md for release 2.1.0 #MsgLength=51
+
+
+----
+Modified: RELEASENOTES.md|14 0
+Modified: package.json|1 1
+
+Revision: 68d3a3771bd5492eb814d0649aa17e5f638777c5
+Author: Christopher J. Brody <chris@brody.consulting>
+Date: 13/12/2019 08:27:35
+Message:
+Increment package version to -dev (2.1.1-dev) #MsgLength=46
+
+
+----
+Modified: package.json|1 1
+
+Revision: 821b76ed738d2ed2444de13be2b0b30e402f5f71
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 23:31:30
+Message:
+chore(npm): improve ignore list (#89) #MsgLength=39
+
+
+----
+Modified: .npmignore|2 1
+
+Revision: 5de9d6a041aba89d9c6ce3b4e91b1bd7dd0b04bd
+Author: Tim Brust <github@timbrust.de>
+Date: 30/03/2020 16:28:57
+Message:
+chore: bump version to 3.0.0-dev (#91) #MsgLength=40
+
+
+----
+Modified: package.json|1 1
+
+Revision: 2937386be0e941ee3ab7c59f3b40d079cedf9945
+Author: Tim Brust <github@timbrust.de>
+Date: 30/03/2020 18:42:43
+Message:
+chore: bump node requirement (>=10) (#92) #MsgLength=43
+
+
+----
+Modified: package.json|1 1
+
+Revision: 2d043a2cfd30602dd7e78737aaeeef16656b6f82
+Author: Tim Brust <github@timbrust.de>
+Date: 30/03/2020 18:43:09
+Message:
+ci(travis): removes Node.js v6 and v8 from testing (#90) #MsgLength=58
+
+
+----
+Modified: .travis.yml|0 2
+
+Revision: 80c8c960b50f05f091759f8bda80067ad0dbaa28
+Author: エリス <erisu@users.noreply.github.com>
+Date: 02/04/2020 16:24:52
+Message:
+chore(npm): use short notation for repo & bugs (#93) #MsgLength=54
+
+
+----
+Modified: package.json|2 3
+
+Revision: dc678cc2a73524ac10387b7eae65571c769241f9
+Author: エリス <erisu@users.noreply.github.com>
+Date: 02/04/2020 19:02:58
+Message:
+breaking(npm): bump dependencies (#94) #MsgLength=76
+
+
+----
+Modified: package.json|2 2
+
+Revision: 9fb83bb92cbcab8d81458cb80ffcf25b6f5c0843
+Author: エリス <erisu@users.noreply.github.com>
+Date: 09/04/2020 15:38:15
+Message:
+ci: switch travis ci for github actions (#96) #MsgLength=197
+
+
+----
+Added: .github/workflows/ci.yml|51 0
+Modified: .gitignore|2 1
+Modified: .npmignore|1 0
+Deleted: .travis.yml|0 22
+Modified: README.md|2 1
+Added: package-lock.json|2928 0
+Modified: package.json|16 2
+
+Revision: 022c69ef1615f934f7ac0e6560e47633b2a4c6cb
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 09/04/2020 15:42:12
+Message:
+[MAJOR] Add new optional paramter to pbxProject.addTarget (#79) #MsgLength=113
+
+
+----
+Modified: lib/pbxProject.js|11 2
+Modified: test/addTarget.js|20 1
+
+Revision: 511a06fbc965ea4ee1a2d91b22b0d35ed7f754d4
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 09/04/2020 15:43:58
+Message:
+Update build property by targetname (#106) #MsgLength=245
+
+
+----
+Modified: lib/pbxProject.js|26 1
+Added: test/parser/projects/multitarget.pbxproj|729 0
+Modified: test/pbxProject.js|20 0
+
+Revision: 057a9e23467d9603567fa90346e2fe5a4aa2166c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 09/04/2020 15:50:35
+Message:
+doc(README): fix CI badge url (#107) #MsgLength=38
+
+
+----
+Modified: README.md|1 1
+
+Revision: 557782c5d4441e768f4c20615e88fe7bb9f2d4df
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 09/04/2020 16:11:12
+Message:
+node-xcode-3.0.0 Added NOTICE for release #MsgLength=42
+
+
+----
+Added: NOTICE|5 0
+
+Revision: 7b8d8439dfe4529e6d57e1677d7d45f0cc641363
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 09/04/2020 16:20:49
+Message:
+node-xcode-3.0.0 Updated version and RELEASENOTES.md for release 3.0.0 #MsgLength=71
+
+
+----
+Modified: RELEASENOTES.md|15 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: a8b228dbab1a99c25db63e21a9b648ec663c090e
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 13/04/2020 09:50:53
+Message:
+Increment package version to 3.0.1-dev #MsgLength=39
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 4052f08ddb365bac91982427460acba417d1d721
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:50:57
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Added: CONTRIBUTING.md|37 0
+
+Revision: 6c019dd293113537ffb195b3c1b42fdbaf52ab54
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:37:06
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: cd6f86f9ab0d53bf07e1ad405226bd1e2d8772ca
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 14/05/2020 14:37:08
+Message:
+Add targetName to paramter to getBuildProperty (#109) #MsgLength=182
+
+
+----
+Modified: lib/pbxProject.js|24 1
+Modified: test/pbxProject.js|28 0
+
+Revision: ecdbf56a1d4fc4bea3c0f25e4679efab47ff32eb
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 15/05/2020 13:05:51
+Message:
+Updated RELEASENOTES.md & version for release 3.0.1 (node-xcode-3.0.1) #MsgLength=71
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 56b8ffd68f5f71f4686340d9ad32ce5fd617cb8a
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 19/05/2020 08:23:43
+Message:
+Increment package version to 3.0.2-dev #MsgLength=39
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: e81ecabc18b0e43a1ae5457f16ebcbb8b0b62460
+Author: DamienBitrise <60897705+DamienBitrise@users.noreply.github.com>
+Date: 12/06/2020 16:22:35
+Message:
+Need to check for object existence (#112) #MsgLength=308
+
+
+----
+Modified: lib/pbxProject.js|1 1
+
+Revision: 127a4dfe3422d36d69c54215bde6ceeef5d892ff
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 03/10/2020 03:43:07
+Message:
+chore: clean up package.json (#115) #MsgLength=37
+
+
+----
+Modified: package.json|0 22
+
+Revision: 8b98cabc5978359db88dc9ff2d4c015cba40f150
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/11/2020 16:10:37
+Message:
+ci: add node-14.x to workflow (#117) #MsgLength=38
+
+
+----
+Modified: .github/workflows/ci.yml|1 1
+
+Revision: 335874ebd7959830121b767b49c29be92f3a2cd2
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date: 02/06/2022 13:13:30
+Message:
+Bump simple-plist from 1.1.0 to 1.3.1 (#127) #MsgLength=525
+
+
+----
+Modified: package-lock.json|25 31
+
+Revision: 659a4e7cfe945a13b3968c0d8c5439683f6d0932
+Author: エリス <erisu@users.noreply.github.com>
+Date: 19/07/2022 14:57:44
+Message:
+chore(npm): rebuilt package-lock to v2 (#133) #MsgLength=47
+
+
+----
+Modified: package-lock.json|4515 718
+

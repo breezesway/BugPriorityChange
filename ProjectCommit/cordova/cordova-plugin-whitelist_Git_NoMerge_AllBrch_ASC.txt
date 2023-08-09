@@ -1,0 +1,1040 @@
+Revision: 4c66fc80237735e899de0f2587da04bb206443c0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/03/2015 22:34:44
+Message:
+Moved from cordova-plugins repo #MsgLength=32
+
+
+----
+Added: CONTRIBUTING.md|16 0
+Added: LICENSE|202 0
+Added: NOTICE|5 0
+Added: README.md|120 0
+Added: RELEASENOTES.md|23 0
+Added: package.json|34 0
+Added: plugin.xml|47 0
+Added: src/android/WhitelistPlugin.java|159 0
+Added: src/ios/CDVNavigationWhitelistPlugin.h|31 0
+Added: src/ios/CDVNavigationWhitelistPlugin.m|89 0
+Added: whitelist.js|27 0
+
+Revision: 49a8b128209908556fc65df573a4c37796c0c8e0
+Author: Edna Morales <edna592@gmail.com>
+Date: 12/03/2015 23:02:50
+Message:
+CB-8660 remove extra commas from package.json #MsgLength=64
+
+
+----
+Modified: package.json|2 2
+
+Revision: 255cac2f5e5fa581ccdd5595832f8b0fa758bf0c
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 13/03/2015 01:44:07
+Message:
+Tweak CSP examples in README #MsgLength=29
+
+
+----
+Modified: README.md|14 9
+
+Revision: 339c9b510b3af71ab1fda033de9cc4ef71ab5b38
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 13/03/2015 23:44:01
+Message:
+Change ID to cordova-plugin-whitelist rather than reverse-DNS-style #MsgLength=68
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: d6f6648c0d138c7c1b0f47f23329294b80f79cee
+Author: Jason Chase <chasej@chromium.org>
+Date: 21/03/2015 00:08:28
+Message:
+Add @Override to CustomConfigXmlParser methods #MsgLength=47
+
+
+----
+Modified: src/android/WhitelistPlugin.java|3 1
+
+Revision: c7e522a8620b5215582e638b793540cbfef4cf56
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 26/03/2015 03:43:38
+Message:
+CB-8739 added missing license headers #MsgLength=38
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+Modified: README.md|19 0
+
+Revision: 38f5a9fa2c329c6b8018527996058210c97f2e30
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 26/03/2015 04:12:21
+Message:
+CB-8739 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: bc3b41796ce5dfb6f7fa9e7aa622b14dbcb818ba
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 26/03/2015 04:14:07
+Message:
+CB-8739 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 73f95ef8d37aebb309a41ac2e4e4f0e4a6d927a2
+Author: aabluedragon <aabluedragon@gmail.com>
+Date: 24/04/2015 07:25:33
+Message:
+Just a typo (*h*avigation) #MsgLength=26
+
+
+----
+Modified: README.md|1 1
+
+Revision: 94ae48a2df94672692221a64923a0f221b38d797
+Author: Jan Visser <starquake@linuxeverywhere.org>
+Date: 17/04/2015 17:40:03
+Message:
+Fixed error in Content-Security-Policy example #MsgLength=46
+
+
+----
+Modified: README.md|1 1
+
+
+Revision: 72a067c96e4e54efb8f1f152220d4a5fdf404324
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 29/05/2015 07:00:54
+Message:
+CB-9090 - Enable whitelist plugin for cordova-ios 4.0.0 #MsgLength=56
+
+
+----
+Modified: plugin.xml|17 0
+
+Revision: 7611b3fc776b14f12197c2d968b159244b9ee68e
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 29/05/2015 07:01:28
+Message:
+CB-9089 - iOS whitelist plugin does not compile #MsgLength=48
+
+
+----
+Modified: src/ios/CDVNavigationWhitelistPlugin.m|1 1
+
+Revision: 3578a4719f38ae1b25f3f665c30ba55b8e91b08c
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 29/05/2015 07:27:23
+Message:
+Usage of CDVURLRequestFilter protocol. #MsgLength=39
+
+
+----
+Modified: src/ios/CDVNavigationWhitelistPlugin.h|2 4
+
+Revision: 345e88e1721b05d1ee54058adcf4b83f145f6c38
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 03/06/2015 00:05:09
+Message:
+fix npm md issue #MsgLength=17
+
+
+----
+Modified: README.md|17 17
+
+Revision: 3ce6da7e5895ee5afb4d8dc7e35cff6a7dfc70ca
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:42:59
+Message:
+CB-9128 cordova-plugin-whitelist documentation translation: cordova-plugin-whitelist #MsgLength=85
+
+
+----
+Added: doc/de/README.md|148 0
+Added: doc/es/README.md|148 0
+Added: doc/fr/README.md|148 0
+Added: doc/it/README.md|148 0
+Added: doc/ja/README.md|148 0
+Added: doc/ko/README.md|148 0
+Added: doc/pl/README.md|148 0
+Added: doc/zh/README.md|148 0
+
+Revision: 94254c1d2f6e382519b066475e2b0a4df6d67f90
+Author: agamemnus <agamemnus@users.noreply.github.com>
+Date: 09/06/2015 00:14:35
+Message:
+CB-9133 Adds support for CDVFILE. This closes #6 #MsgLength=49
+
+
+----
+Modified: src/android/WhitelistPlugin.java|5 0
+
+Revision: 59072c6c9b4f73b1e1544519a8bc3eb645651d12
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 17/06/2015 08:45:52
+Message:
+Revert "CB-9133 Adds support for CDVFILE. This closes #6" #MsgLength=121
+
+
+----
+Modified: src/android/WhitelistPlugin.java|0 5
+
+Revision: a0bbb4596b520022fa610fb542fa2e34424eaf30
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:06
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 521e62b0fdf82e1a29c484cee4640efdcc71bb80
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:42
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: b70bf9b3dc1c5369da511b4dba79c16e19a1b96e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:37
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: b2143d928a84f62531da3887df35bc3ce480ebdc
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 09/07/2015 06:47:53
+Message:
+CB-9337 - enable use of <access> tags for native code network requests #MsgLength=71
+
+
+----
+Modified: plugin.xml|3 3
+Renamed: src/ios/CDVWhitelistPlugin.h [from src/ios/CDVNavigationWhitelistPlugin.h]|3 2
+Renamed: src/ios/CDVWhitelistPlugin.m [from src/ios/CDVNavigationWhitelistPlugin.m]|35 19
+
+Revision: be33970b411c4b066cc52a462f60fe5448a89f98
+Author: Jonathan Bonnefoy <contact@e-weap.fr>
+Date: 20/07/2015 22:27:21
+Message:
+Typo: Remove duplicate word #MsgLength=27
+
+
+----
+Modified: README.md|1 2
+
+Revision: 715491a599d97eed11c0f245cafe2fc596004665
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/09/2015 07:11:33
+Message:
+CB-9568 - Update whitelist plugin to allow all network access by default #MsgLength=73
+
+
+----
+Modified: src/ios/CDVWhitelistPlugin.m|13 8
+
+Revision: 7a0aa2b0c3dbbd9a94a6f649d11c9ca111288cec
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 06/10/2015 06:41:00
+Message:
+CB-9740 - Add <info> tag describing whitelist plugin not needed on cordova-ios and android 3.x #MsgLength=95
+
+
+----
+Modified: plugin.xml|4 0
+
+Revision: 9c2693b4ff6d98f859cbadddc9df683c508ae4a2
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 06/10/2015 06:46:13
+Message:
+CB-9738 - Disable whitelist use when runtime environment is iOS 9 #MsgLength=66
+
+
+----
+Modified: src/ios/CDVWhitelistPlugin.m|2 2
+
+Revision: ec1da00dab276ff433e70951710635edea33c689
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 23/10/2015 18:17:59
+Message:
+Updated plugin.xml <info> tag to remove warning about not needing this plugin if you are using the iOS 9 SDK #MsgLength=109
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a2a3e81ab73b3c9884899c0ed2da47f6e163e990
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: 695006d5e607f88bef5824ce1071d2c916ba9295
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:50
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: 3903631b3c9a882ee46d79ddf192fb7f4d326b9f
+Author: Luo Wen <luowenbiz@gmail.com>
+Date: 22/07/2015 12:36:06
+Message:
+Update README.md #MsgLength=146
+
+
+----
+Modified: README.md|6 3
+
+Revision: 81a4f8997c384644adcd879ec3ca9e30f8906de9
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:33:06
+Message:
+add JIRA issue tracker link. This closes #12 #MsgLength=45
+
+
+----
+Modified: README.md|3 0
+
+Revision: 3582b2cab5a6f321ceada90609d4ed11b6de383a
+Author: Joe Bowser <bowserj@apache.org>
+Date: 29/10/2015 06:11:01
+Message:
+Updated the text, it should read 4.0.x and greater, since this plugin will be required for cordova-android 5.0 #MsgLength=111
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: ae544c574e43ea63b1006a31e7bbee22b910d13c
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/11/2015 08:08:19
+Message:
+CB-9972 - Remove iOS whitelist #MsgLength=31
+
+
+----
+Modified: README.md|0 1
+Modified: package.json|2 8
+Modified: plugin.xml|1 16
+Deleted: src/ios/CDVWhitelistPlugin.h|0 30
+Deleted: src/ios/CDVWhitelistPlugin.m|0 110
+
+Revision: dea315cdc64dfd6c8ce6b9c86549a9c11ffd56ec
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|7 7
+
+Revision: de1ed97b074bd918d206cc0ee7015e6247f10785
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:11
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: 5341a6f4b94d29e1eace27743817f1ef6c094040
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 09:21:20
+Message:
+removed ios engine check from plugin.xml #MsgLength=41
+
+
+----
+Modified: plugin.xml|0 1
+
+Revision: cb777b51c8335cdba18549c6a29e9aeea8ca240a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:06
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 1.2.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|12 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 9792fc5365a08e58182ff70971744fbf8b5e32b2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|11 11
+
+Revision: 71785fd5ac862e86a569e61960aa6d4f61d484b2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: c2541d37a37dee4d7b4e6120118ce108b307002e
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 12/12/2015 22:23:08
+Message:
+CB-10194 info tag prints for ios when not applicable #MsgLength=53
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|5 4
+
+Revision: c33ea30cf263c87a42463a5b2dafed694c4ab028
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:35:06
+Message:
+CB-10368 Updated version and RELEASENOTES.md for release 1.2.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: edc97006d1a2cd39e311885febc6a3bb4677dae7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:58:32
+Message:
+CB-10368 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: acee686ab2cb02fcbda6acfa5c58a2f35d8a1b13
+Author: Edna Morales <edna592@gmail.com>
+Date: 16/02/2016 22:57:56
+Message:
+CB-10624 remove error message from whitelist.js, which leaves it empty #MsgLength=88
+
+
+----
+Modified: plugin.xml|0 3
+Deleted: whitelist.js|0 27
+
+Revision: 0c3b591ce8ee0d0100af4b151ae43e0eabfed7a1
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 22/02/2016 03:39:46
+Message:
+add note about redirects #MsgLength=25
+
+
+----
+Modified: README.md|3 0
+
+Revision: 876e3b2433c66a68c73223fe9b509143344816d4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:27
+Message:
+ Updated version and RELEASENOTES.md for release 1.2.2 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 59b8301ec4a5d020d32fdcb8a744539e1c3b9a03
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:28
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: f1a39560186e3966856bf5829723ed2025785d6e
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:51
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: 599fa733a5f50c5fb120c38f708879ea48fe89ec
+Author: Richard Knoll <richard.b.knoll@gmail.com>
+Date: 15/03/2016 03:20:24
+Message:
+CB-10866: Adding engine info to package.json #MsgLength=62
+
+
+----
+Modified: package.json|6 5
+
+Revision: c10338df83a35bae5d8837c794b8bddfea7fd49e
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:54:00
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: c2c0072378193710238d1fab1f12013b9fd359bb
+Author: Rob Close <rob.close@sap.com>
+Date: 08/06/2016 03:56:18
+Message:
+CB-113 android: Does not pass sonarqube scan #MsgLength=179
+
+
+----
+Modified: src/android/WhitelistPlugin.java|1 1
+
+Revision: ab36e6d19b3e1d6b6e24562cdb43980ef9d02df6
+Author: Rob Close <rob.close@sap.com>
+Date: 09/06/2016 02:58:27
+Message:
+CB-11391 Revert c2c0072 android: Does not pass sonarqube scan #MsgLength=342
+
+
+----
+Modified: src/android/WhitelistPlugin.java|1 1
+
+Revision: 6b14eb62e5d26f69818fc7b94f3968e883ac1b62
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 23/08/2016 04:56:47
+Message:
+Plugin uses Android Log class and not Cordova LOG class #MsgLength=56
+
+
+----
+Modified: src/android/WhitelistPlugin.java|2 2
+
+Revision: a4057f0c60c26057a1edd16b3b493c473781786d
+Author: Vladimir Nani <vladimirnani@gmail.com>
+Date: 30/08/2016 14:44:05
+Message:
+Updated installation section #MsgLength=47
+
+
+----
+Modified: README.md|8 0
+
+Revision: 028b4b49d44baba653b9efb4a9b9d655fffaf65e
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 22:47:34
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=397
+
+
+----
+Modified: package.json|3 0
+
+Revision: d51a360052195a7a562c40ddc6c05b32bfd1a045
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:55
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 1.3.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|10 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 0bb91fa1e2721e7e6765591aefa2f2312410f1c0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 82a4c77fbf3455b2218da4aa509c77c71889eacd
+Author: t1st3 <contact@tiste.org>
+Date: 28/09/2016 19:55:17
+Message:
+Edit package.json license to match SPDX id #MsgLength=245
+
+
+----
+Modified: package.json|1 1
+
+Revision: 2da58f4a8069425fb8156d48a2dd7399cce59854
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:29:39
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=101
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: 79f74a00e2b0bbd865fab7f006343e85b45a2f3c
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:47
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 1.3.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 91ff8df6a2b2dbedaca77297ce5abd065eb7ba7f
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:08
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: b24ebd5baa3acb3da10c270f4c3c1743f46772e2
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 05:01:05
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-whitelist #MsgLength=59
+
+
+----
+Modified: RELEASENOTES.md|1 0
+
+Revision: 33d51154ca461cdba4520822b1e9dc41a50fcc30
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:27
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 1.3.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|19 47
+
+Revision: 7c2f3c4422e9c8c14850ec333cf95562ac16307c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:56:01
+Message:
+Set VERSION to 1.3.3-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|45 19
+
+Revision: 97c313378e68ae36c810674e87e9f196e5b1ad57
+Author: filmaj <maj.fil@gmail.com>
+Date: 26/05/2017 01:10:28
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: d10c82486f7f1acee626f64793c8861914be8d53
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:46
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 1.3.3 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: aed9b33e69da6a444b3dbb82a61dd0a371c1699b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:40
+Message:
+Set VERSION to 1.3.4-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 8d3f86bfae1918ba2420653dd2f6f5ab922e9e9b
+Author: Ross Donald <rossdonald97@users.noreply.github.com>
+Date: 31/07/2018 22:21:07
+Message:
+Clarify unconfigured Intent Whitelist behaviour (#26) #MsgLength=1075
+
+
+----
+Modified: README.md|13 9
+
+Revision: fa78675ba74c289baf957b2a2680a964fff6772c
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 04/10/2018 07:17:22
+Message:
+remove JIRA link #MsgLength=16
+
+
+----
+Modified: README.md|0 2
+
+Revision: 34ed9d0c2fb5d80ae20926a1b88a48bafd0ce856
+Author: Andrey Kurdyumov <kant2002@gmail.com>
+Date: 21/11/2018 02:24:55
+Message:
+Remove information about cordova-android (#27) #MsgLength=211
+
+
+----
+Modified: plugin.xml|0 4
+
+Revision: 86b3ee1080e12b83736ced5ab8ba90161d3e139e
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:40:57
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 7725fed8f8023c62acbbc715996278f4b8831455
+Author: JochenDB <JochenDB@users.noreply.github.com>
+Date: 29/05/2019 17:49:47
+Message:
+Added information on allow-navigation preceding allow-intent (#41) #MsgLength=128
+
+
+----
+Modified: README.md|2 0
+
+Revision: e4f17b09ed71586a94f3f0e9103b8d24d0be741a
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 02:43:37
+Message:
+test,ci(travis): Tests (extracted from cordova-mobile-spec) (#38) #MsgLength=754
+
+
+----
+Added: .travis.yml|118 0
+Deleted: doc/de/README.md|0 148
+Deleted: doc/es/README.md|0 148
+Deleted: doc/fr/README.md|0 148
+Deleted: doc/it/README.md|0 148
+Deleted: doc/ja/README.md|0 148
+Deleted: doc/ko/README.md|0 148
+Deleted: doc/pl/README.md|0 148
+Deleted: doc/zh/README.md|0 148
+Modified: package.json|7 4
+Added: tests/README.md|53 0
+Added: tests/package.json|15 0
+Added: tests/plugin.xml|56 0
+Added: tests/scripts/remove-access.js|19 0
+Added: tests/src/android/WhitelistAPI.java|90 0
+Added: tests/tests.js|214 0
+Added: tests/www/whitelist.js|34 0
+
+Revision: bf8fea5f8273516995f58e1dbcb45cae6185a248
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 23:17:52
+Message:
+build: add `.npmignore` to remove unneeded files from npm package #MsgLength=66
+
+
+----
+Added: .npmignore|16 0
+
+Revision: ed0206b0e9cd2ccf1bb26fefe19a7742bf0034e5
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 23:18:05
+Message:
+build: add `.gitattributes` to force LF (instead of possible CRLF on Windows) #MsgLength=78
+
+
+----
+Added: .gitattributes|1 0
+
+Revision: d804ef21738c2081f23ffdf38be7045e6c5b9f1c
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 23:22:34
+Message:
+chore: manually fix lines breaks to LF #MsgLength=39
+
+
+----
+Modified: .travis.yml|118 118
+Modified: tests/README.md|53 53
+Modified: tests/plugin.xml|56 56
+Modified: tests/scripts/remove-access.js|18 18
+Modified: tests/src/android/WhitelistAPI.java|90 90
+Modified: tests/tests.js|213 213
+Modified: tests/www/whitelist.js|34 34
+
+Revision: e9f6a5c4db8950aacc874324d921e4d0082a41d7
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 23:26:34
+Message:
+chore(release): release notes for 1.3.4 #MsgLength=40
+
+
+----
+Modified: RELEASENOTES.md|12 0
+
+Revision: 5620d36aacab70ee5f1390a4b751a5b27eed8a47
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 23:26:34
+Message:
+chore(release): 1.3.4 (version string) #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5add26478f3ad26baf85ace484243899a76b9e6e
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 23:27:52
+Message:
+chore(release): 1.3.5-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9ffe3d9355169ccbcc6f14f2f8895f2bdf6bf14b
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 03/07/2019 16:27:49
+Message:
+ci(travis): upgrade to node 8 #MsgLength=29
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: d3d00a02c49c194aecb659aa29f0d801bb54d5c7
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 22/11/2019 22:19:44
+Message:
+docs: apply syntax highlighting to code samples (#48) #MsgLength=55
+
+
+----
+Modified: README.md|75 67
+
+Revision: a92d8268f23a975f53f0b0c2b5c646c1b6c8d09e
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 18:46:33
+Message:
+chore(npm): improve ignore list (#51) #MsgLength=39
+
+
+----
+Modified: .npmignore|2 15
+
+Revision: c4272776cad49342d059159cc4c40a635df23b27
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 20:45:44
+Message:
+ci(travis): updates Node.js version (#52) #MsgLength=43
+
+
+----
+Modified: .travis.yml|15 13
+
+Revision: 18415ad3c1c8dd7451b5ced2703f466d70e6a317
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:34:50
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Modified: CONTRIBUTING.md|3 3
+
+Revision: 17aa3ed93b3a1a59b207f72f0577da7ff0d56825
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:43:31
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: 2de1a42aa02d2f6064004948567a796935ba33dc
+Author: Tim Brust <github@timbrust.de>
+Date: 22/08/2020 20:32:36
+Message:
+ci(travis): updates Android API level (#54) #MsgLength=45
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 8800cbe35e1e853934e48279a832ae89b4054c75
+Author: エリス <erisu@users.noreply.github.com>
+Date: 06/09/2020 03:02:38
+Message:
+ci(travis): update osx xcode image (#55) #MsgLength=42
+
+
+----
+Modified: .travis.yml|1 2
+
+Revision: 446ab4fadd91e73f455240bc56acbdcce70550f0
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 03/10/2020 03:43:25
+Message:
+chore: clean up package.json (#56) #MsgLength=138
+
+
+----
+Modified: package.json|2 7
+
+Revision: 6447ab8bb64047a0a4dec9f726f9ab724d357cdf
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/11/2020 17:23:34
+Message:
+ci: add node-14.x to workflow (#58) #MsgLength=37
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 83b77a5595e4505f1278d24a0635a83cb32a6ff0
+Author: エリス <erisu@users.noreply.github.com>
+Date: 27/04/2021 22:39:37
+Message:
+breaking: deprecate plugin (#59) #MsgLength=149
+
+
+----
+Modified: .asf.yaml|4 0
+Modified: README.md|10 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 5e538b2fe6b31f1da04011db85392ed5f4958d65
+Author: エリス <erisu@users.noreply.github.com>
+Date: 26/06/2021 00:17:04
+Message:
+fix: lock next patch release to cordova-android <10 (#62) #MsgLength=59
+
+
+----
+Modified: package.json|1 1
+
+Revision: 2e5db06c9a80a1e5c4362321b0aa4ce095306c68
+Author: PVPoyer <pieter.vanpoyer@portofantwerp.com>
+Date: 28/06/2021 22:57:49
+Message:
+Updated version and RELEASENOTES.md for release cordova-plugin-whitelist20210626 #MsgLength=81
+
+
+----
+Modified: RELEASENOTES.md|14 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 883c8edb2229010d020e179d013c1efa0388d156
+Author: PVPoyer <pieter.vanpoyer@portofantwerp.com>
+Date: 28/06/2021 23:07:36
+Message:
+Incremented plugin version. (cordova-plugin-whitelist20210626) #MsgLength=63
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7f2678fd84ab6063c9868a8210a6d6bd2e96fd63
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 05:01:05
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-whitelist #MsgLength=59
+
+
+----
+Modified: RELEASENOTES.md|1 0
+
+Revision: 5d648753281f2de6703fbf44014e140fbb99bf72
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:08
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 03bb9cbd44f1111612db6a2cd7b3fc115c1a7b03
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:27
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 1.3.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 3
+
+
+

@@ -1,0 +1,3498 @@
+Revision: 56a8aa2f1abc392cee63faccc014d3f8353b09ab
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 16/09/2015 23:17:24
+Message:
+CB-9598 Initial implementation for cordova-common module #MsgLength=57
+
+
+----
+Added: .jscs.json|24 0
+Added: .jshintignore|1 0
+Added: .npmignore|2 0
+Added: .ratignore|2 0
+Added: README.md|33 0
+Added: RELEASENOTES.md|24 0
+Added: cordova-common.js|41 0
+Added: package.json|46 0
+Added: spec/.jshintrc|11 0
+Added: spec/ConfigParser.spec.js|224 0
+Added: src/.jshintrc|10 0
+Added: src/ActionStack.js|85 0
+Added: src/ConfigChanges/ConfigChanges.js|401 0
+Added: src/ConfigChanges/ConfigFile.js|220 0
+Added: src/ConfigChanges/ConfigKeeper.js|65 0
+Added: src/ConfigChanges/munge-util.js|160 0
+Added: src/CordovaError.js|32 0
+Added: src/PlatformJson.js|155 0
+Added: src/PluginInfo/PluginInfo.js|416 0
+Added: src/PluginInfo/PluginInfoProvider.js|82 0
+Added: src/configparser/ConfigParser.js|470 0
+Added: src/configparser/README.md|86 0
+Added: src/events.js|19 0
+Added: src/superspawn.js|154 0
+Added: src/util/plist-helpers.js|101 0
+Added: src/util/xml-helpers.js|266 0
+
+Revision: 5998c661ef8079e07d755293de83ed77151d53a6
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 16/09/2015 21:39:41
+Message:
+CB-9598 Adds tests and fixtures based on existing cordova-lib ones #MsgLength=67
+
+
+----
+Added: spec/ActionStack.spec.js|77 0
+Added: spec/ConfigChanges/ConfigChanges.spec.js|445 0
+Renamed: spec/ConfigParser/ConfigParser.spec.js [from spec/ConfigParser.spec.js]|2 2
+Added: spec/PluginInfo/PluginInfo.spec.js|50 0
+Added: spec/PluginInfo/PluginInfoProvider.spec.js|33 0
+Added: spec/fixtures/plugins/ChildBrowser/plugin.xml|126 0
+Added: spec/fixtures/plugins/ChildBrowser/src/android/ChildBrowser.java|19 0
+Added: spec/fixtures/plugins/ChildBrowser/www/childbrowser.js|19 0
+Added: spec/fixtures/plugins/ChildBrowser/www/childbrowser/image.jpg|1 0
+Added: spec/fixtures/plugins/ChildBrowser/www/childbrowser_file.html|1 0
+Added: spec/fixtures/plugins/com.adobe.vars/plugin.xml|59 0
+Added: spec/fixtures/plugins/org.apache.plist/plugin.xml|54 0
+Added: spec/fixtures/plugins/org.test.configtest/plugin.xml|61 0
+Added: spec/fixtures/plugins/org.test.multiple-children/plugin.xml|108 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/plugin.xml|124 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/android/ChildBrowser.java|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/ChildBrowser.bundle/arrow_left.png|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/ChildBrowser.bundle/arrow_left@2x.png|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/ChildBrowser.bundle/arrow_right.png|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/ChildBrowser.bundle/arrow_right@2x.png|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/ChildBrowser.bundle/but_refresh.png|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/ChildBrowser.bundle/but_refresh@2x.png|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/ChildBrowser.bundle/compass.png|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/ChildBrowser.bundle/compass@2x.png|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/ChildBrowserCommand.h|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/ChildBrowserCommand.m|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/ChildBrowserViewController.h|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/ChildBrowserViewController.m|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/ChildBrowserViewController.xib|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/TargetDirTest.h|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/TargetDirTest.m|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/preserveDirs/PreserveDirsTest.h|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/src/ios/preserveDirs/PreserveDirsTest.m|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/www/childbrowser.js|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/www/childbrowser/image.jpg|1 0
+Added: spec/fixtures/plugins/org.test.plugins.childbrowser/www/childbrowser_file.html|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/android-resource.xml|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/extra.gradle|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/plugin-lib/AndroidManifest.xml|5 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/plugin-lib/libFile|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/plugin-lib/project.properties|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/plugin.xml|207 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/android/DummyPlugin.java|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/blackberry10/index.js|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/ios/Custom.framework/someFheader.h|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/ios/Custom.framework/somebinlib|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/ios/DummyPlugin.bundle|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/ios/DummyPluginCommand.h|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/ios/DummyPluginCommand.m|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/ios/SourceWithFramework.m|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/ios/TargetDirTest.h|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/ios/TargetDirTest.m|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/ios/libsqlite3.dylib|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/tizen/dummer.js|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/windows/dummer.js|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/windows/dummy1.dll|0 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/windows/dummy1.vcxproj|7 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/windows/dummy2.dll|0 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/windows/dummy2.vcxproj|7 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/windows/dummy3.dll|0 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/windows/dummy3.vcxproj|7 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/windows/dummy4.dll|0 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/windows/dummy4.vcxproj|7 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/wp7/DummyPlugin.cs|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/src/wp8/DummyPlugin.cs|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/www/dummyplugin.js|1 0
+Added: spec/fixtures/plugins/org.test.plugins.dummyplugin/www/dummyplugin/image.jpg|1 0
+Added: spec/fixtures/plugins/org.test.shareddeps/plugin.xml|34 0
+Added: spec/fixtures/projects/android/AndroidManifest.xml|69 0
+Added: spec/fixtures/projects/android/assets/www/.gitkeep|0 0
+Added: spec/fixtures/projects/android/res/xml/config.xml|54 0
+Added: spec/fixtures/projects/android/src/.gitkeep|0 0
+Added: spec/fixtures/projects/android_two/AndroidManifest.xml|69 0
+Added: spec/fixtures/projects/android_two/assets/www/.gitkeep|0 0
+Added: spec/fixtures/projects/android_two/res/xml/config.xml|54 0
+Added: spec/fixtures/projects/android_two/src/.gitkeep|0 0
+Added: spec/fixtures/projects/android_two_no_perms/AndroidManifest.xml|49 0
+Added: spec/fixtures/projects/android_two_no_perms/assets/www/.gitkeep|0 0
+Added: spec/fixtures/projects/android_two_no_perms/res/xml/config.xml|54 0
+Added: spec/fixtures/projects/android_two_no_perms/src/.gitkeep|0 0
+Added: spec/fixtures/projects/ios-config-xml/CordovaLib/CordovaLib.xcodeproj/project.pbxproj|636 0
+Added: spec/fixtures/projects/ios-config-xml/CordovaLib/VERSION|1 0
+Added: spec/fixtures/projects/ios-config-xml/SampleApp.xcodeproj/project.orig.pbxproj|498 0
+Added: spec/fixtures/projects/ios-config-xml/SampleApp.xcodeproj/project.pbxproj|496 0
+Added: spec/fixtures/projects/ios-config-xml/SampleApp/SampleApp-Info.plist|82 0
+Added: spec/fixtures/projects/ios-config-xml/SampleApp/config.xml|59 0
+Added: spec/fixtures/projects/ios-config-xml/www/.gitkeep|0 0
+Added: spec/fixtures/projects/windows/bom_test.xml|24 0
+Added: spec/fixtures/projects/windows8/CordovaApp_TemporaryKey.pfx|0 0
+Added: spec/fixtures/projects/windows8/TestApp.jsproj|81 0
+Added: spec/fixtures/projects/windows8/TestApp.sln|46 0
+Added: spec/fixtures/projects/windows8/package.appxmanifest|27 0
+Added: spec/fixtures/projects/windows8/www/cordova-2.6.0.js|8075 0
+Added: spec/fixtures/projects/windows8/www/css/index.css|115 0
+Added: spec/fixtures/projects/windows8/www/img/logo.png|0 0
+Added: spec/fixtures/projects/windows8/www/img/smalllogo.png|0 0
+Added: spec/fixtures/projects/windows8/www/img/splashscreen.png|0 0
+Added: spec/fixtures/projects/windows8/www/img/storelogo.png|0 0
+Added: spec/fixtures/projects/windows8/www/index.html|42 0
+Added: spec/fixtures/projects/windows8/www/js/index.js|49 0
+Added: spec/fixtures/test-config.xml|43 0
+Added: spec/util/xml-helpers.spec.js|271 0
+
+Revision: c4d49b513b631ebdc74d00b5d9ff55bc896e10ff
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 18/09/2015 19:13:34
+Message:
+Picking CordovaError changes from apache@a3b1fca #MsgLength=49
+
+
+----
+Modified: cordova-common.js|2 1
+Added: src/CordovaError/CordovaError.js|91 0
+Renamed: src/CordovaError/CordovaExternalToolErrorContext.js [from src/CordovaError.js]|42 26
+Modified: src/PluginInfo/PluginInfo.js|1 1
+Modified: src/configparser/ConfigParser.js|1 1
+
+Revision: 47dda9b7c77da2104caac124d79e26e292f47ad3
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 18/09/2015 19:16:01
+Message:
+Pick ConfigParser changes from apache@ddb027b #MsgLength=65
+
+
+----
+Modified: src/configparser/ConfigParser.js|3 0
+
+Revision: edad029f7223636a08220979b65460f3593b7183
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 02/10/2015 19:04:10
+Message:
+CB-9598 Cleans out code which has been moved to `cordova-common` #MsgLength=65
+
+
+----
+Modified: src/ConfigChanges/ConfigFile.js|2 0
+
+Revision: 0ee6c33c4b3fe3e0f7468171730e6c32f2cbe141
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 02/10/2015 18:25:16
+Message:
+Fixes tests failures on CI machines #MsgLength=36
+
+
+----
+Renamed: src/ConfigParser/ConfigParser.js [from src/configparser/ConfigParser.js]|0 0
+Renamed: src/ConfigParser/README.md [from src/configparser/README.md]|0 0
+
+Revision: 1bb0f5ac4d4e676cb690a2bcc5938e6671eade78
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 02/10/2015 19:02:24
+Message:
+CB-9743 Removes system frameworks handling from ConfigChanges #MsgLength=62
+
+
+----
+Modified: package.json|1 2
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|0 33
+Modified: src/ConfigChanges/ConfigChanges.js|8 84
+Modified: src/ConfigChanges/ConfigFile.js|0 14
+
+Revision: db38bdd380fd76b380a26b8571afa8658b10802a
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 06/10/2015 17:02:11
+Message:
+Pick ConfigParser changes from apache@0c3614e #MsgLength=46
+
+
+----
+Modified: spec/ConfigParser/ConfigParser.spec.js|8 0
+Modified: spec/fixtures/test-config.xml|65 0
+Modified: src/ConfigParser/ConfigParser.js|26 0
+
+Revision: c981e6cacd0d0d028c26a66ad57f48f2fbd5c084
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 15/10/2015 16:41:31
+Message:
+CB-9598 Correct cordova-lib -> cordova-common in README #MsgLength=56
+
+
+----
+Modified: README.md|1 1
+
+Revision: 1ef8bfdaa111ffb8943eb28d2d0a503ddfce9fcf
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 23/10/2015 15:54:25
+Message:
+CB-9850 Update RELEASENOTES for cordova-common 0.1.0 release #MsgLength=61
+
+
+----
+Modified: RELEASENOTES.md|11 3
+
+Revision: 9ac3d63166c4cc891bbceb74fc18a042d35f20f8
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 22/10/2015 19:45:52
+Message:
+CB-9850 Set cordova-common VERSION to 0.1.1-dev #MsgLength=48
+
+
+----
+Modified: package.json|43 43
+
+Revision: 8ca090c8f5de184a3438f6b69268295c7c813a64
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 29/10/2015 16:10:54
+Message:
+CB-9890 Documents cordova-common #MsgLength=51
+
+
+----
+Modified: README.md|119 3
+
+Revision: 6ccc0612cd7abc35e78fb42a16d79b05267a6d33
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 29/10/2015 18:38:22
+Message:
+CB-9899 Updated version and RELEASENOTES.md for cordova-common 1.0.0 release #MsgLength=77
+
+
+----
+Modified: RELEASENOTES.md|3 1
+Modified: package.json|1 1
+
+Revision: c0ee69d1995abddd4a7877636c210a8c27996d39
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 29/10/2015 18:41:46
+Message:
+CB-9899 Incremented cordova-common package version to -dev #MsgLength=59
+
+
+----
+Modified: package.json|1 1
+
+Revision: 4eb0b9ab4c9d436277bd3da49a9ed5db91dcc6a5
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 12/11/2015 17:14:34
+Message:
+CB-9984 Bumps plist version and fixes failing cordova-common test #MsgLength=84
+
+
+----
+Modified: package.json|1 1
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|1 1
+
+Revision: 7e029b03f7b7dbf5c224cfe5c83ffee76a26a8b7
+Author: Peter Bakondy <pbakondy@gmail.com>
+Date: 02/02/2016 01:22:22
+Message:
+CB-10497 Prefer .bat over .cmd on windows platform #MsgLength=114
+
+
+----
+Modified: src/superspawn.js|1 1
+
+Revision: 9976ec2e55a6a991b68d504391d04bc3bed8fb10
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 22/01/2016 21:39:13
+Message:
+CB-10052 Expose child process' io streams via promise progress notification. This closes #369 #MsgLength=94
+
+
+----
+Modified: README.md|4 0
+Added: spec/superspawn.spec.js|56 0
+Modified: src/superspawn.js|43 13
+
+Revision: c2f153a640e7551d35e91c4cba768ec0132936d3
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 03/02/2016 22:47:24
+Message:
+CB-10176 Adds CordovaLogger class, based on logger module from cordova-cli #MsgLength=75
+
+
+----
+Modified: cordova-common.js|1 0
+Modified: package.json|44 43
+Added: spec/CordovaLogger.spec.js|164 0
+Added: src/CordovaLogger.js|203 0
+
+Revision: f664c55339fbf687baa06b810aca3997c7e4ed40
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/02/2016 14:26:52
+Message:
+CB-10430 Adds forwardEvents method to easily connect two EventEmitters. This closes #382 #MsgLength=89
+
+
+----
+Modified: src/events.js|47 1
+
+Revision: 2f35ddaf62622858aeacdfad389ad97f862b7161
+Author: daserge <v-seshak@microsoft.com>
+Date: 10/02/2016 04:16:34
+Message:
+CB-10482 Remove references to windows8 from cordova-lib/cli #MsgLength=114
+
+
+----
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|13 9
+Modified: spec/fixtures/plugins/org.test.configtest/plugin.xml|8 8
+Renamed: spec/fixtures/projects/windows/CordovaApp_TemporaryKey.pfx [from spec/fixtures/projects/windows8/CordovaApp_TemporaryKey.pfx]|0 0
+Renamed: spec/fixtures/projects/windows/TestApp.jsproj [from spec/fixtures/projects/windows8/TestApp.jsproj]|0 0
+Added: spec/fixtures/projects/windows/TestApp.projitems|34 0
+Renamed: spec/fixtures/projects/windows/TestApp.sln [from spec/fixtures/projects/windows8/TestApp.sln]|0 0
+Renamed: spec/fixtures/projects/windows/www/cordova-2.6.0.js [from spec/fixtures/projects/windows8/www/cordova-2.6.0.js]|0 0
+Renamed: spec/fixtures/projects/windows/www/css/index.css [from spec/fixtures/projects/windows8/www/css/index.css]|0 0
+Renamed: spec/fixtures/projects/windows/www/img/logo.png [from spec/fixtures/projects/windows8/www/img/logo.png]|0 0
+Renamed: spec/fixtures/projects/windows/www/img/smalllogo.png [from spec/fixtures/projects/windows8/www/img/smalllogo.png]|0 0
+Renamed: spec/fixtures/projects/windows/www/img/splashscreen.png [from spec/fixtures/projects/windows8/www/img/splashscreen.png]|0 0
+Renamed: spec/fixtures/projects/windows/www/img/storelogo.png [from spec/fixtures/projects/windows8/www/img/storelogo.png]|0 0
+Renamed: spec/fixtures/projects/windows/www/index.html [from spec/fixtures/projects/windows8/www/index.html]|0 0
+Renamed: spec/fixtures/projects/windows/www/js/index.js [from spec/fixtures/projects/windows8/www/js/index.js]|0 0
+Deleted: spec/fixtures/projects/windows8/package.appxmanifest|0 27
+Modified: src/ConfigChanges/ConfigChanges.js|3 5
+Modified: src/PluginInfo/PluginInfo.js|0 6
+
+Revision: f61510d6184f3a19a3df0af82c4d7e1b229004d8
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 16/02/2016 16:38:35
+Message:
+CB-10626 Updated version and RELEASENOTES.md for cordova-common release 1.1.0 #MsgLength=78
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package.json|1 1
+
+Revision: 085fe5dda96a1e15be1757e039e2229da225043a
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 16/02/2016 17:46:42
+Message:
+CB-10626 Incremented cordova-common package version to -dev #MsgLength=60
+
+
+----
+Modified: package.json|1 1
+
+Revision: e2ebe4894818fb4d241b8a4e962d1f5da9e6c3c8
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 25/02/2016 16:45:22
+Message:
+CB-10583 Protect plugin preferences from adding extra Array properties. This closes #400 #MsgLength=89
+
+
+----
+Modified: src/PluginInfo/PluginInfo.js|6 10
+
+Revision: 32f06bf7f49b86e83c30fda85b6ad59a97c739cb
+Author: Andor Polgari <andor.polgari@sap.com>
+Date: 16/02/2016 18:17:27
+Message:
+CB-10622 fix target attribute being ignored for images in config.xml. This closes #392 #MsgLength=87
+
+
+----
+Modified: src/ConfigParser/ConfigParser.js|1 0
+
+Revision: 4eb73f44b732f8d0ed87db9f3f69743c79e66a31
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 26/02/2016 22:41:03
+Message:
+CB-10662 Add tests for ConfigParser.getStaticResources #MsgLength=55
+
+
+----
+Modified: spec/ConfigParser/ConfigParser.spec.js|49 0
+Modified: spec/fixtures/test-config.xml|7 0
+
+Revision: 866c0b24c8b305076a03f9c2e8225e4af4c390e9
+Author: daserge <v-seshak@microsoft.com>
+Date: 10/03/2016 03:20:01
+Message:
+CB-10791 Add adjustLoggerLevel to cordova-common.CordovaLogger #MsgLength=89
+
+
+----
+Modified: spec/CordovaLogger.spec.js|28 0
+Modified: src/CordovaLogger.js|17 0
+
+Revision: e594cd8073450e59f172afe829df9c154f7327e7
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 17/03/2016 05:02:46
+Message:
+CB-9264 - Duplicate entries in config.xml #MsgLength=42
+
+
+----
+Modified: spec/util/xml-helpers.spec.js|22 0
+Modified: src/util/xml-helpers.js|23 0
+
+Revision: 4c2c3e688b5b914d45053a9030cce911051df0a2
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 17/03/2016 01:42:23
+Message:
+CB-10694 - Platform-specific configuration preferences don't override global settings #MsgLength=110
+
+
+----
+Modified: spec/util/xml-helpers.spec.js|21 0
+Modified: src/util/xml-helpers.js|3 3
+
+
+Revision: de2d903320f269cd1c61e9d7d078698f8c11a1a1
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 17/03/2016 07:45:04
+Message:
+CB-10694 - Update test to reflect merging of CB-9264 fix (removal of duplicate entries) #MsgLength=88
+
+
+----
+Modified: spec/util/xml-helpers.spec.js|2 3
+
+Revision: c4dbd253d5017072566f41498d5ae7993fadc5e3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/03/2016 08:52:03
+Message:
+CB-10911 Updated version and RELEASENOTES.md for release cordova-common@1.1.1 #MsgLength=78
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: package.json|1 1
+
+Revision: 8bf0ec980fdf43cbba92ec0aac08adc71bb32b55
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/03/2016 08:56:17
+Message:
+CB-10911 Incremented package version to -dev #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+Revision: 8b31a13670ef9e6c18e40a75e925122d7e78bc2b
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 27/03/2016 06:53:52
+Message:
+CB-10965 xml helper allows multiple instances to be merge in config.xml #MsgLength=90
+
+
+----
+Modified: spec/util/xml-helpers.spec.js|24 4
+Modified: src/util/xml-helpers.js|1 1
+
+Revision: 0160e7982e915db35bf7deb49225ac8543db09c9
+Author: daserge <v-seshak@microsoft.com>
+Date: 28/03/2016 22:06:45
+Message:
+CB-10940 Can't add Android platform from path #MsgLength=119
+
+
+----
+Added: spec/events.spec.js|48 0
+Modified: src/events.js|8 1
+
+Revision: 568e81c510e009ea73174612193ec4a44601a460
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 10/03/2016 19:03:11
+Message:
+CB-10822 Manage plugins/modules metadata using PlatformJson #MsgLength=60
+
+
+----
+Modified: package.json|3 2
+Added: spec/PlatformJson.spec.js|160 0
+Modified: src/PlatformJson.js|124 0
+
+Revision: 4b2e8214f49a28d0c463944fdaaf64554209ab37
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 10/03/2016 03:26:05
+Message:
+CB-10833 Deduplicate common logic for plugin installation/uninstallation #MsgLength=92
+
+
+----
+Modified: cordova-common.js|2 3
+Modified: package.json|1 0
+Added: spec/PluginManager.spec.js|94 0
+Added: src/PluginManager.js|148 0
+
+Revision: 04530d63b8af7c460754a179bc5714936f8db681
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 14/04/2016 20:53:35
+Message:
+CB-11022 Save modulesMetadata to both www and platform_www when necessary #MsgLength=93
+
+
+----
+Modified: spec/PluginManager.spec.js|46 4
+Modified: src/PluginManager.js|7 3
+
+Revision: a8cb42e7ee1a02bdae96e50a43a9b41399314c9e
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 18/04/2016 18:36:46
+Message:
+CB-11096 Updated version and RELEASENOTES.md for cordova-common release 1.2.0 #MsgLength=78
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+
+Revision: 690893c26bd8b70062da248ca22bbc49b3f7f610
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 18/04/2016 18:39:21
+Message:
+CB-11096 Incremented cordova-common package version to -dev #MsgLength=60
+
+
+----
+Modified: package.json|1 1
+
+Revision: 8a750e4b47378f0d4e712a83613f76f30873cc27
+Author: daserge <v-seshak@microsoft.com>
+Date: 21/04/2016 20:50:19
+Message:
+CB-11131 Fix TypeError: message.toUpperCase is not a function in CordovaLogger #MsgLength=79
+
+
+----
+Modified: src/CordovaLogger.js|5 5
+
+Revision: 06d3471109682dd6728d9c90676eff99565c7258
+Author: Jason Ginchereau <jasongin@microsoft.com>
+Date: 16/04/2016 10:27:01
+Message:
+CB-1117 Add FileUpdater module to cordova-common. This closes #429. #MsgLength=581
+
+
+----
+Modified: cordova-common.js|2 1
+Modified: package.json|2 1
+Added: spec/FileUpdater.spec.js|689 0
+Added: src/FileUpdater.js|422 0
+
+Revision: eec5c53ddf6145ed8d7e3da8a76c66c6ff5d51d2
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 06/05/2016 05:38:26
+Message:
+CB-11194 Improve cordova load time #MsgLength=54
+
+
+----
+Modified: cordova-common.js|27 24
+Modified: src/ConfigChanges/ConfigFile.js|24 20
+Added: src/util/addProperty.js|13 0
+
+Revision: cf9807b800c726f8fc146eefb56efe069aea0633
+Author: Richard Knoll <richard.b.knoll@gmail.com>
+Date: 03/05/2016 01:54:21
+Message:
+CB-11259: Improving prepare and build logging #MsgLength=64
+
+
+----
+Modified: src/ConfigChanges/ConfigFile.js|2 2
+Modified: src/PluginInfo/PluginInfo.js|1 1
+Modified: src/events.js|1 1
+
+Revision: 44c76744d0825bf43b676c80001eeff8c9b95f60
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/05/2016 08:42:51
+Message:
+CB-11260 Updated version and RELEASENOTES.md for release 1.3.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+
+Revision: f75e0849bb42f660b8fa4f683b1eb5dbab4f03c9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/05/2016 10:49:34
+Message:
+CB-11260 added missing headers #MsgLength=31
+
+
+----
+Modified: src/util/addProperty.js|19 0
+
+Revision: 9650022b530ae47449f7605715dff5c54af63976
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/05/2016 13:48:45
+Message:
+CB-11260 linkified release notes #MsgLength=33
+
+
+----
+Modified: RELEASENOTES.md|28 28
+
+Revision: 30969892b3b44cd413fcf14beda1282c00554c07
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/05/2016 14:04:43
+Message:
+CB-11260 Incremented package version to -dev #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+Revision: 8883f35c4f8e1bf5502f31a51615304e5752d06d
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 14/05/2016 00:45:28
+Message:
+Update README.md #MsgLength=36
+
+
+----
+Modified: README.md|7 7
+
+Revision: a250d1803bf424aced048e81d0c0d9d66b34e73e
+Author: ktop <ktop500@gmail.com>
+Date: 17/06/2016 04:48:16
+Message:
+CB-11023 Add edit-config functionality #MsgLength=58
+
+
+----
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|85 0
+Added: spec/fixtures/plugins/org.test.editconfigtest/plugin.xml|37 0
+Added: spec/fixtures/plugins/org.test.editconfigtest_two/plugin.xml|37 0
+Modified: spec/util/xml-helpers.spec.js|135 0
+Modified: src/ConfigChanges/ConfigChanges.js|100 8
+Modified: src/ConfigChanges/ConfigFile.js|18 2
+Modified: src/ConfigChanges/munge-util.js|3 0
+Modified: src/PlatformJson.js|2 3
+Modified: src/PluginInfo/PluginInfo.js|16 0
+Modified: src/PluginManager.js|1 1
+Modified: src/util/xml-helpers.js|91 33
+
+Revision: 2f1eee7350f8b60265a2860e88af468f00b1c92b
+Author: surF <surf@libremente.eu>
+Date: 09/07/2016 22:47:42
+Message:
+Fixed typos in 'platform' -> 'platform' #MsgLength=40
+
+
+----
+Modified: src/PluginInfo/PluginInfo.js|1 1
+
+Revision: 4c1756f9e53c97eded8cb1b8f01b9ce783b6677b
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 12/07/2016 23:53:02
+Message:
+CB-11569 Incremented package versions to -dev #MsgLength=46
+
+
+----
+Modified: package.json|1 1
+
+Revision: c2afcf3bf0890421563be9ca89db26406d54a8bd
+Author: juliascript <juliageist23@gmail.com>
+Date: 02/07/2016 02:42:45
+Message:
+CB-9825 framework tag spec parsing #MsgLength=54
+
+
+----
+Modified: src/PluginInfo/PluginInfo.js|1 0
+
+Revision: 37fb0da1e5e2fe526163de6901bcd1a7e3645a20
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 30/07/2016 08:16:02
+Message:
+CB-11645 added check to see if getEditConfig exists before trying to use it #MsgLength=76
+
+
+----
+Modified: src/ConfigChanges/ConfigChanges.js|10 2
+
+Revision: 83d79abba94679feb6538cd5f2b8db9e8bee3e99
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 28/07/2016 17:44:59
+Message:
+CB-11636 Handle attributes with quotes correctly #MsgLength=290
+
+
+----
+Modified: spec/util/xml-helpers.spec.js|10 0
+Modified: src/util/xml-helpers.js|43 41
+
+Revision: 6c36ac4ca00a12c05a43c1bc214b706d97043280
+Author: carynbear <caryn.tran@berkeley.edu>
+Date: 21/07/2016 07:16:49
+Message:
+CB-11653 copied findProjectRoot from cordova-lib #MsgLength=68
+
+
+----
+Modified: cordova-common.js|1 0
+Added: spec/CordovaCheck.spec.js|104 0
+Added: src/CordovaCheck.js|76 0
+
+Revision: 1add48228269de8e4246965b324598147ad8fd2e
+Author: Darryl Pogue <darryl@ayogo.com>
+Date: 22/07/2016 11:03:33
+Message:
+Add general purpose ConfigParser.getAttribute API #MsgLength=69
+
+
+----
+Modified: src/ConfigParser/ConfigParser.js|12 8
+
+Revision: e0309e79c08bb4937bc56322729f0a03bf711b7c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/08/2016 06:27:19
+Message:
+ Updated version and RELEASENOTES.md for release cordova-common@1.4.1 #MsgLength=70
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+
+Revision: dd58dda5c1de6c9de161fb846300825747bdc4fb
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/08/2016 07:17:35
+Message:
+ Incremented package version to -dev #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+
+Revision: b70d9f406669e1d2534ef22d438ca50542db74b8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/08/2016 07:27:15
+Message:
+added missing 1.4.0 release notes for cordova-common #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|3 0
+
+Revision: 9bea639c78b0818c7fdedd9e9dbe0d2dea1eee30
+Author: ktop <ktop500@gmail.com>
+Date: 27/08/2016 05:59:46
+Message:
+CB-11776 check edit-config target exists #MsgLength=60
+
+
+----
+Modified: src/ConfigChanges/ConfigChanges.js|1 1
+
+Revision: 41b547881203ea933dec69bcfc99ce380b408b71
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 31/08/2016 08:48:27
+Message:
+CB-11517 Allow .folder matches #MsgLength=31
+
+
+----
+Modified: src/FileUpdater.js|1 1
+
+Revision: 1ee5bef63a695921c9d86cc290e8fb388cc42137
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 01/09/2016 04:46:56
+Message:
+use array methods and object.keys for iterating. avoiding for-in loops #MsgLength=71
+
+
+----
+Modified: src/FileUpdater.js|39 45
+
+
+Revision: f11e4cfda1386dce5cd47b32d11b45a72e3fde2e
+Author: Anis Kadri <anis@apache.org>
+Date: 29/08/2016 22:28:55
+Message:
+config.xml has a different location in Android Studio #MsgLength=54
+
+
+----
+Modified: src/ConfigChanges/ConfigFile.js|5 0
+
+Revision: 4ab1f3ad333175b4188b65074c5b5063ceff8394
+Author: Anis Kadri <anis@apache.org>
+Date: 17/09/2016 06:35:41
+Message:
+Unifying quotes #MsgLength=16
+
+
+----
+Modified: src/ConfigChanges/ConfigFile.js|1 1
+
+Revision: 96ecb71c27c433eb7e690b8a665959284e08ae94
+Author: Anis Kadri <anis@apache.org>
+Date: 20/09/2016 06:52:18
+Message:
+PR #490 adding some clarifying comments #MsgLength=59
+
+
+----
+Modified: src/ConfigChanges/ConfigFile.js|2 1
+
+Revision: b1e3a181cc768ece59ebbfa7fb3599a1fab3b33a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 07/10/2016 01:29:29
+Message:
+CB-11936 - Support four new App Transport Security (ATS) keys #MsgLength=81
+
+
+----
+Modified: src/ConfigParser/ConfigParser.js|14 2
+
+Revision: 64744ecbbeef74b086fb783ea698eb2d874211ff
+Author: ktop <ktop500@gmail.com>
+Date: 27/09/2016 05:07:09
+Message:
+CB-11908 Add edit-config to config.xml #MsgLength=57
+
+
+----
+Modified: src/ConfigChanges/ConfigChanges.js|134 13
+Modified: src/ConfigChanges/ConfigFile.js|6 0
+Modified: src/ConfigParser/ConfigParser.js|19 0
+Modified: src/util/xml-helpers.js|17 0
+
+Revision: 4d2bf712dba06d62e6ee9fcb218850a3e8a1c875
+Author: ktop <ktop500@gmail.com>
+Date: 20/09/2016 01:53:51
+Message:
+CB-11776 Add test case for different edit-config targets #MsgLength=76
+
+
+----
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|2 1
+Modified: spec/fixtures/plugins/org.test.editconfigtest_two/plugin.xml|3 0
+
+Revision: b552b6ed3e3f90a7e6a582e5a2393fb5defb6861
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/10/2016 12:28:21
+Message:
+CB-11969 Updated version and RELEASENOTES.md for release 1.5.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: package.json|1 1
+
+Revision: 04d930aee9e713326222e7f3408e4605a3ae2a95
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/10/2016 12:50:23
+Message:
+CB-11969 Incremented package version to -dev #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+Revision: 625e1533f2f24b3d1ff5f93f85e3cc7ea0a85483
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/10/2016 06:52:40
+Message:
+CB-11998 - cordova platform add error with cordova-common@1.5.0 #MsgLength=83
+
+
+----
+Modified: spec/FileUpdater.spec.js|76 0
+Modified: src/FileUpdater.js|1 1
+
+Revision: 75822a3741af37765371f7c55a1d0589326b44b4
+Author: Darryl Pogue <darryl@ayogo.com>
+Date: 13/10/2016 01:48:26
+Message:
+CB-12002 - Add getAllowIntents() to ConfigParser #MsgLength=68
+
+
+----
+Modified: spec/ConfigParser/ConfigParser.spec.js|4 0
+Modified: spec/fixtures/test-config.xml|3 0
+Modified: src/ConfigParser/ConfigParser.js|9 0
+
+Revision: 4b9a394b2e73ba1fe63d199188fd25ac6658505f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/10/2016 12:59:07
+Message:
+CB-12003 Updated version and RELEASENOTES.md for release 1.5.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+
+Revision: 7355e8ca1f8da404e1bde96313305cac9ebc1200
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/10/2016 13:39:56
+Message:
+CB-12003 Incremented package version to -dev #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+Revision: 3206738ffeb36de45119c25dbe6b51105ddec585
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/10/2016 13:17:31
+Message:
+CB-12017: update istanbul dependency #MsgLength=37
+
+
+----
+Modified: package.json|1 2
+
+Revision: 40a0afb0cdcf1f5fdff2441bee4a606361907dcd
+Author: audreyso <auso@adobe.com>
+Date: 03/12/2016 06:58:26
+Message:
+CB-12197 : replaced multiple occurances of Anis and Brett with current Apache License #MsgLength=105
+
+
+----
+Modified: spec/fixtures/plugins/ChildBrowser/plugin.xml|16 16
+Modified: spec/fixtures/plugins/ChildBrowser/src/android/ChildBrowser.java|16 18
+Modified: spec/fixtures/plugins/ChildBrowser/www/childbrowser.js|17 18
+Modified: spec/fixtures/plugins/com.adobe.vars/plugin.xml|16 16
+Modified: spec/fixtures/plugins/org.apache.plist/plugin.xml|16 16
+Modified: spec/fixtures/plugins/org.test.configtest/plugin.xml|16 16
+Modified: spec/fixtures/plugins/org.test.editconfigtest/plugin.xml|16 16
+Modified: spec/fixtures/plugins/org.test.editconfigtest_two/plugin.xml|16 16
+Modified: spec/fixtures/plugins/org.test.multiple-children/plugin.xml|14 14
+Modified: spec/fixtures/plugins/org.test.plugins.childbrowser/plugin.xml|16 16
+Modified: spec/fixtures/plugins/org.test.plugins.dummyplugin/plugin.xml|16 16
+Modified: spec/fixtures/plugins/org.test.shareddeps/plugin.xml|16 16
+Modified: spec/fixtures/projects/android/AndroidManifest.xml|14 14
+Modified: spec/fixtures/projects/android_two/AndroidManifest.xml|14 14
+Modified: spec/fixtures/projects/android_two_no_perms/AndroidManifest.xml|16 16
+Modified: src/ConfigChanges/ConfigChanges.js|18 18
+Modified: src/util/plist-helpers.js|18 18
+Modified: src/util/xml-helpers.js|18 18
+
+Revision: b6e544381c6ad529e3ff91f5311b0d9677fe2097
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 21/12/2016 20:00:57
+Message:
+CB-12189 Add implementation attribute to framework #MsgLength=178
+
+
+----
+Modified: src/PluginInfo/PluginInfo.js|2 1
+
+Revision: 8049f1a6c452b9804bb57696fc92d7da0f6570ca
+Author: Nikita Matrosov <matrosov.nikita94@gmail.com>
+Date: 01/11/2016 17:18:45
+Message:
+Move windows-specific logic to cordova-windows #MsgLength=66
+
+
+----
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|0 33
+Modified: src/ConfigChanges/ConfigChanges.js|1 114
+
+Revision: 828783f17cff572faf0d97b3fb5df689f22daf6d
+Author: ktop <ktop500@gmail.com>
+Date: 13/12/2016 03:35:04
+Message:
+CB-12163 Add reference attrib to resource-file for Windows #MsgLength=78
+
+
+----
+Modified: src/PluginInfo/PluginInfo.js|2 1
+
+Revision: ad2c58fa7c13ef9a0c583abbbff5ed1d23558a19
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/01/2017 08:52:00
+Message:
+Major version bump for cordova-common due to windows specific removals #MsgLength=71
+
+
+----
+Modified: package.json|1 1
+
+Revision: 69634685debfd275f0f5a1cab7081244883685e6
+Author: audreyso <auso@adobe.com>
+Date: 15/12/2016 01:33:47
+Message:
+ fixjasmine : CB-12018 : labeled and updated tests to work with jasmine (spyOn and return, callThrough, waitsFor, toExist, callFake, describe) #MsgLength=143
+
+
+----
+Modified: package.json|1 1
+Modified: spec/ActionStack.spec.js|1 1
+Modified: spec/CordovaCheck.spec.js|9 18
+Modified: spec/CordovaLogger.spec.js|3 3
+Modified: spec/PlatformJson.spec.js|1 1
+
+Revision: 160c1bbb3b328888851fe4e593741696f6171bc6
+Author: audreyso <auso@adobe.com>
+Date: 20/12/2016 01:45:27
+Message:
+ fixjasmine : CB-12018 : fixed jasmine tests to work with uninstallPlugin and removed waitsFor/runs, updated promise syntax, calls.reset, and labled tests #MsgLength=155
+
+
+----
+Modified: spec/ActionStack.spec.js|8 8
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|70 70
+Modified: spec/ConfigParser/ConfigParser.spec.js|42 42
+Modified: spec/CordovaCheck.spec.js|7 7
+Modified: spec/CordovaLogger.spec.js|17 17
+Modified: spec/FileUpdater.spec.js|37 37
+Modified: spec/PlatformJson.spec.js|15 15
+Modified: spec/PluginInfo/PluginInfo.spec.js|2 2
+Modified: spec/PluginInfo/PluginInfoProvider.spec.js|1 1
+Modified: spec/PluginManager.spec.js|16 15
+Modified: spec/events.spec.js|3 3
+Modified: spec/superspawn.spec.js|3 3
+Modified: spec/util/xml-helpers.spec.js|43 43
+
+Revision: c42395619c5eb6c451df119caf7b27dc3e72e6db
+Author: audreyso <auso@adobe.com>
+Date: 11/01/2017 02:31:46
+Message:
+fixjasmine : CB-12018 : updated jshint and updated jasmine tests to work with jasmine instead of jasmine-node #MsgLength=110
+
+
+----
+Modified: package.json|3 3
+Added: spec/support/jasmine.json|8 0
+
+Revision: 5ae46e83ccc1c6bafa532542076f022279794962
+Author: audreyso <auso@adobe.com>
+Date: 12/01/2017 01:21:38
+Message:
+fixjasmine : CB-12018 : updated jasmine tests after final review #MsgLength=84
+
+
+----
+Modified: spec/ActionStack.spec.js|1 1
+Modified: spec/CordovaCheck.spec.js|3 3
+
+Revision: 9b3abb61f5030b9c6d7b416bb9f27854f1dce7d4
+Author: Darryl Pogue <darryl@ayogo.com>
+Date: 28/07/2016 07:28:08
+Message:
+CB-8978 Add resource-file parsing to config.xml #MsgLength=67
+
+
+----
+Modified: spec/ConfigParser/ConfigParser.spec.js|16 0
+Modified: spec/fixtures/test-config.xml|3 0
+Modified: src/ConfigParser/ConfigParser.js|24 0
+
+Revision: 050db3d5e3263b8c98b73d67ccea95a689baf074
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/01/2017 07:33:40
+Message:
+CB-12358 Updated version and RELEASENOTES.md for release 2.0.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+
+Revision: 70ad4f60fe407ee6d77ae3073ac757f8a4ddb2eb
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/01/2017 07:42:55
+Message:
+CB-12358: updated .ratignore #MsgLength=29
+
+
+----
+Modified: .ratignore|1 0
+
+Revision: f3a493b2944913a1c0bb82c4c97fff3cd3ffaf54
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/01/2017 09:55:42
+Message:
+CB-12358 Incremented package version to -dev #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+Revision: 1f813f9e7657e3e0a38eae13fe55055adbc5ab10
+Author: filmaj <maj.fil@gmail.com>
+Date: 09/03/2017 23:18:34
+Message:
+CB-12557: add both stdout and stderr properties to the error object passed to superspawn reject handler. #MsgLength=105
+
+
+----
+Modified: spec/superspawn.spec.js|35 0
+Modified: src/superspawn.js|6 0
+
+Revision: 01c6f36c9c0e2a170125618ea1faf3350efc5516
+Author: filmaj <maj.fil@gmail.com>
+Date: 10/03/2017 04:23:18
+Message:
+CB-12558 Updated version and RELEASENOTES.md for release 2.0.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+
+Revision: 1294548c2f0facbf0f3725581037c16960b16e50
+Author: filmaj <maj.fil@gmail.com>
+Date: 10/03/2017 04:37:59
+Message:
+CB-12558 Incremented package version to -dev #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+Revision: 0759d443e829ac8936a757846c71e4ae1d4d5f0f
+Author: Audrey So <audreyso@apache.org>
+Date: 11/03/2017 01:57:59
+Message:
+CB-11977 : updated engines and enginescript for common, fetch, and serve #MsgLength=92
+
+
+----
+Modified: package.json|2 1
+
+Revision: 364e39ed92a6906782e0f6cc62f0f8b02b1bf05b
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 28/02/2017 08:13:43
+Message:
+CB-11346: Remove known platforms check #MsgLength=75
+
+
+----
+Modified: src/events.js|1 0
+
+Revision: 3eca1a8032370120692d22e6969c72994f7386fe
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 05/06/2016 11:34:51
+Message:
+[CB-11120] Allow short/display name in config.xml #MsgLength=325
+
+
+----
+Modified: spec/ConfigParser/ConfigParser.spec.js|13 0
+Modified: src/ConfigParser/ConfigParser.js|10 0
+
+Revision: 670142a60e10f3bd29426c0fafc6b38e9583fcb6
+Author: carynbear <caryn.tran@berkeley.edu>
+Date: 07/06/2016 08:21:02
+Message:
+CB-10438 :Install correct dependency version. Removed shell.remove, added pkg.json to dependency tests 1-3, and updated install.js (.replace) to fix tests in uninstall.spec.js and update to workw with jasmine 2.0 #MsgLength=250
+
+
+----
+Modified: src/PluginInfo/PluginInfo.js|1 0
+
+Revision: bd0ea70b3b35f88533d65b49172f9dc1d471283f
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 01/04/2017 02:59:10
+Message:
+CB-11233 - Support installing frameworks into 'Embedded Binaries' section of the Xcode project #MsgLength=114
+
+
+----
+Modified: src/PluginInfo/PluginInfo.js|1 0
+
+Revision: 34016d769599f17d28c5d3de9a4e636b322f9e11
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 20/04/2017 02:30:48
+Message:
+CB-12665 removed enginestrict since it is deprecated #MsgLength=53
+
+
+----
+Modified: package.json|0 1
+
+Revision: e28a9b683b93a22dbdc737bf574302307431e9aa
+Author: ktop <ktop500@gmail.com>
+Date: 10/12/2016 03:53:50
+Message:
+CB-11908 Add tests for edit-config in config.xml and fix typo #MsgLength=86
+
+
+----
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|79 0
+Modified: spec/ConfigParser/ConfigParser.spec.js|4 0
+Modified: spec/fixtures/plugins/org.test.editconfigtest_two/plugin.xml|1 1
+Modified: spec/fixtures/test-config.xml|9 0
+Added: spec/fixtures/test-editconfig.xml|17 0
+Modified: src/ConfigChanges/ConfigFile.js|2 2
+Modified: src/util/xml-helpers.js|1 1
+
+Revision: b788eae4023159966b430537aec80773c1830c5c
+Author: Audrey So <audreyso@apache.org>
+Date: 06/04/2017 06:11:10
+Message:
+CB-11908 : updated tests to use jasmine 2.0 #MsgLength=81
+
+
+----
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|6 6
+
+Revision: 94430e683c75f9bc7a578a37a69a0057bc7b19f1
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 21/04/2017 14:45:12
+Message:
+CB-8978: Add option to get resource-file from root #MsgLength=193
+
+
+----
+Modified: spec/ConfigParser/ConfigParser.spec.js|4 0
+Modified: spec/fixtures/test-config.xml|1 0
+Modified: src/ConfigParser/ConfigParser.js|16 1
+
+Revision: 2d4db949242cab417e593e22933a16d1349343c5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 28/04/2017 02:00:59
+Message:
+CB-11242: updated tests and fixtures #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: spec/support/jasmine.json|1 1
+
+Revision: 2c14101eb37e66706f6de83b48e00db76a0e0160
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 15/04/2017 08:58:06
+Message:
+CB-12662 Updated version and RELEASENOTES.md for release 2.0.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+
+Revision: eeccfada49ca651d2fb740a87ec772e2f7f8c2ec
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/05/2017 07:17:19
+Message:
+CB-12747 Updated version and RELEASENOTES.md for release 7.0.0 #MsgLength=63
+
+
+----
+Modified: package.json|2 2
+
+Revision: 5283d7969a291364ec48eb51bb435480c77ef1c0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/05/2017 07:17:27
+Message:
+CB-12747 Updated version and RELEASENOTES.md for release 2.0.3 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|5 0
+
+Revision: 611b403291e19e4160c8817aaff8deac675fd385
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/05/2017 08:05:33
+Message:
+CB-12747 Incremented package version to -dev #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+Revision: c3f6c9df1046e6609db0ff730a9be62222f302d5
+Author: Remco Haszing <remcohaszing@gmail.com>
+Date: 16/05/2017 15:58:54
+Message:
+CB-12766 Consistently write JSON with 2 spaces indentation #MsgLength=358
+
+
+----
+Modified: spec/PlatformJson.spec.js|3 3
+Modified: src/PlatformJson.js|3 3
+
+Revision: eda49357f118937c179f0b7ed54525f4a6cf5830
+Author: Audrey So <audreyso@apache.org>
+Date: 03/06/2017 06:00:01
+Message:
+CB-12762 : updated common, fetch, and serve pkgJson to point pkgJson repo items to github mirrors #MsgLength=117
+
+
+----
+Modified: package.json|1 1
+
+Revision: 034716314a47bc6d8491ca71eec769194bc2aa72
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 29/03/2017 21:51:08
+Message:
+CB-12250 CB-12409 iOS: Fix bug with escaping properties from plist file #MsgLength=91
+
+
+----
+Added: spec/plist-helpers.spec.js|42 0
+Modified: src/util/plist-helpers.js|2 2
+
+Revision: 8d816de3ba7e3508fe5ba7f5d06b0af96de81907
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/06/2017 04:57:14
+Message:
+CB-12785: added travis and appveyor files #MsgLength=42
+
+
+----
+Added: .travis.yml|9 0
+Added: appveyor.yml|17 0
+
+Revision: 54c0608e3dabbee7451f9a22cf6354ec6edf2154
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/06/2017 06:29:47
+Message:
+CB-12785: updated travis file #MsgLength=30
+
+
+----
+Modified: .travis.yml|2 0
+Modified: appveyor.yml|1 0
+
+Revision: 9e0781ab8f1cbe2b87fc6b7c915b21fc25a8eed2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/06/2017 06:58:03
+Message:
+CB-12785: added travis and appveyor badges to readme #MsgLength=53
+
+
+----
+Modified: README.md|4 0
+
+Revision: c9593fb0b84b90f28d38fa15f4724d8f195ac813
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/06/2017 07:13:47
+Message:
+CB-12785: added .gitignore file #MsgLength=32
+
+
+----
+Added: .gitignore|1 0
+
+Revision: 1cdc1248a1b2eed205ff012c6e3e1fb6e5cb489b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 15/06/2017 03:25:48
+Message:
+CB-11980: fixed incorrect appveyor image #MsgLength=41
+
+
+----
+Modified: README.md|1 1
+
+Revision: 54450166db4c7facc785064ee5104cad5702faa8
+Author: Audrey So <audreyso@apache.org>
+Date: 10/06/2017 02:02:48
+Message:
+CB-12895 : set up eslint and removed jshint #MsgLength=44
+
+
+----
+Renamed: .eslintignore [from .jshintignore]|1 1
+Added: .eslintrc.yml|11 0
+Modified: package.json|9 3
+Added: spec/.eslintrc.yml|2 0
+Deleted: spec/.jshintrc|0 11
+Modified: spec/ActionStack.spec.js|24 24
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|94 96
+Modified: spec/ConfigParser/ConfigParser.spec.js|93 92
+Modified: spec/CordovaCheck.spec.js|20 20
+Modified: spec/CordovaLogger.spec.js|6 6
+Modified: spec/FileUpdater.spec.js|67 67
+Modified: spec/PlatformJson.spec.js|21 21
+Modified: spec/PluginInfo/PluginInfo.spec.js|5 3
+Modified: spec/PluginInfo/PluginInfoProvider.spec.js|2 2
+Modified: spec/PluginManager.spec.js|33 33
+Modified: spec/events.spec.js|2 2
+Modified: spec/plist-helpers.spec.js|7 8
+Modified: spec/superspawn.spec.js|28 28
+Modified: spec/util/xml-helpers.spec.js|77 73
+Deleted: src/.jshintrc|0 10
+Modified: src/ActionStack.js|15 15
+Modified: src/ConfigChanges/ConfigChanges.js|52 66
+Modified: src/ConfigChanges/ConfigFile.js|48 46
+Modified: src/ConfigChanges/ConfigKeeper.js|4 5
+Modified: src/ConfigChanges/munge-util.js|22 23
+Modified: src/ConfigParser/ConfigParser.js|108 111
+Modified: src/CordovaCheck.js|7 7
+Modified: src/CordovaError/CordovaError.js|13 12
+Modified: src/CordovaError/CordovaExternalToolErrorContext.js|3 3
+Modified: src/CordovaLogger.js|9 9
+Modified: src/FileUpdater.js|70 71
+Modified: src/PlatformJson.js|32 33
+Modified: src/PluginInfo/PluginInfo.js|85 92
+Modified: src/PluginInfo/PluginInfoProvider.js|7 7
+Modified: src/PluginManager.js|44 47
+Modified: src/events.js|1 2
+Modified: src/superspawn.js|12 13
+Modified: src/util/addProperty.js|2 2
+Modified: src/util/plist-helpers.js|22 27
+Modified: src/util/xml-helpers.js|68 69
+
+Revision: b4187f44d7593c173d308a010e9dcb6392118a1c
+Author: filmaj <maj.fil@gmail.com>
+Date: 29/07/2017 02:36:03
+Message:
+Run code coverage as part of CI. Add coverage/ dir to gitignore. #MsgLength=65
+
+
+----
+Modified: .gitignore|1 0
+Modified: .travis.yml|6 2
+
+Revision: af5c6dcddda0f96062b4d327ee75009dc1214428
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 28/07/2017 20:35:41
+Message:
+CB-11968: Added support for <config-file> in config.xml #MsgLength=73
+
+
+----
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|20 0
+Modified: spec/ConfigParser/ConfigParser.spec.js|5 1
+Modified: spec/fixtures/test-config.xml|6 0
+Added: spec/fixtures/test-configfile.xml|23 0
+Modified: src/ConfigChanges/ConfigChanges.js|21 14
+Modified: src/ConfigParser/ConfigParser.js|23 0
+
+Revision: cf5db0b0982fa9d6b5127126f67744bebc3f6387
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 24/08/2017 07:05:06
+Message:
+CB-13211 - Add 'allows-arbitrary-loads-for-media' attribute parsing for getAccesses #MsgLength=101
+
+
+----
+Modified: src/ConfigParser/ConfigParser.js|3 1
+
+Revision: 93fe7eaddc150b878c396f8f8b370f8fa2034ff8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/08/2017 08:18:12
+Message:
+CB-13145: added variable replacing to framework tag #MsgLength=52
+
+
+----
+Modified: src/PluginInfo/PluginInfo.js|22 4
+Modified: src/PluginManager.js|1 1
+
+Revision: 5d678586774e5abf707ecfd6cc1a64a5e10e21d0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/08/2017 08:18:12
+Message:
+CB-13145: added variable replacing to framework tag #MsgLength=52
+
+
+----
+Modified: src/PluginInfo/PluginInfo.js|5 4
+
+Revision: 00577f8151547e1cb7809901db1ddf012f9a3a78
+Author: Audrey So <audreyso@apache.org>
+Date: 26/08/2017 04:26:40
+Message:
+CB-13145 : added getFrameworks to unit test #MsgLength=44
+
+
+----
+Modified: spec/PluginInfo/PluginInfo.spec.js|24 3
+Added: spec/fixtures/plugins/org.test.src/plugin.xml|102 0
+
+Revision: b30d8991ed65ea7ef5a159d0a7218daf846edc92
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 30/08/2017 13:36:53
+Message:
+CB-13145: removed uncessary check in getFramework #MsgLength=50
+
+
+----
+Modified: spec/PluginInfo/PluginInfo.spec.js|0 6
+Modified: src/PluginInfo/PluginInfo.js|0 5
+
+Revision: e6d8e6f06320e069b50bc0cf39737da5e0c4738a
+Author: Audrey So <audreyso@apache.org>
+Date: 31/08/2017 05:48:23
+Message:
+CB-13231 Updated version and RELEASENOTES.md for release 2.1.0 #MsgLength=63
+
+
+----
+Modified: .ratignore|1 0
+Modified: RELEASENOTES.md|10 0
+Modified: package.json|1 1
+Modified: spec/plist-helpers.spec.js|19 0
+
+Revision: 3d4602af9c69727fe6cefdb5dbec74fa56ad2b51
+Author: Audrey So <audreyso@apache.org>
+Date: 31/08/2017 06:07:22
+Message:
+CB-13231 Incremented package version to -dev #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+Revision: c38a22093ca60373571b62525d54655a25c26dcf
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/08/2017 08:18:12
+Message:
+CB-13145: added variable replacing to framework tag #MsgLength=52
+
+
+----
+Modified: src/PluginInfo/PluginInfo.js|6 0
+
+Revision: 623039ff6ecb6b522dd5d6da10560cbedded8310
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/08/2017 08:18:12
+Message:
+CB-13145 : added getFrameworks to unit tests #MsgLength=45
+
+
+----
+Modified: spec/PluginInfo/PluginInfo.spec.js|6 0
+Modified: src/PluginInfo/PluginInfo.js|0 1
+
+Revision: e76dd52f67f46f93d51ff7fa41df74482019a9e3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 06/10/2017 03:18:29
+Message:
+CB-13380 Updated version and RELEASENOTES.md for release 2.1.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+
+Revision: 7f4e5d75b05042d40cca02adac54de72a5913d7e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/10/2017 06:28:29
+Message:
+CB-13380 Incremented package version to -dev #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+Revision: 8b6430960e8aa6f1ef51e3ad218b11b773f89b1a
+Author: Joe Bowser <bowserj@apache.org>
+Date: 03/10/2017 05:00:46
+Message:
+CB-11244: Spot fix for cordova-android PR #389 #MsgLength=47
+
+
+----
+Modified: src/ConfigChanges/ConfigFile.js|17 10
+
+Revision: 0e71312d55ddcae2eaf6ecb40b2c3ffb653b8fc6
+Author: Joe Bowser <bowserj@apache.org>
+Date: 04/10/2017 04:55:42
+Message:
+CB-11244: eslint errors for spaces #MsgLength=52
+
+
+----
+Modified: src/ConfigChanges/ConfigFile.js|6 6
+
+Revision: cd46bd5ee889c8e870fd709458748b3b68ecc72e
+Author: Audrey So <audreyso@apache.org>
+Date: 16/10/2017 21:29:31
+Message:
+CB-11244 : added unit tests for ConfigFile #MsgLength=60
+
+
+----
+Added: spec/ConfigChanges/ConfigFile.spec.js|79 0
+Modified: src/ConfigChanges/ConfigFile.js|4 1
+
+Revision: 971a0e234faba4b29bb09b0282ef18423145a811
+Author: Joe Bowser <bowserj@apache.org>
+Date: 20/10/2017 05:11:15
+Message:
+CB-13471: File Provider fix belongs in cordova-common until we move this code out #MsgLength=82
+
+
+----
+Modified: src/ConfigChanges/ConfigFile.js|6 0
+
+Revision: bb2e6125afd974714927b4d604da5db20d7f3ae2
+Author: Joe Bowser <bowserj@apache.org>
+Date: 20/10/2017 05:20:43
+Message:
+eslint fix #MsgLength=28
+
+
+----
+Modified: src/ConfigChanges/ConfigFile.js|1 2
+
+Revision: 5296e279e5aa0ac79bc03726a25b06e562e64176
+Author: Audrey So <audreyso@apache.org>
+Date: 28/10/2017 00:10:57
+Message:
+CB-13501 : added node 8 support #MsgLength=32
+
+
+----
+Modified: .travis.yml|1 0
+Modified: appveyor.yml|1 0
+
+
+Revision: afc6185419086dd44776f4eb1e59cbcb939423c4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 23/11/2017 08:47:52
+Message:
+CB-13599 Updated version and RELEASENOTES.md for release 2.2.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: src/ConfigChanges/ConfigFile.js|1 1
+
+Revision: 0422520a1d36a6bb357880071b50c3f075b326a1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 23/11/2017 08:55:03
+Message:
+CB-13599 Incremented package version to -dev #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+Revision: f8cca53a4d7f61ad54f2ba5ae584c5787bdd715c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 07/12/2017 15:25:45
+Message:
+removed rogue console.log that was making lib tests look fugly, changed CordovaLogger calls to events.emit to match most code. Is CordovaLogger used anywhere? #MsgLength=159
+
+
+----
+Modified: src/ConfigChanges/ConfigChanges.js|3 3
+Modified: src/ConfigParser/ConfigParser.js|1 1
+
+Revision: 3bdc82251ea5882a3da1ebfd91dba50e5c56305e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 15/12/2017 03:43:55
+Message:
+CB-13674 Updated version and RELEASENOTES.md for release 2.2.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+
+Revision: fe21952b492dd9f90b7de07c256064626cdb8d5b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 15/12/2017 05:43:45
+Message:
+CB-13674 Incremented package version to -dev #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+Revision: d7a03ceb1c6d2ff7622fcc1a8badbed81d179da1
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 04/05/2018 13:35:16
+Message:
+Fix repository URL in package.json #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+
+Revision: 6fe3256fc1cf38ac482a7ff4cf8eea935628f469
+Author: Jacques Caron <jc@naxomedia.com>
+Date: 05/05/2018 14:02:06
+Message:
+CB-13744: Recognize storyboards as XML files #MsgLength=168
+
+
+----
+Modified: src/ConfigChanges/ConfigFile.js|1 1
+
+Revision: 3d80c95239d7209f640db7344c54ff42c414d13c
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 04/05/2018 16:37:13
+Message:
+Various fixes in README #MsgLength=24
+
+
+----
+Modified: README.md|7 9
+
+Revision: 135e29ae9f154d2ae2238a768404c95d83c328d1
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 04/05/2018 23:08:06
+Message:
+Remove outdated README for ConfigParser #MsgLength=226
+
+
+----
+Deleted: src/ConfigParser/README.md|0 86
+
+Revision: f5b1cd233da53cdd2beaf054d489ff9e8c4f3c49
+Author: Audrey So <audreyso@apache.org>
+Date: 27/10/2017 04:34:20
+Message:
+CB-13471 : added unit test for config file provider #MsgLength=52
+
+
+----
+Modified: spec/ConfigChanges/ConfigFile.spec.js|6 0
+
+Revision: 5bc0764161a1ca9f2131f01b7b8887eb26b2c1a6
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 05/05/2018 14:11:40
+Message:
+CB-13471: Fix tests and path issues for Windows #MsgLength=48
+
+
+----
+Modified: spec/ConfigChanges/ConfigFile.spec.js|6 0
+Modified: src/ConfigChanges/ConfigFile.js|3 1
+
+Revision: a91b5bca42d4d04ac3bb3c7a06267aa3a162801a
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 04/05/2018 16:26:18
+Message:
+Lint sources and specs in one go #MsgLength=194
+
+
+----
+Modified: package.json|1 1
+
+Revision: 8d6511e0d9821e4c0127564d74cca1dc533bf24c
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 04/05/2018 16:34:15
+Message:
+Remove unused arguments and configure linter to report them #MsgLength=60
+
+
+----
+Modified: .eslintrc.yml|3 1
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|1 1
+Modified: spec/FileUpdater.spec.js|1 1
+Modified: spec/PlatformJson.spec.js|1 1
+Modified: src/ConfigParser/ConfigParser.js|1 1
+Modified: src/FileUpdater.js|3 3
+Modified: src/util/xml-helpers.js|1 1
+
+Revision: acf133346579a96217d280a8c3186e07d7fc3ef7
+Author: Jacques Caron <jc@naxomedia.com>
+Date: 10/01/2018 01:30:00
+Message:
+CB-13770: Warn when <edit-config> or <config-file> not found #MsgLength=286
+
+
+----
+Modified: src/ConfigChanges/ConfigChanges.js|2 0
+
+Revision: 9b4937493a397246188fee8284f62b9507a14c75
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 12/05/2018 15:22:21
+Message:
+CB-11691: Fix for modifying binary plists #MsgLength=301
+
+
+----
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|14 0
+Added: spec/fixtures/plugins/org.apache.bplist/plugin.xml|54 0
+Added: spec/fixtures/projects/ios-config-xml/SampleApp/SampleApp-binary.plist|0 0
+Modified: src/ConfigChanges/ConfigFile.js|1 1
+
+Revision: d473b190960ae3401ede0993994220c89d262bc0
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 04/05/2018 14:11:32
+Message:
+Update dependencies #MsgLength=20
+
+
+----
+Modified: package.json|12 14
+Modified: src/superspawn.js|1 1
+
+Revision: adf90039c1a42bf1664dba91dbadaac504b82f5a
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 04/05/2018 14:11:51
+Message:
+CB-14064: Remove Node 4 from CI matrix #MsgLength=39
+
+
+----
+Modified: .travis.yml|1 1
+Modified: appveyor.yml|2 2
+
+Revision: a452993b6b67688c25d94ead7f563694d4d24683
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 04/05/2018 14:16:06
+Message:
+Add GitHub pull request template #MsgLength=33
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|22 0
+
+Revision: c700a5d6830fe7401551c4b4ce65c1cccbb85f17
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 06/05/2018 08:31:49
+Message:
+CB-13979: More consistency for config.xml lookups #MsgLength=50
+
+
+----
+Modified: spec/fixtures/test-config.xml|1 0
+Modified: src/ConfigParser/ConfigParser.js|5 9
+
+Revision: ba8ce2572597759a4d682050c915c1fcfc644331
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 22/05/2018 00:35:48
+Message:
+Remove obsolete JSCS config #MsgLength=28
+
+
+----
+Deleted: .jscs.json|0 24
+
+Revision: 3e9a4efdcc8670c015cf6fd5419ef9bbb9f9cf40
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 06/05/2018 06:26:04
+Message:
+Use .includes and .startsWith instead of .indexOf #MsgLength=50
+
+
+----
+Modified: spec/fixtures/projects/windows/www/cordova-2.6.0.js|2 2
+Modified: src/ConfigChanges/ConfigFile.js|3 3
+Modified: src/ConfigParser/ConfigParser.js|1 1
+Modified: src/CordovaLogger.js|3 3
+Modified: src/PlatformJson.js|2 2
+Modified: src/superspawn.js|1 1
+Modified: src/util/xml-helpers.js|3 3
+
+Revision: 23a9bef3f47482606b04fcdd14a6e254ce5b0aee
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 22/05/2018 01:45:35
+Message:
+Simplify element removal in ConfigParser #MsgLength=41
+
+
+----
+Modified: src/ConfigParser/ConfigParser.js|10 19
+
+Revision: ff3630f8fc3260bd917d88d130416f386614eecb
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 22/05/2018 01:21:31
+Message:
+Use strip-bom to strip BOM #MsgLength=27
+
+
+----
+Modified: package.json|1 0
+Modified: src/util/xml-helpers.js|2 5
+
+Revision: e98283d0307e3fb4e73b6b668c4489b4a90098ff
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 31/05/2018 11:59:43
+Message:
+CB-14112: Updated version and RELEASENOTES.md for release 2.2.2 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: package.json|1 1
+
+Revision: 7a4eeba325ebeb7a4b41d89ee6ea6e234f9b69e7
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 31/05/2018 12:05:59
+Message:
+CB-14112: Incremented package version to 2.3.0-dev #MsgLength=51
+
+
+----
+Modified: package.json|1 1
+
+Revision: 02784f16c46eaaa4304e12073df42f53e028db55
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/06/2018 03:28:37
+Message:
+added package-lock.json to .rateignore #MsgLength=39
+
+
+----
+Modified: .gitignore|1 0
+Modified: .ratignore|1 0
+
+Revision: d781ffdc4ebd0ef092d7bd157b4fec54a2e153f7
+Author: Darryl Pogue <dvpdiner2@gmail.com>
+Date: 05/06/2018 14:08:50
+Message:
+Replace shelljs calls with fs-extra & which (#21) #MsgLength=51
+
+
+----
+Modified: package.json|3 2
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|61 44
+Modified: spec/ConfigChanges/ConfigFile.spec.js|1 1
+Modified: spec/ConfigParser/ConfigParser.spec.js|1 1
+Modified: spec/CordovaCheck.spec.js|20 24
+Modified: spec/FileUpdater.spec.js|4 5
+Modified: spec/PlatformJson.spec.js|16 0
+Modified: spec/PluginManager.spec.js|3 3
+Modified: src/ConfigChanges/ConfigFile.js|1 1
+Modified: src/ConfigParser/ConfigParser.js|1 1
+Modified: src/CordovaCheck.js|1 1
+Modified: src/FileUpdater.js|13 26
+Modified: src/PlatformJson.js|3 7
+Modified: src/PluginInfo/PluginInfo.js|1 1
+Modified: src/PluginInfo/PluginInfoProvider.js|1 1
+Modified: src/PluginManager.js|1 1
+Modified: src/superspawn.js|3 3
+Modified: src/util/xml-helpers.js|1 1
+
+Revision: bb7eec1cb9e645937f9ac5c9e14e26fd513f912b
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 15/06/2018 15:06:10
+Message:
+Increment package version to 3.0.0-dev #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+
+Revision: c10440111a9b471612d0a8679c1cd530ce7a0616
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 19/06/2018 09:17:29
+Message:
+.travis.yml add spacing #MsgLength=24
+
+
+----
+Modified: .travis.yml|5 0
+
+Revision: 7bf9627f0135c6b3518292660b6e07e6f5815926
+Author: エリス <ellis.bryan@gmail.com>
+Date: 26/06/2018 17:57:41
+Message:
+CB-14099 osx: Fixed Resolve Config Path for OSX #MsgLength=66
+
+
+----
+Modified: spec/ConfigChanges/ConfigFile.spec.js|6 0
+Modified: src/ConfigChanges/ConfigFile.js|7 4
+
+Revision: d2dca1c70ddc1cb487ceb9e4eee086262ccc30f1
+Author: エリス <ellis.bryan@gmail.com>
+Date: 13/07/2018 10:48:30
+Message:
+CB-12016: (all) Removed cordova-registry-mapper dependency #MsgLength=59
+
+
+----
+Modified: package.json|0 1
+Modified: src/PlatformJson.js|2 10
+
+Revision: d3a8deebb7905d4a38eeae4365366026dbe9808e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/08/2018 10:51:59
+Message:
+Pin Jasmine@~3.1.0 (#37) #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+
+Revision: b296be547ae6e4afc1bfd7f9fd03f1e6be1f0ba9
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 16/08/2018 22:24:30
+Message:
+Simplify some helpers in util/xml-helpers (#40) #MsgLength=85
+
+
+----
+Modified: src/util/xml-helpers.js|5 25
+
+Revision: 8bb30fc49996ddab22366b40185b2a828f4664f7
+Author: knaito <knaito@asial.co.jp>
+Date: 15/08/2018 12:06:37
+Message:
+type attributes for header-file is added #MsgLength=41
+
+
+----
+Modified: src/PluginInfo/PluginInfo.js|2 1
+
+Revision: 52b8f4f4c4204a6ce4578db5e8068be62bdd5727
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 24/05/2018 20:56:45
+Message:
+Make PlatformJson.generateMetadata more readable #MsgLength=49
+
+
+----
+Modified: package.json|1 0
+Modified: spec/PlatformJson.spec.js|21 7
+Modified: src/PlatformJson.js|8 9
+
+Revision: 075e0ba3d2766cd80109307fdac41d49c7940820
+Author: エリス <ellis.bryan@gmail.com>
+Date: 05/06/2018 15:40:13
+Message:
+CB-13685 android: Update ConfigParser for Adaptive Icons #MsgLength=57
+
+
+----
+Modified: src/ConfigParser/ConfigParser.js|2 0
+
+Revision: 446adc1536ea8e9ac44dca8a3554b452d07aad64
+Author: knaito <knaito@asial.co.jp>
+Date: 31/08/2018 12:03:07
+Message:
+Fix xml-helpers issue by adding close tag #MsgLength=42
+
+
+----
+Added: spec/fixtures/test-config0.xml|12 0
+Modified: spec/util/xml-helpers.spec.js|6 0
+Modified: src/util/xml-helpers.js|1 1
+
+Revision: 69dd3f94b0688ffd5669c40050f005baa3166a89
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 09/09/2018 21:36:17
+Message:
+Normalize whitespace (#46) #MsgLength=28
+
+
+----
+Modified: .eslintignore|1 1
+Modified: RELEASENOTES.md|1 1
+Modified: spec/.eslintrc.yml|1 1
+Modified: spec/PlatformJson.spec.js|190 190
+Modified: spec/PluginManager.spec.js|137 137
+Modified: spec/fixtures/plugins/ChildBrowser/plugin.xml|4 4
+Modified: spec/fixtures/plugins/ChildBrowser/src/android/ChildBrowser.java|1 1
+Modified: spec/fixtures/plugins/com.adobe.vars/plugin.xml|3 3
+Modified: spec/fixtures/plugins/org.test.multiple-children/plugin.xml|16 16
+Modified: spec/fixtures/plugins/org.test.src/plugin.xml|1 1
+Modified: spec/fixtures/projects/android/AndroidManifest.xml|5 5
+Modified: spec/fixtures/projects/android_two/AndroidManifest.xml|5 5
+Modified: spec/fixtures/projects/android_two_no_perms/AndroidManifest.xml|3 3
+Modified: spec/fixtures/projects/ios-config-xml/SampleApp/SampleApp-Info.plist|2 2
+Modified: spec/fixtures/projects/ios-config-xml/SampleApp/config.xml|2 2
+Modified: spec/fixtures/projects/windows/TestApp.jsproj|1 1
+Modified: spec/fixtures/projects/windows/TestApp.projitems|1 1
+Modified: spec/fixtures/projects/windows/bom_test.xml|2 2
+Modified: spec/fixtures/projects/windows/www/cordova-2.6.0.js|3 3
+Modified: spec/fixtures/projects/windows/www/css/index.css|2 2
+Modified: spec/superspawn.spec.js|91 91
+Modified: src/CordovaLogger.js|220 220
+Modified: src/PluginManager.js|149 149
+
+Revision: ce3801a184d34cc4c3ea08aeecd159227c6ae9e9
+Author: Ken Naito <fine14r3@gmail.com>
+Date: 12/09/2018 01:07:32
+Message:
+CB-14108: fix incorrect count in config_munge in ios.json and android.json #MsgLength=203
+
+
+----
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|88 0
+Added: spec/CordovaError/CordovaError.spec.js|41 0
+Added: spec/fixtures/test-configfile0.xml|14 0
+Added: spec/fixtures/test-configfile1.xml|29 0
+Added: spec/fixtures/test-configfile2.xml|34 0
+Modified: src/ConfigChanges/ConfigChanges.js|129 40
+Modified: src/ConfigChanges/ConfigFile.js|5 1
+Modified: src/ConfigChanges/munge-util.js|23 0
+Modified: src/ConfigParser/ConfigParser.js|2 1
+
+Revision: 9c6cda3db766c3daa87e8e4f8cc65e818a9e6dfc
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 06/09/2018 14:41:32
+Message:
+CB-13496: Fix greedy regex in plist-helpers #MsgLength=44
+
+
+----
+Modified: spec/plist-helpers.spec.js|32 0
+Modified: src/util/plist-helpers.js|1 1
+
+Revision: be6c0ea069556d2aba1f52273f5009278aad6821
+Author: knaito <knaito@asial.co.jp>
+Date: 29/08/2018 14:51:25
+Message:
+add method getPodSpecs and add related tests #MsgLength=45
+
+
+----
+Modified: spec/PluginInfo/PluginInfo.spec.js|14 0
+Added: spec/fixtures/plugins/org.test.plugins.withcocoapods/plugin.xml|49 0
+Modified: src/PluginInfo/PluginInfo.js|54 0
+
+Revision: 1b4c64925a856b5470cd5e6f76395f2987bd8763
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 09/09/2018 19:44:26
+Message:
+Use `cross-spawn` for platform-independent spawning #MsgLength=65
+
+
+----
+Modified: package.json|1 0
+Added: spec/fixtures/echo-args.cmd|5 0
+Modified: spec/superspawn.spec.js|16 0
+Modified: src/superspawn.js|3 47
+
+Revision: c2f83b0f3272894892c8eee9939bb4d5e0e89b28
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 04/11/2018 04:50:26
+Message:
+Update fs-extra and eslint dependencies #MsgLength=40
+
+
+----
+Modified: package.json|8 8
+
+Revision: 193c9f3e2bf003292d12782f2d182a08c1b562b8
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 04/11/2018 04:51:39
+Message:
+Fix eslint object-curly-spacing complaints #MsgLength=43
+
+
+----
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|17 16
+Modified: spec/ConfigParser/ConfigParser.spec.js|3 3
+Modified: spec/CordovaLogger.spec.js|3 3
+Modified: spec/PlatformJson.spec.js|10 10
+Modified: spec/PluginInfo/PluginInfo.spec.js|1 1
+Modified: spec/PluginManager.spec.js|1 1
+Modified: spec/superspawn.spec.js|4 4
+Modified: spec/util/xml-helpers.spec.js|5 5
+Modified: src/ConfigChanges/ConfigChanges.js|4 4
+Modified: src/ConfigChanges/ConfigFile.js|1 1
+Modified: src/ConfigParser/ConfigParser.js|2 2
+Modified: src/FileUpdater.js|1 1
+Modified: src/PlatformJson.js|5 5
+Modified: src/PluginInfo/PluginInfo.js|5 5
+Modified: src/superspawn.js|2 2
+
+Revision: a7dbf098ab59a08430429e7979b5b9a238bf6c4a
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 04/11/2018 05:12:42
+Message:
+Updated version and RELEASENOTES.md for v3.0.0 #MsgLength=47
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: package.json|1 1
+
+Revision: 2110597a8a1c0d937fe8ab7ddfd188ac9c4125b8
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 04/11/2018 05:16:21
+Message:
+Incremented package version to 3.0.1-dev #MsgLength=41
+
+
+----
+Modified: package.json|1 1
+
+Revision: 5599cefccdc54122fcaf1962fe2198963ecba9fd
+Author: Chris Brody <chris.brody@gmail.com>
+Date: 04/12/2018 23:14:35
+Message:
+Cleanup indentation spacing in jasmine.json (#54) #MsgLength=51
+
+
+----
+Modified: spec/support/jasmine.json|1 1
+
+Revision: f26ffc4131ef2560d7b045a9e51b0a213d8e31a3
+Author: Chris Brody <chris.brody@gmail.com>
+Date: 05/12/2018 01:40:13
+Message:
+Verbose test reporter (#55) #MsgLength=150
+
+
+----
+Modified: package.json|1 0
+Added: spec/helper.js|31 0
+Modified: spec/support/jasmine.json|3 0
+
+Revision: 6667cfcf1a131b80e09e1410e5166e5f0a420f59
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 18/12/2018 21:05:01
+Message:
+Refactor CordovaLogger to singleton class (#53) #MsgLength=49
+
+
+----
+Modified: src/CordovaLogger.js|172 169
+Added: src/util/formatError.js|53 0
+
+Revision: 87504def8d2dea9dbbd73aec34f6d22e324b50a8
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 18/12/2018 21:54:46
+Message:
+Explicit Cordova events section in spec #MsgLength=86
+
+
+----
+Modified: spec/events.spec.js|24 22
+
+Revision: 0ceb960e97578b70eb117fa04c0a4bbfc88f382f
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 19/12/2018 02:03:17
+Message:
+Add Cordova events emit method tests to spec #MsgLength=231
+
+
+----
+Modified: spec/events.spec.js|43 7
+
+
+Revision: b47a6fb9253512c2910a2805cefb30de03c80e43
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 19/12/2018 11:14:34
+Message:
+Refactor Cordova events into ES6 class #MsgLength=183
+
+
+----
+Modified: src/events.js|43 43
+
+Revision: cb629208206c8eef9a9dd9ed8938c6c13ed284ae
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 19/12/2018 11:21:58
+Message:
+Update Cordova events to use a real singleton #MsgLength=156
+
+
+----
+Modified: src/events.js|12 3
+
+
+Revision: 2492998ea0aa1c5f0e698f6d9d809b2020a09242
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 25/12/2018 02:33:11
+Message:
+Update version & RELEASENOTES.md for release 3.1.0 #MsgLength=51
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+
+Revision: 470718c5055d95041fc935daa862967156ae1e23
+Author: Christopher J. Brody <chris.brody@gmail.com>
+Date: 25/12/2018 02:36:08
+Message:
+Set version to 3.1.1-dev #MsgLength=25
+
+
+----
+Modified: package.json|1 1
+
+Revision: f9951b360f8db344f919b1ee0c87c26661698a98
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:36:42
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 83b27cd3b40b8683b51f74957425c14cefb77906
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 01/04/2019 17:44:00
+Message:
+Properly handle promise in superspawn test #MsgLength=43
+
+
+----
+Modified: spec/superspawn.spec.js|1 1
+
+Revision: b95bd840d7a7ecb74f3cf1d640410bad8c69fb44
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 01/04/2019 18:02:50
+Message:
+Fix failing CordovaError test #MsgLength=41
+
+
+----
+Modified: spec/CordovaError/CordovaError.spec.js|1 1
+
+
+Revision: 469e7b4a49a1a39c7fc22aa206730b9d58613467
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 01/04/2019 22:47:27
+Message:
+Catch leaked exceptions in superspawn and convert them to rejections #MsgLength=287
+
+
+----
+Modified: spec/superspawn.spec.js|19 0
+Modified: src/superspawn.js|13 3
+
+Revision: a5cd2321c52604e0bca6f429cc9c6741e2aa0346
+Author: Luo Gang <crysis.linux@gmail.com>
+Date: 22/01/2019 17:12:43
+Message:
+implement setPreference and setPlatformPreference #MsgLength=50
+
+
+----
+Modified: spec/ConfigParser/ConfigParser.spec.js|15 0
+Modified: src/ConfigParser/ConfigParser.js|29 0
+
+Revision: 9cd117e7c1f50c5f9406af043f6230875465623c
+Author: Piotr <hello@piotr.cz>
+Date: 03/04/2019 17:07:02
+Message:
+Add example usage of podspec declarations #MsgLength=401
+
+
+----
+Modified: src/PluginInfo/PluginInfo.js|4 4
+
+Revision: 49a0d695b4fc029651d4385099a04bdecec1d215
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 11/06/2019 23:23:28
+Message:
+Update fs-extra to v8 (#70) #MsgLength=29
+
+
+----
+Modified: package.json|1 1
+
+Revision: 8440f1874bb7017c3566ed4e252bd12eec38822b
+Author: Oliver Salzburg <oliver.salzburg@gmail.com>
+Date: 09/05/2019 07:26:12
+Message:
+(ios) Plist document not indented with tabs #MsgLength=223
+
+
+----
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|1 1
+Modified: spec/fixtures/projects/ios-config-xml/SampleApp/SampleApp-Info.plist|4 4
+Modified: src/ConfigChanges/ConfigFile.js|1 1
+
+Revision: 1cb226df186d59fd57b346e483c6c1d3436ccc78
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 12/06/2019 05:20:24
+Message:
+Add Node.js 12 to CI Services (#68) #MsgLength=115
+
+
+----
+Modified: .travis.yml|4 3
+Modified: appveyor.yml|10 3
+
+Revision: 68014753da0202ed48ab494b6204b8d250507bff
+Author: Christopher J. Brody <chris@brody.consulting>
+Date: 12/06/2019 15:23:45
+Message:
+Update version & RELEASENOTES.md for 3.2.0 #MsgLength=43
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+
+Revision: 4ac4d51da99441315f96de747fcca76a8e42569c
+Author: Christopher J. Brody <chris@brody.consulting>
+Date: 12/06/2019 16:52:40
+Message:
+Increment package version to 3.2.1-dev #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+
+Revision: 37f480c63e9be66aded04d9cde80f8d623edbe96
+Author: Chris Brody <chris@brody.consulting>
+Date: 14/06/2019 23:06:17
+Message:
+Do not ignore AppVeyor failures on Node.js 12 (#77) #MsgLength=53
+
+
+----
+Modified: appveyor.yml|0 4
+
+Revision: fe684d2a0fa7eddd986add87e4a90f8c22010d69
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 18/06/2019 10:50:05
+Message:
+Promise handling cleanup in specs (#79) #MsgLength=249
+
+
+----
+Modified: spec/ActionStack.spec.js|7 8
+Modified: spec/PluginManager.spec.js|6 22
+Modified: spec/plist-helpers.spec.js|2 6
+Modified: spec/superspawn.spec.js|13 12
+
+Revision: 5a35287a197f8db5ccd6451457312a69f8d20ba0
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 18/06/2019 17:04:37
+Message:
+Update to jasmine 3.4 & fix resulting spec failures (#80) #MsgLength=59
+
+
+----
+Modified: package.json|1 1
+Modified: spec/.eslintrc.yml|4 0
+Modified: spec/PluginManager.spec.js|6 6
+Modified: spec/superspawn.spec.js|7 5
+
+Revision: ea24546ea48a7d612b2467c70d6434e5652d816b
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 18/07/2019 18:22:34
+Message:
+Fix ESLint violations where applicable (#83) #MsgLength=241
+
+
+----
+Modified: spec/ActionStack.spec.js|2 2
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|1 1
+Modified: spec/ConfigParser/ConfigParser.spec.js|1 2
+Modified: spec/PlatformJson.spec.js|1 1
+Modified: spec/PluginInfo/PluginInfo.spec.js|15 27
+Modified: spec/superspawn.spec.js|2 3
+Modified: spec/util/xml-helpers.spec.js|25 31
+Modified: src/ConfigChanges/ConfigFile.js|1 3
+Modified: src/CordovaError/CordovaError.js|3 2
+Modified: src/PlatformJson.js|1 1
+Modified: src/PluginManager.js|2 2
+Modified: src/util/plist-helpers.js|1 2
+Modified: src/util/xml-helpers.js|2 4
+
+Revision: cbe9632aae8ce52653959caa467e4aa2212fa30c
+Author: Chris Brody <chris@brody.consulting>
+Date: 19/07/2019 05:17:10
+Message:
+remove no-throw-literal lint exception not needed (#81) #MsgLength=57
+
+
+----
+Modified: .eslintrc.yml|0 1
+
+Revision: 83954d691d16fe6599305cfdb5107ce5b287457d
+Author: Chris Brody <chris@brody.consulting>
+Date: 19/07/2019 06:47:30
+Message:
+eslint cleanup fixes: operator-linebreak (#86) #MsgLength=346
+
+
+----
+Modified: .eslintrc.yml|0 1
+Modified: src/ConfigChanges/ConfigChanges.js|3 3
+Modified: src/ConfigChanges/ConfigFile.js|3 3
+Modified: src/PlatformJson.js|6 6
+Modified: src/PluginInfo/PluginInfo.js|5 5
+
+Revision: 15c86eb36a19fafedb0e17a4dcace8d549971a93
+Author: Christopher J. Brody <chris@brody.consulting>
+Date: 19/07/2019 07:07:14
+Message:
+eslint cleanup fix for: no-prototype-builtins #MsgLength=235
+
+
+----
+Modified: src/CordovaError/CordovaError.js|3 5
+
+Revision: a339f538bb89e35a4d9621492deb4fd9697927a6
+Author: Christopher J. Brody <chris@brody.consulting>
+Date: 19/07/2019 07:15:23
+Message:
+(semi)standard eslint updates #MsgLength=169
+
+
+----
+Modified: package.json|2 2
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|8 8
+Modified: spec/plist-helpers.spec.js|3 3
+Modified: spec/superspawn.spec.js|3 3
+Modified: src/ConfigParser/ConfigParser.js|16 16
+Modified: src/CordovaLogger.js|5 0
+Modified: src/FileUpdater.js|4 4
+Modified: src/PlatformJson.js|2 2
+Modified: src/superspawn.js|2 2
+Modified: src/util/xml-helpers.js|1 1
+
+Revision: 112b5cd1c78a128abe070f8d7ffa786e0ae97ef2
+Author: Christopher J. Brody <chris@brody.consulting>
+Date: 19/07/2019 07:23:58
+Message:
+eslint cleanup fixes for: padded-blocks #MsgLength=173
+
+
+----
+Modified: .eslintrc.yml|0 1
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|0 2
+Modified: spec/ConfigChanges/ConfigFile.spec.js|0 1
+Modified: spec/CordovaLogger.spec.js|0 3
+Modified: spec/FileUpdater.spec.js|0 2
+Modified: spec/PlatformJson.spec.js|0 1
+Modified: spec/PluginManager.spec.js|0 1
+Modified: spec/superspawn.spec.js|0 1
+Modified: spec/util/xml-helpers.spec.js|0 1
+Modified: src/ConfigChanges/ConfigChanges.js|0 3
+Modified: src/ConfigParser/ConfigParser.js|0 3
+Modified: src/PlatformJson.js|0 2
+Modified: src/util/addProperty.js|0 1
+Modified: src/util/xml-helpers.js|0 1
+
+
+Revision: d1a10a9774ee8d0f5505c2aa746d4f2733060481
+Author: エリス <erisu@users.noreply.github.com>
+Date: 21/08/2019 11:23:12
+Message:
+revert: #24 CB-14108: fix incorrect count in config_munge (#89) #MsgLength=415
+
+
+----
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|0 87
+Modified: spec/CordovaError/CordovaError.spec.js|1 1
+Deleted: spec/fixtures/test-configfile0.xml|0 14
+Deleted: spec/fixtures/test-configfile1.xml|0 29
+Deleted: spec/fixtures/test-configfile2.xml|0 34
+Modified: src/ConfigChanges/ConfigChanges.js|41 127
+Modified: src/ConfigChanges/ConfigFile.js|1 0
+Modified: src/ConfigChanges/munge-util.js|0 23
+Modified: src/ConfigParser/ConfigParser.js|1 2
+
+Revision: 2704c9140c629610e6d7d6398e315ea8d8ddeda6
+Author: holyhoehle <holyhoehle@hotmail.com>
+Date: 09/09/2019 10:53:59
+Message:
+(windows) Add .jsproj as file extension for XML files (#62) (#78) #MsgLength=76
+
+
+----
+Modified: src/ConfigChanges/ConfigFile.js|1 1
+
+Revision: cfa7b3e5f809bc046d109f0b1f98666058e46cd1
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 10/10/2019 22:57:43
+Message:
+Convert CordovaError to ES6 class (#87) #MsgLength=41
+
+
+----
+Modified: src/CordovaError/CordovaError.js|45 47
+
+Revision: 27fd18ea2d859cbe984b1b686f109ffb8af18840
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 24/10/2019 17:51:12
+Message:
+Remove obsolete JSHint comments (#92) #MsgLength=39
+
+
+----
+Modified: src/ActionStack.js|0 2
+Modified: src/ConfigChanges/ConfigKeeper.js|0 1
+Modified: src/ConfigChanges/munge-util.js|0 1
+Modified: src/CordovaError/CordovaExternalToolErrorContext.js|0 2
+Modified: src/PluginInfo/PluginInfoProvider.js|0 2
+
+Revision: b75af03f89bfe991aec8ffee9b435e6436293805
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 24/10/2019 19:33:53
+Message:
+Re-apply fix for failing CordovaError test (#93) #MsgLength=119
+
+
+----
+Modified: spec/CordovaError/CordovaError.spec.js|1 1
+
+Revision: bd32d6c12b43e4e93b33cf4c39121cac5000e1d8
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 28/10/2019 16:26:16
+Message:
+Update version & RELEASENOTES.md for 3.2.1 #MsgLength=43
+
+
+----
+Modified: RELEASENOTES.md|12 0
+Modified: package.json|1 1
+
+Revision: 8bd95b4c11b3c0d9b42e6607d51778077da58746
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 28/10/2019 17:07:16
+Message:
+Increment package version to 4.0.0-dev #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+
+Revision: 7c2b8cf7dd7dd813aff905f5d67312c99dfae40d
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 04/11/2019 22:28:52
+Message:
+Use Array.prototype.find in CordovaError (#97) #MsgLength=48
+
+
+----
+Modified: src/CordovaError/CordovaError.js|2 5
+
+Revision: 7ceeeb4ddf0930343588c77c09561a6b4aa89b4b
+Author: エリス <erisu@users.noreply.github.com>
+Date: 06/11/2019 14:51:01
+Message:
+chore: drop node 6 and 8 support (#90) #MsgLength=40
+
+
+----
+Modified: .travis.yml|0 2
+Modified: appveyor.yml|0 2
+Modified: package.json|1 1
+
+Revision: 6583aefdf2f8abcec50ddaa3f3ce1e6c161ff440
+Author: Chris Brody <chris@brody.consulting>
+Date: 08/11/2019 00:05:04
+Message:
+chore: update strip-bom@4 (#71) #MsgLength=33
+
+
+----
+Modified: package.json|1 1
+
+Revision: d53d2662e96d4b0e9dac99623db17439cda6ce4f
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 08/11/2019 00:05:55
+Message:
+fix: PluginInfoProvider for scoped plugins (#94) #MsgLength=195
+
+
+----
+Modified: spec/PluginInfo/PluginInfoProvider.spec.js|4 0
+Added: spec/fixtures/plugins/@scope/test/plugin.xml|1 0
+Modified: src/PluginInfo/PluginInfoProvider.js|15 12
+
+Revision: 40cb6ceef90f4d04727094c429748044f1dc0b38
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 08/11/2019 00:06:45
+Message:
+feat: Replace addProperty with ES6 getters (#96) #MsgLength=689
+
+
+----
+Modified: cordova-common.js|25 28
+Modified: src/ConfigChanges/ConfigFile.js|8 9
+Deleted: src/util/addProperty.js|0 31
+
+Revision: 2fb32fe62d19957bab7c119cc50a1083a4744365
+Author: エリス <erisu@users.noreply.github.com>
+Date: 11/11/2019 07:04:06
+Message:
+chore: improve npm ignore list (#104) #MsgLength=486
+
+
+----
+Modified: .npmignore|2 0
+
+Revision: e79ef47cd914a3966aad34a64c86ec810bb44718
+Author: エリス <erisu@users.noreply.github.com>
+Date: 11/11/2019 07:06:14
+Message:
+chore: drop unused & unneeded dependencies (#102) #MsgLength=162
+
+
+----
+Modified: package.json|1 4
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|1 1
+Modified: spec/PluginManager.spec.js|0 3
+
+Revision: c76fc60c45842a9b51d0b69aa4acda072b3faae2
+Author: エリス <erisu@users.noreply.github.com>
+Date: 11/11/2019 07:22:16
+Message:
+chore: replace instanbul w/ nyc (#100) #MsgLength=42
+
+
+----
+Modified: .gitignore|1 0
+Modified: package.json|13 3
+
+Revision: 55d6302aa40fce017582d877d815c9dcecb7050a
+Author: エリス <erisu@users.noreply.github.com>
+Date: 11/11/2019 07:41:10
+Message:
+chore: update jasmine dependencies & config (#101) #MsgLength=54
+
+
+----
+Modified: package.json|4 4
+Modified: spec/support/jasmine.json|0 4
+
+Revision: 31a58cd6077e66d7260087c155c77b9ae90f1779
+Author: エリス <erisu@users.noreply.github.com>
+Date: 11/11/2019 07:41:50
+Message:
+chore: bump production dependencies (#103) #MsgLength=44
+
+
+----
+Modified: package.json|7 7
+
+Revision: ed041ac1e93f9359021589111b4a36e9c9b76a52
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 11/11/2019 20:37:54
+Message:
+ci(travis): run codecov using npx in after_success (#106) #MsgLength=59
+
+
+----
+Modified: .travis.yml|2 3
+
+Revision: 8aa0760fbb8f8984f20bd2f76301d1f830d130e5
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 11/11/2019 20:38:15
+Message:
+test: always run code coverage during `npm test` (#107) #MsgLength=57
+
+
+----
+Modified: .travis.yml|0 1
+Modified: package.json|1 1
+
+Revision: 291158c53a1c0b71628846372927f97a4aad08a5
+Author: エリス <erisu@users.noreply.github.com>
+Date: 15/11/2019 10:08:57
+Message:
+refactor: eslint setup (#105) #MsgLength=242
+
+
+----
+Modified: .eslintignore|2 1
+Modified: .eslintrc.yml|4 5
+Modified: package.json|3 9
+Modified: spec/.eslintrc.yml|3 4
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|2 2
+Modified: spec/PluginInfo/PluginInfo.spec.js|2 2
+Modified: src/ConfigChanges/ConfigChanges.js|2 1
+Modified: src/ConfigParser/ConfigParser.js|21 23
+Modified: src/PluginInfo/PluginInfo.js|23 23
+
+Revision: 5f7724a82283419c63d914dfaacfeff8a5c7285e
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 24/11/2019 18:19:26
+Message:
+style: drop jasmine env workaround (#108) #MsgLength=186
+
+
+----
+Modified: spec/.eslintrc.yml|0 3
+
+Revision: 1a7613849d7f89c9c0540ceb1700a4c74e4bdbc4
+Author: エリス <erisu@users.noreply.github.com>
+Date: 27/11/2019 20:22:42
+Message:
+chore: consolidate eslint configs (#109) #MsgLength=42
+
+
+----
+Modified: .eslintrc.yml|21 0
+Deleted: spec/.eslintrc.yml|0 2
+
+Revision: 2021a39a9eaf473424eafe20e0e126b587933359
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 28/11/2019 04:12:58
+Message:
+chore: remove support for ubuntu platform (#111) #MsgLength=50
+
+
+----
+Modified: spec/ConfigChanges/ConfigFile.spec.js|0 5
+Modified: src/ConfigChanges/ConfigFile.js|1 3
+
+Revision: 641be1e1c242837c0ff43bc540a15b7a7600439c
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 13/12/2019 05:43:49
+Message:
+refactor(CordovaError)!: remove unused features (#117) #MsgLength=273
+
+
+----
+Modified: cordova-common.js|0 1
+Modified: spec/CordovaError/CordovaError.spec.js|2 12
+Modified: src/CordovaError/CordovaError.js|14 53
+Deleted: src/CordovaError/CordovaExternalToolErrorContext.js|0 46
+
+Revision: 1318ab5cf0db349c93f8a4daa9f6ad974b8c6479
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 13/12/2019 18:43:25
+Message:
+refactor: move CordovaError module up (#120) #MsgLength=275
+
+
+----
+Modified: cordova-common.js|1 1
+Modified: spec/CordovaError/CordovaError.spec.js|1 1
+Modified: spec/CordovaLogger.spec.js|1 1
+Modified: src/ConfigParser/ConfigParser.js|1 1
+Renamed: src/CordovaError.js [from src/CordovaError/CordovaError.js]|0 0
+Modified: src/PluginInfo/PluginInfo.js|1 1
+Modified: src/PluginManager.js|1 1
+Modified: src/util/formatError.js|1 1
+
+Revision: 574eea17e7eca414ec7b76d5e9d289ac9746f36d
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 13/12/2019 19:55:38
+Message:
+refactor: use arrow functions where applicable (#113) #MsgLength=234
+
+
+----
+Modified: src/ConfigChanges/ConfigChanges.js|9 9
+Modified: src/ConfigChanges/ConfigKeeper.js|1 1
+Modified: src/ConfigChanges/munge-util.js|6 10
+Modified: src/ConfigParser/ConfigParser.js|42 52
+Modified: src/FileUpdater.js|13 15
+Modified: src/PlatformJson.js|10 20
+Modified: src/PluginInfo/PluginInfo.js|52 66
+Modified: src/PluginManager.js|3 3
+Modified: src/superspawn.js|4 4
+Modified: src/util/xml-helpers.js|15 15
+
+Revision: 13069805045b5ed417cc0c4c00213e2bc033bc04
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 14/12/2019 09:58:13
+Message:
+refactor: do not alias `this` (#114) #MsgLength=164
+
+
+----
+Modified: src/ConfigChanges/ConfigChanges.js|44 52
+Modified: src/ConfigChanges/ConfigFile.js|28 33
+Modified: src/ConfigChanges/ConfigKeeper.js|5 8
+Modified: src/ConfigParser/ConfigParser.js|3 5
+Modified: src/PluginInfo/PluginInfo.js|62 64
+Modified: src/PluginManager.js|13 14
+Modified: src/events.js|2 2
+
+Revision: e815a29d65e1e6483d167f04ee9c3dcce49365e6
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 16/12/2019 04:41:18
+Message:
+refactor: transform var to let/const (#115) #MsgLength=143
+
+
+----
+Modified: src/ActionStack.js|9 9
+Modified: src/ConfigChanges/ConfigChanges.js|59 60
+Modified: src/ConfigChanges/ConfigFile.js|21 21
+Modified: src/ConfigChanges/ConfigKeeper.js|5 5
+Modified: src/ConfigChanges/munge-util.js|18 18
+Modified: src/ConfigParser/ConfigParser.js|63 64
+Modified: src/CordovaCheck.js|8 8
+Modified: src/CordovaLogger.js|3 3
+Modified: src/FileUpdater.js|34 34
+Modified: src/PlatformJson.js|21 21
+Modified: src/PluginInfo/PluginInfo.js|50 52
+Modified: src/PluginInfo/PluginInfoProvider.js|7 7
+Modified: src/PluginManager.js|15 15
+Modified: src/superspawn.js|15 14
+Modified: src/util/formatError.js|1 1
+Modified: src/util/plist-helpers.js|11 11
+Modified: src/util/xml-helpers.js|49 49
+
+Revision: 95010ef0a034bcfd683951a247ccedf74418e23e
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 16/12/2019 04:46:25
+Message:
+refactor: use property shorthand notation (#116) #MsgLength=118
+
+
+----
+Modified: src/ConfigChanges/ConfigChanges.js|6 6
+Modified: src/ConfigParser/ConfigParser.js|11 11
+Modified: src/FileUpdater.js|6 6
+Modified: src/PlatformJson.js|1 1
+Modified: src/PluginInfo/PluginInfo.js|3 11
+
+Revision: 051cb9a23ffb029743f9698641b978e1dc1e8101
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 16/12/2019 04:50:48
+Message:
+refactor: use template strings where applicable (#118) #MsgLength=152
+
+
+----
+Modified: src/ActionStack.js|2 2
+Modified: src/ConfigChanges/ConfigChanges.js|4 7
+Modified: src/ConfigChanges/ConfigFile.js|8 12
+Modified: src/ConfigParser/ConfigParser.js|16 16
+Modified: src/FileUpdater.js|8 8
+Modified: src/PlatformJson.js|2 2
+Modified: src/PluginInfo/PluginInfo.js|8 15
+Modified: src/superspawn.js|4 4
+Modified: src/util/formatError.js|1 1
+Modified: src/util/plist-helpers.js|3 3
+Modified: src/util/xml-helpers.js|2 2
+
+Revision: 485a82c7708fb4a85bd2341c33a578f5f7b79557
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 16/12/2019 05:18:09
+Message:
+refactor: use ES6 classes where applicable (#119) #MsgLength=347
+
+
+----
+Modified: src/ActionStack.js|13 11
+Modified: src/ConfigChanges/ConfigChanges.js|294 302
+Modified: src/ConfigChanges/ConfigFile.js|97 97
+Modified: src/ConfigChanges/ConfigKeeper.js|27 25
+Modified: src/ConfigParser/ConfigParser.js|189 158
+Modified: src/PlatformJson.js|172 171
+Modified: src/PluginInfo/PluginInfo.js|96 164
+Modified: src/PluginInfo/PluginInfoProvider.js|28 26
+Modified: src/PluginManager.js|115 113
+
+Revision: 51c646b1d0a7dd73a6c5247b2b753f58a97838d6
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 18/12/2019 19:45:19
+Message:
+refactor: FileUpdater (#123) #MsgLength=1040
+
+
+----
+Modified: package.json|2 1
+Modified: spec/FileUpdater.spec.js|45 55
+Modified: src/FileUpdater.js|99 154
+
+Revision: e2a4848899d4d6fd60280ca9654368aa7d3e1f16
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 20/12/2019 08:59:09
+Message:
+chore!: remove main export mungeUtil (#126) #MsgLength=205
+
+
+----
+Modified: README.md|0 1
+Modified: cordova-common.js|0 1
+
+Revision: fd933231bb87939e37400cbde7d946319c76d5de
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 20/12/2019 19:59:11
+Message:
+test(ConfigFile): group & cleanup tests (#125) #MsgLength=217
+
+
+----
+Modified: spec/ConfigChanges/ConfigFile.spec.js|64 54
+
+Revision: 077b8cf33ce009203e484b350b106cd063cad3e1
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 05/01/2020 20:19:44
+Message:
+TEST: Test using GitHub workflows for CI (#95) #MsgLength=119
+
+
+----
+Added: .github/workflows/ci.yml|47 0
+Modified: .gitignore|0 1
+Added: package-lock.json|3347 0
+
+Revision: e0ed53a3bf38568f6209e9fe31f217cb2c3610bf
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 06/01/2020 22:30:06
+Message:
+refactor(munge-util): DRY & simplify (#127) #MsgLength=676
+
+
+----
+Modified: src/ConfigChanges/munge-util.js|148 116
+
+Revision: 0a9481275c1ceb8696ac8bb8ef7fdad9ed62da60
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 06/01/2020 23:14:07
+Message:
+fix: broken lock file from #95 (#129) #MsgLength=179
+
+
+----
+Modified: package-lock.json|344 165
+
+Revision: 4b03d3da90877f4f3396ec4a6036d7383d07304b
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 07/01/2020 01:14:46
+Message:
+refactor(xml-helpers): DRY & simplify (#128) #MsgLength=511
+
+
+----
+Modified: src/util/xml-helpers.js|78 156
+
+Revision: 5f245f08e0a37d43a91d7295a0dd086c4c206e56
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 08/01/2020 17:45:10
+Message:
+refactor(ConfigChanges): simplify (#130) #MsgLength=826
+
+
+----
+Modified: package-lock.json|43 0
+Modified: package.json|1 0
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|42 32
+Modified: spec/ConfigChanges/ConfigFile.spec.js|3 2
+Modified: src/ConfigChanges/ConfigChanges.js|26 39
+Modified: src/ConfigChanges/ConfigFile.js|21 22
+Modified: src/ConfigChanges/ConfigKeeper.js|9 9
+
+Revision: 6f922c0a297370fa4be223bf6922bc81a3b6b132
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 08/01/2020 20:05:04
+Message:
+refactor(misc): cleanup & simplify (#131) #MsgLength=511
+
+
+----
+Modified: src/CordovaCheck.js|12 9
+Modified: src/PlatformJson.js|15 12
+Modified: src/util/plist-helpers.js|16 16
+
+Revision: b779a345e8dac4c658a1816ba595a6b95db47fa2
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 10/01/2020 06:23:39
+Message:
+refactor(PluginInfo): cleanup & simplify (#132) #MsgLength=742
+
+
+----
+Modified: src/PluginInfo/PluginInfo.js|261 224
+
+Revision: f6e8cabe9b16c992417eceeb08cfd1a1458665f6
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 14/03/2020 22:21:53
+Message:
+refactor(ConfigParser): cleanup & simplify (#133) #MsgLength=750
+
+
+----
+Modified: spec/ConfigParser/ConfigParser.spec.js|12 0
+Modified: src/ConfigParser/ConfigParser.js|291 310
+
+Revision: fe6a73fc80ebf974b4c27251091de89e1df2c0f3
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 14/03/2020 22:37:17
+Message:
+feat(CordovaError): support for error cause & more (#121) #MsgLength=960
+
+
+----
+Modified: package-lock.json|21 2
+Modified: package.json|1 0
+Modified: spec/CordovaError/CordovaError.spec.js|70 7
+Modified: src/CordovaError.js|25 19
+
+Revision: fed6d05672f109b7bd10d27058ae3fcc1db3e8c5
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 15/03/2020 10:04:52
+Message:
+test(ConfigFile): minor improvements (#134) #MsgLength=132
+
+
+----
+Modified: spec/ConfigChanges/ConfigFile.spec.js|19 15
+
+Revision: 406e1a22853863905176b1b31efd57686cf586c7
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 15/03/2020 10:07:34
+Message:
+fix(ConfigFile): Normalize globbed file paths (#135) #MsgLength=54
+
+
+----
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|1 1
+Modified: src/ConfigChanges/ConfigFile.js|3 1
+
+Revision: 3a0afd3902fff344d479de1022633253ab8bbce1
+Author: Arman <mail@arman.io>
+Date: 15/03/2020 13:46:15
+Message:
+fix(ConfigFile): correctly resolve *-Info.plist file path (#124) #MsgLength=240
+
+
+----
+Modified: spec/ConfigChanges/ConfigFile.spec.js|15 0
+Modified: src/ConfigChanges/ConfigFile.js|2 1
+
+Revision: 20467accded394aa44210208bcf59cf6580a3c73
+Author: Chris Brody <chris.brody+brodybits@gmail.com>
+Date: 15/03/2020 15:17:35
+Message:
+style: improve line spacing & group like items (#85) #MsgLength=162
+
+
+----
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|47 1
+Modified: spec/FileUpdater.spec.js|29 1
+Modified: spec/PluginManager.spec.js|2 1
+Modified: spec/util/xml-helpers.spec.js|23 1
+Modified: src/ConfigChanges/ConfigChanges.js|1 0
+
+Revision: f128980a13c64ddb46f43994850ba3e49b5affca
+Author: エリス <erisu@users.noreply.github.com>
+Date: 15/03/2020 17:40:01
+Message:
+ci: final migration to actions (#136) #MsgLength=39
+
+
+----
+Modified: .github/workflows/ci.yml|4 0
+Modified: .npmignore|0 1
+Modified: .ratignore|0 1
+Deleted: .travis.yml|0 18
+Modified: README.md|1 2
+Deleted: appveyor.yml|0 20
+
+Revision: 1cdf107f860078625094ff80566ccecf8e5d2e46
+Author: エリス <erisu@users.noreply.github.com>
+Date: 15/03/2020 18:02:07
+Message:
+refactor: transform var to let/const (#137) #MsgLength=45
+
+
+----
+Modified: spec/ActionStack.spec.js|19 19
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|110 110
+Modified: spec/ConfigChanges/ConfigFile.spec.js|13 13
+Modified: spec/ConfigParser/ConfigParser.spec.js|39 39
+Modified: spec/CordovaCheck.spec.js|18 18
+Modified: spec/CordovaLogger.spec.js|14 14
+Modified: spec/FileUpdater.spec.js|73 73
+Modified: spec/PlatformJson.spec.js|11 11
+Modified: spec/PluginInfo/PluginInfo.spec.js|10 10
+Modified: spec/PluginInfo/PluginInfoProvider.spec.js|5 5
+Modified: spec/PluginManager.spec.js|19 19
+Modified: spec/plist-helpers.spec.js|6 6
+Modified: spec/superspawn.spec.js|5 5
+Modified: spec/util/xml-helpers.spec.js|87 87
+
+Revision: 7a379d2a06af0560831995c65a8671452108deed
+Author: エリス <erisu@users.noreply.github.com>
+Date: 15/03/2020 18:08:04
+Message:
+chore(dependency): update dev & non-dev dependencies (#138) #MsgLength=462
+
+
+----
+Modified: package-lock.json|851 1433
+Modified: package.json|7 7
+
+Revision: 672566d5f317c2fbbdefd1c4cf56b18efd40aa9d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 15/03/2020 21:38:19
+Message:
+chore: various cleanup tasks (#139) #MsgLength=350
+
+
+----
+Modified: README.md|70 47
+Modified: RELEASENOTES.md|1 1
+Modified: package.json|1 0
+
+Revision: b0929a4c6589430f3ddcef19293a2a903c2c568c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 26/03/2020 14:54:48
+Message:
+breaking: bump all dependencies to latest (#140) #MsgLength=361
+
+
+----
+Modified: .github/workflows/ci.yml|1 1
+Modified: package-lock.json|211 122
+Modified: package.json|3 3
+Modified: src/FileUpdater.js|8 6
+
+Revision: 9e81ca8b4533e7775b90d08511ea895482800be3
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 26/03/2020 15:37:04
+Message:
+Updated RELEASENOTES.md & version for release 4.0.0 (common-v4.0.0) #MsgLength=68
+
+
+----
+Modified: RELEASENOTES.md|55 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 3d50b3e8804f79194d3b295da3ee8437b6d066f5
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 30/03/2020 22:34:34
+Message:
+Increment package version to 4.0.1-dev #MsgLength=39
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 0c03967ccf7826c884ee4e7826c621549da275dd
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 12/04/2020 19:43:53
+Message:
+fix(ConfigParser): ImageResources constructor (#142) #MsgLength=399
+
+
+----
+Modified: spec/ConfigParser/ConfigParser.spec.js|6 0
+Modified: src/ConfigParser/ConfigParser.js|15 6
+
+Revision: be404bbe41816404134c918cb2ef0a07f51a943b
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:39:52
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Added: CONTRIBUTING.md|37 0
+
+Revision: 78affbbb20da656ffbdb0f72e6edc3af460b7d58
+Author: エリス <erisu@users.noreply.github.com>
+Date: 19/04/2020 10:17:29
+Message:
+fix: typo in access & allow navigation (#143) #MsgLength=47
+
+
+----
+Modified: src/ConfigParser/ConfigParser.js|2 2
+
+Revision: 82cded7d286de8261e206a81f9c483c1edc9f133
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:33:42
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: 231e7b5e33e1c326b187e374dc06698b26f3f2db
+Author: エリス <erisu@users.noreply.github.com>
+Date: 14/05/2020 13:44:23
+Message:
+chore: apply random missing minor changes  (#141) #MsgLength=142
+
+
+----
+Modified: README.md|3 2
+Modified: package.json|2 9
+
+Revision: 34507e94264fd17491c002bbac7355f511d8d5f4
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 14/05/2020 13:54:51
+Message:
+Updated RELEASENOTES.md & version for release 4.0.1 (common-4.0.1) #MsgLength=67
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 13e06971c15569c3519122f0b870f55ed6947151
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 15/05/2020 09:09:08
+Message:
+chore: add missing LICENSE & NOTICE files #MsgLength=42
+
+
+----
+Added: LICENSE|202 0
+Added: NOTICE|5 0
+
+Revision: f872a26cf627b902bac2b72e744f46c43b830aad
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 19/05/2020 08:20:08
+Message:
+Increment package version to 4.0.2-dev #MsgLength=39
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: bcf29de4b0197491c9d02054f2eee87b9fd5f02b
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/06/2020 15:29:16
+Message:
+test: cleanup by removing unused test fixtures (#145) #MsgLength=55
+
+
+----
+Renamed: spec/fixtures/projects/windows-bom-test.xml [from spec/fixtures/projects/windows/bom_test.xml]|0 0
+Deleted: spec/fixtures/projects/windows/CordovaApp_TemporaryKey.pfx|0 0
+Deleted: spec/fixtures/projects/windows/TestApp.jsproj|0 81
+Deleted: spec/fixtures/projects/windows/TestApp.projitems|0 34
+Deleted: spec/fixtures/projects/windows/TestApp.sln|0 46
+Deleted: spec/fixtures/projects/windows/www/cordova-2.6.0.js|0 8075
+Deleted: spec/fixtures/projects/windows/www/css/index.css|0 115
+Deleted: spec/fixtures/projects/windows/www/img/logo.png|0 0
+Deleted: spec/fixtures/projects/windows/www/img/smalllogo.png|0 0
+Deleted: spec/fixtures/projects/windows/www/img/splashscreen.png|0 0
+Deleted: spec/fixtures/projects/windows/www/img/storelogo.png|0 0
+Deleted: spec/fixtures/projects/windows/www/index.html|0 42
+Deleted: spec/fixtures/projects/windows/www/js/index.js|0 49
+Modified: spec/util/xml-helpers.spec.js|1 1
+
+Revision: b2070f1371509004926bb70eb8d5060d6c3f917a
+Author: Chris Brody <chris.brody+brodybits@gmail.com>
+Date: 09/06/2020 00:38:58
+Message:
+update nyc -> ^15.1.0 in devDependencies (#146) #MsgLength=49
+
+
+----
+Modified: package-lock.json|226 135
+Modified: package.json|1 1
+
+Revision: b5ba4db84b993e1c31f0d73a1d37d6a7f92b845d
+Author: Chris Brody <chris.brody+brodybits@gmail.com>
+Date: 09/06/2020 00:39:59
+Message:
+cleanup: remove trailing whitespace (#147) #MsgLength=393
+
+
+----
+Modified: .asf.yaml|2 2
+Modified: .github/ISSUE_TEMPLATE.md|2 2
+Modified: .github/ISSUE_TEMPLATE/BUG_REPORT.md|2 2
+Modified: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|4 4
+Modified: CONTRIBUTING.md|1 1
+
+Revision: a18bf0e2774b40dda11e3475b11a2dc3639bdb80
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 12/06/2020 21:21:41
+Message:
+(ios) fix: resolve correct path to app info plist when multiple plist files are present (#144). #MsgLength=572
+
+
+----
+Modified: spec/ConfigChanges/ConfigFile.spec.js|1 1
+Modified: src/ConfigChanges/ConfigFile.js|3 2
+
+
+Revision: f2c2a8d326826829bf0c4b9cc257278fbc1ab671
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 01/07/2020 16:09:35
+Message:
+Updated RELEASENOTES.md & version for release 4.0.2 (common-v4.0.2) #MsgLength=68
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 14a15636b6eb2af7603d11d59ecb6121de822ef4
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 20/07/2020 13:07:34
+Message:
+Increment package version to 4.0.3-dev #MsgLength=39
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 5a6a53e3fb51ff4bf75cc3278f7f1bf27a755746
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/07/2020 00:57:13
+Message:
+ci: add node 14 to workflow (#150) #MsgLength=36
+
+
+----
+Modified: .github/workflows/ci.yml|1 1
+
+Revision: 7e615a56aed26a283df8657b06a231cf4504dc79
+Author: Darryl Pogue <darryl@ayogo.com>
+Date: 07/10/2020 11:26:57
+Message:
+chore(asf): Update GitHub repo metadata #MsgLength=40
+
+
+----
+Modified: .asf.yaml|21 0
+
+Revision: 5ad1bdbec90e3ad740eec8538a2a6e653c30b0d0
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 02/03/2021 22:04:38
+Message:
+refactor(ConfigChanges): use for-of loop for iterating over array (#159) #MsgLength=74
+
+
+----
+Modified: src/ConfigChanges/ConfigChanges.js|2 2
+
+Revision: 614f867c660cd354234a8b02acf610a22b82a16b
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 08/06/2021 16:40:29
+Message:
+test: fix invalid config for jasmine-spec-reporter (#161) #MsgLength=212
+
+
+----
+Modified: spec/helper.js|1 1
+
+Revision: 3c9b9ffb93e9ecdbf495a782bb2e5806d060b410
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 08/06/2021 17:03:25
+Message:
+fix(ConfigChanges): do not pass PlistValue to xml_helpers.resolveParent (#158) #MsgLength=90
+
+
+----
+Modified: src/ConfigChanges/ConfigChanges.js|9 4
+
+Revision: 642d38121920b42691860aca867ffb52464724fa
+Author: Norman Breau <norman@normanbreau.com>
+Date: 17/09/2021 20:55:29
+Message:
+chore: npmrc (#173) #MsgLength=21
+
+
+----
+Added: .npmrc|2 0
+
+Revision: 185b3267bd475e3fad6b31d20e0f08922170ce8c
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 19/10/2021 05:12:32
+Message:
+refactor(xml-helpers): document & check function signature types  (#160) #MsgLength=564
+
+
+----
+Modified: src/util/xml-helpers.js|133 28
+
+Revision: 0a589b967e0739b94b2900eafbb40fa4f97e7368
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 19/10/2021 05:23:04
+Message:
+refactor(PlatformMunger): DRY & simplify config munging (#162) #MsgLength=499
+
+
+----
+Modified: spec/ConfigChanges/ConfigChanges.spec.js|1 1
+Modified: src/ConfigChanges/ConfigChanges.js|99 189
+
+Revision: 4d8475dfd5e57265f87ff50420286a8ce88e3466
+Author: エリス <erisu@users.noreply.github.com>
+Date: 19/07/2022 14:57:30
+Message:
+chore(npm): rebuilt package-lock to v2 (#176) #MsgLength=47
+
+
+----
+Modified: package-lock.json|5602 1002
+

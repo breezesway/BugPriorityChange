@@ -1,0 +1,4212 @@
+Revision: 28da32dac90551a181cbe82c511e5c427c27ac4c
+Author: Joe Bowser <bowserj@apache.org>
+Date: 04/04/2013 01:47:26
+Message:
+Initial Commit #MsgLength=15
+
+
+----
+Added: README.md|2 0
+Added: plugin.xml|18 0
+Added: src/android/SplashScreen.java|43 0
+
+Revision: 3dc601b90c0e9b717faf39b1a061789b5041c14d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/05/2013 09:09:02
+Message:
+minor edits to plugin.xml, more work required #MsgLength=46
+
+
+----
+Modified: plugin.xml|5 5
+
+Revision: 12b3d5ca994b24e1d024eabd5e44567ce7c17543
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 22/05/2013 03:14:06
+Message:
+added tests, docs, ios #MsgLength=23
+
+
+----
+Added: docs/splashscreen.hide.md|80 0
+Added: docs/splashscreen.md|85 0
+Added: docs/splashscreen.show.md|69 0
+Modified: plugin.xml|19 1
+Added: src/ios/CDVSplashScreen.h|33 0
+Added: src/ios/CDVSplashScreen.m|230 0
+Added: test/cordova-incl.js|70 0
+Added: test/index.html|65 0
+Added: test/main.js|163 0
+Added: test/master.css|164 0
+Added: test/splashscreen/index.html|48 0
+Added: www/splashscreen.js|33 0
+
+Revision: c03463741ab5e1100b9dd63dba1ba0ebe371776b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 22/05/2013 04:06:37
+Message:
+updated plugin.xml #MsgLength=19
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 5c8541441f0ce8968696eaba48aa49f81951ffb2
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 22/05/2013 04:13:42
+Message:
+updated plugin.xml #MsgLength=19
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 49164dcfaa58d20ea745568755238b878500e7fd
+Author: lorinbeer <lorin@adobe.com>
+Date: 22/06/2013 04:57:28
+Message:
+[CB-3634] splashscreen plugin breakout blackberry10 initial commit #MsgLength=67
+
+
+----
+Modified: plugin.xml|8 0
+Added: src/blackberry10/index.js|28 0
+
+Revision: a88b9af3bae559dcb3bd12022904bfc155bb2f5c
+Author: Joe Bowser <bowserj@apache.org>
+Date: 25/06/2013 03:20:36
+Message:
+CB-3831: Splashscreen.Splashscreen is not a plugin, this is breaking the plugin #MsgLength=80
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a8b354553dc71260f487a15ace573f9d3c5b1223
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/06/2013 05:16:22
+Message:
+added android instructions to readme #MsgLength=37
+
+
+----
+Modified: README.md|8 0
+
+Revision: b7d32dbe44da20437c753a4c315b26b4cf57189f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/06/2013 05:19:01
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|4 0
+
+Revision: df793d53b4f2593bf8696a1c5760c0e860fbd5ef
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:56
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|2 3
+
+Revision: efba1b1f74703f956d7e7cb51daab1cf249f92b5
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 10/07/2013 08:10:13
+Message:
+[CB-3677] [CB-3676] Added windows phone splashscreen support #MsgLength=61
+
+
+----
+Modified: plugin.xml|24 0
+Added: src/wp/SplashScreen.cs|70 0
+
+Revision: f717b491c72aec4847fcc70cc97489990e79fd4f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: src/android/SplashScreen.java|2 2
+
+Revision: bd98d6ebec9ed992c061fa6c658d68d422f15708
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 11/07/2013 05:05:24
+Message:
+wp issue, removed bad reference to .cs file #MsgLength=44
+
+
+----
+Modified: src/wp/SplashScreen.cs|0 1
+
+Revision: d60e0d9c73386aefe9d29f120d20455e4ed30e05
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:16:34
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Added: .gitignore|23 0
+
+Revision: dfee6f7a5cef4b76f3d55e313a4c1abe0842bccb
+Author: lorinbeer <lorin@adobe.com>
+Date: 19/07/2013 04:14:49
+Message:
+[CB-3968] added blackberry quirks section to plugin documentation #MsgLength=66
+
+
+----
+Modified: docs/splashscreen.md|6 1
+
+Revision: 2ca0c3e563d6d7068d2d15799144a085bc4629f8
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|4 0
+
+Revision: c9b85f18f24232d380a6748bf073992573b9ee25
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/07/2013 08:09:09
+Message:
+[CB-4368] Explicit CoreGraphics.framework dependency should be specified for some core plugins #MsgLength=95
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: 33f353d2e9684e189f8b7d59c066253f2fe73f48
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 25/07/2013 06:48:59
+Message:
+[CB-4355] Splashscreen plugin handles options incorrectly (the settings key is specified with upper case chars) #MsgLength=112
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|5 5
+
+Revision: c156fe537ae76d660cacb242bf5b480f072d3a01
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 27/07/2013 03:03:07
+Message:
+[CB-4374] Settings ShowSplashScreenSpinner and AutoHideSplashScreen in config.xml no longer work on iOS platform #MsgLength=113
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: e7c21668363abba7d1bd97fadc40e5380b27f46e
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:32:31
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 1d2c0adf177ead221c542d2d6ccbe3ffa3a2cd51
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 02/08/2013 07:34:03
+Message:
+[Windows8][CB-4450] Implemented splash-screen for Windows8 #MsgLength=59
+
+
+----
+Modified: plugin.xml|7 0
+Added: www/windows8/SplashScreenProxy.js|104 0
+
+Revision: cd5cd14289fce6d780aa2cab2b286e6e55c7dbb1
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: 7b6a8403d6374d23ad67736703413a5b5fcd729e
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 90fbd3bd4be5bbdf2e916842663bf46d216569c0
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 05:50:19
+Message:
+updated readme, name tag and namespace #MsgLength=39
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|2 1
+
+Revision: 9aecb3dd0c55c81918080460108c2b8580d75510
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-splashscreen to its own Java package. #MsgLength=68
+
+
+----
+Modified: plugin.xml|2 2
+Modified: src/android/SplashScreen.java|1 1
+
+Revision: 4b451215e766ad4a3f25231ac7bc169d93842a4e
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 06:22:36
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 079bd6fc63e59cbbec6c9296fd89db5230f8e1c1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+Add empty CHANGELOG.md #MsgLength=23
+
+
+----
+Added: CHANGELOG.md|23 0
+
+Revision: 96d5875dc38515c75c969284d252ed1cfbb34310
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 14/09/2013 06:58:36
+Message:
+[CB-4806] Update splashscreen image bounds for iOS 7 #MsgLength=53
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|3 0
+
+Revision: 4275e57a738b804edca3fd14e68f5d1b0979f467
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 17/09/2013 08:27:09
+Message:
+Revert "[CB-4806] Update splashscreen image bounds for iOS 7" #MsgLength=125
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|0 3
+
+Revision: 5f83eda5e829ac7a11e1803de653cb7cf95764af
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:22
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 1111c8b3b9b8fe28d6c9fe9c9a1bc548a679e4ac
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 14/09/2013 06:58:36
+Message:
+[CB-4806] Update splashscreen image bounds for iOS 7 #MsgLength=53
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|3 0
+
+Revision: d937fcb43bfaf3d350825d7f54ab9e856503a733
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: 4ce42a0c990f07bf67d1fef7f5b3f573cf47e908
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:38:51
+Message:
+CB-4889 renaming org.apache.cordova.core.splashscreen to org.apache.cordova.splashscreen #MsgLength=89
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 87a701004dd6dad39f0c042beb33a9ebce214301
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:50:50
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f1aed7d8449f541e41dcc6cde60bb151bc6068c7
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 08:56:18
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.2.2 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|6 1
+Modified: plugin.xml|1 1
+
+
+Revision: 52b6c539d3145aa47eab803217e79154c8430fc5
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:15
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 71a8c9cc33e54ceb9cbaadd642717b9c297d7242
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 27/09/2013 03:20:22
+Message:
+[CB-4929] plugin-splashscreen not loading proxy windows8 #MsgLength=57
+
+
+----
+Modified: www/windows8/SplashScreenProxy.js|2 2
+
+Revision: 2dc0f42b8f7779ba0cac5778a879aaf0162bf579
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 27/09/2013 05:54:43
+Message:
+[CB-4934] plugin-splashscreen should not show by default on Windows8 #MsgLength=69
+
+
+----
+Modified: www/windows8/SplashScreenProxy.js|54 52
+
+
+Revision: c2dea2fc02beb71c154eff6fbe80c3c3729e2f74
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 02/10/2013 04:26:05
+Message:
+[CB-4806] (Re-fix) Update splashscreen image bounds for iOS 7 #MsgLength=62
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|0 1
+
+Revision: 0b733d179739b9c6f81d583cc9d4962d8bc0eb98
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/10/2013 06:33:12
+Message:
+[CB-5010] Updated version and RELEASENOTES.md for release 0.2.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+
+
+Revision: 8326da4ee2f1197f0aa8bba278bcf6762eecb292
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/10/2013 07:06:49
+Message:
+[CB-5010] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 1cfd009c9150a2c36674bc031ebb50ae2c93c577
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/10/2013 05:02:04
+Message:
+CB-5128: add repo + issue tag to plugin.xml for splashscreen plugin #MsgLength=68
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: 71ea946746cc52d5a5bfaa6cb39f69722e7090a2
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:08:11
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.2.4 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|5 1
+Modified: plugin.xml|1 1
+
+
+Revision: 02492654efc4dea9454ddbb8ca1635b1e2fe059a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:16
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: c9ff4b428b4954751c89a464c6549d63cbef42b7
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/11/2013 07:16:31
+Message:
+CB-5124 - Remove splashscreen config.xml values from iOS Configuration Docs, move to plugin docs #MsgLength=97
+
+
+----
+Added: docs/config.md|53 0
+
+Revision: 75f78b90320dcad05e9e827f042728f0d4e38091
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 06:29:57
+Message:
+Added amazon-fireos platform. Change to use amazon-fireos as a platform if the user agent string contains 'cordova-amazon-fireos' #MsgLength=130
+
+
+----
+Modified: plugin.xml|11 0
+Modified: test/cordova-incl.js|4 2
+
+
+Revision: 6c12ea438038f73615b922430eaa8345b94f32f5
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 17/10/2013 02:16:33
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|6 0
+Added: src/ubuntu/splashscreen.cpp|42 0
+Added: src/ubuntu/splashscreen.h|52 0
+
+
+Revision: e73b59024ad33b300f161bfb51cf2804f9ec3ab2
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:31
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.2.5 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: 9541c1eb378bc413ba3c4966b88ac1774c096f60
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:04
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: d799eda0204f4fee7a8ca8b9ba9c844b69a9d56a
+Author: Nathan Peles <nathan@nathanpeles.com>
+Date: 07/12/2013 03:38:01
+Message:
+Handle error when splash image is missing. #MsgLength=124
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|3 3
+
+Revision: c2d22c0671bed942a470a2a033d9450106f0c0e5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/config.md|0 53
+Deleted: docs/splashscreen.hide.md|0 80
+Deleted: docs/splashscreen.md|0 90
+Deleted: docs/splashscreen.show.md|0 69
+
+Revision: a5d40d0a95deb32a6595190e80873a7a14c5a111
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 09:59:29
+Message:
+CB-5658 Add doc.index.md for Splashscreen plugin #MsgLength=49
+
+
+----
+Modified: README.md|22 18
+Added: doc/index.md|94 0
+
+Revision: 7c520181c3d94b0cdf8205964b17dd3e011d2806
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:03
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: 3c2813f505284eb3943cdded83bc0d4e2d4b7076
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.2.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: 9ebd08f69ba9075b810ec6a0dedacd9c7ad86a8f
+Author: Salvatore Iovene <salvatore@iovene.com>
+Date: 19/11/2013 18:43:12
+Message:
+Add tentative Tizen implementation. #MsgLength=36
+
+
+----
+Modified: plugin.xml|6 1
+Added: src/tizen/SplashScreenProxy.js|14 0
+
+Revision: 3a1810baa51b64dee93332365c7cb5592f0baf6e
+Author: Salvatore Iovene <salvatore@iovene.com>
+Date: 19/11/2013 18:55:35
+Message:
+Native Tizen implementation of SplashScreen API. #MsgLength=49
+
+
+----
+Modified: src/tizen/SplashScreenProxy.js|6 2
+
+Revision: c368b63f0a310bbb04da5576ef7cba75357c10fa
+Author: Salvatore Iovene <salvatore@iovene.com>
+Date: 19/11/2013 19:04:30
+Message:
+Fix typo. #MsgLength=10
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: cf7c35d39950b3e0de7a3592335d19287331938b
+Author: Salvatore Iovene <salvatore@iovene.com>
+Date: 19/11/2013 19:11:32
+Message:
+Fix syntax errors. #MsgLength=19
+
+
+----
+Modified: src/tizen/SplashScreenProxy.js|2 2
+
+Revision: 9f3b52f4b9653039e5774e773addf6554987451a
+Author: Salvatore Iovene <salvatore@iovene.com>
+Date: 19/11/2013 19:11:59
+Message:
+Fix path of Tizen's SplashScreenProxy file. #MsgLength=44
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 8aa0b244810ff8c1ff653a479b3efd9a99cc09d2
+Author: Gabriel Schulhof <gabriel.schulhof@intel.com>
+Date: 19/11/2013 20:01:13
+Message:
+plugin.xml: Make sure splashscreen proxy is executed. #MsgLength=54
+
+
+----
+Modified: plugin.xml|1 0
+
+Revision: 8dc057b796b34150de611314f27800da70df690a
+Author: Gabriel Schulhof <gabriel.schulhof@intel.com>
+Date: 19/11/2013 20:01:31
+Message:
+Proxy: Correct structure, and only ever create one splashscreen window. #MsgLength=72
+
+
+----
+Modified: src/tizen/SplashScreenProxy.js|12 8
+
+
+Revision: 6cb0a8cf0c20f842dc7ebc28d2f69ed29fedd11d
+Author: Anis Kadri <anis@apache.org>
+Date: 28/01/2014 09:32:09
+Message:
+Revert "Merge branch 'tizen' of http://github.com/siovene/cordova-plugin-splashscreen" #MsgLength=218
+
+
+----
+Modified: plugin.xml|1 7
+Deleted: src/tizen/SplashScreenProxy.js|0 22
+
+Revision: 1560fc86f8289aff3e859e880d3a68da56601123
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 424e82cde443bb218b302693c6e899e7c7effcbf
+Author: Sean Bollin <sean@sean-bollin.com>
+Date: 27/11/2013 16:14:57
+Message:
+CB-4051 fix for splashscreen rotation problem #MsgLength=46
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|8 1
+
+Revision: fe288ec3c34c7542dd21af89c7f1f8d338de4074
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:57
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/cordova-incl.js|0 72
+Deleted: test/index.html|0 65
+Deleted: test/main.js|0 163
+Deleted: test/master.css|0 164
+Deleted: test/splashscreen/index.html|0 48
+
+Revision: 75327c88e4463ef3e3507424e4bb411c4365b9ca
+Author: Michael Hanselmann <public@hansmi.ch>
+Date: 15/01/2014 03:13:40
+Message:
+[CB-3562] Fix aspect ratio on landscape-only iPhone applications #MsgLength=295
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|13 0
+
+
+Revision: 91234e2d593e67933a41b22070290f7b1bfd2050
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:59
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.2.7 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 1
+Modified: plugin.xml|1 1
+
+
+Revision: 6bc271b0591cc416366937050d9a4794e92cb718
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:30
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a10d8f8ca07b71eca463460959f20be756f3a395
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+Revision: e3e39967660c5715da2838f434bba288776ae358
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 20/03/2014 09:28:52
+Message:
+CB-4051 - Re-fix - Splashscreen rotation problem (closes #13) #MsgLength=62
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|1 1
+
+Revision: 1e54cacac1ef4df4e43e9f488033a81e3d2b1e17
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2014 07:35:42
+Message:
+CB-6422 [windows8] use cordova/exec/proxy #MsgLength=42
+
+
+----
+Modified: www/windows8/SplashScreenProxy.js|1 1
+
+Revision: 23cbf34bae223e7357b901fbab77f3ed44abf73d
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:22:15
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+
+Revision: f46aae10757ea8d86d1870503972e7c8d379aa81
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 21:50:57
+Message:
+CB-6465: Add license headers to Tizen code #MsgLength=43
+
+
+----
+Modified: src/tizen/SplashScreenProxy.js|21 0
+
+Revision: 8052d3804d5cf4e2e42af3a12b79c37a76be20fb
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.3.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: plugin.xml|1 1
+
+
+Revision: f82ff290a9b1ffd2dda1b6b4845748fd5080b069
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 0a82a8ef2d71ad6e632c78b7b7c577bc151e7f5c
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:34:37
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: bcbb574d05904837631c9d7c28f226091463d920
+Author: Sergey Grebnov <v-segreb@microsoft.com>
+Date: 22/04/2014 07:57:49
+Message:
+CB-6483 Use splash screen image from manifest on Windows8 #MsgLength=57
+
+
+----
+Modified: www/windows8/SplashScreenProxy.js|1 1
+
+
+Revision: ec5bbc51e769eadc7fdb53b3e16bce227429e2e3
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:36:31
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-splashscreen #MsgLength=72
+
+
+----
+Added: doc/es/index.md|84 0
+
+Revision: 5c245c2bc80f18cc478efcc255777f936df2fd91
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:15:13
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-splashscreen #MsgLength=72
+
+
+----
+Added: doc/fr/index.md|84 0
+
+Revision: 0498d90517fd353b44a33a8c24fde45dd5900fd8
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:50:00
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-splashscreen #MsgLength=72
+
+
+----
+Added: doc/ja/index.md|84 0
+
+Revision: 2c68427a8a6c38aae3a83e2ec977942e256d54fb
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:22:38
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-splashscreen #MsgLength=72
+
+
+----
+Added: doc/it/index.md|84 0
+Added: doc/ko/index.md|84 0
+Added: doc/pl/index.md|84 0
+Added: doc/zh/index.md|84 0
+
+Revision: 4fda49b77179e4f154ac03cd2223f24dcba0d47c
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:37:03
+Message:
+documentation translation: cordova-plugin-splashscreen #MsgLength=55
+
+
+----
+Added: doc/de/index.md|84 0
+Modified: doc/ja/index.md|7 7
+
+Revision: 0595d4d77964c0cb587d640fdb8c6282f368120e
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 26/02/2014 22:36:31
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-splashscreen #MsgLength=72
+
+
+----
+Added: doc/es/index.md|84 0
+
+Revision: fca4e5c351b53e9fe7024a4a32786624ef0e513e
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/02/2014 00:15:13
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-splashscreen #MsgLength=72
+
+
+----
+Added: doc/fr/index.md|84 0
+
+
+Revision: 51e054a1ea0a823c6b02d7a2081c7ecfa2daf3d8
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:50:00
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-splashscreen #MsgLength=72
+
+
+----
+Added: doc/ja/index.md|84 0
+
+Revision: 7d78efed0d3599b7f39eda0a8292f42400faba32
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:22:38
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-splashscreen #MsgLength=72
+
+
+----
+Added: doc/it/index.md|84 0
+Added: doc/ko/index.md|84 0
+Added: doc/pl/index.md|84 0
+Added: doc/zh/index.md|84 0
+
+Revision: 1c350a061f16bfbd80308598004587312b7737d9
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:37:03
+Message:
+documentation translation: cordova-plugin-splashscreen #MsgLength=55
+
+
+----
+Added: doc/de/index.md|84 0
+Modified: doc/ja/index.md|7 7
+
+
+Revision: 829dbcc8198e7a6b2d6911ab0c5b57e58d7da662
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 29/05/2014 01:15:40
+Message:
+CB-6773cordova-plugin-splashscreen documentation translation: cordova-plugin-splashscreen #MsgLength=90
+
+
+----
+Modified: doc/zh/index.md|13 13
+
+Revision: 8e12d550a1bbb54d67d1bdd2e79cdac50e894128
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 30/05/2014 08:40:38
+Message:
+[wp] plugin must be autoloaded for AutoHideSplashScreen preference to work #MsgLength=75
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: 988517df7fffae4aab0527816de6015abac5a9dc
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 30/05/2014 08:41:49
+Message:
+[wp] implemented OnInit so splash screen can be shown before cordova page is loaded #MsgLength=84
+
+
+----
+Modified: src/wp/SplashScreen.cs|105 7
+
+Revision: f37c1557b664c07852d9b764be3deb631ba85322
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 30/05/2014 08:58:28
+Message:
+[wp8] updated quirk for  and combined iOS,WP8,BB10 quirks as they are all the same #MsgLength=83
+
+
+----
+Modified: doc/index.md|1 5
+
+
+
+Revision: 30661dbb4253d1958a1ef8b627c9a578a0d36d35
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:37:08
+Message:
+CB-6810 Add license to CONTRIBUTING.md #MsgLength=39
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+
+Revision: b3b7a561ab97e8c63fd8e786bb7403cdeed2a8fd
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:43
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.3.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|14 0
+Modified: plugin.xml|1 1
+
+Revision: ac1422f49f8478fdb6e8b38aa24f1247da64f036
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: c56bb9efece65e8efbf203fbd60ce2b4e0b13b2e
+Author: mbillau <mike.billau@gmail.com>
+Date: 17/06/2014 01:43:32
+Message:
+Remove outdated doc, thx Axel #MsgLength=30
+
+
+----
+Modified: doc/index.md|5 7
+
+Revision: 1f50d90d9e3ae6bb44df24f92bc06bb247fd4608
+Author: Nadya Atanasova <nadya.it@gmail.com>
+Date: 19/06/2014 17:21:48
+Message:
+fixes Splashscreen crash on WP8 #MsgLength=171
+
+
+----
+Modified: src/wp/SplashScreen.cs|10 10
+
+
+Revision: 6f23d8e8286bf5be0c222ce9352ca7151ee24e9c
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 24/06/2014 01:53:41
+Message:
+CB-6773cordova-plugin-splashscreen documentation translation: cordova-plugin-splashscreen #MsgLength=90
+
+
+----
+Modified: doc/de/index.md|7 15
+Modified: doc/es/index.md|6 14
+Modified: doc/fr/index.md|8 16
+Modified: doc/ja/index.md|7 15
+Modified: doc/ko/index.md|6 14
+Modified: doc/pl/index.md|6 14
+Added: doc/ru/index.md|76 0
+Modified: doc/zh/index.md|14 22
+
+Revision: cd61952efc68365138115cb1d5fbefa0695198d1
+Author: Michael Hoisie <hoisie@meraki.com>
+Date: 11/06/2014 13:40:11
+Message:
+CB-7041 ios: Fix image filename logic when setting the iPad splash screen #MsgLength=617
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|16 12
+
+Revision: 5d25cf0250ca48b0ed9cce20e2199bfa3e1eef50
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:28:22
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-splashscreen documentation translation: cordova-plugin-splashscreen #MsgLength=117
+
+
+----
+Modified: doc/it/index.md|6 14
+
+Revision: 8eb2533e78c506aba2bedffa95f181a8e0fde2e7
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 25/07/2014 03:37:03
+Message:
+CB-7196 port splashscreen tests to framework #MsgLength=45
+
+
+----
+Added: test/tests.js|55 0
+
+Revision: f833c39ed36adce5c5d45864f2d22d465fa431cf
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 29/07/2014 21:10:44
+Message:
+added documentation for manual tests #MsgLength=37
+
+
+----
+Modified: test/tests.js|9 2
+
+Revision: 3b58cd69b3e31c4f72f7bd8fe0758411a7c2010e
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:24
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.3.2 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+
+Revision: 333b0e7f90833c8ff7f39d7e0b4f51e5bf1cc355
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:29
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: be8d340f31fd40e42c46b37679b1f21358acaad9
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 02/08/2014 04:40:01
+Message:
+Renamed test dir, added nested plugin.xml #MsgLength=42
+
+
+----
+Added: tests/plugin.xml|29 0
+Renamed: tests/tests.js [from test/tests.js]|0 0
+
+
+
+Revision: 0f63861e887b983d2434f8b984725553a7093a87
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 19/08/2014 22:51:57
+Message:
+CB-7249cordova-plugin-splashscreen documentation translation: cordova-plugin-splashscreen #MsgLength=90
+
+
+----
+Modified: doc/de/index.md|7 7
+
+Revision: e4d8b77027cef09b765457469dfffb0c3cbd4c66
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:44
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.3.3 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 0b001fb209b4a2c9e927a38001e89736d9b8b319
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:02
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: ec7c6aac30269b2faf2b386b190b4f8e7d2f5e07
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:18
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: e1f17d6665877a116cc25cb166ebfeefb96e9e5e
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 30/09/2014 03:03:01
+Message:
+Properly formatted splashscreen preference docs. #MsgLength=49
+
+
+----
+Modified: doc/index.md|2 2
+
+Revision: fcd628ffc9038862e5906e1fc3fe48c6cada49ba
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 30/09/2014 05:03:58
+Message:
+CB-7663 - prep for unit tests #MsgLength=30
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|15 7
+
+Revision: d85c6a935949a7aa7493725e8b1e4f40aedff910
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 30/09/2014 08:33:50
+Message:
+CB-7663 - iOS unit tests for splash screen #MsgLength=43
+
+
+----
+Modified: .gitignore|7 2
+Modified: src/ios/CDVSplashScreen.m|9 10
+Added: tests/ios/CDVSplashScreenTest.xcworkspace/contents.xcworkspacedata|7 0
+Added: tests/ios/CDVSplashScreenTest.xcworkspace/xcshareddata/CDVSplashScreenTest.xccheckout|41 0
+Added: tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/ImageNameTest.m|175 0
+Added: tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/ImageNameTestDelegates.h|57 0
+Added: tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/ImageNameTestDelegates.m|200 0
+Added: tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/Info.plist|24 0
+Added: tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/project.pbxproj|505 0
+Added: tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/project.xcworkspace/contents.xcworkspacedata|7 0
+Added: tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/project.xcworkspace/xcshareddata/CDVSplashScreenTest.xccheckout|41 0
+Added: tests/ios/README.md|11 0
+Added: tests/ios/package.json|10 0
+
+Revision: 483182f33a1e7b76251e429d3f9b1b4d4efc8719
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 30/09/2014 08:49:21
+Message:
+CB-7663 - Update README for command line invocation of tests #MsgLength=61
+
+
+----
+Modified: tests/ios/README.md|12 2
+
+Revision: d0614c532bc1e7e0a380bd5d4fcd66324e1b68e0
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 01/10/2014 02:06:04
+Message:
+Fixed iOS tests README typo. #MsgLength=29
+
+
+----
+Modified: tests/ios/README.md|1 1
+
+Revision: 6b87577801cc3ed64f17969e0947e2ad127b35c4
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 01/10/2014 02:47:46
+Message:
+Added 'npm test' #MsgLength=17
+
+
+----
+Modified: tests/ios/README.md|1 1
+Modified: tests/ios/package.json|4 1
+
+Revision: 99803ba7c636688e4a258efe8e15e84d8bf90ed9
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 01/10/2014 02:52:11
+Message:
+Fix iOS command line tests not working if Xcode was not launched at least once. #MsgLength=80
+
+
+----
+Added: tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/xcshareddata/xcschemes/CDVSplashScreenLib.xcscheme|77 0
+Added: tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/xcshareddata/xcschemes/CDVSplashScreenLibTests.xcscheme|96 0
+
+Revision: 95f407ea0d0691808355a78fdb98951133c33a5a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 01/10/2014 02:56:38
+Message:
+Re-fix iOS command line tests not working if Xcode was not launched at least once (shared scheme was not saved in the right place) #MsgLength=131
+
+
+----
+Added: tests/ios/CDVSplashScreenTest.xcworkspace/xcshareddata/xcschemes/CordovaLib.xcscheme|77 0
+
+Revision: 0ffe1c2d461ea60fd9535553e07a9f65167569c5
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 01/10/2014 07:59:47
+Message:
+Added failing iPhone 6/6 Plus tests. #MsgLength=37
+
+
+----
+Modified: src/ios/CDVSplashScreen.h|10 0
+Modified: src/ios/CDVSplashScreen.m|25 4
+Modified: tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/ImageNameTest.m|38 7
+Modified: tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/project.pbxproj|3 3
+
+Revision: 55722de1c413a8f52cebc31567df0054dc968aa9
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 01/10/2014 08:52:30
+Message:
+CB-7633 - Add support for iPhone 6/6+ #MsgLength=38
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|18 2
+
+Revision: 4d548e67c2aaa2bc9b460385ad7f01985a6086b5
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 01/10/2014 08:52:51
+Message:
+Added more iOS splash screen tests. #MsgLength=36
+
+
+----
+Modified: tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/ImageNameTest.m|151 0
+
+Revision: 21f372acc98c42c8aaaa2daf3ce84f090c5801eb
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 02/10/2014 04:49:36
+Message:
+Updated iOS tests for locked orientations #MsgLength=42
+
+
+----
+Modified: tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/ImageNameTest.m|144 85
+
+Revision: 24e6f2e0dd3f54781bd9b9f16d49585ace53d10a
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 02/10/2014 04:59:22
+Message:
+CB-7633 - (Re-fix based on updated unit tests) iPhone 6 Plus support #MsgLength=69
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|11 9
+
+Revision: 129830a76c01bd027fff4b6da3743a6ce942b287
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 02/10/2014 07:06:24
+Message:
+Finalized iOS splash screen (image name) tests. 176 tests in all, 44 for each type of device (iPad, iPhone, iPhone5, iPhone6, iPhone 6 Plus). #MsgLength=142
+
+
+----
+Modified: tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/ImageNameTest.m|506 220
+
+Revision: b46cdca795173d67337c97731b343922d24fc770
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 07:10:14
+Message:
+ Updated version and RELEASENOTES.md for release 0.3.4 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8804977c84bdb8074817b15ccbd1ddca378b2118
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/10/2014 08:09:47
+Message:
+ Incremented plugin version. #MsgLength=29
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1009019372cb61c791c32f42ae49d55672737613
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:13:15
+Message:
+CB-7700 cordova-plugin-splashscreen documentation translation: cordova-plugin-splashscreen #MsgLength=91
+
+
+----
+Modified: doc/es/index.md|4 4
+Modified: doc/pl/index.md|4 4
+Modified: doc/ru/index.md|3 3
+
+
+Revision: 2f37eed1840619c31f5fdc746cbf9324ef6afb53
+Author: Nic Mulvaney <nic@nicmulvaney.com>
+Date: 12/10/2014 01:53:40
+Message:
+Fix for portrait/landscape detection #MsgLength=194
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|6 3
+
+Revision: c67622f1b97a9faa6d96d3c455b5e1a691bbbcbb
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 14/10/2014 07:06:17
+Message:
+Update iOS test to specify device #MsgLength=34
+
+
+----
+Modified: tests/ios/package.json|1 1
+
+Revision: d2e62a551c950041cb4c9683624a04d931f4bee3
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 14/10/2014 07:11:42
+Message:
+CB-7204 - Race condition when hiding and showing spinner (closes #21) #MsgLength=70
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|8 6
+
+Revision: 3947f8570a72b04a9beb611cc1218dd483913d77
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 20/10/2014 23:39:27
+Message:
+CB-7700 cordova-plugin-splashscreen documentation translation: cordova-plugin-splashscreen #MsgLength=91
+
+
+----
+Modified: doc/de/index.md|7 8
+Modified: doc/es/index.md|6 7
+Modified: doc/fr/index.md|4 5
+Modified: doc/it/index.md|3 4
+Modified: doc/ja/index.md|1 3
+Modified: doc/ko/index.md|1 2
+Modified: doc/pl/index.md|3 4
+Modified: doc/ru/index.md|5 6
+Modified: doc/zh/index.md|7 9
+
+
+Revision: 67e8b9f01d29813dae9f15ff8b550ee35c92f85c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.3.5 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f67216d64a5c5e48c17981b7fb5c71690dde244d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:50
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 50e4887aa19c0a4692216e6c8f817e0043c7931b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/11/2014 15:48:45
+Message:
+CB-3679 Break Android splashscreen logic into splascreen plugin #MsgLength=64
+
+
+----
+Modified: plugin.xml|2 1
+Modified: src/android/SplashScreen.java|230 6
+
+Revision: e593fe3f53251c67a001a56c473b1a5b9fd913b5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/12/2014 05:09:54
+Message:
+CB-3679 Make SplashScreen plugin compatible with cordova-android@4.0.x #MsgLength=71
+
+
+----
+Modified: src/android/SplashScreen.java|11 2
+
+Revision: e320e2504a55a32a2101f914be4a9448409cbdc0
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 11/12/2014 10:18:00
+Message:
+CB-8079 Use activity class package name, but fallback to application package name when looking for splash screen drawable #MsgLength=122
+
+
+----
+Modified: src/android/SplashScreen.java|3 0
+
+Revision: ddec7008cbab13865ff1321696bfeacd577e7169
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 12/12/2014 00:15:01
+Message:
+CB-3679 Add engine tag for Android >= 3.6.0 due to use of `preferences` #MsgLength=72
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: e86a9cc7a407531f2f6a1fa37c6b0dcfd4d9a250
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 20/01/2015 02:39:55
+Message:
+CB-8280 android: Don't apply SplashScreenDelay when .show() is called explicitly #MsgLength=81
+
+
+----
+Modified: src/android/SplashScreen.java|12 10
+
+Revision: c3a5867c81d207a32ab33ee3d2ee5c3c8b8e450e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 27/01/2015 23:20:17
+Message:
+CB-8351 ios: Stop using deprecated IsIpad macro #MsgLength=48
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|2 1
+
+Revision: a9f0faa499fc43f274fa42d5284704fabe5f4a83
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b232cd74470d65c27ae632c4d9be110c9eaec23d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:03
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: bcbc23958fcd294940ad81c2c8409bca8dd92d8d
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 06/02/2015 23:15:08
+Message:
+CB-8397 Add support to 'windows' for showing the Windows Phone splashscreen #MsgLength=76
+
+
+----
+Modified: plugin.xml|8 1
+Renamed: www/windows/SplashScreenProxy.js [from www/windows8/SplashScreenProxy.js]|27 56
+
+Revision: c1d4ca8d83bc6897ba02674287c9c0fb2acb784f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 16:53:27
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|47 0
+
+Revision: 4430cfce6b131cddfe3522b51cfa7a527ba239be
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:52:28
+Message:
+CB-8438 cordova-plugin-splashscreen documentation translation: cordova-plugin-splashscreen #MsgLength=91
+
+
+----
+Modified: doc/de/index.md|10 7
+Modified: doc/es/index.md|2 1
+Modified: doc/fr/index.md|11 8
+Modified: doc/it/index.md|10 7
+Modified: doc/ja/index.md|9 5
+Modified: doc/ko/index.md|7 4
+Modified: doc/pl/index.md|10 7
+Modified: doc/zh/index.md|11 7
+
+Revision: 8bc540e454db71a0bdfa3401e513254ad13d4808
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 08:37:52
+Message:
+CB-8574 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|13 0
+Modified: README.md|2 0
+
+Revision: 688b138e317f78978550f0d43da0e0d4eae25f3e
+Author: Georgi Alexandrov <georgi.alexandrov@telerik.com>
+Date: 05/03/2015 21:56:44
+Message:
+Extend WP8 Splash Screen to respect SplashScreen and SplashScreenDelay preferences from config file #MsgLength=100
+
+
+----
+Modified: src/wp/SplashScreen.cs|89 37
+
+
+Revision: 6b1e72c6312f1c449d15a11be445b858c6689d6a
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 11/03/2015 05:27:29
+Message:
+[WP8] code cleanup, minor refactors, comments to clarify some stuff. #MsgLength=69
+
+
+----
+Modified: src/wp/SplashScreen.cs|92 104
+
+Revision: 5afde1c62f27c86b9e28ed44f237b075198ad831
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 11/03/2015 06:03:39
+Message:
+[wp8] oops, Added back config parse result checks #MsgLength=50
+
+
+----
+Modified: src/wp/SplashScreen.cs|4 2
+
+Revision: 6ce8a32865716a3ec6bb266115487c2294f63956
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:41:09
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|68 2
+Deleted: doc/index.md|0 88
+
+Revision: bb65993a5181600af130c17a0e0ac2c3f2115406
+Author: daserge <daserge@yandex.ru>
+Date: 15/01/2015 19:06:38
+Message:
+CB-7964 Add cordova-plugin-splashscreen support for browser platform #MsgLength=193
+
+
+----
+Modified: README.md|15 1
+Modified: plugin.xml|7 0
+Added: src/browser/SplashScreenProxy.js|138 0
+
+Revision: 0ff8d520811d18a09fadd40affe92f3e58f1818e
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 19/03/2015 23:24:40
+Message:
+docs: added Windows to supported platforms #MsgLength=43
+
+
+----
+Modified: README.md|1 0
+
+Revision: 1d89a2aa1bf0b714d0debf5928cd85e66bbd090b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 25/03/2015 02:49:20
+Message:
+CB-8345 android: Make "splash" the default resource ID instead of null #MsgLength=71
+
+
+----
+Modified: src/android/SplashScreen.java|5 5
+
+Revision: 89c23fad0361e6478878f7a3a7caf890e113453e
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:43:27
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: ba6730e5941a4e33f8b38e80b038a741671bcc9f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 30/03/2015 21:46:55
+Message:
+Revert "CB-8345 android: Make "splash" the default resource ID instead of null" #MsgLength=213
+
+
+----
+Modified: src/android/SplashScreen.java|5 5
+
+Revision: 9b3f750085c08de9a4210079af52786851da4f80
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 30/03/2015 21:48:04
+Message:
+CB-8345 Make default for splashscreen resource "screen" (which is what template and CLI assume it to be) #MsgLength=105
+
+
+----
+Modified: src/android/SplashScreen.java|1 1
+
+Revision: 43e9c75345d9f426efca404d604673d2d1100727
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:32
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: 1c419592887d54aaa791d87c67f7b9b6d0e7ca39
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:06:01
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: 5dc26d7e654dfc2bca87689c0350c223b5f035f3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 07:41:33
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: dd9c88204c580405d423aeaf742db28895696b54
+Author: Alex Talis <alex.talis@yahoo.com>
+Date: 28/03/2015 02:33:01
+Message:
+CB-8753 android: Adds `SplashMaintainAspectRatio` preference (close #43) #MsgLength=73
+
+
+----
+Modified: README.md|5 0
+Modified: src/android/SplashScreen.java|61 16
+
+Revision: 35272415d3b75440b1ea5fe9a5baab5e1586b3c1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 08/04/2015 08:37:06
+Message:
+CB-8753 android: Fix missing import in previous commit #MsgLength=55
+
+
+----
+Modified: src/android/SplashScreen.java|1 0
+
+Revision: 559b300d29ba6eb2f951eb19b9bbf7ba9238a862
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 10/04/2015 05:07:18
+Message:
+CB-8836 - Crashes after animating splashscreen #MsgLength=47
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|22 13
+
+Revision: 48def1443af1bdd15e6ae5d609bc3c9981ecc87a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 10/04/2015 05:19:23
+Message:
+CB-8797 - Splashscreen preferences FadeSplashScreenDuration and FadeSplashScreen (iOS) are missing #MsgLength=99
+
+
+----
+Modified: README.md|19 0
+
+Revision: a9ac114130a600aefda26a1020809932397c5df5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 08:03:54
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 9575c92db6e3efe31ca5517f4dd9405b03ebdffe
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/04/2015 02:40:00
+Message:
+give users a way to install the bleeding edge. #MsgLength=47
+
+
+----
+Modified: README.md|4 2
+
+Revision: 76bf7655a05ddd76adc727199f0e4c5c372fed86
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:38
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 2.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|25 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a510cd21ec6ddb0891b795cd9b2435a63561a3e4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:47
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 0a46c4cbbb62cd991b5ee1e7ed5d72a8fd22935b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:31:12
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d23ea4e01162a78f692bb246776f2a5b3a1da14b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 2.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: fa60f01adcba2d21583de7972a0facc4da1eb75e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:22
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 62e92afae80c648a8018bde4e2b71a1ebe8de1d9
+Author: Dan Polivy <dan@cellartracker.com>
+Date: 27/03/2015 02:52:10
+Message:
+CB-8758 [wp8]: UnauthorizedAccessException on hide() #MsgLength=364
+
+
+----
+Modified: src/wp/SplashScreen.cs|8 10
+
+Revision: 9549ce3a9df13d6ad19789debc27a41445bb43aa
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 26/04/2015 05:55:21
+Message:
+CB-8750 [wp8]: Allow resolution-specific splashscreen images #MsgLength=710
+
+
+----
+Modified: plugin.xml|3 1
+Added: src/wp/ResolutionHelper.cs|60 0
+Modified: src/wp/SplashScreen.cs|52 7
+
+Revision: 00e8999eeb03291baef71b5e1b1ce380e12f0449
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 26/04/2015 05:56:39
+Message:
+CB-8750 [wp8]: Rewrite resoultion helper #MsgLength=41
+
+
+----
+Modified: src/wp/ResolutionHelper.cs|9 30
+
+Revision: b7750760f40c22034c311df94eb46ed216f96f12
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 26/04/2015 05:58:11
+Message:
+Removed wp7 from plugin.xml and package.json #MsgLength=45
+
+
+----
+Modified: package.json|0 2
+Modified: plugin.xml|0 14
+
+Revision: 6cc3d1f3fe71309055a9f3778c75c5360c0a1ec6
+Author: Joe Bowser <bowserj@apache.org>
+Date: 08/05/2015 06:59:22
+Message:
+CB-8904: Don't reset the static variable when it's destroyed, otherwise we might as well just have a member variable #MsgLength=117
+
+
+----
+Modified: src/android/SplashScreen.java|2 1
+
+Revision: 87f3c3a3ac2c7c39f74f1173109377e87bd35078
+Author: Dan Polivy <dan@cellartracker.com>
+Date: 08/05/2015 07:37:02
+Message:
+CB-8988: Fix rotation on iOS/iPad (closes #46) #MsgLength=541
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|1 1
+
+Revision: 52c025bbef54c1e6235ddbc1f9a5dbf06fec6387
+Author: Dan Polivy <dan@cellartracker.com>
+Date: 08/05/2015 08:35:10
+Message:
+CB-3562: Disable screen rotation for iPhone when splash screen is shown. (closes #47) #MsgLength=338
+
+
+----
+Modified: plugin.xml|4 2
+Modified: src/ios/CDVSplashScreen.m|13 0
+Added: src/ios/CDVViewController+SplashScreen.h|28 0
+Added: src/ios/CDVViewController+SplashScreen.m|82 0
+
+Revision: ed00c63d2d983937e55735de32875c5287f89b5c
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/05/2015 15:04:24
+Message:
+Fixed iOS unit tests. #MsgLength=22
+
+
+----
+Added: tests/ios/CDVSplashScreenTest/.gitignore|1 0
+Modified: tests/ios/package.json|1 1
+
+Revision: ab26925e25d2d793d2d55d8fbb4148135ca1dd57
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 03/06/2015 00:01:17
+Message:
+fix npm md issue #MsgLength=17
+
+
+----
+Modified: README.md|17 17
+
+Revision: fa29a85fcb18e74b04fc90d4f96836ad851d28c5
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:42:35
+Message:
+CB-9128 cordova-plugin-splashscreen documentation translation: cordova-plugin-splashscreen #MsgLength=91
+
+
+----
+Added: doc/de/README.md|119 0
+Added: doc/es/README.md|119 0
+Added: doc/fr/README.md|119 0
+Added: doc/it/README.md|119 0
+Added: doc/ja/README.md|119 0
+Added: doc/ko/README.md|119 0
+Added: doc/pl/README.md|119 0
+Added: doc/zh/README.md|119 0
+Added: tests/ios/doc/de/README.md|20 0
+Added: tests/ios/doc/es/README.md|20 0
+Added: tests/ios/doc/fr/README.md|20 0
+Added: tests/ios/doc/it/README.md|20 0
+Added: tests/ios/doc/ja/README.md|20 0
+Added: tests/ios/doc/ko/README.md|20 0
+Added: tests/ios/doc/pl/README.md|20 0
+Added: tests/ios/doc/zh/README.md|20 0
+
+Revision: 805bcf505d5eb072129ae15cee3e68359ffccb8e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 02:11:40
+Message:
+added missing license headers #MsgLength=30
+
+
+----
+Modified: tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/Info.plist|20 0
+Modified: tests/ios/README.md|19 0
+Modified: tests/ios/doc/de/README.md|20 1
+Modified: tests/ios/doc/es/README.md|20 1
+Modified: tests/ios/doc/fr/README.md|20 1
+Modified: tests/ios/doc/it/README.md|20 1
+Modified: tests/ios/doc/ja/README.md|20 1
+Modified: tests/ios/doc/ko/README.md|20 1
+Modified: tests/ios/doc/pl/README.md|20 1
+Modified: tests/ios/doc/zh/README.md|20 1
+
+Revision: c4ba138de52047cd226292096b21b3fb09d0d9d7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:05
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 2.1.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|13 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4b1df233ae0c4b9c381e579e674d36a1ceb14747
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 57ad3602f467f6b00b42c7819ed42e2399ae9c08
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:36
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ac23964ac6e5f7a77a62ed9923344857109e71fb
+Author: Roel van Uden <r.h.g.v.uden@outlook.com>
+Date: 22/06/2015 17:50:07
+Message:
+WP8: Avoid config `value` of a wrong element. #MsgLength=308
+
+
+----
+Modified: src/wp/SplashScreen.cs|3 0
+
+Revision: 0916db61b417723bf2338c053925f67c3d8c6803
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 08:55:55
+Message:
+remove travis-ci #MsgLength=17
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 2
+
+Revision: f4a92d21ff9d752cbf5085e9152ce12cd6efc2d8
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 08/07/2015 09:16:48
+Message:
+CB-9327 - Splashscreen not receiving CDVPageLoadNotification #MsgLength=61
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|1 1
+
+Revision: 5aff6590f88f95f76cb2e92ba4242993015fc88e
+Author: Andrey Kurdyumov <kant2002@gmail.com>
+Date: 25/07/2015 15:52:42
+Message:
+CB-7282 Document AutoHideSplashScreenpreference #MsgLength=48
+
+
+----
+Modified: README.md|19 3
+
+Revision: 9ea2d4c86f07bd2be449d06c31ab30960bc24c47
+Author: daserge <daserge@yandex.ru>
+Date: 07/08/2015 01:54:50
+Message:
+CB-9467 SplashScreen does not show any image in hosted app on Windows 10 #MsgLength=73
+
+
+----
+Modified: www/windows/SplashScreenProxy.js|4 2
+
+Revision: 9bd0ec70916a5dd0786d74f3af60c5004bf13d19
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 15/09/2015 04:54:48
+Message:
+Add line to increase readability. Close #58 #MsgLength=44
+
+
+----
+Modified: README.md|1 0
+
+Revision: 9a69f12adaa307940ac424c46b413697376205a8
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/10/2015 05:16:30
+Message:
+CB-9749 documentation is wrong - default SplashScreenDelay #MsgLength=59
+
+
+----
+Modified: README.md|4 4
+
+Revision: fb0764c528444a665dc611535935d784135ae808
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/10/2015 07:34:49
+Message:
+CB-8875 FadeSplashScreen was not fading #MsgLength=40
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|43 39
+
+Revision: 2b5187b90926f13e339765a926548db482eddcb1
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/10/2015 08:20:57
+Message:
+fix formatting #MsgLength=15
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|65 29
+
+Revision: b83392df21c3fc753c6ceee28a6d636903203ab8
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/10/2015 08:23:59
+Message:
+This closes #56, This closes #44 #MsgLength=33
+
+
+----
+
+Revision: 3a796636803f26693d3ce6f18b424824f5bf1ce9
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/10/2015 08:45:43
+Message:
+CB-9750 FadeSplashDuration is now in msecs #MsgLength=43
+
+
+----
+Modified: README.md|6 3
+Modified: src/ios/CDVSplashScreen.m|8 2
+
+Revision: 7eec7c8b430a027aff08fdbec98d7157d85d8f46
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 06/10/2015 08:47:40
+Message:
+Bumped version number for API changed in CB-9750 commit #MsgLength=56
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: f675376de1eddc8cdcc610d6f98664207c70f37b
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:29:36
+Message:
+add JIRA issue tracker link #MsgLength=28
+
+
+----
+Modified: README.md|3 2
+
+
+Revision: 93aaf0529ea69b1ec1f371343d88c63f4fcaa4a1
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: d034ceee6ecd4ed18d04108efb114eb7726a89da
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:50
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: 848bd487e0f9f34de5d2e01c2d6b49214f539590
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|94 94
+
+Revision: d348168e0875d5b37a221d987e7afca96fa3cb7b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:11
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: ea3f7f7b077df7ac15b6f807034376a1eb90ca57
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:06
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 3.0.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|10 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e2239306d6f99b4c77f702a955a9d8e1f1d160a4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|62 62
+
+Revision: 78d8ef94ebbba75bc548ecaaa86991b2d7b7c0ec
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: cfc6d74506f5b83c2685a3f80a8d8ebd58c5aa5c
+Author: daserge <v-seshak@microsoft.com>
+Date: 18/12/2015 22:18:20
+Message:
+CB-10231 Fix FadeSplashScreen to default to true on iOS #MsgLength=56
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|7 2
+
+Revision: ccb3c2f4533fa52da474c33a7adc5ab5a887a805
+Author: Thejaswi Puthraya <thejaswi.puthraya@gmail.com>
+Date: 26/11/2015 18:12:25
+Message:
+CB-10079 Splashscreen plugin does not honor SplashScreenDelay on iOS #MsgLength=88
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|21 15
+
+Revision: 875ccbf5bcacc10918f712d6b3455694381b2a2e
+Author: daserge <v-seshak@microsoft.com>
+Date: 22/12/2015 22:15:59
+Message:
+CB-9043 Fix the ios splashscreen being deformed on orientation change #MsgLength=70
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|38 1
+
+Revision: fa3b6652238faf6854157b6e646069eb35bb55a5
+Author: daserge <v-seshak@microsoft.com>
+Date: 22/12/2015 22:28:53
+Message:
+CB-10244 Don't rotate the iPhone 6 Plus splash #MsgLength=47
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|2 2
+
+Revision: 1e67606c60287f787f2caa80ac6cc6c4a64805be
+Author: Wilson Pinto <wilsonpinto360@gmail.com>
+Date: 27/12/2015 02:36:37
+Message:
+CB-9374 Android: add SplashShowOnlyFirstTime as preference #MsgLength=78
+
+
+----
+Modified: README.md|3 0
+Modified: src/android/SplashScreen.java|4 1
+
+Revision: d7841c7ec9fdf9de83645abdfc9ba6494ad74235
+Author: daserge <v-seshak@microsoft.com>
+Date: 27/12/2015 00:43:58
+Message:
+CB-10263 Fix splashscreen plugin filenames for Asset Catalog #MsgLength=80
+
+
+----
+Modified: src/ios/CDVSplashScreen.h|1 0
+Modified: src/ios/CDVSplashScreen.m|18 1
+
+Revision: 3b2e9e59124e345c61235ca132e8f519d7df8ead
+Author: daserge <v-seshak@microsoft.com>
+Date: 30/12/2015 03:08:02
+Message:
+CB-9240 Cordova splash screen plugin iPad landscape mode issue #MsgLength=137
+
+
+----
+Modified: src/ios/CDVViewController+SplashScreen.m|7 0
+
+Revision: 34bc1dbf160f2d3b5b11a86ddb1a992661510587
+Author: Philipp Grosswiler <philipp.grosswiler@ruma.co.id>
+Date: 06/08/2015 17:29:41
+Message:
+CB-9538 Implementing FadeSplashScreen feature for Android #MsgLength=58
+
+
+----
+Modified: src/android/SplashScreen.java|36 3
+
+Revision: 50318213c4a00ff233937f5c9a147e3542848840
+Author: daserge <v-seshak@microsoft.com>
+Date: 11/01/2016 17:49:38
+Message:
+CB-9538 Implementing FadeSplashScreen feature for Android #MsgLength=242
+
+
+----
+Modified: README.md|19 1
+Modified: src/android/SplashScreen.java|24 8
+
+Revision: 0f4a9d3f184936540b347beb6a86883a7cc8c1b0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:35:06
+Message:
+CB-10368 Updated version and RELEASENOTES.md for release 3.1.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|10 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 12dcd57d51cf0b90ad748b388831c87eead7338b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:58:32
+Message:
+CB-10368 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: eada9a6ac16c2f49839cd3113a88e7147bfce72d
+Author: daserge <v-seshak@microsoft.com>
+Date: 18/01/2016 15:37:43
+Message:
+Closing stale: close #14, close #17, close #23, close #33, close #63 #MsgLength=69
+
+
+----
+
+Revision: 7a12204ba9c49d8b23cf67634e2d69890944274a
+Author: daserge <v-seshak@microsoft.com>
+Date: 15/01/2016 16:54:21
+Message:
+CB-8396 Add AutoHideSplashScreen logic to Android's Splashscreen #MsgLength=288
+
+
+----
+Modified: src/android/SplashScreen.java|7 4
+
+Revision: 5b3c2c8b1423eb1f17adf1c89da50edfc46c2406
+Author: Dan Polivy <dan@cellartracker.com>
+Date: 29/05/2015 07:20:21
+Message:
+CB-9094: Smarter autohide logic on Android #MsgLength=688
+
+
+----
+Modified: src/android/SplashScreen.java|7 2
+
+Revision: 799b0a1737e44418b2139ed619fae90ffcbf1804
+Author: daserge <v-seshak@microsoft.com>
+Date: 15/01/2016 19:09:37
+Message:
+CB-9516 Android SplashScreen - Spinner Does Not Display #MsgLength=448
+
+
+----
+Modified: README.md|1 3
+Modified: src/android/SplashScreen.java|40 51
+
+Revision: 109c82b29b6cfda4fabcd0aa9a7660954b50e7d6
+Author: daserge <v-seshak@microsoft.com>
+Date: 26/01/2016 18:21:42
+Message:
+CB-10412 AutoHideSplashScreen "false" isn't taken in account on iOS #MsgLength=68
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|21 1
+
+Revision: 617960ee3ef0ef8e905e22ed3fb94783c555fddc
+Author: daserge <v-seshak@microsoft.com>
+Date: 25/01/2016 21:21:57
+Message:
+CB-10422 Splashscreen displays black screen with no image on Android #MsgLength=69
+
+
+----
+Modified: src/android/SplashScreen.java|2 2
+
+Revision: 5af0016c676fed6043f506113f34ee6153a69e5e
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/02/2016 16:43:38
+Message:
+CB-10557 Updated version and RELEASENOTES.md for release 3.2.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4bc552848f2b2e8a7d0279bdce001ef54e2c56dd
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/02/2016 17:44:03
+Message:
+CB-10557 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2e1ec329168633b39c0251ca9e1ec87d9a9483c9
+Author: t1st3 <contact@tiste.org>
+Date: 08/02/2016 17:33:35
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=275
+
+
+----
+Modified: package.json|1 1
+
+Revision: e401a4de0ffa50769e982494f5024b35a31a3380
+Author: Edna Morales <edna592@gmail.com>
+Date: 13/02/2016 12:05:50
+Message:
+CB-10606 fix deprecation warning for interfaceOrientation #MsgLength=75
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|1 1
+
+Revision: 5ea854d8c3671751778a67095b3ec36a55e0c71b
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/02/2016 17:04:40
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=49
+
+
+----
+Added: .jshintrc|16 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/blackberry10/index.js|2 0
+Modified: src/browser/SplashScreenProxy.js|2 2
+Modified: src/tizen/SplashScreenProxy.js|2 0
+Modified: tests/tests.js|5 3
+Modified: www/windows/SplashScreenProxy.js|5 6
+
+Revision: 850159490c4b0e90e5a64287ddda689dbb577084
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/02/2016 17:46:29
+Message:
+CB-10650 Non-index content.src causes Splashscreen to be not displayed on browser #MsgLength=82
+
+
+----
+Modified: README.md|2 1
+Modified: src/browser/SplashScreenProxy.js|1 1
+Modified: src/tizen/SplashScreenProxy.js|1 3
+
+Revision: 03ea0a4e80134212933fab202c17f94ced708a84
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 03/03/2016 08:46:10
+Message:
+CB-10764: Remove emoji in cordova-plugin-splashscreen #MsgLength=78
+
+
+----
+Modified: README.md|3 1
+
+Revision: 617ad8109055701214a1fdff5423a3742edc9f69
+Author: Dan Polivy <dan@cellartracker.com>
+Date: 25/02/2016 09:03:58
+Message:
+CB-10692 Don't fade when plugin is forced to close #MsgLength=525
+
+
+----
+Modified: src/android/SplashScreen.java|7 6
+
+Revision: e877722bacb8153cfffc9450103af8bdd622bb90
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 10/03/2016 03:28:26
+Message:
+CB-10820 Updated version and RELEASENOTES.md for release 3.2.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2012ba9ab63429f7c40b540fe08a73014d61757c
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 10/03/2016 11:34:18
+Message:
+CB-10820 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: abbb07e5eefcba287773eb68fd1b238caedaac23
+Author: Carlos Santana <csantana23@gmail.com>
+Date: 11/03/2016 02:56:59
+Message:
+clean up release notes #MsgLength=23
+
+
+----
+Modified: RELEASENOTES.md|4 4
+
+Revision: f8311aaca89c4e4b47f47d02012d5d3ab8369935
+Author: daserge <v-seshak@microsoft.com>
+Date: 12/03/2016 21:31:52
+Message:
+CB-10864 Run ios native tests on Travis #MsgLength=106
+
+
+----
+Modified: .travis.yml|5 1
+Modified: tests/ios/package.json|3 3
+
+Revision: 9ca15db91ad2369dab9a258cd6656451537cd475
+Author: Sarangan Rajamanickam <sarajama@microsoft.com>
+Date: 04/03/2016 06:25:02
+Message:
+CB-10688:Plugin Splashscreen Readme must have examples. This closes #90 #MsgLength=72
+
+
+----
+Modified: README.md|95 35
+
+Revision: 41d9ae94ffe4e6d70f941f176045ceff45c69d4f
+Author: daserge <v-seshak@microsoft.com>
+Date: 10/03/2016 20:38:32
+Message:
+CB-10562 hide() not working in latest splashscreen plug in 3.1.0 in iOS #MsgLength=72
+
+
+----
+Modified: src/ios/CDVSplashScreen.h|1 0
+Modified: src/ios/CDVSplashScreen.m|25 15
+
+Revision: bea0a4e4083f2c19b71606f76a334439b0b17b40
+Author: Jeroen Verhoest <jeroen@cheqroom.com>
+Date: 14/03/2016 19:32:11
+Message:
+CB-10895 Transparent Splashscreen view sometimes remains #MsgLength=75
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|4 1
+
+Revision: 9832d2e1659bf6dc29455e75493437743aa6646d
+Author: daserge <v-seshak@microsoft.com>
+Date: 29/03/2016 19:05:49
+Message:
+CB-10979 Fix splashscreen ios native tests Added jshintignore for tests/ios #MsgLength=76
+
+
+----
+Added: .jshintignore|1 0
+Modified: tests/ios/package.json|1 1
+
+Revision: 6863886d74ec0153ee2810764b0280599e0aed18
+Author: weexpectedTHIS <kylepeyton@gmail.com>
+Date: 01/03/2016 12:21:17
+Message:
+Fixed misspelling in the README #MsgLength=51
+
+
+----
+Modified: README.md|1 1
+
+Revision: 14061d1999af180ef4c265378a55e45a2f3afb0e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:27
+Message:
+ Updated version and RELEASENOTES.md for release 3.2.2 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: edb6c3d6f8cc33a7d6352b419cd52770c130c0e4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:27
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8d66b9e353a951eb2d27b9d86bca87d14f688f35
+Author: daserge <v-seshak@microsoft.com>
+Date: 13/04/2016 02:55:50
+Message:
+CB-6498 Misleading documentation in Android Quirks #MsgLength=51
+
+
+----
+Modified: README.md|19 1
+
+Revision: acb45f3a386bbb80d1d52cbe9d26f3de2617bfe0
+Author: daserge <v-seshak@microsoft.com>
+Date: 15/01/2016 00:15:06
+Message:
+CB-8056 Implement splashscreen for Windows platform #MsgLength=290
+
+
+----
+Modified: README.md|49 36
+Modified: package.json|11 6
+Modified: plugin.xml|2 1
+Modified: www/windows/SplashScreenProxy.js|3 44
+
+Revision: 6a737203da6982efa61dd90939f6fb8154e658ee
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:51
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: 3d924fce1bc1d6b1d1d6414ad93fb7fe3f6b111a
+Author: daserge <v-seshak@microsoft.com>
+Date: 29/04/2016 21:26:20
+Message:
+CB-8056 Updated the dependency version, added it to the docs #MsgLength=61
+
+
+----
+Modified: README.md|1 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 4adff6f1c9c11e4d2230f9db44320d09c28836fa
+Author: daserge <v-seshak@microsoft.com>
+Date: 27/04/2016 16:55:31
+Message:
+CB-11156 Change default FadeSplashScreenDuration value #MsgLength=55
+
+
+----
+Modified: README.md|13 12
+Modified: src/android/SplashScreen.java|2 1
+Modified: src/ios/CDVSplashScreen.m|2 1
+
+Revision: 80b01049c8ec9659c51e9005d225062f4a2c124c
+Author: daserge <v-seshak@microsoft.com>
+Date: 27/04/2016 16:56:18
+Message:
+CB-11159 Fix flaky splashscreen native tests #MsgLength=82
+
+
+----
+Modified: .travis.yml|2 1
+
+Revision: 1eac08c558277e7b5683d868fa2db3588d08087d
+Author: daserge <v-seshak@microsoft.com>
+Date: 29/04/2016 22:23:19
+Message:
+CB-11179 Extend the windows-splashscreen docs #MsgLength=88
+
+
+----
+Modified: README.md|11 3
+
+Revision: 4102589bd55b9cc165c9e464603132cf79395618
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:54:00
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: d65c0c7cc5a0b4cb3880c859b0165ab178a24a9e
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 17:12:56
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|4 2
+
+Revision: 0a8b5be3d1f78ef699c5ed6db1b964649fe7f582
+Author: Franco Bugnano <franco@bugnano.it>
+Date: 21/07/2016 23:14:42
+Message:
+Fix crash on iOS when reloading page from remote Safari #MsgLength=75
+
+
+----
+Modified: src/ios/CDVSplashScreen.m|21 13
+
+Revision: 41ca5809b111c552d7f5b9adc0c5745fe6459085
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 08/06/2016 23:04:03
+Message:
+CB-11326 Prevent crash when initializing plugin after navigating to another URL #MsgLength=80
+
+
+----
+Modified: src/android/SplashScreen.java|7 1
+
+Revision: 66f7ee34d1ed7ae0069b46c3b20b670fb9743258
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 27/08/2016 02:48:18
+Message:
+Closing outdated pull request: close #106 #MsgLength=42
+
+
+----
+
+Revision: ac39b04b6f05bb1b7743383a5b6678260bddcda9
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 22:41:02
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=398
+
+
+----
+Modified: package.json|3 0
+
+Revision: 6e43615e2501c3687d02aed1523e6a7f1c6d24e4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:55
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 4.0.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|27 13
+Modified: tests/plugin.xml|1 1
+
+Revision: 2eb78b37242dda30cac201c5b97d6ef52722018e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 62509f6b47db8ff3ccd378a706e6e94503544ace
+Author: Kerri Shotts <kshotts@apache.org>
+Date: 23/09/2016 04:17:33
+Message:
+CB-11829 (iOS) Support for CB-9762; docs (CB-11830) #MsgLength=71
+
+
+----
+Modified: README.md|215 1
+Modified: src/ios/CDVSplashScreen.m|23 0
+
+Revision: 5a1ade6114875ff909fae65b5ac6aeaa7aefcef6
+Author: Kerri Shotts <kshotts@apache.org>
+Date: 30/09/2016 01:03:57
+Message:
+CB-11830 (iOS) Fix doc typos in PR#114 #MsgLength=39
+
+
+----
+Modified: README.md|2 2
+
+Revision: 770c264d2cf9ddac3370afa1cbf7f810bde5acc3
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:24:43
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=102
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: de28cf89bfadb876ce9c98fc2ab3b28159c488e8
+Author: daserge <v-seshak@microsoft.com>
+Date: 22/11/2016 00:34:38
+Message:
+CB-9287 Not enough Icons and Splashscreens for Windows 8.1 and Windows Phone 8.1 #MsgLength=117
+
+
+----
+Modified: README.md|32 2
+
+Revision: 04667e04c029f7ccfdd1567b128ee56dc041450a
+Author: daserge <v-seshak@microsoft.com>
+Date: 15/11/2016 22:04:57
+Message:
+CB-11751 'extendedSplashScreen' is undefined Document that splashscreen needs to be disabled on Windows in case of updating entire document body #MsgLength=145
+
+
+----
+Modified: README.md|3 0
+
+Revision: 782939f7ef27b2955a16f77c9bba9e66af9f53a0
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:46
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 4.0.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 0f2a06958873f134ee886fd7d004af9ed5479f8e
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:08
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6195d6741b5a09167a933fdbd83f9cd93426fb16
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 18:43:39
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: a922ce0453a00268e7d3f1e47be54ffd6645a0ac
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:58:03
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-splashscreen #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|1 0
+
+Revision: caa5534c0d18e1c0dec1dc08ad69543ec8fbcb8a
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:38:07
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 894d1641915c4dead6656dc4e874a0b6b014addf
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 21:11:15
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=69
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|17 0
+
+Revision: 1185561549eb7e3780a9d43a1795662692843444
+Author: daserge <v-seshak@microsoft.com>
+Date: 18/01/2017 22:20:23
+Message:
+CB-12353 Corrected merges usage in plugin.xml #MsgLength=46
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: b1ceb532f8a87dffcfc21903e7df64a252dde8c8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:27
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 4.0.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|10 4
+Modified: package.json|1 1
+Modified: plugin.xml|84 133
+Modified: tests/plugin.xml|5 28
+
+Revision: 90ba3dfc5b614871210719351f7597e02839b628
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:56:01
+Message:
+Set VERSION to 4.0.3-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|133 84
+Modified: tests/plugin.xml|28 5
+
+Revision: 13849c3d20cd732079eb3c3597f34856bdce7cf5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 10:26:24
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: 7c687957f8646954a09cc567a044b3af9a517002
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 21:30:20
+Message:
+CB-12622 Added Android 6.0 build badge to README #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 85aa605a12d925087646f2e1a1b7585e0ec1e6f4
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:05:08
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 4.0.3 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7f140e0176213ccaab3ffbfe0e2fc530ca2c1498
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:05:10
+Message:
+Set VERSION to 4.0.4-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e0cf39683511ca963d8971333133f6e3a6ffc95e
+Author: filmaj <maj.fil@gmail.com>
+Date: 24/05/2017 03:10:42
+Message:
+Close #126 #MsgLength=11
+
+
+----
+
+Revision: ffda2e81b9b048975baa7461a7286b63e184a810
+Author: filmaj <maj.fil@gmail.com>
+Date: 26/05/2017 01:03:13
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: c81df6f274d08f3214ba8a692f74741fa0cfe1a1
+Author: jab <jab@users.noreply.github.com>
+Date: 23/06/2017 23:39:29
+Message:
+CB-12947: (docs) Fix iPhone 5 and 5s resolution #MsgLength=87
+
+
+----
+Modified: README.md|4 3
+
+Revision: 98f83fea5ae58fb50962af2725310cc199b28f40
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 27/06/2017 13:40:32
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Modified: .travis.yml|81 7
+
+Revision: d63786d33bc5e0552f3aa5328182fb6e84f62337
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:32:26
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: be635a36c1c4123da0dee035c1714272c7e81ecd
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 16:36:52
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: d6db9f3459344ddd532e3fff24d672cb882f27d7
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:34:56
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: 2db7bac57153e68a0d35f9b8a68ef68fffdbf0bd
+Author: Peter (Somogyvari) Metz <peter.metz@unarin.com>
+Date: 26/06/2016 18:41:44
+Message:
+CB-11486 (browser) splashScreenDelay now feed through parseInt to ensure it's an integer by the time it's value is passed in to setTimeout() in hide(). #MsgLength=152
+
+
+----
+Modified: src/browser/SplashScreenProxy.js|2 0
+
+Revision: 87d29ad6d3d5ddeaf2986b8c7b54d9e34bd46efc
+Author: Peter (Somogyvari) Metz <peter.metz@unarin.com>
+Date: 26/06/2016 18:45:43
+Message:
+CB-11487 (browser) The "standard" AutoHideSplashScreen config.xml property is now supported by the browser platform. #MsgLength=117
+
+
+----
+Modified: src/browser/SplashScreenProxy.js|11 3
+
+Revision: bf9607e27f2f74d9a38b3172bd3f1accfdba2c59
+Author: Peter (Somogyvari) Metz <peter.metz@unarin.com>
+Date: 26/06/2016 18:49:08
+Message:
+CB-11488 (browser) Added a 1 second long fade out to the splash screen instead of the hard remove from the DOM whenever hide() is called. Also made a high z-index the default. This could be added from the user's stylesheets but if that only gets parsed later, there may be flickering between the application UI and the splash screen itself. #MsgLength=341
+
+
+----
+Modified: src/browser/SplashScreenProxy.js|14 2
+
+Revision: a18cc8241ae040ef622e0732b91e44fda072efab
+Author: Peter (Somogyvari) Metz <peter.metz@unarin.com>
+Date: 27/06/2016 04:10:50
+Message:
+CB-11488 (browser) The hide() call became non re-entrant after the addition of fade out. This fixes the issue. #MsgLength=111
+
+
+----
+Modified: src/browser/SplashScreenProxy.js|9 7
+
+Revision: b0e1157c8add1427179f29a77c0fc0d609ede29a
+Author: Peter (Somogyvari) Metz <peter.metz@unarin.com>
+Date: 02/07/2016 06:01:14
+Message:
+CB-11488 (browser) Guarding code against the case when deviceready fires earlier than the plugin init on cold-start #MsgLength=116
+
+
+----
+Modified: src/browser/SplashScreenProxy.js|10 2
+
+Revision: 7735ae0598c3299050b72a9245dc2a9e949a1368
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 11/07/2017 16:55:26
+Message:
+CB-11487 (browser) Documented AutoHideSplashScreen for browser this closes #107 #MsgLength=80
+
+
+----
+Modified: README.md|1 0
+
+Revision: 7c0ab0fa5148a0554c57163697dad232a5137425
+Author: filmaj <maj.fil@gmail.com>
+Date: 19/07/2017 12:26:05
+Message:
+Closes #109 #MsgLength=12
+
+
+----
+
+Revision: e5c6772f177a58c663efd3dbb8dbbc03ff9b463e
+Author: Andrey Sharapov <andrey@scat.su>
+Date: 24/07/2017 20:36:34
+Message:
+CB-13094: (android) Don't show splash when activity being finished #MsgLength=67
+
+
+----
+Modified: src/android/SplashScreen.java|4 0
+
+Revision: fcef678a7fa6532ddc02811e11b00383bc17ef20
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 28/07/2017 19:19:30
+Message:
+CB-13028 (CI) Browser builds on Travis and AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|3 2
+Modified: .travis.yml|16 0
+
+Revision: e443871785e4ee9213b3b0be4f385952ca8e0634
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:07:06
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 833dc7f783976c0d8013d28625fbea9e9146bc41
+Author: Andrea Lazzarotto <andrea.lazzarotto@gmail.com>
+Date: 15/03/2017 20:03:00
+Message:
+Samsung crash quick-n-dirty fix #MsgLength=32
+
+
+----
+Modified: src/android/SplashScreen.java|1 1
+
+Revision: 50a55883d3edc7d4c9b4c521c11ed2c108315b28
+Author: Andrea Lazzarotto <andrea.lazzarotto@gmail.com>
+Date: 01/04/2017 21:22:23
+Message:
+CB-12626: Updated Android plugin #MsgLength=224
+
+
+----
+Modified: src/android/SplashScreen.java|15 13
+
+Revision: 3180758a4e1986bb2b0f9afd3c31b6e13fae136a
+Author: Joe Bowser <bowserj@apache.org>
+Date: 11/10/2017 05:08:31
+Message:
+This closes #132 #MsgLength=17
+
+
+----
+
+Revision: 09e95a2628a68e6d84ace8b6bcd7f776daaf233d
+Author: Joe Bowser <bowserj@apache.org>
+Date: 11/10/2017 05:14:13
+Message:
+This closes #81 #MsgLength=16
+
+
+----
+
+Revision: 0b75c1faa07685a99350d37b688af3225fd2a2d8
+Author: Joe Bowser <bowserj@apache.org>
+Date: 11/10/2017 05:15:58
+Message:
+This closes #85 #MsgLength=16
+
+
+----
+
+Revision: 1a4b51fbc8344da00a9e2d4fdf96e6ed8958984a
+Author: MartijnW49 <willekensm@gmail.com>
+Date: 13/10/2016 20:20:32
+Message:
+CB-12011: (android) added the possibility to change the spinner color on Android 5.0+ apps #MsgLength=91
+
+
+----
+Modified: src/android/SplashScreen.java|22 0
+
+Revision: c2c3a980e14614bea2c18f144bd5873ca54c73ec
+Author: MartijnW49 <willekensm@gmail.com>
+Date: 23/09/2017 00:20:53
+Message:
+Tabs to spaces #MsgLength=15
+
+
+----
+Modified: src/android/SplashScreen.java|21 21
+
+Revision: 7cb318727bf68fe957796629484ab7230b5fb74a
+Author: MartijnW49 <willekensm@gmail.com>
+Date: 23/09/2017 00:23:14
+Message:
+Update readme #MsgLength=33
+
+
+----
+Modified: README.md|3 0
+
+Revision: 278c5d816834da3a62d5a12623ed5f7d5f8bcba5
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:59:26
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 5ca43e8c5d4f57b5b26af033cbed652b207a9142
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 15:23:27
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: 326f13220e97b7794bdff00ca0cbd352d4c1622c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:46
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 4.1.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|11 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 36c43827bb026c98ed1927d2408baf5bed07f779
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:40
+Message:
+Set VERSION to 4.1.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2ae821c4a853b6544464bce2d57e26efd7b8d888
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 14/12/2017 03:39:44
+Message:
+CB-13677: Remove deprecated platforms #MsgLength=38
+
+
+----
+Modified: README.md|1 10
+Modified: package.json|3 13
+Modified: plugin.xml|1 54
+Deleted: src/blackberry10/index.js|0 30
+Deleted: src/tizen/SplashScreenProxy.js|0 43
+Deleted: src/ubuntu/splashscreen.cpp|0 42
+Deleted: src/ubuntu/splashscreen.h|0 52
+
+
+Revision: 36bf91c9e8cce4a9c816d75a27c33735806e1590
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:25:13
+Message:
+CB-13681 Updated version and RELEASENOTES.md for release 5.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 031afc5056c258d8793c28297ee8718a52608d82
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:26:45
+Message:
+Set VERSION to 5.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 57b553a68e004db32a7de79863f85b88dd7f0739
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 27/12/2017 23:50:30
+Message:
+CB-13709: Fix to allow 5.0.0 version install (#144) #MsgLength=53
+
+
+----
+Modified: package.json|1 1
+
+Revision: fb606fec6a597df85b2055a120c95207d829feba
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:36
+Message:
+CB-13714 Updated version and RELEASENOTES.md for release 5.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|2 230
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5197c664c33c71139e455996f81c2c3b63719b30
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:50
+Message:
+Set VERSION to 5.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b5e0c786c564f50771af72080d572bb4123bd4a1
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 30/12/2017 13:54:06
+Message:
+Fix release notes (#145) #MsgLength=26
+
+
+----
+Modified: RELEASENOTES.md|231 0
+
+Revision: 4ffaaa295202fb5adfcf5644c6226bdb31b283bb
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 08/01/2018 00:30:23
+Message:
+CB-13737 (iOS): fix Splash screen images for iPhone X #MsgLength=54
+
+
+----
+Modified: src/ios/CDVSplashScreen.h|1 0
+Modified: src/ios/CDVSplashScreen.m|15 7
+
+
+Revision: cadc68f75b6c19477bcf0eeddba77fe974ea01b0
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 10/01/2018 03:23:26
+Message:
+CB-13750: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: f9c88b8ab8280df920dc0de8e101a3abe599a353
+Author: russa <aaron.russ@dfki.de>
+Date: 26/01/2018 01:10:50
+Message:
+CB-12277: (android) avoid NullPointerException on splashImageView when removing splashscreen #MsgLength=93
+
+
+----
+Modified: src/android/SplashScreen.java|2 2
+
+Revision: 09e1f06fb0a78c4a0407bcfc9d66ff11d2681ce4
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 25/01/2018 06:38:34
+Message:
+CB-13826 Updated version and RELEASENOTES.md for release 5.0.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d96c08e00badb5beca400abce4885bded56a03f7
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 26/01/2018 03:47:20
+Message:
+CB-13826 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+
+
+Revision: 5f417627223991eade174042381d4d5de2de3abe
+Author: Adam Schachne <adamschachne@live.com>
+Date: 23/10/2017 06:57:59
+Message:
+Fixed docs typo #MsgLength=15
+
+
+----
+Modified: README.md|1 1
+
+
+Revision: e78f1d10b1501fb4a65eb8f6203fca12dc0e0648
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 01/10/2018 18:36:38
+Message:
+also accept terms for android sdk `android-27` #MsgLength=46
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 95f91bf50c0d354edef5d271488fccff6a06f80f
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 04/10/2018 07:17:00
+Message:
+remove JIRA link #MsgLength=16
+
+
+----
+Modified: README.md|0 2
+
+Revision: 8490496c0b5ecdb8798a3c3a4b93f0a3fe85c928
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:40:29
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 4d8cd6f2fe7ab56e3c8c19e83b453d60b56acf84
+Author: エリス <erisu@users.noreply.github.com>
+Date: 04/05/2019 06:46:47
+Message:
+Updated Travis CI Settings and Package.json (#194) #MsgLength=200
+
+
+----
+Modified: .travis.yml|81 87
+Modified: package.json|6 9
+
+Revision: 61e353f5496a438af93b58e3a3c3aa9db86d7745
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 07/05/2019 00:27:08
+Message:
+Improve README (#198) #MsgLength=425
+
+
+----
+Modified: README.md|171 147
+Deleted: doc/de/README.md|0 119
+Deleted: doc/de/index.md|0 78
+Deleted: doc/es/README.md|0 119
+Deleted: doc/es/index.md|0 76
+Deleted: doc/fr/README.md|0 119
+Deleted: doc/fr/index.md|0 78
+Deleted: doc/it/README.md|0 119
+Deleted: doc/it/index.md|0 78
+Deleted: doc/ja/README.md|0 119
+Deleted: doc/ja/index.md|0 78
+Deleted: doc/ko/README.md|0 119
+Deleted: doc/ko/index.md|0 78
+Deleted: doc/pl/README.md|0 119
+Deleted: doc/pl/index.md|0 78
+Deleted: doc/ru/index.md|0 75
+Deleted: doc/zh/README.md|0 119
+Deleted: doc/zh/index.md|0 78
+Deleted: tests/ios/doc/de/README.md|0 39
+Deleted: tests/ios/doc/es/README.md|0 39
+Deleted: tests/ios/doc/fr/README.md|0 39
+Deleted: tests/ios/doc/it/README.md|0 39
+Deleted: tests/ios/doc/ja/README.md|0 39
+Deleted: tests/ios/doc/ko/README.md|0 39
+Deleted: tests/ios/doc/pl/README.md|0 39
+Deleted: tests/ios/doc/zh/README.md|0 39
+
+Revision: 76bec98b94259e86bd5f1f6cfdce3998ed5b24c5
+Author: エリス <erisu@users.noreply.github.com>
+Date: 07/05/2019 15:45:26
+Message:
+Revert Paramedic Dev Branch Usage (#208) #MsgLength=42
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 6800de23b168b3de143ee3f91c1efcaba9309de8
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 08/05/2019 23:48:57
+Message:
+CI: Use universal paramedic travis.yml (#210) #MsgLength=47
+
+
+----
+Modified: .travis.yml|25 11
+
+Revision: 49769ba2d436906c61683fa59047048605f4842e
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 10/05/2019 02:18:07
+Message:
+Remove unsupported iOS10 Saucelabs simulator #MsgLength=44
+
+
+----
+Modified: .travis.yml|0 2
+
+Revision: 5339fcf37751df948aaf40aba27d02e14f33add0
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 10/05/2019 04:41:12
+Message:
+Updated version and RELEASENOTES.md for release 5.0.3 (splash20190509) #MsgLength=71
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e44f9d1f1f4724ea1d2bd7335bb4f3c5be1727ae
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 10/05/2019 04:43:34
+Message:
+Incremented plugin version. (splash20190509) #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 0934d126d2a1b24e42c1fdc0ac3e4bffd26faef1
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 11/05/2019 06:33:14
+Message:
+Travis CI: Add ADDITIONAL_TESTS_DIR=./tests/ios (#212) #MsgLength=123
+
+
+----
+Modified: .travis.yml|18 3
+
+Revision: 7936e7ea549a76b39dcd35239c38d56bf0b101aa
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 18/06/2019 21:44:40
+Message:
+ci(travis): Remove Android 4.4, Add Android 9.0 #MsgLength=47
+
+
+----
+Modified: .travis.yml|6 2
+
+Revision: be85a1b14e69696b6c0355c754181c8d57d0837f
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 03/07/2019 02:59:02
+Message:
+ci(travis): Upgrade node from 6 to 8 #MsgLength=36
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: a7706fef5853bf5fbc584fd6089baa515db21880
+Author: Mosab A <47486787+mosabab@users.noreply.github.com>
+Date: 12/01/2020 22:46:24
+Message:
+Update readme.md by adding missing info (#239) #MsgLength=230
+
+
+----
+Modified: README.md|15 11
+
+Revision: 054387e02a1da399d6c5b0aec7897c736e544ca8
+Author: Peter Maatman <peter.maatman@rentman.nl>
+Date: 13/01/2020 02:30:00
+Message:
+Fix #235: update homepage to github readme page (#236) #MsgLength=56
+
+
+----
+Modified: package.json|1 1
+
+Revision: 46acbadd70f0d822cd049d046dd224588ffce45e
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 23:30:26
+Message:
+ci: updates Node.js versions (#252) #MsgLength=37
+
+
+----
+Modified: .appveyor.yml|9 5
+Modified: .travis.yml|11 10
+
+Revision: 35c41091d1d1117d8dcf316c0bc27e5d8397ebf4
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 23:30:39
+Message:
+chore(npm): adds ignore list (#251) #MsgLength=37
+
+
+----
+Added: .npmignore|3 0
+
+Revision: 06a76567b9b8ab04a016a92c6767b98009782a36
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:32:32
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Modified: CONTRIBUTING.md|4 4
+
+Revision: ed3049817743809576af248f263237e72ff58f92
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:42:38
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: ed1db6650c73ebd958ed69f572cfcc69f3166c29
+Author: エリス <erisu@users.noreply.github.com>
+Date: 01/06/2020 15:30:24
+Message:
+chore: add cordova-ios requirement <6.0.0 (#261) #MsgLength=50
+
+
+----
+Modified: package.json|3 0
+Modified: plugin.xml|1 0
+
+Revision: 5bc7d0d63f7550a37375dd9635150c89ca3de159
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 04/06/2020 01:48:17
+Message:
+Updated version and RELEASENOTES.md for release 5.0.4 (5.0.4) #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|12 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c1ab711039e016719948ef4913ef522b2e8c4082
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 04/06/2020 02:00:51
+Message:
+Incremented plugin version to -dev (5.0.5-dev) #MsgLength=47
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 048702cb9ccb58ced1fa001675d0789373726f41
+Author: エリス <erisu@users.noreply.github.com>
+Date: 06/06/2020 22:34:40
+Message:
+test: force cordova-ios@^5.1.1 (#267) #MsgLength=39
+
+
+----
+Modified: tests/ios/package.json|1 1
+
+Revision: 3d66c880bc5299d9530da96a648482c6aad9b9b6
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/06/2020 22:25:33
+Message:
+breaking: bump version 6.0.0-dev (#262) #MsgLength=41
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d85e440e1504e1da2b3d0dda97783e5ef751f37f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 26/06/2020 10:56:55
+Message:
+breaking: remove ios platform code from plugin repo (#263) #MsgLength=508
+
+
+----
+Modified: .gitignore|0 13
+Deleted: .jshintignore|0 1
+Modified: .travis.yml|1 19
+Modified: README.md|48 99
+Modified: package.json|0 5
+Modified: plugin.xml|0 18
+Deleted: src/ios/CDVSplashScreen.h|0 46
+Deleted: src/ios/CDVSplashScreen.m|0 514
+Deleted: src/ios/CDVViewController+SplashScreen.h|0 28
+Deleted: src/ios/CDVViewController+SplashScreen.m|0 89
+Deleted: tests/ios/CDVSplashScreenTest.xcworkspace/contents.xcworkspacedata|0 7
+Deleted: tests/ios/CDVSplashScreenTest.xcworkspace/xcshareddata/CDVSplashScreenTest.xccheckout|0 41
+Deleted: tests/ios/CDVSplashScreenTest.xcworkspace/xcshareddata/xcschemes/CordovaLib.xcscheme|0 77
+Deleted: tests/ios/CDVSplashScreenTest/.gitignore|0 1
+Deleted: tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/ImageNameTest.m|0 702
+Deleted: tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/ImageNameTestDelegates.h|0 57
+Deleted: tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/ImageNameTestDelegates.m|0 200
+Deleted: tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/Info.plist|0 44
+Deleted: tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/project.pbxproj|0 505
+Deleted: tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/project.xcworkspace/contents.xcworkspacedata|0 7
+Deleted: tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/project.xcworkspace/xcshareddata/CDVSplashScreenTest.xccheckout|0 41
+Deleted: tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/xcshareddata/xcschemes/CDVSplashScreenLib.xcscheme|0 77
+Deleted: tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/xcshareddata/xcschemes/CDVSplashScreenLibTests.xcscheme|0 96
+Deleted: tests/ios/README.md|0 40
+Deleted: tests/ios/package.json|0 13
+
+Revision: 097ca6ac42ed5bcae1b726bafb2b7be851ed566b
+Author: エリス <erisu@users.noreply.github.com>
+Date: 26/06/2020 16:07:57
+Message:
+breaking: bump engine restriction for cordova dependencies (#274) #MsgLength=67
+
+
+----
+Modified: package.json|1 1
+
+Revision: 0fba4f31dd619455a1f6790a2b4bc628b23aae38
+Author: エリス <erisu@users.noreply.github.com>
+Date: 26/06/2020 16:08:41
+Message:
+chore: cleanup repo (#275) #MsgLength=247
+
+
+----
+Modified: package.json|0 1
+Modified: plugin.xml|4 4
+Deleted: src/wp/ResolutionHelper.cs|0 39
+Deleted: src/wp/SplashScreen.cs|0 255
+Modified: tests/tests.js|0 1
+
+Revision: 369f8d148f2a9493a97a0cc80db44ee0bc12a2cc
+Author: エリス <erisu@users.noreply.github.com>
+Date: 26/06/2020 17:55:53
+Message:
+breaking: drop node engine requirement (#276) #MsgLength=47
+
+
+----
+Modified: package.json|1 2
+
+Revision: 893ba08e8fb6c83abc36204e42f5e740d5be5254
+Author: エリス <erisu@users.noreply.github.com>
+Date: 26/06/2020 18:31:02
+Message:
+breaking: replace jshint with eslint (#277) #MsgLength=211
+
+
+----
+Added: .eslintrc.yml|23 0
+Deleted: .jshintrc|0 16
+Modified: package.json|3 3
+Modified: src/browser/SplashScreenProxy.js|38 40
+Modified: tests/tests.js|4 6
+Modified: www/splashscreen.js|4 4
+Modified: www/windows/SplashScreenProxy.js|2 4
+
+Revision: 3ede66ef8fcb08afc1f289bc5018a620a4b9c6e6
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 26/06/2020 19:05:31
+Message:
+chore: update engine checks to cover newer versions (#278) #MsgLength=60
+
+
+----
+Modified: package.json|1 1
+
+Revision: b893339a985728315d9074edf8dc794d18866b50
+Author: エリス <erisu@users.noreply.github.com>
+Date: 26/06/2020 19:55:08
+Message:
+chore: add missing supported platform browser to npm keywords (#279) #MsgLength=70
+
+
+----
+Modified: package.json|2 1
+
+Revision: 050f29cfca9c8f7db13078d3c093a1fd0299e0e7
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 26/06/2020 20:42:45
+Message:
+fix(windows): implementation structure (#200) #MsgLength=47
+
+
+----
+Modified: plugin.xml|1 1
+Renamed: src/windows/SplashScreenProxy.js [from www/windows/SplashScreenProxy.js]|0 0
+
+Revision: 2ee4ff97ff69701fbf0cb53b7c146d975102c048
+Author: エリス <erisu@users.noreply.github.com>
+Date: 30/06/2020 21:46:35
+Message:
+doc(android): various improvements including size specs (#280) #MsgLength=220
+
+
+----
+Modified: README.md|55 2
+
+Revision: 3389695fc588504168863759366d8ae8fef6745a
+Author: Tim Brust <github@timbrust.de>
+Date: 03/07/2020 22:44:56
+Message:
+chore: adds package-lock file (#281) #MsgLength=38
+
+
+----
+Added: package-lock.json|1724 0
+
+Revision: faa8aa937d398f08b1a4ddab6486e4ca5e39517b
+Author: エリス <erisu@users.noreply.github.com>
+Date: 07/07/2020 11:08:11
+Message:
+fix: js clobber only on supported platforms (#282) #MsgLength=52
+
+
+----
+Modified: plugin.xml|12 4
+
+Revision: a9e73eb64280cab088b504043cf287bce33724fc
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 07/07/2020 13:46:31
+Message:
+Updated version and RELEASENOTES.md for release 6.0.0 (splashscreen-20200707) #MsgLength=78
+
+
+----
+Modified: RELEASENOTES.md|15 0
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f41610c2f7850b82325f0b35decbbcd6008a99cc
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 20/07/2020 13:04:11
+Message:
+Increment package version to 6.0.1-dev #MsgLength=39
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 14d17c5c648b918766c23d487fc6214fb3f52c54
+Author: Hans Krywalsky <hanskrywaa@web.de>
+Date: 08/08/2020 20:13:48
+Message:
+(docs): Add Information about how to use Dark Mode SplashScreens (#286) #MsgLength=73
+
+
+----
+Modified: README.md|41 0
+
+Revision: 7e5b4fd93d27c5256b029ed4309eb17fec6741a3
+Author: Tim Brust <github@timbrust.de>
+Date: 21/08/2020 22:35:18
+Message:
+ci(travis): updates Android API level (#292) #MsgLength=46
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 43f9138d1f54054343c1308fb7bfffc4da6b9928
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 04/10/2020 19:34:13
+Message:
+chore(pkg): remove default-valued field "homepage" (#296) #MsgLength=113
+
+
+----
+Modified: package.json|1 2
+
+Revision: eb0d0e5865b945fb5b55d8009d9757c016b727ce
+Author: Norman Breau <norman@normanbreau.com>
+Date: 18/10/2020 00:57:42
+Message:
+docs: Added iOS notes to supported platforms. (#300) #MsgLength=54
+
+
+----
+Modified: README.md|4 1
+
+Revision: b0a866cb6940a11965c4976bcd5e215566843797
+Author: Mosab A <47486787+mosabab@users.noreply.github.com>
+Date: 18/10/2020 00:59:14
+Message:
+Documentation Enhancement for Android Dark Mode (#293) #MsgLength=56
+
+
+----
+Modified: README.md|13 13
+
+Revision: 642549590b8352df50ff84fcfeffe9393f8dc839
+Author: Saninn Salas Diaz <5490201+distante@users.noreply.github.com>
+Date: 19/10/2020 20:11:12
+Message:
+chore(docs): Update missing  default resources for Android #689 (#291) #MsgLength=72
+
+
+----
+Modified: README.md|14 0
+
+Revision: be673a94acbc11769566e214bc08febf27975cca
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/11/2020 16:17:58
+Message:
+ci: add node-14.x to workflow (#304) #MsgLength=38
+
+
+----
+Modified: .appveyor.yml|1 0
+Modified: .travis.yml|1 1
+
+Revision: 66d1e00e003fb2f935cdbb8a5b0e47b416836b68
+Author: Ken Naito <fine14r3@gmail.com>
+Date: 28/07/2021 13:43:09
+Message:
+fix: refocus after webview visible (#186) (#314) #MsgLength=50
+
+
+----
+Modified: src/android/SplashScreen.java|1 0
+
+Revision: 8bdf669a7bb5ba062554ed4f2c43a3b5a2ee1ae4
+Author: Ivan Koprda <koprda@gmail.com>
+Date: 28/07/2021 13:46:56
+Message:
+fix: autofocus after splashscreen (#312) #MsgLength=113
+
+
+----
+
+Revision: ea3cbb60797527d08e7452e1300adc7971f2a690
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/09/2021 21:20:29
+Message:
+ci: add gh-actions workflows (#317) #MsgLength=37
+
+
+----
+Added: .github/workflows/android.yml|148 0
+Added: .github/workflows/chrome.yml|73 0
+Added: .github/workflows/ios.yml|88 0
+Added: .github/workflows/lint.yml|56 0
+
+Revision: 1bc42204e741f5dd12dfc6e5ccd444f5d5047e52
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 20:50:15
+Message:
+ci: remove travis & appveyor (#318) #MsgLength=37
+
+
+----
+Deleted: .appveyor.yml|0 33
+Modified: .npmignore|0 1
+Deleted: .travis.yml|0 106
+Modified: README.md|0 4
+
+Revision: 4a4b38b1f5fe7914f2cf67e85e2f52fdb6ec2c18
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 20:51:24
+Message:
+ci: add action-badge (#319) #MsgLength=29
+
+
+----
+Modified: README.md|2 0
+
+Revision: 10be9d0aac7a3a786ee4c8a568d79ec38a0f2b7d
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/10/2021 21:36:00
+Message:
+ci(ios): update workflow w/ iOS 15 (#320) #MsgLength=43
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: d780b0d9d68702ebef6081a36b0acf7c34eb3eb8
+Author: Daniel Stone <frodo2975@gmail.com>
+Date: 04/04/2022 02:04:56
+Message:
+GH-180 (android): Fixes nav and title bars still appearing when app is fullscreen (#213) #MsgLength=214
+
+
+----
+Modified: src/android/SplashScreen.java|37 4
+
+Revision: d28daa372a44e8f6c7ae7a2940deef0f913735d4
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 05/04/2022 01:46:20
+Message:
+chore: update package-lock.json (#325) #MsgLength=40
+
+
+----
+Modified: package-lock.json|2251 28
+
+Revision: 35c22a8a1a29109fa984bfed09520733d484a1bc
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 05/04/2022 01:53:13
+Message:
+Updated version and RELEASENOTES.md for release 6.0.1 #MsgLength=54
+
+
+----
+Modified: RELEASENOTES.md|17 0
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: bde626dd0f4fbb84bfd28682f087f42304575559
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 05/04/2022 02:03:53
+Message:
+Incremented plugin version. #MsgLength=28
+
+
+----
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 74b70ee1ac96a60f6462a16343abde4332c87160
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 05/04/2022 14:07:19
+Message:
+chore(CI): remove iOS workflow (#326) #MsgLength=108
+
+
+----
+Deleted: .github/workflows/ios.yml|0 106
+
+Revision: 144c21673dd72965bf9b552855e2dc72fcee73c7
+Author: Niklas Merz <n.merz@pragmaticindustries.de>
+Date: 05/04/2022 19:04:16
+Message:
+docs: fixup spaces for releasnotes (#327) #MsgLength=43
+
+
+----
+Modified: RELEASENOTES.md|15 15
+
+Revision: 40739f24e5d4eddb39e99162df70e1e49fa43e97
+Author: エリス <erisu@users.noreply.github.com>
+Date: 05/07/2022 15:08:10
+Message:
+chore(android): update android engine requirement <11.0.0 (#329) #MsgLength=177
+
+
+----
+Modified: README.md|3 0
+Modified: package-lock.json|4 0
+Modified: package.json|4 0
+Modified: plugin.xml|1 1
+
+Revision: 751b4e48c8b72242872629a187e8a09a4105fff6
+Author: エリス <erisu@users.noreply.github.com>
+Date: 05/07/2022 15:49:16
+Message:
+doc(ios): remove docs from README (migrated to cordova-docs) (#331) #MsgLength=69
+
+
+----
+Modified: README.md|3 225
+
+Revision: d2937ad489f516d226bef3a17ddfa44e2b7919de
+Author: Erisu <erisu@apache.org>
+Date: 12/07/2022 17:27:16
+Message:
+Updated version and RELEASENOTES.md for release 6.0.2 (splashscreen-v6.0.2) #MsgLength=76
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a722382414684f7cde242892a0696ebae2678cd3
+Author: Erisu <erisu@apache.org>
+Date: 16/07/2022 13:12:19
+Message:
+release(post): bump version to 6.0.3-dev #MsgLength=41
+
+
+----
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d05de697e43409fffbe10cf4c1af2ef556a012b1
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/07/2022 13:16:31
+Message:
+ci(android): update java requirement for cordova-android@11 (#332) #MsgLength=68
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: dbd4bcd79fa3cd1c5efef9f51ecbc9f92327dde9
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/07/2022 17:27:28
+Message:
+chore(npm): rebuilt package-lock (#333) #MsgLength=41
+
+
+----
+Modified: package-lock.json|1199 965
+
+Revision: 99d76e003473b03912262c54a8fe18ed37d515ce
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/08/2022 23:40:59
+Message:
+ci: sync workflow with paramedic (#336) #MsgLength=41
+
+
+----
+Modified: .github/workflows/android.yml|12 22
+
+Revision: 9de59511263aff9a5cc055aabb4934d39743a6a5
+Author: エリス <erisu@users.noreply.github.com>
+Date: 08/09/2022 17:20:23
+Message:
+chore: bump to 7.0.0-dev (#330) #MsgLength=33
+
+
+----
+Modified: package-lock.json|2 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4803a88fb431a0e9401f005edd460437a852e656
+Author: エリス <erisu@users.noreply.github.com>
+Date: 09/09/2022 17:55:45
+Message:
+feat: update cordova engine for future 8.0.0 (#338) #MsgLength=53
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+
+Revision: 1b23804f6f146738608ae75090766ef8304e8318
+Author: エリス <erisu@users.noreply.github.com>
+Date: 09/09/2022 19:07:24
+Message:
+fix: restore cordova-ios engine requirement (#339) #MsgLength=52
+
+
+----
+Modified: package-lock.json|3 0
+Modified: package.json|3 0
+
+Revision: 78e8fa07ae4db6a3293ab4a648e8c0a22092dda9
+Author: エリス <erisu@users.noreply.github.com>
+Date: 10/09/2022 00:31:39
+Message:
+feat(android)!: remove platform from plugin (#337) #MsgLength=353
+
+
+----
+Deleted: .github/workflows/android.yml|0 137
+Modified: README.md|2 134
+Modified: package-lock.json|3 0
+Modified: package.json|3 2
+Modified: plugin.xml|0 17
+Deleted: src/android/SplashScreen.java|0 447
+

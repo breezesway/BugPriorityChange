@@ -1,0 +1,1943 @@
+Revision: 616288bf71dae117440d1a3e6f50fa671479e94d
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 08/04/2011 02:06:29
+Message:
+initial commit #MsgLength=15
+
+
+----
+Added: Makefile|74 0
+Added: README.md|54 0
+Added: framework/appinfo.json|8 0
+Added: framework/dashboard.html|18 0
+Added: framework/index.html|165 0
+Added: framework/menu.css|36 0
+Added: framework/phonegap.js|1558 0
+Added: js/acceleration.js|38 0
+Added: js/accelerometer.js|112 0
+Added: js/application.js|33 0
+Added: js/audio.js|92 0
+Added: js/camera.js|81 0
+Added: js/contacts.js|48 0
+Added: js/debugconsole.js|51 0
+Added: js/device.js|63 0
+Added: js/file.js|58 0
+Added: js/geolocation.js|211 0
+Added: js/map.js|46 0
+Added: js/mojo.js|64 0
+Added: js/mouse.js|19 0
+Added: js/network.js|41 0
+Added: js/notification.js|105 0
+Added: js/orientation.js|145 0
+Added: js/phonegap.js.base|8 0
+Added: js/position.js|66 0
+Added: js/service.js|53 0
+Added: js/sms.js|37 0
+Added: js/storage.js|89 0
+Added: js/telephony.js|25 0
+Added: js/window.js|67 0
+Added: js/windowproperties.js|7 0
+
+Revision: 3cf63e53ca6cafe167c1077a9dfd16749b117db8
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 16/04/2011 02:35:35
+Message:
+updated inline code comments, removed commented out code #MsgLength=57
+
+
+----
+Modified: framework/phonegap.js|339 411
+Modified: js/camera.js|0 42
+Modified: js/debugconsole.js|6 16
+Modified: js/device.js|1 5
+Modified: js/geolocation.js|119 119
+Modified: js/network.js|0 1
+Modified: js/notification.js|81 68
+Modified: js/orientation.js|10 52
+Modified: js/sms.js|19 17
+Modified: js/storage.js|75 65
+Modified: js/telephony.js|8 9
+Modified: js/window.js|16 16
+Modified: js/windowproperties.js|6 3
+
+Revision: 7b152287fe4f646b6ae59172a5569c0dd72e9126
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 16/04/2011 02:36:10
+Message:
+added Alert and GetCurrentOrientation demos #MsgLength=44
+
+
+----
+Modified: framework/index.html|9 6
+
+Revision: aea1b3c44f1d7f838ea8612089a196fc1c824129
+Author: davebalmer <dbalmerjr@gmail.com>
+Date: 10/05/2011 15:20:05
+Message:
+Changed DOCTYPE to HTML5 #MsgLength=24
+
+
+----
+Modified: framework/dashboard.html|1 2
+Modified: framework/index.html|1 2
+
+Revision: 04ed84a5e38c892c5172acd182957b978dcc7dab
+Author: davebalmer <dbalmerjr@gmail.com>
+Date: 10/05/2011 15:20:31
+Message:
+Added webOS 3.0 compatibility property. #MsgLength=39
+
+
+----
+Modified: framework/appinfo.json|2 1
+
+Revision: 3724c5a82fdbf1256e1246ec293938f9a72137a0
+Author: davebalmer <dbalmerjr@gmail.com>
+Date: 10/05/2011 15:20:42
+Message:
+Changed Palm to HP :) #MsgLength=21
+
+
+----
+Modified: README.md|4 5
+
+Revision: 9e02999da6caaf2a3b64260a85fdda34c5257a72
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 10/05/2011 13:54:52
+Message:
+added SQLite example in demo app #MsgLength=33
+
+
+----
+Modified: Makefile|1 2
+Modified: framework/index.html|62 9
+Modified: framework/phonegap.js|4 2
+Deleted: js/storage.js|0 99
+
+
+Revision: 7d4d38d3473f4b04cfd0242c330d1f45e859bf68
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 28/04/2011 05:23:08
+Message:
+update readme to use phonegap-webos instead of phonegap-palm #MsgLength=61
+
+
+----
+Modified: README.md|2 2
+
+Revision: 36306a5244fabf4e9c67ffd155c6d1ce6d27fca0
+Author: alunny <alunny@gmail.com>
+Date: 20/05/2011 05:26:06
+Message:
+fire deviceready after DOMContentLoaded #MsgLength=141
+
+
+----
+Modified: framework/index.html|4 0
+Modified: framework/phonegap.js|13 0
+Modified: js/device.js|8 0
+Modified: js/phonegap.js.base|5 0
+
+Revision: 96a407a365069fe5983325faee54e3c72b8698aa
+Author: alunny <alunny@gmail.com>
+Date: 20/05/2011 05:33:54
+Message:
+README updates #MsgLength=15
+
+
+----
+Modified: README.md|18 18
+
+Revision: 4577d7c778446c949157578a7862125d42a25030
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 21/05/2011 02:48:17
+Message:
+modified so that instantiating phonegap is no longer required #MsgLength=62
+
+
+----
+Modified: framework/index.html|1 1
+
+Revision: a137c0b94c5a917f4e1a91d20956adacfcd91842
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 21/05/2011 02:58:00
+Message:
+removed unnecessary navigator.device.deviceReady call #MsgLength=54
+
+
+----
+Modified: framework/index.html|1 1
+Modified: framework/phonegap.js|0 101
+
+Revision: 088ef94ce7fdc5bb24bd127daab2bb2dc6a5cf85
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 01/06/2011 20:10:41
+Message:
+remove unneccessary Mojo object check #MsgLength=38
+
+
+----
+Modified: framework/phonegap.js|0 4
+Modified: js/mojo.js|0 4
+
+Revision: 85e6525c8e47582553ed0101b964bd9b95ba6047
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 04/06/2011 02:23:45
+Message:
+updated device apis to set name and platform on device ready #MsgLength=61
+
+
+----
+Modified: js/device.js|11 1
+
+Revision: b120601d5c614b0dabcd41232ff226b0899adeb9
+Author: stevengill <steve.gill@nitobi.com>
+Date: 29/06/2011 07:28:11
+Message:
+added changes.txt #MsgLength=18
+
+
+----
+Added: changes.txt|17 0
+
+Revision: dfdf9485a0d3f6400d06c51920c60bcb55b11225
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 06/07/2011 04:07:17
+Message:
+added touch events #MsgLength=19
+
+
+----
+Modified: Makefile|3 2
+Modified: framework/dashboard.html|1 4
+Modified: framework/index.html|64 25
+Modified: framework/phonegap.js|142 4
+Added: js/phonegap-core.js|62 0
+Deleted: js/phonegap.js.base|0 13
+
+Revision: 4161e63965654940693b367ce673c2ad2c364f6a
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 06/07/2011 04:11:07
+Message:
+updated README.md #MsgLength=18
+
+
+----
+Modified: README.md|1 1
+
+Revision: 3c4aa7190808144943754dce9774af078b2dbcae
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 09/07/2011 03:07:38
+Message:
+phonegap-webos issue # 7 #MsgLength=25
+
+
+----
+Modified: Makefile|2 1
+Modified: framework/index.html|1 1
+Renamed: framework/phonegap-1.0.0.js [from framework/phonegap.js]|311 17
+Modified: js/phonegap-core.js|311 17
+
+
+Revision: 84f380464ebb0c7a7b9adb904257966c5a97ce32
+Author: stevengill <steve.gill@nitobi.com>
+Date: 12/07/2011 05:38:03
+Message:
+added version file #MsgLength=19
+
+
+----
+Added: VERSION|2 0
+
+Revision: b191d911f8bd3a0de44579652120eeea4bd76cb2
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 14/07/2011 05:26:17
+Message:
+add the thumbs.js lib to the repo #MsgLength=34
+
+
+----
+Added: lib/thumbs.0.5.2.js|80 0
+
+Revision: 63f5917c5da2f82dd54fec2b9117eb3b9940e095
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 14/07/2011 06:29:48
+Message:
+added version file & change log #MsgLength=32
+
+
+----
+Modified: VERSION|1 2
+Modified: changes.txt|5 17
+
+
+Revision: 4d8da8b0db1b60537d3a4cef7509029e73a33bfe
+Author: stevengill <steve.gill@nitobi.com>
+Date: 19/07/2011 09:03:52
+Message:
+added LICENSE file #MsgLength=19
+
+
+----
+Added: LICENSE|65 0
+
+Revision: c38bf1907d54e6c368d17fe22bfac450c7e72327
+Author: stevengill <steve.gill@nitobi.com>
+Date: 29/07/2011 14:56:43
+Message:
+updated version file #MsgLength=21
+
+
+----
+Modified: VERSION|1 1
+Modified: changes.txt|4 5
+
+Revision: ddb44889a33b5871260f5889b7feb2531d66082c
+Author: stevengill <steve.gill@nitobi.com>
+Date: 01/10/2011 07:55:13
+Message:
+updated version to 1.1.0 #MsgLength=25
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 401af935158df01d0ef1496bb3986a81be76c889
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 05/11/2011 03:05:11
+Message:
+updated version file #MsgLength=21
+
+
+----
+Modified: VERSION|1 1
+Modified: changes.txt|5 2
+
+Revision: 464e06b6f591d317587acf4bd86b6664eae777cd
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 28/01/2012 06:21:58
+Message:
+update version file to 1.4.0 #MsgLength=29
+
+
+----
+Modified: VERSION|1 1
+
+Revision: 7da7f73632e7615e86e441815c794119484f9313
+Author: stevengill <steve.gill@nitobi.com>
+Date: 13/12/2011 18:40:34
+Message:
+updated version to 1.3.0rc2 #MsgLength=28
+
+
+----
+Modified: VERSION|1 1
+
+Revision: dccd5b724f9c3adda4be5215f29b12106654f691
+Author: stevengill <steve.gill@nitobi.com>
+Date: 17/12/2011 08:42:50
+Message:
+updated version to 1.3.0 #MsgLength=25
+
+
+----
+Modified: VERSION|1 1
+
+
+Revision: ee7234e53bb063ad5dc34ae111b33103ff2a5bec
+Author: hermwong <hermwong@apache.org>
+Date: 02/02/2012 04:45:19
+Message:
+update version file #MsgLength=20
+
+
+----
+Modified: VERSION|1 2
+
+Revision: e1ca3d8d4423a4bc7a8d9b761babe9c2d08f5068
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 11/02/2012 05:05:10
+Message:
+removed uncessary files #MsgLength=24
+
+
+----
+Deleted: LICENSE|0 65
+Deleted: changes.txt|0 7
+
+Revision: 7eeda79d34df3db0c469091d9e41b2d50b5d38bb
+Author: Markus Leutwyler <mleut@yahoo.com>
+Date: 07/03/2012 21:07:15
+Message:
+Added initial compass support #MsgLength=30
+
+
+----
+Modified: Makefile|1 0
+Added: js/compass.js|102 0
+
+Revision: c208208c293b79db005315ae683a5016c03c1149
+Author: ghtomcat <mleut@yahoo.com>
+Date: 14/03/2012 21:34:14
+Message:
+Added compassAPI function #MsgLength=25
+
+
+----
+Modified: js/phonegap-core.js|58 0
+
+Revision: 7fd75ab99edda265bc524082c23ff5a6b54d3f88
+Author: ghtomcat <mleut@yahoo.com>
+Date: 14/03/2012 21:40:56
+Message:
+Added mapping for compassAPI #MsgLength=28
+
+
+----
+Modified: js/phonegap-core.js|1 0
+
+Revision: b3bb8555c1c96b5a655382de83c404869b2572d6
+Author: hermwong <herm.wong@gmail.com>
+Date: 16/03/2012 01:35:56
+Message:
+update sample application to demo compass api #MsgLength=46
+
+
+----
+Modified: framework/index.html|45 0
+
+
+Revision: 2ac3674b9219c15bbbd33c77cecba10697783d4f
+Author: Markus Leutwyler <mleut@yahoo.com>
+Date: 29/03/2012 21:19:54
+Message:
+added HP copyright notice #MsgLength=26
+
+
+----
+Added: NOTICE|3 0
+
+Revision: 55274c7dc288ce7a9b0076fdca6aac34fc87e9a0
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/03/2012 00:31:19
+Message:
+updatd to 1.5.0 #MsgLength=16
+
+
+----
+Modified: VERSION|1 1
+Renamed: framework/phonegap-1.5.0.js [from framework/phonegap-1.0.0.js]|0 0
+
+Revision: 5669c55c4078491c66c0af745fd902bf24890db4
+Author: hermwong <herm.wong@gmail.com>
+Date: 24/03/2012 06:15:06
+Message:
+changes for https://issues.apache.org/jira/browse/CB-231 #MsgLength=57
+
+
+----
+Modified: Makefile|5 5
+Modified: VERSION|1 1
+Modified: framework/appinfo.json|2 2
+Renamed: framework/cordova-1.6.0.js [from framework/phonegap-1.5.0.js]|211 81
+Modified: framework/index.html|10 6
+Modified: js/audio.js|4 4
+Modified: js/contacts.js|1 1
+Renamed: js/cordova-core.js [from js/phonegap-core.js]|82 113
+
+Revision: 3116180d99623b04a5f6129c13d067e0162df1e3
+Author: hermwong <hermwong@apache.org>
+Date: 24/03/2012 08:18:05
+Message:
+add LICENSE & NOTICE file, CB-356 #MsgLength=34
+
+
+----
+Added: LICENSE|202 0
+Modified: NOTICE|10 3
+
+Revision: 7cc7eb1c454bfc88e0791b4a284418fcf33026fb
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 24/03/2012 13:26:46
+Message:
+update README #MsgLength=14
+
+
+----
+Modified: README.md|15 15
+
+Revision: 673dbc380abf032a76551955b24891bc86b6567c
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 24/03/2012 13:29:31
+Message:
+update README #MsgLength=14
+
+
+----
+Modified: README.md|1 1
+
+Revision: 5bc441896e00ca6c0a9a72be465501744e0ba68c
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 24/03/2012 13:30:39
+Message:
+update README #MsgLength=14
+
+
+----
+Modified: README.md|1 1
+
+Revision: cd75b4675c6202dce319ec2a16c819d61fe60fec
+Author: hermwong <herm.wong@gmail.com>
+Date: 29/03/2012 02:33:00
+Message:
+replace phonegap links with apache cordova links CB-404 #MsgLength=56
+
+
+----
+Modified: README.md|1 2
+
+Revision: 215a6efa2506ddb8bd546975c1ffa85566dfb83a
+Author: hermwong <herm.wong@gmail.com>
+Date: 29/03/2012 03:11:22
+Message:
+update cordova splash / app icon; CB-237 #MsgLength=41
+
+
+----
+Modified: framework/appinfo.json|1 0
+Added: framework/cordova_48.png|0 0
+
+Revision: 89511fe77d6301c46d11aece0c6092988890de24
+Author: hermwong <herm.wong@gmail.com>
+Date: 30/03/2012 08:03:08
+Message:
+added network connection api #MsgLength=29
+
+
+----
+Modified: framework/cordova-1.6.0.js|22 4
+Modified: framework/index.html|23 5
+Modified: js/network.js|22 4
+
+Revision: 5e8870b9030d3b0f8370c30edd65c4bd4371054e
+Author: hermwong <herm.wong@gmail.com>
+Date: 31/03/2012 05:56:52
+Message:
+added network connection type api #MsgLength=34
+
+
+----
+Modified: framework/index.html|26 1
+Modified: js/network.js|17 0
+
+Revision: 043820194bc42c951067c575b69448c980c5f9f4
+Author: hermwong <herm.wong@gmail.com>
+Date: 05/04/2012 08:13:27
+Message:
+get compass api to pass mobile spec tests #MsgLength=42
+
+
+----
+Modified: Makefile|1 1
+Modified: framework/cordova-1.6.0.js|63 2
+Modified: framework/index.html|6 2
+Modified: js/compass.js|46 2
+
+Revision: 246123e9645915b30e89fa632a478dec3d308245
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/03/2012 00:31:19
+Message:
+updatd to 1.5.0 #MsgLength=16
+
+
+----
+Modified: VERSION|1 1
+Renamed: framework/phonegap-1.5.0.js [from framework/phonegap-1.0.0.js]|0 0
+
+Revision: 7ec55de18f296532ee5acc256e294725c87a1015
+Author: hermwong <herm.wong@gmail.com>
+Date: 24/03/2012 06:15:06
+Message:
+changes for https://issues.apache.org/jira/browse/CB-231 #MsgLength=57
+
+
+----
+Modified: Makefile|5 5
+Modified: VERSION|1 1
+Modified: framework/appinfo.json|2 2
+Renamed: framework/cordova-1.6.0.js [from framework/phonegap-1.5.0.js]|211 81
+Modified: framework/index.html|10 6
+Modified: js/audio.js|4 4
+Modified: js/contacts.js|1 1
+Renamed: js/cordova-core.js [from js/phonegap-core.js]|82 113
+
+Revision: 85313e69ef5cfc95528ddcc23bc436195d8095ca
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 04/03/2012 00:31:19
+Message:
+updatd to 1.5.0 #MsgLength=16
+
+
+----
+Modified: VERSION|1 1
+Renamed: framework/phonegap-1.5.0.js [from framework/phonegap-1.0.0.js]|0 0
+
+
+Revision: 83770f26c91d7461a3592f69cc6f01bfd275eea4
+Author: hermwong <hermwong@apache.org>
+Date: 24/03/2012 08:18:05
+Message:
+add LICENSE & NOTICE file, CB-356 #MsgLength=34
+
+
+----
+Added: LICENSE|202 0
+Added: NOTICE|5 0
+
+Revision: 914fb4c42d1a2f8665ab3345222589874a785e73
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 24/03/2012 13:26:46
+Message:
+update README #MsgLength=14
+
+
+----
+Modified: README.md|15 15
+
+Revision: ffa78551b992eb825a3ce000cfd7b35693b8ec9d
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 24/03/2012 13:29:31
+Message:
+update README #MsgLength=14
+
+
+----
+Modified: README.md|1 1
+
+Revision: 2c42870838db6fbc0ac861a2bf6ff251230fa6e9
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 24/03/2012 13:30:39
+Message:
+update README #MsgLength=14
+
+
+----
+Modified: README.md|1 1
+
+Revision: d3b23d3aa989212c8e46a7286358a434033920a1
+Author: hermwong <herm.wong@gmail.com>
+Date: 29/03/2012 02:33:00
+Message:
+replace phonegap links with apache cordova links CB-404 #MsgLength=56
+
+
+----
+Modified: README.md|1 2
+
+Revision: 198b13c0e3d703cc9cd62f5754dd6cb074d87415
+Author: hermwong <herm.wong@gmail.com>
+Date: 29/03/2012 03:11:22
+Message:
+update cordova splash / app icon; CB-237 #MsgLength=41
+
+
+----
+Modified: framework/appinfo.json|1 0
+Added: framework/cordova_48.png|0 0
+
+Revision: 462a9d5ed320ccfdced35494018c02778fb9fd45
+Author: hermwong <herm.wong@gmail.com>
+Date: 30/03/2012 08:03:08
+Message:
+added network connection api #MsgLength=29
+
+
+----
+Modified: framework/cordova-1.6.0.js|22 4
+Modified: framework/index.html|23 5
+Modified: js/network.js|22 4
+
+Revision: 6daae3c6930de1e1ee7856cc033f5d820ab4b156
+Author: hermwong <herm.wong@gmail.com>
+Date: 31/03/2012 05:56:52
+Message:
+added network connection type api #MsgLength=34
+
+
+----
+Modified: framework/index.html|26 1
+Modified: js/network.js|17 0
+
+Revision: 1783ed586f8786e2d2627da097d724179e804d86
+Author: hermwong <herm.wong@gmail.com>
+Date: 05/04/2012 08:13:27
+Message:
+get compass api to pass mobile spec tests #MsgLength=42
+
+
+----
+Modified: Makefile|1 1
+Modified: framework/cordova-1.6.0.js|63 2
+Modified: framework/index.html|6 2
+Modified: js/compass.js|46 2
+
+
+Revision: b51939a49c0adeffd75c8f10f611f5b2c27482de
+Author: hermwong <herm.wong@gmail.com>
+Date: 13/04/2012 08:08:53
+Message:
+update to 1.6.1 #MsgLength=16
+
+
+----
+Modified: Makefile|1 1
+Modified: VERSION|1 1
+Deleted: framework/cordova-1.6.0.js|0 2037
+Modified: framework/index.html|1 1
+
+Revision: 470cf093a689cd3c6b919fc12a0053b74ee53209
+Author: hermwong <herm.wong@gmail.com>
+Date: 24/04/2012 01:41:09
+Message:
+update version to 1.7.0 #MsgLength=24
+
+
+----
+Modified: Makefile|1 1
+Modified: VERSION|1 1
+Modified: framework/index.html|1 1
+
+Revision: 058a2967ad02406afc758fce8bdfe5a50d2b7e3c
+Author: hermwong <herm.wong@gmail.com>
+Date: 28/04/2012 04:14:07
+Message:
+modify Makefile to work with windows #MsgLength=37
+
+
+----
+Modified: Makefile|32 0
+
+Revision: 9f8802c45bc087a47ea62b32743e2eae55918ea9
+Author: hermwong <herm.wong@gmail.com>
+Date: 08/05/2012 04:19:05
+Message:
+modifications to OS checking in Makefile #MsgLength=41
+
+
+----
+Modified: Makefile|6 26
+
+Revision: 09736633c9bdcbfe2bf8eab4e977fe39b8e0fbbb
+Author: hermwong <herm.wong@gmail.com>
+Date: 12/05/2012 02:11:26
+Message:
+CB-557 make sure Makefile works on Win & OSX #MsgLength=45
+
+
+----
+Modified: Makefile|29 9
+
+Revision: 1a4db1493c09f2d13747b738424de0e73e2979ac
+Author: hermwong <herm.wong@gmail.com>
+Date: 26/05/2012 05:40:18
+Message:
+update to 1.8.0 #MsgLength=16
+
+
+----
+Modified: Makefile|1 1
+Modified: VERSION|1 1
+Modified: framework/index.html|1 1
+
+Revision: 99e2eb85f59c1b9df71e0db4e078624576a743a7
+Author: hermwong <herm.wong@gmail.com>
+Date: 26/05/2012 06:08:48
+Message:
+added Apache license header #MsgLength=28
+
+
+----
+Modified: framework/dashboard.html|21 0
+Modified: framework/index.html|21 0
+Modified: framework/menu.css|21 0
+Modified: js/acceleration.js|21 0
+Modified: js/accelerometer.js|21 0
+Modified: js/application.js|21 0
+Modified: js/audio.js|21 0
+Modified: js/camera.js|21 0
+Modified: js/compass.js|21 0
+Modified: js/contacts.js|21 0
+Modified: js/cordova-core.js|21 0
+Modified: js/debugconsole.js|21 0
+Modified: js/device.js|21 0
+Modified: js/file.js|21 0
+Modified: js/geolocation.js|21 0
+Modified: js/map.js|21 0
+Modified: js/mojo.js|22 1
+Modified: js/mouse.js|21 0
+Modified: js/network.js|21 0
+Modified: js/notification.js|21 0
+Modified: js/orientation.js|21 0
+Modified: js/position.js|21 0
+Modified: js/service.js|21 0
+Modified: js/sms.js|21 0
+Modified: js/telephony.js|21 0
+Modified: js/window.js|21 0
+Modified: js/windowproperties.js|22 1
+
+Revision: 0504739385ca44537c25812a32b177d7402c8468
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/06/2012 03:05:31
+Message:
+updated Notice file #MsgLength=20
+
+
+----
+Modified: NOTICE|2 2
+
+Revision: d5a32bde766849433b9fa18e7a0e060fdcfcc7d2
+Author: hermwong <herm.wong@gmail.com>
+Date: 12/06/2012 03:24:03
+Message:
+CB-899 use org.apache.cordova namespace #MsgLength=40
+
+
+----
+Modified: framework/appinfo.json|1 1
+
+Revision: 14541f2aee4cde08c21f87af26c75c7257475c48
+Author: Herm Wong <hermwong@apache.org>
+Date: 12/06/2012 06:37:33
+Message:
+CB-897 update webos apache headers / license headers #MsgLength=53
+
+
+----
+Modified: Makefile|19 0
+Modified: NOTICE|3 0
+Modified: lib/thumbs.0.5.2.js|24 0
+
+Revision: 5cb3fe33529c1572c87590e092580a2b66a6f04a
+Author: Herm Wong <hermwong@apache.org>
+Date: 22/06/2012 02:32:01
+Message:
+update version to 1.9.0 #MsgLength=24
+
+
+----
+Modified: Makefile|1 1
+Modified: VERSION|1 1
+Modified: framework/appinfo.json|1 1
+Modified: framework/index.html|1 1
+
+Revision: aa6604f5bdbdb0a36f98b6a7b781a9b1c2bb9f4d
+Author: hermwong <herm.wong@gmail.com>
+Date: 12/06/2012 03:24:03
+Message:
+CB-899 use org.apache.cordova namespace #MsgLength=40
+
+
+----
+Modified: framework/appinfo.json|1 1
+
+
+Revision: 49c545f5ac452a8b6300c172763c8ba76c067ad0
+Author: hermwong <herm.wong@gmail.com>
+Date: 13/06/2012 05:36:36
+Message:
+update to version 1.8.1 #MsgLength=24
+
+
+----
+Modified: Makefile|1 1
+Modified: VERSION|1 1
+Modified: framework/index.html|1 1
+
+
+Revision: fa8ac37b2761b38bd5b7549e30e8cf122c20a8a4
+Author: Herm Wong <hermwong@apache.org>
+Date: 17/07/2012 01:16:08
+Message:
+update version to 2.0.0 #MsgLength=24
+
+
+----
+Modified: Makefile|1 1
+Modified: VERSION|1 1
+Modified: framework/index.html|1 1
+
+Revision: d11522de7d1591800300e8a9c3a3f2d787389d96
+Author: Herm Wong <hermwong@apache.org>
+Date: 19/07/2012 12:27:51
+Message:
+CB-1096 hello cordova app for webOS #MsgLength=36
+
+
+----
+Added: framework/config.xml|47 0
+Added: framework/css/index.css|100 0
+Deleted: framework/dashboard.html|0 35
+Added: framework/img/cordova.png|0 0
+Modified: framework/index.html|22 378
+Added: framework/js/index.js|20 0
+Deleted: framework/menu.css|0 57
+Added: framework/res/icon/cordova_128.png|0 0
+Added: framework/res/icon/cordova_16.png|0 0
+Added: framework/res/icon/cordova_24.png|0 0
+Added: framework/res/icon/cordova_256.png|0 0
+Added: framework/res/icon/cordova_32.png|0 0
+Added: framework/res/icon/cordova_48.png|0 0
+Added: framework/res/icon/cordova_512.png|0 0
+Added: framework/res/icon/cordova_64.png|0 0
+Added: framework/res/icon/cordova_android_36.png|0 0
+Added: framework/res/icon/cordova_android_48.png|0 0
+Added: framework/res/icon/cordova_android_72.png|0 0
+Added: framework/res/icon/cordova_android_96.png|0 0
+Added: framework/res/icon/cordova_bb_80.png|0 0
+Added: framework/res/icon/cordova_ios_114.png|0 0
+Added: framework/res/icon/cordova_ios_144.png|0 0
+Added: framework/res/icon/cordova_ios_57.png|0 0
+Added: framework/res/icon/cordova_ios_72.png|0 0
+Added: framework/res/screen/android_hdpi_landscape.png|0 0
+Added: framework/res/screen/android_hdpi_portrait.png|0 0
+Added: framework/res/screen/android_ldpi_landscape.png|0 0
+Added: framework/res/screen/android_ldpi_portrait.png|0 0
+Added: framework/res/screen/android_mdpi_landscape.png|0 0
+Added: framework/res/screen/android_mdpi_portrait.png|0 0
+Added: framework/res/screen/android_xhdpi_landscape.png|0 0
+Added: framework/res/screen/android_xhdpi_portrait.png|0 0
+Added: framework/res/screen/blackberry_transparent_300.png|0 0
+Added: framework/res/screen/blackberry_transparent_400.png|0 0
+Added: framework/res/screen/ipad_landscape.png|0 0
+Added: framework/res/screen/ipad_portrait.png|0 0
+Added: framework/res/screen/ipad_retina_landscape.png|0 0
+Added: framework/res/screen/ipad_retina_portrait.png|0 0
+Added: framework/res/screen/iphone_landscape.png|0 0
+Added: framework/res/screen/iphone_portrait.png|0 0
+Added: framework/res/screen/iphone_retina_landscape.png|0 0
+Added: framework/res/screen/iphone_retina_portrait.png|0 0
+Added: framework/res/screen/windows_phone_portrait.jpg|0 0
+Added: framework/spec.html|50 0
+Added: framework/spec/helper.js|11 0
+Added: framework/spec/index.js|49 0
+Added: framework/spec/lib/jasmine-1.2.0/MIT.LICENSE|20 0
+Added: framework/spec/lib/jasmine-1.2.0/jasmine-html.js|616 0
+Added: framework/spec/lib/jasmine-1.2.0/jasmine.css|81 0
+Added: framework/spec/lib/jasmine-1.2.0/jasmine.js|2529 0
+
+Revision: 70eebbb52089717e6d04383a4e98f55384a678ce
+Author: Herm Wong <hermwong@apache.org>
+Date: 25/08/2012 05:24:19
+Message:
+update to 2.1.0rc1 #MsgLength=19
+
+
+----
+Modified: Makefile|1 1
+Modified: VERSION|1 1
+Modified: framework/index.html|1 1
+
+Revision: 3ace50049a99e767867e9f81a491fbfaae50e9bc
+Author: hermwong <herm.wong@gmail.com>
+Date: 01/09/2012 02:50:18
+Message:
+update hello world example app for 2.1 #MsgLength=39
+
+
+----
+Modified: framework/css/index.css|62 47
+Deleted: framework/img/cordova.png|0 0
+Added: framework/img/logo.png|0 0
+Modified: framework/index.html|24 6
+Modified: framework/js/index.js|42 13
+Deleted: framework/res/icon/cordova_128.png|0 0
+Deleted: framework/res/icon/cordova_16.png|0 0
+Deleted: framework/res/icon/cordova_24.png|0 0
+Deleted: framework/res/icon/cordova_256.png|0 0
+Deleted: framework/res/icon/cordova_32.png|0 0
+Deleted: framework/res/icon/cordova_48.png|0 0
+Deleted: framework/res/icon/cordova_512.png|0 0
+Deleted: framework/res/icon/cordova_android_36.png|0 0
+Deleted: framework/res/icon/cordova_android_48.png|0 0
+Deleted: framework/res/icon/cordova_android_72.png|0 0
+Deleted: framework/res/icon/cordova_android_96.png|0 0
+Deleted: framework/res/icon/cordova_bb_80.png|0 0
+Deleted: framework/res/icon/cordova_ios_114.png|0 0
+Deleted: framework/res/icon/cordova_ios_144.png|0 0
+Deleted: framework/res/icon/cordova_ios_57.png|0 0
+Deleted: framework/res/icon/cordova_ios_72.png|0 0
+Renamed: framework/res/icon/webos/icon-64.png [from framework/res/icon/cordova_64.png]|0 0
+Deleted: framework/res/screen/android_hdpi_landscape.png|0 0
+Deleted: framework/res/screen/android_hdpi_portrait.png|0 0
+Deleted: framework/res/screen/android_ldpi_landscape.png|0 0
+Deleted: framework/res/screen/android_ldpi_portrait.png|0 0
+Deleted: framework/res/screen/android_mdpi_landscape.png|0 0
+Deleted: framework/res/screen/android_mdpi_portrait.png|0 0
+Deleted: framework/res/screen/android_xhdpi_landscape.png|0 0
+Deleted: framework/res/screen/android_xhdpi_portrait.png|0 0
+Deleted: framework/res/screen/blackberry_transparent_300.png|0 0
+Deleted: framework/res/screen/blackberry_transparent_400.png|0 0
+Deleted: framework/res/screen/ipad_landscape.png|0 0
+Deleted: framework/res/screen/ipad_portrait.png|0 0
+Deleted: framework/res/screen/ipad_retina_landscape.png|0 0
+Deleted: framework/res/screen/ipad_retina_portrait.png|0 0
+Deleted: framework/res/screen/iphone_landscape.png|0 0
+Deleted: framework/res/screen/iphone_portrait.png|0 0
+Deleted: framework/res/screen/iphone_retina_landscape.png|0 0
+Deleted: framework/res/screen/iphone_retina_portrait.png|0 0
+Added: framework/res/screen/webos/screen-64.png|0 0
+Deleted: framework/res/screen/windows_phone_portrait.jpg|0 0
+Modified: framework/spec.html|18 0
+Modified: framework/spec/helper.js|22 0
+Modified: framework/spec/index.js|37 19
+
+Revision: ce9995eb9521e9d79b81ec198b9760781626eadb
+Author: hermwong <herm.wong@gmail.com>
+Date: 16/10/2012 05:34:30
+Message:
+update hello world app to 2.2.0 #MsgLength=32
+
+
+----
+Modified: framework/css/index.css|3 3
+Modified: framework/index.html|1 1
+Modified: framework/js/index.js|3 3
+
+Revision: 90107ecde94e1605c8e1fca74b5d53f1a38fff27
+Author: hermwong <herm.wong@gmail.com>
+Date: 16/10/2012 05:34:54
+Message:
+update webOS to 2.2.0 #MsgLength=22
+
+
+----
+Modified: Makefile|1 1
+Modified: VERSION|1 1
+
+Revision: 985d2cea5908fa27a61945b50f22f3e6dca8b592
+Author: hermwong <herm.wong@gmail.com>
+Date: 31/10/2012 06:06:56
+Message:
+merge pull request with cordova-js changes #MsgLength=43
+
+
+----
+Modified: Makefile|3 39
+Modified: README.md|2 5
+Deleted: js/acceleration.js|0 59
+Deleted: js/accelerometer.js|0 133
+Deleted: js/application.js|0 54
+Deleted: js/audio.js|0 113
+Deleted: js/camera.js|0 60
+Deleted: js/compass.js|0 167
+Deleted: js/contacts.js|0 69
+Deleted: js/cordova-core.js|0 405
+Deleted: js/debugconsole.js|0 62
+Deleted: js/device.js|0 98
+Deleted: js/file.js|0 79
+Deleted: js/geolocation.js|0 232
+Deleted: js/map.js|0 67
+Deleted: js/mojo.js|0 81
+Deleted: js/mouse.js|0 40
+Deleted: js/network.js|0 96
+Deleted: js/notification.js|0 139
+Deleted: js/orientation.js|0 124
+Deleted: js/position.js|0 87
+Deleted: js/service.js|0 74
+Deleted: js/sms.js|0 60
+Deleted: js/telephony.js|0 45
+Deleted: js/window.js|0 88
+Deleted: js/windowproperties.js|0 31
+Added: lib/cordova.webos-debug.js|116 0
+Added: lib/cordova.webos.js|6427 0
+Deleted: lib/thumbs.0.5.2.js|0 104
+
+Revision: e3e46253505cd72505c15d9cddbe39cec7de17a5
+Author: hermwong <herm.wong@gmail.com>
+Date: 28/11/2012 07:40:57
+Message:
+update version to 2.3.0 #MsgLength=24
+
+
+----
+Modified: Makefile|1 1
+Modified: VERSION|1 1
+Modified: framework/index.html|1 1
+Modified: lib/cordova.webos-debug.js|90 88
+Modified: lib/cordova.webos.js|345 444
+
+Revision: 50928b795a62f0a95f530770af2f20a6784d7a82
+Author: hermwong <herm.wong@gmail.com>
+Date: 29/11/2012 08:32:18
+Message:
+updates to cordova.js - added pause/resume document events to sysmgr calls, online/offline document events mapped to network connection service. switched from strings to constants in connection for connection type #MsgLength=214
+
+
+----
+Modified: lib/cordova.webos-debug.js|4 4
+Modified: lib/cordova.webos.js|67 10
+
+Revision: 65fa7c69974c9849178878329927d98382308175
+Author: hermwong <herm.wong@gmail.com>
+Date: 04/01/2013 03:45:50
+Message:
+updated 2.3.0 updates to cordova-js libs #MsgLength=41
+
+
+----
+Modified: lib/cordova.webos-debug.js|5 5
+Modified: lib/cordova.webos.js|51 14
+
+Revision: 675a6e9456cf2fea131ef30ff72d06266dcf26ad
+Author: hermwong <herm.wong@gmail.com>
+Date: 22/01/2013 06:16:07
+Message:
+update version to 2.4.0 #MsgLength=24
+
+
+----
+Modified: Makefile|1 1
+Modified: VERSION|1 1
+Modified: framework/index.html|1 1
+
+Revision: 3868d63d5b40c228aa68eeea0cd388d1d2eeb286
+Author: hermwong <herm.wong@gmail.com>
+Date: 22/01/2013 06:16:40
+Message:
+update cordova-js libs to 2.4.0 #MsgLength=32
+
+
+----
+Modified: lib/cordova.webos-debug.js|25 22
+Modified: lib/cordova.webos.js|490 438
+
+Revision: 533f4bab1748c7c7df18b0a8bc85ea5fb6853991
+Author: Markus Leutwyler <mleut@yahoo.com>
+Date: 08/01/2013 20:22:56
+Message:
+merging changes to webos platform.js #MsgLength=37
+
+
+----
+Added: lib/webos/platform.js|129 0
+
+Revision: df556435812abf1276e3521a620fde0d04a63709
+Author: Markus Leutwyler <mleut@yahoo.com>
+Date: 08/01/2013 20:28:59
+Message:
+Added support for the back-gesture (mapped to backbutton) #MsgLength=58
+
+
+----
+Modified: lib/webos/platform.js|11 1
+
+Revision: e2f6b08f4affcbf96e970863b7f623246398b551
+Author: hermwong <herm.wong@gmail.com>
+Date: 15/01/2013 08:44:36
+Message:
+accidently merged file to wrong repository #MsgLength=43
+
+
+----
+Deleted: lib/webos/platform.js|0 139
+
+Revision: 732f9db4a1bdafefc7f368ed9c79a12ce3cdaa79
+Author: Markus Leutwyler <mleut@yahoo.com>
+Date: 08/01/2013 20:22:56
+Message:
+merging changes to webos platform.js #MsgLength=37
+
+
+----
+Added: lib/webos/platform.js|129 0
+
+Revision: 0358155229366f191a46452ba32e97c323e6fa23
+Author: Markus Leutwyler <mleut@yahoo.com>
+Date: 08/01/2013 20:28:59
+Message:
+Added support for the back-gesture (mapped to backbutton) #MsgLength=58
+
+
+----
+Modified: lib/webos/platform.js|11 1
+
+Revision: 56eedf27c6c859515fa1bc4a0df8198cc0d20a0c
+Author: hermwong <herm.wong@gmail.com>
+Date: 15/01/2013 08:44:36
+Message:
+accidently merged file to wrong repository #MsgLength=43
+
+
+----
+Deleted: lib/webos/platform.js|0 139
+
+Revision: 2650232b3e6faaf59976ca494af93dd24d5c6440
+Author: hermwong <herm.wong@gmail.com>
+Date: 22/01/2013 06:16:07
+Message:
+update version to 2.4.0 #MsgLength=24
+
+
+----
+Modified: Makefile|1 1
+Modified: VERSION|1 1
+Modified: framework/index.html|1 1
+
+Revision: 2c21c4117b2cfb71705596bbba4735b83e3d06ec
+Author: hermwong <herm.wong@gmail.com>
+Date: 22/01/2013 06:16:40
+Message:
+update cordova-js libs to 2.4.0 #MsgLength=32
+
+
+----
+Modified: lib/cordova.webos-debug.js|25 22
+Modified: lib/cordova.webos.js|490 438
+
+
+Revision: 43efeb73a014f9fa52be0fbeba5de09680417d8e
+Author: hermwong <herm.wong@gmail.com>
+Date: 06/02/2013 05:08:08
+Message:
+update to 2.4.0 cordova-js libs #MsgLength=32
+
+
+----
+Modified: lib/cordova.webos-debug.js|7 5
+Modified: lib/cordova.webos.js|18 6
+
+Revision: 8f8430c2010578994b85c27d7b41bd441a310d56
+Author: hermwong <herm.wong@gmail.com>
+Date: 20/02/2013 06:07:24
+Message:
+update to latest version of files in hello world app #MsgLength=53
+
+
+----
+Added: framework/res/icon/android/icon-36-ldpi.png|0 0
+Added: framework/res/icon/android/icon-48-mdpi.png|0 0
+Added: framework/res/icon/android/icon-72-hdpi.png|0 0
+Added: framework/res/icon/android/icon-96-xhdpi.png|0 0
+Added: framework/res/icon/bada-wac/icon-48-type5.png|0 0
+Added: framework/res/icon/bada-wac/icon-50-type3.png|0 0
+Added: framework/res/icon/bada-wac/icon-80-type4.png|0 0
+Added: framework/res/icon/bada/icon-128.png|0 0
+Added: framework/res/icon/blackberry/icon-80.png|0 0
+Added: framework/res/icon/ios/icon-57-2x.png|0 0
+Added: framework/res/icon/ios/icon-57.png|0 0
+Added: framework/res/icon/ios/icon-72-2x.png|0 0
+Added: framework/res/icon/ios/icon-72.png|0 0
+Added: framework/res/icon/tizen/icon-128.png|0 0
+Added: framework/res/icon/windows-phone/icon-173-tile.png|0 0
+Added: framework/res/icon/windows-phone/icon-48.png|0 0
+Added: framework/res/icon/windows-phone/icon-62-tile.png|0 0
+Added: framework/res/screen/android/screen-hdpi-landscape.png|0 0
+Added: framework/res/screen/android/screen-hdpi-portrait.png|0 0
+Added: framework/res/screen/android/screen-ldpi-landscape.png|0 0
+Added: framework/res/screen/android/screen-ldpi-portrait.png|0 0
+Added: framework/res/screen/android/screen-mdpi-landscape.png|0 0
+Added: framework/res/screen/android/screen-mdpi-portrait.png|0 0
+Added: framework/res/screen/android/screen-xhdpi-landscape.png|0 0
+Added: framework/res/screen/android/screen-xhdpi-portrait.png|0 0
+Added: framework/res/screen/bada-wac/screen-type3.png|0 0
+Added: framework/res/screen/bada-wac/screen-type4.png|0 0
+Added: framework/res/screen/bada-wac/screen-type5.png|0 0
+Added: framework/res/screen/bada/screen-portrait.png|0 0
+Added: framework/res/screen/blackberry/screen-225.png|0 0
+Added: framework/res/screen/ios/screen-ipad-landscape-2x.png|0 0
+Added: framework/res/screen/ios/screen-ipad-landscape.png|0 0
+Added: framework/res/screen/ios/screen-ipad-portrait-2x.png|0 0
+Added: framework/res/screen/ios/screen-ipad-portrait.png|0 0
+Added: framework/res/screen/ios/screen-iphone-landscape-2x.png|0 0
+Added: framework/res/screen/ios/screen-iphone-landscape.png|0 0
+Added: framework/res/screen/ios/screen-iphone-portrait-2x.png|0 0
+Added: framework/res/screen/ios/screen-iphone-portrait.png|0 0
+Added: framework/res/screen/tizen/README.md|3 0
+Added: framework/res/screen/windows-phone/screen-portrait.jpg|0 0
+
+Revision: e1b14c03c010325e76415b2f386a599ea19489b0
+Author: hermwong <herm.wong@gmail.com>
+Date: 20/02/2013 06:08:07
+Message:
+update to 2.5.0 version of cordova.js #MsgLength=38
+
+
+----
+Modified: lib/cordova.webos-debug.js|4 4
+Modified: lib/cordova.webos.js|6 5
+
+Revision: cda994f5353241217890bf160159288288ab08f2
+Author: hermwong <herm.wong@gmail.com>
+Date: 20/02/2013 06:08:45
+Message:
+update webOS to 2.5.0 #MsgLength=22
+
+
+----
+Modified: Makefile|1 1
+Modified: VERSION|1 1
+Modified: framework/index.html|1 1
+
+Revision: e49a6e00366d76abdef0e9122cd40f4e31620737
+Author: hermwong <herm.wong@gmail.com>
+Date: 22/02/2013 06:42:48
+Message:
+[CB-2323] verify that webOS config uses <widget>; update inline comments to state that config.xml not used by cordova-webos #MsgLength=124
+
+
+----
+Modified: framework/config.xml|3 2
+
+Revision: 122c41ff878cfc062dd2fa3a66425305b794bc8a
+Author: Herm Wong <Herm@Grimlock.local>
+Date: 27/02/2013 05:20:18
+Message:
+update webos cordova-js files to latest versions 2.5.0 #MsgLength=55
+
+
+----
+Modified: lib/cordova.webos-debug.js|32 16
+Modified: lib/cordova.webos.js|316 252
+
+Revision: e937e5c6ca1a933448faa7e2b98a6b888438b039
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 28/02/2013 02:57:36
+Message:
+update cordova-js libs to the 2.5.0 tagged versions #MsgLength=52
+
+
+----
+Modified: lib/cordova.webos-debug.js|2 2
+Modified: lib/cordova.webos.js|2 2
+
+Revision: 650c5f5a5776e5bcb6aea58b8a9d3a89e2a16717
+Author: hermwong <herm.wong@gmail.com>
+Date: 26/03/2013 05:16:21
+Message:
+update makefile to read cordova version from version file #MsgLength=58
+
+
+----
+Modified: Makefile|1 1
+Modified: VERSION|1 1
+
+Revision: 8124a94e5220dac432cadc08e43adfb76323ccf6
+Author: hermwong <herm.wong@gmail.com>
+Date: 26/03/2013 05:16:47
+Message:
+update cordova.js libs to 2.6.0 #MsgLength=32
+
+
+----
+Modified: lib/cordova.webos-debug.js|12 11
+Modified: lib/cordova.webos.js|331 62
+
+Revision: 98b31916d4d08af367499be0b92e785629edd480
+Author: hermwong <herm.wong@gmail.com>
+Date: 26/03/2013 05:26:55
+Message:
+update index.html to 2.6.0 #MsgLength=27
+
+
+----
+Modified: framework/index.html|1 1
+
+Revision: 5d439c4ae3babe82db20543cbf46f3332ed223bf
+Author: hermwong <herm.wong@gmail.com>
+Date: 29/03/2013 05:24:02
+Message:
+updated to latest 2.6.0rc1 tagged cordova-js libs #MsgLength=50
+
+
+----
+Modified: lib/cordova.webos-debug.js|7 7
+Modified: lib/cordova.webos.js|87 44
+
+Revision: 6834db72a0c8ef53492fa47e4dd42894fdaf3668
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:46:25
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: e3ea795a30af56895efac4e97ce4c9719eed435c
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 31/05/2014 00:14:53
+Message:
+CB-6818 Add license for CONTRIBUTING.md #MsgLength=40
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: 4b02d5f438b52b55e6345830fad15f8d6011f147
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/02/2015 09:45:46
+Message:
+CB-8417 moved platform specific js into platform #MsgLength=49
+
+
+----
+Added: cordova-js-src/exec.js|35 0
+Added: cordova-js-src/platform.js|86 0
+Added: cordova-js-src/webos/service.js|118 0
+
+Revision: 269bde59f26ea531fbc626bafa7ae33a8fe920e5
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 05/06/2015 02:29:34
+Message:
+Removed unneeded components #MsgLength=28
+
+
+----
+Deleted: Makefile|0 91
+Deleted: lib/cordova.webos-debug.js|0 140
+Deleted: lib/cordova.webos.js|0 6863
+
+Revision: 0deb2351872f67c9d6cad3ab40071913072e60bd
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 05/06/2015 02:30:14
+Message:
+Removed unneeded components #MsgLength=28
+
+
+----
+Deleted: framework/appinfo.json|0 10
+Deleted: framework/config.xml|0 48
+Deleted: framework/cordova_48.png|0 0
+Deleted: framework/css/index.css|0 115
+Deleted: framework/img/logo.png|0 0
+Deleted: framework/index.html|0 42
+Deleted: framework/js/index.js|0 49
+Deleted: framework/res/icon/android/icon-36-ldpi.png|0 0
+Deleted: framework/res/icon/android/icon-48-mdpi.png|0 0
+Deleted: framework/res/icon/android/icon-72-hdpi.png|0 0
+Deleted: framework/res/icon/android/icon-96-xhdpi.png|0 0
+Deleted: framework/res/icon/bada-wac/icon-48-type5.png|0 0
+Deleted: framework/res/icon/bada-wac/icon-50-type3.png|0 0
+Deleted: framework/res/icon/bada-wac/icon-80-type4.png|0 0
+Deleted: framework/res/icon/bada/icon-128.png|0 0
+Deleted: framework/res/icon/blackberry/icon-80.png|0 0
+Deleted: framework/res/icon/ios/icon-57-2x.png|0 0
+Deleted: framework/res/icon/ios/icon-57.png|0 0
+Deleted: framework/res/icon/ios/icon-72-2x.png|0 0
+Deleted: framework/res/icon/ios/icon-72.png|0 0
+Deleted: framework/res/icon/tizen/icon-128.png|0 0
+Deleted: framework/res/icon/webos/icon-64.png|0 0
+Deleted: framework/res/icon/windows-phone/icon-173-tile.png|0 0
+Deleted: framework/res/icon/windows-phone/icon-48.png|0 0
+Deleted: framework/res/icon/windows-phone/icon-62-tile.png|0 0
+Deleted: framework/res/screen/android/screen-hdpi-landscape.png|0 0
+Deleted: framework/res/screen/android/screen-hdpi-portrait.png|0 0
+Deleted: framework/res/screen/android/screen-ldpi-landscape.png|0 0
+Deleted: framework/res/screen/android/screen-ldpi-portrait.png|0 0
+Deleted: framework/res/screen/android/screen-mdpi-landscape.png|0 0
+Deleted: framework/res/screen/android/screen-mdpi-portrait.png|0 0
+Deleted: framework/res/screen/android/screen-xhdpi-landscape.png|0 0
+Deleted: framework/res/screen/android/screen-xhdpi-portrait.png|0 0
+Deleted: framework/res/screen/bada-wac/screen-type3.png|0 0
+Deleted: framework/res/screen/bada-wac/screen-type4.png|0 0
+Deleted: framework/res/screen/bada-wac/screen-type5.png|0 0
+Deleted: framework/res/screen/bada/screen-portrait.png|0 0
+Deleted: framework/res/screen/blackberry/screen-225.png|0 0
+Deleted: framework/res/screen/ios/screen-ipad-landscape-2x.png|0 0
+Deleted: framework/res/screen/ios/screen-ipad-landscape.png|0 0
+Deleted: framework/res/screen/ios/screen-ipad-portrait-2x.png|0 0
+Deleted: framework/res/screen/ios/screen-ipad-portrait.png|0 0
+Deleted: framework/res/screen/ios/screen-iphone-landscape-2x.png|0 0
+Deleted: framework/res/screen/ios/screen-iphone-landscape.png|0 0
+Deleted: framework/res/screen/ios/screen-iphone-portrait-2x.png|0 0
+Deleted: framework/res/screen/ios/screen-iphone-portrait.png|0 0
+Deleted: framework/res/screen/tizen/README.md|0 3
+Deleted: framework/res/screen/webos/screen-64.png|0 0
+Deleted: framework/res/screen/windows-phone/screen-portrait.jpg|0 0
+Deleted: framework/spec.html|0 68
+Deleted: framework/spec/helper.js|0 33
+Deleted: framework/spec/index.js|0 67
+Deleted: framework/spec/lib/jasmine-1.2.0/MIT.LICENSE|0 20
+Deleted: framework/spec/lib/jasmine-1.2.0/jasmine-html.js|0 616
+Deleted: framework/spec/lib/jasmine-1.2.0/jasmine.css|0 81
+Deleted: framework/spec/lib/jasmine-1.2.0/jasmine.js|0 2529
+
+Revision: 243d13aa736e2d063c0fc6f130da04932c01b129
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 05/06/2015 02:36:07
+Message:
+New template with build, emulate, run, and version commands #MsgLength=60
+
+
+----
+Added: bin/templates/project/cordova/build|37 0
+Added: bin/templates/project/cordova/build.bat|26 0
+Added: bin/templates/project/cordova/defaults.xml|14 0
+Added: bin/templates/project/cordova/emulate|30 0
+Added: bin/templates/project/cordova/emulate.bat|26 0
+Added: bin/templates/project/cordova/run|37 0
+Added: bin/templates/project/cordova/run.bat|26 0
+Added: bin/templates/project/cordova/version|25 0
+Added: bin/templates/project/cordova/version.bat|26 0
+
+Revision: 87aceb47330fe7a24c9ae065bc9da83f0bf2df17
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 05/06/2015 02:37:04
+Message:
+Modernized build format to use the current check_reqs/create/update format for Cordova platforms #MsgLength=97
+
+
+----
+Added: bin/check_reqs|31 0
+Added: bin/check_reqs.bat|26 0
+Added: bin/create|36 0
+Added: bin/create.bat|26 0
+Added: bin/lib/check_reqs.js|59 0
+Added: bin/lib/create.js|87 0
+Added: bin/lib/update.js|75 0
+Added: bin/update|31 0
+Added: bin/update.bat|26 0
+
+Revision: eeee7fde525ee29c28f89060e56c90f77030f7c6
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 05/06/2015 02:37:37
+Message:
+Updated components for current version #MsgLength=39
+
+
+----
+Modified: CONTRIBUTING.md|37 37
+Modified: LICENSE|201 201
+Modified: NOTICE|11 11
+Modified: README.md|49 49
+Modified: VERSION|1 1
+Modified: cordova-js-src/platform.js|1 1
+Modified: cordova-js-src/webos/service.js|1 1
+
+Revision: 07d0ef14af9c5e7a3e837a0686a2c2942dbb6a31
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 05/06/2015 02:37:49
+Message:
+Updated Cordova.js #MsgLength=19
+
+
+----
+Added: cordova.js|1681 0
+
+Revision: d08f139926b8b7762a93ca76798b6563130bf82b
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 05/06/2015 02:38:06
+Message:
+Initial package.json #MsgLength=21
+
+
+----
+Added: package.json|21 0
+
+Revision: 242b6c270ab1470cdad441292dcc168d1edae3b2
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 06/06/2015 05:45:05
+Message:
+Updated with refactorization #MsgLength=29
+
+
+----
+Added: bin/node_modules/.bin/shjs|15 0
+Added: bin/node_modules/.bin/shjs.cmd|5 0
+Added: bin/node_modules/q/CONTRIBUTING.md|40 0
+Added: bin/node_modules/q/LICENSE|19 0
+Added: bin/node_modules/q/README.md|813 0
+Added: bin/node_modules/q/benchmark/compare-with-callbacks.js|71 0
+Added: bin/node_modules/q/benchmark/scenarios.js|36 0
+Added: bin/node_modules/q/package.json|93 0
+Added: bin/node_modules/q/q.js|1937 0
+Added: bin/node_modules/q/queue.js|35 0
+Added: bin/node_modules/shelljs/.documentup.json|6 0
+Added: bin/node_modules/shelljs/.jshintrc|7 0
+Added: bin/node_modules/shelljs/.npmignore|2 0
+Added: bin/node_modules/shelljs/.travis.yml|5 0
+Added: bin/node_modules/shelljs/LICENSE|26 0
+Added: bin/node_modules/shelljs/README.md|552 0
+Added: bin/node_modules/shelljs/bin/shjs|51 0
+Added: bin/node_modules/shelljs/global.js|3 0
+Added: bin/node_modules/shelljs/make.js|47 0
+Added: bin/node_modules/shelljs/package.json|44 0
+Added: bin/node_modules/shelljs/scripts/generate-docs.js|21 0
+Added: bin/node_modules/shelljs/scripts/run-tests.js|50 0
+Added: bin/node_modules/shelljs/shell.js|153 0
+Added: bin/node_modules/shelljs/src/cat.js|43 0
+Added: bin/node_modules/shelljs/src/cd.js|19 0
+Added: bin/node_modules/shelljs/src/chmod.js|208 0
+Added: bin/node_modules/shelljs/src/common.js|189 0
+Added: bin/node_modules/shelljs/src/cp.js|200 0
+Added: bin/node_modules/shelljs/src/dirs.js|191 0
+Added: bin/node_modules/shelljs/src/echo.js|20 0
+Added: bin/node_modules/shelljs/src/error.js|10 0
+Added: bin/node_modules/shelljs/src/exec.js|181 0
+Added: bin/node_modules/shelljs/src/find.js|51 0
+Added: bin/node_modules/shelljs/src/grep.js|52 0
+Added: bin/node_modules/shelljs/src/ls.js|126 0
+Added: bin/node_modules/shelljs/src/mkdir.js|68 0
+Added: bin/node_modules/shelljs/src/mv.js|80 0
+Added: bin/node_modules/shelljs/src/popd.js|1 0
+Added: bin/node_modules/shelljs/src/pushd.js|1 0
+Added: bin/node_modules/shelljs/src/pwd.js|11 0
+Added: bin/node_modules/shelljs/src/rm.js|145 0
+Added: bin/node_modules/shelljs/src/sed.js|43 0
+Added: bin/node_modules/shelljs/src/tempdir.js|56 0
+Added: bin/node_modules/shelljs/src/test.js|85 0
+Added: bin/node_modules/shelljs/src/to.js|29 0
+Added: bin/node_modules/shelljs/src/toEnd.js|29 0
+Added: bin/node_modules/shelljs/src/which.js|79 0
+Added: bin/templates/project/cordova/lib/ares-spawn.js|52 0
+Added: bin/templates/project/cordova/lib/build.js|82 0
+Added: bin/templates/project/cordova/lib/emulator.js|126 0
+Added: bin/templates/project/cordova/lib/run.js|112 0
+Added: bin/templates/project/cordova/lib/virtualbox.js|362 0
+Added: bin/templates/project/www/appinfo.json|10 0
+Added: bin/templates/project/www/css/index.css|115 0
+Added: bin/templates/project/www/img/logo.png|0 0
+Added: bin/templates/project/www/index.html|43 0
+Added: bin/templates/project/www/js/index.js|49 0
+Added: bin/templates/project/www/spec.html|68 0
+Added: bin/templates/project/www/spec/helper.js|33 0
+Added: bin/templates/project/www/spec/index.js|67 0
+Added: bin/templates/project/www/spec/lib/jasmine-1.2.0/MIT.LICENSE|20 0
+Added: bin/templates/project/www/spec/lib/jasmine-1.2.0/jasmine-html.js|616 0
+Added: bin/templates/project/www/spec/lib/jasmine-1.2.0/jasmine.css|81 0
+Added: bin/templates/project/www/spec/lib/jasmine-1.2.0/jasmine.js|2529 0
+
+Revision: f5e81ac8a791725d8003415f6ab57dbb1d9398db
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 06/06/2015 05:45:33
+Message:
+Simplified and added improved non-webOS fallback #MsgLength=49
+
+
+----
+Modified: cordova-js-src/webos/service.js|5 1
+
+Revision: a759797a6e383ffa48e4d7fcb848eb5b7194c50b
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 06/06/2015 05:46:16
+Message:
+Removed depreciated code #MsgLength=25
+
+
+----
+Modified: cordova-js-src/platform.js|1 17
+
+Revision: 1771d65d555d3b63c158cebeeaa00f2839e12304
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 06/06/2015 05:49:40
+Message:
+Initial gitignore #MsgLength=18
+
+
+----
+Added: .gitignore|1 0
+
+Revision: 8a4fc7bf22255f053112ca21fbf6475338971a2d
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 06/06/2015 05:50:15
+Message:
+Removed unneeded hard-included dependencies #MsgLength=44
+
+
+----
+Deleted: bin/node_modules/.bin/shjs|0 15
+Deleted: bin/node_modules/.bin/shjs.cmd|0 5
+Deleted: bin/node_modules/q/CONTRIBUTING.md|0 40
+Deleted: bin/node_modules/q/LICENSE|0 19
+Deleted: bin/node_modules/q/README.md|0 813
+Deleted: bin/node_modules/q/benchmark/compare-with-callbacks.js|0 71
+Deleted: bin/node_modules/q/benchmark/scenarios.js|0 36
+Deleted: bin/node_modules/q/package.json|0 93
+Deleted: bin/node_modules/q/q.js|0 1937
+Deleted: bin/node_modules/q/queue.js|0 35
+Deleted: bin/node_modules/shelljs/.documentup.json|0 6
+Deleted: bin/node_modules/shelljs/.jshintrc|0 7
+Deleted: bin/node_modules/shelljs/.npmignore|0 2
+Deleted: bin/node_modules/shelljs/.travis.yml|0 5
+Deleted: bin/node_modules/shelljs/LICENSE|0 26
+Deleted: bin/node_modules/shelljs/README.md|0 552
+Deleted: bin/node_modules/shelljs/bin/shjs|0 51
+Deleted: bin/node_modules/shelljs/global.js|0 3
+Deleted: bin/node_modules/shelljs/make.js|0 47
+Deleted: bin/node_modules/shelljs/package.json|0 44
+Deleted: bin/node_modules/shelljs/scripts/generate-docs.js|0 21
+Deleted: bin/node_modules/shelljs/scripts/run-tests.js|0 50
+Deleted: bin/node_modules/shelljs/shell.js|0 153
+Deleted: bin/node_modules/shelljs/src/cat.js|0 43
+Deleted: bin/node_modules/shelljs/src/cd.js|0 19
+Deleted: bin/node_modules/shelljs/src/chmod.js|0 208
+Deleted: bin/node_modules/shelljs/src/common.js|0 189
+Deleted: bin/node_modules/shelljs/src/cp.js|0 200
+Deleted: bin/node_modules/shelljs/src/dirs.js|0 191
+Deleted: bin/node_modules/shelljs/src/echo.js|0 20
+Deleted: bin/node_modules/shelljs/src/error.js|0 10
+Deleted: bin/node_modules/shelljs/src/exec.js|0 181
+Deleted: bin/node_modules/shelljs/src/find.js|0 51
+Deleted: bin/node_modules/shelljs/src/grep.js|0 52
+Deleted: bin/node_modules/shelljs/src/ls.js|0 126
+Deleted: bin/node_modules/shelljs/src/mkdir.js|0 68
+Deleted: bin/node_modules/shelljs/src/mv.js|0 80
+Deleted: bin/node_modules/shelljs/src/popd.js|0 1
+Deleted: bin/node_modules/shelljs/src/pushd.js|0 1
+Deleted: bin/node_modules/shelljs/src/pwd.js|0 11
+Deleted: bin/node_modules/shelljs/src/rm.js|0 145
+Deleted: bin/node_modules/shelljs/src/sed.js|0 43
+Deleted: bin/node_modules/shelljs/src/tempdir.js|0 56
+Deleted: bin/node_modules/shelljs/src/test.js|0 85
+Deleted: bin/node_modules/shelljs/src/to.js|0 29
+Deleted: bin/node_modules/shelljs/src/toEnd.js|0 29
+Deleted: bin/node_modules/shelljs/src/which.js|0 79
+
+Revision: 1e24c860099cdbc4ac7f928114e20d6e603a1aef
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 06/06/2015 05:53:54
+Message:
+Updated dependency locations #MsgLength=29
+
+
+----
+Modified: bin/lib/create.js|1 1
+Modified: bin/lib/update.js|1 1
+
+Revision: fca1d01a1f8a9f255bba3d8721b21eca6e970a03
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 06/06/2015 06:40:10
+Message:
+Updated readme for current times/standards #MsgLength=43
+
+
+----
+Modified: README.md|24 27
+
+Revision: dbf4b3e2ae74d89bdd2edc7b88609a9f10c95276
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 06/06/2015 06:51:01
+Message:
+Include the proper current cordova.js rather than the stale version that slipped through the cracks #MsgLength=100
+
+
+----
+Modified: cordova.js|1675 1680
+
+Revision: 05c712dbdfa87c10713779a44802c07064c70fca
+Author: Jason Robitaille <jason.robitaille@lge.com>
+Date: 06/06/2015 08:17:20
+Message:
+Relocated built cordova.js to the more common cordova-lib directory for easier organization #MsgLength=92
+
+
+----
+Modified: bin/lib/create.js|1 1
+Renamed: cordova-lib/cordova.js [from cordova.js]|0 0
+
+Revision: e42994f5fac1eaefc209141e3635618b9336a797
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 26/06/2015 10:02:23
+Message:
+made version consistant and added node_modules to git #MsgLength=54
+
+
+----
+Modified: .gitignore|0 1
+Modified: VERSION|1 1
+Added: node_modules/.bin/shjs|1 0
+Added: node_modules/q/CONTRIBUTING.md|40 0
+Added: node_modules/q/LICENSE|19 0
+Added: node_modules/q/README.md|813 0
+Added: node_modules/q/benchmark/compare-with-callbacks.js|71 0
+Added: node_modules/q/benchmark/scenarios.js|36 0
+Added: node_modules/q/package.json|113 0
+Added: node_modules/q/q.js|1937 0
+Added: node_modules/q/queue.js|35 0
+Added: node_modules/shelljs/.documentup.json|6 0
+Added: node_modules/shelljs/.jshintrc|7 0
+Added: node_modules/shelljs/.npmignore|2 0
+Added: node_modules/shelljs/.travis.yml|5 0
+Added: node_modules/shelljs/LICENSE|26 0
+Added: node_modules/shelljs/README.md|552 0
+Added: node_modules/shelljs/bin/shjs|51 0
+Added: node_modules/shelljs/global.js|3 0
+Added: node_modules/shelljs/make.js|47 0
+Added: node_modules/shelljs/package.json|46 0
+Added: node_modules/shelljs/scripts/generate-docs.js|21 0
+Added: node_modules/shelljs/scripts/run-tests.js|50 0
+Added: node_modules/shelljs/shell.js|153 0
+Added: node_modules/shelljs/src/cat.js|43 0
+Added: node_modules/shelljs/src/cd.js|19 0
+Added: node_modules/shelljs/src/chmod.js|208 0
+Added: node_modules/shelljs/src/common.js|189 0
+Added: node_modules/shelljs/src/cp.js|200 0
+Added: node_modules/shelljs/src/dirs.js|191 0
+Added: node_modules/shelljs/src/echo.js|20 0
+Added: node_modules/shelljs/src/error.js|10 0
+Added: node_modules/shelljs/src/exec.js|181 0
+Added: node_modules/shelljs/src/find.js|51 0
+Added: node_modules/shelljs/src/grep.js|52 0
+Added: node_modules/shelljs/src/ls.js|126 0
+Added: node_modules/shelljs/src/mkdir.js|68 0
+Added: node_modules/shelljs/src/mv.js|80 0
+Added: node_modules/shelljs/src/popd.js|1 0
+Added: node_modules/shelljs/src/pushd.js|1 0
+Added: node_modules/shelljs/src/pwd.js|11 0
+Added: node_modules/shelljs/src/rm.js|145 0
+Added: node_modules/shelljs/src/sed.js|43 0
+Added: node_modules/shelljs/src/tempdir.js|56 0
+Added: node_modules/shelljs/src/test.js|85 0
+Added: node_modules/shelljs/src/to.js|29 0
+Added: node_modules/shelljs/src/toEnd.js|29 0
+Added: node_modules/shelljs/src/which.js|79 0
+Modified: package.json|5 1
+
+Revision: e5c7c43d23f460ece7f32b50021a3ada12c9093c
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 26/06/2015 02:02:59
+Message:
+CB-8965 Copy cordova-js-src directory to platform folder during create. This closes #4 #MsgLength=87
+
+
+----
+Modified: bin/lib/create.js|3 0
+
+Revision: 3840a104eb22595aff55408e9bdd1a3b44883e3f
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 06/08/2015 06:09:39
+Message:
+CB-9464 updated RELEASENOTES #MsgLength=29
+
+
+----
+Added: RELEASENOTES.md|140 0
+
+Revision: e10a95d61d4d76967496f9c8ec7daad3306037ce
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 08/08/2015 05:29:27
+Message:
+Fixed issues with project creation and when using with OS X #MsgLength=60
+
+
+----
+Modified: bin/lib/check_reqs.js|8 9
+Modified: bin/lib/create.js|1 1
+Modified: bin/templates/project/cordova/lib/ares-spawn.js|1 2
+
+Revision: 97b36cd9dfc2788059a83ca1d18e9f76beb51112
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 08/08/2015 05:36:31
+Message:
+CB-9464 updated RELEASENOTES #MsgLength=29
+
+
+----
+Modified: RELEASENOTES.md|1 0
+
+Revision: 9216b8489640fc6f6b89789c8411a7deb1136e00
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 12/08/2015 05:31:56
+Message:
+added license headers #MsgLength=22
+
+
+----
+Added: .ratignore|2 0
+Modified: NOTICE|3 0
+Modified: README.md|20 0
+Modified: bin/templates/project/cordova/defaults.xml|18 0
+Modified: bin/templates/project/cordova/lib/emulator.js|19 0
+
+Revision: efdf05b215d30203ff66f301988065378a6e9a67
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 12/08/2015 05:56:59
+Message:
+Set VERSION to 3.8.0-dev (via coho) #MsgLength=36
+
+
+----
+Modified: VERSION|1 1
+Modified: package.json|25 25
+
+Revision: 0720a8630b61db841223538f38e558b6de64f29e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 12/08/2015 05:57:00
+Message:
+Update JS snapshot to version 3.8.0-dev (via coho) #MsgLength=51
+
+
+----
+Modified: cordova-lib/cordova.js|133 31
+
+Revision: 5400d1ec90de407eb07928adb653a7f886a745c5
+Author: daserge <v-seshak@microsoft.com>
+Date: 24/10/2015 05:57:51
+Message:
+CB-9836 Add .gitattributes to prevent CRLF line endings in repos #MsgLength=124
+
+
+----
+Added: .gitattributes|94 0
+Modified: CONTRIBUTING.md|37 37
+Modified: LICENSE|201 201
+Modified: NOTICE|14 14
+Modified: README.md|66 66
+Modified: bin/check_reqs.bat|26 26
+Modified: bin/create.bat|25 25
+Modified: bin/lib/check_reqs.js|58 58
+Modified: bin/lib/create.js|90 90
+Modified: bin/lib/update.js|75 75
+Modified: bin/templates/project/cordova/build.bat|25 25
+Modified: bin/templates/project/cordova/defaults.xml|32 32
+Modified: bin/templates/project/cordova/emulate.bat|26 26
+Modified: bin/templates/project/cordova/lib/ares-spawn.js|51 51
+Modified: bin/templates/project/cordova/lib/build.js|82 82
+Modified: bin/templates/project/cordova/lib/emulator.js|145 145
+Modified: bin/templates/project/cordova/lib/run.js|112 112
+Modified: bin/templates/project/cordova/lib/virtualbox.js|361 361
+Modified: bin/templates/project/cordova/run.bat|25 25
+Modified: bin/templates/project/cordova/version.bat|26 26
+Modified: bin/templates/project/www/appinfo.json|10 10
+Modified: bin/templates/project/www/css/index.css|115 115
+Modified: bin/templates/project/www/index.html|43 43
+Modified: bin/templates/project/www/js/index.js|49 49
+Modified: bin/templates/project/www/spec.html|68 68
+Modified: bin/templates/project/www/spec/helper.js|33 33
+Modified: bin/templates/project/www/spec/index.js|67 67
+Modified: bin/templates/project/www/spec/lib/jasmine-1.2.0/MIT.LICENSE|20 20
+Modified: bin/templates/project/www/spec/lib/jasmine-1.2.0/jasmine-html.js|616 616
+Modified: bin/templates/project/www/spec/lib/jasmine-1.2.0/jasmine.css|81 81
+Modified: bin/templates/project/www/spec/lib/jasmine-1.2.0/jasmine.js|2529 2529
+Modified: bin/update.bat|26 26
+
+Revision: 5bb110c2fb4700130abff04ca257a9c865b96c2f
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/10/2016 13:30:28
+Message:
+Add github pull request template #MsgLength=33
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|22 0
+
+Revision: 90782e94e0d4cf618d7bccef87be7215f33e851f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/12/2017 10:06:14
+Message:
+[CB-12762] point package.json repo to github #MsgLength=44
+
+
+----
+Modified: package.json|2 2
+
+Revision: c8ecdfab8662a62b0cc10b84c9e59599049342af
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 17/04/2019 01:16:21
+Message:
+deprecation notice #MsgLength=18
+
+
+----
+Modified: README.md|11 0
+

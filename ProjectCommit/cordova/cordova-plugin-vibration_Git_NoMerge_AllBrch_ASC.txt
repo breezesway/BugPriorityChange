@@ -1,0 +1,3488 @@
+Revision: 372e686c88936cacd5f6da9a5af0ee2214454684
+Author: hermwong <herm.wong@gmail.com>
+Date: 14/05/2013 06:05:30
+Message:
+add notification apis from cordova-js #MsgLength=38
+
+
+----
+Added: www/android/notification.js|74 0
+Added: www/notification.js|118 0
+
+Revision: 983883880d391539c1204c85d1c221a9f4d01c05
+Author: hermwong <herm.wong@gmail.com>
+Date: 14/05/2013 06:05:53
+Message:
+initial README added #MsgLength=21
+
+
+----
+Added: README.md|2 0
+
+Revision: 39c7acd7cf313f5d100e7c3c38f8be001eea4a10
+Author: hermwong <herm.wong@gmail.com>
+Date: 14/05/2013 06:06:16
+Message:
+stub in initial plugin.xml config file #MsgLength=39
+
+
+----
+Added: plugin.xml|35 0
+
+Revision: 809da47509b0b5c3af6c25650094e78ca699ead3
+Author: hermwong <herm.wong@gmail.com>
+Date: 16/05/2013 02:48:31
+Message:
+added native code for iOS & Android #MsgLength=36
+
+
+----
+Added: src/android/Notification.java|448 0
+Added: src/ios/CDVNotification.h|37 0
+Added: src/ios/CDVNotification.m|130 0
+
+Revision: 4c61be18634e75a966357c4d8835ce0b76d0f5eb
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 17/05/2013 04:40:34
+Message:
+added docs and tests #MsgLength=21
+
+
+----
+Added: docs/notification.alert.md|117 0
+Added: docs/notification.beep.md|120 0
+Added: docs/notification.confirm.md|134 0
+Added: docs/notification.md|81 0
+Added: docs/notification.prompt.md|120 0
+Added: docs/notification.vibrate.md|103 0
+Added: test/autotest/html/HtmlReporter.js|101 0
+Added: test/autotest/html/HtmlReporterHelpers.js|60 0
+Added: test/autotest/html/ReporterView.js|164 0
+Added: test/autotest/html/SpecView.js|79 0
+Added: test/autotest/html/SuiteView.js|22 0
+Added: test/autotest/html/TrivialReporter.js|192 0
+Added: test/autotest/index.html|59 0
+Added: test/autotest/jasmine.css|81 0
+Added: test/autotest/jasmine.js|2530 0
+Added: test/autotest/pages/.DS_Store|0 0
+Added: test/autotest/pages/notification.html|71 0
+Added: test/autotest/test-runner.js|62 0
+Added: test/autotest/tests/.DS_Store|0 0
+Added: test/autotest/tests/notification.tests.js|51 0
+Added: test/cordova-incl.js|70 0
+Added: test/index.html|65 0
+Added: test/main.js|163 0
+Added: test/master.css|164 0
+Added: test/notification/index.html|144 0
+
+Revision: e5c6d31b60c1bbb19d6378cbf282769c906017aa
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 17/05/2013 05:21:48
+Message:
+updated files #MsgLength=14
+
+
+----
+Modified: plugin.xml|2 2
+Modified: src/android/Notification.java|1 1
+Modified: src/ios/CDVNotification.m|1 1
+
+Revision: c7761cfa202a23efcc3d2a245c97d0d89841cb1f
+Author: hermwong <herm.wong@gmail.com>
+Date: 17/05/2013 05:22:42
+Message:
+added iOS specific notification apis #MsgLength=37
+
+
+----
+Added: www/ios/notification.js|28 0
+
+Revision: 2cc6887f69e4bb925ba9a7ba721d53942097c1ed
+Author: hermwong <herm.wong@gmail.com>
+Date: 17/05/2013 05:26:03
+Message:
+updated config to include ios specific notification apis & the path to the native android Notification class #MsgLength=109
+
+
+----
+Modified: plugin.xml|8 0
+
+Revision: 54c8ccdb7b2c05af912443e1133a8bddb0b44c36
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 17/05/2013 05:35:19
+Message:
+updated plugin.xml #MsgLength=19
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: eceda4b804da673309c78343f2fe304444f62fdd
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 17/05/2013 05:46:52
+Message:
+updated reference to native android file, updated ios reference #MsgLength=64
+
+
+----
+Modified: plugin.xml|1 1
+Modified: src/ios/CDVNotification.h|1 1
+
+Revision: ae7dc818e0792fc0f3596e63200e575eea938ead
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/05/2013 06:53:59
+Message:
+updated plugin.xml #MsgLength=19
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: d592e6d08b545b881e3765963ddc779935bb3536
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 25/05/2013 09:13:38
+Message:
+wp7 support, added cs file and updated plugin xml #MsgLength=50
+
+
+----
+Modified: plugin.xml|13 1
+Added: src/wp7/Notification.cs|367 0
+
+Revision: d5ca2f064f89dacc1573d826f91683a32a2cfaf2
+Author: hermwong <herm.wong@gmail.com>
+Date: 12/06/2013 02:39:35
+Message:
+added Vibration permission for Android #MsgLength=39
+
+
+----
+Modified: plugin.xml|5 1
+
+Revision: a3aebdd5a2e43dbb8f91acea950e79061824fa66
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 22/06/2013 08:59:09
+Message:
+updated plugin.xml #MsgLength=19
+
+
+----
+Modified: plugin.xml|4 5
+
+Revision: 884058fb8a8e5009eac0646bf9080f7aace535f6
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 14/06/2013 08:51:27
+Message:
+Added dialog UI to wp7 until dialog plugin is split out #MsgLength=56
+
+
+----
+Modified: plugin.xml|2 0
+Added: src/wp7/NotificationBox.xaml|62 0
+Added: src/wp7/NotificationBox.xaml.cs|41 0
+
+Revision: 3c118765ca65ebcd790576bc183284579d6eb620
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 15/06/2013 07:40:37
+Message:
+[3662] added push notification capability for wp7 #MsgLength=50
+
+
+----
+Modified: plugin.xml|4 0
+
+Revision: 1d1bbf772cba41b8eeb26da7d6f094692ccf6fa6
+Author: Fil Maj <maj.fil@gmail.com>
+Date: 18/06/2013 05:22:01
+Message:
+Use <feature> instead of deprecated <plugin>. Also fixed issue with same module ids being defined and throwing errors, should fix [CB-3660] #MsgLength=140
+
+
+----
+Modified: plugin.xml|8 4
+
+
+Revision: cd46429aec32a3ceb3a68ff2cf9778cca2e3cab1
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 25/06/2013 07:02:22
+Message:
+[CB-3631] first pass wp8 support #MsgLength=33
+
+
+----
+Modified: plugin.xml|17 0
+Added: src/wp8/Notification.cs|367 0
+Added: src/wp8/NotificationBox.xaml|62 0
+Added: src/wp8/NotificationBox.xaml.cs|41 0
+
+Revision: 8e08233dfd9c6526489a22375acf20c34122f581
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 26/06/2013 04:55:36
+Message:
+Added .gitignore #MsgLength=17
+
+
+----
+Added: .gitignore|1 0
+
+Revision: 5db12530ffd70f1154a3ff918c7f5c45524462ec
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 26/06/2013 04:56:54
+Message:
+[CB-3970] Make notification.beep cross platform in js #MsgLength=54
+
+
+----
+Modified: plugin.xml|2 6
+Added: src/ios/CDVNotification.bundle/beep.wav|0 0
+Modified: src/ios/CDVNotification.h|1 0
+Modified: src/ios/CDVNotification.m|9 0
+Deleted: www/ios/notification.js|0 28
+
+Revision: 20a3e4458f0877dfbdfb91bcd14be7aa854eaef3
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 26/06/2013 06:18:13
+Message:
+[CB-4006] Handle loop count parameter for beep #MsgLength=47
+
+
+----
+Modified: src/ios/CDVNotification.m|20 4
+
+Revision: 76f2f23b952fc9ecf14aa5a028bdca03eb15b89c
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 27/06/2013 07:05:20
+Message:
+fixed compile issue with beep #MsgLength=30
+
+
+----
+Modified: src/ios/CDVNotification.m|5 1
+
+Revision: fd572c34808cc06fbdb426fa64e8a1c2e9bfaa82
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:56
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 8251882e9806f1dcdf5b7ae5e479351ec05bc2ec
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 08:10:44
+Message:
+Remove notification plugin.xml values #MsgLength=38
+
+
+----
+Modified: plugin.xml|0 73
+
+Revision: 976acf5fbaecfc3ffbdf4ad95e5c0f9517b273ee
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 07:42:54
+Message:
+[CB-4125] remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|22 0
+Added: src/wp/Vibration.cs|57 0
+Deleted: src/wp7/Notification.cs|0 367
+Deleted: src/wp7/NotificationBox.xaml|0 62
+Deleted: src/wp7/NotificationBox.xaml.cs|0 41
+Deleted: src/wp8/Notification.cs|0 367
+Deleted: src/wp8/NotificationBox.xaml|0 62
+Deleted: src/wp8/NotificationBox.xaml.cs|0 41
+
+Revision: 67e848515fd4d6a08fdf39d2726410a9e97f5a54
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 09/07/2013 10:25:08
+Message:
+[CB-3631] Remove dialog docs from vibration plugin #MsgLength=51
+
+
+----
+Deleted: docs/notification.alert.md|0 117
+Deleted: docs/notification.beep.md|0 120
+Deleted: docs/notification.confirm.md|0 134
+Deleted: docs/notification.md|0 81
+Deleted: docs/notification.prompt.md|0 120
+
+Revision: 1dafca37dd31a99996d64dbd37780080e32ff2ec
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 09/07/2013 10:29:58
+Message:
+[CB-3631] Remove dialog methods from vibration JS #MsgLength=50
+
+
+----
+Deleted: www/notification.js|0 118
+Added: www/vibration.js|38 0
+
+Revision: 4bb048de461d9d5225d03f3690f4601deb326cb1
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 09/07/2013 10:34:25
+Message:
+[CB-3631] Remove iOS dialog methods from vibration plugin #MsgLength=58
+
+
+----
+Modified: plugin.xml|17 0
+Deleted: src/ios/CDVNotification.m|0 159
+Renamed: src/ios/CDVVibration.h [from src/ios/CDVNotification.h]|1 10
+Added: src/ios/CDVVibration.m|29 0
+
+Revision: e8b301b27658823593fe71ad2084cbadfe7e12e3
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 09/07/2013 22:30:57
+Message:
+[CB-3631] Fix native module name in JS #MsgLength=39
+
+
+----
+Modified: www/vibration.js|1 1
+
+Revision: f798ef9c85426d29fb30be584d4c146fb742d304
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 09/07/2013 10:29:32
+Message:
+[CB-3631] Remove Android dialog methods from vibration plugin #MsgLength=62
+
+
+----
+Modified: plugin.xml|11 0
+Deleted: src/android/Notification.java|0 448
+Added: src/android/Vibration.java|78 0
+Deleted: www/android/notification.js|0 74
+
+Revision: 76172ac0fdd989a1d244c98ac2982b8bf918dab8
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 10/07/2013 05:24:10
+Message:
+Remove CDVNotification.bundle (unused - is in the Dialogs plugin now) #MsgLength=70
+
+
+----
+Deleted: src/ios/CDVNotification.bundle/beep.wav|0 0
+
+Revision: 45d56294ba3779649d9f9fb6ebadde0e5b2a7cd1
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: src/android/Vibration.java|3 3
+
+Revision: 9bfeeac00f6b6fdaf330c1a0cf7e016857b0cfe5
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 12/07/2013 05:47:37
+Message:
+[CB-1605] Warning cleanup! Removed unused import. #MsgLength=49
+
+
+----
+Modified: src/android/Vibration.java|0 1
+
+Revision: 601c23433d4391843abdfe9d2cd5cb6caa76c601
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:16:34
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Modified: .gitignore|23 1
+
+Revision: 56bd8bb7db6ffbc7627800647c9a17b81f2f860d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|3 0
+
+Revision: 5c08769e83a09e900fe301f140bbe143390e8eb0
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/07/2013 06:17:30
+Message:
+[CB-4364] Vibration plugin needs to specify AudioToolbox.framework dependency in plugin.xml #MsgLength=92
+
+
+----
+Modified: plugin.xml|2 1
+
+Revision: c953b0592235bdd032a94b7a73ce0a88b6f89d1c
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:32:33
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|4 1
+
+Revision: ab5124b8757469e34c01bb7a020b9142675cd4c4
+Author: Herm Wong <herm.wong@gmail.com>
+Date: 31/07/2013 05:32:02
+Message:
+added firefoxos vibration apis & configuration #MsgLength=47
+
+
+----
+Modified: plugin.xml|12 0
+Added: src/firefoxos/vibration.js|34 0
+
+
+Revision: f2d7ee76d192ca948540bfe5be89f614c497e597
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: 00bb6c88bc00799d3d20377b2037c55763f7a39c
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 154eea93d0e45744597a899bbd4443573e03a705
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 05:51:27
+Message:
+updated readme and namespace #MsgLength=29
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|1 1
+
+Revision: f8d30302e0be0cdcf6ddadf7d1d76ff3fe391b2b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-vibration to its own Java package. #MsgLength=65
+
+
+----
+Modified: plugin.xml|2 2
+Modified: src/android/Vibration.java|1 1
+
+Revision: dd69d806968b6362ed95b3f2ad2bce92041af67b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 06:23:23
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 2ddbb6aa32719d8ac41e544a1088db3e33cdccd1
+Author: hermwong <herm.wong@gmail.com>
+Date: 22/08/2013 07:01:53
+Message:
+fixed typo in firefoxos config #MsgLength=31
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 5de8a007bd88cd386ffd79654746590e13b61aba
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 24/08/2013 09:43:30
+Message:
+added target-dir for ff #MsgLength=24
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 3b3ee98136fc1f199abcfd7cab77b682d2938d49
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+[CB-4752] Updated version and changelog #MsgLength=40
+
+
+----
+Added: CHANGELOG.md|25 0
+Modified: plugin.xml|1 1
+
+Revision: f009ff35ed096849d80758dace9d077c425e1a42
+Author: Don Coleman <dcoleman@chariotsolutions.com>
+Date: 26/08/2013 06:05:59
+Message:
+[CB-4661] VIBRATE permission for Android #MsgLength=41
+
+
+----
+Modified: plugin.xml|4 0
+
+
+Revision: 6de25493a34fa681170704b50f0271cca1778c3d
+Author: Kristoffer Flores <kflores@blackberry.com>
+Date: 22/08/2013 05:59:52
+Message:
+[CB-4593] [Blackberry10] Added vibration support for bb10 #MsgLength=58
+
+
+----
+Modified: plugin.xml|12 4
+Added: www/blackberry10/vibrate.js|26 0
+
+Revision: c5edd8ad56e73e94f57e61dabbc0100abb652e47
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:23
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 5200e0549b5b3264c9d0c5ffccad47d6f776e9c9
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 13/09/2013 07:05:27
+Message:
+updated plugin to work with ffos #MsgLength=33
+
+
+----
+Modified: src/firefoxos/vibration.js|6 5
+
+Revision: 4728fdeaa7e6b31db805018f2778886fdac0453e
+Author: Kristoffer Flores <kflores@blackberry.com>
+Date: 22/08/2013 05:59:52
+Message:
+[CB-4593] [Blackberry10] Added vibration support for bb10 #MsgLength=58
+
+
+----
+Modified: plugin.xml|12 4
+Added: www/blackberry10/vibrate.js|26 0
+
+Revision: 0068a69f077cc026db1b15da8e9bb155580a4af2
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/09/2013 05:43:54
+Message:
+fixed plugin.xml for vibration #MsgLength=31
+
+
+----
+Modified: plugin.xml|3 1
+
+Revision: cd25c12bbaf24d013a7241a159e4ed646a1d7b64
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 14/09/2013 09:02:59
+Message:
+updated to work with ffos commandProxy #MsgLength=39
+
+
+----
+Modified: plugin.xml|1 1
+Renamed: src/firefoxos/VibrationProxy.js [from src/firefoxos/vibration.js]|3 3
+
+Revision: ae5171c3700a1f0499984634023ab111cfa28822
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: fe866384aaa4b76a1df4d3f0246bfc1cfcfcf4a1
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:40:28
+Message:
+CB-4889 renaming org.apache.cordova.core.vibration to org.apache.cordova.vibration #MsgLength=83
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: f233d805076f77275e80b07d4061263eb2f71cc8
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:50:55
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 1b798106d9d45f48f00c80f3b8ef0905c5ee7039
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 08:57:12
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.3.2 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|10 0
+Modified: plugin.xml|1 1
+
+
+Revision: 84582dc8b5d02b6bf741bdf9d12f86684469866f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:15
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a856458e814a6541c54f994df2a48164fd441964
+Author: Gorkem Ercan <gorkem.ercan@gmail.com>
+Date: 11/09/2013 22:37:11
+Message:
+add missing android namespace #MsgLength=30
+
+
+----
+Modified: plugin.xml|1 0
+
+
+Revision: 2c29ec77edbe876f0b866056303c828e431b84cb
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/10/2013 06:36:15
+Message:
+[CB-5010] Updated version and RELEASENOTES.md for release 0.3.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+
+Revision: db5f46815f7903e2e46440819e197be9f399dbcd
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 10/10/2013 07:06:58
+Message:
+[CB-5010] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a8b33eff6508092396f0755a0240404bc1eece71
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 12/10/2013 08:39:57
+Message:
+corrected plugin.xml to write properly to config.xml for ffos #MsgLength=62
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 1d5098df6cfe3130ef0d3460f4c52edbeeeacd54
+Author: hermwong <herm.wong@gmail.com>
+Date: 23/10/2013 05:11:03
+Message:
+add repo + issue tag to plugin.xml for vibration plugin #MsgLength=56
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: 0be3b8956f174a8aaebf54b0dbc24c6260e2edf8
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:09:46
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.3.4 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|6 1
+Modified: plugin.xml|1 1
+
+
+Revision: 683651adc2197c7e194a9601e876052b809cef1a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:17
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f80bceed1cd51bea6488fb5f3bfee4bdeb756a3b
+Author: David Peacock <dapeacock@gmail.com>
+Date: 17/09/2013 22:42:49
+Message:
+CB-4747 Fixed Blackberry background vibrate #MsgLength=156
+
+
+----
+Modified: plugin.xml|4 5
+Added: src/blackberry10/index.js|80 0
+Added: src/blackberry10/native/.cproject|509 0
+Added: src/blackberry10/native/.project|33 0
+Added: src/blackberry10/native/device/libVibration.so|0 0
+Added: src/blackberry10/native/public/plugin.cpp|320 0
+Added: src/blackberry10/native/public/plugin.h|70 0
+Added: src/blackberry10/native/public/tokenizer.cpp|222 0
+Added: src/blackberry10/native/public/tokenizer.h|55 0
+Added: src/blackberry10/native/simulator/libVibration.so|0 0
+Added: src/blackberry10/native/src/vibration_js.cpp|116 0
+Added: src/blackberry10/native/src/vibration_js.hpp|42 0
+
+Revision: d42d68b8a5200554b9faf18d09ee7efe75befcd1
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 06:35:24
+Message:
+Added amazon-fireos platform. Change to include amazon-fireos as a platform if the user agent string contains 'cordova-amazon-fireos' #MsgLength=134
+
+
+----
+Modified: plugin.xml|15 0
+Modified: test/cordova-incl.js|4 2
+
+
+Revision: fe4fe1a893a48cb11dbf9dbbdb0afdb9f09e269b
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 20/10/2013 20:54:15
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|6 0
+Added: src/ubuntu/vibration.cpp|38 0
+Added: src/ubuntu/vibration.h|47 0
+
+
+Revision: 587118717740b297957946cf0f743e2a5596b3cc
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:31
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.3.5 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: 0e97e1f33c55d0f9c9c0e6e8fef6d6f1d92d1e63
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:04
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: c61cbdfa4edb3d858eb91c0f99ed6cf76a89df7f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/notification.vibrate.md|0 103
+
+Revision: 330d35685ae3e8b05134976799119611b82a3770
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:01:54
+Message:
+CB-5658 Add doc.index.md for Vibration plugin #MsgLength=46
+
+
+----
+Modified: README.md|21 4
+Added: doc/index.md|56 0
+
+Revision: 4238a790b42f075c61bbc660cd92c306637a3323
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:03
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: 06720d8527fbf9a0619f3bc6d9b1430471b6a209
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.3.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: cca9a5c03fa4ecd79b6491dace97c78629be0e03
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: c1ec74b8d80a71cab2b9b1ece87e57c689059af5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:59
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 59
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/notification.html|0 71
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/.DS_Store|0 0
+Deleted: test/autotest/tests/notification.tests.js|0 51
+Deleted: test/cordova-incl.js|0 72
+Deleted: test/index.html|0 65
+Deleted: test/main.js|0 163
+Deleted: test/master.css|0 164
+Deleted: test/notification/index.html|0 144
+
+Revision: 1ab3cdfd82a1b37fc711e5ba72ccd3937d9fecc7
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 14/01/2014 19:22:34
+Message:
+CB-3206 - Supported platforms updated #MsgLength=38
+
+
+----
+Modified: doc/index.md|1 0
+
+Revision: 4023ad98030030f2728d8f7552d82ac16637ed52
+Author: Salvatore Iovene <salvatore@iovene.com>
+Date: 21/11/2013 17:56:28
+Message:
+Add support for Tizen. #MsgLength=23
+
+
+----
+Modified: plugin.xml|7 0
+Added: src/tizen/VibrationProxy.js|9 0
+
+
+Revision: adad06488b18aa97ef19fd6676cdcc4148dc3464
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:54:00
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.3.7 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: 7e4c12f7a03a3939a2747af807a1824cb141fbe7
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:30
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f26d04e2465f76e59834bedc931c688ca2d084cd
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+Revision: 8c135c8a300ad81f3dc9944943b87e7c98060882
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:22:53
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+Modified: src/blackberry10/native/public/plugin.cpp|21 0
+Modified: src/blackberry10/native/public/plugin.h|21 0
+
+Revision: 96b68c07f8699238e03af281befbbc8d69271136
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 21:51:14
+Message:
+CB-6465: Add license headers to Tizen code #MsgLength=43
+
+
+----
+Modified: src/tizen/VibrationProxy.js|21 0
+
+Revision: b8b46415c0aba0c8386e414b1d29f073ab1257d8
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.3.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: 7b67662c13b3f32ddf696a768cc515a2233ad4db
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 3327efe382f9d62b51dddd6dd7046a75ad4fe02e
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:36:29
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: 0b08297f751a006fed63228807b8c9d8383ef832
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:34:14
+Message:
+CB-6811 Add license to CONTRIBUTING.md #MsgLength=39
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: e731cbbf32f6e2c646be30169327ea028f38f0d4
+Author: Andreas Tietz <andreas.tietz@gmail.com>
+Date: 04/03/2014 10:27:07
+Message:
+Implemented vibrateWithPattern (for android) and adapted documentation. #MsgLength=72
+
+
+----
+Modified: doc/index.md|27 6
+Modified: src/android/Vibration.java|32 1
+Modified: www/vibration.js|24 2
+
+Revision: 78f95e1584eb784c7092955dc1f80868ae72ef55
+Author: Andreas Tietz <andreas.tietz@gmail.com>
+Date: 05/03/2014 08:02:52
+Message:
+Extended vibrateWithPattern to allow for pattern repetition, implemented a complementary cancelVibration function and adapted documentation. #MsgLength=141
+
+
+----
+Modified: doc/index.md|14 5
+Modified: src/android/Vibration.java|20 4
+Modified: www/vibration.js|14 2
+
+Revision: b927f1f3232bcf538e65a5561c6e0c454cf131aa
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/06/2014 06:20:07
+Message:
+Github close #11 #MsgLength=17
+
+
+----
+Modified: README.md|1 0
+
+Revision: 1459975628dcec9f53f93b8a1f3a1f1377969d5a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 03:50:42
+Message:
+updated notice file #MsgLength=20
+
+
+----
+Modified: NOTICE|2 0
+
+Revision: b2fdbc1c929665f066278cde0566b3ab1edd66c7
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:43
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.3.9 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: plugin.xml|1 1
+
+Revision: f283db2fa64f8ad29d56ea3c44f59bf275385c98
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 7a1a302f49789eab4cabf6f5024acd6b5377add4
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:50:05
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-vibration #MsgLength=69
+
+
+----
+Added: doc/ja/index.md|58 0
+
+Revision: 9e6f5eeab520f8650df2cbbbc10a8f5989020046
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:22:42
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-vibration #MsgLength=69
+
+
+----
+Added: doc/es/index.md|58 0
+Added: doc/fr/index.md|58 0
+Added: doc/it/index.md|58 0
+Added: doc/ko/index.md|58 0
+Added: doc/pl/index.md|58 0
+Added: doc/zh/index.md|58 0
+
+Revision: 6c6e803e9839c474668d63e2e2b3fc8ea8bffb14
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:37:07
+Message:
+documentation translation: cordova-plugin-vibration #MsgLength=52
+
+
+----
+Added: doc/de/index.md|58 0
+
+Revision: 86c2859d7f3a9be33d7810a4283c433af1da84ac
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 29/05/2014 01:15:51
+Message:
+CB-6773cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=84
+
+
+----
+Modified: doc/zh/index.md|9 9
+
+Revision: 935524cb55b75bb0a7c5abeb56fd6b447988f02d
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 24/06/2014 01:53:45
+Message:
+CB-6773cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=84
+
+
+----
+Modified: doc/de/index.md|39 10
+Modified: doc/es/index.md|39 10
+Modified: doc/fr/index.md|40 11
+Modified: doc/ja/index.md|39 10
+Modified: doc/ko/index.md|39 10
+Modified: doc/pl/index.md|38 9
+Added: doc/ru/index.md|87 0
+Modified: doc/zh/index.md|44 15
+
+Revision: 97978be49fa8af1736d38d2778d9c53379b447a7
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/06/2014 01:42:54
+Message:
+CB-6127cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=84
+
+
+----
+Modified: doc/it/index.md|39 10
+
+Revision: 42b12e4f6bbd525b3a7166ad7ecc936dca072333
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:50:05
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-vibration #MsgLength=69
+
+
+----
+Added: doc/ja/index.md|58 0
+
+Revision: 02aa38df049c105cf58b9e3ae9ea59674b21e253
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:22:42
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-vibration #MsgLength=69
+
+
+----
+Added: doc/es/index.md|58 0
+Added: doc/fr/index.md|58 0
+Added: doc/it/index.md|58 0
+Added: doc/ko/index.md|58 0
+Added: doc/pl/index.md|58 0
+Added: doc/zh/index.md|58 0
+
+Revision: 7850d8b4147961abd4536563c09d7098b5339ba2
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:37:07
+Message:
+documentation translation: cordova-plugin-vibration #MsgLength=52
+
+
+----
+Added: doc/de/index.md|58 0
+
+
+Revision: 58ae40ff7db34313fbecaafc562986060d704629
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 29/05/2014 01:15:51
+Message:
+CB-6773cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=84
+
+
+----
+Modified: doc/zh/index.md|9 9
+
+Revision: 74bc4572943378e7e17deff8f09889de0c8fea85
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 24/06/2014 01:53:45
+Message:
+CB-6773cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=84
+
+
+----
+Modified: doc/de/index.md|39 10
+Modified: doc/es/index.md|39 10
+Modified: doc/fr/index.md|40 11
+Modified: doc/ja/index.md|39 10
+Modified: doc/ko/index.md|39 10
+Modified: doc/pl/index.md|38 9
+Added: doc/ru/index.md|87 0
+Modified: doc/zh/index.md|44 15
+
+
+Revision: 112254e6ae57383b46966d39b2e2e3185483d8d8
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:28:37
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=111
+
+
+----
+Modified: doc/it/index.md|1 26
+
+Revision: 99b68b9a0734a192838c34dbb6e3e174c0db34d2
+Author: Willy Aguirre <marti1125@gmail.com>
+Date: 29/07/2014 19:43:46
+Message:
+update VibrationProxy.js #MsgLength=25
+
+
+----
+Modified: src/firefoxos/VibrationProxy.js|1 1
+
+Revision: b49489aa3ec0ec008dafbd67e127f244af679b9d
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 19/06/2014 04:28:00
+Message:
+ubuntu: Implemented vibrateWithPattern/cancelVibration #MsgLength=55
+
+
+----
+Modified: src/ubuntu/vibration.cpp|36 10
+Modified: src/ubuntu/vibration.h|8 1
+
+Revision: 4a4dc85a35e865fb974533e253639dca53060744
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:25
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.3.10 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: 90c6e5f2e51bc1b0144b87d4950a6e891cdd79e7
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:29
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: bf582d3ea959d23cab84d273d35d9b7b9cbe3f62
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 18/07/2014 21:19:53
+Message:
+changes made to align with w3c spec #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 0
+Modified: www/vibration.js|37 4
+
+Revision: 1d0afd7d0f5a5e0f3238117093d618bacbe5bb04
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 22/07/2014 04:24:40
+Message:
+changes to vibration.java to align with w3c, changes to vibration.js for backwards compatibility #MsgLength=97
+
+
+----
+Modified: src/android/Vibration.java|7 1
+Modified: www/vibration.js|8 6
+
+Revision: 07f5c9037104b13a4f2aab14588fb123e27f9e9a
+Author: Edna Morales <ednamorales@Ednas-MacBook-Pro-2.local>
+Date: 23/07/2014 00:37:34
+Message:
+changes to how 0 is getting added to array in order to align with w3c spec #MsgLength=75
+
+
+----
+Modified: src/android/Vibration.java|5 9
+
+Revision: 2098047fb4a7cf5b1b30fdd6b267850e20692d71
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 23/07/2014 02:03:23
+Message:
+updated doc for w3c alignment #MsgLength=30
+
+
+----
+Modified: doc/index.md|64 3
+
+Revision: f46e00a729aecd89902078994f5ba0e01bd1e352
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 23/07/2014 23:33:07
+Message:
+added new example to documentation #MsgLength=35
+
+
+----
+Modified: doc/index.md|3 0
+
+Revision: 7eedea3a9be0584f5020134870bfefcaa439214f
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 23/07/2014 23:43:29
+Message:
+added new example to documentation #MsgLength=35
+
+
+----
+Modified: doc/index.md|2 2
+
+Revision: 17441b748194efccec9227d21af2de763d5d362b
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 24/07/2014 02:32:46
+Message:
+vibrate([num]) is treated as a vibrate not vibrate with pattern #MsgLength=64
+
+
+----
+Modified: www/vibration.js|13 1
+
+Revision: 47cfb7260505ee43243c81e8543d585eb04704db
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 24/07/2014 02:45:09
+Message:
+update doc to show vibrate([num]) is a standard vibrate #MsgLength=56
+
+
+----
+Modified: doc/index.md|7 3
+
+Revision: 816f97bd64e40b756e84e26cdef2d7400fc75d31
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 05/08/2014 23:19:36
+Message:
+update doc with another way to cancel vibration #MsgLength=48
+
+
+----
+Modified: doc/index.md|5 1
+
+Revision: 8567f5b4e63ac9e74a83b53770687f51ef19e988
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 07/08/2014 23:07:43
+Message:
+Added note to doc about w3c alignment and min time for Windows #MsgLength=63
+
+
+----
+Modified: doc/index.md|3 1
+
+Revision: 413520ba7011ccd97e5f3905bee661f214bc2d9e
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 07/08/2014 23:10:55
+Message:
+Updated doc with Windows support for vibrate with pattern #MsgLength=58
+
+
+----
+Modified: doc/index.md|1 1
+
+
+Revision: f442fc21ed7e1642d92fa420efd968ebbad13345
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 18/07/2014 21:19:53
+Message:
+changes made to align with w3c spec #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 0
+Modified: www/vibration.js|37 4
+
+Revision: 48a9fd16b36b8eda3b00ea33d01a32163828ea65
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 22/07/2014 04:24:40
+Message:
+changes to vibration.java to align with w3c, changes to vibration.js for backwards compatibility #MsgLength=97
+
+
+----
+Modified: src/android/Vibration.java|7 1
+Modified: www/vibration.js|8 6
+
+Revision: cf2a5afd7c9cc7685bccf14a057c1a22cf60e511
+Author: Edna Morales <ednamorales@Ednas-MacBook-Pro-2.local>
+Date: 23/07/2014 00:37:34
+Message:
+changes to how 0 is getting added to array in order to align with w3c spec #MsgLength=75
+
+
+----
+Modified: src/android/Vibration.java|5 9
+
+Revision: 098128c49d0c57473d113dd90fd80566e24000d3
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/08/2014 00:58:41
+Message:
+CB-7249cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=84
+
+
+----
+Modified: doc/index.md|64 3
+
+
+Revision: 026975a696703eadf30ef11a18d60454b697962d
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/08/2014 01:43:03
+Message:
+CB-5459 slight change to the vibration documentation for pattern due to merge issue #MsgLength=84
+
+
+----
+Modified: doc/index.md|2 13
+
+Revision: aff9179f800d6f6d65900d64846558996a965544
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/08/2014 01:49:16
+Message:
+removed duplicate messaging #MsgLength=28
+
+
+----
+Modified: doc/index.md|1 3
+
+Revision: d2f74247f431deab103720ddf4c3edf101a3789b
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/08/2014 02:00:09
+Message:
+missed merge, fixed now #MsgLength=24
+
+
+----
+Modified: www/vibration.js|0 3
+
+Revision: 3fd0b0de876050a9799663de12a13e906c72bf27
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/08/2014 02:18:35
+Message:
+cb-7249cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=84
+
+
+----
+Modified: doc/de/index.md|87 4
+Modified: doc/es/index.md|87 4
+Modified: doc/fr/index.md|88 5
+Modified: doc/it/index.md|87 4
+Modified: doc/ja/index.md|87 4
+Modified: doc/ko/index.md|87 4
+Modified: doc/ru/index.md|87 4
+Modified: doc/zh/index.md|88 5
+
+Revision: 6c21d194f7caff17d8043065d685bc12577e4654
+Author: Martin Gonzalez <martin.c.glez.glez@gmail.com>
+Date: 18/07/2014 05:47:01
+Message:
+CB-6966 Ported Vibration automated & manual tests #MsgLength=123
+
+
+----
+Added: test/tests.js|48 0
+
+Revision: 6bb38e581ed60c72cff7adaa17e9e3945d3e8221
+Author: Martin Gonzalez <martin.c.glez.glez@gmail.com>
+Date: 01/08/2014 14:09:54
+Message:
+CB-6966 renamed folder to tests + added nested plugin.xml #MsgLength=58
+
+
+----
+Added: tests/plugin.xml|31 0
+Renamed: tests/tests.js [from test/tests.js]|0 0
+
+
+Revision: 53760ccbf19964d20e9a6693cb1f52050f2c5391
+Author: Martin Gonzalez <martin.c.glez.glez@gmail.com>
+Date: 16/07/2014 04:33:20
+Message:
+CB-6963, ported vibration automated & manual tests #MsgLength=125
+
+
+----
+Added: test/tests.js|48 0
+
+
+Revision: c1a88b20c06ffbde802b488609412da366d4fe2a
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 17/07/2014 04:12:29
+Message:
+added tests to ensure compliance with w3c spec #MsgLength=47
+
+
+----
+Modified: test/tests.js|66 1
+
+Revision: c226b6df96ee44770586de5922ec72ae434c6ba5
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 17/07/2014 04:34:28
+Message:
+added 'Android only' to buttons for specific tests, changed where console.log is executed for user to see earlier #MsgLength=114
+
+
+----
+Modified: test/tests.js|6 6
+
+Revision: e0723e2973866289357ec75f473ca4f0c467bb6d
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 18/07/2014 21:46:24
+Message:
+added tests for old vibrateWithPattern and cancelVibration calls #MsgLength=65
+
+
+----
+Modified: test/tests.js|36 10
+
+Revision: 90c6335c59775fb5ee94ccf8aa027e5bfc98e9fd
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 19/07/2014 03:02:34
+Message:
+on/off button for cancel tests, add results box and msgs #MsgLength=57
+
+
+----
+Modified: test/tests.js|156 79
+
+Revision: 5ce57fc08d513e798052f4aeb992e2752980ba03
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 21/07/2014 20:57:14
+Message:
+add setTimeout function to update vibrateOn var if user doesn't cancel vibrate, add note about iOS #MsgLength=99
+
+
+----
+Modified: test/tests.js|7 3
+
+Revision: 4b01432cf26ffbce13feba58bf5b10d16d45ffaf
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 21/07/2014 21:42:51
+Message:
+clear settimeout when user cancels vibration #MsgLength=45
+
+
+----
+Modified: test/tests.js|14 6
+
+Revision: d93aafc7708822345ab469fc87b5c0b247074189
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 22/07/2014 00:28:46
+Message:
+added more test cases, changed vibrate with pattern durations, changed where vibrateOn is set to true #MsgLength=102
+
+
+----
+Modified: test/tests.js|95 10
+
+Revision: ab0c239e9c34f19e2c1e2f7d6fdc2df0679490d9
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 22/07/2014 03:41:51
+Message:
+add longer pattern sequence for testing, change expected result for old vibrate with pattern test #MsgLength=98
+
+
+----
+Modified: test/tests.js|7 7
+
+
+Revision: 38af16f2d089c6bef073b74cab5442be5b85722a
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 14/08/2014 23:04:38
+Message:
+CB-7249cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=84
+
+
+----
+Added: test/tests.js|313 0
+Added: tests/plugin.xml|31 0
+Added: tests/tests.js|48 0
+
+
+Revision: 27bf922b18e8ca65a9c2decc4531492722ff5c70
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 19/08/2014 01:51:25
+Message:
+cb-6724documented Windows support for vibrate with pattern and cancel vibrate in manual test doc and moved tests to tests dir #MsgLength=126
+
+
+----
+Deleted: test/tests.js|0 313
+Modified: tests/tests.js|275 10
+
+Revision: 871719d38a27ce7b919c56f8ae532244c3b25404
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 19/08/2014 22:52:08
+Message:
+CB-7249cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=84
+
+
+----
+Modified: doc/es/index.md|1 1
+Modified: doc/pl/index.md|87 4
+
+Revision: 5adf530d3663226ad6913de6cfc8493672334023
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:44
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.3.11 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|30 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5886dc47f3a4caa502a406ad4cabdeb8b8620197
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:02
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 1e4af6a7bd7a77a01567b4af7e1c67a9d7ad608d
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:18
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: 5b6032b4f15bd1f28b4283e71c138e73ae011b26
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:13:36
+Message:
+CB-7700 cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=85
+
+
+----
+Modified: doc/es/index.md|3 3
+Modified: doc/pl/index.md|3 3
+Modified: doc/ru/index.md|6 6
+
+Revision: 1282468c09c5d9b4a676feae5604c9ea3602aa20
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:21:19
+Message:
+Add comma to match a later section #MsgLength=35
+
+
+----
+Modified: doc/index.md|1 1
+
+Revision: a520f0de030a217868dcf409bf9612defe20170f
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:21:27
+Message:
+CB-7977 Mention deviceready in plugin docs #MsgLength=43
+
+
+----
+Modified: doc/index.md|9 0
+
+Revision: 621984529a2ecaa4879012aeef078413742d5797
+Author: daserge <daserge@yandex.ru>
+Date: 15/11/2014 00:30:11
+Message:
+CB-8018 Add vibrate(pattern) fallback on vibrate for Windows Phone 8 #MsgLength=188
+
+
+----
+Modified: doc/index.md|5 0
+Modified: src/wp/Vibration.cs|22 2
+
+Revision: 86ca2ea8a484e91c5f8dfedcba46859dc220a956
+Author: Lucas Gonze <lucas@gonze.com>
+Date: 27/11/2014 02:46:06
+Message:
+Fixes CB-7861 "Bad comma". #MsgLength=27
+
+
+----
+Modified: www/vibration.js|1 1
+
+Revision: 12a9aca987183856d56c346decd933a6486385d2
+Author: Victor Sosa <sosah.victor@gmail.com>
+Date: 05/11/2014 02:37:15
+Message:
+CB-7936 cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=85
+
+
+----
+Modified: doc/index.md|0 0
+Modified: src/android/Vibration.java|0 0
+Modified: www/vibration.js|0 0
+
+Revision: 39ffc061ec249340db9824adf2b9f3dbe7f4783b
+Author: Victor Sosa <sosah.victor@gmail.com>
+Date: 05/11/2014 03:36:45
+Message:
+CB-7936 cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=85
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+
+Revision: 57c92693fe665cdfb7da2173854bb036b055b91d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.3.12 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 265e5bf46893ddabd1ec427fc20957b8ef141712
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:50
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b705478dc2a3219f47e08f2e1b287c68ac73461e
+Author: Victor Sosa <sosah.victor@gmail.com>
+Date: 10/12/2014 08:40:08
+Message:
+CB-8113 cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=85
+
+
+----
+Modified: doc/pl/index.md|1 1
+
+Revision: 91f5bd47de6af279bbbcfe0d977df567de8df149
+Author: Victor Sosa <sosah.victor@gmail.com>
+Date: 06/01/2015 03:43:48
+Message:
+CB-8243 cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=85
+
+
+----
+Modified: doc/ru/index.md|17 17
+
+
+Revision: 25217db40349f9851fbeae970e32006af590e791
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.3.13 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 67ccebc016682008e6c558cef91bec5611046440
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:03
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4587811b8ab9ef2cb8d713ce59e644a6284bb4f5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 17:02:25
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|39 0
+
+Revision: 108bc2b7680fe22382732663e7da25b6e4a0d940
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:53:44
+Message:
+CB-8438 cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=85
+
+
+----
+Modified: doc/de/index.md|21 7
+Modified: doc/es/index.md|31 36
+Modified: doc/fr/index.md|30 35
+Modified: doc/it/index.md|24 10
+Modified: doc/ja/index.md|22 8
+Modified: doc/ko/index.md|22 8
+Modified: doc/pl/index.md|21 7
+Modified: doc/zh/index.md|28 14
+
+Revision: f45e3855c535f6520b50c6919ba0da66af795db8
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 08:11:37
+Message:
+CB-8576 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|13 0
+Modified: README.md|2 0
+
+Revision: 22ce5bd2ba93be88b13b3f72958a4603d256784d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:45:51
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|154 2
+Deleted: doc/index.md|0 175
+
+Revision: 59bd842399079a543959cd31c0a8c1b89a820ef9
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:45:18
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 3c784336c6851649f740f0ae9e82c390a871aa70
+Author: daserge <daserge@yandex.ru>
+Date: 26/11/2014 05:16:45
+Message:
+CB-7970 Add cordova-plugin-vibration support for Windows Phone 8.1 #MsgLength=122
+
+
+----
+Modified: README.md|9 2
+Modified: plugin.xml|9 0
+Added: src/windows/Vibration.winmd|0 0
+Added: src/windows/Vibration/Vibration.sln|22 0
+Added: src/windows/Vibration/Vibration/.gitignore|3 0
+Added: src/windows/Vibration/Vibration/Properties/AssemblyInfo.cs|30 0
+Added: src/windows/Vibration/Vibration/Vibration.cs|36 0
+Added: src/windows/Vibration/Vibration/Vibration.csproj|54 0
+Added: src/windows/VibrationProxy.js|60 0
+
+Revision: 5192900d846646e32fdd69a1dfa19f6800a30e26
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 26/03/2015 18:31:40
+Message:
+CB-7970 Reference proxy project instead of compiled winmd #MsgLength=76
+
+
+----
+Modified: plugin.xml|2 1
+Deleted: src/windows/Vibration.winmd|0 0
+Renamed: src/windows/Vibration/.gitignore [from src/windows/Vibration/Vibration/.gitignore]|0 0
+Renamed: src/windows/Vibration/Properties/AssemblyInfo.cs [from src/windows/Vibration/Vibration/Properties/AssemblyInfo.cs]|0 0
+Renamed: src/windows/Vibration/Vibration.cs [from src/windows/Vibration/Vibration/Vibration.cs]|0 0
+Renamed: src/windows/Vibration/Vibration.csproj [from src/windows/Vibration/Vibration/Vibration.csproj]|1 3
+Deleted: src/windows/Vibration/Vibration.sln|0 22
+
+Revision: a4249e97e40f91c05457f3ea82ee017b8514f00a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:33
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: 55684133adc9e8795e0d7005424a24f7f2d7d0b8
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:06:02
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: 60c4c0de133dd2504c8b570b78e14285c49e6f8d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 08:03:10
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a577028e548a4f0268335b849f873adfe7258016
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 08:05:23
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: c00a7f735d755b00c1ad274a0ea0217234016032
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:39
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|13 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b34fb1f4d40c9b1a1bff8f6b6a8681e6f333bf0f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:48
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 327686c32cd8b36cb92fe42a3ee03ac0ea84f943
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:31:14
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 894310ecfb6e0ffb7f79705de686896517ffc450
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 9c98b92c2f2958696e95294dc985e74f3bd9faa0
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:22
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 39ea936b10585ea8bea41aeecd13fddfbfa08d6b
+Author: Rob Paveza <Rob.Paveza@microsoft.com>
+Date: 29/04/2015 08:36:07
+Message:
+CB-8930: Vibration on Windows fails without a helpful error message when vibration functionality is missing from the platform.  This detects such a case and instead fails gracefully that the feature isn't available.  Also supports the Windows 10 vibration mechanism. #MsgLength=331
+
+
+----
+Modified: plugin.xml|1 1
+Modified: src/windows/VibrationProxy.js|59 11
+
+Revision: 4d316e2555fedf6680422d0cb97d981c6a688303
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/05/2015 08:07:39
+Message:
+CB-8959 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3df4885b16b998ff411d18334b4db1062a85c9e9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/05/2015 08:37:22
+Message:
+CB-8959 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: afea3bdcd1587420e3681c48701fe87f6e494352
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/05/2015 06:46:09
+Message:
+add missing license headers #MsgLength=28
+
+
+----
+Modified: src/windows/Vibration/Properties/AssemblyInfo.cs|15 1
+Modified: src/windows/Vibration/Vibration.cs|20 1
+Modified: src/windows/Vibration/Vibration.csproj|18 0
+
+Revision: d70ce64522e4f6a84b565ad8e11cca27b63d8682
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/05/2015 06:58:42
+Message:
+add license header to bb10 native files #MsgLength=40
+
+
+----
+Modified: src/blackberry10/native/.cproject|17 0
+Modified: src/blackberry10/native/.project|18 0
+
+Revision: 81729f0f5c764bf39e7d21bb50a963a252df3c71
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 08/05/2015 08:21:30
+Message:
+Revert "CB-8959 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ef4af1e8a670456e54c1fcf4fc07f82dd84898f5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 08/05/2015 08:25:28
+Message:
+Revert "Revert "CB-8959 Incremented plugin version."" #MsgLength=117
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: da917d3eebb699b25268a00ab37df287bdba4cd7
+Author: master-of-magic <master-of-magic@gmx.de>
+Date: 12/12/2014 23:54:28
+Message:
+android: respect silent audio setting #MsgLength=108
+
+
+----
+Modified: src/android/Vibration.java|11 4
+
+
+Revision: faa3d626d8f941273b8edadeb48f7f30af198a53
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 29/07/2014 23:08:33
+Message:
+CB-6914 added cancelVibration for wp8 #MsgLength=38
+
+
+----
+Modified: src/wp/Vibration.cs|6 0
+
+Revision: 7dd0e6610be372b076daf6f6c80f4ec3aa5e0df4
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 29/07/2014 23:24:43
+Message:
+CB-6916 added vibrateWithPattern for wp8 #MsgLength=106
+
+
+----
+Modified: src/wp/Vibration.cs|23 0
+
+Revision: 6899790d10a951a858dd1bb2df0df20d0e010d26
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 29/07/2014 23:36:48
+Message:
+CB-7218 truncate vibration to 5 secs for WP8 #MsgLength=150
+
+
+----
+Modified: src/wp/Vibration.cs|5 0
+
+
+Revision: 6612805e61dba39ea638c6801ff4e11163fa0d70
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 29/08/2014 01:42:06
+Message:
+CB-7216 changed cancelWasCalled boolean #MsgLength=120
+
+
+----
+Modified: src/wp/Vibration.cs|12 7
+
+
+Revision: e9e96ff0a0f8d27db02f83dff8a03965bdddccd1
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 19/05/2015 06:00:44
+Message:
+static-ized MIN_DURATION and MAX_DURATION #MsgLength=42
+
+
+----
+Modified: src/wp/Vibration.cs|7 4
+
+Revision: e29d45c1cc0652613852b201d5dff9ef72279ebb
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 19/05/2015 06:32:14
+Message:
+used min/max statics in vibrate with pattern. Use callbackId in callbacks, catch json format exceptions #MsgLength=104
+
+
+----
+Modified: src/wp/Vibration.cs|30 18
+
+Revision: d02acf5dee8fe5b8e3092628fcaf8f81b709305e
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 03/06/2015 00:03:03
+Message:
+fix npm md issue #MsgLength=17
+
+
+----
+Modified: README.md|17 17
+
+Revision: 0fa15e6fbdccff6dfb40b040476fb78a2e1e0236
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:42:50
+Message:
+CB-9128 cordova-plugin-vibration documentation translation: cordova-plugin-vibration #MsgLength=85
+
+
+----
+Added: doc/de/README.md|190 0
+Added: doc/es/README.md|189 0
+Added: doc/fr/README.md|171 0
+Added: doc/it/README.md|190 0
+Added: doc/ja/README.md|190 0
+Added: doc/ko/README.md|190 0
+Added: doc/pl/README.md|190 0
+Added: doc/zh/README.md|190 0
+
+Revision: aef80e104dd4c9e6d8c8e579ad1a211e3949d24b
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 17/06/2015 12:30:59
+Message:
+Adding .ratignore file. #MsgLength=24
+
+
+----
+Added: .ratignore|2 0
+
+Revision: aad94618b76c238cd2d4711353311d5fe06d6f99
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:06
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.2.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|12 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 274003cb331561c3feb42441c117778b25728eb3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:42
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: c706e0a06824bd3aff394485e1477e2ae139e41e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:37
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 00431d4b1ef5c654376c38294cb7a0a88950f84e
+Author: Rob Paveza <Rob.Paveza@microsoft.com>
+Date: 01/07/2015 07:27:21
+Message:
+CB-9166: Changed plugin.xml framework reference condition to be valid XML. This closes #35 #MsgLength=91
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: cc8d8031aba903fb9811d70deb46e4ac19f58689
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 09:04:09
+Message:
+remove travis-ci #MsgLength=17
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 2
+
+Revision: aa9835a71bc12e62d4520ac575de74a4e2790c84
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 01/09/2015 03:00:51
+Message:
+[CB-7966] Add cordova-plugin-vibration support for browser platform #MsgLength=68
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|8 1
+Added: src/browser/VibrationProxy.js|31 0
+Modified: www/vibration.js|2 0
+
+Revision: 6111d62262d280a8afdf6e47521123358295fe79
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 02/09/2015 02:51:20
+Message:
+Removed call to add proxy and renamed browser file #MsgLength=51
+
+
+----
+Modified: plugin.xml|1 1
+Renamed: src/browser/Vibration.js [from src/browser/VibrationProxy.js]|0 2
+
+Revision: 84a9ea29b7c49a5c2ab43cf8f062bd89a998e3c6
+Author: Suraj Pindoria <suraj.pindoria@yahoo.com>
+Date: 02/09/2015 05:03:32
+Message:
+Fixed browser platform to pass tests and combined tests #MsgLength=56
+
+
+----
+Modified: plugin.xml|2 1
+Modified: tests/tests.js|4 4
+
+Revision: 4e61224c476b21cda87fe38d274fba3db4536cf6
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: 90cdf443dcb05a5a0d0511cc166c5f519d76e6cb
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:50
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: aee93af9a60e5b34832e47f2880deb794618137f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|80 80
+
+Revision: a2416f852c5c7191d6589d401b36d05d51e96dd4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:12:58
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: 2612dd5cf3c844f3c780ca4537f57c39da7cdb26
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:11
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: 80443a97ecedb3ef0b2334f90ba976d15fe103dc
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:06
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 2.0.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: db5313a01921c2eb866cb642d044fca12ed8a707
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|45 45
+
+Revision: 107ba2bcd62ccfd89ad1b862147dc992196639f6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c5e7221e238ad2c78842ce973ba9c66be2dd16e1
+Author: daserge <v-seshak@microsoft.com>
+Date: 15/12/2015 19:59:49
+Message:
+CB-9365 Add support for 'vibrateWithPattern' to Windows Phone 8.1 / Windows 10 #MsgLength=111
+
+
+----
+Modified: README.md|0 4
+Modified: src/windows/VibrationProxy.js|139 12
+Modified: tests/tests.js|14 0
+
+Revision: e613e2e318f093db3791d3d4bb3901f7489d9144
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:35:06
+Message:
+CB-10368 Updated version and RELEASENOTES.md for release 2.1.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 71f03ef56b2b569dab7ee47158ba23f2e5c85fd1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/01/2016 08:58:32
+Message:
+CB-10368 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2475bfaa4daebbc901e5ec4beb845962f1d1e7c9
+Author: t1st3 <contact@tiste.org>
+Date: 08/02/2016 17:34:11
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=259
+
+
+----
+Modified: package.json|1 1
+
+Revision: db41c781874962e4c5141606e5c5a124fbbc6065
+Author: daserge <v-seshak@microsoft.com>
+Date: 01/03/2016 16:43:36
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Modified: .gitignore|1 1
+Added: .jshintrc|17 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/blackberry10/index.js|2 0
+Modified: src/browser/Vibration.js|0 2
+Modified: src/firefoxos/VibrationProxy.js|0 2
+Modified: src/windows/VibrationProxy.js|27 9
+Modified: tests/tests.js|8 8
+Modified: www/vibration.js|2 2
+
+Revision: 5910bdc8085ccfd53a612295e8b49bdb0d80bb06
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:27
+Message:
+ Updated version and RELEASENOTES.md for release 2.1.1 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7cb3818e8ac081095869d946eb9e2a23cf4dc4fe
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:28
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8d111219be668a9db3540b300c910f7181cc9af3
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:51
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: 96b518836e509cf92626607fe1a42450ff207bc5
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:54:00
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: c6ef1c3a59768a171707766fd55f24dccdb735f7
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 17:15:35
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|5 3
+
+Revision: 5976bf0337ecdfea43ad18662d7cb4da08d7a1d7
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:33:00
+Message:
+add JIRA issue tracker link #MsgLength=46
+
+
+----
+Modified: README.md|3 0
+
+Revision: 4f40314885a40771323899dd0183fc3c87fd880f
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 22:44:58
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=397
+
+
+----
+Modified: package.json|7 0
+
+Revision: 591e034213da35a22774e1e7b02858ebb6fe6e96
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:55
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 2.1.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|9 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b1f8a2801d4c2f782c4d7ff01b74549e18b4aa9d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 54c3b88651d1845208129d2c5adcd2f4e11aa392
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:30:12
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=101
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: 9cb2b6184c1dd8d267306120617b3c37294bb4d6
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 17/10/2016 05:07:08
+Message:
+Closing invalid pull requests: close #31 #32 #MsgLength=45
+
+
+----
+
+Revision: ce39a65fa4c0b7aed1a061ce3d6a9800d5193d91
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 17/10/2016 05:10:05
+Message:
+Closing invalid pull requests: close #32 #MsgLength=41
+
+
+----
+
+Revision: fcc6f19a087fe620c63b79a270f5b8a033a1791e
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:47
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 2.1.3 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|191 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: becb8e1bb985e090a5f0e34d268d6594c8f81570
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:08
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d2d003a89c06fedb9d94127f3b1ba17e5e3c24ba
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 18:48:15
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: 7e197a7fd7ddde8427b2c5e7c690cedd8b188068
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 05:00:27
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-vibration #MsgLength=59
+
+
+----
+Modified: RELEASENOTES.md|1 187
+
+Revision: 66f5e71b8f28f569e48de95184e1e2e14472f4a1
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:38:38
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: a109a8240bb70c0657d0a75b546980ce79b3b8df
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 21:12:32
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=68
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|45 0
+
+Revision: 92bf1132b31ccbc247921020c38c05e3d02af9e3
+Author: Simon MAHÉ <mahe.simon@gmail.com>
+Date: 17/03/2016 18:07:23
+Message:
+fix(vibrateWithPattern): function doesn't update the pattern variable reference #MsgLength=98
+
+
+----
+Modified: www/vibration.js|2 2
+
+Revision: eee973f3f5fa4261f5ba6c2924ddef41bd92f3ea
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:27
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 2.1.4 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|98 153
+Modified: tests/plugin.xml|5 30
+
+Revision: 4eba546a7cd377ebf337c5db924501cd5bd63900
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:56:01
+Message:
+Set VERSION to 2.1.5-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|153 98
+Modified: tests/plugin.xml|30 5
+
+Revision: ed8bcfcf9dcd8a975f3e5688e472837591f61fe5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 10:28:10
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: e1cb1138c74dfc0ce7746ec1d5980ae58ec55711
+Author: Santiago Castro <santi.1410@hotmail.com>
+Date: 17/04/2017 10:35:43
+Message:
+Fix broken Markdown headings #MsgLength=29
+
+
+----
+Modified: README.md|8 8
+
+
+Revision: 168204b2eb9e91eb8beb08b560cc87c048ab1a74
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/04/2017 07:52:35
+Message:
+CB-12695: fix jshint / double-varing #MsgLength=37
+
+
+----
+Modified: www/vibration.js|1 1
+
+Revision: 2740f6cd1bdb712462a8f8b223bdfb219cc50eb6
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 21:37:00
+Message:
+CB-12622 Added Android 6.0 build badge to README #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 96c4ad6e06dcdae53111a0be8f33caaf86768107
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:12:44
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 2.1.5 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e313101379b811ae484f32a11e12753bc6633937
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:12:46
+Message:
+Set VERSION to 2.1.6-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5c89c4643e4eee34fabbb3490b37fe42609c405e
+Author: filmaj <maj.fil@gmail.com>
+Date: 26/05/2017 01:08:35
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: 3c1ac0d485dde7243d35c02247db7ef816d367e1
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 27/06/2017 14:25:07
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Modified: .travis.yml|70 3
+
+Revision: 60afe0413badc666268287523108ffcbeb075fc1
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:32:40
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: 5adae3599a0e6579a6e0c195f5bdd69409c52125
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 16:41:17
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: cfd84ed3c89dff8f02d4678256dd03ae43ac621c
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:35:20
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: 899cf92530ea0f24e2bf6249407588d90293dabe
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 31/07/2017 13:55:55
+Message:
+CB-13028 (CI) Browser builds on Travis and AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|3 2
+Modified: .travis.yml|18 2
+
+Revision: d23d7a870ed9fcfe6df076fe1ec49d4a71780d8d
+Author: Audrey So <audreyso@apache.org>
+Date: 13/06/2017 02:43:21
+Message:
+CB-12895 : added eslint and removed jshint #MsgLength=43
+
+
+----
+Added: .eslintrc.yml|10 0
+Modified: package.json|9 3
+Modified: src/blackberry10/index.js|18 18
+Modified: src/browser/Vibration.js|1 1
+Modified: src/firefoxos/VibrationProxy.js|3 3
+Modified: src/tizen/VibrationProxy.js|2 2
+Modified: src/windows/VibrationProxy.js|22 22
+Modified: tests/tests.js|92 116
+Modified: www/blackberry10/vibrate.js|1 1
+Modified: www/vibration.js|25 30
+
+Revision: 9054fc540e6aa17809bb1153264834ac200991d9
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:07:22
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 4b7f09cd567596adc5f26b773ae9419b3bff1fde
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:59:33
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: cdb9869588cc82c04f0bb0d9e675372c118435ec
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 15:23:35
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: ab73db1943e67557109229fa74e9174f0a6cfcd9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:46
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 2.1.6 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 2c639d036a5f0e17a9041bc9a16671d0f80e1b89
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:40
+Message:
+Set VERSION to 2.1.7-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1b9904ca6e7f77357e8c64f09007f301c106d482
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 06/12/2017 08:51:21
+Message:
+CB-13045: Removed android implementation and Updated README #MsgLength=60
+
+
+----
+Modified: README.md|7 2
+Modified: plugin.xml|40 8
+Deleted: src/android/Vibration.java|0 133
+
+Revision: 3aa6142cfa0bbc1cae31f48a2e6107d481a67b97
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 09/12/2017 06:37:17
+Message:
+Removed deprecated components and bumped version #MsgLength=49
+
+
+----
+Modified: README.md|1 55
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: www/vibration.js|1 36
+
+Revision: 8065cf80e87ecb27435851344bb77e35cd423061
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 12/12/2017 02:31:30
+Message:
+Fixed eslint errors #MsgLength=20
+
+
+----
+Modified: www/vibration.js|1 1
+
+
+Revision: 4597751915fe55a855800161fc65c73d3a76c6e9
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 13/12/2017 04:36:21
+Message:
+CB-13672 : Remove multiple inclusion of js-module #MsgLength=50
+
+
+----
+Modified: plugin.xml|0 5
+
+
+Revision: 2a309f9b08635148bcea903359459d622cddeab9
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 13/12/2017 04:58:40
+Message:
+CB-13666 : Removed deprecated platforms #MsgLength=40
+
+
+----
+Modified: README.md|3 20
+Modified: package.json|2 16
+Modified: plugin.xml|0 113
+Deleted: src/blackberry10/index.js|0 82
+Deleted: src/blackberry10/native/.cproject|0 526
+Deleted: src/blackberry10/native/.project|0 51
+Deleted: src/blackberry10/native/device/libVibration.so|0 0
+Deleted: src/blackberry10/native/public/plugin.cpp|0 341
+Deleted: src/blackberry10/native/public/plugin.h|0 91
+Deleted: src/blackberry10/native/public/tokenizer.cpp|0 222
+Deleted: src/blackberry10/native/public/tokenizer.h|0 55
+Deleted: src/blackberry10/native/simulator/libVibration.so|0 0
+Deleted: src/blackberry10/native/src/vibration_js.cpp|0 116
+Deleted: src/blackberry10/native/src/vibration_js.hpp|0 42
+Deleted: src/firefoxos/VibrationProxy.js|0 33
+Deleted: src/tizen/VibrationProxy.js|0 30
+Deleted: src/ubuntu/vibration.cpp|0 64
+Deleted: src/ubuntu/vibration.h|0 54
+Deleted: src/windows/Vibration/.gitignore|0 3
+Deleted: src/windows/Vibration/Properties/AssemblyInfo.cs|0 44
+Deleted: src/windows/Vibration/Vibration.cs|0 55
+Deleted: src/windows/Vibration/Vibration.csproj|0 70
+Deleted: src/windows/VibrationProxy.js|0 253
+Deleted: src/wp/Vibration.cs|0 117
+Deleted: www/blackberry10/vibrate.js|0 26
+
+Revision: f212b973041354341b623126df5a6d6212e08873
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 13/12/2017 07:36:29
+Message:
+CB-13666 : Added windows components back and removed unnecessary tests #MsgLength=71
+
+
+----
+Modified: README.md|8 1
+Modified: package.json|4 2
+Modified: plugin.xml|14 0
+Added: src/windows/Vibration/.gitignore|3 0
+Added: src/windows/Vibration/Properties/AssemblyInfo.cs|44 0
+Added: src/windows/Vibration/Vibration.cs|55 0
+Added: src/windows/Vibration/Vibration.csproj|70 0
+Added: src/windows/VibrationProxy.js|253 0
+Modified: tests/tests.js|0 13
+
+Revision: 1359394b207a4b4c6f0e92093d2f5855776363c1
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 13/12/2017 07:38:24
+Message:
+Updated README #MsgLength=15
+
+
+----
+Modified: README.md|1 1
+
+
+Revision: e6be96084fa67d007c7799fb4b88b134b1916a93
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:25:13
+Message:
+CB-13681 Updated version and RELEASENOTES.md for release 3.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8482af60aa89471332d6951a989def893bc7a450
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:26:45
+Message:
+Set VERSION to 3.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 07611ff99c6008d3551d624a3ae77232822e44a2
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 27/12/2017 23:51:25
+Message:
+CB-13711: Fix to allow 3.0.0 version install (#63) #MsgLength=52
+
+
+----
+Modified: package.json|1 1
+
+Revision: dd4b6f2f3260e72b8377afbff9e3553031921bc0
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:36
+Message:
+CB-13714 Updated version and RELEASENOTES.md for release 3.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|2 185
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9227155ed9ed5c7bb6477a20db6f3e957867ba50
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:50
+Message:
+Set VERSION to 3.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: aa226657b92f208bc61d42c7d6a2e0b922841911
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 30/12/2017 13:50:54
+Message:
+Add build-tools-26.0.2 to travis (#65) #MsgLength=40
+
+
+----
+Modified: .travis.yml|4 0
+
+Revision: 9c3cc43c0089e30371a578ff879afc2bf52d6f42
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 30/12/2017 13:53:33
+Message:
+Fix release notes (#64) #MsgLength=25
+
+
+----
+Modified: RELEASENOTES.md|186 0
+
+Revision: 46d7db8b0b7d62bbe267244d33388e475154aca7
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 09/04/2018 00:35:43
+Message:
+CB-13892:(all) Remove navigator.notification #MsgLength=45
+
+
+----
+Modified: plugin.xml|0 4
+Modified: tests/tests.js|0 77
+
+
+Revision: 930b91d57635fb17d6c7dc38d56b74bd2171aa0c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 06:52:38
+Message:
+CB-14022: documented android quirk with vibration #MsgLength=50
+
+
+----
+Modified: README.md|5 1
+
+Revision: 0b323409f963fe4c0f3e968a2a20b593b66bde98
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:06:22
+Message:
+CB-14030 Updated version and RELEASENOTES.md for release 3.1.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6aac0d1395f2e345fee8877c621b0178a2565e6b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/04/2018 08:16:16
+Message:
+Set VERSION to 3.1.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 8c8d7010579cbf63deeab21800d135ef0d513ae2
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 01/10/2018 18:58:04
+Message:
+also accept terms for android sdk `android-27` #MsgLength=46
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: cf784f5f8256cea695d92a1d04eebf14a2f17a3d
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 04/10/2018 07:17:15
+Message:
+remove JIRA link #MsgLength=16
+
+
+----
+Modified: README.md|0 3
+
+Revision: b7c719b649cf11b7b3904ca5437dd916362cc233
+Author: Pieter <pietering1@gmail.com>
+Date: 14/10/2018 04:23:23
+Message:
+Improve syntax highlighting in docs (#68) #MsgLength=43
+
+
+----
+Modified: README.md|47 42
+
+Revision: 4340e4d0471ba984e086d7598953077adfb84171
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 05/12/2018 23:24:13
+Message:
+remove outdated translations of README (#69) #MsgLength=85
+
+
+----
+Deleted: doc/de/README.md|0 190
+Deleted: doc/de/index.md|0 184
+Deleted: doc/es/README.md|0 189
+Deleted: doc/es/index.md|0 165
+Deleted: doc/fr/README.md|0 171
+Deleted: doc/fr/index.md|0 165
+Deleted: doc/it/README.md|0 190
+Deleted: doc/it/index.md|0 184
+Deleted: doc/ja/README.md|0 190
+Deleted: doc/ja/index.md|0 184
+Deleted: doc/ko/README.md|0 190
+Deleted: doc/ko/index.md|0 184
+Deleted: doc/pl/README.md|0 190
+Deleted: doc/pl/index.md|0 184
+Deleted: doc/ru/index.md|0 170
+Deleted: doc/zh/README.md|0 190
+Deleted: doc/zh/index.md|0 184
+
+Revision: af12fe0eac1788a2da1cdc3de8c960b542531d03
+Author: Tim Brust <ratchet.player@gmx.de>
+Date: 30/01/2019 22:19:46
+Message:
+chore: remove leftover .jshintrc (#77) #MsgLength=778
+
+
+----
+Deleted: .jshintrc|0 17
+
+Revision: 25e9ee1910e1e798810c811aa76715c83bb95b09
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:40:50
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 29a7fc4e598e471a6592f64cf8c0f5f095700667
+Author: Tim Brust <ratchet.player@gmx.de>
+Date: 14/02/2019 04:41:31
+Message:
+fix(typescript): update types (#75) #MsgLength=1018
+
+
+----
+Modified: types/index.d.ts|11 36
+
+Revision: 73b96e482e7adb2e819ca45e4d384f379173ac96
+Author: Tim Brust <ratchet.player@gmx.de>
+Date: 19/02/2019 18:33:51
+Message:
+feat: update typings (#78) #MsgLength=1240
+
+
+----
+Modified: types/index.d.ts|4 2
+
+Revision: 09159285a1f8065dfd4b50012df3a47a474744b6
+Author: Tim Brust <tim.brust@sinnerschrader.com>
+Date: 11/04/2019 05:25:12
+Message:
+chore: drop Node.js v4 support #MsgLength=58
+
+
+----
+Modified: .appveyor.yml|12 5
+Modified: .travis.yml|63 75
+
+Revision: db7b66dda804a45e62720eab2b2b642be8da3249
+Author: Tim Brust <github@timbrust.de>
+Date: 24/04/2019 06:59:15
+Message:
+fix: add android-28 to SDK list #MsgLength=31
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: c8e1c00094210d538a563f5277f6856462b2f9cb
+Author: Tim Brust <github@timbrust.de>
+Date: 24/04/2019 07:04:37
+Message:
+fix: update CI config #MsgLength=21
+
+
+----
+Modified: .travis.yml|40 34
+
+Revision: 06ed825164b49cea268eb74fc89b237e313947ed
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 16/05/2019 17:38:02
+Message:
+Update Travis CI configuration for new paramedic (#80) #MsgLength=56
+
+
+----
+Modified: .travis.yml|105 76
+
+Revision: 524ad47f2d4f0baea17c99ea7eabc7db8c76a37b
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 16/05/2019 17:44:49
+Message:
+Updated version and RELEASENOTES.md for release 3.1.1 (cordova-plugin-vibration#81) #MsgLength=84
+
+
+----
+Modified: RELEASENOTES.md|198 193
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ad9316190f12f6bf8a182d9cb10b7d8c464565ea
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 16/05/2019 17:48:16
+Message:
+Incremented plugin version. (cordova-plugin-vibration#81) #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+
+
+Revision: 1e0f4e0aeb2310e97ee338b73ef36faeaf75e7f2
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 18/06/2019 21:44:32
+Message:
+ci(travis): Remove Android 4.4, Add Android 9.0 #MsgLength=47
+
+
+----
+Modified: .travis.yml|6 2
+
+Revision: 48742c1ee42a12db6999b78b35a4c58e47e1936c
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 03/07/2019 16:28:23
+Message:
+ci(travis): upgrade to node 8 #MsgLength=29
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: f493fbf2932a12861e5ef4d835129eb406a057db
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 03/07/2019 20:47:31
+Message:
+fix(types): remove version number #MsgLength=33
+
+
+----
+Modified: types/index.d.ts|1 1
+
+Revision: 12766231492f613f6eaab55ab0e0acd7b08f1aae
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 06/07/2019 03:38:14
+Message:
+ci(appveyor): add node 12, remove node 6 #MsgLength=40
+
+
+----
+Modified: .appveyor.yml|1 1
+
+Revision: c79c8d2223201397f5959c89f8d266b4a5e680bd
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 21:32:42
+Message:
+ci: updates Node.js versions (#86) #MsgLength=36
+
+
+----
+Modified: .appveyor.yml|2 5
+Modified: .travis.yml|14 13
+
+Revision: ce750706932fbe9d8ee8603054c0a566e26b3c0b
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 21:32:50
+Message:
+chore(npm): adds ignore list (#85) #MsgLength=36
+
+
+----
+Added: .npmignore|3 0
+
+Revision: 63e725960acac841a5b26b349ec8518e32667cb5
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:33:52
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Modified: CONTRIBUTING.md|4 4
+
+Revision: eceee4c3bc296e2f6dc2b96377e3b366f4045614
+Author: Tim Brust <github@timbrust.de>
+Date: 15/04/2020 15:24:40
+Message:
+chore(npm): update package data (#88) #MsgLength=39
+
+
+----
+Modified: package.json|2 7
+
+Revision: 52ca18c29c5c6790ec228bf99bf682c676217a0e
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 15/04/2020 15:40:53
+Message:
+Improve README (#82) #MsgLength=60
+
+
+----
+Modified: README.md|40 28
+
+Revision: b15e782ac205519dd6a536ddbf6f19ed122fe8f0
+Author: Tim Brust <github@timbrust.de>
+Date: 15/04/2020 16:15:53
+Message:
+refactor(eslint): use cordova-eslint /w fix (#89) #MsgLength=51
+
+
+----
+Modified: .eslintrc.yml|22 9
+Modified: package.json|3 9
+Modified: src/browser/Vibration.js|1 1
+Modified: src/windows/VibrationProxy.js|26 9
+Modified: tests/tests.js|88 62
+Modified: www/vibration.js|7 6
+
+Revision: e48ed4f725f21d22df73753c8c1a1c5d2acd9d10
+Author: Tim Brust <github@timbrust.de>
+Date: 15/04/2020 17:12:46
+Message:
+chore(npm): commit package-lock file (#90) #MsgLength=44
+
+
+----
+Added: package-lock.json|1727 0
+
+Revision: 630a51a5e3a03631380b98b8e923c89367083a1d
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:43:19
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: be9db05d09967e6431c3c4c39ced68ef912d9de3
+Author: Tim Brust <github@timbrust.de>
+Date: 22/08/2020 20:32:41
+Message:
+ci(travis): updates Android API level (#93) #MsgLength=45
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: d401e11ec07b5fdd80c044d60c4f2b724c25aab4
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/09/2020 18:33:48
+Message:
+ci(travis): update osx xcode image (#94) #MsgLength=135
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 8a8cb113ee31897a39c1cd356b95f1ee98abbf52
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/11/2020 17:22:50
+Message:
+ci: add node-14.x to workflow (#96) #MsgLength=37
+
+
+----
+Modified: .appveyor.yml|1 0
+Modified: .travis.yml|1 1
+
+Revision: c5388b0028664ac0d35508f281f920769ce7cae1
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/09/2021 21:20:41
+Message:
+ci: add gh-actions workflows (#97) #MsgLength=36
+
+
+----
+Added: .github/workflows/android.yml|148 0
+Added: .github/workflows/chrome.yml|73 0
+Added: .github/workflows/ios.yml|88 0
+Added: .github/workflows/lint.yml|56 0
+
+Revision: d3e5042f9bffe5eded64ff8fac4aa2b7232281ac
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 23:08:31
+Message:
+ci: remove travis & appveyor (#98) #MsgLength=36
+
+
+----
+Deleted: .appveyor.yml|0 33
+Modified: .npmignore|0 1
+Deleted: .travis.yml|0 120
+Modified: README.md|0 4
+
+Revision: 9164464bed48592dbc8c35002cf7bd07b8fc93ea
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:02:49
+Message:
+ci: add action-badge (#99) #MsgLength=28
+
+
+----
+Modified: README.md|2 0
+
+Revision: 1e76669e4ee1f2f373bd948d4091076e5f0c3134
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/10/2021 20:11:03
+Message:
+ci(ios): update workflow w/ iOS 15 (#100) #MsgLength=43
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: 971e042237e99a95c23b575d153426079c2a1873
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/07/2022 13:16:38
+Message:
+ci(android): update java requirement for cordova-android@11 (#102) #MsgLength=68
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: 2e960488a25de5c45a1d5a74518af88dd4f1a0f2
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/07/2022 17:26:22
+Message:
+chore(npm): bump package-lock v2 w/ rebuild (#109) #MsgLength=52
+
+
+----
+Modified: package-lock.json|2986 539
+
+Revision: 60fb0d936422c09489dcbc2458721b5481bf4cbf
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/08/2022 23:42:14
+Message:
+ci: sync workflow with paramedic (#111) #MsgLength=41
+
+
+----
+Modified: .github/workflows/android.yml|12 22
+Modified: .github/workflows/ios.yml|4 13
+

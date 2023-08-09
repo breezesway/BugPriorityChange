@@ -1,0 +1,1642 @@
+Revision: 40f6b4538cb063a7de9a454190d652247c5dadee
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 07/11/2014 08:08:59
+Message:
+Added wkwebview-engine plugin. #MsgLength=31
+
+
+----
+Added: README.md|20 0
+Added: plugin.xml|38 0
+Added: src/ios/CDVWKWebViewEngine.h|27 0
+Added: src/ios/CDVWKWebViewEngine.m|189 0
+Added: src/ios/CDVWKWebViewUIDelegate.h|28 0
+Added: src/ios/CDVWKWebViewUIDelegate.m|123 0
+
+Revision: def716ce1674e0925b8f0a76ab71359faa92113e
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 08/11/2014 10:35:34
+Message:
+Update plugin.xml for new local-webserver location #MsgLength=51
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 0a8c309180a23014229e832029a70d4d49ea1d26
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 11/11/2014 01:42:10
+Message:
+Return nil in init for wkwebview-engine if the runtime does not support it. #MsgLength=76
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|3 0
+
+Revision: 2d5732d135e585acd2030ea6910316ecda65c9f6
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 11/11/2014 09:38:52
+Message:
+Update wkwebview-engine README.md for beta test instructions, and known issues. #MsgLength=80
+
+
+----
+Modified: README.md|24 5
+
+Revision: b9349f08f009c9f175def0494cf55764c0e9cc0d
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/11/2014 23:05:52
+Message:
+Changes in CDWKWebViewEngine to reflect changes in CDVWebViewEngineProtocol. #MsgLength=213
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|18 15
+
+Revision: 2bdc3e574340d9030c3cddb0ee70508967037c2a
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 17/11/2014 05:27:18
+Message:
+Updated wkwebview-engine README #MsgLength=32
+
+
+----
+Modified: README.md|9 2
+
+Revision: d91df648433d785f334e1486078d3968a56ffc20
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 21/11/2014 05:45:44
+Message:
+Changed wkwebview-engine doc to reflect expectations of completeness of the plugin. #MsgLength=84
+
+
+----
+Modified: README.md|1 1
+
+Revision: 46d633fddeed590bea1dc193097ff8e02b3c21a3
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 14/03/2015 04:00:33
+Message:
+CB-8666 - Update CDVWKWebViewEngine plugin to use 4.0.x branch code #MsgLength=68
+
+
+----
+Modified: README.md|4 4
+Modified: plugin.xml|2 2
+Modified: src/ios/CDVWKWebViewEngine.m|1 0
+
+Revision: 88921796f1a87f9a86edb736b9ccb0b5270ab22e
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 14/03/2015 04:08:20
+Message:
+Update wkwebview-engine cordova-ios dependency. #MsgLength=48
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: dd69873c9de3f7fa1ee411602fe54cd2063b2545
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 14/03/2015 08:18:43
+Message:
+CB-8556 - fix handleOpenURL for WKWebViewEngine plugin #MsgLength=55
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.h|1 1
+Modified: src/ios/CDVWKWebViewEngine.m|9 0
+
+Revision: aac2db16c3b9d84a988d76beed6e3fa86ab0c363
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 14/03/2015 09:49:41
+Message:
+Implemented URL property for CDVWebViewEngineProtocol #MsgLength=54
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|5 0
+
+Revision: 0b45e9eb2b401f982344d507940690800d20061e
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 09/04/2015 08:14:09
+Message:
+Fixed plugin ids to new format #MsgLength=31
+
+
+----
+Modified: plugin.xml|3 3
+
+Revision: cc2bdfbeaa1cdedff03e35085776120fa4a6bc40
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 09/04/2015 08:24:10
+Message:
+Updated plugin id for wkwebviewengine #MsgLength=38
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: fa97a17abe14c8e1012910cb9250ec0c2e9d61e1
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 19/04/2015 15:51:49
+Message:
+CB-8839 - WKWebView ignores DisallowOverscroll preference #MsgLength=58
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|16 0
+
+Revision: 1dbc24263e35bf8793c8025e74911a0042ab7a72
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 30/05/2015 07:14:24
+Message:
+Fix compilation error of wkwebview-engine when DEBUG macro is defined. #MsgLength=71
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|11 2
+
+Revision: f2266c6ebadab7020ad92c6ff47fe3d7c2a32bfc
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 30/05/2015 08:08:41
+Message:
+Updated engine tag and incremented wkwebview-engine version. #MsgLength=61
+
+
+----
+Modified: plugin.xml|3 3
+
+Revision: a1ab05aa588f2fa6e3083c4d50ce78a92e416d7e
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 04/06/2015 07:18:28
+Message:
+Updated wkwebview-engine plugin README to remove use of --usegit #MsgLength=65
+
+
+----
+Modified: README.md|2 8
+
+Revision: 0eea525e754059abc3b742c3e0af21cc3cd8f31c
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 23/06/2015 08:01:53
+Message:
+Fixed typo in wkwebview-engine README #MsgLength=38
+
+
+----
+Modified: README.md|1 1
+
+Revision: 0cda51fe9bede3327c9ecce2a7032e2394b61d06
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 25/06/2015 09:11:34
+Message:
+Updated wkwebview-engine plugin README to point to cordova-ios#master instead of 4.0.x branch #MsgLength=94
+
+
+----
+Modified: README.md|1 1
+
+Revision: d21f760d33910c105fe8330357447773d66ed190
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 09/09/2015 06:07:45
+Message:
+Renamed plugin id, changed repo tag value #MsgLength=42
+
+
+----
+Modified: plugin.xml|3 3
+
+Revision: 40f1635b6cbae0ab3b89728995044ecf61900605
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 09/09/2015 06:15:19
+Message:
+Added package.json #MsgLength=19
+
+
+----
+Added: package.json|19 0
+
+Revision: 26aa579878016f215be5c77ec0022693d6967df1
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 10/09/2015 14:35:35
+Message:
+Updated plugin.xml and README.md #MsgLength=33
+
+
+----
+Modified: README.md|3 13
+Modified: plugin.xml|1 2
+
+Revision: 3eaf5270f6485ef0a41cbd93020e5767d6a5bd8b
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 10/09/2015 14:41:01
+Message:
+Fixed warning due to change in parameter definition for the WKUIDelegate protocol implementation #MsgLength=97
+
+
+----
+Modified: src/ios/CDVWKWebViewUIDelegate.m|1 1
+
+Revision: ce2c1ebdfc21c971934ea9d5afaa3a6ba3d1216e
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 10/09/2015 14:50:52
+Message:
+Fixed iOS 9 loadFileURL:allowingReadAccessToURL: selector and file url detection #MsgLength=81
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|1 1
+
+Revision: b39df66f51ff941d242cf525eb9828d9f8b39d29
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 11/09/2015 17:45:30
+Message:
+CB-9636 - Plugin should detect at runtime iOS 8 and use of file:// url and present an error #MsgLength=92
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|35 11
+
+Revision: d05b5bb4d90f477893379cde9cb260734ac513ca
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/09/2015 08:16:08
+Message:
+Removed hard-coded runtime version check, detect feature instead #MsgLength=65
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|1 1
+
+Revision: 9a22dc7f614217d1472a4c8a1a5bc5dff42576d0
+Author: Trevor Brindle <tabrindle@gmail.com>
+Date: 11/09/2015 01:54:59
+Message:
+Update README.md (closes #1) #MsgLength=108
+
+
+----
+Modified: README.md|17 1
+
+Revision: f30ff1cc960c40872602218f8b2f5e7558d8de18
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 23/10/2015 18:15:46
+Message:
+Updated README with new requirements #MsgLength=37
+
+
+----
+Modified: README.md|14 8
+
+Revision: 8cba45fb9612d92024b9375d2a35bf04713dff78
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 23/10/2015 18:35:27
+Message:
+Updated README by adding Application Transport Security (iOS 9) section #MsgLength=72
+
+
+----
+Modified: README.md|15 1
+
+Revision: 629a402d61db4742252cbd93a9b0bd4825a4c87f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 07/11/2015 09:04:49
+Message:
+Added exec bridge js module #MsgLength=28
+
+
+----
+Modified: plugin.xml|4 0
+Added: src/www/ios/ios-wkwebview-exec.js|137 0
+
+Revision: 13b5a0837cfbdb6f272e2cafbe88b5b542a36318
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/11/2015 09:19:47
+Message:
+CB-9979 CB-9972 Change ATS link to new link #MsgLength=44
+
+
+----
+Modified: README.md|1 15
+
+Revision: 76983f1de406a2e1aa418053b3fa2053b7bd4630
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 18/11/2015 09:04:12
+Message:
+CB-10002 - WKWebView should propagate shouldOverrideLoadWithRequest to plugins #MsgLength=79
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|49 0
+
+Revision: d757c17ec6a386d08cf048b3dcbebf4f9f34c134
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Added: RELEASENOTES.md|22 0
+
+Revision: 24a8185f00d6c605aa90479f961d7c6d31907c0e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:11
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: 1ca9684b4ca882c8abe9ee028dd33fb472b68323
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 25/11/2015 08:44:23
+Message:
+CB-10073 - WKWebViewEngine should post CDVPluginResetNotification #MsgLength=66
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|5 0
+
+Revision: b5c8de507b27c83ac3952d1114532b2c5307539b
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 02/12/2015 02:15:27
+Message:
+CB-10106 - iOS bridges need to take into account bridge changes #MsgLength=64
+
+
+----
+Modified: src/www/ios/ios-wkwebview-exec.js|10 1
+
+Revision: 06b90981382457bb99e5edab62c14de683cf05e9
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 02/12/2015 04:04:02
+Message:
+CB-10107 - nativeEvalAndFetch called for all bridges #MsgLength=53
+
+
+----
+Modified: src/www/ios/ios-wkwebview-exec.js|10 0
+
+Revision: 6340ef0729458b604fd964215135a482d4124053
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 04/12/2015 17:29:32
+Message:
+CB-10106 - added bridge proxy #MsgLength=30
+
+
+----
+Modified: src/www/ios/ios-wkwebview-exec.js|27 4
+
+Revision: 4a9cb38787e74b4615638d0f66412d6a09e493b2
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 04/12/2015 17:30:29
+Message:
+CB-10133 - DataClone DOM Exception 25 thrown for postMessage #MsgLength=61
+
+
+----
+Modified: src/www/ios/ios-wkwebview-exec.js|2 1
+
+Revision: f1dbe029bfed8f471d84dfb4804b9cb967f4f0a0
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/12/2015 09:45:42
+Message:
+CB-10146 - Add to README WKWebViewEngine quirks that will affect migration from UIWebView #MsgLength=90
+
+
+----
+Modified: README.md|15 2
+
+Revision: 7361b7067b939321fb347ae55de703bb03330d65
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/12/2015 09:46:01
+Message:
+Updated version to 1.0.0 #MsgLength=25
+
+
+----
+Modified: package.json|1 1
+
+Revision: e06ab93798435dcdaad94627a1b7957409beda97
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/12/2015 09:53:52
+Message:
+Fix Apache RAT license header check #MsgLength=36
+
+
+----
+Modified: README.md|19 0
+Modified: plugin.xml|19 0
+
+Revision: ff29889a0d0a7886a59ebe40f8de09c9cb805aa8
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/12/2015 10:00:58
+Message:
+CB-10149 Updated version and RELEASENOTES.md for release 0.4.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|18 0
+
+Revision: 357acd1778a58e10fc2275a880863de91d376792
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/12/2015 10:02:55
+Message:
+Updated version in plugin.xml to 1.0.0 #MsgLength=39
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 7c8d3a4cb64ce5609c0ee3cc639e2abe0e885348
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/12/2015 10:07:37
+Message:
+CB-10149 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: c9d7e5511d73b028b359a51844e9b1e26a08f12a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2015 01:34:15
+Message:
+CB-10190 - WKWebView engine is not releasing the user-agent lock #MsgLength=65
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|19 0
+
+Revision: dc431d5c892a613ae8299964bc0c9c8ec6ae7224
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2015 02:04:12
+Message:
+CB-10191 Updated version and RELEASENOTES.md for release 1.0.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 22b02a1b82daab691abc119b6e7d38916dae26e4
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2015 02:04:56
+Message:
+CB-10191 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 1bc5766b4aa968a7707d2361c7224074ec41349a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 16/12/2015 02:58:33
+Message:
+CB-10202 - Add README quirk about WKWebview does not work with the AllowInlineMediaPlayback preference #MsgLength=103
+
+
+----
+Modified: README.md|5 0
+
+Revision: faa9d877045d8baf8afdfd0d8689389ec240e2e4
+Author: James Andersen <james.andersen@universalmind.com>
+Date: 15/01/2016 10:02:42
+Message:
+CB-10269: Replace cordova exec only when present in wkwebview #MsgLength=62
+
+
+----
+Modified: src/www/ios/ios-wkwebview-exec.js|8 7
+
+Revision: 7f1409ec6cf4afe4652c8d91d3339c668b53e962
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/02/2016 16:43:38
+Message:
+CB-10557 Updated version and RELEASENOTES.md for release 1.0.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 7924dd19ffd0fa26f3100168fc39675f1e0fcf38
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 09/02/2016 17:44:04
+Message:
+CB-10557 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 73118f95e7e1a3bd8fc9ce3475cffea7153593d9
+Author: daserge <v-seshak@microsoft.com>
+Date: 23/02/2016 21:27:01
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Added: .gitignore|24 0
+Added: .jshintrc|16 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/www/ios/ios-wkwebview-exec.js|6 10
+
+Revision: ac8bc9968be5d2ec1eb9ffc16e007a5f58c4b01d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:27
+Message:
+ Updated version and RELEASENOTES.md for release 1.0.3 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 81042af99474fbc2725c3b23f32286cf1b80a3cc
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:28
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: d70a21dcb88d6812c7156cf06299354a13a4464d
+Author: dlmma <frederikwessberg@Frederiks-MacBook-Pro-4.local>
+Date: 23/02/2016 00:54:39
+Message:
+CB-10817 - Will now reload the webView if a crash occurs #MsgLength=73
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|5 0
+
+Revision: 33a75172a1450e8922788cd23382cc6ec33845c7
+Author: Darryl Pogue <darryl@ayogo.com>
+Date: 16/02/2016 02:53:56
+Message:
+CB-10818 - Support the scroll deceleration speed preference. #MsgLength=131
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|10 0
+
+Revision: dfb337f9a40cdada1dd6f4486c4012ab68398819
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:54:00
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: 639c6cbbc1c280f036e38cadab211394cc376728
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 07/06/2016 06:51:49
+Message:
+CB-11375 - onReset method of CDVPlugin is never called #MsgLength=55
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|5 0
+
+Revision: 7495b04d81f9fa419da4b9b498ab6ace3cbf1c57
+Author: Tony Laidig <laidig@gmail.com>
+Date: 05/05/2016 03:27:29
+Message:
+Update README.md #MsgLength=291
+
+
+----
+Modified: README.md|19 19
+
+Revision: 815ed0741b9ae30b343d6429bd8ff2ad37ec5790
+Author: mccraig mccraig of the clan mccraig <mccraigmccraig@gmail.com>
+Date: 14/06/2016 05:41:05
+Message:
+CB-9888: (iOS) check & reload WKWebView #MsgLength=481
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|43 13
+
+Revision: b8617ff4b28c41b2ad3bcf0d02f56613a740b929
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 29/06/2016 03:55:32
+Message:
+CB-11452 - Update README.md with latest news about AllowInlineMediaPlayback fix #MsgLength=80
+
+
+----
+Modified: README.md|1 1
+
+Revision: d57416a598e943cebdd0154bf06c21ca27e1e14d
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 29/06/2016 08:35:50
+Message:
+CB-11496 - Create Obj-C unit-tests for wkwebview-engine (stubs) #MsgLength=64
+
+
+----
+Added: tests/ios/CDVWKWebViewEngineTest.xcworkspace/contents.xcworkspacedata|7 0
+Added: tests/ios/CDVWKWebViewEngineTest.xcworkspace/xcshareddata/CDVWKWebViewEngineTest.xccheckout|41 0
+Added: tests/ios/CDVWKWebViewEngineTest.xcworkspace/xcshareddata/xcschemes/CordovaLib.xcscheme|77 0
+Added: tests/ios/CDVWKWebViewEngineTest/.gitignore|1 0
+Added: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineLibTests/CDVWKWebViewEngineTest.m|57 0
+Added: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineLibTests/Info.plist|44 0
+Added: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineTest.xcodeproj/project.pbxproj|503 0
+Added: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineTest.xcodeproj/project.xcworkspace/contents.xcworkspacedata|7 0
+Added: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineTest.xcodeproj/project.xcworkspace/xcshareddata/CDVWKWebViewEngineTest.xccheckout|41 0
+Added: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineTest.xcodeproj/xcshareddata/xcschemes/CDVWKWebViewEngineLib.xcscheme|77 0
+Added: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineTest.xcodeproj/xcshareddata/xcschemes/CDVWKWebViewEngineLibTests.xcscheme|96 0
+Added: tests/ios/README.md|40 0
+Added: tests/ios/package.json|13 0
+Added: tests/plugin.xml|29 0
+Added: tests/tests.js|44 0
+
+Revision: 1b31d4d9fafc3b06a8a6f8d958737d2312b415ab
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 29/06/2016 08:39:51
+Message:
+CB-11496 - Create Obj-C unit-tests for wkwebview-engine (fix linker error) #MsgLength=75
+
+
+----
+Modified: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineTest.xcodeproj/project.pbxproj|6 0
+
+Revision: c0a10b72c00d44eae4e5a5af90c7abfdfa153881
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/08/2016 06:47:59
+Message:
+CB-11496 - Add obj-c unit tests for WKWebViewConfiguration, WKPreference #MsgLength=73
+
+
+----
+Modified: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineLibTests/CDVWKWebViewEngineTest.m|65 5
+Modified: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineTest.xcodeproj/project.pbxproj|2 0
+
+Revision: dce192abdf24d631a37e1ace9fe5b72b44c74ecf
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/08/2016 06:48:44
+Message:
+Add ability to set the deceleration rate for the scrollview to 'fast' #MsgLength=70
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|2 0
+
+Revision: 42c847b2680a80e52ffd3617119ddd6634751453
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/08/2016 06:47:59
+Message:
+CB-11074 - Ensure settings from config.xml are taken into consideration #MsgLength=308
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|31 19
+Modified: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineLibTests/CDVWKWebViewEngineTest.m|85 2
+Modified: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineTest.xcodeproj/xcshareddata/xcschemes/CDVWKWebViewEngineLibTests.xcscheme|12 4
+
+Revision: a1da5d22c091ed1d30536ccb31f43a107d89ed4c
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 27/08/2016 09:05:22
+Message:
+CB-11554 - too 'brutal' app reload when title is empty #MsgLength=73
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|20 12
+Modified: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineLibTests/CDVWKWebViewEngineTest.m|33 0
+
+Revision: a4f3e8848508ea8e12e03e168f6cf398400ede1c
+Author: Luca Torella <lucatorella@gmail.com>
+Date: 07/09/2016 15:35:52
+Message:
+CB-11815: (iOS) Fix hard-coded bridge name "cordova" #MsgLength=71
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|1 1
+
+Revision: 88054455c24f0d66e907c1019c7baa96c64ebf5e
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/09/2016 17:53:52
+Message:
+CB-11554 - fixed unit tests #MsgLength=28
+
+
+----
+Modified: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineLibTests/CDVWKWebViewEngineTest.m|2 1
+
+Revision: f9fa06ff036ba668beca2f70bf16e9bae864b4de
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/09/2016 17:43:50
+Message:
+CB-11824 - Update tests to include objective-c tests #MsgLength=71
+
+
+----
+Modified: .travis.yml|11 3
+Modified: package.json|4 5
+Modified: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineTest.xcodeproj/project.pbxproj|2 11
+Modified: tests/ios/package.json|1 1
+
+Revision: d97b63bd7ac0f9a1a25cad451cd5acba8c3cd18f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:55
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|31 15
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 10075b9625eb6aece2dd8c7a4d5ba451fc7f2e76
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 608855bbcb2f16e307f45aca6beef5a4f75e1b36
+Author: Luca Torella <luca@scandit.com>
+Date: 06/09/2016 05:53:17
+Message:
+CB-11818 - Avoid retain cycle: WKUserContentController retains its message handler, to break it we cannot pass directly CDVWKWebViewEngine's instance #MsgLength=168
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|34 1
+
+Revision: 81e889854a5ca8b7bd620f91e945998a280305c3
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:29:03
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=101
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: d9d30f2cf91f307b44ecc5efe1763ae7d0b3bdb3
+Author: Connor Pearson <cjp822@gmail.com>
+Date: 12/10/2016 02:04:37
+Message:
+CB-11997: Add crash recovery for iOS 8 #MsgLength=39
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|26 0
+
+Revision: d5591deceba8936b9bfb7a0d04e60504ed12e407
+Author: Connor Pearson <cjp822@gmail.com>
+Date: 30/11/2016 20:29:10
+Message:
+CB-11997: Code review comments #MsgLength=49
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|2 2
+
+Revision: bf24bb63416a7961196a1ba70023c5ebdad5c955
+Author: kelvinho <kelvinho@igloohome.co>
+Date: 29/11/2016 17:20:02
+Message:
+CB-10228:(iOS) AppendUserAgent not working with WKWebView #MsgLength=58
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|4 0
+
+Revision: c28423b9a51b0b4932430ac0dc34f1eb04dacdd1
+Author: kelvinho <kelvinho@igloohome.co>
+Date: 01/12/2016 00:14:06
+Message:
+added check for at least iOS 9.0 #MsgLength=51
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|1 1
+
+Revision: 4cd73e0969303ca6bf1f1d1767162692fd8fddb8
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 06/12/2016 06:57:13
+Message:
+Updated README.md #MsgLength=18
+
+
+----
+Modified: README.md|6 3
+
+Revision: 91e9d74e78ccec5f77837475937553003b710b01
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:47
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 1.1.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|10 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1c8ef9ab635e490e727f1d6c77a10b5e2b6db5c2
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:08
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6112fd499632abe2b0bf23ceb236c41a173edb9a
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 05:02:29
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-wkwebview-engine #MsgLength=66
+
+
+----
+Modified: RELEASENOTES.md|4 5
+
+Revision: 618380fc914e5ddfe0f5bb4b4f10604382b8772f
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 30/09/2016 06:11:30
+Message:
+CB-11937 - Travis CI build failing #MsgLength=53
+
+
+----
+Modified: .travis.yml|2 1
+Modified: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineTest.xcodeproj/project.pbxproj|13 0
+Modified: tests/ios/package.json|1 1
+Added: tests/ios/test.xcconfig|1 0
+
+Revision: d67f4afa037b43a64829c0d39c4c7d76fc7a3ba9
+Author: Joel Jeske <jjeske@netspend.com>
+Date: 02/02/2017 01:48:13
+Message:
+CB-12414: (iOS) Forward error from provisional load error to standard load error #MsgLength=99
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|5 0
+
+Revision: a16f3f7e255f60d488af8f4868944e663ea34cee
+Author: anand.v.nath@gmail.com <anand.v.nath@gmail.com>
+Date: 23/12/2016 16:43:22
+Message:
+CB-12297 Support WKProcessPool for cookie sharing #MsgLength=68
+
+
+----
+Modified: README.md|1 0
+Modified: plugin.xml|2 2
+Added: src/ios/CDVWKProcessPoolFactory.h|27 0
+Added: src/ios/CDVWKProcessPoolFactory.m|49 0
+Modified: src/ios/CDVWKWebViewEngine.m|2 1
+Modified: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineLibTests/CDVWKWebViewEngineTest.m|6 0
+Modified: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineTest.xcodeproj/project.pbxproj|6 0
+
+Revision: d795e9c71fa9fc7cb7a36b1a337c35e8a330527e
+Author: Fabian Köster <mail@fabian-koester.com>
+Date: 08/12/2016 17:01:24
+Message:
+Allow to configure navigation by gestures #MsgLength=233
+
+
+----
+Modified: README.md|15 5
+Modified: src/ios/CDVWKWebViewEngine.m|2 0
+
+Revision: 6ddef56c05a6d791059661961c699b971c37b495
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 19/02/2017 08:56:05
+Message:
+Fix shell_session_update error on Travis CI. #MsgLength=127
+
+
+----
+Modified: .travis.yml|1 0
+
+Revision: 0af877e5e22cb8c817ff40a601185f6e31d0cd52
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 23/02/2017 05:43:39
+Message:
+CB-12490 - Updated experimental plugin link #MsgLength=44
+
+
+----
+Modified: README.md|1 1
+
+Revision: 8755a699187c7fc2203c98fcc4fa78b89f1c513e
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 23/02/2017 09:38:01
+Message:
+CB-12497 - location.href links are silently disallowed #MsgLength=73
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|6 1
+
+Revision: 5f81d65ea687de5453652a8a6d2472b1e4982b2f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 08:37:15
+Message:
+CB-12519: added missing license header #MsgLength=39
+
+
+----
+Modified: tests/ios/test.xcconfig|20 1
+
+Revision: 0dc05158b152254462ca1e16895d4f6d784266e1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:27
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 1.1.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|2 2
+Modified: plugin.xml|29 59
+Modified: tests/plugin.xml|5 28
+
+Revision: 8e0f533ea207e23db323a0cf97c8e12d6b40d086
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:56:01
+Message:
+Set VERSION to 1.1.3-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|59 29
+Modified: tests/plugin.xml|28 5
+
+Revision: 329edbf10b02b7f8c8438587c2cd6fb2f4d31f6b
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 16/03/2017 06:16:50
+Message:
+CB-12575: cordova-plugin-wkwebview-engine missing LICENSE file #MsgLength=63
+
+
+----
+Added: LICENSE|202 0
+
+Revision: f81a32dd36980fd8d396fd6a7e39b1a63622cbba
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 10:28:47
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: a4d71767125a70cbb712ead0ae4abbfd32305b59
+Author: Bharath Hariharan <bhariharan@salesforce.com>
+Date: 22/04/2017 06:26:13
+Message:
+Fixing some Xcode warnings #MsgLength=45
+
+
+----
+Modified: .gitignore|1 8
+Modified: tests/ios/CDVWKWebViewEngineTest.xcworkspace/xcshareddata/xcschemes/CordovaLib.xcscheme|8 5
+Modified: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineLibTests/Info.plist|1 21
+Modified: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineTest.xcodeproj/project.pbxproj|39 1
+Modified: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineTest.xcodeproj/xcshareddata/xcschemes/CDVWKWebViewEngineLib.xcscheme|8 5
+Modified: tests/ios/CDVWKWebViewEngineTest/CDVWKWebViewEngineTest.xcodeproj/xcshareddata/xcschemes/CDVWKWebViewEngineLibTests.xcscheme|1 1
+
+Revision: fce61236cfc29b44e04f4bd27088c94df5f99ede
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:17:14
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 1.1.3 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3d7005c4e81f6fc489794a12b6beebc136952e4b
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:17:17
+Message:
+Set VERSION to 1.1.4-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 40a42279a16469b3b518fc3429eb895d883a6663
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 04/05/2017 16:05:27
+Message:
+CB-12763 Added build badges #MsgLength=28
+
+
+----
+Modified: README.md|3 1
+
+Revision: 95b0dc40b8d6cd2f656dc0fdf9057fe85eece214
+Author: filmaj <maj.fil@gmail.com>
+Date: 26/05/2017 01:12:03
+Message:
+CB-12847: fixed `bugs` entry in package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: 5a97cc4cb32cb0d858e248cf9759f075e8132a0d
+Author: Audrey So <audreyso@apache.org>
+Date: 03/06/2017 00:59:05
+Message:
+CB-12762 : point package.json repo items to github mirrors instead of apache repos site #MsgLength=106
+
+
+----
+Modified: package.json|1 1
+
+Revision: 6ad33c151a959af6f2ccb6f400f95ecab13869df
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 21/06/2017 04:43:14
+Message:
+Closing stale PRs. This closes #15 #MsgLength=35
+
+
+----
+
+Revision: f88d5113c13ceff503caccf0e262505201bdc593
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 21/06/2017 04:45:07
+Message:
+This closes #20 which is fixed in #32 #MsgLength=38
+
+
+----
+
+Revision: 6df859ba9aa5a90462836d1259f78f8cb8794ee7
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 27/06/2017 15:29:01
+Message:
+CB-12935: (ios) Enable paramedic builds on Travis CI #MsgLength=53
+
+
+----
+Modified: .travis.yml|32 10
+
+Revision: 28d03fe6fed37dd966f91045263afd917ea1bdda
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:33:11
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: 0e23503aa38a42156799af23dc38709a3d926fcc
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 16:45:23
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: 9a7de3bc610bc44dd0eacc4969037973054104c3
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 19:01:47
+Message:
+CB-12935: (CI) Build the plugin for Android platform on Travis #MsgLength=63
+
+
+----
+Modified: .travis.yml|19 6
+
+Revision: 1e3276ec1683ed5a5c538e0179dfc16833ae2da6
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:35:28
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: b2b121b856d0ea92fadca6cae5d8ff283c68f40f
+Author: Audrey So <audreyso@apache.org>
+Date: 13/06/2017 02:59:35
+Message:
+CB-12895 : added eslint and removed jshint #MsgLength=43
+
+
+----
+Added: .eslintrc.yml|12 0
+Modified: package.json|12 3
+
+Revision: 919dbcec374b3a7ebab0131da9870ec25cb10db2
+Author: Audrey So <audreyso@apache.org>
+Date: 01/08/2017 04:52:59
+Message:
+CB-12895 : rebased and updated files #MsgLength=37
+
+
+----
+Modified: .eslintrc.yml|4 6
+Modified: package.json|1 4
+Modified: src/www/ios/ios-wkwebview-exec.js|36 39
+
+Revision: 8d08190f1e1662d8fcef041e1b30f536422a2907
+Author: Chet Corcos <ccorcos@gmail.com>
+Date: 23/08/2017 02:32:27
+Message:
+CB-13205 -  Dynamic swipe back enabled preference #MsgLength=67
+
+
+----
+Modified: README.md|10 3
+Modified: plugin.xml|4 0
+Modified: src/ios/CDVWKWebViewEngine.h|2 0
+Modified: src/ios/CDVWKWebViewEngine.m|16 3
+Added: src/www/ios/ios-wkwebview.js|9 0
+
+Revision: bb3b793598293de7b68a924bce61f800eacd11bc
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 03/11/2017 02:30:03
+Message:
+CB-13529: Don't run Android tests #MsgLength=34
+
+
+----
+Modified: .travis.yml|0 10
+
+
+Revision: 8f5910500926677552a27befcc137113f16526d4
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 01/11/2017 18:21:19
+Message:
+CB-13519 (all): Add 'protective' entry to cordovaDependencies #MsgLength=62
+
+
+----
+Modified: package.json|7 0
+
+
+Revision: 3e58a2803818e1f6739883b400ff4b1b0385ab5f
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 03:38:16
+Message:
+added missing license header #MsgLength=29
+
+
+----
+Modified: src/www/ios/ios-wkwebview.js|21 0
+
+Revision: 9fb282e2ddc535ea791263c8b19a81fac745e487
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:46
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 1.1.4 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b4e2ec003896d110b426e80e46dfddcc274ab758
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:40
+Message:
+Set VERSION to 1.1.5-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7684545d3d911852973146ea71592a6bc3017969
+Author: Hector Romero <hector22x@gmail.com>
+Date: 01/05/2018 15:11:53
+Message:
+CB-13987: (ios) Fix WKWebView doesn't layout properly at launch on iPhone X #MsgLength=76
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|7 0
+
+
+Revision: 4f8503d37cbc710fc20808080f995cde7e444500
+Author: Jonathan Li <jonathan_li2000@yahoo.ca>
+Date: 30/07/2018 23:27:52
+Message:
+Add cordova-ios in plugin keyword for npm plugin searching (#47) #MsgLength=66
+
+
+----
+Modified: package.json|2 1
+
+Revision: bf0f23607e894aa5fd49578021d8511df33e3b9a
+Author: Nauzer <mark@caught.nu>
+Date: 23/08/2018 14:31:07
+Message:
+CB-12815: (ios) Fix bug nativeCallback not executed when app is in background (#49) #MsgLength=241
+
+
+----
+Modified: package.json|1 1
+Modified: src/www/ios/ios-wkwebview-exec.js|1 3
+
+Revision: d0bd80a65bb0fd828bf70106c589d0448d8793d8
+Author: nilsd <nilsd@users.noreply.github.com>
+Date: 19/12/2018 20:36:02
+Message:
+GH-68 (ios): Support for disabling 3D Touch link previews (#69) #MsgLength=200
+
+
+----
+Modified: README.md|9 0
+Modified: src/ios/CDVWKWebViewEngine.m|1 0
+
+Revision: 76bca668dc0bfbbfff074bb385edac0280f5f9e2
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:41:04
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 6f468f48735c5937f497e6a851901d4f68ce7da2
+Author: Alex Hisen <alex@am.net>
+Date: 19/02/2019 23:43:39
+Message:
+Bug fix in recent change in iOSExec.nativeCallback (#78) #MsgLength=112
+
+
+----
+Modified: src/www/ios/ios-wkwebview-exec.js|3 1
+
+Revision: 54af786da7ca3ccb55165d661693dc493976226e
+Author: Tim Brust <ratchet.player@gmx.de>
+Date: 16/04/2019 17:02:33
+Message:
+chore: remove leftover .jshintrc (#90) #MsgLength=1197
+
+
+----
+Deleted: .jshintrc|0 16
+
+Revision: 1f1a8884454cbd9d3006564ae0e2b6ca26e21a6e
+Author: Tim Brust <ratchet.player@gmx.de>
+Date: 18/04/2019 15:51:40
+Message:
+chore: drop Node.js v4 support (#91) #MsgLength=1341
+
+
+----
+Modified: .appveyor.yml|12 5
+Modified: .travis.yml|21 25
+
+Revision: 4b148977a61bd97a6ddff9117618e4651adf0f7b
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/06/2019 01:47:35
+Message:
+chore: add `ecosystem:cordova` to package.json keywords #MsgLength=67
+
+
+----
+Modified: package.json|2 1
+
+Revision: 3697ee1471b0c617fad6e81776084da91f51c629
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/06/2019 21:12:01
+Message:
+ci(travis): Update Travis CI configuration for new paramedic (#93) #MsgLength=218
+
+
+----
+Modified: .travis.yml|61 14
+
+Revision: 9d7c120c0186f8e028361fe2f67b90f48c91990c
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 20:19:34
+Message:
+chore: fix repo and issue urls and license in package.json and plugin.xml #MsgLength=74
+
+
+----
+Modified: package.json|2 2
+Modified: plugin.xml|1 2
+Modified: tests/ios/package.json|1 1
+Modified: tests/package.json|2 2
+
+Revision: a8390a225bcfef1250d0a90ca3e064a031fea76b
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 20:19:56
+Message:
+chore: add CONTRBUTING.md and NOTICE files that were missing #MsgLength=61
+
+
+----
+Added: CONTRIBUTING.md|32 0
+Added: NOTICE|5 0
+
+Revision: 2ddcf98782c2df23f72b1d567b334e1685e6750f
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 20:20:30
+Message:
+build: add `.npmignore` to remove unneeded files from npm package #MsgLength=66
+
+
+----
+Added: .npmignore|16 0
+
+Revision: 797f088b0e1736e1770fc5784293ed3fd2d0ceb0
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 20:20:48
+Message:
+build: add `.gitattributes` to force LF (instead of possible CRLF on Windows) #MsgLength=78
+
+
+----
+Added: .gitattributes|1 0
+
+Revision: fcb71d95e2b11c3914f5e6212f86159107c5636d
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 23:28:50
+Message:
+chore(release): release notes for 1.2.0 #MsgLength=40
+
+
+----
+Modified: RELEASENOTES.md|18 0
+
+Revision: 3015342f10e4f533cb9a682b668afeeffe97f55c
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 27/06/2019 23:28:50
+Message:
+chore(release): 1.2.0 (version string) #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c2dc67477a604775d1e1f67ce1d11228ce8ce505
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 28/06/2019 20:41:15
+Message:
+chore(release): 1.2.1-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 557e275949fad1718a7a83ca089edb0b088d0528
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 04/07/2019 19:47:34
+Message:
+ci(appveyor): replace node 6 with node 12 #MsgLength=41
+
+
+----
+Modified: .appveyor.yml|1 1
+
+Revision: d8c8b3fa3f44e434cf3882a3a83ca0650572ee6b
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 04/07/2019 20:47:47
+Message:
+ci(travis): upgrade to node8 #MsgLength=28
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: dc8b2777bcea9fe2dce4fe5bac6cf548d9d43621
+Author: Darryl Pogue <darryl@dpogue.ca>
+Date: 18/07/2019 05:09:25
+Message:
+Revert "CB-13987: (ios) Fix WKWebView doesn't layout properly at… (#107) #MsgLength=74
+
+
+----
+Modified: src/ios/CDVWKWebViewEngine.m|0 7
+
+Revision: 428db2c79bb4f5916cd1b0dbc99c7e3fa10e1197
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/07/2019 22:12:31
+Message:
+chore(release): release notes for 1.2.1 #MsgLength=40
+
+
+----
+Modified: RELEASENOTES.md|7 0
+
+Revision: 0f8d9f776968275b24ae4826556e47004838dfc1
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/07/2019 22:12:31
+Message:
+chore(release): 1.2.1 (version string) #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 3be1b118f4b629f9a770821ebaa06c0129ea7590
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 20/07/2019 22:19:33
+Message:
+chore(release): 1.2.2-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 42972a66fb2e015e105ff095397cb36150dc110e
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 03:36:16
+Message:
+chore(npm): improve ignore list (#137) #MsgLength=40
+
+
+----
+Modified: .npmignore|2 15
+
+Revision: bed0fec08f5d4e6759c2a508fc36369fa9b26231
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 03:46:30
+Message:
+ci: updates Node.js versions (#136) #MsgLength=37
+
+
+----
+Modified: .appveyor.yml|1 4
+Modified: .travis.yml|10 9
+
+Revision: 6c4cd10f087fa95d272307d8fde932628b36f4ac
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:35:15
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Modified: CONTRIBUTING.md|7 2
+
+Revision: 306a0eeea63ac69da85b9518b34855e9e618aff4
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:43:45
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: 486e5a74ec826b88d156dafe427aabf0827162ab
+Author: Norman Breau <norman@normanbreau.com>
+Date: 05/06/2020 02:58:34
+Message:
+Added ios platform version restrictions (#158) #MsgLength=48
+
+
+----
+Modified: README.md|1 1
+Modified: package.json|2 1
+Modified: plugin.xml|1 1
+Modified: tests/ios/package.json|1 1
+
+Revision: 9a8993c6830424e183ec9a76f9ad7d74fd933f6f
+Author: machinaeXphilip <philip@machinaex.de>
+Date: 12/06/2020 23:34:48
+Message:
+added WKWebViewOnly to Readme (#161) #MsgLength=757
+
+
+----
+Modified: README.md|6 0
+
+Revision: 4fd5c2e7a3d672631904bf308058b9aff6b9be2f
+Author: Tim Brust <github@timbrust.de>
+Date: 06/07/2020 15:17:08
+Message:
+chore(npm): use short notation in package.json (#163) #MsgLength=55
+
+
+----
+Modified: package.json|2 7
+
+Revision: 1d3d242dff2ebe9e214a490c0343a287e9494fdc
+Author: Tim Brust <github@timbrust.de>
+Date: 06/07/2020 16:26:19
+Message:
+refactor(eslint): use cordova-eslint /w fix (#164) #MsgLength=52
+
+
+----
+Modified: .eslintrc.yml|22 9
+Modified: package.json|3 9
+Modified: src/www/ios/ios-wkwebview-exec.js|20 11
+Modified: src/www/ios/ios-wkwebview.js|1 1
+Modified: tests/tests.js|17 13
+
+Revision: 8735c4615a1135bf7d5c50753e44616641236664
+Author: Tim Brust <github@timbrust.de>
+Date: 06/07/2020 16:27:22
+Message:
+chore: adds package-lock file (#165) #MsgLength=38
+
+
+----
+Added: package-lock.json|1724 0
+
+Revision: dae003a324e0157caa979c6d754a9727042a9f11
+Author: Norman Breau <norman@nbsolutions.ca>
+Date: 03/02/2021 09:49:34
+Message:
+Updated version and RELEASENOTES.md for release 1.2.2 (cordova-plugin-wkwebview-engine@1.2.2) #MsgLength=94
+
+
+----
+Modified: RELEASENOTES.md|13 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9c6b185e1a1bcfe745695b9b2892b4f4883a8a83
+Author: Norman Breau <norman@nbsolutions.ca>
+Date: 03/02/2021 10:11:16
+Message:
+Incremented plugin version. (cordova-plugin-wkwebview-engine@1.2.2) #MsgLength=68
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 408f8ed34d0596809d159e007f0a9a3dcfaf2f6c
+Author: Norman Breau <norman@normanbreau.com>
+Date: 08/02/2021 21:20:07
+Message:
+docs: Deprecation notice (#186) #MsgLength=33
+
+
+----
+Modified: README.md|6 0
+

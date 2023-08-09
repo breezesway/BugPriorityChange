@@ -1,0 +1,3148 @@
+Revision: 60526f20115ffa26ec541b506bab28eba2dd5450
+Author: lorinbeer <lorin@adobe.com>
+Date: 25/06/2013 08:04:59
+Message:
+[CB-3975] blackberry 10 dialogs plugin breakout initial commit #MsgLength=63
+
+
+----
+Added: plugin.xml|19 0
+Added: src/blackberry10/index.js|91 0
+
+Revision: a954e4158e372294f5de1f9e46a918250e817297
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 27/06/2013 05:42:21
+Message:
+added notification files #MsgLength=25
+
+
+----
+Modified: plugin.xml|36 4
+Added: src/android/Notification.java|448 0
+Added: src/ios/CDVNotification.bundle/beep.wav|0 0
+Added: src/ios/CDVNotification.h|38 0
+Added: src/ios/CDVNotification.m|155 0
+Added: www/android/notification.js|74 0
+Added: www/notification.js|118 0
+
+Revision: 66e99b98ebce8a48eafe3553f9bebfa820aea098
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 27/06/2013 05:43:49
+Message:
+Added docs + tests #MsgLength=19
+
+
+----
+Added: docs/notification.alert.md|117 0
+Added: docs/notification.beep.md|120 0
+Added: docs/notification.confirm.md|134 0
+Added: docs/notification.md|81 0
+Added: docs/notification.prompt.md|120 0
+Added: docs/notification.vibrate.md|103 0
+Added: test/autotest/html/HtmlReporter.js|101 0
+Added: test/autotest/html/HtmlReporterHelpers.js|60 0
+Added: test/autotest/html/ReporterView.js|164 0
+Added: test/autotest/html/SpecView.js|79 0
+Added: test/autotest/html/SuiteView.js|22 0
+Added: test/autotest/html/TrivialReporter.js|192 0
+Added: test/autotest/index.html|59 0
+Added: test/autotest/jasmine.css|81 0
+Added: test/autotest/jasmine.js|2530 0
+Added: test/autotest/pages/.DS_Store|0 0
+Added: test/autotest/pages/notification.html|71 0
+Added: test/autotest/test-runner.js|62 0
+Added: test/autotest/tests/.DS_Store|0 0
+Added: test/autotest/tests/notification.tests.js|51 0
+Added: test/cordova-incl.js|70 0
+Added: test/index.html|65 0
+Added: test/main.js|163 0
+Added: test/master.css|164 0
+Added: test/notification/index.html|144 0
+
+Revision: 339802dba2a21257f50726ee95c9b469c314f19b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 27/06/2013 06:20:05
+Message:
+removed vibration from android #MsgLength=31
+
+
+----
+Modified: src/android/Notification.java|0 18
+Modified: www/notification.js|0 9
+
+Revision: 3cb274845acfd3cf1c70c42e60fa048873d6a172
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 27/06/2013 06:41:57
+Message:
+removed vibration from ios, fixed beep arc compile bug #MsgLength=55
+
+
+----
+Modified: src/ios/CDVNotification.h|0 1
+Modified: src/ios/CDVNotification.m|5 6
+
+Revision: 73dc8c94b0d5db8246755df5e468eff0dee2e69a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:56
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 5146cde3c88fb1711b80b837e78fcba8b1ccb977
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 06:19:04
+Message:
+[CB-4116] remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|22 0
+Added: src/wp/Notification.cs|367 0
+
+Revision: e5042b3135a9a802af331bb736b720464e579cd1
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 07:49:00
+Message:
+updated to remove conflicts with vibration #MsgLength=43
+
+
+----
+Modified: plugin.xml|4 0
+Modified: src/wp/Notification.cs|1 1
+Added: src/wp/NotificationBox.xaml|62 0
+Added: src/wp/NotificationBox.xaml.cs|41 0
+
+Revision: 3d725c90d22c73ef50572d2d58bb542fd0dde241
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 21:31:32
+Message:
+[CB-4038] - Remove o.a.c.api namespace #MsgLength=39
+
+
+----
+Modified: src/android/Notification.java|4 4
+
+Revision: fd2d76cc3db6b256a27b650cbc352ab695cac685
+Author: Max Woghiren <max.woghiren@gmail.com>
+Date: 12/07/2013 05:45:23
+Message:
+[CB-1605] Warning cleanup! Removed unused import. #MsgLength=49
+
+
+----
+Modified: src/android/Notification.java|0 1
+
+Revision: b24456c01c0d02170de4f4c50846fa488f60fc03
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 16/07/2013 08:52:17
+Message:
+[wp] added beep.wav to dialog src #MsgLength=34
+
+
+----
+Modified: plugin.xml|2 0
+Modified: src/wp/Notification.cs|1 1
+
+Revision: 088e263935502340283c0db2076eaf0638ce8b21
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:16:33
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Added: .gitignore|23 0
+
+Revision: a98352b01a2f9d9d08b02e79ad9cb42a4d4b392c
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 17/07/2013 08:10:12
+Message:
+Fixed notification class name so it works (for now) #MsgLength=52
+
+
+----
+Modified: src/wp/Notification.cs|1 1
+Added: src/wp/notification-beep.wav|0 0
+
+Revision: 4b5c3882f6e53226034ffeb848b44a943a233783
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:16:55
+Message:
+added readme #MsgLength=13
+
+
+----
+Added: README.md|5 0
+
+Revision: 96c52b4d8411f7745fec5e154ad75474a4fc4d07
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 24/07/2013 05:43:30
+Message:
+[CB-4359] Dialogs plugin needs to specify AudioToolbox.framework dependency in plugin.xml #MsgLength=90
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 65372d17e25522bc5f13fedaee1cd7190582192f
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 30/07/2013 09:27:07
+Message:
+[Windows8] added windows8 support #MsgLength=34
+
+
+----
+Modified: plugin.xml|7 0
+Added: src/windows8/NotificationProxy.js|117 0
+
+Revision: da54b6107b853bd4a11ec19c7333d764c0746644
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:32:11
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|4 1
+
+Revision: 02d36df56a00a73b073b6ffa29ed761b90917b0e
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: be19682bedbb4b8edc75061abe8c5a84bac22e89
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 5869bdedee5af1afcf8298e4611972f182258947
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 02:57:52
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|1 1
+
+Revision: f817edfe32856d3f9966ac5d156dca4f8c3c7fc1
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 03:01:52
+Message:
+updated namespace #MsgLength=18
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 084d852e40736cb5f1bf171508c2f9974910c613
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 01/08/2013 07:57:24
+Message:
+[CB-4417] Move cordova-plugin-dialogs to its own Java package. #MsgLength=63
+
+
+----
+Modified: plugin.xml|2 2
+Modified: src/android/Notification.java|1 1
+
+Revision: 196028ed57c34cd760f4561eba4bdafa2d864074
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 05:42:00
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 9824622297a3349e1ae1e44298bcebd3843a187b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+Add empty CHANGELOG.md #MsgLength=23
+
+
+----
+Added: CHANGELOG.md|23 0
+
+Revision: 8eab4539e233989dbaf24f6c78e3e94402535c7a
+Author: Kristoffer Flores <kflores@blackberry.com>
+Date: 24/08/2013 02:14:42
+Message:
+[CB-4592] [Blackberry10] Added beep support #MsgLength=44
+
+
+----
+Modified: plugin.xml|7 4
+Modified: src/blackberry10/index.js|0 4
+Added: www/blackberry10/beep.js|42 0
+
+Revision: f26bc0468e183a1fff65e18b2265df15514e57ea
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:21
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 888a12ba3d54b6c64d75d6147fbf4d8f30c791d3
+Author: Kristoffer Flores <kflores@blackberry.com>
+Date: 24/08/2013 02:14:42
+Message:
+[CB-4592] [Blackberry10] Added beep support #MsgLength=44
+
+
+----
+Modified: plugin.xml|7 4
+Modified: src/blackberry10/index.js|0 4
+Added: www/blackberry10/beep.js|42 0
+
+Revision: 814e60e615a207afc6a013796e0dc171967f688f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: 2ee32ab0b9e2e7fbb3a9a042e885ec8a91b5f470
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:20:10
+Message:
+CB-4889 renaming org.apache.cordova.core.dialogs to org.apache.cordova.dialogs #MsgLength=79
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: c027c9c763f2f5e2d2dbad2113a799f338687cd5
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 22:07:54
+Message:
+CB-4889 renaming reference in Notification.cs #MsgLength=46
+
+
+----
+Modified: src/wp/Notification.cs|1 1
+
+Revision: 69e260607e3b299d113a3af5826e4b9a29991747
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 24/09/2013 16:37:00
+Message:
+[windows8] commandProxy was moved #MsgLength=34
+
+
+----
+Modified: src/windows8/NotificationProxy.js|1 1
+
+
+Revision: 269c71139b76b78902b459886c9d0493bd1b2054
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:50:10
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 7ec5fd6e4a90b8fd2025afe7b7d81b5fa0357af7
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 08:20:35
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.2.2 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|8 1
+Modified: plugin.xml|1 1
+
+
+Revision: 5b2060f444755a05865d5f71a7607908e7f22314
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:13
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: cd576b9b4d2ce6bd71c00b3873c7f8e9d0187917
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 18/09/2013 22:42:19
+Message:
+first (blind) try #MsgLength=18
+
+
+----
+Modified: plugin.xml|13 0
+Added: src/firefoxos/dialogs.js|76 0
+
+Revision: 1f8a91f928c1836dac80c291cc006d77f01cc137
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 19/09/2013 20:10:59
+Message:
+fixed "exec" calls addedd css, but not working yet #MsgLength=51
+
+
+----
+Modified: plugin.xml|4 3
+Renamed: src/firefoxos/notification.js [from src/firefoxos/dialogs.js]|22 39
+Added: www/firefoxos/notification.css|2 0
+Modified: www/notification.js|1 1
+
+Revision: 531b10ca1a87c3d4c5c2bc84f0ddd132d129d472
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 21/09/2013 22:58:41
+Message:
+styling from James #MsgLength=19
+
+
+----
+Modified: www/firefoxos/notification.css|10 2
+
+Revision: 81ee294dae47142a087afadf6634f2820a860cd1
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 27/09/2013 20:33:08
+Message:
+prompt added #MsgLength=13
+
+
+----
+Modified: src/firefoxos/notification.js|22 1
+
+Revision: 8f337f09b99419fac8c54302eaee2e9fcc3d6d11
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 22/10/2013 22:11:55
+Message:
+style added #MsgLength=12
+
+
+----
+Modified: src/firefoxos/notification.js|33 14
+Modified: www/firefoxos/notification.css|207 9
+
+Revision: f88555832250b88b9b6e8dcf27acff29af712450
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 23/10/2013 15:44:50
+Message:
+img files copied inside plugin #MsgLength=31
+
+
+----
+Modified: plugin.xml|6 0
+Added: www/firefoxos/danger-press.png|0 0
+Added: www/firefoxos/danger.png|0 0
+Added: www/firefoxos/default.png|0 0
+Added: www/firefoxos/gradient.png|0 0
+Modified: www/firefoxos/notification.css|7 11
+Added: www/firefoxos/pattern.png|0 0
+Added: www/firefoxos/recommend.png|0 0
+
+Revision: 01db31eaec7ceaebdd280b286e83b15d5587d167
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 23/10/2013 18:56:28
+Message:
+smaller fonts styling input #MsgLength=28
+
+
+----
+Modified: www/firefoxos/notification.css|26 3
+
+Revision: 25e6a24d6c624efb91d83c5a308306028e1586e9
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 25/10/2013 16:03:34
+Message:
+new plugin style #MsgLength=17
+
+
+----
+Modified: src/firefoxos/notification.js|2 4
+
+Revision: 77a73ece0fc90a8a60d12eabf0b7aa3db112f29d
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 25/10/2013 17:19:15
+Message:
+new plugin execute arguments supported #MsgLength=39
+
+
+----
+Modified: src/firefoxos/notification.js|14 4
+
+
+Revision: d422ec37d45c45401f536af00f772822101ed24c
+Author: hermwong <herm.wong@gmail.com>
+Date: 22/10/2013 07:30:27
+Message:
+CB-5128: added repo + issue tag to plugin.xml for dialogs plugin #MsgLength=65
+
+
+----
+Modified: plugin.xml|2 0
+
+
+Revision: 3c47ff482cfe842e961ed20ffb9a5722267a8767
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 02:45:48
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.2.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|13 0
+Modified: plugin.xml|1 1
+
+
+Revision: 20a7dc5567727d45a24ade3d7a73384a25409454
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:14
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 94a35af385b975f77faeaf463d1801474eb63368
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 06/11/2013 02:41:42
+Message:
+added beep funtionality using ms-winsoundevent:Notfication.Default #MsgLength=67
+
+
+----
+Modified: src/windows8/NotificationProxy.js|19 16
+
+Revision: 31252a7436eb7e75dc359d070527f9f0391caa10
+Author: Archana Naik <naika@lab126.com>
+Date: 19/10/2013 02:48:25
+Message:
+1. Added amazon-fireos platform. 2. Change to use amazon-fireos as a platform if user agent string contains 'cordova-amazon-fireos'. #MsgLength=133
+
+
+----
+Modified: plugin.xml|17 0
+Modified: test/cordova-incl.js|4 2
+
+
+Revision: bb8b9e51fb27b5e097c7c9769d6faa6c7ee10abc
+Author: Maxim Ermilov <ermilov.maxim@gmail.com>
+Date: 04/10/2013 21:02:11
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|7 0
+Added: src/ubuntu/notification.cpp|81 0
+Added: src/ubuntu/notification.h|63 0
+Added: src/ubuntu/notification.qml|44 0
+Modified: www/notification.js|1 1
+
+
+Revision: 10ea81ee689cc10bf1a4ad36292c2df044375f34
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:30
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.2.4 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+
+Revision: 2fbdea51e16d5c585e9a0cfb229c26e61dae5e5b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:03
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f046a01e227d1279efb5df9204b2fbc6b9153d13
+Author: sgrebnov <sergei.grebnov@gmail.com>
+Date: 07/08/2013 17:02:37
+Message:
+[CB-2682] [CB-2683] add prompt dialog to Notification API for WP #MsgLength=65
+
+
+----
+Modified: src/wp/Notification.cs|113 0
+
+
+
+Revision: b44c1385a3e1762dc56b6018588400f10fab8320
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 10/12/2013 05:41:26
+Message:
+move images from css to img #MsgLength=28
+
+
+----
+Modified: plugin.xml|6 6
+
+
+Revision: 96c5fa74ef80fd26e01aced561adc341a11b93fd
+Author: mbillau <mike.billau@gmail.com>
+Date: 26/07/2013 21:59:58
+Message:
+CB-3762 Change prompt default to empty string #MsgLength=46
+
+
+----
+Modified: www/notification.js|2 2
+
+
+Revision: a826e662f444b4f57b579bff9551db3aaafdd58b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 18/12/2013 09:49:39
+Message:
+CB-5658 Delete stale snapshot of plugin docs #MsgLength=45
+
+
+----
+Deleted: docs/notification.alert.md|0 117
+Deleted: docs/notification.beep.md|0 120
+Deleted: docs/notification.confirm.md|0 134
+Deleted: docs/notification.md|0 81
+Deleted: docs/notification.prompt.md|0 120
+Deleted: docs/notification.vibrate.md|0 103
+
+Revision: fb00644db61f2047f19ea3c2eef90c106093b630
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 03:21:59
+Message:
+CB-5658 Add doc.index.md for Dialogs plugin #MsgLength=44
+
+
+----
+Modified: README.md|21 4
+Added: doc/index.md|232 0
+
+Revision: 3278c3c92a07c934eec517d1b47a7d6b1e2d0e51
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:02
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|16 16
+
+Revision: 57670fe18a84a8b505e335a6d0a2098f4f467905
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 02/01/2014 23:25:40
+Message:
+CB-4696 Fix compile error for Xcode 4.5. #MsgLength=41
+
+
+----
+Modified: src/ios/CDVNotification.m|2 0
+
+Revision: f8e1e9e51ac6e60bc08cf9a72e3043704f95730d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.2.5 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: plugin.xml|1 1
+
+Revision: 10e367b1bac950b9d041f3455408a015daa1b1ea
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: a1b834edb5d94a7694d28257a48771fd2b062f65
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 09/01/2014 10:11:25
+Message:
+Delete stale test/ directory #MsgLength=29
+
+
+----
+Deleted: test/autotest/html/HtmlReporter.js|0 101
+Deleted: test/autotest/html/HtmlReporterHelpers.js|0 60
+Deleted: test/autotest/html/ReporterView.js|0 164
+Deleted: test/autotest/html/SpecView.js|0 79
+Deleted: test/autotest/html/SuiteView.js|0 22
+Deleted: test/autotest/html/TrivialReporter.js|0 192
+Deleted: test/autotest/index.html|0 59
+Deleted: test/autotest/jasmine.css|0 81
+Deleted: test/autotest/jasmine.js|0 2530
+Deleted: test/autotest/pages/.DS_Store|0 0
+Deleted: test/autotest/pages/notification.html|0 71
+Deleted: test/autotest/test-runner.js|0 62
+Deleted: test/autotest/tests/.DS_Store|0 0
+Deleted: test/autotest/tests/notification.tests.js|0 51
+Deleted: test/cordova-incl.js|0 72
+Deleted: test/index.html|0 65
+Deleted: test/main.js|0 163
+Deleted: test/master.css|0 164
+Deleted: test/notification/index.html|0 144
+
+Revision: 8d7ad69a7b5aed7d1fbbdfde94e8bb852d55e796
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 10/01/2014 22:12:37
+Message:
+FFOS description added #MsgLength=23
+
+
+----
+Modified: doc/index.md|30 0
+
+Revision: 15ac14eacbd1e494b2fc49a271f705355720f57a
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 11/01/2014 02:04:11
+Message:
+no need to recreate the manifest.webapp file after each `cordova prepare` #MsgLength=74
+
+
+----
+Modified: doc/index.md|3 4
+
+Revision: 3c1f5aecdb2a9fe47a962708e2f0bc72c7148d7d
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 27/01/2014 21:36:51
+Message:
+fixing index + prompt response #MsgLength=31
+
+
+----
+Modified: src/firefoxos/notification.js|17 8
+
+Revision: c63dd43bbac25d83c0fd3f9dc4d967bc16b87186
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:59
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.2.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: a85e667838f63f352afc0fcd27907c5167c310b8
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:30
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 18caa06fd520c2803c5f766622123b2e68b3c83d
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+Revision: 9c7d4442f4f74cba573cff8a65deeb4437f21840
+Author: James Jong <wjamesjong@gmail.com>
+Date: 13/03/2014 21:56:58
+Message:
+CB-6212 iOS: fix warnings compiled under arm64 64-bit #MsgLength=54
+
+
+----
+Modified: src/ios/CDVNotification.m|4 3
+
+Revision: 47751e8b04230a21f53a4f494c232c270342fcd5
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 08/04/2014 01:20:02
+Message:
+CB-6411 [BlackBerry10] Updates to beep #MsgLength=202
+
+
+----
+Modified: plugin.xml|1 0
+Modified: www/blackberry10/beep.js|13 16
+Added: www/blackberry10/notification-beep.wav|0 0
+
+Revision: 1e7a122937b23eb19167a92b0c8c7a0fb6cd2a33
+Author: Bryan Higgins <bhiggins@blackberry.com>
+Date: 08/04/2014 23:17:55
+Message:
+CB-6411 [BlackBerry10] Work around Audio playback issue #MsgLength=56
+
+
+----
+Modified: www/blackberry10/beep.js|9 6
+
+Revision: 3deda9014c4d20aa3b4e83fea1abf17c32e5a6d6
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/04/2014 07:14:20
+Message:
+CB-6422 [windows8] use cordova/exec/proxy #MsgLength=42
+
+
+----
+Modified: src/windows8/NotificationProxy.js|1 1
+
+Revision: 913c759118af5187ec6338374014da822c3e52ac
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:17:11
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+Modified: src/firefoxos/notification.js|21 0
+Modified: src/ubuntu/notification.qml|21 0
+Modified: www/firefoxos/notification.css|21 0
+
+Revision: fa7f9adad78b81407ebc64e4371729b06cb22080
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.2.7 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: plugin.xml|1 1
+
+Revision: 8a23a2a4575b7f6d3f10d226aedce32c627b36f4
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 59b70c4349316c4cd479b54eb83b91d60ab94c6d
+Author: Piotr Zalewa <zalun@ubuntu.(none)>
+Date: 26/03/2014 21:20:19
+Message:
+Removing FirefoxOS Quirks * no need to add special permission (it's different API with the same name) * notification.css is added automatically #MsgLength=144
+
+
+----
+Modified: doc/index.md|0 16
+Modified: src/firefoxos/notification.js|13 0
+
+Revision: 4ebf797ab39d903e5ad796adf87393223818e5f2
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 18/02/2014 17:43:02
+Message:
+CB-4966 Dialogs are in window now No need to add anything to manifest or index.html #MsgLength=84
+
+
+----
+Modified: src/firefoxos/notification.js|55 45
+
+Revision: 1374373f293338b551afe58ff27244404f7232f8
+Author: Archana Naik <naika@lab126.com>
+Date: 10/04/2014 13:42:33
+Message:
+Added check for isFinishing() on the parent activity to prevent crashes when trying to display dialogs when activity is in this phase of it's lifecycle #MsgLength=152
+
+
+----
+Modified: src/android/Notification.java|11 5
+
+Revision: 8ca164890335013816dd648dee35505b057e2029
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:25:28
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: a8f5e5ff524a4e23fcc8dcfcd5af86c0daec83fd
+Author: Archana Naik <naika@lab126.com>
+Date: 03/05/2014 09:21:51
+Message:
+[CB-6628][amazon-fireos]dialogs plugin's confirm and prompt methods dont work confirm() method was missing amazon-fireos platform check. added that. prompt() method had bug. It is executed in a worker thread that does not have a message queue(or Looper object) associated with it and hence "can't create a handler" exception is thrown. To fix this issue, we need to create the EditText widget from within the UI thread. This was fixed sometime ago when we added fireos platform but commit got lost somewhere. So fixing it again now. #MsgLength=533
+
+
+----
+Modified: src/android/Notification.java|2 2
+Modified: www/notification.js|1 1
+
+Revision: 7db30d974c2f62ca52f217dfac3c6f9b9f1a1168
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/05/2014 09:43:48
+Message:
+CB-6528 allow scroll on alert message content #MsgLength=46
+
+
+----
+Modified: src/wp/Notification.cs|14 12
+Modified: src/wp/NotificationBox.xaml|38 21
+
+Revision: 5faec77ba6fb8c190fcc0ee8ce8a1cd944ac8d06
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/05/2014 09:49:48
+Message:
+update docs to state that prompt is supported on windowsphone #MsgLength=62
+
+
+----
+Modified: doc/index.md|1 0
+
+Revision: 5001fa326b4a3631e69acabb61d7eb67ecbb4715
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/05/2014 09:57:27
+Message:
+CB-4616 Returned index 0 was not documented for notification.prompt #MsgLength=68
+
+
+----
+Modified: doc/index.md|3 1
+
+Revision: 32c531b5c311c45050b821ba52c5d97be3aa8bc8
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 17/05/2014 13:31:00
+Message:
+CB-5945 [Windows8] do not call success callbacks until dialog is dismissed #MsgLength=75
+
+
+----
+Modified: src/windows8/NotificationProxy.js|4 1
+
+Revision: 6ab473d95aea26f8ca270956e8b4dcd955e86d0c
+Author: Piotr Zalewa <piotr@zalewa.info>
+Date: 29/04/2014 20:51:33
+Message:
+running original windows.open, inAppBrowser is overriding it no need to place CSS in every page anymore #MsgLength=104
+
+
+----
+Modified: src/firefoxos/notification.js|7 13
+
+
+Revision: 8d8d7154ac2bab34ff91a8baf8f9e102ce1ca883
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:27:07
+Message:
+CB-6801 Add license #MsgLength=20
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: 057d6cc4e97b68b04043aea861d8047706af00a6
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:42
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.2.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|13 0
+Modified: plugin.xml|1 1
+
+Revision: fc6134f0bd52cb4a8dd3ebccd07b9f862702ee5b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: fd874c4f316e9ec423b9b9338c04cd2a20c1c096
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 10/06/2014 03:44:16
+Message:
+Add comment about other implementation. #MsgLength=40
+
+
+----
+Modified: src/android/Notification.java|5 0
+
+Revision: d00470f79a926ab11801cfec12eb38db28ea9ba7
+Author: javierbb31 <javier.becerra.ber@gmail.com>
+Date: 01/07/2014 04:56:43
+Message:
+CB-6965. Port notification tests to test-framework #MsgLength=197
+
+
+----
+Added: test/tests.js|48 0
+
+Revision: 8885968037e6d1e9f9a3d2f6d7e86269b6c8da25
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 05:49:25
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-dialogs #MsgLength=67
+
+
+----
+Added: doc/ja/index.md|246 0
+
+Revision: 4eb5fd5b63bb6dfcf4d660a4852675850abcdafd
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:21:54
+Message:
+Lisa testing pulling in plugins for plugin: cordova-plugin-dialogs #MsgLength=67
+
+
+----
+Added: doc/es/index.md|247 0
+Added: doc/fr/index.md|247 0
+Added: doc/it/index.md|247 0
+Added: doc/ko/index.md|247 0
+Added: doc/pl/index.md|247 0
+Added: doc/zh/index.md|247 0
+
+Revision: 6b068c86d354884c4e5c8a4c177dfa7e13ebf33a
+Author: ldeluca <ldeluca@us.ibm.com>
+Date: 28/05/2014 09:36:19
+Message:
+documentation translation: cordova-plugin-dialogs #MsgLength=50
+
+
+----
+Added: doc/de/index.md|247 0
+Modified: doc/ja/index.md|18 17
+
+
+Revision: bb17d7d1bf3c38d2a128c56eb522ca4391f5721f
+Author: Graham Mueller <graham.mueller315@gmail.com>
+Date: 30/04/2014 23:10:59
+Message:
+Fix Beep exception on Android when no argument passed #MsgLength=412
+
+
+----
+Modified: www/notification.js|2 1
+
+Revision: 90ad94c3309619b9e629ccf416d1a787df7c3d0e
+Author: Christiaan Rakowski <cs.rakowski@gmail.com>
+Date: 27/03/2014 17:39:03
+Message:
+android: Explicitly apply default theme to dialogs #MsgLength=261
+
+
+----
+Modified: src/android/Notification.java|4 4
+
+
+Revision: dcd0e05349e642af61d3142e43202fe7fc1ab233
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 03:27:06
+Message:
+CB-6127lisa7cordova-plugin-consolecordova-plugin-dialogs documentation translation: cordova-plugin-dialogs #MsgLength=107
+
+
+----
+Added: doc/ru/index.md|247 0
+
+
+Revision: 1af76d830ae37e748fdaa039e6b8d3b76a57754e
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 19/07/2014 02:13:51
+Message:
+CB-6965 Added manual tests #MsgLength=27
+
+
+----
+Modified: test/tests.js|130 8
+
+Revision: 80a7dae63b3fd881021eba09e74ff3b8a12e6e91
+Author: Edna Morales <ednamorales@ednas-mbp-2.raleigh.ibm.com>
+Date: 25/07/2014 02:22:03
+Message:
+added documentation for manual tests #MsgLength=37
+
+
+----
+Modified: test/tests.js|28 9
+
+Revision: c49e84f1f28eaa9c42f256c203124c64947906e0
+Author: Willy Aguirre <marti1125@gmail.com>
+Date: 29/07/2014 12:09:59
+Message:
+update notification.js #MsgLength=23
+
+
+----
+Modified: src/firefoxos/notification.js|1 1
+
+Revision: 4352ab97d6fa32a15025fa4b2a64a424e2ca8d32
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 28/06/2014 05:22:49
+Message:
+ubuntu: proper message escaping before passing to qml #MsgLength=54
+
+
+----
+Modified: src/ubuntu/notification.cpp|21 17
+Modified: src/ubuntu/notification.h|2 1
+
+Revision: 3f8c964fa322eb553c0f90941d7e0d6aa7296fa1
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 28/06/2014 06:18:33
+Message:
+ubuntu: use TextField instead of TextInput #MsgLength=43
+
+
+----
+Modified: src/ubuntu/notification.qml|2 2
+
+Revision: 0bb58f8731d92b8f45ebc9c5d6a223396bfb96aa
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 28/06/2014 06:33:38
+Message:
+ubuntu: pass proper arguments to prompt callback #MsgLength=49
+
+
+----
+Modified: src/ubuntu/notification.h|2 2
+Modified: src/ubuntu/notification.qml|3 3
+
+Revision: 99e8f4c5301bd20d8269b7f66733910e35efbe24
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:22
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.2.9 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: plugin.xml|1 1
+
+Revision: eecde889d4ce70cf13b6364ed1fefd9af02eb7fb
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:27
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 0527b774af03edfdaa41dea5fa12a39f927f33d1
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 02/08/2014 04:33:07
+Message:
+Renamed test dir, added nested plugin.xml #MsgLength=42
+
+
+----
+Added: tests/plugin.xml|29 0
+Renamed: tests/tests.js [from test/tests.js]|0 0
+
+
+
+Revision: c88acd6ae9b4533d76605ee4876bf914ccd252e0
+Author: mbillau <mike.billau@gmail.com>
+Date: 09/09/2014 21:20:33
+Message:
+Set dialog text dir to locale #MsgLength=30
+
+
+----
+Modified: src/android/Notification.java|11 4
+
+Revision: cc73124af6ab694e5b9f3ac3401664d287ae08a6
+Author: David Peacock <dapeacock@gmail.com>
+Date: 13/09/2014 02:52:01
+Message:
+CB-7538 Android beep thread fix Beep now executes in it's own thread. It was previously executing in the main UI thread which was causing the application to lock up will the beep was occurring.  Closing pull request #MsgLength=216
+
+
+----
+Modified: src/android/Notification.java|18 14
+
+Revision: 64017132b429314cc74acdab4c8c1d87a9ffcf1b
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:41
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.2.10 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 452fee95c0467c9648434b26c8a69ae18b2c4c6b
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:01
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 1e6654d45bd68ebb85c3a023f93d71930202cad8
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 04:27:15
+Message:
+CB-7571 Bump version of nested plugin to match parent plugin #MsgLength=61
+
+
+----
+Modified: tests/plugin.xml|1 1
+
+Revision: 6f3a60b6cbca426d9c4c0855a46ee8139bbe584f
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:11:43
+Message:
+CB-7700 cordova-plugin-dialogs documentation translation: cordova-plugin-dialogs #MsgLength=81
+
+
+----
+Modified: doc/de/index.md|5 5
+Modified: doc/es/index.md|29 29
+Modified: doc/pl/index.md|11 11
+Modified: doc/ru/index.md|11 11
+
+Revision: 81339a61d881ee172bc1d86b97eee5dd4fdf8238
+Author: Steve Wypych <swypych@blackberry.com>
+Date: 28/08/2014 02:11:02
+Message:
+CB-7414 BB10 Document callback parameter for navigator.notification.alert #MsgLength=93
+
+
+----
+Modified: doc/index.md|3 0
+
+Revision: 4cfe290b2a3e8f0aafb71a1ff4fbee4b710c8749
+Author: miqmago <miqmago@users.noreply.github.com>
+Date: 05/09/2014 00:41:38
+Message:
+[Android] Unbreak API level < 14 #MsgLength=114
+
+
+----
+Modified: src/android/Notification.java|26 4
+
+Revision: 27abe2857d4d1514201b8a6d98ecf257da530bf5
+Author: Silver Kuusik <silver.kuusik@gmail.com>
+Date: 23/09/2014 05:51:38
+Message:
+[android] Make spinner dialog to use THEME_DEVICE_DEFAULT_LIGHT (same as the other dialogs) #MsgLength=111
+
+
+----
+Modified: src/android/Notification.java|9 2
+
+Revision: 23bebf96f7a3388c7483afc0091faecf943692d3
+Author: mbillau <mike.billau@gmail.com>
+Date: 17/10/2014 02:28:52
+Message:
+Check for setTextDirection API level #MsgLength=37
+
+
+----
+Modified: src/android/Notification.java|15 12
+
+Revision: 06a1dea0a50cfa8cbf1dcdd837672706fccf907e
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:10:15
+Message:
+CB-7977 Mention deviceready in plugin docs #MsgLength=43
+
+
+----
+Modified: doc/index.md|9 1
+
+Revision: d8d422a4712665a0a63b74aa319769893d6fe17d
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 25/09/2014 21:04:33
+Message:
+CB-7639 Handle button labels as array on windows #MsgLength=49
+
+
+----
+Modified: src/windows8/NotificationProxy.js|8 16
+Modified: www/notification.js|3 2
+
+Revision: cd9c3bb5b1d8a047aeb8615f756cc19dc43eda4e
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 25/09/2014 21:18:18
+Message:
+CB-7639 Revert back isAlertShowing flag in case of exception to prevent queuing of future dialogs. #MsgLength=99
+
+
+----
+Modified: src/windows8/NotificationProxy.js|25 14
+
+Revision: 305020a5279caf1a780890cdbd4c8762d35c716e
+Author: Vladimir Kotikov <v-vlkoti@microsoft.com>
+Date: 25/09/2014 21:21:54
+Message:
+CB-7639 Update docs + manual tests #MsgLength=35
+
+
+----
+Modified: doc/index.md|8 0
+Modified: tests/tests.js|10 5
+
+Revision: 86b4e25a38c082ddcae1534bfb4f39f8f3819e00
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 18/11/2014 03:51:11
+Message:
+CB-8029 test 1-based indexing for confirm #MsgLength=140
+
+
+----
+Modified: tests/tests.js|2 2
+
+
+Revision: 33da80badd0b6cda8cc0c19feb977922f718906b
+Author: Staci Cooper <smcooper@us.ibm.com>
+Date: 19/11/2014 03:55:23
+Message:
+CB-8038 backslash getting escaped twice in bb10 #MsgLength=162
+
+
+----
+Modified: src/blackberry10/index.js|1 1
+
+
+Revision: 0a28d17071e41e9756807b0e954cd457c0031e23
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 26/11/2014 08:17:43
+Message:
+[CB-7737] lower min height for alert #MsgLength=37
+
+
+----
+Modified: src/wp/NotificationBox.xaml|1 1
+
+Revision: d7e34c28b7d1f4e0ecf44fddc3ad12fcfc5ea68b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.2.11 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|15 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: abe48ce39f0a93c3d0884841fe6c616e88e8b89a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:50
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c93d34bd415a61d42191995158fdcaf1e58f142a
+Author: James Messinger <james.messinger@gmail.com>
+Date: 12/12/2014 03:25:22
+Message:
+CB-7955 Add support "browser" platform #MsgLength=262
+
+
+----
+Modified: plugin.xml|8 0
+Added: www/browser/notification.js|94 0
+
+Revision: a3c846983ac1c851de9e823d50225d8b6a0b3592
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/01/2015 22:49:20
+Message:
+CB-8351 Use argumentForIndex rather than NSArray extension #MsgLength=59
+
+
+----
+Modified: src/ios/CDVNotification.m|1 1
+
+Revision: 89ce95be9c683b8f29f835a52ef84a14ee55cf25
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 27/01/2015 17:12:07
+Message:
+Correct way to specify Windows platform in config.xml #MsgLength=54
+
+
+----
+Modified: plugin.xml|7 1
+Renamed: src/windows/NotificationProxy.js [from src/windows8/NotificationProxy.js]|0 0
+
+Revision: e1e25ba5f4a47e9585029b2ae24c5d6eb4423283
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 05:02:46
+Message:
+Add missing license header to www/browser/notification.js #MsgLength=58
+
+
+----
+Modified: www/browser/notification.js|21 0
+
+Revision: d12008f9cd0c8ab6c76f8c14e1288cf01da0cb42
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.3.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d6e2d093204127955652ccbbbd7a11eea7b4ef1e
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:02
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: fbb784641006c6256f471c2ecec0cafa8ad1d850
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 30/01/2015 03:18:16
+Message:
+CB-8367 [org.apache.cordova.dialogs] Add Prompt support on Windows #MsgLength=85
+
+
+----
+Modified: doc/index.md|6 0
+Modified: src/windows/NotificationProxy.js|117 0
+
+Revision: 580b8c364dccddd121d6b497613efb3c7b44a0ec
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 16:19:46
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|43 0
+
+Revision: e7f5977ede71122c868736b4a483ff8cddc0580e
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:49:45
+Message:
+CB-8438 cordova-plugin-dialogs documentation translation: cordova-plugin-dialogs #MsgLength=81
+
+
+----
+Modified: doc/de/index.md|44 18
+Modified: doc/es/index.md|52 52
+Modified: doc/fr/index.md|41 41
+Modified: doc/it/index.md|46 20
+Modified: doc/ja/index.md|44 18
+Modified: doc/ko/index.md|46 20
+Modified: doc/pl/index.md|43 17
+Modified: doc/zh/index.md|54 28
+
+Revision: 574bccb2e282807117eca041c529469bdfe7df37
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 07:35:40
+Message:
+CB-8565 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|13 0
+Modified: README.md|3 0
+
+Revision: f85ef9ad8f8296b596378edfda369458aff1d71f
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 13/03/2015 22:52:31
+Message:
+CB-8659: ios: 4.0.x Compatibility: Remove use of deprecated headers #MsgLength=68
+
+
+----
+Modified: src/ios/CDVNotification.m|0 2
+
+Revision: a05bb882ac248cff8f2a072d564ca9e0097a39ae
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 10:14:56
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|252 2
+Deleted: doc/index.md|0 273
+
+Revision: c990a167400c20ea1460945a2e0e54f3f1d6acab
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:54:36
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 2a9d3a56d35609e438d6c7d4c34d9cb271b78f03
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:31
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+Revision: b97b939403398a6b0dd3f3d3f8bef7a6f9e93643
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:06:00
+Message:
+CB-8653 properly updated translated docs to use new id #MsgLength=55
+
+
+----
+Modified: doc/de/index.md|2 2
+Modified: doc/es/index.md|2 2
+Modified: doc/fr/index.md|2 2
+Modified: doc/it/index.md|2 2
+Modified: doc/ja/index.md|2 2
+Modified: doc/ko/index.md|2 2
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|2 2
+Modified: doc/zh/index.md|2 2
+
+Revision: 91f74f064d77c70fd0f97a10313e7e3e74595aa4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 08:02:08
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a2a75a12d8155d497ebf6d8830be406d2e5c9166
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 02/04/2015 06:51:51
+Message:
+CB-8683 updated wp and bb specific references of old id to new id #MsgLength=66
+
+
+----
+Modified: src/wp/Notification.cs|1 1
+Modified: www/blackberry10/beep.js|1 1
+
+Revision: 77f66f9613e0847dffa602727df2ca3e18f06ee2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 07:56:59
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 6e8948a8e93ef63abf425da106ab02313b91e019
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:38
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|14 0
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 27a309965b33dd5537a5fff4ee46d1d560ddac19
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:47
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 943c91bdf71949b53f7da40e3ef0db85c44583a2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:31:03
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 6b06471cccbde5f679d1f68e2f664ea38d94367e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: f751b8e6f99b93f0085000b85c703a936059e789
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:22
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ee3b02b3c78debe608263d847f7ac69bda1bfca0
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 25/10/2014 06:38:06
+Message:
+CB-7734 - "navigator.notification.alert" or "navigator.notification.confirm" seem have a "many words" issue. (closes #39) #MsgLength=573
+
+
+----
+Modified: src/ios/CDVNotification.m|86 20
+
+Revision: 640a63b09663d39e3e1d607508a04ff417737193
+Author: Rob Paveza <Rob.Paveza@microsoft.com>
+Date: 29/04/2015 06:08:03
+Message:
+CB-8928: Removed direct call to toStaticHTML, only call it if we are sure it's present. This closes #52 #MsgLength=104
+
+
+----
+Modified: src/windows/NotificationProxy.js|7 1
+
+Revision: 439372988b858d2b7e62e2cdf0568ed0c68be198
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/05/2015 08:07:39
+Message:
+CB-8959 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5d2e8f78f6f416c058a7ee31aa3e7653465d83ee
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/05/2015 08:37:22
+Message:
+CB-8959 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 75ca5a91e643e8edef6e8f18798e7ddb50b27e8c
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 02/06/2015 23:47:51
+Message:
+fix npm md #MsgLength=11
+
+
+----
+Modified: README.md|17 17
+
+Revision: 4e1c9311108e079cbf1bc4c4d2c36403c2023b3d
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:40:30
+Message:
+CB-9128 cordova-plugin-dialogs documentation translation: cordova-plugin-dialogs #MsgLength=81
+
+
+----
+Added: doc/de/README.md|275 0
+Added: doc/es/README.md|275 0
+Added: doc/fr/README.md|249 0
+Added: doc/it/README.md|275 0
+Added: doc/ja/README.md|275 0
+Added: doc/ko/README.md|275 0
+Added: doc/pl/README.md|275 0
+Added: doc/zh/README.md|275 0
+
+Revision: c28b4dfaefd56ce55b4615b39436ecbfebbdfaa3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:03
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.1.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: b698f3a7b51a77edcf0173b51c1f8eacf6ac7bbc
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: e2674c798ac99decb0724325132501e307257e10
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:35
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: fb994515f0b8ff054482ebd5740964204c17c3b3
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 08:47:32
+Message:
+remove travis-ci #MsgLength=17
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 2
+
+Revision: 98d3e90cd3b4879bed06c655dc9641107037c678
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 17/07/2015 01:10:06
+Message:
+CB-9347 - fix to allow to stack multiple UIAlertControllers #MsgLength=257
+
+
+----
+Modified: src/ios/CDVNotification.m|16 2
+
+Revision: 7fd94a1f337433c956b9d21d57e89ee64c1be65e
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 17/07/2015 23:04:04
+Message:
+CB-9347 - fix to allow to stack multiple UIAlertControllers #MsgLength=190
+
+
+----
+Modified: src/ios/CDVNotification.m|22 12
+
+Revision: 0e7ae85e1e63d9e831a8f99c219458dca0bd2c5a
+Author: Bernd Oeggl <bernd@komplett.cc>
+Date: 24/09/2015 16:18:57
+Message:
+add CSS class to prompt div for windows platform #MsgLength=49
+
+
+----
+Modified: src/windows/NotificationProxy.js|1 0
+
+
+Revision: 5889c7cd2ce3e8c36a7f4bd754ffd2e119825f55
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: 30eeafc275fda6ac2c943bf64dadf6031003267a
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:50
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: a476443182e30a12bf315e7079d9d24d73e8eee7
+Author: Rob Close <rob-close>
+Date: 26/02/2015 04:28:36
+Message:
+CB-8549 Updated source to pass Fortify scan. #MsgLength=161
+
+
+----
+Modified: src/android/Notification.java|31 9
+
+Revision: b05162562316a3dabfda7bd9b460079d781d6276
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|92 93
+
+Revision: e92ba3f8517e0b295ff468404d08aead6363d7f6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:10
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: 9d9db3d2b800270b71a24d7ccfa1b71420522ace
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:05
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 1.2.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 0ca5c139f65cdbaf1e0180b6b1f35f01d8641ff6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|54 54
+
+Revision: 8f31f6f2ca1952e2bc2b549d30875527c98e67ba
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 19/11/2015 13:25:15
+Message:
+correct block usage #MsgLength=20
+
+
+----
+Modified: src/ios/CDVNotification.m|29 24
+
+Revision: 03444fcfe204d0576313702b5fe5ac2c6732798d
+Author: ipaterson <ipaterson@newstex.com>
+Date: 05/08/2015 03:33:40
+Message:
+Allow a blank string for dialog titles and messages. #MsgLength=53
+
+
+----
+Modified: www/notification.js|4 4
+
+
+Revision: 0670c8842458800d56cfabe1aaac10ca37ac6c04
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:27:02
+Message:
+add JIRA issue tracker link #MsgLength=28
+
+
+----
+Modified: README.md|2 1
+
+
+Revision: cf2233492a4ef9faf140456ed253552a70500a32
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 19/11/2015 13:49:56
+Message:
+Close conflicted/duplicate/stale pull requests. This closes #27. Closes #54. Closes #6. #MsgLength=88
+
+
+----
+
+Revision: 03d7f6818355d5f1e11ad0bd2cf016a284bb3af0
+Author: tortoyoyo <tortoyoyo@gmail.com>
+Date: 18/01/2014 03:32:32
+Message:
+Update notification.js #MsgLength=480
+
+
+----
+Modified: src/firefoxos/notification.js|1 1
+
+
+
+Revision: 67dfe94b68faf41dade8086545ebb827d062123b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: cb81ad6829c628987dca5690296ea8b7d4ac9753
+Author: t1st3 <contact@tiste.org>
+Date: 07/02/2016 16:32:40
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=259
+
+
+----
+Modified: package.json|1 1
+
+Revision: c173b511a3ef1ea906915883db309b1fbda70e2d
+Author: daserge <v-seshak@microsoft.com>
+Date: 27/02/2016 00:53:20
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Modified: .gitignore|1 1
+Added: .jshintrc|17 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: src/blackberry10/index.js|2 0
+Modified: src/firefoxos/notification.js|3 3
+Modified: src/windows/NotificationProxy.js|18 12
+Modified: tests/tests.js|15 6
+Modified: www/blackberry10/beep.js|18 14
+Modified: www/browser/notification.js|15 15
+
+Revision: f9252d63430dc6c18b6421d45139d672124c21bf
+Author: EddyVerbruggen <eddyverbruggen@gmail.com>
+Date: 29/02/2016 20:14:19
+Message:
+CB-10727 Dialogs plugin has warnings on iOS #MsgLength=44
+
+
+----
+Modified: src/ios/CDVNotification.m|5 7
+
+Revision: d6ac43956d7089e95e52fec5a031d760d3a9549d
+Author: Omar Mefire <omefire@gmail.com>
+Date: 03/03/2016 05:21:56
+Message:
+Remove 'warning' emoji, as it doesn't correctly display in the docs website: http://cordova.apache.org/docs/en/dev/cordova-plugin-dialogs/index.html #MsgLength=149
+
+
+----
+Modified: README.md|1 1
+
+Revision: 1485667c80cbc34da5cf69df174290502eb79b66
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 07/04/2016 04:42:25
+Message:
+CB-10097 dialog doesn't show on iOS when called from a select list onChange event #MsgLength=206
+
+
+----
+Modified: src/ios/CDVNotification.m|1 1
+
+Revision: 072116bbfd131930d801b5548e4540d6388b3c70
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 07/04/2016 05:06:37
+Message:
+Closing stale pull request: close #57 #MsgLength=38
+
+
+----
+
+Revision: 523de37e5b4699655ccca564cb2bba84c4adcf4d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:26
+Message:
+ Updated version and RELEASENOTES.md for release 1.2.1 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e9292b5e7cdf1032f558387165d55ef75ab2b7a3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:27
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: bf7d67ab31dc5dad1ef65f10ea7bdb88f3c19e6c
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:50
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: 76f87859a8b83eda6fa7db868778e7f44f50c948
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 19/04/2016 23:30:39
+Message:
+Simply add Browser to supported platforms #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+
+Revision: e69e8bc5ae31378237487807b2d7f24f7cd8d0db
+Author: Andrew Zellman <zellman@adobe.com>
+Date: 07/05/2016 03:17:24
+Message:
+CB-11218 Convert button list to appropriate type #MsgLength=171
+
+
+----
+Modified: www/notification.js|32 16
+
+Revision: 8e1e3716350b240af44a7d714e19ec9dd3444d7d
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:53:59
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: b158fd93e07a4e94f3ac27cbde3d033b62e16376
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 25/05/2016 03:21:01
+Message:
+Closing stale PRs. This closes #77 #MsgLength=35
+
+
+----
+
+Revision: 9dd1cbc5163efb181352f90446edcc0c41ec166a
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 16:53:29
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|3 1
+
+Revision: 85b6bdca512bd8eb5772c449685a21d609f260f0
+Author: Don Coleman <dcoleman@chariotsolutions.com>
+Date: 29/07/2016 02:55:01
+Message:
+CB-8947:(ios) Fix crash. Convert non-string messages to strings. Added tests. #MsgLength=96
+
+
+----
+Modified: tests/tests.js|31 1
+Modified: www/notification.js|6 4
+
+Revision: e0efdefdea325395b6aa345f39c1b40e625f519c
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 30/07/2016 19:34:15
+Message:
+Closing stale pull request: close #78 #MsgLength=38
+
+
+----
+
+Revision: 7c4a5de3ad965fc4830c98610afc4e05968db803
+Author: Nikita Matrosov <nikita.matrosov@rp.ru>
+Date: 15/08/2016 16:42:44
+Message:
+CB-11677 Android: made text, entered to prompt dialog visible #MsgLength=153
+
+
+----
+Modified: src/android/Notification.java|9 1
+
+Revision: 45850406a3115c788ab513d26d8be94cf0e63d9e
+Author: Connor Pearson <cjp822@gmail.com>
+Date: 02/04/2015 08:12:11
+Message:
+CB-8773: Fix for iOS 8 keyboard not appearing on prompt #MsgLength=74
+
+
+----
+Modified: src/ios/CDVNotification.m|8 0
+
+Revision: fc5dfdb9d45eab8895e4e42520076010aa29eec3
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 22:38:19
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=397
+
+
+----
+Modified: package.json|7 0
+
+Revision: c1fc59cbf6431871a7d9de4c053a4b6712096d21
+Author: Serban Ghita <sghita@adobe.com>
+Date: 04/05/2016 21:34:45
+Message:
+Separated CSS from JS code. Fixed the prompt dialog CSS to look close to native. Fixed the positioning of the prompt dialog for Windows. Fixed minor JSHint issues. #MsgLength=182
+
+
+----
+Modified: plugin.xml|12 10
+Modified: src/windows/NotificationProxy.js|35 31
+Added: www/windows/notification.css|63 0
+
+Revision: 484ad35659d50b2d66539b6a7b77ffde6d76d7f5
+Author: DeshanKTD <deshankalupahana@gmail.com>
+Date: 24/08/2016 03:23:48
+Message:
+CB-11281 windows: defaultText is not taken as input if no input by user fixed #MsgLength=78
+
+
+----
+Modified: src/windows/NotificationProxy.js|1 1
+Modified: tests/tests.js|4 4
+
+
+Revision: 03c8ad9df8a529007a592bfc42cb4631f3440f4f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/09/2016 08:59:28
+Message:
+Select the text and put default value in the input directly. #MsgLength=61
+
+
+----
+Modified: src/windows/NotificationProxy.js|2 1
+
+Revision: ece39a0abc72c38a3adec2edb27f2c9dcce7708a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 12:09:25
+Message:
+CB-11832 updated missing header file #MsgLength=37
+
+
+----
+Modified: www/windows/notification.css|22 1
+
+Revision: fef904c72892d45090a8a41da02328311a9e0f78
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:54
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 1.3.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|18 3
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 542e7f7c9f9b5a6d9af48f71549c7d988f91145a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 02a424255b601a64fc2c5d5c4f5ff4b31a0cd5c5
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/09/2016 04:38:33
+Message:
+Added test for [windows] CB-11281 when called without defaultText #MsgLength=66
+
+
+----
+Modified: tests/tests.js|4 0
+
+
+Revision: 5ebefa82d5220b4525602b3c38e9198095f80d8c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/09/2016 07:05:38
+Message:
+Add enter key handling and map to default button. #MsgLength=50
+
+
+----
+Modified: src/windows/NotificationProxy.js|7 0
+
+Revision: 68ceff4d0ef5c5de9144d09d7a05712c439951c1
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/09/2016 07:27:49
+Message:
+Fix dumb linting error #MsgLength=23
+
+
+----
+Modified: src/windows/NotificationProxy.js|3 1
+
+Revision: d34092cd37c386b02d836c9cac5c14b38415e111
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/09/2016 07:34:23
+Message:
+Close #86 #MsgLength=10
+
+
+----
+
+Revision: 5ecb3506e0de87d0465713857af132e68c543f00
+Author: Kevin Boosten <kevin.boosten@qnh.nl>
+Date: 16/08/2016 15:34:00
+Message:
+Make sure the alert buttonLabel is a string #MsgLength=44
+
+
+----
+Modified: www/notification.js|1 1
+
+
+Revision: 2b732482a5cf9dc4814dcb22cf5fc6a94ee652ba
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/09/2016 08:37:07
+Message:
+Replace empty buttonLabel with 'OK' #MsgLength=36
+
+
+----
+Modified: www/notification.js|1 1
+
+Revision: baee8130920a74514fd809808b1939b3fbfa94af
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/09/2016 08:45:36
+Message:
+Close #43 #MsgLength=10
+
+
+----
+
+Revision: 6606fcb6389be8973eeed1d30166fb7e34505496
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:33:44
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=101
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: 233aff26f8102d25ed531518c83c4e2be7127bdf
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:44
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 1.3.1 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|193 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d83797b97520a3dc67dec1049fbfdce892fadef8
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:07
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 30a3805862cea96ac53e56da873e0d7fd8d9f9aa
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 18:14:30
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: df64dbdbd0426d6c3846a658861bc4faef7f4bdf
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:46:06
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-dialogs #MsgLength=57
+
+
+----
+Modified: RELEASENOTES.md|1 185
+
+Revision: e5b7cb83fb768f385642e488229f8b22498412ad
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:29:39
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: ac4b0e064cde49470fc61a09a85cbf5f91ae2388
+Author: Nikita Matrosov <v-nimatr@microsoft.com>
+Date: 19/01/2017 21:06:51
+Message:
+CB-12369: Add plugin typings from DefinitelyTyped #MsgLength=68
+
+
+----
+Modified: package.json|1 0
+Added: types/index.d.ts|69 0
+
+Revision: 3b5cc87e7c8b15cbb91c77c216c766917aa007c7
+Author: daserge <v-seshak@microsoft.com>
+Date: 19/01/2017 00:24:17
+Message:
+CB-12353 Corrected merges usage in plugin.xml #MsgLength=46
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 6256967a12d3ef837dd7cac2192f5844c9a1fd21
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/02/2017 11:26:18
+Message:
+Closing abandoned pull requests. This closes #14, closes #71 #MsgLength=61
+
+
+----
+
+Revision: 65667985d71f5b5818914078a4fee5c85d3d6832
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:26
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 1.3.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|113 171
+Modified: tests/plugin.xml|5 28
+
+Revision: d6a11bd0615214446b015f2971640e724d81d79c
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:56:00
+Message:
+Set VERSION to 1.3.3-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|171 113
+Modified: tests/plugin.xml|28 5
+
+Revision: be009a8f93e7b946b6f3304f51ab40b2585a6ea9
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 10:14:16
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: 9160f4ec17b5d4d7a3ec91e46162cb118f2a587a
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/04/2017 08:38:15
+Message:
+Close #92 #MsgLength=10
+
+
+----
+
+Revision: 8a15d04e98a42150e5aaf76d38e15c2a242ae44a
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 20:36:40
+Message:
+CB-12622: Added Android 6.0 build badge to README #MsgLength=50
+
+
+----
+Modified: README.md|3 3
+
+Revision: 34cccf6b027bb328a92fbbdb89b9861634b22d12
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 03:37:38
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 1.3.3 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 40b91dd54a7749fd0cb85dfa80d511e19aeeb0ef
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 03:37:43
+Message:
+Set VERSION to 1.3.4-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 29e3faaae517d662ea9e26c8f250162848a213aa
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 03:40:41
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: 773336ebfa8600b931347538e098f4644c8b9903
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 18:43:46
+Message:
+CB-12847: fixed `bugs` entry in package.json. #MsgLength=46
+
+
+----
+Modified: package.json|1 1
+
+Revision: a22b0eb7fd013e5b50486ebc54e6396780cad999
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/06/2017 14:32:31
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Modified: .travis.yml|70 3
+
+Revision: 1112345f0df0ef5bccb1ace96132c3ded1a03eab
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:31:13
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: f152f7a3ac9bbaf1ce1583f8f4cce10cd2b254ac
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 15:06:36
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: 3641448ba62fd7f89216d96d59858fb066308530
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:33:59
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: 59f148ca448ea5361e9a1b88efbed39ff1ff9d8a
+Author: filmaj <maj.fil@gmail.com>
+Date: 15/07/2017 05:02:42
+Message:
+CB-4615: document Android quirk around maximum number of button labels supported for the `confirm` method. #MsgLength=107
+
+
+----
+Modified: README.md|4 0
+
+Revision: 822594106a6b59897c12230b7823fd14956e4812
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/07/2017 19:10:21
+Message:
+CB-13028 (CI) Browser builds on Travis and AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|3 2
+Modified: .travis.yml|16 0
+
+Revision: 0b532b6eeb04c6adbccfea60f132f88de0c14755
+Author: Audrey So <audreyso@apache.org>
+Date: 10/06/2017 07:01:13
+Message:
+CB-12895 : setup eslint and removed jshint #MsgLength=43
+
+
+----
+Added: .eslintrc.yml|10 0
+Deleted: .jshintrc|0 17
+Modified: package.json|9 3
+Modified: src/blackberry10/index.js|25 25
+Modified: src/firefoxos/notification.js|27 31
+Modified: src/windows/NotificationProxy.js|40 41
+Modified: tests/tests.js|41 41
+Modified: www/android/notification.js|7 7
+Modified: www/blackberry10/beep.js|8 8
+Modified: www/browser/notification.js|16 21
+Modified: www/notification.js|25 25
+
+Revision: 8de6d3a90a5f5bd7ff5c6b1002a82c3ea67d18eb
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:05:28
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 8274a6c36658e5d84d633a0f41fc0357a488ec88
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:58:44
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: a384247d7828b4212d40959c9bbd5d0b250c7b6d
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 15:22:38
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: 10887f402682835855203208f008fb04ae914e6a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:44
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 1.3.4 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7e76d8d312c6d742b5a44577d1374c8a8d89806d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:39
+Message:
+Set VERSION to 1.3.5-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5a03f7fb469912de10070eae144862efef825b02
+Author: Jonathan Li <jonathan_li2000@yahoo.ca>
+Date: 16/11/2017 06:18:05
+Message:
+CB-13555 (ios) Present notification view controller by inappbrowser view controller (#98) #MsgLength=170
+
+
+----
+Modified: src/ios/CDVNotification.m|5 2
+
+Revision: 87c1665f102b17c84372f01fd7f766ea27e4b21e
+Author: Suraj Pindoria <pindoria.suraj@gmail.com>
+Date: 13/12/2017 03:59:48
+Message:
+CB-13671: Remove deprecated platforms #MsgLength=38
+
+
+----
+Modified: README.md|0 65
+Modified: package.json|1 15
+Modified: plugin.xml|2 93
+Deleted: src/blackberry10/index.js|0 89
+Deleted: src/firefoxos/notification.js|0 151
+Deleted: src/ubuntu/notification.cpp|0 85
+Deleted: src/ubuntu/notification.h|0 64
+Deleted: src/ubuntu/notification.qml|0 65
+Deleted: src/wp/Notification.cs|0 482
+Deleted: src/wp/NotificationBox.xaml|0 79
+Deleted: src/wp/NotificationBox.xaml.cs|0 41
+Deleted: src/wp/notification-beep.wav|0 0
+Deleted: www/blackberry10/beep.js|0 46
+Deleted: www/blackberry10/notification-beep.wav|0 0
+Deleted: www/firefoxos/danger-press.png|0 0
+Deleted: www/firefoxos/danger.png|0 0
+Deleted: www/firefoxos/default.png|0 0
+Deleted: www/firefoxos/gradient.png|0 0
+Deleted: www/firefoxos/notification.css|0 248
+Deleted: www/firefoxos/pattern.png|0 0
+Deleted: www/firefoxos/recommend.png|0 0
+
+
+Revision: 839eb34d067eaf07cd52feaaf9557dcb79ad2957
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:25:12
+Message:
+CB-13681 Updated version and RELEASENOTES.md for release 2.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5041eac9f30332076757139bba0da7704acf7e17
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:26:44
+Message:
+Set VERSION to 2.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: a3468468dd341b274de20f83f8b00efbaf9d6d1b
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 27/12/2017 07:13:33
+Message:
+CB-13703: Fix to allow 2.0.0 version install #MsgLength=45
+
+
+----
+Modified: package.json|1 1
+
+
+Revision: c4e079de5f1f6a06ca2187712d89ca65abb69f06
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:36
+Message:
+CB-13714 Updated version and RELEASENOTES.md for release 2.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|2 197
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c1b6d3d07bcf8ebb937f8ccd0e18c134859d9892
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:49
+Message:
+Set VERSION to 2.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c24c7335f69416ef06b78dcd70b038b4f48cc8b5
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 30/12/2017 13:58:45
+Message:
+Fix release notes (#101) #MsgLength=26
+
+
+----
+Modified: RELEASENOTES.md|198 0
+
+Revision: ef89d9f517493a6e8a002bcc77a6ed1b5e869554
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 11/01/2018 06:19:44
+Message:
+CB-13756: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: 6d88a8c6071d5b8798270a0bb04a9f7553c79b0d
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 01/10/2018 18:52:51
+Message:
+also accept terms for android sdk `android-27` #MsgLength=46
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: b87526e8c5ddb5ed46272daebeefe78d21716dc2
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 01/10/2018 21:58:14
+Message:
+Remove docs translations (#107) #MsgLength=101
+
+
+----
+Deleted: doc/de/README.md|0 275
+Deleted: doc/de/index.md|0 273
+Deleted: doc/es/README.md|0 275
+Deleted: doc/es/index.md|0 247
+Deleted: doc/fr/README.md|0 249
+Deleted: doc/fr/index.md|0 247
+Deleted: doc/it/README.md|0 275
+Deleted: doc/it/index.md|0 273
+Deleted: doc/ja/README.md|0 275
+Deleted: doc/ja/index.md|0 273
+Deleted: doc/ko/README.md|0 275
+Deleted: doc/ko/index.md|0 273
+Deleted: doc/pl/README.md|0 275
+Deleted: doc/pl/index.md|0 273
+Deleted: doc/ru/index.md|0 247
+Deleted: doc/zh/README.md|0 275
+Deleted: doc/zh/index.md|0 273
+
+Revision: 005771514ba63cfdfdefa1faed7a637f060759f9
+Author: Jan Piotrowski <piotrowski+github@gmail.com>
+Date: 04/10/2018 07:15:18
+Message:
+remove JIRA link #MsgLength=16
+
+
+----
+Modified: README.md|0 2
+
+Revision: ed0e46529d1cde51ad22f2db075fe19900d16b0e
+Author: Chris Brody <chris.brody@gmail.com>
+Date: 28/01/2019 06:56:13
+Message:
+Cleanup: remove trailing whitespace (#120) #MsgLength=44
+
+
+----
+Modified: src/android/Notification.java|15 15
+
+Revision: d5f09ce42cc279b24a582ae897f27458e698f0d9
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:39:02
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: 419a8382e26258cad08d968ce5a1b3bcc8b11deb
+Author: Hazem Saleh <hazems@apache.org>
+Date: 05/03/2019 21:32:58
+Message:
+GH-122 android: Cleanup Dialog plugin code (#123) #MsgLength=717
+
+
+----
+Modified: src/android/Notification.java|41 28
+
+Revision: f6e41654adf53c07156bfb56fd3804896121d9a0
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 18/06/2019 22:46:25
+Message:
+ci(travis): Update Travis CI configuration for new paramedic (#127) #MsgLength=208
+
+
+----
+Modified: .travis.yml|109 76
+
+Revision: 292e13a22ca25a000b373117fcdd8c7d0bb37663
+Author: Hazem Saleh <hazems@apache.org>
+Date: 18/06/2019 22:49:47
+Message:
+docs: mention 2 lines content limit (#125) #MsgLength=55
+
+
+----
+Modified: README.md|2 0
+
+Revision: d4e86071b0b1a0ce8b17ecffe8a943a1eeb8afc5
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 18/06/2019 23:02:12
+Message:
+ build: add .gitattributes to force LF (instead of possible CRLF on Windows) #MsgLength=77
+
+
+----
+Added: .gitattributes|1 0
+
+Revision: 91513f15711fb322b7416d86092e56d4a65da970
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 18/06/2019 23:03:10
+Message:
+build: add .npmignore to remove unneeded files from npm package #MsgLength=64
+
+
+----
+Added: .npmignore|16 0
+
+Revision: acc9eb64857f9ddbe5cfc6e7173265bafcff09b6
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 18/06/2019 23:13:35
+Message:
+chore(release): fix repo and issue link #MsgLength=40
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|2 2
+
+Revision: d71ec9514b8bfa09afd34d9382e957182cc9e44d
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 18/06/2019 23:13:52
+Message:
+chore(release): release notes for 2.0.2 #MsgLength=40
+
+
+----
+Modified: RELEASENOTES.md|15 0
+
+Revision: eadaaada6c2af575d987ba8ad1d47134231da878
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 18/06/2019 23:13:53
+Message:
+chore(release): 2.0.2 (version string) #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 883ab1427f8feadc97e427eff127c6d6729deb1a
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 18/06/2019 23:22:49
+Message:
+chore(release): 2.0.3-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 89e25104625e04f84622591876b3847856496d63
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 03/07/2019 16:28:20
+Message:
+ci(travis): upgrade to node 8 #MsgLength=29
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: b9a57d2553ae2db2e68ab5e15d7f34d5f1907ac8
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 16/12/2019 00:24:30
+Message:
+CB-5417(ios): use background thread for beep (#133) #MsgLength=53
+
+
+----
+Modified: src/ios/CDVNotification.m|4 2
+
+Revision: 8d9668d2d8f1cb464ed1662b9b272123a49d61b4
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 18:47:54
+Message:
+ci: updates Node.js versions (#136) #MsgLength=37
+
+
+----
+Modified: .appveyor.yml|9 5
+Modified: .travis.yml|14 13
+
+Revision: 3b912bf3c57251e8854c8dea4ba6ed55bc51fe02
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 18:48:41
+Message:
+chore(npm): improve ignore list (#135) #MsgLength=40
+
+
+----
+Modified: .npmignore|2 15
+
+Revision: e8b1004cd69787f92f43ac8d4cc73418194903cd
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:28:28
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Modified: CONTRIBUTING.md|4 4
+
+Revision: 10bb92450f93bfbed9a2727e4e36eafa7acf2f01
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:40:34
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: cdc748867a589d0a630f165614aee11b2a5c7005
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 16:05:33
+Message:
+chore(npm): use short notation in package.json (#140) #MsgLength=55
+
+
+----
+Modified: package.json|2 7
+
+Revision: 26e676417a0ab1a1641215d95a9415be4ef04328
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 18:12:28
+Message:
+refactor(eslint): use cordova-eslint /w fix (#141) #MsgLength=52
+
+
+----
+Modified: .eslintrc.yml|22 9
+Modified: package.json|3 9
+Modified: src/windows/NotificationProxy.js|13 15
+Modified: tests/tests.js|147 75
+Modified: www/android/notification.js|4 4
+Modified: www/browser/notification.js|8 6
+Modified: www/notification.js|28 20
+
+Revision: 40465ff002e0e0784d7b323951ac15bfbdf9469c
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 02/07/2020 18:59:14
+Message:
+breaking(ios): remove CDVAlertView (#138) #MsgLength=96
+
+
+----
+Modified: src/ios/CDVNotification.h|0 5
+Modified: src/ios/CDVNotification.m|35 123
+
+Revision: deea3e1ab1991feb0a96cafd0d3334a98cb41b36
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 23:42:58
+Message:
+chore: adds package-lock file (#143) #MsgLength=38
+
+
+----
+Added: package-lock.json|1724 0
+
+Revision: 784d65fb29dc67b7cee71f2ad69fd8ff65d98329
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 23:50:52
+Message:
+fix: remove deprecated platform snippet (#142) #MsgLength=48
+
+
+----
+Modified: www/notification.js|1 10
+
+Revision: 145464e6e478774d0e307a435a48634d41681e8a
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 15/07/2020 17:53:48
+Message:
+breaking: bump version 3.0.0-dev (#144) #MsgLength=41
+
+
+----
+Modified: package-lock.json|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7693d9019e147f7652fc314d46e79a5df5ccca5e
+Author: Tim Brust <github@timbrust.de>
+Date: 22/08/2020 20:33:19
+Message:
+ci(travis): updates Android API level (#145) #MsgLength=46
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 70dafbb7651bf0e521d2f40a9cd7894185b4cc0c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/09/2020 18:35:23
+Message:
+ci(travis): update osx xcode image (#146) #MsgLength=136
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 3a75983d4ade8bb6f719fdb4d1ee850e90a97a67
+Author: Dave Alden <dpa99c@gmail.com>
+Date: 04/11/2020 18:26:25
+Message:
+feature (GH-128) ios/android: enable programmatic dismissal of open dialogs #MsgLength=76
+
+
+----
+Modified: README.md|62 0
+Modified: src/android/Notification.java|40 1
+Modified: src/ios/CDVNotification.h|2 0
+Modified: src/ios/CDVNotification.m|52 5
+Modified: src/windows/NotificationProxy.js|8 0
+Modified: tests/tests.js|72 0
+Modified: www/browser/notification.js|8 0
+Modified: www/notification.js|20 0
+
+
+Revision: b0d3b7869f58f9debe0d4a1e29a3ab570f9a312e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 28/11/2020 17:20:48
+Message:
+ci: add node-14.x to workflow (#149) #MsgLength=38
+
+
+----
+Modified: .appveyor.yml|1 0
+Modified: .travis.yml|1 1
+
+Revision: b9a6c598fd59c8e0b3069eda36171214e952e842
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/09/2021 21:18:02
+Message:
+ci: add gh-actions workflows (#152) #MsgLength=37
+
+
+----
+Added: .github/workflows/android.yml|148 0
+Added: .github/workflows/chrome.yml|73 0
+Added: .github/workflows/ios.yml|88 0
+Added: .github/workflows/lint.yml|56 0
+
+Revision: c42ce679f24aeecf4f42b45a6efc47dc465947dc
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 23:07:17
+Message:
+ci: remove travis & appveyor (#153) #MsgLength=37
+
+
+----
+Deleted: .appveyor.yml|0 33
+Modified: .npmignore|0 1
+Deleted: .travis.yml|0 120
+Modified: README.md|0 4
+
+Revision: 5f94a3972840b26e349eb9b09e8302018f7933fa
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:01:42
+Message:
+ci: add action-badge (#154) #MsgLength=29
+
+
+----
+Modified: README.md|2 0
+
+Revision: 9703d2a1ea1a56b3d4d16c27204e709e67e674a8
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/10/2021 20:08:55
+Message:
+ci(ios): update workflow w/ iOS 15 (#155) #MsgLength=43
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: 6389e0a04e5b2249726d07b6bf8c7e22c4cbd857
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/07/2022 13:40:47
+Message:
+ci(android): update java requirement for cordova-android@11 (#163) #MsgLength=68
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: 5c6dda87f903a5a8749f3818eca340bafa47fb2e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/07/2022 16:52:49
+Message:
+chore(npm): bump package-lock v2 w/ rebuild (#170) #MsgLength=52
+
+
+----
+Modified: package-lock.json|2944 494
+
+Revision: 74bdd0cfd8e70bd90d552f15fb0ae3dc6d39ce7f
+Author: エリス <erisu@users.noreply.github.com>
+Date: 12/08/2022 23:41:44
+Message:
+ci: sync workflow with paramedic (#171) #MsgLength=41
+
+
+----
+Modified: .github/workflows/android.yml|12 22
+Modified: .github/workflows/ios.yml|4 13
+

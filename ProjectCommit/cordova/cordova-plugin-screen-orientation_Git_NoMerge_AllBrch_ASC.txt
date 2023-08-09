@@ -1,0 +1,2011 @@
+Revision: 41e6ca887f29a36028ee9bcb611ab7e309dd4317
+Author: gbenvenuti <grant.benvenuti@gmail.com>
+Date: 06/05/2014 14:52:14
+Message:
+Initial commit #MsgLength=15
+
+
+----
+Added: LICENSE|21 0
+Added: README.md|2 0
+
+Revision: 9602b540d9d6dfe6ee249505d58b6a5f346e572d
+Author: Grant Benvenuti <grant.benvenuti@gmail.com>
+Date: 06/05/2014 14:53:23
+Message:
+initial commit #MsgLength=15
+
+
+----
+Added: plugin.xml|42 0
+Added: src/android/net/yoik/cordova/plugins/screenorientation/YoikScreenOrientation.java|119 0
+Added: src/ios/YoikScreenOrientation.h|33 0
+Added: src/ios/YoikScreenOrientation.m|51 0
+Added: www/screenorientation.js|86 0
+
+Revision: 37b6ff835945a566bfe94a40799ee1605cacc276
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 07/05/2014 06:02:25
+Message:
+Added initial readme and cleanup of old code. #MsgLength=46
+
+
+----
+Modified: README.md|41 0
+Modified: src/android/net/yoik/cordova/plugins/screenorientation/YoikScreenOrientation.java|25 15
+Modified: src/ios/YoikScreenOrientation.m|1 28
+
+Revision: 098b4b829d5420d6692db0a13e31af52f1bf71f7
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 07/05/2014 07:37:40
+Message:
+Updated js interface to accept no callbacks #MsgLength=44
+
+
+----
+Modified: www/screenorientation.js|27 20
+
+Revision: 0a927a0d7d3a6897606e3e7ad9edb508da3e2697
+Author: gbenvenuti <grant.benvenuti@gmail.com>
+Date: 07/05/2014 07:46:54
+Message:
+Update README.md #MsgLength=16
+
+
+----
+Modified: README.md|5 2
+
+Revision: 2f7b5ed0863b88569bd6391d4ae4a3b911a4818d
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 08/05/2014 05:56:40
+Message:
+Fixed formatting & cleanup #MsgLength=27
+
+
+----
+Modified: plugin.xml|2 5
+Modified: src/android/net/yoik/cordova/plugins/screenorientation/YoikScreenOrientation.java|1 7
+Modified: src/ios/YoikScreenOrientation.h|0 1
+Modified: src/ios/YoikScreenOrientation.m|29 9
+Modified: www/screenorientation.js|37 37
+
+Revision: 199d4974320aec21279137de7672dfe2d521ebb2
+Author: Grant Benvenuti <grant.benvenuti@gmail.com>
+Date: 13/05/2014 07:35:05
+Message:
+Update README.md #MsgLength=16
+
+
+----
+Modified: README.md|1 1
+
+Revision: d345e13052359d7a36cda26b387ffeeb778ab586
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 11/07/2014 07:26:09
+Message:
+Readme update, added note on iOS6 raised in Issue #1 #MsgLength=53
+
+
+----
+Modified: README.md|16 9
+
+
+Revision: 18449642ac28a5cfd6a9cbc601d2fa9cee17c59b
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 11/07/2014 07:33:54
+Message:
+Version bump #MsgLength=13
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 2934bea321ccd5bf4d49e64560a2cb8020a1977e
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 12/07/2014 14:05:30
+Message:
+New screenOrientation api, working minus checks and event firing #MsgLength=65
+
+
+----
+Modified: src/android/net/yoik/cordova/plugins/screenorientation/YoikScreenOrientation.java|13 33
+Modified: www/screenorientation.js|58 32
+
+Revision: 1e4a7b18c440370f353c0a6cc2425ec8394dc5eb
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 13/07/2014 07:26:44
+Message:
+Updated to attach functions directly to screen object and constant cleanup #MsgLength=75
+
+
+----
+Modified: www/screenorientation.js|33 58
+
+Revision: 82394e15e75542f3fe8c02978fa6f72d1f5eeabf
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 13/07/2014 07:34:21
+Message:
+Readme and plugin.xml update #MsgLength=29
+
+
+----
+Modified: README.md|49 32
+Modified: plugin.xml|2 2
+
+
+Revision: d0f38c48fc5c31f2186cd6257d4e68ef3bfba558
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 13/07/2014 14:50:16
+Message:
+Added missing orientation types to README #MsgLength=42
+
+
+----
+Modified: README.md|6 0
+Modified: plugin.xml|1 1
+Modified: www/screenorientation.js|1 0
+
+
+Revision: bb8b2c30c22dc37b4d4323d452ea623f646a70fd
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 27/07/2014 11:51:20
+Message:
+Added bb10 support and orientation property to screen object #MsgLength=61
+
+
+----
+Modified: README.md|27 15
+Modified: plugin.xml|16 3
+Added: www/screenorientation.bb10.js|37 0
+Added: www/screenorientation.ios.js|52 0
+Modified: www/screenorientation.js|35 33
+
+
+Revision: d0c1e108659caca0023353ad6eb0ae2e6f27f586
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 27/07/2014 11:55:13
+Message:
+Readme and description update #MsgLength=30
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|2 2
+
+
+Revision: 60c907c90240a9a7a6a9c46ca2a6fe8c139703a9
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 30/07/2014 06:49:28
+Message:
+setOrientation moved to individual ios and android js files #MsgLength=60
+
+
+----
+Modified: plugin.xml|5 2
+Added: www/screenorientation.android.js|8 0
+Modified: www/screenorientation.bb10.js|0 24
+Modified: www/screenorientation.ios.js|7 24
+Modified: www/screenorientation.js|3 4
+
+
+Revision: fedbff124197cd4e4ce3ec94868dbd8441e866f3
+Author: kevinwang20120702 <kevinwang20120702@gmail.com>
+Date: 12/08/2014 04:45:50
+Message:
+Update screenorientation.ios.js #MsgLength=49
+
+
+----
+Modified: www/screenorientation.ios.js|18 16
+
+
+Revision: 7c86844895fcf9f10e88733b5b9ea7b885d1919d
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 02/09/2014 16:30:58
+Message:
+Cleaned up messy switch/if block in iOS js file. #MsgLength=49
+
+
+----
+Modified: www/screenorientation.ios.js|13 25
+
+Revision: e2983442cc81d1007b37f347b3c68c3bd022a6d0
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 03/09/2014 09:13:54
+Message:
+Updated iOS implementation to support iOS8 beta see #19 #MsgLength=56
+
+
+----
+Modified: src/ios/YoikScreenOrientation.m|9 1
+
+Revision: ad5a2134e824d63334557d01fa1d5b8413d1a35c
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 03/09/2014 09:33:52
+Message:
+Moved orientationMap block #MsgLength=27
+
+
+----
+Modified: www/screenorientation.ios.js|10 11
+
+Revision: efe1edede3da4472c45b5f2e850a30dd21c972eb
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 03/09/2014 12:09:24
+Message:
+Added fix for ios so device returns to current orientation when unlocked #MsgLength=73
+
+
+----
+Modified: src/ios/YoikScreenOrientation.m|23 5
+Modified: www/screenorientation.ios.js|15 2
+
+Revision: 8f69814dac6d397a1b186aa39bbf95bc121e67b5
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 03/09/2014 12:14:10
+Message:
+Version bump and readme update #MsgLength=31
+
+
+----
+Modified: README.md|3 0
+Modified: plugin.xml|1 1
+
+
+Revision: 61cd86460899836a7ee7bdb68825c4d90db0ff5f
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 03/09/2014 15:21:28
+Message:
+iOS JS: removed additional variable #MsgLength=36
+
+
+----
+Modified: www/screenorientation.ios.js|1 2
+
+Revision: 31d49c89361fb2508dc7d816be8fb2235705c680
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 11/09/2014 04:27:33
+Message:
+Updated iOS8 for #19 removed delay block #MsgLength=41
+
+
+----
+Modified: src/ios/YoikScreenOrientation.m|2 10
+
+Revision: d98ea662658e349bb8282a3cb64d6bbca821d3c8
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 11/09/2014 04:29:10
+Message:
+Version bump #MsgLength=13
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 3b7d259193134577abf68916b14211fda858969f
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 18/09/2014 07:42:23
+Message:
+Removed flicker in iOS8 closes #23 #MsgLength=35
+
+
+----
+Modified: README.md|13 1
+Modified: src/ios/YoikScreenOrientation.h|6 0
+Modified: src/ios/YoikScreenOrientation.m|40 8
+Modified: www/screenorientation.ios.js|1 2
+
+Revision: c122649de2bc8dafaa6582c9a118fae73fc15367
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 18/09/2014 07:45:51
+Message:
+Version bump 1.3.0 #MsgLength=19
+
+
+----
+Modified: plugin.xml|1 1
+
+
+Revision: 0ba523375a4bfdf9af4afe18ae7576dbc594a044
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 18/11/2014 06:29:04
+Message:
+Added compiler directive for older xcode version #MsgLength=49
+
+
+----
+Modified: plugin.xml|1 1
+Modified: src/ios/YoikScreenOrientation.m|3 0
+
+
+Revision: e62c2304c31177fdd309c6280030b6359d2260d0
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 02/12/2014 04:47:24
+Message:
+Resolves #33 reverted to use delayed vc dismissal #MsgLength=50
+
+
+----
+Modified: README.md|4 0
+Modified: plugin.xml|1 1
+Modified: src/ios/YoikScreenOrientation.m|6 2
+
+
+Revision: b088c1fc114c3d93a3ffdd5f6a6db1311ec21b66
+Author: RoopeHakulinen <roope_19xx@hotmail.com>
+Date: 02/01/2015 23:04:45
+Message:
+Added support for WP8 and WP8.1. Tested in WP8.1 emulator. #MsgLength=59
+
+
+----
+Modified: plugin.xml|12 0
+Added: src/wp/YoikScreenOrientation.cs|127 0
+Added: www/screenorientation.wp8.js|8 0
+
+Revision: dd53a580200a30954e8a1bd4ae2b804cf321634e
+Author: eddyverbruggen@gmail.com <xs4allallall>
+Date: 23/04/2015 05:29:38
+Message:
+bump #MsgLength=5
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 6ef264c1eb6351d566715a95ca468b8cc9780812
+Author: Eddy Verbruggen <EddyVerbruggen@users.noreply.github.com>
+Date: 10/05/2015 18:59:00
+Message:
+Changed version to be compatible with cordova plugin registry #MsgLength=61
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 6c975278ea2693d621fb510850068d4c3d487fc1
+Author: EddyVerbruggen <eddyverbruggen@gmail.com>
+Date: 14/05/2015 02:17:14
+Message:
+Completed adding WP8 support #MsgLength=29
+
+
+----
+Modified: plugin.xml|1 1
+Modified: src/wp/YoikScreenOrientation.cs|9 3
+
+
+Revision: 56dac9ad10340618fdbfb9e8bc6c1c0d3dd53f7f
+Author: Grant Benvenuti <grant.benvenuti@gmail.com>
+Date: 12/05/2015 08:11:12
+Message:
+Revert "Added WP support" #MsgLength=26
+
+
+----
+Modified: plugin.xml|1 13
+Deleted: src/wp/YoikScreenOrientation.cs|0 127
+Deleted: www/screenorientation.wp8.js|0 8
+
+
+
+Revision: 865c81a09effa5a4176de8882bcbfbb1b7f11d25
+Author: EddyVerbruggen <eddyverbruggen@gmail.com>
+Date: 14/05/2015 02:30:41
+Message:
+Added WP8 support #MsgLength=18
+
+
+----
+Modified: plugin.xml|13 1
+Added: src/wp/YoikScreenOrientation.cs|133 0
+Added: www/screenorientation.wp8.js|8 0
+
+
+Revision: 51a6fc81669ba92d97d66b795613960daa2c8c75
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 14/05/2015 12:00:29
+Message:
+Updated plugin readme to mention WP8 #MsgLength=37
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 4c86a0d8c6080ea368e5417fb03f0e53e500c5ad
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 14/05/2015 12:04:03
+Message:
+Readme update #MsgLength=14
+
+
+----
+Modified: README.md|11 1
+Modified: plugin.xml|1 1
+
+Revision: 503a380624d63b86e87e347002000de31cfa4fba
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 20/05/2015 11:54:47
+Message:
+Initial npm plugin support #MsgLength=27
+
+
+----
+Added: package.json|32 0
+Modified: plugin.xml|3 3
+Renamed: src/android/YoikScreenOrientation.java [from src/android/net/yoik/cordova/plugins/screenorientation/YoikScreenOrientation.java]|0 0
+
+Revision: 79a9ab857faf2e38ad057796d8ac8af82768158e
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 20/05/2015 12:06:51
+Message:
+Readme updates #MsgLength=15
+
+
+----
+Modified: README.md|30 25
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 9244abcbbe6a4c06cc1f12e81df734566910b579
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 22/05/2015 06:56:57
+Message:
+Fixed typo in package.json #MsgLength=27
+
+
+----
+Modified: package.json|2 2
+
+Revision: 4f36055bebbdd8e43159e480de632aa32842539f
+Author: Johan Eliasson <johan.eliasson@allbinary.se>
+Date: 20/07/2015 20:37:27
+Message:
+added example on orientationchange #MsgLength=35
+
+
+----
+Modified: README.md|6 0
+
+Revision: dda55807c74649ee13d94bb5221967f9764f7245
+Author: Johan Eliasson <johan.eliasson@allbinary.se>
+Date: 20/07/2015 20:37:52
+Message:
+correct orientation naming #MsgLength=27
+
+
+----
+Modified: www/screenorientation.js|2 2
+
+Revision: 1f43b5ac9c1f5035557e4f0efefacac41b92fa45
+Author: Johan Eliasson <johan.eliasson@allbinary.se>
+Date: 20/07/2015 21:04:18
+Message:
+add screen.orentation vairable update on lockOrientation() #MsgLength=59
+
+
+----
+Modified: www/screenorientation.js|2 0
+
+
+Revision: c8b89002f904a03cbf7bbd7a9b743ff8bfa8c921
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 10/08/2015 07:37:38
+Message:
+Removed direct reference to screen in addScreenOrientationApi function #MsgLength=71
+
+
+----
+Modified: www/screenorientation.js|6 8
+
+Revision: 0eb6d35fc6f6a440fefd75ef1e1a20bb0f89227f
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 10/08/2015 07:40:42
+Message:
+Add portrait upside down to ios default orientations. closes #37 #MsgLength=65
+
+
+----
+Modified: www/screenorientation.ios.js|1 1
+
+Revision: f3d451c72cd56cb471ad6db5641ea59eca6fcd03
+Author: orlando-antonino <orlando.antonino@gmail.com>
+Date: 14/05/2015 16:57:52
+Message:
+background thread for ios #MsgLength=26
+
+
+----
+Modified: src/ios/YoikScreenOrientation.m|60 54
+
+
+Revision: 7a11a3dd7e8b37fe9948529750488a186f246917
+Author: tokotchd <tokotchD@gmail.com>
+Date: 08/08/2015 00:12:10
+Message:
+Added Windows 8.1 Support #MsgLength=93
+
+
+----
+Modified: README.md|3 0
+Modified: package.json|2 2
+Modified: plugin.xml|7 1
+Added: www/screenorientation.windows.js|33 0
+
+Revision: 9ba47605034f63bf0810e7ed22906383a84d8c58
+Author: tokotchd <tokotchD@gmail.com>
+Date: 08/08/2015 00:14:11
+Message:
+Fix #MsgLength=9
+
+
+----
+Modified: www/screenorientation.windows.js|1 1
+
+Revision: 3ccadfdf648e8d45032495e7178a2b5837f661fc
+Author: tokotchd <tokotchD@gmail.com>
+Date: 08/08/2015 00:18:11
+Message:
+Updated Readme #MsgLength=31
+
+
+----
+Modified: README.md|4 0
+
+
+Revision: bbde995383266e29e855a98e673760995b50005c
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 10/08/2015 07:57:07
+Message:
+v1.4.0 release #MsgLength=15
+
+
+----
+Modified: README.md|4 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: src/ios/YoikScreenOrientation.m|4 4
+
+Revision: 479c32b67cd0dc820412cad3a0eaf77b2e8ba69c
+Author: Moritz <m0ritz.m3yer@gmail.com>
+Date: 09/12/2015 01:14:57
+Message:
+Add more readability #MsgLength=20
+
+
+----
+Modified: README.md|40 32
+
+
+Revision: 2576cc6f23481b599561d6f406b4c2f65b7d95d0
+Author: Breno Douglas <breno.douglas@paieterno.com.br>
+Date: 11/02/2016 18:52:48
+Message:
+Cordova 3.6.3 - 'CB-7187 Delete CDVShared.m & remove dependency on CoreLocation #MsgLength=80
+
+
+----
+Modified: src/ios/YoikScreenOrientation.h|0 1
+
+Revision: 0708a8371616b94c9263827bce844b20c1210967
+Author: Breno Douglas <breno.douglas@paieterno.com.br>
+Date: 11/02/2016 18:57:43
+Message:
+Fix conflict return type in implementation of 'supportedInterfaceOrientations' #MsgLength=79
+
+
+----
+Modified: src/ios/YoikScreenOrientation.m|1 1
+
+
+Revision: 7dc72e05dd525dd72c1803ac93627b9f49008041
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 04/03/2016 18:08:51
+Message:
+Updated version notes #MsgLength=22
+
+
+----
+Modified: README.md|3 0
+
+Revision: 63b664a352bcfebe325fbd975bf45b8c2cb44758
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 04/03/2016 18:09:03
+Message:
+1.4.1 #MsgLength=6
+
+
+----
+Modified: package.json|1 1
+
+Revision: dd26708b7338252bf73cc27117f9acf143f4e2cd
+Author: Tony Homer <tony.homer@intel.com>
+Date: 06/05/2016 02:46:35
+Message:
+switch license from MIT to Apache 2.0 #MsgLength=38
+
+
+----
+Modified: LICENSE|202 21
+Modified: README.md|19 0
+Modified: package.json|1 1
+Modified: plugin.xml|18 2
+Modified: src/android/YoikScreenOrientation.java|20 22
+Modified: src/ios/YoikScreenOrientation.h|19 22
+Modified: src/ios/YoikScreenOrientation.m|19 21
+Modified: src/wp/YoikScreenOrientation.cs|18 11
+Modified: www/screenorientation.android.js|21 0
+Modified: www/screenorientation.bb10.js|21 0
+Modified: www/screenorientation.ios.js|21 0
+Modified: www/screenorientation.js|19 21
+Modified: www/screenorientation.windows.js|21 0
+Modified: www/screenorientation.wp8.js|21 0
+
+
+Revision: ec3e90dbc84f5ade4a3644517aae8af7dbae1f0e
+Author: Tony Homer <tony.homer@intel.com>
+Date: 22/04/2016 22:55:44
+Message:
+make iOS rotate as needed when lockOrientation is called #MsgLength=57
+
+
+----
+Added: src/ios/CDVViewController+UpdateSupportedOrientations.h|31 0
+Added: src/ios/CDVViewController+UpdateSupportedOrientations.m|35 0
+Modified: src/ios/YoikScreenOrientation.h|1 0
+Modified: src/ios/YoikScreenOrientation.m|18 9
+
+Revision: f0d18db90ee4bb5b8d0a990cec550bc05ba73cfa
+Author: Tony Homer <tony.homer@intel.com>
+Date: 27/04/2016 06:20:48
+Message:
+adding missing files to plugin.xml #MsgLength=35
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: a661578b4c696bc1e830c1dbd5e54abcac87766e
+Author: Tony Homer <tony.homer@intel.com>
+Date: 05/05/2016 05:19:17
+Message:
+fix header file incorrectly set as source-file #MsgLength=47
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 937577842b37a2d67a231835067e4e4df87009be
+Author: Tony Homer <tony.homer@intel.com>
+Date: 17/05/2016 02:24:44
+Message:
+support interoperability between Orientation preference and screen-orientation plugin #MsgLength=86
+
+
+----
+Modified: src/ios/YoikScreenOrientation.h|1 0
+Modified: src/ios/YoikScreenOrientation.m|10 4
+
+Revision: 86fc819e6aef833232832188fb0c8454f78ea1b6
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 23/05/2016 06:37:54
+Message:
+version updated and license adjusted #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: src/ios/CDVViewController+UpdateSupportedOrientations.h|19 22
+Modified: src/ios/CDVViewController+UpdateSupportedOrientations.m|20 23
+
+Revision: 781a2c1e4aaeff255daa24520c03268b0e44482c
+Author: Grant Benvenuti <g.benvenuti@pni.com.au>
+Date: 23/05/2016 06:40:35
+Message:
+updated readme with release notes #MsgLength=34
+
+
+----
+Modified: README.md|3 0
+
+Revision: 4b7a573f53af5531aed2dd4d50559225fee4558f
+Author: Douglas Silva <douglas_hss@hotmail.com.br>
+Date: 04/06/2016 00:35:20
+Message:
+Merge pull request #1 from DouglasHSS/master #MsgLength=127
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: fff91246693f7c841685ce1b7641c4bb95a0b716
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 05/10/2016 12:44:20
+Message:
+CB-11919 - Add github pull request template #MsgLength=44
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|22 0
+
+Revision: b988ac77b0fadfeb20703a64bd4e466c37a32d43
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:08
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: d0b81ac5f0b499a5c95f8b3a5e70d7e03528e9ec
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 05:48:24
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-screen-orientation #MsgLength=68
+
+
+----
+Added: RELEASENOTES.md|35 0
+
+Revision: 9f477a5517184f2e8c8b431bc4c0dd479b82a29f
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 05:49:45
+Message:
+Renamed Changelog to Legacy Changelog, point to RELEASENOTES.md #MsgLength=64
+
+
+----
+Modified: README.md|2 3
+
+Revision: 2d8500f6a59f378473c846a86bc07935e8215ce1
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 30/08/2016 05:33:03
+Message:
+ One js file for ios, android and windows #MsgLength=42
+
+
+----
+Added: .DS_Store|0 0
+Modified: plugin.xml|38 53
+Added: src/.DS_Store|0 0
+Added: src/android/.DS_Store|0 0
+Renamed: src/android/CDVOrientation.java [from src/android/YoikScreenOrientation.java]|40 43
+Added: src/ios/.DS_Store|0 0
+Renamed: src/ios/CDVOrientation.h [from src/ios/CDVViewController+UpdateSupportedOrientations.h]|7 4
+Renamed: src/ios/CDVOrientation.m [from src/ios/YoikScreenOrientation.h]|38 9
+Deleted: src/ios/YoikScreenOrientation.m|0 120
+Added: src/windows/.DS_Store|0 0
+Renamed: src/windows/CDVOrientation.cs [from src/ios/CDVViewController+UpdateSupportedOrientations.m]|31 5
+Deleted: src/wp/YoikScreenOrientation.cs|0 140
+Added: www/.DS_Store|0 0
+Deleted: www/screenorientation.android.js|0 29
+Deleted: www/screenorientation.ios.js|0 56
+Modified: www/screenorientation.js|86 63
+Deleted: www/screenorientation.windows.js|0 54
+Deleted: www/screenorientation.wp8.js|0 29
+
+Revision: dd13eb5bdf7de9d766aba72416c9258b8f6c69a3
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 30/08/2016 07:23:51
+Message:
+ add gitignore and npmignore files #MsgLength=35
+
+
+----
+Added: .gitignore|29 0
+Added: .npmignore|2 0
+
+Revision: 86a9c8131d7d40906a92b6cc2ff395112fdf7039
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 30/08/2016 07:31:24
+Message:
+ removed .DS_Store files #MsgLength=25
+
+
+----
+Deleted: .DS_Store|0 0
+Deleted: src/.DS_Store|0 0
+Deleted: src/android/.DS_Store|0 0
+Deleted: src/ios/.DS_Store|0 0
+Deleted: src/windows/.DS_Store|0 0
+Deleted: www/.DS_Store|0 0
+
+Revision: c00a7c4b8546694b8fd96f119a2c845bc13e2c71
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 31/08/2016 08:11:10
+Message:
+ changed orientation spec and modified Readme #MsgLength=46
+
+
+----
+Modified: README.md|6 26
+Modified: src/android/CDVOrientation.java|2 3
+Modified: www/screenorientation.js|5 5
+
+Revision: f881c95e9a580d9bccf7ee531291afb0b1b4cac9
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 31/08/2016 08:12:46
+Message:
+ basic tests added #MsgLength=19
+
+
+----
+Added: tests/plugin.xml|31 0
+Added: tests/tests.js|36 0
+
+Revision: 90f5f2531a6a354d8e8b889e707099b214d9e09d
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 21/09/2016 01:36:36
+Message:
+ Added promises to plugin #MsgLength=26
+
+
+----
+Modified: www/screenorientation.js|26 6
+
+Revision: 84b013f17c71922fa42bfd9185dbc9be3a1fe831
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 18/10/2016 02:12:53
+Message:
+added comments and formatted code #MsgLength=34
+
+
+----
+Modified: www/screenorientation.js|17 20
+
+Revision: 5d97d51144c5b1dad40b650e160e3ef8bde41a1b
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 18/10/2016 07:25:16
+Message:
+ added demo project and modified version #MsgLength=41
+
+
+----
+Modified: README.md|2 11
+Added: demo/config.xml|26 0
+Added: demo/www/css/index.css|115 0
+Added: demo/www/img/logo.png|0 0
+Added: demo/www/index.html|58 0
+Added: demo/www/js/index.js|96 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: www/screenorientation.js|1 1
+
+Revision: 35f68c985e0daa3fc9704b08a1a145df2a93adc0
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 18/10/2016 07:27:43
+Message:
+ modified Readme #MsgLength=17
+
+
+----
+Modified: README.md|1 1
+
+Revision: f2f2dbde729b9d3ac5884de6ee80ae354a3bf5ef
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 18/10/2016 07:29:20
+Message:
+ rectified Readme #MsgLength=18
+
+
+----
+Modified: README.md|1 1
+
+
+Revision: b7e547794d231c5bc5e4b678332dd7faf96f2cda
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 13/12/2016 10:20:42
+Message:
+Fix mismatched license fields #MsgLength=30
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 216b99f432feaf2a9b278f72d8730bca292661da
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/12/2016 07:39:58
+Message:
+cleaned up js, fixed whitespace #MsgLength=32
+
+
+----
+Modified: www/screenorientation.js|86 100
+
+Revision: 622cd2f2d4cbc24bd7179419f1a2d4ef47e098b1
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/12/2016 07:40:21
+Message:
+added npm test, and jshinting #MsgLength=30
+
+
+----
+Modified: package.json|8 1
+
+Revision: 0d18615f800d608bc089a9b09f75814600329e84
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/12/2016 07:41:04
+Message:
+ignore node_modules #MsgLength=20
+
+
+----
+Modified: .gitignore|1 1
+
+Revision: 4432918c8fddd04cff101f89097074b0fb78536b
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 13/12/2016 09:28:32
+Message:
+Update package.json to be consistent with other core plugins #MsgLength=61
+
+
+----
+Modified: package.json|8 5
+
+
+Revision: defc7bcd3eb9dc054fe7f5091f597168f26e1440
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/12/2016 07:50:12
+Message:
+remove merge-diff cruft that was missed #MsgLength=40
+
+
+----
+Modified: README.md|1 2
+
+Revision: 24205e98049861ee6585c1d79feee21757efcb6e
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/12/2016 07:52:18
+Message:
+Closes #5, Closes #3, Closes #2 #MsgLength=32
+
+
+----
+
+Revision: c704de462da0fc07d8f7abbedb5fab4f4000af9f
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 15/12/2016 21:13:08
+Message:
+CB-12256 (android) Fixed a build error #MsgLength=39
+
+
+----
+Modified: src/android/CDVOrientation.java|1 0
+
+Revision: 77d471833e8b472f40922ca78f8b1d3e5a807707
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/12/2016 20:13:57
+Message:
+CB-12271 (windows) Fixed "platform add" error, added new tests #MsgLength=63
+
+
+----
+Renamed: src/windows/CDVOrientationProxy.js [from src/windows/CDVOrientation.cs]|3 3
+Modified: tests/tests.js|17 1
+
+Revision: 7fdc334a2f743d061937404ca31143a022e2db3d
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 21/12/2016 17:10:19
+Message:
+CB-12285 Polyfill promises on platforms that doesn't support them natively #MsgLength=75
+
+
+----
+Modified: plugin.xml|5 2
+
+Revision: cd2ee4666d66190424df4efc9291c31be6d4781b
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 21/12/2016 19:46:01
+Message:
+CB-12286 Tests reworked #MsgLength=24
+
+
+----
+Modified: tests/tests.js|29 22
+
+Revision: 912b6b199b2fdac736cc662e06f6b04006f889eb
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:37:47
+Message:
+CB-12363 Added build badges #MsgLength=28
+
+
+----
+Modified: README.md|4 0
+
+Revision: 1f536ec80e6f54edb618dabc2a0dd7c9b3e62a0e
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 10/01/2017 08:42:53
+Message:
+ working version of screen orientation plugin adhering to w3c specs #MsgLength=68
+
+
+----
+Modified: demo/www/index.html|1 1
+Modified: demo/www/js/index.js|9 18
+Modified: tests/tests.js|34 0
+Modified: www/screenorientation.js|83 88
+
+Revision: f8c75e341ae521cd248e9385e6b05bdd3344274d
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 10/01/2017 09:10:07
+Message:
+improved the orientation change method #MsgLength=39
+
+
+----
+Modified: www/screenorientation.js|2 16
+
+Revision: 050cc069a15a97ec8ff81a03c7dac66340ede61f
+Author: Vishal Mishra <maverickmishra@users.noreply.github.com>
+Date: 11/01/2017 06:08:13
+Message:
+Removed unused variable assignment #MsgLength=34
+
+
+----
+Modified: www/screenorientation.js|1 2
+
+Revision: 68693cf017440e5931c4cd209d0ec96ea7d2406a
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 11/01/2017 07:27:38
+Message:
+puts all nativelock handling together #MsgLength=38
+
+
+----
+Modified: www/screenorientation.js|4 4
+
+Revision: 083578eaa87c696f55c1bc23e0ec67d755270f96
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 26/01/2017 07:02:04
+Message:
+ Fixed errors in tests and changed  plugin test id #MsgLength=51
+
+
+----
+Modified: tests/plugin.xml|1 1
+Modified: tests/tests.js|4 7
+
+Revision: 71075a1f32651befd02b85f8cc1c35caa8b07459
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 26/01/2017 07:21:04
+Message:
+removed redundant tests #MsgLength=24
+
+
+----
+Modified: tests/tests.js|0 17
+
+Revision: 4d6d8b45ee1bc28a18e5d6243760423450c86626
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 08/02/2017 07:30:52
+Message:
+ Fixes CB-12427 #MsgLength=16
+
+
+----
+Modified: README.md|0 1
+
+Revision: 9fca54ea48ba2528dcf1d69b623f0724fc7c40e8
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 08/02/2017 07:37:47
+Message:
+Updated Readme with new methods for screen object #MsgLength=50
+
+
+----
+Modified: README.md|4 4
+
+Revision: 70dfab7f9b10e6fae0ada9b461b40934e2a1042d
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 22/02/2017 11:26:17
+Message:
+Move es6 dep to bb which is the only place it's needed #MsgLength=55
+
+
+----
+Modified: plugin.xml|5 4
+
+Revision: 972a08220346d6b58a5647d94a1e6d677e6417a7
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 23/02/2017 03:40:10
+Message:
+added dependency on promise polyfil for android (4.4.4 is the first to have it ) #MsgLength=81
+
+
+----
+Modified: plugin.xml|3 4
+
+Revision: f8207c416448ad6b8168305e1f91e894210b4bca
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 23/02/2017 03:34:21
+Message:
+added missing tests, fixed indentation of js file #MsgLength=50
+
+
+----
+Modified: demo/config.xml|1 2
+Modified: tests/tests.js|83 34
+Modified: www/screenorientation.js|70 70
+
+Revision: bef03769de6f69874dde63d84910461c6ed5cd29
+Author: maverickmishra <vishalmishra0907@gmail.com>
+Date: 09/03/2017 09:45:24
+Message:
+The plugin now follows W 3 specs ; tests for screen.orientation.onchange pending #MsgLength=81
+
+
+----
+Modified: demo/config.xml|18 0
+Modified: demo/www/index.html|2 0
+Modified: demo/www/js/index.js|14 1
+Modified: tests/tests.js|9 11
+Modified: www/screenorientation.js|67 23
+
+Revision: 288c2f8ef202f4c31069f5e1b8de5b0a963f4b10
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/03/2017 06:18:20
+Message:
+Fix license header, add trailing newlines #MsgLength=42
+
+
+----
+Modified: demo/config.xml|19 18
+Modified: demo/www/js/index.js|1 1
+Modified: package.json|1 1
+Modified: tests/tests.js|1 1
+Modified: www/screenorientation.bb10.js|1 1
+Modified: www/screenorientation.js|1 1
+
+Revision: fc2df8bec15ea9c9e9d8f74f79e60a8721362a4a
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/03/2017 09:54:18
+Message:
+update README with latest api #MsgLength=30
+
+
+----
+Modified: README.md|16 2
+
+Revision: 90128f42d7ec868ad871d0bab92e3c18cf0035f6
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/03/2017 09:55:03
+Message:
+update look and feel of demo, add/remove event listeners #MsgLength=57
+
+
+----
+Modified: demo/www/css/index.css|16 12
+Modified: demo/www/index.html|13 5
+Modified: demo/www/js/index.js|23 3
+
+Revision: 9d6f2d271da52ccbd4ab90a4c64cb07bd1f95ef5
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 10/03/2017 09:57:00
+Message:
+getter for onchange, add/remove event listeners, this closes #12 #MsgLength=65
+
+
+----
+Modified: tests/tests.js|22 1
+Modified: www/screenorientation.js|17 8
+
+Revision: 837c17b4797ed134c3a699be2c5be552d1f61ec6
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 11/03/2017 09:59:50
+Message:
+[windows] Fix failing tests, added Promise if it is not defined 8.1 #MsgLength=68
+
+
+----
+Modified: src/windows/CDVOrientationProxy.js|4 0
+Modified: www/screenorientation.js|4 2
+
+Revision: 22fdcf68d6f03baca3de652b60e54f2b60122573
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 15/03/2017 06:17:23
+Message:
+[CB-12568] Updated version and RELEASENOTES.md for release 2.0.0 #MsgLength=65
+
+
+----
+Modified: RELEASENOTES.md|6 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d9067c5d43ea7bf8f1664002e4a25b9be6fdd50f
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 15/03/2017 07:22:45
+Message:
+Set VERSION to 2.0.1-dev (via coho?) #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5a7370a16081c68b12fbc7a311be7410696ad217
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 17/03/2017 07:18:44
+Message:
+Don't ignore tests, they are small enough not to be an issue, and help verify releases #MsgLength=87
+
+
+----
+Modified: .npmignore|0 1
+
+Revision: f12721b35e8f48599d1698ead85eaf707b8532fa
+Author: filmaj <maj.fil@gmail.com>
+Date: 21/03/2017 03:36:50
+Message:
+CB-12588: add manual tests in cordova-plugin-test-framework style #MsgLength=66
+
+
+----
+Modified: tests/tests.js|20 0
+
+Revision: f0c65cfee113e053433eb9c5966e0be24dee1738
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 10:25:04
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: fce44f4942adf20cff6769f4c7b53715584f6b31
+Author: Pascal Häusler <p.haeusler@cadenas.de>
+Date: 03/03/2017 22:03:09
+Message:
+Rotate to specified orientation when locked #MsgLength=54
+
+
+----
+Modified: src/ios/CDVOrientation.m|19 2
+Modified: src/windows/CDVOrientationProxy.js|1 1
+Modified: www/screenorientation.js|8 9
+
+Revision: eaeb4f1a73253c1947b420c14bd2fbebb1abefa4
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/04/2017 02:35:49
+Message:
+This closes #11 #MsgLength=16
+
+
+----
+
+Revision: 9d6894d57e13550daeb68cb02a35d221651b5687
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 21:26:56
+Message:
+CB-12622 Added Android 6.0 build badge to README #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 8699159cf55bb23f6c574cf2c157426d1b6acf4d
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:11:41
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 2.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|5 5
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 7b6f8d7dbd6f6f597d3a6e7eec58c8eca5dd2962
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 04:11:44
+Message:
+Set VERSION to 2.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: d515b93d7a3884a50f16da0869a583666860cd1b
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 19:19:55
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: 861c8c9981c585729ec8b4dd090b51a000ae2d5e
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 29/06/2017 20:19:26
+Message:
+CB-12935: (ios, android) Enable paramedic builds on Travis CI #MsgLength=62
+
+
+----
+Added: .travis.yml|71 0
+
+Revision: 3a2fbd3ecc8b8aa305cd3a543565907a057f8f46
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:32:18
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: 2c4ad367adf7f7df15701c5bb839993685a4b498
+Author: Maxime Bertonnier <m.bertonnier@gmail.com>
+Date: 12/05/2017 23:57:25
+Message:
+CB-12994: (android, blackberry) add es6-promise-plugin from npm #MsgLength=81
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 6c162520de807f5c383159a729987ccb7fbb173e
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 07/07/2017 16:31:33
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: d2538189faa7147e50dcab6ccb5d5a2052f928a8
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:34:49
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: 7bccc0169f62be542a555866e4771cd066759e49
+Author: filmaj <maj.fil@gmail.com>
+Date: 24/07/2017 03:18:05
+Message:
+Close #17 #MsgLength=10
+
+
+----
+
+Revision: bfef63471cd7557d0dc896bd3cbaf4d8afe73304
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 28/07/2017 19:00:57
+Message:
+CB-13028 (CI) Browser builds on Travis and AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|3 2
+Modified: .travis.yml|17 1
+
+Revision: 63955da87b75d39644a49716ad6028ad74399dba
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 19/09/2017 14:07:00
+Message:
+CB-13299 (CI) Fix Android builds #MsgLength=33
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 77510052250ec58eb23920abf326ec77521d868f
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:59:22
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 5a2740cb4e67d5468603410d3c0cc018151c7378
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 15:23:19
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: 8a8f8562cb666d1d2e53f3acef26a10831977e89
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:37:46
+Message:
+CB-13542 Updated version and RELEASENOTES.md for release 2.0.2 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|6 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 331003b6137bb392a9af44297a733bcc6a84b922
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 07/11/2017 06:38:40
+Message:
+Set VERSION to 2.0.3-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 114aeef0bb79478098669594e7207357ffcc7644
+Author: Dan Field <dnfield@travelers.com>
+Date: 06/10/2017 02:13:26
+Message:
+CB-13405: (ios) Screen unlock bug fix #MsgLength=38
+
+
+----
+Modified: src/ios/CDVOrientation.h|4 1
+Modified: src/ios/CDVOrientation.m|16 8
+
+Revision: b4db5e2796abf7a773b8e644f55e9457c221693a
+Author: Dan Field <dnfield@travelers.com>
+Date: 06/10/2017 03:16:07
+Message:
+CB-13405: (ios) undo lock when resetting #MsgLength=41
+
+
+----
+Modified: src/ios/CDVOrientation.h|1 0
+Modified: src/ios/CDVOrientation.m|13 5
+
+
+Revision: 374c59a094cd4d231007281b62dd0457285b3624
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 13/12/2017 14:41:41
+Message:
+CB-13673 : Remove deprecated platforms #MsgLength=39
+
+
+----
+Modified: README.md|3 11
+Modified: package.json|1 1
+Modified: plugin.xml|1 14
+Deleted: www/screenorientation.bb10.js|0 34
+
+
+Revision: 1d404c5c2fad48cca1ff3fc072b1af5b85931969
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 14/12/2017 15:32:55
+Message:
+Bump version to 3.0.0-dev, package.json description cleanup #MsgLength=60
+
+
+----
+Modified: package.json|2 2
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 044e8cc728a643f6fde7beb83f344626c1ddb858
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:25:13
+Message:
+CB-13681 Updated version and RELEASENOTES.md for release 3.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 338424bfc1258ef5c9ce7a09d301a3d0567693da
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/12/2017 09:26:45
+Message:
+Set VERSION to 3.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5b34d069f4827831fd519015e73185c328a9d201
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 27/12/2017 23:50:57
+Message:
+CB-13710: Fix to allow 3.0.0 version install (#28) #MsgLength=52
+
+
+----
+Modified: package.json|1 1
+
+Revision: 9bd2ef7eda83dc630fd5f423c2547b29c8bd5f8c
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:36
+Message:
+CB-13714 Updated version and RELEASENOTES.md for release 3.0.1 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|2 55
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 63fbbf45fdb55f2da68e2b74e1ef76661ccf5060
+Author: Simon MacDonald <simon.macdonald@gmail.com>
+Date: 28/12/2017 08:13:50
+Message:
+Set VERSION to 3.0.2-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 76f290e9cd2b13e602fe0c8786b471b9ce635137
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 30/12/2017 13:54:36
+Message:
+Fix release notes (#29) #MsgLength=25
+
+
+----
+Modified: RELEASENOTES.md|55 0
+
+Revision: 6fd974dcbf7c508a0e84ce55827e8cc555a1c7ed
+Author: Julio César <jcesarmobile@gmail.com>
+Date: 11/01/2018 06:41:28
+Message:
+CB-13765: Add build-tools-26.0.2 to travis #MsgLength=43
+
+
+----
+Modified: .travis.yml|4 0
+
+
+Revision: 13b34f05e6abf454f2cb7f1b7870c0cb31cc6a32
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2018 08:47:29
+Message:
+Update README.md #MsgLength=16
+
+
+----
+Modified: README.md|4 0
+
+Revision: a89e94c2b8bdefecca5583b795fac779b3a0c341
+Author: Fortunes Technology <fortunes.technology@gmail.com>
+Date: 12/02/2018 10:06:54
+Message:
+Landscape Issue Fix and prevent orientation change when already in orientation #MsgLength=79
+
+
+----
+Modified: src/ios/CDVOrientation.m|7 6
+
+
+Revision: 950d33937879c79df7dce256bf44675a6b6f5c27
+Author: jcesarmobile <jcesarmobile@gmail.com>
+Date: 03/07/2018 12:04:41
+Message:
+CB-11843: fix package information (#33) #MsgLength=41
+
+
+----
+Modified: package.json|2 2
+Modified: plugin.xml|1 1
+
+Revision: 9d2a4223ebd1e246ebd2ea10d278c37805987d3b
+Author: Jan Piotrowski <piotrowski@gmail.com>
+Date: 01/10/2018 18:56:03
+Message:
+also accept terms for android sdk `android-27` #MsgLength=46
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: ccc17fbab4df2058d62a18a1bcc41f301700868f
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:40:22
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
+Revision: de7f6fee4b6f8fe5f25e11de5334c701b45c935e
+Author: Tim Brust <ratchet.player@gmx.de>
+Date: 16/04/2019 17:02:23
+Message:
+chore: drop Node.js v4 support (#45) #MsgLength=38
+
+
+----
+Modified: .appveyor.yml|12 5
+Modified: .travis.yml|63 75
+
+Revision: 7f493cef98d9033f4233eea616042a8dc7747638
+Author: Tim Brust <github@timbrust.de>
+Date: 29/05/2019 18:54:54
+Message:
+chore: add missing keywords to package.json for plugin search (#49) #MsgLength=84
+
+
+----
+Modified: package.json|3 0
+
+Revision: 83370a8f697b2fba6fe016f3c7591617c53b2fe6
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 18/06/2019 23:27:19
+Message:
+ci(travis): Update Travis CI configuration for new paramedic (#47) #MsgLength=207
+
+
+----
+Modified: .travis.yml|89 44
+
+Revision: 34c9c296e8e17f063edfc8f8e3adfc1ebb4c4aaf
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 21:39:49
+Message:
+docs: move legacy release notes to RELEASENOTES.md #MsgLength=51
+
+
+----
+Modified: README.md|0 46
+Modified: RELEASENOTES.md|26 0
+
+Revision: ae60fa95c05596bea00526740040e5420ec63db6
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 21:42:36
+Message:
+build: add .gitattributes to force LF (instead of possible CRLF on Windows) #MsgLength=76
+
+
+----
+Added: .gitattributes|1 0
+
+Revision: 80724df9a41dda32ea8ebf416fd57b2dc32acf6d
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 21:42:53
+Message:
+build: update .npmignore to remove unneeded files from npm package #MsgLength=67
+
+
+----
+Modified: .npmignore|17 0
+
+Revision: 7f35359d96e650fdf9fa243491e9c902ac3a5026
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 21:53:16
+Message:
+chore(release): release notes for 3.0.2 #MsgLength=40
+
+
+----
+Modified: RELEASENOTES.md|16 0
+
+Revision: 95e664d6ebb7e491ae19abb35ac53182c7961da3
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 21:53:17
+Message:
+chore(release): 3.0.2 (version string) #MsgLength=39
+
+
+----
+Modified: demo/www/img/logo.png|0 0
+Modified: package.json|2 2
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 1d5b98788d8150856a33cf78be96f8873ab0ba32
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 19/06/2019 21:54:11
+Message:
+chore(release): 3.0.3-dev #MsgLength=26
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/package.json|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: c5c85dae0719b007a27024e28c93fbb989492df5
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 03/07/2019 16:28:11
+Message:
+ci(travis): upgrade to node 8 #MsgLength=29
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 8d76ec1b00796720fc4845a22017e396977a7e87
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 04/07/2019 19:47:04
+Message:
+ci(appveyor): replace node 6 with node 12 #MsgLength=41
+
+
+----
+Modified: .appveyor.yml|1 1
+
+Revision: 464ab8541ce96553214fd1f5201dad31d0d2af80
+Author: Raphael von der Grün <raphinesse@gmail.com>
+Date: 21/11/2019 18:49:39
+Message:
+test: let Jasmine handle promises (#57) #MsgLength=565
+
+
+----
+Modified: tests/tests.js|5 19
+
+Revision: 8ff1bab6c69e87ac33b4ca57904d0f7b4aaf8677
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 23:02:21
+Message:
+ci: updates Node.js versions (#61) #MsgLength=36
+
+
+----
+Modified: .appveyor.yml|2 5
+Modified: .travis.yml|12 11
+
+Revision: c6a7f13c8000292cc3b6228c79b437e10ea5b686
+Author: Tim Brust <github@timbrust.de>
+Date: 28/03/2020 23:30:49
+Message:
+chore(npm): improve ignore list (#60) #MsgLength=39
+
+
+----
+Modified: .npmignore|3 17
+
+Revision: fb733d8aa455a5976e8346e3dd4860a737a2f371
+Author: Niklas Merz <niklasmerz@apache.org>
+Date: 13/04/2020 20:31:36
+Message:
+Update CONTRIBUTING.md #MsgLength=23
+
+
+----
+Added: CONTRIBUTING.md|37 0
+
+Revision: 01c10dce27f5ddde30f6bb3cec2b6c7e3d5c222e
+Author: Erisu <ellis.bryan@gmail.com>
+Date: 22/04/2020 12:42:27
+Message:
+chore(asf): update git notification settings #MsgLength=45
+
+
+----
+Added: .asf.yaml|22 0
+
+Revision: 2c6b348f86a5c90a3a811f877a619010b4e906fe
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 16:05:21
+Message:
+chore: removes old demo project. closes #52 (#65) #MsgLength=51
+
+
+----
+Modified: .gitignore|1 14
+Modified: .npmignore|0 1
+Deleted: demo/config.xml|0 44
+Deleted: demo/www/css/index.css|0 119
+Deleted: demo/www/img/logo.png|0 0
+Deleted: demo/www/index.html|0 68
+Deleted: demo/www/js/index.js|0 120
+Modified: package.json|1 1
+
+Revision: 4b719848a6df8ef8fdda27eb444ac2ee92e0b032
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 16:05:29
+Message:
+chore(npm): use short notation in package.json (#64) #MsgLength=54
+
+
+----
+Modified: package.json|2 7
+
+Revision: 57df0189e0a165ea29c2b6d6470ce8c2d04d8660
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 18:12:53
+Message:
+refactor(eslint): use cordova-eslint /w fix (#66) #MsgLength=51
+
+
+----
+Added: .eslintrc.yml|23 0
+Modified: package.json|3 3
+Modified: src/windows/CDVOrientationProxy.js|16 12
+Modified: tests/tests.js|30 40
+Modified: www/screenorientation.js|54 53
+
+Revision: 3c08d393ffe0df5fa16f7fcbab06c22648dcc3ed
+Author: Tim Brust <github@timbrust.de>
+Date: 02/07/2020 23:42:31
+Message:
+chore: adds package-lock file (#67) #MsgLength=37
+
+
+----
+Added: package-lock.json|1726 0
+
+Revision: 8f4488fe19f6b6f1973924b9114a27cb2894c205
+Author: Tim Brust <github@timbrust.de>
+Date: 22/08/2020 20:34:00
+Message:
+ci(travis): updates Android API level (#71) #MsgLength=45
+
+
+----
+Modified: .travis.yml|2 2
+
+Revision: 9a668cc721c51969d2cb12efebaa1c85fc23c7b3
+Author: エリス <erisu@users.noreply.github.com>
+Date: 03/09/2020 18:34:10
+Message:
+ci(travis): update osx xcode image (#72) #MsgLength=135
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: e0a1f3948cbc05bd6895e66b46d735ab45bd8b70
+Author: iktumi <46563781+iktumi@users.noreply.github.com>
+Date: 23/01/2021 01:06:37
+Message:
+fix: resolveOrientation function not working correctly (#77) #MsgLength=213
+
+
+----
+Modified: www/screenorientation.js|1 1
+
+Revision: c60dc80d7593f7cd2e1e0389c29b92042ebe1591
+Author: エリス <erisu@users.noreply.github.com>
+Date: 08/09/2021 13:56:38
+Message:
+ci: add node-14.x to workflow (#76) #MsgLength=37
+
+
+----
+Modified: .appveyor.yml|1 0
+Modified: .travis.yml|1 1
+
+Revision: f8355831925804fbf598069b0beb19b82114119c
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/09/2021 21:20:15
+Message:
+ci: add gh-actions workflows (#84) #MsgLength=36
+
+
+----
+Added: .github/workflows/android.yml|148 0
+Added: .github/workflows/chrome.yml|73 0
+Added: .github/workflows/ios.yml|88 0
+Added: .github/workflows/lint.yml|56 0
+
+Revision: 3d77257f689c1b64ff28d6025f59b1909d1e9910
+Author: エリス <erisu@users.noreply.github.com>
+Date: 24/09/2021 23:07:52
+Message:
+ci: remove travis & appveyor (#86) #MsgLength=36
+
+
+----
+Deleted: .appveyor.yml|0 33
+Modified: .npmignore|0 1
+Deleted: .travis.yml|0 120
+Modified: README.md|0 4
+
+Revision: ab0f00cc0d089fb8fa0c8ed9d6a5605e2991a670
+Author: エリス <erisu@users.noreply.github.com>
+Date: 25/09/2021 00:04:23
+Message:
+ci: add action-badge (#87) #MsgLength=28
+
+
+----
+Modified: README.md|2 0
+
+Revision: f6975fa5dc520c340f4da8358109176e7d9ac2e7
+Author: エリス <erisu@users.noreply.github.com>
+Date: 18/10/2021 20:12:47
+Message:
+ci(ios): update workflow w/ iOS 15 (#88) #MsgLength=42
+
+
+----
+Modified: .github/workflows/ios.yml|22 4
+
+Revision: 1bfe111fa639dacdc5b4e19dfd4c5d44b046df9e
+Author: エリス <erisu@users.noreply.github.com>
+Date: 16/07/2022 13:17:00
+Message:
+ci(android): update java requirement for cordova-android@11 (#92) #MsgLength=67
+
+
+----
+Modified: .github/workflows/android.yml|3 4
+
+Revision: 7a4087cc8d72e21d452c196b759e367c5307c9cf
+Author: エリス <erisu@users.noreply.github.com>
+Date: 17/07/2022 16:58:54
+Message:
+chore(npm): bump package-lock v2 w/ rebuild (#99) #MsgLength=51
+
+
+----
+Modified: package-lock.json|2948 500
+
+Revision: 7a4b5c979082ba90210b6e4c8d949fb6e01062a3
+Author: エリス <erisu@users.noreply.github.com>
+Date: 13/08/2022 00:59:57
+Message:
+ci: sync workflow with paramedic (#101) #MsgLength=41
+
+
+----
+Modified: .github/workflows/android.yml|12 22
+Modified: .github/workflows/ios.yml|4 13
+
+Revision: 989d95738bdf0fa1cb6d6c593f28a605b8171388
+Author: Norman Breau <norman@nbsolutions.ca>
+Date: 22/09/2022 12:18:15
+Message:
+chore: package-lock update (#104) #MsgLength=35
+
+
+----
+Modified: package-lock.json|61 174
+
+Revision: b4030fc1608261dcc9698f48033737e5e4f28d4b
+Author: Norman Breau <norman@nbsolutions.ca>
+Date: 22/09/2022 12:18:45
+Message:
+chore: add .npmrc file to ensure the official NPM registry is used for package installations. (#103) #MsgLength=102
+
+
+----
+Added: .npmrc|2 0
+
+Revision: 98ec1cff7def2eaee2af08d3c66a8a7051774c06
+Author: Norman Breau <norman@nbsolutions.ca>
+Date: 22/09/2022 12:19:23
+Message:
+fix(chrome): lock test (#105) #MsgLength=31
+
+
+----
+Modified: tests/tests.js|29 5
+

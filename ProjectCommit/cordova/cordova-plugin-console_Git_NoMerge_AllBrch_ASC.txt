@@ -1,0 +1,1625 @@
+Revision: a206025fd078d9604d7c226d76562cfec4b49388
+Author: hermwong <herm.wong@gmail.com>
+Date: 21/05/2013 04:28:29
+Message:
+initial commit #MsgLength=15
+
+
+----
+Added: README.md|2 0
+
+Revision: 693a33f8386f4441085a7e15d3f0b3c8d1ecd1e5
+Author: hermwong <herm.wong@gmail.com>
+Date: 21/05/2013 04:29:04
+Message:
+add console apis from Cordova-JS #MsgLength=33
+
+
+----
+Added: www/console-via-logger.js|187 0
+Added: www/logger.js|345 0
+
+Revision: bd6ea34cb6c5b0c85aa162399ee16d373c582500
+Author: hermwong <herm.wong@gmail.com>
+Date: 21/05/2013 04:30:01
+Message:
+added native iOS classes #MsgLength=25
+
+
+----
+Added: src/ios/CDVLogger.h|26 0
+Added: src/ios/CDVLogger.m|38 0
+
+Revision: e362e19711a7c1f13f145395fa6288c2522f9603
+Author: hermwong <herm.wong@gmail.com>
+Date: 21/05/2013 04:30:42
+Message:
+added initial plugin configuration #MsgLength=35
+
+
+----
+Added: plugin.xml|32 0
+
+Revision: e2697c3b3424352a10a85bff996ccceb3580b91b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/05/2013 08:04:41
+Message:
+updated plugin.xml id, ios src file references, require reference #MsgLength=66
+
+
+----
+Modified: plugin.xml|1 1
+Modified: src/ios/CDVLogger.m|1 1
+Modified: www/console-via-logger.js|1 1
+
+Revision: f86eafe096ff17795146e830a00a98b9af8c7a49
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 21/05/2013 08:18:18
+Message:
+modfied clobber targets #MsgLength=24
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 0905ba09c09e07f9dd20b57982b4cae57fe05a76
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 13/06/2013 07:25:01
+Message:
+first pass wp7 support #MsgLength=23
+
+
+----
+Modified: plugin.xml|11 0
+Added: src/wp7/DebugConsole.cs|49 0
+
+Revision: 57dc595bf4b02991c2957733a43bca16339ec483
+Author: Benn Mapes <benn.mapes@gmail.com>
+Date: 25/06/2013 05:26:02
+Message:
+[CB-3695] wp8 support #MsgLength=22
+
+
+----
+Modified: plugin.xml|12 1
+Added: src/wp8/DebugConsole.cs|49 0
+
+Revision: ab5d843fbadd84d38d4a7983ea350d280fb3247a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 06:35:55
+Message:
+Remove xmlns:android, fix plugin id #MsgLength=36
+
+
+----
+Modified: plugin.xml|2 3
+
+Revision: 3c96dc8ac2994663a67d562ec4057d8bbc6fe538
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 07:46:10
+Message:
+Fix require paths that were broken by plugin id changes #MsgLength=56
+
+
+----
+Modified: README.md|1 1
+
+Revision: cefc3857ef2ea6850bc78c1502efc53555b9b812
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 29/06/2013 08:29:06
+Message:
+Fix broken import path #MsgLength=23
+
+
+----
+Modified: src/ios/CDVLogger.h|1 1
+
+Revision: 4c75a26489ce18838e00b2bf8818d0d4406ac0e2
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2013 05:56:41
+Message:
+[CB-4111] remove dupe code #MsgLength=27
+
+
+----
+Modified: plugin.xml|2 2
+Renamed: src/wp/DebugConsole.cs [from src/wp7/DebugConsole.cs]|0 0
+Deleted: src/wp8/DebugConsole.cs|0 49
+
+Revision: 53ebe9048d2e4bfedbe90f150437e87295d26949
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 02:43:12
+Message:
+[CB-4131] Use relative require paths in console plugin #MsgLength=55
+
+
+----
+Modified: www/console-via-logger.js|1 1
+
+Revision: f71711bd8a055f12660b5db907a972f79b7ad725
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 23:13:21
+Message:
+[CB-3698] Enable console by default on iOS. #MsgLength=90
+
+
+----
+Modified: plugin.xml|4 0
+Added: www/logger-startup.js|24 0
+
+Revision: 2601e6be4b7a509bc63594c81700ded7f911d84b
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 10/07/2013 23:15:10
+Message:
+[CB-4143] Don't add console modules for Android. #MsgLength=49
+
+
+----
+Modified: plugin.xml|29 13
+
+Revision: 1e67667cae607827cc0db09e629560b0d4805b12
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/07/2013 04:56:27
+Message:
+[CB-4157] Console plugin does not run #MsgLength=38
+
+
+----
+Modified: www/logger-startup.js|1 1
+Modified: www/logger.js|1 1
+
+Revision: 1c8c456e457d42dfd79c92e28be9b6a1a6d022de
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/07/2013 07:47:27
+Message:
+[CB-4181] console.log - logging objects show as [object Object] #MsgLength=64
+
+
+----
+Modified: www/logger.js|6 0
+
+Revision: 944acbe20a2f20fe40240db8c614e32612569dc4
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 13/07/2013 04:12:56
+Message:
+[CB-4192] The defaults for the console plugin does not log calls to the native logger #MsgLength=86
+
+
+----
+Modified: plugin.xml|0 4
+Deleted: www/logger-startup.js|0 24
+Modified: www/logger.js|2 2
+
+Revision: 27af161b618f1d850ab94d28b3aa47d3d75c6f3e
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 16/07/2013 09:04:37
+Message:
+ignore stuff #MsgLength=13
+
+
+----
+Added: .gitignore|23 0
+
+Revision: 3cb1165a3f95e86045e9800ba3e8b4ffb0ef5a91
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 19/07/2013 07:15:55
+Message:
+updated readme #MsgLength=15
+
+
+----
+Modified: README.md|3 0
+
+Revision: 8086019f86fba78c5630351d1e8baff04f6c2a3c
+Author: Anis Kadri <anis@apache.org>
+Date: 31/07/2013 06:32:00
+Message:
+updating plugin.xml with registry data #MsgLength=39
+
+
+----
+Modified: plugin.xml|3 0
+
+Revision: 4d7c1596b33a3a19fe9af1169bbc9cae0a2741ad
+Author: purplecabbage <purplecabbage@gmail.com>
+Date: 31/07/2013 08:19:39
+Message:
+[Windows8] added support for windows8 [CB-4436] #MsgLength=48
+
+
+----
+Modified: plugin.xml|11 0
+
+Revision: 79d431881d924c115a17ad5c7bc3b7d4c3496048
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:42:09
+Message:
+[license] adding apache license file #MsgLength=37
+
+
+----
+Added: LICENSE|202 0
+
+Revision: 14741f266d1f7e8774471a534aa85c9d7edfa49f
+Author: Hardeep Shoker <shokerhardeep@gmail.com>
+Date: 07/08/2013 05:52:52
+Message:
+[plugin.xml] standardizing license + meta #MsgLength=42
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: f167e27d16a0f61dcefe6c33a5492b391cd97b43
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 25/07/2013 02:35:20
+Message:
+updated name tag, namespace and readme #MsgLength=39
+
+
+----
+Modified: README.md|1 1
+Modified: plugin.xml|2 2
+
+Revision: 1370403badf54f5b907068bea0c0256d7da03840
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 15/08/2013 06:20:24
+Message:
+reverted name element to be human readable #MsgLength=43
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 79cb848db23a15c4ecf456a07de7b8a84f70f261
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 20/08/2013 05:32:48
+Message:
+CB-4595: updated version #MsgLength=25
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 8db4f6dc91c71f6ad06e56ff00b3e242bba9ebb8
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 11:55:26
+Message:
+Add empty CHANGELOG.md #MsgLength=23
+
+
+----
+Added: CHANGELOG.md|23 0
+
+Revision: e45e16ae1942374caf429bdee5ab9e2fa3ef82cd
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 06/09/2013 12:58:21
+Message:
+[CB-4752] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 3d39d564fd2dbaf2cf6cb2fb035cfc2d3446f5f4
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 17/09/2013 23:36:13
+Message:
+Rename CHANGELOG.md -> RELEASENOTES.md #MsgLength=39
+
+
+----
+Renamed: RELEASENOTES.md [from CHANGELOG.md]|0 0
+
+Revision: 2462d7e0be03a0c0314a76bd2ac45172662c9798
+Author: Anis Kadri <anis@apache.org>
+Date: 21/09/2013 18:10:37
+Message:
+CB-4889 renaming org.apache.cordova.core.console to org.apache.cordova.console #MsgLength=79
+
+
+----
+Modified: plugin.xml|2 2
+
+Revision: 6afe9ae01cbc1570eb05b5848a9b14306cd0c317
+Author: Anis Kadri <anis@apache.org>
+Date: 25/09/2013 23:49:53
+Message:
+CB-4889 bumping&resetting version #MsgLength=34
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: b31fcbc4b3c76498fbb4acee1d4261935ed1fce9
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 08:09:10
+Message:
+[CB-4915] Updated version and RELEASENOTES.md for release 0.2.3 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|5 1
+Modified: plugin.xml|1 1
+
+Revision: aa9ff9cbc512eff2e77c410fd336f28f796e9c0d
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 26/09/2013 09:34:12
+Message:
+[CB-4915] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 8892514f0886144e46d45ee1577b8a4c96d55144
+Author: hermwong <herm.wong@gmail.com>
+Date: 22/10/2013 06:45:32
+Message:
+CB-5128: added repo + issue tag to plugin.xml for console plugin #MsgLength=65
+
+
+----
+Modified: plugin.xml|2 0
+
+Revision: aef8d8fff6b7181091c63dd4fa2bf4a636efb0a3
+Author: James Jong <wjamesjong@gmail.com>
+Date: 23/10/2013 01:20:15
+Message:
+CB-5154 log formatting incorrectly to native #MsgLength=83
+
+
+----
+Modified: www/logger.js|5 1
+
+Revision: eae4edbcbda2a7d95f8f017cc95b6fcf9fa0fd04
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 01:59:44
+Message:
+[CB-5188] Updated version and RELEASENOTES.md for release 0.2.4 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: 14e160c6b4598be840773143c11275001d990d35
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 29/10/2013 03:27:13
+Message:
+CB-5188: #MsgLength=9
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 68e28df6c55b5a90d1ce79b3a09968f9ea12d4be
+Author: Maxim Ermilov <maxim.ermilov@canonical.com>
+Date: 08/10/2013 15:34:44
+Message:
+add ubuntu platform #MsgLength=20
+
+
+----
+Modified: plugin.xml|15 0
+Added: src/ubuntu/console.cpp|29 0
+Added: src/ubuntu/console.h|43 0
+
+
+Revision: 6f488ccf565626bed5161b935769ce88c047ced3
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:16:30
+Message:
+[CB-5565] Updated version and RELEASENOTES.md for release 0.2.5 #MsgLength=64
+
+
+----
+Modified: RELEASENOTES.md|4 1
+Modified: plugin.xml|1 1
+
+Revision: be9673083f95ff365dda42a69d69245f0a1096b7
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 05/12/2013 07:32:03
+Message:
+[CB-5565] Incremented plugin version on dev branch. #MsgLength=52
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 11500c44ae755b61f5985c142df9a3b5a7dbd5c5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 00:36:25
+Message:
+CB-5658 Add doc/index.md for Console plugin #MsgLength=44
+
+
+----
+Modified: README.md|21 4
+Added: doc/index.md|29 0
+
+Revision: 8132f4340adca411ab283a0b93bd8519fc8f7334
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 19/12/2013 10:11:02
+Message:
+CB-5658 Update license comment formatting of doc/index.md #MsgLength=58
+
+
+----
+Modified: doc/index.md|14 14
+
+Revision: e5050a0779c78e73e5b251c6e8a5090205283d0f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:24:02
+Message:
+CB-5719 Updated version and RELEASENOTES.md for release 0.2.6 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: 3382df9683e85ab928927231acbc608e888285c9
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 03/01/2014 01:30:52
+Message:
+CB-5719 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 8c9b1754d8c10bb1b6b6bbb2dd46b4bd4e6d84ae
+Author: pu-chen <puchen@polyvi.com>
+Date: 31/10/2013 17:15:11
+Message:
+CB-4718 fixed Console plugin not work on wp #MsgLength=44
+
+
+----
+Modified: plugin.xml|2 2
+Modified: src/wp/DebugConsole.cs|13 15
+
+
+Revision: 5c835dc4c01b0c359116b2d6bbebeb70f9cb0b40
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 17/01/2014 05:35:56
+Message:
+Native console needs to be called DebugConsole to avoid ambiguous reference. This commit requires the 3.4.0 version of the native class factory #MsgLength=144
+
+
+----
+Modified: plugin.xml|2 2
+Modified: src/wp/DebugConsole.cs|1 1
+
+Revision: 4dde8581c47a92d64a5a4f4eef5342e8f4dd0629
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 09:53:58
+Message:
+CB-5980 Updated version and RELEASENOTES.md for release 0.2.7 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: fd4bb8999f7ce80f5a920573b57b03f990bb455f
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/02/2014 10:13:29
+Message:
+CB-5980 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: e1ecc087cabf3357498cb080ebd9eb3323fd83c5
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 28/02/2014 04:36:31
+Message:
+Add NOTICE file #MsgLength=16
+
+
+----
+Added: NOTICE|5 0
+
+Revision: 4841b2e5a1c1ac3f19019609d67d51a04859b4dd
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 04:15:39
+Message:
+CB-6460: Update license headers #MsgLength=32
+
+
+----
+Modified: plugin.xml|18 0
+
+Revision: 266973315d3dbde6579c7e775eb0d7f9b995bbaf
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 22:53:20
+Message:
+CB-6452 Updated version and RELEASENOTES.md for release 0.2.8 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: 7e3ab5f8cd4a9fd5f04d4a3cb7c3bafe0be4a2a3
+Author: Ian Clelland <iclelland@chromium.org>
+Date: 17/04/2014 23:16:03
+Message:
+CB-6452 Incremented plugin version on dev branch. #MsgLength=50
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 2f2cf7114837fdb3101c34c2faca8bda7fbdda1c
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/04/2014 21:21:00
+Message:
+CB-6491 add CONTRIBUTING.md #MsgLength=28
+
+
+----
+Added: CONTRIBUTING.md|16 0
+
+Revision: 9b8e92589deb2f0657354c4d210b0ecd6e090a9c
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 30/05/2014 23:20:44
+Message:
+CB-6796 Add license #MsgLength=20
+
+
+----
+Modified: CONTRIBUTING.md|21 0
+
+Revision: 8d1e33748600813bd892fa6495895d1ef3ba490d
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 05/06/2014 07:45:55
+Message:
+CB-6848 Add Android quirk, list applicable platforms #MsgLength=53
+
+
+----
+Modified: doc/index.md|9 2
+
+Revision: f3764d83188dde19b669c6d66ac5c1a8e885bed0
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:39:42
+Message:
+CB-6877 Updated version and RELEASENOTES.md for release 0.2.9 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|5 0
+Modified: plugin.xml|1 1
+
+Revision: d4e5b20d70841166c56f6f3b5363d498c01a5b6e
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 06/06/2014 04:40:50
+Message:
+CB-6877 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: dce8d91eb0838a5ce5a5820033890165e42dc15d
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 08/07/2014 02:28:00
+Message:
+CB-6127lisa6cordova-plugin-console documentation translation: cordova-plugin-console #MsgLength=85
+
+
+----
+Added: doc/de/index.md|31 0
+Added: doc/es/index.md|31 0
+Added: doc/fr/index.md|31 0
+Added: doc/it/index.md|31 0
+Added: doc/ja/index.md|31 0
+Added: doc/ko/index.md|31 0
+Added: doc/ru/index.md|31 0
+Added: doc/zh/index.md|31 0
+
+Revision: cf56dd9fd123fa098a2f968c70ccd780931468a3
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 02/08/2014 04:23:00
+Message:
+CB-7249cordova-plugin-console documentation translation: cordova-plugin-console #MsgLength=80
+
+
+----
+Added: doc/pl/index.md|31 0
+
+Revision: 361a73573b9a7a164f7197920244248184fa6b5a
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 09:58:20
+Message:
+CB-7244 Updated version and RELEASENOTES.md for release 0.2.10 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: 36a56540b892c0b80661e8fcfb3b7a59fcbb4e0b
+Author: Steven Gill <stevengill97@gmail.com>
+Date: 07/08/2014 10:24:26
+Message:
+CB-7244 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 6cc4740b936104c97f577bd6599b09a8d01c66d7
+Author: Lisa Seacat DeLuca <ldeluca@us.ibm.com>
+Date: 05/09/2014 10:30:15
+Message:
+CB-7249 cordova-plugin-console documentation translation: cordova-plugin-console #MsgLength=81
+
+
+----
+Modified: doc/de/index.md|3 3
+
+Revision: 9d1c255ac78f6c81bfec00a08c4918171937ff3f
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:27:39
+Message:
+CB-7571 Updated version and RELEASENOTES.md for release 0.2.11 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: 063666efb721d59bcd8e8393a63173f8c8f8c964
+Author: Marcel Kinard <cmarcelk@gmail.com>
+Date: 18/09/2014 03:35:01
+Message:
+CB-7571 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: b904be5b71ca8a49f0d256e981641901704d9ec0
+Author: Victor Sosa <victorsh@mx1.ibm.com>
+Date: 03/10/2014 07:10:27
+Message:
+CB-7700 cordova-plugin-console documentation translation: cordova-plugin-console #MsgLength=81
+
+
+----
+Modified: doc/pl/index.md|2 2
+Modified: doc/ru/index.md|1 1
+
+Revision: c0aa66c98af3920dc1f9a1f2ec000372d4e48ec1
+Author: Josh Soref <jsoref@blackberry.com>
+Date: 07/11/2014 06:08:13
+Message:
+CB-7977 Mention deviceready in plugin docs #MsgLength=43
+
+
+----
+Modified: doc/index.md|10 0
+
+Revision: 9e57b0d5c336b3a4a5e4fc1ee63571bbbb47d4b1
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:07:02
+Message:
+CB-8110 Updated version and RELEASENOTES.md for release 0.2.12 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: plugin.xml|1 1
+
+Revision: cf37131e1bcb9606b8629634ee857d8c73d40119
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 03/12/2014 08:08:49
+Message:
+CB-8110 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 9e6ccf8e5fbfa8dc3087011a8089b6619f3f3b0f
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 23/01/2015 22:49:20
+Message:
+CB-8351 Use argumentForIndex rather than NSArray extension #MsgLength=59
+
+
+----
+Modified: src/ios/CDVLogger.m|2 2
+
+Revision: 7507b295278349cf010cdd550713d7845552664a
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:12:45
+Message:
+CB-8429 Updated version and RELEASENOTES.md for release 0.2.13 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|3 0
+Modified: plugin.xml|1 1
+
+Revision: 196f4afcd84dcbaf58aa1212261a88ace32b0d52
+Author: Andrew Grieve <agrieve@chromium.org>
+Date: 05/02/2015 09:54:02
+Message:
+CB-8429 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 7eaa218dcacf70578074c2449a9908ba10ebff54
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 26/01/2015 19:52:27
+Message:
+CB-8362 Add Windows platform section to Console plugin #MsgLength=55
+
+
+----
+Modified: plugin.xml|10 1
+
+Revision: 669d6ca4ef4d81e6b2370d3f284d91c97e169dac
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 25/02/2015 15:18:21
+Message:
+CB-8538 Added package.json file #MsgLength=32
+
+
+----
+Added: package.json|33 0
+
+Revision: 8e7be2893a3c1b6e47122c641ff77c45a3102aeb
+Author: Victor Sosa <victorsh@apache.org>
+Date: 28/02/2015 02:47:39
+Message:
+CB-8438 cordova-plugin-console documentation translation: cordova-plugin-console #MsgLength=81
+
+
+----
+Modified: doc/de/index.md|11 1
+Modified: doc/es/index.md|9 1
+Modified: doc/fr/index.md|9 1
+Modified: doc/it/index.md|10 0
+Modified: doc/ja/index.md|11 1
+Modified: doc/ko/index.md|10 0
+Modified: doc/pl/index.md|10 0
+Modified: doc/zh/index.md|11 1
+
+Revision: 00f78d4b04f3c4c4c58583579d34d866cb2883cd
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 03/03/2015 04:48:35
+Message:
+CB-8560 Integrate TravisCI #MsgLength=27
+
+
+----
+Added: .travis.yml|14 0
+Modified: README.md|2 0
+
+Revision: 51d7377961d0d2f9215d7296f99d3f6973a345ea
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 14/03/2015 09:55:07
+Message:
+CB-8653 Updated Readme #MsgLength=23
+
+
+----
+Modified: README.md|26 2
+Deleted: doc/index.md|0 46
+
+Revision: ebac06dc8e0b2fa5c1e716d13f5df4f3fc258386
+Author: sgrebnov <v-segreb@microsoft.com>
+Date: 19/03/2015 22:55:59
+Message:
+docs: renamed Windows8 to Windows #MsgLength=34
+
+
+----
+Modified: README.md|1 1
+
+Revision: 0f6b3df8e5d6a2c1090b165eaf7b63dcca55c145
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 25/03/2015 14:24:50
+Message:
+Use TRAVIS_BUILD_DIR, install paramedic by npm #MsgLength=47
+
+
+----
+Modified: .travis.yml|2 3
+
+Revision: d8391fd795da4214458a4e98054dd39fa68c602d
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:30
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|3 3
+Modified: doc/es/index.md|3 3
+Modified: doc/fr/index.md|3 3
+Modified: doc/it/index.md|3 3
+Modified: doc/ja/index.md|3 3
+Modified: doc/ko/index.md|3 3
+Modified: doc/pl/index.md|3 3
+Modified: doc/ru/index.md|3 3
+Modified: doc/zh/index.md|3 3
+
+Revision: a75e7997255efb75867b51797d0c5162989d59e2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 01:53:30
+Message:
+CB-8653 updated translated docs to use new id #MsgLength=46
+
+
+----
+Modified: doc/de/index.md|1 1
+Modified: doc/es/index.md|1 1
+Modified: doc/fr/index.md|1 1
+Modified: doc/it/index.md|1 1
+Modified: doc/ja/index.md|1 1
+Modified: doc/ko/index.md|1 1
+Modified: doc/pl/index.md|1 1
+Modified: doc/ru/index.md|1 1
+Modified: doc/zh/index.md|1 1
+
+
+Revision: c4d9aa6020b501caf1ab7726ac5a576b2216d380
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/04/2015 07:45:03
+Message:
+CB-8683 changed plugin-id to pacakge-name #MsgLength=42
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: ada2409921f7238da2868ed83a7bfbf242a8b7b5
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/04/2015 07:52:29
+Message:
+CB-8746 gave plugin major version bump #MsgLength=39
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 69ba754a30d893f3eb22d4951b1261a44e9d898a
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 02:06:37
+Message:
+CB-8858 Updated version and RELEASENOTES.md for release 1.0.0 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|12 0
+Modified: plugin.xml|1 1
+
+Revision: c42f426beb18f8b8fd10c5578c38fd24c1b6c1d3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 04:55:46
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 4fa9cd13813128bdcd8b293cd388f0f6c238d2e7
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 05:30:58
+Message:
+Revert "CB-8858 Incremented plugin version." #MsgLength=108
+
+
+----
+Modified: plugin.xml|1 1
+
+Revision: 293a261bac3f5835f79a60fc2c83837b516799a3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 06:50:47
+Message:
+CB-8858 Updated version in package.json for release 1.0.0 #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: 8a119c5c67e7e5bcd14223ceb387210f33c69b3b
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2015 07:00:21
+Message:
+CB-8858 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 92ed9b2fd4954b165b504a207bac3cce4c8dfb2c
+Author: Raymond Camden <raymondcamden@gmail.com>
+Date: 02/06/2015 23:43:38
+Message:
+attempt to fix npm markdown issue #MsgLength=34
+
+
+----
+Modified: README.md|16 16
+
+Revision: 0e7d464c7af9fbb7c9c7808753391808b5805d04
+Author: Victor Sosa <victorsh@apache.org>
+Date: 12/06/2015 22:39:04
+Message:
+CB-9128 cordova-plugin-console documentation translation: cordova-plugin-console #MsgLength=81
+
+
+----
+Added: doc/de/README.md|43 0
+Added: doc/es/README.md|41 0
+Added: doc/fr/README.md|41 0
+Added: doc/it/README.md|43 0
+Added: doc/ja/README.md|43 0
+Added: doc/ko/README.md|43 0
+Added: doc/pl/README.md|43 0
+Added: doc/zh/README.md|43 0
+
+Revision: 38cc8f7957c50886157e435d1381ce3f238d28ef
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 17/06/2015 04:57:22
+Message:
+CB-9191 Add basic test #MsgLength=23
+
+
+----
+Added: tests/plugin.xml|31 0
+Added: tests/tests.js|31 0
+
+Revision: e888a5b2580c1adf5a50d28692179d19d93b9ef0
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 17/06/2015 05:05:17
+Message:
+add a couple tests #MsgLength=19
+
+
+----
+Modified: tests/tests.js|23 5
+
+Revision: b4899565bed6f9267856d57f48e6b2672c55de56
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 17/06/2015 07:00:23
+Message:
+clean up tests, info is below log level so it does not exist by default. #MsgLength=73
+
+
+----
+Modified: tests/tests.js|19 25
+
+Revision: d58f218b9149d362ebb0b8ce697cf403569d14cd
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 17/06/2015 07:01:23
+Message:
+move logger.js and console-via-logger.js to common modules, instead of the numerous repeats that were there. #MsgLength=109
+
+
+----
+Modified: plugin.xml|8 43
+
+Revision: 0e26696fa49498122a40b4677fbc1fe5a270f840
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 03:36:01
+Message:
+CB-9192 Updated version and RELEASENOTES.md for release 1.0.1 #MsgLength=62
+
+
+----
+Modified: RELEASENOTES.md|8 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: f055daec45575bf08538f885e09c85a0eba363ff
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 05:14:41
+Message:
+CB-9202 updated repo url to github mirror in package.json #MsgLength=58
+
+
+----
+Modified: package.json|1 1
+
+Revision: f2aa14d2c23396074f4fd7bf47a7a7e9ea113cd2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 18/06/2015 08:35:34
+Message:
+CB-9192 Incremented plugin version. #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 9ad6b60a3d64b79081f72580392c3bc4986f140c
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 08/07/2015 05:56:05
+Message:
+remove travi-ci integration #MsgLength=28
+
+
+----
+Deleted: .travis.yml|0 13
+Modified: README.md|0 1
+
+Revision: b9fc01e7d4434713ab316c7013a39244bc0e68c4
+Author: Jesse MacFadyen <purplecabbage@gmail.com>
+Date: 09/07/2015 06:44:02
+Message:
+reverted d58f218b9149d362ebb0b8ce697cf403569d14cd because logger is not needed on android #MsgLength=90
+
+
+----
+Modified: plugin.xml|43 8
+
+Revision: be6d68a9f4adfba1fbd880dc91bdcc7e539cd668
+Author: Andrey Kurdyumov <kant2002@gmail.com>
+Date: 25/07/2015 14:00:40
+Message:
+CB-5089 Document supported methods for console object #MsgLength=54
+
+
+----
+Modified: README.md|39 0
+
+Revision: 851c0c3edd3a331155d52dc5e5cabd88be4ec0f9
+Author: Andrey Kurdyumov <kant2002@gmail.com>
+Date: 25/07/2015 14:04:58
+Message:
+Document formatting options for the console object #MsgLength=51
+
+
+----
+Modified: README.md|14 0
+
+Revision: 0244bcebac6221afaef615316e647eade5643c8a
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:03:42
+Message:
+Fixing contribute link. #MsgLength=24
+
+
+----
+Modified: CONTRIBUTING.md|1 37
+
+Revision: f90eb942a19594156ddaafb9c2b4ea46cbf4926d
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 24/10/2015 03:11:49
+Message:
+Actually fixing the contribute link. #MsgLength=37
+
+
+----
+Modified: CONTRIBUTING.md|37 1
+
+Revision: 2c19742c9ac9492605cec6882278e9b2e22676a4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 05:54:08
+Message:
+CB-10035 Updated RELEASENOTES to be newest to oldest #MsgLength=53
+
+
+----
+Modified: RELEASENOTES.md|48 46
+
+Revision: 4e50f159971b554f1ebee8da5a0d78768c6bacbc
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 06:53:10
+Message:
+removed r prefix from tags #MsgLength=27
+
+
+----
+
+Revision: 35a6d04c0e3f23947eed56388ceed9755f599674
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 11:45:05
+Message:
+CB-10035 Updated version and RELEASENOTES.md for release 1.0.2 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|7 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 5800c5c5dc786bf031fa84682e9818a29397bb16
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/11/2015 14:11:41
+Message:
+CB-10035 linked issues in RELEASENOTES.md #MsgLength=42
+
+
+----
+Modified: RELEASENOTES.md|29 29
+
+Revision: bc17a9810fa268fac1cb45eee63eb05ee5c10ac2
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/12/2015 09:57:07
+Message:
+CB-10035 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 81acc69e5e9391a3cbae5c891a4bf4944ad4f961
+Author: t1st3 <contact@tiste.org>
+Date: 06/02/2016 18:16:48
+Message:
+chore: edit package.json license to match SPDX id #MsgLength=259
+
+
+----
+Modified: package.json|1 1
+
+Revision: 35c28ccc9956bc036e47f38bc0fa15eebb807e00
+Author: daserge <v-seshak@microsoft.com>
+Date: 25/02/2016 23:43:42
+Message:
+CB-10636 Add JSHint for plugins #MsgLength=32
+
+
+----
+Modified: .gitignore|1 1
+Added: .jshintrc|17 0
+Added: .travis.yml|4 0
+Modified: README.md|2 0
+Modified: package.json|8 1
+Modified: tests/tests.js|6 6
+Modified: www/console-via-logger.js|0 1
+Modified: www/logger.js|0 1
+
+Revision: a14d319680447030871751fa94d6a4abb548a110
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 02/03/2016 09:22:05
+Message:
+CB-10720 Minor spelling/formatting changes. #MsgLength=44
+
+
+----
+Modified: README.md|2 4
+
+Revision: 450752ba59fb36744b86cb5f968fa5429b45b3a3
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:08:26
+Message:
+ Updated version and RELEASENOTES.md for release 1.0.3 #MsgLength=55
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e3d8c5b059bec8d1432c9fc71ecedd63c9d5ca45
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 16/04/2016 04:45:27
+Message:
+CB-11091 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: fe6ca895cdadcfa65688d212103989a702c1413e
+Author: Dmitry Blotsky <dmitry.blotsky@gmail.com>
+Date: 23/04/2016 10:35:50
+Message:
+CB-10996 Adding front matter to README.md #MsgLength=42
+
+
+----
+Modified: README.md|4 0
+
+Revision: fcbde7c135f4ca9c96df90aaeafa2485152483ea
+Author: Nikhil Khandelwal <nikhilkh@microsoft.com>
+Date: 24/05/2016 04:53:58
+Message:
+Add pull request template. #MsgLength=27
+
+
+----
+Added: .github/PULL_REQUEST_TEMPLATE.md|23 0
+
+Revision: 336554cd3d049706392f66678ebf139a2cbd42f9
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 10/06/2016 16:39:09
+Message:
+Add badges for paramedic builds on Jenkins #MsgLength=43
+
+
+----
+Modified: README.md|3 1
+
+Revision: ee3cec1bc07c9e451e4d69da4c0e2460a1b655c5
+Author: Julien Bouquillon <julien@bouquillon.com>
+Date: 11/09/2015 00:26:38
+Message:
+add JIRA issue tracker link #MsgLength=46
+
+
+----
+Modified: README.md|3 0
+
+Revision: 5da8de06c4707308dfa92f97ea39244d719897c9
+Author: Vladimir Kotikov <kotikov.vladimir@gmail.com>
+Date: 31/08/2016 21:22:58
+Message:
+CB-11795 Add 'protective' entry to cordovaDependencies #MsgLength=397
+
+
+----
+Modified: package.json|7 0
+
+Revision: e4deaa235c3ca81a4d2df02ee536b56d54a15080
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 09/09/2016 14:38:54
+Message:
+CB-11832 Updated version and RELEASENOTES.md for release 1.0.4 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|9 2
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 81e673b659fbe70992c1e205a7bbc1c049ff5553
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 10/09/2016 07:08:04
+Message:
+CB-11832 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 22cda64abde987ac996295803992f9dc169ba6a7
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 28/09/2016 16:36:10
+Message:
+CB-11917 - Remove pull request template checklist item: "iCLA has been submitted…" #MsgLength=101
+
+
+----
+Modified: .github/PULL_REQUEST_TEMPLATE.md|0 1
+
+Revision: 8bf1ba18d5353feaecf6575fa43f825460d1c13c
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:39:44
+Message:
+CB-12224 Updated version and RELEASENOTES.md for release 1.0.5 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|103 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: e21139215ef7d752e9212fe39d0b8e3d8f1e6335
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 08/12/2016 08:55:06
+Message:
+CB-12224 Incremented plugin version. #MsgLength=37
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: bbfd6428f067bab96c164c8da715573706b19409
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 09/12/2016 17:01:22
+Message:
+CB-12230 Removed Windows 8.1 build badges #MsgLength=42
+
+
+----
+Modified: README.md|3 3
+
+Revision: 6fdb1b41bf2221699802813851e20aacea451023
+Author: Shazron Abdullah <shazron@apache.org>
+Date: 12/12/2016 04:42:08
+Message:
+CB-12236 - Fixed RELEASENOTES for cordova-plugin-console #MsgLength=57
+
+
+----
+Modified: RELEASENOTES.md|1 99
+
+Revision: 2faa230149b4c2fe57e14c067ca2345fd60d40c0
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 18/01/2017 18:27:40
+Message:
+CB-12363 Added build badges for iOS 9.3 and 10.0 #MsgLength=49
+
+
+----
+Modified: README.md|3 3
+
+Revision: 63c767c9fe89d971a802fc56657bf830cf29e3ed
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:41:25
+Message:
+CB-12519 Updated version and RELEASENOTES.md for release 1.0.6 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|77 126
+Modified: tests/plugin.xml|5 30
+
+Revision: bd8719aac9ba1642c85e33f26227df17289ec8dd
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 01/03/2017 09:55:59
+Message:
+Set VERSION to 1.0.7-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|126 77
+Modified: tests/plugin.xml|30 5
+
+Revision: 261fa3ab08eec61c2d935cee61be6950a78872f4
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 22/04/2017 09:18:37
+Message:
+CB-12685: added package.json to tests folder #MsgLength=45
+
+
+----
+Added: tests/package.json|14 0
+
+Revision: c0bd8d62fb067b733a98a31fa8e04ad43a69b8e0
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/04/2017 20:12:39
+Message:
+CB-12622: Added Android 6.0 build badge to README #MsgLength=50
+
+
+----
+Modified: README.md|3 3
+
+Revision: fa26558d7f2d68bda738567ffd5af3d9f58c4d82
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 02:18:58
+Message:
+CB-12736 Updated version and RELEASENOTES.md for release 1.0.7 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|4 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 15b0c6d01ad067e240b9c67fa77234c94d7608d3
+Author: filmaj <maj.fil@gmail.com>
+Date: 28/04/2017 02:20:30
+Message:
+Set VERSION to 1.0.8-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ed1cabe2ad40349680840367869dbd1aa13799d5
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 03:16:04
+Message:
+CB-12847: added `bugs` entry to package.json. #MsgLength=46
+
+
+----
+Modified: package.json|3 0
+
+Revision: fea9390064cf31ba1fdd0e85b6c3bdddb29d8338
+Author: filmaj <maj.fil@gmail.com>
+Date: 25/05/2017 18:35:21
+Message:
+CB-12847: fixed `bugs` entry in package.json. #MsgLength=46
+
+
+----
+Modified: package.json|1 1
+
+Revision: 45d4e38b5d807aa3eb5e19c712cb387414a80239
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 23/06/2017 17:17:35
+Message:
+CB-12935: (ios, android) Run paramedic builds on Travis #MsgLength=56
+
+
+----
+Modified: .travis.yml|70 3
+
+Revision: 568604f7a9156dd8cd53615291512b0a1d02ed90
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 30/06/2017 14:30:33
+Message:
+CB-12935: (windows) Enable paramedic builds on AppVeyor #MsgLength=56
+
+
+----
+Added: .appveyor.yml|28 0
+
+Revision: 2bc63d03375c854b32bcb9edeb09d44c7dc72bf6
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 06/07/2017 19:05:39
+Message:
+CB-12991: (CI) Updated CI badges #MsgLength=33
+
+
+----
+Modified: README.md|3 3
+
+Revision: 4a3a93889946982bd249c71a840b1fa106632d4d
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 10/07/2017 15:33:31
+Message:
+CB-13000: (CI) Speed up android builds #MsgLength=39
+
+
+----
+Modified: .travis.yml|0 4
+
+Revision: cd53e747519c86bf7d2331ce0e7e9d3d3be8667e
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 26/07/2017 12:52:35
+Message:
+CB-13028 (CI) Browser builds on Travis and AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|3 2
+Modified: .travis.yml|16 0
+
+Revision: 3b75e866b554809c2f07d7d420f41f2497d5203e
+Author: Alexander Sorokin <alexander.sorokin@akvelon.com>
+Date: 14/09/2017 21:00:21
+Message:
+Fix "npm not found" error on Travis #MsgLength=36
+
+
+----
+Modified: .travis.yml|0 1
+
+Revision: 0681d8a63788126b29c4cc25e4b99e39dd0d4362
+Author: Shazron Abdullah <shazron@gmail.com>
+Date: 13/09/2017 14:39:14
+Message:
+CB-13170 - final changes and release of post-integration cordova-plugin-console #MsgLength=98
+
+
+----
+Modified: README.md|7 0
+Modified: package.json|4 3
+Modified: plugin.xml|6 1
+
+Revision: f0e113bdf43aedcc8b5c059ea76f31a30346465e
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/09/2017 04:30:44
+Message:
+CB-13294 Updated version and RELEASENOTES.md for release 2.0.0 (via coho) #MsgLength=74
+
+
+----
+Modified: RELEASENOTES.md|9 0
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: 4a6bc4b876853da17008e70fb8f103bd133cf7ce
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 19/09/2017 04:31:03
+Message:
+Set VERSION to 2.0.1-dev (via coho) #MsgLength=36
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+Modified: tests/plugin.xml|1 1
+
+Revision: ef9bd9ceb469c06beff39be76b2bd6fa94eb33b6
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 21/09/2017 01:46:41
+Message:
+CB-13294 Updated version and RELEASENOTES.md for release 1.1.0 #MsgLength=63
+
+
+----
+Modified: RELEASENOTES.md|1 1
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: a82c521e90ba966d91ae2492cbda1cd865ee5aed
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 21/09/2017 01:50:35
+Message:
+Set VERSION to 1.1.1-dev #MsgLength=25
+
+
+----
+Modified: package.json|1 1
+Modified: plugin.xml|1 1
+
+Revision: 14d96648c966db1fed7bb83b34128088e6f58016
+Author: Steve Gill <stevengill97@gmail.com>
+Date: 13/10/2017 03:13:18
+Message:
+CB-13170 updated cordovaDependency #MsgLength=35
+
+
+----
+Modified: README.md|2 1
+Modified: package.json|1 1
+
+Revision: 863340b69e9b11bd6d1b3f6d1c110de46ccbe360
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 13:58:18
+Message:
+CB-13472: (CI) Fixed Travis Android builds again #MsgLength=49
+
+
+----
+Modified: .travis.yml|1 1
+
+Revision: 0c434e42ce0bd2a717c995ca42c843b8be87f431
+Author: Alexander Sorokin <v-alsoro@microsoft.com>
+Date: 20/10/2017 15:22:20
+Message:
+CB-13473: (CI) Removed browser builds from AppVeyor #MsgLength=52
+
+
+----
+Modified: .appveyor.yml|0 1
+
+Revision: 7acec7a651e206e05b7319a5b53bbb57055396f9
+Author: Jan Piotrowski <piotrowski+git@gmail.com>
+Date: 12/02/2019 01:38:23
+Message:
+Add or update GitHub pull request and issue template #MsgLength=53
+
+
+----
+Added: .github/ISSUE_TEMPLATE.md|42 0
+Added: .github/ISSUE_TEMPLATE/BUG_REPORT.md|50 0
+Added: .github/ISSUE_TEMPLATE/FEATURE_REQUEST.md|29 0
+Added: .github/ISSUE_TEMPLATE/SUPPORT_QUESTION.md|27 0
+Modified: .github/PULL_REQUEST_TEMPLATE.md|20 7
+
