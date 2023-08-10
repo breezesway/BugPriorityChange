@@ -1,13 +1,19 @@
 # BugPriorityChange
-This repository stores the dataset and code for *Bug Priority Change: An Empirical Study on Apache Projects*.  
-The following will explain the dataset and code we provide.
-#### GoPriorityChanged
-*GoPriorityChanged* is the relevant code for our calculation data, which is a program written in Golang. If you want to run it, please install Go 1.18.0 or higher version first.
-#### ProjectCommit
-This directory lists the commit record files for the 32 projects we studied.
-> Please note that some projects (such as *Cordova*) correspond to multiple commit record files, as these projects have multiple code repositories, each corresponding to a commit record file.
-#### RQresults  
-In this directory, we provide the calculation results of all RQs in the paper. Each RQ calculation result corresponds to a CSV file, and you can easily know which CSV file corresponds to which RQ through the file name.
+This repository stores the raw data, code and calculation results for *Bug Priority Change: An Empirical Study on Apache Projects*.  
+Specifically, the raw data includes all issue data obtained from JIRA and commit record files parsed from the code repository. 
+The following will explain the replication package we provide.
+## The Raw Data  
+### JIRA Issue
+We obtained all the issue data from JIRA and stored it in MySQL. Now we will share the issue data used in this paper. We export all the issue data into eight SQL files (one for each table), compress them into zip files, and upload them to Zenodo. We will then update the link to the issue data on Zenodo. 
+> Note: The compressed package size is about 1.9G. If you want to use this data, after downloading and extracting the file, please create a database in MySQL and execute these SQL files.
+### ProjectCommit
+The directory named *ProjectCommit* lists the commit record files for the 32 projects we studied.
+> Note: Some projects (such as *Cordova*) correspond to multiple commit record files, as these projects have multiple code repositories, each corresponding to a commit record file.
+## Calculation Code
+The directory named *GoPriorityChanged* is the relevant code for our calculation data, which is a program written in Golang. If you want to run it, please install Go 1.18.0 or higher version first.
+
+## Calculation Results
+In the directory named *RQresults*, we provide the calculation results of all RQs in the paper. Each RQ calculation result corresponds to a CSV file, and you can easily know which CSV file corresponds to which RQ through the file name.
 
 ---
 If you have any questions, please contact caigz1999@foxmail.com.
