@@ -4,8 +4,7 @@ Specifically, the raw data includes all issue data obtained from JIRA and commit
 The following will explain the replication package we provide.
 ## The Raw Data  
 ### JIRA Issue
-We obtained all the issue data from JIRA and stored it in MySQL. Now we will share the issue data used in this paper. We export all the issue data into eight SQL files (one for each table), compress them into zip files, and upload them to Zenodo. So, you can access [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8237408.svg)](https://doi.org/10.5281/zenodo.8237408)
- to obtain issue data.
+We obtained all the issue data from JIRA and stored it in MySQL. Now we will share the issue data used in this paper. We export all the issue data into eight SQL files (one for each table), compress them into zip files, and upload them to Zenodo. The issue data can be accessed at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8237408.svg)](https://doi.org/10.5281/zenodo.8237408).
 > Note: The compressed package size is about 1.9G. If you want to use this data, after downloading and extracting the file, please create a database in MySQL and execute these SQL files.
 ### ProjectCommit
 The directory named *ProjectCommit* lists the commit record files for the 32 projects we studied.
