@@ -1,0 +1,659 @@
+Commons Jelly
+Avalon Phoenix
+AltRMI
+Geronimo
+Directory
+jUDDI
+Depot
+Infrastructure
+James Server
+James jSieve
+Excalibur Fortress
+Avalon Merlin Runtime
+Avalon Castle
+Excalibur Components
+XMLBeans
+Gump
+SOAP
+Axis
+Axis-C++
+Axis-WSIF
+JaxMe
+WSRP4J
+XML-RPC
+Cactus
+Jetspeed 2
+Jetspeed
+HiveMind
+Xerces-C++
+Directory Naming
+Xerces2-J
+Avalon Metro Central
+Avalon Merlin Studio
+Avalon Metro Planet
+Avalon Metro Tools
+Log4cxx
+Pluto
+Beehive
+FtpServer
+Avalon
+Tapestry
+XalanC
+XalanJ2
+Jackrabbit Content Repository
+Derby
+Incubator
+MyFaces Core
+iBatis for Java [READ ONLY]
+iBatis for .NET
+Scout
+Axis2
+WSRF
+Pubscribe
+Muse
+ews
+JDO
+mod_python
+Test Project
+Graffito
+MINA
+Mirae
+Nutch
+Log4net
+OJB
+Lucene4c
+Woden
+Portals Bridges
+Agila
+DdlUtils
+Portals
+TSIK
+Forrest (Retired)
+Harmony
+Addressing
+Kandula
+Sandesha
+WSS4J
+C++ Standard Library
+Turbine
+Felix
+Velocity
+Lucene - Core
+Geronimo-Devtools
+Velocity Tools
+Cocoon
+Axis2-C
+Sandesha2
+GBuild
+Synapse
+Tuscany
+WADI
+Solr
+Hadoop Common
+Xerces-P
+WS-Commons
+Directory ApacheDS
+ODE
+Yoko - CORBA Server
+MyFaces Tomahawk
+MyFaces Tobago
+Torque
+Lucene.Net
+MyFaces ADF-Faces
+XBean
+DayTrader
+HttpComponents HttpCore
+James jSPF
+OpenJPA
+HttpComponents HttpClient
+Commons Attributes
+Commons BeanUtils
+Commons Betwixt
+Commons Chain
+Commons CLI
+Commons Codec
+Commons Collections
+Apache Commons All
+Commons Configuration
+Commons Daemon
+Commons DBCP
+Commons DbUtils
+Commons Digester
+Commons Discovery
+Commons EL
+Commons Email
+Commons FeedParser
+Commons FileUpload
+Commons IO
+Commons JEXL
+Commons JXPath
+Commons Lang
+Commons Launcher
+Commons Logging
+Commons Math
+Commons Modeler
+Commons Net
+Commons Pool
+Commons Primitives
+Commons Resources
+Commons Sandbox
+Commons SCXML
+Commons Transaction
+Commons Validator
+Commons VFS
+OFBiz
+Lucy
+XAP
+GShell
+Abdera
+Commons JCS
+James Postage
+CXF
+Qpid
+James Mime4j
+OpenEJB
+Sandesha2/C
+Torque issues (old)
+Heraldry
+Lokahi
+Wicket
+UIMA
+Labs (Retired)
+iBATIS for Ruby
+Ivy
+Directory Studio
+Commons Dormant
+Triplesec
+River (Retired)
+Rampart
+TripleSoup
+Commons BSF
+Savan
+Rampart/C
+Tika
+Anakia
+IvyDE
+Commons JCI
+Texen
+DocBook Framework
+James Mailet
+MyFaces Trinidad
+Dvsl
+Log4php
+MyFaces Orchestra
+Sling
+Commons Sanselan
+Pig
+Commons Proxy
+JSPWiki
+MyFaces Portlet Bridge
+Buildr
+Labs WebArch draft-fielding-http (Retired)
+Shindig
+Imperius
+Apache Rat
+Mahout
+Asyncweb
+HBase
+PDFBox
+Directory Shared (Please use DIRAPI instead)
+CouchDB
+Log4j 2
+Thrift
+ZooKeeper
+Hama
+Legal Discuss
+JSecurity
+ECS
+Commons Exec
+Empire-DB
+MyFaces Extensions Validator
+James Imap
+PhotArk
+Tapestry 5
+OpenEJB Eclipse Plugin
+Etch
+Public Relations
+Cocoon 3
+Olio
+VCL
+Tashi
+Droids
+Hive
+OpenWebBeans
+Stonehenge
+MyFaces Commons
+James MPT
+Kato
+MINA SSHD
+Enterprise Social Messaging Environment (ESME)
+Jackrabbit Site
+Jackrabbit JCR-RMI
+Pivot
+Cassandra
+Portals Apps
+PyLucene
+Directory Groovy LDAP
+Ki
+Chukwa (retired)
+Click Eclipse
+Click
+Cayenne
+Commons Compress
+Apache Roller
+Bluesky
+Directory Kerberos
+Apache Avro
+Attic
+VYSPER
+ACE
+Jackrabbit OCM
+Jackrabbit JCR Servlets
+Jackrabbit JCR Classloader
+Jackrabbit JCR Benchmark
+Chemistry (Retired)
+Wink
+Hadoop Map/Reduce
+Hadoop HDFS
+Open Relevance Project 
+Shiro
+MyFaces Test
+VXQuery (Retired)
+Wookie
+Directory Client API
+Traffic Server
+MyFaces Extensions Scripting
+Jackrabbit JCR Tests
+James Hupa
+Aries
+James jDKIM
+HISE
+Community Development
+Clerezza
+Libcloud
+CXF Distributed OSGi
+Shale
+Struts 2
+Struts 1
+Struts Sandbox
+Struts Shared Resources
+Tiles
+Tiles Showcase
+Tiles Shared Resources
+Tiles Sandbox
+ManifoldCF
+James Protocols
+OODT
+MyFaces CODI
+Spatial Information Systems
+BVal
+HttpComponents HttpAsyncClient
+Amber
+Apache Whirr (retired)
+Velocity Sandbox
+Zeta Components
+Karaf
+DeltaCloud
+Nuvem
+Axis2 Transports
+Isis
+Apache Gora
+ALOIS
+NPanday
+Axiom
+XmlSchema
+ActiveCluster
+ActiveMQ .Net
+Kitty
+Stomp Specification
+ActiveRealTime (Retired)
+ServiceMix Kernel
+ServiceMix
+ActiveMQ C++ Client
+ServiceMix 4
+ServiceMix NMR
+ActiveMQ
+Camel
+ServiceMix Components
+Celix
+Stanbol (Retired)
+OpenNLP
+Apache Jena
+James Mailbox
+XML Commons
+Santuario
+Wave
+Mesos
+Maven POMs
+Neethi
+EasyAnt
+MyFaces HTML5 Component Library
+Rave
+HCatalog
+MRUnit
+Bookkeeper
+Airavata
+ActiveMQ Apollo (Retired)
+Sqoop (Retired)
+Flume
+Bigtop
+Tiles Request
+Tiles Autotag
+Tiles Eval
+Oozie
+Kafka
+Giraph
+Ambari (Retired)
+Apache Tomcat Maven Plugin
+Accumulo
+ODF Toolkit
+TomEE
+Apache DirectMemory
+Apache S4
+Apache Any23
+Kalumet (Retired)
+Apache Cordova
+Commons Functor
+Podling Suitable Names Search
+Openmeetings
+DeltaSpike
+BRAND
+DeviceMap
+Apache Whisker
+Syncope
+Apache AWF
+Jackrabbit Oak
+Commons CSV
+CXF-Fediz
+Commons Imaging
+Apache Flex
+XWork
+Commons OGNL
+Crunch (Retired)
+Apache Tentacles
+cTAKES
+Qpid Proton
+Apache Blur
+Hadoop YARN
+Apache Drill
+CloudStack
+Apache Helix
+Apache Onami
+Hadoop Development Tools
+Commons BCEL
+XMLGraphicsCommons
+Batik
+FOP
+Streams
+Marmotta (Retired)
+TomEE Arquillian Test Porting Initiative
+Apache Oltu
+Apache Ripple
+Apache Open Climate Workbench (Retired)
+Provisionr
+Tajo (Retired)
+Apache Curator
+Apache Tez
+Apache Knox
+MRQL
+Falcon
+jclouds
+Olingo
+Stratos
+Apache MetaModel (Retired)
+Qpid JMS
+ODE JaCOb
+Samza
+Mavibot
+Apache Maven Resource Bundles
+Sentry (Retired)
+Apache Storm
+Jackrabbit FileVault
+Aurora
+Usergrid (Retired)
+BatchEE
+Sirona
+eSCIMo 
+Apache Twill (Retired)
+Phoenix
+Steve
+DataFu
+Commons Weaver
+Qpid Dispatch
+Spark
+Brooklyn
+Slider
+CXF XJC Utils
+Parquet
+Flink
+Johnzon
+Calcite
+ActiveMQ OpenWire
+Ranger
+Apache Lucy-Clownfish
+REEF
+ActiveMQ Artemis
+FORTRESS
+Ignite
+Apache Lens (Retired)
+HTrace
+Tamaya
+Apache NiFi
+Corinthia
+Kylin
+SAMOA
+Zeppelin
+Apache AsterixDB
+TinkerPop
+Apache Commons RDF
+Singa
+Polygene
+Archiva
+Continuum
+Maven
+Maven ACR Plugin
+Maven Ant Plugin (RETIRED)
+Maven Ant Tasks (RETIRED)
+Maven Antrun Plugin
+Maven Archetype
+Maven Archetype Bundles
+Maven Assembly Plugin
+Maven Changelog Plugin
+Maven Changes Plugin
+Maven Checkstyle Plugin
+Maven Clean Plugin
+Maven Compiler Plugin
+Maven DOAP Plugin
+Maven Dependency Plugin
+Maven Deploy Plugin
+Maven Documentation Checker Plugin
+Maven Doxia
+Maven Doxia Sitetools
+Maven Doxia Tools
+Maven EJB Plugin
+Maven EAR Plugin
+Maven Eclipse Plugin (RETIRED)
+Maven Enforcer Plugin
+Maven GPG Plugin
+Maven Help Plugin
+Maven Indexer
+Maven Install Plugin
+Maven Invoker Plugin
+Maven JAR Plugin
+Maven JXR
+Maven Jar Signer Plugin
+Maven Javadoc Plugin
+Maven Linkcheck Plugin
+Maven PDF Plugin
+Maven PMD Plugin
+Maven Patch Plugin
+Maven Plugin Testing
+Maven Plugin Tools
+Maven Project Info Reports Plugin
+Maven Project Web Site
+Maven RAR Plugin
+Maven Release Plugin
+Maven Remote Resources Plugin
+Maven Repository Plugin (RETIRED)
+Maven Resources Plugin
+Maven SCM
+Maven SCM Publish Plugin
+Maven Shade Plugin
+Maven Shared Components
+Maven Site Plugin
+Maven Source Plugin
+Maven Stage Plugin
+Maven Skins
+Maven Surefire
+Maven Toolchains Plugin
+Maven Verifier Plugin
+Maven WAR Plugin
+Maven Wagon
+Groovy
+Apache OpenAZ
+Commons Text
+ORC
+Apache Taverna
+Geode
+Apache Climate Model Diagnostic Analyzer
+Atlas
+Myriad
+Apache Trafodion (Retired)
+Apache QPID Interoperability Test Suite
+COTTON
+Whimsy
+serf
+Apache Apex Core
+Apache Apex Malhar
+Apache Freemarker
+Apache HAWQ
+Apache Horn
+Subversion
+Yetus
+Apache MADlib
+Rya
+Apache Concerted
+Apache Unomi
+Mynewt
+Eagle (Retired)
+Maven JDeps Plugin
+S2Graph
+Metron (Retired)
+Apache Fineract
+SystemDS
+Kudu
+TOREE
+Apache Arrow
+Milagro
+Beam
+Iota
+Guacamole
+Edgent
+Joshua (Retired)
+Mnemonic
+Apache Gearpump
+Apache NiFi MiNiFi - MOVED TO NIFI PROJECT
+MyNewt Docs
+Phoenix Omid
+Apache Quickstep
+Apache Airflow
+Commons Crypto
+aardvark
+Gossip
+Bahir
+Phoenix Tephra
+CarbonData
+PIRK
+PredictionIO (Retired)
+Juneau
+DistributedLog
+Flagon
+Commons RNG
+AriaTosca
+Maven Resolver
+Hivemall
+Traffic Control
+NetBeans
+ODE Web Console
+Spot
+Commons Numbers
+Apache RocketMQ
+Weex (Retired)
+Griffin
+Meecrowave
+Ratis
+ActiveMQ CLI Tools
+NiFi Registry - MOVED TO NIFI PROJECT
+Apache Gobblin
+IMPALA
+Superset
+www.apache.org website
+Pulsar
+Maven JLink Plugin
+Maven JMod Plugin
+Livy
+Apache NiFi MiNiFi C++
+AMATERASU
+Apache Science Data Analytics Platform
+Maven JDeprScan Plugin
+Daffodil
+Apache MXNet
+Apache Crail
+Apache ServiceComb
+Fineract Cloud Native
+Apache PLC4X
+Commons Statistics
+Apache Coral
+Apache Commons Testing
+Apache Dubbo
+Apache Nemo
+Apache Chainsaw
+Commons Geometry
+Apache ECharts
+Apache Ozone
+Infra Test 3
+MxNet Test
+Apache SCIMple
+Apache DataLab
+Apache Zipkin
+Apache Pinot
+Apache Marvin
+Apache IoTDB
+OpenOffice
+Apache Hudi
+Maven Scripting
+Apache Submarine
+Apache Training
+Tuweni
+Diversity and Inclusion
+Apache Datasketches
+NiFi Standard Libraries
+StreamPipes
+Apache Petri
+Central Services
+Apache InLong
+Apache NuttX
+Apache YuniKorn
+Maven Wrapper
+NLPCraft
+Apache NetBeans Infra
+Sidecar for Apache Cassandra
+APISIX
+Custos Security
+The Maven Metric Extension
+Apache Liminal
+Apache Pegasus
+Apache AGE (old)
+Apache BlueMarlin (Retired)
+Apache Sedona
+Maven Artifact Plugin
+Apache Hop
+Apache Wayang
+INFRACLOUD1
+Apache EventMesh
+Infrastructure Test 6 (Retired) (Retired)
+Apache AGE
+Apache Linkis
+Apache Doris
+Maven Build Cache Extension
+Infra test 987
