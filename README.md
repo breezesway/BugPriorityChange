@@ -16,5 +16,8 @@ The directory named *GoPriorityChanged* is the relevant code for our calculation
 ## Calculation Results
 In the directory named *RQresults*, we provide the calculation results of all RQs in the paper. Each RQ calculation result corresponds to a CSV file, and you can easily know which CSV file corresponds to which RQ through the file name.
 
+## The init list of projects
+For the case selection in the paper, we used all Apache projects as the initial list of projects for screening, and ultimately obtained the 32 projects in the paper. We have listed the initial projects in **the initial list of projects file**.
+
 ---
 If you have any questions, please contact caigz1999@foxmail.com.
