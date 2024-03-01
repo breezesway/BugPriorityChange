@@ -1,3 +1,4 @@
+Please note that the information for each project (including project age, number of revisions, and number of bugs with priority changes) has not been uploaded yet. Please wait a few days.
 Commons Jelly
 Avalon Phoenix
 AltRMI
