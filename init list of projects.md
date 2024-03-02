@@ -1,4 +1,7 @@
-| **Project**                                    | **Is the priority  level Blocker/Critical  /Major/Minor/Trivial?** | **Age(y)** | **#Revision** | **#BugPC** |
+```
+Note: The \ symbol in the table indicates that the information has not been obtained.
+```
+| **Project**                                    | **Is the priority<br>level Blocker/Critical<br>/Major/Minor/Trivial?** | **Age(y)** | **#Revision** | **#BugPC** |
 |------------------------------------------------|-----------------------------------------------------------------:|-----------:|--------------:|-----------:|
 | Commons Jelly                                  |                                                             true |         17 |         2,176 |          2 |
 | Avalon Phoenix                                 |                                                             true |          3 |            \ |          0 |
@@ -42,11 +45,11 @@
 | Tapestry                                       |                                                            false |         12 |            \ |        101 |
 | XalanC                                         |                                                            false |         20 |            \ |          5 |
 | XalanJ2                                        |                                                            false |         21 |            \ |        113 |
-| Jackrabbit Content Repository                  |                                                             true |         18 |            \ |        260 |
+| Jackrabbit Content<br>Repository                  |                                                             true |         18 |            \ |        260 |
 | Derby                                          |                                                             true |         18 |         8,269 |        218 |
 | Incubator                                      |                                                             true |         18 |           566 |          6 |
 | MyFaces Core                                   |                                                             true |         18 |            \ |        136 |
-| iBatis for Java [READ ONLY]                    |                                                             true |          6 |            \ |         39 |
+| iBatis for Java<br>[READ ONLY]                    |                                                             true |          6 |            \ |         39 |
 | iBatis for .NET                                |                                                             true |          6 |            \ |          4 |
 | Scout                                          |                                                             true |         17 |            \ |          0 |
 | Axis2                                          |                                                             true |         18 |       14,030 |        425 |
@@ -190,7 +193,7 @@
 | JSPWiki                                        |                                                             true |         15 |         9,353 |         86 |
 | MyFaces Portlet Bridge                         |                                                             true |         10 |            \ |          4 |
 | Buildr                                         |                                                             true |         14 |         4,385 |         22 |
-| Labs WebArch draft-fielding-http (Retired)     |                                                            false |         10 |            \ |          0 |
+| Labs WebArch<br>draft-fielding-http (Retired)     |                                                            false |         10 |            \ |          0 |
 | Shindig                                        |                                                             true |         11 |         4,786 |         41 |
 | Imperius                                       |                                                             true |          4 |            \ |          1 |
 | Apache Rat                                     |                                                             true |         14 |            \ |          5 |
@@ -198,7 +201,7 @@
 | Asyncweb                                       |                                                             true |          8 |            \ |          1 |
 | HBase                                          |                                                             true |         16 |        19,428 |      1,142 |
 | PDFBox                                         |                                                            false |         19 |        11,736 |        497 |
-| Directory Shared (Please use DIRAPI instead)   |                                                             true |          8 |            \ |          3 |
+| Directory Shared<br>(Please use DIRAPI instead)   |                                                             true |          8 |            \ |          3 |
 | CouchDB                                        |                                                             true |         12 |        13,539 |        118 |
 | Log4j 2                                        |                                                             true |         14 |            \ |        139 |
 | Thrift                                         |                                                             true |         16 |         6,553 |        183 |
@@ -209,7 +212,7 @@
 | ECS                                            |                                                             true |          1 |            \ |          0 |
 | Commons Exec                                   |                                                             true |         17 |         1,150 |          3 |
 | Empire-DB                                      |                                                             true |         14 |         1,537 |          6 |
-| MyFaces Extensions Validator                   |                                                             true |          8 |            \ |         11 |
+| MyFaces Extensions<br>Validator                   |                                                             true |          8 |            \ |         11 |
 | James Imap                                     |                                                             true |         18 |            \ |          5 |
 | PhotArk                                        |                                                             true |          5 |           289 |          1 |
 | Tapestry 5                                     |                                                             true |         16 |         5,755 |        120 |
@@ -228,7 +231,7 @@
 | James MPT                                      |                                                             true |         13 |            \ |          0 |
 | Kato                                           |                                                             true |          2 |            \ |          0 |
 | MINA SSHD                                      |                                                             true |         14 |         2,768 |        117 |
-| Enterprise Social Messaging Environment (ESME) |                                                             true |          4 |            \ |         12 |
+| Enterprise Social<br>Messaging Environment (ESME) |                                                             true |          4 |            \ |         12 |
 | Jackrabbit Site                                |                                                             true |         18 |           889 |          1 |
 | Jackrabbit JCR-RMI                             |                                                             true |         16 |            \ |          1 |
 | Pivot                                          |                                                             true |         13 |         4,660 |         99 |
@@ -329,7 +332,7 @@
 | Maven POMs                                     |                                                             true |         11 |            \ |         10 |
 | Neethi                                         |                                                             true |         14 |            \ |          0 |
 | EasyAnt                                        |                                                             true |          5 |            \ |          1 |
-| MyFaces HTML5 Component Library                |                                                             true |         10 |            \ |          0 |
+| MyFaces HTML5<br>Component Library                |                                                             true |         10 |            \ |          0 |
 | Rave                                           |                                                             true |          4 |         1,555 |         24 |
 | HCatalog                                       |                                                             true |          8 |           425 |         17 |
 | MRUnit                                         |                                                             true |          5 |           234 |         13 |
@@ -346,7 +349,7 @@
 | Kafka                                          |                                                             true |         11 |        10,361 |       617 |
 | Giraph                                         |                                                             true |         11 |         1,138 |         23 |
 | Ambari (Retired)                               |                                                             true |         11 |        24,110 |        307 |
-| Apache Tomcat Maven Plugin                     |                                                             true |         16 |            \ |          3 |
+| Apache Tomcat<br>Maven Plugin                     |                                                             true |         16 |            \ |          3 |
 | Accumulo                                       |                                                             true |         11 |        12,328 |        323 |
 | ODF Toolkit                                    |                                                             true |          9 |            \ |          8 |
 | TomEE                                          |                                                             true |         15 |        14,836 |         59 |
@@ -356,7 +359,7 @@
 | Kalumet (Retired)                              |                                                             true |          3 |            \ |          1 |
 | Apache Cordova                                 |                                                            true |         14 |         33,010 |       813 |
 | Commons Functor                                |                                                             true |         12 |           896 |          0 |
-| Podling Suitable Names Search                  |                                                            false |         11 |            \ |          1 |
+| Podling Suitable<br>Names Search                  |                                                            false |         11 |            \ |          1 |
 | Openmeetings                                   |                                                             true |         11 |         3,695 |        125 |
 | DeltaSpike                                     |                                                             true |         11 |         2,645 |         73 |
 | BRAND                                          |                                                             true |         10 |            \ |          0 |
@@ -388,10 +391,10 @@
 | FOP                                            |                                                            false |         21 |         8,524 |         53 |
 | Streams                                        |                                                             true |         10 |         1,819 |          2 |
 | Marmotta (Retired)                             |                                                             true |          9 |            \ |         32 |
-| TomEE Arquillian Test Porting Initiative       |                                                             true |          0 |            \ |          0 |
+| TomEE Arquillian<br>Test Porting Initiative       |                                                             true |          0 |            \ |          0 |
 | Apache Oltu                                    |                                                             true |          9 |            \ |          5 |
 | Apache Ripple                                  |                                                             true |          2 |            \ |          5 |
-| Apache Open Climate Workbench (Retired)        |                                                             true |          8 |            \ |         12 |
+| Apache Open Climate<br>Workbench (Retired)        |                                                             true |          8 |            \ |         12 |
 | Provisionr                                     |                                                             true |          0 |            \ |          1 |
 | Tajo (Retired)                                 |                                                             true |          8 |            \ |        126 |
 | Apache Curator                                 |                                                             true |          9 |            \ |         31 |
@@ -407,7 +410,7 @@
 | ODE JaCOb                                      |                                                             true |          9 |           163 |          0 |
 | Samza                                          |                                                             true |          9 |         2,594 |         29 |
 | Mavibot                                        |                                                             true |          4 |            \ |          1 |
-| Apache Maven Resource Bundles                  |                                                             true |         11 |            \ |          1 |
+| Apache Maven<br>Resource Bundles                  |                                                             true |         11 |            \ |          1 |
 | Sentry (Retired)                               |                                                             true |          8 |            \ |         88 |
 | Apache Storm                                   |                                                             true |          9 |            \ |        151 |
 | Jackrabbit FileVault                           |                                                             true |          9 |         1,078 |         13 |
@@ -468,13 +471,13 @@
 | Maven DOAP Plugin                              |                                                             true |         16 |           260 |          0 |
 | Maven Dependency Plugin                        |                                                             true |         17 |         1,239 |         37 |
 | Maven Deploy Plugin                            |                                                             true |         17 |           467 |          9 |
-| Maven Documentation Checker Plugin             |                                                             true |         15 |            \ |          0 |
+| Maven Documentation<br>Checker Plugin             |                                                             true |         15 |            \ |          0 |
 | Maven Doxia                                    |                                                             true |         17 |         1,918 |         14 |
 | Maven Doxia Sitetools                          |                                                             true |         16 |         1,008 |          6 |
 | Maven Doxia Tools                              |                                                             true |         15 |           331 |          4 |
 | Maven EJB Plugin                               |                                                             true |         17 |           375 |          2 |
 | Maven EAR Plugin                               |                                                             true |         17 |           648 |         19 |
-| Maven Eclipse Plugin (RETIRED)                 |                                                             true |         15 |            \ |          6 |
+| Maven Eclipse<br>Plugin (RETIRED)                 |                                                             true |         15 |            \ |          6 |
 | Maven Enforcer Plugin                          |                                                             true |         16 |            \ |         14 |
 | Maven GPG Plugin                               |                                                             true |         15 |           296 |          1 |
 | Maven Help Plugin                              |                                                             true |         17 |           443 |          3 |
@@ -491,12 +494,12 @@
 | Maven Patch Plugin                             |                                                             true |         12 |           148 |          0 |
 | Maven Plugin Testing                           |                                                             true |         15 |           243 |          1 |
 | Maven Plugin Tools                             |                                                             true |         17 |         1,257 |         11 |
-| Maven Project Info Reports Plugin              |                                                             true |         17 |         1,036 |          7 |
+| Maven Project Info<br>Reports Plugin              |                                                             true |         17 |         1,036 |          7 |
 | Maven Project Web Site                         |                                                             true |         17 |            \ |         17 |
 | Maven RAR Plugin                               |                                                             true |         17 |           239 |          1 |
 | Maven Release Plugin                           |                                                             true |         17 |            \ |         43 |
-| Maven Remote Resources Plugin                  |                                                             true |         16 |           393 |          3 |
-| Maven Repository Plugin (RETIRED)              |                                                             true |         14 |            \ |          1 |
+| Maven Remote<br>Resources Plugin                  |                                                             true |         16 |           393 |          3 |
+| Maven Repository<br>Plugin (RETIRED)              |                                                             true |         14 |            \ |          1 |
 | Maven Resources Plugin                         |                                                             true |         17 |           511 |         10 |
 | Maven SCM                                      |                                                             true |         18 |         2,220 |         12 |
 | Maven SCM Publish Plugin                       |                                                             true |         10 |           227 |          3 |
@@ -517,11 +520,11 @@
 | ORC                                            |                                                             true |          9 |         1,641 |         43 |
 | Apache Taverna                                 |                                                             true |         14 |            \ |        110 |
 | Geode                                          |                                                             true |         12 |        10,803 |        150 |
-| Apache Climate Model Diagnostic Analyzer       |                                                             true |          0 |            \ |          0 |
+| Apache Climate Model<br>Diagnostic Analyzer       |                                                             true |          0 |            \ |          0 |
 | Atlas                                          |                                                            false |          7 |         3,805 |        108 |
 | Myriad                                         |                                                            false |          7 |            \ |          8 |
 | Apache Trafodion (Retired)                     |                                                             true |          5 |            \ |         34 |
-| Apache QPID Interoperability Test Suite        |                                                             true |          6 |            \ |         29 |
+| Apache QPID<br>Interoperability Test Suite        |                                                             true |          6 |            \ |         29 |
 | COTTON                                         |                                                             true |          1 |            \ |          0 |
 | Whimsy                                         |                                                             true |          8 |         8,223 |          6 |
 | serf                                           |                                                            false |         16 |         1,913 |          1 |
@@ -554,7 +557,7 @@
 | Joshua (Retired)                               |                                                            false |         10 |            \ |          1 |
 | Mnemonic                                       |                                                             true |          6 |           732 |          5 |
 | Apache Gearpump                                |                                                             true |          2 |            \ |          7 |
-| Apache NiFi MiNiFi - MOVED TO NIFI PROJECT     |                                                             true |          5 |            \ |          5 |
+| Apache NiFi MiNiFi -<br>MOVED TO NIFI PROJECT     |                                                             true |          5 |            \ |          5 |
 | MyNewt Docs                                    |                                                             true |          0 |            \ |          0 |
 | Phoenix Omid                                   |                                                             true |          6 |         1,367 |         10 |
 | Apache Quickstep                               |                                                             true |          2 |            \ |          0 |
@@ -585,7 +588,7 @@
 | Meecrowave                                     |                                                             true |          5 |           713 |          2 |
 | Ratis                                          |                                                             true |          5 |         1,675 |         80 |
 | ActiveMQ CLI Tools                             |                                                             true |          4 |            47 |          0 |
-| NiFi Registry - MOVED TO NIFI PROJECT          |                                                             true |          5 |            \ |          4 |
+| NiFi Registry - MOVED<br>TO NIFI PROJECT          |                                                             true |          5 |            \ |          4 |
 | Apache Gobblin                                 |                                                             true |          5 |            \ |         10 |
 | IMPALA                                         |                                                             true |         11 |        10,379 |       582 |
 | Superset                                       |                                                             true |          5 |        14,767 |          0 |
@@ -596,7 +599,7 @@
 | Livy                                           |                                                             true |          7 |            \ |         42 |
 | Apache NiFi MiNiFi C++                         |                                                             true |          6 |            \ |         64 |
 | AMATERASU                                      |                                                             true |          2 |            \ |          1 |
-| Apache Science Data Analytics Platform         |                                                             true |          5 |            \ |          5 |
+| Apache Science Data<br>Analytics Platform         |                                                             true |          5 |            \ |          5 |
 | Maven JDeprScan Plugin                         |                                                             true |          3 |            43 |          0 |
 | Daffodil                                       |                                                             true |         12 |         4,018 |        73 |
 | Apache MXNet                                   |                                                             true |          5 |            \ |         33 |
@@ -653,7 +656,7 @@
 | Apache Wayang                                  |                                                            false |          1 |            \ |         10 |
 | INFRACLOUD1                                    |                                                             true |          1 |            \ |          0 |
 | Apache EventMesh                               |                                                            false |          1 |            \ |          1 |
-| Infrastructure Test 6 (Retired) (Retired)      |                                                             true |          0 |            \ |          0 |
+| Infrastructure Test 6<br>(Retired) (Retired)      |                                                             true |          0 |            \ |          0 |
 | Apache AGE                                     |                                                            false |          1 |            \ |         14 |
 | Apache Linkis                                  |                                                          \ |         \ |            \ |          0 |
 | Apache Doris                                   |                                                             true |          0 |            \ |          0 |
