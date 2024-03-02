@@ -1,4 +1,4 @@
-| **Project**                                    | **Is the priority  level Blocker/Critical /Major/Minor/Trivial** | **Age(y)** | **#Revision** | **#BugPC** |
+| **Project**                                    | **Is the priority  level Blocker/Critical  /Major/Minor/Trivial?** | **Age(y)** | **#Revision** | **#BugPC** |
 |------------------------------------------------|-----------------------------------------------------------------:|-----------:|--------------:|-----------:|
 | Commons Jelly                                  |                                                             true |         17 |         2,176 |          2 |
 | Avalon Phoenix                                 |                                                             true |          3 |            \ |          0 |
@@ -49,7 +49,7 @@
 | iBatis for Java [READ ONLY]                    |                                                             true |          6 |            \ |         39 |
 | iBatis for .NET                                |                                                             true |          6 |            \ |          4 |
 | Scout                                          |                                                             true |         17 |            \ |          0 |
-| Axis2                                          |                                                            false |         18 |            \ |        561 |
+| Axis2                                          |                                                             true |         18 |       14,030 |        425 |
 | WSRF                                           |                                                             true |          2 |            \ |          2 |
 | Pubscribe                                      |                                                             true |          1 |            \ |          1 |
 | Muse                                           |                                                             true |          8 |            \ |         16 |
@@ -90,18 +90,18 @@
 | Synapse                                        |                                                             true |         16 |         4,355 |         63 |
 | Tuscany                                        |                                                             true |          9 |            \ |        137 |
 | WADI                                           |                                                             true |          7 |            \ |          0 |
-| Solr                                           |                                                             true |         16 |        37,327 |        850 |
+| Solr                                           |                                                             true |         21 |        32,911 |        377 |
 | Hadoop Common                                  |                                                             true |         17 |        10,509 |       1476 |
 | Xerces-P                                       |                                                             true |         20 |            \ |          0 |
 | WS-Commons                                     |                                                             true |         10 |            \ |          5 |
 | Directory ApacheDS                             |                                                             true |         18 |            \ |         82 |
 | ODE                                            |                                                             true |         14 |         3,823 |         28 |
-| Yoko - CORBA Server                            |                                                          unknown |         \ |            \ |          0 |
+| Yoko - CORBA Server                            |                                                          \ |         \ |            \ |          0 |
 | MyFaces Tomahawk                               |                                                             true |         17 |            \ |         67 |
 | MyFaces Tobago                                 |                                                             true |         17 |        12,921 |         86 |
 | Torque                                         |                                                             true |         15 |            \ |          4 |
 | Lucene.Net                                     |                                                             true |         15 |         6,792 |         20 |
-| MyFaces ADF-Faces                              |                                                          unknown |         \ |            \ |          0 |
+| MyFaces ADF-Faces                              |                                                          \ |         \ |            \ |          0 |
 | XBean                                          |                                                             true |         16 |            \ |          1 |
 | DayTrader                                      |                                                             true |          5 |            \ |          1 |
 | HttpComponents HttpCore                        |                                                             true |         20 |            \ |         57 |
@@ -143,22 +143,22 @@
 | Commons Transaction                            |                                                             true |         18 |            \ |          1 |
 | Commons Validator                              |                                                            false |         20 |         2,072 |         13 |
 | Commons VFS                                    |                                                             true |         18 |         3,934 |         45 |
-| OFBiz                                          |                                                             true |         16 |        24,427 |        680 |
+| OFBiz                                          |                                                             true |         16 |        32,911 |        215 |
 | Lucy                                           |                                                             true |         10 |         3,261 |          5 |
 | XAP                                            |                                                             true |          2 |            \ |         80 |
-| GShell                                         |                                                          unknown |         \ |            \ |          0 |
+| GShell                                         |                                                          \ |         \ |            \ |          0 |
 | Abdera                                         |                                                             true |         12 |         1,500 |          3 |
 | Commons JCS                                    |                                                             true |         16 |         2,318 |          6 |
 | James Postage                                  |                                                             true |          7 |            79 |          0 |
 | CXF                                            |                                                             true |         16 |        17,916 |        178 |
-| Qpid                                           |                                                             true |         16 |        14,182 |        392 |
+| Qpid                                           |                                                             true |         16 |        45,216 |        214 |
 | James Mime4j                                   |                                                             true |         16 |           958 |         12 |
 | OpenEJB                                        |                                                             true |         18 |         9,650 |         47 |
 | Sandesha2/C                                    |                                                             true |          7 |            \ |          0 |
 | Torque issues (old)                            |                                                            false |          0 |            \ |          0 |
 | Heraldry                                       |                                                             true |          1 |            \ |          0 |
 | Lokahi                                         |                                                             true |          1 |            \ |          1 |
-| Wicket                                         |                                                             true |         16 |        21,586 |        434 |
+| Wicket                                         |                                                             true |         18 |        21,108 |        212 |
 | UIMA                                           |                                                             true |         16 |            \ |         76 |
 | Labs (Retired)                                 |                                                             true |         14 |            \ |          2 |
 | iBATIS for Ruby                                |                                                             true |          4 |            \ |          0 |
@@ -184,7 +184,7 @@
 | Log4php                                        |                                                             true |         13 |            \ |         11 |
 | MyFaces Orchestra                              |                                                             true |          9 |            \ |          3 |
 | Sling                                          |                                                             true |         15 |             4 |        210 |
-| Commons Sanselan                               |                                                          unknown |         \ |            \ |          0 |
+| Commons Sanselan                               |                                                          \ |         \ |            \ |          0 |
 | Pig                                            |                                                             true |         15 |         3,724 |        160 |
 | Commons Proxy                                  |                                                             true |         13 |           604 |          1 |
 | JSPWiki                                        |                                                             true |         15 |         9,353 |         86 |
@@ -196,16 +196,16 @@
 | Apache Rat                                     |                                                             true |         14 |            \ |          5 |
 | Mahout                                         |                                                             true |         14 |         4,571 |        132 |
 | Asyncweb                                       |                                                             true |          8 |            \ |          1 |
-| HBase                                          |                                                             true |         15 |        20,023 |       2331 |
+| HBase                                          |                                                             true |         16 |        19,428 |      1,142 |
 | PDFBox                                         |                                                            false |         19 |        11,736 |        497 |
 | Directory Shared (Please use DIRAPI instead)   |                                                             true |          8 |            \ |          3 |
 | CouchDB                                        |                                                             true |         12 |        13,539 |        328 |
 | Log4j 2                                        |                                                             true |         14 |            \ |        139 |
-| Thrift                                         |                                                             true |         14 |         6,908 |        390 |
+| Thrift                                         |                                                             true |         16 |         6,553 |        183 |
 | ZooKeeper                                      |                                                             true |         14 |         2,548 |          0 |
 | Hama                                           |                                                             true |         12 |         1,595 |         33 |
 | Legal Discuss                                  |                                                             true |         14 |            \ |          0 |
-| JSecurity                                      |                                                          unknown |         \ |         1,024 |          0 |
+| JSecurity                                      |                                                          \ |         \ |         1,024 |          0 |
 | ECS                                            |                                                             true |          1 |            \ |          0 |
 | Commons Exec                                   |                                                             true |         17 |         1,150 |          3 |
 | Empire-DB                                      |                                                             true |         14 |         1,537 |          6 |
@@ -221,7 +221,7 @@
 | VCL                                            |                                                             true |         12 |         2,653 |         12 |
 | Tashi                                          |                                                             true |          5 |           449 |          4 |
 | Droids                                         |                                                             true |         12 |            \ |          4 |
-| Hive                                           |                                                             true |         14 |        17,191 |        947 |
+| Hive                                           |                                                             true |         14 |        16,040 |        509 |
 | OpenWebBeans                                   |                                                             true |         14 |         4,172 |         37 |
 | Stonehenge                                     |                                                             true |          4 |            \ |          1 |
 | MyFaces Commons                                |                                                             true |          7 |            \ |          0 |
@@ -263,7 +263,7 @@
 | VXQuery (Retired)                              |                                                             true |         12 |            \ |         14 |
 | Wookie                                         |                                                             true |         12 |         1,921 |         15 |
 | Directory Client API                           |                                                             true |         14 |            \ |          0 |
-| Traffic Server                                 |                                                             true |         11 |            \ |        385 |
+| Traffic Server                                 |                                                             true |         13 |         13,643 |        165 |
 | MyFaces Extensions Scripting                   |                                                             true |          8 |            \ |          0 |
 | Jackrabbit JCR Tests                           |                                                             true |         16 |            \ |          1 |
 | James Hupa                                     |                                                             true |          9 |           727 |          0 |
@@ -290,7 +290,7 @@
 | Spatial Information Systems                    |                                                             true |         12 |            \ |         11 |
 | BVal                                           |                                                             true |         12 |         1,278 |          2 |
 | HttpComponents HttpAsyncClient                 |                                                             true |         19 |            \ |         10 |
-| Amber                                          |                                                          unknown |         \ |            \ |          0 |
+| Amber                                          |                                                          \ |         \ |            \ |          0 |
 | Apache Whirr (retired)                         |                                                             true |          6 |            \ |         35 |
 | Velocity Sandbox                               |                                                             true |          0 |            \ |          0 |
 | Zeta Components                                |                                                             true |         10 |            \ |          0 |
@@ -314,8 +314,8 @@
 | ActiveMQ C++ Client                            |                                                             true |         16 |            \ |         28 |
 | ServiceMix 4                                   |                                                             true |         15 |            \ |         12 |
 | ServiceMix NMR                                 |                                                             true |         10 |            \ |          2 |
-| ActiveMQ                                       |                                                             true |         18 |        11,670 |        373 |
-| Camel                                          |                                                            false |         15 |        69,340 |       1867 |
+| ActiveMQ                                       |                                                             true |         17 |        10,728 |        216 |
+| Camel                                          |                                                            true |         16 |        55,632 |       807 |
 | ServiceMix Components                          |                                                             true |         17 |           225 |         14 |
 | Celix                                          |                                                             true |          9 |         4,445 |          3 |
 | Stanbol (Retired)                              |                                                             true |         11 |            \ |         39 |
@@ -325,7 +325,7 @@
 | XML Commons                                    |                                                            false |         21 |            \ |          0 |
 | Santuario                                      |                                                             true |          9 |            \ |          9 |
 | Wave                                           |                                                            false |          6 |            \ |         12 |
-| Mesos                                          |                                                             true |         11 |        18,238 |        743 |
+| Mesos                                          |                                                             true |         12 |        18,175 |        427 |
 | Maven POMs                                     |                                                             true |         11 |            \ |         10 |
 | Neethi                                         |                                                             true |         14 |            \ |          0 |
 | EasyAnt                                        |                                                             true |          5 |            \ |          1 |
@@ -343,9 +343,9 @@
 | Tiles Autotag                                  |                                                             true |         10 |           121 |          0 |
 | Tiles Eval                                     |                                                             true |          0 |            \ |          0 |
 | Oozie                                          |                                                             true |         11 |         2,409 |        137 |
-| Kafka                                          |                                                             true |         11 |        12,427 |       1057 |
+| Kafka                                          |                                                             true |         11 |        10,361 |       617 |
 | Giraph                                         |                                                             true |         11 |         1,138 |         23 |
-| Ambari (Retired)                               |                                                            false |         11 |            \ |        568 |
+| Ambari (Retired)                               |                                                             true |         11 |        24,110 |        307 |
 | Apache Tomcat Maven Plugin                     |                                                             true |         16 |            \ |          3 |
 | Accumulo                                       |                                                             true |         11 |        12,328 |        323 |
 | ODF Toolkit                                    |                                                             true |          9 |            \ |          8 |
@@ -354,7 +354,7 @@
 | Apache S4                                      |                                                             true |         11 |            \ |          8 |
 | Apache Any23                                   |                                                             true |         11 |            \ |         22 |
 | Kalumet (Retired)                              |                                                             true |          3 |            \ |          1 |
-| Apache Cordova                                 |                                                            false |         11 |            \ |       1114 |
+| Apache Cordova                                 |                                                            true |         14 |         33,010 |       813 |
 | Commons Functor                                |                                                             true |         12 |           896 |          0 |
 | Podling Suitable Names Search                  |                                                            false |         11 |            \ |          1 |
 | Openmeetings                                   |                                                             true |         11 |         3,695 |        125 |
@@ -364,7 +364,7 @@
 | Apache Whisker                                 |                                                             true |          9 |            \ |          0 |
 | Syncope                                        |                                                             true |         10 |         8,382 |         32 |
 | Apache AWF                                     |                                                            false |         10 |            \ |         40 |
-| Jackrabbit Oak                                 |                                                             true |         10 |        19,071 |        505 |
+| Jackrabbit Oak                                 |                                                             true |         11 |        17,839 |        168 |
 | Commons CSV                                    |                                                             true |         16 |         2,327 |          7 |
 | CXF-Fediz                                      |                                                             true |         10 |         2,178 |          2 |
 | Commons Imaging                                |                                                             true |         15 |         2,431 |         15 |
@@ -377,8 +377,8 @@
 | Qpid Proton                                    |                                                             true |         10 |         4,660 |        108 |
 | Apache Blur                                    |                                                             true |          8 |            \ |         19 |
 | Hadoop YARN                                    |                                                             true |         13 |            \ |        850 |
-| Apache Drill                                   |                                                             true |         10 |            \ |        752 |
-| CloudStack                                     |                                                             true |         10 |        36,565 |       1092 |
+| Apache Drill                                   |                                                             true |         10 |         4,313 |        579 |
+| CloudStack                                     |                                                             true |         12 |        32,759 |       870 |
 | Apache Helix                                   |                                                             true |         10 |            \ |          3 |
 | Apache Onami                                   |                                                             true |          3 |            \ |          0 |
 | Hadoop Development Tools                       |                                                             true |          1 |            \ |          0 |
@@ -422,12 +422,12 @@
 | DataFu                                         |                                                             true |          8 |           624 |          4 |
 | Commons Weaver                                 |                                                             true |          4 |           591 |          0 |
 | Qpid Dispatch                                  |                                                            false |          9 |         3,487 |         90 |
-| Spark                                          |                                                            false |       2012 |        40,026 |       4259 |
+| Spark                                          |                                                             true |         13 |        32,561 |      1,773 |
 | Brooklyn                                       |                                                             true |          7 |           236 |          5 |
 | Slider                                         |                                                             true |          4 |            \ |         44 |
 | CXF XJC Utils                                  |                                                             true |         10 |           313 |          0 |
 | Parquet                                        |                                                             true |          8 |            \ |         31 |
-| Flink                                          |                                                            false |          8 |        34,981 |       6139 |
+| Flink                                          |                                                            true |          12 |        31,286 |      2,049 |
 | Johnzon                                        |                                                             true |          8 |         1,050 |          9 |
 | Calcite                                        |                                                             true |          8 |         5,602 |        102 |
 | ActiveMQ OpenWire                              |                                                             true |          7 |            31 |          0 |
@@ -436,11 +436,11 @@
 | REEF                                           |                                                             true |          8 |         3,875 |         54 |
 | ActiveMQ Artemis                               |                                                             true |          8 |        10,436 |        225 |
 | FORTRESS                                       |                                                             true |          8 |            \ |          0 |
-| Ignite                                         |                                                             true |          8 |        28,887 |       1363 |
+| Ignite                                         |                                                             true |          9 |        22,146 |       582 |
 | Apache Lens (Retired)                          |                                                             true |          6 |            \ |         52 |
 | HTrace                                         |                                                             true |          4 |            \ |         16 |
 | Tamaya                                         |                                                             true |          6 |            \ |          6 |
-| Apache NiFi                                    |                                                             true |          8 |            \ |        450 |
+| Apache NiFi                                    |                                                             true |          8 |         7,303 |        221 |
 | Corinthia                                      |                                                             true |          1 |            \ |          1 |
 | Kylin                                          |                                                            false |          8 |           618 |        204 |
 | SAMOA                                          |                                                             true |          6 |            \ |          0 |
@@ -511,12 +511,12 @@
 | Maven Verifier Plugin                          |                                                             true |         16 |           172 |          2 |
 | Maven WAR Plugin                               |                                                             true |         17 |           759 |         20 |
 | Maven Wagon                                    |                                                             true |         18 |         1,337 |         15 |
-| Groovy                                         |                                                            false |         19 |        20,813 |        527 |
+| Groovy                                         |                                                            true |         19 |        18,983 |        352 |
 | Apache OpenAZ                                  |                                                             true |          1 |            \ |          0 |
 | Commons Text                                   |                                                             true |         16 |         2,042 |          4 |
 | ORC                                            |                                                             true |          9 |         1,641 |         43 |
 | Apache Taverna                                 |                                                             true |         14 |            \ |        110 |
-| Geode                                          |                                                             true |          7 |        11,257 |        552 |
+| Geode                                          |                                                             true |         12 |        10,803 |        150 |
 | Apache Climate Model Diagnostic Analyzer       |                                                             true |          0 |            \ |          0 |
 | Atlas                                          |                                                            false |          7 |         3,805 |        108 |
 | Myriad                                         |                                                            false |          7 |            \ |          8 |
@@ -545,11 +545,11 @@
 | SystemDS                                       |                                                             true |          7 |         8,470 |         64 |
 | Kudu                                           |                                                             true |          9 |        10,210 |        322 |
 | TOREE                                          |                                                            false |          8 |            \ |         19 |
-| Apache Arrow                                   |                                                             true |          6 |            \ |        685 |
+| Apache Arrow                                   |                                                             true |          8 |        12,327 |        290 |
 | Milagro                                        |                                                             true |          3 |            \ |          4 |
 | Beam                                           |                                                            false |          6 |        41,744 |      11682 |
 | Iota                                           |                                                             true |          4 |            \ |          0 |
-| Guacamole                                      |                                                             true |          6 |            \ |        416 |
+| Guacamole                                      |                                                             true |          12 |        8,069 |        209 |
 | Edgent                                         |                                                             true |          3 |            \ |         63 |
 | Joshua (Retired)                               |                                                            false |         10 |            \ |          1 |
 | Mnemonic                                       |                                                             true |          6 |           732 |          5 |
@@ -558,7 +558,7 @@
 | MyNewt Docs                                    |                                                             true |          0 |            \ |          0 |
 | Phoenix Omid                                   |                                                             true |          6 |         1,367 |         10 |
 | Apache Quickstep                               |                                                             true |          2 |            \ |          0 |
-| Apache Airflow                                 |                                                          unknown |         \ |            \ |          0 |
+| Apache Airflow                                 |                                                          \ |         \ |            \ |          0 |
 | Commons Crypto                                 |                                                             true |          6 |         1,687 |          4 |
 | aardvark                                       |                                                             true |          6 |            \ |         16 |
 | Gossip                                         |                                                             true |          2 |            \ |          0 |
@@ -575,7 +575,7 @@
 | Maven Resolver                                 |                                                             true |          7 |         1,105 |          9 |
 | Hivemall                                       |                                                             true |          6 |            \ |          9 |
 | Traffic Control                                |                                                             true |          1 |            \ |         13 |
-| NetBeans                                       |                                                             true |          6 |         9,798 |        414 |
+| NetBeans                                       |                                                             true |          9 |         5,320 |        314 |
 | ODE Web Console                                |                                                             true |          4 |            \ |          0 |
 | Spot                                           |                                                             true |          4 |            \ |          4 |
 | Commons Numbers                                |                                                             true |         10 |         1,408 |          2 |
@@ -587,7 +587,7 @@
 | ActiveMQ CLI Tools                             |                                                             true |          4 |            47 |          0 |
 | NiFi Registry - MOVED TO NIFI PROJECT          |                                                             true |          5 |            \ |          4 |
 | Apache Gobblin                                 |                                                             true |          5 |            \ |         10 |
-| IMPALA                                         |                                                             true |         10 |        11,255 |       2511 |
+| IMPALA                                         |                                                             true |         11 |        10,379 |       582 |
 | Superset                                       |                                                             true |          5 |        14,767 |          0 |
 | www.apache.org website                         |                                                             true |          5 |            \ |          0 |
 | Pulsar                                         |                                                             true |          5 |        12,369 |          0 |
@@ -612,9 +612,9 @@
 | Apache Chainsaw                                |                                                             true |         18 |            \ |         30 |
 | Commons Geometry                               |                                                             true |          4 |           609 |          4 |
 | Apache ECharts                                 |                                                             true |          3 |            \ |          0 |
-| Apache Ozone                                   |                                                             true |          5 |            \ |        436 |
+| Apache Ozone                                   |                                                             true |          5 |         4,830 |        194 |
 | Infra Test 3                                   |                                                             true |          0 |            \ |          0 |
-| MxNet Test                                     |                                                          unknown |         \ |         5,655 |          0 |
+| MxNet Test                                     |                                                          \ |         \ |         5,655 |          0 |
 | Apache SCIMple                                 |                                                            false |          6 |            \ |          1 |
 | Apache DataLab                                 |                                                             true |          4 |            \ |        124 |
 | Apache Zipkin                                  |                                                             true |          0 |            \ |          0 |
@@ -622,7 +622,7 @@
 | Apache Marvin                                  |                                                             true |          4 |            \ |          1 |
 | Apache IoTDB                                   |                                                             true |          3 |            \ |        152 |
 | OpenOffice                                     |                                                             true |          4 |         8,361 |          0 |
-| Apache Hudi                                    |                                                             true |          3 |            \ |       1008 |
+| Apache Hudi                                    |                                                             true |          6 |         3,314 |       184 |
 | Maven Scripting                                |                                                             true |          3 |            \ |          0 |
 | Apache Submarine                               |                                                             true |          4 |            \ |         28 |
 | Apache Training                                |                                                             true |          2 |            \ |          0 |
@@ -631,7 +631,7 @@
 | Apache Datasketches                            |                                                             true |          3 |            \ |          2 |
 | NiFi Standard Libraries                        |                                                             true |          1 |             4 |          0 |
 | StreamPipes                                    |                                                            false |          3 |        10,668 |          4 |
-| Apache Petri                                   |                                                          unknown |         \ |            \ |          0 |
+| Apache Petri                                   |                                                          \ |         \ |            \ |          0 |
 | Central Services                               |                                                            false |          2 |            \ |          1 |
 | Apache InLong                                  |                                                            false |          3 |            \ |         16 |
 | Apache NuttX                                   |                                                            false |          3 |            \ |          0 |
@@ -641,8 +641,8 @@
 | Apache NetBeans Infra                          |                                                             true |          4 |            \ |          4 |
 | Sidecar for Apache Cassandra                   |                                                            false |          4 |            \ |          8 |
 | APISIX                                         |                                                             true |          2 |         4,201 |          0 |
-| Custos Security                                |                                                          unknown |         \ |            \ |          0 |
-| The Maven Metric Extension                     |                                                          unknown |         \ |            \ |          0 |
+| Custos Security                                |                                                          \ |         \ |            \ |          0 |
+| The Maven Metric Extension                     |                                                          \ |         \ |            \ |          0 |
 | Apache Liminal                                 |                                                            false |          2 |            \ |          2 |
 | Apache Pegasus                                 |                                                            false |          0 |            \ |          0 |
 | Apache AGE (old)                               |                                                            false |          2 |            \ |          5 |
@@ -655,7 +655,7 @@
 | Apache EventMesh                               |                                                            false |          1 |            \ |          1 |
 | Infrastructure Test 6 (Retired) (Retired)      |                                                             true |          0 |            \ |          0 |
 | Apache AGE                                     |                                                            false |          1 |            \ |         14 |
-| Apache Linkis                                  |                                                          unknown |         \ |            \ |          0 |
+| Apache Linkis                                  |                                                          \ |         \ |            \ |          0 |
 | Apache Doris                                   |                                                             true |          0 |            \ |          0 |
 | Maven Build Cache Extension                    |                                                             true |          1 |           275 |          0 |
-| Infra test 987                                 |                                                          unknown |         \ |            \ |          0 |
+| Infra test 987                                 |                                                          \ |         \ |            \ |          0 |
