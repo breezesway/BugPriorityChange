@@ -1,5 +1,5 @@
 ```
-Note: The \ symbol in the table indicates that the information has not been obtained.
+Note: The '\' in the table indicates that the information has not been obtained.
 ```
 | **Project**                                    | **Is the priority<br>level Blocker/Critical<br>/Major/Minor/Trivial?** | **Age(y)** | **#Revision** | **#BugPC** |
 |------------------------------------------------|-----------------------------------------------------------------:|-----------:|--------------:|-----------:|
