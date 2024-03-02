@@ -172,7 +172,7 @@
 | Commons BSF                                    |                                                             true |         13 |           631 |          0 |
 | Savan                                          |                                                             true |          7 |            36 |          0 |
 | Rampart/C                                      |                                                             true |         11 |            \ |          1 |
-| Tika                                           |                                                             true |         15 |         8,314 |        158 |
+| Tika                                           |                                                             true |         15 |         8,314 |        148 |
 | Anakia                                         |                                                             true |         20 |            \ |          1 |
 | IvyDE                                          |                                                             true |         16 |            \ |          7 |
 | Commons JCI                                    |                                                             true |         15 |           704 |          2 |
@@ -185,7 +185,7 @@
 | MyFaces Orchestra                              |                                                             true |          9 |            \ |          3 |
 | Sling                                          |                                                             true |         15 |             4 |        210 |
 | Commons Sanselan                               |                                                          \ |         \ |            \ |          0 |
-| Pig                                            |                                                             true |         15 |         3,724 |        160 |
+| Pig                                            |                                                             true |         15 |         3,724 |        132 |
 | Commons Proxy                                  |                                                             true |         13 |           604 |          1 |
 | JSPWiki                                        |                                                             true |         15 |         9,353 |         86 |
 | MyFaces Portlet Bridge                         |                                                             true |         10 |            \ |          4 |
@@ -199,7 +199,7 @@
 | HBase                                          |                                                             true |         16 |        19,428 |      1,142 |
 | PDFBox                                         |                                                            false |         19 |        11,736 |        497 |
 | Directory Shared (Please use DIRAPI instead)   |                                                             true |          8 |            \ |          3 |
-| CouchDB                                        |                                                             true |         12 |        13,539 |        328 |
+| CouchDB                                        |                                                             true |         12 |        13,539 |        118 |
 | Log4j 2                                        |                                                             true |         14 |            \ |        139 |
 | Thrift                                         |                                                             true |         16 |         6,553 |        183 |
 | ZooKeeper                                      |                                                             true |         14 |         2,548 |          0 |
@@ -212,7 +212,7 @@
 | MyFaces Extensions Validator                   |                                                             true |          8 |            \ |         11 |
 | James Imap                                     |                                                             true |         18 |            \ |          5 |
 | PhotArk                                        |                                                             true |          5 |           289 |          1 |
-| Tapestry 5                                     |                                                             true |         16 |         5,755 |        200 |
+| Tapestry 5                                     |                                                             true |         16 |         5,755 |        120 |
 | OpenEJB Eclipse Plugin                         |                                                             true |         11 |            \ |          7 |
 | Etch                                           |                                                             true |          9 |           549 |          3 |
 | Public Relations                               |                                                             true |         11 |            \ |          0 |
@@ -294,7 +294,7 @@
 | Apache Whirr (retired)                         |                                                             true |          6 |            \ |         35 |
 | Velocity Sandbox                               |                                                             true |          0 |            \ |          0 |
 | Zeta Components                                |                                                             true |         10 |            \ |          0 |
-| Karaf                                          |                                                             true |         13 |         9,492 |        167 |
+| Karaf                                          |                                                             true |         13 |         9,492 |        117 |
 | DeltaCloud                                     |                                                             true |         10 |         2,674 |         14 |
 | Nuvem                                          |                                                             true |          2 |           138 |          1 |
 | Axis2 Transports                               |                                                             true |          9 |            \ |          0 |
@@ -598,7 +598,7 @@
 | AMATERASU                                      |                                                             true |          2 |            \ |          1 |
 | Apache Science Data Analytics Platform         |                                                             true |          5 |            \ |          5 |
 | Maven JDeprScan Plugin                         |                                                             true |          3 |            43 |          0 |
-| Daffodil                                       |                                                             true |         12 |         4,018 |        673 |
+| Daffodil                                       |                                                             true |         12 |         4,018 |        73 |
 | Apache MXNet                                   |                                                             true |          5 |            \ |         33 |
 | Apache Crail                                   |                                                             true |          3 |            \ |          1 |
 | Apache ServiceComb                             |                                                             true |          5 |            \ |         24 |
